@@ -1,3 +1,6 @@
+> **ARCHIVED (24 Sep 2026).** Superseded by [../working-brief.md](../working-brief.md). It is kept for its full
+> workings and history. Links inside this file were written for the `Pete/` folder, so some relative links may break.
+
 # UFP Award 2026 — Working Handout
 
 **Hong Kong Undergraduate Financial Planners of the Year Award 2026 (SRFP&S)**
