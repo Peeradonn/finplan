@@ -1,191 +1,165 @@
-# Pass-on numbers — v1
+# Pass-on numbers — v2
 
-Owner: Tech 1. Compiled 2026-09-24 from `Award2026Case20260919.pdf`.
+Owner: Fahtai (model). Updated 27 Sep 2026. Supersedes v1 of 24 Sep.
+Model: `wong_model.xlsx` (inputs, balance sheet, tax engine) · `model.py`, `mc3.py` (projection, Monte Carlo).
 
-**These are the numbers the rest of the team builds on.** Nothing goes into the proposal that is not
-on this page or derived from the model. If you need a figure that is not here, ask — do not invent one.
-
-Status: **v1, provisional.** Tax parameters are on a 2025/26 basis and are pending confirmation
-(see [Pending](#pending-before-v2)). Everything else is computed directly from the case.
+**Nothing goes into the proposal that is not on this page or out of the model.**
 
 ---
 
-## 0. Headline, for the group chat
+## 0. Headline for tonight
 
-> Base case: Ryan's income excluded, bonus at 150k, dependent parent allowance claimed.
-> **After-tax surplus ≈ HK$700,000/yr.** Investable base = **HK$10,470,000** — use this denominator
-> everywhere. ESG is **11.0%** today, so **+944,000** to reach 20%. Digital is **4.8%**.
-> Emergency reserve **30.5 months** against a 6–12 benchmark.
-> Property + business = **60.7%** of assets — that is our headline diagnosis.
-
----
-
-## 1. Balance sheet validation
-
-The model reproduces the case exactly. If your numbers disagree with these, the error is yours.
-
-| Item | Model | Case | |
-|---|---|---|---|
-| Total current / liquid assets | 2,500,000 | 2,500,000 | ok |
-| Total investment assets | 7,970,000 | 7,970,000 | ok |
-| Total fixed / other assets | 16,720,000 | 16,720,000 | ok |
-| **Total assets** | **27,190,000** | **27,190,000** | ok |
-| Total liabilities | 2,785,000 | 2,785,000 | ok |
-| **Net worth** | **24,405,000** | **24,405,000** | ok |
+> **The deterministic plan works, but only just — and the Monte Carlo is what makes the case for the income floor.**
+> Parents' portfolio alone: **61–65%** chance of sustaining HK$780K to Carmen 89.
+> With the MPF annuitised (cost deducted): **80–88%**.
+> The family needs a real return of only **1.5%**, but the margin of safety is thin, not comfortable.
+> That is the single most useful number we have: it turns Pete's income floor from a nice idea into a necessity.
 
 ---
 
-## 2. After-tax annual surplus
+## 1. Corrections to v1 — please re-read if you used it
 
-Gross income − salaries tax − MPF employee mandatory − household expenses (984,000).
+v1 was built on 2025/26 tax parameters. **Pete's figures were right and mine were wrong.** Now fixed.
 
-| Scenario | Gross | Tax | MPF | Expenses | **Surplus** | Save rate |
-|---|---|---|---|---|---|---|
-| **BASE — Ryan out, bonus 150k** | 1,920,000 | 200,300 | 36,000 | 984,000 | **699,700** | 36.4% |
-| Ryan out, bonus 300k | 2,070,000 | 225,800 | 36,000 | 984,000 | 824,200 | 39.8% |
-| Ryan in, bonus 150k | 2,220,000 | 209,720 | 51,000 | 984,000 | 975,280 | 43.9% |
-| Ryan in, bonus 300k | 2,370,000 | 235,220 | 51,000 | 984,000 | 1,099,780 | 46.4% |
-
-**Use 699,700 as the base case.** Report the Ryan-in figure as a sensitivity only.
-
-Tax by person, base case: Adrian 121,400 · Carmen 78,900 · Ryan 9,420 (excluded from base).
-MPF employee mandatory: Adrian 18,000 · Carmen 18,000 · Ryan 15,000 (below the 30,000/mth cap).
-
-> Note for Finance 2: new insurance premiums you recommend come **out of this 699,700**, and are
-> additional to the 82,000/month. Send me the premium figures and I will re-run it.
-
----
-
-## 3. Net worth ratios
-
-| Ratio | Value | Benchmark | Read |
-|---|---|---|---|
-| Emergency reserve | **30.5 months** | 6–12 | Heavily over-reserved |
-| Liquid / total assets | 9.2% | — | |
-| Debt-to-asset | 10.2% | <50% | Very low; borrowing capacity unused |
-| Debt-to-net-worth | 11.4% | — | |
-| Property / total assets | 42.3% | — | |
-| **Property + business / total assets** | **60.7%** | — | **Concentration + illiquidity** |
-| Investment assets / net worth | 32.7% | — | |
-| Savings rate | 36.4% | — | Strong |
-
-**The diagnosis these support:** the Wongs are not short of money, they are badly structured —
-idle cash, two illiquid lumps, and an 85,000 revolving card balance sitting next to 620,000 of savings.
-That sentence belongs in the Executive Summary.
-
----
-
-## 4. Investable-asset base — DECISION LOCKED
-
-**Base = HK$10,470,000** (total liquid 2,500,000 + total investment 7,970,000).
-
-One denominator, used for the ESG target, the digital asset cap, and every allocation percentage
-in the proposal. Do not use a different base in your own section.
-
-Why the widest base, when narrower ones make the target easier:
-
-1. It is the literal reading of "investable assets" in the case.
-2. It is the hardest target, so we cannot be accused of shrinking the denominator to hit 20%.
-3. It puts MPF in scope, which unlocks a recommendation most teams will miss —
-   **switch part of Adrian's and Carmen's 1,670,000 of MPF into their schemes' ESG fund options.**
-   Free, implementable, and scores under "innovation."
-
-Footnote to disclose in the report: the base includes 420,000 of insurance cash value, which is not
-freely investable (4% of base). We disclose it rather than adjust for it.
-
-Bases we considered and rejected, for the record:
-
-| Base | Size | ESG % | Gap to 20% |
-|---|---|---|---|
-| **A — liquid + all investment (CHOSEN)** | **10,470,000** | **11.0%** | **+944,000** |
-| B — A less MPF and insurance cash value | 8,200,000 | 14.0% | +490,000 |
-| C — B less Ryan's own assets | 7,700,000 | 14.9% | +390,000 |
-| D — investment assets only | 7,970,000 | 14.4% | +444,000 |
-
----
-
-## 5. ESG and digital assets against the locked base
-
-| | Amount | % of 10,470,000 |
+| | v1 (wrong) | v2 (correct) |
 |---|---|---|
-| ESG / sustainable equity funds | 700,000 | 6.7% |
-| Green / sustainable bond products | 450,000 | 4.3% |
-| **ESG total, today** | **1,150,000** | **11.0%** |
-| Digital assets (BTC, ETH, VA spot ETFs, tokenized MMF) | 500,000 | **4.8%** |
-
-Gap to the case's 20–25% ESG goal:
-
-| Target | Required | **Additional needed** |
-|---|---|---|
-| 20% | 2,094,000 | **+944,000** |
-| 25% | 2,617,500 | **+1,467,500** |
-
-> For Tech 2: digital is at 4.8%, already inside a typical 5% cap, and **all 500,000 is Ryan's**.
-> That supports "keep, cap, ring-fence in his own name" rather than a forced sale.
+| Basic allowance | 132,000 | **145,000** |
+| Married | 264,000 | **290,000** |
+| Child | 130,000 | **140,000** |
+| Dependent parent 60+ | 50,000 | **55,000** |
+| Home loan interest | not modelled | **63,000, split 50/50** |
+| Couple's tax | 200,300 | **181,770** |
+| Annual surplus | 699,700 | **718,230** |
 
 ---
 
-## 6. Locked assumptions (v1)
+## 2. Confirmed — open item #3 is closed
 
-| # | Assumption | Value | Rationale |
+The tax engine in `wong_model.xlsx` reproduces Pete's workings to the dollar.
+
+| | Joint | Separate |
+|---|---|---|
+| Adrian | — | **110,435** |
+| Carmen | — | **71,335** |
+| **Couple** | **199,770** | **181,770** |
+| Ryan | 8,000 | 8,000 |
+
+Separate taxation wins by **exactly 18,000**, for the reason Pete gives: the married allowance (290,000)
+is exactly two basic allowances, so joint gains nothing on allowances but loses one set of progressive
+bands — 17% × 200,000 − 16,000 = 18,000.
+
+> **Caveat worth one line in §2:** separate assessment is the *default* in Hong Kong. This 18,000 is a
+> mistake avoided, not value created, unless the Wongs are currently electing joint. Ask them. Presenting
+> it as advice value would be overclaiming, and a judge who knows the system would notice.
+
+**Surplus:** 1,920,000 − 181,770 tax − 36,000 MPF − 984,000 expenses = **718,230**. Matches Pete.
+
+**Balance sheet:** the model reproduces 24,405,000 net worth exactly. Check cell is zero.
+
+---
+
+## 3. Retirement — Pete's numbers confirmed
+
+| | Model | Pete |
+|---|---|---|
+| Need at 2037, to Carmen 89 (29 yrs, 2% real) | **17,038,620** | ≈17.0M |
+| Need at 2037, to Carmen 95 (35 yrs) | 19,498,923 | — |
+| Projected pool at 2037 (2% real) | **17,719,962** | ≈17.4M |
+| Funded ratio | **104%** | — |
+| **Required real return** | **1.51%** (≈4.05% nominal) | "≈2%, they need little risk" |
+
+Pete's characterisation is right: the *required return* is low. But 104% funded is a thin margin, and
+the Monte Carlo below shows what that thinness costs once you allow for volatility and sequence risk.
+
+Education reserve used: **2,567,698** (overseas at the case's 600K high end, escalated 5%, discounted 3%).
+Local high-end would be 1,069,874 — the overseas-high choice is deliberately conservative.
+
+---
+
+## 4. Monte Carlo — Win's three mixes (10,000 paths, equity 6%/17% vol)
+
+**Portfolio alone — no annuity, no property, no business**
+
+| Mix | to 89 | to 95 | Avg worst year | Median end (89) |
+|---|---|---|---|---|
+| 1. All-Treasury ladder | 39% | 1% | −0.6% | 0 |
+| 2. 40/60 equity / ladder | **65%** | 45% | −10.1% | 8,029,299 |
+| 3. 60/40 equity / bond funds | 61% | 49% | −17.3% | 9,308,608 |
+
+**With MPF annuitised — 4.12M cost deducted, 268K/yr income added**
+
+| Mix | to 89 | to 95 |
+|---|---|---|
+| 1. All-Treasury ladder | **100%** | 76% |
+| 2. 40/60 equity / ladder | **88%** | 76% |
+| 3. 60/40 equity / bond funds | 80% | 70% |
+
+Three findings worth writing up:
+
+1. **Safety alone fails.** The all-Treasury ladder has a 39% chance of lasting to 89 and 1% to 95.
+   Capital preservation without growth is not the safe choice — that is a strong line for Adrian's section.
+2. **The annuity is the single biggest lever**, worth more than any allocation change: +23pp on mix 2.
+   It converts sequence risk into a guaranteed floor. This quantifies Pete's innovation ①.
+3. **More equity does not help here.** Mix 3 is worse than mix 2 on every measure once the annuity is in.
+   **Recommend mix 2 (40/60 with the ladder) for Adrian.**
+
+---
+
+## 5. Answers to Win's three asks
+
+**Equity return: lock 6.0%.** With the annuity in place, 6% gives 88% success and 7% gives 94% — the plan
+works either way, so the conservative number costs us nothing and buys credibility. It also means every
+recommendation is stress-tested at the lower figure. Note this **differs from Pete's lock table (7.0%)** —
+needs 30 seconds of agreement tonight.
+
+**Bond row:** Treasury ladder held to maturity at **4.0% nominal, ~2% volatility** (no price risk if held).
+Bond *funds* carry ~5% volatility — that difference is why mix 2 beats mix 3, so keep the two distinct.
+
+**Recommended mix for Adrian: #2, 40/60 equity / Treasury ladder.**
+
+Rules M1–M9 testing is next; I have the harness and will report Tuesday as asked.
+
+---
+
+## 6. Value of advice — status quo vs plan, at 2037
+
+| | HK$ |
+|---|---|
+| Status quo | 19,701,480 |
+| With the plan | 24,858,714 |
+| **Value added** | **5,157,234 (+26%)** |
+
+Four drivers, largest first:
+1. Deploying idle cash — the emergency reserve falls from 30.5 months to 12, freeing ~1.5M
+2. **Repaying the 85,000 card — 1,438,336 of avoided interest over 11 years at 30%**
+3. Investments rebalanced to the target mix (5.5% vs 4.2% unmanaged)
+4. TVC/QDAP at 60,000 each — 20,400/yr of tax saved, reinvested
+
+> **Two assumptions this number depends on, both need the team to sign off tonight:**
+> (a) the status-quo investment return of **4.2%** — this is Win's open "current-fund-fee" question, and it
+> drives most of the 5.16M; (b) the card genuinely revolves at ~30%. The case says "credit card and
+> revolving balance", but if the Wongs clear it monthly, driver 2 disappears. **Ask the question rather than
+> assume it** — an unchallenged 1.4M claim is exactly what a judge will probe.
+
+---
+
+## 7. Open items
+
+| # | Item | Owner | Due |
 |---|---|---|---|
-| A1 | Ryan's income in household cash flow | **Excluded** | Case Goal 3 treats him separately; pooling flatters the plan |
-| A2 | Adrian's discretionary bonus | **150,000** (low end) | A discretionary bonus should not fund a plan |
-| A3 | Dependent parent allowance | **Claimed**, 2 parents aged 60+, not co-residing | Case lists "support for elderly parents" in monthly expenses |
-| A4 | Child allowance | Claimed by Adrian | Higher earner |
-| A5 | Spouse assessment | Separate assessment | Both have income; joint assessment to be tested in v2 |
-| A6 | Investable-asset base | **10,470,000** | See section 4 |
-| A7 | Carmen's 720,000 | Treated as employment income, MPF-contributing | Case says "salary / dividend"; to be revisited |
-
-**Known inconsistency, to be disclosed in a footnote rather than hidden:** we exclude Ryan's income
-(A1) but his living costs are almost certainly inside the 82,000/month. This makes the base case
-conservative. Say so in the report — judges reward teams that spot it.
+| 1 | Agree equity return 6% vs Pete's 7% | Team | tonight |
+| 2 | Agree the status-quo return assumption (4.2%) for value of advice | Team / Win | tonight |
+| 3 | Confirm the card revolves, and whether the Wongs elect joint assessment | Lead → client assumptions | tonight |
+| 4 | Test rules M1–M9 against "hold the target" | Fahtai | 29 Sep |
+| 5 | Load the medical path, VHIS ageing curve, cash path and FX stress | Fahtai | 29 Sep |
+| 6 | Insurance premiums — they reduce the 718,230 surplus, so every number here shifts | Lookbua | 29 Sep |
+| 7 | Six charts | Fahtai | 30 Sep |
 
 ---
 
-## 7. Two findings in the case that change how we model
-
-**7.1 The 82,000/month is not a clean "living expenses" figure.** It explicitly includes the mortgage
-repayment, Chloe's current tuition and extracurriculars, Adrian and Carmen's medical insurance
-premiums, and support for elderly parents. Three consequences:
-
-- When the mortgage clears, household expenses **drop**. Retirement gets easier and we must model it.
-- Chloe's current school fees **stop** when she starts university, partly offsetting the new cost.
-  Do not double-count — most teams will.
-- Existing medical premiums are already inside the 82,000. Only *new* cover is additional.
-
-**7.2 "Support for elderly parents" makes the dependent parent allowance claimable**, worth roughly
-17,000/yr of tax. Assumption A3 covers it; the amounts need confirming.
-
----
-
-## 8. Correction to earlier working
-
-An earlier estimate put the family's salaries tax at about 290,000. That ignored allowances.
-The correct figure is **200,000–235,000** depending on the bonus. Use the table in section 2.
-
-An earlier note also had the retirement order backwards. **Adrian retires first** — he is 54 and
-retires at 65, i.e. in 11 years; Carmen is 49 and retires at 62, in 13 years. Carmen works for two
-years after Adrian stops. Any section assuming the reverse is wrong.
-
----
-
-## 9. Pending before v2
-
-| Item | Owner | Blocks |
-|---|---|---|
-| Confirm salaries tax bands, allowances, dependent parent amounts, 2026/27 rebate | Tech 1 | Section 2 |
-| Confirm MPF caps and early-withdrawal-at-60 rule (Carmen retires at 62) | Tech 1 | Retirement model |
-| Inflation, education inflation, wage growth, FX | Finance 1 | Everything downstream |
-| Return, volatility and correlation by asset class; medical inflation | Finance 2 | Monte Carlo |
-| Insurance premium estimates | Finance 2 | Surplus, section 2 |
-| Mortgage rate and remaining term (not in the case — we must assume) | Finance 1 | Expense path |
-| ESG and digital slice sizes and vehicles | Tech 2 | Allocation table |
-
----
-
-## 10. Change log
+## 8. Change log
 
 | Version | Date | Change |
 |---|---|---|
-| v1 | 2026-09-24 | First issue. Balance sheet validated; surplus, ratios, base and ESG/digital gaps computed. |
+| v2 | 2026-09-27 | Tax rebuilt on 2026/27 parameters; open item #3 closed; baseline, Monte Carlo, value of advice added; Excel model published. |
+| v1 | 2026-09-24 | First issue. Superseded — tax parameters were wrong. |
