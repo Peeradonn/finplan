@@ -1,4 +1,4 @@
-# Untitled
+# 8. Risk Management and Protection Planning
 
 # Risk Assessment
 
@@ -69,7 +69,7 @@ band (this is a market range, not a specific insurer's rate card — flagged for
 notes
 
 - the family isn’t defenceless without the insurance—depends on their needs (?)
-- leverage is 33+ **x—recommend to buy DI for both**
+- leverage is 33+ x—recommend to buy DI for bot
 
 ### 3.2 Life insurance — needs-based gap, not a round multiple of income
 
@@ -180,3 +180,5 @@ fee). This answers RPN #8, the highest-severity item on the register.
 
 These three items resolve three of the ten highest-ranked risks for under HK$25,000 one-off, which is worth stating
 plainly in the proposal: **the cheapest fixes on the register are currently undone**, not the expensive ones.
+
+
