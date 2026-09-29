@@ -5,7 +5,7 @@ Round One due **Fri 2 Oct, 23:59**
 
 This file covers only my sections: what each one will say, the numbers behind it, and what I need from the rest of the
 team. The full rule set is in [condition-based-playbook.md](condition-based-playbook.md); assumptions are in
-[assumptions-methodology.md](assumptions-methodology.md).
+[assumptions-methodology.md](Pete/assumptions-methodology.md).
 
 ---
 
@@ -347,4 +347,4 @@ Rules M1–M11, D1–D5, P1–P6 run normally. Quarterly rebalancing. Guyton-Kli
 - Berg, F., Kölbel, J. & Rigobon, R. (2022), "Aggregate Confusion: The Divergence of ESG Ratings", *Review of Finance*.
 - Kitces, M., on bucket strategies vs rebalancing (via team research report).
 - Tokenised green bonds, retail status: LegCo reply, 4 Feb 2026 (per working-brief.md).
-- Team files: working-brief.md, assumptions-methodology.md, condition-based-playbook.md.
+- Team files: Pete/working-brief.md, Pete/assumptions-methodology.md, condition-based-playbook.md.

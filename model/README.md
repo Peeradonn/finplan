@@ -14,6 +14,48 @@ Then look at the `Outputs` tab. For the Monte Carlo, run `python3 run_model.py` 
 
 ---
 
+## Changes 29 Sep (Pete) — Fahtai, please review
+
+Not committed. The workbook was rebuilt with `build_xlsx.py` and recalculated in Excel; the three CHECK cells
+still read 0 and every pre-existing input is unchanged.
+
+1. **Bug fix: the annuity was growing with inflation in the Monte Carlo.** `run_model.py` subtracted
+   `(SPEND - ANN_INC) * (1+CPI)**i`, which turned the HKMC annuity into an inflation-linked one. HKMC pays a
+   fixed HK$ amount for life, and the `Projection` tab already treated it that way. With the fix, mix 2
+   annuitised falls from **91% to 73%** to Carmen's 89 (no medical line), and the annuity adds about 3 points,
+   not 21. The claim "the annuity is the single biggest lever" no longer holds.
+2. **New `Medical` tab** (methodology §1): the VHIS age curve × the medical trend path, both parents, from each
+   one's retirement (when group cover ends), Adrian to his life expectancy. The part already inside the 780,000
+   is netted off. It feeds a new `Medical` column in `Projection` and the Monte Carlo.
+3. **New inputs** (all on `Inputs`, blue): medical plan tier, trend path, stress trend, premiums already in the
+   780,000 · survivor spending after Adrian · business sale proceeds and year · reverse-mortgage income and first
+   year · Adrian's life expectancy. Each backstop has a **"Use … in base (1/0)" switch, all 0 by default**, so the
+   base case still holds the home and the business outside the plan.
+4. **`Projection`**: new columns `Medical` and `Backstops`; survivor spending applies when its switch is on.
+   Columns from `Net cash flow` onward moved two to the right (`Portfolio close` is now column U).
+5. **`Outputs`**: "Funded ratio" removed. It divided the portfolio *after* the annuity purchase by a need that
+   ignored the annuity's income and Carmen's last two salaries, so it didn't measure funding. Replaced by
+   **first year the portfolio runs out** and **Carmen's age that year**, plus three medical outputs.
+6. **`run_model.py`**: reads the new inputs and the Medical tab (it stops if its medical line differs from the
+   workbook's) · new **§5 decision ladder** (what each decision adds, and the alternatives) · new §6 medical line
+   by year · Carmen's tax is read from the `Tax` tab instead of a typed-in 71,335 · UTF-8 output on Windows.
+7. **`build_xlsx.py`** saves next to itself (it had a hard-coded Linux path); set `WONG_XLSX` to save elsewhere.
+8. **Protection premiums entered: 159,000 a year** (Lookbua's sizing; critical-illness rates from Bowtie's
+   published table, 31 Aug 2026; see `drafts/08-protection.md`). They are paid only until Adrian retires, in both
+   the `Projection` tab and the Monte Carlo.
+9. **Bug fix: premiums were set to be deducted twice.** The script read the Outputs surplus, which already nets
+   off premiums, then subtracted them again. Harmless while premiums were 0. It now reads the Tax tab's surplus.
+10. **New inputs and sections**: stress-scenario values and property options (`Inputs`); `run_model.py` §7 stress
+   scenarios, §8 property options (keep / reverse mortgage / downsize, with legacy), §9 Win's rebalancing rules
+   against hold-the-target. Its printing now sits in `main()`, so other scripts can import it.
+11. **`make_charts.py`** (new): seven charts to `../figures/` at 300 dpi, plus `figure-data.md` with every
+   number behind them. Needs `matplotlib`.
+
+**Still hard-coded in `run_model.py`** (left alone, worth moving to `Inputs` later): the 3% discount rate for
+the education reserve, and the 2% real rate and 29 years in the retirement-need formula.
+
+---
+
 ## What it is
 
 A function: assumptions in, answers out. It answers four questions.
@@ -79,14 +121,20 @@ LibreOffice, **save before running the script**, or it will read stale numbers.
 | Salaries tax, separate / joint | 181,770 / 199,770 |
 | Retirement need at 2037 (today's money) | 17,038,620 |
 | Projected at 2037 (today's money) | 16,457,803 |
-| **Funded ratio** | **97%** |
+| Protection premiums (Lookbua's cover) | 159,000 a year average to 2036; surplus after them 559,230 |
+| Deterministic: portfolio runs out | 2063 (Carmen 86), with medical and protection premiums, no backstops |
 | Education reserve (overseas, conservative) | 2,567,698 |
-| Monte Carlo, mix 2, portfolio alone | 70% to 89 · 49% to 95 |
-| Monte Carlo, mix 2, MPF annuitised | **91% to 89 · 80% to 95** |
+| Medical line at Carmen 89 (nominal, net) | 872,123 |
+| Monte Carlo, mix 2, annuitised, base case | 26% to 89 · 11% to 95 |
+| **Decision ladder, all four decisions (mix 2)** | **80% to 89 · 58% to 95** |
+| Same, Standard plan instead of Flexi | 98% to 89 · 93% to 95 |
+| Stress scenarios A / B / C on the full plan (to 89) | 29% · 24% · 53% |
 
-**The headline:** deterministically they are 97% funded, which looks survivable; under volatility the
-portfolio alone only lasts to 89 about 70% of the time. Annuitising the MPF lifts that to 91%. That
-gap is the quantified case for the income floor, and it is the most useful thing the model says.
+**The headline (29 Sep):** medical premiums are the binding constraint. On the portfolio alone the money
+lasts to Carmen's 89 in 26% of paths. Lower spending after Adrian's life expectancy, a staged business sale and
+a reverse mortgage take it to 80%; the Standard medical plan instead of Flexi takes it to 98%. The annuity adds
+nothing on its own but 5 points once the other decisions are in. Downsizing in 2037 matches the reverse mortgage
+(81%) and leaves ≈HK$4M more to the heirs. In the base case mix 3 (60/40) edges mix 2 (35% vs 26%).
 
 ## Known limits — state these in the proposal
 
@@ -98,8 +146,13 @@ gap is the quantified case for the income floor, and it is the most useful thing
   slightly understates later tax.
 - Insurance premiums are a **placeholder of 0** until Lookbua's figures arrive. Every number above
   will move when they land.
-- Property, the reverse mortgage and Carmen's business are **not** in the projection. They are
-  deliberate backstops held outside the plan, which makes the funded ratio conservative.
+- Property, the reverse mortgage and Carmen's business are **not** in the base projection. They are
+  deliberate backstops held outside the plan; switch them on in `Inputs`, and `run_model.py` §5 shows what
+  each one is worth.
+- The Standard-plan option uses the male Standard median for both parents (the dataset summary has no
+  female Standard column). Premiums beyond 80 grow at each column's 75→80 slope.
+- The part of the premiums already inside the 780,000 is netted off in full even after Adrian's death, when
+  only Carmen's premium remains. Small, and conservative.
 - The mortgage sits inside the 984,000 of living expenses and is not modelled separately, so the
   drop in expenses when it clears (about 2040) is not captured.
 
@@ -146,7 +199,7 @@ paths that succeed.
 
 ### Assumption sources
 Every input carries a source in column D of the `Inputs` tab. The economic and return assumptions come
-from Pete's lock table in `working-brief.md` §4, derived in `assumptions-methodology.md`. Tax
+from Pete's lock table in `Pete/working-brief.md` §4, derived in `Pete/assumptions-methodology.md`. Tax
 parameters are 2026/27 per the IR (Amendment) Ordinance 2026. Annuity and reverse-mortgage figures are
 HKMC, verified 23 Sep 2026. The one deviation from Pete's table is the equity return: this model uses
 6.0% where the table says 7.0%, as the conservative choice — the plan succeeds at both, so the lower

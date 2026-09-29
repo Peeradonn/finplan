@@ -1,5 +1,10 @@
 > **ARCHIVED (24 Sep 2026).** Superseded by [../working-brief.md](../working-brief.md). It is kept for its full
 > workings and history. Links inside this file were written for the `Pete/` folder, so some relative links may break.
+>
+> **Figures corrected since (29 Sep), do not quote from here:** savings HK$754K → **HK$718K** · Canada costs
+> HK$168–335K → **HK$363–503K** a year · GBP holding cost 0.2pp → **≈0.5pp** · medical stress 8.54% → **8.5%**
+> in text · the annuity does **not** add ~21pp of success (a model bug). See the working brief, the methodology
+> and `model/README.md`.
 
 # UFP Award 2026 — Working Handout
 

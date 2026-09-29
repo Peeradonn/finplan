@@ -130,8 +130,10 @@ For discussion at the lock. Rows not listed stay as they are.
 | Canada | CAD 30K–60K | 5.585 | 168K–335K |
 | Singapore | SGD 25K–55K | 6.153 | 154K–338K |
 
-The case's HK$350–600K band is really a **UK** band. Canada and Singapore come in well under it. This is worth one
-line in §4 and gives Chloe's destinations a cost ranking.
+~~The case's HK$350–600K band is really a **UK** band. Canada and Singapore come in well under it.~~
+**Corrected 29 Sep:** the Canada range above was too low. With current tuition and the IRCC living-cost minimum it is
+CAD 65–90K (≈ HK$363–503K), about the same as the UK. Singapore depends on the Tuition Grant. See
+[methodology §3d](assumptions-methodology.md).
 
 ---
 
