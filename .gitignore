@@ -6,3 +6,4 @@ __pycache__/
 build/
 document/_filled_*
 document/*.filled.md
+document/proposal.html

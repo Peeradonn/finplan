@@ -1,7 +1,10 @@
 # Built to Last — Manuscript (page by page)
 
 **What this is:** the exact words, figures and tables for every page of the Round One proposal, in page order.
-The HTML document is assembled from this file; edit wording here, not in the HTML.
+The printed pages mirror this file. **To build the PDF:** edit the page sources (`template-v2.html` pages 1–2,
+`pages-03-09.html`, `section-mock-v3.html` pages 4–5, `pages-10-15.html`), then from `document/` run
+`python assemble.py` and `python render.py proposal.html` (→ `build/proposal.pdf`, with a fit report per page).
+Change wording here and in the page source together.
 **Owner:** Pete (integration). Section owners edit their own pages. **Due:** Fri 2 Oct, 23:59.
 
 ## How to read and edit this file
@@ -21,22 +24,22 @@ The HTML document is assembled from this file; edit wording here, not in the HTM
 
 ## Page map
 
-| Page | Section | Owner | Status |
+| Page | Section | Owner | Status (built 30 Sep; free space at the foot) |
 |---|---|---|---|
-| 1 | Cover | Pete | Final |
-| 2 | Executive summary | Pete | Draft, finalise last |
-| 3 | §2 Cash flow and net worth; goals | Pete | Draft |
-| 4–5 | §3 Retirement | Pete, Fahtai | Final (from mock-up v3) |
-| 6 | §4 Education | Pete | Draft |
-| 7 | §5 Investment and allocation | Win | Draft, HK$ sizes to confirm |
-| 8 | §5 cont. · §6 ESG | Win | Draft |
-| 9 | §7 Digital assets · Ryan's own plan | Win, Pete | Draft |
-| 10 | §8 Protection | Lookbua | Draft |
-| 11 | §9 Property · succession | Lookbua, Pete | Draft |
-| 12 | §9 cont. legacy · §10 Roadmap | Pete, Lookbua | Draft |
-| 13 | §11 Risk and compliance | Lookbua, Win | Draft |
-| 14 | Personal statement | All | Placeholders |
-| 15 | Appendix | Fahtai | Draft |
+| 1 | Cover | Pete | Built |
+| 2 | Executive summary | Pete | Built, 5mm |
+| 3 | §2 Cash flow and net worth; goals | Pete | Built |
+| 4–5 | §3 Retirement | Pete, Fahtai | Built, 3–4mm |
+| 6 | §4 Education | Pete | Built |
+| 7 | §5 Investment and allocation | Win | Built; HK$ sizes to confirm |
+| 8 | §5 cont. · §6 ESG | Win | Built |
+| 9 | §7 Digital assets · Ryan's own plan | Win, Pete | Built |
+| 10 | §8 Protection | Lookbua | Built |
+| 11 | §9 Property · succession | Lookbua, Pete | Built, 4mm |
+| 12 | §9 cont. · §10 Roadmap | Pete, Lookbua | Built |
+| 13 | §11 Risk and compliance | Lookbua, Win | Built |
+| 14 | Personal statement | All | Built; four career paragraphs still placeholders |
+| 15 | Appendix | Fahtai | Built |
 
 ## Decisions (resolved 30 Sep, from data)
 
@@ -143,7 +146,7 @@ the family's 20–25% target, in SFC-listed funds only; Ryan keeps his digital a
 **Case asks for:** financial health, liquidity, leverage, debt servicing, emergency reserve, wealth concentration.
 
 - Label: 02 CASH FLOW AND NET WORTH
-- Finding-heading: **The Wongs start from strength. Their risks are concentration and the costs the budget leaves out.**
+- Finding-heading: **The Wongs start from strength; the risks are concentration and costs outside the budget.**
 
 **ANNOT**
 
@@ -154,39 +157,38 @@ the family's 20–25% target, in SFC-listed funds only; Ryan keeps his digital a
 
   | Measure | Wongs | Verdict |
   |---|---|---|
-  | Savings rate | 41% of after-tax income | Strong |
-  | Emergency reserve | 30.5 months of spending | Excess (benchmark 6–12) |
-  | Leverage | 10% debt to assets | Low |
-  | Mortgage service | ≈8.5% of gross income | Comfortable |
-  | Concentration | 61% in home and business | High |
+  | Savings, after tax | 41% | Strong |
+  | Reserve, months | 30.5 | Excess |
+  | Debt to assets | 10% | Low |
+  | Mortgage to pay | 8.5% | Easy |
+  | Home and business | 61% | High |
+
+  Line under it: *Benchmarks: reserve 6–12 months; debt under 50% of assets; mortgage under 30% of pay.*
 
 **PROSE**
 
-**Strong, liquid and lightly borrowed.** The parents save HK$718K a year after tax and MPF, and hold HK$2.5M in cash
-and deposits: 30 months of spending, far above the 6–12 months a household needs. Debt is 10% of assets, and the
-mortgage costs about 8.5% of gross income.
-
-**Two risks sit behind the strength.** First, concentration: the home and Carmen's business are 61% of the family's
-assets, and neither pays an income until it is sold or borrowed against. Second, the HK$82K a month excludes profits
-tax on Carmen's business, overseas travel, renovation and medical emergencies; the surplus must cover these before it
-is invested. New protection cover (§8) will take a further ≈HK$100K a year until retirement.
+**Strong, liquid and lightly borrowed.** The parents save HK$718K a year after tax and MPF and hold HK$2.5M in cash:
+30 months of spending, against the 6–12 months a household needs. Debt is 10% of assets, and the mortgage costs about
+8.5% of gross income. **Two risks sit behind the strength.** First, concentration: the home and Carmen's business are
+61% of the family's assets, and neither pays an income until it is sold or borrowed against. Second, the HK$82K a
+month excludes profits tax, travel, renovation and medical emergencies, and new cover (§8) takes ≈HK$100K a year.
 
 **DEFEND — Put idle money to work before taking more risk.** The easiest gains need no extra risk. Moving HK$500K from
 savings accounts at 0.2% into deposits and a money-market fund at about 3% adds ≈HK$14K a year; clearing the HK$85K card
 balance saves ≈HK$25K of interest if it revolves `[CHECK]`; tax-deductible voluntary MPF and deferred-annuity
-contributions of HK$60K each save ≈HK$20K of tax. Separate assessment already beats joint by HK$18K; we confirm the
-family files that way `[CHECK]`. The reserve falls to twelve months (≈HK$1.0M) in a joint account both parents can reach.
+contributions of HK$60K each save ≈HK$20K of tax. If the family has elected joint assessment, separate assessment
+saves a further HK$18K `[CHECK: filing status]`. The reserve falls to twelve months (≈HK$1.0M) in a joint account both parents can reach.
 
 **TABLE · Figure 5 · The family's goals, ranked**
 
 | Priority | Goal | Measure of success | When |
 |---|---|---|---|
-| Need | Retire at 65 and 62 on HK$780K a year | Money lasts to Carmen's 89 in {{ladder_5_89}} of markets | 2037, 2039 |
-| Need | Protect income, health and the family | All gaps in §8 closed; wills and EPAs signed | Within 3 months |
-| Need | Fund Chloe's degree without debt | HK$2.57M education fund ring-fenced | 2028–2032 |
-| Want | Align 20–25% of investable assets with ESG (family goal 5) | 25% of HK$10.47M, counting only SFC-listed ESG funds | 2027 |
-| Want | Ryan financially independent | Crypto ≤20% of his wealth by 35; own cover | By 2037 |
-| Wish | Legacy with purpose | Staged trusts; an education scholarship | Ongoing |
+| Need | Retire at 65 and 62 on HK$780K | Lasts to Carmen's 89: {{ladder_5_89}} | 2037, 2039 |
+| Need | Protect income and health | Gaps in §8 closed; wills signed | 3 months |
+| Need | Fund Chloe's degree without debt | HK$2.57M fund ring-fenced | 2028–32 |
+| Want | 20–25% of investable assets in ESG | 25%, in SFC-listed funds | 2027 |
+| Want | Ryan financially independent | Crypto ≤ 20% of his wealth by 35 | By 2037 |
+| Wish | Legacy with purpose | Staged trusts; a scholarship | Ongoing |
 
 ---
 
@@ -226,7 +228,7 @@ The model clears the ≈HK$0.46M of mortgage still owed in 2037 from the portfol
 
 **ANNOT**
 
-- Left: **Figure 12 · Annual cost by destination, 2028/29 prices** `figures/education-costs-half.png`. Source: Statistics Canada, UBC, IRCC, NTU, Save the Student; team FX analysis.
+- Left: **Figure 12 · Every destination fits the budget, even after a currency shock** `figures/education-costs-half.png`. Source: Statistics Canada, IRCC, Save the Student, published university fee schedules; team FX analysis.
 - Right: **Figure 13 · Funding timeline**
 
   | When | Action |
@@ -253,6 +255,12 @@ cost 0.5–2 points a year of interest for a destination not yet chosen. If Chlo
 to the retirement portfolio. If a currency moves against the family on years 3–4, the shortfall is at most ≈HK$90K a
 year, paid from surplus. Chloe's choice is hers; the plan funds all four.
 
+**Contingencies.** Each extra point of fee inflation adds about HK$100K over the degree, and a one-year master's abroad
+about HK$0.4M in 2032; both are paid from the surplus, which by then no longer carries Chloe. If a parent dies or is
+disabled before 2032, the fund is already set aside, the wills earmark it for her education, and the new cover (§8)
+protects the rest of the plan. **Why not an education savings policy:** its surrender charges in the early years would
+lock up money needed from 2028, for a guaranteed return below what deposits pay today.
+
 ---
 
 ## Page 7 · §5 Investment and allocation
@@ -268,7 +276,8 @@ product suitability, risk management, monitoring and rebalancing.
 **ANNOT**
 
 - Left: **Figure 14 · From today's holdings to the target** `figures/allocation-half.png` (cash · bonds · equity,
-  today HK$2.5M · 1.4M · 3.9M → target 2.5M · 3.1M · 2.1M). Source: case; team allocation.
+  today HK$2.5M · 1.4M · 3.9M → target 2.5M · 3.1M · 2.1M). Line under it: *Parents' freely allocable money. Equity
+  falls because HK$3.57M is set aside for the reserve and Chloe's fees. Source: case; team allocation.*
 - Right: **Figure 15 · Five buckets** `[OWNER: Win]` confirm sizes
 
   | Bucket | HK$ | Held in |
@@ -306,7 +315,6 @@ provides the floor and the equity provides the growth.
 | Any holding drifts 5 points from target | Rebalance, using new money first |
 | 5-year Treasury ≥ 4.5% | Lock yields in the ladder (triggered Sep 2026) |
 | HK inflation > 3.5% for two quarters | Shorten bond maturities |
-| Chloe accepts an offer | Convert years 1–2 of fees that month |
 
 Line under the table: *In our test, 5-point bands did as well as rebalancing every year ({{rebal_bands_89}}); never rebalancing
 gave {{rebal_drift_89}}.*
@@ -349,7 +357,12 @@ access; fallback in Win's notes]`
 
 **PROSE**
 
-**Four layers, one standard.** Exclusions remove thermal coal, controversial weapons and tobacco; best-in-class funds
+**Strategic role.** ESG is not a separate bet. It replaces the global equity core and part of the bonds with
+like-for-like funds, so each parent's risk and expected return stay where §5 sets them. **Selection criteria:** on the
+SFC's list of ESG funds; index-tracking, so the method is published; low ongoing charges; daily dealing in Hong Kong
+dollars; and the two-rating test below.
+
+**Three layers, one standard.** Exclusions remove thermal coal, controversial weapons and tobacco; best-in-class funds
 hold the highest-rated companies in each sector; green bonds with checked use of proceeds add direct impact. Every fund must be on the SFC's list of ESG funds.
 **Why not higher:** the plan reaches the top of the family's range through choices that suit each person; going
 further would mean ESG in Adrian's Treasury ladder, which has no ESG equivalent, or more equity for Carmen, which the
@@ -392,6 +405,12 @@ allocation limits, implementation options. **Family goal 3:** Ryan's savings, in
 has fallen more than 70% in past cycles, so exposure is set by what each person can lose. All holdings sit with
 SFC-licensed platforms or in HKEX-listed ETFs; if a platform loses its licence, holdings move to an ETF within 30 days.
 Self-custody requires a documented key-recovery plan: without it, digital assets cannot be inherited.
+
+**Downside in numbers.** A 70% fall today would cost Ryan about HK$350K, more than a year's pay; at his 20% cap at 35
+it would cost 14% of his wealth. Carmen's 2% cap limits the same fall to about HK$29K. **Implementation, in order of
+preference:** HKEX-listed spot ETFs (bitcoin 3439, ether 3009), which need only a securities account; SFC-licensed
+platforms for direct holdings, in their regulated custody; self-custody only with the recovery plan. Lending, leverage
+and unlicensed exchanges are excluded.
 
 **Ryan's own plan.** Ryan earns HK$300K and saves 30% (HK$90K a year) after keeping three months' spending in cash.
 New savings go to a global equity portfolio, and none to crypto while he is above his glide path, so his crypto share
