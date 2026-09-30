@@ -55,6 +55,10 @@ still read 0 and every pre-existing input is unchanged.
 13. **Guardrails modelled** (`sim(..., guard=True)`): Guyton–Klinger on the discretionary 60% of spending from 2039,
    no cuts in the last 15 years, essentials never cut, cuts stop at half of discretionary (`Inputs`). New `Inputs`
    row: medical-tier review year (2047). `run_model.py` §10 reports what happens when the plan falls short.
+14. **Guardrail trigger excludes medical premiums** (`GK_MED = False`). The planned rise in premiums is budgeted,
+   not a market signal; letting it trigger cuts trimmed spending in good markets too (typical family HK$744K vs
+   HK$749K now; Flexi-for-life case far worse). Premiums are still paid in full. §10 also prints how the family
+   lives: typical and worst-case spending, including the lowest year in the worst 5% of paths to Carmen's 95.
 11. **`make_charts.py`** (new): seven charts to `../figures/` at 300 dpi, plus `figure-data.md` with every
    number behind them. Needs `matplotlib`.
 

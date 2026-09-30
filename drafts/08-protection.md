@@ -5,7 +5,7 @@
 > 31 Aug 2026). Budget 1.25 pages: ~350 words + Figure 13. Two decisions:
 > 1. **CI sizing.** At HK$2.75M each, CI is more than half of the new premiums and rises steeply with age (≈HK$76K in year 1,
 >    ≈HK$130K by 2036). With disability cover replacing income, HK$1.5M each covers treatment gaps and a year of
->    spending, saves ≈HK$44K a year and adds 3 points to the retirement success rate (80% → 83%). The model uses
+>    spending, saves ≈HK$44K a year and adds 2 points to the retirement success rate (85% → 87%). The model uses
 >    your 2.75M until you decide.
 > 2. **VHIS now.** The HK$14.5K for both parents is my estimate for Flexi plans with a deductible matched to the
 >    group cover. Get two quotes. The case says the HK$82K already includes "medical insurance premiums for Adrian

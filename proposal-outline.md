@@ -216,13 +216,13 @@ number is also in `figures/figure-data.md`.
 | `{{surplus_after_protection}}` | Surplus once the new cover is bought | Outputs: Annual surplus | 559,230 (year-1 premiums ≈135K; average 159K) |
 | `{{reserve_months}}` | Liquid assets ÷ monthly spending | Outputs: Emergency reserve | 30.5 |
 | `{{savings_rate}}` | Surplus ÷ after-tax income | 718,230 ÷ 1,738,230 (Outputs surplus; Tax tab) | 41.3% |
-| `{{ladder_1_89}}` | Portfolio alone, premiums on top | run_model §5, row 1 | 26% (11% to 95) |
-| `{{ladder_5_89}}` | All four decisions | run_model §5, row 5 | 80% (58% to 95) |
+| `{{ladder_1_89}}` | Portfolio alone, premiums on top | run_model §5, row 1 | 32% (15% to 95) |
+| `{{ladder_5_89}}` | All four decisions | run_model §5, row 5 | 85% (64% to 95) |
 | `{{annuity_pp}}` | Points added by the annuity | run_model §5, row 2 − row 1 | 0 alone; −5 if removed from the full plan |
 | `{{biz_pp}}` | Points added by the business sale | run_model §5, row 4 − row 3 | +19 |
-| `{{rmp_timing_pp}}` | Reverse mortgage from 2037 vs 2045 | figure-data: tornado | 10 (80% vs 70%) |
-| `{{std_vs_flexi_pp}}` | Standard plan vs Flexi | run_model §5, alternatives | +18 (98% vs 80%) |
-| `{{mix1_89}}` etc. | Mix comparison, base case, annuitised | run_model §3 | 0% / 26% / 35%: mix 3 leads in the base case; recheck with the decisions on |
+| `{{rmp_timing_pp}}` | Reverse mortgage from 2037 vs 2045 | figure-data: tornado | 8 (85% vs 77%) |
+| `{{std_vs_flexi_pp}}` | Standard plan from 75 vs Flexi | run_model §5, alternatives | +13 (98% vs 85%) |
+| `{{mix1_89}}` etc. | Mix comparison, base case, annuitised | run_model §3 | 0% / 33% / 40%: mix 3 leads in the base case; recheck with the decisions on |
 | `{{edu_total}}` | Overseas education, nominal | Outputs: Total education cost | 2,851,148 |
 | `{{protection_cost}}` | New premiums, year 1 | `drafts/08-protection.md`, Figure 13 | ≈135,000 |
 | `{{esg_target}}` | ESG share at target | Win, after decision 5 | pending |

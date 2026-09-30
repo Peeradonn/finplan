@@ -192,9 +192,9 @@ family files that way `[CHECK]`. The reserve falls to twelve months (≈HK$1.0M)
 
 Figures on these pages: **6** decision ladder (`decision-ladder-half.png`) · **7** when each decision is taken (table) ·
 **8** medical premiums (`medical-premiums-half.png`) · **9** portfolio fan chart (`fan-chart-half.png`) ·
-**10** income floor (table) · **11** two safety valves (table: fixed spending 85% → tier review 98% →
-guardrails 100%, spending 95% of target) · subsection *If the money still runs short* (run-out age, income that
-continues, pre-agreed steps). Figures after 11 renumber at assembly.
+**10** income floor (table) · **11** tier review and guardrails (table: fixed spending 85% → tier review 98% →
+guardrails 100%; typical spending HK$780K → HK$749K; worst-5% lowest year HK$234K → HK$556K) · subsection
+*What the guardrails cost, and what they buy* (≈HK$31K a year for the typical family; pre-agreed steps). Figures after 11 renumber at assembly.
 
 `[CHECK]` Add a small "annuity bought" label at 2037 on Figure 9, where the median dips.
 

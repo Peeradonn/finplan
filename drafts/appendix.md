@@ -37,7 +37,7 @@ distributions and records whether the parents' portfolio stays above zero to Car
 register ranks risks by severity × occurrence × detection (failure-mode analysis).
 
 **Limits.** Returns are normal and uncorrelated, which understates crash risk; inflation is fixed within each
-scenario; spending does not adjust to markets, so the guardrails in our plan would *raise* the results shown; the
+scenario; the main results hold spending fixed; the guardrails are modelled separately (§3); the
 home and business enter only as the decisions in Figure 6. Results compare decisions; they are not forecasts.
 
 ### A3. Main sources

@@ -133,6 +133,7 @@ BASE = dict(med=MED_BASE, surv=SURV if SURV_S else 1.0, biz=BIZ if BIZ_S else 0,
 
 # ---------- Monte Carlo ----------
 FLOOR_SHARE = g('Retirement income floor %')      # essentials: never cut by the guardrails
+GK_MED = False                                    # set True to let medical premiums trigger cuts
 GK_MIN = g('Guardrails: lowest discretionary share')   # discretionary spending never cut below this
 
 def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=None, cpi=None,
@@ -150,6 +151,7 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
     track = np.zeros((end - BY, n)) if paths else None
     d = np.ones(n); wr0 = None; last_r = np.zeros(n)
     runout = np.zeros(n, int); d_min = np.ones(n); lvl_sum = np.zeros(n); lvl_n = 0
+    lvl_hist, lvl_years = [], []
     for i in range(end - BY):
         y = BY + i
         r = w_eq*rng.normal(r_eq, S_EQ, n) + (1-w_eq)*rng.normal(r_bd, s_bd, n)
@@ -163,7 +165,9 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
             income = (ANN_INC if annuity else 0) + (rmp if rmp and y >= RMP_Y else 0)                      + (CARMEN_NET*(1+WAGE)**i if y < RETC else 0)
             if guard and y >= RETC:                          # rules start with full retirement (Carmen at 62)
                 d = np.where(last_r < 0, d/(1+cpi), d)     # no inflation rise after a negative year
-                net = target*(FLOOR_SHARE + (1-FLOOR_SHARE)*d) + med.get(y, 0) - income
+                # trigger on lifestyle spending only: the planned rise in medical premiums is budgeted, not a
+                # market signal, so it must not cause cuts (premiums are still paid in full below)
+                net = target*(FLOOR_SHARE + (1-FLOOR_SHARE)*d) - income + (med.get(y, 0) if GK_MED else 0)
                 wr = np.where(pot > 0, net/np.maximum(pot, 1), np.inf)
                 if wr0 is None: wr0 = wr.copy()            # starting withdrawal rate, per path, in 2039
                 cut_ok = y <= C89 - 15                      # Guyton-Klinger: no cuts in the last 15 years
@@ -176,6 +180,9 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
             else:
                 spend = target
             pot += income - spend
+            # share of target actually spent: when the pot is empty, only guaranteed income and what was left
+            short = np.maximum(-pot, 0)
+            lvl_hist.append(np.maximum(spend - short, 0) / target); lvl_years.append(y)
         if biz and y == BIZ_Y: pot += biz
         pot += inflows.get(y, 0)
         pot -= med.get(y, 0)
@@ -186,7 +193,8 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
     if detail:
         return dict(success=alive.mean(), runout=runout, alive=alive, d_min=d_min, end_pot=pot,
                     level=(lvl_sum/lvl_n if lvl_n else np.ones(n)),
-                    low=FLOOR_SHARE + (1-FLOOR_SHARE)*d_min)
+                    low=FLOOR_SHARE + (1-FLOOR_SHARE)*d_min,
+                    levels=np.array(lvl_hist), level_years=np.array(lvl_years))
     out = (alive.mean(), worst.mean(), np.percentile(pot, 50))
     return out + (track,) if paths else out
 
@@ -375,6 +383,17 @@ def main():
         else:
             extra = f"{'100%':>11}{'-':>11}"
         print(f"  {lbl:<52}{a['success']:>7.0%}{b['success']:>7.0%}{extra}")
+    print("  How the family lives (today's money; target = HK$780K):")
+    print(f"  {'':<40}{'avg typical':>12}{'avg worst10':>12}{'low typical':>12}{'low worst10':>12}{'yrs<90% typ':>12}{'low w5%,95':>12}")
+    for lbl, kw in [("Fixed spending, Flexi for life", dict(guard=False, med=FLEXI)),
+                    (f"Fixed spending, Standard from {SWITCH_Y}", dict(guard=False, med=SWITCH)),
+                    ("Guardrails, Flexi for life", dict(guard=True, med=FLEXI)),
+                    (f"Guardrails, Standard from {SWITCH_Y}", dict(guard=True, med=SWITCH))]:
+        L = sim(*MIX2, C89, detail=True, **{**full, **kw})["levels"]
+        avg, low = L.mean(0)*SPEND/1e3, L.min(0)*SPEND/1e3
+        L95 = sim(*MIX2, C95, detail=True, **{**full, **kw})["levels"]
+        print(f"  {lbl:<40}{np.median(avg):>11.0f}K{np.percentile(avg,10):>11.0f}K{np.median(low):>11.0f}K"
+              f"{np.percentile(low,10):>11.0f}K{np.median((L<0.9).mean(0)):>12.0%}{np.percentile(L95.min(0)*SPEND/1e3,5):>11.0f}K")
     D = sim(*MIX2, C89, detail=True, **full); fail = ~D["alive"]
     if fail.any():
         ages = D["runout"][fail] - 1977

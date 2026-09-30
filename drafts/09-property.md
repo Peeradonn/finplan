@@ -19,14 +19,14 @@ is tax-deductible (≈HK$10.7K a year). Repaying it early would lock liquidity i
 and switch only if the saving clears the fees.
 
 **Keeping the home untouched is the one option that fails.** With the MPF annuity, lower spending after the first
-death and the business sale in place, holding the home as a pure legacy asset leaves a **54%** chance the money
+death and the business sale in place, holding the home as a pure legacy asset leaves a **62%** chance the money
 lasts to Carmen's 89 (Figure 14b). Releasing its value is what makes the retirement secure:
 
 | Option at 2037 | Money lasts to Carmen's 89 | Left to heirs at 89 (today's money) |
 |---|---|---|
-| Keep the home, no release | 54% | HK$8.5M, almost all of it the flat |
-| **Reverse mortgage**, HK$230K a year for life | **80%** | HK$7.2M |
-| **Downsize** to a HK$7M flat (releases ≈HK$4.5M) | **81%** | HK$11.3M |
+| Keep the home, no release | 62% | HK$10.0M, most of it the flat |
+| **Reverse mortgage**, HK$230K a year for life | **85%** | HK$8.6M |
+| **Downsize** to a HK$7M flat (releases ≈HK$4.5M) | **85%** | HK$12.8M |
 
 *Source: Team analysis; HKMC Reverse Mortgage Programme terms; model mix 2, 10,000 simulations.*
 
@@ -40,4 +40,4 @@ counts towards the payout.
 
 **C) The decision belongs to the family at 65, with the numbers in front of them.** Which one they choose depends
 on whether staying in Tai Kok Tsui matters more than what they leave. Either way, **starting in 2037 matters**:
-delaying the reverse mortgage to 2045 costs 10 points of retirement security (§11).
+delaying the reverse mortgage to 2045 costs 8 points of retirement security (§11).
