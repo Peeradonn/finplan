@@ -115,9 +115,9 @@ To read them filled in, run `python document/fill.py document/manuscript.md` and
 **Main text**
 
 > A HK$24.4M balance sheet, over 40% of after-tax income saved and only 10% leverage: the Wongs have done the hard
-> part. What is new here: a decision ladder that prices each choice in points of security, an income floor built from
-> the MPF and the home rather than from more risk, and spending rules agreed now that hold the plan at {{guardswitch_89}} for about
-> {{guard_cost}} a year.
+> part. What is new here: a decision ladder that shows how much each choice adds to the chance the money lasts; an
+> income floor built from the MPF and the home rather than from more investment risk; and spending rules, agreed now,
+> under which the money lasts in {{guardswitch_89}} of our simulations, for about {{guard_cost}} a year of flexible spending.
 
 **Protect what has been built.** Close the disability and critical-illness gaps, and sign wills, a guardian nomination
 and powers of attorney this quarter (§8, §9).
@@ -157,13 +157,13 @@ the family's 20–25% target, in SFC-listed funds only; Ryan keeps his digital a
 
   | Measure | Wongs | Verdict |
   |---|---|---|
-  | Savings, after tax | 41% | Strong |
-  | Reserve, months | 30.5 | Excess |
+  | Savings rate | 41% | Strong |
+  | Cash reserve | 30.5 mo. | Too high |
   | Debt to assets | 10% | Low |
-  | Mortgage to pay | 8.5% | Easy |
-  | Home and business | 61% | High |
+  | Mortgage cost | 8.5% | Low |
+  | In home, business | 61% | High |
 
-  Line under it: *Benchmarks: reserve 6–12 months; debt under 50% of assets; mortgage under 30% of pay.*
+  Line under it: *Savings: share of after-tax income. Mortgage cost: share of gross income. Benchmarks: reserve 6–12 months; debt under 50% of assets; mortgage under 30% of income.*
 
 **PROSE**
 
@@ -183,7 +183,7 @@ saves a further HK$18K `[CHECK: filing status]`. The reserve falls to twelve mon
 
 | Priority | Goal | Measure of success | When |
 |---|---|---|---|
-| Need | Retire at 65 and 62 on HK$780K | Lasts to Carmen's 89: {{ladder_5_89}} | 2037, 2039 |
+| Need | Retire at 65 and 62 on HK$780K | Money lasts to Carmen's 89 in {{ladder_5_89}} of markets | 2037, 2039 |
 | Need | Protect income and health | Gaps in §8 closed; wills signed | 3 months |
 | Need | Fund Chloe's degree without debt | HK$2.57M fund ring-fenced | 2028–32 |
 | Want | 20–25% of investable assets in ESG | 25%, in SFC-listed funds | 2027 |
@@ -215,7 +215,7 @@ Paragraphs, in order:
   reaches {{eq7_89}}; without the business sale {{biz_not_sold_89}}.
 - *The annuity is insurance, not a return:* {{step_annuity}} point; worst 1% {{ann_w1_with}} vs {{ann_w1_without}}; cost {{ann_typ_cost}} a year and {{ann_legacy_cost}}.
 - *Saving to 2037:* about {{surplus_invest}} a year invested after the new cover; HK$60K each to tax-deductible voluntary MPF;
-  the rest to the underweight sleeve; in 80% of markets the portfolio holds {{port2037_p10}} to {{port2037_p90}} in today's money at 2037.
+  the rest to whichever holding is below its target share; in 80% of markets the portfolio holds {{port2037_p10}} to {{port2037_p90}} in today's money at 2037.
 - *Medical premiums:* buy now; review the tier at 75 `[CHECK: that the insurer allows a move to its Standard plan
   without new underwriting]`; the public floor.
 - *An income floor:* {{annuity_adrian}} for Adrian until his death, {{annuity_carmen}} for Carmen for life, plus the reverse mortgage:
@@ -265,11 +265,11 @@ HK$150–250K; tuition itself is HK$49,500 in 2027/28, set by the government.
 **DEFEND — Deposits, not equities, and HK dollars until an offer.** Money needed in two to six years cannot wait out
 a market fall, so the fund stays in deposits, a money-market fund and short bonds. Buying foreign currency early would
 cost 0.5–2 points a year of interest for a destination not yet chosen. If Chloe studies locally, about HK$1.5M returns
-to the retirement portfolio. If a currency moves against the family on years 3–4, the shortfall is at most ≈HK$90K a
+to the retirement portfolio. If a currency moves against the family for years 3–4, the shortfall is at most ≈HK$90K a
 year, paid from surplus. Chloe's choice is hers; the plan funds all four.
 
 **Contingencies.** Each extra point of fee inflation adds about HK$100K over the degree, and a one-year master's abroad
-about HK$0.4M in 2032; both are paid from the surplus, which by then no longer carries Chloe. If a parent dies or is
+about HK$0.4M in 2032; both are paid from the surplus, which by then no longer pays for Chloe. If a parent dies or is
 disabled before 2032, the fund is already set aside, the wills earmark it for her education, and the new cover (§8)
 protects the rest of the plan. **Why not an education savings policy:** its surrender charges in the early years would
 lock up money needed from 2028, for a guaranteed return below what deposits pay today.
@@ -289,7 +289,7 @@ product suitability, risk management, monitoring and rebalancing.
 **ANNOT**
 
 - Left: **Figure 14 · From today's holdings to the target** `figures/allocation-half.png` (cash · bonds · equity,
-  today HK$2.5M · 1.4M · 3.9M → target 2.5M · 3.1M · 2.1M). Line under it: *Parents' freely allocable money. Equity
+  today HK$2.5M · 1.4M · 3.9M → target 2.5M · 3.1M · 2.1M). Line under it: *The parents' investable money outside the MPF, the home and the business. Equity
   falls because HK$3.57M is set aside for the reserve and Chloe's fees. Source: case; team allocation.*
 - Right: **Figure 15 · Five buckets** `[OWNER: Win]` confirm sizes
 
@@ -310,7 +310,7 @@ legacy but not security, so her share stays within the family's objective of mod
 holding is a low-cost index fund or ETF, SFC-authorised or HKEX-listed. Both parents' global equity core is the
 BOC-Prudential MSCI World ESG Index Fund, which picks the better-rated companies within each sector and so stays close
 to the world market. The family's home, business and incomes already depend on
-Hong Kong, so the equity core is global; a small Hong Kong sleeve, held in an HSI ESG index ETF (3039), is kept for
+Hong Kong, so the equity core is global; a small Hong Kong holding, in an HSI ESG index ETF (3039), is kept for
 its tax-free dividends and low cost. The bond ETFs are Irish-domiciled, which avoids US estate tax. Inside the MPF,
 each parent holds half in the scheme's ESG or global equity index fund and half in its bond fund until the annuity is
 bought, so the balance does not fall sharply just before it is converted.
@@ -329,8 +329,8 @@ provides the floor and the equity provides the growth.
 | 5-year Treasury ≥ 4.5% | Lock yields in the ladder (triggered Sep 2026) |
 | HK inflation > 3.5% for two quarters | Shorten bond maturities |
 
-Line under the table: *In our test, 5-point bands did as well as rebalancing every year ({{rebal_bands_89}}); never rebalancing
-gave {{rebal_drift_89}}.*
+Line under the table: *Money lasts to Carmen's 89: 5-point bands {{rebal_bands_89}}, yearly rebalancing {{rebal_target_89}}, never
+rebalancing {{rebal_drift_89}}.*
 
 ---
 
@@ -458,7 +458,7 @@ business continuity, family emergency plan.
 - Finding-heading: **The largest gap is income, not death: neither parent could replace their salary if disabled.**
 - Sidebar: **HK$100K** in year 1 closes every gap: 14% of the surplus, paid only until retirement
 
-**Intro.** Of fifteen ways the plan could fail, ranked by severity, likelihood and warning time (Appendix A2),
+**Intro.** Of fifteen ways the plan could fail, ranked by severity, likelihood and warning time,
 disability ranks first for both parents: the gap the family itself reported. The existing whole-life policies already
 meet most of the life need. Premiums average {{premiums_avg}} a year to retirement as they rise with age; wills and powers of
 attorney cost under HK$25K once (§9).
@@ -583,7 +583,7 @@ mission to Chloe's interest in design; donations are tax-deductible.
 |---|---|---|---|
 | ***Next 12 months*** | | | |
 | Month 1 | Wills, guardian, powers of attorney; land search | Parents | < HK$25K once |
-| Month 1 | Joint account; idle cash to deposits; clear the card | Parents | +≈HK$39K a year |
+| Month 1 | Joint account; idle cash to deposits; clear the card | Parents | ≈HK$39K a year |
 | Months 1–3 | Disability, life, CI and VHIS cover; Ryan's cover | Family | ≈HK$100K a year |
 | Months 1–3 | Buy-sell agreement; key-person cover | Carmen | Company pays |
 | Months 1–6 | Three portfolios; policy signed; voluntary MPF | Family | Fees ≈HK$59K lower |
@@ -593,11 +593,11 @@ mission to Chloe's interest in design; donations are tax-deductible.
 | Every year | Rebalance by bands; review mortgage, cover, ESG list | Adviser | — |
 | ***Into retirement and legacy*** | | | |
 | 2034–36 | Adrian to 35% equity; business managers in place | Parents | — |
-| 2037 | Clear the mortgage; Adrian's annuity; release the home | Parents | Home: {{step_home}} points |
-| 2039 | Carmen's annuity; business sold; guardrails begin | Carmen | Sale: {{step_business}} points |
+| 2037 | Clear the mortgage; Adrian's annuity; release the home | Parents | {{step_home}} points |
+| 2039 | Carmen's annuity; business sold; guardrails begin | Carmen | {{step_business}} points |
 | 2047 | Adrian 75: review the medical tier | Parents | {{ladder_5_89}} → {{switch_89}} |
 
-Source line: *Effect: chance the money lasts to Carmen's 89. Full reviews follow a death, a disability, a business
+Source line: *Effect: the saving a year, or the change in the chance the money lasts to Carmen's 89. Full reviews follow a death, a disability, a business
 sale, a 20% market fall or a 1.5-point rate move.*
 
 ---
@@ -618,29 +618,29 @@ TABLE (Figure 27 register, compliance in its source line). The sensitivity chart
   fixed spending vs the recommended plan with the tier review and guardrails).
 - Right: **Figure 26 · Likelihood and impact** (3 × 3 matrix). High impact: P1 (low likelihood) · F1 F3 F6 (medium) ·
   F2 (high). Medium impact: E1 P2 (low) · F4 F5 B2 (medium). Low impact: R1 R2 E2 (medium) · B1 (high).
-  Line under it: *With the rules, stress costs spending, not solvency: {{rec_lowret_typical}} a year in a low-return decade.*
+  Line under it: *In a low-return decade the rules trim typical spending to {{rec_lowret_typical}} rather than let the money run out.*
 
 **TABLE · Figure 27 · Every risk has a measured impact and a named defence**
 
-| | Risk | Fixed | Plan | Defence |
+| | Risk | Fixed spending | Our rules | Defence |
 |---|---|---|---|---|
 | **F1** | Inflation 3.5%, not 2.5% | {{cpi_stress_89}} | {{rec_cpi_89}} | Guardrails; shorter bonds |
 | **F2** | Medical costs 8.5% a year | {{med_stress_89}} | {{rec_med_89}} | Tier review at 75 |
-| **F3** | A low-return decade | {{stressA_89}} | {{rec_lowret_89}} | Guardrails; Treasury ladder 2037–41 |
+| **F3** | A low-return decade | {{stressA_89}} | {{rec_lowret_89}} | Guardrails; Treasury ladder |
 | **F4** | Business not sold | {{biz_not_sold_89}} | {{rec_biz_89}} | Buy-sell agreement now |
-| **F5** | Money must last to 95 | {{ladder_5_95}} | {{guardswitch_95}} | Annuities pay for life |
-| **F6** | Portfolio runs down | {{fixflex_89}} | {{guardswitch_89}} | Annual review; pre-agreed steps (§3) |
-| **B2** | Selling in a crash; drift | {{rebal_drift_89}} | — | 5-point rebalancing bands |
-| **P1** | Disability before retirement | Top-ranked | | Disability income cover (§8) |
-| **P2** | Irreversible products | Legacy | | Annuitise only the MPF; downsizing open |
-| **B1** | Four risk appetites | Conflict | | One portfolio per person |
-| **R1** | Crypto rules or licence change | Ryan | | Regulated channels only |
-| **R2** | Greenwashing | Values | | Two ratings; replace in 3 months |
-| **E1** | Suitability, joint clients | Fit | | One risk profile per person |
-| **E2** | Model risk | Confidence | | Compare decisions; not forecasts |
+| **F5** | Carmen lives to 95 | {{ladder_5_95}} | {{guardswitch_95}} | Annuities pay for life |
+| **F6** | Money runs out, base case | {{fixflex_89}} | {{guardswitch_89}} | Annual review; agreed steps |
+| **B2** | Selling in a crash | {{rebal_drift_89}} | — | 5-point rebalancing bands |
+| **P1** | Disability before retirement | Highest ranked | | Disability income cover (§8) |
+| **P2** | Irreversible choices | Smaller legacy | | Annuitise only the MPF |
+| **B1** | Four risk appetites | Family conflict | | One portfolio per person |
+| **R1** | Crypto rules or licences | Ryan's holdings | | Regulated channels only |
+| **R2** | Greenwashing | ESG goal missed | | Two ratings; replace in 3 months |
+| **E1** | Suitability, joint clients | Unsuitable advice | | One risk profile per person |
+| **E2** | Model risk | False precision | | Compare decisions; not forecasts |
 
-Source line: *Fixed = fixed spending; Plan = Standard plan from Adrian's 75 plus guardrails; F5 to Carmen's 95, others
-to 89. Every product is SFC-authorised, HKEX-listed or HKMC-issued; we earn no commission.*
+Source line: *Chance the money lasts to Carmen's 89 (F5: 95). Our rules: tier review at 75 plus guardrails (§3). All
+products SFC-authorised, HKEX-listed or HKMC-issued; we earn no commission.*
 
 Other stress numbers for the text if space allows: typical spending under the plan {{rec_cpi_typical}} (inflation),
 {{rec_stressB_typical}} and {{rec_stressB_89}} (inflation + medical together). Fits with ≈11mm to spare (test render 30 Sep).
@@ -696,19 +696,19 @@ Each member answers three questions in one paragraph:
 
 | Assumption | Base | Stress | Source |
 |---|---|---|---|
-| CPI | 2.5% | 3.5% | HK 2006–25; Fed |
+| CPI | 2.5% | 3.5% | HK average 2006–25 |
 | Medical costs | 10% → 6% by 2036, plus VHIS age curve | 8.5% flat | Getzen; WTW |
 | Equities | 6.0%, 17% volatility | 4.0% | Equity premium |
 | Bonds, ladder | 4.0% | 2.5% | US 5-year 5.0% |
 | Cash | 3.0% → 2.5% by 2031 | 0.5% | HIBOR; Fed |
-| Model mix | 40/60, whole pool (plan: 40%, 60%) | — | Conservative |
+| Model mix | 40% equity for all the parents' money | — | Plan holds ≈50% |
 | MPF annuities | Single life: {{annuity_adrian}} Adrian 2037, {{annuity_carmen}} Carmen 2039 (premiums HK$2.31M, HK$1.81M) | — | HKMC rates |
 | Mortgage | ≈HK$0.46M still owed, cleared in 2037 | — | Case |
 | Reverse mortgage | HK$230K a year for life from 2037 | From 2045 | HKMC |
 | New cover | ≈HK$100K year 1; {{premiums_avg}} average; critical illness HK$1.5M each | — | Rate cards |
 | Medical tier | Standard plan from 2047, same insurer `[CHECK: no new underwriting]` | Flexi | Insurer terms |
 | Guardrails | From 2039: ±10% if withdrawals move 20%; floor 70% (essentials 40% never cut; the rest never below half; no cuts in the last 15 years) | Fixed | Guyton–Klinger |
-| Survivor | 70% of HK$780K after Adrian's 84 | 100% | Convention |
+| After a death | 70% of HK$780K after Adrian's 84 | 100% | Convention |
 | Life expectancy | Adrian 84, Carmen 89 | Both 95 | Case |
 
 (The printed table drops the premiums and the bracketed guardrail detail to fit; both are in §3 and §8.)
@@ -719,7 +719,7 @@ HK$181,770), MPF, spending, education, medical premiums and the portfolio for 20
 fixed within each scenario; each mix is held constant. Results compare decisions; they are not forecasts.
 
 **A3 · Sources · A4 · Use of AI tools.** Case study (SRFP&S, 2026) · Inland Revenue Ordinance, Budget 2026/27 · HKMC ·
-Health Bureau VHIS data · WTW, MMB, Aon 2026 · SOA Getzen model · Federal Reserve SEP · HKAB · ECB · fee schedules ·
+Health Bureau VHIS data · WTW, Mercer Marsh Benefits, Aon 2026 · SOA Getzen model · Federal Reserve SEP · HKAB · ECB · fee schedules ·
 insurer rate cards · SFC list of ESG funds · Berg, Kölbel and Rigobon (2022) · Guyton and Klinger (2006) · cover
 photograph: Peter Steinhauer, *Cocoons*. AI tools were used to check calculations, review the model code and edit
 text; the analysis and recommendations are the team's own.

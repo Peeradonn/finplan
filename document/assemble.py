@@ -1,6 +1,6 @@
 """
 Assemble the 15-page proposal from the page sources, in order.
-Usage:  python assemble.py          -> proposal.html (then: python render.py proposal.html)
+Usage:  python assemble.py          -> proposal.html, numbers filled in (then: python render.py proposal.html)
 
 Sources (edit these, never proposal.html):
   template-v2.html      cover (1), executive summary (2)
@@ -44,6 +44,9 @@ html = (
     '<link rel="stylesheet" href="styles-v2.css">\n<style>\n  ' + "\n  ".join(rules) + "\n</style>\n</head>\n<body>\n\n"
     + "\n\n".join(order) + "\n\n" + script + "\n</body>\n</html>\n"
 )
+# write the model's numbers in, so proposal.html reads correctly when opened directly in a browser
+import fill
+html = fill.fill_text(html)
 with open(os.path.join(HERE, "proposal.html"), "w", encoding="utf-8") as f:
     f.write(html)
-print(f"proposal.html: {len(order)} pages, {len(rules)} page-local style rules")
+print(f"proposal.html: {len(order)} pages, {len(rules)} page-local style rules, numbers filled from the model")

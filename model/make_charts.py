@@ -107,7 +107,7 @@ for arr, c in ((fx, INK), (st, INK2)):
 ax.axvline(M.ALE, color=AXIS, lw=0.8)
 ax.text(M.ALE + 0.6, max(fx)*0.92, "Adrian's life expectancy (84):\nhis premium stops", ha="left", va="top",
         fontsize=9, color=INK2)
-ax.set_xticks([2037, 2045, 2055, 2066, 2072], ["2037\nC 60", "2045\nC 68", "2055\nC 78", "2066\nC 89", "2072\nC 95"])
+ax.set_xticks([2037, 2045, 2055, 2066, 2072], ["2037\nC 60", "2045\nC 68", "2055\nC 78", "2066\nCarmen 89", "2072\nC 95"])
 ax.set_ylabel("Both parents, HK$K a year\n(today's money)"); ax.set_ylim(0, None); ax.set_xlim(yrs[0], yrs[-1] + 4)
 tidy(ax, "y"); ax.legend(loc="upper left", fontsize=9)
 save(fig, "medical-premiums.png")
@@ -262,19 +262,19 @@ with plt.rc_context({"font.size": 10.5}):
         ax.text(yrs[-1] + 0.8, arr[-1], f"{arr[-1]:.0f}K", va="center", fontsize=10, color=INK)
     ax.axvline(M.ALE, color=AXIS, lw=0.8)
     ax.text(M.ALE + 0.6, max(fx)*0.97, "Adrian 84:\nhis premium stops", va="top", fontsize=8.5, color=INK2)
-    ax.set_xticks([2037, 2050, 2066], ["2037", "2050", "2066\nC 89"])
+    ax.set_xticks([2037, 2050, 2066], ["2037", "2050", "2066\nCarmen 89"])
     ax.set_ylabel("HK$K a year, today's money"); ax.set_ylim(0, None); ax.set_xlim(yrs[0], yrs[-1] + 6)
     tidy(ax, "y"); ax.legend(loc="upper left", handlelength=1.2)
     save(fig, "medical-premiums-half.png")
 
     # 2h fan chart, same size as the medical chart so the two can sit side by side
     fig, ax = plt.subplots(figsize=(HW, 2.5))
-    ax.fill_between(years, q[10], q[90], color=SEQ["100"], lw=0, label="10th–90th pct")
-    ax.fill_between(years, q[25], q[75], color=SEQ["200"], lw=0, label="25th–75th pct")
+    ax.fill_between(years, q[10], q[90], color=SEQ["100"], lw=0, label="Middle 80%")
+    ax.fill_between(years, q[25], q[75], color=SEQ["200"], lw=0, label="Middle 50%")
     ax.plot(years, q[50], color=ACC, lw=1.8, solid_capstyle="round", label="Median")
     ax.axvline(M.RETA, color=AXIS, lw=0.8)
     ax.text(M.RETA - 0.6, 0.6, "Annuity\nbought,\nmortgage\ncleared", ha="right", va="bottom", fontsize=9.5, color=INK2)
-    ax.set_xticks([2030, 2037, 2050, 2066], ["2030", "2037", "2050", "2066\nC 89"])
+    ax.set_xticks([2030, 2037, 2050, 2066], ["2030", "2037", "2050", "2066\nCarmen 89"])
     ax.set_xlim(years[0], C89 + 1); ax.set_ylim(0, None)
     ax.set_ylabel("HK$M, today's money")
     tidy(ax, "y"); ax.legend(loc="upper right", handlelength=1.2, fontsize=9)
@@ -374,7 +374,7 @@ with plt.rc_context({"font.size": 10.5}):
     fig, ax = plt.subplots(figsize=(HW, 2.6))
     x = np.arange(len(SC)); w_ = 0.36
     ax.bar(x - w_/2 - 0.02, s89, w_, color=ACC, label="Fixed spending")
-    ax.bar(x + w_/2 + 0.02, r89, w_, color=ALT, label="Recommended plan")
+    ax.bar(x + w_/2 + 0.02, r89, w_, color=ALT, label="Our rules")
     for xi, a_, b_ in zip(x, s89, r89):
         ax.text(xi - w_/2 - 0.02, a_ + 0.02, pct(a_), ha="center", fontsize=9.5, color=INK)
         ax.text(xi + w_/2 + 0.02, b_ + 0.02, pct(b_), ha="center", fontsize=9.5, color=INK)
