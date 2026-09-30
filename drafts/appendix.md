@@ -1,3 +1,7 @@
+> **Source material only (30 Sep 2026).** The proposal text now lives in `document/manuscript.md`, with model
+> numbers filled from `figures/numbers.json`. Decisions since this draft: critical illness HK$1.5M each; ESG base
+> HK$10.47M; Carmen's portfolio 60% equity. Edit the manuscript, not this file.
+
 # Appendix — draft (Fahtai)
 
 > **Notes for Fahtai (delete before layout).** One page. A1 condenses Pete's lock table (`Pete/working-brief.md` §4)

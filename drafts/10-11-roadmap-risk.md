@@ -1,3 +1,7 @@
+> **Source material only (30 Sep 2026).** The proposal text now lives in `document/manuscript.md`, with model
+> numbers filled from `figures/numbers.json`. Decisions since this draft: critical illness HK$1.5M each; ESG base
+> HK$10.47M; Carmen's portfolio 60% equity. Edit the manuscript, not this file.
+
 # §10 Implementation Roadmap · §11 Risk and Compliance — draft
 
 > **Notes for Lookbua (delete before layout).** 1.25 pages for both. §11 merges your risk register with Win's

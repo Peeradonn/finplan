@@ -15,6 +15,17 @@ BUILD = os.path.join(HERE, "build")
 os.makedirs(BUILD, exist_ok=True)
 PDF = os.path.join(BUILD, os.path.splitext(os.path.basename(SRC))[0] + ".pdf")
 
+# fill {{key}} placeholders from the model's numbers into a sibling file, so relative paths still resolve
+import fill
+with open(SRC, encoding="utf-8") as f:
+    _html = f.read()
+if fill.PATTERN.search(_html):
+    FILLED = os.path.join(HERE, "_filled_" + os.path.basename(SRC))
+    with open(FILLED, "w", encoding="utf-8") as f:
+        f.write(fill.fill_text(_html))
+    print(f"filled {len(fill.PATTERN.findall(_html))} model numbers from figures/numbers.json")
+    SRC = FILLED
+
 BROWSERS = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
             r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
 browser = next((b for b in BROWSERS if os.path.exists(b)), None) or sys.exit("No Chrome or Edge found.")

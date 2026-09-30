@@ -1,3 +1,7 @@
+> **Source material only (30 Sep 2026).** The proposal text now lives in `document/manuscript.md`, with model
+> numbers filled from `figures/numbers.json`. Decisions since this draft: critical illness HK$1.5M each; ESG base
+> HK$10.47M; Carmen's portfolio 60% equity. Edit the manuscript, not this file.
+
 # §9 Property (Lookbua's half) — draft
 
 > **Notes for Lookbua (delete before layout).** ~0.6 page, then Pete's succession half follows. Numbers from

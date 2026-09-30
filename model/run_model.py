@@ -294,6 +294,67 @@ def sim_rules(policy, end, w_t=0.40, n=10_000, seed=42):
         alive &= tot > 0
     return alive.mean(), worst.mean(), np.percentile(eq + bd, 50)
 
+
+# ---------- numbers quoted in the proposal (written to figures/numbers.json by make_charts.py) ----------
+def export_numbers():
+    """Every model number the text quotes, formatted as printed. Documents use {{key}} placeholders."""
+    global RMP_Y
+    P = lambda x: f"{x*100:.0f}%"                       # 0.873 -> "87%"
+    K = lambda x: f"HK${x/1e3:,.0f}K"                    # 751000 -> "HK$751K"
+    Mn = lambda x: f"HK${x/1e6:.1f}M"
+    pts = lambda a, b: f"{(b-a)*100:+.0f}"               # step size in points
+    N = {}
+    full = full_plan()
+    s89 = lambda kw, **o: sim(*MIX2, C89, **{**kw, **o})[0]
+    s95 = lambda kw, **o: sim(*MIX2, C95, **{**kw, **o})[0]
+    # decision ladder
+    lad = [(s89(kw), s95(kw)) for _, kw in ladder_steps()]
+    for i, (a, b) in enumerate(lad, 1):
+        N[f"ladder_{i}_89"], N[f"ladder_{i}_95"] = P(a), P(b)
+    N["step_annuity"], N["step_survivor"] = pts(lad[0][0], lad[1][0]), pts(lad[1][0], lad[2][0])
+    N["step_business"], N["step_home"] = pts(lad[2][0], lad[3][0]), pts(lad[3][0], lad[4][0])
+    sw89, sw95 = s89(full, med=SWITCH), s95(full, med=SWITCH)
+    N["switch_89"], N["switch_95"], N["switch_pts"] = P(sw89), P(sw95), pts(lad[4][0], sw89)
+    # one change at a time to the full plan
+    N["eq7_89"], N["eq5_89"] = P(s89(full, r_eq=R_EQ+.01)), P(s89(full, r_eq=R_EQ-.01))
+    N["no_annuity_89"], N["no_annuity_95"] = P(s89(full, annuity=False)), P(s95(full, annuity=False))
+    N["biz_not_sold_89"] = P(s89(full, biz=0))
+    N["cpi_stress_89"] = P(s89(full, cpi=ST_CPI))
+    N["med_stress_89"], N["med_stress_95"] = P(s89(full, med=STRESS)), P(s95(full, med=STRESS))
+    N["survivor_none_89"] = P(s89(full, surv=1.0))
+    keep = RMP_Y; RMP_Y = 2045; N["rmp2045_89"] = P(s89(full)); RMP_Y = keep
+    # stress scenarios
+    N["stressA_89"] = P(sim(MIX2[0], MIX2[1], ST_BD, C89, **{**full, "r_eq": ST_EQ})[0])
+    N["stressB_89"] = P(s89(full, cpi=ST_CPI, med=STRESS))
+    # property options
+    po = property_options(C89)
+    for key, (lbl, s_, m_, h_) in zip(("keep", "rmp", "down"), po):
+        N[f"prop_{key}_89"], N[f"legacy_{key}"] = P(s_), Mn(m_ + h_)
+    N["legacy_down_vs_rmp"] = Mn((po[2][2] + po[2][3]) - (po[1][2] + po[1][3]))
+    # rebalancing rules
+    N["rebal_target_89"], N["rebal_bands_89"], N["rebal_drift_89"] = (P(sim_rules(p_, C89)[0]) for p_ in ("target", "bands", "drift"))
+    # what happens when the plan falls short
+    def life(kw):
+        a = sim(*MIX2, C89, detail=True, **{**full, **kw}); b = sim(*MIX2, C95, detail=True, **{**full, **kw})
+        L = b["levels"]
+        return a, b, np.median(a["levels"].mean(0))*SPEND, np.percentile(L.min(0), 5)*SPEND
+    for key, kw in (("fixflex", dict(guard=False, med=FLEXI)), ("fixswitch", dict(guard=False, med=SWITCH)),
+                    ("guardswitch", dict(guard=True, med=SWITCH))):
+        a, b, typ, w5 = life(kw)
+        N[f"{key}_89"], N[f"{key}_95"], N[f"{key}_typical"], N[f"{key}_worst5"] = P(a["success"]), P(b["success"]), K(typ), K(w5)
+        if key == "fixflex":
+            fail = ~a["alive"]
+            N["runout_age"] = f"{np.median(a['runout'][fail]) - 1977:.0f}" if fail.any() else "n/a"
+            N["runout_age_p10"] = f"{np.percentile(a['runout'][fail], 10) - 1977:.0f}" if fail.any() else "n/a"
+    N["guard_cost"] = K(SPEND - float(N["guardswitch_typical"].strip("HK$K").replace(",", ""))*1e3)
+    N["guaranteed_income_today"] = K((ANN_INC + RMP)/(1 + CPI)**(2062 - BY))
+    # positions from the workbook
+    N["portfolio_2037_today"] = Mn(O["Outputs.Portfolio at 2037 in TODAY money"])
+    N["need_2037"] = Mn(pv(SPEND, .02, C89 - RETA))
+    N["premiums_avg"] = K(PREM)
+    N["surplus"] = K(SURPLUS)
+    return N
+
 # ---------- printout ----------
 def main():
     if hasattr(sys.stdout, "reconfigure"):

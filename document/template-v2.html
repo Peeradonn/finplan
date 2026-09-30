@@ -16,7 +16,7 @@
     <p class="subtitle">A financial plan for Adrian, Carmen, Ryan and Chloe Wong</p>
     <div class="row">
       <div>
-        <div class="headline-num">32%<small>→</small>85%</div>
+        <div class="headline-num">{{ladder_1_89}}<small>→</small>{{ladder_5_89}}</div>
         <div class="headline-l">The chance the parents' money lasts to Carmen's 89th birthday: on their investments alone, and with the four decisions in this plan.</div>
       </div>
       <ol class="pillars">
@@ -52,8 +52,8 @@
     <div class="hero">
       <div><div class="v">HK$24.4M</div><div class="l">net worth, with only 10% leverage</div></div>
       <div><div class="v">HK$718K</div><div class="l">saved each year: 41% of after-tax income</div></div>
-      <div><div class="v">32%<small> → </small>85%</div><div class="l">chance the money lasts to Carmen's 89, before and after</div></div>
-      <div><div class="v">HK$135K</div><div class="l">a year closes every protection gap</div></div>
+      <div><div class="v">{{ladder_1_89}}<small> → </small>{{ladder_5_89}}</div><div class="l">chance the money lasts to Carmen's 89, before and after</div></div>
+      <div><div class="v">HK$100K</div><div class="l">a year closes every protection gap</div></div>
     </div>
     <div class="cols">
       <aside class="side">
@@ -90,12 +90,12 @@
         <h3>Protect what has been built</h3>
         <p>Close the disability and critical-illness gaps, and sign wills, a guardian nomination and powers of attorney this quarter (§8, §9).</p>
         <h3>Turn assets into lifelong income</h3>
-        <p>On their investments alone, the money lasts to Carmen's 89 in 32% of 10,000 simulated markets. An MPF annuity, lower spending after the first death, a staged sale of Carmen's business and a planned use of the home raise it to 80%; the Standard medical plan in later life raises it to 98% (Figure 6).</p>
+        <p>On their investments alone, the money lasts to Carmen's 89 in {{ladder_1_89}} of 10,000 simulated markets. An MPF annuity, lower spending after the first death, a staged sale of Carmen's business and a planned use of the home raise it to {{ladder_5_89}}; moving to the Standard medical plan at 75 raises it to {{switch_89}} (Figure 6).</p>
         <h3>Give every voice a place</h3>
         <p>Adrian keeps a 40/60 portfolio; Carmen reaches 22% ESG; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).</p>
         <h3>Five recommendations</h3>
         <ol class="recs">
-          <li><b>Close the protection gaps</b> for disability, life and critical illness: ≈HK$135K a year until retirement.</li>
+          <li><b>Close the protection gaps</b> for disability, life and critical illness: ≈HK$100K a year until retirement.</li>
           <li><b>Sign wills, a guardian nomination and powers of attorney</b> within three months, for under HK$25K.</li>
           <li><b>Both parents buy individual medical cover now</b>, before group cover ends at 65 and 62.</li>
           <li><b>At 2037, turn the MPF and the home into income</b>: annuity plus reverse mortgage or downsizing.</li>
@@ -112,11 +112,11 @@
 <section class="page">
   <div class="content">
     <div class="kicker"><span class="n">03</span>Retirement planning</div>
-    <h2 class="finding">Four decisions the family controls raise the chance their money lasts from 32% to 85%.</h2>
+    <h2 class="finding">Four decisions the family controls raise the chance their money lasts from {{ladder_1_89}} to {{ladder_5_89}}.</h2>
     <div class="fig full">
       <div class="fig-label">Figure 6</div>
       <div class="fig-title">Each decision adds to the chance the money lasts</div>
-      <img src="../figures/decision-ladder.png" alt="Decision ladder: 32% on investments alone, 85% with all four decisions, 98% with the Standard plan from 75">
+      <img src="../figures/decision-ladder.png" alt="Decision ladder: {{ladder_1_89}} on investments alone, {{ladder_5_89}} with all four decisions, {{switch_89}} with the Standard plan from 75">
       <div class="fig-src">Source: team model, 10,000 simulations; 40/60 portfolio, equities 6%, CPI 2.5%, medical trend 10% grading to 6%</div>
     </div>
     <div class="cols">
@@ -127,7 +127,7 @@
       </aside>
       <main>
         <p><span class="lead-in">Medical costs are the binding constraint.</span> Premiums rise with both age and medical inflation. For both parents on the Flexi plan they reach HK$375K a year in today's money by 2056, half the family's retirement budget (Figure 7).</p>
-        <p><span class="lead-in">Four decisions close the gap.</span> Lower spending after the first death adds 9 points, a staged sale of Carmen's business 19, and a reverse mortgage or downsizing in 2037 another 26. The MPF annuity adds little on its own but protects the plan if both parents live to 95.</p>
+        <p><span class="lead-in">Four decisions close the gap.</span> Lower spending after the first death adds {{step_survivor}} points, a staged sale of Carmen's business {{step_business}}, and a reverse mortgage or downsizing in 2037 another {{step_home}}. The MPF annuity adds little on its own but protects the plan if both parents live to 95.</p>
         <p class="ph"><span class="lead-in">Drawdown.</span> Bucket strategy and guardrails: two to three years of spending in cash; discretionary spending cut 10% after a year in which withdrawals exceed 120% of the starting rate. [Pete to complete.]</p>
       </main>
     </div>
@@ -143,7 +143,7 @@
     <h2 class="finding">The largest gap is income, not death: neither parent could replace their salary if disabled.</h2>
     <div class="cols">
       <aside class="side">
-        <div class="num"><div class="v">HK$135K</div><div class="l">a year closes every gap: 19% of the surplus, paid only until retirement</div></div>
+        <div class="num"><div class="v">HK$100K</div><div class="l">a year closes every gap: 14% of the surplus, paid only until retirement</div></div>
         <div class="num"><div class="v">&lt;HK$25K</div><div class="l">once, for wills, a guardian for Chloe and powers of attorney</div></div>
       </aside>
       <main>
@@ -159,10 +159,10 @@
         <tbody>
           <tr><td><b>Disability income</b><br>65% of pay, to retirement</td><td>HK$65K a month to 65 · none today</td><td>HK$39K a month to 62 · none today</td><td class="n">HK$37K</td></tr>
           <tr><td><b>Life</b><br>debts + income gap + final costs</td><td>need 3.75M · has 2.0M · <b>+1.75M term</b></td><td>need 2.85M · has 1.8M · <b>+1.05M term</b></td><td class="n">HK$7K</td></tr>
-          <tr><td><b>Critical illness</b><br>2 years' spending + treatment</td><td><b>2.75M</b>, none today</td><td><b>2.75M</b>, none today</td><td class="n">HK$76K</td></tr>
+          <tr><td><b>Critical illness</b><br>treatment gap + 3 months' pay</td><td><b>1.5M</b>, none today</td><td><b>1.5M</b>, none today</td><td class="n">HK$41K</td></tr>
           <tr><td><b>Medical</b><br>individual VHIS, bought now</td><td>Flexi, deductible = group benefit</td><td>Flexi, deductible = group benefit</td><td class="n">HK$15K</td></tr>
           <tr><td><b>Key person and buy-sell</b><br>Carmen's 50% stake</td><td>—</td><td><b>2.5M</b>, paid by the company</td><td class="n">company</td></tr>
-          <tr class="total"><td>Total, parents' household</td><td></td><td></td><td class="n">≈HK$135K</td></tr>
+          <tr class="total"><td>Total, parents' household</td><td></td><td></td><td class="n">≈HK$100K</td></tr>
         </tbody>
       </table>
       <div class="fig-src">Source: team analysis; Bowtie term life and Term CI rate cards (2026); market range for disability cover</div>
@@ -202,7 +202,7 @@
         </div>
       </aside>
       <main>
-        <p>Impact is the change in the chance the money lasts to Carmen's 89, from 85% under the full plan. Two defences cover most of the list: spending guardrails, and the medical-plan choice at 75.</p>
+        <p>Impact is the change in the chance the money lasts to Carmen's 89, from {{ladder_5_89}} under the full plan. Two defences cover most of the list: spending guardrails, and the medical-plan choice at 75.</p>
         <p><span class="lead-in">Compliance.</span> Every product named is SFC-authorised or HKMC-issued; insurance figures are published rates, to be replaced by quotes. We earn no commission on any recommendation.</p>
       </main>
     </div>
@@ -212,13 +212,13 @@
       <table class="t dense">
         <thead><tr><th>Code</th><th>Risk</th><th>Impact (model)</th><th>Mitigation</th></tr></thead>
         <tbody>
-          <tr><td><b>F1</b></td><td>Inflation 3.5% instead of 2.5%</td><td>85% → <b>52%</b></td><td>Spending guardrails; CPI-linked Silver Bonds</td></tr>
-          <tr><td><b>F2</b></td><td>Medical costs rise 8.5% a year</td><td>85% → <b>60%</b></td><td>Medical tier review at 75 (+13 points)</td></tr>
-          <tr><td><b>F3</b></td><td>A low-return decade</td><td>85% → <b>35%</b></td><td>Guardrails; Treasury ladder for 2037–41</td></tr>
-          <tr><td><b>F4</b></td><td>The business cannot be sold</td><td>85% → <b>70%</b></td><td>Buy-sell agreement now; managers in place by 55–58</td></tr>
-          <tr><td><b>F5</b></td><td>Both parents live to 95</td><td>85% → <b>64%</b></td><td>Annuity and reverse mortgage pay for life</td></tr>
+          <tr><td><b>F1</b></td><td>Inflation 3.5% instead of 2.5%</td><td>{{ladder_5_89}} → <b>{{cpi_stress_89}}</b></td><td>Spending guardrails; CPI-linked Silver Bonds</td></tr>
+          <tr><td><b>F2</b></td><td>Medical costs rise 8.5% a year</td><td>{{ladder_5_89}} → <b>{{med_stress_89}}</b></td><td>Medical tier review at 75 ({{switch_pts}} points)</td></tr>
+          <tr><td><b>F3</b></td><td>A low-return decade</td><td>{{ladder_5_89}} → <b>{{stressA_89}}</b></td><td>Guardrails; Treasury ladder for 2037–41</td></tr>
+          <tr><td><b>F4</b></td><td>The business cannot be sold</td><td>{{ladder_5_89}} → <b>{{biz_not_sold_89}}</b></td><td>Buy-sell agreement now; managers in place by 55–58</td></tr>
+          <tr><td><b>F5</b></td><td>Both parents live to 95</td><td>{{ladder_5_89}} → <b>{{ladder_5_95}}</b></td><td>Annuity and reverse mortgage pay for life</td></tr>
           <tr><td><b>B1</b></td><td>Four risk appetites in one family</td><td>Conflict at the worst moment</td><td>One portfolio per person; rules agreed in advance</td></tr>
-          <tr><td><b>B2</b></td><td>Selling in a crash; letting the mix drift</td><td>85% → <b>82%</b></td><td>5-point rebalancing bands</td></tr>
+          <tr><td><b>B2</b></td><td>Selling in a crash; letting the mix drift</td><td>{{ladder_5_89}} → <b>{{rebal_drift_89}}</b></td><td>5-point rebalancing bands</td></tr>
           <tr><td><b>R1</b></td><td>Virtual-asset rule or licence change</td><td>Ryan's portfolio</td><td>Regulated platforms and HKEX ETFs only</td></tr>
           <tr><td><b>E2</b></td><td>Model risk</td><td>Overconfidence</td><td>Results compare decisions; they are not forecasts</td></tr>
         </tbody>
@@ -248,7 +248,7 @@
         <tr><td>FX</td><td>ECB spot, 22 Sep 2026</td><td>GBP +10% · CAD +14% · SGD +19%</td><td>95th pct of 2–5y moves, 2006–26</td></tr>
         <tr><td>MPF annuity</td><td>HK$268K a year, fixed for life</td><td>—</td><td>HKMC Annuity Plan</td></tr>
         <tr><td>Reverse mortgage</td><td>HK$230K a year for life, from 2037</td><td>—</td><td>HKMC programme</td></tr>
-        <tr><td>Protection premiums</td><td>HK$159K a year average, to retirement</td><td>—</td><td>Published rate cards (§8)</td></tr>
+        <tr><td>Protection premiums</td><td>{{premiums_avg}} a year average, to retirement</td><td>—</td><td>Published rate cards (§8)</td></tr>
         <tr><td>Survivor spending</td><td>70% of HK$780K after Adrian's 84</td><td>100%</td><td>Planning convention</td></tr>
       </tbody>
     </table>

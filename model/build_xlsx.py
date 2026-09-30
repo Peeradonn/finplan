@@ -54,7 +54,7 @@ rows=[
  ('Annuity income (HKMC, annual)','B',268000,NUM,"Pete: HKMC payout at 65"),
  ('Education — overseas annual (today)','B',600000,NUM,"case high end, conservative"),
  ('Education — years','B',4,'0',"4-year degree"),
- ('Insurance premiums (Lookbua, TBC)','B',159000,NUM,"parents' new cover, avg a year to 2036: DI 37K, term life 7K, CI 2.75M each ~96K avg (Bowtie Aug 2026), VHIS 15K. Paid until Adrian retires"),
+ ('Insurance premiums (Lookbua, TBC)','B',113600,NUM,"parents' new cover, avg a year to 2036: DI 37K, term life 7K, CI 1.5M each ~55K avg (needs-based, Bowtie Aug 2026), VHIS 15K. Paid until Adrian retires"),
  ('MEDICAL (methodology §1)',None,None,None),
  ('Medical plan (1 = Flexi, 2 = Standard, 0 = off)','B',1,'0',"methodology §1c: Flexi median is the realistic tier"),
  ('Medical trend — near term (2027)','B',0.10,PCT,"methodology §1b: WTW 9.9% / MMB 10.5%"),

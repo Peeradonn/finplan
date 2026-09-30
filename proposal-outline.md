@@ -206,6 +206,9 @@ is missed), **figures**, and **numbers**.
 
 ## 6. Placeholder register
 
+> **Superseded (30 Sep):** model numbers are now filled automatically from `figures/numbers.json`
+> (keys listed there); see `document/manuscript.md`.
+
 Fill on 1 Oct from the model after the decisions above. "Now" is the model on 29 Sep: medical premiums on (Flexi,
 net of HK$65K), Lookbua's protection premiums in (HK$159K a year average, to retirement), 6% equities. Every chart
 number is also in `figures/figure-data.md`.

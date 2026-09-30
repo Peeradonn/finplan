@@ -159,7 +159,6 @@ def run(kw=None, prem=None, rmp_y=None):
 base = run()
 cases = [("Standard plan from Adrian's 75", run({**FULL, "med": M.SWITCH})),
          ("Equities 7% (not 6%)", run({**FULL, "r_eq": M.R_EQ + 0.01})),
-         ("Critical-illness cover HK$1.5M each (not 2.75M)", run(prem=M.PREM - 96000*(1 - 1.5/2.75))),
          ("Equities 5%", run({**FULL, "r_eq": M.R_EQ - 0.01})),
          ("No MPF annuity", run({**FULL, "annuity": False})),
          ("Reverse mortgage from 2045 (not 2037)", run(rmp_y=2045)),
@@ -287,4 +286,8 @@ with open(os.path.join(OUT, "figure-data.md"), "w", encoding="utf-8") as f:
             "Do not edit by hand; rerun the script.\nEvery chart's numbers, for captions, text and checking.\n")
     for title, table in DATA:
         f.write(f"\n## {title}\n\n{table}\n")
-print(f"Wrote {len(DATA)} charts and figure-data.md to {OUT}")
+import json
+NUM = M.export_numbers()
+with open(os.path.join(OUT, "numbers.json"), "w", encoding="utf-8") as f:
+    json.dump(NUM, f, indent=1, ensure_ascii=False)
+print(f"Wrote {len(DATA)} charts, figure-data.md and numbers.json ({len(NUM)} values) to {OUT}")

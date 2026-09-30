@@ -4,3 +4,5 @@
 __pycache__/
 *.pyc
 build/
+document/_filled_*
+document/*.filled.md
