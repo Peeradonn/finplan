@@ -50,5 +50,6 @@ Found: what the number should be, with the source or your arithmetic.
 Fix: the corrected wording, or "add key X to export_numbers()" if it should come from the model.
 ```
 
-Rank wrong numbers first. End with a table of every number you **confirmed**, by page, so the integrator knows what
+Write in batches: after each group of findings add a line `## Batch N ready`, so the builder can start while you
+continue. Only append; never rewrite earlier findings (add a correction as a new finding). Rank wrong numbers first. End with a table of every number you **confirmed**, by page, so the integrator knows what
 was covered.

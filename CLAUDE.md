@@ -93,7 +93,9 @@ Personal statement career paragraphs (parked) · Wealth Management Connect figur
 fund fee and retail access · current fund-fee assumption (HK$59K saving) · Ryan's crypto vs tokenised-MMF split ·
 card revolving · tax filing status.
 
-## Review sessions
+## Parallel sessions
 
-Reviewers **do not edit page sources or the manuscript**. They write findings to `reviews/` using the brief for their
-role (`reviews/brief-story.md`, `reviews/brief-numbers.md`); the integrating session applies them.
+Three roles, each with a brief in `reviews/`: story reviewer (`brief-story.md`), number checker (`brief-numbers.md`) and
+**HTML builder** (`brief-builder.md`). Reviewers only append findings to their own file and never edit the document. The
+builder is the only session that edits page sources, the manuscript, the model and `figures/`, and the only one that
+commits; it logs what it did in `reviews/applied.md`. If you have not been given a role, ask Pete which one you are.

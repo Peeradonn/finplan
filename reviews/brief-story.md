@@ -43,5 +43,8 @@ Issue: what is wrong or missing, and why a judge would care.
 Fix: the change you propose (new wording if it is a wording fix). Say which page has room: render.py reports free mm.
 ```
 
+Write in batches: after each group of findings add a line `## Batch N ready`, so the builder can start while you
+continue. Only append; never rewrite earlier findings (add a correction as a new finding).
+
 End with a short list of **what works well** (so the fixes do not break it) and **anything you are unsure about**.
 Pages have little spare room (see `render.py`'s report): a fix that adds text should say what it replaces.
