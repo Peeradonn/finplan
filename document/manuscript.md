@@ -44,7 +44,7 @@ Each was settled by what serves the family best, then checked against what the j
 
 | # | Decision | Resolved as | Evidence |
 |---|---|---|---|
-| 1 | ESG base | **HK$10.47M**, the case's liquid + investment assets | The case sets the 20–25% target on "investable assets", and its statement totals HK$10.47M. It is also the stricter test: it includes Ryan's non-ESG HK$0.68M and the policy cash values. The plan passes on either base (24% on HK$10.47M; 21% on the freely allocable HK$7.70M), so we state the base a judge can check. |
+| 1 | ESG base | **HK$10.47M**, the case's liquid + investment assets | The case sets the 20–25% target on "investable assets", and its statement totals HK$10.47M. It is also the stricter test: it includes Ryan's non-ESG HK$0.68M and the policy cash values. The plan passes on either base (25% on HK$10.47M; 23% on the freely allocable HK$7.70M), so we state the base a judge can check. |
 | 2 | Critical-illness cover | **HK$1.5M each** | Sized by need: treatment not covered by VHIS (HK$0.80M) + three months' pay before disability cover starts (Adrian HK$0.30M, Carmen HK$0.18M) + home and recovery costs (HK$0.25M) = HK$1.35M and HK$1.23M. The HK$2.75M draft also counted two years' spending, which disability cover and the reserve already provide. Saves ≈HK$46K a year (HK$0.45M over ten years) with no gap. Year-1 cost of all new cover: ≈HK$100K. |
 | 3 | Portfolio sizes and equity | **Emergency HK$1.0M · education HK$2.57M · long-term HK$4.13M, split 50:50; Adrian 40% equity, Carmen 60%** | Emergency: 12 months, the top of the 6–12 month benchmark, because Carmen's income depends on her business and she guarantees its loan. Education: the present value of the top-of-range overseas budget. In the model, household equity above 40% adds legacy, not security (40%: 100% to 89, worst year −10%; 54%: 99.6%, −15%), so Carmen's portfolio is set at 60% rather than 68%, keeping the family objective of "moderate growth with controlled downside". Her ESG sleeves are unchanged. `[OWNER: Win]` move 8 points of Carmen's growth and HK equity to bonds. |
 | 4 | The HK$85K card balance | **Assume revolving** (the case says "credit card and revolving balance") | Clearing it is right either way: it costs nothing but 0.2% on idle savings, against ≈30% card interest. §2 states the assumption and the saving (≈HK$25K a year if it revolves). |
@@ -122,8 +122,8 @@ and powers of attorney this quarter (§8, §9).
 simulated markets. An MPF annuity, lower spending after the first death, a staged sale of Carmen's business and a
 planned use of the home raise it to {{ladder_5_89}}; moving to the Standard medical plan at 75 raises it to {{switch_89}} (Figure 6).
 
-**Give every voice a place.** Adrian keeps a 40/60 portfolio; ESG rises from 11% to 24% of investable assets, inside
-the family's own 20–25% target; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).
+**Give every voice a place.** Adrian keeps a 40/60 portfolio; ESG rises from 11% to 25% of investable assets, at the top
+of the family's own 20–25% target; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).
 
 **Five recommendations**
 
@@ -183,7 +183,7 @@ family files that way `[CHECK]`. The reserve falls to twelve months (≈HK$1.0M)
 | Need | Retire at 65 and 62 on HK$780K a year | Money lasts to Carmen's 89 in {{ladder_5_89}} of markets | 2037, 2039 |
 | Need | Protect income, health and the family | All gaps in §8 closed; wills and EPAs signed | Within 3 months |
 | Need | Fund Chloe's degree without debt | HK$2.57M education fund ring-fenced | 2028–2032 |
-| Want | Align 20–25% of investable assets with ESG (family goal 5) | 24% of HK$10.47M, counting only SFC-listed ESG funds | 2027 |
+| Want | Align 20–25% of investable assets with ESG (family goal 5) | 25% of HK$10.47M, counting only SFC-listed ESG funds | 2027 |
 | Want | Ryan financially independent | Crypto ≤20% of his wealth by 35; own cover | By 2037 |
 | Wish | Legacy with purpose | Staged trusts; an education scholarship | Ongoing |
 
@@ -277,7 +277,9 @@ that pay his first five years of retirement whatever markets do. Carmen's is 60%
 legacy but not security, so her share stays within the family's objective of moderate growth. Every
 holding is a low-cost index fund or ETF, SFC-authorised or HKEX-listed. Both parents' global equity core is the
 BOC-Prudential MSCI World ESG Index Fund, which picks the better-rated companies within each sector and so stays close
-to the world market.
+to the world market. The family's home, business and incomes already depend on
+Hong Kong, so the equity core is global; a small Hong Kong sleeve, held in an HSI ESG index ETF (3039), is kept for
+its tax-free dividends and low cost. The bond ETFs are Irish-domiciled, which avoids US estate tax.
 
 **DEFEND — Why not all Treasuries for Adrian.** Treasuries at about 5% look sufficient, but after 3.5% inflation they
 leave 1.5% real, below what the plan needs, and bonds bought today mature by 2041 while the money must last to 2066.
@@ -315,18 +317,18 @@ meeting.
 **§6 OPENER**
 
 - Label: 06 ESG INTEGRATION
-- Finding-heading: **The family's 20–25% ESG goal, met with evidence: from 11% today to 24%, with no return premium
+- Finding-heading: **The family's 20–25% ESG goal, met with evidence: from 11% today to 25%, with no return premium
   assumed.**
 
-**TABLE · Figure 16 · How the plan reaches 24% of investable assets** (base HK$10.47M, decision 1; Win to confirm)
+**TABLE · Figure 16 · How the plan reaches 25% of investable assets** (base HK$10.47M, decision 1; Win to confirm)
 
 | Source | HK$M |
 |---|---|
 | Today: ESG equity funds 0.70 + green bonds 0.45 | 1.15 (11%) |
-| Adrian: BOC-Prudential MSCI World ESG Index Fund 30%, green bonds 5% | 0.72 |
-| Carmen: the same ESG index fund 35%, green bonds 10% | 0.93 |
+| Adrian: BOC-Prudential MSCI World ESG Index Fund 30%, HSI ESG ETF (3039) 5%, green bonds 5% | 0.83 |
+| Carmen: the same ESG index fund 35%, HSI ESG ETF (3039) 2%, green bonds 10% | 0.97 |
 | MPF: 50% of each parent's balance in its ESG constituent fund | 0.84 |
-| **Total at target** (the "today" row is for comparison, not added) | **2.49 (24%)** `[CHECK: Win]` |
+| **Total at target** (the "today" row is for comparison, not added) | **2.63 (25%)** `[CHECK: Win]` |
 
 Line under the table: *Counted as ESG: funds on the SFC's list of ESG funds, and green bonds with verified use of
 proceeds. Adrian's global core is the BOC-Prudential MSCI World ESG Index Fund, one of only two global equity index
@@ -338,8 +340,9 @@ access; fallback in Win's notes]`
 **Four layers, one standard.** Exclusions remove thermal coal, controversial weapons and tobacco; best-in-class funds
 hold the highest-rated companies in each sector; a thematic slice in circular economy echoes Carmen's own packaging
 business; green bonds with checked use of proceeds add direct impact. Every fund must be on the SFC's list of ESG funds.
-**Why 24%, not 25%:** the plan reaches the goal through choices that suit each person; going further would mean ESG
-in Adrian's Treasury ladder, which has no ESG equivalent, or more equity for Carmen, which the family objective rules out.
+**Why not higher:** the plan reaches the top of the family's range through choices that suit each person; going
+further would mean ESG in Adrian's Treasury ladder, which has no ESG equivalent, or more equity for Carmen, which the
+family objective rules out.
 
 **Greenwashing, tested not trusted.** ESG ratings from different agencies agree far less than credit ratings: their
 correlation is about 0.54, against about 0.92 (Berg, Kölbel and Rigobon, 2022). A fund therefore enters only if it
