@@ -2,9 +2,10 @@
 Charts for the proposal, drawn from the model so every figure matches run_model.py.
 Usage:  python3 make_charts.py      -> ../figures/*.png (300 dpi) and ../figures/figure-data.md
 
-Style (dataviz method, print adaptation): validated palette (blue #2a78d6 · orange #eb6834 · aqua #1baf7a,
-aqua only with direct labels), blue<->red for gains/losses, thin marks, hairline grid, sans text,
-no chart titles (the document's "Figure N:" caption carries the title), a data table for every chart.
+Style (dataviz method, print adaptation): one accent, validated 30 Sep 2026 — crimson #b3202f vs blue #2f6fa3
+(categorical: Flexi vs Standard, raises vs lowers); dark/light crimson #8c1824/#d9737d (ordinal: to 89 vs 95;
+portfolio vs home equity); crimson tints for the fan chart. Thin marks, hairline grid, sans text,
+Times New Roman to match the document; no chart titles (the document's "Figure N:" caption carries the title), a data table for every chart.
 """
 import os
 import numpy as np
@@ -16,14 +17,15 @@ import run_model as M
 OUT = os.path.join(os.path.dirname(M.HERE), "figures")
 os.makedirs(OUT, exist_ok=True)
 
-BLUE, ORANGE, AQUA, RED = "#2a78d6", "#eb6834", "#1baf7a", "#e34948"
-SEQ = {"100": "#cde2fb", "200": "#9ec5f4", "450": "#2a78d6"}
+ACC, ACC_D, ACC_L, ALT = "#b3202f", "#8c1824", "#d9737d", "#2f6fa3"
+BLUE, AQUA = ACC, ACC_L                          # role aliases used below
+SEQ = {"100": "#f6dde0", "200": "#ebb4ba", "450": ACC}
 INK, INK2, MUTED, GRID, AXIS = "#0b0b0b", "#52514e", "#898781", "#e1e0d9", "#c3c2b7"
 W = 6.3                                    # inches: A4 text width with 1-inch margins
 
 plt.rcParams.update({
-    "font.family": "sans-serif", "font.sans-serif": ["Segoe UI", "Arial", "DejaVu Sans"],
-    "font.size": 10, "text.color": INK, "axes.labelcolor": INK2, "xtick.color": INK2, "ytick.color": INK2,
+    "font.family": "serif", "font.serif": ["Times New Roman", "Times", "DejaVu Serif"],
+    "font.size": 10.5, "text.color": INK, "axes.labelcolor": INK2, "xtick.color": INK2, "ytick.color": INK2,
     "axes.edgecolor": AXIS, "axes.linewidth": 0.8, "axes.grid": False, "grid.color": GRID, "grid.linewidth": 0.6,
     "figure.facecolor": "white", "axes.facecolor": "white", "savefig.dpi": 300, "legend.frameon": False,
 })
@@ -52,10 +54,10 @@ short = ["Investments alone,\nmedical premiums on top", "+ MPF annuity\n(fixed H
          "+ reverse mortgage\nfrom 2037", "All four, on the\nStandard medical plan"]
 r89 = [M.sim(*MIX2, C89, **kw)[0] for _, kw in steps]
 r95 = [M.sim(*MIX2, C95, **kw)[0] for _, kw in steps]
-fig, ax = plt.subplots(figsize=(W, 3.6))
+fig, ax = plt.subplots(figsize=(W, 3.1))
 y = np.arange(len(steps))[::-1]; h = 0.34
-ax.barh(y + h/2 + 0.02, r89, h, color=BLUE, label="Money lasts to Carmen's 89")
-ax.barh(y - h/2 - 0.02, r95, h, color=ORANGE, label="to Carmen's 95")
+ax.barh(y + h/2 + 0.02, r89, h, color=ACC_D, label="Money lasts to Carmen's 89")
+ax.barh(y - h/2 - 0.02, r95, h, color=ACC_L, label="to Carmen's 95")
 for yi, a, b in zip(y, r89, r95):
     ax.text(a + 0.01, yi + h/2 + 0.02, pct(a), va="center", fontsize=9, color=INK)
     ax.text(b + 0.01, yi - h/2 - 0.02, pct(b), va="center", fontsize=9, color=INK2)
@@ -96,11 +98,11 @@ yrs = np.arange(M.RETA, C95 + 1)
 defl = lambda yr: (1 + M.CPI) ** (yr - M.BY)
 fx = np.array([M.FLEXI.get(v, 0)/defl(v) for v in yrs]) / 1e3
 st = np.array([M.STD.get(v, 0)/defl(v) for v in yrs]) / 1e3
-fig, ax = plt.subplots(figsize=(W, 3.0))
+fig, ax = plt.subplots(figsize=(W, 2.4))
 ax.plot(yrs, fx, color=BLUE, lw=2, solid_capstyle="round", label="Flexi plan (median)")
-ax.plot(yrs, st, color=ORANGE, lw=2, solid_capstyle="round", label="Standard plan (median)")
+ax.plot(yrs, st, color=ALT, lw=2, solid_capstyle="round", label="Standard plan (median)")
 for arr, c in ((fx, INK), (st, INK2)):
-    ax.plot(yrs[-1], arr[-1], "o", ms=5, color=BLUE if c == INK else ORANGE, mec="white", mew=1.5)
+    ax.plot(yrs[-1], arr[-1], "o", ms=5, color=BLUE if c == INK else ALT, mec="white", mew=1.5)
     ax.text(yrs[-1] + 0.6, arr[-1], f"HK${arr[-1]:.0f}K", va="center", fontsize=9, color=c)
 ax.axvline(M.ALE, color=AXIS, lw=0.8)
 ax.text(M.ALE + 0.6, max(fx)*0.92, "Adrian's life expectancy (84):\nhis premium stops", ha="left", va="top",
@@ -169,7 +171,7 @@ cases.sort(key=lambda c: abs(c[1] - base))
 fig, ax = plt.subplots(figsize=(W, 3.6))
 for i, (lbl, v) in enumerate(cases):
     d = v - base
-    ax.barh(i, d, 0.5, color=BLUE if d >= 0 else RED)
+    ax.barh(i, d, 0.5, color=ALT if d >= 0 else ACC)
     ax.text(d + (0.008 if d >= 0 else -0.008), i, pct(v), va="center", ha="left" if d >= 0 else "right",
             fontsize=9, color=INK)
 ax.axvline(0, color=INK2, lw=1)
@@ -179,7 +181,7 @@ ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda x, _: f"{x*1
 ax.set_xlabel(f"Change in the chance the money lasts to Carmen's 89 (full plan = {base:.0%})")
 tidy(ax)
 from matplotlib.patches import Patch
-ax.legend([Patch(color=BLUE), Patch(color=RED)], ["Raises the chance", "Lowers the chance"],
+ax.legend([Patch(color=ALT), Patch(color=ACC)], ["Raises the chance", "Lowers the chance"],
           loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2, fontsize=9)
 save(fig, "sensitivity-tornado.png")
 DATA.append((f"sensitivity-tornado.png: one change at a time to the full plan (base {base:.0%} to 89)",
@@ -195,8 +197,8 @@ s89 = [M.sim(MIX2[0], MIX2[1], rb, C89, **kw)[0] for _, kw, rb in SC]
 s95 = [M.sim(MIX2[0], MIX2[1], rb, C95, **kw)[0] for _, kw, rb in SC]
 fig, ax = plt.subplots(figsize=(W, 2.8))
 x = np.arange(len(SC)); w = 0.3
-ax.bar(x - w/2 - 0.02, s89, w, color=BLUE, label="to Carmen's 89")
-ax.bar(x + w/2 + 0.02, s95, w, color=ORANGE, label="to Carmen's 95")
+ax.bar(x - w/2 - 0.02, s89, w, color=ACC_D, label="to Carmen's 89")
+ax.bar(x + w/2 + 0.02, s95, w, color=ACC_L, label="to Carmen's 95")
 for xi, a, b in zip(x, s89, s95):
     ax.text(xi - w/2 - 0.02, a + 0.02, pct(a), ha="center", fontsize=9, color=INK)
     ax.text(xi + w/2 + 0.02, b + 0.02, pct(b), ha="center", fontsize=9, color=INK2)
@@ -214,14 +216,14 @@ opts = M.property_options(C89)
 labels = ["Keep the home", "Reverse mortgage\nfrom 2037", "Downsize\nin 2037"]
 fig, (a1, a2) = plt.subplots(1, 2, figsize=(W, 2.6), gridspec_kw={"wspace": 0.55})
 yy = np.arange(3)[::-1]
-a1.barh(yy, [o[1] for o in opts], 0.45, color=BLUE)
+a1.barh(yy, [o[1] for o in opts], 0.45, color=ACC_D)
 for yi, o in zip(yy, opts):
     a1.text(o[1] + 0.02, yi, pct(o[1]), va="center", fontsize=9)
 a1.set_yticks(yy, labels, fontsize=9); a1.set_xlim(0, 1.15)
 a1.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
 a1.set_xlabel("Money lasts to Carmen's 89"); tidy(a1)
 pf = np.array([o[2] for o in opts])/1e6; he = np.array([o[3] for o in opts])/1e6
-a2.barh(yy, pf, 0.45, color=BLUE, label="Portfolio (median)")
+a2.barh(yy, pf, 0.45, color=ACC_D, label="Portfolio (median)")
 a2.barh(yy, he, 0.45, left=pf + 0.08, color=AQUA, label="Home equity")
 for yi, p, e in zip(yy, pf, he):
     a2.text(p + e + 0.3, yi, f"{p+e:.1f}M", va="center", fontsize=9)
@@ -232,6 +234,52 @@ save(fig, "property-options.png")
 DATA.append(("property-options.png: annuity, survivor spending and business sale on; mix 2; HK$M today's money at Carmen's 89",
              "| Option | Success to 89 | Portfolio | Home equity | Legacy |\n|---|---|---|---|---|\n" +
              "\n".join(f"| {o[0]} | {pct(o[1])} | {o[2]/1e6:.1f} | {o[3]/1e6:.1f} | {(o[2]+o[3])/1e6:.1f} |" for o in opts)))
+
+# ---------- half-width versions: drawn at print size (95mm) so text is not shrunk ----------
+HW = 95 / 25.4                               # inches
+with plt.rc_context({"font.size": 10.5}):
+    # 1h decision ladder
+    lab = ["Investments alone", "+ MPF annuity", "+ lower spending\nafter first death", "+ business sale",
+           "+ home released", "Standard medical\nplan"]
+    fig, ax = plt.subplots(figsize=(HW, 3.2))
+    y = np.arange(len(lab))[::-1]; h = 0.36
+    ax.barh(y + h/2 + 0.02, r89, h, color=ACC_D, label="to Carmen's 89")
+    ax.barh(y - h/2 - 0.02, r95, h, color=ACC_L, label="to 95")
+    for yi, a, b in zip(y, r89, r95):
+        ax.text(a + 0.015, yi + h/2 + 0.02, pct(a), va="center", fontsize=10, color=INK)
+        ax.text(b + 0.015, yi - h/2 - 0.02, pct(b), va="center", fontsize=10, color=INK2)
+    ax.axhline(0.5, color=AXIS, lw=0.8)
+    ax.set_yticks(y, lab); ax.set_xlim(0, 1.12); ax.set_xticks([0, .5, 1])
+    ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
+    tidy(ax); ax.legend(loc="lower center", bbox_to_anchor=(0.35, 1.0), ncol=2, handlelength=1.2)
+    save(fig, "decision-ladder-half.png")
+
+    # 3h medical premiums
+    fig, ax = plt.subplots(figsize=(HW, 2.5))
+    ax.plot(yrs, fx, color=ACC, lw=1.8, solid_capstyle="round", label="Flexi")
+    ax.plot(yrs, st, color=ALT, lw=1.8, solid_capstyle="round", label="Standard")
+    for arr, col in ((fx, ACC), (st, ALT)):
+        ax.plot(yrs[-1], arr[-1], "o", ms=4, color=col, mec="white", mew=1.2)
+        ax.text(yrs[-1] + 0.8, arr[-1], f"{arr[-1]:.0f}K", va="center", fontsize=10, color=INK)
+    ax.axvline(M.ALE, color=AXIS, lw=0.8)
+    ax.text(M.ALE + 0.6, max(fx)*0.97, "Adrian 84:\nhis premium stops", va="top", fontsize=8.5, color=INK2)
+    ax.set_xticks([2037, 2050, 2066], ["2037", "2050", "2066\nC 89"])
+    ax.set_ylabel("HK$K a year, today's money"); ax.set_ylim(0, None); ax.set_xlim(yrs[0], yrs[-1] + 6)
+    tidy(ax, "y"); ax.legend(loc="upper left", handlelength=1.2)
+    save(fig, "medical-premiums-half.png")
+
+    # 2h fan chart, same size as the medical chart so the two can sit side by side
+    fig, ax = plt.subplots(figsize=(HW, 2.5))
+    ax.fill_between(years, q[10], q[90], color=SEQ["100"], lw=0, label="10th–90th pct")
+    ax.fill_between(years, q[25], q[75], color=SEQ["200"], lw=0, label="25th–75th pct")
+    ax.plot(years, q[50], color=ACC, lw=1.8, solid_capstyle="round", label="Median")
+    ax.axvline(M.RETA, color=AXIS, lw=0.8)
+    ax.text(M.RETA + 0.6, max(q[90])*0.97, "Adrian\nretires", va="top", fontsize=9.5, color=INK2)
+    ax.set_xticks([2030, 2037, 2050, 2066], ["2030", "2037", "2050", "2066\nC 89"])
+    ax.set_xlim(years[0], C89 + 1); ax.set_ylim(0, None)
+    ax.set_ylabel("HK$M, today's money")
+    tidy(ax, "y"); ax.legend(loc="upper right", handlelength=1.2, fontsize=9)
+    save(fig, "fan-chart-half.png")
 
 # ---------- data twin ----------
 with open(os.path.join(OUT, "figure-data.md"), "w", encoding="utf-8") as f:
