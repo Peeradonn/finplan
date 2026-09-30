@@ -48,10 +48,10 @@ C89, C95, MIX2 = M.C89, M.C95, M.MIX2
 FULL = M.full_plan()
 
 # 1 ---------- decision ladder ----------
-steps = M.ladder_steps() + [("Same, with the Standard plan instead of Flexi", {**FULL, "med": M.STD})]
+steps = M.ladder_steps() + [(f"+ Standard plan from {M.SWITCH_Y}", {**FULL, "med": M.SWITCH})]
 short = ["Investments alone,\nmedical premiums on top", "+ MPF annuity\n(fixed HK$ for life)",
          "+ spending falls to 70%\nafter Adrian's 84", "+ Carmen's business\nsold in 2039",
-         "+ reverse mortgage\nfrom 2037", "All four, on the\nStandard medical plan"]
+         "+ reverse mortgage\nfrom 2037", "+ Standard plan\nfrom Adrian's 75"]
 r89 = [M.sim(*MIX2, C89, **kw)[0] for _, kw in steps]
 r95 = [M.sim(*MIX2, C95, **kw)[0] for _, kw in steps]
 fig, ax = plt.subplots(figsize=(W, 3.1))
@@ -157,7 +157,7 @@ def run(kw=None, prem=None, rmp_y=None):
     finally:
         M.PREM, M.RMP_Y = old
 base = run()
-cases = [("Standard medical plan instead of Flexi", run({**FULL, "med": M.STD})),
+cases = [("Standard plan from Adrian's 75", run({**FULL, "med": M.SWITCH})),
          ("Equities 7% (not 6%)", run({**FULL, "r_eq": M.R_EQ + 0.01})),
          ("Critical-illness cover HK$1.5M each (not 2.75M)", run(prem=M.PREM - 96000*(1 - 1.5/2.75))),
          ("Equities 5%", run({**FULL, "r_eq": M.R_EQ - 0.01})),
@@ -240,7 +240,7 @@ HW = 95 / 25.4                               # inches
 with plt.rc_context({"font.size": 10.5}):
     # 1h decision ladder
     lab = ["Investments alone", "+ MPF annuity", "+ lower spending\nafter first death", "+ business sale",
-           "+ home released", "Standard medical\nplan"]
+           "+ home released", "+ Standard plan\nfrom 75"]
     fig, ax = plt.subplots(figsize=(HW, 3.2))
     y = np.arange(len(lab))[::-1]; h = 0.36
     ax.barh(y + h/2 + 0.02, r89, h, color=ACC_D, label="to Carmen's 89")

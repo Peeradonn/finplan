@@ -63,6 +63,8 @@ rows=[
  ('Medical trend — stress (flat)','B',0.0854,PCT,"methodology §1b: WTW HK mean 2020-26"),
  ('Use medical stress in base (1/0)','B',0,'0',"0 = base trend path"),
  ('Premiums already inside the 780,000 (today money)','B',65000,NUM,"~ both parents' Flexi median at 65. TEAM TO AGREE"),
+ ('Medical plan review: switch to Standard (year)','B',2047,'0',"Adrian 75, Carmen 70: the tier review in the plan"),
+ ('Guardrails: lowest discretionary share','B',0.5,PCT,"Guyton-Klinger cuts stop at half of discretionary spending"),
  ('BACKSTOPS (values; switch on to include in base)',None,None,None),
  ('Survivor spending after Adrian (share)','B',0.70,PCT,"planning convention for a one-person household. TEAM TO AGREE"),
  ('Use survivor spending in base (1/0)','B',0,'0',"0 = couple's spending continues to the horizon"),
@@ -327,7 +329,9 @@ for i in range(47):
     pj.cell(r,15,f'=IF($A{r}>={RETA},{ANNI},0)')
     pj.cell(r,16,f'=IF(AND({BIZS}=1,$A{r}={BIZY}),{BIZ},0)+IF(AND({RMPS}=1,$A{r}>={RMPY}),{RMP},0)')
     # new protection premiums run while the parents work (DI, term life, CI to retirement), as in the Monte Carlo
-    pj.cell(r,17,f'=D{r}+E{r}-H{r}-I{r}-J{r}-K{r}-L{r}-M{r}-N{r}+O{r}+P{r}-IF($A{r}<{RETA},{PREM},0)')
+    # MPF (column J) is part of the pool: the employee's contribution stays in it (+0 instead of -J) and the
+    # employer's matching contribution is added (+J), so the net effect on the pool is +J.
+    pj.cell(r,17,f'=D{r}+E{r}-H{r}-I{r}+J{r}-K{r}-L{r}-M{r}-N{r}+O{r}+P{r}-IF($A{r}<{RETA},{PREM},0)')
     pj.cell(r,18, f'={START_POOL}' if i==0 else f'=U{r-1}')
     pj.cell(r,19,f'=R{r}*{RPLAN}')
     pj.cell(r,20,f'=IF($A{r}={RETA},-{ANNC},0)')

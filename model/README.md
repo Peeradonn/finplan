@@ -48,6 +48,13 @@ still read 0 and every pre-existing input is unchanged.
 10. **New inputs and sections**: stress-scenario values and property options (`Inputs`); `run_model.py` §7 stress
    scenarios, §8 property options (keep / reverse mortgage / downsize, with legacy), §9 Win's rebalancing rules
    against hold-the-target. Its printing now sits in `main()`, so other scripts can import it.
+12. **Bug fix (30 Sep): MPF contributions were never added to the pool.** The surplus is after the employees'
+   contributions and the employers' match was ignored, yet the MPF balances sit inside the simulated pool. Now both
+   sides (HK$18K each, per working parent) are added in the `Projection` tab (net cash flow uses +MPF) and in
+   `run_model.py` (`mpf_in`). Effect: portfolio alone 26% → 32%; full plan 80% → 85% to Carmen's 89.
+13. **Guardrails modelled** (`sim(..., guard=True)`): Guyton–Klinger on the discretionary 60% of spending from 2039,
+   no cuts in the last 15 years, essentials never cut, cuts stop at half of discretionary (`Inputs`). New `Inputs`
+   row: medical-tier review year (2047). `run_model.py` §10 reports what happens when the plan falls short.
 11. **`make_charts.py`** (new): seven charts to `../figures/` at 300 dpi, plus `figure-data.md` with every
    number behind them. Needs `matplotlib`.
 

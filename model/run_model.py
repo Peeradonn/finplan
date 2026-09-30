@@ -76,6 +76,12 @@ DS_MOVE, DS_Y = g('Downsize: moving and refit'), int(g('Downsize: year'))
 
 POOL_ALL = O.get("BalanceSheet.Parents' investable pool", 9_790_000)
 SURPLUS  = O["Tax.SURPLUS"]            # after tax and MPF, BEFORE new premiums (the sim deducts PREM itself)
+def mpf_in(y):
+    """MPF contributions into the pool: employee + employer (HK$18K each side, capped) per working parent.
+    The surplus is after the employee's contribution, and the MPF balances are inside the pool, so both sides
+    must be added back while each parent works."""
+    working = (y < RETA) + (y < RETC)
+    return 2 * MPF_CAP * working
 # Carmen works two years past Adrian's retirement - the Excel Projection counts this, so we must too
 C_TAX    = WB["Tax"]["C13"].value
 CARMEN_NET = C_SAL - C_TAX - MPF_CAP
@@ -107,6 +113,8 @@ def med_path(tier=1, stress=False):
 
 MED_BASE = med_path(TIER, bool(M_STS))
 FLEXI, STD, STRESS = med_path(1), med_path(2), med_path(1, stress=True)
+SWITCH_Y = int(g('Medical plan review: switch to Standard (year)'))
+SWITCH = {y: (FLEXI.get(y, 0) if y < SWITCH_Y else STD.get(y, 0)) for y in set(FLEXI) | set(STD)}
 
 def _check_against_workbook():
     proj = {r[0]: r[13] for r in WB["Projection"].iter_rows(min_row=4, values_only=True) if isinstance(r[0], int)}
@@ -124,31 +132,61 @@ POOL = POOL_ALL - edu_res
 BASE = dict(med=MED_BASE, surv=SURV if SURV_S else 1.0, biz=BIZ if BIZ_S else 0, rmp=RMP if RMP_S else 0)
 
 # ---------- Monte Carlo ----------
+FLOOR_SHARE = g('Retirement income floor %')      # essentials: never cut by the guardrails
+GK_MIN = g('Guardrails: lowest discretionary share')   # discretionary spending never cut below this
+
 def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=None, cpi=None,
-        inflows=None, n=10_000, seed=42, paths=False):
-    """Success share, mean worst year, median end pot (and, with paths=True, every path's pot by year)."""
+        inflows=None, n=10_000, seed=42, paths=False, guard=False, detail=False):
+    """Success share, mean worst year, median end pot.
+    paths=True also returns every path's pot by year. detail=True returns a dict instead (run-out years,
+    spending cuts). guard=True applies Guyton-Klinger guardrails to the discretionary share of spending:
+    no inflation rise after a negative year; cut 10% if the withdrawal rate is 20% above its starting level;
+    raise 10% (never above the target) if it is 20% below. Essentials (FLOOR_SHARE) are never cut."""
     r_eq = R_EQ if r_eq is None else r_eq
     cpi = CPI if cpi is None else cpi
     med, inflows = med or {}, inflows or {}
     rng = np.random.default_rng(seed)
     pot = np.full(n, POOL, float); alive = np.ones(n, bool); worst = np.zeros(n)
     track = np.zeros((end - BY, n)) if paths else None
+    d = np.ones(n); wr0 = None; last_r = np.zeros(n)
+    runout = np.zeros(n, int); d_min = np.ones(n); lvl_sum = np.zeros(n); lvl_n = 0
     for i in range(end - BY):
         y = BY + i
         r = w_eq*rng.normal(r_eq, S_EQ, n) + (1-w_eq)*rng.normal(r_bd, s_bd, n)
         worst = np.minimum(worst, r); pot = pot*(1+r)
         if y == RETA and annuity: pot -= ANN_COST
-        if y < RETA: pot += SURPLUS*(1+WAGE)**i - PREM
+        pot += mpf_in(y)                                   # MPF contributions, both sides, while working
+        if y < RETA:
+            pot += SURPLUS*(1+WAGE)**i - PREM
         else:
-            spend = SPEND*(1+cpi)**i*(surv if y > ALE else 1)
-            pot -= spend - (ANN_INC if annuity else 0)      # annuity: fixed HK$, not indexed
-            if y < RETC: pot += CARMEN_NET*(1+WAGE)**i   # Carmen still earning
-            if rmp and y >= RMP_Y: pot += rmp
+            target = SPEND*(1+cpi)**i*(surv if y > ALE else 1)
+            income = (ANN_INC if annuity else 0) + (rmp if rmp and y >= RMP_Y else 0)                      + (CARMEN_NET*(1+WAGE)**i if y < RETC else 0)
+            if guard and y >= RETC:                          # rules start with full retirement (Carmen at 62)
+                d = np.where(last_r < 0, d/(1+cpi), d)     # no inflation rise after a negative year
+                net = target*(FLOOR_SHARE + (1-FLOOR_SHARE)*d) + med.get(y, 0) - income
+                wr = np.where(pot > 0, net/np.maximum(pot, 1), np.inf)
+                if wr0 is None: wr0 = wr.copy()            # starting withdrawal rate, per path, in 2039
+                cut_ok = y <= C89 - 15                      # Guyton-Klinger: no cuts in the last 15 years
+                d = np.where(cut_ok & (wr > 1.2*wr0), d*0.9, np.where(wr < 0.8*wr0, np.minimum(d*1.1, 1.0), d))
+                d = np.maximum(d, GK_MIN); d_min = np.minimum(d_min, d)
+                lvl_sum += FLOOR_SHARE + (1-FLOOR_SHARE)*d; lvl_n += 1
+                spend = target*(FLOOR_SHARE + (1-FLOOR_SHARE)*d)
+            elif guard:
+                spend = target*(FLOOR_SHARE + (1-FLOOR_SHARE)*d)
+            else:
+                spend = target
+            pot += income - spend
         if biz and y == BIZ_Y: pot += biz
         pot += inflows.get(y, 0)
         pot -= med.get(y, 0)
-        pot = np.maximum(pot, 0); alive &= pot > 0
+        pot = np.maximum(pot, 0)
+        newly = alive & (pot <= 0); runout[newly] = y
+        alive &= pot > 0; last_r = r
         if paths: track[i] = pot
+    if detail:
+        return dict(success=alive.mean(), runout=runout, alive=alive, d_min=d_min, end_pot=pot,
+                    level=(lvl_sum/lvl_n if lvl_n else np.ones(n)),
+                    low=FLOOR_SHARE + (1-FLOOR_SHARE)*d_min)
     out = (alive.mean(), worst.mean(), np.percentile(pot, 50))
     return out + (track,) if paths else out
 
@@ -221,6 +259,7 @@ def sim_rules(policy, end, w_t=0.40, n=10_000, seed=42):
         worst = np.minimum(worst, np.where(tot0 > 0, (eq + bd)/np.maximum(tot0, 1) - 1, 0))
         flow = 0.0
         if y == RETA: flow -= ANN_COST
+        flow += mpf_in(y)
         if y < RETA: flow += SURPLUS*(1+WAGE)**i - PREM
         else:
             flow -= SPEND*(1+CPI)**i*(SURV if y > ALE else 1) - ANN_INC
@@ -285,7 +324,7 @@ def main():
         print(f"  {lbl:<62}{s89:>7.0%}{s95:>7.0%}")
     full = full_plan()
     print("  Alternatives on the last row:")
-    for lbl, kw in [("   Standard plan instead of Flexi", {**full, "med": STD}),
+    for lbl, kw in [(f"   Standard plan from {SWITCH_Y} (tier review)", {**full, "med": SWITCH}),
                     (f"   medical stress, {M_ST:.2%} flat",  {**full, "med": STRESS}),
                     ("   equities -1pp",                    {**full, "r_eq": R_EQ - 0.01}),
                     ("   without the annuity",              {**full, "annuity": False})]:
@@ -322,6 +361,28 @@ def main():
                      ("M1 only: rebalance after a 20% equity fall", "m1")]:
         s, wr, m = sim_rules(pol, C89)
         print(f"  {lbl:<52}{s:>9.0%}{wr:>10.1%}{m:>14,.0f}")
+
+    print("\n10. WHEN THE PLAN FALLS SHORT (full plan, mix 2)")
+    print(f"  {'':<52}{'to 89':>7}{'to 95':>7}{'avg spend':>11}{'hit floor':>11}")
+    floor_level = FLOOR_SHARE + (1 - FLOOR_SHARE) * GK_MIN
+    for lbl, kw in [("Fixed spending, Flexi for life", dict(guard=False, med=FLEXI)),
+                    (f"Fixed spending, Standard from {SWITCH_Y}", dict(guard=False, med=SWITCH)),
+                    ("Guardrails, Flexi for life", dict(guard=True, med=FLEXI)),
+                    (f"Guardrails, Standard from {SWITCH_Y}", dict(guard=True, med=SWITCH))]:
+        a = sim(*MIX2, C89, detail=True, **{**full, **kw}); b = sim(*MIX2, C95, detail=True, **{**full, **kw})
+        if kw["guard"]:
+            extra = f"{np.median(a['level']):>11.0%}{(a['low'] <= floor_level + 1e-3).mean():>11.0%}"
+        else:
+            extra = f"{'100%':>11}{'-':>11}"
+        print(f"  {lbl:<52}{a['success']:>7.0%}{b['success']:>7.0%}{extra}")
+    D = sim(*MIX2, C89, detail=True, **full); fail = ~D["alive"]
+    if fail.any():
+        ages = D["runout"][fail] - 1977
+        print(f"  Fixed spending, Flexi: failing paths run out at Carmen's {np.median(ages):.0f} (median), "
+              f"{np.percentile(ages, 10):.0f} (10th percentile)")
+    y = 2062; inc = ANN_INC + RMP
+    print(f"  Guaranteed income after a run-out (annuity + reverse mortgage): HK${inc/1e3:.0f}K nominal, "
+          f"HK${inc/(1+CPI)**(y-BY)/1e3:.0f}K in today's money at Carmen's 85")
 
     print("\nDone. Change assumptions in wong_model.xlsx (Inputs tab), not here.")
 

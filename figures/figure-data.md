@@ -7,23 +7,23 @@ Every chart's numbers, for captions, text and checking.
 
 | Step | to 89 | to 95 |
 |---|---|---|
-| Portfolio alone; Flexi premiums on top of the 780,000 | 26% | 11% |
-| + MPF annuitised (HKMC, fixed HK$ for life) | 26% | 11% |
-| + spending falls to 70% after Adrian's 84 | 35% | 19% |
-| + Carmen's business sold (3.0M in 2039) | 54% | 32% |
-| + reverse mortgage (230K a year from 2037) | 80% | 58% |
-| Same, with the Standard plan instead of Flexi | 98% | 93% |
+| Portfolio alone; Flexi premiums on top of the 780,000 | 32% | 15% |
+| + MPF annuitised (HKMC, fixed HK$ for life) | 33% | 15% |
+| + spending falls to 70% after Adrian's 84 | 43% | 24% |
+| + Carmen's business sold (3.0M in 2039) | 62% | 38% |
+| + reverse mortgage (230K a year from 2037) | 85% | 64% |
+| + Standard plan from 2047 | 98% | 92% |
 
 ## fan-chart.png: portfolio percentiles, full plan, HK$M today's money
 
 | Year | P10 | P25 | Median | P75 | P90 |
 |---|---|---|---|---|---|
-| 2030 | 8.7 | 9.4 | 10.1 | 10.9 | 11.7 |
-| 2037 | 13.0 | 14.4 | 16.1 | 18.0 | 20.1 |
-| 2045 | 10.2 | 12.3 | 15.0 | 18.3 | 21.8 |
-| 2056 | 3.3 | 6.1 | 9.9 | 14.9 | 20.6 |
-| 2066 | 0.0 | 0.9 | 5.7 | 12.0 | 19.7 |
-| 2072 | 0.0 | 0.0 | 1.7 | 9.1 | 17.8 |
+| 2030 | 9.0 | 9.7 | 10.4 | 11.2 | 12.0 |
+| 2037 | 13.7 | 15.1 | 16.8 | 18.8 | 21.0 |
+| 2045 | 11.0 | 13.1 | 16.0 | 19.4 | 23.1 |
+| 2056 | 4.1 | 7.1 | 11.1 | 16.3 | 22.3 |
+| 2066 | 0.0 | 2.1 | 7.1 | 14.0 | 21.9 |
+| 2072 | 0.0 | 0.0 | 3.3 | 11.2 | 20.5 |
 
 ## medical-premiums.png: medical line net of HK$65K already in the HK$780K, HK$K today's money
 
@@ -50,29 +50,29 @@ Every chart's numbers, for captions, text and checking.
 
 Model budget: HK$600K today, escalated 5% a year = HK$662K in 2028/29.
 
-## sensitivity-tornado.png: one change at a time to the full plan (base 80% to 89)
+## sensitivity-tornado.png: one change at a time to the full plan (base 85% to 89)
 
 | Change | Success to 89 | vs base |
 |---|---|---|
-| CPI 3.5% (not 2.5%) | 44% | -36pp |
-| Medical trend 8.5% flat | 53% | -27pp |
-| Business not sold | 62% | -18pp |
-| Standard medical plan instead of Flexi | 98% | +18pp |
-| Couple's spending continues after 2056 | 68% | -12pp |
-| Equities 5% | 70% | -11pp |
-| Reverse mortgage from 2045 (not 2037) | 70% | -10pp |
-| Equities 7% (not 6%) | 88% | +7pp |
-| No MPF annuity | 75% | -5pp |
-| Critical-illness cover HK$1.5M each (not 2.75M) | 83% | +3pp |
+| CPI 3.5% (not 2.5%) | 52% | -34pp |
+| Medical trend 8.5% flat | 60% | -25pp |
+| Business not sold | 70% | -16pp |
+| Standard plan from Adrian's 75 | 98% | +13pp |
+| Couple's spending continues after 2056 | 74% | -11pp |
+| Equities 5% | 76% | -9pp |
+| Reverse mortgage from 2045 (not 2037) | 77% | -8pp |
+| Equities 7% (not 6%) | 91% | +6pp |
+| No MPF annuity | 81% | -4pp |
+| Critical-illness cover HK$1.5M each (not 2.75M) | 87% | +2pp |
 
 ## stress-scenarios.png: full plan under the stress scenarios (methodology §5)
 
 | Scenario | to 89 | to 95 |
 |---|---|---|
-| Full plan, base assumptions | 80% | 58% |
-| A. Low-return decade | 29% | 10% |
-| B. Inflation shock | 24% | 7% |
-| C. Long life + medical costs | 53% | 23% |
+| Full plan, base assumptions | 85% | 64% |
+| A. Low-return decade | 35% | 13% |
+| B. Inflation shock | 29% | 10% |
+| C. Long life + medical costs | 60% | 28% |
 
 A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medical 8.54% flat (read the 95 column).
 
@@ -80,6 +80,6 @@ A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medic
 
 | Option | Success to 89 | Portfolio | Home equity | Legacy |
 |---|---|---|---|---|
-| Keep the home, no release | 54% | 0.7 | 7.8 | 8.5 |
-| Reverse mortgage, 230K a year from 2037 | 80% | 5.7 | 1.5 | 7.2 |
-| Downsize in 2037 (release 4.5M) | 81% | 6.6 | 4.7 | 11.3 |
+| Keep the home, no release | 62% | 2.2 | 7.8 | 10.0 |
+| Reverse mortgage, 230K a year from 2037 | 85% | 7.1 | 1.5 | 8.6 |
+| Downsize in 2037 (release 4.5M) | 85% | 8.0 | 4.7 | 12.8 |
