@@ -275,7 +275,9 @@ product suitability, risk management, monitoring and rebalancing.
 for Ryan. Adrian's is 40% equity and 60% bonds and cash, anchored by US Treasuries maturing each year from 2037 to 2041
 that pay his first five years of retirement whatever markets do. Carmen's is 60% equity, led by ESG funds (§6): in our model, equity above 40% of the household total adds
 legacy but not security, so her share stays within the family's objective of moderate growth. Every
-holding is a low-cost index fund or ETF, SFC-authorised or HKEX-listed; Irish-domiciled funds avoid US estate tax.
+holding is a low-cost index fund or ETF, SFC-authorised or HKEX-listed. Both parents' global equity core is the
+BOC-Prudential MSCI World ESG Index Fund, which picks the better-rated companies within each sector and so stays close
+to the world market.
 
 **DEFEND — Why not all Treasuries for Adrian.** Treasuries at about 5% look sufficient, but after 3.5% inflation they
 leave 1.5% real, below what the plan needs, and bonds bought today mature by 2041 while the money must last to 2066.
@@ -321,14 +323,15 @@ meeting.
 | Source | HK$M |
 |---|---|
 | Today: ESG equity funds 0.70 + green bonds 0.45 | 1.15 (11%) |
-| Adrian: ESG index fund as his global core 25%, ESG equity 5%, green bonds 5% | 0.72 |
-| Carmen: ESG equity 35%, green bonds 10% | 0.93 |
+| Adrian: BOC-Prudential MSCI World ESG Index Fund 30%, green bonds 5% | 0.72 |
+| Carmen: the same ESG index fund 35%, green bonds 10% | 0.93 |
 | MPF: 50% of each parent's balance in its ESG constituent fund | 0.84 |
 | **Total at target** (the "today" row is for comparison, not added) | **2.49 (24%)** `[CHECK: Win]` |
 
 Line under the table: *Counted as ESG: funds on the SFC's list of ESG funds, and green bonds with verified use of
-proceeds. Adrian's global core must be an ESG index fund on that list; a plain index fund would leave the family at
-19%, below its goal.*
+proceeds. Adrian's global core is the BOC-Prudential MSCI World ESG Index Fund, one of only two global equity index
+funds on that list; a plain index fund would leave the family at 19%, below its goal.* `[CHECK: fee and retail
+access; fallback in Win's notes]`
 
 **PROSE**
 

@@ -46,8 +46,8 @@ of its range.
 | Core bonds | AGGU, iShares Core Global Aggregate USD-hedged (0.10%) | 20% | 15–35% |
 | **Treasury ladder 2037–2041** | Individual US Treasury notes, one rung per year | **20%** | 0–25% |
 | Green bonds | SFC-authorised green bond fund | 5% | 5–10% |
-| Global equity core (ESG-screened index) | e.g. MSCI World ESG-screened UCITS fund | 25% | 20–30% |
-| ESG global equity | SFC-authorised ESG index fund | 5% | 5–10% |
+| Global equity core (ESG index) | BOC-Prudential MSCI World ESG Index Fund | 25% | 20–30% |
+| ESG global equity | BOC-Prudential MSCI World ESG Index Fund (same fund) | 5% | 5–10% |
 | Growth slice | Nasdaq-100 UCITS fund, e.g. CNDX | 5% | **3–8%** |
 | HK equity | 2800 Tracker Fund (0.06%) | 5% | 0–10% |
 | **Total** | | **Equity 40% · Bonds/cash 60%** | **Equity cap 45%** |
@@ -55,6 +55,15 @@ of its range.
 - Expected return ≈ **5.0% net** at a 6% equity assumption, ≈ **5.4%** at 7% (was 4.8% before the yield rise).
 - Illustrative worst year: about **−10%** in a 2008-type year. Fahtai to confirm.
 - Digital: **0%**. His only "digital rail" option is a tokenised MMF, which is cash.
+
+**ESG index fund chosen (30 Sep, Pete):** BOC-Prudential MSCI World ESG Index Fund (SFC ceref BUM645, Hong Kong
+unit trust, authorised 2 May 2024). Of the 179 funds on the SFC's list of ESG funds (sfc.hk, 30 Sep 2026), it is one
+of only two global equity index funds; the other (Sun Life AM Global Low Carbon Index Fund) tracks a custom MPF,
+HKD-hedged index. Why it suits: on the SFC list, so it counts towards the 20–25% goal; index, low cost; MSCI's
+best-in-class ESG selection keeps sector weights close to MSCI World, so Adrian's core stays near the market; a
+Hong Kong fund carries no US estate-tax exposure (cost: 30% rather than 15% withholding on US dividends, ≈0.15% a
+year). `[CHECK: Win]` management fee and retail availability (BOCHK or a fund platform). Fallback if retail cannot
+buy it: an Irish-domiciled MSCI World ESG Leaders UCITS ETF, with the ESG counting rule widened to SFDR Article 8/9.
 
 **Carmen — Medium–High, ESG-led** *(updated 30 Sep: 68% → 60% equity, see note below the table)*
 
@@ -64,7 +73,7 @@ of its range.
 | Core bonds | AGGU | 18% | 10–25% |
 | Green bonds | SFC-authorised green bond fund | 10% | 5–15% |
 | Medium / long Treasuries | 3450 (0.30%) / 3433 (0.20% mgmt) | 5% | 0–10% |
-| ESG global equity | SFC-authorised ESG index fund | 35% | 30–40% |
+| ESG global equity | BOC-Prudential MSCI World ESG Index Fund | 35% | 30–40% |
 | Global equity core | Global index fund | 15% | 10–20% |
 | Growth slice | Nasdaq-100 UCITS fund | 3% | 0–5% |
 | HK equity | 2800 | 2% | 0–5% |
