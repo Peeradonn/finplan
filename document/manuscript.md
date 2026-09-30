@@ -122,8 +122,8 @@ and powers of attorney this quarter (§8, §9).
 simulated markets. An MPF annuity, lower spending after the first death, a staged sale of Carmen's business and a
 planned use of the home raise it to {{ladder_5_89}}; moving to the Standard medical plan at 75 raises it to {{switch_89}} (Figure 6).
 
-**Give every voice a place.** Adrian keeps a 40/60 portfolio; the family reaches 24% ESG; Ryan keeps his digital assets on a
-glide path; Chloe chooses her university freely (§4–§7).
+**Give every voice a place.** Adrian keeps a 40/60 portfolio; ESG rises from 11% to 24% of investable assets, inside
+the family's own 20–25% target; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).
 
 **Five recommendations**
 
@@ -183,7 +183,7 @@ family files that way `[CHECK]`. The reserve falls to twelve months (≈HK$1.0M)
 | Need | Retire at 65 and 62 on HK$780K a year | Money lasts to Carmen's 89 in {{ladder_5_89}} of markets | 2037, 2039 |
 | Need | Protect income, health and the family | All gaps in §8 closed; wills and EPAs signed | Within 3 months |
 | Need | Fund Chloe's degree without debt | HK$2.57M education fund ring-fenced | 2028–2032 |
-| Want | Align 20–25% of investable assets with ESG | 24% on a HK$10.47M base | 2027 |
+| Want | Align 20–25% of investable assets with ESG (family goal 5) | 24% of HK$10.47M, counting only SFC-listed ESG funds | 2027 |
 | Want | Ryan financially independent | Crypto ≤20% of his wealth by 35; own cover | By 2037 |
 | Wish | Legacy with purpose | Staged trusts; an education scholarship | Ongoing |
 
@@ -313,23 +313,30 @@ meeting.
 **§6 OPENER**
 
 - Label: 06 ESG INTEGRATION
-- Finding-heading: **Carmen's values, invested with evidence: from 11% to 24% ESG, with no return premium assumed.**
+- Finding-heading: **The family's 20–25% ESG goal, met with evidence: from 11% today to 24%, with no return premium
+  assumed.**
 
-**TABLE · Figure 16 · How the family reaches 24%** (base HK$10.47M, decision 1; Win to confirm)
+**TABLE · Figure 16 · How the plan reaches 24% of investable assets** (base HK$10.47M, decision 1; Win to confirm)
 
 | Source | HK$M |
 |---|---|
 | Today: ESG equity funds 0.70 + green bonds 0.45 | 1.15 (11%) |
-| Adrian: ESG-screened global core 25%, ESG equity 5%, green bonds 5% | 0.72 |
+| Adrian: ESG index fund as his global core 25%, ESG equity 5%, green bonds 5% | 0.72 |
 | Carmen: ESG equity 35%, green bonds 10% | 0.93 |
 | MPF: 50% of each parent's balance in its ESG constituent fund | 0.84 |
 | **Total at target** (the "today" row is for comparison, not added) | **2.49 (24%)** `[CHECK: Win]` |
+
+Line under the table: *Counted as ESG: funds on the SFC's list of ESG funds, and green bonds with verified use of
+proceeds. Adrian's global core must be an ESG index fund on that list; a plain index fund would leave the family at
+19%, below its goal.*
 
 **PROSE**
 
 **Four layers, one standard.** Exclusions remove thermal coal, controversial weapons and tobacco; best-in-class funds
 hold the highest-rated companies in each sector; a thematic slice in circular economy echoes Carmen's own packaging
 business; green bonds with checked use of proceeds add direct impact. Every fund must be on the SFC's list of ESG funds.
+**Why 24%, not 25%:** the plan reaches the goal through choices that suit each person; going further would mean ESG
+in Adrian's Treasury ladder, which has no ESG equivalent, or more equity for Carmen, which the family objective rules out.
 
 **Greenwashing, tested not trusted.** ESG ratings from different agencies agree far less than credit ratings: their
 correlation is about 0.54, against about 0.92 (Berg, Kölbel and Rigobon, 2022). A fund therefore enters only if it
