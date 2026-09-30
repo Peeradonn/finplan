@@ -217,14 +217,17 @@ MIXES = {"1. All-Treasury ladder":       (0.00, 0.02, R_LAD),
 MIX2 = MIXES["2. 40/60 equity / ladder"]
 
 def ladder_steps():
-    """The decision ladder: each step adds one decision to the one before."""
+    """The decision ladder: each step adds one decision to the ones before. The annuity comes last: it is
+    insurance for the worst markets and a long life, and added first (onto a failing plan) its premium shows as a
+    loss that it is not. Its value is reported separately (ann_* numbers)."""
     return [
         ("Portfolio alone; Flexi premiums on top of the 780,000", dict(annuity=False, med=FLEXI)),
-        ("+ MPF annuitised (HKMC, fixed HK$, single life)",         dict(annuity=True,  med=FLEXI)),
         (f"+ spending falls to {SURV:.0%} after Adrian's {ALE - 1972}",
-                                                                 dict(annuity=True,  med=FLEXI, surv=SURV)),
-        (f"+ Carmen's business sold ({BIZ/1e6:.1f}M in {BIZ_Y})",  dict(annuity=True,  med=FLEXI, surv=SURV, biz=BIZ)),
+                                                                 dict(annuity=False, med=FLEXI, surv=SURV)),
+        (f"+ Carmen's business sold ({BIZ/1e6:.1f}M in {BIZ_Y})",  dict(annuity=False, med=FLEXI, surv=SURV, biz=BIZ)),
         (f"+ reverse mortgage ({RMP/1e3:.0f}K a year from {RMP_Y})",
+                                                                 dict(annuity=False, med=FLEXI, surv=SURV, biz=BIZ, rmp=RMP)),
+        ("+ MPF annuitised (HKMC, fixed HK$, single life)",
                                                                  dict(annuity=True,  med=FLEXI, surv=SURV, biz=BIZ, rmp=RMP)),
     ]
 
@@ -326,8 +329,8 @@ def export_numbers():
     lad = [(s89(kw), s95(kw)) for _, kw in ladder_steps()]
     for i, (a, b) in enumerate(lad, 1):
         N[f"ladder_{i}_89"], N[f"ladder_{i}_95"] = P(a), P(b)
-    N["step_annuity"], N["step_survivor"] = pts(lad[0][0], lad[1][0]), pts(lad[1][0], lad[2][0])
-    N["step_business"], N["step_home"] = pts(lad[2][0], lad[3][0]), pts(lad[3][0], lad[4][0])
+    N["step_survivor"], N["step_business"] = pts(lad[0][0], lad[1][0]), pts(lad[1][0], lad[2][0])
+    N["step_home"], N["step_annuity"] = pts(lad[2][0], lad[3][0]), pts(lad[3][0], lad[4][0])
     sw89, sw95 = s89(full, med=SWITCH), s95(full, med=SWITCH)
     N["switch_89"], N["switch_95"], N["switch_pts"] = P(sw89), P(sw95), pts(lad[4][0], sw89)
     # one change at a time to the full plan
@@ -372,6 +375,27 @@ def export_numbers():
     N["guaranteed_income_today"] = K((ann_income(2062, True) + RMP)/(1 + CPI)**(2062 - BY))
     N["guaranteed_income_nominal"] = K(ann_income(2062, True) + RMP)
     N["annuity_adrian"], N["annuity_carmen"] = K(ANN_A_INC), K(ANN_C_INC)
+    # the annuity is insurance for the worst markets: on the recommended plan, the lowest year of spending in the
+    # worst 1% of paths (to Carmen's 95), with and without it, and what it costs the typical family
+    rec = {**full, "med": SWITCH, "guard": True}
+    w, wo = sim(*MIX2, C95, detail=True, **rec), sim(*MIX2, C95, detail=True, **{**rec, "annuity": False})
+    N["ann_w1_with"] = K(np.percentile(w["levels"].min(0), 1)*SPEND)
+    N["ann_w1_without"] = K(np.percentile(wo["levels"].min(0), 1)*SPEND)
+    N["ann_typ_cost"] = K((np.median(wo["levels"].mean(0)) - np.median(w["levels"].mean(0)))*SPEND)
+    l89w, l89wo = sim(*MIX2, C89, detail=True, **rec), sim(*MIX2, C89, detail=True, **{**rec, "annuity": False})
+    N["ann_legacy_cost"] = Mn((np.median(l89wo["end_pot"]) - np.median(l89w["end_pot"]))/(1 + CPI)**(C89 - BY))
+    # the income floor over time (nominal): essentials are 40% of spending (70% of it after Adrian's death)
+    for y in (RETC, ALE + 1, C89):
+        ess = SPEND*FLOOR_SHARE*(SURV if y > ALE else 1)*(1 + CPI)**(y - BY)
+        inc = ann_income(y, True)
+        N[f"floor_{y}_ess"], N[f"floor_{y}_ann"] = K(ess), K(inc)
+        N[f"floor_{y}_pct"] = P((inc + RMP)/ess)
+    # accumulation: what is invested each year, and the range of the portfolio when Adrian retires
+    N["surplus_invest"] = K(SURPLUS - PREM)
+    track = sim(*MIX2, C89, paths=True, **full)[3]
+    i = RETA - 1 - BY                                   # end of 2036 = the day Adrian retires
+    real = track[i] / (1 + CPI)**(i + 1)
+    N["port2037_p10"], N["port2037_p90"] = Mn(np.percentile(real, 10)), Mn(np.percentile(real, 90))
     # the annuity is longevity insurance: its value shows when Adrian outlives his life expectancy
     keep = ALE; ALE = 2067
     try:

@@ -123,8 +123,8 @@ To read them filled in, run `python document/fill.py document/manuscript.md` and
 and powers of attorney this quarter (§8, §9).
 
 **Turn assets into lifelong income.** On their investments alone, the money lasts to Carmen's 89 in {{ladder_1_89}} of 10,000
-simulated markets. An MPF annuity, lower spending after the first death, a staged sale of Carmen's business and a
-planned use of the home raise it to {{ladder_5_89}}; moving to the Standard medical plan at 75 raises it to {{switch_89}} (Figure 6).
+simulated markets. Lower spending after the first death, a staged sale of Carmen's business, a planned use of the home
+and an MPF annuity raise it to {{ladder_5_89}}; moving to the Standard medical plan at 75 raises it to {{switch_89}} (Figure 6).
 
 **Give every voice a place.** Adrian keeps a 40/60 portfolio; ESG rises from 11% to 25% of investable assets, the top of
 the family's 20–25% target, in SFC-listed funds only; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).
@@ -197,20 +197,33 @@ saves a further HK$18K `[CHECK: filing status]`. The reserve falls to twelve mon
 **Status:** final. Source of truth: `document/section-mock-v3.html` (pages 1–2). Owner: Pete; numbers Fahtai.
 **Case asks for:** on track at 65/62? accumulation, drawdown and liquidity strategies.
 
-Figures on these pages: **6** decision ladder (`decision-ladder-half.png`) · **7** when each decision is taken (table) ·
-**8** medical premiums (`medical-premiums-half.png`) · **9** portfolio fan chart (`fan-chart-half.png`, labelled
-"annuity bought, mortgage cleared" at 2037) · **10** income floor (table) · **11** tier review and guardrails (table: fixed
-spending {{fixflex_89}} → tier review {{fixswitch_89}} → guardrails {{guardswitch_89}}; typical spending {{fixswitch_typical}} → {{guardswitch_typical}}; worst-5% lowest
-year {{fixswitch_worst5}} → {{guardswitch_worst5}}).
+Figures on these pages: **6** decision ladder (`decision-ladder-half.png`; order: investments alone {{ladder_1_89}} → lower
+spending after the first death → business sale → home released → MPF annuity {{ladder_5_89}} → Standard plan {{switch_89}}) · **7** when each
+decision is taken (same order; one line each) · **8** medical premiums · **9** portfolio fan chart ("annuity bought,
+mortgage cleared" at 2037) · **10** the income floor in 2039, 2057 and 2066 · **11** tier review and guardrails.
 
-Paragraphs, in order: *Why these four, and not more investment risk* (by 2037 the portfolio is {{portfolio_2037_today}} in today's money,
-about what a 2% real return needs for HK$780K a year, {{need_2037}}; the medical premiums break the plan; the annuity is longevity
-insurance, neutral at the case's life expectancies but {{annuity_longlife_pts}} points if Adrian lives to 95, so only the MPF is
-annuitised) · *Saving to 2037* (the {{surplus}} surplus less new cover is invested each year, new money to whichever sleeve is below
-target; HK$60K each through tax-deductible voluntary MPF, the tax saved not counted) · *Medical premiums* (buy now; review
-the tier at 75 `[CHECK: that the insurer allows a move to its Standard plan without new underwriting]`; the public
-floor) · *An income floor* (HK$268K a year from 2039: {{annuity_adrian}} for Adrian until his death, {{annuity_carmen}} for Carmen for life; single-life,
-fixed) · *Drawdown* · *What the guardrails cost, and what they buy* ({{guard_cost}} a year for the typical family; pre-agreed steps).
+**Why the annuity comes last in Figure 6 (decided 30 Sep, from data).** Added first, onto a plan that is failing, its
+premium showed as −2 points. Added to the full plan it is {{step_annuity}}. Its job is the worst case: on the recommended plan, in
+the worst 1% of markets, spending never falls below {{ann_w1_with}} with it; without it the money runs out and spending falls to
+{{ann_w1_without}}. Cost: about {{ann_typ_cost}} a year of typical spending and {{ann_legacy_cost}} of legacy. It also holds if Adrian lives to 95.
+Annuitising only one parent was tested and is weaker in the worst case (Carmen only: worst 1% HK$123K if Adrian lives to
+95).
+
+Paragraphs, in order:
+- *Why these four, and not more investment risk:* portfolio {{portfolio_2037_today}} in today's money by 2037, what a 2% real
+  return needs for HK$780K; medical premiums break the plan; more equity breaches Adrian's profile and a 7% return only
+  reaches {{eq7_89}}; without the business sale {{biz_not_sold_89}}.
+- *The annuity is insurance, not a return:* {{step_annuity}} point; worst 1% {{ann_w1_with}} vs {{ann_w1_without}}; cost {{ann_typ_cost}} a year and {{ann_legacy_cost}}.
+- *Saving to 2037:* about {{surplus_invest}} a year invested after the new cover; HK$60K each to tax-deductible voluntary MPF;
+  the rest to the underweight sleeve; in 80% of markets the portfolio holds {{port2037_p10}} to {{port2037_p90}} in today's money at 2037.
+- *Medical premiums:* buy now; review the tier at 75 `[CHECK: that the insurer allows a move to its Standard plan
+  without new underwriting]`; the public floor.
+- *An income floor:* {{annuity_adrian}} for Adrian until his death, {{annuity_carmen}} for Carmen for life, plus the reverse mortgage:
+  {{floor_2039_pct}} of essentials in 2039, {{floor_2057_pct}} in 2057 when Carmen is alone, {{floor_2066_pct}} at Carmen's 89. The portfolio covers the rest.
+- *Drawdown* · *What the guardrails cost, and what they buy* ({{guard_cost}} a year for the typical family).
+
+Hard-typed figures checked against the model on 30 Sep: HK$375K of premiums by 2056 (Flexi, today's money); premiums
+rise ≈4.6% a year from 65 to 80; Standard ≈0.30 of Flexi at 75; essentials HK$312K today.
 
 The model clears the ≈HK$0.46M of mortgage still owed in 2037 from the portfolio (§9); every §3 number includes it.
 
@@ -580,7 +593,7 @@ mission to Chloe's interest in design; donations are tax-deductible.
 | Every year | Rebalance by bands; review mortgage, cover, ESG list | Adviser | — |
 | ***Into retirement and legacy*** | | | |
 | 2034–36 | Adrian to 35% equity; business managers in place | Parents | — |
-| 2037 | Clear the mortgage; Adrian's annuity; release the home | Parents | {{ladder_4_89}} → {{ladder_5_89}} |
+| 2037 | Clear the mortgage; Adrian's annuity; release the home | Parents | Home: {{step_home}} points |
 | 2039 | Carmen's annuity; business sold; guardrails begin | Carmen | Sale: {{step_business}} points |
 | 2047 | Adrian 75: review the medical tier | Parents | {{ladder_5_89}} → {{switch_89}} |
 

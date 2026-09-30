@@ -8,10 +8,10 @@ Every chart's numbers, for captions, text and checking.
 | Step | to 89 | to 95 |
 |---|---|---|
 | Portfolio alone; Flexi premiums on top of the 780,000 | 33% | 16% |
-| + MPF annuitised (HKMC, fixed HK$, single life) | 31% | 14% |
-| + spending falls to 70% after Adrian's 84 | 41% | 22% |
-| + Carmen's business sold (3.0M in 2039) | 59% | 36% |
-| + reverse mortgage (230K a year from 2037) | 83% | 61% |
+| + spending falls to 70% after Adrian's 84 | 43% | 24% |
+| + Carmen's business sold (3.0M in 2039) | 60% | 37% |
+| + reverse mortgage (230K a year from 2037) | 82% | 60% |
+| + MPF annuitised (HKMC, fixed HK$, single life) | 83% | 61% |
 | + Standard plan from 2047 | 97% | 89% |
 
 ## fan-chart.png: portfolio percentiles, full plan, HK$M today's money

@@ -74,6 +74,12 @@ still read 0 and every pre-existing input is unchanged.
 17. **Stresses on the recommended plan (30 Sep).** `export_numbers()` adds `rec_*`: each stress re-run with the
    Standard plan from 2047 and the guardrails (`SWITCH_ST` is the stress medical path with the switch). The half
    stress chart now compares fixed spending with the recommended plan. §11 quotes both.
+18. **Annuity moved to the end of the decision ladder (30 Sep).** Added first, onto a failing plan, its premium
+   showed as −2 points; added to the full plan it is +1. `ladder_steps()` now runs survivor spending → business sale →
+   home → annuity, so `ladder_2..4` changed meaning (the headline 33% → 83% did not). New numbers: `ann_w1_with/without`
+   (lowest year in the worst 1% of paths on the recommended plan: HK$546K with the annuity, HK$108K without),
+   `ann_typ_cost`, `ann_legacy_cost`, the income floor by year (`floor_*`), `surplus_invest` and the 2037 range
+   (`port2037_p10/p90`).
 
 **Still hard-coded in `run_model.py`** (left alone, worth moving to `Inputs` later): the 3% discount rate for
 the education reserve, and the 2% real rate and 29 years in the retirement-need formula.

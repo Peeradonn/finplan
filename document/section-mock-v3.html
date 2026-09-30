@@ -12,6 +12,7 @@
   .dlist .d { font: 600 13pt/1.2 var(--display); color: var(--accent-dark); }
   .dlist .w { font: 400 var(--small)/1.25 var(--serif); color: var(--ink); margin-top: .6mm; }
   .dlist .w .when { color: var(--accent); }
+  .pair .fig img { height: 47mm; }
 </style>
 </head>
 <body>
@@ -23,24 +24,26 @@
 
     <div class="annot">
       <div class="fig">
-        <div class="fig-title"><span class="fig-label">Figure 6</span>Each decision adds to the chance the money lasts</div>
+        <div class="fig-title"><span class="fig-label">Figure 6</span>What each decision adds</div>
         <img src="../figures/decision-ladder-half.png" alt="Decision ladder">
         <div class="fig-src">Source: team model, 10,000 simulations.</div>
       </div>
       <div>
         <div class="fig-title"><span class="fig-label">Figure 7</span>When each decision is taken</div>
         <ol class="dlist">
-          <li><div class="d">Annuitise the MPF</div><div class="w"><span class="when">2037–39</span> · at each retirement, through the HKMC Annuity Plan</div></li>
-          <li><div class="d">Spend less after the first death</div><div class="w"><span class="when">from 2056</span> · written into the family's spending policy</div></li>
-          <li><div class="d">Sell the business in stages</div><div class="w"><span class="when">2035–39</span> · buy-sell agreement now; managers in place by Carmen's 58</div></li>
-          <li><div class="d">Release the home's value</div><div class="w"><span class="when">2037</span> · powers of attorney signed; reverse mortgage or downsizing (§9)</div></li>
+          <li><div class="d">Spend less after the first death</div><div class="w"><span class="when">from 2056</span> · in the family's spending policy</div></li>
+          <li><div class="d">Sell the business in stages</div><div class="w"><span class="when">2035–39</span> · buy-sell agreement signed now</div></li>
+          <li><div class="d">Release the home's value</div><div class="w"><span class="when">2037</span> · reverse mortgage or downsizing (§9)</div></li>
+          <li><div class="d">Annuitise the MPF</div><div class="w"><span class="when">2037–39</span> · HKMC, at each retirement</div></li>
         </ol>
       </div>
     </div>
 
-    <p><span class="lead-in">Why these four, and not more investment risk.</span> By 2037 the parents' investments reach about {{portfolio_2037_today}} in today's money, roughly what a 2% real return needs to pay HK$780K a year ({{need_2037}}); what breaks the plan is the medical premiums that figure leaves out. More equity would breach Adrian's low-to-medium risk profile, and a 7% equity return instead of 6% only reaches {{eq7_89}}. The four decisions use assets the family already owns and stay open until their dates. Their costs are deliberate: less of the home passes to Ryan and Chloe, and an annuity cannot be reversed. It is longevity insurance, neutral at the case's life expectancies but {{annuity_longlife_pts}} points if Adrian lives to 95, so only the MPF is annuitised. Without a business sale the plan still reaches {{biz_not_sold_89}}.</p>
+    <p><span class="lead-in">Why these four, and not more investment risk.</span> By 2037 the parents' investments reach about {{portfolio_2037_today}} in today's money, what a 2% real return needs for HK$780K a year; what breaks the plan is the medical premiums that figure leaves out. More equity would breach Adrian's low-to-medium risk profile, and even a 7% equity return only reaches {{eq7_89}}. The decisions use assets the family already owns and stay open until their dates; their cost is a smaller legacy. Without the business sale it still reaches {{biz_not_sold_89}}.</p>
 
-    <p><span class="lead-in">Saving to 2037.</span> The {{surplus}} surplus, less the new cover in §8, is invested each year, with new money going to whichever sleeve is below target so rebalancing needs few sales. Each parent routes HK$60K of it through tax-deductible voluntary MPF; the tax saved is not counted in the model.</p>
+    <p><span class="lead-in">The annuity is insurance, not a return.</span> It barely moves the odds ({{step_annuity}} point), but in the worst 1% of markets the money would otherwise run out, leaving {{ann_w1_without}} a year; with it, spending never falls below {{ann_w1_with}} (Figure 11 rules). It costs about {{ann_typ_cost}} a year of typical spending and {{ann_legacy_cost}} of legacy and cannot be reversed, so only the MPF is annuitised.</p>
+
+    <p><span class="lead-in">Saving to 2037.</span> After the new cover, about {{surplus_invest}} a year is invested: HK$60K each into tax-deductible voluntary MPF, the rest to whichever sleeve is below target, so rebalancing needs few sales. In 80% of markets the portfolio holds {{port2037_p10}} to {{port2037_p90}} in today's money when Adrian retires.</p>
 
     <h3>Medical premiums: the cost the budget leaves out</h3>
     <div class="pair">
@@ -63,24 +66,25 @@
 <section class="page">
   <div class="content">
     <div class="kicker"><span class="n">03</span>Retirement planning · continued</div>
-    <p>The HK$780K target predates individual cover. From retirement the parents pay their own premiums, which rise with medical inflation (10% in 2027, easing to 6% by 2036) and with age (about 4.6% a year from 65 to 80). For both parents the line reaches HK$375K a year in today's money by 2056, close to half the budget (Figure 8). <span class="lead-in">Buy now, while healthy:</span> cover bought at 54 and 49 is guaranteed renewable to 100, while cover bought at retirement may exclude conditions that have appeared by then (§8). <span class="lead-in">Review the tier at 75:</span> the Standard plan costs about a third as much, and switching at Adrian's 75 lifts the plan from {{ladder_5_89}} to {{switch_89}}, at the price of lower limits and fewer private-hospital choices, a choice to make with their health in view. <span class="lead-in">Use the public floor:</span> Hospital Authority fees are capped at HK$10,000 a year per patient; critical-illness cover pays for what the cap excludes.</p>
+    <p>The HK$780K target predates individual cover. From retirement the parents pay their own premiums, which rise with medical inflation (10% in 2027, easing to 6% by 2036) and with age (about 4.6% a year from 65 to 80), reaching HK$375K a year in today's money by 2056, close to half the budget (Figure 8). <span class="lead-in">Buy now, while healthy:</span> cover bought at 54 and 49 is renewable to 100; cover bought later may exclude conditions found by then (§8). <span class="lead-in">Review the tier at 75:</span> the Standard plan costs about a third as much, and switching at Adrian's 75 lifts the plan from {{ladder_5_89}} to {{switch_89}}, at the price of lower limits and fewer private-hospital choices, a choice to make with their health in view. <span class="lead-in">Use the public floor:</span> Hospital Authority fees are capped at HK$10,000 a year per patient; critical-illness cover pays for what the cap excludes.</p>
 
     <h3>An income floor: essentials paid for life</h3>
-    <p>Using the spending pattern of Hong Kong's top-quartile households (Household Expenditure Survey 2024/25), essentials are about 40% of the HK$780K: HK$312K a year today, about HK$430K by 2039. Converting the parents' MPF into HKMC life annuities at each retirement pays HK$268K a year from 2039, fixed: {{annuity_adrian}} for Adrian until his death and {{annuity_carmen}} for Carmen for life (Figure 10). A fixed payment loses about 45% of its real value over 24 years, so the portfolio still matters.</p>
+    <p>On the spending pattern of Hong Kong's top-quartile households (2024/25 survey), essentials are about 40% of spending: HK$312K a year today. The MPF annuities pay {{annuity_adrian}} for Adrian until his death and {{annuity_carmen}} for Carmen for life, fixed; with the reverse mortgage they cover every essential in 2039. It then weakens: Adrian's annuity stops at his death and fixed payments lose value, so by Carmen's 89 it covers {{floor_2066_pct}} of essentials (Figure 10). The portfolio covers the rest, protected by the rules below.</p>
     <div class="fig">
-      <div class="fig-title"><span class="fig-label">Figure 10</span>The MPF annuity covers most of the floor; the home covers the rest</div>
+      <div class="fig-title"><span class="fig-label">Figure 10</span>Guaranteed income covers every essential at first, and less as prices rise</div>
       <table class="t dense">
-        <thead><tr><th>Income floor at 2039</th><th class="n">HK$ a year</th><th class="n">Share of floor</th></tr></thead>
+        <thead><tr><th>HK$ a year, as paid</th><th class="n">2039</th><th class="n">2057, Carmen alone</th><th class="n">2066, Carmen 89</th></tr></thead>
         <tbody>
-          <tr><td>Essentials (40% of HK$780K, inflated)</td><td class="n">≈430,000</td><td class="n">100%</td></tr>
-          <tr><td>MPF annuities (HKMC, fixed, single life)</td><td class="n">268,000</td><td class="n">62%</td></tr>
-          <tr class="total"><td>Plus reverse mortgage from 2037 (§9)</td><td class="n">498,000</td><td class="n">116%</td></tr>
+          <tr><td>Essentials (40% of spending)</td><td class="n">{{floor_2039_ess}}</td><td class="n">{{floor_2057_ess}}</td><td class="n">{{floor_2066_ess}}</td></tr>
+          <tr><td>MPF annuities (fixed, single life)</td><td class="n">{{floor_2039_ann}}</td><td class="n">{{floor_2057_ann}}</td><td class="n">{{floor_2066_ann}}</td></tr>
+          <tr><td>Reverse mortgage (§9)</td><td class="n">HK$230K</td><td class="n">HK$230K</td><td class="n">HK$230K</td></tr>
+          <tr class="total"><td>Share of essentials covered</td><td class="n">{{floor_2039_pct}}</td><td class="n">{{floor_2057_pct}}</td><td class="n">{{floor_2066_pct}}</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>Drawdown: rules agreed in advance</h3>
-    <p>Two to three years of spending sits in cash and short bonds, refilled in good years, so a market fall never forces a sale. Discretionary spending follows the Guyton–Klinger guardrails, triggered by markets rather than by the planned rise in premiums: no inflation increase after a year of negative returns; a 10% cut if the withdrawal rate rises more than 20% above its starting level; a 10% raise if it falls 20% below. Figure 11 shows what they are worth.</p>
+    <p>Two to three years of spending sits in cash and short bonds, refilled in good years, so a market fall never forces a sale. Discretionary spending follows the Guyton–Klinger guardrails, triggered by markets rather than by the planned rise in premiums: no inflation increase after a year of negative returns; a 10% cut if the withdrawal rate rises more than 20% above its starting level; a 10% raise if it falls 20% below.</p>
 
     <div class="fig">
       <div class="fig-title"><span class="fig-label">Figure 11</span>The tier review protects the money; the guardrails protect the worst case</div>
@@ -96,7 +100,7 @@
     </div>
 
     <h3>What the guardrails cost, and what they buy</h3>
-    <p>The medical-tier review does most of the work: with it, the typical family spends its full HK$780K every year. The guardrails cost the typical family about {{guard_cost}} a year, roughly one overseas trip, taken from discretionary spending; essentials are never cut. What they buy is the worst case: without them, one market path in twenty ends on guaranteed income alone, about {{fixswitch_worst5}} a year by Carmen's 90s; with them, spending never falls below about {{guardswitch_worst5}}. Any shortfall shows up years ahead in the annual review, with pre-agreed next steps: the tier review, then selling the home.</p>
+    <p>The tier review does most of the work: with it, the typical family spends its full HK$780K. The guardrails cost the typical family about {{guard_cost}} a year, taken from discretionary spending; essentials are never cut. What they buy is the worst case: without them, one path in twenty ends on guaranteed income alone, about {{fixswitch_worst5}} a year; with them, spending never falls below about {{guardswitch_worst5}}. A shortfall shows years ahead in the annual review, with agreed next steps: the tier review, then selling the home.</p>
     <div class="spacer"></div>
   </div>
   <div class="page-foot"><span>Built to Last · The Wong family</span><span>5</span></div>

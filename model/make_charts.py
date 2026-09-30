@@ -49,9 +49,9 @@ FULL = M.full_plan()
 
 # 1 ---------- decision ladder ----------
 steps = M.ladder_steps() + [(f"+ Standard plan from {M.SWITCH_Y}", {**FULL, "med": M.SWITCH})]
-short = ["Investments alone,\nmedical premiums on top", "+ MPF annuity\n(fixed HK$, single life)",
+short = ["Investments alone,\nmedical premiums on top",
          "+ spending falls to 70%\nafter Adrian's 84", "+ Carmen's business\nsold in 2039",
-         "+ reverse mortgage\nfrom 2037", "+ Standard plan\nfrom Adrian's 75"]
+         "+ reverse mortgage\nfrom 2037", "+ MPF annuity\n(fixed HK$, single life)", "+ Standard plan\nfrom Adrian's 75"]
 r89 = [M.sim(*MIX2, C89, **kw)[0] for _, kw in steps]
 r95 = [M.sim(*MIX2, C95, **kw)[0] for _, kw in steps]
 fig, ax = plt.subplots(figsize=(W, 3.1))
@@ -238,8 +238,8 @@ DATA.append(("property-options.png: annuity, survivor spending and business sale
 HW = 95 / 25.4                               # inches
 with plt.rc_context({"font.size": 10.5}):
     # 1h decision ladder
-    lab = ["Investments alone", "+ MPF annuity", "+ lower spending\nafter first death", "+ business sale",
-           "+ home released", "+ Standard plan\nfrom 75"]
+    lab = ["Investments alone", "+ lower spending\nafter first death", "+ business sale",
+           "+ home released", "+ MPF annuity", "+ Standard plan\nfrom 75"]
     fig, ax = plt.subplots(figsize=(HW, 3.2))
     y = np.arange(len(lab))[::-1]; h = 0.36
     ax.barh(y + h/2 + 0.02, r89, h, color=ACC_D, label="to Carmen's 89")
