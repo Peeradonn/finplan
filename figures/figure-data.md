@@ -7,12 +7,12 @@ Every chart's numbers, for captions, text and checking.
 
 | Step | to 89 | to 95 |
 |---|---|---|
-| Portfolio alone; Flexi premiums on top of the 780,000 | 36% | 17% |
-| + MPF annuitised (HKMC, fixed HK$ for life) | 37% | 18% |
-| + spending falls to 70% after Adrian's 84 | 47% | 27% |
-| + Carmen's business sold (3.0M in 2039) | 66% | 42% |
-| + reverse mortgage (230K a year from 2037) | 87% | 68% |
-| + Standard plan from 2047 | 98% | 94% |
+| Portfolio alone; Flexi premiums on top of the 780,000 | 33% | 16% |
+| + MPF annuitised (HKMC, fixed HK$, single life) | 31% | 14% |
+| + spending falls to 70% after Adrian's 84 | 41% | 22% |
+| + Carmen's business sold (3.0M in 2039) | 59% | 36% |
+| + reverse mortgage (230K a year from 2037) | 83% | 61% |
+| + Standard plan from 2047 | 97% | 89% |
 
 ## fan-chart.png: portfolio percentiles, full plan, HK$M today's money
 
@@ -20,10 +20,10 @@ Every chart's numbers, for captions, text and checking.
 |---|---|---|---|---|---|
 | 2030 | 9.2 | 9.8 | 10.6 | 11.4 | 12.2 |
 | 2037 | 14.1 | 15.5 | 17.3 | 19.4 | 21.5 |
-| 2045 | 11.4 | 13.6 | 16.6 | 20.1 | 23.9 |
-| 2056 | 4.6 | 7.6 | 11.8 | 17.2 | 23.4 |
-| 2066 | 0.0 | 2.8 | 8.0 | 15.1 | 23.4 |
-| 2072 | 0.0 | 0.0 | 4.2 | 12.4 | 22.0 |
+| 2045 | 10.9 | 13.2 | 16.1 | 19.6 | 23.4 |
+| 2056 | 4.2 | 7.1 | 11.2 | 16.6 | 22.7 |
+| 2066 | 0.0 | 1.5 | 6.7 | 13.6 | 21.8 |
+| 2072 | 0.0 | 0.0 | 2.4 | 10.4 | 19.9 |
 
 ## medical-premiums.png: medical line net of HK$65K already in the HK$780K, HK$K today's money
 
@@ -50,28 +50,28 @@ Every chart's numbers, for captions, text and checking.
 
 Model budget: HK$600K today, escalated 5% a year = HK$662K in 2028/29.
 
-## sensitivity-tornado.png: one change at a time to the full plan (base 87% to 89)
+## sensitivity-tornado.png: one change at a time to the full plan (base 83% to 89)
 
 | Change | Success to 89 | vs base |
 |---|---|---|
-| CPI 3.5% (not 2.5%) | 56% | -31pp |
-| Medical trend 8.5% flat | 64% | -23pp |
-| Business not sold | 73% | -14pp |
-| Standard plan from Adrian's 75 | 98% | +11pp |
-| Couple's spending continues after 2056 | 78% | -9pp |
-| Equities 5% | 79% | -8pp |
-| Reverse mortgage from 2045 (not 2037) | 80% | -7pp |
-| Equities 7% (not 6%) | 93% | +6pp |
-| No MPF annuity | 84% | -4pp |
+| CPI 3.5% (not 2.5%) | 49% | -33pp |
+| Medical trend 8.5% flat | 58% | -25pp |
+| Business not sold | 66% | -16pp |
+| Standard plan from Adrian's 75 | 97% | +14pp |
+| Couple's spending continues after 2056 | 72% | -11pp |
+| Equities 5% | 72% | -11pp |
+| Reverse mortgage from 2045 (not 2037) | 73% | -9pp |
+| Equities 7% (not 6%) | 89% | +7pp |
+| No MPF annuity | 82% | -1pp |
 
 ## stress-scenarios.png: full plan under the stress scenarios (methodology §5)
 
 | Scenario | to 89 | to 95 |
 |---|---|---|
-| Full plan, base assumptions | 87% | 68% |
-| A. Low-return decade | 40% | 16% |
-| B. Inflation shock | 33% | 11% |
-| C. Long life + medical costs | 64% | 32% |
+| Full plan, base assumptions | 83% | 61% |
+| A. Low-return decade | 32% | 11% |
+| B. Inflation shock | 28% | 9% |
+| C. Long life + medical costs | 58% | 26% |
 
 A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medical 8.54% flat (read the 95 column).
 
@@ -79,9 +79,9 @@ A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medic
 
 | Option | Success to 89 | Portfolio | Home equity | Legacy |
 |---|---|---|---|---|
-| Keep the home, no release | 66% | 3.1 | 7.8 | 10.8 |
-| Reverse mortgage, 230K a year from 2037 | 87% | 8.0 | 1.5 | 9.5 |
-| Downsize in 2037 (release 4.5M) | 87% | 8.9 | 4.7 | 13.6 |
+| Keep the home, no release | 59% | 1.7 | 7.8 | 9.5 |
+| Reverse mortgage, 230K a year from 2037 | 83% | 6.7 | 1.5 | 8.1 |
+| Downsize in 2037 (release 4.5M) | 83% | 7.5 | 4.7 | 12.2 |
 
 ## cashflow-half.png: parents' annual cash flow, low bonus (Tax tab)
 
@@ -101,3 +101,12 @@ A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medic
 | Target | 2,531,787 | 3,102,062 | 2,066,151 |
 
 Target = emergency 1,000,000 + education 2,567,698 (half deposits, half short bonds) + Adrian 2,066,151 at 40/55/5 + Carmen 2,066,151 at 60/33/7 (equity/bonds/cash).
+
+## stress-half.png: chance the money lasts to Carmen's 89, fixed spending vs the recommended plan (Standard plan from Adrian's 75 + guardrails)
+
+| Scenario | Fixed spending | Recommended plan |
+|---|---|---|
+| Full plan, base assumptions | 83% | 100% |
+| A. Low-return decade | 32% | 95% |
+| B. Inflation shock | 28% | 92% |
+| C. Long life + medical costs | 58% | 99% |

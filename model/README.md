@@ -14,9 +14,9 @@ Then look at the `Outputs` tab. For the Monte Carlo, run `python3 run_model.py` 
 
 ---
 
-## Changes 29 Sep (Pete) — Fahtai, please review
+## Changes 29–30 Sep (Pete) — Fahtai, please review
 
-Not committed. The workbook was rebuilt with `build_xlsx.py` and recalculated in Excel; the three CHECK cells
+The workbook was rebuilt with `build_xlsx.py` and recalculated in Excel; the three CHECK cells
 still read 0 and every pre-existing input is unchanged.
 
 1. **Bug fix: the annuity was growing with inflation in the Monte Carlo.** `run_model.py` subtracted
@@ -40,7 +40,7 @@ still read 0 and every pre-existing input is unchanged.
    workbook's) · new **§5 decision ladder** (what each decision adds, and the alternatives) · new §6 medical line
    by year · Carmen's tax is read from the `Tax` tab instead of a typed-in 71,335 · UTF-8 output on Windows.
 7. **`build_xlsx.py`** saves next to itself (it had a hard-coded Linux path); set `WONG_XLSX` to save elsewhere.
-8. **Protection premiums entered: 159,000 a year** (Lookbua's sizing; critical-illness rates from Bowtie's
+8. **Protection premiums entered: 159,000 a year, now 113,600** (critical illness re-sized to HK$1.5M each, 30 Sep) (Lookbua's sizing; critical-illness rates from Bowtie's
    published table, 31 Aug 2026; see `drafts/08-protection.md`). They are paid only until Adrian retires, in both
    the `Projection` tab and the Monte Carlo.
 9. **Bug fix: premiums were set to be deducted twice.** The script read the Outputs surplus, which already nets
@@ -59,8 +59,21 @@ still read 0 and every pre-existing input is unchanged.
    not a market signal; letting it trigger cuts trimmed spending in good markets too (typical family HK$744K vs
    HK$749K now; Flexi-for-life case far worse). Premiums are still paid in full. §10 also prints how the family
    lives: typical and worst-case spending, including the lowest year in the worst 5% of paths to Carmen's 95.
-11. **`make_charts.py`** (new): seven charts to `../figures/` at 300 dpi, plus `figure-data.md` with every
-   number behind them. Needs `matplotlib`.
+11. **`make_charts.py`** (new): the charts to `../figures/` at 300 dpi, plus `figure-data.md` with every
+   number behind them and `numbers.json`, which fills the `{{key}}` placeholders in the documents. Needs `matplotlib`.
+15. **Annuities split by person, single life (30 Sep).** The model had bought one annuity for both parents in 2037,
+   while Carmen still works to 2039, and paid it to the horizon. Now: Adrian HK$2.31M → HK$160.8K a year from 2037,
+   stopping at his death (2056); Carmen HK$1.81M → HK$107.3K a year from 2039, for life (`Inputs`: four annuity rows;
+   `Projection` columns O and T; `ann_income()` in the script). Effect: the annuity is longevity insurance, about
+   neutral at the case's life expectancies and +3 points to 95 if Adrian lives to 95 (`annuity_longlife_pts`).
+16. **Mortgage cleared at retirement (30 Sep).** About HK$0.46M is still owed in 2037 (HK$1.8M at 3.5%, ≈14 years
+   left at HK$13.6K a month). It sits outside the HK$780K and a reverse mortgage needs the home free of other loans,
+   so it is now repaid from the portfolio in 2037 (`Inputs` row; `Projection` column T, renamed "Lump sums out";
+   `sim()` and `sim_rules()`). Effect: headline 36% → 85% becomes 33% → 83%; tier review 97% and guardrails 100%
+   unchanged.
+17. **Stresses on the recommended plan (30 Sep).** `export_numbers()` adds `rec_*`: each stress re-run with the
+   Standard plan from 2047 and the guardrails (`SWITCH_ST` is the stress medical path with the switch). The half
+   stress chart now compares fixed spending with the recommended plan. §11 quotes both.
 
 **Still hard-coded in `run_model.py`** (left alone, worth moving to `Inputs` later): the 3% discount rate for
 the education reserve, and the 2% real rate and 29 years in the retirement-need formula.
@@ -131,32 +144,32 @@ LibreOffice, **save before running the script**, or it will read stale numbers.
 | Emergency reserve | 30.5 months (benchmark 6–12) |
 | Salaries tax, separate / joint | 181,770 / 199,770 |
 | Retirement need at 2037 (today's money) | 17,038,620 |
-| Projected at 2037 (today's money) | 16,457,803 |
-| Protection premiums (Lookbua's cover) | 159,000 a year average to 2036; surplus after them 559,230 |
-| Deterministic: portfolio runs out | 2063 (Carmen 86), with medical and protection premiums, no backstops |
+| Projected at 2037 (today's money), after clearing the mortgage | 16,965,287 |
+| Protection premiums | 113,600 a year average to 2036; surplus after them 604,630 |
+| Deterministic: portfolio runs out | 2064 (Carmen 87), with medical and protection premiums, no backstops |
 | Education reserve (overseas, conservative) | 2,567,698 |
 | Medical line at Carmen 89 (nominal, net) | 872,123 |
-| Monte Carlo, mix 2, annuitised, base case | 26% to 89 · 11% to 95 |
-| **Decision ladder, all four decisions (mix 2)** | **80% to 89 · 58% to 95** |
-| Same, Standard plan instead of Flexi | 98% to 89 · 93% to 95 |
-| Stress scenarios A / B / C on the full plan (to 89) | 29% · 24% · 53% |
+| Monte Carlo, mix 2, investments alone | 33% to 89 · 16% to 95 |
+| **Decision ladder, all four decisions (mix 2)** | **83% to 89 · 61% to 95** |
+| Same, Standard plan from Adrian's 75 | 97% to 89 · 89% to 95 |
+| Same, plus guardrails (the recommended plan) | 100% to 89 · 99% to 95; typical spending HK$739K |
+| Stress scenarios A / B / C, fixed spending (to 89) | 32% · 28% · 58% |
+| Same, recommended plan (to 89) | 95% · 92% · 99% |
 
-**The headline (29 Sep):** medical premiums are the binding constraint. On the portfolio alone the money
-lasts to Carmen's 89 in 26% of paths. Lower spending after Adrian's life expectancy, a staged business sale and
-a reverse mortgage take it to 80%; the Standard medical plan instead of Flexi takes it to 98%. The annuity adds
-nothing on its own but 5 points once the other decisions are in. Downsizing in 2037 matches the reverse mortgage
-(81%) and leaves ≈HK$4M more to the heirs. In the base case mix 3 (60/40) edges mix 2 (35% vs 26%).
+**The headline (30 Sep):** medical premiums are the binding constraint. On the portfolio alone the money
+lasts to Carmen's 89 in 33% of paths. Lower spending after Adrian's life expectancy, a staged business sale and
+a reverse mortgage take it to 83%; reviewing the medical tier at Adrian's 75 takes it to 97%, and the guardrails to
+100% at a cost of about HK$41K a year for the typical family. The single-life annuity is longevity insurance, not a
+return booster. Downsizing in 2037 matches the reverse mortgage (83%) and leaves ≈HK$4M more to the heirs.
+All numbers live in `figures/numbers.json`; this table is a snapshot.
 
 ## Known limits — state these in the proposal
 
 - Returns are drawn from a **normal distribution** with **zero correlation** between equities and
   bonds. Real markets have fatter tails, and correlations rise in crises. The success percentages are
-  therefore optimistic in the tail. Use them **comparatively** (mix 2 beats mix 3; the annuity adds
-  ~21pp), not as absolute probabilities.
+  therefore optimistic in the tail. Use them **comparatively**, not as absolute probabilities.
 - Child allowance is indexed for all years rather than stopping when Chloe graduates. Small, but it
   slightly understates later tax.
-- Insurance premiums are a **placeholder of 0** until Lookbua's figures arrive. Every number above
-  will move when they land.
 - Property, the reverse mortgage and Carmen's business are **not** in the base projection. They are
   deliberate backstops held outside the plan; switch them on in `Inputs`, and `run_model.py` §5 shows what
   each one is worth.
@@ -164,8 +177,8 @@ nothing on its own but 5 points once the other decisions are in. Downsizing in 2
   female Standard column). Premiums beyond 80 grow at each column's 75→80 slope.
 - The part of the premiums already inside the 780,000 is netted off in full even after Adrian's death, when
   only Carmen's premium remains. Small, and conservative.
-- The mortgage sits inside the 984,000 of living expenses and is not modelled separately, so the
-  drop in expenses when it clears (about 2040) is not captured.
+- The mortgage sits inside the 984,000 of living expenses until 2037; what is still owed then (≈HK$0.46M) is
+  repaid from the portfolio in 2037 (change 16).
 
 ## If you change one thing, change these
 
@@ -176,7 +189,7 @@ nothing on its own but 5 points once the other decisions are in. Downsizing in 2
 | Local instead of overseas study | `Education — overseas annual (today)` → 250,000 |
 | Insurance affordability | `Insurance premiums (Lookbua, TBC)` |
 | A different retirement age | `Adrian retires (age 65)` |
-| No annuity | `Annuity income` → 0 and `Annuity purchase cost` → 0 |
+| No annuity | the four `Annuity:` rows → 0 |
 
 ---
 

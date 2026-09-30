@@ -42,8 +42,11 @@ R_BOND   = g('Bonds / IG');        R_LAD = g('Treasury ladder')
 RETA     = int(g('Adrian retires (age 65)')); BY = int(g('Base year'))
 C89      = int(g('Carmen age 89')); C95 = int(g('Carmen age 95'))
 SPEND    = g('Retirement spending (today money)')
-ANN_COST = g('Annuity purchase cost at 2037')
-ANN_INC  = g('Annuity income (HKMC, annual)')     # fixed HK$ for life: never indexed
+# HKMC annuities: fixed HK$, single life. Adrian buys at 65 (2037), Carmen when she stops work at 62 (2039).
+ANN_A_COST, ANN_A_INC = g('Annuity: Adrian premium (MPF at 65, 2037)'), g('Annuity: Adrian income a year')
+ANN_C_COST, ANN_C_INC = g('Annuity: Carmen premium (MPF at 62, 2039)'), g('Annuity: Carmen income a year')
+ANN_INC = ANN_A_INC + ANN_C_INC                   # both alive, from 2039
+MORT     = g("Mortgage: balance repaid at Adrian's retirement (2037)")   # outside the 780K; cleared in 2037
 EDU_A    = g('Education — overseas annual (today)'); EDU_N = int(g('Education — years'))
 EDU_ESC  = g('Education escalation (overseas)'); EDU_Y = int(g('Chloe starts university'))
 WAGE     = g('Wage growth — Adrian')
@@ -115,6 +118,8 @@ MED_BASE = med_path(TIER, bool(M_STS))
 FLEXI, STD, STRESS = med_path(1), med_path(2), med_path(1, stress=True)
 SWITCH_Y = int(g('Medical plan review: switch to Standard (year)'))
 SWITCH = {y: (FLEXI.get(y, 0) if y < SWITCH_Y else STD.get(y, 0)) for y in set(FLEXI) | set(STD)}
+STD_ST = med_path(2, stress=True)
+SWITCH_ST = {y: (STRESS.get(y, 0) if y < SWITCH_Y else STD_ST.get(y, 0)) for y in set(STRESS) | set(STD_ST)}
 
 def _check_against_workbook():
     proj = {r[0]: r[13] for r in WB["Projection"].iter_rows(min_row=4, values_only=True) if isinstance(r[0], int)}
@@ -130,6 +135,12 @@ edu_res = sum(c/(1.03**(y-BY)) for c,y in zip(edu_nom, range(EDU_Y, EDU_Y+EDU_N)
 POOL = POOL_ALL - edu_res
 
 BASE = dict(med=MED_BASE, surv=SURV if SURV_S else 1.0, biz=BIZ if BIZ_S else 0, rmp=RMP if RMP_S else 0)
+
+def ann_income(y, annuity=True):
+    """Annuity income in year y: Adrian's from his retirement until his death (single life), Carmen's from hers."""
+    if not annuity:
+        return 0
+    return (ANN_A_INC if RETA <= y <= ALE else 0) + (ANN_C_INC if y >= RETC else 0)
 
 # ---------- Monte Carlo ----------
 FLOOR_SHARE = g('Retirement income floor %')      # essentials: never cut by the guardrails
@@ -156,13 +167,15 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
         y = BY + i
         r = w_eq*rng.normal(r_eq, S_EQ, n) + (1-w_eq)*rng.normal(r_bd, s_bd, n)
         worst = np.minimum(worst, r); pot = pot*(1+r)
-        if y == RETA and annuity: pot -= ANN_COST
+        if annuity and y == RETA: pot -= ANN_A_COST
+        if annuity and y == RETC: pot -= ANN_C_COST
+        if y == RETA: pot -= MORT                           # mortgage still owed, cleared at retirement
         pot += mpf_in(y)                                   # MPF contributions, both sides, while working
         if y < RETA:
             pot += SURPLUS*(1+WAGE)**i - PREM
         else:
             target = SPEND*(1+cpi)**i*(surv if y > ALE else 1)
-            income = (ANN_INC if annuity else 0) + (rmp if rmp and y >= RMP_Y else 0)                      + (CARMEN_NET*(1+WAGE)**i if y < RETC else 0)
+            income = ann_income(y, annuity) + (rmp if rmp and y >= RMP_Y else 0)                      + (CARMEN_NET*(1+WAGE)**i if y < RETC else 0)
             if guard and y >= RETC:                          # rules start with full retirement (Carmen at 62)
                 d = np.where(last_r < 0, d/(1+cpi), d)     # no inflation rise after a negative year
                 # trigger on lifestyle spending only: the planned rise in medical premiums is budgeted, not a
@@ -207,7 +220,7 @@ def ladder_steps():
     """The decision ladder: each step adds one decision to the one before."""
     return [
         ("Portfolio alone; Flexi premiums on top of the 780,000", dict(annuity=False, med=FLEXI)),
-        ("+ MPF annuitised (HKMC, fixed HK$ for life)",           dict(annuity=True,  med=FLEXI)),
+        ("+ MPF annuitised (HKMC, fixed HK$, single life)",         dict(annuity=True,  med=FLEXI)),
         (f"+ spending falls to {SURV:.0%} after Adrian's {ALE - 1972}",
                                                                  dict(annuity=True,  med=FLEXI, surv=SURV)),
         (f"+ Carmen's business sold ({BIZ/1e6:.1f}M in {BIZ_Y})",  dict(annuity=True,  med=FLEXI, surv=SURV, biz=BIZ)),
@@ -266,11 +279,13 @@ def sim_rules(policy, end, w_t=0.40, n=10_000, seed=42):
         eq, bd = eq*(1+re), bd*(1+rb)
         worst = np.minimum(worst, np.where(tot0 > 0, (eq + bd)/np.maximum(tot0, 1) - 1, 0))
         flow = 0.0
-        if y == RETA: flow -= ANN_COST
+        if y == RETA: flow -= ANN_A_COST
+        if y == RETC: flow -= ANN_C_COST
+        if y == RETA: flow -= MORT
         flow += mpf_in(y)
         if y < RETA: flow += SURPLUS*(1+WAGE)**i - PREM
         else:
-            flow -= SPEND*(1+CPI)**i*(SURV if y > ALE else 1) - ANN_INC
+            flow -= SPEND*(1+CPI)**i*(SURV if y > ALE else 1) - ann_income(y, True)
             if y < RETC: flow += CARMEN_NET*(1+WAGE)**i
             if y >= RMP_Y: flow += RMP
         if y == BIZ_Y: flow += BIZ
@@ -298,7 +313,7 @@ def sim_rules(policy, end, w_t=0.40, n=10_000, seed=42):
 # ---------- numbers quoted in the proposal (written to figures/numbers.json by make_charts.py) ----------
 def export_numbers():
     """Every model number the text quotes, formatted as printed. Documents use {{key}} placeholders."""
-    global RMP_Y
+    global RMP_Y, ALE
     P = lambda x: f"{x*100:.0f}%"                       # 0.873 -> "87%"
     K = lambda x: f"HK${x/1e3:,.0f}K"                    # 751000 -> "HK$751K"
     Mn = lambda x: f"HK${x/1e6:.1f}M"
@@ -346,8 +361,23 @@ def export_numbers():
             fail = ~a["alive"]
             N["runout_age"] = f"{np.median(a['runout'][fail]) - 1977:.0f}" if fail.any() else "n/a"
             N["runout_age_p10"] = f"{np.percentile(a['runout'][fail], 10) - 1977:.0f}" if fail.any() else "n/a"
+    # the same stresses on the recommended plan: tier review at 75 plus guardrails (§11 register)
+    rec = {**full, "med": SWITCH, "guard": True}
+    for key, o in (("cpi", dict(cpi=ST_CPI)), ("med", dict(med=SWITCH_ST)), ("lowret", dict(r_eq=ST_EQ)),
+                   ("biz", dict(biz=0)), ("surv", dict(surv=1.0)), ("stressB", dict(cpi=ST_CPI, med=SWITCH_ST))):
+        bd = ST_BD if key == "lowret" else MIX2[2]
+        a = sim(MIX2[0], MIX2[1], bd, C89, detail=True, **{**rec, **o})
+        N[f"rec_{key}_89"], N[f"rec_{key}_typical"] = P(a["success"]), K(np.median(a["levels"].mean(0))*SPEND)
     N["guard_cost"] = K(SPEND - float(N["guardswitch_typical"].strip("HK$K").replace(",", ""))*1e3)
-    N["guaranteed_income_today"] = K((ANN_INC + RMP)/(1 + CPI)**(2062 - BY))
+    N["guaranteed_income_today"] = K((ann_income(2062, True) + RMP)/(1 + CPI)**(2062 - BY))
+    N["guaranteed_income_nominal"] = K(ann_income(2062, True) + RMP)
+    N["annuity_adrian"], N["annuity_carmen"] = K(ANN_A_INC), K(ANN_C_INC)
+    # the annuity is longevity insurance: its value shows when Adrian outlives his life expectancy
+    keep = ALE; ALE = 2067
+    try:
+        N["annuity_longlife_pts"] = pts(s95(full, annuity=False), s95(full))
+    finally:
+        ALE = keep
     # positions from the workbook
     N["portfolio_2037_today"] = Mn(O["Outputs.Portfolio at 2037 in TODAY money"])
     N["need_2037"] = Mn(pv(SPEND, .02, C89 - RETA))
@@ -460,7 +490,7 @@ def main():
         ages = D["runout"][fail] - 1977
         print(f"  Fixed spending, Flexi: failing paths run out at Carmen's {np.median(ages):.0f} (median), "
               f"{np.percentile(ages, 10):.0f} (10th percentile)")
-    y = 2062; inc = ANN_INC + RMP
+    y = 2062; inc = ann_income(y, True) + RMP
     print(f"  Guaranteed income after a run-out (annuity + reverse mortgage): HK${inc/1e3:.0f}K nominal, "
           f"HK${inc/(1+CPI)**(y-BY)/1e3:.0f}K in today's money at Carmen's 85")
 

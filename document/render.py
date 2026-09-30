@@ -42,7 +42,12 @@ print(f"{os.path.basename(PDF)}")
 for i, (cls, attrs) in enumerate(pages, 1):
     over = re.search(r'data-overflow="([^"]+)"', attrs)
     free = re.search(r'data-free="([^"]+)"', attrs)
-    status = f"OVERFLOWS by {over.group(1)}" if over else (f"fits, {free.group(1)} mm free" if free else "fits")
+    if over:
+        status = f"OVERFLOWS by {over.group(1)}"
+    elif free and float(free.group(1)) < 0:          # content runs into the footer band
+        status = f"OVERFLOWS into the footer by {-float(free.group(1)):.1f} mm"
+    else:
+        status = f"fits, {free.group(1)} mm free" if free else "fits"
     print(f"  page {i:>2}: {status}")
 
 # ---- PDF checks ----

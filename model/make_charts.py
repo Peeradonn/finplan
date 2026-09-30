@@ -49,7 +49,7 @@ FULL = M.full_plan()
 
 # 1 ---------- decision ladder ----------
 steps = M.ladder_steps() + [(f"+ Standard plan from {M.SWITCH_Y}", {**FULL, "med": M.SWITCH})]
-short = ["Investments alone,\nmedical premiums on top", "+ MPF annuity\n(fixed HK$ for life)",
+short = ["Investments alone,\nmedical premiums on top", "+ MPF annuity\n(fixed HK$, single life)",
          "+ spending falls to 70%\nafter Adrian's 84", "+ Carmen's business\nsold in 2039",
          "+ reverse mortgage\nfrom 2037", "+ Standard plan\nfrom Adrian's 75"]
 r89 = [M.sim(*MIX2, C89, **kw)[0] for _, kw in steps]
@@ -80,7 +80,7 @@ fig, ax = plt.subplots(figsize=(W, 3.2))
 ax.fill_between(years, q[10], q[90], color=SEQ["100"], lw=0, label="10th–90th percentile")
 ax.fill_between(years, q[25], q[75], color=SEQ["200"], lw=0, label="25th–75th percentile")
 ax.plot(years, q[50], color=BLUE, lw=2, solid_capstyle="round", label="Median")
-for yr, lbl in ((M.RETA, "Adrian retires"), (C89, "Carmen 89")):
+for yr, lbl in ((M.RETA, "Adrian retires: annuity bought,\nmortgage cleared (2037)"), (C89, "Carmen 89")):
     ax.axvline(yr, color=AXIS, lw=0.8)
     ax.text(yr + 0.4, max(q[90])*0.98, lbl, fontsize=9, color=INK2, va="top")
 ax.set_xlim(years[0], years[-1]); ax.set_ylim(0, None)
@@ -273,7 +273,7 @@ with plt.rc_context({"font.size": 10.5}):
     ax.fill_between(years, q[25], q[75], color=SEQ["200"], lw=0, label="25th–75th pct")
     ax.plot(years, q[50], color=ACC, lw=1.8, solid_capstyle="round", label="Median")
     ax.axvline(M.RETA, color=AXIS, lw=0.8)
-    ax.text(M.RETA + 0.6, max(q[90])*0.97, "Adrian\nretires", va="top", fontsize=9.5, color=INK2)
+    ax.text(M.RETA - 0.6, 0.6, "Annuity\nbought,\nmortgage\ncleared", ha="right", va="bottom", fontsize=9.5, color=INK2)
     ax.set_xticks([2030, 2037, 2050, 2066], ["2030", "2037", "2050", "2066\nC 89"])
     ax.set_xlim(years[0], C89 + 1); ax.set_ylim(0, None)
     ax.set_ylabel("HK$M, today's money")
@@ -366,18 +366,27 @@ with plt.rc_context({"font.size": 10.5}):
     tidy(ax); ax.legend(loc="lower center", bbox_to_anchor=(0.4, 1.02), ncol=2, handlelength=1.2)
     save(fig, "property-options-half.png")
 
-    # Figures 26-27: stress scenarios and sensitivity, same size so they pair
+    # Figures 26-27: stress scenarios and sensitivity, same size so they pair.
+    # The half chart compares fixed spending with the recommended plan (tier review at 75 + guardrails), to 89.
+    def rec_kw(kw):
+        return {**kw, "med": M.SWITCH_ST if kw.get("med") is M.STRESS else M.SWITCH, "guard": True}
+    r89 = [M.sim(MIX2[0], MIX2[1], rb, C89, **rec_kw(kw))[0] for _, kw, rb in SC]
     fig, ax = plt.subplots(figsize=(HW, 2.6))
     x = np.arange(len(SC)); w_ = 0.36
-    ax.bar(x - w_/2 - 0.02, s89, w_, color=ACC_D, label="to 89")
-    ax.bar(x + w_/2 + 0.02, s95, w_, color=ACC_L, label="to 95")
-    for xi, a_, b_ in zip(x, s89, s95):
+    ax.bar(x - w_/2 - 0.02, s89, w_, color=ACC, label="Fixed spending")
+    ax.bar(x + w_/2 + 0.02, r89, w_, color=ALT, label="Recommended plan")
+    for xi, a_, b_ in zip(x, s89, r89):
         ax.text(xi - w_/2 - 0.02, a_ + 0.02, pct(a_), ha="center", fontsize=9.5, color=INK)
-        ax.text(xi + w_/2 + 0.02, b_ + 0.02, pct(b_), ha="center", fontsize=9.5, color=INK2)
+        ax.text(xi + w_/2 + 0.02, b_ + 0.02, pct(b_), ha="center", fontsize=9.5, color=INK)
     ax.set_xticks(x, ["Base", "Low-return\ndecade", "Inflation\nshock", "Long life,\nmedical"])
-    ax.set_ylim(0, 1.1); ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
-    tidy(ax, "y"); ax.legend(loc="upper right", ncol=2, handlelength=1.2)
+    ax.set_ylim(0, 1.3); ax.set_yticks([0, .25, .5, .75, 1])
+    ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
+    tidy(ax, "y"); ax.legend(loc="upper center", ncol=2, handlelength=1.2, bbox_to_anchor=(0.5, 1.02))
     save(fig, "stress-half.png")
+    DATA.append(("stress-half.png: chance the money lasts to Carmen's 89, fixed spending vs the recommended plan "
+                 "(Standard plan from Adrian's 75 + guardrails)",
+                 "| Scenario | Fixed spending | Recommended plan |\n|---|---|---|\n" +
+                 "\n".join(f"| {s[0].replace(chr(10), ' ')} | {pct(a_)} | {pct(b_)} |" for s, a_, b_ in zip(SC, s89, r89))))
 
     SHORT = {"CPI": "Inflation 3.5%", "Medical trend": "Medical 8.5% a year", "Business not sold": "Business not sold",
              "Standard plan": "Standard plan from 75", "Couple's spending": "No spending drop at 84",

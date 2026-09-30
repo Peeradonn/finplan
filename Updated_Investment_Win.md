@@ -86,7 +86,7 @@ for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking i
 | Digital (optional) | HKEX spot BTC ETF, 3439 (0.30%) | 0–2% | from the growth slice |
 | **Total** | | **Equity 60% · Bonds/cash 38%** | **Equity cap 65%** |
 
-- Expected return ≈ **5.0% net** at 6% equity `[CHECK: Win]` (was 5.2% at 68% equity).
+- Expected return ≈ **5.0% net** at 60% equity `[CHECK: Win]` (was 5.2% at 68% equity).
 - **Why 60%, not 68%:** in the team model, household equity above 40% adds legacy, not security (40%: money lasts to
   89 in 100% of markets, worst year −10%; 54%: 99.6%, −15%). 60% for Carmen keeps the household at about 50% and
   within the family objective of moderate growth with controlled downside. ESG sleeves (35% + 10%) are unchanged,
@@ -168,7 +168,7 @@ If the family's ≈ HK$4.4M of non-MPF funds cost about 1.5% a year today and mo
 |---|---|---|
 | 1. Exclusions | Screen out thermal coal, controversial weapons, tobacco | All ESG-screened index funds |
 | 2. Best-in-class | Top ESG-rated companies in each sector | ESG index funds (Adrian, Carmen) |
-| 3. Thematic | Circular economy, clean tech; mirrors Carmen's sustainable-packaging business | Optional within Carmen's ESG sleeve |
+| 3. Thematic | Circular economy, clean tech; mirrors Carmen's sustainable-packaging business | **Not used (30 Sep):** the plan keeps to two SFC-listed index funds and green bonds; thematic funds cost more and are concentrated |
 | 4. Impact | Green bonds with checked use of proceeds | Green bond fund (both parents) |
 
 ### Fig. D: ESG fund scorecard (to build; idea taken from the champion report)
@@ -277,9 +277,9 @@ Rules M1–M11, D1–D5, P1–P6 run normally. Quarterly rebalancing. Guyton-Kli
 | Item | What happens | Action |
 |---|---|---|
 | Treasury ladder | Remaining rungs pay out on schedule | No selling needed; executor collects |
-| Bond/equity portfolio | Passes to Carmen via estate | Rebalance gradually from 40/60 toward Carmen's 68/30 over 12 months — do not dump all bonds at once |
-| HKMC Annuity | **Stops paying on death** | Review Carmen's income floor within 6 months; redirect the equivalent amount from the portfolio using Guyton-Klinger guardrails |
-| MPF | Passes to nominated beneficiary (MPF nomination form is separate from the will) | Fahtai / Lead to confirm nomination is filed |
+| Bond/equity portfolio | Passes to Carmen via estate | Rebalance gradually from 40/60 toward Carmen's 60/38 over 12 months — do not dump all bonds at once |
+| HKMC Annuity (Adrian's, single life) | **Stops paying on death**; any guaranteed balance (premium × 105% less payments received) goes to his beneficiary `[CHECK: HKMC terms]` | Review Carmen's income floor within 6 months; redirect the equivalent amount from the portfolio using Guyton-Klinger guardrails |
+| MPF (before 2037) | Paid to the **estate**: MPF has no beneficiary nomination, so the will governs it and the money is frozen until the grant of representation `[CHECK: MPFA]` | The joint account (12 months' spending) bridges the wait; after 2037 the MPF has become the annuity |
 
 **New rule (add to §11):** P7 — When Adrian dies, Lead Advisor reviews Carmen's income floor within 6 months and rebalances her combined portfolio to her own risk profile within 12 months. Equity cap stays 75%.
 
@@ -299,7 +299,7 @@ Rules M1–M11, D1–D5, P1–P6 run normally. Quarterly rebalancing. Guyton-Kli
 | Self-custody crypto | **Lost forever if no key-recovery plan is documented** | Ryan must file a key-recovery arrangement (hardware wallet location + seed phrase recovery method, or nominee access on an SFC-licensed platform) in his estate papers **before** holding any self-custody assets |
 | Tokenised MMF | Treated as cash | Liquidated through normal estate process |
 
-> **Coordinate with Lead (§9):** The crypto key-recovery clause must appear in both §7 and §9. MPF nominations must be confirmed separate from the will.
+> **Coordinate with Lead (§9):** The crypto key-recovery clause must appear in both §7 and §9. MPF balances pass under the will (no nomination), so the wills must cover them.
 
 ### Lifecycle summary table (add as Fig. I)
 

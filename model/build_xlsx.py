@@ -50,8 +50,11 @@ rows=[
  ('Portfolio return — plan (nominal)','B',0.048,PCT,"mix 2: 40% eq @6% + 60% ladder @4%"),
  ('Portfolio return — status quo (nominal)','B',0.042,PCT,"unmanaged, cash-heavy. TEAM TO AGREE"),
  ('Emergency reserve target (months)','B',12,'0',"vs 30.5 today"),
- ('Annuity purchase cost at 2037','B',4120000,NUM,"Pete: MPF 2.31M (A) + 1.81M (C)"),
- ('Annuity income (HKMC, annual)','B',268000,NUM,"Pete: HKMC payout at 65"),
+ ('Annuity: Adrian premium (MPF at 65, 2037)','B',2310000,NUM,"Pete: projected MPF at 65"),
+ ('Annuity: Adrian income a year','B',160800,NUM,"HKMC male at 65: 5,800 a month per HK$1M. Single life: stops at death"),
+ ('Annuity: Carmen premium (MPF at 62, 2039)','B',1810000,NUM,"Pete: projected MPF at 62; bought when she stops work"),
+ ("Mortgage: balance repaid at Adrian's retirement (2037)",'B',460000,NUM,"HK$1.8M at 3.5%, ~14 years left at HK$13.6K a month: 36 months left in 2037 (PV). Outside the HK$780K; must be cleared before a reverse mortgage"),
+ ('Annuity: Carmen income a year','B',107300,NUM,"HKMC female, ~4,940 a month per HK$1M at 62 (between 4,700 at 60 and 5,300 at 65)"),
  ('Education — overseas annual (today)','B',600000,NUM,"case high end, conservative"),
  ('Education — years','B',4,'0',"4-year degree"),
  ('Insurance premiums (Lookbua, TBC)','B',113600,NUM,"parents' new cover, avg a year to 2036: DI 37K, term life 7K, CI 1.5M each ~55K avg (needs-based, Bowtie Aug 2026), VHIS 15K. Paid until Adrian retires"),
@@ -287,7 +290,7 @@ pj['A1']='Year-by-year projection 2026-2072 — every cell driven by the Inputs 
 pj['A2']='Black = formula. Change nothing here; change Inputs.'; pj['A2'].font=Font(name='Arial',size=9,italic=True)
 cols=['Year','Age A','Age C','Income A','Income C','Allow A','Allow C','Tax A','Tax C','MPF',
       'Living exp','Education','Retire spend','Medical','Annuity inc','Backstops','Net cash flow',
-      'Portfolio open','Investment return','Annuity purchase','Portfolio close']
+      'Portfolio open','Investment return','Lump sums out (annuities, mortgage)','Portfolio close']
 for j,h in enumerate(cols):
     c=pj.cell(3,j+1,h); c.font=BOLD; c.border=THIN; c.alignment=Alignment(wrap_text=True,horizontal='center')
     pj.column_dimensions[get_column_letter(j+1)].width=13 if j>2 else 7
@@ -295,8 +298,11 @@ for j,h in enumerate(cols):
 CPIr=I['CPI inflation']; WA=I['Wage growth — Adrian']; WC=I['Wage growth — Carmen']
 EDUe=I['Education escalation (overseas)']; RETA=I['Adrian retires (age 65)']; RETC=I['Carmen retires (age 62)']
 EDUy=I['Chloe starts university']; EDUn=I['Education — years']; EDUa=I['Education — overseas annual (today)']
-RSPEND=I['Retirement spending (today money)']; ANNC=I['Annuity purchase cost at 2037']
-ANNI=I['Annuity income (HKMC, annual)']; RPLAN=I['Portfolio return — plan (nominal)']
+RSPEND=I['Retirement spending (today money)']
+ANNC_A=I['Annuity: Adrian premium (MPF at 65, 2037)']; ANNI_A=I['Annuity: Adrian income a year']
+ANNC_C=I['Annuity: Carmen premium (MPF at 62, 2039)']; ANNI_C=I['Annuity: Carmen income a year']
+MORT=I["Mortgage: balance repaid at Adrian's retirement (2037)"]
+RPLAN=I['Portfolio return — plan (nominal)']
 PREM=I['Insurance premiums (Lookbua, TBC)']; HLI='Tax!$B$4'; BY=I['Base year']
 SURV=I['Survivor spending after Adrian (share)']; SURVS=I['Use survivor spending in base (1/0)']
 BIZ=I["Carmen's business: net sale proceeds"]; BIZY=I["Carmen's business: sale year"]; BIZS=I['Use business sale in base (1/0)']
@@ -326,7 +332,8 @@ for i in range(47):
     pj.cell(r,13,f'=IF($A{r}>={RETA},{RSPEND}*(1+{CPIr})^{n}*IF(AND({SURVS}=1,$A{r}>{ALE}),{SURV},1),0)')
     pj.cell(r,14,f'=INDEX({MEDNET},MATCH($A{r},{MEDY},0))')
     # HKMC annuity pays a fixed HK$ amount for life: not indexed
-    pj.cell(r,15,f'=IF($A{r}>={RETA},{ANNI},0)')
+    # HKMC annuities are single life: Adrian's from 2037 until his death, Carmen's from 2039
+    pj.cell(r,15,f'=IF(AND($A{r}>={RETA},$A{r}<={ALE}),{ANNI_A},0)+IF($A{r}>={RETC},{ANNI_C},0)')
     pj.cell(r,16,f'=IF(AND({BIZS}=1,$A{r}={BIZY}),{BIZ},0)+IF(AND({RMPS}=1,$A{r}>={RMPY}),{RMP},0)')
     # new protection premiums run while the parents work (DI, term life, CI to retirement), as in the Monte Carlo
     # MPF (column J) is part of the pool: the employee's contribution stays in it (+0 instead of -J) and the
@@ -334,7 +341,8 @@ for i in range(47):
     pj.cell(r,17,f'=D{r}+E{r}-H{r}-I{r}+J{r}-K{r}-L{r}-M{r}-N{r}+O{r}+P{r}-IF($A{r}<{RETA},{PREM},0)')
     pj.cell(r,18, f'={START_POOL}' if i==0 else f'=U{r-1}')
     pj.cell(r,19,f'=R{r}*{RPLAN}')
-    pj.cell(r,20,f'=IF($A{r}={RETA},-{ANNC},0)')
+    # annuity premiums at each retirement; the mortgage still owed in 2037 is cleared from the portfolio
+    pj.cell(r,20,f'=IF($A{r}={RETA},-{ANNC_A}-{MORT},0)+IF($A{r}={RETC},-{ANNC_C},0)')
     pj.cell(r,21,f'=MAX(R{r}+S{r}+Q{r}+T{r},0)')
     for j in range(4,22): pj.cell(r,j).number_format=NUM; pj.cell(r,j).font=BLACK
     for j in (2,3): pj.cell(r,j).number_format='0'

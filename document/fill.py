@@ -11,7 +11,7 @@ import json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 NUMBERS = os.path.join(os.path.dirname(HERE), "figures", "numbers.json")
-PATTERN = re.compile(r"\{\{\s*([a-z0-9_]+)\s*\}\}")
+PATTERN = re.compile(r"\{\{\s*([A-Za-z0-9_]+)\s*\}\}")
 
 def load():
     with open(NUMBERS, encoding="utf-8") as f:
@@ -22,7 +22,11 @@ def fill_text(text, numbers=None):
     missing = sorted({k for k in PATTERN.findall(text) if k not in numbers})
     if missing:
         raise KeyError(f"No value in numbers.json for: {', '.join(missing)}")
-    return PATTERN.sub(lambda m: numbers[m.group(1)], text)
+    out = PATTERN.sub(lambda m: numbers[m.group(1)], text)
+    if "{{" in out:                                   # a malformed placeholder would otherwise print as-is
+        bad = out[out.index("{{"):out.index("{{") + 40].splitlines()[0]
+        raise ValueError(f"Unfilled placeholder: {bad}")
+    return out
 
 if __name__ == "__main__":
     for path in sys.argv[1:]:

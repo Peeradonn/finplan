@@ -111,9 +111,10 @@ To read them filled in, run `python document/fill.py document/manuscript.md` and
 
 **Main text**
 
-> The Wongs have already done the hard part: a HK$24.4M balance sheet, over 40% of after-tax income saved each year
-> (parents only, HK$718K of HK$1.74M), and only 10% leverage. Our plan makes it last, for four people with four
-> different views of risk.
+> A HK$24.4M balance sheet, over 40% of after-tax income saved and only 10% leverage: the Wongs have done the hard
+> part. What is new here: a decision ladder that prices each choice in points of security, an income floor built from
+> the MPF and the home rather than from more risk, and spending rules agreed now that hold the plan at {{guardswitch_89}} for about
+> {{guard_cost}} a year.
 
 **Protect what has been built.** Close the disability and critical-illness gaps, and sign wills, a guardian nomination
 and powers of attorney this quarter (§8, §9).
@@ -122,15 +123,15 @@ and powers of attorney this quarter (§8, §9).
 simulated markets. An MPF annuity, lower spending after the first death, a staged sale of Carmen's business and a
 planned use of the home raise it to {{ladder_5_89}}; moving to the Standard medical plan at 75 raises it to {{switch_89}} (Figure 6).
 
-**Give every voice a place.** Adrian keeps a 40/60 portfolio; ESG rises from 11% to 25% of investable assets, at the top
-of the family's own 20–25% target; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).
+**Give every voice a place.** Adrian keeps a 40/60 portfolio; ESG rises from 11% to 25% of investable assets, the top of
+the family's 20–25% target, in SFC-listed funds only; Ryan keeps his digital assets on a glide path; Chloe chooses her university freely (§4–§7).
 
 **Five recommendations**
 
 1. **Close the protection gaps** for disability, life and critical illness: ≈HK$100K a year until retirement.
 2. **Sign wills, a guardian nomination and powers of attorney** within three months, for under HK$25K.
 3. **Both parents buy individual medical cover now**, before group cover ends at 65 and 62.
-4. **At 2037, turn the MPF and the home into income**: annuity plus reverse mortgage or downsizing.
+4. **At retirement, turn the MPF and the home into income**: annuities in 2037 and 2039; reverse mortgage or downsizing.
 5. **Adopt one written family policy**: a portfolio per person, rebalancing bands, spending guardrails.
 
 ---
@@ -195,18 +196,27 @@ family files that way `[CHECK]`. The reserve falls to twelve months (≈HK$1.0M)
 **Case asks for:** on track at 65/62? accumulation, drawdown and liquidity strategies.
 
 Figures on these pages: **6** decision ladder (`decision-ladder-half.png`) · **7** when each decision is taken (table) ·
-**8** medical premiums (`medical-premiums-half.png`) · **9** portfolio fan chart (`fan-chart-half.png`) ·
-**10** income floor (table) · **11** tier review and guardrails (table: fixed spending {{fixflex_89}} → tier review {{fixswitch_89}} →
-guardrails {{guardswitch_89}}; typical spending {{fixswitch_typical}} → {{guardswitch_typical}}; worst-5% lowest year {{fixswitch_worst5}} → {{guardswitch_worst5}}) · subsection
-*What the guardrails cost, and what they buy* (≈HK$31K a year for the typical family; pre-agreed steps). Figures after 11 renumber at assembly.
+**8** medical premiums (`medical-premiums-half.png`) · **9** portfolio fan chart (`fan-chart-half.png`, labelled
+"annuity bought, mortgage cleared" at 2037) · **10** income floor (table) · **11** tier review and guardrails (table: fixed
+spending {{fixflex_89}} → tier review {{fixswitch_89}} → guardrails {{guardswitch_89}}; typical spending {{fixswitch_typical}} → {{guardswitch_typical}}; worst-5% lowest
+year {{fixswitch_worst5}} → {{guardswitch_worst5}}).
 
-`[CHECK]` Add a small "annuity bought" label at 2037 on Figure 9, where the median dips.
+Paragraphs, in order: *Why these four, and not more investment risk* (by 2037 the portfolio is {{portfolio_2037_today}} in today's money,
+about what a 2% real return needs for HK$780K a year, {{need_2037}}; the medical premiums break the plan; the annuity is longevity
+insurance, neutral at the case's life expectancies but {{annuity_longlife_pts}} points if Adrian lives to 95, so only the MPF is
+annuitised) · *Saving to 2037* (the {{surplus}} surplus less new cover is invested each year, new money to whichever sleeve is below
+target; HK$60K each through tax-deductible voluntary MPF, the tax saved not counted) · *Medical premiums* (buy now; review
+the tier at 75 `[CHECK: that the insurer allows a move to its Standard plan without new underwriting]`; the public
+floor) · *An income floor* (HK$268K a year from 2039: {{annuity_adrian}} for Adrian until his death, {{annuity_carmen}} for Carmen for life; single-life,
+fixed) · *Drawdown* · *What the guardrails cost, and what they buy* ({{guard_cost}} a year for the typical family; pre-agreed steps).
+
+The model clears the ≈HK$0.46M of mortgage still owed in 2037 from the portfolio (§9); every §3 number includes it.
 
 ---
 
 ## Page 6 · §4 Education
 
-**Layout:** OPENER · ANNOT (Figure 11 costs by destination + Figure 12 funding timeline) · PROSE · DEFEND.
+**Layout:** OPENER · ANNOT (Figure 12 costs by destination + Figure 13 funding timeline) · PROSE · DEFEND.
 **Budget:** ≈330 words. **Owner:** Pete. **Status:** draft.
 **Case asks for:** local and overseas scenarios, timing, funding vehicles, contingency.
 
@@ -216,8 +226,8 @@ guardrails {{guardswitch_89}}; typical spending {{fixswitch_typical}} → {{guar
 
 **ANNOT**
 
-- Left: **Figure 11 · Annual cost by destination, 2028/29 prices** `figures/education-costs-half.png`. Source: Statistics Canada, UBC, IRCC, NTU, Save the Student; team FX analysis.
-- Right: **Figure 12 · Funding timeline**
+- Left: **Figure 12 · Annual cost by destination, 2028/29 prices** `figures/education-costs-half.png`. Source: Statistics Canada, UBC, IRCC, NTU, Save the Student; team FX analysis.
+- Right: **Figure 13 · Funding timeline**
 
   | When | Action |
   |---|---|
@@ -247,7 +257,7 @@ year, paid from surplus. Chloe's choice is hers; the plan funds all four.
 
 ## Page 7 · §5 Investment and allocation
 
-**Layout:** OPENER · ANNOT (Figure 13 current vs target allocation + Figure 14 buckets) · PROSE · TABLE (Figure 15).
+**Layout:** OPENER · ANNOT (Figure 14 current vs target allocation + Figure 15 buckets) · PROSE · TABLE (Figure 16).
 **Budget:** ≈300 words + tables. **Owner:** Win. **Status:** draft; sizes and equity per decision 3.
 **Case asks for:** cash and deposits, bonds, equities and funds, ESG, digital; target allocation, rationale,
 product suitability, risk management, monitoring and rebalancing.
@@ -257,9 +267,9 @@ product suitability, risk management, monitoring and rebalancing.
 
 **ANNOT**
 
-- Left: **Figure 13 · From today's holdings to the target** `figures/allocation-half.png` (cash · bonds · equity,
+- Left: **Figure 14 · From today's holdings to the target** `figures/allocation-half.png` (cash · bonds · equity,
   today HK$2.5M · 1.4M · 3.9M → target 2.5M · 3.1M · 2.1M). Source: case; team allocation.
-- Right: **Figure 14 · Five buckets** `[OWNER: Win]` confirm sizes
+- Right: **Figure 15 · Five buckets** `[OWNER: Win]` confirm sizes
 
   | Bucket | HK$ | Held in |
   |---|---|---|
@@ -279,14 +289,16 @@ holding is a low-cost index fund or ETF, SFC-authorised or HKEX-listed. Both par
 BOC-Prudential MSCI World ESG Index Fund, which picks the better-rated companies within each sector and so stays close
 to the world market. The family's home, business and incomes already depend on
 Hong Kong, so the equity core is global; a small Hong Kong sleeve, held in an HSI ESG index ETF (3039), is kept for
-its tax-free dividends and low cost. The bond ETFs are Irish-domiciled, which avoids US estate tax.
+its tax-free dividends and low cost. The bond ETFs are Irish-domiciled, which avoids US estate tax. Inside the MPF,
+each parent holds half in the scheme's ESG or global equity index fund and half in its bond fund until the annuity is
+bought, so the balance does not fall sharply just before it is converted.
 
 **DEFEND — Why not all Treasuries for Adrian.** Treasuries at about 5% look sufficient, but after 3.5% inflation they
 leave 1.5% real, below what the plan needs, and bonds bought today mature by 2041 while the money must last to 2066.
 In our simulation an all-Treasury ladder fails almost every time once medical costs are included. So the ladder
 provides the floor and the equity provides the growth.
 
-**TABLE · Figure 15 · Rules agreed in advance** (Win's M1–M9; test result from `run_model.py` §9)
+**TABLE · Figure 16 · Rules agreed in advance** (Win's M1–M9; test result from `run_model.py` §9)
 
 | If | Then |
 |---|---|
@@ -303,7 +315,7 @@ gave {{rebal_drift_89}}.*
 
 ## Page 8 · §5 continued · §6 ESG
 
-**Layout:** PROSE (§5 close) · OPENER (§6) · TABLE (Figure 16) · PROSE · DEFEND.
+**Layout:** PROSE (§5 close) · OPENER (§6) · TABLE (Figure 17) · PROSE · DEFEND.
 **Budget:** ≈420 words + table. **Owner:** Win. **Status:** draft; base per decision 1.
 **Case asks for (§6):** strategic role, selection criteria, benefits and limitations, greenwashing mitigation.
 
@@ -320,14 +332,14 @@ meeting.
 - Finding-heading: **The family's 20–25% ESG goal, met with evidence: from 11% today to 25%, with no return premium
   assumed.**
 
-**TABLE · Figure 16 · How the plan reaches 25% of investable assets** (base HK$10.47M, decision 1; Win to confirm)
+**TABLE · Figure 17 · How the plan reaches 25% of investable assets** (base HK$10.47M, decision 1; Win to confirm)
 
 | Source | HK$M |
 |---|---|
 | Today: ESG equity funds 0.70 + green bonds 0.45 | 1.15 (11%) |
 | Adrian: BOC-Prudential MSCI World ESG Index Fund 30%, HSI ESG ETF (3039) 5%, green bonds 5% | 0.83 |
 | Carmen: the same ESG index fund 35%, HSI ESG ETF (3039) 2%, green bonds 10% | 0.97 |
-| MPF: 50% of each parent's balance in its ESG constituent fund | 0.84 |
+| MPF: 50% of each parent's balance in its ESG constituent fund `[CHECK: each parent's scheme offers one]` | 0.84 |
 | **Total at target** (the "today" row is for comparison, not added) | **2.63 (25%)** `[CHECK: Win]` |
 
 Line under the table: *Counted as ESG: funds on the SFC's list of ESG funds, and green bonds with verified use of
@@ -338,8 +350,7 @@ access; fallback in Win's notes]`
 **PROSE**
 
 **Four layers, one standard.** Exclusions remove thermal coal, controversial weapons and tobacco; best-in-class funds
-hold the highest-rated companies in each sector; a thematic slice in circular economy echoes Carmen's own packaging
-business; green bonds with checked use of proceeds add direct impact. Every fund must be on the SFC's list of ESG funds.
+hold the highest-rated companies in each sector; green bonds with checked use of proceeds add direct impact. Every fund must be on the SFC's list of ESG funds.
 **Why not higher:** the plan reaches the top of the family's range through choices that suit each person; going
 further would mean ESG in Adrian's Treasury ladder, which has no ESG equivalent, or more equity for Carmen, which the
 family objective rules out.
@@ -358,7 +369,7 @@ bonds stay on a watch-list until retail investors can buy them.
 
 ## Page 9 · §7 Digital assets · Ryan's own plan
 
-**Layout:** OPENER · TABLE (Figure 17 suitability by person) · PROSE · ANNOT-style box for Ryan (Figure 18 glide path).
+**Layout:** OPENER · TABLE (Figure 18 suitability by person) · PROSE · ANNOT-style box for Ryan (Figure 19 glide path).
 **Budget:** ≈380 words + tables. **Owner:** Win (§7), Pete (Ryan). **Status:** draft.
 **Case asks for:** suitability, volatility and downside, regulation and platform risk, custody and security,
 allocation limits, implementation options. **Family goal 3:** Ryan's savings, investment, protection, retirement.
@@ -366,7 +377,7 @@ allocation limits, implementation options. **Family goal 3:** Ryan's savings, in
 - Label: 07 DIGITAL ASSETS
 - Finding-heading: **Not yes or no: form, size and custody, set for each person.**
 
-**TABLE · Figure 17 · Digital assets by family member**
+**TABLE · Figure 18 · Digital assets by family member**
 
 | Person | Crypto exposure | Vehicle | Why |
 |---|---|---|---|
@@ -384,10 +395,10 @@ Self-custody requires a documented key-recovery plan: without it, digital assets
 
 **Ryan's own plan.** Ryan earns HK$300K and saves 30% (HK$90K a year) after keeping three months' spending in cash.
 New savings go to a global equity portfolio, and none to crypto while he is above his glide path, so his crypto share
-falls without any forced selling (Figure 18). He adds term life and critical-illness cover for about HK$900 a year,
+falls without any forced selling (Figure 19). He adds term life and critical-illness cover for about HK$900 a year,
 starts voluntary MPF contributions, and his parents match 50% of his savings up to HK$24K a year.
 
-**Figure 18 · Ryan's crypto share of his wealth, by savings rate**
+**Figure 19 · Ryan's crypto share of his wealth, by savings rate**
 
 | Ryan saves | at 30 | at 35 |
 |---|---|---|
@@ -406,42 +417,75 @@ respects both: it is his money, but its share of his wealth falls as he builds e
 
 ## Page 10 · §8 Risk management and protection
 
-**Source:** `drafts/08-protection.md` (Lookbua), with critical-illness cover at HK$1.5M each (decision 2). **Status:** draft.
-**Layout:** OPENER · sidebar numbers (2) + intro · TABLE (Figure 19 protection needs) · PROSE (A–E) · DEFEND.
-**Case asks for:** mortality, medical, critical illness, disability, business continuity, family emergency plan.
+**Layout:** OPENER · sidebar numbers (2) + intro · TABLE (Figure 20) · PROSE (A–E) · family emergency plan · DEFEND.
+**Budget:** ≈420 words + table. **Owner:** Lookbua. **Status:** draft; critical illness per decision 2.
+**Source:** `drafts/08-protection.md`, re-sized. **Case asks for:** mortality, medical, critical illness, disability,
+business continuity, family emergency plan.
 
 - Label: 08 RISK MANAGEMENT AND PROTECTION
 - Finding-heading: **The largest gap is income, not death: neither parent could replace their salary if disabled.**
-- Sidebar: **HK$100K** a year closes every gap: 14% of the surplus, paid only until retirement ·
-  **< HK$25K** once, for wills, a guardian for Chloe and powers of attorney
-- Intro: as in the draft (failure-mode ranking of fifteen risks; disability ranks first and second).
-- **Figure 19**: the protection table from the draft, with critical illness at **HK$1.5M each** (row: *treatment gap +
-  3 months' pay*; year-1 premium ≈HK$41K) and the total at **≈HK$100K**. Add one line under it: *Sized by need;
-  a larger lump sum would duplicate the disability cover and the emergency reserve.*
-- A) Disability first · B) Life cover fills a defined gap · C) Medical cover now, not at retirement ·
-  D) The business survives Carmen · E) Ryan starts small — text as in the draft, cut to fit.
-- **Family emergency plan** (add, 2 lines, required by the case): a joint account with twelve months' spending, a
-  one-page list of policies, accounts and contacts, and named emergency contacts for Chloe.
-- **DEFEND** `[OWNER: Lookbua]` two sentences: why term cover plus disability income, rather than more whole-life
-  cover (cost per dollar of cover; the need ends at retirement).
+- Sidebar: **HK$100K** in year 1 closes every gap: 14% of the surplus, paid only until retirement
+
+**Intro.** Of fifteen ways the plan could fail, ranked by severity, likelihood and warning time (Appendix A2),
+disability ranks first for both parents: the gap the family itself reported. The existing whole-life policies already
+meet most of the life need. Premiums average {{premiums_avg}} a year to retirement as they rise with age; wills and powers of
+attorney cost under HK$25K once (§9).
+
+**TABLE · Figure 20 · Disability and critical illness are the gaps; life cover needs only a top-up**
+
+| New cover | Adrian (54) | Carmen (49) | Year 1 |
+|---|---|---|---|
+| **Disability income** | HK$65K a month to 65 | HK$39K a month to 62 | HK$37K |
+| **Term life** | +1.75M (need 3.75M) | +1.05M (need 2.85M) | HK$7K |
+| **Critical illness** | 1.5M | 1.5M | HK$41K |
+| **Medical (VHIS)** | Flexi, deductible = group | Flexi, deductible = group | HK$15K |
+| **Key person, buy-sell** | — | 2.5M, company pays | — |
+| **Total** | | | **≈HK$100K** |
+
+Source line: *None of this cover exists today. Sized by need: critical illness = treatment outside VHIS + 3 months'
+pay. Source: Bowtie rate cards (2026); market range for disability cover; quotes replace them before purchase.*
+
+**A) Disability first.** A benefit of 65% of pay to each parent's retirement age replaces the income the plan depends
+on. Carmen's cover is written on her salary, so it must be in place before any change to how she draws income from the
+business.
+
+**B) Life cover fills a defined gap.** If Adrian dies, Carmen's income leaves a shortfall of about HK$157K a year until
+she is 62; with the mortgage and final costs that is HK$1.75M. If Carmen dies, Adrian's income covers the household;
+her gap is the mortgage, the business-loan guarantee and final costs.
+
+**C) Medical cover now, not at retirement.** Group cover ends at 65 and 62. VHIS bought while both are healthy is
+renewable to 100 with no new underwriting; a deductible matched to the group benefit keeps the overlap cheap, and
+premiums are tax-deductible up to HK$8,000 each. **D) The business survives Carmen:** a buy-sell agreement funded by
+company-owned key-person cover realises her full HK$2.5M stake. **E) Ryan starts small:** HK$0.5M life and HK$0.3M
+critical-illness cover for ≈HK$900 a year.
+
+**Family emergency plan.** A joint account pays every bill for twelve months (≈HK$1.0M) while an estate is settled; a
+one-page family file lists every policy, account and recovery route; Chloe has two named emergency contacts and a
+guardian (§9).
+
+**DEFEND — Term cover, not more whole-life.** The need ends at retirement, when the mortgage is cleared, Chloe has
+graduated and the annuities begin. Term cover prices that window; whole-life cover of the same amount costs many times
+more, because most of its premium buys savings the family already holds. The trade-off: the new cover lapses at 65 and
+62, after which the existing policies and the portfolio carry the risk. If a claim is disputed, the emergency reserve
+carries the family while it is settled.
 
 ---
 
 ## Page 11 · §9 Property · succession
 
 **Source:** `drafts/09-property.md` (Lookbua) + working brief §3.6 (Pete).
-**Layout:** OPENER · ANNOT (Figure 20 property options chart + Figure 21 options table) · DEFEND · PROSE (succession).
-**Budget:** ≈380 words + figures. **Status:** draft.
+**Layout:** OPENER · ANNOT (Figure 21 property options chart + Figure 22 options table) · PROSE · DEFEND · PROSE (succession) · TABLE (Figure 23).
+**Budget:** ≈400 words + figures; fits with ≈4mm to spare (test render 30 Sep). **Status:** draft.
 **Case asks for:** retain, refinance, partially monetise or downsize; wills, trusts, succession, powers of attorney,
-philanthropy.
+philanthropy. **Family concern 8:** relocating to another district.
 
 - Label: 09 PROPERTY, SUCCESSION AND LEGACY
 - Finding-heading: **Keep the home now, decide at 65, and sign the papers this quarter so the choice stays open.**
 
 **ANNOT**
 
-- Left: **Figure 20 · Security and legacy by property option** `figures/property-options-half.png`.
-- Right: **Figure 21 · The options at 2037**
+- Left: **Figure 21 · Security and legacy by property option** `figures/property-options-half.png`.
+- Right: **Figure 22 · The options at 2037**
 
   | Option | Money lasts to 89 | Left to heirs |
   |---|---|---|
@@ -453,104 +497,202 @@ philanthropy.
 
 **PROSE — property**
 
-**Refinance? Not now.** The mortgage costs about 3.5%, close to what cash earns, and its interest is tax-deductible.
-We compare it each year with new H-plans, capped at 3.25%, and switch only if the saving clears the fees.
+**Refinance? Not now; clear it at 65.** The mortgage costs about 3.5%, close to what cash earns, and its interest is
+tax-deductible. We compare it each year with new H-plans, capped at 3.25%, and switch only if the saving clears the
+fees. About HK$0.46M will still be owed in 2037; it is repaid from the portfolio then, because the reverse mortgage
+needs a home free of other loans, and the model counts that cost. **Ownership:** we assume the parents hold the flat as
+joint tenants, so it passes to the survivor outside the will; a land search in month 1 confirms it `[CHECK]`.
+**Another district:** the HK$7M replacement need not be in Tai Kok Tsui; a cheaper district buys more space, or
+releases more money.
 
 **DEFEND — Downsizing is the stronger financial answer; the reverse mortgage buys the right to stay.** Downsizing
-matches the reverse mortgage on security and leaves about {{legacy_down_vs_rmp}} more to Ryan and Chloe. HKMC's reverse mortgage pays
-a fixed income for life and lets both parents stay in the home, at the cost of a smaller legacy. The choice depends on
-how much staying in Tai Kok Tsui matters to them, so we set the decision for 2037 and keep both options open.
+matches the reverse mortgage on security and leaves about {{legacy_down_vs_rmp}} more to Ryan and Chloe. HKMC's reverse mortgage
+pays a fixed income for life, lets both parents stay in the home and is non-recourse, at the cost of a smaller legacy.
+The choice depends on how much staying in Tai Kok Tsui matters to them, so we set the decision for 2037 and keep both
+options open; delaying the reverse mortgage to 2045 would lower the plan from {{ladder_5_89}} to {{rmp2045_89}}.
 
 **PROSE — succession**
 
 **Control, not tax.** Estate duty was abolished in 2006, so succession planning here is about control, liquidity and
 staging. Without wills, the intestacy rules would pass about HK$1.1M each to Ryan and Chloe on Adrian's death, and on
-both deaths about HK$11.9M each, unstructured, with no guardian named for Chloe.
+both deaths about HK$11.9M each, unstructured, with no guardian named for Chloe. MPF balances have no beneficiary
+nomination: before 2037 they are paid to the estate once probate is granted `[CHECK: MPFA]`, so the wills cover them
+and the joint account bridges the wait.
+
+**TABLE · Figure 23 · The three documents the family needs** (moved here from page 12 to fit)
+
+| Document | Covers | Key point |
+|---|---|---|
+| Mirror wills | The estate, including MPF | Staged trusts for the children at 25, 30 and 35; a guardian for Chloe |
+| Enduring powers of attorney | Property and money | Needed before any reverse mortgage or sale |
+| Advance directives | Medical treatment | New statutory form, in force since 31 July 2026 |
 
 ---
 
 ## Page 12 · §9 continued · §10 Roadmap
 
-**Layout:** TABLE (Figure 22 three documents) · PROSE (trusts, business, philanthropy) · OPENER (§10) · TABLE (Figure 23).
-**Budget:** ≈220 words + two tables. **Status:** draft.
-
-**TABLE · Figure 22 · The three documents the family needs**
-
-| Document | Covers | Key point |
-|---|---|---|
-| Mirror wills | The estate | Staged trusts for the children at 25, 30 and 35; a guardian for Chloe |
-| Enduring powers of attorney | Property and money | Needed before any reverse mortgage or sale; signed before a solicitor and a doctor |
-| Advance directives | Medical treatment | New statutory form, in force since 31 July 2026 |
+**Layout:** PROSE (business, governance, philanthropy) · OPENER (§10) · TABLE (Figure 24).
+**Budget:** ≈90 words + table; ≈33mm to spare (test render 30 Sep). **Status:** draft.
 
 **PROSE**
 
 **The business, passed on in stages.** A shareholders' and buy-sell agreement funded by key-person cover now; managers
-built up from 55; a staged sale between 58 and 62, with no capital gains tax. We count only HK$3.0M of its HK$5.0M value
-in the plan. **Family governance:** a short family charter and one annual meeting where all four review the plan.
-**Legacy with purpose:** a named scholarship in sustainable design, about HK$30K a year through an existing registered
-charity, joins Carmen's mission to Chloe's interest in design; donations are tax-deductible.
+built up from 55; a staged sale between 58 and 62, with no capital gains tax. We count only HK$3.0M of its HK$5.0M value.
+**Family governance:** a short family charter and one annual meeting where all four review the plan. **Legacy with
+purpose:** a named scholarship in sustainable design, about HK$30K a year through a registered charity, joins Carmen's
+mission to Chloe's interest in design; donations are tax-deductible.
 
 - Label: 10 IMPLEMENTATION ROADMAP
-- Finding-heading: **Twelve actions in twelve months, then reviews that events trigger.**
+- Finding-heading: **Every gap closes in the first year; after that, dates and events trigger each decision.**
 
-**TABLE · Figure 23 · Roadmap** — from `drafts/10-11-roadmap-risk.md`, grouped by the case's three horizons:
-*Next 12 months* · *3–5 years* · *Into retirement and legacy*. Columns: When · Action · Owner · Effect.
-Close with: *Full reviews follow a death, a disability, a business sale, a 20% market fall or a 1.5-point rate move.*
+**TABLE · Figure 24 · Roadmap** (three group rows)
+
+| When | Action | Owner | Effect |
+|---|---|---|---|
+| ***Next 12 months*** | | | |
+| Month 1 | Wills, guardian, powers of attorney; land search | Parents | < HK$25K once |
+| Month 1 | Joint account; idle cash to deposits; clear the card | Parents | +≈HK$39K a year |
+| Months 1–3 | Disability, life, CI and VHIS cover; Ryan's cover | Family | ≈HK$100K a year |
+| Months 1–3 | Buy-sell agreement; key-person cover | Carmen | Company pays |
+| Months 1–6 | Three portfolios; policy signed; voluntary MPF | Family | Fees ≈HK$59K lower |
+| Month 12 | First family meeting; Ryan's plan; family charter | All four | — |
+| ***3–5 years*** | | | |
+| Early 2028 | Chloe accepts an offer: convert years 1–2 of fees | Parents | No currency risk |
+| Every year | Rebalance by bands; review mortgage, cover, ESG list | Adviser | — |
+| ***Into retirement and legacy*** | | | |
+| 2034–36 | Adrian to 35% equity; business managers in place | Parents | — |
+| 2037 | Clear the mortgage; Adrian's annuity; release the home | Parents | {{ladder_4_89}} → {{ladder_5_89}} |
+| 2039 | Carmen's annuity; business sold; guardrails begin | Carmen | Sale: {{step_business}} points |
+| 2047 | Adrian 75: review the medical tier | Parents | {{ladder_5_89}} → {{switch_89}} |
+
+Source line: *Effect: chance the money lasts to Carmen's 89. Full reviews follow a death, a disability, a business
+sale, a 20% market fall or a 1.5-point rate move.*
 
 ---
 
 ## Page 13 · §11 Risk and compliance
 
-**Source:** `drafts/10-11-roadmap-risk.md` + Win's regulatory matrix. **Status:** draft.
-**Layout:** OPENER · ANNOT (Figure 24 risk matrix + intro) · TABLE (Figure 25 register) · PAIR (Figures 26–27)
-`figures/stress-half.png` + `figures/sensitivity-half.png`, if space allows; otherwise cite them in the register.
+**Source:** `drafts/10-11-roadmap-risk.md` + Win's regulatory matrix; stress results from `run_model.py` (`rec_*`).
+**Layout:** OPENER · ANNOT (Figure 25 stress chart `figures/stress-half.png` + Figure 26 likelihood-impact matrix) ·
+TABLE (Figure 27 register, compliance in its source line). The sensitivity chart is not placed; its numbers are in the register.
 **Case asks for:** financial planning, suitability, ethical, product, regulatory and behavioural risks.
 
 - Label: 11 RISK AND COMPLIANCE
-- Finding-heading: **Inflation and medical costs are the largest risks; spending discipline defends against both.**
-- Register: the nine rows in `template-v2.html` (F1–F5, B1, B2, R1, E2) plus **F6 the portfolio runs down**
-  (the markets where fixed spending fails; answered by the tier review and guardrails, §3 Figure 11), **E1 suitability** (joint clients;
-  risk profile set at the lowest of tolerance, capacity and need) and **P2 product** (annuity irreversible;
-  reverse-mortgage costs).
-- Compliance line: every product is SFC-authorised or HKMC-issued; insurance figures are published rates, to be
-  replaced by quotes; no commission is earned on any recommendation.
+- Finding-heading: **The largest risks are inflation, markets and medical costs; agreed rules answer all three.**
+
+**ANNOT**
+
+- Left: **Figure 25 · The plan holds under stress** `figures/stress-half.png` (chance the money lasts to Carmen's 89;
+  fixed spending vs the recommended plan with the tier review and guardrails).
+- Right: **Figure 26 · Likelihood and impact** (3 × 3 matrix). High impact: P1 (low likelihood) · F1 F3 F6 (medium) ·
+  F2 (high). Medium impact: E1 P2 (low) · F4 F5 B2 (medium). Low impact: R1 R2 E2 (medium) · B1 (high).
+  Line under it: *With the rules, stress costs spending, not solvency: {{rec_lowret_typical}} a year in a low-return decade.*
+
+**TABLE · Figure 27 · Every risk has a measured impact and a named defence**
+
+| | Risk | Fixed | Plan | Defence |
+|---|---|---|---|---|
+| **F1** | Inflation 3.5%, not 2.5% | {{cpi_stress_89}} | {{rec_cpi_89}} | Guardrails; shorter bonds |
+| **F2** | Medical costs 8.5% a year | {{med_stress_89}} | {{rec_med_89}} | Tier review at 75 |
+| **F3** | A low-return decade | {{stressA_89}} | {{rec_lowret_89}} | Guardrails; Treasury ladder 2037–41 |
+| **F4** | Business not sold | {{biz_not_sold_89}} | {{rec_biz_89}} | Buy-sell agreement now |
+| **F5** | Money must last to 95 | {{ladder_5_95}} | {{guardswitch_95}} | Annuities pay for life |
+| **F6** | Portfolio runs down | {{fixflex_89}} | {{guardswitch_89}} | Annual review; pre-agreed steps (§3) |
+| **B2** | Selling in a crash; drift | {{rebal_drift_89}} | — | 5-point rebalancing bands |
+| **P1** | Disability before retirement | Top-ranked | | Disability income cover (§8) |
+| **P2** | Irreversible products | Legacy | | Annuitise only the MPF; downsizing open |
+| **B1** | Four risk appetites | Conflict | | One portfolio per person |
+| **R1** | Crypto rules or licence change | Ryan | | Regulated channels only |
+| **R2** | Greenwashing | Values | | Two ratings; replace in 3 months |
+| **E1** | Suitability, joint clients | Fit | | One risk profile per person |
+| **E2** | Model risk | Confidence | | Compare decisions; not forecasts |
+
+Source line: *Fixed = fixed spending; Plan = Standard plan from Adrian's 75 plus guardrails; F5 to Carmen's 95, others
+to 89. Every product is SFC-authorised, HKEX-listed or HKMC-issued; we earn no commission.*
+
+Other stress numbers for the text if space allows: typical spending under the plan {{rec_cpi_typical}} (inflation),
+{{rec_stressB_typical}} and {{rec_stressB_89}} (inflation + medical together). Fits with ≈11mm to spare (test render 30 Sep).
 
 ---
 
 ## Page 14 · Personal statement
 
-**Layout:** OPENER · four paragraphs · WMC analysis. **Budget:** ≈500 words.
+**Layout:** OPENER · WMC analysis · four career paragraphs. **Budget:** ≈520 words.
 **Rules:** "discussion of personal career goal and opportunities under the cross-boundary wealth management connect
-scheme". No names of universities; first names optional `[DECISION]`.
+scheme". No names of universities; first names only.
 
 - Label: PERSONAL STATEMENT
 - Finding-heading: **Four planners, one question: how Hong Kong's advisers serve families across the Greater Bay Area.**
 
-**The opportunity: Wealth Management Connect** (Pete, ≈200 words)
+**The opportunity: Wealth Management Connect** (Pete, ≈230 words)
 
-> The Cross-boundary Wealth Management Connect lets residents of Hong Kong, Macao and nine mainland cities in the
-> Greater Bay Area invest across the boundary through their banks and, since 2024, licensed securities firms. Each
-> individual may invest up to RMB 3 million, within an aggregate quota of RMB 150 billion each way. For a family like
-> the Wongs, with business across the Greater Bay Area, it widens the choice of funds; for advisers it creates demand
-> for people who understand both markets' products, rules and tax. A further expansion is under discussion.
-> `[CHECK: quota figures and 2024 securities-firm admission against HKMA's current page]`
+Since 2021 the Cross-boundary Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities
+of the Greater Bay Area invest across the boundary through their banks, and since 2024 through licensed securities
+firms as well. The 2024 changes raised each investor's limit from RMB 1 million to RMB 3 million, within an aggregate
+quota of RMB 150 billion in each direction, and widened the funds on offer; a further round is under discussion.
+Two flows matter to advisers. Southbound, mainland investors buy Hong Kong funds and deposits, and need advisers who
+can explain those products, and their risks, to clients used to a different system. Northbound, Hong Kong residents
+such as the Wongs can hold mainland wealth products in renminbi through banks in the Greater Bay Area. We did not use it
+for this family: their income, home and business are already in one region, and renminbi products would add to that
+concentration. For a family that retires across the boundary, it may be the right tool. Either way the skill is the
+one this proposal needed: knowing two markets' products, rules and tax well enough to say when not to use them.
+`[CHECK: quotas, the 2024 changes and securities-firm admission against HKMA's current page]`
 
-**Our career goals** `[OWNER: each member, ≈70 words each, first person plural or singular]`
+**Our career goals** (≈70 words each, first person; first names only. The test render has ≈58mm spare with four
+70-word paragraphs, so each may run to ≈100 words.)
 
-- Pete — `[OWNER: Pete]`
-- Win — `[OWNER: Win]`
-- Fahtai — `[OWNER: Fahtai]`
-- Lookbua — `[OWNER: Lookbua]`
+Each member answers three questions in one paragraph:
+1. What role do you want in five years, and in which market (Hong Kong, the Greater Bay Area, elsewhere)?
+2. Which part of this proposal did you lead, and what did it teach you about advising a family?
+3. What will you learn next to do that role across the boundary (a licence, a qualification, a market)?
+
+- **Pete** `[OWNER: Pete]` — lead adviser; led the model and integration.
+- **Win** `[OWNER: Win]` — investment and ESG; fund selection, digital assets.
+- **Fahtai** `[OWNER: Fahtai]` — retirement numbers and the appendix.
+- **Lookbua** `[OWNER: Lookbua]` — protection, property and the risk register.
 
 ---
 
 ## Page 15 · Appendix
 
-**Source:** `drafts/appendix.md` and the appendix page in `template-v2.html` (already cut to fit at 12pt).
-**Status:** draft. **Owner:** Fahtai.
+**Source:** `drafts/appendix.md`, updated to the model. **Status:** draft. **Owner:** Fahtai.
+`[CHECK]` every A1 row against the `Inputs` tab of `model/wong_model.xlsx`.
 
-- A1 Key assumptions (table) · A2 Model and method · A3 Sources (add: cover photograph credit) · A4 Use of AI tools.
-- `[CHECK]` Every A1 row against the `Inputs` tab of `model/wong_model.xlsx`.
+- Finding-heading: **Every number traces to one model and a stated assumption.**
+
+**A1 · Key assumptions**
+
+| Assumption | Base | Stress | Source |
+|---|---|---|---|
+| CPI | 2.5% | 3.5% | HK 2006–25; Fed |
+| Medical costs | 10% → 6% by 2036, plus VHIS age curve | 8.5% flat | Getzen; WTW |
+| Equities | 6.0%, 17% volatility | 4.0% | Equity premium |
+| Bonds, ladder | 4.0% | 2.5% | US 5-year 5.0% |
+| Cash | 3.0% → 2.5% by 2031 | 0.5% | HIBOR; Fed |
+| Model mix | 40/60, whole pool (plan: 40%, 60%) | — | Conservative |
+| MPF annuities | Single life: {{annuity_adrian}} Adrian 2037, {{annuity_carmen}} Carmen 2039 (premiums HK$2.31M, HK$1.81M) | — | HKMC rates |
+| Mortgage | ≈HK$0.46M still owed, cleared in 2037 | — | Case |
+| Reverse mortgage | HK$230K a year for life from 2037 | From 2045 | HKMC |
+| New cover | ≈HK$100K year 1; {{premiums_avg}} average; critical illness HK$1.5M each | — | Rate cards |
+| Medical tier | Standard plan from 2047, same insurer `[CHECK: no new underwriting]` | Flexi | Insurer terms |
+| Guardrails | From 2039: ±10% if withdrawals move 20%; floor 70% (essentials 40% never cut; the rest never below half; no cuts in the last 15 years) | Fixed | Guyton–Klinger |
+| Survivor | 70% of HK$780K after Adrian's 84 | 100% | Convention |
+| Life expectancy | Adrian 84, Carmen 89 | Both 95 | Case |
+
+(The printed table drops the premiums and the bracketed guardrail detail to fit; both are in §3 and §8.)
+
+**A2 · Model and method.** One spreadsheet projects income, 2026/27 salaries tax (reproduced to the dollar:
+HK$181,770), MPF, spending, education, medical premiums and the portfolio for 2026–2072; a Monte Carlo simulation runs
+10,000 paths of annual returns. **Limits:** returns are normal and uncorrelated, which understates crashes; inflation is
+fixed within each scenario; each mix is held constant. Results compare decisions; they are not forecasts.
+
+**A3 · Sources · A4 · Use of AI tools.** Case study (SRFP&S, 2026) · Inland Revenue Ordinance, Budget 2026/27 · HKMC ·
+Health Bureau VHIS data · WTW, MMB, Aon 2026 · SOA Getzen model · Federal Reserve SEP · HKAB · ECB · fee schedules ·
+insurer rate cards · SFC list of ESG funds · Berg, Kölbel and Rigobon (2022) · Guyton and Klinger (2006) · cover
+photograph: Peter Steinhauer, *Cocoons*. AI tools were used to check calculations, review the model code and edit
+text; the analysis and recommendations are the team's own.
+
+Fits with ≈18mm to spare (test render 30 Sep).
 
 ---
 
@@ -562,10 +704,11 @@ scheme". No names of universities; first names optional `[DECISION]`.
 | 6 · Decision ladder | `decision-ladder-half.png` | half |
 | 8 · Medical premiums | `medical-premiums-half.png` | half, paired |
 | 9 · Portfolio fan chart | `fan-chart-half.png` | half, paired |
-| 11 · Education cost by destination | `education-costs-half.png` | half |
-| 13 · Today vs target allocation | `allocation-half.png` | half |
-| 20 · Property options | `property-options-half.png` | half |
-| 26 · Stress scenarios | `stress-half.png` | half, paired |
-| 27 · Sensitivity | `sensitivity-half.png` | half, paired |
+| 12 · Education cost by destination | `education-costs-half.png` | half |
+| 14 · Today vs target allocation | `allocation-half.png` | half |
+| 21 · Property options | `property-options-half.png` | half |
+| 25 · Stress: fixed spending vs the recommended plan | `stress-half.png` | half |
+| — · Sensitivity (not placed; numbers in Figure 27) | `sensitivity-half.png` | half |
 
+Tables and diagrams built in the page: Figures 1, 2, 4, 5, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 26, 27.
 Every chart's numbers are in `figures/figure-data.md`.
