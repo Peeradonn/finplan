@@ -82,3 +82,22 @@ A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medic
 | Keep the home, no release | 66% | 3.1 | 7.8 | 10.8 |
 | Reverse mortgage, 230K a year from 2037 | 87% | 8.0 | 1.5 | 9.5 |
 | Downsize in 2037 (release 4.5M) | 87% | 8.9 | 4.7 | 13.6 |
+
+## cashflow-half.png: parents' annual cash flow, low bonus (Tax tab)
+
+| Step | HK$ |
+|---|---|
+| Income | 1,920,000 |
+| Salaries tax | -181,770 |
+| MPF | -36,000 |
+| Spending | -984,000 |
+| Surplus | 718,230 |
+
+## allocation-half.png: parents' freely allocable money, HK$
+
+| | Cash | Bonds | Equity |
+|---|---|---|---|
+| Today | 2,500,000 | 1,350,000 | 3,850,000 |
+| Target | 2,531,787 | 3,102,062 | 2,066,151 |
+
+Target = emergency 1,000,000 + education 2,567,698 (half deposits, half short bonds) + Adrian 2,066,151 at 40/55/5 + Carmen 2,066,151 at 60/33/7 (equity/bonds/cash).

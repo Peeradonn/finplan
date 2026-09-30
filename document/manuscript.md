@@ -17,7 +17,7 @@ The HTML document is assembled from this file; edit wording here, not in the HTM
 - **Word budgets** at 12pt: full text page ≈ 550 words; page with one ANNOT or PAIR ≈ 300; opener page ≈ 275.
 - **Numbers** come from the model (`model/run_model.py`, `figures/figure-data.md`) or the case. Do not type new numbers.
 - **Flags:** `[CHECK]` a fact to verify · `[DECISION]` a team decision · `[OWNER: name]` text the owner must write ·
-  `[DRAW]` a chart still to be made.
+  (all charts are drawn: see the list at the end).
 
 ## Page map
 
@@ -146,7 +146,7 @@ glide path; Chloe chooses her university freely (§4–§7).
 
 **ANNOT**
 
-- Left: **Figure 3 · Where each year's income goes** `[DRAW]` half-width waterfall, parents only, low bonus:
+- Left: **Figure 3 · Where each year's income goes** `figures/cashflow-half.png` (waterfall, parents only, low bonus):
   income 1,920,000 → salaries tax −181,770 → MPF −36,000 → household spending −984,000 → surplus **718,230**.
   Source: case; team tax model (2026/27, separate assessment).
 - Right: **Figure 4 · Health check**
@@ -216,8 +216,7 @@ guardrails {{guardswitch_89}}; typical spending {{fixswitch_typical}} → {{guar
 
 **ANNOT**
 
-- Left: **Figure 11 · Annual cost by destination, 2028/29 prices** `[DRAW]` half-width version of
-  `education-costs.png`. Source: Statistics Canada, UBC, IRCC, NTU, Save the Student; team FX analysis.
+- Left: **Figure 11 · Annual cost by destination, 2028/29 prices** `figures/education-costs-half.png`. Source: Statistics Canada, UBC, IRCC, NTU, Save the Student; team FX analysis.
 - Right: **Figure 12 · Funding timeline**
 
   | When | Action |
@@ -258,8 +257,8 @@ product suitability, risk management, monitoring and rebalancing.
 
 **ANNOT**
 
-- Left: **Figure 13 · From today's holdings to the target** `[DRAW]` half-width stacked bars, current vs target, by
-  cash · bonds · Treasury ladder · equity · ESG · digital. Source: case; team allocation.
+- Left: **Figure 13 · From today's holdings to the target** `figures/allocation-half.png` (cash · bonds · equity,
+  today HK$2.5M · 1.4M · 3.9M → target 2.5M · 3.1M · 2.1M). Source: case; team allocation.
 - Right: **Figure 14 · Five buckets** `[OWNER: Win]` confirm sizes
 
   | Bucket | HK$ | Held in |
@@ -428,7 +427,7 @@ philanthropy.
 
 **ANNOT**
 
-- Left: **Figure 20 · Security and legacy by property option** `[DRAW]` half-width version of `property-options.png`.
+- Left: **Figure 20 · Security and legacy by property option** `figures/property-options-half.png`.
 - Right: **Figure 21 · The options at 2037**
 
   | Option | Money lasts to 89 | Left to heirs |
@@ -490,8 +489,8 @@ Close with: *Full reviews follow a death, a disability, a business sale, a 20% m
 ## Page 13 · §11 Risk and compliance
 
 **Source:** `drafts/10-11-roadmap-risk.md` + Win's regulatory matrix. **Status:** draft.
-**Layout:** OPENER · ANNOT (Figure 24 risk matrix + intro) · TABLE (Figure 25 register) · PAIR (Figures 26–27) `[DRAW]`
-half-width stress-scenario and sensitivity charts, if space allows; otherwise cite them in the register.
+**Layout:** OPENER · ANNOT (Figure 24 risk matrix + intro) · TABLE (Figure 25 register) · PAIR (Figures 26–27)
+`figures/stress-half.png` + `figures/sensitivity-half.png`, if space allows; otherwise cite them in the register.
 **Case asks for:** financial planning, suitability, ethical, product, regulatory and behavioural risks.
 
 - Label: 11 RISK AND COMPLIANCE
@@ -542,12 +541,18 @@ scheme". No names of universities; first names optional `[DECISION]`.
 
 ---
 
-## Charts still to draw (all half width, 95mm, drawn at print size)
+## Charts (all drawn by `model/make_charts.py`; rerun after any model change)
 
-| Figure | Chart | Data |
+| Figure | File | Width |
 |---|---|---|
-| 3 | Cash-flow waterfall | Tax tab: income, tax, MPF, spending, surplus |
-| 11 | Education cost by destination | `figure-data.md`, education table |
-| 13 | Current vs target allocation | case holdings; Win's targets |
-| 20 | Property options | `run_model.py` §8 |
-| 26–27 | Stress scenarios · sensitivity | `figure-data.md` |
+| 3 · Cash flow | `cashflow-half.png` | half |
+| 6 · Decision ladder | `decision-ladder-half.png` | half |
+| 8 · Medical premiums | `medical-premiums-half.png` | half, paired |
+| 9 · Portfolio fan chart | `fan-chart-half.png` | half, paired |
+| 11 · Education cost by destination | `education-costs-half.png` | half |
+| 13 · Today vs target allocation | `allocation-half.png` | half |
+| 20 · Property options | `property-options-half.png` | half |
+| 26 · Stress scenarios | `stress-half.png` | half, paired |
+| 27 · Sensitivity | `sensitivity-half.png` | half, paired |
+
+Every chart's numbers are in `figures/figure-data.md`.

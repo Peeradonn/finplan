@@ -280,6 +280,124 @@ with plt.rc_context({"font.size": 10.5}):
     tidy(ax, "y"); ax.legend(loc="upper right", handlelength=1.2, fontsize=9)
     save(fig, "fan-chart-half.png")
 
+# ---------- more half-width charts (95mm), for the ANNOT and PAIR layouts ----------
+RAMP = ["#e3a1a8", "#c24a56", "#8c1824"]          # cash · bonds · equity: ordered by risk, validated 30 Sep
+with plt.rc_context({"font.size": 10.5}):
+    # Figure 3: where each year's income goes (parents, low bonus, 2026/27 tax)
+    tx = M.WB["Tax"]
+    steps_w = [("Income", tx["B23"].value), ("Salaries\ntax", tx["B24"].value), ("MPF", tx["B25"].value),
+               ("Spending", tx["B26"].value), ("Surplus", tx["B27"].value)]
+    fig, ax = plt.subplots(figsize=(HW, 2.9))
+    level = 0
+    for i, (lab_, v) in enumerate(steps_w):
+        if i == 0 or i == len(steps_w) - 1:
+            bottom, height, col = 0, v, (ACC_D if i == 0 else ACC)
+        else:
+            bottom, height, col = level + v, -v, ACC_L
+        ax.bar(i, height/1e3, 0.6, bottom=bottom/1e3, color=col)
+        ax.text(i, (bottom + height)/1e3 + 25, f"{abs(v)/1e3:,.0f}K", ha="center", fontsize=10, color=INK)
+        level = v if i == 0 else (level + v if i < len(steps_w) - 1 else level)
+    ax.set_xticks(range(len(steps_w)), [s_[0] for s_ in steps_w]); ax.set_ylabel("HK$K a year")
+    ax.set_ylim(0, steps_w[0][1]/1e3 * 1.12); tidy(ax, "y")
+    save(fig, "cashflow-half.png")
+    DATA.append(("cashflow-half.png: parents' annual cash flow, low bonus (Tax tab)",
+                 "| Step | HK$ |\n|---|---|\n" + "\n".join(f"| {l.replace(chr(10), ' ')} | {v:,.0f} |" for l, v in steps_w)))
+
+    # Figure 12: education cost by destination, 2028/29 prices
+    fig, ax = plt.subplots(figsize=(HW, 2.9))
+    ax.axvspan(350, 600, color="#f0efec", lw=0)
+    for i, (lbl, lo, hi, st_) in enumerate(EDU[::-1]):
+        ax.barh(i, hi - lo, 0.42, left=lo, color=ACC)
+        if st_:
+            ax.barh(i, hi*st_, 0.42, left=hi, color=SEQ["200"])
+        end_ = hi*(1 + st_)
+        xl = budget + 8 if budget - 45 < end_ + 10 < budget + 45 else end_ + 10   # keep labels off the budget line
+        ax.text(xl, i, f"{end_:.0f}", va="center", fontsize=10, color=INK)
+    ax.axvline(budget, color=INK2, lw=1)
+    ax.text(budget + 6, -0.55, f"Budget {budget:.0f}K", ha="left", va="center", fontsize=9.5, color=INK2)
+    short_edu = ["Hong Kong", "Singapore\n(grant)", "Singapore", "UK", "Canada"]
+    ax.set_yticks(range(len(EDU)), short_edu[::-1]); ax.set_xlim(0, 790); ax.set_ylim(-0.85, len(EDU) - 0.4)
+    ax.set_xlabel("HK$K a year, 2028/29 prices"); tidy(ax)
+    from matplotlib.patches import Patch
+    ax.legend([Patch(color=ACC), Patch(color=SEQ["200"])], ["Cost range", "+ FX stress"],
+              loc="lower center", bbox_to_anchor=(0.5, 1.02), ncol=2, handlelength=1.2)
+    save(fig, "education-costs-half.png")
+
+    # Figure 13: today's holdings vs the target (parents' freely allocable money: liquid + non-MPF investments)
+    bs = {"cash": 620_000 + 1_480_000 + 400_000,
+          "bonds": 900_000 + 450_000,
+          "equity": 1_000_000 + 1_350_000 + 700_000 + 800_000}                  # case statement
+    total = sum(bs.values())
+    emergency, edu_fund = 1_000_000, M.edu_res
+    each = (total - emergency - edu_fund) / 2                                    # long-term, split 50:50
+    ADRIAN = {"cash": .05, "bonds": .55, "equity": .40}                          # Win's table
+    CARMEN = {"cash": .07, "bonds": .33, "equity": .60}                          # decision 3 (2% digital held as cash)
+    tgt = {k: ADRIAN[k]*each + CARMEN[k]*each for k in bs}
+    tgt["cash"] += emergency + edu_fund/2; tgt["bonds"] += edu_fund/2          # education: deposits, then short bonds
+    fig, ax = plt.subplots(figsize=(HW, 1.9))
+    for row, (lbl, d_) in enumerate((("Target", tgt), ("Today", bs))):
+        left = 0
+        for k, col in zip(("cash", "bonds", "equity"), RAMP):
+            ax.barh(row, d_[k]/1e6, 0.55, left=left, color=col, edgecolor="white", linewidth=1.5)
+            ax.text(left + d_[k]/2e6, row, f"{d_[k]/1e6:.1f}M", ha="center", va="center", fontsize=10,
+                    color="white" if k != "cash" else INK)
+            left += d_[k]/1e6
+    ax.set_yticks([0, 1], ["Target", "Today"]); ax.set_xlim(0, total/1e6); ax.set_xlabel("HK$M")
+    tidy(ax)
+    ax.legend([Patch(color=c) for c in RAMP], ["Cash and deposits", "Bonds", "Equity"],
+              loc="lower center", bbox_to_anchor=(0.5, 1.02), ncol=3, handlelength=1.2)
+    save(fig, "allocation-half.png")
+    DATA.append(("allocation-half.png: parents' freely allocable money, HK$",
+                 "| | Cash | Bonds | Equity |\n|---|---|---|---|\n" +
+                 f"| Today | {bs['cash']:,.0f} | {bs['bonds']:,.0f} | {bs['equity']:,.0f} |\n"
+                 f"| Target | {tgt['cash']:,.0f} | {tgt['bonds']:,.0f} | {tgt['equity']:,.0f} |\n\n"
+                 f"Target = emergency {emergency:,.0f} + education {edu_fund:,.0f} (half deposits, half short bonds) + "
+                 f"Adrian {each:,.0f} at 40/55/5 + Carmen {each:,.0f} at 60/33/7 (equity/bonds/cash)."))
+
+    # Figure 20: property options, legacy with success labelled
+    fig, ax = plt.subplots(figsize=(HW, 2.2))
+    yy = np.arange(3)[::-1]; lab_p = ["Keep the home", "Reverse mortgage", "Downsize"]
+    pf = np.array([o[2] for o in opts])/1e6; he = np.array([o[3] for o in opts])/1e6
+    ax.barh(yy, pf, 0.5, color=ACC_D, label="Portfolio")
+    ax.barh(yy, he, 0.5, left=pf, color=ACC_L, edgecolor="white", linewidth=1.5, label="Home equity")
+    for yi, p_, e_, o in zip(yy, pf, he, opts):
+        ax.text(p_ + e_ + 0.3, yi, f"{p_ + e_:.1f}M · lasts {pct(o[1])}", va="center", fontsize=10, color=INK)
+    ax.set_yticks(yy, lab_p); ax.set_xlim(0, max(pf + he)*1.6); ax.set_xlabel("Left to heirs at Carmen's 89, HK$M today")
+    tidy(ax); ax.legend(loc="lower center", bbox_to_anchor=(0.4, 1.02), ncol=2, handlelength=1.2)
+    save(fig, "property-options-half.png")
+
+    # Figures 26-27: stress scenarios and sensitivity, same size so they pair
+    fig, ax = plt.subplots(figsize=(HW, 2.6))
+    x = np.arange(len(SC)); w_ = 0.36
+    ax.bar(x - w_/2 - 0.02, s89, w_, color=ACC_D, label="to 89")
+    ax.bar(x + w_/2 + 0.02, s95, w_, color=ACC_L, label="to 95")
+    for xi, a_, b_ in zip(x, s89, s95):
+        ax.text(xi - w_/2 - 0.02, a_ + 0.02, pct(a_), ha="center", fontsize=9.5, color=INK)
+        ax.text(xi + w_/2 + 0.02, b_ + 0.02, pct(b_), ha="center", fontsize=9.5, color=INK2)
+    ax.set_xticks(x, ["Base", "Low-return\ndecade", "Inflation\nshock", "Long life,\nmedical"])
+    ax.set_ylim(0, 1.1); ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
+    tidy(ax, "y"); ax.legend(loc="upper right", ncol=2, handlelength=1.2)
+    save(fig, "stress-half.png")
+
+    SHORT = {"CPI": "Inflation 3.5%", "Medical trend": "Medical 8.5% a year", "Business not sold": "Business not sold",
+             "Standard plan": "Standard plan from 75", "Couple's spending": "No spending drop at 84",
+             "Equities 5%": "Equities 5%", "Reverse mortgage": "Reverse mortgage 2045", "Equities 7%": "Equities 7%",
+             "No MPF annuity": "No MPF annuity"}
+    def short_lbl(l):
+        return next((v for k, v in SHORT.items() if l.startswith(k)), l)
+    fig, ax = plt.subplots(figsize=(HW, 2.6))
+    for i, (lbl, v) in enumerate(cases):
+        d_ = v - base
+        ax.barh(i, d_, 0.55, color=ALT if d_ >= 0 else ACC)
+        ax.text(d_ + (0.008 if d_ >= 0 else -0.008), i, pct(v), va="center", ha="left" if d_ >= 0 else "right",
+                fontsize=9.5, color=INK)
+    ax.axvline(0, color=INK2, lw=1)
+    ax.set_yticks(range(len(cases)), [short_lbl(c[0]) for c in cases], fontsize=9.5)
+    ax.set_xlim(min(v - base for _, v in cases) - 0.12, max(v - base for _, v in cases) + 0.1)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda x_, _: f"{x_*100:+.0f}" if x_ else f"{base:.0%}"))
+    ax.set_xlabel("Points, from the full plan"); tidy(ax)
+    save(fig, "sensitivity-half.png")
+
 # ---------- data twin ----------
 with open(os.path.join(OUT, "figure-data.md"), "w", encoding="utf-8") as f:
     f.write("# Figure data\n\nGenerated by `model/make_charts.py` from `model/wong_model.xlsx`. "

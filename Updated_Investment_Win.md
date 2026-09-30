@@ -56,23 +56,27 @@ of its range.
 - Illustrative worst year: about **−10%** in a 2008-type year. Fahtai to confirm.
 - Digital: **0%**. His only "digital rail" option is a tokenised MMF, which is cash.
 
-**Carmen — Medium–High, ESG-led**
+**Carmen — Medium–High, ESG-led** *(updated 30 Sep: 68% → 60% equity, see note below the table)*
 
 | Sleeve | Vehicle | Target | Range |
 |---|---|---|---|
 | Cash | 3053 | 5% | 5–10% |
-| Core bonds | AGGU | 10% | 5–20% |
+| Core bonds | AGGU | 18% | 10–25% |
 | Green bonds | SFC-authorised green bond fund | 10% | 5–15% |
 | Medium / long Treasuries | 3450 (0.30%) / 3433 (0.20% mgmt) | 5% | 0–10% |
 | ESG global equity | SFC-authorised ESG index fund | 35% | 30–40% |
 | Global equity core | Global index fund | 15% | 10–20% |
-| Growth slice | Nasdaq-100 UCITS fund | 8% | 0–10% |
-| HK equity | 2800 | 5% | 0–10% |
+| Growth slice | Nasdaq-100 UCITS fund | 3% | 0–5% |
+| HK equity | 2800 | 2% | 0–5% |
 | Asia REITs | 3447 (0.99%) | 5% | 0–5% |
 | Digital (optional) | HKEX spot BTC ETF, 3439 (0.30%) | 0–2% | from the growth slice |
-| **Total** | | **Equity 68% · Bonds/cash 30%** | **Equity cap 75%** |
+| **Total** | | **Equity 60% · Bonds/cash 38%** | **Equity cap 65%** |
 
-- Expected return ≈ **5.2% net** at 6% equity, ≈ **5.9%** at 7%.
+- Expected return ≈ **5.0% net** at 6% equity `[CHECK: Win]` (was 5.2% at 68% equity).
+- **Why 60%, not 68%:** in the team model, household equity above 40% adds legacy, not security (40%: money lasts to
+  89 in 100% of markets, worst year −10%; 54%: 99.6%, −15%). 60% for Carmen keeps the household at about 50% and
+  within the family objective of moderate growth with controlled downside. ESG sleeves (35% + 10%) are unchanged,
+  so the ESG target is unaffected. The cap falls to 65% to match. Source: `document/manuscript.md`, decision 3.
 
 **Ryan — High (his own money)**
 
