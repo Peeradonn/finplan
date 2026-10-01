@@ -45,7 +45,7 @@ of its range.
 | Short bonds | IBTA, iShares $ Treasury 1–3yr UCITS (0.07%) | 10% | 5–25% |
 | Core bonds | AGGU, iShares Core Global Aggregate USD-hedged (0.10%) | 20% | 15–35% |
 | **Treasury ladder 2037–2041** | Individual US Treasury notes, one rung per year | **20%** | 0–25% |
-| Green bonds | SFC-authorised green bond fund | 5% | 5–10% |
+| Green bonds | Allianz Green Bond, hedged class (1.14%; on the SFC ESG list) | 5% | 5–10% |
 | Global equity core (ESG index) | BOC-Prudential MSCI World ESG Index Fund | 25% | 20–30% |
 | ESG global equity | BOC-Prudential MSCI World ESG Index Fund (same fund) | 10% | 5–15% |
 | Growth slice | Nasdaq-100 UCITS fund, e.g. CNDX | 5% | **3–8%** |
@@ -63,6 +63,12 @@ best-in-class ESG selection keeps sector weights close to MSCI World, so Adrian'
 Hong Kong fund carries no US estate-tax exposure (cost: 30% rather than 15% withholding on US dividends, ≈0.15% a
 year). `[CHECK: Win]` management fee and retail availability (BOCHK or a fund platform). Fallback if retail cannot
 buy it: an Irish-domiciled MSCI World ESG Leaders UCITS ETF, with the ESG counting rule widened to SFDR Article 8/9.
+**Updated 1 Oct (story S16, S17; number check N29, N33):** fee found in the Index Fund Series brochure (3 Apr 2023,
+§6.1, Retail Class): management 0.65% + trustee 0.125% ≈ 0.78% a year, initial charge up to 5%: buy only through a
+channel that waives it. Fallback is now the **Sun Life AM Global Low Carbon Index Fund** (BTA105, on the SFC list),
+since a UCITS ETF would not count. MPF: each parent moves the employee half under the Employee Choice Arrangement to
+the **Sun Life Rainbow MPF Global Low Carbon Index Fund** (FER ≈1.19%, fee up to 1.02%). `[CHECK: Win]` each
+parent's current MPF fund and its FER.
 
 **Hong Kong equity holding dropped (1 Oct, Pete; story S14):** 3039's 5% (Adrian) and 2% (Carmen) moved into the BOC-Prudential ESG fund (Adrian 35% in all, Carmen 37%). The family's home, business and incomes already depend on Hong Kong; ESG stays at 25%. Superseded note kept for the record: **Hong Kong equity sleeve switched to 3039 (30 Sep, Pete):** E Fund (HK) HSI ESG Enhanced Index ETF, on the SFC's
 ESG list. Same market as the Tracker Fund (HSI ESG Enhanced Index, 77 stocks, full replication, within 0.2–0.3 pts of
@@ -75,7 +81,7 @@ for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking i
 |---|---|---|---|
 | Cash | 3053 | 5% | 5–10% |
 | Core bonds | AGGU | 18% | 10–25% |
-| Green bonds | SFC-authorised green bond fund | 10% | 5–15% |
+| Green bonds | Allianz Green Bond, hedged class (1.14%) | 10% | 5–15% |
 | Medium / long Treasuries | 3450 (0.30%) / 3433 (0.20% mgmt) | 5% | 0–10% |
 | ESG global equity | BOC-Prudential MSCI World ESG Index Fund | 37% | 30–42% |
 | Global equity core | Global index fund | 15% | 10–20% |
@@ -139,7 +145,8 @@ for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking i
 
 ### Value of advice (needs a team decision on the current-fee assumption)
 If the family's ≈ HK$4.4M of non-MPF funds cost about 1.5% a year today and move to ≈ 0.15%, the saving is
-**≈ HK$59K a year**. Plus moving idle savings from 0.2% to ≈ 3.0%: **≈ HK$14K a year** on HK$500K.
+**≈ HK$59K a year**. *Superseded 1 Oct (S17, N29):* with BOC-Prudential at ≈0.78% and Allianz at 1.14%
+the funds average ≈0.45–0.5%, so the saving is **≈ HK$45K a year** (page 8). Plus moving idle savings from 0.2% to ≈ 3.0%: **≈ HK$14K a year** on HK$500K.
 
 ---
 

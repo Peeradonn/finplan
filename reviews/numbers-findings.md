@@ -310,3 +310,89 @@ Fix: source "Case; team calculation".
 | 14 | 2021; 2024; RMB 1M → 3M; RMB 150bn each way; nine cities | Published | Snapshot (HKMA) |
 | 15 | A1 CPI 2.5 / 3.5; medical 10 → 6, 8.5; equities 6.0 / 17 / 4.0; ladder 4.0 / 2.5; cash 3.0 → 2.5 / 0.5; mix 40% (plan ≈50%); annuities; RMP 230K / 2045; cover 100K / 114K; Standard 2047; guardrails; 70% after 84 | Inputs / methodology | All match (see N5, N28) |
 | 15 | HK$181,770; 2026–2072; 10,000 | Tax tab / model | Reproduced by hand |
+
+---
+
+## Batch 4 · Fee-saving figures from story findings S16–S17 (checked on `proposal-v3.reviewed.html`, 1 Oct)
+
+### N29 · Pages 8, 12 · severity: confirmed, with a rounding suggestion
+Quote (S17 wording): "Moving about HK$4.4M of fund holdings from typical fees near 1.5% a year to funds averaging about
+0.4% saves ≈HK$47K a year; with the cash, card and tax measures in §2 the family gains ≈HK$105K a year"; roadmap
+"Saves ≈HK$47K"
+Found:
+- **The fee is right.** BOC-Prudential Index Fund Series principal brochure, §6.1 (pp. 74–75), Retail Class Units:
+  investment management fee 0.65% a year (maximum 2%), trustee fee 0.125% on the first HK$200M of NAV, initial charge
+  "up to 5%". 0.65 + 0.125 = 0.775%. The MSCI World ESG sub-fund is not in this brochure (the word "ESG" does not
+  appear), so its own addendum could differ, as S17 says. The Investment Class charges 0.50%, if a channel offers it.
+- **The HK$4.4M is right.** Today's fund holdings are HK equity 1.00 + global equity 1.35 + IG bonds 0.90 + ESG equity
+  0.70 + green bonds 0.45 = HK$4.40M. It excludes the MMF (0.40) and the listed stocks and REITs (0.80), which is
+  correct.
+- **S17's arithmetic is right.** BOC-Prudential 1.4876M × 0.775% = 11.5K; Allianz 0.3099M × 1.14% = 3.5K; the other
+  2.60M × 0.15% = 3.9K; total 19.0K = 0.43% of 4.4M. Saving 66.0 − 19.0 = **HK$47.0K**.
+- **A bottom-up check gives HK$46K.** After the switch the money in funds is not the same HK$4.4M: Adrian's ladder
+  holds individual Treasuries (no fee), Carmen holds REITs (3447, 0.99%), and half of Chloe's HK$2.57M sits in short
+  bonds. Pricing each holding in Win's tables (3053 0.20% · IBTA 0.07% · AGGU 0.10% · ladder 0 · Allianz 1.14% ·
+  BOC-Prudential 0.775% · CNDX 0.33% · 3450/3433 ≈0.25% · global index ≈0.20% · 3447 0.99%; Chloe's short bonds in
+  IBTA) gives Adrian 7.9K (0.38%), Carmen 11.0K (0.53%) and Chloe 0.9K: **19.8K, a saving of ≈HK$46K**.
+- **What 0.775% leaves out.** It covers the management and trustee fees only. The fund also bears custody, audit and
+  index costs (brochure p. 78), so its ongoing charge will be higher. At 0.9% the saving is HK$44K; at 1.0% it is
+  HK$43K.
+- **The total holds.** 47 + 14 + 25 + 20 = 106 → "≈HK$105K". With a HK$45K saving it is 104, still "≈HK$105K".
+Fix: S17's wording is confirmed. More robust: "saves ≈HK$45K a year", with the roadmap "Saves ≈HK$45K" and the total
+unchanged at ≈HK$105K. Either way, also update CLAUDE.md's open item ("HK$59K saving") and the manuscript.
+
+### N30 · Page 8 (S17 point 2, if quoted) · severity: rounding
+Quote: "Holding only enough to reach 20% (≈HK$0.94M instead of 1.49M) saves about HK$4K a year"
+Found: the cut is 2.6326 − 2.094 = HK$0.538M → BOC-Prudential 0.949M ✓. The saving is 0.538M × (0.775 − 0.15/0.20)% =
+**HK$3.1–3.4K**. Also checked from S17: extra cost against a plain index fund HK$8.6–9.3K ("about HK$9K" ✓); 0.04%
+of net worth ✓; 5% initial charge HK$74.4K once ✓, eight years of the difference ✓; S16's Allianz against a 0.10%
+ETF (1.04% × 0.31M) = HK$3.2K ✓.
+Fix: "about HK$3K a year".
+
+### N31 · Page 8 · severity: rounding
+Quote (reviewed v3, Figure 17): rows 1.49 / 0.31 / 0.84, "Total … 2.64 (25%)"
+Found: exact 1.4876 + 0.3099 + 0.8350 = **2.6326 → 2.63**, 25.1% of 10.47M. 2.64 is the sum of the rounded rows. Both
+are defensible; this replaces N15 for v3. Also checked: Figure 17 note "a plain index fund instead would leave the
+family at 11%": 2.6326 − 1.4876 = 1.145 → 10.9% ✓ (this resolves N6). S16's fallback "20.2%" (if the MPF switch
+fails, Carmen's 15% plain global holding moves to the ESG fund) is **20.1%**: (2.6326 − 0.835 + 0.3099) / 10.47. The
+page only says "above 20%", which is true.
+Fix: keep 2.64 with "rows rounded" in the note, or show 2.63. Correct 20.2% → 20.1% wherever it is quoted.
+
+### N32 · Page 8 · severity: untraceable (note)
+Quote: "the Sun Life MPF Global Low Carbon Index Fund … management fee of up to 1.02%" (S16), and the fee saving
+Found: the fee line covers the HK$4.4M outside the MPF only. Moving half of each parent's MPF (HK$0.84M) into the Sun
+Life fund changes their MPF fee by (1.02% − their current fund's fee). That is unknown: it would cost up to ≈HK$7K a
+year if they now hold a 0.2% index fund, and save money if they hold a typical ≈1.4% fund. "At a small extra cost in
+fees" is fair, but nothing quantifies it.
+Fix: none for the page. Win to note each parent's current MPF fund fee before the switch.
+
+## Batch 4 ready
+
+### N33 · Page 8 (and S16) · severity: inconsistent, quantified (follows up N32)
+Quote (S16): "Sun Life's MPF Global Low Carbon Index Fund … management fee of up to 1.02%", against "AIA … Green Fund …
+fund expense ratio of 1.41%"
+Found:
+- **The family's current MPF funds cannot be found.** The case names neither scheme nor fund, so the change in fee
+  stays an assumption until the parents show their statements.
+- **1.02% is the management fee, not the full cost.** Sun Life Rainbow MPF Scheme brochure (June 2026), §5.1(C),
+  effective 1 Apr 2026: "Up to 1.02%", including the fees of the underlying fund. The fund's **fund expense ratio
+  (FER) is ≈1.19%** (31 Dec 2024; secondary source, aastocks/fund fact sheet). S16 compares AIA's FER with Sun Life's
+  management fee. On a like-for-like basis it is 1.41% against ≈1.19%: Sun Life is still cheaper, so the choice holds.
+- **Market benchmarks:** the MPFA's average FER is 1.35% (Sep 2023; a Feb 2026 scheme update quotes 1.36%). The
+  Default Investment Strategy is capped at 0.75% management fee + 0.20% other expenses. Low-fee index funds run at
+  ≈0.5–0.8%.
+- **The cost of moving the employee half (HK$0.835M) to Sun Life at ≈1.19%, by what they hold now:**
+
+| Current fund | Change a year |
+|---|---|
+| Cheapest index fund, ≈0.5% | +HK$5.8K (costs more) |
+| Default Investment Strategy at its cap, ≈0.95% | +HK$2.0K |
+| Market average, 1.35% | −HK$1.3K (saves) |
+| Active equity fund, ≈1.6% | −HK$3.4K (saves) |
+
+Fix: S16's sentence: "…with a fund expense ratio of about 1.2% (management fee up to 1.02%)". State the assumption
+for the page: on the market-average MPF fee the switch costs about nothing; at worst ≈HK$6K a year until the annuity
+is bought. "At a small extra cost in fees" (p8) stays true. Not added to the HK$47K line, which covers fees outside
+the MPF. Action for Pete or Win: check each parent's MPF statement for the current fund and its FER.
+
+## Batch 5 ready

@@ -68,7 +68,8 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
   Adrian's 75 (2047). Guardrails (Guyton–Klinger) from 2039, essentials 40% never cut, medical premiums don't trigger cuts.
 - Critical illness HK$1.5M each (sized by need); new cover ≈HK$100K in year 1. Adrian 40% equity, Carmen 60%.
 - ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core,
-  Adrian 35%, Carmen 37%), green bond fund (ICMA principles, external review), MPF ESG fund. No thematic fund. No
+  Adrian 35%, Carmen 37%), Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index Fund (employee half, via
+  the Employee Choice Arrangement). No thematic fund. No
   separate Hong Kong holding: 3039 dropped 1 Oct (story S14), the family already depends on Hong Kong.
 - Card balance assumed revolving; tax assumed separate assessment (both stated as checks in §2).
 
@@ -91,7 +92,8 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
 
 Personal statement career paragraphs (parked) · Wealth Management Connect figures vs HKMA · MPF passes to the estate
 (no nomination) · HKMC annuity death benefit · insurer allows Flexi → Standard without underwriting · BOC-Prudential
-fund fee and retail access · current fund-fee assumption (HK$59K saving) · Ryan's crypto vs tokenised-MMF split ·
+fund's own addendum fee (brochure ≈0.78%) and a channel waiving the 5% initial charge · each parent's current MPF
+fund fee · Ryan's crypto vs tokenised-MMF split ·
 card revolving · tax filing status.
 
 ## Parallel sessions
