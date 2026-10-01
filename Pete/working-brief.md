@@ -17,7 +17,7 @@ UFP Award 2026 · *The Wong Family Legacy* · Round One due **Fri 2 Oct, 23:59**
 
 ### Thesis: "Built to Last"
 > *The Wongs have already done the hard part: a HK$24.4M balance sheet, over 40% of after-tax income saved each year
-> (parents only, HK$754K of HK$1.74M), and only 10% leverage. Our plan makes it last, for four people with four
+> (parents only, HK$718K of HK$1.74M), and only 10% leverage. Our plan makes it last, for four people with four
 > different views of risk.*
 
 | Pillar | Meaning | Sections |
@@ -208,8 +208,10 @@ leaves **HK$718K** freely investable (≈ HK$780K at the midpoint bonus). The wo
 - Monte Carlo: probability of sustaining HK$780K to age 89 and to 95.
 - Sensitivity: returns, inflation, longevity.
 - Post-retirement **medical as a separate, age-banded line** (methodology §1): Adrian ≈ HK$74K at 65 → ≈ HK$349K at
-  80, nominal.
-- **Carmen should buy individual VHIS cover before her group cover ends at 62.**
+  80, nominal. By Carmen's 89 it is ≈ HK$1.05M nominal (≈ HK$390K in today's money, half the HK$780K budget), so show
+  the levers in methodology §1d.
+- **Both parents should buy individual VHIS cover now**, not at retirement (Adrian is the more urgent case at 54). A
+  deductible plan keeps the overlap with group cover cheap.
 
 ### 3.4 ② The family Investment Policy Statement (feeds §3, §5, §11)
 - **Guardrails** (Guyton & Klinger, *Journal of Financial Planning*, 2006), applied to discretionary spending only:
@@ -227,14 +229,17 @@ leaves **HK$718K** freely investable (≈ HK$780K at the midpoint bonus). The wo
 - **Local:** the case says HK$150–250K a year, but UGC tuition is **HK$47,000 (2026/27) → 49,500 (2027/28)**, set by
   the government (+5.5% a year over the triennium). Split the band into tuition (policy-set) and living/hall costs
   (CPI). Chloe starts in 2028/29, after the announced fees, so state the escalation assumption.
-- **Overseas at ECB spot:** UK ≈ HK$304–503K a year; Canada ≈ 168–335K; Singapore ≈ 154–338K. The case band is really
-  a UK band. **Keep the case figure as the budget**; the gap is contingency headroom that covers FX stress.
-  - Footnotes: the Singapore MOE Tuition Grant carries a service obligation; the UK Immigration Health Surcharge is
-    ≈ £776 a year.
+- **Overseas at ECB spot, 2028/29 prices (5% a year):** UK ≈ HK$335–555K a year; Canada ≈ 400–554K; Singapore
+  ≈ 224–271K with the Tuition Grant, 332–400K without. **Keep the case figure as the budget, read as today's prices
+  escalated 5% a year** (as the model does: HK$600K → ≈ 661K in 2028/29). On that reading it covers the UK and Canada
+  including FX stress; read as 2028/29 prices it has no headroom. State the reading (methodology §3d).
+  - Footnotes: the Singapore MOE Tuition Grant requires three years' work in Singapore; the UK Immigration Health
+    Surcharge is ≈ £776 a year.
 - **FX:**
   - Base case is spot; stress is GBP +10% / CAD +14% / SGD +19% (95th percentile of 2–5 year moves).
-  - Hold HKD until offers arrive (~early 2028), then convert or hedge years 1–2.
-  - Pre-converting GBP costs only 0.2pp a year of carry; SGD costs 2.8pp.
+  - Hold HKD until offers arrive (~early 2028), then convert or hedge years 1–2. Convert years 3–4 about 12 months
+    ahead each; the remaining risk (≈ HK$60–90K a year at stress) comes from surplus.
+  - Pre-converting GBP costs ≈ 0.5pp a year against HKD deposits; CAD and SGD ≈ 1.3–2pp.
 - **Discipline:** money needed in 2–6 years stays in deposits and short bonds, not equities. Set the funding order and
   contingency; avoid excessive debt, as the family asked.
 
@@ -330,9 +335,9 @@ The medical, cash and FX rows are derived in [assumptions-methodology.md](assump
 | Assumption | Base | Stress |
 |---|---|---|
 | CPI | 2.5% (HK 2006–25 average 2.52%) | 3.5% |
-| Medical trend | 10% in 2027 → 6% by 2036 (linear) | 8.54% flat |
-| Medical ageing | VHIS Flexi median age curve (~4.7% a year, 65→80) | same |
-| Cash / deposits | 3.0% in 2027–28 → 2.5% by 2031; idle balances 0.2% | 0.5% from 2029 |
+| Medical trend | 10% in 2027 → 6% by 2036 (linear) | 8.5% flat |
+| Medical ageing | VHIS Flexi median age curve (~4.6–4.7% a year, 65→80) | same |
+| Cash / deposits | 3.0% in 2027–28 → 2.5% by 2031; idle balances 0.2% | 0.5% from 2029 (with CPI at base) |
 | Local tuition | 5.5% to 2027/28, then 3% | +2pp |
 | Overseas education | 5% | + FX stress |
 | Wages | Adrian 3% · Carmen 3% · Ryan 5% | 0% for 3 years |

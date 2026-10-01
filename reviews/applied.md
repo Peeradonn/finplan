@@ -1,0 +1,68 @@
+# Applied findings (HTML builder)
+
+**Last batch taken:** numbers-findings.md **Batch 3** (N1–N28) · story-findings.md **Batch 10** (S1–S15, Pete's 1 Oct decisions).
+
+**Where the edits live.** Pete asked for the edits in a copy: `document/proposal-v3.html` = v2 (his direct edits) + every
+change below. v3 is a *built* copy, so its numbers are typed, not `{{placeholders}}`. **Still to do before the final
+build:** carry v3 into the page sources and the manuscript (the v2 edits too), and add model keys for the numbers flagged
+"needs a key" below. Until then, `assemble.py` would rebuild `proposal.html` without any of this.
+
+Render of v3 (1 Oct): 15 pages, every page fits. Free space: p2 7.6 · p3 0.9 · p4 8.1 · p5 2.4 · p6 3.5 · p7 7.4 ·
+p8 5.6 · p9 4.0 · p10 6.1 · p11 9.4 · p12 17.4 · p13 4.8 · p14 48.2 · p15 8.9 mm.
+Note: v2 itself overflowed on p3, p5, p13 and p15. The first render of the session misreported the free space (fonts
+not yet loaded); later renders were stable and match the story reviewer's figures.
+
+## Numbers (batches 1–3)
+
+N1 · Applied · p2, p4, p5, p13 · basis fixed (option a + real money where exact). p2 "the worst year stays above HK$546K" → "spending never falls below 70% of the budget"; p4 "leaving HK$108K … never falls below HK$546K" → "leaving Carmen HK$76K … her spending never falls below HK$382K"; Fig 11 typical/worst columns now shares of the budget (100/100/95%, 20/20/70%), note says "to Carmen's 95"; p5 "HK$546K … HK$159K" → "Carmen's spending falls no lower than HK$382K a year, 70% of her budget, rather than … HK$111K", "HK$41K" → "about 5% of it (≈HK$41K a year while both live)"; p13 "HK$670K" → "about 86% of the budget". **Needs keys:** 76K, 382K, 111K are the checker's read-only rerun values (option b: `levels × SPEND × (SURV if y > ALE else 1)`).
+N2 · Applied · p10 · "that is HK$1.75M" → "she would need HK$3.75M, of which his existing policy pays HK$2.0M, leaving HK$1.75M to cover"
+N3 · Applied · p8 · "about 0.92" → "0.99 between Moody's and S&P". Win's notes line 187 still says 0.92 (Win to fix).
+N4 · Applied · p5 · "the HK$65K a year the parents pay today" → "about HK$65K a year of premiums (both parents' Flexi premiums at 65, at today's prices)"
+N5 · Applied · p15 · A1 life-expectancy stress "Both 95" → "Carmen 95"
+N6 · Applied, then superseded by S15 · p8 · "19%" → "12%" → (S15) "11%, where it is today"
+N7 · Applied · p2 hero, p2 rec 1, p3, p12 · "a year" → "in year 1"; rec 1 adds "≈HK$114K a year on average until retirement"
+N8 · Applied · p10 · "Of fifteen ways the plan could fail" → "Of the protection risks we ranked"
+N9 · Applied · p4 Fig 7 · "from 2056" → "from 2057"
+N10 · Applied · p12 · roadmap split: "2032 · Managers built up; Chloe starts work, own plan" and "2034–36 · Adrian to 35% equity"
+N11 · Applied · p13 chart · `make_charts.py` label "C. Long life + medical" → "Medical 8.5% a year" (both stress charts). Charts rerun; `numbers.json` unchanged (diffed).
+N12 · Deferred · p5 · 64% and 91% confirmed (63.9%, 90.6%) and kept typed in v3. **Needs keys** `no_med_1_89`, `med45_89` when carried to sources.
+N13 · Deferred · p10 · HK$157K working: Lookbua to supply.
+N14 · Applied · p6 · "about HK$0.4M" → "HK$0.4–0.7M"
+N15 · Superseded by S15 · p8 · total is now 2.64 and the rounded rows add up; no "rows rounded" note
+N16 · Applied · p3 Fig 4 · "30.5 mo." → "30 mo."
+N17 · Applied (via S1) · p2 · "61% of their wealth" → "61% of the family's assets"
+N18 · Applied (via N1) · p2
+N19 · Applied · p8 · "idle-cash and tax measures" → "cash, card and tax measures"
+N20 · Rejected · claim holds (57%, ≥55.7% at the low bonus); p3 has 0.9 mm free
+N21 · Applied · p9 Fig 19 note · + "Crypto held at today's value; before the parents' match." (also covers S12's "prices held flat")
+N22 · Applied · p10 · "the HK$3.0M a forced sale might fetch" → "more than the HK$3.0M the plan counts on from a sale" (p12 carries S6's prudence wording, Pete's decision)
+N23 · Applied · p10 sidebar · "paid only until retirement" → "all but medical cover ends at retirement"
+N24 · Applied · p4 · "what a 2% real return needs for HK$780K a year" → "close to the HK$17.5M a 2% real return needs for HK$780K a year to 89". **Needs a key** for 17.5M (pv, 30 years).
+N25 · No change needed (checker agrees)
+N26 · No change needed ("about" stays)
+N27 · Applied · p4 · "only the MPF is annuitised" → "only the MPF's mandatory balance is annuitised"
+N28 · Applied · p15 · mortgage source "Case" → "Case; derived"
+
+## Story (batches 1–10)
+
+S1 · Applied · p2, p3 · the business pays Carmen only while she runs it (reviewer's wording)
+S2 · Applied · p4, p12 · p12 new "Why sell rather than keep the shares for dividends" (co-founder, manager's pay, ranks behind the loan, no tax either way, dividend a bonus); p4 "Without the business sale it still reaches 66%" → "With no business sale at all, it still reaches 66%". Optional dividend break-even run: not done.
+S3 / S8 · Applied (S3 wording) · p10 · "so her pay stays a salary until the business is sold"; p15 A1 new row "Carmen's pay · All HK$720K as salary · Case; assumed". S8's ≈HK$30K saving sentence not used: unchecked by the number checker, and p10 had no room.
+S4 · Applied · p2 quote · "…and wealth that pays nothing in retirement, are why the money falls short."
+S5 · Applied (moved) · p11, not the Fig 10 note (p5 had no room): "the ≈HK$4.5M released before costs joins the portfolio, and the income floor becomes the annuities plus the cash reserve"
+S6 · Applied · p12 · "the price a forced sale might fetch, so the plan does not depend on a good sale" (Pete approved)
+S7 · Deferred · personal-statement career paragraphs: each member (parked)
+S9–S11 · Superseded by S12
+S12 · Applied in full · p2 (Fig 1 "From 18", rec 5, rec 6), p6 "After graduation", p7 heading and Fig 15, p9 Fig 18, Ryan's three pots, trim rule, match to 2037, new defence, p12 roadmap, p13 B1. Fig 19 not rerun for the 80% equity split (note says crypto held flat, before the match).
+S13 + S14 + S15 · Applied (S15's combined table) · p7: green bond fund excepted from "index fund or ETF"; no separate Hong Kong holding; MPF half in an ESG fund. p8: Fig 17 by holding (BOC-Prudential 35%/37% 1.49, green bond fund 0.31, MPF ESG fund 0.84, total 2.64), note "11%, where it is today", "index-tracking where possible", "Why not higher" cut, two-rating test for equity funds and ICMA principles for green bonds, MPF route and the 20% fallback. Decision record updated: CLAUDE.md ESG line, manuscript Decisions row 6, Win's allocation tables (Adrian ESG core 10% row, Carmen 37%, 3039 rows removed). Open for people: Win confirms BOC-Prudential index, fee and retail access; existing green bond product; which MPF schemes' ESG funds are on the SFC list.
+
+## Cuts made for fit (v2 already overflowed; the additions needed room)
+
+- p3: Fig 5 measures "83% of markets, to Carmen's 89", "Saves 30%; cover; crypto ≤ 20%"; dropped "whose allowances the tax model claims".
+- p4: "It barely moves the odds (+1 point)" → "It adds only 1 point to the odds"; dropped ", 70% of her budget" (said on p5); "below its target share" → "below target"; "when Adrian retires" → "in 2037".
+- p5: h3 "What the guardrails cost, and what they buy" became a lead-in; dropped "a choice to make with their health in view", ", fixed", "protected by the rules below"; "fixed payments lose value" → "prices rise".
+- p10: Fig 20 note "quotes replace them before purchase" → "quotes replace these"; dropped "not a dividend," (S3).
+- p11: dropped "and the model counts that cost"; Fig 23 column widths and shorter cells ("Estate and MPF", "Property, money", "Medical care", "Staged trusts at 25, 30, 35").
+- p12: roadmap cells shortened so no row wraps.
+- p13: heading drops "Agreed rules answer each."; Fig 27 note one line ("Our rules" definition moved to the Fig 26 note); compliance paragraph shortened (offering-document check and the product list dropped; "regulated products only" kept).
+- p15: heading "Every number traces to a stated assumption."; source cells shortened ("HK CPI 2006–25", "Family choice").

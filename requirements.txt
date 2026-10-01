@@ -1,0 +1,5 @@
+numpy
+openpyxl
+matplotlib
+pymupdf
+python-pptx

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pages 10 to 15, fit test</title>
+<link rel="stylesheet" href="styles-v2.css">
+<style>
+  table.t tr.group td { font-weight: 600; color: var(--accent-dark); padding-top: 2mm; border-bottom: .4pt solid var(--ink2); }
+  .ph-text { color: var(--muted); }
+  .annot .matrix { margin-top: 1mm; }
+</style>
+</head>
+<body>
+
+<!-- ================= 10 · §8 PROTECTION ================= -->
+<section class="page">
+  <div class="content">
+    <div class="kicker"><span class="n">08</span>Risk management and protection</div>
+    <h2 class="finding">The largest gap is income, not death: neither parent could replace their salary if disabled.</h2>
+    <div class="cols">
+      <aside class="side">
+        <div class="num"><div class="v">HK$100K</div><div class="l">in year 1 closes every gap: 14% of the surplus, paid only until retirement</div></div>
+      </aside>
+      <main>
+        <p>Of fifteen ways the plan could fail, ranked by severity, likelihood and warning time, disability ranks first for both parents: the gap the family itself reported. The existing whole-life policies already meet most of the life need. Premiums average {{premiums_avg}} a year to retirement as they rise with age; wills and powers of attorney cost under HK$25K once (§9).</p>
+      </main>
+    </div>
+    <div class="fig">
+      <div class="fig-title"><span class="fig-label">Figure 20</span>Disability and critical illness are the gaps; life cover needs only a top-up</div>
+      <table class="t dense">
+        <colgroup><col style="width:25%"><col style="width:31%"><col style="width:31%"><col style="width:13%"></colgroup>
+        <thead><tr><th>New cover</th><th>Adrian (54)</th><th>Carmen (49)</th><th class="n">Year 1</th></tr></thead>
+        <tbody>
+          <tr><td><b>Disability income</b></td><td>HK$65K a month to 65</td><td>HK$39K a month to 62</td><td class="n">HK$37K</td></tr>
+          <tr><td><b>Term life</b></td><td>+1.75M (need 3.75M)</td><td>+1.05M (need 2.85M)</td><td class="n">HK$7K</td></tr>
+          <tr><td><b>Critical illness</b></td><td>1.5M</td><td>1.5M</td><td class="n">HK$41K</td></tr>
+          <tr><td><b>Medical (VHIS)</b></td><td>Flexi, deductible = group</td><td>Flexi, deductible = group</td><td class="n">HK$15K</td></tr>
+          <tr><td><b>Key person, buy-sell</b></td><td>—</td><td>2.5M, company pays</td><td class="n">—</td></tr>
+          <tr class="total"><td>Total</td><td></td><td></td><td class="n">≈HK$100K</td></tr>
+        </tbody>
+      </table>
+      <div class="fig-src">None of this cover exists today. Sized by need: critical illness = treatment outside VHIS + 3 months' pay. Source: Bowtie rate cards (2026); market range for disability cover; quotes replace them before purchase.</div>
+    </div>
+    <p><span class="lead-in">A) Disability first.</span> A benefit of 65% of pay to each parent's retirement age replaces the income the plan depends on. Carmen's cover is written on her salary, so it must be in place before any change to how she draws income from the business.</p>
+    <p><span class="lead-in">B) Life cover fills a defined gap.</span> If Adrian dies, Carmen's income leaves a shortfall of about HK$157K a year until she is 62; with the mortgage and final costs that is HK$1.75M. If Carmen dies, Adrian's income covers the household; her gap is the mortgage, the business-loan guarantee and final costs.</p>
+    <p><span class="lead-in">C) Medical cover now, not at retirement.</span> Group cover ends at 65 and 62. VHIS bought while both are healthy is renewable to 100 with no new underwriting; a deductible matched to the group benefit keeps the overlap cheap, and premiums are tax-deductible up to HK$8,000 each. <span class="lead-in">D) The business survives Carmen:</span> a buy-sell agreement funded by company-owned key-person cover realises her full HK$2.5M stake. <span class="lead-in">E) Ryan starts small:</span> HK$0.5M life and HK$0.3M critical-illness cover for ≈HK$900 a year.</p>
+    <p><span class="lead-in">Family emergency plan.</span> A joint account pays every bill for twelve months (≈HK$1.0M) while an estate is settled; a one-page family file lists every policy, account and recovery route; Chloe has two named emergency contacts and a guardian (§9).</p>
+    <p><span class="lead-in">Term cover, not more whole-life.</span> The need ends at retirement, when the mortgage is cleared, Chloe has graduated and the annuities begin. Term cover prices that window; whole-life cover of the same amount costs many times more, because most of its premium buys savings the family already holds. The trade-off: the new cover lapses at 65 and 62, after which the existing policies and the portfolio carry the risk. If a claim is disputed, the emergency reserve carries the family while it is settled.</p>
+    <div class="spacer"></div>
+  </div>
+  <div class="page-foot"><span>Built to Last · The Wong family</span><span>10</span></div>
+</section>
+
+<!-- ================= 11 · §9 PROPERTY ================= -->
+<section class="page">
+  <div class="content">
+    <div class="kicker"><span class="n">09</span>Property, succession and legacy</div>
+    <h2 class="finding">Keep the home now, decide at 65, and sign the papers this quarter so the choice stays open.</h2>
+    <div class="annot">
+      <div class="fig">
+        <div class="fig-title"><span class="fig-label">Figure 21</span>Security and legacy by property option</div>
+        <img src="../figures/property-options-half.png" alt="Property options">
+        <div class="fig-src">Source: team model, 10,000 simulations; HKMC terms.</div>
+      </div>
+      <div>
+        <div class="fig-title"><span class="fig-label">Figure 22</span>The options at 2037</div>
+        <table class="t dense">
+          <thead><tr><th>Option</th><th class="n">Lasts to 89</th><th class="n">To heirs</th></tr></thead>
+          <tbody>
+            <tr><td>Keep, no release</td><td class="n">{{prop_keep_89}}</td><td class="n">{{legacy_keep}}</td></tr>
+            <tr><td>Reverse mortgage</td><td class="n">{{prop_rmp_89}}</td><td class="n">{{legacy_rmp}}</td></tr>
+            <tr><td>Downsize to HK$7M</td><td class="n">{{prop_down_89}}</td><td class="n">{{legacy_down}}</td></tr>
+          </tbody>
+        </table>
+        <div class="fig-src">Today's money; with the annuity, lower survivor spending and the business sale.</div>
+      </div>
+    </div>
+    <p><span class="lead-in">Refinance? Not now; clear it at 65.</span> The mortgage costs about 3.5%, close to what cash earns, and its interest is tax-deductible. We compare it each year with new H-plans, capped at 3.25%, and switch only if the saving clears the fees. About HK$0.46M will still be owed in 2037; it is repaid from the portfolio then, because the reverse mortgage needs a home free of other loans, and the model counts that cost. <span class="lead-in">Ownership:</span> we assume the parents hold the flat as joint tenants, so it passes to the survivor outside the will; a land search in month 1 confirms it. <span class="lead-in">Another district:</span> the HK$7M replacement need not be in Tai Kok Tsui; a cheaper district buys more space, or releases more money.</p>
+    <p><span class="lead-in">Downsizing is the stronger financial answer; the reverse mortgage buys the right to stay.</span> Downsizing matches the reverse mortgage on security and leaves about {{legacy_down_vs_rmp}} more to Ryan and Chloe. HKMC's reverse mortgage pays a fixed income for life, lets both parents stay in the home and is non-recourse, at the cost of a smaller legacy. The choice depends on how much staying in Tai Kok Tsui matters to them, so we set the decision for 2037 and keep both options open; delaying the reverse mortgage to 2045 would lower the plan from {{ladder_5_89}} to {{rmp2045_89}}.</p>
+    <h3>Succession: control, not tax</h3>
+    <p>Estate duty was abolished in 2006, so succession planning here is about control, liquidity and staging. Without wills, the intestacy rules would pass about HK$1.1M each to Ryan and Chloe on Adrian's death, and on both deaths about HK$11.9M each, unstructured, with no guardian named for Chloe. MPF balances have no beneficiary nomination: before 2037 they are paid to the estate once probate is granted, so the wills cover them and the joint account bridges the wait.</p>
+    <div class="fig">
+      <div class="fig-title"><span class="fig-label">Figure 23</span>The three documents the family needs</div>
+      <table class="t dense">
+        <thead><tr><th>Document</th><th>Covers</th><th>Key point</th></tr></thead>
+        <tbody>
+          <tr><td>Mirror wills</td><td>The estate, including MPF</td><td>Staged trusts for the children at 25, 30 and 35; a guardian for Chloe</td></tr>
+          <tr><td>Enduring powers of attorney</td><td>Property and money</td><td>Needed before any reverse mortgage or sale</td></tr>
+          <tr><td>Advance directives</td><td>Medical treatment</td><td>New statutory form, in force since 31 July 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="spacer"></div>
+  </div>
+  <div class="page-foot"><span>Built to Last · The Wong family</span><span>11</span></div>
+</section>
+
+<!-- ================= 12 · §9 cont · §10 ROADMAP ================= -->
+<section class="page">
+  <div class="content">
+    <div class="kicker"><span class="n">09</span>Property, succession and legacy · continued</div>
+    <p><span class="lead-in">The business, passed on in stages.</span> A shareholders' and buy-sell agreement funded by key-person cover now; managers built up from 55; a staged sale between 58 and 62, with no capital gains tax. We count only HK$3.0M of its HK$5.0M value. <span class="lead-in">Family governance:</span> a short family charter and one annual meeting where all four review the plan. <span class="lead-in">Legacy with purpose:</span> a named scholarship in sustainable design, about HK$30K a year through a registered charity, joins Carmen's mission to Chloe's interest in design; donations are tax-deductible.</p>
+
+    <div class="kicker" style="margin-top:4mm"><span class="n">10</span>Implementation roadmap</div>
+    <h2 class="finding">Every gap closes in the first year; after that, dates and events trigger each decision.</h2>
+    <div class="fig">
+      <div class="fig-title"><span class="fig-label">Figure 24</span>Roadmap</div>
+      <table class="t dense">
+        <colgroup><col style="width:15%"><col style="width:53%"><col style="width:12%"><col style="width:20%"></colgroup>
+        <thead><tr><th>When</th><th>Action</th><th>Owner</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr class="group"><td colspan="4">Next 12 months</td></tr>
+          <tr><td>Month 1</td><td>Wills, guardian, powers of attorney; land search</td><td>Parents</td><td>&lt; HK$25K once</td></tr>
+          <tr><td>Month 1</td><td>Joint account; idle cash to deposits; clear the card</td><td>Parents</td><td>≈HK$39K a year</td></tr>
+          <tr><td>Months 1–3</td><td>Disability, life, CI and VHIS cover; Ryan's cover</td><td>Family</td><td>≈HK$100K a year</td></tr>
+          <tr><td>Months 1–3</td><td>Buy-sell agreement; key-person cover</td><td>Carmen</td><td>Company pays</td></tr>
+          <tr><td>Months 1–6</td><td>Three portfolios; policy signed; voluntary MPF</td><td>Family</td><td>Fees ≈HK$59K lower</td></tr>
+          <tr><td>Month 12</td><td>First family meeting; Ryan's plan; family charter</td><td>All four</td><td>—</td></tr>
+          <tr class="group"><td colspan="4">3–5 years</td></tr>
+          <tr><td>Early 2028</td><td>Chloe accepts an offer: convert years 1–2 of fees</td><td>Parents</td><td>No currency risk</td></tr>
+          <tr><td>Every year</td><td>Rebalance by bands; review mortgage, cover, ESG list</td><td>Adviser</td><td>—</td></tr>
+          <tr class="group"><td colspan="4">Into retirement and legacy</td></tr>
+          <tr><td>2034–36</td><td>Adrian to 35% equity; business managers in place</td><td>Parents</td><td>—</td></tr>
+          <tr><td>2037</td><td>Clear the mortgage; Adrian's annuity; release the home</td><td>Parents</td><td>{{step_home}} points</td></tr>
+          <tr><td>2039</td><td>Carmen's annuity; business sold; guardrails begin</td><td>Carmen</td><td>{{step_business}} points</td></tr>
+          <tr><td>2047</td><td>Adrian 75: review the medical tier</td><td>Parents</td><td>{{ladder_5_89}} → {{switch_89}}</td></tr>
+        </tbody>
+      </table>
+      <div class="fig-src">Effect: the saving a year, or the change in the chance the money lasts to Carmen's 89. Full reviews follow a death, a disability, a business sale, a 20% market fall or a 1.5-point rate move.</div>
+    </div>
+    <div class="spacer"></div>
+  </div>
+  <div class="page-foot"><span>Built to Last · The Wong family</span><span>12</span></div>
+</section>
+
+<!-- ================= 13 · §11 RISK ================= -->
+<section class="page">
+  <div class="content">
+    <div class="kicker"><span class="n">11</span>Risk and compliance</div>
+    <h2 class="finding">The largest risks are inflation, markets and medical costs; agreed rules answer all three.</h2>
+    <div class="annot">
+      <div class="fig">
+        <div class="fig-title"><span class="fig-label">Figure 25</span>The plan holds under stress</div>
+        <img src="../figures/stress-half.png" alt="Stress scenarios">
+        <div class="fig-src">Chance the money lasts to Carmen's 89.</div>
+      </div>
+      <div>
+        <div class="fig-title"><span class="fig-label">Figure 26</span>Likelihood and impact</div>
+        <div class="matrix">
+          <div class="axis yaxis" style="grid-row:1/4">Impact →</div>
+          <div class="cell md"><span class="code">P1</span></div>
+          <div class="cell hi"><span class="code">F1</span><span class="code">F3</span><span class="code">F6</span></div>
+          <div class="cell hi"><span class="code">F2</span></div>
+          <div class="cell lo"><span class="code">E1</span><span class="code">P2</span></div>
+          <div class="cell md"><span class="code">F4</span><span class="code">F5</span><span class="code">B2</span></div>
+          <div class="cell hi"></div>
+          <div class="cell lo"></div>
+          <div class="cell lo"><span class="code">R1</span><span class="code">R2</span><span class="code">E2</span></div>
+          <div class="cell md"><span class="code">B1</span></div>
+          <div></div>
+          <div class="axis" style="grid-column:2/5">Likelihood →</div>
+        </div>
+        <div class="fig-src">In a low-return decade the rules trim typical spending to {{rec_lowret_typical}} rather than let the money run out.</div>
+      </div>
+    </div>
+    <div class="fig">
+      <div class="fig-title"><span class="fig-label">Figure 27</span>Every risk has a measured impact and a named defence</div>
+      <table class="t dense">
+        <colgroup><col style="width:5%"><col style="width:33%"><col style="width:15%"><col style="width:11%"><col style="width:36%"></colgroup>
+        <thead><tr><th></th><th>Risk</th><th class="n">Fixed spending</th><th class="n">Our rules</th><th>Defence</th></tr></thead>
+        <tbody>
+          <tr><td><b>F1</b></td><td>Inflation 3.5%, not 2.5%</td><td class="n">{{cpi_stress_89}}</td><td class="n">{{rec_cpi_89}}</td><td>Guardrails; shorter bonds</td></tr>
+          <tr><td><b>F2</b></td><td>Medical costs 8.5% a year</td><td class="n">{{med_stress_89}}</td><td class="n">{{rec_med_89}}</td><td>Tier review at 75</td></tr>
+          <tr><td><b>F3</b></td><td>A low-return decade</td><td class="n">{{stressA_89}}</td><td class="n">{{rec_lowret_89}}</td><td>Guardrails; Treasury ladder</td></tr>
+          <tr><td><b>F4</b></td><td>Business not sold</td><td class="n">{{biz_not_sold_89}}</td><td class="n">{{rec_biz_89}}</td><td>Buy-sell agreement now</td></tr>
+          <tr><td><b>F5</b></td><td>Carmen lives to 95</td><td class="n">{{ladder_5_95}}</td><td class="n">{{guardswitch_95}}</td><td>Annuities pay for life</td></tr>
+          <tr><td><b>F6</b></td><td>Money runs out, base case</td><td class="n">{{fixflex_89}}</td><td class="n">{{guardswitch_89}}</td><td>Annual review; agreed steps</td></tr>
+          <tr><td><b>B2</b></td><td>Selling in a crash</td><td class="n">{{rebal_drift_89}}</td><td class="n">—</td><td>5-point rebalancing bands</td></tr>
+          <tr><td><b>P1</b></td><td>Disability before retirement</td><td colspan="2">Highest ranked</td><td>Disability income cover (§8)</td></tr>
+          <tr><td><b>P2</b></td><td>Irreversible choices</td><td colspan="2">Smaller legacy</td><td>Annuitise only the MPF</td></tr>
+          <tr><td><b>B1</b></td><td>Four risk appetites</td><td colspan="2">Family conflict</td><td>One portfolio per person</td></tr>
+          <tr><td><b>R1</b></td><td>Crypto rules or licences</td><td colspan="2">Ryan's holdings</td><td>Regulated channels only</td></tr>
+          <tr><td><b>R2</b></td><td>Greenwashing</td><td colspan="2">ESG goal missed</td><td>Two ratings; replace in 3 months</td></tr>
+          <tr><td><b>E1</b></td><td>Suitability, joint clients</td><td colspan="2">Unsuitable advice</td><td>One risk profile per person</td></tr>
+          <tr><td><b>E2</b></td><td>Model risk</td><td colspan="2">False precision</td><td>Compare decisions; not forecasts</td></tr>
+        </tbody>
+      </table>
+      <div class="fig-src">Chance the money lasts to Carmen's 89 (F5: 95). Our rules: tier review at 75 plus guardrails (§3). All products SFC-authorised, HKEX-listed or HKMC-issued; we earn no commission.</div>
+    </div>
+    <div class="spacer"></div>
+  </div>
+  <div class="page-foot"><span>Built to Last · The Wong family</span><span>13</span></div>
+</section>
+
+<!-- ================= 14 · PERSONAL STATEMENT ================= -->
+<section class="page">
+  <div class="content">
+    <div class="kicker">Personal statement</div>
+    <h2 class="finding">Four planners, one question: how Hong Kong's advisers serve families across the Greater Bay Area.</h2>
+    <h3>The opportunity: Wealth Management Connect</h3>
+    <p>Since 2021 the Cross-boundary Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities of the Greater Bay Area invest across the boundary through their banks, and since 2024 through licensed securities firms as well. The 2024 changes raised each investor's limit from RMB 1 million to RMB 3 million, within an aggregate quota of RMB 150 billion in each direction, and widened the funds on offer; a further round is under discussion. Two flows matter to advisers. Southbound, mainland investors buy Hong Kong funds and deposits, and need advisers who can explain those products, and their risks, to clients used to a different system. Northbound, Hong Kong residents such as the Wongs can hold mainland wealth products in renminbi through banks in the Greater Bay Area. We did not use it for this family: their income, home and business are already in one region, and renminbi products would add to that concentration. For a family that retires across the boundary, it may be the right tool. Either way the skill is the one this proposal needed: knowing two markets' products, rules and tax well enough to say when not to use them.</p>
+    <h3>Our career goals</h3>
+    <p class="ph-text"><b>Pete.</b> Placeholder of about seventy words for the career paragraph: the role wanted in five years and the market, the part of this proposal led and what it taught about advising a family, and what comes next to do that role across the boundary, whether a licence, a qualification or a market. This text only reserves the space on the page so that the fit can be checked before the member writes the real paragraph here.</p>
+    <p class="ph-text"><b>Win.</b> Placeholder of about seventy words for the career paragraph: the role wanted in five years and the market, the part of this proposal led and what it taught about advising a family, and what comes next to do that role across the boundary, whether a licence, a qualification or a market. This text only reserves the space on the page so that the fit can be checked before the member writes the real paragraph here.</p>
+    <p class="ph-text"><b>Fahtai.</b> Placeholder of about seventy words for the career paragraph: the role wanted in five years and the market, the part of this proposal led and what it taught about advising a family, and what comes next to do that role across the boundary, whether a licence, a qualification or a market. This text only reserves the space on the page so that the fit can be checked before the member writes the real paragraph here.</p>
+    <p class="ph-text"><b>Lookbua.</b> Placeholder of about seventy words for the career paragraph: the role wanted in five years and the market, the part of this proposal led and what it taught about advising a family, and what comes next to do that role across the boundary, whether a licence, a qualification or a market. This text only reserves the space on the page so that the fit can be checked before the member writes the real paragraph here.</p>
+    <div class="spacer"></div>
+  </div>
+  <div class="page-foot"><span>Built to Last · The Wong family</span><span>14</span></div>
+</section>
+
+<!-- ================= 15 · APPENDIX ================= -->
+<section class="page">
+  <div class="content">
+    <div class="kicker">Appendix</div>
+    <h2 class="finding">Every number traces to one model and a stated assumption.</h2>
+    <h3>A1 · Key assumptions</h3>
+    <table class="t dense">
+      <colgroup><col style="width:21%"><col style="width:46%"><col style="width:14%"><col style="width:19%"></colgroup>
+      <thead><tr><th>Assumption</th><th>Base</th><th>Stress</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>CPI</td><td>2.5%</td><td>3.5%</td><td>HK average 2006–25</td></tr>
+        <tr><td>Medical costs</td><td>10% → 6% by 2036, plus VHIS age curve</td><td>8.5% flat</td><td>Getzen; WTW</td></tr>
+        <tr><td>Equities</td><td>6.0%, 17% volatility</td><td>4.0%</td><td>Long-run history</td></tr>
+        <tr><td>Bonds, ladder</td><td>4.0%</td><td>2.5%</td><td>US 5-year 5.0%</td></tr>
+        <tr><td>Cash</td><td>3.0% → 2.5% by 2031</td><td>0.5%</td><td>HIBOR; Fed</td></tr>
+        <tr><td>Model mix</td><td>40% equity for all the parents' money</td><td>—</td><td>Plan holds ≈50%</td></tr>
+        <tr><td>MPF annuities</td><td>Single life: {{annuity_adrian}} Adrian 2037, {{annuity_carmen}} Carmen 2039</td><td>—</td><td>HKMC rates</td></tr>
+        <tr><td>Mortgage</td><td>≈HK$0.46M still owed, cleared in 2037</td><td>—</td><td>Case</td></tr>
+        <tr><td>Reverse mortgage</td><td>HK$230K a year for life from 2037</td><td>From 2045</td><td>HKMC</td></tr>
+        <tr><td>New cover</td><td>≈HK$100K in year 1; {{premiums_avg}} a year on average</td><td>—</td><td>Rate cards</td></tr>
+        <tr><td>Medical tier</td><td>Standard plan from 2047, same insurer</td><td>Flexi for life</td><td>Insurer terms</td></tr>
+        <tr><td>Guardrails</td><td>From 2039: ±10% when withdrawals drift 20%; never below 70% of target</td><td>Fixed</td><td>Guyton–Klinger</td></tr>
+        <tr><td>After a death</td><td>70% of HK$780K after Adrian's 84</td><td>100%</td><td>Convention</td></tr>
+        <tr><td>Life expectancy</td><td>Adrian 84, Carmen 89</td><td>Both 95</td><td>Case</td></tr>
+      </tbody>
+    </table>
+    <h3>A2 · Model and method</h3>
+    <p>One spreadsheet projects income, 2026/27 salaries tax (reproduced to the dollar: HK$181,770), MPF, spending, education, medical premiums and the portfolio for 2026–2072; a Monte Carlo simulation runs 10,000 simulations of annual returns. <span class="lead-in">Limits:</span> returns are normal and uncorrelated, which understates crashes; inflation is fixed within each scenario; each mix is held constant. Results compare decisions; they are not forecasts.</p>
+    <h3>A3 · Sources · A4 · Use of AI tools</h3>
+    <p class="note">Case study (SRFP&amp;S, 2026) · Inland Revenue Ordinance, Budget 2026/27 · HKMC · Health Bureau VHIS data · WTW, Mercer Marsh Benefits, Aon 2026 · SOA Getzen model · Federal Reserve SEP · HKAB · ECB · fee schedules · insurer rate cards · SFC list of ESG funds · Berg, Kölbel and Rigobon (2022) · Guyton and Klinger (2006) · cover photograph: Peter Steinhauer, <i>Cocoons</i>. AI tools were used to check calculations, review the model code and edit text; the analysis and recommendations are the team's own.</p>
+    <div class="spacer"></div>
+  </div>
+  <div class="page-foot"><span>Built to Last · The Wong family</span><span>15</span></div>
+</section>
+
+<script>
+const MM = 96 / 25.4;
+document.querySelectorAll('.page').forEach(p => {
+  const over = p.scrollHeight - p.clientHeight;
+  if (over > 1) { p.classList.add('overflow'); p.dataset.overflow = (over / MM).toFixed(1) + 'mm'; }
+  const c = p.querySelector('.content');
+  if (c) {
+    const kids = [...c.children].filter(k => !k.classList.contains('spacer'));
+    const last = kids[kids.length - 1];
+    p.dataset.free = ((c.getBoundingClientRect().bottom - last.getBoundingClientRect().bottom) / MM).toFixed(1);
+  }
+});
+</script>
+</body>
+</html>

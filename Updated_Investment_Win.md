@@ -5,7 +5,7 @@ Round One due **Fri 2 Oct, 23:59**
 
 This file covers only my sections: what each one will say, the numbers behind it, and what I need from the rest of the
 team. The full rule set is in [condition-based-playbook.md](condition-based-playbook.md); assumptions are in
-[assumptions-methodology.md](assumptions-methodology.md).
+[assumptions-methodology.md](Pete/assumptions-methodology.md).
 
 ---
 
@@ -46,33 +46,49 @@ of its range.
 | Core bonds | AGGU, iShares Core Global Aggregate USD-hedged (0.10%) | 20% | 15–35% |
 | **Treasury ladder 2037–2041** | Individual US Treasury notes, one rung per year | **20%** | 0–25% |
 | Green bonds | SFC-authorised green bond fund | 5% | 5–10% |
-| Global equity core (ESG-screened index) | e.g. MSCI World ESG-screened UCITS fund | 25% | 20–30% |
-| ESG global equity | SFC-authorised ESG index fund | 5% | 5–10% |
+| Global equity core (ESG index) | BOC-Prudential MSCI World ESG Index Fund | 25% | 20–30% |
+| ESG global equity | BOC-Prudential MSCI World ESG Index Fund (same fund) | 10% | 5–15% |
 | Growth slice | Nasdaq-100 UCITS fund, e.g. CNDX | 5% | **3–8%** |
-| HK equity | 2800 Tracker Fund (0.06%) | 5% | 0–10% |
 | **Total** | | **Equity 40% · Bonds/cash 60%** | **Equity cap 45%** |
 
 - Expected return ≈ **5.0% net** at a 6% equity assumption, ≈ **5.4%** at 7% (was 4.8% before the yield rise).
 - Illustrative worst year: about **−10%** in a 2008-type year. Fahtai to confirm.
 - Digital: **0%**. His only "digital rail" option is a tokenised MMF, which is cash.
 
-**Carmen — Medium–High, ESG-led**
+**ESG index fund chosen (30 Sep, Pete):** BOC-Prudential MSCI World ESG Index Fund (SFC ceref BUM645, Hong Kong
+unit trust, authorised 2 May 2024). Of the 179 funds on the SFC's list of ESG funds (sfc.hk, 30 Sep 2026), it is one
+of only two global equity index funds; the other (Sun Life AM Global Low Carbon Index Fund) tracks a custom MPF,
+HKD-hedged index. Why it suits: on the SFC list, so it counts towards the 20–25% goal; index, low cost; MSCI's
+best-in-class ESG selection keeps sector weights close to MSCI World, so Adrian's core stays near the market; a
+Hong Kong fund carries no US estate-tax exposure (cost: 30% rather than 15% withholding on US dividends, ≈0.15% a
+year). `[CHECK: Win]` management fee and retail availability (BOCHK or a fund platform). Fallback if retail cannot
+buy it: an Irish-domiciled MSCI World ESG Leaders UCITS ETF, with the ESG counting rule widened to SFDR Article 8/9.
+
+**Hong Kong equity holding dropped (1 Oct, Pete; story S14):** 3039's 5% (Adrian) and 2% (Carmen) moved into the BOC-Prudential ESG fund (Adrian 35% in all, Carmen 37%). The family's home, business and incomes already depend on Hong Kong; ESG stays at 25%. Superseded note kept for the record: **Hong Kong equity sleeve switched to 3039 (30 Sep, Pete):** E Fund (HK) HSI ESG Enhanced Index ETF, on the SFC's
+ESG list. Same market as the Tracker Fund (HSI ESG Enhanced Index, 77 stocks, full replication, within 0.2–0.3 pts of
+the index each half-year), HK$627M net assets (29 Sep 2026), management fee 0.20%. Adds ≈1.4 points to the ESG share
+for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking in 2025). Ryan keeps 2800: no ESG goal.
+
+**Carmen — Medium–High, ESG-led** *(updated 30 Sep: 68% → 60% equity, see note below the table)*
 
 | Sleeve | Vehicle | Target | Range |
 |---|---|---|---|
 | Cash | 3053 | 5% | 5–10% |
-| Core bonds | AGGU | 10% | 5–20% |
+| Core bonds | AGGU | 18% | 10–25% |
 | Green bonds | SFC-authorised green bond fund | 10% | 5–15% |
 | Medium / long Treasuries | 3450 (0.30%) / 3433 (0.20% mgmt) | 5% | 0–10% |
-| ESG global equity | SFC-authorised ESG index fund | 35% | 30–40% |
+| ESG global equity | BOC-Prudential MSCI World ESG Index Fund | 37% | 30–42% |
 | Global equity core | Global index fund | 15% | 10–20% |
-| Growth slice | Nasdaq-100 UCITS fund | 8% | 0–10% |
-| HK equity | 2800 | 5% | 0–10% |
+| Growth slice | Nasdaq-100 UCITS fund | 3% | 0–5% |
 | Asia REITs | 3447 (0.99%) | 5% | 0–5% |
 | Digital (optional) | HKEX spot BTC ETF, 3439 (0.30%) | 0–2% | from the growth slice |
-| **Total** | | **Equity 68% · Bonds/cash 30%** | **Equity cap 75%** |
+| **Total** | | **Equity 60% · Bonds/cash 38%** | **Equity cap 65%** |
 
-- Expected return ≈ **5.2% net** at 6% equity, ≈ **5.9%** at 7%.
+- Expected return ≈ **5.0% net** at 60% equity `[CHECK: Win]` (was 5.2% at 68% equity).
+- **Why 60%, not 68%:** in the team model, household equity above 40% adds legacy, not security (40%: money lasts to
+  89 in 100% of markets, worst year −10%; 54%: 99.6%, −15%). 60% for Carmen keeps the household at about 50% and
+  within the family objective of moderate growth with controlled downside. ESG sleeves (35% + 10%) are unchanged,
+  so the ESG target is unaffected. The cap falls to 65% to match. Source: `document/manuscript.md`, decision 3.
 
 **Ryan — High (his own money)**
 
@@ -150,7 +166,7 @@ If the family's ≈ HK$4.4M of non-MPF funds cost about 1.5% a year today and mo
 |---|---|---|
 | 1. Exclusions | Screen out thermal coal, controversial weapons, tobacco | All ESG-screened index funds |
 | 2. Best-in-class | Top ESG-rated companies in each sector | ESG index funds (Adrian, Carmen) |
-| 3. Thematic | Circular economy, clean tech; mirrors Carmen's sustainable-packaging business | Optional within Carmen's ESG sleeve |
+| 3. Thematic | Circular economy, clean tech; mirrors Carmen's sustainable-packaging business | **Not used (30 Sep):** the plan keeps to two SFC-listed index funds and green bonds; thematic funds cost more and are concentrated |
 | 4. Impact | Green bonds with checked use of proceeds | Green bond fund (both parents) |
 
 ### Fig. D: ESG fund scorecard (to build; idea taken from the champion report)
@@ -259,9 +275,9 @@ Rules M1–M11, D1–D5, P1–P6 run normally. Quarterly rebalancing. Guyton-Kli
 | Item | What happens | Action |
 |---|---|---|
 | Treasury ladder | Remaining rungs pay out on schedule | No selling needed; executor collects |
-| Bond/equity portfolio | Passes to Carmen via estate | Rebalance gradually from 40/60 toward Carmen's 68/30 over 12 months — do not dump all bonds at once |
-| HKMC Annuity | **Stops paying on death** | Review Carmen's income floor within 6 months; redirect the equivalent amount from the portfolio using Guyton-Klinger guardrails |
-| MPF | Passes to nominated beneficiary (MPF nomination form is separate from the will) | Fahtai / Lead to confirm nomination is filed |
+| Bond/equity portfolio | Passes to Carmen via estate | Rebalance gradually from 40/60 toward Carmen's 60/38 over 12 months — do not dump all bonds at once |
+| HKMC Annuity (Adrian's, single life) | **Stops paying on death**; any guaranteed balance (premium × 105% less payments received) goes to his beneficiary `[CHECK: HKMC terms]` | Review Carmen's income floor within 6 months; redirect the equivalent amount from the portfolio using Guyton-Klinger guardrails |
+| MPF (before 2037) | Paid to the **estate**: MPF has no beneficiary nomination, so the will governs it and the money is frozen until the grant of representation `[CHECK: MPFA]` | The joint account (12 months' spending) bridges the wait; after 2037 the MPF has become the annuity |
 
 **New rule (add to §11):** P7 — When Adrian dies, Lead Advisor reviews Carmen's income floor within 6 months and rebalances her combined portfolio to her own risk profile within 12 months. Equity cap stays 75%.
 
@@ -281,7 +297,7 @@ Rules M1–M11, D1–D5, P1–P6 run normally. Quarterly rebalancing. Guyton-Kli
 | Self-custody crypto | **Lost forever if no key-recovery plan is documented** | Ryan must file a key-recovery arrangement (hardware wallet location + seed phrase recovery method, or nominee access on an SFC-licensed platform) in his estate papers **before** holding any self-custody assets |
 | Tokenised MMF | Treated as cash | Liquidated through normal estate process |
 
-> **Coordinate with Lead (§9):** The crypto key-recovery clause must appear in both §7 and §9. MPF nominations must be confirmed separate from the will.
+> **Coordinate with Lead (§9):** The crypto key-recovery clause must appear in both §7 and §9. MPF balances pass under the will (no nomination), so the wills must cover them.
 
 ### Lifecycle summary table (add as Fig. I)
 
@@ -347,4 +363,4 @@ Rules M1–M11, D1–D5, P1–P6 run normally. Quarterly rebalancing. Guyton-Kli
 - Berg, F., Kölbel, J. & Rigobon, R. (2022), "Aggregate Confusion: The Divergence of ESG Ratings", *Review of Finance*.
 - Kitces, M., on bucket strategies vs rebalancing (via team research report).
 - Tokenised green bonds, retail status: LegCo reply, 4 Feb 2026 (per working-brief.md).
-- Team files: working-brief.md, assumptions-methodology.md, condition-based-playbook.md.
+- Team files: Pete/working-brief.md, Pete/assumptions-methodology.md, condition-based-playbook.md.

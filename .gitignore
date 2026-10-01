@@ -1,1 +1,16 @@
+<<<<<<< HEAD
 /FT_local
+=======
+# Office lock files
+~$*
+# Python
+__pycache__/
+*.pyc
+build/
+document/_filled_*
+document/*.filled.md
+document/proposal.html
+
+# Python environment (create with: python -m venv .venv; .venv/Scripts/python -m pip install -r requirements.txt)
+.venv/
+>>>>>>> origin/pete/model-fix-drafts-figures

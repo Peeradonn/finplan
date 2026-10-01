@@ -1,3 +1,4 @@
+import os
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -49,16 +50,56 @@ rows=[
  ('Portfolio return — plan (nominal)','B',0.048,PCT,"mix 2: 40% eq @6% + 60% ladder @4%"),
  ('Portfolio return — status quo (nominal)','B',0.042,PCT,"unmanaged, cash-heavy. TEAM TO AGREE"),
  ('Emergency reserve target (months)','B',12,'0',"vs 30.5 today"),
- ('Annuity purchase cost at 2037','B',4120000,NUM,"Pete: MPF 2.31M (A) + 1.81M (C)"),
- ('Annuity income (HKMC, annual)','B',268000,NUM,"Pete: HKMC payout at 65"),
+ ('Annuity: Adrian premium (MPF at 65, 2037)','B',2310000,NUM,"Pete: projected MPF at 65"),
+ ('Annuity: Adrian income a year','B',160800,NUM,"HKMC male at 65: 5,800 a month per HK$1M. Single life: stops at death"),
+ ('Annuity: Carmen premium (MPF at 62, 2039)','B',1810000,NUM,"Pete: projected MPF at 62; bought when she stops work"),
+ ("Mortgage: balance repaid at Adrian's retirement (2037)",'B',460000,NUM,"HK$1.8M at 3.5%, ~14 years left at HK$13.6K a month: 36 months left in 2037 (PV). Outside the HK$780K; must be cleared before a reverse mortgage"),
+ ('Annuity: Carmen income a year','B',107300,NUM,"HKMC female, ~4,940 a month per HK$1M at 62 (between 4,700 at 60 and 5,300 at 65)"),
  ('Education — overseas annual (today)','B',600000,NUM,"case high end, conservative"),
  ('Education — years','B',4,'0',"4-year degree"),
- ('Insurance premiums (Lookbua, TBC)','B',0,NUM,"PLACEHOLDER — reduces surplus"),
+ ('Insurance premiums (Lookbua, TBC)','B',113600,NUM,"parents' new cover, avg a year to 2036: DI 37K, term life 7K, CI 1.5M each ~55K avg (needs-based, Bowtie Aug 2026), VHIS 15K. Paid until Adrian retires"),
+ ('MEDICAL (methodology §1)',None,None,None),
+ ('Medical plan (1 = Flexi, 2 = Standard, 0 = off)','B',1,'0',"methodology §1c: Flexi median is the realistic tier"),
+ ('Medical trend — near term (2027)','B',0.10,PCT,"methodology §1b: WTW 9.9% / MMB 10.5%"),
+ ('Medical trend — long run','B',0.06,PCT,"methodology §1b: GDP per capita 4% + excess 2pp"),
+ ('Medical trend — long run reached (year)','B',2036,'0',"methodology §1b: linear grade"),
+ ('Medical trend — stress (flat)','B',0.0854,PCT,"methodology §1b: WTW HK mean 2020-26"),
+ ('Use medical stress in base (1/0)','B',0,'0',"0 = base trend path"),
+ ('Premiums already inside the 780,000 (today money)','B',65000,NUM,"~ both parents' Flexi median at 65. TEAM TO AGREE"),
+ ('Medical plan review: switch to Standard (year)','B',2047,'0',"Adrian 75, Carmen 70: the tier review in the plan"),
+ ('Guardrails: lowest discretionary share','B',0.5,PCT,"Guyton-Klinger cuts stop at half of discretionary spending"),
+ ('BACKSTOPS (values; switch on to include in base)',None,None,None),
+ ('Survivor spending after Adrian (share)','B',0.70,PCT,"planning convention for a one-person household. TEAM TO AGREE"),
+ ('Use survivor spending in base (1/0)','B',0,'0',"0 = couple's spending continues to the horizon"),
+ ("Carmen's business: net sale proceeds",'B',3000000,NUM,"Pete brief: realisable 3.0-3.5M, low end"),
+ ("Carmen's business: sale year",'B',2039,'0',"Carmen retires at 62"),
+ ('Use business sale in base (1/0)','B',0,'0',"0 = business held outside the plan"),
+ ('Reverse mortgage: annual income (level)','B',230000,NUM,"Pete brief: HKMC RMP 230-260K a year, low end"),
+ ('Reverse mortgage: first year','B',2037,'0',"Adrian retires"),
+ ('Use reverse mortgage in base (1/0)','B',0,'0',"0 = home held outside the plan"),
+ ('STRESS SCENARIOS (methodology §5)',None,None,None),
+ ('Stress: equities','B',0.04,PCT,"Pete lock table"),
+ ('Stress: bonds / ladder','B',0.025,PCT,"Pete lock table (IG bonds)"),
+ ('Stress: CPI','B',0.035,PCT,"Pete lock table; Fed 2026 PCE 3.7%"),
+ ('PROPERTY OPTIONS (Lookbua §9)',None,None,None),
+ ('Home value today','B',11500000,NUM,"case"),
+ ('Property growth','B',0.015,PCT,"Pete lock table"),
+ ('RMP: loan rate (fixed)','B',0.04,PCT,"HKMC fixed plan, first 30 years"),
+ ('RMP: insurance on balance (a year)','B',0.0125,PCT,"HKMC"),
+ ('RMP: upfront insurance (share of value)','B',0.0196,PCT,"HKMC: 7 x 0.28%"),
+ ('RMP: value counted in full up to','B',8000000,NUM,"HKMC valuation cap"),
+ ('RMP: share of value counted above that','B',0.5,PCT,"HKMC valuation cap"),
+ ('Downsize: new home price (today money)','B',7000000,NUM,"Lookbua: smaller flat, same district. TEAM TO AGREE"),
+ ('Downsize: stamp duty on purchase','B',0.0375,PCT,"approx. scale for a HK$6-9M flat; verify"),
+ ('Downsize: agents and legal (both sides)','B',0.02,PCT,"1% each side"),
+ ('Downsize: moving and refit','B',200000,NUM,"estimate"),
+ ('Downsize: year','B',2037,'0',"same decision point as the reverse mortgage"),
  ('DATES',None,None,None),
  ('Base year','B',2026,'0',"model start"),
  ('Adrian retires (age 65)','B',2037,'0',"case"),
  ('Carmen retires (age 62)','B',2039,'0',"case"),
  ('Chloe starts university','B',2028,'0',"age 18"),
+ ('Adrian life expectancy (year, age 84)','B',2056,'0',"case: male 84"),
  ('Carmen age 89','B',2066,'0',"base horizon"),
  ('Carmen age 95','B',2072,'0',"stress horizon"),
 ]
@@ -176,13 +217,80 @@ tx.column_dimensions['A'].width=34
 for col in 'BCDE': tx.column_dimensions[col].width=14
 
 
+# ============ MEDICAL ============
+# VHIS standard-premium medians by age (methodology §1c), interpolated to every age, times the
+# medical trend index (§1b). Adrian's line runs from his retirement to his life expectancy; Carmen's
+# from her retirement, when group cover ends. The part already inside the 780,000 is netted off.
+md=wb.create_sheet('Medical')
+md['A1']='Medical premiums — VHIS age curve x medical trend (methodology §1)'; md['A1'].font=H1
+md['A2']='Blue = VHIS dataset medians (HK$ a year, dataset prices). Everything else is formula.'; md['A2'].font=Font(name='Arial',size=9,italic=True)
+for j,h in enumerate(['Age','Flexi median, male','Flexi median, female','Standard median, male']):
+    c=md.cell(4,j+1,h); c.font=BOLD; c.border=THIN
+md['F4']='Source: Health Bureau VHIS standard-premium dataset, standalone non-smoker'; md['F4'].font=Font(name='Arial',size=8,italic=True,color='666666')
+ANCH=[(55,17140,18186,6119),(60,23050,23210,7887),(62,26578,25895,8765),(65,32542,31599,10452),
+      (70,42122,40990,13008),(75,53887,53228,16184),(80,63644,62772,18920)]
+arow={}
+for k,(a,fm,ff,sm) in enumerate(ANCH):
+    r=5+k; arow[a]=r
+    md.cell(r,1,a)
+    for j,v in enumerate((fm,ff,sm)):
+        c=md.cell(r,2+j,v); c.font=BLUE; c.number_format=NUM
+SLOPE=5+len(ANCH)
+md.cell(SLOPE,1,'Growth a year beyond 80 (75→80 slope)').font=BOLD
+for col in 'BCD':
+    md[f'{col}{SLOPE}']=f'=({col}{arow[80]}/{col}{arow[75]})^(1/5)-1'; md[f'{col}{SLOPE}'].number_format=PCT
+CUR0=SLOPE+3
+for j,h in enumerate(['Age','Flexi, male','Flexi, female','Standard']):
+    c=md.cell(CUR0-1,j+1,h); c.font=BOLD; c.border=THIN
+ages=[a for a,*_ in ANCH]
+for a in range(55,101):
+    r=CUR0+(a-55); md.cell(r,1,a)
+    for col in 'BCD':
+        if a in arow:  f=f'={col}{arow[a]}'
+        elif a>80:     f=f'={col}{r-1}*(1+{col}${SLOPE})'
+        else:
+            lo=max(x for x in ages if x<a); hi=min(x for x in ages if x>a)
+            f=f'={col}{arow[lo]}*({col}{arow[hi]}/{col}{arow[lo]})^(({a}-{lo})/({hi}-{lo}))'
+        md[f'{col}{r}']=f; md[f'{col}{r}'].number_format=NUM
+CUR1=CUR0+45
+AGES=f'$A${CUR0}:$A${CUR1}'
+TIER=I['Medical plan (1 = Flexi, 2 = Standard, 0 = off)']; NT=I['Medical trend — near term (2027)']
+LR=I['Medical trend — long run']; LRY=I['Medical trend — long run reached (year)']
+MST=I['Medical trend — stress (flat)']; MSW=I['Use medical stress in base (1/0)']
+MOFF=I['Premiums already inside the 780,000 (today money)']; ALE=I['Adrian life expectancy (year, age 84)']
+CPIr=I['CPI inflation']; BY=I['Base year']
+RETA=I['Adrian retires (age 65)']; RETC=I['Carmen retires (age 62)']
+Y0=CUR1+3
+for j,h in enumerate(['Year','Age A','Age C','Trend','Index','Adrian (dataset prices)','Carmen (dataset prices)',
+                      'Gross premiums (nominal)','Already in 780,000 (nominal)','Net medical line (nominal)']):
+    c=md.cell(Y0-1,j+1,h); c.font=BOLD; c.border=THIN; c.alignment=Alignment(wrap_text=True,horizontal='center')
+def curve(tcol_flexi, age_cell):
+    return (f'IF({TIER}=1,INDEX(${tcol_flexi}${CUR0}:${tcol_flexi}${CUR1},MATCH({age_cell},{AGES},0)),'
+            f'INDEX($D${CUR0}:$D${CUR1},MATCH({age_cell},{AGES},0)))')
+for i in range(47):
+    r=Y0+i
+    md.cell(r,1,2026+i).number_format='0'
+    md.cell(r,2,f'=$A{r}-1972'); md.cell(r,3,f'=$A{r}-1977')
+    md.cell(r,4,f'=IF($A{r}={BY},0,IF({MSW}=1,{MST},IF($A{r}>={LRY},{LR},{NT}-({NT}-{LR})*($A{r}-({BY}+1))/({LRY}-({BY}+1)))))')
+    md.cell(r,5,1 if i==0 else f'=E{r-1}*(1+D{r})')
+    md.cell(r,6,f'=IF(OR({TIER}=0,$A{r}<{RETA},$A{r}>{ALE}),0,{curve("B",f"B{r}")})')
+    md.cell(r,7,f'=IF(OR({TIER}=0,$A{r}<{RETC}),0,{curve("C",f"C{r}")})')
+    md.cell(r,8,f'=(F{r}+G{r})*E{r}')
+    md.cell(r,9,f'=IF(OR({TIER}=0,$A{r}<{RETA}),0,{MOFF}*(1+{CPIr})^($A{r}-{BY}))')
+    md.cell(r,10,f'=MAX(H{r}-I{r},0)')
+    md.cell(r,4).number_format=PCT; md.cell(r,5).number_format='0.000'
+    for j in (6,7,8,9,10): md.cell(r,j).number_format=NUM
+MEDY=f'Medical!$A${Y0}:$A${Y0+46}'; MEDNET=f'Medical!$J${Y0}:$J${Y0+46}'
+md.column_dimensions['A'].width=12
+for col in 'BCDEFGHIJ': md.column_dimensions[col].width=15
+
 # ============ PROJECTION ============
 pj=wb.create_sheet('Projection')
 pj['A1']='Year-by-year projection 2026-2072 — every cell driven by the Inputs tab'; pj['A1'].font=H1
 pj['A2']='Black = formula. Change nothing here; change Inputs.'; pj['A2'].font=Font(name='Arial',size=9,italic=True)
 cols=['Year','Age A','Age C','Income A','Income C','Allow A','Allow C','Tax A','Tax C','MPF',
-      'Living exp','Education','Retire spend','Annuity inc','Net cash flow','Portfolio open',
-      'Investment return','Annuity purchase','Portfolio close']
+      'Living exp','Education','Retire spend','Medical','Annuity inc','Backstops','Net cash flow',
+      'Portfolio open','Investment return','Lump sums out (annuities, mortgage)','Portfolio close']
 for j,h in enumerate(cols):
     c=pj.cell(3,j+1,h); c.font=BOLD; c.border=THIN; c.alignment=Alignment(wrap_text=True,horizontal='center')
     pj.column_dimensions[get_column_letter(j+1)].width=13 if j>2 else 7
@@ -190,9 +298,15 @@ for j,h in enumerate(cols):
 CPIr=I['CPI inflation']; WA=I['Wage growth — Adrian']; WC=I['Wage growth — Carmen']
 EDUe=I['Education escalation (overseas)']; RETA=I['Adrian retires (age 65)']; RETC=I['Carmen retires (age 62)']
 EDUy=I['Chloe starts university']; EDUn=I['Education — years']; EDUa=I['Education — overseas annual (today)']
-RSPEND=I['Retirement spending (today money)']; ANNC=I['Annuity purchase cost at 2037']
-ANNI=I['Annuity income (HKMC, annual)']; RPLAN=I['Portfolio return — plan (nominal)']
+RSPEND=I['Retirement spending (today money)']
+ANNC_A=I['Annuity: Adrian premium (MPF at 65, 2037)']; ANNI_A=I['Annuity: Adrian income a year']
+ANNC_C=I['Annuity: Carmen premium (MPF at 62, 2039)']; ANNI_C=I['Annuity: Carmen income a year']
+MORT=I["Mortgage: balance repaid at Adrian's retirement (2037)"]
+RPLAN=I['Portfolio return — plan (nominal)']
 PREM=I['Insurance premiums (Lookbua, TBC)']; HLI='Tax!$B$4'; BY=I['Base year']
+SURV=I['Survivor spending after Adrian (share)']; SURVS=I['Use survivor spending in base (1/0)']
+BIZ=I["Carmen's business: net sale proceeds"]; BIZY=I["Carmen's business: sale year"]; BIZS=I['Use business sale in base (1/0)']
+RMP=I['Reverse mortgage: annual income (level)']; RMPY=I['Reverse mortgage: first year']; RMPS=I['Use reverse mortgage in base (1/0)']
 
 def prog_formula(cell):
     return (f'IF({cell}>200000,{T200}+({cell}-200000)*{TOPR},'
@@ -215,17 +329,25 @@ for i in range(47):
     pj.cell(r,10,f'=IF(D{r}>0,{MPFCAP},0)+IF(E{r}>0,{MPFCAP},0)')
     pj.cell(r,11,f'=IF($A{r}<{RETA},{EXPN}*(1+{CPIr})^{n},0)')
     pj.cell(r,12,f'=IF(AND($A{r}>={EDUy},$A{r}<{EDUy}+{EDUn}),{EDUa}*(1+{EDUe})^{n},0)')
-    pj.cell(r,13,f'=IF($A{r}>={RETA},{RSPEND}*(1+{CPIr})^{n},0)')
-    pj.cell(r,14,f'=IF($A{r}>={RETA},{ANNI},0)')
-    pj.cell(r,15,f'=D{r}+E{r}-H{r}-I{r}-J{r}-K{r}-L{r}-M{r}+N{r}-{PREM}')
-    pj.cell(r,16, f'={START_POOL}' if i==0 else f'=S{r-1}')
-    pj.cell(r,17,f'=P{r}*{RPLAN}')
-    pj.cell(r,18,f'=IF($A{r}={RETA},-{ANNC},0)')
-    pj.cell(r,19,f'=MAX(P{r}+Q{r}+O{r}+R{r},0)')
-    for j in range(4,20): pj.cell(r,j).number_format=NUM; pj.cell(r,j).font=BLACK
+    pj.cell(r,13,f'=IF($A{r}>={RETA},{RSPEND}*(1+{CPIr})^{n}*IF(AND({SURVS}=1,$A{r}>{ALE}),{SURV},1),0)')
+    pj.cell(r,14,f'=INDEX({MEDNET},MATCH($A{r},{MEDY},0))')
+    # HKMC annuity pays a fixed HK$ amount for life: not indexed
+    # HKMC annuities are single life: Adrian's from 2037 until his death, Carmen's from 2039
+    pj.cell(r,15,f'=IF(AND($A{r}>={RETA},$A{r}<={ALE}),{ANNI_A},0)+IF($A{r}>={RETC},{ANNI_C},0)')
+    pj.cell(r,16,f'=IF(AND({BIZS}=1,$A{r}={BIZY}),{BIZ},0)+IF(AND({RMPS}=1,$A{r}>={RMPY}),{RMP},0)')
+    # new protection premiums run while the parents work (DI, term life, CI to retirement), as in the Monte Carlo
+    # MPF (column J) is part of the pool: the employee's contribution stays in it (+0 instead of -J) and the
+    # employer's matching contribution is added (+J), so the net effect on the pool is +J.
+    pj.cell(r,17,f'=D{r}+E{r}-H{r}-I{r}+J{r}-K{r}-L{r}-M{r}-N{r}+O{r}+P{r}-IF($A{r}<{RETA},{PREM},0)')
+    pj.cell(r,18, f'={START_POOL}' if i==0 else f'=U{r-1}')
+    pj.cell(r,19,f'=R{r}*{RPLAN}')
+    # annuity premiums at each retirement; the mortgage still owed in 2037 is cleared from the portfolio
+    pj.cell(r,20,f'=IF($A{r}={RETA},-{ANNC_A}-{MORT},0)+IF($A{r}={RETC},-{ANNC_C},0)')
+    pj.cell(r,21,f'=MAX(R{r}+S{r}+Q{r}+T{r},0)')
+    for j in range(4,22): pj.cell(r,j).number_format=NUM; pj.cell(r,j).font=BLACK
     for j in (2,3): pj.cell(r,j).number_format='0'
-    if y in (2037,2039,2066,2072):
-        for j in range(1,20): pj.cell(r,j).fill=PatternFill('solid',fgColor='FFF2CC')
+    if y in (2037,2039,2056,2066,2072):
+        for j in range(1,22): pj.cell(r,j).fill=PatternFill('solid',fgColor='FFF2CC')
 pj.freeze_panes='D4'
 LAST=r0+46
 
@@ -242,16 +364,21 @@ outs=[('POSITION TODAY',None,None),
  ('Couple — separate assessment','=Tax!B15',NUM),
  ('Couple — joint assessment','=Tax!B16',NUM),
  ('Saving from separate','=Tax!B17',NUM),
- ('PROJECTION',None,None),
- ("Portfolio at Adrian's retirement (2037, nominal)",f'=INDEX(Projection!S:S,MATCH({RETA},Projection!A:A,0))',NUM),
- ('Portfolio at Carmen 89 (2066)','=INDEX(Projection!S:S,MATCH('+I['Carmen age 89']+',Projection!A:A,0))',NUM),
- ('Portfolio at Carmen 95 (2072)','=INDEX(Projection!S:S,MATCH('+I['Carmen age 95']+',Projection!A:A,0))',NUM),
- ('Portfolio at 2037 in TODAY money','=INDEX(Projection!S:S,MATCH('+RETA+',Projection!A:A,0))/(1+'+CPIr+')^('+RETA+'-'+BY+')',NUM),
- ('Retirement need at 2037 (today money)','=780000*(1-(1+0.02)^-29)/0.02',NUM),
- ('Funded ratio','=B17/B18','0%'),
+ ('PROJECTION (deterministic, plan return; backstops only if switched on)',None,None),
+ ("Portfolio at Adrian's retirement (2037, nominal)",f'=INDEX(Projection!U:U,MATCH({RETA},Projection!A:A,0))',NUM),
+ ('Portfolio at Carmen 89 (2066)','=INDEX(Projection!U:U,MATCH('+I['Carmen age 89']+',Projection!A:A,0))',NUM),
+ ('Portfolio at Carmen 95 (2072)','=INDEX(Projection!U:U,MATCH('+I['Carmen age 95']+',Projection!A:A,0))',NUM),
+ ('Portfolio at 2037 in TODAY money','=INDEX(Projection!U:U,MATCH('+RETA+',Projection!A:A,0))/(1+'+CPIr+')^('+RETA+'-'+BY+')',NUM),
+ ('Retirement need at 2037 (today money)','='+RSPEND+'*(1-(1+0.02)^-29)/0.02',NUM),
+ ('First year the portfolio runs out (0 = lasts to 2072)',f'=IFERROR(INDEX(Projection!A{r0}:A{LAST},MATCH(0,Projection!U{r0}:U{LAST},0)),0)','0'),
+ ("Carmen's age that year",'=IF(B19=0,"lasts",B19-1977)','0'),
+ ('Money lasts to 89? (deterministic)','=IF(INDEX(Projection!U:U,MATCH('+I['Carmen age 89']+',Projection!A:A,0))>0,"YES","NO")',None),
+ ('Money lasts to 95? (deterministic)','=IF(INDEX(Projection!U:U,MATCH('+I['Carmen age 95']+',Projection!A:A,0))>0,"YES","NO")',None),
+ ('EDUCATION AND MEDICAL',None,None),
  ('Total education cost (nominal)',f'=SUM(Projection!L{r0}:L{LAST})',NUM),
- ('Money lasts to 89? (deterministic)','=IF(INDEX(Projection!S:S,MATCH('+I['Carmen age 89']+',Projection!A:A,0))>0,"YES","NO")',None),
- ('Money lasts to 95? (deterministic)','=IF(INDEX(Projection!S:S,MATCH('+I['Carmen age 95']+',Projection!A:A,0))>0,"YES","NO")',None),
+ ('Medical line at 2037 (nominal)','=INDEX(Projection!N:N,MATCH('+RETA+',Projection!A:A,0))',NUM),
+ ('Medical line at Carmen 89 (nominal)','=INDEX(Projection!N:N,MATCH('+I['Carmen age 89']+',Projection!A:A,0))',NUM),
+ ('Medical line to Carmen 89, total (nominal)',f'=SUMPRODUCT((Projection!A{r0}:A{LAST}<='+I['Carmen age 89']+f')*Projection!N{r0}:N{LAST})',NUM),
 ]
 r=4
 for lbl,f,fmt in outs:
@@ -265,5 +392,6 @@ for lbl,f,fmt in outs:
 op.column_dimensions['A'].width=48; op.column_dimensions['B'].width=18
 
 
-wb.save('/home/claude/wong/wong_model.xlsx')
+OUT=os.environ.get('WONG_XLSX', os.path.join(os.path.dirname(os.path.abspath(__file__)),'wong_model.xlsx'))
+wb.save(OUT)
 print('saved')

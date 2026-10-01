@@ -1,3 +1,7 @@
+> **Superseded figures (30 Sep 2026).** The retirement success rates in this file predate two model fixes
+> (the annuity is fixed in HK$; MPF contributions reach the pool) and the medical-cost line. Current figures:
+> `model/README.md` and `figures/figure-data.md`. Kept as a record.
+
 # Context handoff — Fahtai's thread
 
 Updated 27 Sep 2026, 18:30. For picking this thread up cold, in a new session or by a teammate.
