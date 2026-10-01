@@ -1,5 +1,8 @@
 """
-Wong Family model — Python layer.
+Wong Family model — Python layer (simple version, 3 mixes).
+SUPERSEDED for the proposal's retirement numbers by plan_model.py, which adds medical
+premiums, new cover, survivor spending, business sale, home release, tier review and guardrails.
+Fixed 1 Oct: annuity no longer CPI-indexed; premiums no longer double-counted.
 Reads EVERY assumption from wong_model.xlsx  ->  Inputs tab.
 Never hardcode an assumption here. Change the spreadsheet instead.
 
@@ -53,8 +56,8 @@ MPF_CAP  = g('MPF deduction cap')
 POOL_ALL = O.get("BalanceSheet.Parents' investable pool", 9_790_000)
 SURPLUS  = O.get("Outputs.Annual surplus (after tax, MPF, premiums)", 718_230)
 # Carmen works two years past Adrian's retirement - the Excel Projection counts this, so we must too
-C_TAX    = O.get("Tax.TAX (progressive)", 71_335)
-CARMEN_NET = C_SAL - 71_335 - MPF_CAP
+C_TAX    = 71_335   # Carmen, separate assessment (Tax tab CHECK value)
+CARMEN_NET = C_SAL - C_TAX - MPF_CAP
 
 # ---------- goal funding ----------
 pv = lambda p,r,n: p*(1-(1+r)**-n)/r
@@ -82,9 +85,9 @@ def sim(w_eq, s_bd, r_bd, end, annuity, n=10_000, seed=42):
         r = w_eq*rng.normal(R_EQ, S_EQ, n) + (1-w_eq)*rng.normal(r_bd, s_bd, n)
         worst = np.minimum(worst, r); pot = pot*(1+r)
         if y == RETA and annuity: pot -= ANN_COST
-        if y < RETA: pot += (SURPLUS - PREM)*(1+WAGE)**i
+        if y < RETA: pot += SURPLUS*(1+WAGE)**i          # SURPLUS is already net of premiums
         else:
-            pot -= (SPEND - (ANN_INC if annuity else 0))*(1+CPI)**i
+            pot -= SPEND*(1+CPI)**i - (ANN_INC if annuity else 0)   # HKMC annuity is fixed in nominal terms
             if y < RETC: pot += CARMEN_NET*(1+WAGE)**i   # Carmen still earning
         pot = np.maximum(pot, 0); alive &= pot > 0
     return alive.mean(), worst.mean(), np.percentile(pot, 50)
