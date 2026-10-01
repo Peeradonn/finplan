@@ -94,3 +94,29 @@ M2 · Applied · confirmed: Fig 25 B is `stressB_89` (CPI 3.5% + medical stress)
 M3 · Applied · confirmed: `pot += biz` once in 2039 (line 199), HK$3.0M unindexed ≈ HK$2.2M today. A1 new row "Business sale · HK$3.0M in 2039, one payment · Not sold · Case, less 40%".
 M4 · Applied · confirmed: no cash rate in the simulation; 3% is the education discount. A1 cash row stress "0.5%" → "—", source "HIBOR; Fed" → "Education fund".
 Fit on p15: "Flexi for life" → "No review"; new-cover cell "≈HK$100K year 1; HK$114K average". Render: 15 pages, all fit (p13 4.8, p15 6.6 mm free).
+
+## Round 4 (1 Oct): v3 carried into the page sources, the manuscript and the model
+
+The page sources now hold every v2 and v3 edit, with model numbers as `{{placeholders}}`; `proposal.html` (built by
+`assemble.py`) is the document again, and `build/proposal.pdf` is the file to submit. Check: the new sources, filled,
+reproduce v3 line for line except two sentences changed on purpose (below). Render: 15 pages, every page fits.
+
+- New keys in `export_numbers()` (all match the number checker's reruns; no existing number changed):
+  `ann_w1_with_real` HK$382K, `ann_w1_without_real` HK$76K, `*_worst5_real` (HK$111K, HK$382K), Figure 11 shares
+  `*_typical_pct` / `*_worst5_pct` (100/100/95%, 20/20/70%), `rec_*_typical_pct` (86% low returns), `guard_cost_pct` 5%,
+  `no_med_1_89` 64%, `med45_89` 91%. Typed in v3 → keys now: p2 33%, HK$114K; p4 +1 point, HK$76K, HK$382K; p5 64%, 33%,
+  91%, Figure 11, 5%, HK$382K, 70%, HK$111K; p13 86%.
+- N24 revisited: the model simulates 29 years of retirement spending (2037–2065; `sim` stops at the start of Carmen's 89),
+  so `need_2037` = HK$17.0M matches it and v3's typed HK$17.5M (30 years) did not. p4 now reads "what a 2% real return
+  needs to pay HK$780K a year until Carmen's 89" (the checker's first option).
+- p4 "It adds only 1 point to the odds" → "It barely moves the odds ({{step_annuity}} point)" so the number is a key.
+  p4 now 3.2 mm free.
+- A bug caught in review: re-keying by value put `{{guardswitch_89}}` (100%) into Figure 11's typical-spending column;
+  fixed with the `*_typical_pct` keys.
+- Manuscript: every page's wording regenerated from its page source (with placeholders), keeping the header lines and
+  the real notes (§3 decisions and checks, p8 fee and ESG notes, p13 stress notes, p14 career brief and WMC check, p15
+  A1 detail). The old manuscript had drifted beyond v3 (e.g. a HK$2.5M key-person stake, five recommendations).
+  `fill.py manuscript.md`: 103 placeholders, none unknown. Page map free space updated.
+- CLAUDE.md: the annuity decision line now quotes HK$382K vs HK$76K in today's money.
+- `proposal-v2.html` (document/ and the repo root) and `proposal-v3.html` are now superseded copies; not deleted (Pete to
+  decide). Reviewers should review `document/proposal.html` from now on.

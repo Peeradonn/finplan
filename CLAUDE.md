@@ -61,7 +61,8 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
 - Theme "Built to Last"; pillars Protect · Turn assets into income · Give every voice a place. Team name Axis.
 - Four decisions, in ladder order: lower spending after the first death → staged business sale → release the home
   (reverse mortgage or downsize, 2037) → MPF annuities. **The annuity is last on purpose**: it is insurance for the worst
-  markets (+1 point, but lowest spending in the worst 1% HK$546K with it vs HK$108K without).
+  markets (+1 point, but in the worst 1% Carmen's spending stays above HK$382K a year with it vs HK$76K without, in
+  today's money: `ann_w1_with_real`, `ann_w1_without_real`).
 - Annuities are HKMC, fixed HK$, **single life**: Adrian from 2037 until his death; Carmen from 2039 for life.
 - ≈HK$0.46M of mortgage still owed in 2037 is cleared from the portfolio (a reverse mortgage needs a clear title).
 - Medical premiums (VHIS age curve × medical trend) are on top of the HK$780K; tier review to the Standard plan at

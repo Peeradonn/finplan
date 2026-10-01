@@ -316,7 +316,7 @@ def sim_rules(policy, end, w_t=0.40, n=10_000, seed=42):
 # ---------- numbers quoted in the proposal (written to figures/numbers.json by make_charts.py) ----------
 def export_numbers():
     """Every model number the text quotes, formatted as printed. Documents use {{key}} placeholders."""
-    global RMP_Y, ALE
+    global RMP_Y, ALE, M_LR
     P = lambda x: f"{x*100:.0f}%"                       # 0.873 -> "87%"
     K = lambda x: f"HK${x/1e3:,.0f}K"                    # 751000 -> "HK$751K"
     Mn = lambda x: f"HK${x/1e6:.1f}M"
@@ -356,10 +356,17 @@ def export_numbers():
         a = sim(*MIX2, C89, detail=True, **{**full, **kw}); b = sim(*MIX2, C95, detail=True, **{**full, **kw})
         L = b["levels"]
         return a, b, np.median(a["levels"].mean(0))*SPEND, np.percentile(L.min(0), 5)*SPEND
+    # levels are shares of each year's target, and the target is 70% of HK$780K once Carmen is alone, so
+    # "levels × SPEND" overstates real spending in her years (number check N1). real_min gives today's money.
+    def real_min(d):
+        f = np.where(d["level_years"] > ALE, SURV, 1.0)[:, None]
+        return (d["levels"]*f).min(0)*SPEND
     for key, kw in (("fixflex", dict(guard=False, med=FLEXI)), ("fixswitch", dict(guard=False, med=SWITCH)),
                     ("guardswitch", dict(guard=True, med=SWITCH))):
         a, b, typ, w5 = life(kw)
         N[f"{key}_89"], N[f"{key}_95"], N[f"{key}_typical"], N[f"{key}_worst5"] = P(a["success"]), P(b["success"]), K(typ), K(w5)
+        N[f"{key}_typical_pct"], N[f"{key}_worst5_pct"] = P(typ/SPEND), P(w5/SPEND)   # share of the budget (Fig 11)
+        N[f"{key}_worst5_real"] = K(np.percentile(real_min(b), 5))                       # today's money (p5)
         if key == "fixflex":
             fail = ~a["alive"]
             N["runout_age"] = f"{np.median(a['runout'][fail]) - 1977:.0f}" if fail.any() else "n/a"
@@ -371,7 +378,9 @@ def export_numbers():
         bd = ST_BD if key == "lowret" else MIX2[2]
         a = sim(MIX2[0], MIX2[1], bd, C89, detail=True, **{**rec, **o})
         N[f"rec_{key}_89"], N[f"rec_{key}_typical"] = P(a["success"]), K(np.median(a["levels"].mean(0))*SPEND)
+        N[f"rec_{key}_typical_pct"] = P(np.median(a["levels"].mean(0)))                  # share of the budget
     N["guard_cost"] = K(SPEND - float(N["guardswitch_typical"].strip("HK$K").replace(",", ""))*1e3)
+    N["guard_cost_pct"] = P(1 - float(N["guardswitch_typical"].strip("HK$K").replace(",", ""))*1e3/SPEND)
     N["guaranteed_income_today"] = K((ann_income(2062, True) + RMP)/(1 + CPI)**(2062 - BY))
     N["guaranteed_income_nominal"] = K(ann_income(2062, True) + RMP)
     N["annuity_adrian"], N["annuity_carmen"] = K(ANN_A_INC), K(ANN_C_INC)
@@ -381,6 +390,8 @@ def export_numbers():
     w, wo = sim(*MIX2, C95, detail=True, **rec), sim(*MIX2, C95, detail=True, **{**rec, "annuity": False})
     N["ann_w1_with"] = K(np.percentile(w["levels"].min(0), 1)*SPEND)
     N["ann_w1_without"] = K(np.percentile(wo["levels"].min(0), 1)*SPEND)
+    N["ann_w1_with_real"] = K(np.percentile(real_min(w), 1))                             # today's money (p4)
+    N["ann_w1_without_real"] = K(np.percentile(real_min(wo), 1))
     N["ann_typ_cost"] = K((np.median(wo["levels"].mean(0)) - np.median(w["levels"].mean(0)))*SPEND)
     l89w, l89wo = sim(*MIX2, C89, detail=True, **rec), sim(*MIX2, C89, detail=True, **{**rec, "annuity": False})
     N["ann_legacy_cost"] = Mn((np.median(l89wo["end_pot"]) - np.median(l89w["end_pot"]))/(1 + CPI)**(C89 - BY))
@@ -407,6 +418,15 @@ def export_numbers():
     N["need_2037"] = Mn(pv(SPEND, .02, C89 - RETA))
     N["premiums_avg"] = K(PREM)
     N["surplus"] = K(SURPLUS)
+    # why medical premiums drive the result (p5, number check N12): investments alone with no premiums outside the
+    # budget; and the full plan if the long-run medical trend settles at 4.5% rather than M_LR
+    N["no_med_1_89"] = P(s89({**ladder_steps()[0][1], "med": {}}))
+    keep = M_LR; M_LR = 0.045
+    try:
+        f45 = med_path(1)
+    finally:
+        M_LR = keep
+    N["med45_89"] = P(s89(full, med=f45))
     return N
 
 # ---------- printout ----------
