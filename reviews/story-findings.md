@@ -442,3 +442,132 @@ SFC list today (point 4; the Dec 2024 count is the latest found). Manuscript §6
 should be mirrored.
 
 ## Batch 10 ready
+
+---
+
+### S16 · Pages 7 and 8 · the "needs people" items, researched and decided (Pete asked me to do them) · TESTED on v3
+Supersedes the S15 rows for the green bond and MPF holdings, the S15 MPF route, and the S15 green-bond test wording.
+**The complete tested file is
+`C:\Users\User\AppData\Local\Temp\claude\c--Users-User-Documents-finplan-finplan\a5305b00-b578-4b4e-8432-f575fdcad077\scratchpad\proposal-v3.reviewed.html`**:
+v3 plus S13 + S14 + S15 + S16. Diff it against `document/proposal-v3.html` to apply. Fit: every page 1–10 fits
+(p7 7.4 mm, **p8 0.5 mm**, so no more words on p8). Pages 11–13 overflow exactly as in v3. p8 PNG checked.
+
+**Source: the SFC's own list of ESG funds**, downloaded 1 Oct 2026 from the JSON behind
+sfc.hk/en/Regulatory-functions/Products/List-of-ESG-funds: 179 funds, 170 unlisted and 9 listed.
+
+1. **BOC-Prudential MSCI World ESG Index Fund: confirmed and kept.** It is on the SFC list (sub-fund BUM645,
+   authorised 2 May 2024), and the SFC classes its ESG strategy as **"Best-in-class / positive screening"**. That
+   supports "the highest-rated companies in each sector". Retail access: it is an SFC-authorised unit trust, which is
+   what allows it to be sold to the public in Hong Kong. **Fee: not published anywhere reachable.** The 2023 principal
+   brochure predates the fund, and the HKEX fund page returns 404. Impact if it charges 0.6% rather than 0.15%:
+   about HK$7K a year on HK$1.49M. **Fallback, also on the SFC list:** Sun Life AM Global Low Carbon Index Fund
+   (BTA105). It is the only other global equity index fund on the list, so the ESG count would be unchanged.
+   (This replaces Win's Irish UCITS fallback, which would not count under our "SFC list" rule.)
+2. **Green bonds: Allianz Green Bond, accumulation class hedged to USD or HKD.** The SFC list has six green bond
+   options. Compared:
+   - *Global X Bloomberg MSCI Asia ex Japan Green Bond ETF (3059):* the only listed index option, at 0.40%. **Rejected:**
+     USD 4.96M of assets and 22 bonds (globalxetfs.com.hk, 29 Sep 2026), so it carries closure and liquidity risk. It is
+     also concentrated in Asian, mostly Hong Kong and mainland, issuers, the same risk S14 moved the family away from.
+   - *Amundi Emerging Markets Green Bond:* emerging-market credit, which is too much risk for Adrian's bond holding.
+     *UBS Green Social Sustainable Bonds (EUR):* EUR-focused, and not purely green.
+   - **Allianz Green Bond: chosen.** Its key facts (Sept 2026) say it holds at least 85% green bonds, investment grade
+     only, from global issuers in OECD currencies. The manager checks each bond against all four parts of the ICMA
+     Green Bond Principles and each project against the Climate Bonds Initiative's science-based list, with exclusions
+     (UN Global Compact breaches, controversial weapons and others). Ongoing charge 1.14%; minimum HK$50,000.
+   Why it suits the family: investment grade, global and hedged suits Adrian's capital preservation, and the
+   strictest verification of the six suits Carmen's values and the greenwashing concern. The cost of choosing it over
+   a 0.10% bond ETF is about HK$3K a year on HK$0.31M.
+   The family's **existing** HK$0.45M of green and sustainable bonds is kept up to HK$0.31M if it passes the same
+   test; otherwise it is switched. Our test wording now matches what the fund actually does: "a green bond fund only
+   if it checks every bond against the ICMA Green Bond Principles". The S15 wording, "externally reviewed",
+   overclaimed.
+3. **MPF: the Sun Life Rainbow MPF Scheme's Global Low Carbon Index Fund, reached by the Employee Choice
+   Arrangement.** The SFC list contains only one MPF pooled fund (Amundi HK Green Planet Fund, AMW928). It feeds AIA
+   MPF – Prime Value Choice's **Green Fund**, which is **actively managed** with a fund expense ratio of **1.41%**.
+   Sun Life's MPF Global Low Carbon Index Fund **tracks an index** (the FTSE Custom MPF Developed Selected Countries ESG
+   Low Carbon Select **Hedged** Index, so no currency risk), with a management fee of up to 1.02%. Its underlying
+   fund, Sun Life AM Global Low Carbon Index Fund, is on the SFC list. **Chosen: Sun Life**, because it is an index
+   fund, cheaper, and hedged.
+   Route: **each parent** moves the half built from their own contributions under the Employee Choice Arrangement
+   (MPFA: once a year, lump sum, employee-derived part only); the employer half stays in a bond fund. That gives the
+   same half-and-half split and the same HK$0.84M. **Changed from S15:** Carmen no longer switches her company's whole
+   scheme. That would move her staff's MPF for a personal goal, which is not something a client would want.
+   Fallback (as in S15, computed): Carmen's 15% plain global equity moves into the ESG fund, giving 20.2%.
+4. **"At almost no extra cost" (p8) was no longer true** with Allianz at 1.14% and Sun Life at up to 1.02%, so it now
+   reads "at a small extra cost in fees".
+
+Exact changes beyond S15 (all in the tested file):
+
+| Page | S15 wording | S16 wording |
+|---|---|---|
+| 8, Fig 17 row 2 | "Green bond fund · … · Bonds whose proceeds fund verified green projects" | "Allianz Green Bond (hedged class) · Bonds (5%, 10%) · Each bond checked against ICMA and Climate Bonds Initiative rules · 0.31" |
+| 8, Fig 17 row 3 | "MPF ESG fund · … · Its underlying fund is on the SFC's list" | "Sun Life MPF Global Low Carbon Index Fund · Half of each parent's MPF · Low-carbon ESG index; its underlying fund is on the SFC's list · 0.84" |
+| 8, Fig 17 note | "Counted as ESG: funds on the SFC's list of ESG funds, and green bonds with verified use of proceeds. The global core is one of only two global equity index funds on that list; a plain index fund in its place would leave the family at 11%, where it is today." | "Counted as ESG: funds on the SFC's list of ESG funds. The global core is one of only two global equity index funds on it; a plain index fund instead would leave the family at 11%, where it is today." (Allianz is itself on the list, so the separate green-bond rule is not needed.) |
+| 8, Greenwashing | "…a green bond fund only if its bonds follow the ICMA Green Bond Principles, externally reviewed." | "…a green bond fund only if it checks every bond against the ICMA Green Bond Principles." |
+| 8, No return premium | "…at almost no extra cost." | "…at a small extra cost in fees." |
+| 8, No return premium | "Few MPF schemes offer an ESG fund on the SFC's list: Carmen, as the employer, picks one that does, and Adrian moves … If neither can, …" | "Few MPF funds are on the SFC's list, so each parent moves the half built from their own contributions to the Sun Life scheme under the Employee Choice Arrangement; if not, Carmen's plain global holding moves to the ESG fund and the family stays above 20%." |
+
+**For the number checker:** p8's "Moving about HK$4.4M … to index funds near 0.15% saves ≈HK$59K a year" assumes
+0.15% everywhere. With BOC-Prudential at an assumed 0.6% on HK$1.49M and Allianz at 1.14% on HK$0.31M, my rough
+figure is ≈HK$50K, a saving roughly HK$10K smaller. Recompute it, or soften to "≈HK$50–60K". The ≈HK$120K total in the
+same sentence moves by the same amount.
+**Also update:** Win's allocation tables (green bond vehicle; MPF vehicle; the BOC-Prudential fallback), manuscript §5
+and §6, and CLAUDE.md's ESG decision line ("BOC-Prudential core, Allianz Green Bond, Sun Life MPF Low Carbon Index via
+Employee Choice Arrangement; no HSI").
+**Still unverifiable from public sources:** the BOC-Prudential fee and which bank sells it (BOCHK is the likely
+distributor). These do not change the plan, only the fee line above.
+
+## Batch 11 ready
+
+---
+
+### S17 · Pages 7, 8, 12 · BOC-Prudential fee found; fee-saving line; a compliance overclaim · TESTED on live v3
+**The tested file is updated:** `…\scratchpad\proposal-v3.reviewed.html` is now the **live v3 (builder's 12:26
+version, S15 applied) + S16 + S17**. Diff it against `document/proposal-v3.html` and apply. Render: **15 pages, every
+page fits** (p8 0.5 mm, p11 9.4, p12 17.4, p13 4.8).
+
+**1. The fee.** Pete's link (bocpt.com, "management fees") is BOCI-Prudential's **MPF** fee page (Easy-Choice MPF and My
+Choice MPF constituent funds). It has no ESG fund and does not cover our unit trust. The answer is in the **BOC-Prudential
+Index Fund Series principal brochure (3 Apr 2023), §6.1 "Fees and Charges", which applies to every sub-fund of the
+series.** For **Retail Class units**:
+- investment management fee **0.65% a year** (maximum 2%);
+- trustee fee **0.125% a year** on the first HK$200M, falling to 0.0875% on larger amounts (maximum 1%);
+- **initial charge up to 5%** of the amount invested; redemption charge, subscription fee and redemption fee waived.
+The MSCI World ESG fund joined the series in May 2024, after this brochure, so its own addendum could differ. **Working
+figure: ≈0.78% a year.** (My S16 guess was 0.6%.)
+
+**2. Is it still the right fund for the client? Yes, with one implementation rule.**
+- The extra cost is about HK$9K a year: 0.78% against about 0.15–0.20% for a plain world index ETF, on HK$1.49M. That
+  is 0.04% of net worth, for the holding that carries most of the family's ESG target.
+- The cheaper ESG route (an Irish MSCI World ESG UCITS ETF at about 0.20%) **would not count**, because it is not on the
+  SFC's ESG list. It would leave the family at 11% (Fig 17 note), failing the family's own 20–25% goal.
+- Holding only enough to reach 20% (≈HK$0.94M instead of 1.49M) saves about HK$4K a year but lands at the bottom of
+  the range Carmen asked for. **Rejected:** ESG is her stated priority, and the plan reaches the top of the range at no
+  extra risk.
+- **Implementation rule (roadmap, months 1–6): buy only through a channel that waives the initial charge.** A full 5%
+  would be ≈HK$74K once, eight years of the fee difference. If no waiver is available, use the Sun Life AM Global Low
+  Carbon Index Fund (S16 fallback, also on the SFC list).
+
+**3. The fee-saving figure, recomputed (p8 and p12).** Assumptions: typical current fees of 1.5% on HK$4.4M, as on the
+page. After the switch: BOC-Prudential HK$1.49M × 0.775% = HK$11.5K; Allianz HK$0.31M × 1.14% = HK$3.5K; the other
+≈HK$2.6M in index ETFs × 0.15% = HK$3.9K. Total HK$18.9K, an average of 0.43%. **Saving: 66.0 − 18.9 = ≈HK$47K a
+year** (was HK$59K). The p8 total "≈HK$120K" (59 + 14 + 25 + 20) becomes **≈HK$105K** (47 + 14 + 25 + 20).
+Number checker: confirm, and check that the HK$4.4M still matches the holdings being switched.
+
+**4. Compliance overclaim (p7).** "Every holding … is a low-cost index fund or ETF, **SFC-authorised or HKEX-listed**",
+yet the same paragraph says "The bond ETFs are Irish-domiciled". Win's bond ETFs (IBTA, AGGU) are Irish UCITS funds
+listed in London: neither SFC-authorised nor HKEX-listed. A judge who knows the products will catch this. §11's
+"regulated products only" is fine.
+
+| Page | Old (live v3) | New |
+|---|---|---|
+| 7 | "Every holding except the green bond fund is a low-cost index fund or ETF, SFC-authorised or HKEX-listed." … "The bond ETFs are Irish-domiciled, which avoids US estate tax." | "Every fund except the green bond fund is a low-cost index fund or ETF, SFC-authorised or, for the bond ETFs, an Irish-domiciled UCITS fund, which avoids US estate tax." (delete the later sentence; net length about the same) |
+| 8 | "…to index funds near 0.15% saves ≈HK$59K a year; … the family gains ≈HK$120K a year…" | "…to funds averaging about 0.4% saves ≈HK$47K a year; … the family gains ≈HK$105K a year…" |
+| 12, roadmap | "Saves ≈HK$59K" | "Saves ≈HK$47K" |
+| (S16 rows) | see S16 | unchanged; included in the tested file |
+
+Also update CLAUDE.md's open item "current fund-fee assumption (HK$59K saving)", and the manuscript.
+Sources: BOC-Prudential Index Fund Series principal brochure, 3 Apr 2023, pp. 74–77
+(boclife.com.hk/f/fund/1436/BOCPINDEXF_EM_E.pdf); bocpt.com management-fees page (MPF only).
+
+## Batch 12 ready

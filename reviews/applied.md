@@ -1,6 +1,6 @@
 # Applied findings (HTML builder)
 
-**Last batch taken:** numbers-findings.md **Batch 3** (N1–N28) · story-findings.md **Batch 10** (S1–S15, Pete's 1 Oct decisions).
+**Last batch taken:** numbers-findings.md **Batch 5** (N1–N33) · story-findings.md **Batch 12** (S1–S17, Pete's 1 Oct decisions).
 
 **Where the edits live.** Pete asked for the edits in a copy: `document/proposal-v3.html` = v2 (his direct edits) + every
 change below. v3 is a *built* copy, so its numbers are typed, not `{{placeholders}}`. **Still to do before the final
@@ -66,3 +66,17 @@ S13 + S14 + S15 · Applied (S15's combined table) · p7: green bond fund excepte
 - p12: roadmap cells shortened so no row wraps.
 - p13: heading drops "Agreed rules answer each."; Fig 27 note one line ("Our rules" definition moved to the Fig 26 note); compliance paragraph shortened (offering-document check and the product list dropped; "regulated products only" kept).
 - p15: heading "Every number traces to a stated assumption."; source cells shortened ("HK CPI 2006–25", "Family choice").
+
+## Round 2 (1 Oct): numbers batches 4–5, story batches 11–12
+
+Base: the story reviewer's tested copy (`proposal-v3.reviewed.html` = v3 at commit b5b5176 + S16 + S17), diffed line by
+line against v3 before adoption (only the S16/S17 rows changed), then the number checker's refinements on top.
+Render: 15 pages, every page fits. Changed pages: p7 7.4 · p8 5.8 · p12 17.4 mm free.
+
+S16 · Applied · p8 · Fig 17 rows named: "Allianz Green Bond (hedged class) · Each bond checked against ICMA and Climate Bonds Initiative rules"; "Sun Life MPF Global Low Carbon Index Fund · Low-carbon ESG index; underlying fund on the SFC list" (shortened from S16 for fit); note "Counted as ESG: funds on the SFC's list of ESG funds"; green-bond test "checks every bond against the ICMA Green Bond Principles" (drops the "externally reviewed" overclaim); "at almost no extra cost" → "at a small extra cost in fees"; MPF route: each parent moves the employee half to the Sun Life scheme under the Employee Choice Arrangement. Records: Win's tables (green bond vehicle, BOC fee and Sun Life fallback, MPF fund), CLAUDE.md ESG line, manuscript Decisions row 6.
+S17 · Applied · p7 · "SFC-authorised or HKEX-listed" overclaim fixed: "SFC-authorised or, for the bond ETFs, an Irish-domiciled UCITS fund, which avoids US estate tax" (later sentence deleted). p8 and p12 fee line: see N29.
+N29 · Applied (the checker's more robust option) · p8 "to index funds near 0.15% saves ≈HK$59K … ≈HK$120K" → "to funds averaging about 0.5% saves ≈HK$45K … ≈HK$105K"; p12 roadmap "Saves ≈HK$45K". Reason: BOC-Prudential's full ongoing charge is above its 0.775% management + trustee fee, and the bottom-up count gives HK$46K; 45 + 14 + 25 + 20 = 104. CLAUDE.md open item and Win's value-of-advice note updated.
+N30 · No change needed · the "about HK$4K" figure is not on the page
+N31 · Applied · p8 · "Rows rounded." added to the Fig 17 note (rows add to 2.64; exact 2.6326). Fallback 20.2% → 20.1% in the manuscript (the page says "above 20%"). Fig 17 note tail "where it is today" → "at today's 11%" (fit).
+N32 · No change needed · page claim "a small extra cost in fees" stays true
+N33 · No page change · Sun Life FER ≈1.19% (not the 1.02% fee) recorded in Win's notes; open item: each parent's current MPF fund and FER (Pete or Win)
