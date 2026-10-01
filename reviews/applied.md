@@ -80,3 +80,17 @@ N30 · No change needed · the "about HK$4K" figure is not on the page
 N31 · Applied · p8 · "Rows rounded." added to the Fig 17 note (rows add to 2.64; exact 2.6326). Fallback 20.2% → 20.1% in the manuscript (the page says "above 20%"). Fig 17 note tail "where it is today" → "at today's 11%" (fit).
 N32 · No change needed · page claim "a small extra cost in fees" stays true
 N33 · No page change · Sun Life FER ≈1.19% (not the 1.02% fee) recorded in Win's notes; open item: each parent's current MPF fund and FER (Pete or Win)
+
+## Round 3 (1 Oct): merge fix and Fahtai's model review (reviews/model-review-fahtai.md, Batch 1)
+
+**Merge fix.** Fahtai's merge into main (bc51065) committed unresolved conflict markers in `model/run_model.py` and
+`.gitignore`, so the model could not run. Resolved (Pete approved): `run_model.py` restored exactly as at b5b5176 (the
+"HEAD" side was the superseded simple version; Fahtai's own review confirms the current model and keeps its rebuild in
+`model/plan_model.py`, which stays); `.gitignore` keeps both sides. `make_charts.py` rerun: `numbers.json` identical.
+
+Each finding checked against the code before applying:
+M1 · Applied · confirmed: `sim()` applies `r_eq=ST_EQ`, `r_bd=ST_BD` to every year (run_model.py line 168), not a decade. Option a (relabel, no number change): p13 heading "a low-return decade" → "low returns"; Fig 27 F3 → "Low returns every year"; Fig 26 note "In a low-return decade" → "With low returns every year"; Fig 25 tick "Low returns, every year"; A1 equities stress "4.0%, all years".
+M2 · Applied · confirmed: Fig 25 B is `stressB_89` (CPI 3.5% + medical stress), F1 is CPI alone. Fig 25 tick "Inflation + medical"; scenario name in `make_charts.py` "B. Inflation + medical costs".
+M3 · Applied · confirmed: `pot += biz` once in 2039 (line 199), HK$3.0M unindexed ≈ HK$2.2M today. A1 new row "Business sale · HK$3.0M in 2039, one payment · Not sold · Case, less 40%".
+M4 · Applied · confirmed: no cash rate in the simulation; 3% is the education discount. A1 cash row stress "0.5%" → "—", source "HIBOR; Fed" → "Education fund".
+Fit on p15: "Flexi for life" → "No review"; new-cover cell "≈HK$100K year 1; HK$114K average". Render: 15 pages, all fit (p13 4.8, p15 6.6 mm free).

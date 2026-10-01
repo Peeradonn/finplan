@@ -1,14 +1,6 @@
 """
-<<<<<<< HEAD
-Wong Family model — Python layer (simple version, 3 mixes).
-SUPERSEDED for the proposal's retirement numbers by plan_model.py, which adds medical
-premiums, new cover, survivor spending, business sale, home release, tier review and guardrails.
-Fixed 1 Oct: annuity no longer CPI-indexed; premiums no longer double-counted.
-Reads EVERY assumption from wong_model.xlsx  ->  Inputs tab.
-=======
 Wong Family model — Python layer.
 Reads EVERY assumption from wong_model.xlsx  ->  Inputs tab (and the Medical age curve).
->>>>>>> origin/pete/model-fix-drafts-figures
 Never hardcode an assumption here. Change the spreadsheet instead.
 
 Usage:  python3 run_model.py          (prints sections 1-9)
@@ -94,10 +86,6 @@ def mpf_in(y):
     working = (y < RETA) + (y < RETC)
     return 2 * MPF_CAP * working
 # Carmen works two years past Adrian's retirement - the Excel Projection counts this, so we must too
-<<<<<<< HEAD
-C_TAX    = 71_335   # Carmen, separate assessment (Tax tab CHECK value)
-CARMEN_NET = C_SAL - C_TAX - MPF_CAP
-=======
 C_TAX    = WB["Tax"]["C13"].value
 CARMEN_NET = C_SAL - C_TAX - MPF_CAP
 
@@ -139,7 +127,6 @@ def _check_against_workbook():
     if drift > 1:
         sys.exit(f"Medical line differs from the Projection tab by {drift:,.0f}. Recalculate the workbook.")
 _check_against_workbook()
->>>>>>> origin/pete/model-fix-drafts-figures
 
 # ---------- goal funding ----------
 pv = lambda p,r,n: p*(1-(1+r)**-n)/r
@@ -180,15 +167,6 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
         y = BY + i
         r = w_eq*rng.normal(r_eq, S_EQ, n) + (1-w_eq)*rng.normal(r_bd, s_bd, n)
         worst = np.minimum(worst, r); pot = pot*(1+r)
-<<<<<<< HEAD
-        if y == RETA and annuity: pot -= ANN_COST
-        if y < RETA: pot += SURPLUS*(1+WAGE)**i          # SURPLUS is already net of premiums
-        else:
-            pot -= SPEND*(1+CPI)**i - (ANN_INC if annuity else 0)   # HKMC annuity is fixed in nominal terms
-            if y < RETC: pot += CARMEN_NET*(1+WAGE)**i   # Carmen still earning
-        pot = np.maximum(pot, 0); alive &= pot > 0
-    return alive.mean(), worst.mean(), np.percentile(pot, 50)
-=======
         if annuity and y == RETA: pot -= ANN_A_COST
         if annuity and y == RETC: pot -= ANN_C_COST
         if y == RETA: pot -= MORT                           # mortgage still owed, cleared at retirement
@@ -232,7 +210,6 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
                     levels=np.array(lvl_hist), level_years=np.array(lvl_years))
     out = (alive.mean(), worst.mean(), np.percentile(pot, 50))
     return out + (track,) if paths else out
->>>>>>> origin/pete/model-fix-drafts-figures
 
 MIXES = {"1. All-Treasury ladder":       (0.00, 0.02, R_LAD),
          "2. 40/60 equity / ladder":     (0.40, 0.02, R_LAD),
