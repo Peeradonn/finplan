@@ -120,3 +120,14 @@ reproduce v3 line for line except two sentences changed on purpose (below). Rend
 - CLAUDE.md: the annuity decision line now quotes HK$382K vs HK$76K in today's money.
 - `proposal-v2.html` (document/ and the repo root) and `proposal-v3.html` are now superseded copies; not deleted (Pete to
   decide). Reviewers should review `document/proposal.html` from now on.
+
+## Round 5 (1 Oct): story batch 14 (Pete's decisions on batch 13: S19 approved; keep v2 and v3)
+
+**Last batch taken:** story-findings.md **Batch 14** (S18 is review-only; S19 applied). Numbers: Batch 5 (unchanged).
+
+S18 · No action (review of a teammate's PowerPoint `Fin Plan.pdf`, 6–9 pt text and a university email in its metadata). The file is untracked in the repo root and was **not committed**; it must never be submitted or built from.
+S19 · Applied (`s19.patch`, `git apply --check` clean) · p7 restructured: "From today to the target", new Figure 14 "What each parent buys" (eight named holdings, Adrian/Carmen %), "Own the market, not chosen stocks" (Bessembinder 2018), shortened "Why not all Treasuries", Figure 15 rules (HK-inflation row dropped; §11 F1 still answers it). Allocation chart and bucket table removed; figures 16–27 renumbered 15–26; p9 "(Figure 18)" and Ryan's pot "the same world index ETF as his parents (IWDA)".
+  Checked before applying: both portfolios sum to 100% (40/60, 60/40); Bessembinder and MSCI World facts; ESG fallback ≈21.7% = (1.49 + 0.31 + 0.476) / 10.47; no placeholders in the replaced region; every in-text figure reference points to the right figure.
+  Builder corrections on top: (1) "HK$3.9M … sits in equity funds charging about 1.5%" → "is in equities, most of it in funds charging about 1.5%" (HK$0.8M of it is listed stocks and REITs, which carry no fund fee); (2) Figure 14 note "the rest are SFC-authorised" → "Treasury notes held directly; the rest SFC-authorised" (a directly held bond is not an authorised fund), shortened to fit.
+  Render: 15 pages, all fit (p7 5.3 mm free).
+  Records: manuscript p7 regenerated with an S19 note, Layout lines and the Charts table renumbered (`allocation-half.png` still drawn, not placed); Win's tables (IWDA replaces the Nasdaq-100 slice and REITs; 3450 not 3433; Carmen's AGGU 20% so she sums to 100; Ryan's pots); CLAUDE.md vehicles line and the keep-v2/v3 decision. `[CHECK: Win]` 3450's name and fee, IWDA's ongoing charge. Pete tells Win.

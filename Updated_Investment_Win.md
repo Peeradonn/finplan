@@ -48,7 +48,7 @@ of its range.
 | Green bonds | Allianz Green Bond, hedged class (1.14%; on the SFC ESG list) | 5% | 5–10% |
 | Global equity core (ESG index) | BOC-Prudential MSCI World ESG Index Fund | 25% | 20–30% |
 | ESG global equity | BOC-Prudential MSCI World ESG Index Fund (same fund) | 10% | 5–15% |
-| Growth slice | Nasdaq-100 UCITS fund, e.g. CNDX | 5% | **3–8%** |
+| Global equity, plain index | IWDA, iShares Core MSCI World UCITS (≈0.20%) | 5% | 0–10% |
 | **Total** | | **Equity 40% · Bonds/cash 60%** | **Equity cap 45%** |
 
 - Expected return ≈ **5.0% net** at a 6% equity assumption, ≈ **5.4%** at 7% (was 4.8% before the yield rise).
@@ -80,15 +80,19 @@ for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking i
 | Sleeve | Vehicle | Target | Range |
 |---|---|---|---|
 | Cash | 3053 | 5% | 5–10% |
-| Core bonds | AGGU | 18% | 10–25% |
+| Core bonds | AGGU | 20% | 10–25% |
 | Green bonds | Allianz Green Bond, hedged class (1.14%) | 10% | 5–15% |
-| Medium / long Treasuries | 3450 (0.30%) / 3433 (0.20% mgmt) | 5% | 0–10% |
+| Medium Treasuries | 3450 Global X US Treasury 3–5 Year ETF (0.30%) | 5% | 0–10% |
 | ESG global equity | BOC-Prudential MSCI World ESG Index Fund | 37% | 30–42% |
-| Global equity core | Global index fund | 15% | 10–20% |
-| Growth slice | Nasdaq-100 UCITS fund | 3% | 0–5% |
-| Asia REITs | 3447 (0.99%) | 5% | 0–5% |
-| Digital (optional) | HKEX spot BTC ETF, 3439 (0.30%) | 0–2% | from the growth slice |
-| **Total** | | **Equity 60% · Bonds/cash 38%** | **Equity cap 65%** |
+| Global equity, plain index | IWDA, iShares Core MSCI World UCITS (≈0.20%) | 23% | 15–28% |
+| Digital (optional) | HKEX spot BTC ETF, 3439 (0.30%) | 0–2% | from the IWDA holding |
+| **Total** | | **Equity 60% · Bonds/cash 40% (sums to 100%)** | **Equity cap 65%** |
+
+**Updated 1 Oct (story S19, approved by Pete):** broad index funds only. The Nasdaq-100 slice (Adrian 5%, Carmen 3%) and Asia
+REITs (Carmen 5%) are replaced by IWDA: the world index already holds US technology at market weight, the Nasdaq-100 fell
+≈33% in 2022 against ≈18% for world equities, and the home is already 47% of net worth. Carmen's medium Treasuries are
+3450 (3–5 years), not 3433, which is a 20+ year Treasury ETF (long Treasuries fell ≈30% in 2022). The Q&A rows below on
+HK equity and growth stocks are superseded (S14, S19). `[CHECK: Win]` 3450's name and fee; IWDA's ongoing charge.
 
 - Expected return ≈ **5.0% net** at 60% equity `[CHECK: Win]` (was 5.2% at 68% equity).
 - **Why 60%, not 68%:** in the team model, household equity above 40% adds legacy, not security (40%: money lasts to
@@ -101,9 +105,8 @@ for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking i
 | Sleeve | Vehicle | Target (non-crypto money) | Range |
 |---|---|---|---|
 | Emergency cash | 3053 or his tokenised MMF | 3 months of his spending | fixed |
-| Global equity | Global index fund | 70% | 60–80% |
-| Growth slice | Nasdaq-100 UCITS fund | 20% | 10–25% |
-| HK equity | 2800 | 10% | 0–15% |
+| Goals within ten years | Deposits, short bonds (IBTA) | ≈20% of new savings | as goals need |
+| Global equity | IWDA, the same world index ETF as his parents | ≈80% of new savings | 70–90% |
 | Crypto | HKEX spot ETFs / SFC-licensed platforms | glide path (§7) | no forced selling |
 
 *Portfolio sizes in HK$ depend on the Lead's final bucket sizes (emergency fund, education fund). Percentages are final.*

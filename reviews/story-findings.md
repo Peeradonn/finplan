@@ -571,3 +571,135 @@ Sources: BOC-Prudential Index Fund Series principal brochure, 3 Apr 2023, pp. 74
 (boclife.com.hk/f/fund/1436/BOCPINDEXF_EM_E.pdf); bocpt.com management-fees page (MPF only).
 
 ## Batch 12 ready
+
+---
+
+### S18 · `Fin Plan.pdf` (teammate's PowerPoint version, 1 Oct 15:37) · severity: CRITICAL (hard rules) · review only, nothing applied
+Pete asked for a view on a teammate's reworked investment and risk pages. Findings:
+1. **Font size breaks the 12 pt rule.** Measured with PyMuPDF: pp. 7, 8, 9 and 13 are 94–98% text at **6–9 pt** (the
+   other pages are 12 pt). The rules require 12 pt TNR body text; CLAUDE.md says all text ≥ 12 pt.
+2. **Its metadata contains a university email** (PowerPoint export; the author field). This breaches the "no university
+   name anywhere, including metadata" rule. **Never submit this file or build from it.** Only the Chrome PDF
+   (`document/build/proposal.pdf`) is submitted. (The email is deliberately not reproduced here.)
+3. **It forks from an old base**: pp. 2 and 3 are the v2-era executive summary ("Five recommendations"). The
+   investment pages reverse recorded decisions:
+   - "three portfolios" (S12);
+   - Carmen at 68% equity, cap 75% (decided 60%, cap 65%);
+   - Hang Seng Tracker 2800 at 5% each (S14: no Hong Kong equity);
+   - ESG at 22%, while p2 and Fig 5 say 25%;
+   - Carmen's MPF only (S16: both parents via the Employee Choice Arrangement);
+   - Ryan's new savings all to equity, plus voluntary MPF (S11/S12);
+   - "every product SFC-authorised, HKEX-listed or HKMC-issued" (S17).
+4. **Factual errors:**
+   - "≈HK$17.0M … at Adrian's retirement in 2046" (he retires in 2037);
+   - Fig 17 "Adrian (72)", "Carmen (58)";
+   - Ryan "retires at 59";
+   - "Today: HK$4.23M at 92% equity" needs checking against the case holdings (number checker);
+   - the fee saving is HK$59K (S17: ≈HK$47K).
+5. **Story and voice:**
+   - seven tables on pp. 7–8;
+   - the rules appear twice (Fig 16's last column and Fig 18);
+   - rule codes M1/M4/M7/M9/M10 are never defined in the document;
+   - Fig 29 (first 12 months) repeats the roadmap on p12;
+   - the Fig 26 chart labels overlap;
+   - jargon: "sleeve", "pp", "Mkt", "Glide", "badges of trade".
+
+   The pages read as an internal investment policy statement, not advice: the reader learns the holdings, not the
+   decision.
+
+**Worth harvesting into v3** (at 12 pt, within the page budget):
+- (a) one table of named vehicles and percentages for Adrian and Carmen;
+- (b) the "today's investments are mostly equity in ~1.5% funds" hook, once the 92% is verified;
+- (c) one sentence on what the Treasury ladder pays (five rungs, ≈HK$120–140K a year, 2037–41);
+- (d) the "certain savings, before any return forecast" framing, with HK$47K;
+- (e) the implementation details (ladder bought in 3–4 tranches; risk profiles signed first), folded into the p12
+  roadmap, which has 17 mm free.
+
+Suggested §5 spine: problem (too much equity, too costly for Adrian) → one portfolio per parent at 40/60 → what to
+buy (one table) → rules → result (less risk, ≈HK$47K a year cheaper, ≈HK$17M by 2037).
+Awaiting Pete's decision before drafting.
+
+---
+
+### S19 · Page 7 (§5), p9, figure numbers · Pete asked: name exactly what Adrian (and Carmen) buy · TESTED
+Tested file updated: `…\scratchpad\proposal-v3.reviewed.html` = live v3 + S16 + S17 + **S19**. Diff against
+`document/proposal-v3.html`. The fit was checked by eye on the page images (p7 5.3 mm free; p9 fits). My scratch
+render misreported pages 3, 4, 6 and 11 on one run because images loaded late; those pages are unchanged. Use the
+builder's render as the authority.
+
+**Decision:** a world-class planner specifies the **vehicles**, not only "40% equity". The case asks for "target
+allocation … product suitability". But for a low-to-medium-risk client the right vehicle is **broad index funds, not
+selected stocks or sector bets.**
+- Evidence: Bessembinder (2018, *Journal of Financial Economics*), "Do stocks outperform Treasury bills?": from 1926
+  to 2016, about 4% of US-listed companies accounted for all of the market's net wealth creation, and most individual
+  stocks returned less than one-month Treasury bills over their lives. Owning the index is the only way to be sure of
+  owning the few compounders.
+- **Win's Nasdaq-100 "growth slice" (Adrian 5%, Carmen 3%) is replaced by a plain world index ETF.** The world index
+  already holds US technology at its market weight, so the slice doubles a bet rather than diversifying. It also
+  falls further in bad years: in 2022 the Nasdaq-100 fell about 33% against about 18% for world equities.
+- **Win's Asia REITs (3447, Carmen 5%) are replaced the same way**, because the home is already 47% of net worth.
+- **Plain world ETF: iShares Core MSCI World UCITS ETF (IWDA)**, about 0.20%, Irish-domiciled like the bond ETFs. It
+  also spreads the equity across two providers, so not all of it sits in the 2024-launched BOC-Prudential fund.
+- **Carmen's 3–7 year Treasuries: Global X US Treasury 3–5 Year ETF (3450, 0.30%), not 3433.** 3433 is CSOP's
+  **20+ year** Treasury ETF, far too volatile for "controlled downside" (long Treasuries fell about 30% in 2022).
+- **The ESG share is unchanged** (BOC-Prudential 35% and 37%; Allianz 5% and 10%). Carmen's plain holding grows from
+  15% to 23%, so the p8 fallback ("Carmen's plain global holding moves to the ESG fund") now gives about 21.7%, still
+  "above 20%".
+- Carmen now sums to 100% (Win's table summed to 98%): BOC 37, IWDA 23, AGGU 20, Allianz 10, 3450 5, 3053 5.
+
+**Page 7 restructured** (one story: problem → what to buy → why → rules):
+1. Heading unchanged.
+2. **"From today to the target."** About HK$3.9M of the money outside the MPF is in equity funds charging about 1.5%,
+   more risk than Adrian's profile allows. After the HK$1.0M reserve and Chloe's HK$2.57M, each parent's portfolio
+   holds HK$2.07M, with about HK$2.1M of equity between them, all in index funds (Figure 14).
+3. **New Figure 14, "What each parent buys, HK$2.07M each"**: eight single-line rows with columns Holding · Its job ·
+   Adrian · Carmen:
+   - BOC-Prudential MSCI World ESG Index Fund 35/37;
+   - iShares Core MSCI World ETF (IWDA) 5/23;
+   - US Treasury notes maturing 2037–41 20/—;
+   - iShares $ Treasury Bond 1–3yr ETF (IBTA) 10/—;
+   - Global X US Treasury 3–5 Year ETF (3450) —/5;
+   - iShares Core Global Aggregate Bond ETF (AGGU) 20/20;
+   - Allianz Green Bond, hedged class 5/10;
+   - CSOP HKD Money Market ETF (3053) 5/5;
+   - total row 40/60 · 60/40.
+
+   Note: Irish UCITS (no US estate tax) vs SFC-authorised; Adrian eases to 35% from 2034; the MPF holds half ESG,
+   half bonds.
+4. **"Own the market, not chosen stocks."** This replaces "Match each portfolio to its owner": Treasuries floor;
+   Carmen's 60% is ESG-led; about 1,400 companies in 23 developed markets at market weight; Bessembinder; no sector,
+   country or Hong Kong bets.
+5. **"Why not all Treasuries for Adrian"**, shortened.
+6. **Figure 15, Rules** (was Figure 16). The "HK inflation > 3.5%" row is dropped for space; it is still answered in
+   §11 (F1: "shorter bonds").
+
+**Removed:** the allocation bar chart (`allocation-half.png`) and the bucket table. The bucket figures now sit in the
+opening paragraph. **Every figure from 16 onwards is renumbered down by one** (16→15 … 27→26), and the one text
+reference ("Figure 19" on p9) becomes "Figure 18". Check the manuscript and any figure mentions in `figures/`.
+**p9:** Ryan's equity pot is now "the same world index ETF as his parents (IWDA)".
+**Also update:** Win's allocation tables (no Nasdaq, no REITs, no 3433; Carmen sums to 100), the manuscript §5, and
+CLAUDE.md (S14 already dropped the HSI).
+
+## Batch 13 ready
+
+### S19 addendum · rebased onto the page sources (after Round 4: `proposal.html` is the document again)
+S19 is now a **patch against the live page sources**, tested through the real pipeline in a scratch copy
+(`assemble.py` → `render.py`): **15 pages, every page fits** (p7 5.3 mm, p8 5.8, p9 4.0); figures run 1–26 in order;
+text references are correct ("Figure 14" on p7, "Figure 18" on p9).
+- Patch: `C:\Users\User\AppData\Local\Temp\claude\c--Users-User-Documents-finplan-finplan\a5305b00-b578-4b4e-8432-f575fdcad077\scratchpad\s19.patch`
+  (touches `document/pages-03-09.html` and `document/pages-10-15.html`). `git apply --check` passes against the
+  current working tree. Apply with `git apply <path>`.
+- There are no `{{placeholders}}` in the replaced p7 region, so `fill.py` is unaffected.
+- **Still for the builder:** mirror the p7 wording and the figure renumbering (16→15 … 27→26) in `manuscript.md`;
+  update Win's notes and CLAUDE.md (no Nasdaq-100, no REITs, 3450 not 3433; Carmen sums to 100).
+- The fee saving stays the number checker's **HK$45K** (supersedes my S17 estimate of HK$47K); S19 does not touch it.
+
+## Batch 13 ready (rebased)
+
+## Pete's decisions (1 Oct, later)
+- **S19 approved**: apply `s19.patch` (see the S19 addendum), then mirror it in the manuscript, Win's notes and
+  CLAUDE.md. Pete tells Win.
+- **Keep `proposal-v2.html` and `proposal-v3.html`**: do not delete them. Everyone edits the page sources;
+  `document/proposal.html` is the document.
+
+## Batch 14 ready

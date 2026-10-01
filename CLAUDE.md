@@ -72,6 +72,10 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
   Adrian 35%, Carmen 37%), Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index Fund (employee half, via
   the Employee Choice Arrangement). No thematic fund. No
   separate Hong Kong holding: 3039 dropped 1 Oct (story S14), the family already depends on Hong Kong.
+- Vehicles (S19, 1 Oct): broad index funds only. Adrian / Carmen: BOC-Prudential ESG 35/37, IWDA 5/23, Treasury notes
+  2037–41 20/—, IBTA 10/—, 3450 (3–5 yr) —/5, AGGU 20/20, Allianz Green Bond 5/10, 3053 5/5. No Nasdaq-100, REITs or 3433.
+- `proposal-v2.html` and `proposal-v3.html` are kept as records (Pete, 1 Oct); everyone edits the page sources, and
+  `document/proposal.html` is the document.
 - Card balance assumed revolving; tax assumed separate assessment (both stated as checks in §2).
 
 ## Writing and design rules (Pete's standing preferences)
