@@ -191,7 +191,7 @@ DATA.append((f"sensitivity-tornado.png: one change at a time to the full plan (b
 SC = [("Full plan,\nbase assumptions", FULL, M.R_LAD),
       ("A. Low-return\ndecade", {**FULL, "r_eq": M.ST_EQ}, M.ST_BD),
       ("B. Inflation\nshock", {**FULL, "cpi": M.ST_CPI, "med": M.STRESS}, M.R_LAD),
-      ("C. Long life +\nmedical costs", {**FULL, "med": M.STRESS}, M.R_LAD)]
+      ("C. Medical costs\n8.5% a year", {**FULL, "med": M.STRESS}, M.R_LAD)]
 s89 = [M.sim(MIX2[0], MIX2[1], rb, C89, **kw)[0] for _, kw, rb in SC]
 s95 = [M.sim(MIX2[0], MIX2[1], rb, C95, **kw)[0] for _, kw, rb in SC]
 fig, ax = plt.subplots(figsize=(W, 2.8))
@@ -378,7 +378,7 @@ with plt.rc_context({"font.size": 10.5}):
     for xi, a_, b_ in zip(x, s89, r89):
         ax.text(xi - w_/2 - 0.02, a_ + 0.02, pct(a_), ha="center", fontsize=9.5, color=INK)
         ax.text(xi + w_/2 + 0.02, b_ + 0.02, pct(b_), ha="center", fontsize=9.5, color=INK)
-    ax.set_xticks(x, ["Base", "Low-return\ndecade", "Inflation\nshock", "Long life,\nmedical"])
+    ax.set_xticks(x, ["Base", "Low-return\ndecade", "Inflation\nshock", "Medical\n8.5% a year"])
     ax.set_ylim(0, 1.3); ax.set_yticks([0, .25, .5, .75, 1])
     ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
     tidy(ax, "y"); ax.legend(loc="upper center", ncol=2, handlelength=1.2, bbox_to_anchor=(0.5, 1.02))

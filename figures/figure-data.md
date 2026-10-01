@@ -71,7 +71,7 @@ Model budget: HK$600K today, escalated 5% a year = HK$662K in 2028/29.
 | Full plan, base assumptions | 83% | 61% |
 | A. Low-return decade | 32% | 11% |
 | B. Inflation shock | 28% | 9% |
-| C. Long life + medical costs | 58% | 26% |
+| C. Medical costs 8.5% a year | 58% | 26% |
 
 A: equities 4.0%, ladder 2.5% · B: CPI 3.5% with medical 8.54% flat · C: medical 8.54% flat (read the 95 column).
 
@@ -109,4 +109,4 @@ Target = emergency 1,000,000 + education 2,567,698 (half deposits, half short bo
 | Full plan, base assumptions | 83% | 100% |
 | A. Low-return decade | 32% | 95% |
 | B. Inflation shock | 28% | 92% |
-| C. Long life + medical costs | 58% | 99% |
+| C. Medical costs 8.5% a year | 58% | 99% |

@@ -67,8 +67,9 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
 - Medical premiums (VHIS age curve × medical trend) are on top of the HK$780K; tier review to the Standard plan at
   Adrian's 75 (2047). Guardrails (Guyton–Klinger) from 2039, essentials 40% never cut, medical premiums don't trigger cuts.
 - Critical illness HK$1.5M each (sized by need); new cover ≈HK$100K in year 1. Adrian 40% equity, Carmen 60%.
-- ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core),
-  HSI ESG ETF 3039 (Hong Kong), green bonds. No thematic fund.
+- ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core,
+  Adrian 35%, Carmen 37%), green bond fund (ICMA principles, external review), MPF ESG fund. No thematic fund. No
+  separate Hong Kong holding: 3039 dropped 1 Oct (story S14), the family already depends on Hong Kong.
 - Card balance assumed revolving; tax assumed separate assessment (both stated as checks in §2).
 
 ## Writing and design rules (Pete's standing preferences)

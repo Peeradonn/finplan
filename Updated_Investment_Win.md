@@ -47,9 +47,8 @@ of its range.
 | **Treasury ladder 2037–2041** | Individual US Treasury notes, one rung per year | **20%** | 0–25% |
 | Green bonds | SFC-authorised green bond fund | 5% | 5–10% |
 | Global equity core (ESG index) | BOC-Prudential MSCI World ESG Index Fund | 25% | 20–30% |
-| ESG global equity | BOC-Prudential MSCI World ESG Index Fund (same fund) | 5% | 5–10% |
+| ESG global equity | BOC-Prudential MSCI World ESG Index Fund (same fund) | 10% | 5–15% |
 | Growth slice | Nasdaq-100 UCITS fund, e.g. CNDX | 5% | **3–8%** |
-| HK equity (ESG) | 3039 E Fund (HK) HSI ESG Enhanced Index ETF (0.20%) | 5% | 0–10% |
 | **Total** | | **Equity 40% · Bonds/cash 60%** | **Equity cap 45%** |
 
 - Expected return ≈ **5.0% net** at a 6% equity assumption, ≈ **5.4%** at 7% (was 4.8% before the yield rise).
@@ -65,7 +64,7 @@ Hong Kong fund carries no US estate-tax exposure (cost: 30% rather than 15% with
 year). `[CHECK: Win]` management fee and retail availability (BOCHK or a fund platform). Fallback if retail cannot
 buy it: an Irish-domiciled MSCI World ESG Leaders UCITS ETF, with the ESG counting rule widened to SFDR Article 8/9.
 
-**Hong Kong equity sleeve switched to 3039 (30 Sep, Pete):** E Fund (HK) HSI ESG Enhanced Index ETF, on the SFC's
+**Hong Kong equity holding dropped (1 Oct, Pete; story S14):** 3039's 5% (Adrian) and 2% (Carmen) moved into the BOC-Prudential ESG fund (Adrian 35% in all, Carmen 37%). The family's home, business and incomes already depend on Hong Kong; ESG stays at 25%. Superseded note kept for the record: **Hong Kong equity sleeve switched to 3039 (30 Sep, Pete):** E Fund (HK) HSI ESG Enhanced Index ETF, on the SFC's
 ESG list. Same market as the Tracker Fund (HSI ESG Enhanced Index, 77 stocks, full replication, within 0.2–0.3 pts of
 the index each half-year), HK$627M net assets (29 Sep 2026), management fee 0.20%. Adds ≈1.4 points to the ESG share
 for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking in 2025). Ryan keeps 2800: no ESG goal.
@@ -78,10 +77,9 @@ for ≈HK$200–400 a year. Chosen over 3029 (HK$17M, 0.29%, −0.78% tracking i
 | Core bonds | AGGU | 18% | 10–25% |
 | Green bonds | SFC-authorised green bond fund | 10% | 5–15% |
 | Medium / long Treasuries | 3450 (0.30%) / 3433 (0.20% mgmt) | 5% | 0–10% |
-| ESG global equity | BOC-Prudential MSCI World ESG Index Fund | 35% | 30–40% |
+| ESG global equity | BOC-Prudential MSCI World ESG Index Fund | 37% | 30–42% |
 | Global equity core | Global index fund | 15% | 10–20% |
 | Growth slice | Nasdaq-100 UCITS fund | 3% | 0–5% |
-| HK equity (ESG) | 3039 | 2% | 0–5% |
 | Asia REITs | 3447 (0.99%) | 5% | 0–5% |
 | Digital (optional) | HKEX spot BTC ETF, 3439 (0.30%) | 0–2% | from the growth slice |
 | **Total** | | **Equity 60% · Bonds/cash 38%** | **Equity cap 65%** |
