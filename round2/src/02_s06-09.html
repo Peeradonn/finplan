@@ -1,14 +1,16 @@
 
 <!-- 6 · The climb. Plan v7 §6. Four decisions as a staircase (the model's ladder values), each named under its own
-     step; the steps that answer questions 7 and 8 are tagged. One dimension line labelled with the title's second claim.
-     Builds: the start -> one step per decision. -->
+     step; the steps that answer questions 7 and 8 are tagged. Only the start and the end are large: the eye reads
+     33 -> 83. One dimension line labelled with the title's second claim. Builds: the start -> one step per decision. -->
 <section class="slide" id="s6">
   <header class="head">
-    <p class="kicker">How do we make it last?</p>
+    <p class="kicker">Will it last? · How we make it last</p>
     <h2>Four decisions about what they already own lift the odds from {{ladder_1_89}} to {{ladder_5_89}}, with no extra investment risk</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="n">7</i><i class="n">8</i></div>
   <div class="cl">
     <div class="chart">
+      <p class="cap">Chance the money lasts to Carmen's 89, in 10,000 simulated markets <span class="tag">MEASURED</span></p>
       <div class="plot">
         <span class="bl" style="bottom:{{ladder_1_89}}" data-b="2"></span>
         <div class="st base"><div class="bar" style="height:{{ladder_1_89}}"><span class="v">{{ladder_1_89}}</span></div></div>
@@ -18,13 +20,12 @@
         <div class="st top" data-b="5"><div class="bar" style="height:{{ladder_5_89}}"><span class="v">{{ladder_5_89}}</span></div></div>
       </div>
       <div class="labs">
-        <div class="base"><b>Investments alone</b><span>today</span></div>
+        <div class="base"><b>Investments alone</b><span>today (slide 5)</span></div>
         <div data-b="2"><i>1</i><b>A one-person budget</b><span>agreed now: the survivor lives on 70%</span></div>
         <div data-b="3"><i>2</i><small class="q">Question 7</small><b>The business sold in stages</b><span>2035–39, counted at HK$3.0M of HK$5.0M</span></div>
         <div data-b="4"><i>3</i><small class="q">Question 8</small><b>The home's value released</b><span>2037: reverse mortgage or downsize</span></div>
-        <div data-b="5"><i>4</i><b>The MPF turned into annuities</b><span>2037–39: fixed, for life (HKMC)</span><em>Insurance for the worst markets</em></div>
+        <div data-b="5"><i>4</i><b>The MPF turned into annuities</b><span>2037–39: fixed, for life (HKMC)</span></div>
       </div>
-      <p class="cap">Chance the money lasts to Carmen's 89, in 10,000 simulated markets <span class="tag">MEASURED</span></p>
     </div>
     <div class="side" data-b="5">
       <div class="dim">
@@ -33,33 +34,36 @@
       </div>
     </div>
   </div>
+  <p class="take" data-b="5">The idle 61% goes to work. What still breaks the plan in the other futures: medical bills.</p>
   <aside class="notes">
     FAHTAI: Thanks, Pete. The fix isn't more risk: it's four decisions about what they already own. Today:
     {{ladder_1_89}}. [▶] One: they agree now that after the first death, the survivor plans on 70% of the couple's budget:
-    decided in calm, not in grief. {{ladder_2_89}}. [▶] Two, which answers question seven: Carmen sells her business in
-    stages to her co-founder and managers. We count only HK$3 million of its five. {{ladder_3_89}}. [▶] Three, question
-    eight: in 2037 the home's value is released, by a reverse mortgage or by downsizing; they choose at 65.
-    {{ladder_4_89}}. [▶] Four: the MPF becomes annuities. Only one more point, but it's insurance for the worst markets.
-    {{ladder_5_89}}, without a cent more investment risk. So what still breaks the rest?
+    decided in calm, not in grief. [▶] Two, which answers question seven: Carmen sells her business in stages to her
+    co-founder and managers. We count only HK$3 million of its five. [▶] Three, question eight: in 2037 the home's value
+    is released, by a reverse mortgage or by downsizing; they choose at 65. [▶] Four: the MPF becomes annuities. Only one
+    more point, but it's insurance for the worst markets. {{ladder_5_89}}, without a cent more investment risk. So what
+    still breaks the rest? Medical bills.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st on">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Team model, 10,000 simulated markets; today's money (proposal p.4, p.11–12)</p><span class="pg">6</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st on">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Team model, 10,000 simulated markets (p.4, p.11–12)</p><span class="pg">6</span>
   </footer>
 </section>
 
-<!-- 7 · Two safeguards. Plan v7 §7. Left: the premium line (series.py): Flexi for life against the recommended path,
-     Standard from the review at Adrian's 75, the saving shaded. Right: the staircase continues: 83 -> 97 -> almost
-     every future (the crimson). Builds: Flexi and 83 -> the review and 97 -> the rules and the floor. -->
+<!-- 7 · Two safeguards, and the same ten futures. Plan v7 §7. Left: slide 4's premium line, now with the review at
+     Adrian's 75 (Standard plan) and the saving shaded. Right: slide 5's ten futures redrawn with the full plan: all reach
+     89 (true at >= 95% of markets lasting), faint circles where they used to run out. "10 of 10" answers slide 5's
+     "2 in 3". Builds: Flexi -> the review -> the futures, the count and the bar. -->
 <section class="slide" id="s7">
   <header class="head">
-    <p class="kicker">What still breaks it?</p>
-    <h2>A medical cover review at 75 lifts the odds to {{switch_89}}; two spending rules take them to almost every future</h2>
+    <p class="kicker">Will it last? · What still breaks it</p>
+    <h2>A medical review at 75 and two spending rules: now all ten typical futures reach Carmen's 89</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="sg">
     <div class="pl">
-      <p class="cap">Medical premiums their budget leaves out <span>· HK$ a year, today's money <span class="tag">MEASURED</span></span></p>
+      <p class="cap">Slide 4's premiums, reviewed at 75 <span class="tag">MEASURED</span></p>
       <div class="box">
         <span class="grid" style="top:0"><span>400K</span></span><span class="grid" style="top:25%"><span>300K</span></span><span class="grid" style="top:50%"><span>200K</span></span><span class="grid" style="top:75%"><span>100K</span></span>
         <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
@@ -68,47 +72,58 @@
           <polyline points="[[prem_rec_pts]]" fill="none" stroke="#1C1B1A" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke" data-b="2"/>
         </svg>
         <span class="sw" style="left:[[prem_switch_l]]" data-b="2"><span>Review at<br>Adrian's 75</span></span>
-        <p class="co r" style="left:[[prem_peak_l]];top:[[prem_peak_t]]"><b>[[prem_peak_v]]</b><span>Flexi plan, kept for life</span></p>
+        <p class="co r" style="left:[[prem_peak_l]];top:[[prem_peak_t]]"><b>[[prem_peak_v]]</b><span>Flexi, kept for life</span></p>
       </div>
-      <div class="xax"><span style="left:0">2037<i>Adrian retires</i></span><span style="left:34.48%">2047</span><span style="left:65.52%">2056</span><span style="left:100%">2066<i>Carmen 89</i></span></div>
-      <p class="key"><span><i></i>Flexi for life</span><span data-b="2"><i class="k"></i>Our plan: Standard from 75</span><span data-b="2"><i class="s"></i>The saving</span></p>
+      <div class="xax"><span style="left:0">2037</span><span style="left:34.48%">2047</span><span style="left:65.52%">2056</span><span style="left:100%">2066</span></div>
+      <p class="key"><span><i></i>Flexi for life</span><span data-b="2"><i class="k"></i>Standard from 75: about a third of the cost</span></p>
+      <p class="note" data-b="2">With the review alone, the money lasts in <b>{{switch_89}}</b> of markets <span class="tag">MEASURED</span></p>
     </div>
-    <div class="steps">
-      <div class="plot">
-        <div class="st was"><div class="bar" style="height:{{ladder_5_89}}"><span class="v">{{ladder_5_89}}</span></div></div>
-        <div class="st" data-b="2"><div class="bar" style="height:{{switch_89}}"><span class="v">{{switch_89}}</span></div></div>
-        <div class="st top" data-b="3"><div class="bar" style="height:{{guardswitch_89}}"><span class="v">≈{{guardswitch_89}}</span></div></div>
+    <div class="af" data-b="3">
+      <p class="cap">Slide 5's ten futures, with the full plan <span>· ○ where each ran out before</span></p>
+      <div class="tw2">
+        <div class="ret"><span>Both retired</span></div>
+        <div class="goal"><span>Carmen 89</span></div>
+        <div class="rows">
+          <div class="ln {{fut10_cls}}" style="--w:{{fut10_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut9_cls}}" style="--w:{{fut9_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut8_cls}}" style="--w:{{fut8_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut7_cls}}" style="--w:{{fut7_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut6_cls}}" style="--w:{{fut6_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut5_cls}}" style="--w:{{fut5_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut4_cls}}" style="--w:{{fut4_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut3_cls}}" style="--w:{{fut3_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut2_cls}}" style="--w:{{fut2_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln {{fut1_cls}}" style="--w:{{fut1_w}}"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+        </div>
       </div>
-      <div class="labs">
-        <div><b>Four decisions</b><span>slide 6</span></div>
-        <div data-b="2"><b>+ medical review</b><span>Standard plan at 75: about a third of the cost</span></div>
-        <div data-b="3"><b>+ spending rules</b><span>from 2039: almost every future</span></div>
-      </div>
-      <p class="floor" data-b="3">No raise after a bad year; a 10% trim only if withdrawals run 20% ahead; never below 70% of the budget. In the worst year in twenty Carmen still spends <b>{{guardswitch_worst5_real}}</b>, not {{fixswitch_worst5_real}}.</p>
+      <div class="ax2"><span style="left:0">2026</span><span style="left:100%;transform:translateX(-50%)">2066</span></div>
+      <div class="res"><p class="big">10<small>of</small>10</p><p class="t">now reach Carmen's 89<span>≈{{guardswitch_89}} of markets with the spending rules; in the worst year in twenty she still spends {{guardswitch_worst5_real}}, not {{fixswitch_worst5_real}}</span></p></div>
     </div>
   </div>
+  <p class="take" data-b="3">Question 1, answered: they retire on time and keep the way they live.</p>
   <aside class="notes">
-    FAHTAI: Medical bills. Kept for life, the Flexi plan's premiums peak at HK$375K a year. [▶] So at Adrian's 75 the
-    parents review the tier: the Standard plan costs about a third as much, and the odds rise to {{switch_89}}.
-    [▶] Then, from 2039, two spending rules: no raise after a bad year, and a 10% trim only if withdrawals run well ahead,
-    never below 70% of the budget. With them, the money lasts in almost every future; in the worst year in twenty, Carmen
-    still spends {{guardswitch_worst5_real}}, not {{fixswitch_worst5_real}}. Win.
+    FAHTAI: Medical bills. Slide four's premiums, kept on the Flexi plan for life, peak at HK$375K a year. [▶] So at
+    Adrian's 75 the parents review the tier: the Standard plan costs about a third as much, and the odds rise to
+    {{switch_89}}. [▶] Then, from 2039, two spending rules: no raise after a bad year, and a 10% trim only if withdrawals
+    run well ahead, never below 70% of the budget. Here are the same ten futures: now every one reaches Carmen's 89, and
+    in the worst year in twenty she still spends {{guardswitch_worst5_real}}. That answers question one. Win.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st on">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Team model; VHIS premium data; Guyton–Klinger spending rules (proposal p.5)</p><span class="pg">7</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st on">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Team model; VHIS data; Guyton–Klinger rules (p.5)</p><span class="pg">7</span>
   </footer>
 </section>
 
 <!-- 8 · Every dollar gets a job. Plan v7 §8. The parents' HK$7.7M outside the MPF and the home, today (grey) and in
-     our plan (ink, one segment per job, with its owner's face). ESG as a progress bar into the 20-25% goal band; the fee
-     saving. Answers questions 2 and 4. Builds: today -> our plan -> ESG and fees. -->
+     our plan (ink, one segment per job, with its owner's face and, for each parent, the mix). ESG as a progress bar into
+     the 20-25% goal band; the fee saving. Answers questions 2 and 4. Builds: today -> our plan -> ESG and fees. -->
 <section class="slide" id="s8">
   <header class="head">
-    <p class="kicker">Does one plan fit four people?</p>
+    <p class="kicker">Does it fit them? · The parents and Chloe</p>
     <h2>Every dollar gets a job: Chloe's degree funded today, a portfolio for each parent, and ESG at 25%</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="a">1</i><i class="n">2</i><i>3</i><i class="n">4</i><i>5</i><i>6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="jb">
     <div class="row"><p>Today</p>
       <div class="seg now"><i style="flex:2.5">Cash<small>HK$2.5M</small></i><i style="flex:1.35">Bonds<small>HK$1.35M</small></i><i class="e" style="flex:3.85">Shares, in funds at about 1.5% a year<small>HK$3.85M</small></i></div>
@@ -134,28 +149,31 @@
       <p class="fee"><b>≈HK$45K a year</b>saved in fees by moving to index funds averaging about 0.5% a year</p>
     </div>
   </div>
+  <p class="take" data-b="3">Questions 2 and 4, answered. Ryan's crypto needs a plan of its own.</p>
   <aside class="notes">
-    WIN: Thanks, Fahtai. The parents hold HK$7.7 million outside their MPF. Today a third of it is cash, and their shares
-    sit in funds charging about 1.5% a year. [▶] In our plan every dollar gets a job: a twelve-month reserve;
-    HK$2.57 million for Chloe's degree, our answer to question two, kept in Hong Kong dollars until she accepts an offer;
-    and a portfolio each. Adrian's is 40% shares, with US Treasuries maturing one a year from 2037; Carmen's is 60% shares,
-    led by ESG funds. [▶] That takes ESG from 11% to 25%, Carmen's goal, and index funds save about HK$45K a year in fees.
+    WIN: Thanks, Fahtai. The money lasts; now, does it fit each of them? The parents hold HK$7.7 million outside their
+    MPF. Today a third of it is cash, and their shares sit in funds charging about 1.5% a year. [▶] In our plan every
+    dollar gets a job: a twelve-month reserve; HK$2.57 million for Chloe's degree, kept in Hong Kong dollars until she
+    accepts an offer; and a portfolio each, matched to their risk. Adrian's is 40% shares, with US Treasuries maturing one
+    a year from 2037; Carmen's is 60% shares, led by ESG funds. [▶] That takes ESG from 11% to 25%, Carmen's goal, and
+    index funds save about HK$45K a year in fees.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st on">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Case; proposal §5–§6; SFC-listed ESG funds; fees from fund documents</p><span class="pg">8</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st on">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Case; proposal §5–§6; SFC-listed ESG funds</p><span class="pg">8</span>
   </footer>
 </section>
 
 <!-- 9 · Ryan. Plan v7 §9. His crypto share of his wealth on the model's glide path (proposal Figure 18, saving 30%),
-     the 20% cap and the trim band; his own plan beside it. Answers questions 3 and 6. Path in the chart's own box:
-     x = (age - 24) / 11, y = (80 - share) / 80. Builds: today -> the path and his plan -> the band. -->
+     the 20% cap and the trim band; his own plan beside it. Answers question 3. Path in the chart's own box:
+     x = (age - 24) / 11, y = (80 - share) / 80. Builds: today -> the path and his plan -> the band and the bar. -->
 <section class="slide" id="s9">
   <header class="head">
-    <p class="kicker">And Ryan's crypto?</p>
+    <p class="kicker">Does it fit them? · Ryan</p>
     <h2>Ryan keeps his crypto but builds his own plan around it: its share glides from 74% to 20% by 35</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="a">1</i><i class="a">2</i><i class="n">3</i><i class="a">4</i><i>5</i><i>6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="ry">
     <div class="gp">
       <p class="cap">Crypto as a share of Ryan's wealth <span>· saving 30% of his pay</span></p>
@@ -177,7 +195,7 @@
       <div class="xax"><span style="left:0">24<i>2026</i></span><span style="left:54.5%">30<i>2032</i></span><span style="left:100%">35<i>2037</i></span></div>
     </div>
     <div class="his">
-      <div class="who"><span class="av"><img src="inline:img/ryan.jpg" alt="Ryan, illustration"></span><p>Ryan, 24<span>High risk · HK$500K of digital assets · questions 3 and 6</span></p></div>
+      <div class="who"><span class="av"><img src="inline:img/ryan.jpg" alt="Ryan, illustration"></span><p>Ryan, 24<span>High risk · HK$500K of digital assets · question 3</span></p></div>
       <ul data-b="2">
         <li><b>It stays his money</b>About 2% of the family's wealth</li>
         <li><b>No new money into crypto</b>Its share falls without selling</li>
@@ -187,15 +205,16 @@
       </ul>
     </div>
   </div>
+  <p class="take" data-b="3">Every voice has a place. But all of it needs both incomes to reach retirement.</p>
   <aside class="notes">
     WIN: And Ryan. He keeps his HK$500K of crypto: it's his money, about 2% of the family's wealth, and a forced sale
     could push him to unregulated channels. [▶] But it gets no new money. He saves 30% of his pay, mostly into a world
     index fund, so crypto falls from 74% of his wealth to 20% by 35, without selling. [▶] If a rally lifts it more than
-    10 points above that path, he trims back. Lookbua.
+    10 points above that path, he trims back. Every voice has a place. Lookbua.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st on">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Proposal §7 (Figures 17–18); crypto held at today's value</p><span class="pg">9</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st on">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Proposal §7 (Figures 17–18); crypto at today's value</p><span class="pg">9</span>
   </footer>
 </section>

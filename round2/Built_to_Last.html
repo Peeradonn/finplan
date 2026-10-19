@@ -84,6 +84,18 @@ p,li,span,dd,b{text-wrap:pretty}
 .src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
 
+
+/* ---------------- the thread: the family's eight questions (top right) and the takeaway bar ----------------
+   The tracker shows where the talk is in the family's own questions: ink = answered, crimson = answered on this
+   slide, outline = still open. The bar (e-Sentry's anatomy) states the slide's conclusion and hands over to the next
+   slide; read in order, the titles and the bars make the whole argument. */
+.qt{position:absolute;top:35px;right:48px;display:flex;align-items:center;gap:5px}
+.qt>span{font:italic 500 16px/1 var(--disp);color:var(--slate);margin-right:7px}
+.qt i{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--grey);color:var(--quiet);font:700 11px/1 var(--head);font-style:normal;display:flex;align-items:center;justify-content:center;background:var(--paper)}
+.qt i.a{background:var(--ink);border-color:var(--ink);color:#fff}
+.qt i.n{background:var(--accent);border-color:var(--accent);color:#fff}
+.take{flex:none;margin-top:14px;background:var(--ink);color:#fff;font:600 17px/1.3 var(--head);padding:11px 24px;border-radius:3px;text-align:center;text-wrap:balance}
+
 /* ---------------- 1 cover, 15 close: the title on the crimson rule, the photograph ---------------- */
 .cover{padding:0;flex-direction:row}
 .cover .left{flex:1;padding:50px 56px 44px;display:flex;flex-direction:column}
@@ -127,18 +139,42 @@ p,li,span,dd,b{text-wrap:pretty}
 .paper .k>span{display:block;font-size:15px;color:var(--slate);margin-top:6px;white-space:nowrap}
 .paper .k.main b{font-size:80px;color:var(--accent);letter-spacing:-.8px}
 
-/* ---------------- 3 their eight questions: the first large, the other seven listed ----------------
-   Question 1 is the focal point (crimson number); all eight return answered on slide 12, by the same numbers. */
-.qs{flex:1;display:flex;gap:56px;margin-top:28px;min-height:0}
-.qs .one{width:470px;flex:none;display:flex;flex-direction:column}
-.qs .one .num{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#fff;font:600 34px/1 var(--disp)}
-.qs .one p{font:600 38px/1.16 var(--disp);letter-spacing:-.3px;margin-top:20px}
-.qs .one .ctx{display:block;font-size:15px;line-height:1.4;color:var(--slate);margin-top:18px;padding-top:12px;border-top:1px solid var(--rule)}
-.qs ol{flex:1;display:flex;flex-direction:column;border-top:1.5px solid var(--ink)}
-.qs li{display:grid;grid-template-columns:42px 1fr;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule)}
-.qs li .qn{width:28px;height:28px;font-size:13.5px}
-.qs li b{display:block;font:700 16.5px/1.25 var(--head)}
-.qs li p span{display:block;font-size:14px;line-height:1.3;color:var(--slate);margin-top:2px}
+/* ---------------- 3 and 12: the eight questions in the talk's three parts; 12 is the same page, answered ----------------
+   Part 1 is wider and holds question 1 (the focal point, crimson); parts 2 and 3 list theirs. Slide 12 repeats the
+   layout with each answer in place, so the audience sees the same eight close. A dated strip under 12 is the roadmap:
+   a true sequence, so a line. */
+.mp{display:grid;grid-template-columns:1.35fr 1fr 1fr;column-gap:36px;margin-top:22px}
+.mp .pt{display:flex;flex-direction:column;min-width:0}
+.mp h3{display:flex;align-items:center;gap:10px;font:italic 500 23px/1.15 var(--disp);padding-bottom:10px;border-bottom:1.5px solid var(--ink)}
+.mp h3 i{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink);font:600 15px/1 var(--disp);font-style:normal;flex:none}
+.mp .q1{display:grid;grid-template-columns:60px 1fr;column-gap:12px;align-items:start;margin-top:16px}
+.mp .q1 .num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;font:600 28px/1 var(--disp)}
+.mp .q1 p{font:600 29px/1.16 var(--disp);letter-spacing:-.2px;font-variant-numeric:lining-nums}
+.mp .ctx{font-size:14px;line-height:1.4;color:var(--slate);margin:10px 0 4px 72px}
+.mp ul{margin-top:6px}
+.mp li{display:grid;grid-template-columns:38px 1fr;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule)}
+.mp li .qn{width:28px;height:28px;font-size:13px}
+.mp li p b{display:block;font:700 16px/1.25 var(--head)}
+.mp li p span{display:block;font-size:14px;line-height:1.32;color:var(--slate);margin-top:2px}
+/* answered (12): the topic quiet, the answer loud; the circles filled */
+.mp.ans li .qn{background:var(--ink);color:#fff}
+.mp.ans li p b{font:600 13px/1.2 var(--head);color:var(--slate)}
+.mp.ans li p span{font:700 15px/1.3 var(--head);color:var(--ink);margin-top:3px}
+#s3 .mp{margin-top:30px}
+#s3 .mp h3{font-size:26px}
+#s3 .mp .q1 p{font-size:34px}
+#s3 .mp .q1{margin-top:22px}
+#s3 .mp li{padding:16px 0}
+#s3 .mp li p b{font-size:18px}
+#s3 .mp li p span{font-size:15.5px}
+#s3 .mp .ctx{font-size:15px}
+.road{position:relative;display:flex;margin-top:auto;padding-top:8px}
+.road::before{content:"";position:absolute;left:7%;right:7%;top:15px;height:2px;background:var(--grey)}
+.road p{position:relative;flex:1;text-align:center;font-size:13px;line-height:1.3;color:var(--slate);padding-top:22px}
+.road p::before{content:"";position:absolute;left:50%;top:0;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;background:var(--paper);border:2.5px solid var(--ink)}
+.road p b{display:block;font:600 18px/1.15 var(--disp);color:var(--ink);font-variant-numeric:lining-nums}
+.road p.now::before{background:var(--accent);border-color:var(--accent)}
+.road p.now b{color:var(--accent)}
 
 /* ---------------- 4 the diagnosis: what they own as one bar; the premiums the budget leaves out ----------------
    The bar is to scale (case balance sheet); a bracket groups the home and the business (61%, the crimson). The
@@ -147,7 +183,7 @@ p,li,span,dd,b{text-wrap:pretty}
 .dg .own{width:480px;flex:none;display:flex;flex-direction:column}
 .dg .cap,.pl .cap{font:700 16px/1.25 var(--head)}
 .dg .cap span,.pl .cap span{font-weight:400;color:var(--slate)}
-.dg .bar{display:flex;gap:16px;height:356px;margin-top:18px}
+.dg .bar{display:flex;gap:16px;height:330px;margin-top:18px}
 .dg .stack{width:78px;flex:none;display:flex;flex-direction:column;gap:2px}
 .dg .stack i{display:block;border-radius:2px}
 .dg .stack i.k{background:var(--ink)}
@@ -162,7 +198,7 @@ p,li,span,dd,b{text-wrap:pretty}
 .dg .brk p b{display:block;font:600 66px/1 var(--disp);color:var(--accent);font-variant-numeric:lining-nums}
 .dg .brk p span{display:block;font:700 15px/1.3 var(--head);margin-top:6px;width:150px}
 .pl{flex:1;min-width:0;display:flex;flex-direction:column}
-.pl .box{position:relative;height:318px;margin:30px 0 0 50px}
+.pl .box{position:relative;height:286px;margin:30px 0 0 50px}
 .pl svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .pl .grid{position:absolute;left:0;right:0;border-top:1px solid var(--rule)}
 .pl .grid span{position:absolute;right:calc(100% + 8px);top:-8px;font:600 12px/1 var(--head);color:var(--quiet);white-space:nowrap}
@@ -192,8 +228,8 @@ p,li,span,dd,b{text-wrap:pretty}
 .tw .ret span{position:absolute;top:7px;left:10px;font:600 13px/1 var(--head);color:var(--slate);white-space:nowrap}
 .tw .goal{position:absolute;top:-28px;bottom:-4px;left:100%;border-left:2px dashed var(--ink)}
 .tw .goal span{position:absolute;top:7px;right:8px;font:700 13px/1 var(--head);white-space:nowrap}
-.tw .rows{position:relative;display:flex;flex-direction:column;gap:8px;padding:10px 0 8px}
-.tw .ln{position:relative;height:23px}
+.tw .rows{position:relative;display:flex;flex-direction:column;gap:6px;padding:8px 0 6px}
+.tw .ln{position:relative;height:21px}
 .tw .ln>i{position:absolute;left:0;top:50%;height:4px;margin-top:-2px;width:var(--w);background:var(--grey);border-radius:2px}
 .tw .ln>b{position:absolute;top:50%;left:var(--w);width:24px;height:24px;margin:-12px 0 0 -12px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff}
 .tw .ln>b .ic{width:14px;height:14px;stroke-width:3.2}
@@ -225,12 +261,12 @@ p,li,span,dd,b{text-wrap:pretty}
    One annotation: a dimension line labelled with the title's second claim. Step sizes never shown (plan §9). */
 .cl{flex:1;display:flex;gap:30px;margin-top:2px;min-height:0;margin-bottom:6px}
 .cl .chart{width:900px;flex:none;display:flex;flex-direction:column}
-.cl .plot{position:relative;height:262px;margin-top:58px;display:flex;gap:30px}
+.cl .plot{position:relative;height:236px;margin-top:56px;display:flex;gap:30px}
 .cl .st{flex:1;position:relative}
 .cl .st .bar{position:absolute;left:0;right:0;bottom:0;background:#E6E4E0;border-top:4px solid var(--ink)}
-.cl .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 36px/1 var(--disp);font-variant-numeric:lining-nums}
+.cl .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 26px/1 var(--disp);font-variant-numeric:lining-nums;color:var(--slate)}
 .cl .st.base .bar{background:var(--mist);border-top-color:var(--grey)}
-.cl .st.base .v{color:var(--grey)}
+.cl .st.base .v{color:var(--ink);font-size:40px}
 .cl .st.top .bar{border-top-color:var(--accent)}
 .cl .st.top .v{color:var(--accent);font-size:54px}
 .cl .bl{position:absolute;left:-8px;right:-8px;border-top:2px dashed var(--grey);z-index:1}
@@ -243,39 +279,51 @@ p,li,span,dd,b{text-wrap:pretty}
 .cl .labs .base b{color:var(--slate)}
 .cl .labs .q{display:inline-block;margin-left:6px;font:700 11.5px/1 var(--head);color:var(--slate);border:1.5px solid var(--grey);border-radius:10px;padding:3px 7px;vertical-align:4px}
 .cl .side{flex:1;min-width:0;position:relative}
-.cl .dim{position:absolute;left:0;top:58px;height:262px;width:100%}
+.cl .dim{position:absolute;left:0;top:76px;height:236px;width:100%}
 .cl .dim .ln{position:absolute;left:10px;width:14px;border:2px solid var(--ink);border-left:0}
 .cl .dim .t{position:absolute;left:38px;transform:translateY(-50%);font:600 22px/1.2 var(--disp)}
 .cl .dim .t span{display:block;font:400 14.5px/1.38 var(--text);color:var(--slate);margin-top:6px}
-.cl .cap{margin-top:auto;padding-bottom:4px;font-size:13.5px;color:var(--slate)}
+.cl .cap{margin-top:6px;font-size:13.5px;color:var(--slate)}
 
-/* ---------------- 7 two safeguards: the premium line with the review at 75; the staircase's last steps ----------------
+/* ---------------- 7 two safeguards: slide 4's premium line with the review at 75; slide 5's futures beside it ----------------
    Left: Flexi for life (grey) against the recommended path (ink: Standard from 2047), the saving shaded.
    Right: the staircase continues from slide 6; the last step (spending rules) is the crimson. */
 .sg{flex:1;display:flex;gap:46px;margin-top:14px;min-height:0}
-.sg .pl{flex:none;width:640px}
-.sg .pl .box{height:262px}
+.sg .pl{flex:none;width:560px}
+.sg .pl .box{height:236px}
 .sg .sw{position:absolute;top:-24px;bottom:0;border-left:2px dashed var(--ink)}
 .sg .sw span{position:absolute;top:0;right:10px;font:700 13px/1.25 var(--head);white-space:nowrap;text-align:right}
 .sg .key{display:flex;gap:22px;font-size:13.5px;color:var(--slate);margin-top:8px}
 .sg .key i{display:inline-block;width:22px;height:3px;vertical-align:4px;margin-right:7px;background:var(--grey)}
 .sg .key i.k{background:var(--ink)}
 .sg .key i.s{height:10px;vertical-align:1px;background:#E3E0D9}
-.sg .steps{flex:1;min-width:0;display:flex;flex-direction:column}
-.sg .plot{position:relative;height:262px;margin-top:72px;display:flex;gap:22px}
-.sg .st{flex:1;position:relative}
-.sg .st .bar{position:absolute;left:0;right:0;bottom:0;background:#E6E4E0;border-top:4px solid var(--ink)}
-.sg .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 36px/1 var(--disp);font-variant-numeric:lining-nums;white-space:nowrap}
-.sg .st.was .bar{background:var(--mist);border-top-color:var(--grey)}
-.sg .st.was .v{color:var(--grey)}
-.sg .st.top .bar{border-top-color:var(--accent)}
-.sg .st.top .v{color:var(--accent);font-size:50px}
-.sg .labs{display:flex;gap:22px;border-top:2px solid var(--ink);padding-top:10px}
-.sg .labs>div{flex:1;min-width:0}
-.sg .labs b{display:block;font:700 14.5px/1.25 var(--head)}
-.sg .labs span{display:block;font-size:13px;line-height:1.3;color:var(--slate);margin-top:3px}
-.sg .floor{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule);font-size:14.5px;line-height:1.4;color:var(--slate)}
-.sg .floor b{color:var(--ink)}
+/* 7 (right): the same ten futures as slide 5, with the full plan. Same rows, same order; every line now reaches
+   Carmen's 89 (true when at least 95% of markets last: the 5th to 95th percentile futures all last). Faint circles
+   mark where each ran out on slide 5. The count is the crimson, answering slide 5's "2 in 3". */
+.af{flex:1;min-width:0;display:flex;flex-direction:column}
+.af .cap{font:700 16px/1.25 var(--head)}
+.af .cap span{font-weight:400;color:var(--slate)}
+.tw2{position:relative;margin:28px 34px 0 0}
+.tw2 .ret{position:absolute;top:-22px;bottom:-2px;left:32.5%;right:0;background:var(--mist)}
+.tw2 .ret span{position:absolute;top:5px;left:8px;font:600 12px/1 var(--head);color:var(--slate);white-space:nowrap}
+.tw2 .goal{position:absolute;top:-22px;bottom:-2px;left:100%;border-left:2px dashed var(--ink)}
+.tw2 .goal span{position:absolute;top:5px;right:6px;font:700 12px/1 var(--head);white-space:nowrap}
+.tw2 .rows{position:relative;display:flex;flex-direction:column;gap:7px;padding:10px 0}
+.tw2 .ln{position:relative;height:17px}
+.tw2 .ln>i{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:calc(100% + 18px);background:var(--ink);border-radius:2px}
+.tw2 .ln>b{position:absolute;top:50%;left:calc(100% + 18px);width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.tw2 .ln>b .ic{width:11px;height:11px;stroke-width:3.4}
+.tw2 .ln .gh{position:absolute;top:50%;left:var(--w);width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2px solid #B9B5AE;background:var(--paper)}
+.tw2 .ln.lasts .gh{display:none}
+.af .ax2{position:relative;height:28px;margin-right:34px;border-top:1.5px solid var(--ink)}
+.af .ax2 span{position:absolute;top:6px;font:700 12px/1.25 var(--head);white-space:nowrap}
+.af .res{display:flex;align-items:center;gap:18px;margin-top:auto;padding-top:8px}
+.af .res .big{font:600 76px/.9 var(--disp);color:var(--accent);font-variant-numeric:lining-nums;white-space:nowrap}
+.af .res .big small{font-size:34px;font-style:italic;font-weight:500;margin:0 6px}
+.af .res p.t{font:700 16px/1.3 var(--head)}
+.af .res p.t span{display:block;font:400 13.5px/1.38 var(--text);color:var(--slate);margin-top:4px}
+.sg .note{font-size:13.5px;line-height:1.4;color:var(--slate);margin-top:10px}
+.sg .note b{color:var(--ink)}
 
 /* ---------------- 8 every dollar gets a job: today and our plan as two bars of the same money ----------------
    Both bars are the parents' HK$7.7M outside the MPF and the home (case; proposal §5). Grey today; ink segments for
@@ -422,24 +470,6 @@ p,li,span,dd,b{text-wrap:pretty}
 .ss .side b{display:block;font:600 36px/1 var(--disp);font-variant-numeric:lining-nums}
 .ss .side span{display:block;font-size:14px;line-height:1.38;color:var(--slate);margin-top:6px}
 
-/* ---------------- 12 the answers: the roadmap in three phases, each action tagged with its question ----------------
-   A line across the top means sequence (the order the actions happen). The first year is the focal phase (crimson). */
-.rm{flex:1;display:grid;grid-template-columns:1.1fr .9fr 1fr;column-gap:34px;margin-top:22px;min-height:0}
-.rm .ph{display:flex;flex-direction:column;min-width:0}
-.rm .ph h3{position:relative;font:italic 500 23px/1.15 var(--disp);padding-bottom:10px;border-bottom:3px solid var(--grey)}
-.rm .ph h3 span{display:block;font:600 12.5px/1.2 var(--head);font-style:normal;color:var(--slate);margin-top:3px}
-.rm .ph.now h3{border-bottom-color:var(--accent);color:var(--accent)}
-.rm .ph h3::after{content:"";position:absolute;right:-34px;bottom:-3px;width:34px;height:3px;background:var(--grey)}
-.rm .ph:last-child h3::after{display:none}
-.rm .it{display:grid;grid-template-columns:32px 1fr;column-gap:8px;padding:9px 0;border-bottom:1px solid var(--rule)}
-.rm .it .qn{margin-top:1px}
-.rm .it .qn.none{border-style:dotted;color:var(--quiet);border-color:var(--grey)}
-.rm .it b{display:block;font:700 14.5px/1.28 var(--head)}
-.rm .it p span{display:block;font-size:13px;line-height:1.3;color:var(--slate);margin-top:1px}
-.rm .lg{margin-top:auto;padding-top:12px}
-.rm .lg b{display:block;font:600 28px/1.1 var(--disp);font-variant-numeric:lining-nums}
-.rm .lg span{display:block;font-size:13px;line-height:1.35;color:var(--slate);margin-top:3px}
-
 /* ---------------- 13 Wealth Management Connect: two regions, two flows, the advice rule ----------------
    A schematic, not a map. Southbound carries the rule that matters to advisers (HKMA): no solicitation unless asked. */
 .wm{flex:1;display:flex;flex-direction:column;margin-top:22px;min-height:0}
@@ -528,7 +558,7 @@ p,li,span,dd,b{text-wrap:pretty}
 </section>
 
 <!-- 2 · The Wongs, on paper. Plan v7 §2. Four people with their wants and risk profiles; three numbers that say
-     "secure". Focal point: HK$24.4M. Builds: one person as each is named, then the numbers. -->
+     "secure". Focal point: HK$24.4M. Builds: one person as each is named, then the numbers and the bar. -->
 <section class="slide" id="s2">
   <header class="head">
     <p class="kicker">The Wongs</p>
@@ -562,50 +592,65 @@ p,li,span,dd,b{text-wrap:pretty}
     <p class="k"><b>41%</b><span>of after-tax income saved</span></p>
     <p class="k"><b>10%</b><span>debt, as a share of assets</span></p>
   </div>
+  <p class="take" data-b="5">Strong on every count a bank would check, yet they came to us with eight questions.</p>
   <aside class="notes">
     PETE: Meet the Wongs. Adrian, 54, is prudent: he wants his capital, his retirement and his health protected.
     [▶] Carmen, 49, runs her own business and wants their money to reflect her values. [▶] Ryan, 24, has just started
     work, already holds crypto, and wants his independence. [▶] Chloe, 16, starts university in 2028, here or abroad.
-    [▶] On paper, they're secure: HK$24.4 million, 41% of their income saved, very little debt.
+    [▶] On paper, they're secure: HK$24.4 million, 41% of their income saved, very little debt. Yet they came to us
+    with eight questions.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st on">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Case: profile, risk profiles, balance sheet. Portraits: AI-generated, fictional</p><span class="pg">2</span>
+    <nav class="line"><span class="st on">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Case. Portraits: AI-generated, fictional</p><span class="pg">2</span>
   </footer>
 </section>
 
-<!-- 3 · Their eight questions. Plan v7 §3. The case's "Family Concerns", shortened, in the case's order. Question 1 is
-     the focal point; all eight return, answered, on slide 12. Builds: question 1 -> the other seven. -->
+<!-- 3 · Their eight questions: the talk's map. Plan v7 §3. The case's "Family Concerns", shortened, grouped into the
+     three parts of the talk in the order we answer them. Question 1 is the focal point. Slide 12 is this page again,
+     answered. Builds: part 1 -> part 2 -> part 3 and the bar. -->
 <section class="slide" id="s3">
   <header class="head">
     <p class="kicker">What they asked us</p>
     <h2>The Wongs asked us eight questions; the first decides the rest</h2>
   </header>
-  <div class="qs">
-    <div class="one">
-      <span class="num">1</span>
-      <p>Can Adrian and Carmen retire when they want, and keep the way they live?</p>
-      <span class="ctx">They plan to retire at 65 and 62, in 2037 and 2039, on HK$780K a year in today's money <span class="tag">CASE</span></span>
+  <div class="mp">
+    <div class="pt">
+      <h3><i>1</i>Will it last?</h3>
+      <div class="q1"><span class="num">1</span><p>Can Adrian and Carmen retire when they want, and keep the way they live?</p></div>
+      <p class="ctx">At 65 and 62, in 2037 and 2039, on HK$780K a year <span class="tag">CASE</span></p>
+      <ul>
+        <li><span class="qn">7</span><p><b>Carmen's business</b><span>Reduce, restructure or sell it over time?</span></p></li>
+        <li><span class="qn">8</span><p><b>The home</b><span>Keep it, downsize, or move district?</span></p></li>
+      </ul>
     </div>
-    <ol data-b="2">
-      <li><span class="qn">2</span><p><b>Chloe's degree</b><span>How to pay for it, in Hong Kong or abroad</span></p></li>
-      <li><span class="qn">3</span><p><b>The family's crypto</b><span>Is it appropriate, and how should it be managed?</span></p></li>
-      <li><span class="qn">4</span><p><b>ESG</b><span>How to invest by their values, credibly</span></p></li>
-      <li><span class="qn">5</span><p><b>Insurance</b><span>Enough for death, illness, disability, hospital, business?</span></p></li>
-      <li><span class="qn">6</span><p><b>Passing wealth on</b><span>Money and responsibility between the generations</span></p></li>
-      <li><span class="qn">7</span><p><b>Carmen's business</b><span>Reduce, restructure or sell it over time?</span></p></li>
-      <li><span class="qn">8</span><p><b>The home</b><span>Keep it, downsize, or move district in retirement?</span></p></li>
-    </ol>
+    <div class="pt" data-b="2">
+      <h3><i>2</i>Does it fit each of them?</h3>
+      <ul>
+        <li><span class="qn">2</span><p><b>Chloe's degree</b><span>How to pay for it, here or abroad?</span></p></li>
+        <li><span class="qn">4</span><p><b>ESG</b><span>How to invest by their values, credibly?</span></p></li>
+        <li><span class="qn">3</span><p><b>The family's crypto</b><span>Is it appropriate, and how to manage it?</span></p></li>
+      </ul>
+    </div>
+    <div class="pt" data-b="3">
+      <h3><i>3</i>What could break it?</h3>
+      <ul>
+        <li><span class="qn">5</span><p><b>Insurance</b><span>Enough for death, illness, disability, hospital, business?</span></p></li>
+        <li><span class="qn">6</span><p><b>Passing wealth on</b><span>Money and responsibility between the generations</span></p></li>
+      </ul>
+    </div>
   </div>
+  <p class="take" data-b="3" style="margin-top:auto">Three parts, in this order: will it last, does it fit each of them, and what could break it.</p>
   <aside class="notes">
     PETE: They brought us eight questions. The first decides the rest: can Adrian and Carmen retire when they want, and
-    keep the way they live? [▶] The other seven, Chloe's degree, Ryan's crypto, ESG, insurance, passing wealth on,
-    Carmen's business and their home, all draw on the same money. So we start with the first.
+    keep the way they live? Two more hang on it: Carmen's business and their home. [▶] Then, does the plan fit each of
+    them: Chloe's degree, their values, Ryan's crypto. [▶] And what could break it: their insurance, and passing wealth
+    on. We take them in that order.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st on">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <nav class="line"><span class="st on">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
     <p class="src">Case: the family's concerns (p.5), shortened</p><span class="pg">3</span>
   </footer>
 </section>
@@ -615,9 +660,10 @@ p,li,span,dd,b{text-wrap:pretty}
      leaves out, the model's series (series.py), one callout at the peak. Builds: the bar -> the bracket -> the premiums. -->
 <section class="slide" id="s4">
   <header class="head">
-    <p class="kicker">Question 1: are they on track?</p>
+    <p class="kicker">Will it last? · What stands in the way</p>
     <h2>Their wealth is in the wrong shape: 61% pays no income in retirement, and medical bills grow outside the budget</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i></div>
   <div class="dg">
     <div class="own">
       <p class="cap">What they own <span>· HK$27.2M of assets <span class="tag">CASE</span></span></p>
@@ -633,7 +679,7 @@ p,li,span,dd,b{text-wrap:pretty}
       </div>
     </div>
     <div class="pl" data-b="3">
-      <p class="cap">Medical premiums their budget leaves out <span>· HK$ a year, today's money <span class="tag">MEASURED</span></span></p>
+      <p class="cap">Medical premiums their budget leaves out <span>· a year, today's money <span class="tag">MEASURED</span></span></p>
       <div class="box">
         <span class="grid" style="top:0"><span>400K</span></span><span class="grid" style="top:25%"><span>300K</span></span><span class="grid" style="top:50%"><span>200K</span></span><span class="grid" style="top:75%"><span>100K</span></span>
         <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
@@ -644,9 +690,9 @@ p,li,span,dd,b{text-wrap:pretty}
         <p class="tn" style="left:calc(65.52% + 34px);top:64%">one policy after Adrian's death<br>(modelled at 84)</p>
       </div>
       <div class="xax"><span style="left:0">2037<i>Adrian retires</i></span><span style="left:31.03%">2046</span><span style="left:65.52%">2056</span><span style="left:100%">2066<i>Carmen 89</i></span></div>
-      <p class="foot2">Group cover ends when they retire; the HK$780K budget holds only HK$65K for medical cover.</p>
     </div>
   </div>
+  <p class="take" data-b="3">Rich in assets, poor in income: the problem isn't the markets.</p>
   <aside class="notes">
     PETE: Are they on track? Not yet, and not because of the markets. [▶] Look at what they own: 61% of it, the home and
     Carmen's business, pays them nothing once they stop working. [▶] And the bills that grow fastest sit outside their
@@ -655,22 +701,24 @@ p,li,span,dd,b{text-wrap:pretty}
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st on">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Case balance sheet; team model, premiums from VHIS data (proposal p.2–5)</p><span class="pg">4</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st on">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Case; team model, VHIS premium data (p.2–5)</p><span class="pg">4</span>
   </footer>
 </section>
 
 <!-- 5 · The consequence. Plan v7 §5. Ten typical futures from the model, each a line across Carmen's life that stops
-     where the money runs out. Crimson only on the crosses. Builds: the frame -> the ten futures -> the bracket and count.
+     where the money runs out. Crimson only on the crosses. Slide 7 redraws the same ten with the plan.
+     Builds: the frame -> the ten futures -> the bracket, the count and the bar.
      Carmen-at-89 portrait: placeholder until Pete's image arrives (img/carmen89.jpg). -->
 <section class="slide" id="s5">
   <header class="head">
-    <p class="kicker">So, will the money last?</p>
+    <p class="kicker">Will it last? · If nothing changes</p>
     <h2>Living on their investments alone, the money runs out before Carmen turns 89 in two futures out of three</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i></div>
   <div class="tw">
     <div class="chart">
-      <p class="cap">Ten typical futures <span>· investments, MPF and cash only; the home and business untouched</span></p>
+      <p class="cap">Ten typical futures <span>· the 5th to 95th percentile; investments, MPF and cash only</span></p>
       <div class="plot">
         <div class="ret"><span>Both retired</span></div>
         <div class="goal"><span>Carmen turns 89</span></div>
@@ -691,7 +739,6 @@ p,li,span,dd,b{text-wrap:pretty}
       <div class="axis">
         <span>2026<i>Carmen 49</i></span><span style="left:25%">2036<i>59</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79</i></span><span style="left:100%">2066<i>89</i></span>
       </div>
-      <p class="how">Each line is one future: the 5th to 95th percentile of when the money runs out. Spending HK$780K a year plus medical premiums.</p>
     </div>
     <div class="side">
       <div class="who"><div class="ph">Carmen at 89: illustration to come</div><p>Carmen, 89<span>in 2066: the case's life expectancy, the age we plan to</span></p></div>
@@ -702,29 +749,33 @@ p,li,span,dd,b{text-wrap:pretty}
       </div>
     </div>
   </div>
+  <p class="take" data-b="3">More investment risk can't fix this; decisions about what they already own can.</p>
   <aside class="notes">
     PETE: So what happens if they simply live on their investments? We played out their retirement in 10,000 simulated
     markets, with equities at 6% a year, inflation at 2.5% and medical costs rising with age, and we plan to Carmen's 89,
     the case's life expectancy. [▶] Here are ten typical futures. [▶] In seven, the money runs out before she turns 89,
-    mostly between 76 and 88. Overall it lasts in only a third. Fahtai.
+    mostly between 76 and 88. Overall it lasts in only a third. More risk can't fix that;
+    decisions about what they own can. Fahtai.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st on">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Team model: 10,000 markets; equities 6%, inflation 2.5% (proposal p.4, A1)</p><span class="pg">5</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st on">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Team model: 10,000 markets; equities 6%, inflation 2.5%</p><span class="pg">5</span>
   </footer>
 </section>
 
 <!-- 6 · The climb. Plan v7 §6. Four decisions as a staircase (the model's ladder values), each named under its own
-     step; the steps that answer questions 7 and 8 are tagged. One dimension line labelled with the title's second claim.
-     Builds: the start -> one step per decision. -->
+     step; the steps that answer questions 7 and 8 are tagged. Only the start and the end are large: the eye reads
+     33 -> 83. One dimension line labelled with the title's second claim. Builds: the start -> one step per decision. -->
 <section class="slide" id="s6">
   <header class="head">
-    <p class="kicker">How do we make it last?</p>
+    <p class="kicker">Will it last? · How we make it last</p>
     <h2>Four decisions about what they already own lift the odds from 33% to 83%, with no extra investment risk</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="n">7</i><i class="n">8</i></div>
   <div class="cl">
     <div class="chart">
+      <p class="cap">Chance the money lasts to Carmen's 89, in 10,000 simulated markets <span class="tag">MEASURED</span></p>
       <div class="plot">
         <span class="bl" style="bottom:33%" data-b="2"></span>
         <div class="st base"><div class="bar" style="height:33%"><span class="v">33%</span></div></div>
@@ -734,13 +785,12 @@ p,li,span,dd,b{text-wrap:pretty}
         <div class="st top" data-b="5"><div class="bar" style="height:83%"><span class="v">83%</span></div></div>
       </div>
       <div class="labs">
-        <div class="base"><b>Investments alone</b><span>today</span></div>
+        <div class="base"><b>Investments alone</b><span>today (slide 5)</span></div>
         <div data-b="2"><i>1</i><b>A one-person budget</b><span>agreed now: the survivor lives on 70%</span></div>
         <div data-b="3"><i>2</i><small class="q">Question 7</small><b>The business sold in stages</b><span>2035–39, counted at HK$3.0M of HK$5.0M</span></div>
         <div data-b="4"><i>3</i><small class="q">Question 8</small><b>The home's value released</b><span>2037: reverse mortgage or downsize</span></div>
-        <div data-b="5"><i>4</i><b>The MPF turned into annuities</b><span>2037–39: fixed, for life (HKMC)</span><em>Insurance for the worst markets</em></div>
+        <div data-b="5"><i>4</i><b>The MPF turned into annuities</b><span>2037–39: fixed, for life (HKMC)</span></div>
       </div>
-      <p class="cap">Chance the money lasts to Carmen's 89, in 10,000 simulated markets <span class="tag">MEASURED</span></p>
     </div>
     <div class="side" data-b="5">
       <div class="dim">
@@ -749,33 +799,36 @@ p,li,span,dd,b{text-wrap:pretty}
       </div>
     </div>
   </div>
+  <p class="take" data-b="5">The idle 61% goes to work. What still breaks the plan in the other futures: medical bills.</p>
   <aside class="notes">
     FAHTAI: Thanks, Pete. The fix isn't more risk: it's four decisions about what they already own. Today:
     33%. [▶] One: they agree now that after the first death, the survivor plans on 70% of the couple's budget:
-    decided in calm, not in grief. 43%. [▶] Two, which answers question seven: Carmen sells her business in
-    stages to her co-founder and managers. We count only HK$3 million of its five. 60%. [▶] Three, question
-    eight: in 2037 the home's value is released, by a reverse mortgage or by downsizing; they choose at 65.
-    82%. [▶] Four: the MPF becomes annuities. Only one more point, but it's insurance for the worst markets.
-    83%, without a cent more investment risk. So what still breaks the rest?
+    decided in calm, not in grief. [▶] Two, which answers question seven: Carmen sells her business in stages to her
+    co-founder and managers. We count only HK$3 million of its five. [▶] Three, question eight: in 2037 the home's value
+    is released, by a reverse mortgage or by downsizing; they choose at 65. [▶] Four: the MPF becomes annuities. Only one
+    more point, but it's insurance for the worst markets. 83%, without a cent more investment risk. So what
+    still breaks the rest? Medical bills.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st on">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Team model, 10,000 simulated markets; today's money (proposal p.4, p.11–12)</p><span class="pg">6</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st on">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Team model, 10,000 simulated markets (p.4, p.11–12)</p><span class="pg">6</span>
   </footer>
 </section>
 
-<!-- 7 · Two safeguards. Plan v7 §7. Left: the premium line (series.py): Flexi for life against the recommended path,
-     Standard from the review at Adrian's 75, the saving shaded. Right: the staircase continues: 83 -> 97 -> almost
-     every future (the crimson). Builds: Flexi and 83 -> the review and 97 -> the rules and the floor. -->
+<!-- 7 · Two safeguards, and the same ten futures. Plan v7 §7. Left: slide 4's premium line, now with the review at
+     Adrian's 75 (Standard plan) and the saving shaded. Right: slide 5's ten futures redrawn with the full plan: all reach
+     89 (true at >= 95% of markets lasting), faint circles where they used to run out. "10 of 10" answers slide 5's
+     "2 in 3". Builds: Flexi -> the review -> the futures, the count and the bar. -->
 <section class="slide" id="s7">
   <header class="head">
-    <p class="kicker">What still breaks it?</p>
-    <h2>A medical cover review at 75 lifts the odds to 97%; two spending rules take them to almost every future</h2>
+    <p class="kicker">Will it last? · What still breaks it</p>
+    <h2>A medical review at 75 and two spending rules: now all ten typical futures reach Carmen's 89</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="sg">
     <div class="pl">
-      <p class="cap">Medical premiums their budget leaves out <span>· HK$ a year, today's money <span class="tag">MEASURED</span></span></p>
+      <p class="cap">Slide 4's premiums, reviewed at 75 <span class="tag">MEASURED</span></p>
       <div class="box">
         <span class="grid" style="top:0"><span>400K</span></span><span class="grid" style="top:25%"><span>300K</span></span><span class="grid" style="top:50%"><span>200K</span></span><span class="grid" style="top:75%"><span>100K</span></span>
         <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
@@ -784,47 +837,58 @@ p,li,span,dd,b{text-wrap:pretty}
           <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 344.8,173.6 344.8,293.1 448.3,282.8 655.2,250.5 689.7,300.0 1000.0,261.8" fill="none" stroke="#1C1B1A" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke" data-b="2"/>
         </svg>
         <span class="sw" style="left:34.48%" data-b="2"><span>Review at<br>Adrian's 75</span></span>
-        <p class="co r" style="left:65.52%;top:6.27%"><b>HK$375K</b><span>Flexi plan, kept for life</span></p>
+        <p class="co r" style="left:65.52%;top:6.27%"><b>HK$375K</b><span>Flexi, kept for life</span></p>
       </div>
-      <div class="xax"><span style="left:0">2037<i>Adrian retires</i></span><span style="left:34.48%">2047</span><span style="left:65.52%">2056</span><span style="left:100%">2066<i>Carmen 89</i></span></div>
-      <p class="key"><span><i></i>Flexi for life</span><span data-b="2"><i class="k"></i>Our plan: Standard from 75</span><span data-b="2"><i class="s"></i>The saving</span></p>
+      <div class="xax"><span style="left:0">2037</span><span style="left:34.48%">2047</span><span style="left:65.52%">2056</span><span style="left:100%">2066</span></div>
+      <p class="key"><span><i></i>Flexi for life</span><span data-b="2"><i class="k"></i>Standard from 75: about a third of the cost</span></p>
+      <p class="note" data-b="2">With the review alone, the money lasts in <b>97%</b> of markets <span class="tag">MEASURED</span></p>
     </div>
-    <div class="steps">
-      <div class="plot">
-        <div class="st was"><div class="bar" style="height:83%"><span class="v">83%</span></div></div>
-        <div class="st" data-b="2"><div class="bar" style="height:97%"><span class="v">97%</span></div></div>
-        <div class="st top" data-b="3"><div class="bar" style="height:100%"><span class="v">≈100%</span></div></div>
+    <div class="af" data-b="3">
+      <p class="cap">Slide 5's ten futures, with the full plan <span>· ○ where each ran out before</span></p>
+      <div class="tw2">
+        <div class="ret"><span>Both retired</span></div>
+        <div class="goal"><span>Carmen 89</span></div>
+        <div class="rows">
+          <div class="ln lasts" style="--w:100.0%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln lasts" style="--w:100.0%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln lasts" style="--w:100.0%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:97.5%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:92.5%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:87.5%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:82.5%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:77.5%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:75.0%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+          <div class="ln short" style="--w:67.5%"><i></i><span class="gh"></span><b><svg class="ic"><use href="#i-check"/></svg></b></div>
+        </div>
       </div>
-      <div class="labs">
-        <div><b>Four decisions</b><span>slide 6</span></div>
-        <div data-b="2"><b>+ medical review</b><span>Standard plan at 75: about a third of the cost</span></div>
-        <div data-b="3"><b>+ spending rules</b><span>from 2039: almost every future</span></div>
-      </div>
-      <p class="floor" data-b="3">No raise after a bad year; a 10% trim only if withdrawals run 20% ahead; never below 70% of the budget. In the worst year in twenty Carmen still spends <b>HK$382K</b>, not HK$111K.</p>
+      <div class="ax2"><span style="left:0">2026</span><span style="left:100%;transform:translateX(-50%)">2066</span></div>
+      <div class="res"><p class="big">10<small>of</small>10</p><p class="t">now reach Carmen's 89<span>≈100% of markets with the spending rules; in the worst year in twenty she still spends HK$382K, not HK$111K</span></p></div>
     </div>
   </div>
+  <p class="take" data-b="3">Question 1, answered: they retire on time and keep the way they live.</p>
   <aside class="notes">
-    FAHTAI: Medical bills. Kept for life, the Flexi plan's premiums peak at HK$375K a year. [▶] So at Adrian's 75 the
-    parents review the tier: the Standard plan costs about a third as much, and the odds rise to 97%.
-    [▶] Then, from 2039, two spending rules: no raise after a bad year, and a 10% trim only if withdrawals run well ahead,
-    never below 70% of the budget. With them, the money lasts in almost every future; in the worst year in twenty, Carmen
-    still spends HK$382K, not HK$111K. Win.
+    FAHTAI: Medical bills. Slide four's premiums, kept on the Flexi plan for life, peak at HK$375K a year. [▶] So at
+    Adrian's 75 the parents review the tier: the Standard plan costs about a third as much, and the odds rise to
+    97%. [▶] Then, from 2039, two spending rules: no raise after a bad year, and a 10% trim only if withdrawals
+    run well ahead, never below 70% of the budget. Here are the same ten futures: now every one reaches Carmen's 89, and
+    in the worst year in twenty she still spends HK$382K. That answers question one. Win.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st on">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Team model; VHIS premium data; Guyton–Klinger spending rules (proposal p.5)</p><span class="pg">7</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st on">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Team model; VHIS data; Guyton–Klinger rules (p.5)</p><span class="pg">7</span>
   </footer>
 </section>
 
 <!-- 8 · Every dollar gets a job. Plan v7 §8. The parents' HK$7.7M outside the MPF and the home, today (grey) and in
-     our plan (ink, one segment per job, with its owner's face). ESG as a progress bar into the 20-25% goal band; the fee
-     saving. Answers questions 2 and 4. Builds: today -> our plan -> ESG and fees. -->
+     our plan (ink, one segment per job, with its owner's face and, for each parent, the mix). ESG as a progress bar into
+     the 20-25% goal band; the fee saving. Answers questions 2 and 4. Builds: today -> our plan -> ESG and fees. -->
 <section class="slide" id="s8">
   <header class="head">
-    <p class="kicker">Does one plan fit four people?</p>
+    <p class="kicker">Does it fit them? · The parents and Chloe</p>
     <h2>Every dollar gets a job: Chloe's degree funded today, a portfolio for each parent, and ESG at 25%</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="a">1</i><i class="n">2</i><i>3</i><i class="n">4</i><i>5</i><i>6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="jb">
     <div class="row"><p>Today</p>
       <div class="seg now"><i style="flex:2.5">Cash<small>HK$2.5M</small></i><i style="flex:1.35">Bonds<small>HK$1.35M</small></i><i class="e" style="flex:3.85">Shares, in funds at about 1.5% a year<small>HK$3.85M</small></i></div>
@@ -850,28 +914,31 @@ p,li,span,dd,b{text-wrap:pretty}
       <p class="fee"><b>≈HK$45K a year</b>saved in fees by moving to index funds averaging about 0.5% a year</p>
     </div>
   </div>
+  <p class="take" data-b="3">Questions 2 and 4, answered. Ryan's crypto needs a plan of its own.</p>
   <aside class="notes">
-    WIN: Thanks, Fahtai. The parents hold HK$7.7 million outside their MPF. Today a third of it is cash, and their shares
-    sit in funds charging about 1.5% a year. [▶] In our plan every dollar gets a job: a twelve-month reserve;
-    HK$2.57 million for Chloe's degree, our answer to question two, kept in Hong Kong dollars until she accepts an offer;
-    and a portfolio each. Adrian's is 40% shares, with US Treasuries maturing one a year from 2037; Carmen's is 60% shares,
-    led by ESG funds. [▶] That takes ESG from 11% to 25%, Carmen's goal, and index funds save about HK$45K a year in fees.
+    WIN: Thanks, Fahtai. The money lasts; now, does it fit each of them? The parents hold HK$7.7 million outside their
+    MPF. Today a third of it is cash, and their shares sit in funds charging about 1.5% a year. [▶] In our plan every
+    dollar gets a job: a twelve-month reserve; HK$2.57 million for Chloe's degree, kept in Hong Kong dollars until she
+    accepts an offer; and a portfolio each, matched to their risk. Adrian's is 40% shares, with US Treasuries maturing one
+    a year from 2037; Carmen's is 60% shares, led by ESG funds. [▶] That takes ESG from 11% to 25%, Carmen's goal, and
+    index funds save about HK$45K a year in fees.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st on">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Case; proposal §5–§6; SFC-listed ESG funds; fees from fund documents</p><span class="pg">8</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st on">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Case; proposal §5–§6; SFC-listed ESG funds</p><span class="pg">8</span>
   </footer>
 </section>
 
 <!-- 9 · Ryan. Plan v7 §9. His crypto share of his wealth on the model's glide path (proposal Figure 18, saving 30%),
-     the 20% cap and the trim band; his own plan beside it. Answers questions 3 and 6. Path in the chart's own box:
-     x = (age - 24) / 11, y = (80 - share) / 80. Builds: today -> the path and his plan -> the band. -->
+     the 20% cap and the trim band; his own plan beside it. Answers question 3. Path in the chart's own box:
+     x = (age - 24) / 11, y = (80 - share) / 80. Builds: today -> the path and his plan -> the band and the bar. -->
 <section class="slide" id="s9">
   <header class="head">
-    <p class="kicker">And Ryan's crypto?</p>
+    <p class="kicker">Does it fit them? · Ryan</p>
     <h2>Ryan keeps his crypto but builds his own plan around it: its share glides from 74% to 20% by 35</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="a">1</i><i class="a">2</i><i class="n">3</i><i class="a">4</i><i>5</i><i>6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="ry">
     <div class="gp">
       <p class="cap">Crypto as a share of Ryan's wealth <span>· saving 30% of his pay</span></p>
@@ -893,7 +960,7 @@ p,li,span,dd,b{text-wrap:pretty}
       <div class="xax"><span style="left:0">24<i>2026</i></span><span style="left:54.5%">30<i>2032</i></span><span style="left:100%">35<i>2037</i></span></div>
     </div>
     <div class="his">
-      <div class="who"><span class="av"><img src="data:image/jpeg;base64,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" alt="Ryan, illustration"></span><p>Ryan, 24<span>High risk · HK$500K of digital assets · questions 3 and 6</span></p></div>
+      <div class="who"><span class="av"><img src="data:image/jpeg;base64,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" alt="Ryan, illustration"></span><p>Ryan, 24<span>High risk · HK$500K of digital assets · question 3</span></p></div>
       <ul data-b="2">
         <li><b>It stays his money</b>About 2% of the family's wealth</li>
         <li><b>No new money into crypto</b>Its share falls without selling</li>
@@ -903,16 +970,17 @@ p,li,span,dd,b{text-wrap:pretty}
       </ul>
     </div>
   </div>
+  <p class="take" data-b="3">Every voice has a place. But all of it needs both incomes to reach retirement.</p>
   <aside class="notes">
     WIN: And Ryan. He keeps his HK$500K of crypto: it's his money, about 2% of the family's wealth, and a forced sale
     could push him to unregulated channels. [▶] But it gets no new money. He saves 30% of his pay, mostly into a world
     index fund, so crypto falls from 74% of his wealth to 20% by 35, without selling. [▶] If a rally lifts it more than
-    10 points above that path, he trims back. Lookbua.
+    10 points above that path, he trims back. Every voice has a place. Lookbua.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st on">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Proposal §7 (Figures 17–18); crypto held at today's value</p><span class="pg">9</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st on">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Proposal §7 (Figures 17–18); crypto at today's value</p><span class="pg">9</span>
   </footer>
 </section>
 
@@ -921,9 +989,10 @@ p,li,span,dd,b{text-wrap:pretty}
      the papers, as documents. Answers questions 5 and 6. Builds: today -> with the plan -> the cost -> the papers. -->
 <section class="slide" id="s10">
   <header class="head">
-    <p class="kicker">What could stop the plan before it starts?</p>
+    <p class="kicker">What could break it? · An income stops</p>
     <h2>About HK$100K a year insures every income until they retire, starting with the biggest gap: disability</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="a">1</i><i class="a">2</i><i class="a">3</i><i class="a">4</i><i class="n">5</i><i class="n">6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="pr">
     <div class="inc">
       <p class="cap">If a parent couldn't work <span>· pay that continues each month, to retirement</span></p>
@@ -941,7 +1010,6 @@ p,li,span,dd,b{text-wrap:pretty}
           <div class="br" data-b="2"><span>With the plan</span><div class="tr"><span class="f" style="width:65%"></span><p class="in">HK$39K a month, to 62</p></div></div>
         </div>
       </div>
-      <p class="note" data-b="2">Ranked first for both parents <span class="tag">question 5</span></p>
     </div>
     <div class="cost" data-b="3">
       <p class="tot"><b>≈HK$100K</b><span>in year 1</span></p>
@@ -963,40 +1031,42 @@ p,li,span,dd,b{text-wrap:pretty}
     <div class="doc"><span class="sheet"></span><p><b>Advance directives</b>the new statutory form</p></div>
     <p class="when"><b>Month 1</b>under HK$25K · question 6</p>
   </div>
+  <p class="take" data-b="4">Every income insured and the papers signed. Then we tried to break the plan.</p>
   <aside class="notes">
-    LOOKBUA: Thank you, Win. A plan like this only works if both incomes reach retirement. Today, if Adrian or Carmen
-    couldn't work, nothing would replace their pay: neither has disability cover. [▶] So disability cover comes first,
-    65% of pay until they retire. [▶] With critical-illness cover of HK$1.5 million each, individual medical cover before
-    group cover ends, and a term-life top-up, it costs about HK$100K in year one: 14% of their surplus, and term cover,
-    because the need ends at retirement. [▶] And in month one they sign mirror wills with a guardian for Chloe, powers of
-    attorney and advance directives.
+    LOOKBUA: Thank you, Win. Last part: what could break it? A plan like this only works if both incomes reach
+    retirement. Today, if Adrian or Carmen couldn't work, nothing would replace their pay: neither has disability cover.
+    [▶] So disability cover comes first, 65% of pay until they retire. [▶] With critical-illness cover of HK$1.5 million
+    each, individual medical cover before group cover ends, and a term-life top-up, it costs about HK$100K in year one:
+    14% of their surplus. [▶] And in month one they sign mirror wills with a guardian for Chloe, powers of attorney and
+    advance directives. Then we tried to break the plan.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st on">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">2026 rate cards and market range, quotes to follow (proposal §8–§9)</p><span class="pg">10</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st on">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">2026 rate cards; quotes to follow (§8–§9)</p><span class="pg">10</span>
   </footer>
 </section>
 
 <!-- 11 · The stress tests. Plan v7 §11. Paired bars per test on one 0-100% scale: the four decisions alone (grey) and
-     the full plan (ink); the lost job, the title's case, crimson. Beside them: to 95, no sale, and what we don't claim.
-     Builds: normal markets -> the lost job -> the other tests -> the side. -->
+     the full plan (ink); the lost job, the title's case, crimson, and the only grey bar with its value. Beside them: to
+     95, no sale, and what we don't claim. Builds: normal markets -> the lost job -> the other tests -> the side. -->
 <section class="slide" id="s11">
   <header class="head">
-    <p class="kicker">And if things still go wrong?</p>
+    <p class="kicker">What could break it? · Markets, jobs, a long life</p>
     <h2>The plan holds under every test we ran, even if Adrian loses his job at 60</h2>
   </header>
+  <div class="qt"><span>Their questions</span><i class="n">1</i><i class="a">2</i><i class="a">3</i><i class="a">4</i><i class="a">5</i><i class="a">6</i><i class="a">7</i><i class="a">8</i></div>
   <div class="ss">
     <div class="tests">
       <p class="key"><span><i></i>Four decisions only</span><span><i class="k"></i>Full plan: with the medical review and spending rules</span></p>
       <div class="t"><div class="nm"><p><b>Normal markets</b><span>our central assumptions</span></p></div>
-        <div class="bars"><p><i style="width:83%"></i><span style="left:83%">83%</span></p><p class="k"><i style="width:100%"></i><span style="left:100%">≈100%</span></p></div></div>
+        <div class="bars"><p><i style="width:83%"></i></p><p class="k"><i style="width:100%"></i><span style="left:100%">≈100%</span></p></div></div>
       <div class="t" data-b="2"><div class="nm"><span class="av"><img src="data:image/jpeg;base64,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" alt=""></span><p><b>Adrian's job ends at 60</b><span>no pay, no severance</span></p></div>
         <div class="bars"><p><i style="width:30%"></i><span style="left:30%">30%</span></p><p class="on"><i style="width:83%"></i><span style="left:83%">83%</span></p></div></div>
       <div class="t" data-b="3"><div class="nm"><p><b>Low returns every year</b><span>equities 4%, bonds 2.5%</span></p></div>
-        <div class="bars"><p><i style="width:32%"></i><span style="left:32%">32%</span></p><p class="k"><i style="width:95%"></i><span style="left:95%">95%</span></p></div></div>
+        <div class="bars"><p><i style="width:32%"></i></p><p class="k"><i style="width:95%"></i><span style="left:95%">95%</span></p></div></div>
       <div class="t" data-b="3"><div class="nm"><p><b>Inflation and medical costs</b><span>inflation 3.5%; medical 8.5% a year</span></p></div>
-        <div class="bars"><p><i style="width:28%"></i><span style="left:28%">28%</span></p><p class="k"><i style="width:92%"></i><span style="left:92%">92%</span></p></div></div>
+        <div class="bars"><p><i style="width:28%"></i></p><p class="k"><i style="width:92%"></i><span style="left:92%">92%</span></p></div></div>
       <div class="scale"><span style="left:0;transform:none">0</span><span style="left:50%">50%</span><span style="left:100%;transform:translateX(-100%)">100%</span></div>
       <p class="small muted" style="margin-top:auto">Chance the money lasts to Carmen's 89, in 10,000 simulated markets for each test <span class="tag">MEASURED</span></p>
     </div>
@@ -1006,63 +1076,75 @@ p,li,span,dd,b{text-wrap:pretty}
       <div class="blk"><span><b style="display:inline;font:inherit;color:var(--ink);font-weight:700">What we don't claim:</b> we compare decisions in the same 10,000 markets; we don't forecast the markets themselves.</span></div>
     </div>
   </div>
+  <p class="take" data-b="4">It holds even when the hardest things happen. So: the eight answers.</p>
   <aside class="notes">
-    LOOKBUA: Then we tried to break it. Normal markets first: with the full plan the money lasts in almost every future.
-    [▶] The hardest test: Adrian loses his job at 60, with no pay and no severance. With the four decisions alone, the
-    money lasts in 30% of futures; with the full plan, 83%. [▶] Years of low returns, or high
-    inflation with dear medical care: still 92% or better. [▶] And if Carmen lives to 95, it still holds.
-    We compare decisions in the same markets; we don't claim to forecast them. Pete.
+    LOOKBUA: Normal markets first: with the full plan the money lasts in almost every future. [▶] The hardest test:
+    Adrian loses his job at 60, with no pay and no severance. With the four decisions alone, the money lasts in
+    30% of futures; with the full plan, 83%. [▶] Years of low returns, or high inflation with
+    dear medical care: still 92% or better. [▶] And if Carmen lives to 95, it still holds. We compare
+    decisions in the same markets; we don't claim to forecast them. Pete.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st on">Protect</span><span class="st">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Team model, 10,000 simulated markets per test (proposal §11)</p><span class="pg">11</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st on">What could break it?</span><span class="st">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Team model, 10,000 markets per test (§11)</p><span class="pg">11</span>
   </footer>
 </section>
 
-<!-- 12 · The answers. Plan v7 §12. The roadmap in three phases, each action tagged with the question it answers; the
-     first year is the focal phase. The legacy at the end. Builds: one phase at a time. -->
+<!-- 12 · The answers. Plan v7 §12. Slide 3's page again, in the same places, each question now with its answer: the
+     audience sees the same eight close. Under it, the roadmap as a dated strip (a true sequence, so a line); the first
+     step is the crimson. Builds: part 1 -> part 2 -> part 3, the strip and the bar. -->
 <section class="slide" id="s12">
   <header class="head">
-    <p class="kicker">So, will it last?</p>
+    <p class="kicker">The answers</p>
     <h2>Yes: all eight questions have an answer, and the most urgent are settled in the first year</h2>
   </header>
-  <div class="rm">
-    <div class="ph now">
-      <h3>The first 12 months<span>every gap closed</span></h3>
-      <div class="it"><span class="qn">6</span><p><b>Wills, a guardian, powers of attorney</b><span>month 1; trusts at 25, 30, 35</span></p></div>
-      <div class="it"><span class="qn">5</span><p><b>Cover for every income</b><span>months 1–3</span></p></div>
-      <div class="it"><span class="qn">2</span><p><b>HK$2.57M set aside for Chloe</b><span>in HK dollars</span></p></div>
-      <div class="it"><span class="qn">4</span><p><b>A portfolio each; ESG at 25%</b><span>months 1–6</span></p></div>
-      <div class="it"><span class="qn">3</span><p><b>Ryan's own plan</b><span>crypto to 20% by 35</span></p></div>
-      <div class="it"><span class="qn">1</span><p><b>The one-person budget, agreed</b><span>at the first family meeting</span></p></div>
+  <div class="mp ans">
+    <div class="pt">
+      <h3><i>1</i>Will it last?</h3>
+      <div class="q1"><span class="num">1</span><p>Yes: they retire on time and keep the way they live</p></div>
+      <p class="ctx">33% → 83% → 97%, then almost every future, with no extra investment risk <span class="tag">MEASURED</span></p>
+      <ul>
+        <li><span class="qn">7</span><p><b>Carmen's business</b><span>Sold in stages, 2035–39, to her co-founder and managers</span></p></li>
+        <li><span class="qn">8</span><p><b>The home</b><span>Kept now; its value released at 65, by reverse mortgage or downsizing</span></p></li>
+      </ul>
     </div>
-    <div class="ph" data-b="2">
-      <h3>2027 to 2034<span>dates trigger each step</span></h3>
-      <div class="it"><span class="qn">2</span><p><b>2028: Chloe accepts an offer</b><span>fees converted</span></p></div>
-      <div class="it"><span class="qn">7</span><p><b>2032: managers built up</b><span>the business runs without Carmen</span></p></div>
-      <div class="it"><span class="qn none">·</span><p><b>Every year: the family meeting</b><span>rebalance; review cover</span></p></div>
+    <div class="pt" data-b="2">
+      <h3><i>2</i>Does it fit each of them?</h3>
+      <ul>
+        <li><span class="qn">2</span><p><b>Chloe's degree</b><span>HK$2.57M set aside today, in HK dollars until she accepts</span></p></li>
+        <li><span class="qn">4</span><p><b>ESG</b><span>25% in SFC-listed ESG funds, up from 11%</span></p></li>
+        <li><span class="qn">3</span><p><b>The family's crypto</b><span>Ryan keeps it; its share glides to 20% by 35</span></p></li>
+      </ul>
     </div>
-    <div class="ph" data-b="3">
-      <h3>2035 onward<span>retirement and legacy</span></h3>
-      <div class="it"><span class="qn">7</span><p><b>2035–39: the business sold in stages</b><span>to her co-founder and managers</span></p></div>
-      <div class="it"><span class="qn">8</span><p><b>2037: the home's value released</b><span>they choose at 65</span></p></div>
-      <div class="it"><span class="qn">1</span><p><b>2037 and 2039: they retire on time</b><span>annuities and spending rules begin</span></p></div>
-      <div class="it"><span class="qn">1</span><p><b>2047: medical review at Adrian's 75</b><span>83% → 97% <span class="tag">MEASURED</span></span></p></div>
-      <div class="lg"><b>HK$8.1M to HK$12.2M</b><span>still passes to Ryan and Chloe, by the home decision <span class="tag">question 6</span></span></div>
+    <div class="pt" data-b="3">
+      <h3><i>3</i>What could break it?</h3>
+      <ul>
+        <li><span class="qn">5</span><p><b>Insurance</b><span>≈HK$100K a year closes every gap, disability first</span></p></li>
+        <li><span class="qn">6</span><p><b>Passing wealth on</b><span>Wills and staged trusts in month 1; HK$8.1M–HK$12.2M still passes on</span></p></li>
+      </ul>
     </div>
   </div>
+  <div class="road" data-b="3">
+    <p class="now"><b>Month 1</b>wills, joint account</p>
+    <p><b>Months 1–3</b>every income insured</p>
+    <p><b>Months 1–6</b>a portfolio each</p>
+    <p><b>2028</b>Chloe's offer</p>
+    <p><b>2035–39</b>business sold</p>
+    <p><b>2037</b>home released, annuities</p>
+    <p><b>2047</b>medical review</p>
+  </div>
+  <p class="take" data-b="3">For the Wongs, it starts this month: the papers, the cover, a portfolio each.</p>
   <aside class="notes">
-    PETE: So, will it last? Yes, and every one of their eight questions has an answer. In the first year, every gap
-    closes: the papers, the cover, Chloe's fund, a portfolio each, Ryan's plan and the one-person budget. [▶] After that,
-    dates trigger each step: Chloe's offer in 2028, the managers by 2032, and a family meeting every year. [▶] Then the
-    business sale, the home decision at 65, the annuities and the medical review at 75. And Ryan and Chloe still inherit
-    HK$8.1M or more.
+    PETE: So, will it last? Yes: they retire on time and keep the way they live, and Carmen's business and their home
+    each have a plan. [▶] Chloe's degree is funded, ESG is at 25%, and Ryan keeps his crypto on a glide path. [▶] Every
+    income is insured, the papers are signed, and Ryan and Chloe still inherit HK$8.1M or more. It starts this
+    month; after that, dates trigger each step, up to the medical review in 2047.
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st on">The answers</span><span class="st">Us</span></nav>
-    <p class="src">Proposal §10 roadmap; legacy in today's money, at Carmen's 89 (§9)</p><span class="pg">12</span>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st on">The answers</span><span class="st">Us</span></nav>
+    <p class="src">Proposal §10 roadmap; legacy at Carmen's 89 (§9)</p><span class="pg">12</span>
   </footer>
 </section>
 
@@ -1070,7 +1152,7 @@ p,li,span,dd,b{text-wrap:pretty}
      (HKMA); four facts; what it means for the Wongs and for us. Builds: the flows -> the rule and facts -> the two. -->
 <section class="slide" id="s13">
   <header class="head">
-    <p class="kicker">What does this mean for planners like us?</p>
+    <p class="kicker">Us · What this means for planners like us</p>
     <h2>Wealth Management Connect is growing in both directions; for the Wongs it is a tool for later, not today</h2>
   </header>
   <div class="wm">
@@ -1094,6 +1176,7 @@ p,li,span,dd,b{text-wrap:pretty}
       <div><b>For planners like us: the market we want to serve</b><span>When a client asks, a clear and suitable answer: the product, its risks, the currency.</span></div>
     </div>
   </div>
+  <p class="take" data-b="3">Under the Connect, an adviser's value is a clear, suitable answer when the client asks.</p>
   <aside class="notes">
     PETE: What does this mean for planners like us? Since 2021, Wealth Management Connect has let residents of Hong Kong,
     Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. [▶] Southbound, a
@@ -1103,16 +1186,16 @@ p,li,span,dd,b{text-wrap:pretty}
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st on">Us</span></nav>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st on">Us</span></nav>
     <p class="src">HKMA and SFC Connect pages, checked 18 Oct 2026</p><span class="pg">13</span>
   </footer>
 </section>
 
-<!-- 14 · Careers. Plan v7 §14. Four cards, one per speaker: the goal in five years, and its link to the Connect.
-     Win's line is a draft for Win to confirm (plan §6). Builds: one card per speaker. -->
+<!-- 14 · Careers. Plan v7 §14. Four cards, one per speaker: the goal in five years, what the plan taught us, and the
+     link to the Connect. Win's line is a draft for Win to confirm (plan §6). Builds: one card per speaker. -->
 <section class="slide" id="s14">
   <header class="head">
-    <p class="kicker">Who we want to become</p>
+    <p class="kicker">Us · Who we want to become</p>
     <h2>Four planners, one aim: to advise families like the Wongs on both sides of the boundary</h2>
   </header>
   <div class="cr">
@@ -1145,7 +1228,7 @@ p,li,span,dd,b{text-wrap:pretty}
   </aside>
   <footer class="foot">
     <span class="mk">Built to Last</span>
-    <nav class="line"><span class="st">The Wongs</span><span class="st">Income for life</span><span class="st">Every voice</span><span class="st">Protect</span><span class="st">The answers</span><span class="st on">Us</span></nav>
+    <nav class="line"><span class="st">The Wongs</span><span class="st">Will it last?</span><span class="st">Does it fit them?</span><span class="st">What could break it?</span><span class="st">The answers</span><span class="st on">Us</span></nav>
     <p class="src">Personal statement (proposal p.14)</p><span class="pg">14</span>
   </footer>
 </section>

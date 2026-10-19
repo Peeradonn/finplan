@@ -6,11 +6,11 @@ PETE: Hello. We are Team Axis, and this is our financial plan for the Wong famil
 
 ## Slide 2
 
-PETE: Meet the Wongs. Adrian, 54, is prudent: he wants his capital, his retirement and his health protected. [▶] Carmen, 49, runs her own business and wants their money to reflect her values. [▶] Ryan, 24, has just started work, already holds crypto, and wants his independence. [▶] Chloe, 16, starts university in 2028, here or abroad. [▶] On paper, they're secure: HK$24.4 million, 41% of their income saved, very little debt.
+PETE: Meet the Wongs. Adrian, 54, is prudent: he wants his capital, his retirement and his health protected. [▶] Carmen, 49, runs her own business and wants their money to reflect her values. [▶] Ryan, 24, has just started work, already holds crypto, and wants his independence. [▶] Chloe, 16, starts university in 2028, here or abroad. [▶] On paper, they're secure: HK$24.4 million, 41% of their income saved, very little debt. Yet they came to us with eight questions.
 
 ## Slide 3
 
-PETE: They brought us eight questions. The first decides the rest: can Adrian and Carmen retire when they want, and keep the way they live? [▶] The other seven, Chloe's degree, Ryan's crypto, ESG, insurance, passing wealth on, Carmen's business and their home, all draw on the same money. So we start with the first.
+PETE: They brought us eight questions. The first decides the rest: can Adrian and Carmen retire when they want, and keep the way they live? Two more hang on it: Carmen's business and their home. [▶] Then, does the plan fit each of them: Chloe's degree, their values, Ryan's crypto. [▶] And what could break it: their insurance, and passing wealth on. We take them in that order.
 
 ## Slide 4
 
@@ -18,35 +18,35 @@ PETE: Are they on track? Not yet, and not because of the markets. [▶] Look at 
 
 ## Slide 5
 
-PETE: So what happens if they simply live on their investments? We played out their retirement in 10,000 simulated markets, with equities at 6% a year, inflation at 2.5% and medical costs rising with age, and we plan to Carmen's 89, the case's life expectancy. [▶] Here are ten typical futures. [▶] In seven, the money runs out before she turns 89, mostly between 76 and 88. Overall it lasts in only a third. Fahtai.
+PETE: So what happens if they simply live on their investments? We played out their retirement in 10,000 simulated markets, with equities at 6% a year, inflation at 2.5% and medical costs rising with age, and we plan to Carmen's 89, the case's life expectancy. [▶] Here are ten typical futures. [▶] In seven, the money runs out before she turns 89, mostly between 76 and 88. Overall it lasts in only a third. More risk can't fix that; decisions about what they own can. Fahtai.
 
 ## Slide 6
 
-FAHTAI: Thanks, Pete. The fix isn't more risk: it's four decisions about what they already own. Today: 33%. [▶] One: they agree now that after the first death, the survivor plans on 70% of the couple's budget: decided in calm, not in grief. 43%. [▶] Two, which answers question seven: Carmen sells her business in stages to her co-founder and managers. We count only HK$3 million of its five. 60%. [▶] Three, question eight: in 2037 the home's value is released, by a reverse mortgage or by downsizing; they choose at 65. 82%. [▶] Four: the MPF becomes annuities. Only one more point, but it's insurance for the worst markets. 83%, without a cent more investment risk. So what still breaks the rest?
+FAHTAI: Thanks, Pete. The fix isn't more risk: it's four decisions about what they already own. Today: 33%. [▶] One: they agree now that after the first death, the survivor plans on 70% of the couple's budget: decided in calm, not in grief. [▶] Two, which answers question seven: Carmen sells her business in stages to her co-founder and managers. We count only HK$3 million of its five. [▶] Three, question eight: in 2037 the home's value is released, by a reverse mortgage or by downsizing; they choose at 65. [▶] Four: the MPF becomes annuities. Only one more point, but it's insurance for the worst markets. 83%, without a cent more investment risk. So what still breaks the rest? Medical bills.
 
 ## Slide 7
 
-FAHTAI: Medical bills. Kept for life, the Flexi plan's premiums peak at HK$375K a year. [▶] So at Adrian's 75 the parents review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. [▶] Then, from 2039, two spending rules: no raise after a bad year, and a 10% trim only if withdrawals run well ahead, never below 70% of the budget. With them, the money lasts in almost every future; in the worst year in twenty, Carmen still spends HK$382K, not HK$111K. Win.
+FAHTAI: Medical bills. Slide four's premiums, kept on the Flexi plan for life, peak at HK$375K a year. [▶] So at Adrian's 75 the parents review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. [▶] Then, from 2039, two spending rules: no raise after a bad year, and a 10% trim only if withdrawals run well ahead, never below 70% of the budget. Here are the same ten futures: now every one reaches Carmen's 89, and in the worst year in twenty she still spends HK$382K. That answers question one. Win.
 
 ## Slide 8
 
-WIN: Thanks, Fahtai. The parents hold HK$7.7 million outside their MPF. Today a third of it is cash, and their shares sit in funds charging about 1.5% a year. [▶] In our plan every dollar gets a job: a twelve-month reserve; HK$2.57 million for Chloe's degree, our answer to question two, kept in Hong Kong dollars until she accepts an offer; and a portfolio each. Adrian's is 40% shares, with US Treasuries maturing one a year from 2037; Carmen's is 60% shares, led by ESG funds. [▶] That takes ESG from 11% to 25%, Carmen's goal, and index funds save about HK$45K a year in fees.
+WIN: Thanks, Fahtai. The money lasts; now, does it fit each of them? The parents hold HK$7.7 million outside their MPF. Today a third of it is cash, and their shares sit in funds charging about 1.5% a year. [▶] In our plan every dollar gets a job: a twelve-month reserve; HK$2.57 million for Chloe's degree, kept in Hong Kong dollars until she accepts an offer; and a portfolio each, matched to their risk. Adrian's is 40% shares, with US Treasuries maturing one a year from 2037; Carmen's is 60% shares, led by ESG funds. [▶] That takes ESG from 11% to 25%, Carmen's goal, and index funds save about HK$45K a year in fees.
 
 ## Slide 9
 
-WIN: And Ryan. He keeps his HK$500K of crypto: it's his money, about 2% of the family's wealth, and a forced sale could push him to unregulated channels. [▶] But it gets no new money. He saves 30% of his pay, mostly into a world index fund, so crypto falls from 74% of his wealth to 20% by 35, without selling. [▶] If a rally lifts it more than 10 points above that path, he trims back. Lookbua.
+WIN: And Ryan. He keeps his HK$500K of crypto: it's his money, about 2% of the family's wealth, and a forced sale could push him to unregulated channels. [▶] But it gets no new money. He saves 30% of his pay, mostly into a world index fund, so crypto falls from 74% of his wealth to 20% by 35, without selling. [▶] If a rally lifts it more than 10 points above that path, he trims back. Every voice has a place. Lookbua.
 
 ## Slide 10
 
-LOOKBUA: Thank you, Win. A plan like this only works if both incomes reach retirement. Today, if Adrian or Carmen couldn't work, nothing would replace their pay: neither has disability cover. [▶] So disability cover comes first, 65% of pay until they retire. [▶] With critical-illness cover of HK$1.5 million each, individual medical cover before group cover ends, and a term-life top-up, it costs about HK$100K in year one: 14% of their surplus, and term cover, because the need ends at retirement. [▶] And in month one they sign mirror wills with a guardian for Chloe, powers of attorney and advance directives.
+LOOKBUA: Thank you, Win. Last part: what could break it? A plan like this only works if both incomes reach retirement. Today, if Adrian or Carmen couldn't work, nothing would replace their pay: neither has disability cover. [▶] So disability cover comes first, 65% of pay until they retire. [▶] With critical-illness cover of HK$1.5 million each, individual medical cover before group cover ends, and a term-life top-up, it costs about HK$100K in year one: 14% of their surplus. [▶] And in month one they sign mirror wills with a guardian for Chloe, powers of attorney and advance directives. Then we tried to break the plan.
 
 ## Slide 11
 
-LOOKBUA: Then we tried to break it. Normal markets first: with the full plan the money lasts in almost every future. [▶] The hardest test: Adrian loses his job at 60, with no pay and no severance. With the four decisions alone, the money lasts in 30% of futures; with the full plan, 83%. [▶] Years of low returns, or high inflation with dear medical care: still 92% or better. [▶] And if Carmen lives to 95, it still holds. We compare decisions in the same markets; we don't claim to forecast them. Pete.
+LOOKBUA: Normal markets first: with the full plan the money lasts in almost every future. [▶] The hardest test: Adrian loses his job at 60, with no pay and no severance. With the four decisions alone, the money lasts in 30% of futures; with the full plan, 83%. [▶] Years of low returns, or high inflation with dear medical care: still 92% or better. [▶] And if Carmen lives to 95, it still holds. We compare decisions in the same markets; we don't claim to forecast them. Pete.
 
 ## Slide 12
 
-PETE: So, will it last? Yes, and every one of their eight questions has an answer. In the first year, every gap closes: the papers, the cover, Chloe's fund, a portfolio each, Ryan's plan and the one-person budget. [▶] After that, dates trigger each step: Chloe's offer in 2028, the managers by 2032, and a family meeting every year. [▶] Then the business sale, the home decision at 65, the annuities and the medical review at 75. And Ryan and Chloe still inherit HK$8.1M or more.
+PETE: So, will it last? Yes: they retire on time and keep the way they live, and Carmen's business and their home each have a plan. [▶] Chloe's degree is funded, ESG is at 25%, and Ryan keeps his crypto on a glide path. [▶] Every income is insured, the papers are signed, and Ryan and Chloe still inherit HK$8.1M or more. It starts this month; after that, dates trigger each step, up to the medical review in 2047.
 
 ## Slide 13
 

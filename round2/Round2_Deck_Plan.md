@@ -78,6 +78,25 @@ answers; 14 the personal statement, read by judges in the file). v6 slides archi
   (used on 1 and 15); EB Garamond must be installed before the PowerPoint export so it embeds; record a 20-second
   Zoom test and check the Garamond titles stay crisp (fallback: Source Serif 4, tested 20 Oct).
 
+**Flow pass (20 Oct, later; Pete: "each slide looks good on its own, but I don't get how one page flows to another").**
+Compared with e-Sentry as a whole deck, v7's pages were well made but unconnected: the links lived only in the script.
+e-Sentry ties pages together on the page itself (a map early that later slides expand; a conclusion bar on every
+slide; kickers naming section and question; the same cases returning changed). Added, titles unchanged:
+- **Slide 3 is the talk's map:** the eight questions grouped into the three parts we answer them in (Will it last? ·
+  Does it fit each of them? · What could break it?). The footer tracker now names those parts, and every kicker reads
+  "part · this slide's question".
+- **A tracker of the eight questions** top right on 4–11 (ink answered, crimson answered here, outline open), so the
+  answers visibly accumulate.
+- **A takeaway bar on every content slide** (e-Sentry's anatomy): the conclusion, worded to hand over to the next
+  slide. Titles plus bars, read in order, make the argument.
+- **Callbacks that change:** 7 redraws 4's premium line with the review and 5's ten futures with the full plan (all
+  ten reach 89; faint circles where they used to stop; "10 of 10" answers "2 in 3"). 12 is 3's page again, answered,
+  with the roadmap as a dated strip under it.
+- **Fixed two of my own v7 inconsistencies:** 12 had forced the eight answers into time phases (question 1 three
+  times), the same mistake as v6's lane 3; and more odds were on screen than promised (6's middle steps now small and
+  grey and not spoken; 11 labels only the full plan's values and the lost job).
+Script 1,262 words: ≈8:40 at 145 a minute, ≈9:20 at 135. 48 build frames.
+
 v6 below is superseded; kept for its reasoning (diagnosis, Nordea, screen vs voice), which still applies.
 
 ## v6 (19 Oct evening; superseded by v7 on 20 Oct): a storyline that builds tension, slides that show one thing

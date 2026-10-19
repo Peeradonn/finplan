@@ -84,6 +84,18 @@ p,li,span,dd,b{text-wrap:pretty}
 .src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
 
+
+/* ---------------- the thread: the family's eight questions (top right) and the takeaway bar ----------------
+   The tracker shows where the talk is in the family's own questions: ink = answered, crimson = answered on this
+   slide, outline = still open. The bar (e-Sentry's anatomy) states the slide's conclusion and hands over to the next
+   slide; read in order, the titles and the bars make the whole argument. */
+.qt{position:absolute;top:35px;right:48px;display:flex;align-items:center;gap:5px}
+.qt>span{font:italic 500 16px/1 var(--disp);color:var(--slate);margin-right:7px}
+.qt i{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--grey);color:var(--quiet);font:700 11px/1 var(--head);font-style:normal;display:flex;align-items:center;justify-content:center;background:var(--paper)}
+.qt i.a{background:var(--ink);border-color:var(--ink);color:#fff}
+.qt i.n{background:var(--accent);border-color:var(--accent);color:#fff}
+.take{flex:none;margin-top:14px;background:var(--ink);color:#fff;font:600 17px/1.3 var(--head);padding:11px 24px;border-radius:3px;text-align:center;text-wrap:balance}
+
 /* ---------------- 1 cover, 15 close: the title on the crimson rule, the photograph ---------------- */
 .cover{padding:0;flex-direction:row}
 .cover .left{flex:1;padding:50px 56px 44px;display:flex;flex-direction:column}
@@ -127,18 +139,42 @@ p,li,span,dd,b{text-wrap:pretty}
 .paper .k>span{display:block;font-size:15px;color:var(--slate);margin-top:6px;white-space:nowrap}
 .paper .k.main b{font-size:80px;color:var(--accent);letter-spacing:-.8px}
 
-/* ---------------- 3 their eight questions: the first large, the other seven listed ----------------
-   Question 1 is the focal point (crimson number); all eight return answered on slide 12, by the same numbers. */
-.qs{flex:1;display:flex;gap:56px;margin-top:28px;min-height:0}
-.qs .one{width:470px;flex:none;display:flex;flex-direction:column}
-.qs .one .num{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#fff;font:600 34px/1 var(--disp)}
-.qs .one p{font:600 38px/1.16 var(--disp);letter-spacing:-.3px;margin-top:20px}
-.qs .one .ctx{display:block;font-size:15px;line-height:1.4;color:var(--slate);margin-top:18px;padding-top:12px;border-top:1px solid var(--rule)}
-.qs ol{flex:1;display:flex;flex-direction:column;border-top:1.5px solid var(--ink)}
-.qs li{display:grid;grid-template-columns:42px 1fr;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule)}
-.qs li .qn{width:28px;height:28px;font-size:13.5px}
-.qs li b{display:block;font:700 16.5px/1.25 var(--head)}
-.qs li p span{display:block;font-size:14px;line-height:1.3;color:var(--slate);margin-top:2px}
+/* ---------------- 3 and 12: the eight questions in the talk's three parts; 12 is the same page, answered ----------------
+   Part 1 is wider and holds question 1 (the focal point, crimson); parts 2 and 3 list theirs. Slide 12 repeats the
+   layout with each answer in place, so the audience sees the same eight close. A dated strip under 12 is the roadmap:
+   a true sequence, so a line. */
+.mp{display:grid;grid-template-columns:1.35fr 1fr 1fr;column-gap:36px;margin-top:22px}
+.mp .pt{display:flex;flex-direction:column;min-width:0}
+.mp h3{display:flex;align-items:center;gap:10px;font:italic 500 23px/1.15 var(--disp);padding-bottom:10px;border-bottom:1.5px solid var(--ink)}
+.mp h3 i{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink);font:600 15px/1 var(--disp);font-style:normal;flex:none}
+.mp .q1{display:grid;grid-template-columns:60px 1fr;column-gap:12px;align-items:start;margin-top:16px}
+.mp .q1 .num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;font:600 28px/1 var(--disp)}
+.mp .q1 p{font:600 29px/1.16 var(--disp);letter-spacing:-.2px;font-variant-numeric:lining-nums}
+.mp .ctx{font-size:14px;line-height:1.4;color:var(--slate);margin:10px 0 4px 72px}
+.mp ul{margin-top:6px}
+.mp li{display:grid;grid-template-columns:38px 1fr;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule)}
+.mp li .qn{width:28px;height:28px;font-size:13px}
+.mp li p b{display:block;font:700 16px/1.25 var(--head)}
+.mp li p span{display:block;font-size:14px;line-height:1.32;color:var(--slate);margin-top:2px}
+/* answered (12): the topic quiet, the answer loud; the circles filled */
+.mp.ans li .qn{background:var(--ink);color:#fff}
+.mp.ans li p b{font:600 13px/1.2 var(--head);color:var(--slate)}
+.mp.ans li p span{font:700 15px/1.3 var(--head);color:var(--ink);margin-top:3px}
+#s3 .mp{margin-top:30px}
+#s3 .mp h3{font-size:26px}
+#s3 .mp .q1 p{font-size:34px}
+#s3 .mp .q1{margin-top:22px}
+#s3 .mp li{padding:16px 0}
+#s3 .mp li p b{font-size:18px}
+#s3 .mp li p span{font-size:15.5px}
+#s3 .mp .ctx{font-size:15px}
+.road{position:relative;display:flex;margin-top:auto;padding-top:8px}
+.road::before{content:"";position:absolute;left:7%;right:7%;top:15px;height:2px;background:var(--grey)}
+.road p{position:relative;flex:1;text-align:center;font-size:13px;line-height:1.3;color:var(--slate);padding-top:22px}
+.road p::before{content:"";position:absolute;left:50%;top:0;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;background:var(--paper);border:2.5px solid var(--ink)}
+.road p b{display:block;font:600 18px/1.15 var(--disp);color:var(--ink);font-variant-numeric:lining-nums}
+.road p.now::before{background:var(--accent);border-color:var(--accent)}
+.road p.now b{color:var(--accent)}
 
 /* ---------------- 4 the diagnosis: what they own as one bar; the premiums the budget leaves out ----------------
    The bar is to scale (case balance sheet); a bracket groups the home and the business (61%, the crimson). The
@@ -147,7 +183,7 @@ p,li,span,dd,b{text-wrap:pretty}
 .dg .own{width:480px;flex:none;display:flex;flex-direction:column}
 .dg .cap,.pl .cap{font:700 16px/1.25 var(--head)}
 .dg .cap span,.pl .cap span{font-weight:400;color:var(--slate)}
-.dg .bar{display:flex;gap:16px;height:356px;margin-top:18px}
+.dg .bar{display:flex;gap:16px;height:330px;margin-top:18px}
 .dg .stack{width:78px;flex:none;display:flex;flex-direction:column;gap:2px}
 .dg .stack i{display:block;border-radius:2px}
 .dg .stack i.k{background:var(--ink)}
@@ -162,7 +198,7 @@ p,li,span,dd,b{text-wrap:pretty}
 .dg .brk p b{display:block;font:600 66px/1 var(--disp);color:var(--accent);font-variant-numeric:lining-nums}
 .dg .brk p span{display:block;font:700 15px/1.3 var(--head);margin-top:6px;width:150px}
 .pl{flex:1;min-width:0;display:flex;flex-direction:column}
-.pl .box{position:relative;height:318px;margin:30px 0 0 50px}
+.pl .box{position:relative;height:286px;margin:30px 0 0 50px}
 .pl svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .pl .grid{position:absolute;left:0;right:0;border-top:1px solid var(--rule)}
 .pl .grid span{position:absolute;right:calc(100% + 8px);top:-8px;font:600 12px/1 var(--head);color:var(--quiet);white-space:nowrap}
@@ -192,8 +228,8 @@ p,li,span,dd,b{text-wrap:pretty}
 .tw .ret span{position:absolute;top:7px;left:10px;font:600 13px/1 var(--head);color:var(--slate);white-space:nowrap}
 .tw .goal{position:absolute;top:-28px;bottom:-4px;left:100%;border-left:2px dashed var(--ink)}
 .tw .goal span{position:absolute;top:7px;right:8px;font:700 13px/1 var(--head);white-space:nowrap}
-.tw .rows{position:relative;display:flex;flex-direction:column;gap:8px;padding:10px 0 8px}
-.tw .ln{position:relative;height:23px}
+.tw .rows{position:relative;display:flex;flex-direction:column;gap:6px;padding:8px 0 6px}
+.tw .ln{position:relative;height:21px}
 .tw .ln>i{position:absolute;left:0;top:50%;height:4px;margin-top:-2px;width:var(--w);background:var(--grey);border-radius:2px}
 .tw .ln>b{position:absolute;top:50%;left:var(--w);width:24px;height:24px;margin:-12px 0 0 -12px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff}
 .tw .ln>b .ic{width:14px;height:14px;stroke-width:3.2}
@@ -225,12 +261,12 @@ p,li,span,dd,b{text-wrap:pretty}
    One annotation: a dimension line labelled with the title's second claim. Step sizes never shown (plan §9). */
 .cl{flex:1;display:flex;gap:30px;margin-top:2px;min-height:0;margin-bottom:6px}
 .cl .chart{width:900px;flex:none;display:flex;flex-direction:column}
-.cl .plot{position:relative;height:262px;margin-top:58px;display:flex;gap:30px}
+.cl .plot{position:relative;height:236px;margin-top:56px;display:flex;gap:30px}
 .cl .st{flex:1;position:relative}
 .cl .st .bar{position:absolute;left:0;right:0;bottom:0;background:#E6E4E0;border-top:4px solid var(--ink)}
-.cl .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 36px/1 var(--disp);font-variant-numeric:lining-nums}
+.cl .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 26px/1 var(--disp);font-variant-numeric:lining-nums;color:var(--slate)}
 .cl .st.base .bar{background:var(--mist);border-top-color:var(--grey)}
-.cl .st.base .v{color:var(--grey)}
+.cl .st.base .v{color:var(--ink);font-size:40px}
 .cl .st.top .bar{border-top-color:var(--accent)}
 .cl .st.top .v{color:var(--accent);font-size:54px}
 .cl .bl{position:absolute;left:-8px;right:-8px;border-top:2px dashed var(--grey);z-index:1}
@@ -243,39 +279,51 @@ p,li,span,dd,b{text-wrap:pretty}
 .cl .labs .base b{color:var(--slate)}
 .cl .labs .q{display:inline-block;margin-left:6px;font:700 11.5px/1 var(--head);color:var(--slate);border:1.5px solid var(--grey);border-radius:10px;padding:3px 7px;vertical-align:4px}
 .cl .side{flex:1;min-width:0;position:relative}
-.cl .dim{position:absolute;left:0;top:58px;height:262px;width:100%}
+.cl .dim{position:absolute;left:0;top:76px;height:236px;width:100%}
 .cl .dim .ln{position:absolute;left:10px;width:14px;border:2px solid var(--ink);border-left:0}
 .cl .dim .t{position:absolute;left:38px;transform:translateY(-50%);font:600 22px/1.2 var(--disp)}
 .cl .dim .t span{display:block;font:400 14.5px/1.38 var(--text);color:var(--slate);margin-top:6px}
-.cl .cap{margin-top:auto;padding-bottom:4px;font-size:13.5px;color:var(--slate)}
+.cl .cap{margin-top:6px;font-size:13.5px;color:var(--slate)}
 
-/* ---------------- 7 two safeguards: the premium line with the review at 75; the staircase's last steps ----------------
+/* ---------------- 7 two safeguards: slide 4's premium line with the review at 75; slide 5's futures beside it ----------------
    Left: Flexi for life (grey) against the recommended path (ink: Standard from 2047), the saving shaded.
    Right: the staircase continues from slide 6; the last step (spending rules) is the crimson. */
 .sg{flex:1;display:flex;gap:46px;margin-top:14px;min-height:0}
-.sg .pl{flex:none;width:640px}
-.sg .pl .box{height:262px}
+.sg .pl{flex:none;width:560px}
+.sg .pl .box{height:236px}
 .sg .sw{position:absolute;top:-24px;bottom:0;border-left:2px dashed var(--ink)}
 .sg .sw span{position:absolute;top:0;right:10px;font:700 13px/1.25 var(--head);white-space:nowrap;text-align:right}
 .sg .key{display:flex;gap:22px;font-size:13.5px;color:var(--slate);margin-top:8px}
 .sg .key i{display:inline-block;width:22px;height:3px;vertical-align:4px;margin-right:7px;background:var(--grey)}
 .sg .key i.k{background:var(--ink)}
 .sg .key i.s{height:10px;vertical-align:1px;background:#E3E0D9}
-.sg .steps{flex:1;min-width:0;display:flex;flex-direction:column}
-.sg .plot{position:relative;height:262px;margin-top:72px;display:flex;gap:22px}
-.sg .st{flex:1;position:relative}
-.sg .st .bar{position:absolute;left:0;right:0;bottom:0;background:#E6E4E0;border-top:4px solid var(--ink)}
-.sg .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 36px/1 var(--disp);font-variant-numeric:lining-nums;white-space:nowrap}
-.sg .st.was .bar{background:var(--mist);border-top-color:var(--grey)}
-.sg .st.was .v{color:var(--grey)}
-.sg .st.top .bar{border-top-color:var(--accent)}
-.sg .st.top .v{color:var(--accent);font-size:50px}
-.sg .labs{display:flex;gap:22px;border-top:2px solid var(--ink);padding-top:10px}
-.sg .labs>div{flex:1;min-width:0}
-.sg .labs b{display:block;font:700 14.5px/1.25 var(--head)}
-.sg .labs span{display:block;font-size:13px;line-height:1.3;color:var(--slate);margin-top:3px}
-.sg .floor{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule);font-size:14.5px;line-height:1.4;color:var(--slate)}
-.sg .floor b{color:var(--ink)}
+/* 7 (right): the same ten futures as slide 5, with the full plan. Same rows, same order; every line now reaches
+   Carmen's 89 (true when at least 95% of markets last: the 5th to 95th percentile futures all last). Faint circles
+   mark where each ran out on slide 5. The count is the crimson, answering slide 5's "2 in 3". */
+.af{flex:1;min-width:0;display:flex;flex-direction:column}
+.af .cap{font:700 16px/1.25 var(--head)}
+.af .cap span{font-weight:400;color:var(--slate)}
+.tw2{position:relative;margin:28px 34px 0 0}
+.tw2 .ret{position:absolute;top:-22px;bottom:-2px;left:32.5%;right:0;background:var(--mist)}
+.tw2 .ret span{position:absolute;top:5px;left:8px;font:600 12px/1 var(--head);color:var(--slate);white-space:nowrap}
+.tw2 .goal{position:absolute;top:-22px;bottom:-2px;left:100%;border-left:2px dashed var(--ink)}
+.tw2 .goal span{position:absolute;top:5px;right:6px;font:700 12px/1 var(--head);white-space:nowrap}
+.tw2 .rows{position:relative;display:flex;flex-direction:column;gap:7px;padding:10px 0}
+.tw2 .ln{position:relative;height:17px}
+.tw2 .ln>i{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:calc(100% + 18px);background:var(--ink);border-radius:2px}
+.tw2 .ln>b{position:absolute;top:50%;left:calc(100% + 18px);width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.tw2 .ln>b .ic{width:11px;height:11px;stroke-width:3.4}
+.tw2 .ln .gh{position:absolute;top:50%;left:var(--w);width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2px solid #B9B5AE;background:var(--paper)}
+.tw2 .ln.lasts .gh{display:none}
+.af .ax2{position:relative;height:28px;margin-right:34px;border-top:1.5px solid var(--ink)}
+.af .ax2 span{position:absolute;top:6px;font:700 12px/1.25 var(--head);white-space:nowrap}
+.af .res{display:flex;align-items:center;gap:18px;margin-top:auto;padding-top:8px}
+.af .res .big{font:600 76px/.9 var(--disp);color:var(--accent);font-variant-numeric:lining-nums;white-space:nowrap}
+.af .res .big small{font-size:34px;font-style:italic;font-weight:500;margin:0 6px}
+.af .res p.t{font:700 16px/1.3 var(--head)}
+.af .res p.t span{display:block;font:400 13.5px/1.38 var(--text);color:var(--slate);margin-top:4px}
+.sg .note{font-size:13.5px;line-height:1.4;color:var(--slate);margin-top:10px}
+.sg .note b{color:var(--ink)}
 
 /* ---------------- 8 every dollar gets a job: today and our plan as two bars of the same money ----------------
    Both bars are the parents' HK$7.7M outside the MPF and the home (case; proposal §5). Grey today; ink segments for
@@ -421,24 +469,6 @@ p,li,span,dd,b{text-wrap:pretty}
 .ss .side .blk:first-child{border-top:1.5px solid var(--ink)}
 .ss .side b{display:block;font:600 36px/1 var(--disp);font-variant-numeric:lining-nums}
 .ss .side span{display:block;font-size:14px;line-height:1.38;color:var(--slate);margin-top:6px}
-
-/* ---------------- 12 the answers: the roadmap in three phases, each action tagged with its question ----------------
-   A line across the top means sequence (the order the actions happen). The first year is the focal phase (crimson). */
-.rm{flex:1;display:grid;grid-template-columns:1.1fr .9fr 1fr;column-gap:34px;margin-top:22px;min-height:0}
-.rm .ph{display:flex;flex-direction:column;min-width:0}
-.rm .ph h3{position:relative;font:italic 500 23px/1.15 var(--disp);padding-bottom:10px;border-bottom:3px solid var(--grey)}
-.rm .ph h3 span{display:block;font:600 12.5px/1.2 var(--head);font-style:normal;color:var(--slate);margin-top:3px}
-.rm .ph.now h3{border-bottom-color:var(--accent);color:var(--accent)}
-.rm .ph h3::after{content:"";position:absolute;right:-34px;bottom:-3px;width:34px;height:3px;background:var(--grey)}
-.rm .ph:last-child h3::after{display:none}
-.rm .it{display:grid;grid-template-columns:32px 1fr;column-gap:8px;padding:9px 0;border-bottom:1px solid var(--rule)}
-.rm .it .qn{margin-top:1px}
-.rm .it .qn.none{border-style:dotted;color:var(--quiet);border-color:var(--grey)}
-.rm .it b{display:block;font:700 14.5px/1.28 var(--head)}
-.rm .it p span{display:block;font-size:13px;line-height:1.3;color:var(--slate);margin-top:1px}
-.rm .lg{margin-top:auto;padding-top:12px}
-.rm .lg b{display:block;font:600 28px/1.1 var(--disp);font-variant-numeric:lining-nums}
-.rm .lg span{display:block;font-size:13px;line-height:1.35;color:var(--slate);margin-top:3px}
 
 /* ---------------- 13 Wealth Management Connect: two regions, two flows, the advice rule ----------------
    A schematic, not a map. Southbound carries the rule that matters to advisers (HKMA): no solicitation unless asked. */
