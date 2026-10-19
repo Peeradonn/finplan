@@ -1,0 +1,64 @@
+</main>
+<script>
+/* On screen, shrink the deck to fit narrow windows. Print ignores this. */
+(function () {
+  function fit() {
+    var z = Math.min(1, (window.innerWidth - 24) / 1280);
+    document.documentElement.style.setProperty('--z', z);
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+
+/* Annotation arrows (the deck's "pointing" form). An <svg class="conn"> inside a slide draws a curved arrow from one
+   element to another, measured after the fonts load, so the arrow follows the chart wherever the model's numbers put it.
+     data-from / data-to   CSS selectors, looked up inside the same slide
+     data-fa / data-ta     anchor on each: t|c|b (top, centre, bottom) + l|c|r (left, centre, right), e.g. "tc", "cl"
+     data-o1 / data-o2     "dx,dy" nudges in slide pixels
+     data-bend             how far the curve bows (0 = straight; sign sets the side)
+     data-label, data-lo   optional text at the curve's middle, nudged by "dx,dy"
+   A data-b on the svg (its build step) is copied to the label, so both appear together. */
+(function () {
+  var n = 0;
+  function rel(el, sb, z) {
+    var r = el.getBoundingClientRect();
+    return {l: (r.left - sb.left) / z, r: (r.right - sb.left) / z, t: (r.top - sb.top) / z, b: (r.bottom - sb.top) / z};
+  }
+  function pt(r, a) {
+    var y = {t: r.t, c: (r.t + r.b) / 2, b: r.b}[a[0]], x = {l: r.l, c: (r.l + r.r) / 2, r: r.r}[a[1]];
+    return [x, y];
+  }
+  function nudge(p, s) { var o = (s || '0,0').split(',').map(Number); return [p[0] + o[0], p[1] + o[1]]; }
+  function draw() {
+    document.querySelectorAll('.slide').forEach(function (sl) {
+      var sb = sl.getBoundingClientRect(), z = sb.width / 1280;
+      sl.querySelectorAll('svg.conn').forEach(function (svg) {
+        var f = sl.querySelector(svg.dataset.from), t = sl.querySelector(svg.dataset.to);
+        if (!f || !t) return;
+        var p1 = nudge(pt(rel(f, sb, z), svg.dataset.fa || 'tc'), svg.dataset.o1);
+        var p2 = nudge(pt(rel(t, sb, z), svg.dataset.ta || 'tc'), svg.dataset.o2);
+        var k = parseFloat(svg.dataset.bend || '0.3');
+        var c = [(p1[0] + p2[0]) / 2 + k * (p2[1] - p1[1]), (p1[1] + p2[1]) / 2 - k * (p2[0] - p1[0])];
+        var id = 'ah' + (n++);
+        svg.setAttribute('viewBox', '0 0 1280 720');
+        svg.innerHTML = '<defs><marker id="' + id + '" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">' +
+          '<path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>' +
+          '<path d="M' + p1 + ' Q' + c + ' ' + p2 + '" marker-end="url(#' + id + ')"/>';
+        if (svg.dataset.label) {
+          var m = nudge([(p1[0] + 2 * c[0] + p2[0]) / 4, (p1[1] + 2 * c[1] + p2[1]) / 4], svg.dataset.lo);
+          var lab = document.createElement('p');
+          lab.className = 'conn-label';
+          lab.textContent = svg.dataset.label;
+          if (svg.dataset.b) lab.dataset.b = svg.dataset.b;
+          lab.style.left = m[0] + 'px'; lab.style.top = m[1] + 'px';
+          sl.appendChild(lab);
+        }
+      });
+    });
+    document.documentElement.dataset.arrows = 'drawn';
+  }
+  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(draw);
+})();
+</script>
+</body>
+</html>

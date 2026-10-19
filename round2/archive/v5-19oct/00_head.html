@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built to Last</title>
+<!--
+  Built to Last, Round Two. Team Axis. One file of 1280 x 720 slides, behind a 10-minute recorded video.
+  Build: .venv/Scripts/python.exe round2/make.py [--builds]  (build.py -> numbers filled from figures/numbers.json -> render).
+  Content source: round2/Round2_Deck_Plan.md. Change the plan first, then the slide.
+  Model numbers are double-brace placeholders filled by document/fill.py, the same values as the written proposal.
+  Icons: Lucide (ISC License; copyright Lucide Contributors, portions Cole Bemis).
+  Type: Plus Jakarta Sans (SIL Open Font License), files in round2/fonts.
+  Look (v3, 19 Oct, Pete): the e-Sentry deck's anatomy (reference/Slides/e-Sentry_Deck.html) in this deck's context,
+  with the written proposal's crimson. Kicker and crimson rule, sentence title, open columns with sub-heads on rules,
+  black conclusion bar, stations in the footer, "(measured)" tags.
+-->
+<style>
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-Regular.ttf") format("truetype");font-weight:400}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-Medium.ttf") format("truetype");font-weight:500}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");font-weight:600}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-Bold.ttf") format("truetype");font-weight:700}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");font-weight:800}
+:root{
+  /* Crimson, as in the written proposal: the plan and the one point a slide makes. Warm neutrals beside it.
+     "Without the plan" is grey; no second colour. */
+  --paper:#FFFFFF; --mist:#F4F3F1; --rule:#DAD8D3; --grey:#A6A39E;
+  --ink:#1C1B1A; --slate:#5F5D59;
+  --accent:#A81E2D; --accent-deep:#6F1320; --accent-tint:#F6E4E6; --accent-mid:#D98C95;
+  --text:"Jakarta","Segoe UI",Arial,sans-serif;
+  --head:"Jakarta","Segoe UI",Arial,sans-serif;
+  --num:"Jakarta","Segoe UI",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#E2E1DE;color:var(--ink);font:400 16px/1.42 var(--text)}
+p,h1,h2,h3,h4,ul,ol,figure,table,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+b,strong{font-weight:700}
+.deck{zoom:var(--z,1);display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
+.slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;
+  padding:34px 48px 56px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(28,27,26,.18)}
+@page{size:1280px 720px;margin:0}
+@media print{
+  body{background:#fff}
+  .deck{zoom:1;gap:0;padding:0;display:block}
+  .slide{box-shadow:none;break-after:page;page-break-after:always}
+}
+p,li,span,dd,b{text-wrap:pretty}
+
+/* icons */
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ic.lg{width:28px;height:28px}
+.ic.sm{width:16px;height:16px}
+.badge{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1.8px solid var(--accent);color:var(--accent);flex:none;background:#fff}
+.badge.s{width:36px;height:36px;border-width:1.5px}
+.badge.ink{border-color:var(--ink);color:var(--ink)}
+
+/* header: the crimson rule, the section, the one message */
+.head{border-left:5px solid var(--accent);padding:1px 0 2px 14px}
+.kicker{font:700 14.5px/1.3 var(--head);color:var(--accent)}
+.head h2{font:700 29px/1.17 var(--head);letter-spacing:-.4px;margin-top:4px;max-width:1150px;text-wrap:balance}
+
+/* body: open columns with sub-heads on a rule */
+.body{flex:1;min-height:0;margin-top:20px;display:flex;gap:34px}
+.col{flex:1;min-width:0;display:flex;flex-direction:column}
+.sub{font:700 17.5px/1.25 var(--head);padding-bottom:7px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
+.muted{color:var(--slate)}
+.small{font-size:13.5px;line-height:1.42}
+.push{margin-top:auto}
+/* number tags (Pete's e-Sentry convention): a grey word in brackets after the claim. Written in capitals in the source. */
+.tag{font-weight:400;font-size:.86em;letter-spacing:0;color:#8F8C87;text-transform:lowercase;white-space:nowrap}
+.tag::before{content:"("}
+.tag::after{content:")"}
+.note{background:var(--mist);padding:10px 14px;border-left:3px solid var(--ink);font-size:14.5px;line-height:1.42}
+
+/* the one-sentence conclusion */
+.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:700 18px/1.3 var(--head);padding:12px 24px;text-align:center;border-radius:3px;text-wrap:balance}
+
+/* footer: the talk's sections as stations on a line */
+.foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:18px;font-size:12px;color:var(--slate)}
+.line{display:flex;align-items:center}
+.line .st{position:relative;padding-left:15px;margin-right:30px;white-space:nowrap}
+.line .st::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;border:2px solid var(--grey);background:#fff}
+.line .st::after{content:"";position:absolute;left:calc(100% + 5px);top:50%;width:20px;height:2px;margin-top:-1px;background:var(--rule)}
+.line .st:last-child{margin-right:0}
+.line .st:last-child::after{display:none}
+.line .st.on{color:var(--ink);font-weight:700}
+.line .st.on::before{background:var(--accent);border-color:var(--accent)}
+.src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
+
+/* big numbers */
+.hero{font:800 88px/0.92 var(--num);letter-spacing:-3px}
+.num{font:800 34px/1 var(--num);letter-spacing:-1px}
+
+/* ---------------- 1 cover ---------------- */
+.cover{padding:0;flex-direction:row}
+.cover .left{flex:1;padding:50px 56px 44px;display:flex;flex-direction:column}
+.cover .event{font:600 14.5px/1.45 var(--head);color:var(--slate)}
+.cover .ttl{border-left:7px solid var(--accent);padding-left:22px;margin-top:92px}
+.cover h1{font:800 96px/1 var(--head);letter-spacing:-3.5px}
+.cover .tagline{font:700 30px/1.2 var(--head);margin-top:14px;color:var(--accent);letter-spacing:-.5px}
+.cover .desc{font-size:18px;line-height:1.5;margin-top:24px;max-width:560px;color:#33322F}
+.cover .who{margin-top:auto;display:flex;gap:28px;align-items:flex-end}
+.cover .who .t{font:800 20px/1.2 var(--head);color:var(--accent)}
+.cover .who p{font:700 15.5px/1.3 var(--head)}
+.cover .who p span{display:block;font-weight:400;font-size:13.5px;color:var(--slate)}
+.cover .right{width:520px;flex:none;position:relative}
+.cover .right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover .credit{position:absolute;right:14px;bottom:12px;font-size:11.5px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+
+/* ---------------- 2 meet the Wongs: four portraits, each want in the case's words, the position underneath ----------------
+   Portraits are AI-generated illustrations (labelled fictional); until the files arrive, a placeholder holds the space. */
+.meet{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto auto;column-gap:26px;margin-top:28px}
+.meet>div{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-content:start}
+.meet .top{display:flex;gap:14px;align-items:center}
+.meet .pic{width:116px;height:116px;flex:none;border-radius:50%;background:var(--mist);overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--grey);border:2px solid var(--rule)}
+.meet .pic img{width:100%;height:100%;object-fit:cover}
+.meet .pic .ic{width:46px;height:46px;stroke-width:1.3}
+.meet h3{font:800 21px/1.15 var(--head);letter-spacing:-.3px}
+.meet h3 span{color:var(--slate);font-weight:600;margin-left:6px}
+.meet .role{font-size:13px;line-height:1.3;color:var(--slate);margin-top:3px;min-height:3.9em}
+.meet .risk{display:inline-block;font:700 11.5px/1 var(--head);color:var(--slate);border:1.5px solid var(--grey);border-radius:12px;padding:4px 8px;margin-top:7px}
+.meet .want{font:500 20.5px/1.34 var(--head);letter-spacing:-.2px;margin-top:16px;padding-top:12px;border-top:3px solid var(--accent)}
+.meet .want b{display:block;font:700 12.5px/1.2 var(--head);color:var(--slate);letter-spacing:0;margin-bottom:6px}
+.meet .has{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule);align-self:start;display:grid;grid-template-columns:56px 1fr;row-gap:7px;column-gap:10px;font-size:13.5px;line-height:1.3}
+.meet .has dt{font:700 12px/1.45 var(--head);color:#8F8C87}
+.meet .has dd{color:var(--slate)}
+.nw{white-space:nowrap}
+/* where they start: context under the wants, deliberately quieter than them */
+.start{margin-top:auto;border-top:1px solid var(--rule);padding-top:12px;font-size:15.5px;line-height:1.45;color:var(--slate)}
+.start .lab{font:700 15.5px/1 var(--head);color:var(--ink);margin-right:10px}
+.start b{color:var(--ink);font-weight:700}
+.fict{font-size:12px;color:var(--slate);margin-top:8px}
+
+/* ---------------- 3 the map: three challenges, three aims ----------------
+   Rows are the aims in speaking order; each row reads left to right: challenge (grey) -> our aim (crimson) -> result. */
+.map3{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:10px}
+.map3 .hd{display:grid;grid-template-columns:330px 46px 1fr 46px 260px;font:700 13.5px/1 var(--head);color:var(--slate);padding-bottom:2px}
+.map3 .row{display:grid;grid-template-columns:330px 46px 1fr 46px 260px;align-items:center;min-height:128px;border-top:1px solid var(--rule);padding-top:14px}
+.map3 .chal{display:flex;gap:14px;align-items:flex-start}
+.map3 .chal .badge{border-color:var(--grey);color:var(--slate)}
+.map3 .chal b{display:block;font:700 18px/1.22 var(--head)}
+.map3 .chal span{display:block;font-size:14.5px;line-height:1.38;color:var(--slate);margin-top:5px}
+.map3 .ar{height:12px;position:relative;margin:0 8px}
+.map3 .ar::before{content:"";position:absolute;left:0;right:8px;top:50%;height:2px;margin-top:-1px;background:var(--ink)}
+.map3 .ar::after{content:"";position:absolute;right:0;top:50%;margin-top:-5px;border-left:8px solid var(--ink);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.map3 .aim b{display:flex;align-items:center;gap:10px;font:800 25px/1.15 var(--head);color:var(--accent);letter-spacing:-.4px}
+.map3 .aim b .n{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-size:14px;flex:none}
+.map3 .aim span{display:block;font-size:15.5px;line-height:1.4;margin-top:7px}
+.map3 .res b{display:block;font:800 23px/1.1 var(--num);letter-spacing:-.5px}
+.map3 .res b em{font-style:normal;color:var(--ink)}
+.map3 .res b i{font-style:normal;color:var(--grey)}
+.map3 .res span{display:block;font-size:13.5px;line-height:1.3;color:var(--slate);margin-top:5px}
+.map3 .res.txt b{font-size:19px;letter-spacing:-.3px}
+
+/* ---------------- 4 protect: life events -> cover, and the papers ---------------- */
+.evts{flex:1.85;min-width:0;display:flex;flex-direction:column}
+.evts .hd,.evts .ev{display:grid;grid-template-columns:200px 170px 1fr 70px;gap:14px;align-items:center}
+.evts .hd{font:700 13px/1.2 var(--head);color:var(--slate);padding-bottom:7px;border-bottom:1.5px solid var(--ink)}
+.evts .hd span:last-child{text-align:right}
+.evts .ev{padding:17px 0;border-bottom:1px solid var(--rule)}
+.evts .ev .e{display:flex;gap:10px;align-items:center;font:700 15.5px/1.2 var(--head)}
+.evts .ev .e .ic{color:var(--ink)}
+.evts .ev .now{display:flex;gap:7px;align-items:center;font-size:13.5px;line-height:1.3;color:var(--slate)}
+.evts .ev .now .mk{flex:none;width:18px;height:18px;border-radius:50%;background:var(--grey);color:#fff;display:inline-flex;align-items:center;justify-content:center}
+.evts .ev .now .mk .ic{width:11px;height:11px;stroke-width:3.4}
+.evts .ev .cov{display:flex;gap:8px;align-items:center;font-size:14.5px;line-height:1.32}
+.evts .ev .cov .mk{flex:none;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;display:inline-flex;align-items:center;justify-content:center}
+.evts .ev .cov .mk .ic{width:12px;height:12px;stroke-width:3.4}
+.evts .ev .cost{text-align:right;font:800 17px/1 var(--num)}
+.evts .ev .e em{display:block;font:700 11.5px/1 var(--head);font-style:normal;color:var(--slate);border:1.5px solid var(--grey);border-radius:10px;padding:3px 8px;margin-top:6px;width:max-content}
+.evts .tot{display:grid;grid-template-columns:1fr 160px;align-items:center;padding-top:10px}
+.evts .tot p{font-size:14px;line-height:1.35;color:var(--slate)}
+.evts .tot b{text-align:right;font:800 36px/1 var(--num);color:var(--accent);letter-spacing:-1px}
+.papers{flex:1;min-width:0;display:flex;flex-direction:column}
+.papers .doc{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--rule)}
+.papers .doc .sheet{flex:none;width:38px;height:48px;border:1.8px solid var(--ink);border-radius:3px;position:relative;background:#fff}
+.papers .doc .sheet::before{content:"";position:absolute;left:7px;right:7px;top:10px;height:14px;background:repeating-linear-gradient(var(--rule) 0 2px,transparent 2px 6px)}
+.papers .doc .sheet::after{content:"";position:absolute;right:6px;bottom:7px;width:12px;height:2px;background:var(--ink);transform:rotate(-12deg)}
+.papers .doc b{display:block;font:700 15px/1.25 var(--head)}
+.papers .doc span{display:block;font-size:13.5px;line-height:1.32;color:var(--slate);margin-top:2px}
+.papers .when{display:flex;gap:16px;margin-top:12px}
+.papers .when div b{display:block;font:800 19px/1 var(--num);letter-spacing:-.3px}
+.papers .when div span{font-size:12.5px;color:var(--slate)}
+.papers .without{margin-top:12px}
+
+/* ---------------- 5 why the money falls short: ten futures in brief, then the two causes ---------------- */
+.ten{display:flex;gap:7px;align-items:center}
+.ten i{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-style:normal}
+.ten i .ic{width:17px;height:17px;stroke-width:3}
+.ten i.short{background:var(--accent)}
+.ten i.lasts{background:#fff;border:2.5px solid var(--grey);color:var(--grey)}
+.ten i.lasts .x,.ten i.short .v{display:none}
+.agebar{position:relative;height:66px;margin-top:22px}
+.agebar .ax{position:absolute;left:0;right:0;top:20px;height:10px;border-radius:5px;background:var(--mist);border:1.5px solid var(--rule)}
+.agebar .rng{position:absolute;top:20px;height:10px;background:var(--ink);border-radius:5px}
+.agebar .rng span{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);font:700 13.5px/1 var(--head);white-space:nowrap}
+.agebar .tk{position:absolute;top:36px;transform:translateX(-50%);font:600 12.5px/1.2 var(--head);color:var(--slate);white-space:nowrap}
+.agebar .goal{position:absolute;top:8px;width:0;height:34px;border-left:2.5px solid var(--ink)}
+.agebar .goal span{position:absolute;top:-16px;right:6px;font:800 13px/1 var(--head);color:var(--ink);white-space:nowrap}
+.cause{display:flex;flex-direction:column}
+.ownbar2{display:flex;gap:12px;height:220px}
+.ownbar2 .stack{width:46px;display:flex;flex-direction:column;gap:2px}
+.ownbar2 .stack i{display:block;border-radius:2px}
+.ownbar2 .stack i.idle{background:var(--ink)}
+.ownbar2 .stack i.w{background:var(--grey)}
+.ownbar2 .stack i.c{background:var(--rule)}
+.ownbar2 .labs{flex:1;display:flex;flex-direction:column;gap:2px}
+.ownbar2 .labs p{display:flex;align-items:center;gap:8px;font-size:13px;line-height:1.2;color:var(--slate)}
+.ownbar2 .labs p b{font:700 14px/1.2 var(--head);color:var(--ink)}
+.ownbar2 .labs p.idle b{color:var(--ink)}
+.ownbar2 .big61{font:800 34px/1 var(--num);color:var(--ink);letter-spacing:-1px}
+.grow{display:flex;align-items:flex-end;gap:26px;height:220px;padding-top:10px}
+.grow div{width:90px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.grow div i{display:block;border-radius:2px 2px 0 0}
+.grow div b{font:800 20px/1 var(--num);margin-bottom:6px;letter-spacing:-.5px}
+.grow div span{font-size:12.5px;line-height:1.25;color:var(--slate);margin-top:6px;border-top:1.5px solid var(--ink);padding-top:5px}
+.grow .now i{background:var(--rule)}
+.grow .later i{background:var(--ink)}
+.grow .later b{color:var(--ink)}
+.grow p.k{align-self:center;font-size:14px;line-height:1.38;color:var(--slate);max-width:200px}
+
+/* ---------------- 6 four decisions: a compact staircase beside the decisions themselves ---------------- */
+.stwrap{flex:none;width:520px;display:flex;flex-direction:column}
+.stwrap .stcap{margin-top:10px}
+.stairs{flex:1 1 auto;width:520px;display:flex;gap:10px;padding-top:44px;position:relative}
+.stairs .step{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
+.stairs .area{flex:1;display:flex;align-items:flex-end;position:relative}
+.stairs .bar{width:100%;background:#E6E4E0;border-top:4px solid var(--ink);position:relative;z-index:0}
+.stairs .bar .v{position:absolute;top:-36px;left:0;font:800 27px/1 var(--num);letter-spacing:-1px;color:var(--ink)}
+.stairs .step.base .bar{background:var(--mist);border-top-color:var(--grey)}
+.stairs .step.base .bar .v{color:var(--grey)}
+.stairs .step.last .bar{border-top-color:var(--accent)}
+.stairs .step.last .bar .v{color:var(--accent);font-size:34px;top:-42px}
+.stairs .bl{position:absolute;left:-10px;right:0;bottom:0;background:var(--mist);border-top:2px dashed var(--grey);z-index:1}
+.stairs .cap{height:44px;padding-top:8px;border-top:2px solid var(--ink);text-align:center;font:800 15px/1 var(--head)}
+.stairs .cap.base{font:600 12px/1.2 var(--head);color:var(--slate)}
+.stairs .cap i{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-style:normal;font-size:13px}
+.decs{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.decs li{display:grid;grid-template-columns:30px 1fr;gap:6px 12px;padding:15px 0;border-bottom:1px solid var(--rule)}
+.decs li:first-child{border-top:1.5px solid var(--ink)}
+.decs li .n{grid-row:span 2;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;display:inline-flex;align-items:center;justify-content:center;font:800 13px/1 var(--head)}
+.decs li b{font:700 19px/1.25 var(--head);letter-spacing:-.2px}
+.decs li b em{font-style:normal;font:700 12px/1 var(--head);color:var(--slate);border:1.5px solid var(--rule);border-radius:10px;padding:3px 8px;margin-left:8px;vertical-align:2px}
+.decs li p{font-size:16px;line-height:1.35;color:var(--slate)}
+.decs li p i{font-style:normal;font-weight:700;color:var(--ink)}
+
+/* ---------------- builds ----------------
+   data-b="n": the step an element appears in. The deck shows every step; make.py's builds file repeats a slide once per
+   step with class upto-k, which hides later steps (visibility, so the layout never moves). */
+.upto-1 [data-b="2"],.upto-1 [data-b="3"],.upto-1 [data-b="4"],.upto-1 [data-b="5"],.upto-1 [data-b="6"],.upto-1 [data-b="7"],.upto-1 [data-b="8"],.upto-1 [data-b="9"]{visibility:hidden}
+.upto-2 [data-b="3"],.upto-2 [data-b="4"],.upto-2 [data-b="5"],.upto-2 [data-b="6"],.upto-2 [data-b="7"],.upto-2 [data-b="8"],.upto-2 [data-b="9"]{visibility:hidden}
+.upto-3 [data-b="4"],.upto-3 [data-b="5"],.upto-3 [data-b="6"],.upto-3 [data-b="7"],.upto-3 [data-b="8"],.upto-3 [data-b="9"]{visibility:hidden}
+.upto-4 [data-b="5"],.upto-4 [data-b="6"],.upto-4 [data-b="7"],.upto-4 [data-b="8"],.upto-4 [data-b="9"]{visibility:hidden}
+.upto-5 [data-b="6"],.upto-5 [data-b="7"],.upto-5 [data-b="8"],.upto-5 [data-b="9"]{visibility:hidden}
+.upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{visibility:hidden}
+.upto-7 [data-b="8"],.upto-7 [data-b="9"]{visibility:hidden}
+.upto-8 [data-b="9"]{visibility:hidden}
+
+/* ---------------- annotation (one vocabulary, chosen per slide) ----------------
+   svg.conn: an e-Sentry-style arc with a filled head and a bold label, for "this grew N times" (99_tail.html draws it). */
+svg.conn{position:absolute;left:0;top:0;width:1280px;height:720px;pointer-events:none;overflow:visible;z-index:5;color:var(--accent)}
+svg.conn path{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round}
+.conn-label{position:absolute;transform:translate(-50%,-50%);font:800 22px/1.1 var(--head);color:var(--accent);background:#fff;padding:2px 6px;white-space:nowrap;z-index:6}
+
+/* speaker notes: never shown or printed; build.py collects them into Built_to_Last_notes.md */
+.notes{display:none}
+</style>
+</head>
+<body>
+<!--ICON_SPRITE-->
+<main class="deck">
