@@ -11,3 +11,7 @@ document/proposal.html
 
 # Python environment (create with: python -m venv .venv; .venv/Scripts/python -m pip install -r requirements.txt)
 .venv/
+
+# Never commit: Office exports carry the signed-in university account in their metadata; reference decks name the university
+Fin Plan.pdf
+reference/Slides/
