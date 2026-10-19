@@ -131,3 +131,156 @@ S19 · Applied (`s19.patch`, `git apply --check` clean) · p7 restructured: "Fro
   Builder corrections on top: (1) "HK$3.9M … sits in equity funds charging about 1.5%" → "is in equities, most of it in funds charging about 1.5%" (HK$0.8M of it is listed stocks and REITs, which carry no fund fee); (2) Figure 14 note "the rest are SFC-authorised" → "Treasury notes held directly; the rest SFC-authorised" (a directly held bond is not an authorised fund), shortened to fit.
   Render: 15 pages, all fit (p7 5.3 mm free).
   Records: manuscript p7 regenerated with an S19 note, Layout lines and the Charts table renumbered (`allocation-half.png` still drawn, not placed); Win's tables (IWDA replaces the Nasdaq-100 slice and REITs; 3450 not 3433; Carmen's AGGU 20% so she sums to 100; Ryan's pots); CLAUDE.md vehicles line and the keep-v2/v3 decision. `[CHECK: Win]` 3450's name and fee, IWDA's ongoing charge. Pete tells Win.
+
+## Round 6 (2 Oct, deadline day): story batches 15–16 (S20–S29), applied by the story session at Pete's request
+
+**Last batch taken:** story-findings.md **Batch 16**. Pete asked the story session to apply its own findings (builder
+role for this round), keeping 15 pages and the "Built to Last" spine. Render: 15 pages, every page fits
+(p2 7.6 · p3 0.9 · p4 3.2 · p5 2.4 · p9 4.0 · p10 1.3 · p12 6.9 · p13 5.7 · p14 33.6 · p15 1.3 mm free).
+
+S20 · Applied · `Fin Plan.pdf` (PowerPoint, university email in its metadata) is **not** to be submitted. Its text that
+the sources lacked is carried in: p10 "5.0M full, company pays"; p12 heading "Close every gap within the first year;
+after that, dates and events trigger each decision."; p14 career paragraphs (S21). The Chrome cover keeps its date and
+contents. The PowerPoint's dropped contents list is not followed.
+S21 · Applied in part · p14:
+- Pete's and Fahtai's paragraphs are in (Fahtai: "casflow" → "cash-flow", label "Fahtai.").
+- Lookbua's is the reviewer's edit of his draft, which keeps his goal and adds the Connect link.
+  **Needs Lookbua's OK.** His original is quoted in the manuscript.
+- **Win's is still a placeholder (deferred: Win).**
+S22 · Applied · p9 · "His HK$180K MPF moves to the lowest-fee global equity index fund in his scheme; a set monthly
+contribution…" (fit: "such as a flat deposit," cut).
+S23 · Applied · p7 · "Adrian's Treasuries pay his first five years of retirement" → "Adrian's Treasury notes mature one
+a year from 2037 to 2041, a known sum each year whatever markets do".
+S24 · Applied · p4 · "the money runs out without it, leaving Carmen {{ann_w1_without_real}} … never falls below
+{{ann_w1_with_real}}, the rules' floor"; p5 "…{{guardswitch_worst5_pct}} of her budget; without them it falls to
+guaranteed income alone, {{fixswitch_worst5_real}}". Fit: "worst one simulation in twenty" → "worst one in twenty",
+"agreed next steps" → "agreed steps", "cannot be reversed" → "is irreversible", "about … typical spending" →
+"≈… spending".
+S25 · Applied · p4 · Figure 7 "Plan for one person's spending · after the first death · agreed now, in writing" (no
+2057). "Why these four": "The first plans for one person at 70% of the couple's budget (the OECD scale implies
+two-thirds); the other three use assets the family owns, at the cost of a smaller legacy." This replaces the no-sale
+66% sentence, which is still on p12 and p13.
+S26 · Applied, with a model change · p13:
+- New key in `export_numbers()`: Adrian's job ends at 60. His after-tax pay and both sides of his MPF stop for
+  2032–36; nothing else changes. `adrian60_89` = **30%** fixed spending, `rec_adrian60_89` = **83%** with the rules.
+  `numbers.json` diff: only these two keys added, nothing changed.
+- Register row F6 "Adrian's job ends at 60 · 30% · 83% · Reserve; guardrails; full review".
+- Old F6 (base case) dropped: Figure 24 shows it. B2 dropped: p7's Figure 15 note shows it.
+- P3 "Care needs late in life · Costs outside the budget · Home equity: downsize or sell".
+- F2 defence "Tier review at 75; terms checked".
+- Matrix: F6 high/medium, P3 medium/high. Figure 25 note shortened for fit.
+S27 · Applied · p12 · Month 12 "First family meeting: charter, Ryan's plan, one-person budget · {{step_survivor}}
+points" (+9); "investment policy signed"; typed "66%" → `{{biz_not_sold_89}}`.
+S28 · Applied · p10 "The whole-life policies (HK$420K cash value) stay in force; home cover is checked for owners'
+liability."; p3 "but the plan counts only the low bonus and invests any more."
+S29 · Applied in part · p2 "Adrian 40% equity with a Treasury ladder, Carmen 60% ESG-led"; p15 A1 model mix "40% equity
+(the plan holds ≈50%; more adds legacy, not security) · Team model, §5". Not done: Figure 6 label (redraw for a cosmetic
+change) and the blue in Figures 8/24.
+Unsure items (Fig 21 59% vs ladder; HKMC lump-sum purposes; Connect marketing rules) left for the number checker.
+
+### Round 6b (2 Oct): the job-loss stress woven into the story; Figure 26 restructured (Pete asked)
+Pete's points: the new stress sat only in the register; Figure 26 was unclear and repeated p10.
+- **Model** · `run_model.job_loss()` is shared by the number keys and the chart. Charts rerun; `numbers.json` is
+  unchanged.
+- **Figure 24** · the "Medical 8.5% a year" bar (the F4 row shows it) is replaced by "Job ends at 60" (30% / 83%).
+- **p13 heading** · was "Before retirement the largest risk is lost income; after it, low returns and inflation.", which
+  repeated p10. Now: "A lost job is the hardest test; the spending rules hold the plan at {{rec_adrian60_89}} or better."
+  This is true of every measured row.
+- **Figure 26**:
+  - title: "Every risk has a named defence; six are measured in the model";
+  - two group rows: "Measured: chance the money lasts to Carmen's 89, worst first" and "Managed by process: what each
+    risk threatens";
+  - measured rows renumbered worst first: F1 job, F2 low returns, F3 inflation, F4 medical, F5 Carmen to 95, F6
+    business;
+  - P1 cell "Highest ranked" → "Income stops" (a pointer to §8, not a repeat);
+  - "Irreversible choices" dropped (p4 says it), and late-life care renumbered P2;
+  - the compliance paragraph became rows: R1 defence "Licensed channels; crypto test", new E3 "Conflicts of interest ·
+    Biased advice · Fees disclosed; no commission";
+  - the matrix follows the new codes.
+- **Figure 25 note** · now carries the test's caveat: "The lost-job test is harsh: no pay from 60 to 65, no severance."
+  The low-returns 86% detail moved to the manuscript notes.
+- **p10** · "…as they rise with age; wills and powers of attorney cost under HK$25K once (§9)." (already on p2 and p12) →
+  "A lost job cannot be insured: at 54, in a regional role exposed to restructuring and technology change, Adrian's pay
+  is the largest risk no policy covers, so §11 tests it."
+- **p2 rec 04** · "…and the plan still reaches {{rec_adrian60_89}} if Adrian's job ends at 60 (§3, §11)."
+- **Render** · 15 pages, all fit (p2 7.6 · p10 0.6 · p13 3.3 mm free).
+  - Note: `render.py` can misreport when a chart loads late. One run showed p6 at 34.5 mm and p13 "fits"; the true p13
+    was 4.2 mm over.
+  - Trust a run where p6 reads 3.5 mm and p11 9.4 mm.
+- **Manuscript** · p2, p10 and p13 synced; p13 notes record the reasons and the dropped rows.
+
+### Round 6c (2 Oct): §8 and §11 given separate lenses (Pete: they still carried the same idea)
+**§8 (p10): what could happen to the family, and what insurance pays.** The intro's job sentence becomes the boundary:
+"Two risks stay uninsured: long-term care, for which the home's equity is the reserve (§9), and a lost job, which §11
+tests."
+
+**§11 (p13): the plan's assumptions and the advice itself** (the case's §11 list). Changes:
+- Heading: "The riskiest assumption is Adrian working to 65; if he cannot, the rules still hold the plan at
+  {{rec_adrian60_89}}."
+- The reason sits here, under the figures: "Why test a lost job. At 54, in a regional role open to restructuring and the
+  technology disruption the case names, with part of his pay a bonus, Adrian has the plan's least certain income; no
+  policy covers it."
+- Figure 25 note: "F1 is harsh by design: no pay from 60 to 65, no severance."
+- Register groups renamed "The plan's assumptions, tested: …" and "People, products and our advice: …".
+- P1 and P2 removed (and from the matrix); legend adds "Protection risks: §8."
+- Fit: Figure 24's caption folded into its title "Lasts to Carmen's 89, under stress".
+
+**Render:** 15 pages, all fit, from a run where every image loaded (p6 3.5, p11 9.4; p10 1.3, p13 1.4 mm free).
+Manuscript synced.
+
+### Round 6d (2 Oct): p10 A–E made parallel (Pete asked why C, D, E shared a paragraph)
+C, D and E had been run together to save space. Changes:
+- Each now has its own paragraph, like A and B.
+- D and E lead-ins end with a full stop, like A–C (were colons).
+- Room came from the heading, which drops to two lines: "Before retirement, the largest gap is income, not
+  death: …" → "The largest gap is income, not death: neither parent could replace their salary if disabled." The body says
+  the cover runs to retirement.
+
+Render: 15 pages, all fit, from a run where every image loaded (p10 1.1 mm free). Manuscript synced.
+
+### Round 6e (2 Oct): p3 strengths and risks split (Pete asked)
+- "Strong, liquid and lightly borrowed." and "Two risks sit behind the strength." each get a paragraph, matching the heading's
+  two halves.
+- Fit:
+  - Figure 3 caption "Parents only, low bonus. Source: case; team tax model (2026/27, separate assessment)." → "Parents
+    only, low bonus; case and team tax model." Separate assessment is in the text; 2026/27 is in A2.
+  - "Debt is 10% of assets, and the mortgage costs about 8.5%" → "Debt is 10% of assets; the mortgage costs 8.5%".
+- Render: all fit (p3 4.0 mm free). Manuscript synced.
+
+### Round 6f (2 Oct): run-in lead-ins that answer separate case questions get their own paragraphs (Pete: split all)
+Each "X: text" run-in became a paragraph "X. Text":
+- p6: "Why not an education savings policy";
+- p8: "Selection criteria";
+- p9: "Implementation, in order of preference";
+- p11: "Ownership", "Another district";
+- p12: "Family governance", "Legacy with purpose".
+
+Kept as run-ins on purpose:
+- p5's four medical-premium steps (one topic);
+- p12's "Why sell rather than keep the shares for dividends" (part of the business paragraph).
+
+Fit trims:
+- p9: "would cost Ryan about HK$350K" → "would cost Ryan HK$350K"; "to about HK$29K" → "to ≈HK$29K".
+- p11: "The HK$7M replacement need not be in Tai Kok Tsui; a cheaper district buys more space, or releases more money." →
+  "The HK$7M flat need not be in Tai Kok Tsui; elsewhere buys more space or cash."
+
+Render: 15 pages, all fit, two runs agree (p6 1.1 · p8 3.4 · p9 1.6 · p11 4.6 · p12 2.1 mm free). Manuscript synced.
+
+### Round 6g (2 Oct): Chloe gets Ryan's framework with her own settings; Singapore's grant is an option, not the path
+Pete asked whether Ryan's plan truly fits Chloe, and why Singapore was emphasised. Singapore is one of the case's four
+destinations; the Tuition Grant (a three-year work bond) was only our suggestion.
+- **p6 costs:** "Singapore costs HK$224–271K with the Tuition Grant, which requires three years' work in Singapore after graduation."
+  → "Singapore costs HK$332–400K, or HK$224–271K if she takes the Tuition Grant, which ties her to three years' work
+  there." The ranges are from make_charts EDU.
+- **p6 "After graduation":** was "follows Ryan's plan … with the Singapore grant, that plan starts in Singapore". Now
+  "Chloe gets Ryan's framework (§7): three pots, cover bought young and the parents' match to 2037. The settings are her
+  own: equity from her risk profile at 18, no crypto unless that profile allows it, and a savings rate set on her first
+  salary. If she first works abroad, MPF does not apply, so her retirement saving starts in that country's scheme."
+- **Fit trims:**
+  - Figure 12 source → "Source: fee schedules (A3); team FX analysis."
+  - A3 "fee schedules" → "university fee schedules, Statistics Canada, IRCC, Save the Student".
+  - "If Chloe studies locally, about HK$1.5M returns to the retirement portfolio." → "A local degree returns about
+    HK$1.5M to retirement."
+- Figure 12 keeps both Singapore bars.
+
+Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript synced.

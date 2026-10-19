@@ -85,7 +85,8 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
 - **Plain English for a judge, not model-speak**: no "sleeve", "path", "Fixed/Plan" shorthand, unexplained percentages.
 - Design: body 12pt Times New Roman; EB Garamond for headings and figure titles (fonts in `document/fonts/`); one accent
   colour (crimson); left-aligned text; no text wrapping around figures; dense but not cramped. All text ≥ 12pt.
-- Commit only when Pete asks. Branch: `pete/model-fix-drafts-figures`.
+- Commit after each major edit and push, on `main` (Pete, 20 Oct: several people work in the repo). Never commit
+  `Fin Plan.pdf` or `reference/Slides/` (Office metadata and university names; both are in `.gitignore`).
 
 ## Traps already hit
 
@@ -95,7 +96,7 @@ investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerP
 
 ## Open items (need outside facts or teammates)
 
-Personal statement career paragraphs (parked) · Wealth Management Connect figures vs HKMA · MPF passes to the estate
+Personal statement: Win's career paragraph (still a placeholder) and Lookbua's OK on his edited paragraph · Wealth Management Connect figures vs HKMA · MPF passes to the estate
 (no nomination) · HKMC annuity death benefit · insurer allows Flexi → Standard without underwriting · BOC-Prudential
 fund's own addendum fee (brochure ≈0.78%) and a channel waiving the 5% initial charge · each parent's current MPF
 fund fee · Ryan's crypto vs tokenised-MMF split ·

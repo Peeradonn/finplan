@@ -107,6 +107,6 @@ Target = emergency 1,000,000 + education 2,567,698 (half deposits, half short bo
 | Scenario | Fixed spending | Recommended plan |
 |---|---|---|
 | Full plan, base assumptions | 83% | 100% |
+| Adrian's job ends at 60 | 30% | 83% |
 | A. Low returns every year | 32% | 95% |
 | B. Inflation + medical costs | 28% | 92% |
-| C. Medical costs 8.5% a year | 58% | 99% |

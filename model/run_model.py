@@ -88,6 +88,12 @@ def mpf_in(y):
 # Carmen works two years past Adrian's retirement - the Excel Projection counts this, so we must too
 C_TAX    = WB["Tax"]["C13"].value
 CARMEN_NET = C_SAL - C_TAX - MPF_CAP
+ADRIAN_NET = WB["Tax"]["B7"].value - WB["Tax"]["B13"].value - MPF_CAP   # low bonus; for the job-loss stress
+def job_loss(age=60):
+    """Adrian's job ends at `age` (§11 register, story S26): his after-tax pay and both sides of his MPF stop until
+    his planned retirement; the household keeps spending as before, with no severance and no new job, and
+    retirement dates, annuities and the home are unchanged. Use as sim(..., inflows=job_loss())."""
+    return {y: -(ADRIAN_NET*(1 + WAGE)**(y - BY) + 2*MPF_CAP) for y in range(1972 + age, RETA)}
 
 # ---------- medical line, rebuilt from the workbook's age curve ----------
 def _curve():
@@ -329,6 +335,24 @@ def export_numbers():
     lad = [(s89(kw), s95(kw)) for _, kw in ladder_steps()]
     for i, (a, b) in enumerate(lad, 1):
         N[f"ladder_{i}_89"], N[f"ladder_{i}_95"] = P(a), P(b)
+    # Ten representative futures for "investments alone" (Round Two deck, slide 3): the year the money runs out at the
+    # 5th, 15th ... 95th percentile of the 10,000 paths; a path still funded at Carmen's 89 "lasts". Width = share of
+    # the 2026-to-89 timeline, so the slide draws each line from the model.
+    d1 = sim(*MIX2, C89, detail=True, **ladder_steps()[0][1])
+    ro = np.where(d1["alive"], 9999, d1["runout"])
+    for i, q in enumerate(range(5, 100, 10), 1):
+        y = int(np.percentile(ro, q, method="nearest"))
+        lasts = y == 9999
+        N[f"fut{i}_cls"] = "lasts" if lasts else "short"
+        N[f"fut{i}_end"] = "" if lasts else str(y)
+        N[f"fut{i}_w"] = f"{((C89 if lasts else y) - BY) / (C89 - BY) * 100:.1f}%"
+    short = sorted(int(N[f"fut{i}_end"]) for i in range(1, 11) if N[f"fut{i}_cls"] == "short")
+    born_c = C89 - 89
+    N["fut_short_n"] = str(len(short))
+    N["fut_short_n_word"] = ["none", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][len(short)]
+    N["fut_first_year"], N["fut_last_year"] = (str(short[0]), str(short[-1])) if short else ("", "")
+    N["fut_age_first"], N["fut_age_last"] = (str(short[0] - born_c), str(short[-1] - born_c)) if short else ("", "")
+    N["fut_last_w"] = f"{(short[-1] - BY) / (C89 - BY) * 100:.1f}%" if short else "0%"
     N["step_survivor"], N["step_business"] = pts(lad[0][0], lad[1][0]), pts(lad[1][0], lad[2][0])
     N["step_home"], N["step_annuity"] = pts(lad[2][0], lad[3][0]), pts(lad[3][0], lad[4][0])
     sw89, sw95 = s89(full, med=SWITCH), s95(full, med=SWITCH)
@@ -379,6 +403,9 @@ def export_numbers():
         a = sim(MIX2[0], MIX2[1], bd, C89, detail=True, **{**rec, **o})
         N[f"rec_{key}_89"], N[f"rec_{key}_typical"] = P(a["success"]), K(np.median(a["levels"].mean(0))*SPEND)
         N[f"rec_{key}_typical_pct"] = P(np.median(a["levels"].mean(0)))                  # share of the budget
+    lost = job_loss()                                   # Adrian's job ends at 60
+    N["adrian60_89"] = P(s89(full, inflows=lost))
+    N["rec_adrian60_89"] = P(sim(*MIX2, C89, **{**rec, "inflows": lost})[0])
     N["guard_cost"] = K(SPEND - float(N["guardswitch_typical"].strip("HK$K").replace(",", ""))*1e3)
     N["guard_cost_pct"] = P(1 - float(N["guardswitch_typical"].strip("HK$K").replace(",", ""))*1e3/SPEND)
     N["guaranteed_income_today"] = K((ann_income(2062, True) + RMP)/(1 + CPI)**(2062 - BY))

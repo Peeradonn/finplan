@@ -107,7 +107,9 @@ function walk(el, pr, items) {
   const par = el.parentElement;
   if (el.tagName === 'LI' && par && (par.classList.contains('recs') || par.classList.contains('pillars'))) {
     const b = getComputedStyle(el, '::before');
-    const idx = [...par.children].indexOf(el) + 1;
+    // a list can continue an earlier one ("counter-reset: r 2" starts the next item at 03)
+    const cr = (getComputedStyle(par).counterReset || '').match(/-?\d+/);
+    const idx = (cr ? parseInt(cr[0]) : 0) + [...par.children].indexOf(el) + 1;
     items.push({ t: 'text', x: box.x, y: box.y + (parseFloat(b.top) || 0) / MM, w: 10, h: 8, align: 'left',
       lh: parseFloat(b.fontSize) * 0.75 * 1.1, vertical: false,
       runs: [Object.assign({ text: String(idx).padStart(2, '0') }, style(b))] });

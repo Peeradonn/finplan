@@ -703,3 +703,184 @@ text references are correct ("Figure 14" on p7, "Figure 18" on p9).
   `document/proposal.html` is the document.
 
 ## Batch 14 ready
+
+---
+
+# Round 6 (2 Oct, deadline day): full read of `Fin Plan.pdf` (PowerPoint export, 2 Oct 12:24) as a judge
+Pete asked: is this up to standard, and how do we go beyond it, both in the story and as a real plan? Read against the
+rules, the six scoring criteria and the case. Pages 3–13 and 15 of the PowerPoint match `build/proposal.pdf` word for
+word. **Text exists only in the PowerPoint on p14** (Pete's, Fahtai's and Lookbua's career paragraphs) and in two small
+edits (p10 "5.0M full", p12 heading "Close every gap within the first year"). The PowerPoint also drops the cover's date
+and contents list. Every text run is now 12 pt, so S18's font problem is gone.
+
+**Verdict.** The substance is well above a typical entry. All eleven sections the case asks for appear in the case's own
+order, and the retirement argument (33% → 83% → 97%) is a real finding with a mechanism. Risks are measured, and each
+recommendation names its alternative. Five things hold it back:
+- two submission risks (S20);
+- an unfinished personal statement, worth 15 points (S21);
+- a case question left unanswered: Ryan's retirement (S22);
+- one overclaim an expert judge will catch (S23);
+- risks a practitioner would expect in the register (S26).
+
+Ranked by score impact; S20–S25 fit in today, and S26–S29 if time allows.
+
+### S20 · Whole document · severity: CRITICAL (disqualification) · do before anything else
+Quote (PDF properties): Author = a university email address; Creator/Producer = Microsoft PowerPoint for Microsoft 365.
+Issue: `Fin Plan.pdf` breaches "no university name anywhere, including metadata". This is the same leak as S18, in a new
+file made today. Deleting the author field is not enough: Office also stamps the account into the source `.pptx`. The
+team is now editing in PowerPoint, so the newest wording (p14) lives only in a file that must not be submitted.
+Fix:
+1. Submit only `document/build/proposal.pdf` (Chrome).
+2. The builder carries the PowerPoint-only text into `pages-10-15.html` and the manuscript: p14 career paragraphs (see S21
+   for their edits), p10 key-person cell "5.0M full, company pays", p12 heading "Close every gap within the first year;
+   after that, dates and events trigger each decision".
+3. From now until submission, the team sends wording changes as text (chat or this file), never as an edited `.pptx`.
+4. Keep the Chrome cover's date and contents list: the contents line helps the judges find sections (presentation, 20).
+5. Final check before upload: open the PDF's properties; Author must be empty and Producer must be Chrome/Skia.
+
+### S21 · Page 14 (personal statement, 15 points) · severity: high
+Quote: "Win. Placeholder of about seventy words for the career paragraph…" (still grey placeholder text in both files)
+Issue: The personal statement scores 15 points, as much as the risk analysis, and it is the least finished page. The
+problems:
+1. **Win's paragraph is missing.** A placeholder in a submitted proposal would cost presentation marks as well.
+2. **Lookbua's paragraph is off the brief.** The criterion is "personal career goal **and opportunities under the
+   cross-boundary wealth management connect scheme**". His paragraph never mentions Wealth Management Connect, the
+   Greater Bay Area or finance, and points to "professional engineering credentials". It also has grammar errors that cost
+   marks under "grammar": "within this five years", "under uncertain, rapidly-evolving world", "system risk in science".
+3. **Fahtai's paragraph:** typo "casflow"; the label "Fahtai T." breaks the first-name pattern (Pete, Win, Lookbua).
+Fix:
+- **Win:** writes about 70 words today. Pattern: the role in five years, the market, what his part of the proposal (the
+  investment vehicles) taught him, and a Connect-linked next step. If nothing arrives by about 20:00, drop his
+  paragraph rather than submit a placeholder.
+- **Lookbua:** proposed edit, keeping his own goal. **He must approve it: it is his statement.**
+  > **Lookbua.** In five years I want to model risk for portfolios that cross the boundary, after graduate study in
+  > systemic risk. Wealth Management Connect joins two markets with different rules, quotas and currencies, so a shock in
+  > one can reach families in the other: a systemic-risk problem. Testing this plan under stress taught me that a
+  > family decides better when every risk is measured and has a named defence. Next is a master's in risk, with a
+  > professional risk qualification to follow.
+- **Fahtai:** "casflow" → "cash-flow"; "Fahtai T." → "Fahtai."
+- **Pete's paragraph** works. Its claim that Southbound money is "moving into funds" is an open item: check it against
+  HKMA data, or soften it to "is starting to move into funds".
+
+### S22 · Page 9 (Ryan) · severity: medium-high (case asks; client information and goals)
+Quote: "Ryan earns HK$300K and saves 30% (HK$90K a year) in three pots…"
+Issue: The case asks for advice on Ryan's "savings, investment, protection **and retirement discipline**". Savings,
+investment and protection are answered, but retirement is not. His **HK$180K MPF**, a case fact, appears nowhere in the
+document (checked `proposal.html`). A judge ticking off the case's Goal 3 finds one of its four items missing.
+Fix (p9 is full; this replaces the last sentence of the Ryan paragraph): "A set monthly contribution to the household
+builds the habit." → "His HK$180K MPF moves to the lowest-fee global equity index fund in his scheme, where it stays for
+thirty years; a set monthly contribution to the household builds the habit." If it does not fit, cut "such as a flat
+deposit," from the same paragraph.
+
+### S23 · Page 7 · severity: medium-high (an overclaim a practitioner judge will catch)
+Quote: "Adrian's Treasuries pay his first five years of retirement whatever markets do"
+Issue: The ladder is 20% of HK$2.07M, about HK$0.41M today. It pays a known sum each year from 2037 to 2041 (S18 put it
+at ≈HK$120–140K a year), not five years of a HK$780K budget. A judge who multiplies 20% × HK$2.07M sees the claim fail.
+Fix: "Adrian's Treasury notes mature one a year from 2037 to 2041, paying a known sum each year whatever markets do;"
+(same length). If the number checker adds a key for the yearly amount, add "(≈HK${{…}}K)".
+
+### S24 · Pages 4 and 5 · severity: medium (the same floor is compared with two different "without" figures)
+Quotes:
+- p4: "in the worst 1% of markets … leaving Carmen HK$76K a year; with it and the spending rules … never falls below
+  HK$382K"
+- p5: "in the worst one simulation in twenty, Carmen's spending falls no lower than HK$382K a year … rather than to
+  guaranteed income alone, HK$111K"
+Issue: A careful reader meets HK$382K twice, against a different tail (1% vs 1 in 20) and a different alternative
+(HK$76K vs HK$111K), and wonders which is right. Both are right: HK$382K is the guardrails' floor, p4 removes the
+annuity, and p5 removes the guardrails. But the page does not say so. p4 also credits the annuity with a result that
+needs the guardrails too.
+Fix (wording only, no new numbers):
+- p4: "…leaving Carmen HK$76K a year **without the annuity**; with it and the spending rules in Figure 11, her spending
+  never falls below HK$382K, **the rules' floor**."
+- p5: "…rather than to guaranteed income alone, HK$111K, **as it would without the guardrails**."
+
+### S25 · Pages 4 (Figure 7) and 2 · severity: medium (framing; the largest single step after the home)
+Quote: Figure 7 "Spend less after the first death · from 2057 · agreed now, in writing"
+Issue: Two problems.
+1. "From 2057" reads as scheduling Adrian's death. 2057 is the modelling assumption (his 84), not a date the family
+   sets.
+2. A sceptical judge will say this "decision" (+10 points) is just an assumption. It is a standard and defensible one,
+   but the page gives no evidence. The OECD-modified equivalence scale counts a second adult as 0.5, so one person needs
+   1/1.5 ≈ 67% of a couple's spending. That is the evidence for the plan's 70%.
+Fix:
+- Figure 7: "Plan for one person's spending · after the first death (2057 in the model) · agreed now, in writing".
+- p4 "Why these four" paragraph, after "The decisions use assets the family already owns": add "the first is what one
+  person needs (two-thirds of a couple's, on the OECD scale; we use 70%);". If space is short, cut "With no business sale
+  at all, it still reaches 66%." That fact is repeated on p12 and p13.
+
+## Batch 15 ready
+
+### S26 · Page 13 (Figure 26) · severity: medium (risk analysis, 15 points; the plan as a real plan)
+Issue: The register is strong, but three risks a practitioner would raise first are missing:
+- **Adrian's job ends before 65.** He is 54, a regional director in logistics technology. Redundancy or forced early
+  retirement is more likely than disability, cannot be insured, and costs years of the HK$605K saving.
+- **Care needs in late life.** The plan runs to Carmen's 89/95 but prices only medical premiums. Residential or home
+  care in her 80s is the classic late-life shock. The case lists "longevity risk and medical inflation".
+- **The 97% depends on an insurer term not yet confirmed** (open item): moving from Flexi to Standard at 75 without new
+  underwriting. If the insurer refuses, the tier review fails exactly when Adrian is least insurable.
+Fix: Two rows in the qualitative block, and one Defence cell extended.
+- "P3 · Adrian's job ends before 65 · Years of saving lost · 12-month reserve; review brings the home decision forward"
+- "P4 · Care needs late in life · Costs outside the budget · Home equity: downsizing, or the reverse mortgage's lump sum
+  [check: HKMC lump-sum purposes include medical costs]"
+- F2 Defence: "Tier review at 75; insurer chosen for a switch without new underwriting"
+If p13 (4.8 mm free) cannot take two rows, shrink Figures 24/25 by 6 mm. Better still: if there is model time, the
+builder adds a stress "Adrian stops work at 60". RETA is a single constant feeding the accumulation, so this means a
+code change, not a rerun. Then P3 gets a measured number like the F rows. Skip that if it puts the deadline at risk.
+
+### S27 · Page 12 (roadmap) · severity: low-medium (the numbers do not add up for a judge who adds them)
+Quote: Effect column: 2037 "+22 points", 2039 "+17 points", 2047 "83% → 97%"
+Issue: 22 + 17 = 39, but the plan claims 33% → 83% (+50). The survivor-spending step (+10) has no row, and the annuity
+(+1) is split across the two retirement rows. "Policy signed" (Months 1–6) could mean an insurance policy.
+Fix:
+- Month 12 row: "First family meeting; Ryan's plan; family charter; survivor budget agreed · All four · +10 points".
+- Months 1–6: "investment policy signed".
+- p12 has about 17 mm free.
+
+### S28 · Pages 10 and 15 · severity: low-medium (client information: "make use of all the information")
+Issue: Three case facts are never used:
+- the whole-life policies' **HK$420K cash value**;
+- the **home and motor insurance** (the case lists them under existing protection, and concern 5 asks whether existing
+  cover is sufficient);
+- the bonus range above the low case.
+A judge scoring "all the information" checks the balance sheet line by line.
+Fix (p10, end of "Term cover, not more whole-life"): "The two whole-life policies (HK$420K cash value) are kept, not
+surrendered; home cover is checked for owner's liability." For the bonus, in p3's "Put idle money to work" paragraph:
+"any bonus above HK$150K goes straight to the portfolio" (the model counts only the low bonus, so this is upside).
+
+### S29 · Page 15 (A1) and Figures 6, 8, 24 · severity: low
+- A1 "Model mix · 40% equity for all the parents' money · Source: Plan holds ≈50%". This reads as if the model never
+  tested the recommended portfolio, and the Source column holds a remark, not a source. Fix: Base "40% equity (the plan
+  holds ≈50%; more adds legacy, not security, §5)"; Source "Team model". Likewise the Cash row's Source "Education fund"
+  → "HKAB deposit rates".
+- p2 rec 05 "Adrian 40/60 … Carmen 60/40" is unexplained shorthand on the page judges read first. Fix: "Adrian 40%
+  equity with a Treasury ladder, Carmen 60% ESG-led".
+- Figure 6 label "+ Standard plan from 75" vs "tier review" everywhere else: use "+ tier review at 75".
+- Figures 8 and 24 use blue, while the design rule is one accent colour (crimson). Low priority; only if a chart is
+  redrawn anyway.
+
+## Batch 16 ready
+
+### What works well (protect these)
+- **The spine.** The cover, p2 and p4 tell one story in three sentences. The money is there but locked in the home and
+  the business; medical premiums are the cost the budget forgets; four decisions the family controls fix it (33% → 83%).
+  The rest raise it to 97% and protect the worst case. Every section serves a pillar.
+- **The section order is the case's own (§1–§11)**, so a judge marking against the case finds every answer where
+  expected.
+- **"Defend" paragraphs** on every page ("Why not all Treasuries", "Why not an education savings policy", "Term cover,
+  not more whole-life", "Why sell rather than keep the shares"). These are what separate advice from description.
+- **The medical-premium finding** (64% vs 33% if premiums sat inside the budget) is original and evidenced. Few teams
+  will have it.
+- **Honest limits:** A2, "no return premium assumed" for ESG, "compare decisions; not forecasts".
+
+### For Round Two (not today)
+- An "Your eight questions, answered" slide: each case concern with a one-line yes/no answer and its §. It maps straight
+  onto the judges' checklist and suits a 10-minute video.
+- Put a human face on the pillar "Give every voice a place": one sentence per family member, in their words (what each
+  asked for) → what the plan does.
+
+### Unsure (for the number checker or Pete)
+- Figure 21 "Keep, no release 59%" vs Figure 6, where the plan before the home step is 60%, and 61% would follow with
+  the annuity added. Probably the mortgage treatment differs; worth a one-line check.
+- HKMC reverse mortgage lump-sum purposes (S26 P4) and whether Hong Kong advisers may actively market to Southbound
+  clients under the 2024 rules (affects p14's "need advisers who can explain those products").
+- Whether dropping the cover's contents list was a teammate's deliberate choice (S20 recommends keeping it).
