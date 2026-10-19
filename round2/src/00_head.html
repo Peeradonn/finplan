@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built to Last</title>
+<!--
+  Built to Last, Round Two. Team Axis. One file of 1280 x 720 slides, presented over video (10 minutes).
+  Build: .venv/Scripts/python.exe round2/make.py [--builds]  (build.py -> series + numbers filled -> render).
+  Content source: round2/Round2_Deck_Plan.md (v7, approved 20 Oct). Change the plan first, then the slide.
+  Model numbers are double-brace placeholders filled by document/fill.py, the same values as the written proposal;
+  chart series are double-bracket tokens filled by round2/series.py from figures/figure-data.md.
+  Icons: Lucide (ISC License; copyright Lucide Contributors, portions Cole Bemis).
+  Type (look v4, 20 Oct, Pete): EB Garamond for the display roles (titles, kicker questions, names, big numbers, the
+  cover), Plus Jakarta Sans for text, labels and charts. Both SIL Open Font License, files in round2/fonts.
+-->
+<style>
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-Regular.ttf") format("truetype");font-weight:400}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-Medium.ttf") format("truetype");font-weight:500}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");font-weight:600}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-Bold.ttf") format("truetype");font-weight:700}
+@font-face{font-family:"Jakarta";src:url("fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");font-weight:800}
+@font-face{font-family:"Garamond";src:url("fonts/EBGaramond-Regular.ttf") format("truetype");font-weight:400}
+@font-face{font-family:"Garamond";src:url("fonts/EBGaramond-Medium.ttf") format("truetype");font-weight:500}
+@font-face{font-family:"Garamond";src:url("fonts/EBGaramond-SemiBold.ttf") format("truetype");font-weight:600 800}
+@font-face{font-family:"Garamond";src:url("fonts/EBGaramond-MediumItalic.ttf") format("truetype");font-weight:400 600;font-style:italic}
+:root{
+  /* Crimson, as in the written proposal: the one point a slide makes. Warm neutrals on a warm paper. */
+  --paper:#FCFBF8; --mist:#F2F0EB; --rule:#DAD8D3; --grey:#A6A39E;
+  --ink:#1C1B1A; --slate:#5F5D59; --quiet:#8F8C87;
+  --accent:#A81E2D; --accent-deep:#6F1320;
+  --text:"Jakarta","Segoe UI",Arial,sans-serif;
+  --head:"Jakarta","Segoe UI",Arial,sans-serif;
+  --disp:"Garamond","EB Garamond",Georgia,serif;
+  --num:"Jakarta","Segoe UI",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#E2E1DE;color:var(--ink);font:400 16px/1.42 var(--text)}
+p,h1,h2,h3,h4,ul,ol,figure,table,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+b,strong{font-weight:700}
+.deck{zoom:var(--z,1);display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
+.slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;
+  padding:34px 48px 56px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(28,27,26,.18)}
+@page{size:1280px 720px;margin:0}
+@media print{
+  body{background:#fff}
+  .deck{zoom:1;gap:0;padding:0;display:block}
+  .slide{box-shadow:none;break-after:page;page-break-after:always}
+}
+p,li,span,dd,b{text-wrap:pretty}
+
+/* icons */
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ic.sm{width:16px;height:16px}
+
+/* header: the crimson rule, the question, the answer */
+.head{border-left:5px solid var(--accent);padding:0 0 2px 16px}
+.kicker{font:italic 500 21px/1.2 var(--disp);color:var(--accent)}
+.head h2{font:600 36px/1.1 var(--disp);font-variant-numeric:lining-nums;letter-spacing:-.2px;margin-top:4px;max-width:1120px;text-wrap:balance}
+
+.muted{color:var(--slate)}
+.small{font-size:13.5px;line-height:1.42}
+/* number tags: a grey word in brackets after the claim. Written in capitals in the source. */
+.tag{font-weight:400;font-size:.86em;letter-spacing:0;color:var(--quiet);text-transform:lowercase;white-space:nowrap;font-family:var(--text);font-style:normal}
+.tag::before{content:"("}
+.tag::after{content:")"}
+.av{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none;border:1.5px solid var(--rule);background:var(--mist)}
+.av img{width:100%;height:100%;object-fit:cover;display:block}
+.qn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--ink);color:var(--ink);font:700 12.5px/1 var(--head);flex:none;background:var(--paper)}
+
+/* footer: the mark, the talk's sections as stations on a line, sources, page */
+.foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:16px;font-size:12px;color:var(--slate)}
+.foot .mk{font:italic 500 15px/1 var(--disp);color:var(--ink);padding-right:14px;border-right:1px solid var(--rule);white-space:nowrap}
+.line{display:flex;align-items:center}
+.line .st{position:relative;padding-left:15px;margin-right:26px;white-space:nowrap}
+.line .st::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;border:2px solid var(--grey);background:var(--paper)}
+.line .st::after{content:"";position:absolute;left:calc(100% + 4px);top:50%;width:18px;height:2px;margin-top:-1px;background:var(--rule)}
+.line .st:last-child{margin-right:0}
+.line .st:last-child::after{display:none}
+.line .st.on{color:var(--ink);font-weight:700}
+.line .st.on::before{background:var(--accent);border-color:var(--accent)}
+.src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
+
+/* ---------------- 1 cover, 15 close: the title on the crimson rule, the photograph ---------------- */
+.cover{padding:0;flex-direction:row}
+.cover .left{flex:1;padding:50px 56px 44px;display:flex;flex-direction:column}
+.cover .event{font:600 14.5px/1.45 var(--head);color:var(--slate)}
+.cover .ttl{border-left:7px solid var(--accent);padding-left:24px;margin-top:84px}
+.cover h1{font:600 112px/0.98 var(--disp);letter-spacing:-1.5px}
+.cover .tagline{font:italic 500 34px/1.2 var(--disp);margin-top:14px;color:var(--accent)}
+.cover .desc{font-size:18px;line-height:1.5;margin-top:26px;max-width:560px;color:#33322F}
+.cover .who{margin-top:auto;display:flex;gap:28px;align-items:flex-end}
+.cover .who .t{font:600 24px/1.1 var(--disp);color:var(--accent)}
+.cover .who p{font:700 15.5px/1.3 var(--head)}
+.cover .who p span{display:block;font-weight:400;font-size:13.5px;color:var(--slate)}
+.cover .right{width:520px;flex:none;position:relative}
+.cover .right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover .credit{position:absolute;right:14px;bottom:12px;font-size:11.5px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+/* the close: three aims, one number each */
+.cover.end .ttl{margin-top:40px}
+.cover.end h1{font-size:96px}
+.close3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px;padding-top:16px;border-top:1px solid var(--rule)}
+.close3 b{display:block;font:italic 500 20px/1.15 var(--disp);color:var(--slate)}
+.close3 .n{display:block;color:var(--ink);font:600 32px/1.05 var(--disp);font-variant-numeric:lining-nums;margin-top:8px;letter-spacing:-.3px}
+.close3 .n.on{color:var(--accent)}
+.close3 span{display:block;font-size:13.5px;line-height:1.35;color:var(--slate);margin-top:5px}
+.legacy{margin-top:18px;font:italic 500 20px/1.35 var(--disp)}
+.legacy b{font-style:normal;font-weight:600;font-variant-numeric:lining-nums}
+
+/* ---------------- 2 the Wongs, on paper: four people, then the three numbers that say "secure" ----------------
+   The focal point is HK$24.4M (the only crimson), the claim slide 4 undercuts. */
+.fam{display:grid;grid-template-columns:repeat(4,1fr);column-gap:34px;margin-top:24px}
+.fam .p{display:flex;flex-direction:column}
+.fam .pic{width:150px;height:150px;border-radius:50%;overflow:hidden;border:2px solid var(--rule);background:var(--mist)}
+.fam .pic img{width:100%;height:100%;object-fit:cover}
+.fam h3{font:600 31px/1.05 var(--disp);letter-spacing:-.2px;margin-top:14px}
+.fam h3 span{color:var(--slate);margin-left:8px;font-variant-numeric:lining-nums}
+.fam .role{font-size:15px;line-height:1.3;color:var(--slate);margin-top:3px}
+.fam .risk{display:inline-block;width:max-content;font:700 12px/1 var(--head);color:var(--slate);border:1.5px solid var(--grey);border-radius:12px;padding:4px 9px;margin-top:8px}
+.fam .want{font:500 18.5px/1.36 var(--text);margin-top:12px;padding-top:11px;border-top:1.5px solid var(--ink)}
+.paper{margin-top:auto;border-top:1px solid var(--rule);padding-top:14px;display:flex;align-items:flex-end;gap:56px}
+.paper .lab{font:italic 500 26px/1.1 var(--disp);align-self:center;width:120px;flex:none}
+.paper .k b{display:block;font:600 50px/1 var(--disp);font-variant-numeric:lining-nums;letter-spacing:-.4px}
+.paper .k>span{display:block;font-size:15px;color:var(--slate);margin-top:6px;white-space:nowrap}
+.paper .k.main b{font-size:80px;color:var(--accent);letter-spacing:-.8px}
+
+/* ---------------- 3 their eight questions: the first large, the other seven listed ----------------
+   Question 1 is the focal point (crimson number); all eight return answered on slide 12, by the same numbers. */
+.qs{flex:1;display:flex;gap:56px;margin-top:28px;min-height:0}
+.qs .one{width:470px;flex:none;display:flex;flex-direction:column}
+.qs .one .num{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#fff;font:600 34px/1 var(--disp)}
+.qs .one p{font:600 38px/1.16 var(--disp);letter-spacing:-.3px;margin-top:20px}
+.qs .one .ctx{display:block;font-size:15px;line-height:1.4;color:var(--slate);margin-top:18px;padding-top:12px;border-top:1px solid var(--rule)}
+.qs ol{flex:1;display:flex;flex-direction:column;border-top:1.5px solid var(--ink)}
+.qs li{display:grid;grid-template-columns:42px 1fr;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule)}
+.qs li .qn{width:28px;height:28px;font-size:13.5px}
+.qs li b{display:block;font:700 16.5px/1.25 var(--head)}
+.qs li p span{display:block;font-size:14px;line-height:1.3;color:var(--slate);margin-top:2px}
+
+/* ---------------- 4 the diagnosis: what they own as one bar; the premiums the budget leaves out ----------------
+   The bar is to scale (case balance sheet); a bracket groups the home and the business (61%, the crimson). The
+   premium line is the model's series (series.py), with one callout at its peak. */
+.dg{flex:1;display:flex;gap:50px;margin-top:20px;min-height:0}
+.dg .own{width:480px;flex:none;display:flex;flex-direction:column}
+.dg .cap,.pl .cap{font:700 16px/1.25 var(--head)}
+.dg .cap span,.pl .cap span{font-weight:400;color:var(--slate)}
+.dg .bar{display:flex;gap:16px;height:356px;margin-top:18px}
+.dg .stack{width:78px;flex:none;display:flex;flex-direction:column;gap:2px}
+.dg .stack i{display:block;border-radius:2px}
+.dg .stack i.k{background:var(--ink)}
+.dg .stack i.g{background:var(--grey)}
+.dg .stack i.l{background:var(--rule)}
+.dg .labs{width:180px;flex:none;display:flex;flex-direction:column;gap:2px}
+.dg .labs p{display:flex;flex-direction:column;justify-content:center;font-size:13.5px;line-height:1.25;color:var(--slate);min-height:0}
+.dg .labs p b{font:700 15px/1.25 var(--head);color:var(--ink)}
+.dg .brk{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.dg .brk .b1{position:relative;width:14px;border:2px solid var(--accent);border-left:0}
+.dg .brk .b1 p{position:absolute;left:30px;top:50%;transform:translateY(-50%)}
+.dg .brk p b{display:block;font:600 66px/1 var(--disp);color:var(--accent);font-variant-numeric:lining-nums}
+.dg .brk p span{display:block;font:700 15px/1.3 var(--head);margin-top:6px;width:150px}
+.pl{flex:1;min-width:0;display:flex;flex-direction:column}
+.pl .box{position:relative;height:318px;margin:30px 0 0 50px}
+.pl svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.pl .grid{position:absolute;left:0;right:0;border-top:1px solid var(--rule)}
+.pl .grid span{position:absolute;right:calc(100% + 8px);top:-8px;font:600 12px/1 var(--head);color:var(--quiet);white-space:nowrap}
+.pl .xax{position:relative;height:42px;margin-left:50px;border-top:1.5px solid var(--ink)}
+.pl .xax span{position:absolute;top:7px;transform:translateX(-50%);font:700 13px/1.3 var(--head);text-align:center;white-space:nowrap}
+.pl .xax span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+.pl .xax span:first-child{transform:none;text-align:left}
+.pl .xax span:last-child{transform:translateX(-100%);text-align:right}
+.pl .co{position:absolute;transform:translate(-100%,-50%);padding-right:18px;text-align:right;white-space:nowrap}
+.pl .co b{display:block;font:600 32px/1 var(--disp);font-variant-numeric:lining-nums;white-space:nowrap}
+.pl .co.r{transform:translate(0,-50%);padding:0 0 0 18px;text-align:left}
+.pl .co.r::after{right:auto;left:0;margin:-5.5px 0 0 -5.5px}
+.pl .tn{position:absolute;font-size:13px;line-height:1.3;color:var(--slate);white-space:nowrap}
+.pl .co span{display:block;font-size:13.5px;color:var(--slate);margin-top:3px;white-space:nowrap}
+.pl .co::after{content:"";position:absolute;right:0;top:50%;width:11px;height:11px;margin:-5.5px -5.5px 0 0;border-radius:50%;background:var(--ink)}
+.pl .foot2{font-size:13px;color:var(--slate);margin-top:auto}
+
+/* ---------------- 5 the consequence: ten typical futures as lines across Carmen's life ----------------
+   Each line is one future (5th to 95th percentile of when the money runs out, investments alone), from the model:
+   its length is futN_w on a 2026 -> 2066 axis. A crimson cross where it runs out (the title's claim). */
+.tw{flex:1;display:flex;gap:44px;margin-top:16px;min-height:0}
+.tw .chart{width:850px;flex:none;display:flex;flex-direction:column}
+.tw .cap{font:700 16px/1.25 var(--head)}
+.tw .cap span{font-weight:400;color:var(--slate)}
+.tw .plot{position:relative;margin:32px 44px 0 0}
+.tw .ret{position:absolute;top:-28px;bottom:-4px;left:32.5%;right:0;background:var(--mist)}
+.tw .ret span{position:absolute;top:7px;left:10px;font:600 13px/1 var(--head);color:var(--slate);white-space:nowrap}
+.tw .goal{position:absolute;top:-28px;bottom:-4px;left:100%;border-left:2px dashed var(--ink)}
+.tw .goal span{position:absolute;top:7px;right:8px;font:700 13px/1 var(--head);white-space:nowrap}
+.tw .rows{position:relative;display:flex;flex-direction:column;gap:8px;padding:10px 0 8px}
+.tw .ln{position:relative;height:23px}
+.tw .ln>i{position:absolute;left:0;top:50%;height:4px;margin-top:-2px;width:var(--w);background:var(--grey);border-radius:2px}
+.tw .ln>b{position:absolute;top:50%;left:var(--w);width:24px;height:24px;margin:-12px 0 0 -12px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff}
+.tw .ln>b .ic{width:14px;height:14px;stroke-width:3.2}
+.tw .ln.short>b{background:var(--accent)}
+.tw .ln.lasts>i{width:calc(100% + 22px)}
+.tw .ln.lasts>b{left:calc(100% + 22px);background:var(--ink)}
+.tw .ln.short .v,.tw .ln.lasts .x{display:none}
+.tw .brk{position:relative;height:44px;margin-right:44px}
+.tw .brk div{position:absolute;top:2px;height:12px;border:2px solid var(--ink);border-top:0}
+.tw .brk span{position:absolute;top:19px;transform:translateX(-50%);font:700 15px/1.2 var(--head);white-space:nowrap}
+.tw .axis{position:relative;height:42px;border-top:1.5px solid var(--ink);margin-right:44px}
+.tw .axis span{position:absolute;top:7px;transform:translateX(-50%);font:700 13px/1.3 var(--head);text-align:center;white-space:nowrap}
+.tw .axis span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+.tw .axis span:first-child{transform:none;text-align:left}
+.tw .how{margin-top:auto;padding-top:6px;font-size:13px;line-height:1.4;color:var(--slate)}
+.tw .side{flex:1;min-width:0;display:flex;flex-direction:column;padding-top:30px}
+.tw .who{display:flex;align-items:center;gap:14px}
+.tw .who .ph{width:104px;height:104px;flex:none;border-radius:50%;border:2px dashed var(--grey);display:flex;align-items:center;justify-content:center;text-align:center;font-size:11.5px;line-height:1.25;color:var(--slate);padding:12px;overflow:hidden}
+.tw .who .ph img{width:100%;height:100%;object-fit:cover}
+.tw .who p{font:600 24px/1.15 var(--disp)}
+.tw .who p span{display:block;font:400 14px/1.35 var(--text);color:var(--slate);margin-top:3px}
+.tw .big{font:600 104px/.9 var(--disp);color:var(--accent);letter-spacing:-1px;margin-top:34px;font-variant-numeric:lining-nums}
+.tw .big small{font-size:48px;font-style:italic;font-weight:500;margin:0 8px}
+.tw .bigl{font:700 18px/1.3 var(--head);margin-top:12px}
+.tw .overall{font-size:14.5px;line-height:1.4;color:var(--slate);margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+
+/* ---------------- 6 the climb: four decisions as a staircase, each named under its own step ----------------
+   Bar heights are the model's ladder values; a dashed baseline at investments alone; only the last value is crimson.
+   One annotation: a dimension line labelled with the title's second claim. Step sizes never shown (plan §9). */
+.cl{flex:1;display:flex;gap:30px;margin-top:2px;min-height:0;margin-bottom:6px}
+.cl .chart{width:900px;flex:none;display:flex;flex-direction:column}
+.cl .plot{position:relative;height:262px;margin-top:58px;display:flex;gap:30px}
+.cl .st{flex:1;position:relative}
+.cl .st .bar{position:absolute;left:0;right:0;bottom:0;background:#E6E4E0;border-top:4px solid var(--ink)}
+.cl .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 36px/1 var(--disp);font-variant-numeric:lining-nums}
+.cl .st.base .bar{background:var(--mist);border-top-color:var(--grey)}
+.cl .st.base .v{color:var(--grey)}
+.cl .st.top .bar{border-top-color:var(--accent)}
+.cl .st.top .v{color:var(--accent);font-size:54px}
+.cl .bl{position:absolute;left:-8px;right:-8px;border-top:2px dashed var(--grey);z-index:1}
+.cl .labs{display:flex;gap:30px;border-top:2px solid var(--ink);padding-top:12px}
+.cl .labs>div{flex:1;min-width:0}
+.cl .labs i{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font:800 12.5px/1 var(--head);font-style:normal}
+.cl .labs b{display:block;font:700 15.5px/1.25 var(--head);margin-top:7px}
+.cl .labs span{display:block;font:600 13px/1.3 var(--head);color:var(--slate);margin-top:3px}
+.cl .labs em{display:block;font-style:normal;font-size:13px;line-height:1.3;color:var(--slate);margin-top:6px}
+.cl .labs .base b{color:var(--slate)}
+.cl .labs .q{display:inline-block;margin-left:6px;font:700 11.5px/1 var(--head);color:var(--slate);border:1.5px solid var(--grey);border-radius:10px;padding:3px 7px;vertical-align:4px}
+.cl .side{flex:1;min-width:0;position:relative}
+.cl .dim{position:absolute;left:0;top:58px;height:262px;width:100%}
+.cl .dim .ln{position:absolute;left:10px;width:14px;border:2px solid var(--ink);border-left:0}
+.cl .dim .t{position:absolute;left:38px;transform:translateY(-50%);font:600 22px/1.2 var(--disp)}
+.cl .dim .t span{display:block;font:400 14.5px/1.38 var(--text);color:var(--slate);margin-top:6px}
+.cl .cap{margin-top:auto;padding-bottom:4px;font-size:13.5px;color:var(--slate)}
+
+/* ---------------- 7 two safeguards: the premium line with the review at 75; the staircase's last steps ----------------
+   Left: Flexi for life (grey) against the recommended path (ink: Standard from 2047), the saving shaded.
+   Right: the staircase continues from slide 6; the last step (spending rules) is the crimson. */
+.sg{flex:1;display:flex;gap:46px;margin-top:14px;min-height:0}
+.sg .pl{flex:none;width:640px}
+.sg .pl .box{height:262px}
+.sg .sw{position:absolute;top:-24px;bottom:0;border-left:2px dashed var(--ink)}
+.sg .sw span{position:absolute;top:0;right:10px;font:700 13px/1.25 var(--head);white-space:nowrap;text-align:right}
+.sg .key{display:flex;gap:22px;font-size:13.5px;color:var(--slate);margin-top:8px}
+.sg .key i{display:inline-block;width:22px;height:3px;vertical-align:4px;margin-right:7px;background:var(--grey)}
+.sg .key i.k{background:var(--ink)}
+.sg .key i.s{height:10px;vertical-align:1px;background:#E3E0D9}
+.sg .steps{flex:1;min-width:0;display:flex;flex-direction:column}
+.sg .plot{position:relative;height:262px;margin-top:72px;display:flex;gap:22px}
+.sg .st{flex:1;position:relative}
+.sg .st .bar{position:absolute;left:0;right:0;bottom:0;background:#E6E4E0;border-top:4px solid var(--ink)}
+.sg .st .v{position:absolute;left:0;bottom:calc(100% + 6px);font:600 36px/1 var(--disp);font-variant-numeric:lining-nums;white-space:nowrap}
+.sg .st.was .bar{background:var(--mist);border-top-color:var(--grey)}
+.sg .st.was .v{color:var(--grey)}
+.sg .st.top .bar{border-top-color:var(--accent)}
+.sg .st.top .v{color:var(--accent);font-size:50px}
+.sg .labs{display:flex;gap:22px;border-top:2px solid var(--ink);padding-top:10px}
+.sg .labs>div{flex:1;min-width:0}
+.sg .labs b{display:block;font:700 14.5px/1.25 var(--head)}
+.sg .labs span{display:block;font-size:13px;line-height:1.3;color:var(--slate);margin-top:3px}
+.sg .floor{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule);font-size:14.5px;line-height:1.4;color:var(--slate)}
+.sg .floor b{color:var(--ink)}
+
+/* ---------------- 8 every dollar gets a job: today and our plan as two bars of the same money ----------------
+   Both bars are the parents' HK$7.7M outside the MPF and the home (case; proposal §5). Grey today; ink segments for
+   our plan's jobs, each with its owner's face. ESG as a progress bar into the family's 20-25% goal band. */
+.jb{flex:1;display:flex;flex-direction:column;margin-top:22px;min-height:0}
+.jb .row{display:grid;grid-template-columns:118px 1fr;align-items:center;column-gap:18px}
+.jb .row>p{font:italic 500 21px/1.1 var(--disp)}
+.jb .seg{display:flex;gap:3px;height:74px}
+.jb .seg i{display:flex;align-items:center;padding:0 14px;font:700 14.5px/1.15 var(--head);font-style:normal;color:#fff;white-space:nowrap;border-radius:2px;overflow:hidden}
+.jb .seg.now i{background:#CFCBC4;color:var(--ink)}
+.jb .seg.now i.e{background:#8E8A83;color:#fff}
+.jb .seg.plan i{background:var(--ink)}
+.jb .seg i small{font-weight:400;margin-left:6px;opacity:.85;font-size:13px}
+.jb .under{display:grid;grid-template-columns:118px 1fr;column-gap:18px;margin-top:16px}
+.jb .jobs{display:flex;gap:3px}
+.jb .jobs div{display:flex;gap:10px;padding-right:12px;min-width:0}
+.jb .jobs .av{width:46px;height:46px}
+.jb .jobs p{font-size:13.5px;line-height:1.32;color:var(--slate)}
+.jb .jobs p b{display:block;font:700 15px/1.25 var(--head);color:var(--ink)}
+.jb .gap{height:40px}
+.jb .mix{display:flex;gap:2px;height:12px;margin-top:9px;width:220px}
+.jb .mix i{display:block;border-radius:1px}
+.jb .mix i:nth-child(1){background:var(--ink)}
+.jb .mix i:nth-child(2){background:var(--grey)}
+.jb .mix i:nth-child(3){background:var(--rule)}
+.jb .mixl{display:block;font:600 12.5px/1.2 var(--head);color:var(--slate);margin-top:5px;white-space:nowrap}
+.jb .low{display:flex;gap:56px;margin-top:auto;padding-top:14px;border-top:1px solid var(--rule);align-items:flex-end}
+.esg{width:560px;flex:none}
+.esg .t{font:700 15px/1.25 var(--head)}
+.esg .t span{font-weight:400;color:var(--slate)}
+.esg .trk{position:relative;height:16px;margin-top:38px;background:var(--mist);border-radius:8px;border:1px solid var(--rule)}
+.esg .band{position:absolute;top:-7px;bottom:-7px;left:50%;width:12.5%;border:1.5px dashed var(--ink);border-radius:4px}
+.esg .band span{position:absolute;bottom:calc(100% + 5px);left:50%;transform:translateX(-50%);font:600 12.5px/1 var(--head);white-space:nowrap}
+.esg .fill{position:absolute;left:0;top:0;bottom:0;width:62.5%;background:var(--accent);border-radius:8px}
+.esg .was{position:absolute;top:-5px;bottom:-5px;left:27.5%;border-left:2.5px solid var(--ink)}
+.esg .lab{position:relative;height:46px}
+.esg .lab span{position:absolute;top:8px;transform:translateX(-50%);font-size:13px;line-height:1.25;color:var(--slate);text-align:center;white-space:nowrap}
+.esg .lab span b{display:block;font:600 26px/1 var(--disp);font-variant-numeric:lining-nums;color:var(--ink)}
+.esg .lab span.on b{color:var(--accent)}
+.jb .fee{flex:1;font-size:14.5px;line-height:1.42;color:var(--slate);padding-bottom:6px}
+.jb .fee b{display:block;font:600 30px/1.1 var(--disp);color:var(--ink);font-variant-numeric:lining-nums}
+
+/* ---------------- 9 Ryan: his crypto share on a glide path, his own plan beside it ----------------
+   The path is the model's (proposal Figure 18, saving 30%): today -> 30 -> 35, with the 20% cap and the trim band
+   10 points above the path. The 20% at 35 is the crimson. x: age 24 -> 35 on 0..100%; y: 0 -> 80% on 100..0%. */
+.ry{flex:1;display:flex;gap:54px;margin-top:20px;min-height:0}
+.ry .gp{width:640px;flex:none;display:flex;flex-direction:column}
+.ry .cap{font:700 16px/1.25 var(--head)}
+.ry .cap span{font-weight:400;color:var(--slate)}
+.ry .box{position:relative;height:338px;margin:24px 0 0 46px}
+.ry svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ry .grid{position:absolute;left:0;right:0;border-top:1px solid var(--rule)}
+.ry .grid span{position:absolute;right:calc(100% + 8px);top:-8px;font:600 12px/1 var(--head);color:var(--quiet)}
+.ry .pt{position:absolute;transform:translate(-50%,-50%);width:16px;height:16px;border-radius:50%;background:var(--ink);border:3px solid var(--paper)}
+.ry .pt.on{background:var(--accent);width:20px;height:20px}
+.ry .pv{position:absolute;font:600 32px/1 var(--disp);font-variant-numeric:lining-nums;white-space:nowrap}
+.ry .pv span{display:block;font:400 13px/1.3 var(--text);color:var(--slate);margin-top:3px;white-space:nowrap}
+.ry .pv.on{color:var(--accent)}
+.ry .nt{position:absolute;font:600 13px/1.25 var(--head);color:var(--slate);white-space:nowrap}
+.ry .xax{position:relative;height:42px;margin-left:46px;border-top:1.5px solid var(--ink)}
+.ry .xax span{position:absolute;top:7px;transform:translateX(-50%);font:700 13px/1.3 var(--head);text-align:center;white-space:nowrap}
+.ry .xax span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+.ry .xax span:first-child{transform:none;text-align:left}
+.ry .xax span:last-child{transform:translateX(-100%);text-align:right}
+.ry .his{flex:1;min-width:0;display:flex;flex-direction:column}
+.ry .his .who{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1.5px solid var(--ink)}
+.ry .his .who .av{width:66px;height:66px}
+.ry .his .who p{font:600 27px/1.1 var(--disp)}
+.ry .his .who p span{display:block;font:400 14px/1.3 var(--text);color:var(--slate);margin-top:3px}
+.ry .his li{padding:12px 0;border-bottom:1px solid var(--rule);font-size:14px;line-height:1.38;color:var(--slate)}
+.ry .his li b{display:block;font:700 15.5px/1.3 var(--head);color:var(--ink)}
+
+/* ---------------- 10 protect: the pay that continues if a parent can't work; the cost as one bar; the papers ----
+   The focal point is the ≈HK$100K (the only crimson). Status: an icon plus a word. */
+.pr{flex:1;display:flex;gap:56px;margin-top:20px;min-height:0}
+.pr .inc{flex:1;min-width:0;display:flex;flex-direction:column}
+.pr .cap{font:700 16px/1.25 var(--head);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.pr .cap span{font-weight:400;color:var(--slate)}
+.pr .per{display:grid;grid-template-columns:58px 1fr;column-gap:16px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.pr .per .av{width:58px;height:58px}
+.pr .per h3{font:600 25px/1.1 var(--disp)}
+.pr .per h3 span{font:400 14px/1.3 var(--text);color:var(--slate);margin-left:8px}
+.pr .br{display:grid;grid-template-columns:104px 1fr;align-items:center;column-gap:12px;margin-top:8px}
+.pr .br>span{font:600 13px/1.2 var(--head);color:var(--slate)}
+.pr .tr{position:relative;height:34px;border:1.5px solid var(--grey);border-radius:3px;background:var(--paper)}
+.pr .tr .f{position:absolute;left:0;top:0;bottom:0;background:var(--ink);border-radius:2px}
+.pr .tr p{position:absolute;top:50%;transform:translateY(-50%);font:700 14px/1 var(--head);white-space:nowrap}
+.pr .tr p.in{left:12px;color:#fff}
+.pr .tr p.none{left:10px;color:var(--slate);display:flex;align-items:center;gap:7px}
+.pr .tr p.none .ic{width:15px;height:15px;stroke-width:2.6}
+.pr .tr .pay{position:absolute;right:10px;top:50%;transform:translateY(-50%);font:600 12.5px/1 var(--head);color:var(--quiet)}
+.pr .note{font-size:13.5px;line-height:1.4;color:var(--slate);margin-top:10px}
+.pr .cost{width:410px;flex:none;display:flex;flex-direction:column}
+.pr .cost .tot{display:flex;align-items:baseline;gap:12px}
+.pr .cost .tot b{font:600 64px/1 var(--disp);color:var(--accent);font-variant-numeric:lining-nums;letter-spacing:-.5px}
+.pr .cost .tot span{font:700 15px/1.3 var(--head)}
+.pr .cost .why{font-size:14px;line-height:1.4;color:var(--slate);margin-top:6px}
+.pr .stk{display:flex;height:40px;gap:2px;margin-top:14px}
+.pr .stk i{border-radius:2px}
+.pr .parts{display:flex;flex-direction:column;margin-top:8px}
+.pr .parts p{display:grid;grid-template-columns:14px 1fr 82px;column-gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.3;color:var(--slate)}
+.pr .parts p i{width:12px;height:12px;border-radius:2px}
+.pr .parts p b{color:var(--ink);font-weight:700}
+.pr .parts p em{font-style:normal;text-align:right;font:700 14.5px/1 var(--head);color:var(--ink)}
+.c1{background:var(--ink)} .c2{background:#4A4845} .c3{background:#7B7873} .c4{background:#A6A39E}
+.docs{display:flex;align-items:center;gap:22px;margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
+.docs>b{font:italic 500 21px/1.15 var(--disp);width:150px;flex:none}
+.docs .doc{display:flex;gap:10px;align-items:center;flex:1;min-width:0}
+.docs .sheet{flex:none;width:30px;height:38px;border:1.8px solid var(--ink);border-radius:3px;position:relative;background:#fff}
+.docs .sheet::before{content:"";position:absolute;left:6px;right:6px;top:8px;height:12px;background:repeating-linear-gradient(var(--rule) 0 2px,transparent 2px 5px)}
+.docs .sheet::after{content:"";position:absolute;right:5px;bottom:6px;width:10px;height:2px;background:var(--ink);transform:rotate(-12deg)}
+.docs .doc p{font-size:13px;line-height:1.3;color:var(--slate)}
+.docs .doc p b{display:block;font:700 14.5px/1.25 var(--head);color:var(--ink)}
+.docs .when{flex:none;text-align:right;font-size:13px;color:var(--slate)}
+.docs .when b{display:block;font:600 22px/1.1 var(--disp);color:var(--ink);font-variant-numeric:lining-nums}
+
+/* ---------------- 11 the stress tests: paired bars per test, on one 0-100% scale ----------------
+   Grey: the four decisions alone (fixed spending). Ink: the full plan (medical review + spending rules). The lost job,
+   the title's case, is the crimson. Values only; never the gaps between them. */
+.ss{flex:1;display:flex;gap:46px;margin-top:20px;min-height:0}
+.ss .tests{flex:1;min-width:0;display:flex;flex-direction:column}
+.ss .key{display:flex;gap:24px;font-size:13.5px;color:var(--slate);padding-bottom:10px;border-bottom:1.5px solid var(--ink);padding-left:258px}
+.ss .key i{display:inline-block;width:16px;height:10px;margin-right:7px;background:#CFCBC4;border-radius:2px}
+.ss .key i.k{background:var(--ink)}
+.ss .t{display:grid;grid-template-columns:240px 1fr;column-gap:18px;align-items:center;padding:19px 0;border-bottom:1px solid var(--rule)}
+.ss .t .nm{display:flex;align-items:center;gap:10px}
+.ss .t .nm .av{width:40px;height:40px}
+.ss .t .nm b{display:block;font:700 15.5px/1.25 var(--head)}
+.ss .t .nm span{display:block;font-size:13px;line-height:1.3;color:var(--slate)}
+.ss .bars{position:relative;display:flex;flex-direction:column;gap:5px}
+.ss .bars p{position:relative;height:22px}
+.ss .bars p.k,.ss .bars p.on{height:30px}
+.ss .bars p i{position:absolute;left:0;top:0;bottom:0;border-radius:2px;background:#CFCBC4}
+.ss .bars p.k i{background:var(--ink)}
+.ss .bars p.on i{background:var(--accent)}
+.ss .bars p span{position:absolute;top:50%;transform:translateY(-50%);font:700 14px/1 var(--head);white-space:nowrap;padding-left:8px;color:var(--slate)}
+/* the full plan's value sits inside its bar, at the end, so values near 100% never spill */
+.ss .bars p.k span,.ss .bars p.on span{transform:translate(-100%,-50%);padding:0 10px 0 0;font:600 23px/1 var(--disp);font-variant-numeric:lining-nums;color:#fff}
+.ss .scale{position:relative;height:18px;margin-left:258px;margin-top:6px;font:600 12px/1 var(--head);color:var(--quiet)}
+.ss .scale span{position:absolute;transform:translateX(-50%)}
+.ss .side{width:290px;flex:none;display:flex;flex-direction:column}
+.ss .side .blk{padding:14px 0;border-bottom:1px solid var(--rule)}
+.ss .side .blk:first-child{border-top:1.5px solid var(--ink)}
+.ss .side b{display:block;font:600 36px/1 var(--disp);font-variant-numeric:lining-nums}
+.ss .side span{display:block;font-size:14px;line-height:1.38;color:var(--slate);margin-top:6px}
+
+/* ---------------- 12 the answers: the roadmap in three phases, each action tagged with its question ----------------
+   A line across the top means sequence (the order the actions happen). The first year is the focal phase (crimson). */
+.rm{flex:1;display:grid;grid-template-columns:1.1fr .9fr 1fr;column-gap:34px;margin-top:22px;min-height:0}
+.rm .ph{display:flex;flex-direction:column;min-width:0}
+.rm .ph h3{position:relative;font:italic 500 23px/1.15 var(--disp);padding-bottom:10px;border-bottom:3px solid var(--grey)}
+.rm .ph h3 span{display:block;font:600 12.5px/1.2 var(--head);font-style:normal;color:var(--slate);margin-top:3px}
+.rm .ph.now h3{border-bottom-color:var(--accent);color:var(--accent)}
+.rm .ph h3::after{content:"";position:absolute;right:-34px;bottom:-3px;width:34px;height:3px;background:var(--grey)}
+.rm .ph:last-child h3::after{display:none}
+.rm .it{display:grid;grid-template-columns:32px 1fr;column-gap:8px;padding:9px 0;border-bottom:1px solid var(--rule)}
+.rm .it .qn{margin-top:1px}
+.rm .it .qn.none{border-style:dotted;color:var(--quiet);border-color:var(--grey)}
+.rm .it b{display:block;font:700 14.5px/1.28 var(--head)}
+.rm .it p span{display:block;font-size:13px;line-height:1.3;color:var(--slate);margin-top:1px}
+.rm .lg{margin-top:auto;padding-top:12px}
+.rm .lg b{display:block;font:600 28px/1.1 var(--disp);font-variant-numeric:lining-nums}
+.rm .lg span{display:block;font-size:13px;line-height:1.35;color:var(--slate);margin-top:3px}
+
+/* ---------------- 13 Wealth Management Connect: two regions, two flows, the advice rule ----------------
+   A schematic, not a map. Southbound carries the rule that matters to advisers (HKMA): no solicitation unless asked. */
+.wm{flex:1;display:flex;flex-direction:column;margin-top:22px;min-height:0}
+.wm .flow{display:grid;grid-template-columns:290px 1fr 290px;align-items:stretch;column-gap:26px;height:246px}
+.wm .reg{border:1.8px solid var(--ink);border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;justify-content:center;background:#fff}
+.wm .reg b{font:600 27px/1.1 var(--disp)}
+.wm .reg span{font-size:14px;line-height:1.38;color:var(--slate);margin-top:8px}
+.wm .arrows{display:flex;flex-direction:column;justify-content:center;gap:30px}
+.wm .ar p{font:700 15px/1.3 var(--head);margin-bottom:8px}
+.wm .ar p span{font-weight:400;color:var(--slate)}
+.wm .ar .l{position:relative;height:3px;background:var(--ink);margin:0 4px}
+.wm .ar .l::after{content:"";position:absolute;top:50%;margin-top:-7px;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.wm .ar.r .l::after{right:-4px;border-left:12px solid var(--ink)}
+.wm .ar.lft .l::after{left:-4px;border-right:12px solid var(--ink)}
+.wm .ar .rule{display:flex;align-items:center;gap:8px;margin-top:10px;font:700 14px/1.3 var(--head);color:var(--accent)}
+.wm .ar .rule .ic{width:18px;height:18px}
+.wm .facts{display:flex;margin-top:26px;border-top:1.5px solid var(--ink);border-bottom:1px solid var(--rule)}
+.wm .facts p{flex:1;padding:10px 18px 10px 0;font-size:13.5px;line-height:1.35;color:var(--slate)}
+.wm .facts p b{display:block;font:600 25px/1.1 var(--disp);color:var(--ink);font-variant-numeric:lining-nums}
+.wm .two{display:grid;grid-template-columns:1fr 1fr;column-gap:44px;margin-top:auto}
+.wm .two b{display:block;font:italic 500 22px/1.15 var(--disp)}
+.wm .two span{display:block;font-size:14.5px;line-height:1.42;color:var(--slate);margin-top:5px}
+
+/* ---------------- 14 careers: four cards, one per speaker ---------------- */
+.cr{flex:1;display:grid;grid-template-columns:repeat(4,1fr);column-gap:24px;margin-top:26px;min-height:0}
+.cr .c{border-top:3px solid var(--ink);padding-top:16px;display:flex;flex-direction:column}
+.cr .ini{width:58px;height:58px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font:600 28px/1 var(--disp)}
+.cr h3{font:600 31px/1.1 var(--disp);margin-top:14px}
+.cr .role{font-size:14px;color:var(--slate);margin-top:2px}
+.cr .goal{font:italic 500 21px/1.28 var(--disp);margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
+.cr .goal small,.cr .link small{display:block;font:700 12px/1.2 var(--head);font-style:normal;color:var(--quiet);margin-bottom:6px}
+.cr .link{font-size:15px;line-height:1.42;color:var(--slate);margin-top:18px}
+.cr .lrn{font-size:15px;line-height:1.42;color:var(--ink);margin-top:18px}
+.cr .lrn small{display:block;font:700 12px/1.2 var(--head);color:var(--quiet);margin-bottom:6px}
+
+/* ---------------- builds ----------------
+   data-b="n": the step an element appears in. The deck shows every step; make.py's builds file repeats a slide once per
+   step with class upto-k, which hides later steps (visibility, so the layout never moves). */
+.upto-1 [data-b="2"],.upto-1 [data-b="3"],.upto-1 [data-b="4"],.upto-1 [data-b="5"],.upto-1 [data-b="6"],.upto-1 [data-b="7"],.upto-1 [data-b="8"],.upto-1 [data-b="9"]{visibility:hidden}
+.upto-2 [data-b="3"],.upto-2 [data-b="4"],.upto-2 [data-b="5"],.upto-2 [data-b="6"],.upto-2 [data-b="7"],.upto-2 [data-b="8"],.upto-2 [data-b="9"]{visibility:hidden}
+.upto-3 [data-b="4"],.upto-3 [data-b="5"],.upto-3 [data-b="6"],.upto-3 [data-b="7"],.upto-3 [data-b="8"],.upto-3 [data-b="9"]{visibility:hidden}
+.upto-4 [data-b="5"],.upto-4 [data-b="6"],.upto-4 [data-b="7"],.upto-4 [data-b="8"],.upto-4 [data-b="9"]{visibility:hidden}
+.upto-5 [data-b="6"],.upto-5 [data-b="7"],.upto-5 [data-b="8"],.upto-5 [data-b="9"]{visibility:hidden}
+.upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{visibility:hidden}
+.upto-7 [data-b="8"],.upto-7 [data-b="9"]{visibility:hidden}
+.upto-8 [data-b="9"]{visibility:hidden}
+
+/* speaker notes: never shown or printed; build.py collects them into Built_to_Last_notes.md */
+.notes{display:none}
+</style>
+</head>
+<body>
+<!--ICON_SPRITE-->
+<main class="deck">
