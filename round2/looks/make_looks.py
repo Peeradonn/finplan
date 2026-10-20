@@ -14,4 +14,4 @@ for f in ("_raw_notes.md",):
     p = os.path.join(HERE, f)
     if os.path.exists(p):
         os.remove(p)
-subprocess.run([sys.executable, os.path.join(SKILL, "render.py"), out, "--out", os.path.join(HERE, "build"), "--pages", "6,9"], check=True)
+subprocess.run([sys.executable, os.path.join(SKILL, "render.py"), out, "--out", os.path.join(HERE, "build"), "--pages", "10"], check=True)

@@ -108,8 +108,14 @@ The look (colour, type, decorative idea) is chosen in §6; these rules hold what
 - footer: **one** navigation device (the deck's sections), the source, the page number. Nothing else.
 - Not used (v7 lessons): a second tracker, question pills, "slide 5's…" references, tags inside sentences.
 
-**Grid:** 1280 × 720; margins 48 px left and right, 34 px top; 12 columns, 24 px gutters. Panels are 4 + 4 + 4 or
-5 + 4 + 3 columns. Every chart starts on a panel's left edge; panel bottoms line up.
+**Grid:** 1280 × 720; margins 48 px left and right, 34 px top; 12 columns, 24 px gutters. Panels are 4 + 4 + 4,
+5 + 4 + 3 or 7 + 5 columns. **One top line, one baseline** (Pete, 20 Oct): every panel's content starts 20 px under its
+heading rule and ends on its note, the notes the same height and on one baseline; spare space is spread inside the
+content, never left as a gap at one end. Measure it on the render, don't eyeball it.
+
+**Hierarchy inside a panel:** rank items by what the evidence says matters (on Call 2, the arrow's two biggest
+segments, the home and the business, lead the right panel; the two small decisions go to a legend and a note). Never
+list unlike things (a cost, a safety margin, a legacy) as equal rows.
 
 **Type (look B, 20 Oct):** Archivo Narrow only for the title, panel headings, lane names and big numbers; **Inter** for
 everything else, bold labels included (Pete: Inter for the small text; a condensed bold label looked smaller than
@@ -178,20 +184,19 @@ Script: each member says their name and role; Pete: "We call it Built to Last."
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 5 · Call 2: put the home and the business to work (Fahtai; 0:55)
-**Rebuilt 20 Oct, v4** (prototype `looks/build/slide-09.png`). v1 restated 33% and argued in paragraphs; v2 put two
-near-identical bar charts side by side; v3's right panel was a four-row table that repeated the chart's numbers and
-made the price the smallest text. v4:
-- **"Two ways to lift the odds, from the same start…"** (7 columns): two arrows on one 0 to 100% scale, both from
-  {{ladder_1_89}}. "Take more risk (80% in shares instead of 40%)": a short grey arrow to {{alone_eq80_89}}; the worst
-  single year deepens from {{alone_eq40_worst}} to {{alone_eq80_worst}}, and it breaks Adrian's low–medium profile.
-  "Put what they own to work (four decisions, the same 40% in shares)": the accent arrow to {{ladder_5_89}}, **split
-  into four numbered segments** whose lengths are the ladder ({{ladder_2_89}}, {{ladder_3_89}}, {{ladder_4_89}} marked
-  at the joins); the worst year stays at {{alone_eq40_worst}}. Note: the same 10,000 markets.
-- **"…and what each decision costs them"** (5 columns): four numbered lines matching the segments, the price the loud
-  part: the survivor lives on 70% of the couple's budget; the business counted at HK$3.0M of its HK$5.0M;
-  {{legacy_rmp}} to the children against {{legacy_keep}}; about {{ann_typ_cost}} a year of typical spending. No odds
-  column, no table header. Note: if the business never sells, the plan still reaches {{biz_not_sold_89}}. Spoken, not
-  shown: the dividend argument.
+**Rebuilt 20 Oct, v5** (prototype `looks/build/slide-10.png`). v1 restated 33% and argued in paragraphs; v2 put two
+near-identical charts side by side; v3 and v4 listed the four decisions as equal rows (no hierarchy), and the panels'
+tops and bottoms didn't line up. v5:
+- **"Two ways to lift the odds, from the same start…"** (7 columns): two arrows from {{ladder_1_89}} on one scale. More
+  risk (80% in shares): grey, to {{alone_eq80_89}}; the worst single year {{alone_eq40_worst}} → {{alone_eq80_worst}};
+  breaks Adrian's profile. Four decisions (same 40%): the accent arrow to {{ladder_5_89}}, split into four numbered
+  segments (the ladder; {{ladder_2_89}}, {{ladder_3_89}}, {{ladder_4_89}} at the joins), with a one-line legend naming
+  them; the worst year stays at {{alone_eq40_worst}}.
+- **"…most of it from the home and the business"** (5 columns), ranked by segment size: (3) the home, a two-way
+  choice at 65: stay with a reverse mortgage ({{legacy_rmp}} to the children, lasts in {{prop_rmp_89}}) or downsize
+  ({{legacy_down}}, lasts in {{prop_down_89}}); (2) the business sold in stages: {{biz_not_sold_89}} if it never sells,
+  counted at HK$3.0M of HK$5.0M. Note: the smaller two cost little (the survivor lives on 70%; the annuities about
+  {{ann_typ_cost}} a year).
 - Bar: "The 61% that paid nothing now pays for their retirement, with the same investments."
 - Answers questions 1, 7 and 8.
 

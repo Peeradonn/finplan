@@ -299,6 +299,62 @@ p,li,span,b{text-wrap:pretty}
 .c4 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
 .c4 .nt b{font-weight:600}
 .c4 .bar{font-size:20px}
+
+/* ==================== Call 2, v5 (20 Oct): one top line, one baseline; the right panel has a hierarchy ====================
+   Layout rule (Pete: "is the chart vertically centred?"): every panel's content starts 20 px under its heading rule
+   and ends on its note at one shared baseline; the space between is spread inside the content, never left as a gap
+   at one end. Hierarchy follows the arrow: the home and the business are its two biggest segments and the title's two
+   nouns, so they lead the right panel (the home first, as the largest); decisions 1 and 4 are named in the arrow's
+   legend and priced in the note. */
+.c5{--text:"Inter",Arial,sans-serif}
+.c5 .pn>h3{font-size:20px;margin-bottom:20px}
+.c5 .kick small{font-size:14px}
+.c5 .bar{font-size:20px;margin-top:18px}
+.c5 .body{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0}
+.c5 .nt{margin-top:22px;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text);min-height:59px}
+.c5 .pn:last-child .blk:first-child{margin-top:5px}
+.c5 .nt b{font-weight:600}
+/* left: the two arrows, re-using v4's pieces */
+.c5 .lanes{position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.c5 .lane{position:relative;margin-right:150px}
+.c5 .lane.a{height:96px}
+.c5 .lane.b{height:176px}
+.c5 .nm{position:absolute;top:0;left:0;right:-150px;font:600 20px/1.2 var(--head)}
+.c5 .nm small{font:400 14px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c5 .shaft,.c5 .seg{position:absolute;height:10px;background:var(--grey)}
+.c5 .seg{background:var(--accent)}
+.c5 .head{position:absolute;width:0;height:0;margin-top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c5 .b .head{border-left-color:var(--accent)}
+.c5 .dot{position:absolute;width:18px;height:18px;margin:-4px 0 0 -9px;border-radius:50%;background:var(--ink)}
+.c5 .v{position:absolute;transform:translateY(-50%);font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c5 .v.st{transform:translate(calc(-100% - 18px),-50%)}
+.c5 .b .v.end{font-size:72px;color:var(--accent)}
+.c5 .jt{position:absolute;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--slate)}
+.c5 .jt::after{content:"";position:absolute;left:50%;top:18px;height:8px;border-left:1.5px solid var(--grey)}
+.c5 .sn{position:absolute;transform:translateX(-50%);display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--ink);color:#fff;font:700 13px/1 var(--text)}
+.c5 .sub{position:absolute;left:0;right:-150px;font:400 14px/1.4 var(--text);color:var(--slate)}
+.c5 .sub b{font-weight:600;color:var(--ink)}
+.c5 .lgd{position:absolute;left:0;right:-150px;display:flex;gap:18px;font:400 14px/1.3 var(--text);color:var(--ink)}
+.c5 .lgd span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.c5 .lgd i{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:var(--ink);color:#fff;font:700 11px/1 var(--text);font-style:normal}
+/* right: the home (primary, a two-way choice), then the business (secondary) */
+.c5 .blk .lbl{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text)}
+.c5 .blk .lbl i{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--ink);color:#fff;font:700 13px/1 var(--text);font-style:normal;flex:none}
+.c5 .blk .lbl small{font:400 14px/1 var(--text);color:var(--slate)}
+.c5 .two{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;margin-top:14px}
+.c5 .two div{border-top:3px solid var(--ink);padding-top:10px}
+.c5 .two b{display:block;font:600 20px/1.1 var(--head)}
+.c5 .two span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.c5 .two strong{display:block;font:700 40px/1 var(--head);margin:12px 0 4px}
+.c5 .two .h5{display:flex;justify-content:space-between;align-items:baseline}
+.c5 .two .h5 span{display:inline;font:400 14px/1 var(--text);color:var(--slate)}
+.c5 .two b.k{display:inline;font:600 14px/1 var(--text);color:var(--ink)}
+.c5 .cap5{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:10px}
+.c5 .cap5 b{font-weight:600;color:var(--ink)}
+.c5 .biz{display:grid;grid-template-columns:auto 1fr;column-gap:16px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)}
+.c5 .biz strong{font:700 40px/1 var(--head)}
+.c5 .biz p{font:400 14px/1.38 var(--text);color:var(--slate)}
+.c5 .biz p b{font-weight:600;color:var(--ink)}
 </style>
 </head>
 <body>
