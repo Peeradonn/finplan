@@ -161,6 +161,47 @@ p,li,span,b{text-wrap:pretty}
 .lb.cv .fam{display:flex;gap:14px}
 .lb.cv .fam .pic{width:104px;height:104px;border:0;background:var(--mist);margin:0}
 .lb.cv .note{position:absolute;right:56px;bottom:14px;font:400 12px/1.3 var(--text);color:var(--slate)}
+
+/* ==================== Call 2, rebuilt (20 Oct): every panel is one step of the argument ====================
+   More shares barely help -> four decisions do -> each decision has a price. Panels 1 and 2 share one bar scale
+   (the track is 150 px = 100% in both) and open with parallel headline numbers, so the comparison is instant; panel 2
+   carries panel 1's best as a dashed reference line. Every panel ends on a grey evidence note at the same baseline. */
+.c2 .pn{min-height:0}
+.c2 .big{font:700 40px/1 var(--head);letter-spacing:-.5px}
+.c2 .big.on{color:var(--accent)}
+.c2 .bigl{font:400 14px/1.35 var(--text);color:var(--slate);margin:6px 0 16px}
+.c2 .rows{position:relative;display:flex;flex-direction:column;gap:10px}
+.c2 .row{display:grid;column-gap:8px;align-items:center}
+.c2 .p1 .row{grid-template-columns:1fr 150px 46px 44px}
+.c2 .p2 .row{grid-template-columns:1fr 150px 70px}
+.c2 .row p{font:400 14px/1.25 var(--text)}
+.c2 .row p b{font-weight:600}
+.c2 .row.hd{font:600 12px/1.2 var(--text);color:var(--slate)}
+.c2 .row.hd span{text-align:left}
+.c2 .trk2{position:relative;height:24px;background:var(--mist)}
+.c2 .trk2 i{position:absolute;top:0;bottom:0;left:0}
+.c2 .trk2 i.g{background:var(--grey)}
+.c2 .trk2 i.was{background:#CFCFCF}
+.c2 .trk2 i.add{background:var(--ink)}
+.c2 .trk2 i.acc{background:var(--accent)}
+.c2 .val{font:600 16px/1 var(--head)}
+.c2 .val.on{font:700 40px/1 var(--head);color:var(--accent)}
+.c2 .wst{font:600 16px/1 var(--head);color:var(--ink)}
+.c2 .p1 .rows{gap:22px}
+.c2 .p1 .row.hd{margin-bottom:-12px}
+/* panel 1's best, carried into panel 2's track */
+.c2 .ref{position:absolute;top:-6px;bottom:-6px;border-left:2px dashed var(--ink);z-index:2}
+.c2 .ref span{position:absolute;top:-20px;left:-4px;font:600 12px/1 var(--text);white-space:nowrap}
+/* panel 3: the price of each decision, a ledger with one figure each */
+.c2 .ldg li{display:grid;grid-template-columns:26px 1fr;column-gap:10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.c2 .ldg li:first-child{padding-top:0}
+.c2 .ldg .n{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--ink);color:#fff;font:700 12px/1 var(--head)}
+.c2 .ldg b{display:block;font:600 16px/1.25 var(--head)}
+.c2 .ldg p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:2px}
+.c2 .ldg p em{font-style:normal;font-weight:600;color:var(--ink)}
+/* the evidence note that closes every panel, on one baseline */
+.c2 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
+.c2 .nt b{font-weight:600}
 </style>
 </head>
 <body>
@@ -311,6 +352,57 @@ p,li,span,b{text-wrap:pretty}
   </div>
   <p class="bar">The 61% that paid nothing now pays for their retirement. What still breaks it: medical bills.</p>
   <footer class="ft"><p class="src">Team model, 10,000 simulated markets; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+</section>
+
+<!-- ===================== B · Swiss: Call 2, rebuilt (20 Oct) =====================
+     Every panel is one step: more shares barely help (measured: alone_eq*) -> four decisions do (the ladder) -> each
+     has a price (a ledger). Panels 1 and 2 share one bar scale and open with parallel numbers; panel 2 carries panel 1's
+     best as a dashed line. Each panel ends on a grey evidence note at the same baseline. -->
+<section class="slide lb c2">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement <small>Answers the family's questions 1, 7 and 8</small></p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from 33% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn p1" style="grid-column:span 4">
+      <h3>More shares barely help…</h3>
+      <p class="big">33% → 43%</p>
+      <p class="bigl">doubling their shares from 40% to 80%, on investments alone</p>
+      <div class="rows">
+        <div class="row hd"><span></span><span></span><span>lasts to 89</span><span>worst year</span></div>
+        <div class="row"><p><b>40% shares</b><br>today</p><div class="trk2"><i class="g" style="width:33%"></i></div><span class="val">33%</span><span class="wst">−10%</span></div>
+        <div class="row"><p><b>60% shares</b></p><div class="trk2"><i class="g" style="width:41%"></i></div><span class="val">41%</span><span class="wst">−17%</span></div>
+        <div class="row"><p><b>80% shares</b></p><div class="trk2"><i class="g" style="width:43%"></i></div><span class="val">43%</span><span class="wst">−24%</span></div>
+      </div>
+      <p class="nt">And anything above 40% in shares breaks Adrian's <b style="white-space:nowrap">low–medium</b> risk profile.</p>
+    </div>
+    <div class="pn p2" style="grid-column:span 5">
+      <h3>…four decisions on what they already own do…</h3>
+      <p class="big on">33% → 83%</p>
+      <p class="bigl">with the same 40% in shares throughout</p>
+      <div class="rows">
+        <div class="row"><p><b>Investments alone</b></p><div class="trk2"><i class="g" style="width:33%"></i><span class="ref" style="left:43%"><span>best with more shares</span></span></div><span class="val">33%</span></div>
+        <div class="row"><p><b>1</b> A one-person budget</p><div class="trk2"><i class="was" style="width:33%"></i><i class="add" style="left:33%;width:calc(43% - 33%)"></i><span class="ref" style="left:43%"></span></div><span class="val">43%</span></div>
+        <div class="row"><p><b>2</b> The business sold in stages</p><div class="trk2"><i class="was" style="width:43%"></i><i class="add" style="left:43%;width:calc(60% - 43%)"></i><span class="ref" style="left:43%"></span></div><span class="val">60%</span></div>
+        <div class="row"><p><b>3</b> The home's value released</p><div class="trk2"><i class="was" style="width:60%"></i><i class="add" style="left:60%;width:calc(82% - 60%)"></i><span class="ref" style="left:43%"></span></div><span class="val">82%</span></div>
+        <div class="row"><p><b>4</b> The MPF turned into annuities</p><div class="trk2"><i class="was" style="width:82%"></i><i class="acc" style="left:82%;width:calc(83% - 82%)"></i><span class="ref" style="left:43%"></span></div><span class="val on">83%</span></div>
+      </div>
+      <p class="nt">Each decision puts an asset that paid nothing to work: <b>the business, the home, the MPF</b>.</p>
+    </div>
+    <div class="pn p3" style="grid-column:span 3">
+      <h3>…and each has a price</h3>
+      <ul class="ldg">
+        <li><span class="n">1</span><div><b>A one-person budget</b><p>The survivor lives on <em>70%</em> of the couple's budget</p></div></li>
+        <li><span class="n">2</span><div><b>The business sold</b><p>Counted at <em>HK$3.0M</em> of its HK$5.0M value</p></div></li>
+        <li><span class="n">3</span><div><b>The home released</b><p><em>HK$8.1M</em> to the children, against HK$9.5M</p></div></li>
+        <li><span class="n">4</span><div><b>The MPF annuities</b><p>About <em>HK$10K</em> a year of typical spending</p></div></li>
+      </ul>
+      <p class="nt">If the business never sells, the plan still reaches <b>66%</b>.</p>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Team model, 10,000 simulated markets, investments alone at 40%, 60% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
 </section>
 </main>
 </body>

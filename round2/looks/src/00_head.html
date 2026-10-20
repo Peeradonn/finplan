@@ -161,6 +161,47 @@ p,li,span,b{text-wrap:pretty}
 .lb.cv .fam{display:flex;gap:14px}
 .lb.cv .fam .pic{width:104px;height:104px;border:0;background:var(--mist);margin:0}
 .lb.cv .note{position:absolute;right:56px;bottom:14px;font:400 12px/1.3 var(--text);color:var(--slate)}
+
+/* ==================== Call 2, rebuilt (20 Oct): every panel is one step of the argument ====================
+   More shares barely help -> four decisions do -> each decision has a price. Panels 1 and 2 share one bar scale
+   (the track is 150 px = 100% in both) and open with parallel headline numbers, so the comparison is instant; panel 2
+   carries panel 1's best as a dashed reference line. Every panel ends on a grey evidence note at the same baseline. */
+.c2 .pn{min-height:0}
+.c2 .big{font:700 40px/1 var(--head);letter-spacing:-.5px}
+.c2 .big.on{color:var(--accent)}
+.c2 .bigl{font:400 14px/1.35 var(--text);color:var(--slate);margin:6px 0 16px}
+.c2 .rows{position:relative;display:flex;flex-direction:column;gap:10px}
+.c2 .row{display:grid;column-gap:8px;align-items:center}
+.c2 .p1 .row{grid-template-columns:1fr 150px 46px 44px}
+.c2 .p2 .row{grid-template-columns:1fr 150px 70px}
+.c2 .row p{font:400 14px/1.25 var(--text)}
+.c2 .row p b{font-weight:600}
+.c2 .row.hd{font:600 12px/1.2 var(--text);color:var(--slate)}
+.c2 .row.hd span{text-align:left}
+.c2 .trk2{position:relative;height:24px;background:var(--mist)}
+.c2 .trk2 i{position:absolute;top:0;bottom:0;left:0}
+.c2 .trk2 i.g{background:var(--grey)}
+.c2 .trk2 i.was{background:#CFCFCF}
+.c2 .trk2 i.add{background:var(--ink)}
+.c2 .trk2 i.acc{background:var(--accent)}
+.c2 .val{font:600 16px/1 var(--head)}
+.c2 .val.on{font:700 40px/1 var(--head);color:var(--accent)}
+.c2 .wst{font:600 16px/1 var(--head);color:var(--ink)}
+.c2 .p1 .rows{gap:22px}
+.c2 .p1 .row.hd{margin-bottom:-12px}
+/* panel 1's best, carried into panel 2's track */
+.c2 .ref{position:absolute;top:-6px;bottom:-6px;border-left:2px dashed var(--ink);z-index:2}
+.c2 .ref span{position:absolute;top:-20px;left:-4px;font:600 12px/1 var(--text);white-space:nowrap}
+/* panel 3: the price of each decision, a ledger with one figure each */
+.c2 .ldg li{display:grid;grid-template-columns:26px 1fr;column-gap:10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.c2 .ldg li:first-child{padding-top:0}
+.c2 .ldg .n{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--ink);color:#fff;font:700 12px/1 var(--head)}
+.c2 .ldg b{display:block;font:600 16px/1.25 var(--head)}
+.c2 .ldg p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:2px}
+.c2 .ldg p em{font-style:normal;font-weight:600;color:var(--ink)}
+/* the evidence note that closes every panel, on one baseline */
+.c2 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
+.c2 .nt b{font-weight:600}
 </style>
 </head>
 <body>

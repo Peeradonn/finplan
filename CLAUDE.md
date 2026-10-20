@@ -160,7 +160,7 @@ Reviewers only append findings to their own files; the builder edits the page so
 - The slide-design render script needs absolute paths.
 
 ## Open items (need outside facts or teammates)
-- **Round Two:** the look (A or B, `round2/looks/`), then the illustrated image set (prompts in the deck plan §7, for
+- **Round Two:** confirm look B (Pete preferred it, 20 Oct), then the illustrated image set (prompts in the deck plan §7, for
   Pete to generate); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
 - **Facts:** insurer allows Flexi → Standard at 75 without new underwriting (the 97% rests on it); HKMC annuity death
   benefit; BOC-Prudential fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund

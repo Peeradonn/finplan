@@ -1,0 +1,51 @@
+
+<!-- ===================== B · Swiss: Call 2, rebuilt (20 Oct) =====================
+     Every panel is one step: more shares barely help (measured: alone_eq*) -> four decisions do (the ladder) -> each
+     has a price (a ledger). Panels 1 and 2 share one bar scale and open with parallel numbers; panel 2 carries panel 1's
+     best as a dashed line. Each panel ends on a grey evidence note at the same baseline. -->
+<section class="slide lb c2">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement <small>Answers the family's questions 1, 7 and 8</small></p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from {{ladder_1_89}} to {{ladder_5_89}}</h2>
+  </header>
+  <div class="panels">
+    <div class="pn p1" style="grid-column:span 4">
+      <h3>More shares barely help…</h3>
+      <p class="big">{{alone_eq40_89}} → {{alone_eq80_89}}</p>
+      <p class="bigl">doubling their shares from 40% to 80%, on investments alone</p>
+      <div class="rows">
+        <div class="row hd"><span></span><span></span><span>lasts to 89</span><span>worst year</span></div>
+        <div class="row"><p><b>40% shares</b><br>today</p><div class="trk2"><i class="g" style="width:{{alone_eq40_89}}"></i></div><span class="val">{{alone_eq40_89}}</span><span class="wst">{{alone_eq40_worst}}</span></div>
+        <div class="row"><p><b>60% shares</b></p><div class="trk2"><i class="g" style="width:{{alone_eq60_89}}"></i></div><span class="val">{{alone_eq60_89}}</span><span class="wst">{{alone_eq60_worst}}</span></div>
+        <div class="row"><p><b>80% shares</b></p><div class="trk2"><i class="g" style="width:{{alone_eq80_89}}"></i></div><span class="val">{{alone_eq80_89}}</span><span class="wst">{{alone_eq80_worst}}</span></div>
+      </div>
+      <p class="nt">And anything above 40% in shares breaks Adrian's <b style="white-space:nowrap">low–medium</b> risk profile.</p>
+    </div>
+    <div class="pn p2" style="grid-column:span 5">
+      <h3>…four decisions on what they already own do…</h3>
+      <p class="big on">{{ladder_1_89}} → {{ladder_5_89}}</p>
+      <p class="bigl">with the same 40% in shares throughout</p>
+      <div class="rows">
+        <div class="row"><p><b>Investments alone</b></p><div class="trk2"><i class="g" style="width:{{ladder_1_89}}"></i><span class="ref" style="left:{{alone_eq80_89}}"><span>best with more shares</span></span></div><span class="val">{{ladder_1_89}}</span></div>
+        <div class="row"><p><b>1</b> A one-person budget</p><div class="trk2"><i class="was" style="width:{{ladder_1_89}}"></i><i class="add" style="left:{{ladder_1_89}};width:calc({{ladder_2_89}} - {{ladder_1_89}})"></i><span class="ref" style="left:{{alone_eq80_89}}"></span></div><span class="val">{{ladder_2_89}}</span></div>
+        <div class="row"><p><b>2</b> The business sold in stages</p><div class="trk2"><i class="was" style="width:{{ladder_2_89}}"></i><i class="add" style="left:{{ladder_2_89}};width:calc({{ladder_3_89}} - {{ladder_2_89}})"></i><span class="ref" style="left:{{alone_eq80_89}}"></span></div><span class="val">{{ladder_3_89}}</span></div>
+        <div class="row"><p><b>3</b> The home's value released</p><div class="trk2"><i class="was" style="width:{{ladder_3_89}}"></i><i class="add" style="left:{{ladder_3_89}};width:calc({{ladder_4_89}} - {{ladder_3_89}})"></i><span class="ref" style="left:{{alone_eq80_89}}"></span></div><span class="val">{{ladder_4_89}}</span></div>
+        <div class="row"><p><b>4</b> The MPF turned into annuities</p><div class="trk2"><i class="was" style="width:{{ladder_4_89}}"></i><i class="acc" style="left:{{ladder_4_89}};width:calc({{ladder_5_89}} - {{ladder_4_89}})"></i><span class="ref" style="left:{{alone_eq80_89}}"></span></div><span class="val on">{{ladder_5_89}}</span></div>
+      </div>
+      <p class="nt">Each decision puts an asset that paid nothing to work: <b>the business, the home, the MPF</b>.</p>
+    </div>
+    <div class="pn p3" style="grid-column:span 3">
+      <h3>…and each has a price</h3>
+      <ul class="ldg">
+        <li><span class="n">1</span><div><b>A one-person budget</b><p>The survivor lives on <em>70%</em> of the couple's budget</p></div></li>
+        <li><span class="n">2</span><div><b>The business sold</b><p>Counted at <em>HK$3.0M</em> of its HK$5.0M value</p></div></li>
+        <li><span class="n">3</span><div><b>The home released</b><p><em>{{legacy_rmp}}</em> to the children, against {{legacy_keep}}</p></div></li>
+        <li><span class="n">4</span><div><b>The MPF annuities</b><p>About <em>{{ann_typ_cost}}</em> a year of typical spending</p></div></li>
+      </ul>
+      <p class="nt">If the business never sells, the plan still reaches <b>{{biz_not_sold_89}}</b>.</p>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Team model, 10,000 simulated markets, investments alone at 40%, 60% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+</section>

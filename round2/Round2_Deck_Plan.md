@@ -96,9 +96,14 @@ The look (colour, type, decorative idea) is chosen in §6; these rules hold what
 
 **Anatomy of a content slide (2 to 12):**
 - kicker (the section: "Call 2 · Retirement"), then the title, two lines at most;
-- **three panels whose headings read as one sentence across the slide** ("On investments alone, two futures in three
-  run out…" / "…four decisions on what they already own…" / "…because more risk wouldn't fix it"); on a call slide
-  the third panel is always the **defend panel**: the obvious alternative, why we rejected it, the trade-off;
+- **three panels whose headings read as one sentence across the slide** ("More shares barely help…" / "…four
+  decisions on what they already own do…" / "…and each has a price"); **each panel is one step of the argument and
+  adds a new fact**: no panel restates another panel or an earlier slide (Pete, 20 Oct: v8's first Call 2 spent a
+  third of the slide repeating 33%);
+- **every claim gets a shape, not a paragraph.** The defence of a call is **measured** where it can be: run the
+  obvious alternative in the model and draw it beside the call (Call 2: more shares, `alone_eq*`); where it can't, a
+  ledger with one figure a row. Each panel opens with its hero number or object and ends on a grey evidence note,
+  the notes on one baseline (e-Sentry's pattern);
 - one **conclusion bar**: the slide's point in one sentence, worded to lead into the next slide;
 - footer: **one** navigation device (the deck's sections), the source, the page number. Nothing else.
 - Not used (v7 lessons): a second tracker, question pills, "slide 5's…" references, tags inside sentences.
@@ -152,7 +157,8 @@ Script: each member says their name and role; Pete: "We call it Built to Last."
 - **"…but two risks hide behind the numbers"**: (1) an income nobody insures: no disability cover, no wills → Call 1;
   (2) 61% of their wealth (home HK$11.5M, business HK$5.0M) pays nothing in retirement, and medical premiums outside
   the budget climb to HK$375K a year: on their investments alone the money lasts to Carmen's 89 in only
-  {{ladder_1_89}} (measured) → Calls 2 and 3.
+  {{ladder_1_89}} (measured) → Calls 2 and 3. **The ten typical futures live here** (moved from Call 2, 20 Oct): the
+  evidence of risk 2, which Call 3 redraws with the plan.
 - Bar: "Neither risk is about the markets; both are about decisions."
 
 ### 4 · Call 1: insure the income, not the life (Lookbua; 0:50)
@@ -170,18 +176,23 @@ Script: each member says their name and role; Pete: "We call it Built to Last."
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 5 · Call 2: put the home and the business to work (Fahtai; 0:55)
-- **"On their investments alone, two futures in three run out…"**: the ten typical futures (5th to 95th percentile;
-  `fut*`), {{fut_short_n}} running out when Carmen is {{fut_age_first}} to {{fut_age_last}}.
-- **"…four decisions on what they already own…"**: the staircase {{ladder_1_89}} → {{ladder_2_89}} →
+**Rebuilt 20 Oct** (prototype: `looks/build/slide-05.png`; the first version, `slide-04.png`, restated 33% in its
+left panel and argued its defence in three grey paragraphs).
+- **"More shares barely help…"** (the obvious alternative, measured): headline {{alone_eq40_89}} → {{alone_eq80_89}},
+  "doubling their shares from 40% to 80%, on investments alone"; three bars on the shared scale, each with its worst
+  single year (40%: {{alone_eq40_89}}, {{alone_eq40_worst}}; 60%: {{alone_eq60_89}}, {{alone_eq60_worst}}; 80%:
+  {{alone_eq80_89}}, {{alone_eq80_worst}}). Note: anything above 40% breaks Adrian's low–medium profile.
+- **"…four decisions on what they already own do…"**: headline {{ladder_1_89}} → {{ladder_5_89}} (the accent), "with
+  the same 40% in shares throughout"; cumulative bars on the same scale as panel 1 (grey: where each step starts; ink:
+  what it adds), with panel 1's best ({{alone_eq80_89}}) as a dashed line through every row. The staircase {{ladder_1_89}} → {{ladder_2_89}} →
   {{ladder_3_89}} → {{ladder_4_89}} → {{ladder_5_89}}, each step named: a one-person budget agreed now (70% after the
   first death); the business sold in stages 2035 to 39, counted at HK$3.0M of HK$5.0M; the home's value released in
   2037 (reverse mortgage or downsize, chosen at 65); the MPF turned into annuities (HKMC, fixed, single life).
-- **"…because more risk wouldn't fix it" (defend):** more equity would breach Adrian's low-to-medium profile, and in
-  the model equity above 40% adds legacy, not security. Keep the business for dividends? Most of Carmen's HK$720K is
-  pay for running it; a sale turns it into money the plan can count on; never sold, the full plan still reaches
-  {{biz_not_sold_89}}. The trade-off: a smaller legacy ({{legacy_rmp}} with a reverse mortgage vs {{legacy_keep}} if
-  they kept everything, at {{prop_keep_89}}).
-- Bar: "The 61% that paid nothing now pays for their retirement. What still breaks it: medical bills."
+- **"…and each has a price"** (a ledger, one figure a row): the survivor lives on 70% of the couple's budget; the
+  business counted at HK$3.0M of its HK$5.0M; {{legacy_rmp}} to the children against {{legacy_keep}}; about
+  {{ann_typ_cost}} a year of typical spending for the annuities. Note: if the business never sells, the plan still
+  reaches {{biz_not_sold_89}}. Spoken, not shown: the dividend argument (most of the HK$720K is pay for running it).
+- Bar: "The 61% that paid nothing now pays for their retirement, with the same investments."
 - Answers questions 1, 7 and 8.
 
 ### 6 · Call 3: fix the cost the budget ignores (Fahtai; 0:45)
@@ -283,7 +294,7 @@ Call 2, in `round2/looks/`:
   decorative idea from an architect's drawing, used only where it means something: grid bubbles number the five calls,
   dimension lines measure a difference (33% → 83%), and a drawing's title block carries the footer.
 - **B · Swiss**: white, near-black ink, one cobalt accent; Archivo with Archivo Narrow; no decorative motif, big type
-  and generous space.
+  and generous space. **Pete preferred B (20 Oct: "slide-04 looks better")**; the rebuilt Call 2 is in B.
 The chosen look is written here (tokens, type roles, accent meaning, the decorative idea) before any other slide.
 
 ## 7. Images (one illustrated set)
