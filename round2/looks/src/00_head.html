@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built to Last: look options</title>
+<!--
+  Look checkpoint for the v8 deck (plan §6): the same two slides (cover, Call 2) in two looks, so Pete compares the
+  look, not the layout. Both follow the plan's system (§4): six type sizes (title 32, panel heading 18, body 16,
+  label 14, tag 12, numbers 40 / 72; the cover title is the one exception), a 12-column grid, three panels whose
+  headings read as one sentence, one conclusion bar, one navigation device.
+  A · Drawing set: navy ink, one brass accent, IBM Plex Sans + Plex Sans Condensed; the language of an architect's
+      drawing (grid bubbles number the calls, a dimension line measures the difference, a title block is the footer).
+  B · Swiss: near-black ink, one cobalt accent, Archivo + Archivo Narrow; no motif.
+  Fonts: SIL Open Font License (fonts/OFL-*.txt).
+-->
+<style>
+@font-face{font-family:"Plex";src:url("fonts/IBMPlexSans-400.ttf");font-weight:400}
+@font-face{font-family:"Plex";src:url("fonts/IBMPlexSans-500.ttf");font-weight:500}
+@font-face{font-family:"Plex";src:url("fonts/IBMPlexSans-600.ttf");font-weight:600}
+@font-face{font-family:"Plex";src:url("fonts/IBMPlexSans-700.ttf");font-weight:700}
+@font-face{font-family:"PlexC";src:url("fonts/IBMPlexSansCondensed-500.ttf");font-weight:500}
+@font-face{font-family:"PlexC";src:url("fonts/IBMPlexSansCondensed-600.ttf");font-weight:600}
+@font-face{font-family:"PlexC";src:url("fonts/IBMPlexSansCondensed-700.ttf");font-weight:700}
+@font-face{font-family:"Arch";src:url("fonts/Archivo-400.ttf");font-weight:400}
+@font-face{font-family:"Arch";src:url("fonts/Archivo-500.ttf");font-weight:500}
+@font-face{font-family:"Arch";src:url("fonts/Archivo-600.ttf");font-weight:600}
+@font-face{font-family:"Arch";src:url("fonts/Archivo-700.ttf");font-weight:700}
+@font-face{font-family:"ArchN";src:url("fonts/ArchivoNarrow-500.ttf");font-weight:500}
+@font-face{font-family:"ArchN";src:url("fonts/ArchivoNarrow-600.ttf");font-weight:600}
+@font-face{font-family:"ArchN";src:url("fonts/ArchivoNarrow-700.ttf");font-weight:700}
+
+/* ---- the two looks, as tokens ---- */
+.la{--paper:#FFFFFF;--mist:#F1F4F7;--rule:#D3DAE2;--grey:#A3AEBA;--slate:#4F5E6E;--ink:#14233B;
+    --accent:#B07D24;--accent-deep:#86601B;--text:"Plex",Arial,sans-serif;--head:"PlexC","Arial Narrow",sans-serif}
+.lb{--paper:#FFFFFF;--mist:#F2F2F2;--rule:#D9D9D9;--grey:#A0A0A0;--slate:#545454;--ink:#121212;
+    --accent:#1D4ED8;--accent-deep:#173EA9;--text:"Arch",Arial,sans-serif;--head:"ArchN","Arial Narrow",sans-serif}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#DADDE0}
+p,h1,h2,h3,h4,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+.deck{display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
+.slide{position:relative;width:1280px;height:720px;flex:none;overflow:hidden;background:var(--paper);color:var(--ink);
+  font:400 16px/1.42 var(--text);padding:34px 48px 0;display:flex;flex-direction:column}
+@page{size:1280px 720px;margin:0}
+@media print{body{background:#fff}.deck{gap:0;padding:0;display:block}.slide{break-after:page}}
+p,li,span,b{text-wrap:pretty}
+.tag{font:400 12px/1 var(--text);color:var(--slate);white-space:nowrap}
+.tag::before{content:"("}.tag::after{content:")"}
+
+/* ---- header: kicker, title ---- */
+.hd{display:flex;flex-direction:column;gap:6px}
+.kick{display:flex;align-items:center;gap:10px;font:600 18px/1.2 var(--head);color:var(--slate)}
+.kick small{font:400 14px/1 var(--text);color:var(--slate)}
+.hd h2{font:600 32px/1.12 var(--head);letter-spacing:-.2px;max-width:1100px;text-wrap:balance}
+
+/* ---- three panels on a 12-column grid; headings on a rule read as one sentence ---- */
+.panels{flex:1;min-height:0;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-top:22px}
+.pn{display:flex;flex-direction:column;min-width:0}
+.pn>h3{font:600 18px/1.25 var(--head);padding-bottom:8px;border-bottom:1.5px solid var(--ink);margin-bottom:14px}
+.cap{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:auto;padding-top:8px}
+
+/* ---- conclusion bar ---- */
+.bar{flex:none;margin-top:16px;background:var(--ink);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
+
+/* ---- footer ---- */
+.ft{flex:none;height:52px;display:flex;align-items:center;gap:20px;font:400 12px/1.3 var(--text);color:var(--slate)}
+.ft .src{flex:1}
+
+/* ---- panel 1: ten typical futures (the model's fut* keys; x = (year - 2026) / 40) ---- */
+.fz{position:relative;display:flex;flex-direction:column;gap:7px;margin:22px 26px 0 0}
+.fz .goal{position:absolute;top:-22px;bottom:-4px;left:100%;border-left:1.5px dashed var(--ink)}
+.fz .goal i{position:absolute;top:0;right:7px;font:600 14px/1 var(--head);font-style:normal;white-space:nowrap}
+.fz .ln{position:relative;height:15px}
+.fz .ln>i{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:var(--w);background:var(--grey)}
+.fz .ln>b{position:absolute;top:50%;left:var(--w);width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;background:var(--ink)}
+.fz .ln.lasts>i{width:calc(100% + 14px)}
+.fz .ln.lasts>b{left:calc(100% + 14px);background:var(--paper);border:2px solid var(--ink)}
+.fax{position:relative;height:38px;margin-right:26px;border-top:1.5px solid var(--ink);margin-top:10px}
+.fax span{position:absolute;top:6px;font:400 14px/1.25 var(--text);color:var(--slate);white-space:nowrap}
+.fax span b{font-weight:600;color:var(--ink)}
+.fkey{display:flex;gap:16px;font:400 14px/1.3 var(--text);color:var(--slate);margin-top:6px}
+.fkey i{display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--ink);margin-right:6px;vertical-align:-1px}
+.fkey i.o{background:var(--paper);border:2px solid var(--ink)}
+
+/* ---- panel 2: four decisions as cumulative bars (grey = where the step started, ink = what it adds) ---- */
+.cb{display:flex;flex-direction:column;gap:12px}
+.cb .r{display:grid;grid-template-columns:172px 1fr;column-gap:12px;align-items:center}
+.cb .r p{font:400 14px/1.25 var(--text)}
+.cb .r p b{font-weight:600}
+.cb .tr{position:relative;height:24px}
+.cb .tr i{position:absolute;top:0;bottom:0;left:0}
+.cb .tr i.was{background:var(--rule)}
+.cb .tr i.add{background:var(--ink)}
+.cb .tr span{position:absolute;top:50%;transform:translateY(-50%);padding-left:8px;font:600 16px/1 var(--head);white-space:nowrap}
+.cb .r.base .tr i.add{background:var(--grey)}
+.cb .r.top .tr i.add{background:var(--accent)}
+.cb .r.top .tr span{font:600 40px/1 var(--head);color:var(--accent)}
+.scale{position:relative;height:44px;margin-left:184px;margin-top:6px}
+
+/* ---- panel 3: the defend panel ---- */
+.df{display:flex;flex-direction:column;gap:14px}
+.df h4{font:600 16px/1.25 var(--head)}
+.df p{font:400 14px/1.38 var(--text);color:var(--slate);margin-top:3px}
+.df p b{color:var(--ink);font-weight:600}
+
+/* ==================== A · Drawing set ==================== */
+/* grid bubble: a drawing's column marker, numbering the five calls */
+.la .gb{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--ink);font:600 18px/1 var(--head);color:var(--ink);flex:none}
+.la .kick{color:var(--ink)}
+/* dimension line: measures one difference; 45-degree ticks at both ends, the label over the line */
+.la .dimn{position:absolute;top:14px;height:0;border-top:1.5px solid var(--accent-deep)}
+.la .dimn::before,.la .dimn::after{content:"";position:absolute;top:-7px;height:14px;border-left:1.5px solid var(--accent-deep);transform:rotate(45deg)}
+.la .dimn::before{left:0}.la .dimn::after{right:0}
+.la .dimn span{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font:600 14px/1 var(--head);color:var(--accent-deep);white-space:nowrap;background:var(--paper);padding:0 6px}
+.la .dimx{position:absolute;top:-8px;bottom:0;border-left:1px dashed var(--grey)}
+.la .scale{margin-top:16px}
+/* title block: the drawing's footer (project, sheet title, sheet number) */
+.la .tb{display:flex;border:1.5px solid var(--ink);height:34px;font:500 14px/1 var(--head);color:var(--ink)}
+.la .tb span{display:flex;align-items:center;padding:0 12px;border-left:1px solid var(--ink);white-space:nowrap}
+.la .tb span:first-child{border-left:0;font-weight:600}
+.la .bar{background:var(--ink)}
+/* cover A */
+.la.cv{padding:0;flex-direction:row}
+.la.cv .l{flex:1;padding:46px 56px 0;display:flex;flex-direction:column}
+.la.cv .ev{font:400 14px/1.4 var(--text);color:var(--slate)}
+.la.cv h1{font:600 128px/.95 var(--head);letter-spacing:-2px;margin-top:96px}
+.la.cv .span{position:relative;height:30px;margin-top:22px;width:560px}
+.la.cv .sub{font:400 24px/1.35 var(--text);margin-top:20px;max-width:560px}
+.la.cv .who{display:flex;gap:28px;margin-top:auto;padding-bottom:28px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.la.cv .who b{display:block;font:600 16px/1.3 var(--head);color:var(--ink)}
+.la.cv .r{width:500px;flex:none;background:var(--mist);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px;position:relative}
+.la.cv .fam{display:grid;grid-template-columns:repeat(2,160px);gap:22px 40px}
+.la.cv .fam p{text-align:center;font:600 16px/1.3 var(--head)}
+.la.cv .fam p span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}
+.pic img{width:100%;height:100%;object-fit:cover}
+.la.cv .note{font:400 12px/1.3 var(--text);color:var(--slate);margin-top:22px;text-align:center}
+.la.cv .tb{position:absolute;right:24px;bottom:22px}
+
+/* ==================== B · Swiss ==================== */
+.lb .gb{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--accent);color:#fff;font:700 18px/1 var(--head);flex:none}
+.lb .kick{color:var(--accent-deep)}
+.lb .dimn{position:absolute;top:8px;height:12px;border:2px solid var(--ink);border-top:0}
+.lb .dimn span{position:absolute;left:50%;top:18px;transform:translateX(-50%);font:600 14px/1 var(--head);white-space:nowrap}
+.lb .dimx{display:none}
+.lb .trk{position:absolute;top:36px;right:48px;display:flex;gap:6px;font:600 14px/1 var(--head);color:var(--grey)}
+.lb .trk span{padding:5px 8px;border:1.5px solid var(--rule)}
+.lb .trk span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+/* cover B */
+.lb.cv{padding:0}
+.lb.cv .top{height:14px;background:var(--accent);width:240px;margin:56px 0 0 56px}
+.lb.cv h1{font:700 150px/.9 var(--head);letter-spacing:-3px;margin:40px 0 0 52px}
+.lb.cv .sub{font:400 24px/1.35 var(--text);margin:26px 0 0 56px;max-width:620px}
+.lb.cv .ev{position:absolute;top:56px;right:56px;text-align:right;font:400 14px/1.4 var(--text);color:var(--slate)}
+.lb.cv .bot{position:absolute;left:56px;right:56px;bottom:40px;display:flex;align-items:flex-end;gap:28px}
+.lb.cv .who{display:flex;gap:28px;font:400 14px/1.35 var(--text);color:var(--slate);flex:1}
+.lb.cv .who b{display:block;font:600 16px/1.3 var(--head);color:var(--ink)}
+.lb.cv .fam{display:flex;gap:14px}
+.lb.cv .fam .pic{width:104px;height:104px;border:0;background:var(--mist);margin:0}
+.lb.cv .note{position:absolute;right:56px;bottom:14px;font:400 12px/1.3 var(--text);color:var(--slate)}
+</style>
+</head>
+<body>
+<!--ICON_SPRITE-->
+<main class="deck">
