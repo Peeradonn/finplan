@@ -355,6 +355,51 @@ p,li,span,b{text-wrap:pretty}
 .c5 .biz strong{font:700 40px/1 var(--head)}
 .c5 .biz p{font:400 14px/1.38 var(--text);color:var(--slate)}
 .c5 .biz p b{font-weight:600;color:var(--ink)}
+
+/* ==================== Call 2, v6 (20 Oct): fewer, attached texts ====================
+   Pete: "many disconnected text, we're just pushing out text everywhere". v5 had ~35 text pieces in ~15 styles. Rules:
+   say each thing once (title = claim, picture = evidence, bar = so-what); attach every label to what it explains (no
+   floating sentences, no legend, no notes); one block per idea. The reasons are spoken and live in the speaker notes. */
+.c6{--text:"Inter",Arial,sans-serif}
+.c6 .pn>h3{font-size:20px;margin-bottom:20px}
+.c6 .bar{font-size:20px;margin-top:18px}
+.c6 .body{flex:1;display:flex;flex-direction:column;gap:52px;min-height:0;padding-top:4px}
+/* left: two arrows, each with its result and its worst year attached */
+.c6 .lane{position:relative;margin-right:150px}
+.c6 .lane.a{height:116px}
+.c6 .pn:last-child .body{justify-content:space-between}
+.c6 .pn:first-child .body{justify-content:space-between}
+.c6 .lane.b{height:163px}
+.c6 .nm{position:absolute;top:0;left:0;right:-150px;font:600 20px/1.2 var(--head)}
+.c6 .nm small{font:400 16px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c6 .shaft,.c6 .seg{position:absolute;height:14px;margin-top:-2px;background:var(--grey)}
+.c6 .seg{background:var(--accent)}
+.c6 .head{position:absolute;width:0;height:0;margin-top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c6 .b .head{border-left-color:var(--accent)}
+.c6 .dot{position:absolute;width:18px;height:18px;margin:-4px 0 0 -9px;border-radius:50%;background:var(--ink)}
+.c6 .v{position:absolute;font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c6 .v.st{transform:translate(calc(-100% - 18px),-50%)}
+.c6 .res{position:absolute;transform:translateY(-50%);white-space:nowrap}
+.c6 .res b{display:block;font:700 40px/1 var(--head);color:var(--grey)}
+.c6 .res span{display:block;font:400 14px/1.2 var(--text);color:var(--slate);margin-top:4px}
+.c6 .res span em{font-style:normal;font-weight:600;color:var(--ink)}
+.c6 .b .res b{font-size:72px;color:var(--accent)}
+/* the call's segments carry their own names */
+.c6 .sl{position:absolute;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--ink);white-space:nowrap}
+.c6 .sl::after{content:"";position:absolute;left:50%;top:18px;height:7px;border-left:1.5px solid var(--grey)}
+/* right: one block per idea */
+.c6 .lbl{font:600 16px/1.3 var(--text)}
+.c6 .lbl small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
+.c6 .two{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;margin-top:12px}
+.c6 .two div{border-top:3px solid var(--ink);padding-top:12px;padding-bottom:4px}
+.c6 .two b{display:block;font:600 20px/1.1 var(--head)}
+.c6 .two span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.c6 .two strong{display:block;font:700 40px/1 var(--head);margin-top:18px}
+.c6 .cap6{font:400 14px/1.3 var(--text);color:var(--slate);margin-top:12px}
+.c6 .biz{display:flex;align-items:baseline;gap:14px;margin-top:14px;padding-top:12px;border-top:3px solid var(--ink)}
+.c6 .biz strong{font:700 40px/1 var(--head)}
+.c6 .biz span{font:400 16px/1.3 var(--text);color:var(--slate)}
+.notes{display:none}
 </style>
 </head>
 <body>

@@ -355,6 +355,51 @@ p,li,span,b{text-wrap:pretty}
 .c5 .biz strong{font:700 40px/1 var(--head)}
 .c5 .biz p{font:400 14px/1.38 var(--text);color:var(--slate)}
 .c5 .biz p b{font-weight:600;color:var(--ink)}
+
+/* ==================== Call 2, v6 (20 Oct): fewer, attached texts ====================
+   Pete: "many disconnected text, we're just pushing out text everywhere". v5 had ~35 text pieces in ~15 styles. Rules:
+   say each thing once (title = claim, picture = evidence, bar = so-what); attach every label to what it explains (no
+   floating sentences, no legend, no notes); one block per idea. The reasons are spoken and live in the speaker notes. */
+.c6{--text:"Inter",Arial,sans-serif}
+.c6 .pn>h3{font-size:20px;margin-bottom:20px}
+.c6 .bar{font-size:20px;margin-top:18px}
+.c6 .body{flex:1;display:flex;flex-direction:column;gap:52px;min-height:0;padding-top:4px}
+/* left: two arrows, each with its result and its worst year attached */
+.c6 .lane{position:relative;margin-right:150px}
+.c6 .lane.a{height:116px}
+.c6 .pn:last-child .body{justify-content:space-between}
+.c6 .pn:first-child .body{justify-content:space-between}
+.c6 .lane.b{height:163px}
+.c6 .nm{position:absolute;top:0;left:0;right:-150px;font:600 20px/1.2 var(--head)}
+.c6 .nm small{font:400 16px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c6 .shaft,.c6 .seg{position:absolute;height:14px;margin-top:-2px;background:var(--grey)}
+.c6 .seg{background:var(--accent)}
+.c6 .head{position:absolute;width:0;height:0;margin-top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c6 .b .head{border-left-color:var(--accent)}
+.c6 .dot{position:absolute;width:18px;height:18px;margin:-4px 0 0 -9px;border-radius:50%;background:var(--ink)}
+.c6 .v{position:absolute;font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c6 .v.st{transform:translate(calc(-100% - 18px),-50%)}
+.c6 .res{position:absolute;transform:translateY(-50%);white-space:nowrap}
+.c6 .res b{display:block;font:700 40px/1 var(--head);color:var(--grey)}
+.c6 .res span{display:block;font:400 14px/1.2 var(--text);color:var(--slate);margin-top:4px}
+.c6 .res span em{font-style:normal;font-weight:600;color:var(--ink)}
+.c6 .b .res b{font-size:72px;color:var(--accent)}
+/* the call's segments carry their own names */
+.c6 .sl{position:absolute;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--ink);white-space:nowrap}
+.c6 .sl::after{content:"";position:absolute;left:50%;top:18px;height:7px;border-left:1.5px solid var(--grey)}
+/* right: one block per idea */
+.c6 .lbl{font:600 16px/1.3 var(--text)}
+.c6 .lbl small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
+.c6 .two{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;margin-top:12px}
+.c6 .two div{border-top:3px solid var(--ink);padding-top:12px;padding-bottom:4px}
+.c6 .two b{display:block;font:600 20px/1.1 var(--head)}
+.c6 .two span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.c6 .two strong{display:block;font:700 40px/1 var(--head);margin-top:18px}
+.c6 .cap6{font:400 14px/1.3 var(--text);color:var(--slate);margin-top:12px}
+.c6 .biz{display:flex;align-items:baseline;gap:14px;margin-top:14px;padding-top:12px;border-top:3px solid var(--ink)}
+.c6 .biz strong{font:700 40px/1 var(--head)}
+.c6 .biz span{font:400 16px/1.3 var(--text);color:var(--slate)}
+.notes{display:none}
 </style>
 </head>
 <body>
@@ -832,6 +877,67 @@ p,li,span,b{text-wrap:pretty}
   </div>
   <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
   <footer class="ft"><p class="src">Team model, 10,000 simulated markets; investments alone at 40% and 80% shares; legacy in today's money at Carmen's 89 (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+</section>
+
+<!-- B · Swiss, Inter: Call 2, v6 (20 Oct). Fewer, attached texts: each result carries its worst year; the call's
+     segments carry their own names; the right panel is two blocks (the home choice, the business's safety net). The
+     reasons (Adrian's profile, the HK$3.0M count, the two small decisions' costs) are in the speaker notes. -->
+<section class="slide lb c6">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement</p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from 33% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 7">
+      <h3>Two ways to lift the odds, from the same start…</h3>
+      <div class="body">
+        <div class="lane a">
+          <p class="nm">More risk <small>80% in shares instead of 40%</small></p>
+          <span class="shaft" style="top:58px;left:33%;width:calc(43% - 33%)"></span>
+          <span class="head" style="top:63px;left:43%"></span>
+          <span class="dot" style="top:58px;left:33%"></span>
+          <span class="v st" style="top:63px;left:33%">33%</span>
+          <p class="res" style="top:76px;left:calc(43% + 30px)"><b>43%</b><span>worst year <em>−24%</em></span></p>
+        </div>
+        <div class="lane b">
+          <p class="nm">Four decisions <small>the same 40% in shares</small></p>
+          <span class="sl" style="top:52px;left:calc((33% + 43%) / 2)">budget</span>
+          <span class="sl" style="top:52px;left:calc((43% + 60%) / 2)">business</span>
+          <span class="sl" style="top:52px;left:calc((60% + 82%) / 2)">home</span>
+          <span class="sl" style="top:52px;left:calc(83% + 4px)">annuities</span>
+          <span class="seg" style="top:80px;left:33%;width:calc(43% - 33% - 2px)"></span>
+          <span class="seg" style="top:80px;left:43%;width:calc(60% - 43% - 2px)"></span>
+          <span class="seg" style="top:80px;left:60%;width:calc(82% - 60% - 2px)"></span>
+          <span class="seg" style="top:80px;left:82%;width:calc(83% - 82%)"></span>
+          <span class="head" style="top:85px;left:83%"></span>
+          <span class="dot" style="top:80px;left:33%"></span>
+          <span class="v st" style="top:85px;left:33%">33%</span>
+          <p class="res" style="top:112px;left:calc(83% + 30px)"><b>83%</b><span>worst year <em>−10%</em></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="pn" style="grid-column:span 5">
+      <h3>…most of it from the home and the business</h3>
+      <div class="body">
+        <div>
+          <p class="lbl">The home <small>they choose at 65</small></p>
+          <div class="two">
+            <div><b>Stay</b><span>a reverse mortgage</span><strong>HK$8.1M</strong></div>
+            <div><b>Move</b><span>downsize</span><strong>HK$12.2M</strong></div>
+          </div>
+          <p class="cap6">passes to the children; either choice keeps the odds at 83%</p>
+        </div>
+        <div>
+          <p class="lbl">The business <small>sold in stages, 2035–39</small></p>
+          <p class="biz"><strong>66%</strong><span>even if it never sells</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89, 10,000 simulated markets (measured); worst year: the worst single year, on average; legacy in today's money</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+  <aside class="notes">FAHTAI: Two ways to lift the odds. Take more risk, 80% in shares: the odds barely move, to 43%, the worst year deepens to −24%, and it breaks Adrian's low-to-medium profile. Or put what they already own to work: four decisions, the same investments, 83%. Most of it comes from the home and the business. At 65 they choose: stay with a reverse mortgage, or downsize and leave more to the children. The business sells in stages to her co-founder and managers; we count only HK$3 million of its five, and even if it never sells the plan still reaches 66%. The other two cost little: the survivor plans on 70%, and the annuities about HK$10K a year.</aside>
 </section>
 </main>
 </body>

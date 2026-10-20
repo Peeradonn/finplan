@@ -113,6 +113,13 @@ The look (colour, type, decorative idea) is chosen in §6; these rules hold what
 heading rule and ends on its note, the notes the same height and on one baseline; spare space is spread inside the
 content, never left as a gap at one end. Measure it on the render, don't eyeball it.
 
+**Text on a slide (Pete, 20 Oct: "many disconnected text, we're just pushing out text everywhere"):** say each thing
+once (the title is the claim, the picture the evidence, the bar the so-what; cut any caption that repeats one of
+them); attach every label to what it explains (a result carries its own worst year, a segment its own name; no
+floating sentences, legends or notes that restate); one block per idea. The reasons are spoken and live in the
+speaker notes, which the PowerPoint carries for anyone reading the file. Call 2 went from about 35 text pieces in 15
+styles to about 20, in four.
+
 **Hierarchy inside a panel:** rank items by what the evidence says matters (on Call 2, the arrow's two biggest
 segments, the home and the business, lead the right panel; the two small decisions go to a legend and a note). Never
 list unlike things (a cost, a safety margin, a legacy) as equal rows.
@@ -184,19 +191,18 @@ Script: each member says their name and role; Pete: "We call it Built to Last."
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 5 · Call 2: put the home and the business to work (Fahtai; 0:55)
-**Rebuilt 20 Oct, v5** (prototype `looks/build/slide-10.png`). v1 restated 33% and argued in paragraphs; v2 put two
-near-identical charts side by side; v3 and v4 listed the four decisions as equal rows (no hierarchy), and the panels'
-tops and bottoms didn't line up. v5:
-- **"Two ways to lift the odds, from the same start…"** (7 columns): two arrows from {{ladder_1_89}} on one scale. More
-  risk (80% in shares): grey, to {{alone_eq80_89}}; the worst single year {{alone_eq40_worst}} → {{alone_eq80_worst}};
-  breaks Adrian's profile. Four decisions (same 40%): the accent arrow to {{ladder_5_89}}, split into four numbered
-  segments (the ladder; {{ladder_2_89}}, {{ladder_3_89}}, {{ladder_4_89}} at the joins), with a one-line legend naming
-  them; the worst year stays at {{alone_eq40_worst}}.
-- **"…most of it from the home and the business"** (5 columns), ranked by segment size: (3) the home, a two-way
-  choice at 65: stay with a reverse mortgage ({{legacy_rmp}} to the children, lasts in {{prop_rmp_89}}) or downsize
-  ({{legacy_down}}, lasts in {{prop_down_89}}); (2) the business sold in stages: {{biz_not_sold_89}} if it never sells,
-  counted at HK$3.0M of HK$5.0M. Note: the smaller two cost little (the survivor lives on 70%; the annuities about
-  {{ann_typ_cost}} a year).
+**Rebuilt 20 Oct, v6** (prototype `looks/build/slide-11.png`; v5 `slide-10.png` for comparison). v1 to v5 fixed
+the argument, the duplicate charts, the hierarchy and the alignment; v6 cuts the text to what the picture needs:
+- **"Two ways to lift the odds, from the same start…"**: "More risk (80% in shares instead of 40%)": {{ladder_1_89}} →
+  {{alone_eq80_89}}, "worst year {{alone_eq80_worst}}" under the result. "Four decisions (the same 40% in shares)":
+  {{ladder_1_89}} → {{ladder_5_89}}, the arrow's segments named budget, business, home, annuities (lengths from the
+  ladder), "worst year {{alone_eq40_worst}}" under the result. No legend, no sentences, no note.
+- **"…most of it from the home and the business"**: the home, chosen at 65: Stay (a reverse mortgage) {{legacy_rmp}},
+  Move (downsize) {{legacy_down}}, one caption "passes to the children; either choice keeps the odds at
+  {{prop_rmp_89}}" (check the two odds stay equal when the model changes); the business, sold in stages 2035 to 39:
+  {{biz_not_sold_89}} "even if it never sells".
+- Footer: the measure, the worst-year definition, legacy in today's money. Speaker notes: Adrian's profile, the
+  HK$3.0M count, the two small decisions' costs, the ladder values.
 - Bar: "The 61% that paid nothing now pays for their retirement, with the same investments."
 - Answers questions 1, 7 and 8.
 
