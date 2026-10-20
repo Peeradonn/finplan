@@ -1,110 +1,175 @@
-# Built to Last — UFP Award 2026 proposal (Team Axis)
+# CLAUDE.md
 
-Round One written proposal for the case "The Wong Family Legacy". Lead: Pete (the user). Team: Win, Fahtai, Lookbua.
-**Due Fri 2 Oct 2026, 23:59 (HKT), as a PDF.** Case and rules: `Primary Info/` (case PDF, workshop deck, `2026-rules.md`).
+Guidance for AI assistants working in this repo. Team Axis: Pete (lead), Win, Fahtai, Lookbua.
+
+## What this repo is
+Our entry to the **UFP Award 2026** (Hong Kong Undergraduate Financial Planners of the Year) for the case **"The Wong
+Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Asset Exposure"**.
+- **Round One (done, frozen):** a 15-page written proposal, "Built to Last", submitted 2 Oct 2026
+  (`document/build/proposal.pdf`). The judges hold it. Change it only to fix an error, and log why.
+- **Round Two (active):** a 10-minute recorded video presentation of the written case, plus the PowerPoint file of
+  its slides. **Due Mon 26 Oct 2026, 17:00 HKT**, by hand at the SRFP&S office, with a download link emailed as a
+  backup. Recording planned Thu 22 to Fri 23 Oct.
+- **Final (if we reach it):** a presentation on a topical issue, then ten minutes of questions.
+
+**Start here:** Round Two work begins with `round2/Round2_Deck_Plan.md`. The case, the rules and the workshop deck
+are in `Primary Info/`.
+
+## Your stance: independent reviewer, not cheerleader
+Everything written here (the proposal, the manuscript, the deck plan, the review logs) is **our team's current
+thinking**, written by people and AI who wanted it to work. Treat it as claims to test.
+- **Form your own view first,** from primary sources: the case PDF, `Primary Info/2026-rules.md`, the results letter
+  (criteria quoted in the deck plan §1), official sources (HKMA, SFC, IA, HKMC, IRD). Then read our documents and say
+  where you disagree.
+- **Look for the strongest case against.** What would a practitioner judge question? What did we leave out? Who would
+  say "we already do this better"?
+- **Don't flatter.** If a slide, a number or a decision is weak, say so plainly and why. Hold your position when the
+  team pushes back without new evidence; change it when they bring new evidence.
+- **Separate fact, inference and opinion.** Label confidence. Cite sources with dates. Write "unverified" when you
+  couldn't check. **Never invent** numbers, quotes, product names, prizes or judging criteria.
+- **Evidence before polish.** When a claim has no result behind it, run the test (the model is in `model/`) and then
+  draw it. A paragraph defending a choice is weaker than a measured comparison.
+- **Before reporting, re-check your work against every criticism made in the conversation.** A fix that repeats a
+  criticised mistake costs trust.
+
+## Who judges, and what they score
+- **Round Two criteria** (results letter, 16 Oct 2026): communication skills 45 ("present ideas clearly,
+  systematically, effectively, and forcefully"); personal statement and the cross-boundary Wealth Management Connect
+  15; essential elements of the financial proposal within the time 20; quality of the PowerPoint 15; charisma and
+  team spirit 5. Ranking: 0.5 × Round One + 0.5 × Round Two; the top four go to the Final.
+- **The case asks to see** (notes, p.9): "strategic thinking, client suitability awareness, innovation,
+  implementation practicality, professionalism in presentation". The family wants a plan that is "innovative yet
+  prudent, forward-looking yet practical, and aligned with both financial goals and family values".
+- **The panel:** association leaders and practitioners; the joint organisers include the Hong Kong Institute of ESG
+  Strategists and the Hong Kong Association of Financial Advisors (workshop deck p.2).
+
+## Review lenses
+Pick the lenses that fit the question and say which you used. Think like the actual person.
+
+| Lens | Questions they'd ask |
+|---|---|
+| **Practitioner judge** (financial adviser) | Is this suitable for this family? Would I recommend it to a client? What's missing (liquidity, tax, estate, monitoring)? Is "33%" believable for a HK$24.4M family? |
+| **Insurance adviser** | Why term, not whole life? Is disability cover available at that price? What happens at 65? |
+| **Compliance, regulator** (SFC, IA, HKMA) | Suitability per person, licensed products and channels, no solicitation under the Connect, fair disclosure of risks and fees |
+| **ESG strategist** | Is the ESG credible, or greenwashing? What's the selection test? |
+| **The family** (Adrian, Carmen, Ryan, Chloe) | Do I understand it? Does it respect what I asked for? What do I give up? |
+| **A viewer on Zoom** | Can I read it at this size? What's the one point? How does this slide lead to the next? |
 
 ## Hard rules (a breach can disqualify)
+- **No university name anywhere:** slides, video frames (clothing, lanyards, backgrounds, meeting display names), file
+  names, file metadata. Microsoft Office stamps the signed-in account (a university email) into every file it saves:
+  never submit an Office-exported PDF, scrub PowerPoint and MP4 metadata, and never write the account ID or email
+  into any file. `Fin Plan.pdf` in the repo root is such an export: it is git-ignored; never commit or share it.
+  `reference/Slides/` holds other teams' decks, some naming universities: git-ignored too.
+- Files named with the team name only ("Axis"). English only.
+- **Round One:** 15 pages maximum including the cover and appendix; 12pt Times New Roman body text; submitted as the
+  Chrome-built PDF (`document/build/proposal.pdf`), never one exported from Word or PowerPoint.
+- **Round Two:** video at most 10:00 (MPEG-4, AVI or WMV), plus the PowerPoint file.
 
-- **15 pages maximum**, including the cover and appendix. 12pt Times New Roman body text, single-spaced, English.
-- **No university name anywhere**, including file metadata. Microsoft Office stamps the signed-in account (a university
-  email) into files it saves, so **submit the Chrome-built PDF** (`document/build/proposal.pdf`), never a PDF exported from
-  Word or PowerPoint. Never write the account ID or email into any file.
-- Round One scoring: financial proposal 25 · presentation 20 · client information 15 · risk analysis 15 · personal
-  statement 15 · financial goals 10.
+## Numbers: the rule (both rounds)
+- **Every model-derived number is a `{{key}}` placeholder** filled from `figures/numbers.json` (chart series from
+  `figures/figure-data.md`, via `round2/series.py` in the deck). Never type a model number into text or a slide.
+- A new number means adding it to `export_numbers()` in `model/run_model.py` and rerunning `make_charts.py`; then
+  check that no existing number changed (diff `numbers.json`) and log the change in `reviews/applied.md`.
+- Typed numbers are allowed only for case facts, published facts (rates, rules) and the checked figures the written
+  case already types (e.g. HK$100K, HK$2.57M, HK$2.07M, HK$45K). `document/fill.py` fails on an unknown key or a
+  leftover `{{`.
+- The headline: the chance the parents' money lasts to Carmen's 89 is `{{ladder_1_89}}` on their investments alone,
+  `{{ladder_5_89}}` with the four decisions, `{{switch_89}}` with the medical review at 75, and almost every future
+  (`{{guardswitch_89}}`) with the spending rules. Always quote the placeholders: they move when the model moves.
 
-## How the document is built
+## Decisions already made (the proposal's content; reopen only with new evidence)
+Reasons are in `document/manuscript.md`. These are content decisions; how the deck *presents* them is open.
+- Theme "Built to Last"; pillars Protect · Turn assets into income · Give every voice a place. Team name Axis.
+- Four decisions, in ladder order: lower spending after the first death → staged business sale → release the home
+  (reverse mortgage or downsize, 2037) → MPF annuities. **The annuity is last on purpose**: insurance for the worst
+  markets (`ann_w1_with_real` vs `ann_w1_without_real`).
+- Annuities are HKMC, fixed HK$, **single life**: Adrian from 2037 until his death; Carmen from 2039 for life.
+- ≈HK$0.46M of mortgage still owed in 2037 is cleared from the portfolio (a reverse mortgage needs a clear title).
+- Medical premiums (VHIS age curve × medical trend) are on top of the HK$780K; tier review to the Standard plan at
+  Adrian's 75 (2047). Guardrails (Guyton–Klinger) from 2039, essentials 40% never cut, medical premiums don't trigger
+  cuts.
+- Critical illness HK$1.5M each (sized by need); new cover ≈HK$100K in year 1. Adrian 40% equity, Carmen 60%.
+- ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core,
+  Adrian 35%, Carmen 37%), Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index
+  Fund (employee half, via the Employee Choice Arrangement). No thematic fund; no separate Hong Kong holding.
+- Vehicles: broad index funds only. Adrian / Carmen: BOC-Prudential ESG 35/37, IWDA 5/23, Treasury notes 2037–41
+  20/—, IBTA 10/—, 3450 (3–5 yr) —/5, AGGU 20/20, Allianz Green Bond 5/10, 3053 5/5. No Nasdaq-100, REITs or 3433.
+- Card balance assumed revolving; tax assumed separate assessment (both stated as checks in the proposal's §2).
 
+## Round Two: the deck (active)
+- **The plan:** `round2/Round2_Deck_Plan.md` (v8, "Five calls", approved 20 Oct): the argument, the storyline, every
+  slide's spec, the system, the look, the images, what's still missing. **Change the plan first, then the slide.**
+- **Build:** `.venv/Scripts/python.exe round2/make.py [--pages 3,4] [--builds]` assembles `round2/src/`, fills the
+  numbers and renders to `round2/build/` (PNGs per slide; `--builds` writes one frame per spoken step for presenting).
+  Look options: `round2/looks/make_looks.py`.
+- **Skills:** `slide-design` for slides, `deck-plan` for the storyline. Render and look at every changed slide before
+  reporting; judge flow on a contact sheet of the whole deck, not slide by slide.
+- **Slides are not the document.** The proposal's writing rules (below) are for the PDF only. On a slide:
+  - every panel adds a new fact that moves the argument a step; nothing restates a previous panel or slide;
+  - every claim gets a shape (a measured comparison, a chart with one annotation, a ledger), not a paragraph; the
+    reasoning is spoken and lives in the speaker notes;
+  - one point a slide, one accent on it, and a conclusion bar that hands over to the next slide.
+- **The system** (plan §4): six type sizes, one 12-column grid, three panels whose headings read as one sentence,
+  one navigation device, nothing meant to be read under 14 px.
+
+## Round One: the document (frozen)
 ```
 model/wong_model.xlsx (Inputs tab)  →  model/run_model.py (Monte Carlo)  →  model/make_charts.py
       → figures/*.png, figures/figure-data.md, figures/numbers.json
-page sources with {{placeholders}}  →  document/assemble.py  →  document/proposal.html (numbers filled in)
-      →  document/render.py  →  document/build/proposal.pdf  (+ a fit report per page)
+page sources with {{placeholders}}  →  document/assemble.py  →  document/proposal.html  →  document/render.py
+      →  document/build/proposal.pdf  (+ a fit report per page)
 ```
-
 Commands (Python is **not** on PATH; use the project environment):
-
 ```
 .venv/Scripts/python.exe model/build_xlsx.py            # only if the workbook structure changes
 powershell -File tools/recalc.ps1 -Path <abs path to model/wong_model.xlsx>   # recalc in Excel after build_xlsx
 cd model && ../.venv/Scripts/python.exe make_charts.py  # charts + numbers.json (~3-10 min)
 cd document && ../.venv/Scripts/python.exe assemble.py && ../.venv/Scripts/python.exe render.py proposal.html
 ```
-
-`render.py` must report **15 pages and every page "fits"**; "OVERFLOWS" (including "into the footer") means text is cut.
-Page previews land in `document/build/page-N.png`. If `.venv` is missing: `python -m venv .venv` with
+`render.py` must report **15 pages and every page "fits"**. If `.venv` is missing: `python -m venv .venv` with
 `C:\Users\User\AppData\Local\Python\pythoncore-3.14-64\python.exe`, then `pip install -r requirements.txt`.
 
-**Page sources** (edit these, never `proposal.html`):
+Page sources (edit these, never `proposal.html`): pages 1–2 `document/template-v2.html`; 3, 6–9
+`document/pages-03-09.html`; 4–5 `document/section-mock-v3.html`; 10–15 `document/pages-10-15.html`.
+`document/manuscript.md` mirrors the wording and records decisions and evidence: change wording in both together.
 
-| Pages | File |
-|---|---|
-| 1 cover, 2 executive summary | `document/template-v2.html` (only its first two pages are used) |
-| 3, 6, 7, 8, 9 | `document/pages-03-09.html` |
-| 4–5 (§3 retirement) | `document/section-mock-v3.html` |
-| 10–15 | `document/pages-10-15.html` |
+**Writing and design rules for the PDF** (not for slides): client-first and data-driven; every section has a finding
+as its heading and a "defend" paragraph (the alternative, why this suits the family, the trade-off, what if it
+fails); plain English for a judge, not model-speak; 12pt Times New Roman body, EB Garamond headings, one crimson
+accent; all text at least 12pt.
 
-`document/manuscript.md` mirrors the wording page by page and records decisions and evidence. **Change wording in the
-page source and the manuscript together.** `drafts/` are superseded source material. `Updated_Investment_Win.md` is Win's
-investment notes (fund choices, rules). `document/export_pptx.py` makes a PowerPoint copy — only when Pete asks.
+**Parallel sessions on the document:** story reviewer, number checker and builder, each with a brief in `reviews/`.
+Reviewers only append findings to their own files; the builder edits the page sources, the manuscript, the model and
+`figures/`, and logs what it did in `reviews/applied.md`.
 
-## Numbers: the rule
-
-- **Every model-derived number is a `{{key}}` placeholder** filled from `figures/numbers.json`. Never type a model number
-  into text. A new number means adding it to `export_numbers()` in `model/run_model.py` and rerunning `make_charts.py`.
-- Typed numbers are allowed only for case facts, published facts (rates, rules) and a few checked figures listed in the
-  manuscript's §3 notes. `fill.py` fails on an unknown key or a leftover `{{`.
-- The headline: money lasts to Carmen's 89 in **33% → 83%** of 10,000 simulations; with the tier review at 75, 97%; with
-  guardrails too, ~100%. These move whenever the model changes: always quote placeholders.
-
-## Decisions already made (do not reopen without new evidence; reasons in `document/manuscript.md`)
-
-- Theme "Built to Last"; pillars Protect · Turn assets into income · Give every voice a place. Team name Axis.
-- Four decisions, in ladder order: lower spending after the first death → staged business sale → release the home
-  (reverse mortgage or downsize, 2037) → MPF annuities. **The annuity is last on purpose**: it is insurance for the worst
-  markets (+1 point, but in the worst 1% Carmen's spending stays above HK$382K a year with it vs HK$76K without, in
-  today's money: `ann_w1_with_real`, `ann_w1_without_real`).
-- Annuities are HKMC, fixed HK$, **single life**: Adrian from 2037 until his death; Carmen from 2039 for life.
-- ≈HK$0.46M of mortgage still owed in 2037 is cleared from the portfolio (a reverse mortgage needs a clear title).
-- Medical premiums (VHIS age curve × medical trend) are on top of the HK$780K; tier review to the Standard plan at
-  Adrian's 75 (2047). Guardrails (Guyton–Klinger) from 2039, essentials 40% never cut, medical premiums don't trigger cuts.
-- Critical illness HK$1.5M each (sized by need); new cover ≈HK$100K in year 1. Adrian 40% equity, Carmen 60%.
-- ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core,
-  Adrian 35%, Carmen 37%), Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index Fund (employee half, via
-  the Employee Choice Arrangement). No thematic fund. No
-  separate Hong Kong holding: 3039 dropped 1 Oct (story S14), the family already depends on Hong Kong.
-- Vehicles (S19, 1 Oct): broad index funds only. Adrian / Carmen: BOC-Prudential ESG 35/37, IWDA 5/23, Treasury notes
-  2037–41 20/—, IBTA 10/—, 3450 (3–5 yr) —/5, AGGU 20/20, Allianz Green Bond 5/10, 3053 5/5. No Nasdaq-100, REITs or 3433.
-- `proposal-v2.html` and `proposal-v3.html` are kept as records (Pete, 1 Oct); everyone edits the page sources, and
-  `document/proposal.html` is the document.
-- Card balance assumed revolving; tax assumed separate assessment (both stated as checks in §2).
-
-## Writing and design rules (Pete's standing preferences)
-
-- Client-first, data-driven: every recommendation backed by the model or a source; every section has a finding as its
-  heading and a "defend" paragraph (the alternative, why this suits the family, the trade-off, what if it fails).
-- **Plain English for a judge, not model-speak**: no "sleeve", "path", "Fixed/Plan" shorthand, unexplained percentages.
-- Design: body 12pt Times New Roman; EB Garamond for headings and figure titles (fonts in `document/fonts/`); one accent
-  colour (crimson); left-aligned text; no text wrapping around figures; dense but not cramped. All text ≥ 12pt.
-- Commit after each major edit and push, on `main` (Pete, 20 Oct: several people work in the repo). Never commit
-  `Fin Plan.pdf` or `reference/Slides/` (Office metadata and university names; both are in `.gitignore`).
+## Working conventions
+- **Git:** commit after each major edit and push, on `main` (Pete, 20 Oct: several people work in the repo). Fetch
+  first: Pete also merges pull requests on GitHub, so integrate with a merge, never a force push. One logical change
+  per commit; a plain subject; the body says what and why.
+- **Model changes:** log in `reviews/applied.md`; confirm no existing number changed.
+- **Decisions:** the deck's in `round2/Round2_Deck_Plan.md`; the proposal's in `document/manuscript.md`.
+- **Language:** English. Chinese terms are fine where they help.
 
 ## Traps already hit
-
-- In the Bash tool, heredocs turn `\n` inside Python strings into real newlines: write patch scripts to a file instead.
+- In the Bash tool, heredocs can mangle Python strings and quotes: write patch scripts to a file and run them.
+- The Windows console can't print "−" and other non-ASCII characters: set `PYTHONIOENCODING=utf-8`.
 - `build_xlsx.py` leaves formulas uncalculated: run `tools/recalc.ps1` before `run_model.py` reads the workbook.
-- A page can "fit" in Chrome's box yet run into the footer: trust `render.py`'s wording, and look at the PNG.
+- A PDF page can "fit" in Chrome's box yet run into the footer: trust `render.py`'s wording, and look at the PNG.
+- In the deck's CSS, class names are global: a class added for one slide restyles every element with it (grep first).
+- The slide-design render script needs absolute paths.
 
 ## Open items (need outside facts or teammates)
+- **Round Two:** the look (A or B, `round2/looks/`), then the illustrated image set (prompts in the deck plan §7, for
+  Pete to generate); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
+- **Facts:** insurer allows Flexi → Standard at 75 without new underwriting (the 97% rests on it); HKMC annuity death
+  benefit; BOC-Prudential fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund
+  fee; Ryan's crypto vs tokenised-MMF split; MPF passes to the estate (no nomination); card revolving; tax filing
+  status.
 
-Personal statement: Win's career paragraph (still a placeholder) and Lookbua's OK on his edited paragraph · Wealth Management Connect figures vs HKMA · MPF passes to the estate
-(no nomination) · HKMC annuity death benefit · insurer allows Flexi → Standard without underwriting · BOC-Prudential
-fund's own addendum fee (brochure ≈0.78%) and a channel waiving the 5% initial charge · each parent's current MPF
-fund fee · Ryan's crypto vs tokenised-MMF split ·
-card revolving · tax filing status.
-
-## Parallel sessions
-
-Three roles, each with a brief in `reviews/`: story reviewer (`brief-story.md`), number checker (`brief-numbers.md`) and
-**HTML builder** (`brief-builder.md`). Reviewers only append findings to their own file and never edit the document. The
-builder is the only session that edits page sources, the manuscript, the model and `figures/`, and the only one that
-commits; it logs what it did in `reviews/applied.md`. If you have not been given a role, ask Pete which one you are.
+## How to report an analysis
+1. **Verdict first:** one or two sentences.
+2. **Evidence:** sourced, with dates; what was measured, and where.
+3. **Strongest counter-argument,** and how much it worries you.
+4. **What would change your mind:** the specific evidence or test.
+5. **Recommended next action:** concrete, with an owner if known.
