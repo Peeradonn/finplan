@@ -258,6 +258,47 @@ p,li,span,b{text-wrap:pretty}
 .c3 .ldg3 .hdr span:last-child{text-align:right}
 .c3 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
 .c3 .nt b{font-weight:600}
+
+/* ==================== Call 2, v4 (20 Oct): the arrow carries the four decisions; the right panel is only the price ====
+   Type (Pete: Inter for text; "some of the bolded text are smaller than the little ones"): Archivo Narrow only for
+   the title, panel headings, lane names and big numbers; everything else Inter. Scale: title 32 / panel heading and
+   lane name 20 / bold label and body 16 / small 14 / tag 12 / numbers 40 and 72. */
+.c4{--text:"Inter",Arial,sans-serif}
+.c4 .pn>h3{font-size:20px}
+.c4 .kick small{font-size:14px}
+.c4 .ar4{position:relative;margin-top:30px;height:306px}
+.c4 .bar{margin-top:18px}
+.c4 .scl{position:absolute;left:0;right:150px;top:0;bottom:0}
+.c4 .lane{position:absolute;left:0;right:0}
+.c4 .nm{position:absolute;top:0;left:0;right:-150px;font:600 20px/1.2 var(--head)}
+.c4 .nm small{font:400 14px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c4 .shaft{position:absolute;height:10px;background:var(--grey)}
+.c4 .head{position:absolute;width:0;height:0;margin-top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c4 .dot{position:absolute;width:18px;height:18px;margin:-4px 0 0 -9px;border-radius:50%;background:var(--ink)}
+.c4 .v{position:absolute;transform:translateY(-50%);font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c4 .v.st{transform:translate(calc(-100% - 18px),-50%)}
+.c4 .sub{position:absolute;left:0;right:-150px;font:400 14px/1.4 var(--text);color:var(--slate)}
+.c4 .sub b{font-weight:600;color:var(--ink)}
+/* the call's arrow: four segments, one a decision, lengths from the model's ladder */
+.c4 .on .seg{position:absolute;height:10px;background:var(--accent)}
+.c4 .on .head{border-left-color:var(--accent)}
+.c4 .on .v.end{font-size:72px;color:var(--accent)}
+.c4 .jt{position:absolute;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--slate)}
+.c4 .jt::after{content:"";position:absolute;left:50%;top:18px;height:8px;border-left:1.5px solid var(--grey)}
+.c4 .sn{position:absolute;transform:translateX(-50%);display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--ink);color:#fff;font:700 13px/1 var(--text)}
+.c4 .axis4{position:absolute;left:0;right:0;bottom:0;height:28px;border-top:1.5px solid var(--rule)}
+.c4 .axis4 span{position:absolute;top:6px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate)}
+/* the price list: the same numbers as the arrow's segments; the price is the loud part */
+.c4 .px li{display:grid;grid-template-columns:34px 1fr;column-gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--rule)}
+.c4 .px li:first-child{padding-top:4px}
+.c4 .px .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--ink);color:#fff;font:700 14px/1 var(--text);margin-top:1px}
+.c4 .px b{display:block;font:600 16px/1.3 var(--text)}
+.c4 .px b small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
+.c4 .px p{font:400 16px/1.38 var(--text);color:var(--slate);margin-top:3px}
+.c4 .px p em{font-style:normal;font-weight:700;color:var(--ink)}
+.c4 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
+.c4 .nt b{font-weight:600}
+.c4 .bar{font-size:20px}
 </style>
 </head>
 <body>

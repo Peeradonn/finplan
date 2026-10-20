@@ -111,8 +111,10 @@ The look (colour, type, decorative idea) is chosen in §6; these rules hold what
 **Grid:** 1280 × 720; margins 48 px left and right, 34 px top; 12 columns, 24 px gutters. Panels are 4 + 4 + 4 or
 5 + 4 + 3 columns. Every chart starts on a panel's left edge; panel bottoms line up.
 
-**Type scale (six sizes, no others):** title 32 · panel heading 18 · body 16 · label 14 · tag and source 12 · numbers
-40 and 72. Nothing meant to be read is under 14 px (video compression, laptop screens).
+**Type (look B, 20 Oct):** Archivo Narrow only for the title, panel headings, lane names and big numbers; **Inter** for
+everything else, bold labels included (Pete: Inter for the small text; a condensed bold label looked smaller than
+Inter's small text). **Scale, no other sizes:** title 32 · panel heading 20 · bold label and body 16 (Inter) · small 14
+(Inter) · tag and source 12 · numbers 40 and 72. Nothing meant to be read is under 14 px.
 
 **Density:** hybrid. 120 to 180 words on a call slide (titles and labels included), at most 150 on the summary; the
 script carries the reasoning in 85 to 135 spoken words a slide.
@@ -176,20 +178,20 @@ Script: each member says their name and role; Pete: "We call it Built to Last."
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 5 · Call 2: put the home and the business to work (Fahtai; 0:55)
-**Rebuilt 20 Oct, v3** (prototype: `looks/build/slide-06.png` to `08`). v1 (`slide-04`) restated 33% on the left and
-defended the call in paragraphs; v2 (`slide-05`) fixed the argument but put two near-identical bar charts side by side
-(Pete: "two very similar charts side by side"). v3: one comparison picture, then a ledger.
-- **"Two ways to lift the odds, from the same start…"** (7 columns): two arrows on one 0 to 100% scale, both starting at
+**Rebuilt 20 Oct, v4** (prototype `looks/build/slide-09.png`). v1 restated 33% and argued in paragraphs; v2 put two
+near-identical bar charts side by side; v3's right panel was a four-row table that repeated the chart's numbers and
+made the price the smallest text. v4:
+- **"Two ways to lift the odds, from the same start…"** (7 columns): two arrows on one 0 to 100% scale, both from
   {{ladder_1_89}}. "Take more risk (80% in shares instead of 40%)": a short grey arrow to {{alone_eq80_89}}; the worst
-  single year deepens from {{alone_eq40_worst}} to {{alone_eq80_worst}} and it breaks Adrian's low–medium profile. "Put
-  what they own to work (four decisions, the same 40% in shares)": a long arrow in the accent to {{ladder_5_89}}; the
-  worst year stays at {{alone_eq40_worst}}. Note: chance the money lasts to Carmen's 89, the same 10,000 markets.
-- **"…four decisions, each with a price"** (5 columns): a ledger, one row a decision: what it costs them and the odds
-  after it: a one-person budget (the survivor lives on 70%) {{ladder_2_89}}; the business sold in stages, 2035 to 39
-  (counted at HK$3.0M of its HK$5.0M) {{ladder_3_89}}; the home's value released, 2037 ({{legacy_rmp}} to the children
-  against {{legacy_keep}}) {{ladder_4_89}}; the MPF turned into annuities, 2037 to 39 (about {{ann_typ_cost}} a year of
-  typical spending) {{ladder_5_89}}. Note: if the business never sells, the plan still reaches {{biz_not_sold_89}}.
-  Spoken, not shown: the dividend argument (most of Carmen's HK$720K is pay for running the company).
+  single year deepens from {{alone_eq40_worst}} to {{alone_eq80_worst}}, and it breaks Adrian's low–medium profile.
+  "Put what they own to work (four decisions, the same 40% in shares)": the accent arrow to {{ladder_5_89}}, **split
+  into four numbered segments** whose lengths are the ladder ({{ladder_2_89}}, {{ladder_3_89}}, {{ladder_4_89}} marked
+  at the joins); the worst year stays at {{alone_eq40_worst}}. Note: the same 10,000 markets.
+- **"…and what each decision costs them"** (5 columns): four numbered lines matching the segments, the price the loud
+  part: the survivor lives on 70% of the couple's budget; the business counted at HK$3.0M of its HK$5.0M;
+  {{legacy_rmp}} to the children against {{legacy_keep}}; about {{ann_typ_cost}} a year of typical spending. No odds
+  column, no table header. Note: if the business never sells, the plan still reaches {{biz_not_sold_89}}. Spoken, not
+  shown: the dividend argument.
 - Bar: "The 61% that paid nothing now pays for their retirement, with the same investments."
 - Answers questions 1, 7 and 8.
 
@@ -292,7 +294,7 @@ Call 2, in `round2/looks/`:
   decorative idea from an architect's drawing, used only where it means something: grid bubbles number the five calls,
   dimension lines measure a difference (33% → 83%), and a drawing's title block carries the footer.
 - **B · Swiss**: white, near-black ink, one cobalt accent; Archivo with Archivo Narrow; no decorative motif, big type
-  and generous space. **Pete preferred B (20 Oct: "slide-04 looks better")**; the rebuilt Call 2 is in B.
+  and generous space. **Chosen: B (Pete, 20 Oct), with Inter for all text below the headings.**
 The chosen look is written here (tokens, type roles, accent meaning, the decorative idea) before any other slide.
 
 ## 7. Images (one illustrated set)

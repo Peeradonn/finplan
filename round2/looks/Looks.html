@@ -258,6 +258,47 @@ p,li,span,b{text-wrap:pretty}
 .c3 .ldg3 .hdr span:last-child{text-align:right}
 .c3 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
 .c3 .nt b{font-weight:600}
+
+/* ==================== Call 2, v4 (20 Oct): the arrow carries the four decisions; the right panel is only the price ====
+   Type (Pete: Inter for text; "some of the bolded text are smaller than the little ones"): Archivo Narrow only for
+   the title, panel headings, lane names and big numbers; everything else Inter. Scale: title 32 / panel heading and
+   lane name 20 / bold label and body 16 / small 14 / tag 12 / numbers 40 and 72. */
+.c4{--text:"Inter",Arial,sans-serif}
+.c4 .pn>h3{font-size:20px}
+.c4 .kick small{font-size:14px}
+.c4 .ar4{position:relative;margin-top:30px;height:306px}
+.c4 .bar{margin-top:18px}
+.c4 .scl{position:absolute;left:0;right:150px;top:0;bottom:0}
+.c4 .lane{position:absolute;left:0;right:0}
+.c4 .nm{position:absolute;top:0;left:0;right:-150px;font:600 20px/1.2 var(--head)}
+.c4 .nm small{font:400 14px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c4 .shaft{position:absolute;height:10px;background:var(--grey)}
+.c4 .head{position:absolute;width:0;height:0;margin-top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c4 .dot{position:absolute;width:18px;height:18px;margin:-4px 0 0 -9px;border-radius:50%;background:var(--ink)}
+.c4 .v{position:absolute;transform:translateY(-50%);font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c4 .v.st{transform:translate(calc(-100% - 18px),-50%)}
+.c4 .sub{position:absolute;left:0;right:-150px;font:400 14px/1.4 var(--text);color:var(--slate)}
+.c4 .sub b{font-weight:600;color:var(--ink)}
+/* the call's arrow: four segments, one a decision, lengths from the model's ladder */
+.c4 .on .seg{position:absolute;height:10px;background:var(--accent)}
+.c4 .on .head{border-left-color:var(--accent)}
+.c4 .on .v.end{font-size:72px;color:var(--accent)}
+.c4 .jt{position:absolute;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--slate)}
+.c4 .jt::after{content:"";position:absolute;left:50%;top:18px;height:8px;border-left:1.5px solid var(--grey)}
+.c4 .sn{position:absolute;transform:translateX(-50%);display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--ink);color:#fff;font:700 13px/1 var(--text)}
+.c4 .axis4{position:absolute;left:0;right:0;bottom:0;height:28px;border-top:1.5px solid var(--rule)}
+.c4 .axis4 span{position:absolute;top:6px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate)}
+/* the price list: the same numbers as the arrow's segments; the price is the loud part */
+.c4 .px li{display:grid;grid-template-columns:34px 1fr;column-gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--rule)}
+.c4 .px li:first-child{padding-top:4px}
+.c4 .px .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--ink);color:#fff;font:700 14px/1 var(--text);margin-top:1px}
+.c4 .px b{display:block;font:600 16px/1.3 var(--text)}
+.c4 .px b small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
+.c4 .px p{font:400 16px/1.38 var(--text);color:var(--slate);margin-top:3px}
+.c4 .px p em{font-style:normal;font-weight:700;color:var(--ink)}
+.c4 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
+.c4 .nt b{font-weight:600}
+.c4 .bar{font-size:20px}
 </style>
 </head>
 <body>
@@ -609,6 +650,66 @@ p,li,span,b{text-wrap:pretty}
   <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
   <footer class="ft"><p class="src">Team model, 10,000 simulated markets; investments alone at 40% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
   <p class="fbl">Small text: IBM Plex Sans</p>
+</section>
+
+<!-- B · Swiss, Inter: Call 2, v4 (20 Oct). The call's arrow is split into the four decisions (segment lengths are the
+     model's ladder: ladder_1_89 -> ladder_5_89), with the odds marked at the joins; the right panel says only what each
+     decision costs, numbered like the segments. -->
+<section class="slide lb c4">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement <small>Answers the family's questions 1, 7 and 8</small></p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from 33% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 7">
+      <h3>Two ways to lift the odds, from the same start…</h3>
+      <div class="ar4">
+        <div class="scl">
+          <div class="lane" style="top:0">
+            <p class="nm">Take more risk <small>80% in shares instead of 40%</small></p>
+            <span class="shaft" style="top:40px;left:33%;width:calc(43% - 33%)"></span>
+            <span class="head" style="top:45px;left:43%"></span>
+            <span class="dot" style="top:40px;left:33%"></span>
+            <span class="v st" style="top:45px;left:33%">33%</span>
+            <span class="v" style="top:45px;left:calc(43% + 30px)">43%</span>
+            <p class="sub" style="top:72px">The worst single year deepens from <b>−10%</b> to <b>−24%</b>, and it breaks Adrian's low–medium risk profile</p>
+          </div>
+          <div class="lane on" style="top:140px">
+            <p class="nm">Put what they own to work <small>four decisions, the same 40% in shares</small></p>
+            <span class="jt" style="top:30px;left:43%">43%</span><span class="jt" style="top:30px;left:60%">60%</span><span class="jt" style="top:30px;left:82%">82%</span>
+            <span class="seg" style="top:56px;left:33%;width:calc(43% - 33% - 2px)"></span>
+            <span class="seg" style="top:56px;left:43%;width:calc(60% - 43% - 2px)"></span>
+            <span class="seg" style="top:56px;left:60%;width:calc(82% - 60% - 2px)"></span>
+            <span class="seg" style="top:56px;left:82%;width:calc(83% - 82%)"></span>
+            <span class="head" style="top:61px;left:83%"></span>
+            <span class="dot" style="top:56px;left:33%"></span>
+            <span class="v st" style="top:61px;left:33%">33%</span>
+            <span class="v end" style="top:61px;left:calc(83% + 30px)">83%</span>
+            <span class="sn" style="top:76px;left:calc((33% + 43%) / 2)">1</span>
+            <span class="sn" style="top:76px;left:calc((43% + 60%) / 2)">2</span>
+            <span class="sn" style="top:76px;left:calc((60% + 82%) / 2)">3</span>
+            <span class="sn" style="top:76px;left:calc(83% + 2px)">4</span>
+            <p class="sub" style="top:114px">The worst single year stays at <b>−10%</b>: the lift comes from what they already own</p>
+          </div>
+          <div class="axis4"><span style="left:0;transform:none">0</span><span style="left:50%">50%</span><span style="left:100%">100%</span></div>
+        </div>
+      </div>
+      <p class="nt">Chance the money lasts to Carmen's 89, in the same 10,000 simulated markets <span class="tag">measured</span></p>
+    </div>
+    <div class="pn" style="grid-column:span 5">
+      <h3>…and what each decision costs them</h3>
+      <ul class="px">
+        <li><span class="n">1</span><div><b>A one-person budget <small>agreed now</small></b><p>The survivor lives on <em>70%</em> of the couple's budget</p></div></li>
+        <li><span class="n">2</span><div><b>The business sold in stages <small>2035–39</small></b><p>Counted at <em>HK$3.0M</em> of its HK$5.0M value</p></div></li>
+        <li><span class="n">3</span><div><b>The home's value released <small>2037</small></b><p><em>HK$8.1M</em> to the children, against HK$9.5M</p></div></li>
+        <li><span class="n">4</span><div><b>The MPF turned into annuities <small>2037–39</small></b><p>About <em>HK$10K</em> a year of typical spending</p></div></li>
+      </ul>
+      <p class="nt">If the business never sells, the plan still reaches <b>66%</b>.</p>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Team model, 10,000 simulated markets; investments alone at 40% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
 </section>
 </main>
 </body>
