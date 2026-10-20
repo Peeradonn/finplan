@@ -202,6 +202,62 @@ p,li,span,b{text-wrap:pretty}
 /* the evidence note that closes every panel, on one baseline */
 .c2 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
 .c2 .nt b{font-weight:600}
+
+@font-face{font-family:"Inter";src:url("fonts/Inter-400.ttf");font-weight:400}
+@font-face{font-family:"Inter";src:url("fonts/Inter-500.ttf");font-weight:500}
+@font-face{font-family:"Inter";src:url("fonts/Inter-600.ttf");font-weight:600}
+@font-face{font-family:"Inter";src:url("fonts/Inter-700.ttf");font-weight:700}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-400.ttf");font-weight:400}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-500.ttf");font-weight:500}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-600.ttf");font-weight:600}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-700.ttf");font-weight:700}
+/* small-text candidates (Pete, 20 Oct: "I don't like the font of the small text"); headings stay Archivo Narrow */
+.fb-inter{--text:"Inter",Arial,sans-serif}
+.fb-src3{--text:"Src3",Arial,sans-serif}
+.fb-plex{--text:"Plex",Arial,sans-serif}
+.fbl{position:absolute;right:48px;bottom:58px;font:600 12px/1 var(--text);color:var(--accent-deep);background:#EEF2FD;padding:5px 8px}
+
+/* ==================== Call 2, v3 (20 Oct): one comparison picture, then a ledger ====================
+   Two arrows from the same start on one 0-100% scale: more shares (short, grey) against the four decisions (long,
+   the accent). The four steps move into the ledger, each row with what it adds and what it costs, so no second chart
+   repeats the first (Pete: "two very similar charts side by side"). */
+.c3 .panels{grid-template-columns:repeat(12,1fr)}
+.c3 .ar2{position:relative;margin:34px 0 0;height:300px}
+.c3 .scl{position:absolute;left:0;right:150px;top:0;bottom:0}
+.c3 .today{position:absolute;top:0;bottom:30px;border-left:2px dashed var(--grey)}
+.c3 .today span{position:absolute;top:-26px;left:-8px;font:600 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.c3 .lane{position:absolute;left:0;right:0}
+.c3 .lane .nm{position:absolute;top:0;left:0;right:-150px;font:600 18px/1.2 var(--head)}
+.c3 .lane .nm small{font:400 14px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c3 .lane .shaft{position:absolute;top:40px;height:10px;background:var(--grey)}
+.c3 .lane .shaft::after{content:"";position:absolute;right:-16px;top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c3 .lane .dot{position:absolute;top:36px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--ink)}
+.c3 .lane .v{position:absolute;transform:translateY(-50%);font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c3 .lane .sub{position:absolute;top:70px;left:0;right:-150px;font:400 14px/1.4 var(--text);color:var(--slate)}
+.c3 .lane .sub b{font-weight:600;color:var(--ink)}
+.c3 .lane.on .shaft{background:var(--accent)}
+.c3 .lane.on .shaft::after{border-left-color:var(--accent)}
+.c3 .lane.on .v{font-size:72px;color:var(--accent)}
+.c3 .lane.on .sub{top:96px}
+.c3 .lane .v.st,.c3 .lane.on .v.st{transform:translate(calc(-100% - 18px),-50%);font-size:40px;color:var(--grey)}
+.c3 .ar2{height:320px}
+.c3 .lane .start{position:absolute;top:62px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.c3 .axis3{position:absolute;left:0;right:0;bottom:0;height:30px;border-top:1.5px solid var(--rule)}
+.c3 .axis3 span{position:absolute;top:6px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate)}
+/* the ledger: each decision, what it adds, what it costs */
+.c3 .ldg3 li{display:grid;grid-template-columns:30px 1fr 64px;column-gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--rule)}
+.c3 .ldg3 li:first-child{padding-top:2px}
+.c3 .ldg3 .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--ink);color:#fff;font:700 14px/1 var(--head)}
+.c3 .ldg3 b{display:block;font:600 16px/1.25 var(--head)}
+.c3 .ldg3 b small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
+.c3 .ldg3 p{font:400 14px/1.38 var(--text);color:var(--slate);margin-top:3px}
+.c3 .ldg3 p em{font-style:normal;font-weight:600;color:var(--ink)}
+.c3 .ldg3 .o{text-align:right;font:700 18px/1.3 var(--head)}
+.c3 .ldg3 li.top .o{color:var(--accent)}
+.c3 .ldg3 .hdr{display:grid;grid-template-columns:30px 1fr 64px;column-gap:12px;font:600 12px/1.2 var(--text);color:var(--slate);padding-bottom:6px}
+.c3 .ldg3 .hdr span:last-child{text-align:right}
+.c3 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
+.c3 .nt b{font-weight:600}
 </style>
 </head>
 <body>
@@ -403,6 +459,156 @@ p,li,span,b{text-wrap:pretty}
   </div>
   <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
   <footer class="ft"><p class="src">Team model, 10,000 simulated markets, investments alone at 40%, 60% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+</section>
+
+<!-- B · Swiss: Call 2, v3 (20 Oct), small text in Inter. One comparison picture (two arrows from the same
+     start on one scale), then the four decisions as a ledger of what each adds and costs. -->
+<section class="slide lb c3 fb-inter">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement <small>Answers the family's questions 1, 7 and 8</small></p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from 33% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 7">
+      <h3>Two ways to lift the odds, from the same start…</h3>
+      <div class="ar2">
+        <div class="scl">
+          
+          <div class="lane" style="top:0">
+            <p class="nm">Take more risk <small>80% in shares instead of 40%</small></p>
+            <span class="shaft" style="left:33%;width:calc(43% - 33% - 16px)"></span>
+            <span class="dot" style="left:33%"></span><span class="v st" style="left:33%;top:45px">33%</span>
+            <span class="v" style="left:calc(43% + 12px);top:45px">43%</span>
+            <p class="sub">The worst single year deepens from <b>−10%</b> to <b>−24%</b>, and it breaks Adrian's low–medium risk profile</p>
+          </div>
+          <div class="lane on" style="top:146px">
+            <p class="nm">Put what they own to work <small>four decisions, the same 40% in shares</small></p>
+            <span class="shaft" style="left:33%;width:calc(83% - 33% - 16px)"></span>
+            <span class="dot" style="left:33%"></span><span class="v st" style="left:33%;top:45px">33%</span>
+            <span class="v" style="left:calc(83% + 12px);top:45px">83%</span>
+            <p class="sub">The worst single year stays at <b>−10%</b>: the lift comes from the business, the home and the MPF</p>
+          </div>
+          <div class="axis3"><span style="left:0;transform:none">0</span><span style="left:50%">50%</span><span style="left:100%">100%</span></div>
+        </div>
+      </div>
+      <p class="nt">Chance the money lasts to Carmen's 89, in the same 10,000 simulated markets <span class="tag">measured</span></p>
+    </div>
+    <div class="pn" style="grid-column:span 5">
+      <h3>…four decisions, each with a price</h3>
+      <ul class="ldg3">
+        <li class="hdr"><span></span><span>The decision, and what it costs them</span><span>Odds after</span></li>
+        <li><span class="n">1</span><div><b>A one-person budget <small>agreed now</small></b><p>The survivor lives on <em>70%</em> of the couple's budget</p></div><span class="o">43%</span></li>
+        <li><span class="n">2</span><div><b>The business sold in stages <small>2035–39</small></b><p>Counted at <em>HK$3.0M</em> of its HK$5.0M value</p></div><span class="o">60%</span></li>
+        <li><span class="n">3</span><div><b>The home's value released <small>2037</small></b><p><em>HK$8.1M</em> to the children, against HK$9.5M</p></div><span class="o">82%</span></li>
+        <li class="top"><span class="n">4</span><div><b>The MPF turned into annuities <small>2037–39</small></b><p>About <em>HK$10K</em> a year of typical spending</p></div><span class="o">83%</span></li>
+      </ul>
+      <p class="nt">If the business never sells, the plan still reaches <b>66%</b>.</p>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Team model, 10,000 simulated markets; investments alone at 40% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+  <p class="fbl">Small text: Inter</p>
+</section>
+
+<!-- B · Swiss: Call 2, v3 (20 Oct), small text in Source Sans 3. One comparison picture (two arrows from the same
+     start on one scale), then the four decisions as a ledger of what each adds and costs. -->
+<section class="slide lb c3 fb-src3">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement <small>Answers the family's questions 1, 7 and 8</small></p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from 33% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 7">
+      <h3>Two ways to lift the odds, from the same start…</h3>
+      <div class="ar2">
+        <div class="scl">
+          
+          <div class="lane" style="top:0">
+            <p class="nm">Take more risk <small>80% in shares instead of 40%</small></p>
+            <span class="shaft" style="left:33%;width:calc(43% - 33% - 16px)"></span>
+            <span class="dot" style="left:33%"></span><span class="v st" style="left:33%;top:45px">33%</span>
+            <span class="v" style="left:calc(43% + 12px);top:45px">43%</span>
+            <p class="sub">The worst single year deepens from <b>−10%</b> to <b>−24%</b>, and it breaks Adrian's low–medium risk profile</p>
+          </div>
+          <div class="lane on" style="top:146px">
+            <p class="nm">Put what they own to work <small>four decisions, the same 40% in shares</small></p>
+            <span class="shaft" style="left:33%;width:calc(83% - 33% - 16px)"></span>
+            <span class="dot" style="left:33%"></span><span class="v st" style="left:33%;top:45px">33%</span>
+            <span class="v" style="left:calc(83% + 12px);top:45px">83%</span>
+            <p class="sub">The worst single year stays at <b>−10%</b>: the lift comes from the business, the home and the MPF</p>
+          </div>
+          <div class="axis3"><span style="left:0;transform:none">0</span><span style="left:50%">50%</span><span style="left:100%">100%</span></div>
+        </div>
+      </div>
+      <p class="nt">Chance the money lasts to Carmen's 89, in the same 10,000 simulated markets <span class="tag">measured</span></p>
+    </div>
+    <div class="pn" style="grid-column:span 5">
+      <h3>…four decisions, each with a price</h3>
+      <ul class="ldg3">
+        <li class="hdr"><span></span><span>The decision, and what it costs them</span><span>Odds after</span></li>
+        <li><span class="n">1</span><div><b>A one-person budget <small>agreed now</small></b><p>The survivor lives on <em>70%</em> of the couple's budget</p></div><span class="o">43%</span></li>
+        <li><span class="n">2</span><div><b>The business sold in stages <small>2035–39</small></b><p>Counted at <em>HK$3.0M</em> of its HK$5.0M value</p></div><span class="o">60%</span></li>
+        <li><span class="n">3</span><div><b>The home's value released <small>2037</small></b><p><em>HK$8.1M</em> to the children, against HK$9.5M</p></div><span class="o">82%</span></li>
+        <li class="top"><span class="n">4</span><div><b>The MPF turned into annuities <small>2037–39</small></b><p>About <em>HK$10K</em> a year of typical spending</p></div><span class="o">83%</span></li>
+      </ul>
+      <p class="nt">If the business never sells, the plan still reaches <b>66%</b>.</p>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Team model, 10,000 simulated markets; investments alone at 40% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+  <p class="fbl">Small text: Source Sans 3</p>
+</section>
+
+<!-- B · Swiss: Call 2, v3 (20 Oct), small text in IBM Plex Sans. One comparison picture (two arrows from the same
+     start on one scale), then the four decisions as a ledger of what each adds and costs. -->
+<section class="slide lb c3 fb-plex">
+  <div class="trk"><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: Retirement <small>Answers the family's questions 1, 7 and 8</small></p>
+    <h2>Don't take more risk: putting the home and the business to work lifts the odds from 33% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 7">
+      <h3>Two ways to lift the odds, from the same start…</h3>
+      <div class="ar2">
+        <div class="scl">
+          
+          <div class="lane" style="top:0">
+            <p class="nm">Take more risk <small>80% in shares instead of 40%</small></p>
+            <span class="shaft" style="left:33%;width:calc(43% - 33% - 16px)"></span>
+            <span class="dot" style="left:33%"></span><span class="v st" style="left:33%;top:45px">33%</span>
+            <span class="v" style="left:calc(43% + 12px);top:45px">43%</span>
+            <p class="sub">The worst single year deepens from <b>−10%</b> to <b>−24%</b>, and it breaks Adrian's low–medium risk profile</p>
+          </div>
+          <div class="lane on" style="top:146px">
+            <p class="nm">Put what they own to work <small>four decisions, the same 40% in shares</small></p>
+            <span class="shaft" style="left:33%;width:calc(83% - 33% - 16px)"></span>
+            <span class="dot" style="left:33%"></span><span class="v st" style="left:33%;top:45px">33%</span>
+            <span class="v" style="left:calc(83% + 12px);top:45px">83%</span>
+            <p class="sub">The worst single year stays at <b>−10%</b>: the lift comes from the business, the home and the MPF</p>
+          </div>
+          <div class="axis3"><span style="left:0;transform:none">0</span><span style="left:50%">50%</span><span style="left:100%">100%</span></div>
+        </div>
+      </div>
+      <p class="nt">Chance the money lasts to Carmen's 89, in the same 10,000 simulated markets <span class="tag">measured</span></p>
+    </div>
+    <div class="pn" style="grid-column:span 5">
+      <h3>…four decisions, each with a price</h3>
+      <ul class="ldg3">
+        <li class="hdr"><span></span><span>The decision, and what it costs them</span><span>Odds after</span></li>
+        <li><span class="n">1</span><div><b>A one-person budget <small>agreed now</small></b><p>The survivor lives on <em>70%</em> of the couple's budget</p></div><span class="o">43%</span></li>
+        <li><span class="n">2</span><div><b>The business sold in stages <small>2035–39</small></b><p>Counted at <em>HK$3.0M</em> of its HK$5.0M value</p></div><span class="o">60%</span></li>
+        <li><span class="n">3</span><div><b>The home's value released <small>2037</small></b><p><em>HK$8.1M</em> to the children, against HK$9.5M</p></div><span class="o">82%</span></li>
+        <li class="top"><span class="n">4</span><div><b>The MPF turned into annuities <small>2037–39</small></b><p>About <em>HK$10K</em> a year of typical spending</p></div><span class="o">83%</span></li>
+      </ul>
+      <p class="nt">If the business never sells, the plan still reaches <b>66%</b>.</p>
+    </div>
+  </div>
+  <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
+  <footer class="ft"><p class="src">Team model, 10,000 simulated markets; investments alone at 40% and 80% shares; today's money (proposal p.4, p.11–12)</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
+  <p class="fbl">Small text: IBM Plex Sans</p>
 </section>
 </main>
 </body>

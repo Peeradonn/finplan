@@ -202,6 +202,62 @@ p,li,span,b{text-wrap:pretty}
 /* the evidence note that closes every panel, on one baseline */
 .c2 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
 .c2 .nt b{font-weight:600}
+
+@font-face{font-family:"Inter";src:url("fonts/Inter-400.ttf");font-weight:400}
+@font-face{font-family:"Inter";src:url("fonts/Inter-500.ttf");font-weight:500}
+@font-face{font-family:"Inter";src:url("fonts/Inter-600.ttf");font-weight:600}
+@font-face{font-family:"Inter";src:url("fonts/Inter-700.ttf");font-weight:700}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-400.ttf");font-weight:400}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-500.ttf");font-weight:500}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-600.ttf");font-weight:600}
+@font-face{font-family:"Src3";src:url("fonts/SourceSans3-700.ttf");font-weight:700}
+/* small-text candidates (Pete, 20 Oct: "I don't like the font of the small text"); headings stay Archivo Narrow */
+.fb-inter{--text:"Inter",Arial,sans-serif}
+.fb-src3{--text:"Src3",Arial,sans-serif}
+.fb-plex{--text:"Plex",Arial,sans-serif}
+.fbl{position:absolute;right:48px;bottom:58px;font:600 12px/1 var(--text);color:var(--accent-deep);background:#EEF2FD;padding:5px 8px}
+
+/* ==================== Call 2, v3 (20 Oct): one comparison picture, then a ledger ====================
+   Two arrows from the same start on one 0-100% scale: more shares (short, grey) against the four decisions (long,
+   the accent). The four steps move into the ledger, each row with what it adds and what it costs, so no second chart
+   repeats the first (Pete: "two very similar charts side by side"). */
+.c3 .panels{grid-template-columns:repeat(12,1fr)}
+.c3 .ar2{position:relative;margin:34px 0 0;height:300px}
+.c3 .scl{position:absolute;left:0;right:150px;top:0;bottom:0}
+.c3 .today{position:absolute;top:0;bottom:30px;border-left:2px dashed var(--grey)}
+.c3 .today span{position:absolute;top:-26px;left:-8px;font:600 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.c3 .lane{position:absolute;left:0;right:0}
+.c3 .lane .nm{position:absolute;top:0;left:0;right:-150px;font:600 18px/1.2 var(--head)}
+.c3 .lane .nm small{font:400 14px/1.2 var(--text);color:var(--slate);margin-left:8px}
+.c3 .lane .shaft{position:absolute;top:40px;height:10px;background:var(--grey)}
+.c3 .lane .shaft::after{content:"";position:absolute;right:-16px;top:-8px;border-left:18px solid var(--grey);border-top:13px solid transparent;border-bottom:13px solid transparent}
+.c3 .lane .dot{position:absolute;top:36px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--ink)}
+.c3 .lane .v{position:absolute;transform:translateY(-50%);font:700 40px/1 var(--head);color:var(--grey);white-space:nowrap}
+.c3 .lane .sub{position:absolute;top:70px;left:0;right:-150px;font:400 14px/1.4 var(--text);color:var(--slate)}
+.c3 .lane .sub b{font-weight:600;color:var(--ink)}
+.c3 .lane.on .shaft{background:var(--accent)}
+.c3 .lane.on .shaft::after{border-left-color:var(--accent)}
+.c3 .lane.on .v{font-size:72px;color:var(--accent)}
+.c3 .lane.on .sub{top:96px}
+.c3 .lane .v.st,.c3 .lane.on .v.st{transform:translate(calc(-100% - 18px),-50%);font-size:40px;color:var(--grey)}
+.c3 .ar2{height:320px}
+.c3 .lane .start{position:absolute;top:62px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.c3 .axis3{position:absolute;left:0;right:0;bottom:0;height:30px;border-top:1.5px solid var(--rule)}
+.c3 .axis3 span{position:absolute;top:6px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate)}
+/* the ledger: each decision, what it adds, what it costs */
+.c3 .ldg3 li{display:grid;grid-template-columns:30px 1fr 64px;column-gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--rule)}
+.c3 .ldg3 li:first-child{padding-top:2px}
+.c3 .ldg3 .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--ink);color:#fff;font:700 14px/1 var(--head)}
+.c3 .ldg3 b{display:block;font:600 16px/1.25 var(--head)}
+.c3 .ldg3 b small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
+.c3 .ldg3 p{font:400 14px/1.38 var(--text);color:var(--slate);margin-top:3px}
+.c3 .ldg3 p em{font-style:normal;font-weight:600;color:var(--ink)}
+.c3 .ldg3 .o{text-align:right;font:700 18px/1.3 var(--head)}
+.c3 .ldg3 li.top .o{color:var(--accent)}
+.c3 .ldg3 .hdr{display:grid;grid-template-columns:30px 1fr 64px;column-gap:12px;font:600 12px/1.2 var(--text);color:var(--slate);padding-bottom:6px}
+.c3 .ldg3 .hdr span:last-child{text-align:right}
+.c3 .nt{margin-top:auto;background:var(--mist);border-left:3px solid var(--ink);padding:10px 12px;font:400 14px/1.38 var(--text)}
+.c3 .nt b{font-weight:600}
 </style>
 </head>
 <body>

@@ -176,22 +176,20 @@ Script: each member says their name and role; Pete: "We call it Built to Last."
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 5 · Call 2: put the home and the business to work (Fahtai; 0:55)
-**Rebuilt 20 Oct** (prototype: `looks/build/slide-05.png`; the first version, `slide-04.png`, restated 33% in its
-left panel and argued its defence in three grey paragraphs).
-- **"More shares barely help…"** (the obvious alternative, measured): headline {{alone_eq40_89}} → {{alone_eq80_89}},
-  "doubling their shares from 40% to 80%, on investments alone"; three bars on the shared scale, each with its worst
-  single year (40%: {{alone_eq40_89}}, {{alone_eq40_worst}}; 60%: {{alone_eq60_89}}, {{alone_eq60_worst}}; 80%:
-  {{alone_eq80_89}}, {{alone_eq80_worst}}). Note: anything above 40% breaks Adrian's low–medium profile.
-- **"…four decisions on what they already own do…"**: headline {{ladder_1_89}} → {{ladder_5_89}} (the accent), "with
-  the same 40% in shares throughout"; cumulative bars on the same scale as panel 1 (grey: where each step starts; ink:
-  what it adds), with panel 1's best ({{alone_eq80_89}}) as a dashed line through every row. The staircase {{ladder_1_89}} → {{ladder_2_89}} →
-  {{ladder_3_89}} → {{ladder_4_89}} → {{ladder_5_89}}, each step named: a one-person budget agreed now (70% after the
-  first death); the business sold in stages 2035 to 39, counted at HK$3.0M of HK$5.0M; the home's value released in
-  2037 (reverse mortgage or downsize, chosen at 65); the MPF turned into annuities (HKMC, fixed, single life).
-- **"…and each has a price"** (a ledger, one figure a row): the survivor lives on 70% of the couple's budget; the
-  business counted at HK$3.0M of its HK$5.0M; {{legacy_rmp}} to the children against {{legacy_keep}}; about
-  {{ann_typ_cost}} a year of typical spending for the annuities. Note: if the business never sells, the plan still
-  reaches {{biz_not_sold_89}}. Spoken, not shown: the dividend argument (most of the HK$720K is pay for running it).
+**Rebuilt 20 Oct, v3** (prototype: `looks/build/slide-06.png` to `08`). v1 (`slide-04`) restated 33% on the left and
+defended the call in paragraphs; v2 (`slide-05`) fixed the argument but put two near-identical bar charts side by side
+(Pete: "two very similar charts side by side"). v3: one comparison picture, then a ledger.
+- **"Two ways to lift the odds, from the same start…"** (7 columns): two arrows on one 0 to 100% scale, both starting at
+  {{ladder_1_89}}. "Take more risk (80% in shares instead of 40%)": a short grey arrow to {{alone_eq80_89}}; the worst
+  single year deepens from {{alone_eq40_worst}} to {{alone_eq80_worst}} and it breaks Adrian's low–medium profile. "Put
+  what they own to work (four decisions, the same 40% in shares)": a long arrow in the accent to {{ladder_5_89}}; the
+  worst year stays at {{alone_eq40_worst}}. Note: chance the money lasts to Carmen's 89, the same 10,000 markets.
+- **"…four decisions, each with a price"** (5 columns): a ledger, one row a decision: what it costs them and the odds
+  after it: a one-person budget (the survivor lives on 70%) {{ladder_2_89}}; the business sold in stages, 2035 to 39
+  (counted at HK$3.0M of its HK$5.0M) {{ladder_3_89}}; the home's value released, 2037 ({{legacy_rmp}} to the children
+  against {{legacy_keep}}) {{ladder_4_89}}; the MPF turned into annuities, 2037 to 39 (about {{ann_typ_cost}} a year of
+  typical spending) {{ladder_5_89}}. Note: if the business never sells, the plan still reaches {{biz_not_sold_89}}.
+  Spoken, not shown: the dividend argument (most of Carmen's HK$720K is pay for running the company).
 - Bar: "The 61% that paid nothing now pays for their retirement, with the same investments."
 - Answers questions 1, 7 and 8.
 
