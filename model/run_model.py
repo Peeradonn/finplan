@@ -335,6 +335,11 @@ def export_numbers():
     lad = [(s89(kw), s95(kw)) for _, kw in ladder_steps()]
     for i, (a, b) in enumerate(lad, 1):
         N[f"ladder_{i}_89"], N[f"ladder_{i}_95"] = P(a), P(b)
+    # The obvious alternative to the four decisions: more shares (Round Two deck, Call 2). Investments alone, the same
+    # 10,000 markets, with 40%, 60% and 80% in equities; and the worst single year of each path, averaged.
+    for w in (40, 60, 80):
+        s, worst, _ = sim(w/100, MIX2[1], MIX2[2], C89, **ladder_steps()[0][1])
+        N[f"alone_eq{w}_89"], N[f"alone_eq{w}_worst"] = P(s), f"{worst*100:.0f}%".replace("-", "−")
     # Ten representative futures for "investments alone" (Round Two deck, slide 3): the year the money runs out at the
     # 5th, 15th ... 95th percentile of the 10,000 paths; a path still funded at Carmen's 89 "lasts". Width = share of
     # the 2026-to-89 timeline, so the slide draws each line from the model.

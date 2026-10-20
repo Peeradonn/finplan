@@ -284,3 +284,11 @@ destinations; the Tuition Grant (a three-year work bond) was only our suggestion
 - Figure 12 keeps both Singapore bars.
 
 Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript synced.
+
+### Round Two deck (20 Oct): model keys for "more shares instead?" (Pete asked for Call 2 to show the alternative)
+- `run_model.export_numbers()` adds `alone_eq40_89`, `alone_eq60_89`, `alone_eq80_89` and `alone_eq{40,60,80}_worst`:
+  investments alone (ladder step 1), the same 10,000 markets and seed, with 40%, 60% and 80% in equities; `_worst` is
+  the worst single year of each path, averaged. Results: 33% (−10%), 41% (−17%), 43% (−24%); 100% equity gives 42%
+  (−31%, not exported). Doubling the shares buys about ten points; the four decisions buy fifty with the same 40%.
+- `make_charts.py` rerun: 156 values; no existing value changed or removed (checked against the previous file).
+  Not used in the written proposal; the Round Two deck only.
