@@ -52,9 +52,9 @@ for builds and pauses.
 | # | Speaker | The point (title) | The one picture | Time | Words |
 |---|---|---|---|---|---|
 | 1 | Pete, all | Built to Last: five calls that make the Wong family's wealth last | The family (illustration to generate) | 0:20 | 33 |
-| 2 | Pete | On paper, the Wongs are secure | Four faces, each with a want; HK$24.4M, 41% saved, 10% debt | 0:30 | 66 |
-| 3 | Pete | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Ten futures under their own way: a "flat sold" mark on those that need it, lines that still stop before 89; the inheritance left, {{own_legacy_sold}} | 0:40 | 89 |
-| 4 | Pete | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | The five calls in a row, one result each; the impact band {{own_89}} → {{switch_89}} | 0:45 | 94 |
+| 2 | Pete | On paper, the Wongs are secure | Four faces, each with a want; HK$24.4M, 41% saved, 10% debt | 0:30 | 61 |
+| 3 | Pete | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Ten futures under their own way: a "flat sold" mark on those that need it, lines that still stop before 89; the inheritance left, {{own_legacy_sold}} | 0:45 | 99 |
+| 4 | Pete | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | The five calls in a row, one result each; the impact band {{own_89}} → {{switch_89}} | 0:45 | 92 |
 | 5 | Lookbua | Call 1. Insure the income, not the life: about HK$100K a year closes every gap | Pay that continues if a parent can't work: nothing today → 65%; the cost as one bar | 0:40 | 86 |
 | 6 | Fahtai | Call 2. Decide now, not at {{own_sale_age}}: the same home and business, put to work at 65, lift the odds from {{own_89}} to {{ladder_5_89}} | What they own → what each becomes → {{ladder_5_89}} (the flow, option B); "their own way, {{own_89}}" as the strip | 0:45 | 94 |
 | 7 | Fahtai | Call 3. Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none sells the home | Slide 3's ten futures redrawn, all reaching 89, no "sold" marks (the hero); the premium cut at 75 as a small inset | 0:40 | 81 |
@@ -62,8 +62,8 @@ for builds and pauses.
 | 9 | Win | Call 5. Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | ESG 11% → 25% into the goal band; crypto by person (four people, four sizes) | 0:45 | 96 |
 | 10 | Lookbua | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Paired bars per test, the lost job highlighted | 0:30 | 67 |
 | 11 | Lookbua | It starts this month; after that, dates trigger each step | One dated line, month 1 to 2047 | 0:30 | 60 |
-| 12 | Pete | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Two bars, same markets; then how it passes on: staged trusts at 25, 30, 35 and the scholarship | 0:25 | 57 |
-| 13 | Pete | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | The two flows across the boundary, the advice rule on Southbound | 0:45 | 93 |
+| 12 | Pete | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Two bars, same markets; then how it passes on: staged trusts at 25, 30, 35 and the scholarship | 0:25 | 56 |
+| 13 | Pete | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | The two flows across the boundary, the advice rule on Southbound | 0:40 | 91 |
 | 14 | All | Four planners, one aim: families like the Wongs, on both sides of the boundary | Four cards, one per speaker | 1:10 | 148 |
 | 15 | Pete, all | Built to last | The five calls; the home by choice; the inheritance kept; the team | 0:15 | 32 |
 | | | | | **9:30** | **1,200** |
@@ -109,20 +109,21 @@ FAHTAI: I'm Fahtai: retirement. WIN: I'm Win: investments. LOOKBUA: And I'm Look
 
 **2 · On paper, secure** (0:30)
 PETE: Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs her own
-business and wants their money to reflect her values. Ryan, 24, has just started work and holds crypto. Chloe, 16,
+business and wants their money to reflect her values. Ryan, 24, holds crypto. Chloe, 16,
 starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
 
-**3 · Their own way** (0:40)
-PETE: But will it last? A sensible family would manage it their own way: sell the business when Carmen retires, keep the
+**3 · Their own way** (0:45)
+PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the
 flat, and sell it only if they must. Across 10,000 simulated markets, in {{own_sold_pct}} they must. Carmen, at about
-{{own_sale_age}} and usually on her own, sells the home where they raised Ryan and Chloe, and the wealth meant for
-their children pays the bills: of HK$24.4 million, just {{own_legacy_sold}} is left to them.
+{{own_sale_age}} and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just
+{{own_fut_buys_min}} to {{own_fut_buys_max}} years, and the wealth meant for their children pays the bills: of HK$24.4
+million, just {{own_legacy_sold}} is left to them.
 
 **4 · Our answer** (0:45)
 PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life.
 Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of
 their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts
-to Carmen's 89 in {{own_89}} of futures; the five calls lift it to {{switch_89}}, and the home becomes
+to Carmen's 89 in {{own_89}}; the five calls lift it to {{switch_89}}, and the home becomes
 their choice, not their last resort. Lookbua.
 
 **5 · Call 1: insure the income** (0:40)
@@ -167,12 +168,12 @@ within six, a first family meeting at a year. After that, dates trigger each ste
 from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
 
 **12 · What passes on** (0:25)
-PETE: And the legacy the case is named for. In the futures where Carmen had to sell, the plan leaves Ryan and Chloe
+PETE: The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe
 {{plan_legacy_sold}}, not {{own_legacy_sold}}, passed on in stages at 25, 30 and 35, with a scholarship in sustainable
 design: Carmen's mission, Chloe's interest.
 
-**13 · Wealth Management Connect** (0:45)
-PETE: What does this mean for planners like us? Since 2021, Wealth Management Connect has let residents of Hong Kong,
+**13 · Wealth Management Connect** (0:40)
+PETE: What does this mean for us? Since 2021, Wealth Management Connect has let residents of Hong Kong,
 Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong
 Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear,
 suitable answer when asked. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong

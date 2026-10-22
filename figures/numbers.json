@@ -142,6 +142,8 @@
  "own_fut_short_n_word": "four",
  "own_fut_sale_age_first": "79",
  "own_fut_sale_age_last": "87",
+ "own_fut_buys_min": "2",
+ "own_fut_buys_max": "3",
  "plan1_cls": "lasts",
  "plan1_end": "",
  "plan1_w": "100.0%",

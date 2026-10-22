@@ -326,3 +326,9 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   four decisions + review at 75 + guardrails, the `guardswitch` run): `plan{i}_cls`, `plan{i}_end`, `plan{i}_w`;
   `plan_fut_lasts_n_word` ten. In the four futures that run out after the sale, the sale buys two to three years.
 - `make_charts.py` rerun: 251 values; no existing value changed or removed; `figure-data.md` unchanged. Round Two only.
+
+### Round Two deck (22 Oct): what the late sale buys (slide 3)
+- `export_numbers()` adds `own_fut_buys_min` 2 and `own_fut_buys_max` 3: among the ten futures under their own way
+  that still run out, the years from the forced sale to the money running out. Slide 3 labels the lowest cross "the
+  sale buys just 2 to 3 years" and the script says it (Pete agreed, 22 Oct). `make_charts.py` rerun: 253 values; no
+  existing value changed or removed; `figure-data.md` unchanged. Round Two only.

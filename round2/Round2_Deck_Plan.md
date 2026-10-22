@@ -76,7 +76,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 |---|---|---|---|---|
 | 1 | — | Built to Last: five calls that make the Wong family's wealth last | Pete, all | 0:20 |
 | 2 | Where they stand | On paper, the Wongs are secure | Pete | 0:30 |
-| 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:40 |
+| 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:45 |
 | 4 | Our answer | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
 | 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: the same home and business, put to work at 65, lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
@@ -86,7 +86,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | 10 | Will it hold? | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Lookbua | 0:30 |
 | 11 | What happens when | It starts this month; after that, dates trigger each step | Lookbua | 0:30 |
 | 12 | What passes on | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Pete | 0:25 |
-| 13 | Wealth Management Connect | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | Pete | 0:45 |
+| 13 | Wealth Management Connect | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | Pete | 0:40 |
 | 14 | Who we want to become | Four planners, one aim: families like the Wongs, on both sides of the boundary | All | 1:10 |
 | 15 | — | Built to last | Pete, all | 0:15 |
 | | | | | **9:30** |
@@ -175,7 +175,7 @@ The scripts are in `Talk_Outline.md`; each goes into its slide's speaker notes w
 - The strength in three numbers (case): HK$24.4M net worth, 41% of after-tax income saved, debt 10% of assets.
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
-### 3 · Their own way (Pete; 0:40)
+### 3 · Their own way (Pete; 0:45)
 **Built 22 Oct** (prototype `looks/src/07_s3_s7.html`, render `looks/build/slide-12.png`; 134 words). Kicker "Will it
 last?", the question slide 2 leaves open. Panels 8 + 4: "Ten typical futures, managed their own way…" / "…and leave
 Ryan and Chloe little". **The time axis is cropped to 2051–2066** (Carmen 74 to 89; Pete, 22 Oct: three quarters of
@@ -186,9 +186,9 @@ window, so the two pictures still match.
   the money runs out (no plan, no adviser).
 - **The picture: the ten futures under their own way** (`own{i}_*`), one line each from 2026 to Carmen's 89, ranked
   worst to best. A home mark where the flat is sold (`own{i}_sale_x`, the accent: the title's claim), a stop where the
-  money still runs out (`own{i}_w`), a tick where it lasts. Labels on the data: "the flat sold, Carmen
-  {{own_fut_sale_age_first}} to {{own_fut_sale_age_last}}"; "{{own_fut_short_n_word}} still run out, two to three years
-  later".
+  money still runs out (`own{i}_w`), a tick where it lasts. Labels on the data: "The flat sold, Carmen
+  {{own_fut_sale_age_first}} to {{own_fut_sale_age_last}}" (the bracket under the houses); "the sale buys just
+  {{own_fut_buys_min}} to {{own_fut_buys_max}} years" (attached to the lowest cross; spoken too).
 - **Right panel:** the family's flat (illustration placeholder until §7 arrives; lede "Home since 2015, where Ryan and
   Chloe grew up (case)"), then the inheritance where the flat is sold: {{own_legacy_sold}} at 72 px in the accent, "of
   HK$24.4M today; median, today's money (measured)". A grey band marks Carmen's years on her own (from 2056, Adrian
@@ -321,7 +321,7 @@ stay as hollow grey ghosts, labelled "where their own way sold the flat" (the ch
   control, not tax.
 - Bar: "Built to last: for their lifetimes, and after."
 
-### 13 · Wealth Management Connect (Pete; 0:45)
+### 13 · Wealth Management Connect (Pete; 0:40)
 - The two flows between Hong Kong and Macao and the nine mainland Greater Bay Area cities; the advice rule on
   Southbound (without the investor's request or agreement, Hong Kong banks don't solicit or recommend across the
   boundary; HKMA Southbound page, checked 22 Oct); facts: since 2021; up to RMB 3M per investor since 2024 (RMB 1.5M

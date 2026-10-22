@@ -432,6 +432,9 @@ p,li,span,b{text-wrap:pretty}
 .f9r .hs{position:absolute;top:50%;left:calc((var(--s) * 40 - var(--y0) * 100%) / var(--yn));width:26px;height:26px;margin:-13px 0 0 -13px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;z-index:3}
 .f9r .hs .ic{width:16px;height:16px;stroke-width:2.4}
 .f9r.kept .hs{display:none}
+/* slide 3: the crosses' label, attached to the lowest one: what the late sale buys */
+.f9r .tl{position:absolute;top:50%;left:calc((var(--w) * 40 - var(--y0) * 100%) / var(--yn) + 18px);transform:translateY(-50%);font:600 14px/1 var(--text);color:var(--ink);white-space:nowrap;z-index:2}
+.f9r:not(.short) .tl{display:none}
 /* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
 .f9.won .f9r .ln{background:linear-gradient(to right,rgba(29,78,216,0),var(--accent) 56px)}
 .f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}

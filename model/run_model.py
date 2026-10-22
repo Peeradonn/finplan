@@ -424,6 +424,9 @@ def export_numbers():
     N["own_fut_sold_n_word"], N["own_fut_short_n_word"] = words[len(o_sold)], words[len(o_runs)]
     N["own_fut_sale_age_first"] = str(min(o_sold) - (C89 - 89)) if o_sold else ""
     N["own_fut_sale_age_last"] = str(max(o_sold) - (C89 - 89)) if o_sold else ""
+    # how long the sale lasts in the futures that still run out: the years from the sale to the money running out
+    bought = [int(own["runout"][k]) - int(own["sold"][k]) for k in ten(own) if not own["alive"][k] and own["sold"][k]]
+    N["own_fut_buys_min"], N["own_fut_buys_max"] = (str(min(bought)), str(max(bought))) if bought else ("", "")
     gs = sim(*MIX2, C89, detail=True, **{**full, "med": SWITCH, "guard": True})
     p_lasts = 0
     for i, k in enumerate(ten(gs), 1):
