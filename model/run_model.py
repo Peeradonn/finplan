@@ -340,6 +340,8 @@ def export_numbers():
     for w in (40, 60, 80):
         s, worst, _ = sim(w/100, MIX2[1], MIX2[2], C89, **ladder_steps()[0][1])
         N[f"alone_eq{w}_89"], N[f"alone_eq{w}_worst"] = P(s), f"{worst*100:.0f}%".replace("-", "−")
+    # What the home becomes (Round Two deck, Call 2): the reverse mortgage's level income a year, and its first year.
+    N["rmp_income"], N["rmp_year"] = K(RMP), str(RMP_Y)
     # Ten representative futures for "investments alone" (Round Two deck, slide 3): the year the money runs out at the
     # 5th, 15th ... 95th percentile of the 10,000 paths; a path still funded at Carmen's 89 "lasts". Width = share of
     # the 2026-to-89 timeline, so the slide draws each line from the model.

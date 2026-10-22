@@ -292,3 +292,8 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   (−31%, not exported). Doubling the shares buys about ten points; the four decisions buy fifty with the same 40%.
 - `make_charts.py` rerun: 156 values; no existing value changed or removed (checked against the previous file).
   Not used in the written proposal; the Round Two deck only.
+
+### Round Two deck (22 Oct): reverse mortgage income key, for Call 2 "what the home becomes"
+- `run_model.export_numbers()` adds `rmp_income` (HK$230K, the level yearly income from the workbook input "Reverse
+  mortgage: annual income (level)") and `rmp_year` (2037). `make_charts.py` rerun: 158 values; no existing value
+  changed or removed. Round Two deck only.
