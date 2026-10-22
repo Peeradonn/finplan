@@ -72,6 +72,7 @@ def tokens():
         "prem_std_v": f"HK${std_peak:.0f}K",
         "prem_std_t": f"{sy / H * 100:.2f}%",
         "prem_switch_l": f"{xy(SWITCH, 0)[0] / W * 100:.2f}%",
+        "prem_rec_end_t": f"{xy(X1, rec[-1][1])[1] / H * 100:.2f}%",   # where the recommended line ends (its label)
     }
     return T
 

@@ -399,12 +399,87 @@ p,li,span,b{text-wrap:pretty}
 .c6 .biz{display:flex;align-items:baseline;gap:14px;margin-top:14px;padding-top:12px;border-top:3px solid var(--ink)}
 .c6 .biz strong{font:700 40px/1 var(--head)}
 .c6 .biz span{font:400 16px/1.3 var(--text);color:var(--slate)}
+
+/* ==================== v9 slides 3 and 7 (22 Oct): the ten futures, their own way, then with the plan ====================
+   One picture, drawn twice in the same place: slide 3 (their own way) marks where the flat is sold and where the money
+   still runs out; slide 7 (the plan) redraws ten typical futures, all reaching 89, with slide 3's sale marks left as
+   hollow ghosts. x = (year - 2026) / 40, so a mark's position is the model's own year (own{i}_*, plan{i}_*). The accent
+   is the title's claim: on 3 the sale and what it leaves the children; on 7 the futures that reach 89. */
+.c9{--text:"Inter",Arial,sans-serif}
+.c9 .pn>h3{font-size:20px;margin-bottom:0}
+.c9 .bar{font-size:20px;margin-top:18px}
+.c9 .ic{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.c9 .lede{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:8px}
+.c9 .body{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0;padding-top:16px}
+/* the plot: a band for Carmen's years alone, the goal line at 89, ten rows, the sale bracket, the axis */
+.f9{position:relative;margin-right:28px;padding-top:26px}
+.f9 .alone{position:absolute;top:0;bottom:0;left:75%;right:0;background:var(--mist)}
+.f9 .alone span{position:absolute;top:7px;left:10px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.f9 .goal{position:absolute;top:0;bottom:0;left:100%;border-left:1.5px dashed var(--ink)}
+.f9 .goal span{position:absolute;top:7px;right:8px;font:600 14px/1 var(--text);white-space:nowrap}
+.f9 .rows{position:relative;display:flex;flex-direction:column;gap:7px;padding:8px 0 10px}
+.f9r{position:relative;height:17px}
+.f9r .ln{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:var(--w);background:var(--grey)}
+.f9r .end{position:absolute;top:50%;left:var(--w);width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2}
+.f9r .end .ic{width:12px;height:12px;stroke-width:3.2}
+.f9r.short .end{background:var(--ink);color:#fff}
+.f9r.short .end .v,.f9r.sold .end .x,.f9r.kept .end .x,.f9r.lasts .end .x{display:none}
+.f9r.sold .end,.f9r.kept .end,.f9r.lasts .end{background:var(--paper);border:2px solid var(--ink);color:var(--ink)}
+.f9r .hs{position:absolute;top:50%;left:var(--s);width:26px;height:26px;margin:-13px 0 0 -13px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;z-index:3}
+.f9r .hs .ic{width:16px;height:16px;stroke-width:2.4}
+.f9r.kept .hs{display:none}
+/* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
+.f9.won .f9r .ln{background:var(--accent)}
+.f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}
+.f9r .gh{position:absolute;top:50%;left:var(--s);width:26px;height:26px;margin:-13px 0 0 -13px;border:1.5px dashed var(--grey);background:var(--paper);color:var(--grey);display:flex;align-items:center;justify-content:center;z-index:3}
+.f9r .gh .ic{width:15px;height:15px;stroke-width:2}
+.f9r.g-kept .gh{display:none}
+/* the bracket under the sale marks, its label attached */
+.f9 .brk{position:relative;height:34px}
+.f9 .brk>i{position:absolute;top:0;height:10px;border:2px solid var(--accent);border-top:0}
+.f9 .brk>span{position:absolute;top:16px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--accent-deep);white-space:nowrap}
+.f9.won .brk>i{border-color:var(--grey)}
+.f9.won .brk>span{color:var(--slate);font-weight:400}
+.f9 .brk>span.ra{transform:translateX(-100%)}   /* right-aligned to the bracket's end, clear of the 89 line */
+.f9ax{position:relative;height:40px;margin-right:28px;border-top:1.5px solid var(--ink)}
+.f9ax span{position:absolute;top:7px;transform:translateX(-50%);font:600 14px/1.25 var(--text);white-space:nowrap;text-align:center}
+.f9ax span:first-child{transform:none;text-align:left}
+.f9ax span:last-child{transform:translateX(-100%);text-align:right}
+.f9ax span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+/* slide 3, right: the home, then what the children are left */
+.c9 .home{height:190px;background:var(--mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font:400 14px/1.3 var(--text);color:var(--slate);text-align:center}
+.c9 .home .ic{width:44px;height:44px;stroke-width:1.4;color:var(--ink)}
+.c9 .homec{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:8px}
+.c9 .inh .l{font:600 16px/1.3 var(--text)}
+.c9 .inh strong{display:block;font:700 72px/1 var(--head);color:var(--accent);margin:8px 0 6px;letter-spacing:-1px}
+.c9 .inh p.s{font:400 14px/1.35 var(--text);color:var(--slate)}
+/* slide 7, right: the premium line (series.py), the review's result, the rules */
+.c9 .pc{position:relative;height:150px;margin:22px 0 0 44px}
+.c9 .pc svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.c9 .pc .gl{position:absolute;left:0;right:0;border-top:1px solid var(--rule)}
+.c9 .pc .gl span{position:absolute;right:calc(100% + 8px);top:-8px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.c9 .pc .sw{position:absolute;top:-24px;bottom:0;border-left:1.5px solid var(--ink)}
+.c9 .pc .sw span{position:absolute;top:0;right:8px;font:600 14px/1.25 var(--text);white-space:nowrap;text-align:right}
+.c9 .pc .pk{position:absolute;transform:translateY(-30%);padding-left:12px;white-space:nowrap}
+.c9 .pc .en{position:absolute;right:0;transform:translateY(-130%);font:600 14px/1 var(--text);white-space:nowrap}
+.c9 .pc .pk b{display:block;font:700 20px/1 var(--head)}
+.c9 .pc .pk span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.c9 .pcx{position:relative;height:22px;margin-left:44px;border-top:1.5px solid var(--ink)}
+.c9 .pcx span{position:absolute;top:5px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate)}
+.c9 .pcx span:first-child{transform:none}.c9 .pcx span:last-child{transform:translateX(-100%)}
+.c9 .rev{display:flex;align-items:baseline;gap:12px;padding-top:12px;border-top:3px solid var(--ink)}
+.c9 .rev strong{font:700 40px/1 var(--head)}
+.c9 .rev span{font:400 16px/1.3 var(--text);color:var(--slate)}
+.c9 .rules{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:8px}
+.c9 .rules b{font-weight:600;color:var(--ink)}
 .notes{display:none}
 </style>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
-
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
 </svg>
 <main class="deck">
 
@@ -938,6 +1013,122 @@ p,li,span,b{text-wrap:pretty}
   <p class="bar">The 61% that paid nothing now pays for their retirement, with the same investments.</p>
   <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89, 10,000 simulated markets (measured); worst year: the worst single year, on average; legacy in today's money</p><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 14</span></footer>
   <aside class="notes">FAHTAI: Two ways to lift the odds. Take more risk, 80% in shares: the odds barely move, to 43%, the worst year deepens to −24%, and it breaks Adrian's low-to-medium profile. Or put what they already own to work: four decisions, the same investments, 83%. Most of it comes from the home and the business. At 65 they choose: stay with a reverse mortgage, or downsize and leave more to the children. The business sells in stages to her co-founder and managers; we count only HK$3 million of its five, and even if it never sells the plan still reaches 66%. The other two cost little: the survivor plans on 70%, and the annuities about HK$10K a year.</aside>
+</section>
+
+<!-- v9 slide 3 (22 Oct): their own way. Plan §5, slide 3. Ten typical futures under what a sensible family would do
+     (business sold, flat kept and sold only when the money runs out), ranked best (top) to worst. The accent is the
+     title's claim: where the flat is sold, and what that leaves the children. -->
+<section class="slide lb c9">
+  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick">Will it last?</p>
+    <h2>Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 8">
+      <h3>Ten typical futures, managed their own way…</h3>
+      <p class="lede">The business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
+      <div class="body">
+        <div class="f9">
+          <div class="alone"><span>Carmen on her own</span></div>
+          <div class="goal"></div>
+          <div class="rows">
+            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r sold" style="--w:100.0%;--s:95.0%"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r short" style="--w:97.5%;--s:90.0%"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r short" style="--w:92.5%;--s:85.0%"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r short" style="--w:87.5%;--s:80.0%"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r short" style="--w:80.0%;--s:75.0%"><i class="ln"></i><b class="hs"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+          </div>
+          <div class="brk"><i style="left:calc((79 - 49) / 40 * 100%);width:calc((87 - 79) / 40 * 100%)"></i><span style="left:calc((79 + 87 - 98) / 80 * 100%)">The flat sold, Carmen 79 to 87</span></div>
+        </div>
+        <div class="f9ax"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:25%">2036<i>59</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79</i></span><span style="left:100%">2066<i>89</i></span></div>
+      </div>
+    </div>
+    <div class="pn" style="grid-column:span 4">
+      <h3>…and leave Ryan and Chloe little</h3>
+      <p class="lede">Home since 2015, where Ryan and Chloe grew up (case)</p>
+      <div class="body">
+        <div class="home"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
+        <div class="inh">
+          <p class="l">Left to Ryan and Chloe where the flat is sold</p>
+          <strong>HK$2.3M</strong>
+          <p class="s">of HK$24.4M today; median, today's money (measured)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="bar">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? A sensible family would manage it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%.]</aside>
+</section>
+
+<!-- v9 slide 7 (22 Oct): Call 3. Plan §5, slide 7. Slide 3's picture, redrawn with the plan in the same place: all ten
+     futures reach 89 (the accent), and the places where their own way sold the flat stay as hollow ghosts. Right: why,
+     the premium line (series.py) reviewed at Adrian's 75, the review's result, the spending rules. -->
+<section class="slide lb c9">
+  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
+    <h2>Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none sells the home</h2>
+  </header>
+  <div class="panels">
+    <div class="pn" style="grid-column:span 8">
+      <h3>Ten typical futures again, with the plan…</h3>
+      <p class="lede">The four decisions, the medical review at Adrian's 75 and the spending rules</p>
+      <div class="body">
+        <div class="f9 won">
+          <div class="alone"><span>Carmen on her own</span></div>
+          <div class="goal"></div>
+          <div class="rows">
+            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts g-sold" style="--w:100.0%;--s:95.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts g-short" style="--w:100.0%;--s:90.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts g-short" style="--w:100.0%;--s:85.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts g-short" style="--w:100.0%;--s:80.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+            <div class="f9r lasts g-short" style="--w:100.0%;--s:75.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+          </div>
+          <div class="brk"><i style="left:calc((79 - 49) / 40 * 100%);width:calc((87 - 79) / 40 * 100%)"></i><span class="ra" style="left:calc((87 - 49) / 40 * 100%)">where their own way sold the flat</span></div>
+        </div>
+        <div class="f9ax"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:25%">2036<i>59</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79</i></span><span style="left:100%">2066<i>89</i></span></div>
+      </div>
+    </div>
+    <div class="pn" style="grid-column:span 4">
+      <h3>…once the premiums are reviewed at 75</h3>
+      <p class="lede">Premiums outside the budget, a year (today's money)</p>
+      <div class="body">
+        <div>
+          <div class="pc">
+            <span class="gl" style="top:0"><span>400K</span></span><span class="gl" style="top:25%"><span>300K</span></span><span class="gl" style="top:50%"><span>200K</span></span><span class="gl" style="top:75%"><span>100K</span></span>
+            <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+              <polygon points="344.8,173.6 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2 1000.0,261.8 689.7,300.0 655.2,250.5 448.3,282.8 344.8,293.1" style="fill:#E3E3E3"/>
+              <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2" fill="none" style="stroke:var(--grey)" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+              <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 344.8,173.6 344.8,293.1 448.3,282.8 655.2,250.5 689.7,300.0 1000.0,261.8" fill="none" style="stroke:var(--ink)" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <span class="sw" style="left:34.48%"><span>Review at Adrian's 75</span></span>
+            <p class="pk" style="left:65.52%;top:6.27%"><b>HK$375K</b><span>kept for life</span></p>
+            <span class="en" style="top:87.27%">with the review</span>
+          </div>
+          <div class="pcx"><span style="left:0">2037</span><span style="left:34.48%">2047</span><span style="left:100%">2066</span></div>
+        </div>
+        <div>
+          <div class="rev"><strong>97%</strong><span>chance the money lasts, with the review</span></div>
+          <p class="rules"><b>From 2039, spending rules</b> protect the bad years; essentials are never cut</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="bar">Question 1, answered: they retire on time, keep the way they live, and keep the home.</p>
+  <footer class="ft"><p class="src">Ten futures: the 5th to 95th percentile of 10,000 simulated markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured). Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
+  <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, simple spending rules protect the bad years, and essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one sells the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is subject to underwriting until the insurer confirms.]</aside>
 </section>
 </main>
 </body>

@@ -399,6 +399,79 @@ p,li,span,b{text-wrap:pretty}
 .c6 .biz{display:flex;align-items:baseline;gap:14px;margin-top:14px;padding-top:12px;border-top:3px solid var(--ink)}
 .c6 .biz strong{font:700 40px/1 var(--head)}
 .c6 .biz span{font:400 16px/1.3 var(--text);color:var(--slate)}
+
+/* ==================== v9 slides 3 and 7 (22 Oct): the ten futures, their own way, then with the plan ====================
+   One picture, drawn twice in the same place: slide 3 (their own way) marks where the flat is sold and where the money
+   still runs out; slide 7 (the plan) redraws ten typical futures, all reaching 89, with slide 3's sale marks left as
+   hollow ghosts. x = (year - 2026) / 40, so a mark's position is the model's own year (own{i}_*, plan{i}_*). The accent
+   is the title's claim: on 3 the sale and what it leaves the children; on 7 the futures that reach 89. */
+.c9{--text:"Inter",Arial,sans-serif}
+.c9 .pn>h3{font-size:20px;margin-bottom:0}
+.c9 .bar{font-size:20px;margin-top:18px}
+.c9 .ic{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.c9 .lede{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:8px}
+.c9 .body{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0;padding-top:16px}
+/* the plot: a band for Carmen's years alone, the goal line at 89, ten rows, the sale bracket, the axis */
+.f9{position:relative;margin-right:28px;padding-top:26px}
+.f9 .alone{position:absolute;top:0;bottom:0;left:75%;right:0;background:var(--mist)}
+.f9 .alone span{position:absolute;top:7px;left:10px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.f9 .goal{position:absolute;top:0;bottom:0;left:100%;border-left:1.5px dashed var(--ink)}
+.f9 .goal span{position:absolute;top:7px;right:8px;font:600 14px/1 var(--text);white-space:nowrap}
+.f9 .rows{position:relative;display:flex;flex-direction:column;gap:7px;padding:8px 0 10px}
+.f9r{position:relative;height:17px}
+.f9r .ln{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:var(--w);background:var(--grey)}
+.f9r .end{position:absolute;top:50%;left:var(--w);width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2}
+.f9r .end .ic{width:12px;height:12px;stroke-width:3.2}
+.f9r.short .end{background:var(--ink);color:#fff}
+.f9r.short .end .v,.f9r.sold .end .x,.f9r.kept .end .x,.f9r.lasts .end .x{display:none}
+.f9r.sold .end,.f9r.kept .end,.f9r.lasts .end{background:var(--paper);border:2px solid var(--ink);color:var(--ink)}
+.f9r .hs{position:absolute;top:50%;left:var(--s);width:26px;height:26px;margin:-13px 0 0 -13px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;z-index:3}
+.f9r .hs .ic{width:16px;height:16px;stroke-width:2.4}
+.f9r.kept .hs{display:none}
+/* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
+.f9.won .f9r .ln{background:var(--accent)}
+.f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}
+.f9r .gh{position:absolute;top:50%;left:var(--s);width:26px;height:26px;margin:-13px 0 0 -13px;border:1.5px dashed var(--grey);background:var(--paper);color:var(--grey);display:flex;align-items:center;justify-content:center;z-index:3}
+.f9r .gh .ic{width:15px;height:15px;stroke-width:2}
+.f9r.g-kept .gh{display:none}
+/* the bracket under the sale marks, its label attached */
+.f9 .brk{position:relative;height:34px}
+.f9 .brk>i{position:absolute;top:0;height:10px;border:2px solid var(--accent);border-top:0}
+.f9 .brk>span{position:absolute;top:16px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--accent-deep);white-space:nowrap}
+.f9.won .brk>i{border-color:var(--grey)}
+.f9.won .brk>span{color:var(--slate);font-weight:400}
+.f9 .brk>span.ra{transform:translateX(-100%)}   /* right-aligned to the bracket's end, clear of the 89 line */
+.f9ax{position:relative;height:40px;margin-right:28px;border-top:1.5px solid var(--ink)}
+.f9ax span{position:absolute;top:7px;transform:translateX(-50%);font:600 14px/1.25 var(--text);white-space:nowrap;text-align:center}
+.f9ax span:first-child{transform:none;text-align:left}
+.f9ax span:last-child{transform:translateX(-100%);text-align:right}
+.f9ax span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+/* slide 3, right: the home, then what the children are left */
+.c9 .home{height:190px;background:var(--mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font:400 14px/1.3 var(--text);color:var(--slate);text-align:center}
+.c9 .home .ic{width:44px;height:44px;stroke-width:1.4;color:var(--ink)}
+.c9 .homec{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:8px}
+.c9 .inh .l{font:600 16px/1.3 var(--text)}
+.c9 .inh strong{display:block;font:700 72px/1 var(--head);color:var(--accent);margin:8px 0 6px;letter-spacing:-1px}
+.c9 .inh p.s{font:400 14px/1.35 var(--text);color:var(--slate)}
+/* slide 7, right: the premium line (series.py), the review's result, the rules */
+.c9 .pc{position:relative;height:150px;margin:22px 0 0 44px}
+.c9 .pc svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.c9 .pc .gl{position:absolute;left:0;right:0;border-top:1px solid var(--rule)}
+.c9 .pc .gl span{position:absolute;right:calc(100% + 8px);top:-8px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.c9 .pc .sw{position:absolute;top:-24px;bottom:0;border-left:1.5px solid var(--ink)}
+.c9 .pc .sw span{position:absolute;top:0;right:8px;font:600 14px/1.25 var(--text);white-space:nowrap;text-align:right}
+.c9 .pc .pk{position:absolute;transform:translateY(-30%);padding-left:12px;white-space:nowrap}
+.c9 .pc .en{position:absolute;right:0;transform:translateY(-130%);font:600 14px/1 var(--text);white-space:nowrap}
+.c9 .pc .pk b{display:block;font:700 20px/1 var(--head)}
+.c9 .pc .pk span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.c9 .pcx{position:relative;height:22px;margin-left:44px;border-top:1.5px solid var(--ink)}
+.c9 .pcx span{position:absolute;top:5px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate)}
+.c9 .pcx span:first-child{transform:none}.c9 .pcx span:last-child{transform:translateX(-100%)}
+.c9 .rev{display:flex;align-items:baseline;gap:12px;padding-top:12px;border-top:3px solid var(--ink)}
+.c9 .rev strong{font:700 40px/1 var(--head)}
+.c9 .rev span{font:400 16px/1.3 var(--text);color:var(--slate)}
+.c9 .rules{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:8px}
+.c9 .rules b{font-weight:600;color:var(--ink)}
 .notes{display:none}
 </style>
 </head>

@@ -76,7 +76,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 |---|---|---|---|---|
 | 1 | — | Built to Last: five calls that make the Wong family's wealth last | Pete, all | 0:20 |
 | 2 | Where they stand | On paper, the Wongs are secure | Pete | 0:30 |
-| 3 | Their own way | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:40 |
+| 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:40 |
 | 4 | Our answer | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
 | 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: the same home and business, put to work at 65, lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
@@ -176,14 +176,20 @@ The scripts are in `Talk_Outline.md`; each goes into its slide's speaker notes w
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
 ### 3 · Their own way (Pete; 0:40)
-- **Kicker and lede:** what a sensible family would do: sell the business when Carmen retires, keep the flat, sell it
-  only if they must (no plan, no adviser).
+**Built 22 Oct** (prototype `looks/src/07_s3_s7.html`, render `looks/build/slide-12.png`; 134 words). Kicker "Will it
+last?", the question slide 2 leaves open. Panels 8 + 4: "Ten typical futures, managed their own way…" / "…and leave
+Ryan and Chloe little".
+- **Lede:** what a sensible family would do: the business sold when Carmen retires; the flat kept, and sold only when
+  the money runs out (no plan, no adviser).
 - **The picture: the ten futures under their own way** (`own{i}_*`), one line each from 2026 to Carmen's 89, ranked
   worst to best. A home mark where the flat is sold (`own{i}_sale_x`, the accent: the title's claim), a stop where the
   money still runs out (`own{i}_w`), a tick where it lasts. Labels on the data: "the flat sold, Carmen
   {{own_fut_sale_age_first}} to {{own_fut_sale_age_last}}"; "{{own_fut_short_n_word}} still run out, two to three years
   later".
-- **One callout:** the inheritance where the flat is sold: {{own_legacy_sold}} of a HK$24.4M fortune (today's money).
+- **Right panel:** the family's flat (illustration placeholder until §7 arrives; lede "Home since 2015, where Ryan and
+  Chloe grew up (case)"), then the inheritance where the flat is sold: {{own_legacy_sold}} at 72 px in the accent, "of
+  HK$24.4M today; median, today's money (measured)". A grey band marks Carmen's years on her own (from 2056, Adrian
+  84 on the case's life expectancy).
 - Footer: their own way's assumptions (business sold, the budget unchanged after a death, the Flexi plan for life, the
   flat sold for the same HK$7M flat as our downsizing option); "on investments alone, the written case's measure:
   {{ladder_1_89}}"; 10,000 simulated markets (measured).
@@ -234,6 +240,9 @@ The scripts are in `Talk_Outline.md`; each goes into its slide's speaker notes w
 - Answers questions 1, 7 and 8.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Built 22 Oct** (same file, render `looks/build/slide-13.png`; 143 words). Panels 8 + 4: "Ten typical futures again,
+with the plan…" / "…once the premiums are reviewed at 75". The lines and ticks in the accent; slide 3's sale marks
+stay as hollow grey ghosts, labelled "where their own way sold the flat" (the change is the message).
 - **The hero: slide 3's ten futures, redrawn under the plan** (`plan{i}_*`: the four decisions, the review at 75 and
   the spending rules): all {{plan_fut_lasts_n_word}} reach Carmen's 89, and no "sold" marks. Same layout as 3, so the
   change is the message.
