@@ -77,6 +77,11 @@ Pick the lenses that fit the question and say which you used. Think like the act
 - The headline: the chance the parents' money lasts to Carmen's 89 is `{{ladder_1_89}}` on their investments alone,
   `{{ladder_5_89}}` with the four decisions, `{{switch_89}}` with the medical review at 75, and almost every future
   (`{{guardswitch_89}}`) with the spending rules. Always quote the placeholders: they move when the model moves.
+- **The deck's baseline is "their own way", not "investments alone"** (Pete, 22 Oct: no family lives on investments
+  alone while it owns the flat and the business). Done their own way (business sold, flat sold only when the money
+  runs out), the money lasts in `{{own_89}}`; the flat is sold by force in `{{own_sold_pct}}` of futures, when Carmen
+  is about `{{own_sale_age}}`; the children inherit `{{own_legacy_sold}}` there, against `{{plan_legacy_sold}}` under
+  the plan. The written case's `{{ladder_1_89}}` stays in the deck's footnotes only.
 
 ## Decisions already made (the proposal's content; reopen only with new evidence)
 Reasons are in `document/manuscript.md`. These are content decisions; how the deck *presents* them is open.
@@ -98,8 +103,10 @@ Reasons are in `document/manuscript.md`. These are content decisions; how the de
 - Card balance assumed revolving; tax assumed separate assessment (both stated as checks in the proposal's §2).
 
 ## Round Two: the deck (active)
-- **The plan:** `round2/Round2_Deck_Plan.md` (v8, "Five calls", approved 20 Oct): the argument, the storyline, every
-  slide's spec, the system, the look, the images, what's still missing. **Change the plan first, then the slide.**
+- **The plan:** `round2/Round2_Deck_Plan.md` (v9, agreed 22 Oct): the argument, the storyline, every slide's spec,
+  the system, the look, the images, what's still missing. **Change the plan first, then the slide.**
+- **The talk:** `round2/Talk_Outline.md`: the arc, each slide's point, speaker and seconds, and the full draft script,
+  measured at 1,200 spoken words (9:08 at 135 words a minute). Keep it at or under 1,200; recount after any change.
 - **Build:** `.venv/Scripts/python.exe round2/make.py [--pages 3,4] [--builds]` assembles `round2/src/`, fills the
   numbers and renders to `round2/build/` (PNGs per slide; `--builds` writes one frame per spoken step for presenting).
   Look options: `round2/looks/make_looks.py`.
@@ -160,8 +167,8 @@ Reviewers only append findings to their own files; the builder edits the page so
 - The slide-design render script needs absolute paths.
 
 ## Open items (need outside facts or teammates)
-- **Round Two:** confirm look B (Pete preferred it, 20 Oct), then the illustrated image set (prompts in the deck plan §7, for
-  Pete to generate); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
+- **Round Two:** the illustrated image set in look B (prompts in the deck plan §7, for Pete to generate); HKMC
+  reverse-mortgage payouts for a borrower in their 80s (the "late reverse mortgage" question); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
 - **Facts:** insurer allows Flexi → Standard at 75 without new underwriting (the 97% rests on it); HKMC annuity death
   benefit; BOC-Prudential fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund
   fee; Ryan's crypto vs tokenised-MMF split; MPF passes to the estate (no nomination); card revolving; tax filing

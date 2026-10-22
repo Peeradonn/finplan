@@ -1,6 +1,6 @@
 # Built to Last: the talk, outline and draft script (v9, for review)
 
-**Status:** draft, 22 Oct 2026, for Pete and the team to review before any more slides are built. Built on the v8 plan
+**Status:** agreed with Pete, 22 Oct 2026 (the order, the "their own way" baseline, Lookbua on slide 11). Built on the v8 plan
 ("Five calls", approved 20 Oct); three changes from v8, all for the story (below). Once agreed, this replaces the
 storyline table in `Round2_Deck_Plan.md` §3 and each script goes into its slide's speaker notes.
 
@@ -60,16 +60,16 @@ for builds and pauses.
 | 7 | Fahtai | Call 3. Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none sells the home | Slide 3's ten futures redrawn, all reaching 89, no "sold" marks (the hero); the premium cut at 75 as a small inset | 0:40 | 81 |
 | 8 | Win | Call 4. One family policy, a plan for each person: every dollar gets a job | Today vs the plan as two bars of the same HK$7.7M, each job with its owner's face | 0:50 | 104 |
 | 9 | Win | Call 5. Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | ESG 11% → 25% into the goal band; crypto by person (four people, four sizes) | 0:45 | 96 |
-| 10 | Lookbua | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Paired bars per test, the lost job highlighted | 0:30 | 68 |
-| 11 | Pete | It starts this month; after that, dates trigger each step | One dated line, month 1 to 2047 | 0:30 | 59 |
+| 10 | Lookbua | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Paired bars per test, the lost job highlighted | 0:30 | 67 |
+| 11 | Lookbua | It starts this month; after that, dates trigger each step | One dated line, month 1 to 2047 | 0:30 | 60 |
 | 12 | Pete | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Two bars, same markets; then how it passes on: staged trusts at 25, 30, 35 and the scholarship | 0:25 | 57 |
 | 13 | Pete | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | The two flows across the boundary, the advice rule on Southbound | 0:45 | 93 |
 | 14 | All | Four planners, one aim: families like the Wongs, on both sides of the boundary | Four cards, one per speaker | 1:10 | 148 |
 | 15 | Pete, all | Built to last | The five calls; the home by choice; the inheritance kept; the team | 0:15 | 32 |
 | | | | | **9:30** | **1,200** |
 
-Speaking time at 135 words a minute: Pete 4:07 (1 to 4, 11 to 13, 15, and his share of 14), Win 1:40, Fahtai 1:37,
-Lookbua 1:28. Handovers: Pete → Lookbua → Fahtai → Win → Lookbua → Pete → all → Pete (6).
+Speaking time at 135 words a minute: Pete 3:40 (1 to 4, 12, 13, 15, and his share of 14), Lookbua 1:54 (5, 10, 11),
+Win 1:40, Fahtai 1:37. Handovers: Pete → Lookbua → Fahtai → Win → Lookbua → Pete → all → Pete (6).
 
 ## Does it fit 10 minutes?
 **Yes: about 50 seconds to spare at a natural pace, under ten if someone is slow.** Measured on the script below with
@@ -159,12 +159,12 @@ his wealth to 20% by 35. Lookbua.
 **10 · Will it hold?** (0:30)
 LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60, with no severance. The four
 decisions alone last in {{adrian60_89}} of futures; the full plan, {{rec_adrian60_89}}. Years of low returns, or high
-inflation with dearer medical care: {{rec_stressB_89}} or better. And if Carmen lives to 95: {{guardswitch_95}}. Pete.
+inflation with dearer medical care: {{rec_stressB_89}} or better. And if Carmen lives to 95: {{guardswitch_95}}.
 
 **11 · What happens when** (0:30)
-PETE: It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each
+LOOKBUA: It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each
 within six, a first family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business
-from 2035, the home and the annuities from 2037, the medical review in 2047.
+from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
 
 **12 · What passes on** (0:25)
 PETE: And the legacy the case is named for. In the futures where Carmen had to sell, the plan leaves Ryan and Chloe
@@ -220,17 +220,16 @@ generation keeps its inheritance: built to last. We are Team Axis. ALL: Thank yo
 - **"Why not rent, or buy cheaper than HK$7M?"** Either releases more. We use the same flat as our own downsizing
   option, so the two ways are compared on the same terms.
 
-## What to decide before building
-1. **This order and this baseline:** problem before answer; their own way ({{own_89}}) rather than investments alone.
-2. **Who reads slide 11?** Pete speaks 4:07, more than twice anyone else. Recommended: Lookbua reads 11 (it follows his
-   stress tests, and "what we'd do, and when" suits protection and risk), leaving Pete 3:41 and Lookbua 1:54.
-3. **The schedule:** recording was planned for 22 to 23 Oct. Building 15 slides to the Call 2 standard takes about a day
+## Still open
+1. **Decided 22 Oct (Pete):** problem before answer; their own way ({{own_89}}) as the baseline; Lookbua reads 11.
+2. **The schedule:** recording was planned for 22 to 23 Oct. Building 15 slides to the Call 2 standard takes about a day
    and a half; a realistic plan is build Thu to Fri, rehearse and record Sat, edit Sun, deliver Mon morning.
 
 ## To build (from this outline)
-- **Slide 3's ten futures under their own way need model keys** (per future: the year the flat is sold, if it is, and
-  the year the money runs out, if it does), like the present `fut*`; and **slide 7's redrawn ten** under the plan. The
-  claims "{{own_sold_pct}} sell the flat" and "all ten reach Carmen's 89" must come from those keys.
+- **Slide 3's and slide 7's ten futures** are in the model (22 Oct): `own{i}_*` (kept, sold, or sold and still short;
+  sale year and position) and `plan{i}_*`. Their own way: {{own_fut_sold_n_word}} of ten sell the flat, when Carmen is
+  {{own_fut_sale_age_first}} to {{own_fut_sale_age_last}}, and {{own_fut_short_n_word}} still run out; the plan:
+  {{plan_fut_lasts_n_word}} of ten reach 89. The script's "all ten" must match `plan_fut_lasts_n_word`.
 - **Slide 6's floor:** say and show "by 2039" ({{floor_2039_pct}} of essential bills); never "for life".
 - **Every on-screen phrase is spoken** as it appears; if a slide shows a number the script doesn't say, cut one of them.
 - After agreement: copy the storyline into the plan §3 and each script into its slide's speaker notes; time a full
