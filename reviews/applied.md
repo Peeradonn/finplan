@@ -316,3 +316,13 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   the family gets the plan's portfolio and fees, which flatters their own way. Part of the legacy gap is the survivor
   budget and the medical review, both our advice.
 - `make_charts.py` rerun: 166 values; no existing value changed or removed; `figure-data.md` unchanged. Round Two only.
+
+### Round Two deck (22 Oct): ten futures for slides 3 and 7 (their own way; the plan)
+- `export_numbers()` adds ten representative futures for each, at the 5th, 15th ... 95th percentile, ranked worst to
+  best by the year the money runs out, then the year the flat is sold (never = last). Their own way (slide 3):
+  `own{i}_cls` (short = flat sold, money still ran out; sold = flat sold, lasted; kept = never sold), `own{i}_sale`,
+  `own{i}_sale_x`, `own{i}_end`, `own{i}_w` (positions as shares of the 2026-to-89 timeline); `own_fut_sold_n_word`
+  five, `own_fut_short_n_word` four, `own_fut_sale_age_first` 79, `own_fut_sale_age_last` 87. The plan (slide 7: the
+  four decisions + review at 75 + guardrails, the `guardswitch` run): `plan{i}_cls`, `plan{i}_end`, `plan{i}_w`;
+  `plan_fut_lasts_n_word` ten. In the four futures that run out after the sale, the sale buys two to three years.
+- `make_charts.py` rerun: 251 values; no existing value changed or removed; `figure-data.md` unchanged. Round Two only.

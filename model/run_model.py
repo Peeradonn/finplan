@@ -405,6 +405,33 @@ def export_numbers():
     N["own_alone_pct"] = P((own["sold"][sold] > ALE).mean())
     N["own_legacy_sold"], N["plan_legacy_sold"] = Mn(np.median(own_leg[sold])), Mn(np.median(pln_leg[sold]))
     N["plan_legacy_more_pct"] = P((pln_leg[sold] > own_leg[sold]).mean())
+    # Ten representative futures for the deck's slides 3 (their own way) and 7 (the plan: review at 75 + guardrails):
+    # the paths at the 5th, 15th ... 95th percentile, ranked worst to best by the year the money runs out, then the
+    # year the flat is sold (never = last). x = share of the 2026-to-89 timeline, so the slides draw from the model.
+    words = ["none", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+    xs = lambda y: f"{(y - BY) / (C89 - BY) * 100:.1f}%"
+    def ten(d):
+        ro = np.where(d["alive"], 9999, d["runout"]); so = np.where(d["sold"] > 0, d["sold"], 9999)
+        order = np.lexsort((so, ro))
+        return [order[round(q / 100 * (len(order) - 1))] for q in range(5, 100, 10)]
+    o_sold, o_runs = [], []
+    for i, k in enumerate(ten(own), 1):
+        s_, r_ = int(own["sold"][k]), (0 if own["alive"][k] else int(own["runout"][k]))
+        N[f"own{i}_cls"] = "short" if r_ else ("sold" if s_ else "kept")
+        N[f"own{i}_sale"], N[f"own{i}_sale_x"] = (str(s_), xs(s_)) if s_ else ("", "")
+        N[f"own{i}_end"], N[f"own{i}_w"] = (str(r_), xs(r_)) if r_ else ("", "100.0%")
+        o_sold += [s_] if s_ else []; o_runs += [r_] if r_ else []
+    N["own_fut_sold_n_word"], N["own_fut_short_n_word"] = words[len(o_sold)], words[len(o_runs)]
+    N["own_fut_sale_age_first"] = str(min(o_sold) - (C89 - 89)) if o_sold else ""
+    N["own_fut_sale_age_last"] = str(max(o_sold) - (C89 - 89)) if o_sold else ""
+    gs = sim(*MIX2, C89, detail=True, **{**full, "med": SWITCH, "guard": True})
+    p_lasts = 0
+    for i, k in enumerate(ten(gs), 1):
+        r_ = 0 if gs["alive"][k] else int(gs["runout"][k])
+        N[f"plan{i}_cls"] = "short" if r_ else "lasts"
+        N[f"plan{i}_end"], N[f"plan{i}_w"] = (str(r_), xs(r_)) if r_ else ("", "100.0%")
+        p_lasts += 0 if r_ else 1
+    N["plan_fut_lasts_n_word"] = words[p_lasts]
     # rebalancing rules
     N["rebal_target_89"], N["rebal_bands_89"], N["rebal_drift_89"] = (P(sim_rules(p_, C89)[0]) for p_ in ("target", "bands", "drift"))
     # what happens when the plan falls short
