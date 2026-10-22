@@ -297,3 +297,22 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
 - `run_model.export_numbers()` adds `rmp_income` (HK$230K, the level yearly income from the workbook input "Reverse
   mortgage: annual income (level)") and `rmp_year` (2037). `make_charts.py` rerun: 158 values; no existing value
   changed or removed. Round Two deck only.
+
+### Round Two deck (22 Oct): "their own way", the problem slide's baseline (Pete: would they really live on investments alone?)
+- Pete's objection: "investments alone" (33%) is a strawman; a sensible family would sell the business, and the flat
+  if it had to. Tested instead of argued. `sim()` gains `forced=False`: when True, the first time a path's money runs
+  out the flat is sold and they downsize (`downsize_release` that year). `detail` also returns `sold` (sale year) and
+  `unpaid` (bills the money could not pay, today's money). Off by default, so no existing result can change.
+- `export_numbers()` adds, for their own way (business sold, budget unchanged after a death, Flexi for life, flat
+  sold when the money runs out): `own_89` 62% (lasts to Carmen's 89), `own_sold_pct` 51% (flat sold by force),
+  `own_sale_age` 83 (Carmen's median age then), `own_alone_pct` 83% (Adrian already dead, on the case's 84),
+  `own_home_years` 45 (median years in the flat; the case says bought 11 years before 2026). Legacy per path at 89,
+  today's money (portfolio + home equity still owned − unpaid bills), in the futures where the flat is sold by force:
+  `own_legacy_sold` HK$2.3M; the plan (four decisions + review at 75) in the same markets, `plan_legacy_sold` HK$7.7M,
+  leaving more in `plan_legacy_more_pct` 97% of them. Method check: the same per-path legacy for the four decisions
+  with Flexi gives a median of HK$8.1M, equal to `legacy_rmp`.
+- Limits: the forced seller buys the same HK$7M flat as the downsizing option (renting or buying cheaper would release
+  more); a late reverse mortgage instead of a sale is not tested (needs HKMC payout rates for borrowers in their 80s);
+  the family gets the plan's portfolio and fees, which flatters their own way. Part of the legacy gap is the survivor
+  budget and the medical review, both our advice.
+- `make_charts.py` rerun: 166 values; no existing value changed or removed; `figure-data.md` unchanged. Round Two only.

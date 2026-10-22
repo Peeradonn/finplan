@@ -154,12 +154,14 @@ GK_MED = False                                    # set True to let medical prem
 GK_MIN = g('Guardrails: lowest discretionary share')   # discretionary spending never cut below this
 
 def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=None, cpi=None,
-        inflows=None, n=10_000, seed=42, paths=False, guard=False, detail=False):
+        inflows=None, n=10_000, seed=42, paths=False, guard=False, detail=False, forced=False):
     """Success share, mean worst year, median end pot.
     paths=True also returns every path's pot by year. detail=True returns a dict instead (run-out years,
     spending cuts). guard=True applies Guyton-Klinger guardrails to the discretionary share of spending:
     no inflation rise after a negative year; cut 10% if the withdrawal rate is 20% above its starting level;
-    raise 10% (never above the target) if it is 20% below. Essentials (FLOOR_SHARE) are never cut."""
+    raise 10% (never above the target) if it is 20% below. Essentials (FLOOR_SHARE) are never cut.
+    forced=True is the family's own way (Round Two deck): the first time a path's money runs out, the flat is sold
+    and they downsize (downsize_release that year); detail then also returns the sale year per path."""
     r_eq = R_EQ if r_eq is None else r_eq
     cpi = CPI if cpi is None else cpi
     med, inflows = med or {}, inflows or {}
@@ -168,6 +170,7 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
     track = np.zeros((end - BY, n)) if paths else None
     d = np.ones(n); wr0 = None; last_r = np.zeros(n)
     runout = np.zeros(n, int); d_min = np.ones(n); lvl_sum = np.zeros(n); lvl_n = 0
+    sold = np.zeros(n, int); unpaid = np.zeros(n)
     lvl_hist, lvl_years = [], []
     for i in range(end - BY):
         y = BY + i
@@ -205,12 +208,16 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
         if biz and y == BIZ_Y: pot += biz
         pot += inflows.get(y, 0)
         pot -= med.get(y, 0)
+        if forced:                                         # their own way: sell the flat when the money runs out
+            need = (pot <= 0) & (sold == 0)
+            pot = np.where(need, pot + downsize_release(y), pot); sold[need] = y
+        unpaid += np.maximum(-pot, 0)/(1+cpi)**i           # bills the money could not pay, today's money
         pot = np.maximum(pot, 0)
         newly = alive & (pot <= 0); runout[newly] = y
         alive &= pot > 0; last_r = r
         if paths: track[i] = pot
     if detail:
-        return dict(success=alive.mean(), runout=runout, alive=alive, d_min=d_min, end_pot=pot,
+        return dict(success=alive.mean(), runout=runout, alive=alive, d_min=d_min, end_pot=pot, sold=sold, unpaid=unpaid,
                     level=(lvl_sum/lvl_n if lvl_n else np.ones(n)),
                     low=FLOOR_SHARE + (1-FLOOR_SHARE)*d_min,
                     levels=np.array(lvl_hist), level_years=np.array(lvl_years))
@@ -380,6 +387,24 @@ def export_numbers():
     for key, (lbl, s_, m_, h_) in zip(("keep", "rmp", "down"), po):
         N[f"prop_{key}_89"], N[f"legacy_{key}"] = P(s_), Mn(m_ + h_)
     N["legacy_down_vs_rmp"] = Mn((po[2][2] + po[2][3]) - (po[1][2] + po[1][3]))
+    # Their own way (Round Two deck, the problem slide): what a sensible family would do without a plan. They sell
+    # the business, keep their budget, the flat and the Flexi plan, and sell the flat (downsizing) only when the money
+    # runs out. Legacy per path at Carmen's 89, today's money: portfolio + home equity still owned - unpaid bills.
+    # Compared, in the same markets, with the plan (four decisions + the medical review at 75).
+    defl = (1+CPI)**(C89-BY)
+    own = sim(*MIX2, C89, detail=True, forced=True, annuity=False, med=FLEXI, biz=BIZ)
+    pln = sim(*MIX2, C89, detail=True, **{**full, "med": SWITCH})
+    sold = own["sold"] > 0
+    own_leg = np.maximum((own["end_pot"] + np.where(sold, DS_P*(1+P_G)**(C89-BY), home_value(C89)))/defl
+                         - own["unpaid"], 0)
+    pln_leg = np.maximum((pln["end_pot"] + max(home_value(C89) - rmp_balance(RMP_Y, C89, RMP), 0))/defl
+                         - pln["unpaid"], 0)
+    N["own_89"], N["own_sold_pct"] = P(own["success"]), P(sold.mean())
+    N["own_sale_age"] = str(round(np.median(own["sold"][sold] - (C89 - 89))))
+    N["own_home_years"] = str(round(np.median(own["sold"][sold] - (BY - 11))))   # case: bought 11 years before 2026
+    N["own_alone_pct"] = P((own["sold"][sold] > ALE).mean())
+    N["own_legacy_sold"], N["plan_legacy_sold"] = Mn(np.median(own_leg[sold])), Mn(np.median(pln_leg[sold]))
+    N["plan_legacy_more_pct"] = P((pln_leg[sold] > own_leg[sold]).mean())
     # rebalancing rules
     N["rebal_target_89"], N["rebal_bands_89"], N["rebal_drift_89"] = (P(sim_rules(p_, C89)[0]) for p_ in ("target", "bands", "drift"))
     # what happens when the plan falls short
