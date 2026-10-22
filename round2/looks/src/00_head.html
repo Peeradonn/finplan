@@ -435,6 +435,41 @@ p,li,span,b{text-wrap:pretty}
 /* slide 3: the crosses' label, attached to the lowest one: what the late sale buys */
 .f9r .tl{position:absolute;top:50%;left:calc((var(--w) * 40 - var(--y0) * 100%) / var(--yn) + 18px);transform:translateY(-50%);font:600 14px/1 var(--text);color:var(--ink);white-space:nowrap;z-index:2}
 .f9r:not(.short) .tl{display:none}
+
+/* ==================== v9 slide 6, Call 2 (22 Oct): what they own -> what each becomes -> what it achieves ============
+   Option B "Put to work" (Pete, 20 Oct), set against their own way (slide 3). Rows run across the first two columns so
+   each asset sits beside its decision; rows are ranked by what moves the odds (the home first, the tallest, the only
+   large number), and the business row says what really changes (both ways sell it; ours is planned and counted low).
+   The third column reads top to bottom, their own way (grey) to decided now (the accent, the title's claim). */
+.k9{display:grid;grid-template-columns:378.67px 479.33px;column-gap:24px;grid-template-rows:auto 1fr;min-height:0}
+.k9>h3{font:600 20px/1.25 var(--head);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.k9 .rws{grid-column:1 / -1;display:flex;flex-direction:column;min-height:0;padding-top:4px}
+.k9 .rw{display:grid;grid-template-columns:378.67px 479.33px;column-gap:24px;align-items:center;border-bottom:1px solid var(--rule);flex:1}
+.k9 .rw:last-child{border-bottom:0}
+.k9 .rw.big{flex:1.45}
+.k9 .own b{display:block;font:600 16px/1.3 var(--text)}
+.k9 .own .tr{display:flex;align-items:center;gap:10px;margin-top:8px}
+.k9 .own .tr i{display:block;height:14px;background:var(--grey)}
+.k9 .own .tr span{font:600 16px/1 var(--text);white-space:nowrap}
+.k9 .own .fl{font:400 16px/1.3 var(--text);color:var(--slate);margin-top:6px}
+.k9 .to{position:relative;padding-left:34px}
+.k9 .to>.ic{position:absolute;left:0;top:50%;width:22px;height:22px;margin-top:-11px;color:var(--ink);stroke-width:2.4}
+.k9 .to b{display:block;font:600 16px/1.3 var(--text)}
+.k9 .to p{font:400 14px/1.38 var(--text);color:var(--slate);margin-top:2px}
+.k9 .to .n{display:flex;align-items:baseline;gap:10px}
+.k9 .to .n strong{font:700 40px/1 var(--head)}
+.k9 .to .n span{font:600 16px/1.3 var(--text)}
+/* the third column: their own way and decided now as two bars on one scale (0 to 100%), grey then the accent */
+.k9b{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding-top:16px;min-height:0}
+.k9b .cap9{font:400 14px/1.35 var(--text);color:var(--slate)}
+.k9b .cols{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+.k9b .tk{position:relative;height:236px;border-bottom:1.5px solid var(--ink)}
+.k9b .tk i{position:absolute;left:0;right:0;bottom:0;height:var(--h);background:var(--grey)}
+.k9b .tk strong{position:absolute;left:0;bottom:calc(var(--h) + 8px);font:700 40px/1 var(--head);color:var(--grey)}
+.k9b .now .tk i{background:var(--accent)}
+.k9b .now .tk strong{font-size:72px;color:var(--accent);letter-spacing:-1px}
+.k9b .c p{font:600 16px/1.3 var(--text);margin-top:8px}
+.k9b .c p span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
 /* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
 .f9.won .f9r .ln{background:linear-gradient(to right,rgba(29,78,216,0),var(--accent) 56px)}
 .f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}

@@ -435,6 +435,41 @@ p,li,span,b{text-wrap:pretty}
 /* slide 3: the crosses' label, attached to the lowest one: what the late sale buys */
 .f9r .tl{position:absolute;top:50%;left:calc((var(--w) * 40 - var(--y0) * 100%) / var(--yn) + 18px);transform:translateY(-50%);font:600 14px/1 var(--text);color:var(--ink);white-space:nowrap;z-index:2}
 .f9r:not(.short) .tl{display:none}
+
+/* ==================== v9 slide 6, Call 2 (22 Oct): what they own -> what each becomes -> what it achieves ============
+   Option B "Put to work" (Pete, 20 Oct), set against their own way (slide 3). Rows run across the first two columns so
+   each asset sits beside its decision; rows are ranked by what moves the odds (the home first, the tallest, the only
+   large number), and the business row says what really changes (both ways sell it; ours is planned and counted low).
+   The third column reads top to bottom, their own way (grey) to decided now (the accent, the title's claim). */
+.k9{display:grid;grid-template-columns:378.67px 479.33px;column-gap:24px;grid-template-rows:auto 1fr;min-height:0}
+.k9>h3{font:600 20px/1.25 var(--head);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.k9 .rws{grid-column:1 / -1;display:flex;flex-direction:column;min-height:0;padding-top:4px}
+.k9 .rw{display:grid;grid-template-columns:378.67px 479.33px;column-gap:24px;align-items:center;border-bottom:1px solid var(--rule);flex:1}
+.k9 .rw:last-child{border-bottom:0}
+.k9 .rw.big{flex:1.45}
+.k9 .own b{display:block;font:600 16px/1.3 var(--text)}
+.k9 .own .tr{display:flex;align-items:center;gap:10px;margin-top:8px}
+.k9 .own .tr i{display:block;height:14px;background:var(--grey)}
+.k9 .own .tr span{font:600 16px/1 var(--text);white-space:nowrap}
+.k9 .own .fl{font:400 16px/1.3 var(--text);color:var(--slate);margin-top:6px}
+.k9 .to{position:relative;padding-left:34px}
+.k9 .to>.ic{position:absolute;left:0;top:50%;width:22px;height:22px;margin-top:-11px;color:var(--ink);stroke-width:2.4}
+.k9 .to b{display:block;font:600 16px/1.3 var(--text)}
+.k9 .to p{font:400 14px/1.38 var(--text);color:var(--slate);margin-top:2px}
+.k9 .to .n{display:flex;align-items:baseline;gap:10px}
+.k9 .to .n strong{font:700 40px/1 var(--head)}
+.k9 .to .n span{font:600 16px/1.3 var(--text)}
+/* the third column: their own way and decided now as two bars on one scale (0 to 100%), grey then the accent */
+.k9b{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding-top:16px;min-height:0}
+.k9b .cap9{font:400 14px/1.35 var(--text);color:var(--slate)}
+.k9b .cols{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+.k9b .tk{position:relative;height:236px;border-bottom:1.5px solid var(--ink)}
+.k9b .tk i{position:absolute;left:0;right:0;bottom:0;height:var(--h);background:var(--grey)}
+.k9b .tk strong{position:absolute;left:0;bottom:calc(var(--h) + 8px);font:700 40px/1 var(--head);color:var(--grey)}
+.k9b .now .tk i{background:var(--accent)}
+.k9b .now .tk strong{font-size:72px;color:var(--accent);letter-spacing:-1px}
+.k9b .c p{font:600 16px/1.3 var(--text);margin-top:8px}
+.k9b .c p span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
 /* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
 .f9.won .f9r .ln{background:linear-gradient(to right,rgba(29,78,216,0),var(--accent) 56px)}
 .f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}
@@ -485,6 +520,7 @@ p,li,span,b{text-wrap:pretty}
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
 <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
 </svg>
@@ -1136,6 +1172,63 @@ p,li,span,b{text-wrap:pretty}
   <p class="bar">Question 1, answered: they retire on time, keep the way they live, and keep the home.</p>
   <footer class="ft"><p class="src">Ten futures: the 5th to 95th percentile of 10,000 simulated markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured). Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, simple spending rules protect the bad years, and essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one sells the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is subject to underwriting until the insurer confirms.]</aside>
+</section>
+
+<!-- v9 slide 6, Call 2 (22 Oct). Plan §5, slide 6: "Decide now, not at 83". What they own (case, grey bars to scale:
+     the flat HK$11.5M = the full track) -> what each becomes, decided now -> what it achieves, against their own way.
+     Both ways sell the business (the model counts the same HK$3.0M in 2039); the odds rise because the home pays from
+     65 instead of being sold at about 83, a survivor plans on 70%, and the MPF buys annuities. -->
+<section class="slide lb c9">
+  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
+  <header class="hd">
+    <p class="kick"><span class="gb">2</span>Call 2: The home and the business</p>
+    <h2>Decide now, not at 83: the home pays from 65, the business sells in stages, and the odds rise from 62% to 83%</h2>
+  </header>
+  <div class="panels">
+    <div class="pn k9" style="grid-column:span 9">
+      <h3>What they own…</h3>
+      <h3>…what each becomes, decided now…</h3>
+      <div class="rws">
+        <div class="rw big">
+          <div class="own"><b>The flat</b><div class="tr"><i style="width:240px"></i><span>HK$11.5M</span></div></div>
+          <div class="to"><svg class="ic"><use href="#i-chevron-right"/></svg>
+            <div class="n"><strong>HK$230K</strong><span>a year for life, from 2037</span></div>
+            <p>Stay, with a reverse mortgage, or downsize: they choose at 65</p></div>
+        </div>
+        <div class="rw">
+          <div class="own"><b>The business</b><div class="tr"><i style="width:104px"></i><span>HK$5.0M</span></div></div>
+          <div class="to"><svg class="ic"><use href="#i-chevron-right"/></svg>
+            <b>Sold in stages, 2035–39, to her co-founder and managers</b>
+            <p>Their own way sells it too; we count only HK$3.0M</p></div>
+        </div>
+        <div class="rw">
+          <div class="own"><b>Their budget</b><p class="fl">HK$780K a year</p></div>
+          <div class="to"><svg class="ic"><use href="#i-chevron-right"/></svg>
+            <b>A survivor plans on 70%</b>
+            <p>Agreed now, for after the first death</p></div>
+        </div>
+        <div class="rw">
+          <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
+          <div class="to"><svg class="ic"><use href="#i-chevron-right"/></svg>
+            <b>Two annuities, each for life</b>
+            <p>Insurance for the worst markets</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="pn" style="grid-column:span 3">
+      <h3>…and what it achieves</h3>
+      <div class="k9b">
+        <p class="cap9">Chance the money lasts to Carmen's 89 (measured)</p>
+        <div class="cols">
+          <div class="c"><div class="tk" style="--h:62%"><i></i><strong>62%</strong></div><p>Their own way<span>the flat sold at about 83</span></p></div>
+          <div class="c now"><div class="tk" style="--h:83%"><i></i><strong>83%</strong></div><p>Decided now<span>the same assets</span></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="bar">Decided at 65, the home and the business close most of the gap; what's left is a cost the budget ignores.</p>
+  <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89, 10,000 simulated markets (measured); both ways pay the Flexi medical plan for life. Their own way: the business sold, the budget kept after a death, the flat sold for a HK$7M one when the money runs out. Assets: case.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">6 / 15</span></footer>
+  <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. A survivor plans on 70%, and the MPF buys annuities. The same assets, decided now: 83%, not 62%. [Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62.]</aside>
 </section>
 </main>
 </body>

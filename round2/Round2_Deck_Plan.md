@@ -227,7 +227,14 @@ window, so the two pictures still match.
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 6 · Call 2: decide now, not at {{own_sale_age}} (Fahtai; 0:45)
-**Option B, "Put to work"** (Pete, 20 Oct), now set against their own way. Prototypes v1 to v6 in `round2/looks/`.
+**Built 22 Oct** (prototype `looks/src/08_call2_v9.html`, render `looks/build/slide-14.png`; 172 words). Title: "Decide
+now, not at {{own_sale_age}}: the home pays from 65, the business sells in stages, and the odds rise from {{own_89}} to
+{{ladder_5_89}}". Option B, "Put to work" (Pete, 20 Oct), set against their own way; v1 to v6 in `round2/looks/`.
+Rows run across the first two columns (each asset beside its decision), ranked by what moves the odds: the flat (the
+tallest row, {{rmp_income}} the one large number), the business, the budget, the MPF. **The business row says "their
+own way sells it too"**: the model sells it for the same HK$3.0M in both ways, so the rise from {{own_89}} comes from
+the home paying from 65 instead of being sold at {{own_sale_age}}, the survivor budget and the annuities. The third
+column is two bars on one scale: their own way (grey) and decided now (the accent, 72 px).
 - **"What they own…"**: the four things the plan puts to work, grey bars to scale (case): the flat HK$11.5M, the
   business HK$5.0M, the MPF HK$1.7M, and the budget HK$780K a year.
 - **"…what each becomes…"**, attached row by row: the flat: {{rmp_income}} a year for life by reverse mortgage from
