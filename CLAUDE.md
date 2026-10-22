@@ -108,7 +108,11 @@ Reasons are in `document/manuscript.md`. These are content decisions; how the de
 - **The talk:** `round2/Talk_Outline.md`: the arc, each slide's point, speaker and seconds, and the full draft script,
   measured at 1,200 spoken words (9:08 at 135 words a minute). Keep it at or under 1,200; recount after any change.
 - **Build:** `.venv/Scripts/python.exe round2/make.py [--pages 3,4] [--builds]` assembles `round2/src/`, fills the
-  numbers and renders to `round2/build/` (PNGs per slide; `--builds` writes one frame per spoken step for presenting).
+  numbers and writes the slides as `round2/Axis.html` and the script as a separate file, `round2/Axis_Script.html`
+  (and `.md`), from each slide's speaker notes, with every slide's spoken words counted and the total timed; then
+  renders to `round2/build/` (PNGs per slide; `--builds` writes one frame per spoken step for presenting). Edit the
+  words in the notes (`<aside class="notes">`: the spoken words, then "[Notes: ...]"), never in the script file.
+  Prototypes in `round2/looks/` are built with `round2/looks/make_looks.py --pages N`.
   Look options: `round2/looks/make_looks.py`.
 - **Skills:** `slide-design` for slides, `deck-plan` for the storyline. Render and look at every changed slide before
   reporting; judge flow on a contact sheet of the whole deck, not slide by slide.

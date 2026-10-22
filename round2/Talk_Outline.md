@@ -99,121 +99,13 @@ talk.
   investment (8), ESG (9), digital assets (9), protection (5), property and legacy (6, 12), roadmap (11), risk and
   compliance (10).
 
-## Draft script
-Plain spoken English; numbers are the model's placeholders. Each speaker may reword, keeping the numbers and the length.
-Reasons the talk leaves out go into that slide's speaker notes (listed after the script).
+## The script
+The script now lives in each slide's speaker notes (`round2/src/*.html`, `<aside class="notes">`: the
+spoken words, then "[Notes: ...]" for background), so the slides and the words cannot drift apart. `make.py` writes
+it, numbers filled, to `round2/Axis_Script.html` and `round2/Axis_Script.md`, with each slide's spoken words and the
+total timed. Edit the words there, in the notes; keep the total at or under 1,200 spoken words.
 
-**1 · Cover** (0:20)
-PETE: Hello, we're Team Axis, and this is Built to Last, our plan for the Wong family. I'm Pete, the lead adviser.
-FAHTAI: I'm Fahtai: retirement. WIN: I'm Win: investments. LOOKBUA: And I'm Lookbua: protection and risk.
-
-**2 · On paper, secure** (0:30)
-PETE: Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs her own
-business and wants their money to reflect her values. Ryan, 24, holds crypto. Chloe, 16,
-starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
-
-**3 · Their own way** (0:45)
-PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the
-flat, and sell it only if they must. Across 10,000 simulated markets, in {{own_sold_pct}} they must. Carmen, at about
-{{own_sale_age}} and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just
-{{own_fut_buys_min}} to {{own_fut_buys_max}} years, and the wealth meant for their children pays the bills: of HK$24.4
-million, just {{own_legacy_sold}} is left to them.
-
-**4 · Our answer** (0:45)
-PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life.
-Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of
-their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts
-to Carmen's 89 in {{own_89}}; the five calls lift it to {{switch_89}}, and the home becomes
-their choice, not their last resort. Lookbua.
-
-**5 · Call 1: insure the income** (0:40)
-LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't
-work, nothing would replace their pay. So disability cover comes first, 65% of pay until they retire; then critical
-illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because
-the need ends at retirement. And in month one: wills, a guardian for Chloe, and powers of attorney. Fahtai.
-
-**6 · Call 2: decide now, not at {{own_sale_age}}** (0:45)
-FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is
-when, and on whose terms. The business is sold in stages to her co-founder and managers; we count only HK$3 million of
-its five. At 65 they choose: stay, with a reverse mortgage paying {{rmp_income}} a year for life, or downsize. A
-survivor plans on 70%, and the MPF buys annuities. The same assets, decided now: {{ladder_5_89}}, not
-{{own_89}}.
-
-**7 · Call 3: fix the cost the budget ignores** (0:40)
-FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At
-Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to {{switch_89}}.
-From 2039, simple spending rules protect the bad years, and essentials are never cut. Remember the ten futures? Now
-all ten reach Carmen's 89, and not one sells the home. Win.
-
-**8 · Call 4: a plan for each person** (0:50)
-WIN: Thanks, Fahtai. Call four: one family policy, a plan for each person. Today HK$2.5 million sits idle in cash,
-and most of their shares are in funds charging 1.5% a year. We give every dollar a job: a
-twelve-month reserve; HK$2.57 million for Chloe's degree, funded today wherever she goes; and a portfolio each, Adrian
-40% in shares, Carmen 60%. Ryan saves 30% of his pay in a plan of his own. Index funds alone save HK$45K a year.
-
-**9 · Call 5: values and innovation, with guardrails** (0:45)
-WIN: Call five: values and innovation, with guardrails. Carmen asked for 20 to 25% in ESG. We reach 25%, up from 11%,
-in SFC-listed funds that must pass two ratings. Crypto isn't yes or no: it's size and form for each person. Adrian
-holds none; Carmen up to 2%, through an ETF; Ryan keeps his HK$500K but adds nothing new, so its share falls from 74% of
-his wealth to 20% by 35. Lookbua.
-
-**10 · Will it hold?** (0:30)
-LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60, with no severance. The four
-decisions alone last in {{adrian60_89}} of futures; the full plan, {{rec_adrian60_89}}. Years of low returns, or high
-inflation with dearer medical care: {{rec_stressB_89}} or better. And if Carmen lives to 95: {{guardswitch_95}}.
-
-**11 · What happens when** (0:30)
-LOOKBUA: It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each
-within six, a first family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business
-from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
-
-**12 · What passes on** (0:25)
-PETE: The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe
-{{plan_legacy_sold}}, not {{own_legacy_sold}}, passed on in stages at 25, 30 and 35, with a scholarship in sustainable
-design: Carmen's mission, Chloe's interest.
-
-**13 · Wealth Management Connect** (0:40)
-PETE: What does this mean for us? Since 2021, Wealth Management Connect has let residents of Hong Kong,
-Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong
-Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear,
-suitable answer when asked. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong
-Kong. If Adrian's work moves across the boundary, it becomes the right tool.
-
-**14 · Who we want to become** (1:10)
-PETE: In five years I want to be an investment specialist in a Hong Kong bank's wealth team, matching each Connect
-client's portfolio to their risk, with the currency risk made clear. Fitting the Wongs' three risk profiles into one
-plan was that job in miniature. FAHTAI: I want to build the risk models that wealth managers across Asia use for
-families. This plan taught me that a model's job is to price the trade-offs between people. Next is the FRM, with
-Connect funds as my first case. WIN: I want to be an investment strategist for family clients across Asia-Pacific,
-fitting each portfolio to its owner on either side of the boundary. LOOKBUA: I plan further study in systemic risk.
-The Connect links two markets with different rules, so a shock in one can reach families in the other.
-Stress-testing this plan taught me that every risk needs a named defence.
-*(Win's line is a draft for Win to confirm; Lookbua's needs his OK.)*
-
-**15 · Close** (0:15)
-PETE: Protected first, income for life, and a place for every voice. The home stays their choice, and the next
-generation keeps its inheritance: built to last. We are Team Axis. ALL: Thank you.
-
-### Moved from the talk to the speaker notes
-- 3: "investments alone", the proposal's measure: {{ladder_1_89}} (also in the footer). "Usually on her own": on the
-  case's life expectancy, Adrian dies at 84, when Carmen is 79; she is alone in {{own_alone_pct}} of the forced sales. Their own way keeps the
-  family's budget after a death and the Flexi plan for life, and buys the same HK$7M flat as our downsizing option.
-- 5: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought
-  before group cover ends at 65 and 62.
-- 6: the two annuities ({{annuity_adrian}} and {{annuity_carmen}}, single life); the annuity is last on purpose,
-  insurance for the worst markets. More shares instead? 80% in shares only reaches {{alone_eq80_89}}, with a worst year
-  of {{alone_eq80_worst}}, and breaks Adrian's low-to-medium profile. The 2039 floor is {{floor_2039_pct}} of essential
-  bills; after Adrian's death it is {{floor_2057_pct}} (2057), so say "by 2039", never "for life". Why the same assets
-  do better decided at 65: the money released has nearly twenty years to grow, and the home pays before the premiums
-  peak; at {{own_sale_age}}, downsizing releases less in today's money and buys only a few years.
-- 7: the guardrail details (no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of
-  the budget); the worst one in twenty.
-- 8: Adrian's Treasuries maturing 2037–41; Carmen's portfolio led by the ESG core; the parents' match for Ryan.
-- 10: we compare decisions in the same markets, we don't forecast them (also in the footer).
-- 12: the plan leaves more than their own way in {{plan_legacy_more_pct}} of those futures; part of the gap is our
-  advice on the survivor budget and the medical review.
-
-### Hard questions this framing invites
+## Hard questions this framing invites
 - **"Couldn't they take a reverse mortgage at {{own_sale_age}} instead of selling?"** Yes, and they could stay. That is our plan done
   late: fewer years of income from the home, and the loan still eats the inheritance. Not yet measured: it needs
   HKMC's payout rates for borrowers in their 80s (Fahtai to source). Until then, the talk says "sold" (what we measured)

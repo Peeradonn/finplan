@@ -13,8 +13,9 @@ only; no university name, logo, campus or account anywhere, including file metad
 `document/manuscript.md`); model numbers `figures/numbers.json` and `figures/figure-data.md`; the case
 `Primary Info/Award2026Case20260919.pdf`; rules `Primary Info/2026-rules.md`.
 
-**How to use it:** build each slide from its section in §5, with its script from `Talk_Outline.md`. Change the plan
-first, then the slide. Every model number on a slide is a `{{key}}` from `figures/numbers.json` (or a series from
+**How to use it:** build each slide from its section in §5. The deck is `round2/src/` (v9, set up 22 Oct: slides 1,
+3, 6 and 7 built, the rest titled placeholders); `make.py` writes the slides as `Axis.html` and the script, from each
+slide's speaker notes, as a separate file, `Axis_Script.html` (Pete, 22 Oct). Change the plan first, then the slide. Every model number on a slide is a `{{key}}` from `figures/numbers.json` (or a series from
 `figure-data.md` via `series.py`), so the deck and the written case cannot disagree. Commit and push after each major
 step (CLAUDE.md).
 
@@ -163,7 +164,7 @@ worked); everything else is redrawn in the system.
 
 ## 5. Slide by slide
 Each spec: the point; the panels in order (headings reading as one sentence); the evidence and its keys; the bar.
-The scripts are in `Talk_Outline.md`; each goes into its slide's speaker notes when the slide is built.
+The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` writes them to `Axis_Script.html`.
 
 ### 1 · Cover (Pete, all; 0:20)
 "Built to Last", the promise line, the team; an illustration of the family (image set, §7). No numbers.
