@@ -403,8 +403,11 @@ p,li,span,b{text-wrap:pretty}
 /* ==================== v9 slides 3 and 7 (22 Oct): the ten futures, their own way, then with the plan ====================
    One picture, drawn twice in the same place: slide 3 (their own way) marks where the flat is sold and where the money
    still runs out; slide 7 (the plan) redraws ten typical futures, all reaching 89, with slide 3's sale marks left as
-   hollow ghosts. x = (year - 2026) / 40, so a mark's position is the model's own year (own{i}_*, plan{i}_*). The accent
-   is the title's claim: on 3 the sale and what it leaves the children; on 7 the futures that reach 89. */
+   hollow ghosts. The model gives x = (year - 2026) / 40; the plot shows only the window 2051-2066 (Carmen 74 to 89,
+   Pete 22 Oct: "the thing we're focusing on is just the 2056-2066 part"), so x is re-mapped with --y0 (years from 2026
+   to the window's start) and --yn (the window's length); the lines fade in from the left, and make_looks.py fails if
+   any event falls before the window. The accent is the title's claim: on 3 the sale and what it leaves the children;
+   on 7 the futures that reach 89. */
 .c9{--text:"Inter",Arial,sans-serif}
 .c9 .pn>h3{font-size:20px;margin-bottom:0}
 .c9 .bar{font-size:20px;margin-top:18px}
@@ -412,26 +415,27 @@ p,li,span,b{text-wrap:pretty}
 .c9 .lede{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:8px}
 .c9 .body{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0;padding-top:16px}
 /* the plot: a band for Carmen's years alone, the goal line at 89, ten rows, the sale bracket, the axis */
-.f9{position:relative;margin-right:28px;padding-top:26px}
-.f9 .alone{position:absolute;top:0;bottom:0;left:75%;right:0;background:var(--mist)}
+.f9{--y0:25;--yn:15;position:relative;margin-right:28px;padding-top:26px}
+.f9 .alone{position:absolute;top:0;bottom:0;left:calc((30 - var(--y0)) / var(--yn) * 100%);right:0;background:var(--mist)}
+.f9 .brk>span.from{left:0;transform:none;font-weight:400;color:var(--slate)}   /* the crop, said where the axis starts */
 .f9 .alone span{position:absolute;top:7px;left:10px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
 .f9 .goal{position:absolute;top:0;bottom:0;left:100%;border-left:1.5px dashed var(--ink)}
 .f9 .goal span{position:absolute;top:7px;right:8px;font:600 14px/1 var(--text);white-space:nowrap}
 .f9 .rows{position:relative;display:flex;flex-direction:column;gap:7px;padding:8px 0 10px}
 .f9r{position:relative;height:17px}
-.f9r .ln{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:var(--w);background:var(--grey)}
-.f9r .end{position:absolute;top:50%;left:var(--w);width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2}
+.f9r .ln{position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;width:calc((var(--w) * 40 - var(--y0) * 100%) / var(--yn));background:linear-gradient(to right,rgba(160,160,160,0),var(--grey) 56px)}
+.f9r .end{position:absolute;top:50%;left:calc((var(--w) * 40 - var(--y0) * 100%) / var(--yn));width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2}
 .f9r .end .ic{width:12px;height:12px;stroke-width:3.2}
 .f9r.short .end{background:var(--ink);color:#fff}
 .f9r.short .end .v,.f9r.sold .end .x,.f9r.kept .end .x,.f9r.lasts .end .x{display:none}
 .f9r.sold .end,.f9r.kept .end,.f9r.lasts .end{background:var(--paper);border:2px solid var(--ink);color:var(--ink)}
-.f9r .hs{position:absolute;top:50%;left:var(--s);width:26px;height:26px;margin:-13px 0 0 -13px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;z-index:3}
+.f9r .hs{position:absolute;top:50%;left:calc((var(--s) * 40 - var(--y0) * 100%) / var(--yn));width:26px;height:26px;margin:-13px 0 0 -13px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;z-index:3}
 .f9r .hs .ic{width:16px;height:16px;stroke-width:2.4}
 .f9r.kept .hs{display:none}
 /* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
-.f9.won .f9r .ln{background:var(--accent)}
+.f9.won .f9r .ln{background:linear-gradient(to right,rgba(29,78,216,0),var(--accent) 56px)}
 .f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}
-.f9r .gh{position:absolute;top:50%;left:var(--s);width:26px;height:26px;margin:-13px 0 0 -13px;border:1.5px dashed var(--grey);background:var(--paper);color:var(--grey);display:flex;align-items:center;justify-content:center;z-index:3}
+.f9r .gh{position:absolute;top:50%;left:calc((var(--s) * 40 - var(--y0) * 100%) / var(--yn));width:26px;height:26px;margin:-13px 0 0 -13px;border:1.5px dashed var(--grey);background:var(--paper);color:var(--grey);display:flex;align-items:center;justify-content:center;z-index:3}
 .f9r .gh .ic{width:15px;height:15px;stroke-width:2}
 .f9r.g-kept .gh{display:none}
 /* the bracket under the sale marks, its label attached */

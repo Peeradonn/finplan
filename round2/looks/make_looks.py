@@ -9,6 +9,12 @@ sys.path.insert(0, os.path.dirname(HERE))
 import fill  # noqa: E402
 import series  # noqa: E402
 pages = sys.argv[sys.argv.index("--pages") + 1] if "--pages" in sys.argv else "10,11"
+# slides 3 and 7 draw the ten futures only from 2051 (Carmen 74): stop if any sale or run-out falls before that window
+import json  # noqa: E402
+N = json.load(open(os.path.join(ROOT, "figures", "numbers.json"), encoding="utf-8"))
+early = {k: v for k, v in N.items() if (k.startswith(("own", "plan")) and k.endswith(("_sale", "_end"))) and v and int(v) < 2051}
+if early:
+    sys.exit(f"ten-futures window starts in 2051, but these events are earlier: {early}")
 raw, out = os.path.join(HERE, "_raw.html"), os.path.join(HERE, "Looks.html")
 subprocess.run([sys.executable, os.path.join(SKILL, "build.py"), HERE, "--out", raw], check=True)
 text = fill.fill_text(series.fill(open(raw, encoding="utf-8").read()))

@@ -178,7 +178,10 @@ The scripts are in `Talk_Outline.md`; each goes into its slide's speaker notes w
 ### 3 · Their own way (Pete; 0:40)
 **Built 22 Oct** (prototype `looks/src/07_s3_s7.html`, render `looks/build/slide-12.png`; 134 words). Kicker "Will it
 last?", the question slide 2 leaves open. Panels 8 + 4: "Ten typical futures, managed their own way…" / "…and leave
-Ryan and Chloe little".
+Ryan and Chloe little". **The time axis is cropped to 2051–2066** (Carmen 74 to 89; Pete, 22 Oct: three quarters of
+each line was 2026–2055, where nothing happens): the lines fade in from the left, "Each line starts in 2026" sits at
+the axis start, and `make_looks.py` stops the build if any sale or run-out falls before 2051. Slide 7 uses the same
+window, so the two pictures still match.
 - **Lede:** what a sensible family would do: the business sold when Carmen retires; the flat kept, and sold only when
   the money runs out (no plan, no adviser).
 - **The picture: the ten futures under their own way** (`own{i}_*`), one line each from 2026 to Carmen's 89, ranked
