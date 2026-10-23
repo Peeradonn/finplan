@@ -365,6 +365,17 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Built 23 Oct** (`src/05_s08-15.html`; about 225 words, the densest slide: it carries two of the case title's four
+topics). Two columns, so it doesn't repeat slide 8's rows, in one language: grey today, the wine family the plan, crimson
+only on 25% (the one number the title names). Left: "Carmen's values: ESG from 11% to 25%…": two bars on one scale over
+the family's 20–25% goal band, the plan bar split into its three funds and labelled on the data; "like for like" (same
+risk, no extra return) under the axis, because a practitioner asks that first. Right: "…and Ryan's conviction: crypto
+sized for each person": one row a person on one scale, in rising size (Adrian none, Chloe none, Carmen up to 2%, Ryan
+up to 74% today and 20% by 35, no new money). The foot, level across both: "How a fund gets in" (raters agree about 0.54
+on ESG against 0.99 on credit, so two ratings plus ICMA) and "How it is held" (bought only through HKEX ETFs or
+SFC-licensed platforms; no lending or leverage; self-custody only with a key-recovery plan). Builds in speaking order:
+ESG → its test → Adrian, Chloe, Carmen → Ryan, the custody rules, the trade-off and the bar. Product names and the
+downgrade rule are in the notes.
 - **"ESG from 11% to 25%…"**: a progress bar into the family's 20 to 25% goal band, of HK$10.47M; the three holdings
   (BOC-Prudential MSCI World ESG Index Fund; Allianz Green Bond; Sun Life MPF Global Low Carbon Index Fund).
 - **"…tested, not trusted…"**: ESG ratings from different agencies agree far less than credit ratings (correlation

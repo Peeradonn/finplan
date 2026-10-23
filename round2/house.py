@@ -21,7 +21,7 @@ NAMES = {"1": ("1", "Insure the income"), "2": ("2", "Home and business"), "3": 
 FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#B99A9C", "#A69E9C"),
         "all": ("#7D1D2A", "none", "#fff")}
 # the small title houses, in slide 4's line style (23 Oct): this call solid crimson, built parts rose, the rest dashed
-LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#F1DADD", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#B99A9C", "dash")}
+LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#E8DEDC", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#B99A9C", "dash")}
 
 
 def house(state=None, w=72, labels=False, cls="house", steps=None):

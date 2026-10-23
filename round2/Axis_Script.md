@@ -67,6 +67,8 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 
 **Win:** Call five: values and innovation, with guardrails. Carmen asked for 20 to 25% in ESG. We reach 25%, up from 11%, in SFC-listed funds that must pass two ratings. Crypto isn't yes or no, it's sized per person. Adrian holds none; Carmen up to 2%, through an ETF; Ryan keeps his HK$500K but adds nothing new, so its share falls from 74% of his wealth to 20% by 35. Lookbua.
 
+> Notes: The 25% replaces like for like (the global equity core, part of the bonds, half of each MPF), so each parent's risk stays where Call 4 set it; no return premium is assumed. Two ratings because ESG raters agree far less than credit raters (correlation about 0.54 against 0.99); a downgrade means the fund is replaced within three months. If the MPF move can't be made, the family still holds about 20%. Ryan at 30: about 32%; a rally more than 10 points above his path is trimmed back. A 70% fall costs Carmen about HK$29K at her cap. The three funds (written case Figure 16): BOC-Prudential MSCI World ESG Index Fund HK$1.49M, Sun Life MPF Global Low Carbon Index Fund HK$0.84M, Allianz Green Bond HK$0.31M.
+
 ## 10 · Tested against the worst: even if Adrian loses his job at 60, the plan holds
 *Will it hold? · Lookbua · 0:30 · 64 spoken words (≈28 s at 135)*
 
