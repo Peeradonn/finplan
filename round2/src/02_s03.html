@@ -8,9 +8,9 @@
     <h2>Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills</h2>
   </header>
   <div class="panels">
-    <div class="pn" style="grid-column:span 8">
+    <div class="pn x3s" style="grid-column:span 7">
       <h3>One typical future, managed their own way…</h3>
-      <p class="lede">Our written case measured investments alone: {{ladder_1_89}}. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
+      <p class="lede">Our written case measured investments alone: {{ladder_1_89}}. <b>The fairer test is their own way.</b></p>
       <div class="body">
         <div>
           <div class="sx">
@@ -21,30 +21,29 @@
             <span class="gy" style="top:[[story_g10_t]]"><span>HK$10M</span></span><span class="gy" style="top:[[story_g20_t]]"><span>HK$20M</span></span><span class="gy" style="top:[[story_g30_t]]"><span>HK$30M</span></span>
             <p class="al" style="left:14px;top:[[story_own_savlbl_t]];transform:translateY(-50%)">Savings, investments and MPF</p>
             <p class="al h" style="left:14px;bottom:12px">The home<small>since 2015, where Ryan and Chloe grew up</small></p>
-            <p class="ev" data-b="2" style="left:[[story_sale_l]];top:calc([[story_sale_t]] - 44px)"><span>Savings run out: the flat is sold,<br>Carmen {{story_sale_age}}</span></p>
-            <p class="ev out" data-b="3" style="left:[[story_out_l]];top:0"><span>Out again<br>at {{story_out_age}}</span></p>
+            <span class="ring" data-b="2" style="left:[[story_sale_l]];top:[[story_sale_t]];width:46px;height:46px"></span><p class="ev" data-b="2" style="left:[[story_sale_l]];top:calc([[story_sale_t]] - 44px)"><span><i class="nb">1</i> Savings run out: the flat is sold,<br>Carmen {{story_sale_age}}</span></p>
+            <p class="ev out" data-b="3" style="left:[[story_out_l]];top:0"><span><i class="nb">2</i> Out again<br>at {{story_out_age}}</span></p>
           </div>
           <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79 · Adrian dies</i></span><span style="left:100%">2066<i>89</i></span></div>
+          <svg class="chev" data-b="4" viewBox="0 0 600 18" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 600,0 300,18" fill="#E9E3E1"/></svg>
+          <p class="tk9" data-b="4">Their savings run out first; <b>the flat they raised Ryan and Chloe in carries Carmen only to {{story_out_age}}</b>, and <em>what was meant for the children pays the bills.</em></p>
         </div>
       </div>
     </div>
-    <div class="pn" style="grid-column:span 4">
+    <div class="pn" style="grid-column:span 5">
       <h3>…and across 10,000 futures</h3>
       <p class="lede">The same test in every simulated market (measured)</p>
       <div class="body">
-        <div class="x3f">
-          <div data-b="2"><strong>{{own_sold_pct}}</strong><p><b>sell the flat</b> when the money runs out: Carmen about {{own_sale_age}}, usually on her own</p></div>
-          <div data-b="3"><strong>{{own_89}}</strong><p><b>the money lasts</b> to Carmen's 89, even after the sale</p></div>
-          <div class="on" data-b="4"><p><b>Left to Ryan and Chloe</b> where the flat is sold</p><strong>{{own_legacy_sold}}</strong><p>of HK$24.4M today; median, today's money</p></div>
-          <div class="why" data-b="4"><h4>Why it runs out</h4><ul>
-            <li><b>61%</b><span>of their wealth is the home and the business, which pay nothing until sold</span></li>
-            <li><b>HK$375K</b><span>a year: medical premiums outside their budget, kept for life</span></li>
-          </ul></div>
+        <div class="x3r">
+          <div class="row" data-b="2"><span class="ic9"><svg class="ic"><use href="#i-house"/></svg></span><strong>{{own_sold_pct}}</strong><p><b>sell the flat</b> when the money runs out, Carmen about {{own_sale_age}}, usually alone</p></div>
+          <div class="row" data-b="3"><span class="ic9"><svg class="ic"><use href="#i-hourglass"/></svg></span><strong>{{own_89}}</strong><p><b>see the money last</b> to Carmen's 89, even after the sale</p></div>
+          <div class="row on" data-b="4"><span class="ic9"><svg class="ic"><use href="#i-gift"/></svg></span><strong>{{own_legacy_sold}}</strong><p><b>left to Ryan and Chloe</b> where the flat is sold, of HK$24.4M today</p></div>
+          <p class="tk9 l" data-b="4"><svg class="ic"><use href="#i-lightbulb"/></svg><span><b>Why:</b> 61% of their wealth is a home and a business that pay nothing until sold, and <em>HK$375K a year</em> of medical premiums sit outside their budget.</span></p>
         </div>
       </div>
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi plan for life, the flat swapped for a HK$7M one when the money runs out. One typical future of 10,000 simulated markets (the median sale year, then the median inheritance): an illustration in today's money, not a forecast; equities 6% a year, inflation 2.5%, as in the written case.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? Our written case measured investments alone: {{ladder_1_89}}. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in {{own_sold_pct}} they must. In a typical one, Carmen, at {{story_sale_age}} and on her own, sells the home where they raised Ryan and Chloe. By {{story_out_age}} the money has run out again, and the wealth meant for their children pays the bills: of HK$24.4 million, just {{own_legacy_sold}} is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in {{own_alone_pct}} of the forced sales. Even after the sale, the money lasts to 89 in only {{own_89}}. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold; the flat sold only when the money runs out. One typical future of 10,000 simulated markets, in today's money: an illustration, not a forecast.</p><nav class="nv"><b>The problem</b><span>The answer</span><span>The five calls</span><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: {{ladder_1_89}}. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in {{own_sold_pct}} they must. In a typical one, Carmen, at {{story_sale_age}} and on her own, sells the home where they raised Ryan and Chloe. By {{story_out_age}} the money has run out again, and the wealth meant for their children pays the bills: of HK$24.4 million, just {{own_legacy_sold}} is left to them. [Notes: Their own way: the business sold when Carmen retires; the flat kept and swapped for a HK$7M one only when the money runs out; the full budget after a death; the Flexi plan for life; equities 6% a year, inflation 2.5%, as in the written case. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in {{own_alone_pct}} of the forced sales. Even after the sale, the money lasts to 89 in only {{own_89}}. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>

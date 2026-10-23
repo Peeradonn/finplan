@@ -125,8 +125,18 @@ different grid on every slide.
   obvious alternative in the model and draw it beside the call (Call 2: their own way, `own_*`); where it can't, a
   ledger with one figure a row. Each panel opens with its hero number or object;
 - one **conclusion bar**: the slide's point in one sentence, worded to lead into the next slide;
-- **one navigation device: the kicker** (the section, with the call's number); the tracker was dropped (Pete, 23 Oct:
-  three signals for one fact). Footer: the source and the page number. Nothing else.
+- **the hierarchy inside a panel** (23 Oct, from Pete's own decks and Nordea's; Pete: "missing a lot of icons", "so
+  many things to focus on", "a document put into a powerpoint slide format"): heading (Inter bold 19 px on an ink rule)
+  → a one-line lede (15 px, its key phrase bold) → the content → a **takeaway** (a dashed box: the key phrase bold, the
+  punch in crimson italic; under a grey chevron where it follows from the picture, never under a cause). Charts carry
+  their annotation on the data: a dashed ring on the moment that matters, numbered crimson discs on events. Each point
+  in a list gets a Lucide **icon** in a circle, neutral, except the focal row's (crimson on tint). The focal number is
+  the largest type in the body and the only crimson number;
+- **navigation:** the kicker (the section) and a quiet **section tracker in the footer** (The problem · The answer ·
+  The five calls · Will it hold · What next · Us; the current one in ink). **Back on trial, pending Pete:** it was
+  dropped on 23 Oct on my recommendation (titles needed the width; three signals for one fact), but both winning
+  references (Nordea's, Pete's Banyan) carry one, and in the footer it costs the titles nothing. Footer: the source
+  (two lines at most; the detail goes to the notes), the tracker, the page number.
 - Not used (v7 lessons): a second tracker, question pills, "slide 5's…" references, tags inside sentences.
 
 **Grid:** 1280 × 720; margins 48 px left and right, 34 px top; 12 columns, 24 px gutters. Panels are 4 + 4 + 4,
@@ -145,8 +155,8 @@ fewer facts.
 **Hierarchy inside a panel:** rank items by what the evidence says matters (the biggest contributions lead; small ones
 go to a note). Never list unlike things (a cost, a safety margin, a legacy) as equal rows.
 
-**Type (23 Oct):** EB Garamond for the title, panel headings and big numbers; **Inter** for everything else, bold
-labels included. **Scale:** title 35 · panel heading 22 · bold label and body 16 (Inter) · small 14 (Inter) · tag and
+**Type (23 Oct):** EB Garamond for the title and big numbers; **Inter** for everything else, panel headings (bold 19,
+from Pete's decks) and bold labels included. **Scale:** title 35 · panel heading 19 · bold label and body 16 (Inter) · small 14 (Inter) · tag and
 source 12 · numbers 40 and 72 (76 on slide 2's net worth). Nothing meant to be read is under 14 px.
 
 **The slides are scored on their own** (Pete, 23 Oct: the video and the slides are scored independently). So each
@@ -196,21 +206,26 @@ below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cas
 
 ### 3 · Their own way (Pete; 0:45)
 **Rebuilt 23 Oct: one typical future, told with the money** (Pete: the ten lines didn't say what the house meant or what
-the other lines were, and gave little context; the flat placeholder took a quarter of the slide for one word). Panels
-8 + 4: "One typical future, managed their own way…" / "…and across 10,000 futures".
-- **Lede:** the bridge from the written case: "Our written case measured investments alone: {{ladder_1_89}}. The fairer
-  test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out".
+the other lines were, and gave little context; the flat placeholder took a quarter of the slide for one word).
+**23 Oct, second pass: the prototype of the presentation system** (§4; Pete: the right side had "so many things to focus
+on"; make the chart smaller and say under it what it means, as in his Banyan deck). Panels 7 + 5: "One typical future,
+managed their own way…" / "…and across 10,000 futures".
+- **Lede:** one line, the bridge from the written case: "Our written case measured investments alone: {{ladder_1_89}}.
+  **The fairer test is their own way.**" What their own way means goes to the footer and the notes.
 - **The picture:** one future from the model (`story_*`; the rule: of the futures where the flat is sold and the money
   still runs out, the median sale year, then the inheritance nearest the median), as stacked areas in today's money,
   2026 to 89: the home (dark, labelled "since 2015, where Ryan and Chloe grew up") under savings, investments and MPF
-  (light). In the accent: "Savings run out: the flat is sold, Carmen {{story_sale_age}}" and "Out again at
-  {{story_out_age}}". "Carmen on her own" over 2056 to 2066. Same scale as slide 7 (`series.py`).
-- **Right:** the 10,000-future facts, each number centred on its label: {{own_sold_pct}} sell the flat (about
-  {{own_sale_age}}, usually on her own); {{own_89}} the money lasts to 89 even after the sale; {{own_legacy_sold}} left to
-  Ryan and Chloe (median, the accent, 72 px); then **"Why it runs out"** (added 23 Oct: the panel was empty, and the slide
-  showed the result but not the cause): 61% of their wealth is the home and the business, which pay nothing until sold;
-  HK$375K a year of medical premiums outside the budget, kept for life. The two causes Calls 2 and 3 fix.
-- Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left and the bar.
+  (light). A dashed ring on the sale; numbered callouts ① "Savings run out: the flat is sold, Carmen
+  {{story_sale_age}}" and ② "Out again at {{story_out_age}}". Same scale as slide 7 (`series.py`).
+- **Under it, the takeaway** (chevron, dashed box): "Their savings run out first; **the flat they raised Ryan and Chloe
+  in carries Carmen only to {{story_out_age}}**, and *what was meant for the children pays the bills.*"
+- **Right:** three icon rows from the 10,000 futures: {{own_sold_pct}} sell the flat (Carmen about {{own_sale_age}},
+  usually alone); {{own_89}} see the money last to 89, even after the sale; then the focal row, stacked, the only
+  crimson: {{own_legacy_sold}} (46 px) left to Ryan and Chloe where the flat is sold, of HK$24.4M today. On the panel's
+  floor, level with the left takeaway, **"Why:"** (lightbulb, no chevron: it is a cause): 61% of their wealth is a home
+  and a business that pay nothing until sold, and HK$375K a year of medical premiums sit outside their budget (both
+  typed in the written case). The two causes Calls 2 and 3 fix.
+- Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left, both takeaways and the bar.
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
 ### 4 · Our answer (Pete; 0:45)
@@ -403,7 +418,7 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
   complete. The lifeline ruler is gone; time stays where it is data (the axes of slides 2, 3, 7, 11).
 - **Signature:** a short crimson mark before every kicker (the call's numbered square on call slides); the cover's
   crimson bar; the family on a wine panel (cover, slide 2).
-- **Not used:** gridlines across chart areas; a section tracker (the kicker navigates); grey-only charts; blue.
+- **Not used:** gridlines across chart areas; grey-only charts; blue. (The footer tracker is back on trial, §4.)
 History: look B (Swiss, cobalt, Archivo Narrow + Inter) chosen 20 Oct; crimson 23 Oct; this identity 23 Oct.
 
 ## 7. Images (one illustrated set)

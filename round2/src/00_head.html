@@ -294,6 +294,7 @@ p,li,span,b{text-wrap:pretty}
    slides (series.py). Slide 3 marks the forced sale and the second run-out in the accent; slide 7 redraws the same
    markets with the plan and keeps their own way as a dashed line. The 10,000-future facts sit beside the picture. */
 .sx{position:relative;height:262px;margin:30px 0 0 56px}
+.x3s .sx{height:206px;margin-top:22px}   /* slide 3: a smaller chart, so the takeaway fits under it */
 .sx::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:1.5px solid var(--ink);z-index:4}   /* the value axis */
 .sx svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .sx .gy{position:absolute;left:0;width:0;z-index:4}   /* ticks and labels only: no gridlines across the areas (Pete, 23 Oct) */
@@ -338,8 +339,9 @@ p,li,span,b{text-wrap:pretty}
    first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
    passes on. Each call slide carries a small house beside its title: built parts in wine, this call in crimson, the
    rest dashed; slide 4 draws the whole house as the answer, the close shows it complete. */
-.hd.hh{position:relative;padding-left:96px;min-height:72px}
-.hd.hh .house.mini{position:absolute;left:0;top:0}
+.hd.hh{position:static}
+.hd.hh .house.mini{position:absolute;right:48px;top:26px}
+.hd.hh h2{max-width:1000px}
 .x4h{flex:1;display:grid;grid-template-columns:376px 1fr;column-gap:40px;margin-top:20px;min-height:0;align-items:start}
 .x4h .fl{display:grid;grid-template-rows:128px 85px 85px 48px;margin-top:0}   /* the house's floors at w=376 */
 .x4h .fl>div{display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--rule);padding:4px 0}
@@ -493,6 +495,43 @@ p,li,span,b{text-wrap:pretty}
 .b8 .st p{font:400 15px/1.35 var(--text);color:var(--slate)}
 .b8 .st p b{color:var(--ink);font-weight:600}
 .b8 .st strong{font:600 30px/1 var(--head);color:var(--ink);white-space:nowrap}
+
+/* ==================== the presentation system, after Pete's own decks (23 Oct) ====================
+   From Scotch, Banyan and Nordea: (1) every column ends on a takeaway that says what the picture means, the key phrase
+   bold, the punch crimson italic, often under a grey chevron; (2) charts annotated with a dashed ring and numbered
+   callouts; (3) an icon beside each point; (4) a heading hierarchy: bold sans heading on a rule, a regular sub-line,
+   content, takeaway; (5) a quiet section tracker along the footer; the accent bar at the left of the header. */
+.c9::before{content:"";position:absolute;left:0;top:34px;width:7px;height:66px;background:var(--accent)}
+.c9 .pn>h3,.lb .x2 h3{font:700 19px/1.25 var(--text);letter-spacing:-.1px;padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.c9 .lede{font:400 15px/1.4 var(--text);color:var(--slate);margin-top:8px}
+.c9 .lede b{color:var(--ink);font-weight:600}
+.chev{display:block;width:60%;height:18px;margin:10px auto 0}
+.tk9{border:1.5px dashed var(--grey);padding:10px 16px;font:400 16px/1.4 var(--text);text-align:center;background:var(--paper);margin-top:6px}
+.tk9 b{font-weight:700}
+.tk9 em{font-style:italic;font-weight:700;color:var(--accent)}
+.tk9.l{display:flex;align-items:center;gap:12px;text-align:left}
+.tk9.l .ic{flex:none;width:30px;height:30px;color:var(--accent);stroke-width:2;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.ic9{flex:none;width:46px;height:46px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center;color:var(--accent)}
+.ic9 .ic{width:24px;height:24px;stroke-width:2;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.nb{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font:700 13px/1 var(--text);flex:none}
+.ring{position:absolute;border:2px dashed var(--accent);border-radius:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none}
+/* the footer: source left, the section tracker, the page */
+.ft{gap:24px}
+.ft .src{flex:1;max-width:640px}
+.ft .nv{margin-left:auto;display:flex;gap:22px;font:400 13px/1 var(--text);color:var(--grey);white-space:nowrap}
+.ft .nv b{color:var(--ink);font-weight:600}
+/* slide 3, right: three icon rows, one focal number */
+.x3r{flex:1;display:flex;flex-direction:column;gap:12px;padding-top:4px}
+.x3r>.tk9{margin-top:auto}   /* the why sits on the panel's floor, level with the left takeaway (no chevron: it is a cause, not a conclusion) */
+.x3r .row{display:grid;grid-template-columns:46px 112px 1fr;column-gap:12px;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.x3r .row strong{font:600 34px/1 var(--head)}
+.x3r .row.on{grid-template-columns:46px 1fr;row-gap:6px}
+.x3r .row.on .ic9{grid-row:1/3}
+.x3r .row.on strong{font-size:46px;color:var(--accent)}
+.x3r .row.on p{grid-column:2}
+.x3r .row:not(.on) .ic9{background:var(--mist);color:var(--slate)}   /* one focal row: only the inheritance is crimson */
+.x3r .row p{font:400 15px/1.35 var(--text);color:var(--slate)}
+.x3r .row p b{color:var(--ink);font-weight:600}
 
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}
