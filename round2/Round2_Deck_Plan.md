@@ -125,6 +125,9 @@ different grid on every slide.
   obvious alternative in the model and draw it beside the call (Call 2: their own way, `own_*`); where it can't, a
   ledger with one figure a row. Each panel opens with its hero number or object;
 - one **conclusion bar**: the slide's point in one sentence, worded to lead into the next slide;
+- on every call slide (5 to 9), **the trade-off** on a mist strip sitting on the bar (scale icon, "The trade-off", one
+  sentence from the written case's defend paragraphs): what the family gives up for the call (Pete, 23 Oct; a planner
+  says the cost before the client asks, and the judges score "client suitability awareness");
 - **the hierarchy inside a panel** (23 Oct, from Pete's own decks and Nordea's; Pete: "missing a lot of icons", "so
   many things to focus on", "a document put into a powerpoint slide format"): heading (Inter bold 19 px on an ink rule)
   → a one-line lede (15 px, its key phrase bold) → the content. **Taken only where a planner would use it** (Pete,
@@ -221,14 +224,16 @@ managed their own way…" / "…and across 10,000 futures".
   2026 to 89: the home (dark, labelled "since 2015, where Ryan and Chloe grew up") under savings, investments and MPF
   (light). A dashed ring on the sale; numbered callouts ① "Savings run out: the flat is sold, Carmen
   {{story_sale_age}}" and ② "Out again at {{story_out_age}}". Same scale as slide 7 (`series.py`).
-- **Under it, the reading** (dashed box, on the panel's floor): "Their savings run out first. **Selling the flat they
-  raised Ryan and Chloe in carries Carmen only from {{story_sale_age}} to {{story_out_age}}.**" (Not the title again.)
+- **Under it, the reading** (dashed box, under the axis): "In this future, **even selling the home does not carry Carmen
+  to 89.**" (23 Oct: the earlier wording repeated the chart's own labels; the reading says what they mean.) The second
+  label reads "Runs out again at {{story_out_age}}".
 - **Right:** three icon rows from the 10,000 futures: {{own_sold_pct}} sell the flat (Carmen about {{own_sale_age}},
   usually alone); {{own_89}} see the money last to 89, even after the sale; then the focal row, stacked, the only
   crimson: {{own_legacy_sold}} (46 px) left to Ryan and Chloe where the flat is sold, of HK$24.4M today. On the panel's
-  floor, level with the reading, **"Why it runs out"** on mist: 61% of their wealth is a home and a business that pay
-  nothing until sold; HK$375K a year of medical premiums sit outside their budget (both typed in the written case).
-  The two causes Calls 2 and 3 fix.
+  floor, level with the reading, **"Why it runs out"** on mist: 61% of their wealth pays nothing until sold (home and
+  business); HK$375K a year of medical premiums, outside their budget (both typed in the written case). The two causes
+  Calls 2 and 3 fix. **It stays on slide 3** (23 Oct, density check at 205 words): the diagnosis belongs before the
+  answer on slide 4, so the cuts went to repeats instead (about 190 words now, with the chart's labels).
 - Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left, the reading, the why and the bar.
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
@@ -274,6 +279,9 @@ first: now the plan can turn what they own into income": the old bar repeated th
   cover costs many times more, because most of the premium buys savings they already hold. The trade-off: the new
   cover ends at 65 and 62, when the need ends. If a claim is disputed, the 12-month reserve carries them.
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
+- **Trade-off** (23 Oct, written case §8): "Term cover costs a fraction of whole life, but it lapses at 65 and 62;
+  after that, their existing policies and savings carry the risk." It replaces the line "Term, not whole life: the need
+  ends at retirement" (the reason, not the cost).
 
 ### 6 · Call 2: decide now, not at {{own_sale_age}} (Fahtai; 0:45)
 **v10 (23 Oct): a flow, assets into income** (Pete chose it over the rows). The flat ({{rmp_income}} a year for life
@@ -305,6 +313,9 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
 - Answers questions 1, 7 and 8.
 - **Icons** (23 Oct): the three things they own carry a neutral icon each (house, piggy bank, briefcase); the bars
   stay to scale (14 px per HK$1M).
+- **Trade-off** (23 Oct, written case §9 and §3): "Staying in the home leaves {{legacy_down_vs_rmp}} less to Ryan and
+  Chloe than downsizing would, and the annuities can't be undone." The band's "decided at 65, not forced at
+  {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
 **Rebuilt 23 Oct with slide 3.** Title: "Fix the cost the budget ignores: in that same future, the money now lasts to 89
@@ -324,6 +335,8 @@ Notes answer "why does the plan look poorer until about 2056?" (the annuities an
   (the hourglass, as on slide 3); from 2039, spending rules protect the bad years, essentials never cut (a shield).
 - Bar: "Will it last? In almost every future: they retire on time, keep the way they live, and keep the home." (23 Oct:
   answers slide 2's question and slide 3's kicker; "Question 1" pointed to a list no slide shows.)
+- **Trade-off** (23 Oct, written case §3): "The Standard plan has lower limits and fewer private-hospital choices;
+  the spending rules trim typical spending by about {{guard_cost}} a year."
 
 ### 8 · Call 4: one family policy, a plan for each person (Win; 0:50)
 **v10 (23 Oct): blocks with jobs and faces** (Pete chose it over two bars). The parents' HK$7.7M drawn twice on one
@@ -345,6 +358,9 @@ pay); HK$45K a year less in fees.
   points: rebalance); a quarterly review and an annual family meeting.
 - Bar: "Chloe's degree is funded today, and each parent's money fits their own risk."
 - Answers questions 2 and 6.
+- **Trade-off** (23 Oct, written case §4): "Chloe's HK$2.57M stays in deposits and short bonds: safe for 2028, but it
+  earns less than shares would." The connector now reads "The same HK$7.7M, with a job for each part" (it restated the
+  title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
 - **"ESG from 11% to 25%…"**: a progress bar into the family's 20 to 25% goal band, of HK$10.47M; the three holdings
@@ -360,6 +376,8 @@ pay); HK$45K a year less in fees.
   push him to unregulated channels.
 - Bar: "Their values and Ryan's conviction both fit, without risk the family can't carry."
 - Answers questions 3 and 4.
+- **Trade-off** (23 Oct, written case §6 and §7): ESG funds cost a little more in fees and the choice is narrower;
+  Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
 - **"Tested against the worst…"**: paired bars per test, the four decisions alone vs the full plan: Adrian's job ends
