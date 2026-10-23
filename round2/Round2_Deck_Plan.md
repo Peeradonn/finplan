@@ -136,8 +136,8 @@ the failures we've already seen. Each slide's form is chosen for its point.
 
 **Fixed** (constraints, on every slide):
 - 1280 × 720. Nothing meant to be read under 14 px: the judges may watch on Zoom.
-- The identity (§6) and the tokens in `src/00_head.html`. One type scale, so the deck looks like one deck: title 35 ·
-  panel heading 19 Inter bold · body and bold label 16 · small 14 · tag and source 12 · numbers 40 and 72 (76 for
+- The identity (§6) and the tokens in `src/00_head.html`. One type scale in Inter, so the deck looks like one deck: title 33
+  (600, tracked -0.6) · panel heading 19 bold · body and bold label 16 · small 14 · tag and source 12 · numbers 40 and 72 (76 for
   slide 2's net worth). Use these sizes rather than new ones.
 - A 12-column grid with 48 px side margins and 24 px gutters. How a slide divides it is open.
 - Every model number is a `{{key}}` (CLAUDE.md), tagged as a quiet "(measured)", "(case)" or "(sourced)": MEASURED is
@@ -187,6 +187,12 @@ the failures we've already seen. Each slide's form is chosen for its point.
 - **A phrase made vaguer to meet a word count** (23 Oct: slide 4 lost "forced").
 - **Unlike things listed as equal rows** (a cost, a safety margin and a legacy side by side). Rank by what the evidence
   says matters; small items go to a note.
+- **A section with a topic label and a flat list** (Pete, 23 Oct, slide 9's "How a fund gets in": "except from the
+  bold I don't really know what to focus on, what the chart is telling"). It had no claim to enter on, a chart with no
+  annotation saying what it shows, no ending, and an ink rule that made it compete with the panel headings. Every
+  block needs a way in (an icon and a bold claim), the finding written on its picture, and a way out (what happens
+  next, or when it fails); a sub-section looks subordinate (no rule as heavy as a panel heading's).
+- **Two typefaces splitting the hierarchy** (Pete, 23 Oct evening): one family; size, weight and colour do the work.
 - **One device on every slide** (23 Oct, from the reference decks: a takeaway box, a chevron, a crimson punch-line in
   every panel) reads as a template, and so did this section's old list of required parts (23 Oct).
 
@@ -371,9 +377,11 @@ only on 25% (the one number the title names). Left: "Carmen's values: ESG from 1
 the family's 20–25% goal band, the plan bar split into its three funds and labelled on the data; "like for like" (same
 risk, no extra return) under the axis, because a practitioner asks that first. Right: "…and Ryan's conviction: crypto
 sized for each person": one row a person on one scale, in rising size (Adrian none, Chloe none, Carmen up to 2%, Ryan
-up to 74% today and 20% by 35, no new money). The foot, level across both: "How a fund gets in" (raters agree about 0.54
-on ESG against 0.99 on credit, so two ratings plus ICMA) and "How it is held" (bought only through HKEX ETFs or
-SFC-licensed platforms; no lending or leverage; self-custody only with a key-recovery plan). Builds in speaking order:
+up to 74% today and 20% by 35, no new money). The foot, level across both, rebuilt the same evening (Pete: no hierarchy, "just doesn't draw me in"): each
+guardrail is a claim with a shield ("Every fund must pass two ratings"; "Held only where a regulator watches"), why in
+grey (raters agree about 0.54 on ESG against 0.99 on credit; Carmen's worries in the case), the rules as ticks, and
+what happens when one breaks (downgraded: replaced within three months; licence lost: moved to an ETF within 30
+days). The unlabelled rater chart went; Ryan's bar now says its finding, "20% by 35, without selling". Builds in speaking order:
 ESG → its test → Adrian, Chloe, Carmen → Ryan, the custody rules, the trade-off and the bar. Product names and the
 downgrade rule are in the notes.
 - **"ESG from 11% to 25%…"**: a progress bar into the family's 20 to 25% goal band, of HK$10.47M; the three holdings
@@ -444,9 +452,10 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 ## 6. The look
 **23 Oct: the deck's identity** (Pete: "all default fonts with no clear design work"; e-Sentry has a clear style; slide
 2 a weak first impression). Look B's structure stays; its "no motif" plainness goes.
-- **Type:** EB Garamond, the written case's own display face, for titles (35 px), names and big numbers (lining
-  figures), so the deck and the PDF are one brand; Inter for all text, panel headings included (bold 19, as built on
-  slides 3, 5 and 7; settled 23 Oct). Pete liked Inter for small text.
+- **Type: one family, Inter, for every part** (Pete, 23 Oct evening: "keep one clear font for all of the parts", as in
+  e-Sentry, which uses Barlow throughout). The hierarchy comes from size, weight and colour, never from switching
+  faces: with Garamond for numbers and Inter for labels, the same kind of thing (a share, an amount) looked like two
+  kinds. EB Garamond stays the written case's face only.
 - **Colour:** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
   (the home layer, the family panels, the guaranteed income, cost bars), a greyed rose #DDD0CD and #B99A9C (savings,
   lighter series), tint = mist; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate

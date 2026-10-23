@@ -71,8 +71,8 @@ Pete found the results locked into one way and below standard (23 Oct).
   and record what changed and why in that slide's section.
 - **Consistency comes from the tokens, not from a repeated layout:** the colours and fonts in `round2/src/00_head.html`,
   the type scale and grid in plan §4. Use those sizes; arrange freely on them.
-- **The identity is yours to judge** (Pete, 23 Oct; plan §6: EB Garamond, the written case's crimson family, the house
-  as the one decorative idea). Keep what works; change it after rendering the options side by side, and record why in
+- **The identity is yours to judge** (Pete, 23 Oct; plan §6: one font, Inter, for every part; the written case's crimson
+  family; the house as the one decorative idea). Keep what works; change it after rendering the options side by side, and record why in
   §6. Use the house where it says something.
 - **Feedback on one slide fixes that slide.** Don't turn a comment into a rule for every slide. If a lesson looks
   general, add it to plan §4's "failures we've seen", with the reason, and tell the team.
