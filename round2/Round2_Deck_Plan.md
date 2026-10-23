@@ -301,7 +301,9 @@ gives them"); four rows, one per decision, so the four can be counted (the flat,
 HK$780K a year → a survivor plans on 70%); quiet destinations (mist, a wine rule, ink numbers); and the result as a bar
 on one scale: grey to {{own_89}} (their own way), crimson to {{ladder_5_89}} (the only accent), dashed to {{switch_89}}
 "with Call 3, next", so the slide shows what is left for slide 7. Builds follow the script: the home, the business, the
-budget, the MPF and the income box, then the result. The earlier specs below are superseded.
+budget, the MPF and the income box, then the result. Same day, second pass (Pete: too many icons; left and middle
+not aligned): no icons; each row is one band, the asset's grey bar (to scale) starting its own ribbon, the left and
+middle labels above the line in the same metrics so they align. The earlier specs below are superseded.
 **v10 (23 Oct): a flow, assets into income** (Pete chose it over the rows). The flat ({{rmp_income}} a year for life
 from {{rmp_year}}) and the MPF ({{floor_2039_ann}} a year, two HKMC annuities) flow into one wine box, "Guaranteed income,
 for life": {{floor_2039_pct}} of essential bills in 2039; the business flows into savings (HK$3.0M, counted low; their own

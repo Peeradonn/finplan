@@ -332,8 +332,7 @@ p,li,span,b{text-wrap:pretty}
    first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
    passes on. Each call slide carries a small house beside its title: built parts in wine, this call in crimson, the
    rest dashed; slide 4 draws the whole house as the answer, the close shows it complete. */
-.hd.hh{position:static}
-.hd.hh .house.mini{position:absolute;right:48px;top:26px}
+.hd.hh .house.mini{position:absolute;right:0;top:-8px}
 .hd.hh h2{max-width:1000px}
 .x4h{flex:1;display:grid;grid-template-columns:376px 1fr;column-gap:40px;margin-top:20px;min-height:0;align-items:start}
 .x4h .fl{display:grid;grid-template-rows:128px 85px 85px 48px;margin-top:0}   /* the house's floors at w=376 */
@@ -438,7 +437,9 @@ p,li,span,b{text-wrap:pretty}
 
 /* ==================== slide 6, Call 2 (24 Oct): four decisions, one row each, and the odds they buy ====================
    A way in: three column labels (what they own and spend / what each becomes / what it gives them). Four rows, one per
-   decision, so "four decisions" can be counted; ribbons never cross. The destinations are quiet (mist, a wine rule, ink
+   decision, so "four decisions" can be counted; ribbons never cross. Each row is one band (24 Oct, Pete: the left and
+   middle were not aligned, too many icons): the asset's grey bar, to scale, starts its own ribbon, and the left and
+   middle labels sit above the line in the same metrics, so their lines align. No icons. The destinations are quiet (mist, a wine rule, ink
    numbers): the only accent is the result. The result is a bar on one scale: their own way, then four decisions in
    crimson, then a dashed stretch to Call 3, so the slide shows what is left for the next one. (23 Oct: a wine income
    box outweighed the result, the budget floated in a dashed box, and the band only restated the title.)
@@ -449,12 +450,8 @@ p,li,span,b{text-wrap:pretty}
 .f6h span:nth-child(3){left:810px}
 .f6{flex:none;position:relative;height:274px;margin-top:2px}
 .f6 svg{position:absolute;inset:0;width:100%;height:100%}
-.f6 .own{position:absolute;left:0;width:300px;transform:translateY(-50%);display:flex;align-items:center;gap:12px}
-.f6 .own .ic9{background:var(--mist);color:var(--slate)}
-.f6 .own b{display:block;font:600 16px/1.3 var(--text)}
-.f6 .own .tr{display:flex;align-items:center;gap:10px;margin-top:6px}
-.f6 .own .tr i{display:block;height:16px;background:var(--grey)}
-.f6 .own .tr span{font:600 16px/1 var(--text);white-space:nowrap}
+.f6 .ol{position:absolute;left:0;width:300px;transform:translateY(-100%);padding-bottom:12px;font:600 14px/1.35 var(--text);color:var(--slate)}
+.f6 .ol b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .f6 .rl{position:absolute;left:350px;width:430px;transform:translateY(-100%);padding-bottom:12px;font:400 14px/1.35 var(--text);color:var(--slate)}
 .f6 .rl b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .f6 .dst{position:absolute;left:810px;right:0;padding:10px 18px;background:var(--mist);border-left:3px solid var(--wine)}
@@ -578,7 +575,10 @@ p,li,span,b{text-wrap:pretty}
    chart that needs one (.tk9); one dashed ring on the moment that matters; icons that name a real thing, neutral
    except the focal row's; a quiet section tracker in the footer. Not taken: chevrons, numbered discs with no legend,
    lightbulbs, a crimson punch-line restating the title. */
-.c9::before{content:"";position:absolute;left:0;top:34px;width:7px;height:66px;background:var(--accent)}
+/* the rail beside the title spans the header, kicker to the title's last line (24 Oct, Pete: a fixed 66 px block sat
+   off centre on two-line titles); the header is the positioning box, so the house icon is placed from it too */
+.c9 .hd{position:relative}
+.c9 .hd::before{content:"";position:absolute;left:-48px;top:0;bottom:0;width:7px;background:var(--accent)}
 .c9 .pn>h3,.lb .x2 h3{font:700 19px/1.25 var(--text);letter-spacing:-.1px;padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
 .c9 .lede{font:400 15px/1.4 var(--text);color:var(--slate);margin-top:8px}
 .c9 .lede b{color:var(--ink);font-weight:600}
