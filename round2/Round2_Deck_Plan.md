@@ -271,7 +271,7 @@ managed their own way…" / "…and across 10,000 futures".
 
 ### 4 · Our answer (Pete; 0:45)
 **Rebuilt 24 Oct: the house as an exploded 3D model** (Pete: the elevation was too simple; he asked for both a coded
-exploded 3D house and a realistic AI render).  draws a flat dimetric model: the foundation, two floors
+exploded 3D house and a realistic AI render). `house.exploded()` draws a flat dimetric model: the foundation, two floors
 of two blocks and an overhanging roof pulled apart, each floating layer casting a soft shadow on the one below; windows
 and a door make it a house; colours step from a dark wine foundation to a pale roof, each face shaded. The number badges
 sit at each face's outer edge so the leader lines leave the model at once; callouts align on their titles. Builds: a
@@ -509,7 +509,7 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 - **One decorative idea: the house we build** (Pete chose it, 23 Oct, over the lifeline and over no thread). "Built to
   Last" drawn as a house from the written case's pillars (`round2/house.py`): the foundation is Call 1 (protected
   first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
-  passes on. Slide 4 draws the whole house as the answer, an exploded 3D model since 24 Oct (), built part by
+  passes on. Slide 4 draws the whole house as the answer, an exploded 3D model since 24 Oct (`house.exploded()`), built part by
   part as the calls are named; each call slide
   carries a small house beside its title (built parts wine, this call crimson, the rest dashed); the close shows it
   complete. The lifeline ruler is gone; time stays where it is data (the axes of slides 2, 3, 7, 11).
