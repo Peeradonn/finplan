@@ -2,9 +2,9 @@
 
 Generated 2026-10-23 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
-1204 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:18 at 145 words a minute (8:33 with handovers); 8:55 at 135 words a minute (9:10 with handovers); 9:37 at 125 words a minute (9:52 with handovers).
+1207 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:19 at 145 words a minute (8:34 with handovers); 8:56 at 135 words a minute (9:11 with handovers); 9:39 at 125 words a minute (9:54 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1:38.
+Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1:38.
 
 ## 1 · Built toLast
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -94,7 +94,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 **Pete:** And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
 
 ## 14 · Four planners, one aim: families like the Wongs, on both sides of the boundary
-*Who we want to become · All · 1:10 · 153 spoken words (≈68 s at 135)*
+*Who we want to become · All · 1:10 · 156 spoken words (≈69 s at 135)*
 
 **Pete:** In five years I want to be an investment specialist in a Hong Kong bank's wealth team, matching each Connect client's portfolio to their risk, with the currency risk made clear. Fitting the Wongs' three risk profiles into one plan was that job in miniature.
 
