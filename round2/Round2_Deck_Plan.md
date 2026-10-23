@@ -140,6 +140,8 @@ the failures we've already seen. Each slide's form is chosen for its point.
   (600, tracked -0.6) · panel heading 19 bold · body and bold label 16 · small 14 · tag and source 12 · numbers 40 and 72 (76 for
   slide 2's net worth). Use these sizes rather than new ones.
 - A 12-column grid with 48 px side margins and 24 px gutters. How a slide divides it is open.
+- One gap of 26 px between the title and whatever comes under it, on every content slide (Pete, 24 Oct: each slide
+  had its own, 14 to 22 px, and the tight ones pressed the content against the title).
 - Every model number is a `{{key}}` (CLAUDE.md), tagged as a quiet "(measured)", "(case)" or "(sourced)": MEASURED is
   the team model (`numbers.json`), CASE the case, SOURCED a named public source.
 - Builds reveal in speaking order (`data-b`) and grey what is still to come, so the layout never moves (Pete, 23 Oct),
@@ -164,7 +166,7 @@ the failures we've already seen. Each slide's form is chosen for its point.
 | Piece | Earns its place when | Leave it off when |
 |---|---|---|
 | Two or three panels whose headings read as one sentence | the point is a chain of steps | the point is one picture, one number or one comparison |
-| A conclusion line (ink on a crimson rule) | the slide needs a handover its title doesn't give | it would restate the title or the panels |
+| The conclusion bar (crimson, white text, centred) | the slide needs a handover its title doesn't give | it would restate the title or the panels |
 | A one-line lede under a heading | the content needs a bridge to make sense | the heading already says it |
 | A reading under a chart (dashed box) | the chart doesn't speak alone | it would repeat the chart's labels or the title |
 | One dashed ring | one moment on a chart matters most | nothing stands out more than the rest |
@@ -469,16 +471,17 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 - **Colour:** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
   (the home layer, the family panels, the guaranteed income, cost bars), a greyed rose #DDD0CD and #B99A9C (savings,
   lighter series), tint = mist; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate
-  #5A5250, ink #1B1716). No blue. Events on wine-and-rose charts in ink. The conclusion is a line of ink on a crimson
-  rule, not a wine block.
+  #5A5250, ink #1B1716). No blue. Events on wine-and-rose charts in ink. The conclusion is a crimson bar, white text
+  centred (Pete, 24 Oct: without a bar the last line didn't read as a conclusion; it had been a line on a crimson rule
+  since the evening before, after a wine block outweighed the focal numbers).
 - **One decorative idea: the house we build** (Pete chose it, 23 Oct, over the lifeline and over no thread). "Built to
   Last" drawn as a house from the written case's pillars (`round2/house.py`): the foundation is Call 1 (protected
   first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
   passes on. Slide 4 draws the whole house as the answer, built part by part as the calls are named; each call slide
   carries a small house beside its title (built parts wine, this call crimson, the rest dashed); the close shows it
   complete. The lifeline ruler is gone; time stays where it is data (the axes of slides 2, 3, 7, 11).
-- **Signature:** a short crimson mark before every kicker (the call's numbered square on call slides); the cover's
-  crimson bar; the family on a wine panel (cover, slide 2).
+- **Signature:** the crimson rail beside each title; the cover's crimson bar (no dash before the kicker: Pete, 24 Oct,
+  "not needed"); the family on a wine panel (cover, slide 2).
 - **Not used:** gridlines across chart areas; grey-only charts; blue. (The footer tracker is back on trial, §4.)
 **Reviewed 23 Oct, evening** (Pete handed the identity to Claude to judge). Kept: EB Garamond and the crimson. They read
 as heritage and trust, they fit "Built to Last" and a family legacy, and they make the deck and the written case

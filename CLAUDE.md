@@ -83,9 +83,8 @@ Pete found the results locked into one way and below standard (23 Oct).
 ### Untested assumptions about the deck (test these, don't build on them)
 1. The judges read the PowerPoint closely on its own, so slides must carry the facts; or they mostly meet it in the
    video, so lighter slides would score better. The criterion says only "quality of ppt".
-2. Every slide is better with a conclusion line, and every call with a trade-off strip on it. All the built slides
-   (2 to 8) have the line, Calls 1 to 4 the same strip, and even the unbuilt placeholders (9 to 13) carry a line; no
-   slide has been tried without them.
+2. Every call is better with a trade-off strip on it. Calls 1 to 5 all carry the same strip; no call slide has been
+   tried without it. (The crimson conclusion bar is Pete's decision, 24 Oct, not an assumption.)
 3. The 1,200-word script fits 10:00 at our real pace, with handovers (135 words a minute is assumed until the timed
    read-through).
 4. "Their own way" convinces a practitioner as the baseline, rather than reading as a second strawman (the
