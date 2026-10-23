@@ -67,3 +67,33 @@ def progress(call):
 if __name__ == "__main__":
     for c in range(1, 6):
         print(c, progress(c)[:80], "...")
+
+
+def elevation(w=360):
+    """Slide 4: the house drawn as an architect's elevation (Pete chose it, 23 Oct): fine crimson lines, light rose fills,
+    the foundation hatched like concrete, one ground line, each part numbered. Each part is a group with its build step
+    (data-b: Call 1 = step 2 ... Call 5 = step 6, the roof = 7) and class "hq", so the frame where it is named can fill it
+    crimson (CSS), and the final slide shows it whole."""
+    steps = {"1": 2, "2": 3, "3": 4, "4": 5, "5": 6, "roof": 7}
+    o = [f'<svg class="house elev" viewBox="-60 0 560 410" width="{w}" height="{round(w * 410 / 560)}" aria-hidden="true">',
+         '<defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+         '<rect width="12" height="12" fill="#F7ECED"/><line x1="0" y1="0" x2="0" y2="12" stroke="#D3A1A8" stroke-width="3"/>'
+         '</pattern></defs>',
+         '<line x1="-10" y1="386" x2="450" y2="386" stroke="#5A5250" stroke-width="2.5"/>']
+    for part, (kind, geo) in PARTS.items():
+        fill = "url(#hatch)" if part == "1" else ("#F7ECED" if part == "roof" else "#FBF4F5")
+        o.append(f'<g class="hq" data-b="{steps[part]}">')
+        if kind == "poly":
+            o.append(f'<polygon points="{geo}" fill="{fill}" stroke="#A81E2D" stroke-width="3" stroke-linejoin="round"/>')
+            cx, cy = 220, 108
+        else:
+            x, y, ww, hh = geo
+            o.append(f'<rect x="{x}" y="{y}" width="{ww}" height="{hh}" fill="{fill}" stroke="#A81E2D" stroke-width="3"/>')
+            cx, cy = x + ww / 2, y + hh / 2
+        num = "" if part == "roof" else part
+        if num:
+            o.append(f'<text x="{cx}" y="{cy + 13}" text-anchor="middle" font-family="EBG, Georgia, serif" font-weight="600" '
+                     f'font-size="{30 if part == "1" else 40}" fill="#A81E2D">{num}</text>')
+        o.append("</g>")
+    o.append("</svg>")
+    return "".join(o)

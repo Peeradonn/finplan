@@ -214,9 +214,13 @@ the other lines were, and gave little context; the flat placeholder took a quart
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
 ### 4 · Our answer (Pete; 0:45)
-**v10 (23 Oct): the whole house.** Left, the house with each part named; right, each floor's calls and their one
-result, level with the floor; the house builds as Pete names each call. The band below: {{own_89}} their own way →
-{{switch_89}} with the five calls. Superseded: the five columns and the brief as a quote.
+**v10 (23 Oct): one house, drawn and labelled** (Pete chose it over a five-step sequence, after the first house, a wine
+block with a legend beside it, said everything twice). An architect's elevation (`house.elevation`): fine crimson lines,
+rose fills, the foundation hatched, one ground line, each part numbered; each part labelled directly by a callout on a
+leader line (1, 2, 4 left; 3, 5 and the roof right), so there is no legend. Builds: the house starts as a grey draft,
+each part takes colour as Pete names its call, the part being named solid crimson. The result is a plaque under the
+house: {{own_89}} their own way → {{switch_89}} with the five calls. Bar: "Five calls, and the home is their choice, not
+their last resort. The rest of this talk defends each one."
 **Built 23 Oct** (`src/03_s04-05.html`; about 150 words). The brief as a quote, the five calls as five columns (ink
 number squares matching the tracker, an icon each), the impact band under a rule: {{own_89}} grey → {{switch_89}} in
 the accent, the only accent on the slide.
