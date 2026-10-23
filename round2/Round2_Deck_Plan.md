@@ -189,28 +189,21 @@ The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` w
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
 ### 3 · Their own way (Pete; 0:45)
-**Built 22 Oct** (prototype `looks/src/07_s3_s7.html`, render `looks/build/slide-12.png`; 134 words). Kicker "Will it
-last?", the question slide 2 leaves open. Panels 8 + 4: "Ten typical futures, managed their own way…" / "…and leave
-Ryan and Chloe little". **The time axis is cropped to 2051–2066** (Carmen 74 to 89; Pete, 22 Oct: three quarters of
-each line was 2026–2055, where nothing happens): the lines fade in from the left, "Each line starts in 2026" sits at
-the axis start, and `make_looks.py` stops the build if any sale or run-out falls before 2051. Slide 7 uses the same
-window, so the two pictures still match.
-- **Lede:** what a sensible family would do: the business sold when Carmen retires; the flat kept, and sold only when
-  the money runs out (no plan, no adviser).
-- **The picture: the ten futures under their own way** (`own{i}_*`), one line each from 2026 to Carmen's 89, ranked
-  worst to best. A home mark where the flat is sold (`own{i}_sale_x`, the accent: the title's claim), a stop where the
-  money still runs out (`own{i}_w`), a tick where it lasts. Labels on the data: "The flat sold, Carmen
-  {{own_fut_sale_age_first}} to {{own_fut_sale_age_last}}" (the bracket under the houses); "the sale buys just
-  {{own_fut_buys_min}} to {{own_fut_buys_max}} years" (attached to the lowest cross; spoken too).
-- **Right panel:** the family's flat (illustration placeholder until §7 arrives; lede "Home since 2015, where Ryan and
-  Chloe grew up (case)"), then the inheritance where the flat is sold: {{own_legacy_sold}} at 72 px in the accent, "of
-  HK$24.4M today; median, today's money (measured)". A grey band marks Carmen's years on her own (from 2056, Adrian
-  84 on the case's life expectancy).
-- Footer: their own way's assumptions (business sold, the budget unchanged after a death, the Flexi plan for life, the
-  flat sold for the same HK$7M flat as our downsizing option); "on investments alone, the written case's measure:
-  {{ladder_1_89}}"; 10,000 simulated markets (measured).
+**Rebuilt 23 Oct: one typical future, told with the money** (Pete: the ten lines didn't say what the house meant or what
+the other lines were, and gave little context; the flat placeholder took a quarter of the slide for one word). Panels
+8 + 4: "One typical future, managed their own way…" / "…and across 10,000 futures".
+- **Lede:** the bridge from the written case: "Our written case measured investments alone: {{ladder_1_89}}. The fairer
+  test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out".
+- **The picture:** one future from the model (`story_*`; the rule: of the futures where the flat is sold and the money
+  still runs out, the median sale year, then the inheritance nearest the median), as stacked areas in today's money,
+  2026 to 89: the home (dark, labelled "since 2015, where Ryan and Chloe grew up") under savings, investments and MPF
+  (light). In the accent: "Savings run out: the flat is sold, Carmen {{story_sale_age}}" and "Out again at
+  {{story_out_age}}". "Carmen on her own" over 2056 to 2066. Same scale as slide 7 (`series.py`).
+- **Right:** the 10,000-future facts, each number centred on its label: {{own_sold_pct}} sell the flat (about
+  {{own_sale_age}}); {{own_89}} the money lasts to 89 even after the sale; {{own_legacy_sold}} left to Ryan and Chloe
+  (median, the accent, 72 px).
+- Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left and the bar.
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
-- Image (optional, §7): the family's flat.
 
 ### 4 · Our answer (Pete; 0:45)
 **Built 23 Oct** (`src/03_s04-05.html`; about 150 words). The brief as a quote, the five calls as five columns (ink
@@ -273,12 +266,11 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
 - Answers questions 1, 7 and 8.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
-**Built 22 Oct** (same file, render `looks/build/slide-13.png`; 143 words). Panels 8 + 4: "Ten typical futures again,
-with the plan…" / "…once the premiums are reviewed at 75". The lines and ticks in the accent; slide 3's sale marks
-stay as hollow grey ghosts, labelled "where their own way sold the flat" (the change is the message).
-- **The hero: slide 3's ten futures, redrawn under the plan** (`plan{i}_*`: the four decisions, the review at 75 and
-  the spending rules): all {{plan_fut_lasts_n_word}} reach Carmen's 89, and no "sold" marks. Same layout as 3, so the
-  change is the message.
+**Rebuilt 23 Oct with slide 3.** Title: "Fix the cost the budget ignores: in that same future, the money now lasts to 89
+and the home stays theirs". Left: the same future in the same markets under the plan (four decisions, the review at 75,
+the spending rules): the home pays {{rmp_income}} a year from {{rmp_year}} and stays theirs; savings never run out;
+their own way as a dashed line. Builds (reveal): the premiums → the review and {{switch_89}} → the rules → the future.
+Notes answer "why does the plan look poorer until about 2056?" (the annuities and the home's income: a floor, not a peak).
 - **Inset: the premium line** (series.py): Flexi for life climbs to HK$375K a year (today's money, by 2056) vs the
   Standard plan from Adrian's 75, about a third the cost; the saving shaded. {{switch_89}} with the review.
 - The spending rules in one line: from 2039, no raise after a bad year, a trim only if withdrawals run well ahead,

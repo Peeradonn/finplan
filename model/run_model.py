@@ -154,20 +154,23 @@ GK_MED = False                                    # set True to let medical prem
 GK_MIN = g('Guardrails: lowest discretionary share')   # discretionary spending never cut below this
 
 def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=None, cpi=None,
-        inflows=None, n=10_000, seed=42, paths=False, guard=False, detail=False, forced=False):
+        inflows=None, n=10_000, seed=42, paths=False, guard=False, detail=False, forced=False, trace=False):
     """Success share, mean worst year, median end pot.
     paths=True also returns every path's pot by year. detail=True returns a dict instead (run-out years,
     spending cuts). guard=True applies Guyton-Klinger guardrails to the discretionary share of spending:
     no inflation rise after a negative year; cut 10% if the withdrawal rate is 20% above its starting level;
     raise 10% (never above the target) if it is 20% below. Essentials (FLOOR_SHARE) are never cut.
     forced=True is the family's own way (Round Two deck): the first time a path's money runs out, the flat is sold
-    and they downsize (downsize_release that year); detail then also returns the sale year per path."""
+    and they downsize (downsize_release that year); detail then also returns the sale year per path.
+    trace=True (with detail) also returns every path's pot and cumulative unpaid bills by year (pot_by_year,
+    unpaid_by_year), for drawing one future (Round Two deck, slides 3 and 7)."""
     r_eq = R_EQ if r_eq is None else r_eq
     cpi = CPI if cpi is None else cpi
     med, inflows = med or {}, inflows or {}
     rng = np.random.default_rng(seed)
     pot = np.full(n, POOL, float); alive = np.ones(n, bool); worst = np.zeros(n)
     track = np.zeros((end - BY, n)) if paths else None
+    tr_pot = np.zeros((end - BY, n)) if trace else None; tr_unp = np.zeros((end - BY, n)) if trace else None
     d = np.ones(n); wr0 = None; last_r = np.zeros(n)
     runout = np.zeros(n, int); d_min = np.ones(n); lvl_sum = np.zeros(n); lvl_n = 0
     sold = np.zeros(n, int); unpaid = np.zeros(n)
@@ -216,8 +219,10 @@ def sim(w_eq, s_bd, r_bd, end, annuity, med=None, surv=1.0, biz=0, rmp=0, r_eq=N
         newly = alive & (pot <= 0); runout[newly] = y
         alive &= pot > 0; last_r = r
         if paths: track[i] = pot
+        if trace: tr_pot[i] = pot; tr_unp[i] = unpaid
     if detail:
         return dict(success=alive.mean(), runout=runout, alive=alive, d_min=d_min, end_pot=pot, sold=sold, unpaid=unpaid,
+                    pot_by_year=tr_pot, unpaid_by_year=tr_unp,
                     level=(lvl_sum/lvl_n if lvl_n else np.ones(n)),
                     low=FLOOR_SHARE + (1-FLOOR_SHARE)*d_min,
                     levels=np.array(lvl_hist), level_years=np.array(lvl_years))
@@ -435,6 +440,31 @@ def export_numbers():
         N[f"plan{i}_end"], N[f"plan{i}_w"] = (str(r_), xs(r_)) if r_ else ("", "100.0%")
         p_lasts += 0 if r_ else 1
     N["plan_fut_lasts_n_word"] = words[p_lasts]
+    # One future, told with the money (Round Two deck, slides 3 and 7; Pete, 23 Oct). The rule: among the futures where
+    # their own way sells the flat and the money still runs out, those sold in the median sale year; of them, the one
+    # whose inheritance is closest to the median. The same markets (path k) are then run under the plan. Per year, in
+    # today's money (HK$M, end of each year from 2026 to Carmen's 89): savings, and the home (market value; after a
+    # forced sale, the smaller flat less the bills the money could not pay; under the plan, less the reverse-mortgage loan).
+    ot = sim(*MIX2, C89, detail=True, forced=True, trace=True, annuity=False, med=FLEXI, biz=BIZ)
+    pt = sim(*MIX2, C89, detail=True, trace=True, **{**full, "med": SWITCH, "guard": True})
+    med_sale = int(np.median(ot["sold"][sold]))
+    cand = np.where(sold & ~ot["alive"] & (ot["sold"] == med_sale))[0]
+    k = int(cand[np.argmin(np.abs(own_leg[cand] - np.median(own_leg[sold])))])
+    o_sav, o_home, p_sav, p_home = [POOL / 1e6], [HOME / 1e6], [POOL / 1e6], [HOME / 1e6]
+    for i in range(C89 - BY):
+        y, d = BY + i, (1 + CPI) ** (i + 1)
+        flat = DS_P * (1 + P_G) ** (y + 1 - BY) if 0 < ot["sold"][k] <= y else home_value(y + 1)
+        o_sav.append(ot["pot_by_year"][i][k] / d / 1e6)
+        o_home.append(max(flat / d - ot["unpaid_by_year"][i][k], 0) / 1e6)
+        p_sav.append(pt["pot_by_year"][i][k] / d / 1e6)
+        loan = rmp_balance(RMP_Y, y, RMP) if y >= RMP_Y else 0
+        p_home.append(max((home_value(y + 1) - loan) / d - pt["unpaid_by_year"][i][k], 0) / 1e6)
+    for key, ser in (("story_own_sav", o_sav), ("story_own_home", o_home), ("story_plan_sav", p_sav), ("story_plan_home", p_home)):
+        N[key] = ",".join(f"{v:.2f}" for v in ser)       # 41 values, 2026 to 2066: drawn by round2/series.py
+    N["story_sale_year"], N["story_sale_age"] = str(int(ot["sold"][k])), str(int(ot["sold"][k]) - (C89 - 89))
+    N["story_out_year"], N["story_out_age"] = str(int(ot["runout"][k])), str(int(ot["runout"][k]) - (C89 - 89))
+    N["story_own_left"], N["story_plan_left"] = Mn(o_sav[-1] * 1e6 + o_home[-1] * 1e6), Mn(p_sav[-1] * 1e6 + p_home[-1] * 1e6)
+    N["story_plan_lasts"] = "yes" if pt["alive"][k] else "no"
     # rebalancing rules
     N["rebal_target_89"], N["rebal_bands_89"], N["rebal_drift_89"] = (P(sim_rules(p_, C89)[0]) for p_ in ("target", "bands", "drift"))
     # what happens when the plan falls short

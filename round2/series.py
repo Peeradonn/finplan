@@ -77,8 +77,43 @@ def tokens():
     return T
 
 
+def story():
+    """One future told with the money (slides 3 and 7): the model's story_* keys in figures/numbers.json, HK$M in
+    today's money at the start of each year 2026..2066. Chart box: x 2026 -> 2066 on 0..1000, y 0 -> VMAX on 300..0,
+    the same scale on both slides. The home is the bottom layer, savings sit on top of it."""
+    import json, math
+    N = json.load(open(os.path.join(os.path.dirname(HERE), "figures", "numbers.json"), encoding="utf-8"))
+    ser = {k: [float(v) for v in N[f"story_{k}"].split(",")] for k in ("own_sav", "own_home", "plan_sav", "plan_home")}
+    n = len(ser["own_sav"]) - 1
+    vmax = 10 * math.ceil(max(max(a + b for a, b in zip(ser[f"{w}_sav"], ser[f"{w}_home"])) for w in ("own", "plan")) / 10)
+    X = lambda j: round(j / n * W, 1)
+    Y = lambda v: round(H - v / vmax * H, 1)
+    T = {"story_vmax": str(vmax)}
+    for w in ("own", "plan"):
+        home, sav = ser[f"{w}_home"], ser[f"{w}_sav"]
+        top = [h + s for h, s in zip(home, sav)]
+        T[f"story_{w}_home_poly"] = " ".join([f"0,{H}"] + [f"{X(j)},{Y(v)}" for j, v in enumerate(home)] + [f"{W},{H}"])
+        T[f"story_{w}_sav_poly"] = " ".join([f"{X(j)},{Y(v)}" for j, v in enumerate(top)]
+                                            + [f"{X(j)},{Y(home[j])}" for j in range(n, -1, -1)])
+        T[f"story_{w}_top_pts"] = " ".join(f"{X(j)},{Y(v)}" for j, v in enumerate(top))
+        T[f"story_{w}_end_t"] = f"{Y(top[-1]) / H * 100:.1f}%"
+        T[f"story_{w}_savlbl_t"] = f"{Y(home[1] + sav[1] / 2) / H * 100:.1f}%"   # the savings label, mid-layer near the left
+    # events, as positions in the box: the forced sale shows as the drop after its year, the run-out as savings at zero
+    sale, out = int(N["story_sale_year"]), int(N["story_out_year"])
+    js, jo = sale - 2026 + 1, out - 2026 + 1
+    top = [h + s for h, s in zip(ser["own_home"], ser["own_sav"])]
+    T["story_sale_l"], T["story_sale_t"] = f"{X(js) / W * 100:.2f}%", f"{Y(top[js]) / H * 100:.1f}%"
+    T["story_out_l"], T["story_out_t"] = f"{X(jo) / W * 100:.2f}%", f"{Y(top[jo]) / H * 100:.1f}%"
+    # slide 7: label their own way's dashed line where it rises furthest above the plan's area (years 2040-2050)
+    ptop = [h + s for h, s in zip(ser["plan_home"], ser["plan_sav"])]
+    jl = max(range(14, 25), key=lambda j: top[j] - ptop[j])
+    T["story_ownlbl_l"], T["story_ownlbl_t"] = f"{X(jl) / W * 100:.1f}%", f"{Y(top[jl]) / H * 100:.1f}%"
+    T["story_g10_t"], T["story_g20_t"], T["story_g30_t"] = (f"{Y(v) / H * 100:.1f}%" for v in (10, 20, 30))
+    return T
+
+
 def fill(text):
-    T = tokens()
+    T = {**tokens(), **story()}
     def sub(m):
         k = m.group(1)
         if k not in T:

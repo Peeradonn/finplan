@@ -53,11 +53,11 @@ for builds and pauses.
 |---|---|---|---|---|---|
 | 1 | Pete, all | Built to Last: five calls that make the Wong family's wealth last | The family (illustration to generate) | 0:20 | 33 |
 | 2 | Pete | On paper, the Wongs are secure | Four faces, each with a want; HK$24.4M, 41% saved, 10% debt | 0:30 | 61 |
-| 3 | Pete | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Ten futures under their own way: a "flat sold" mark on those that need it, lines that still stop before 89; the inheritance left, {{own_legacy_sold}} | 0:45 | 99 |
+| 3 | Pete | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | One typical future with the money: the home under savings; the forced sale at {{story_sale_age}}, out again at {{story_out_age}}; beside it the 10,000-future facts | 0:45 | 99 |
 | 4 | Pete | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | The five calls in a row, one result each; the impact band {{own_89}} → {{switch_89}} | 0:45 | 92 |
 | 5 | Lookbua | Call 1. Insure the income, not the life: about HK$100K a year closes every gap | Pay that continues if a parent can't work: nothing today → 65%; the cost as one bar | 0:40 | 86 |
 | 6 | Fahtai | Call 2. Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | What they own → what each becomes → {{ladder_5_89}} (the flow, option B); "their own way, {{own_89}}" as the strip | 0:45 | 94 |
-| 7 | Fahtai | Call 3. Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home | Slide 3's ten futures redrawn, all reaching 89, no "sold" marks (the hero); the premium cut at 75 as a small inset | 0:40 | 81 |
+| 7 | Fahtai | Call 3. Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs | The same future with the plan: the money lasts, the home stays; the premium line reviewed at 75 | 0:40 | 81 |
 | 8 | Win | Call 4. One family policy, a plan for each person: every dollar gets a job | Today vs the plan as two bars of the same HK$7.7M, each job with its owner's face | 0:50 | 104 |
 | 9 | Win | Call 5. Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | ESG 11% → 25% into the goal band; crypto by person (four people, four sizes) | 0:45 | 96 |
 | 10 | Lookbua | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Paired bars per test, the lost job highlighted | 0:30 | 67 |

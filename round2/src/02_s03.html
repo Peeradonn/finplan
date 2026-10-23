@@ -9,44 +9,39 @@
   </header>
   <div class="panels">
     <div class="pn" style="grid-column:span 8">
-      <h3>Ten typical futures, managed their own way…</h3>
+      <h3>One typical future, managed their own way…</h3>
       <p class="lede">Our written case measured investments alone: {{ladder_1_89}}. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
       <div class="body">
-        <div class="f9">
-          <div class="alone"><span>Carmen on her own</span></div>
-          <div class="goal"></div>
-          <div class="rows">
-            <div class="f9r {{own10_cls}}" style="--w:{{own10_w}};--s:{{own10_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own9_cls}}" style="--w:{{own9_w}};--s:{{own9_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own8_cls}}" style="--w:{{own8_w}};--s:{{own8_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own7_cls}}" style="--w:{{own7_w}};--s:{{own7_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own6_cls}}" style="--w:{{own6_w}};--s:{{own6_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own5_cls}}" style="--w:{{own5_w}};--s:{{own5_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own4_cls}}" style="--w:{{own4_w}};--s:{{own4_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own3_cls}}" style="--w:{{own3_w}};--s:{{own3_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own2_cls}}" style="--w:{{own2_w}};--s:{{own2_sale_x}}"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r {{own1_cls}}" style="--w:{{own1_w}};--s:{{own1_sale_x}}"><i class="ln"></i><span class="tl" data-b="3">the sale buys just {{own_fut_buys_min}} to {{own_fut_buys_max}} years</span><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+        <div>
+          <div class="sx">
+            <div class="band"><span>Carmen on her own</span></div>
+            <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+              <polygon points="[[story_own_home_poly]]" style="fill:#545454"/>
+              <polygon points="[[story_own_sav_poly]]" style="fill:#D2D2D2"/>
+            </svg>
+            <span class="gy" style="top:[[story_g10_t]]"><span>HK$10M</span></span><span class="gy" style="top:[[story_g20_t]]"><span>HK$20M</span></span><span class="gy" style="top:[[story_g30_t]]"><span>HK$30M</span></span>
+            <p class="al" style="left:14px;top:[[story_own_savlbl_t]];transform:translateY(-50%)">Savings, investments and MPF</p>
+            <p class="al h" style="left:14px;bottom:12px">The home<small>since 2015, where Ryan and Chloe grew up</small></p>
+            <p class="ev" data-b="2" style="left:[[story_sale_l]];top:calc([[story_sale_t]] - 44px)"><span>Savings run out: the flat is sold,<br>Carmen {{story_sale_age}}</span></p>
+            <p class="ev out" data-b="3" style="left:[[story_out_l]];top:calc([[story_out_t]] - 34px)"><span>Out again<br>at {{story_out_age}}</span></p>
           </div>
-          <div class="brk"><span class="from">Each line starts in 2026</span><i data-b="2" style="left:calc(({{own_fut_sale_age_first}} - 49 - var(--y0)) / var(--yn) * 100%);width:calc(({{own_fut_sale_age_last}} - {{own_fut_sale_age_first}}) / var(--yn) * 100%)"></i><span style="left:calc(({{own_fut_sale_age_first}} + {{own_fut_sale_age_last}} - 98 - 2 * var(--y0)) / (2 * var(--yn)) * 100%)" data-b="2">The flat sold, Carmen {{own_fut_sale_age_first}} to {{own_fut_sale_age_last}}</span></div>
+          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79</i></span><span style="left:100%">2066<i>89</i></span></div>
         </div>
-        <div class="f9ax"><span style="left:0">2051<i>Carmen 74</i></span><span style="left:33.33%">2056<i>79</i></span><span style="left:66.67%">2061<i>84</i></span><span style="left:100%">2066<i>89</i></span></div>
       </div>
     </div>
     <div class="pn" style="grid-column:span 4">
-      <h3>…and leave Ryan and Chloe little</h3>
-      <p class="lede">Tai Kok Tsui, home since 2015, where Ryan and Chloe grew up (case)</p>
+      <h3>…and across 10,000 futures</h3>
+      <p class="lede">The same test in every simulated market (measured)</p>
       <div class="body">
-        <div class="home" data-b="2"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
-        <div class="x3-62" data-b="3"><strong>{{own_89}}</strong><p>even after the sale, the chance the money lasts to Carmen's 89</p></div>
-        <div class="inh" data-b="4">
-          <p class="l">Left to Ryan and Chloe where the flat is sold</p>
-          <strong>{{own_legacy_sold}}</strong>
-          <p class="s">of HK$24.4M today; median, today's money (measured)</p>
+        <div class="x3f">
+          <div data-b="2"><strong>{{own_sold_pct}}</strong><p><b>sell the flat</b> when the money runs out, Carmen about {{own_sale_age}}</p></div>
+          <div data-b="3"><strong>{{own_89}}</strong><p><b>the money lasts</b> to Carmen's 89, even after the sale</p></div>
+          <div class="on" data-b="4"><p><b>Left to Ryan and Chloe</b> where the flat is sold</p><strong>{{own_legacy_sold}}</strong><p>of HK$24.4M today; median, today's money</p></div>
         </div>
       </div>
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? Our written case measured investments alone: {{ladder_1_89}}. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in {{own_sold_pct}} they must. Carmen, at about {{own_sale_age}} and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just {{own_fut_buys_min}} to {{own_fut_buys_max}} years, and the wealth meant for their children pays the bills: of HK$24.4 million, just {{own_legacy_sold}} is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in {{own_alone_pct}} of the forced sales. Even after the sale, the money lasts to 89 in only {{own_89}}. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. One typical future: of those where the flat is sold and the money still runs out, the median sale year, the inheritance nearest the median (measured); today's money.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: {{ladder_1_89}}. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in {{own_sold_pct}} they must. In a typical one, Carmen, at {{story_sale_age}} and on her own, sells the home where they raised Ryan and Chloe. By {{story_out_age}} the money has run out again, and the wealth meant for their children pays the bills: of HK$24.4 million, just {{own_legacy_sold}} is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in {{own_alone_pct}} of the forced sales. Even after the sale, the money lasts to 89 in only {{own_89}}. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>

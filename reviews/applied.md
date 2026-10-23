@@ -350,3 +350,16 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
 - 8 Slide 6 notes: HK$230K is about right for a joint loan; not "conservative".
 - The script stays at 1,200 spoken words (six words cut on slides 2, 7 and 13). Plan §8 and §10, the outline's titles
   and CLAUDE.md's open items updated; Carmen's MPF withdrawal at 62 added as unconfirmed.
+
+### Round Two deck (23 Oct): one typical future, told with the money (slides 3 and 7)
+- Pete: the ten lines didn't say what the house meant or what the other lines were. `sim()` gains `trace=False`: with
+  `detail`, it also returns every path's pot and cumulative unpaid bills by year. Off by default.
+- `export_numbers()` adds one future, chosen by a stated rule (of the futures where their own way sells the flat and
+  the money still runs out, those sold in the median sale year; of them, the inheritance nearest the median), and the
+  same markets under the plan (four decisions, review at 75, guardrails): `story_own_sav`, `story_own_home`,
+  `story_plan_sav`, `story_plan_home` (41 values, HK$M today's money, 2026 to 2066; the home after a forced sale is
+  the smaller flat less unpaid bills, under the plan less the reverse-mortgage loan); `story_sale_year` 2060,
+  `story_sale_age` 83, `story_out_year` 2063, `story_out_age` 86, `story_own_left` HK$2.3M, `story_plan_left` HK$8.9M,
+  `story_plan_lasts` yes. `round2/series.py` draws them on one scale for both slides (it now also reads these keys
+  from `numbers.json`, besides `figure-data.md`).
+- `make_charts.py` rerun: 264 values; no existing value changed or removed; `figure-data.md` unchanged. Round Two only.

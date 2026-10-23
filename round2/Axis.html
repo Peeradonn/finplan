@@ -276,6 +276,40 @@ p,li,span,b{text-wrap:pretty}
 .x5-d p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:2px}
 .x5-d .cost{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:14px}
 
+/* ==================== v9 slides 3 and 7 (23 Oct): one typical future, told with the money ====================
+   Pete: the ten lines didn't say what they meant or why. Now one future from the model (story_*, chosen by a stated
+   rule): the home as the bottom layer, savings on top, in today's money, 2026 to Carmen's 89; the same scale on both
+   slides (series.py). Slide 3 marks the forced sale and the second run-out in the accent; slide 7 redraws the same
+   markets with the plan and keeps their own way as a dashed line. The 10,000-future facts sit beside the picture. */
+.sx{position:relative;height:262px;margin:30px 0 0 56px}
+.sx svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.sx .gy{position:absolute;left:0;right:0;border-top:1px solid rgba(255,255,255,.55);z-index:2}
+.sx .gy span{position:absolute;right:calc(100% + 8px);top:-8px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.sx .al{position:absolute;z-index:3;font:600 14px/1.3 var(--text);white-space:nowrap}
+.sx .al.h{color:#fff}
+.sx .al small{display:block;font-weight:400;opacity:.9}
+.sx .band{position:absolute;top:-24px;left:75%;right:0;border-top:2px solid var(--grey)}
+.sx .band span{position:absolute;top:5px;left:6px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.sx .ev{position:absolute;bottom:0;border-left:2px solid var(--accent);z-index:3}
+.sx .ev span{position:absolute;top:0;right:8px;transform:translateY(-100%);font:600 14px/1.3 var(--text);color:var(--accent-deep);white-space:nowrap;text-align:right}
+.sx .ev.out{border-left-style:dashed}
+.sx .ev.out span{right:auto;left:8px;text-align:left}
+.sx .end{position:absolute;right:0;transform:translateY(-100%);padding-bottom:6px;font:600 14px/1.3 var(--text);text-align:right;white-space:nowrap;z-index:3}
+.sx .own{position:absolute;z-index:3;font:600 14px/1.3 var(--text);color:var(--ink);white-space:nowrap}
+.sxa{position:relative;height:40px;margin-left:56px;border-top:1.5px solid var(--ink)}
+.sxa span{position:absolute;top:7px;transform:translateX(-50%);font:600 14px/1.25 var(--text);white-space:nowrap;text-align:center}
+.sxa span:first-child{transform:none;text-align:left}
+.sxa span:last-child{transform:translateX(-100%);text-align:right}
+.sxa span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+/* slide 3, right: the facts across 10,000 futures, each number centred on its label */
+.x3f{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding-top:4px}
+.x3f>div{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.x3f>div:last-child{display:block;border-bottom:0;padding-bottom:0}
+.x3f strong{flex:none;font:700 40px/1 var(--head);min-width:84px}
+.x3f p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.x3f p b{color:var(--ink);font-weight:600}
+.x3f .on strong{display:block;font-size:72px;color:var(--accent);letter-spacing:-1px;margin:6px 0}
+
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}
 .pic img{width:100%;height:100%;object-fit:cover}
@@ -318,7 +352,6 @@ p,li,span,b{text-wrap:pretty}
 <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
 <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
-<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
 </svg>
 <main class="deck">
 
@@ -377,46 +410,41 @@ p,li,span,b{text-wrap:pretty}
   </header>
   <div class="panels">
     <div class="pn" style="grid-column:span 8">
-      <h3>Ten typical futures, managed their own way…</h3>
+      <h3>One typical future, managed their own way…</h3>
       <p class="lede">Our written case measured investments alone: 33%. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
       <div class="body">
-        <div class="f9">
-          <div class="alone"><span>Carmen on her own</span></div>
-          <div class="goal"></div>
-          <div class="rows">
-            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r kept" style="--w:100.0%;--s:"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r sold" style="--w:100.0%;--s:95.0%"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r short" style="--w:97.5%;--s:90.0%"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r short" style="--w:92.5%;--s:85.0%"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r short" style="--w:87.5%;--s:80.0%"><i class="ln"></i><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r short" style="--w:80.0%;--s:75.0%"><i class="ln"></i><span class="tl" data-b="3">the sale buys just 2 to 3 years</span><b class="hs" data-b="2"><svg class="ic"><use href="#i-house"/></svg></b><b class="end" data-b="3"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+        <div>
+          <div class="sx">
+            <div class="band"><span>Carmen on her own</span></div>
+            <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+              <polygon points="0,300.0 0.0,185.0 25.0,186.1 50.0,187.2 75.0,188.3 100.0,189.4 125.0,190.5 150.0,191.6 175.0,192.6 200.0,193.7 225.0,194.7 250.0,195.7 275.0,196.8 300.0,197.8 325.0,198.8 350.0,199.7 375.0,200.7 400.0,201.7 425.0,202.7 450.0,203.6 475.0,204.5 500.0,205.5 525.0,206.4 550.0,207.3 575.0,208.2 600.0,209.1 625.0,210.0 650.0,210.9 675.0,211.7 700.0,212.6 725.0,213.5 750.0,214.3 775.0,215.1 800.0,216.0 825.0,216.8 850.0,217.6 875.0,250.3 900.0,250.8 925.0,251.3 950.0,254.7 975.0,265.7 1000.0,277.0 1000.0,300.0" style="fill:#545454"/>
+              <polygon points="0.0,112.8 25.0,99.6 50.0,93.9 75.0,91.7 100.0,88.2 125.0,74.6 150.0,71.7 175.0,65.4 200.0,51.1 225.0,51.7 250.0,50.5 275.0,41.9 300.0,23.3 325.0,21.7 350.0,4.8 375.0,10.5 400.0,10.7 425.0,25.0 450.0,20.7 475.0,38.1 500.0,33.3 525.0,46.5 550.0,68.2 575.0,86.5 600.0,91.4 625.0,102.0 650.0,118.3 675.0,130.1 700.0,139.2 725.0,149.6 750.0,170.4 775.0,177.6 800.0,188.2 825.0,198.7 850.0,208.8 875.0,225.9 900.0,234.8 925.0,244.1 950.0,254.7 975.0,265.7 1000.0,277.0 1000.0,277.0 975.0,265.7 950.0,254.7 925.0,251.3 900.0,250.8 875.0,250.3 850.0,217.6 825.0,216.8 800.0,216.0 775.0,215.1 750.0,214.3 725.0,213.5 700.0,212.6 675.0,211.7 650.0,210.9 625.0,210.0 600.0,209.1 575.0,208.2 550.0,207.3 525.0,206.4 500.0,205.5 475.0,204.5 450.0,203.6 425.0,202.7 400.0,201.7 375.0,200.7 350.0,199.7 325.0,198.8 300.0,197.8 275.0,196.8 250.0,195.7 225.0,194.7 200.0,193.7 175.0,192.6 150.0,191.6 125.0,190.5 100.0,189.4 75.0,188.3 50.0,187.2 25.0,186.1 0.0,185.0" style="fill:#D2D2D2"/>
+            </svg>
+            <span class="gy" style="top:66.7%"><span>HK$10M</span></span><span class="gy" style="top:33.3%"><span>HK$20M</span></span><span class="gy" style="top:0.0%"><span>HK$30M</span></span>
+            <p class="al" style="left:14px;top:47.6%;transform:translateY(-50%)">Savings, investments and MPF</p>
+            <p class="al h" style="left:14px;bottom:12px">The home<small>since 2015, where Ryan and Chloe grew up</small></p>
+            <p class="ev" data-b="2" style="left:87.50%;top:calc(75.3% - 44px)"><span>Savings run out: the flat is sold,<br>Carmen 83</span></p>
+            <p class="ev out" data-b="3" style="left:95.00%;top:calc(84.9% - 34px)"><span>Out again<br>at 86</span></p>
           </div>
-          <div class="brk"><span class="from">Each line starts in 2026</span><i data-b="2" style="left:calc((79 - 49 - var(--y0)) / var(--yn) * 100%);width:calc((87 - 79) / var(--yn) * 100%)"></i><span style="left:calc((79 + 87 - 98 - 2 * var(--y0)) / (2 * var(--yn)) * 100%)" data-b="2">The flat sold, Carmen 79 to 87</span></div>
+          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79</i></span><span style="left:100%">2066<i>89</i></span></div>
         </div>
-        <div class="f9ax"><span style="left:0">2051<i>Carmen 74</i></span><span style="left:33.33%">2056<i>79</i></span><span style="left:66.67%">2061<i>84</i></span><span style="left:100%">2066<i>89</i></span></div>
       </div>
     </div>
     <div class="pn" style="grid-column:span 4">
-      <h3>…and leave Ryan and Chloe little</h3>
-      <p class="lede">Tai Kok Tsui, home since 2015, where Ryan and Chloe grew up (case)</p>
+      <h3>…and across 10,000 futures</h3>
+      <p class="lede">The same test in every simulated market (measured)</p>
       <div class="body">
-        <div class="home" data-b="2"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
-        <div class="x3-62" data-b="3"><strong>62%</strong><p>even after the sale, the chance the money lasts to Carmen's 89</p></div>
-        <div class="inh" data-b="4">
-          <p class="l">Left to Ryan and Chloe where the flat is sold</p>
-          <strong>HK$2.3M</strong>
-          <p class="s">of HK$24.4M today; median, today's money (measured)</p>
+        <div class="x3f">
+          <div data-b="2"><strong>51%</strong><p><b>sell the flat</b> when the money runs out, Carmen about 83</p></div>
+          <div data-b="3"><strong>62%</strong><p><b>the money lasts</b> to Carmen's 89, even after the sale</p></div>
+          <div class="on" data-b="4"><p><b>Left to Ryan and Chloe</b> where the flat is sold</p><strong>HK$2.3M</strong><p>of HK$24.4M today; median, today's money</p></div>
         </div>
       </div>
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. One typical future: of those where the flat is sold and the money still runs out, the median sale year, the inheritance nearest the median (measured); today's money.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. In a typical one, Carmen, at 83 and on her own, sells the home where they raised Ryan and Chloe. By 86 the money has run out again, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
 
 <!-- v9 slide 4 (23 Oct): our answer. Plan §5, slide 4. The family's brief in its own words, the five calls in the order
@@ -571,31 +599,28 @@ p,li,span,b{text-wrap:pretty}
 <section class="slide lb c9 reveal" data-time="0:40" data-speaker="Fahtai">
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
-    <h2>Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home</h2>
+    <h2>Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs</h2>
   </header>
   <div class="panels">
     <div class="pn" style="grid-column:span 8" data-b="4">
-      <h3>Ten typical futures again, with the plan…</h3>
-      <p class="lede">The four decisions, the medical review at Adrian's 75 and the spending rules</p>
+      <h3>The same future, with the plan…</h3>
+      <p class="lede">The four decisions, the medical review at Adrian's 75 and the spending rules; their own way dashed</p>
       <div class="body">
-        <div class="f9 won">
-          <div class="alone"><span>Carmen on her own</span></div>
-          <div class="goal"></div>
-          <div class="rows">
-            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts" style="--w:100.0%"><i class="ln"></i><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts g-sold" style="--w:100.0%;--s:95.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts g-short" style="--w:100.0%;--s:90.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts g-short" style="--w:100.0%;--s:85.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts g-short" style="--w:100.0%;--s:80.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
-            <div class="f9r lasts g-short" style="--w:100.0%;--s:75.0%"><i class="ln"></i><b class="gh"><svg class="ic"><use href="#i-house"/></svg></b><b class="end"><svg class="ic x"><use href="#i-x"/></svg><svg class="ic v"><use href="#i-check"/></svg></b></div>
+        <div>
+          <div class="sx">
+            <div class="band"><span>Carmen on her own</span></div>
+            <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+              <polygon points="0,300.0 0.0,185.0 25.0,186.1 50.0,187.2 75.0,188.3 100.0,189.4 125.0,190.5 150.0,191.6 175.0,192.6 200.0,193.7 225.0,194.7 250.0,195.7 275.0,196.8 300.0,201.1 325.0,203.9 350.0,206.6 375.0,209.4 400.0,212.1 425.0,214.9 450.0,217.6 475.0,220.4 500.0,223.2 525.0,225.9 550.0,228.7 575.0,231.5 600.0,234.3 625.0,237.1 650.0,239.9 675.0,242.7 700.0,245.6 725.0,248.4 750.0,251.3 775.0,254.2 800.0,257.1 825.0,260.1 850.0,263.0 875.0,266.0 900.0,269.0 925.0,272.1 950.0,275.2 975.0,278.3 1000.0,281.4 1000.0,300.0" style="fill:#545454"/>
+              <polygon points="0.0,112.8 25.0,99.6 50.0,93.9 75.0,91.7 100.0,88.2 125.0,74.6 150.0,71.7 175.0,65.4 200.0,51.1 225.0,51.7 250.0,50.5 275.0,41.9 300.0,40.9 325.0,38.5 350.0,33.0 375.0,37.5 400.0,36.8 425.0,49.3 450.0,44.4 475.0,60.1 500.0,54.4 525.0,66.2 550.0,85.0 575.0,100.2 600.0,101.1 625.0,108.2 650.0,121.4 675.0,129.2 700.0,133.2 725.0,138.5 750.0,161.4 775.0,159.0 800.0,166.2 825.0,173.8 850.0,179.6 875.0,194.2 900.0,196.6 925.0,197.6 950.0,204.0 975.0,210.5 1000.0,211.5 1000.0,281.4 975.0,278.3 950.0,275.2 925.0,272.1 900.0,269.0 875.0,266.0 850.0,263.0 825.0,260.1 800.0,257.1 775.0,254.2 750.0,251.3 725.0,248.4 700.0,245.6 675.0,242.7 650.0,239.9 625.0,237.1 600.0,234.3 575.0,231.5 550.0,228.7 525.0,225.9 500.0,223.2 475.0,220.4 450.0,217.6 425.0,214.9 400.0,212.1 375.0,209.4 350.0,206.6 325.0,203.9 300.0,201.1 275.0,196.8 250.0,195.7 225.0,194.7 200.0,193.7 175.0,192.6 150.0,191.6 125.0,190.5 100.0,189.4 75.0,188.3 50.0,187.2 25.0,186.1 0.0,185.0" style="fill:#D2D2D2"/>
+              <polyline points="0.0,112.8 25.0,99.6 50.0,93.9 75.0,91.7 100.0,88.2 125.0,74.6 150.0,71.7 175.0,65.4 200.0,51.1 225.0,51.7 250.0,50.5 275.0,41.9 300.0,23.3 325.0,21.7 350.0,4.8 375.0,10.5 400.0,10.7 425.0,25.0 450.0,20.7 475.0,38.1 500.0,33.3 525.0,46.5 550.0,68.2 575.0,86.5 600.0,91.4 625.0,102.0 650.0,118.3 675.0,130.1 700.0,139.2 725.0,149.6 750.0,170.4 775.0,177.6 800.0,188.2 825.0,198.7 850.0,208.8 875.0,225.9 900.0,234.8 925.0,244.1 950.0,254.7 975.0,265.7 1000.0,277.0" fill="none" style="stroke:var(--ink)" stroke-width="2" stroke-dasharray="6 5" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <span class="gy" style="top:66.7%"><span>HK$10M</span></span><span class="gy" style="top:33.3%"><span>HK$20M</span></span><span class="gy" style="top:0.0%"><span>HK$30M</span></span>
+            <p class="al" style="left:14px;top:47.6%;transform:translateY(-50%)">Savings, investments and MPF</p>
+            <p class="al h" style="left:14px;bottom:12px">The home<small>paying HK$230K a year from 2037; still theirs</small></p>
+            <p class="own" style="left:35.0%;top:calc(1.6% - 26px);transform:translateX(-50%)">their own way</p>
           </div>
-          <div class="brk"><span class="from">Each line starts in 2026</span><i style="left:calc((79 - 49 - var(--y0)) / var(--yn) * 100%);width:calc((87 - 79) / var(--yn) * 100%)"></i><span class="ra" style="left:calc((87 - 49 - var(--y0)) / var(--yn) * 100%)">where their own way sold the flat</span></div>
+          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79</i></span><span style="left:100%">2066<i>89</i></span></div>
         </div>
-        <div class="f9ax"><span style="left:0">2051<i>Carmen 74</i></span><span style="left:33.33%">2056<i>79</i></span><span style="left:66.67%">2061<i>84</i></span><span style="left:100%">2066<i>89</i></span></div>
       </div>
     </div>
     <div class="pn" style="grid-column:span 4">
@@ -624,8 +649,8 @@ p,li,span,b{text-wrap:pretty}
     </div>
   </div>
   <p class="bar" data-b="4">Question 1, answered: they retire on time, keep the way they live, and keep the home.</p>
-  <footer class="ft"><p class="src">Ten futures: the 5th to 95th percentile of 10,000 simulated markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured). Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
-  <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
+  <footer class="ft"><p class="src">The same future as their own way's, in the same markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured); today's money. Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
+  <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember that future? With the plan, the money lasts to Carmen's 89, and the home stays theirs. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. Why does the plan look poorer until about 2056? Part of the savings buys the annuities, and the home's value is drawn as income from 2037: the plan trades a peak for a floor, and then keeps going where their own way runs out. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
 
 <!-- v9 slide 8: to build (plan §5). The title and the script are final drafts. -->

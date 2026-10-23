@@ -4,7 +4,7 @@ Generated 2026-10-23 by `round2/make.py` from the slides' speaker notes; numbers
 
 1204 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:18 at 145 words a minute (8:33 with handovers); 8:55 at 135 words a minute (9:10 with handovers); 9:37 at 125 words a minute (9:52 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1:39.
+Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1:38.
 
 ## 1 · Built to Last
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -23,9 +23,9 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 **Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
 
 ## 3 · Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills
-*Will it last? · Pete · 0:45 · 110 spoken words (≈49 s at 135) · over its time*
+*Will it last? · Pete · 0:45 · 111 spoken words (≈49 s at 135) · over its time*
 
-**Pete:** But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them.
+**Pete:** But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. In a typical one, Carmen, at 83 and on her own, sells the home where they raised Ryan and Chloe. By 86 the money has run out again, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them.
 
 > Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.
 
@@ -48,12 +48,12 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 
 > Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.
 
-## 7 · Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home
-*Call 3: Retirement · Fahtai · 0:40 · 81 spoken words (≈36 s at 135)*
+## 7 · Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs
+*Call 3: Retirement · Fahtai · 0:40 · 80 spoken words (≈36 s at 135)*
 
-**Fahtai:** Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win.
+**Fahtai:** Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember that future? With the plan, the money lasts to Carmen's 89, and the home stays theirs. Win.
 
-> Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.
+> Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. Why does the plan look poorer until about 2056? Part of the savings buys the annuities, and the home's value is drawn as income from 2037: the plan trades a peak for a floor, and then keeps going where their own way runs out. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.
 
 ## 8 · One family policy, a plan for each person: every dollar gets a job
 *Call 4: Each person · Win · 0:50 · 104 spoken words (≈46 s at 135)*
