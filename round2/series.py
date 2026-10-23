@@ -112,6 +112,13 @@ def story():
     jl = (14 + jc) // 2 + 2
     T["story_ownlbl_l"], T["story_ownlbl_t"] = f"{X(jl) / W * 100:.1f}%", f"{Y(top[jl]) / H * 100:.1f}%"
     T["story_g10_t"], T["story_g20_t"], T["story_g30_t"] = (f"{Y(v) / H * 100:.1f}%" for v in (10, 20, 30))
+    # slide 3 (and 12): what the children inherit, drawn against today's net worth (the case's HK$24.405M), so a bar
+    # moves when the model moves; parsed from the formatted keys, "HK$2.3M" or "HK$950K"
+    def hkm(s):
+        s = s.replace("HK$", "")
+        return float(s[:-1]) / (1000 if s.endswith("K") else 1)
+    for k in ("own_legacy_sold", "plan_legacy_sold"):
+        T[f"{k}_w"] = f"{hkm(N[k]) / 24.405 * 100:.1f}%"
     return T
 
 

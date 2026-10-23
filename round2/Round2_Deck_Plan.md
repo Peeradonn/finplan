@@ -234,6 +234,14 @@ below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cas
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
 ### 3 · Their own way (Pete; 0:45)
+**Revised 24 Oct** (Pete: the right side conflicted for attention; too many annotations on the chart; not every text
+deserves bold; the descriptions under the years were not emphasised enough). Right: one focal point, "What Ryan and Chloe
+inherit, where the flat is sold": HK$24.4M today as a grey bar, {{own_legacy_sold}} left as a crimson bar on the same scale
+(width [[own_legacy_sold_w]] from series.py) and the only big number; {{own_sold_pct}} and {{own_89}} as small supporting rows (a
+small icon, a 28 px number, no bold); "Why it runs out" a quiet note under a thin rule. Left: area labels regular, only
+the event bold in each event label ("The flat is sold", "Runs out again", with "Carmen 86, short of 89"); the reading
+box under the chart removed (the run-out label carries it); the axis bold on Carmen's age and Adrian's events, the
+years grey (shared with slide 7). Supersedes the notes below where they differ.
 **Rebuilt 23 Oct: one typical future, told with the money** (Pete: the ten lines didn't say what the house meant or what
 the other lines were, and gave little context; the flat placeholder took a quarter of the slide for one word).
 **23 Oct, second pass: the prototype of the presentation system** (§4; Pete: the right side had "so many things to focus

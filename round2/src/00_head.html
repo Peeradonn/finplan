@@ -285,7 +285,7 @@ p,li,span,b{text-wrap:pretty}
    slides (series.py). Slide 3 marks the forced sale and the second run-out in the accent; slide 7 redraws the same
    markets with the plan and keeps their own way as a dashed line. The 10,000-future facts sit beside the picture. */
 .sx{position:relative;height:262px;margin:30px 0 0 56px}
-.x3s .sx{height:246px;margin-top:22px}
+.x3s .sx{height:286px;margin-top:22px}
 .x3s .body>div{flex:1;display:flex;flex-direction:column}
 .x3s .tk9{margin-top:auto}   /* the reading sits on the panel's floor, level with the why */   /* slide 3: a smaller chart, so the takeaway fits under it */
 .sx::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:1.5px solid var(--ink);z-index:4}   /* the value axis */
@@ -293,25 +293,28 @@ p,li,span,b{text-wrap:pretty}
 .sx .gy{position:absolute;left:0;width:0;z-index:4}   /* ticks and labels only: no gridlines across the areas (Pete, 23 Oct) */
 .sx .gy::before{content:"";position:absolute;left:-6px;width:6px;top:0;border-top:1.5px solid var(--ink)}
 .sx .gy span{position:absolute;right:calc(100% + 8px);top:-8px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
-.sx .al{position:absolute;z-index:3;font:600 14px/1.3 var(--text);white-space:nowrap}
-.sx .al.h{color:#fff}
+/* 24 Oct (Pete: too many annotations, not every text deserves bold): area labels regular; the home's name semibold */
+.sx .al{position:absolute;z-index:3;font:400 14px/1.3 var(--text);white-space:nowrap}
+.sx .al.h{color:#fff;font-weight:600}
 .sx .al small{display:block;font-weight:400;opacity:.9}
 /* Adrian's death on the case's life expectancy: an event on the timeline, like the premium chart's review marker */
 .sx .adr{position:absolute;top:-22px;bottom:0;left:75%;border-left:1.5px dashed var(--ink);z-index:2}
 .sx .adr span{position:absolute;top:0;left:7px;font:600 14px/1.3 var(--text);white-space:nowrap}
 .sx .adr span small{display:block;font-weight:400;color:var(--slate)}
 .sx .ev{position:absolute;bottom:0;border-left:2px solid var(--ink);z-index:3}   /* ink: it must read on white, rose and wine (23 Oct) */
-.sx .ev span{position:absolute;top:0;right:8px;transform:translateY(-100%);font:600 14px/1.3 var(--text);color:var(--ink);white-space:nowrap;text-align:right}
+.sx .ev span{position:absolute;top:0;right:8px;transform:translateY(-100%);font:400 14px/1.3 var(--text);color:var(--slate);white-space:nowrap;text-align:right}
+.sx .ev span b{font-weight:700;color:var(--ink)}   /* only the event is bold; its detail is quiet */
 .sx .ev.out{border-left-style:dashed}
 .sx .ev.out span{top:0;right:8px;transform:none;text-align:right}   /* the marker runs from the chart's top; its label sits there, in white space */
 .sx .end{position:absolute;right:0;transform:translateY(-100%);padding-bottom:6px;font:600 14px/1.3 var(--text);text-align:right;white-space:nowrap;z-index:3}
 .sx .own{position:absolute;z-index:3;font:600 14px/1.3 var(--text);color:var(--ink);white-space:nowrap}
 .sx .own small{display:block;font-weight:400;color:var(--slate)}
 .sxa{position:relative;height:40px;margin-left:56px;border-top:1.5px solid var(--ink)}
-.sxa span{position:absolute;top:7px;transform:translateX(-50%);font:600 14px/1.25 var(--text);white-space:nowrap;text-align:center}
+/* the axis tells the story in Carmen's age and Adrian's events (bold), the calendar year quiet (24 Oct, Pete) */
+.sxa span{position:absolute;top:7px;transform:translateX(-50%);font:400 14px/1.25 var(--text);color:var(--slate);white-space:nowrap;text-align:center}
 .sxa span:first-child{transform:none;text-align:left}
 .sxa span:last-child{transform:translateX(-100%);text-align:right}
-.sxa span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+.sxa span i{display:block;font-style:normal;font-weight:600;color:var(--ink)}
 /* slide 3, right: the facts across 10,000 futures, each number centred on its label */
 .x3f{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding-top:4px}
 .x3f>div{display:flex;align-items:center;gap:14px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
@@ -645,6 +648,29 @@ p,li,span,b{text-wrap:pretty}
 .x3w p{font:400 15px/1.4 var(--text);color:var(--slate)}
 .x3w p+p{margin-top:6px}
 .x3w p b{color:var(--ink);font-weight:600}
+/* slide 3, right (24 Oct, Pete: the right side conflicted for attention): one focal point, what Ryan and Chloe
+   inherit, drawn against today's net worth on one scale; the two odds as small supporting rows; the causes as a quiet
+   note. (Before: five numbers of near-equal weight, three icon circles, three bold leads and a shaded box.) */
+.x3p .body{flex:1;display:flex;flex-direction:column}
+.x3q{flex:1;display:flex;flex-direction:column}
+.x3p .sm{display:grid;grid-template-columns:20px 70px 1fr;column-gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--rule)}
+.x3p .sm .ic,.x3p .k .ic{width:20px;height:20px;stroke:var(--slate);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.x3p .sm strong{font:700 28px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
+.x3p .sm p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.x3p .hero{margin-top:18px}
+.x3p .k{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
+.x3p .hb{display:grid;grid-template-columns:92px 1fr;column-gap:12px;align-items:center;margin-top:12px}
+.x3p .hb>span{font:400 14px/1.25 var(--text);color:var(--slate)}
+.x3p .hb .t{display:flex;align-items:center;min-width:0}
+.x3p .hb i{display:block;height:30px;flex:none}
+.x3p .hb i.g{background:#CFC7C5;display:flex;align-items:center;justify-content:flex-end;padding-right:10px}
+.x3p .hb i.g b{font:700 16px/1 var(--text);color:var(--ink)}
+.x3p .hb.on i{background:var(--accent)}
+.x3p .hb.on strong{font:700 52px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1.5px}
+.x3p .why{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)}
+.x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:4px}
+.x3p .why p{font:400 14px/1.4 var(--text);color:var(--slate)}
+.x3p .why p b{color:var(--ink);font-weight:600}
 /* slide 7: the same result rows as slide 3, at the foot of the premium panel */
 .x3r.x7{flex:none;padding-top:0;gap:8px}
 .x3r.x7 .row{padding-bottom:8px}

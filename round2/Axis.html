@@ -285,7 +285,7 @@ p,li,span,b{text-wrap:pretty}
    slides (series.py). Slide 3 marks the forced sale and the second run-out in the accent; slide 7 redraws the same
    markets with the plan and keeps their own way as a dashed line. The 10,000-future facts sit beside the picture. */
 .sx{position:relative;height:262px;margin:30px 0 0 56px}
-.x3s .sx{height:246px;margin-top:22px}
+.x3s .sx{height:286px;margin-top:22px}
 .x3s .body>div{flex:1;display:flex;flex-direction:column}
 .x3s .tk9{margin-top:auto}   /* the reading sits on the panel's floor, level with the why */   /* slide 3: a smaller chart, so the takeaway fits under it */
 .sx::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:1.5px solid var(--ink);z-index:4}   /* the value axis */
@@ -293,25 +293,28 @@ p,li,span,b{text-wrap:pretty}
 .sx .gy{position:absolute;left:0;width:0;z-index:4}   /* ticks and labels only: no gridlines across the areas (Pete, 23 Oct) */
 .sx .gy::before{content:"";position:absolute;left:-6px;width:6px;top:0;border-top:1.5px solid var(--ink)}
 .sx .gy span{position:absolute;right:calc(100% + 8px);top:-8px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
-.sx .al{position:absolute;z-index:3;font:600 14px/1.3 var(--text);white-space:nowrap}
-.sx .al.h{color:#fff}
+/* 24 Oct (Pete: too many annotations, not every text deserves bold): area labels regular; the home's name semibold */
+.sx .al{position:absolute;z-index:3;font:400 14px/1.3 var(--text);white-space:nowrap}
+.sx .al.h{color:#fff;font-weight:600}
 .sx .al small{display:block;font-weight:400;opacity:.9}
 /* Adrian's death on the case's life expectancy: an event on the timeline, like the premium chart's review marker */
 .sx .adr{position:absolute;top:-22px;bottom:0;left:75%;border-left:1.5px dashed var(--ink);z-index:2}
 .sx .adr span{position:absolute;top:0;left:7px;font:600 14px/1.3 var(--text);white-space:nowrap}
 .sx .adr span small{display:block;font-weight:400;color:var(--slate)}
 .sx .ev{position:absolute;bottom:0;border-left:2px solid var(--ink);z-index:3}   /* ink: it must read on white, rose and wine (23 Oct) */
-.sx .ev span{position:absolute;top:0;right:8px;transform:translateY(-100%);font:600 14px/1.3 var(--text);color:var(--ink);white-space:nowrap;text-align:right}
+.sx .ev span{position:absolute;top:0;right:8px;transform:translateY(-100%);font:400 14px/1.3 var(--text);color:var(--slate);white-space:nowrap;text-align:right}
+.sx .ev span b{font-weight:700;color:var(--ink)}   /* only the event is bold; its detail is quiet */
 .sx .ev.out{border-left-style:dashed}
 .sx .ev.out span{top:0;right:8px;transform:none;text-align:right}   /* the marker runs from the chart's top; its label sits there, in white space */
 .sx .end{position:absolute;right:0;transform:translateY(-100%);padding-bottom:6px;font:600 14px/1.3 var(--text);text-align:right;white-space:nowrap;z-index:3}
 .sx .own{position:absolute;z-index:3;font:600 14px/1.3 var(--text);color:var(--ink);white-space:nowrap}
 .sx .own small{display:block;font-weight:400;color:var(--slate)}
 .sxa{position:relative;height:40px;margin-left:56px;border-top:1.5px solid var(--ink)}
-.sxa span{position:absolute;top:7px;transform:translateX(-50%);font:600 14px/1.25 var(--text);white-space:nowrap;text-align:center}
+/* the axis tells the story in Carmen's age and Adrian's events (bold), the calendar year quiet (24 Oct, Pete) */
+.sxa span{position:absolute;top:7px;transform:translateX(-50%);font:400 14px/1.25 var(--text);color:var(--slate);white-space:nowrap;text-align:center}
 .sxa span:first-child{transform:none;text-align:left}
 .sxa span:last-child{transform:translateX(-100%);text-align:right}
-.sxa span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
+.sxa span i{display:block;font-style:normal;font-weight:600;color:var(--ink)}
 /* slide 3, right: the facts across 10,000 futures, each number centred on its label */
 .x3f{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding-top:4px}
 .x3f>div{display:flex;align-items:center;gap:14px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
@@ -645,6 +648,29 @@ p,li,span,b{text-wrap:pretty}
 .x3w p{font:400 15px/1.4 var(--text);color:var(--slate)}
 .x3w p+p{margin-top:6px}
 .x3w p b{color:var(--ink);font-weight:600}
+/* slide 3, right (24 Oct, Pete: the right side conflicted for attention): one focal point, what Ryan and Chloe
+   inherit, drawn against today's net worth on one scale; the two odds as small supporting rows; the causes as a quiet
+   note. (Before: five numbers of near-equal weight, three icon circles, three bold leads and a shaded box.) */
+.x3p .body{flex:1;display:flex;flex-direction:column}
+.x3q{flex:1;display:flex;flex-direction:column}
+.x3p .sm{display:grid;grid-template-columns:20px 70px 1fr;column-gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--rule)}
+.x3p .sm .ic,.x3p .k .ic{width:20px;height:20px;stroke:var(--slate);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.x3p .sm strong{font:700 28px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
+.x3p .sm p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.x3p .hero{margin-top:18px}
+.x3p .k{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
+.x3p .hb{display:grid;grid-template-columns:92px 1fr;column-gap:12px;align-items:center;margin-top:12px}
+.x3p .hb>span{font:400 14px/1.25 var(--text);color:var(--slate)}
+.x3p .hb .t{display:flex;align-items:center;min-width:0}
+.x3p .hb i{display:block;height:30px;flex:none}
+.x3p .hb i.g{background:#CFC7C5;display:flex;align-items:center;justify-content:flex-end;padding-right:10px}
+.x3p .hb i.g b{font:700 16px/1 var(--text);color:var(--ink)}
+.x3p .hb.on i{background:var(--accent)}
+.x3p .hb.on strong{font:700 52px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1.5px}
+.x3p .why{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)}
+.x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:4px}
+.x3p .why p{font:400 14px/1.4 var(--text);color:var(--slate)}
+.x3p .why p b{color:var(--ink);font-weight:600}
 /* slide 7: the same result rows as slide 3, at the foot of the premium panel */
 .x3r.x7{flex:none;padding-top:0;gap:8px}
 .x3r.x7 .row{padding-bottom:8px}
@@ -783,7 +809,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="panels">
     <div class="pn x3s" style="grid-column:span 7">
       <h3>One typical future, managed their own way…</h3>
-      <p class="lede">Our written case measured investments alone: 33%. <b>The fairer test is their own way.</b></p>
+      <p class="lede">Our written case measured investments alone: 33%. The fairer test is their own way.</p>
       <div class="body">
         <div>
           <div class="sx">
@@ -794,23 +820,26 @@ p,li,span,b{text-wrap:pretty}
             <span class="gy" style="top:66.7%"><span>HK$10M</span></span><span class="gy" style="top:33.3%"><span>HK$20M</span></span><span class="gy" style="top:0.0%"><span>HK$30M</span></span>
             <p class="al" style="left:14px;top:47.6%;transform:translateY(-50%)">Savings, investments and MPF</p>
             <p class="al h" style="left:14px;bottom:12px">The home<small>since 2015, where Ryan and Chloe grew up</small></p>
-            <span class="ring" data-b="2" style="left:87.50%;top:75.3%;width:46px;height:46px"></span><p class="ev" data-b="2" style="left:87.50%;top:calc(75.3% - 44px)"><span>Savings run out: the flat is sold,<br>Carmen 83</span></p>
-            <p class="ev out" data-b="3" style="left:95.00%;top:0"><span>Runs out again<br>at 86</span></p>
+            <span class="ring" data-b="2" style="left:87.50%;top:75.3%;width:46px;height:46px"></span><p class="ev" data-b="2" style="left:87.50%;top:calc(75.3% - 44px)"><span><b>The flat is sold</b><br>savings gone, Carmen 83</span></p>
+            <p class="ev out" data-b="3" style="left:95.00%;top:0"><span><b>Runs out again</b><br>Carmen 86, short of 89</span></p>
           </div>
-          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79 · Adrian dies</i></span><span style="left:100%">2066<i>89</i></span></div>
-          <p class="tk9" data-b="4">In this future, <b>even selling the home does not carry Carmen to 89.</b></p>
+          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>Carmen 69</i></span><span style="left:75%">2056<i>Adrian dies</i></span><span style="left:100%">2066<i>Carmen 89</i></span></div>
         </div>
       </div>
     </div>
-    <div class="pn" style="grid-column:span 5">
+    <div class="pn x3p" style="grid-column:span 5">
       <h3>…and across 10,000 futures</h3>
       <p class="lede">The same test in every simulated market (measured)</p>
       <div class="body">
-        <div class="x3r">
-          <div class="row" data-b="2"><span class="ic9"><svg class="ic"><use href="#i-house"/></svg></span><strong>51%</strong><p><b>sell the flat</b> when the money runs out, Carmen about 83, usually alone</p></div>
-          <div class="row" data-b="3"><span class="ic9"><svg class="ic"><use href="#i-hourglass"/></svg></span><strong>62%</strong><p><b>see the money last</b> to 89, even after the sale</p></div>
-          <div class="row on" data-b="4"><span class="ic9"><svg class="ic"><use href="#i-gift"/></svg></span><strong>HK$2.3M</strong><p><b>left to Ryan and Chloe</b> where the flat is sold, of HK$24.4M today</p></div>
-          <div class="x3w" data-b="4"><h4>Why it runs out</h4><p><b>61%</b> of their wealth pays nothing until sold: home and business</p><p><b>HK$375K a year</b> of medical premiums, outside their budget</p></div>
+        <div class="x3q">
+          <div class="sm" data-b="2"><svg class="ic"><use href="#i-house"/></svg><strong>51%</strong><p>sell the flat when the money runs out, Carmen about 83, usually alone</p></div>
+          <div class="sm" data-b="3"><svg class="ic"><use href="#i-hourglass"/></svg><strong>62%</strong><p>see the money last to 89, even after the sale</p></div>
+          <div class="hero" data-b="4">
+            <p class="k"><svg class="ic"><use href="#i-gift"/></svg>What Ryan and Chloe inherit, where the flat is sold</p>
+            <div class="hb"><span>Today</span><div class="t"><i class="g" style="width:100%"><b>HK$24.4M</b></i></div></div>
+            <div class="hb on"><span>Left to them</span><div class="t"><i style="width:9.4%"></i><strong>HK$2.3M</strong></div></div>
+          </div>
+          <div class="why" data-b="4"><h4>Why it runs out</h4><p><b>61%</b> of their wealth pays nothing until sold: the home and the business</p><p><b>HK$375K a year</b> of medical premiums, outside their budget</p></div>
         </div>
       </div>
     </div>
@@ -982,7 +1011,7 @@ p,li,span,b{text-wrap:pretty}
             <p class="al h" style="left:14px;bottom:12px">The home<small>paying HK$230K a year from 2037; still theirs</small></p>
             <p class="own" style="left:55.0%;top:calc(22.7% - 10px);transform:translateY(-100%)">their own way<small>ahead on paper until 2053: the plan turns<br>the home and the MPF into income for life</small></p>
           </div>
-          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>69</i></span><span style="left:75%">2056<i>79 · Adrian dies</i></span><span style="left:100%">2066<i>89</i></span></div>
+          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>Carmen 69</i></span><span style="left:75%">2056<i>Adrian dies</i></span><span style="left:100%">2066<i>Carmen 89</i></span></div>
         </div>
       </div>
     </div>
