@@ -5,47 +5,28 @@
     <p class="kick">Call 2: The home and the business</p>
     <h2>Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}}</h2>
   </header>
-  <div class="panels">
-    <div class="pn k9" style="grid-column:span 9">
-      <h3>What they own…</h3>
-      <h3>…what each becomes, decided now…</h3>
-      <div class="rws">
-        <div class="rw big">
-          <div class="own"><b>The flat</b><div class="tr"><i style="width:240px"></i><span>HK$11.5M</span></div></div>
-          <div class="to" data-b="2"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <div class="n"><strong>{{rmp_income}}</strong><span>a year for life, from {{rmp_year}}</span></div>
-            <p>Stay, with a reverse mortgage, or downsize: they choose at 65</p></div>
-        </div>
-        <div class="rw">
-          <div class="own"><b>The business</b><div class="tr"><i style="width:104px"></i><span>HK$5.0M</span></div></div>
-          <div class="to" data-b="3"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Sold in stages, 2035–39, to her co-founder and managers</b>
-            <p>Their own way sells it too; we count only HK$3.0M</p></div>
-        </div>
-        <div class="rw">
-          <div class="own"><b>Their budget</b><p class="fl">HK$780K a year</p></div>
-          <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>A survivor plans on 70%</b>
-            <p>Agreed now, for after the first death</p></div>
-        </div>
-        <div class="rw">
-          <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
-          <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Two annuities, each for life: {{floor_2039_ann}} a year</b>
-            <p>HKMC, bought at 65 and 62; with the home's income, {{floor_2039_pct}} of essential bills in 2039</p></div>
-        </div>
-      </div>
-    </div>
-    <div class="pn" style="grid-column:span 3" data-b="5">
-      <h3>…and what it achieves</h3>
-      <div class="k9b">
-        <p class="cap9">Chance the money lasts to Carmen's 89 (measured)</p>
-        <div class="cols">
-          <div class="c"><div class="tk" style="--h:{{own_89}}"><i></i><strong>{{own_89}}</strong></div><p>Their own way<span>the flat sold at about {{own_sale_age}}</span></p></div>
-          <div class="c now"><div class="tk" style="--h:{{ladder_5_89}}"><i></i><strong>{{ladder_5_89}}</strong></div><p>Decided now<span>four decisions</span></p></div>
-        </div>
-      </div>
-    </div>
+  <div class="f6">
+    <svg viewBox="0 0 1184 270" preserveAspectRatio="none" aria-hidden="true">
+      <path data-b="2" d="M 320,45 L 640,45 C 730,45 730,55 810,55" fill="none" stroke="#E6CBCF" stroke-width="18" stroke-linecap="butt"/>
+      <path data-b="3" d="M 320,135 L 640,135 C 730,135 730,110 810,110" fill="none" stroke="#E6CBCF" stroke-width="18" stroke-linecap="butt"/>
+      <path data-b="4" d="M 320,225 L 640,225 C 730,225 730,231 810,231" fill="none" stroke="#EFDDE0" stroke-width="18" stroke-linecap="butt"/>
+    </svg>
+    <div class="own" style="top:45px"><b>The flat</b><div class="tr"><i style="width:230px"></i><span>HK$11.5M</span></div></div>
+    <div class="own" style="top:135px"><b>The MPF</b><div class="tr"><i style="width:34px"></i><span>HK$1.7M</span></div></div>
+    <div class="own" style="top:225px"><b>The business</b><div class="tr"><i style="width:100px"></i><span>HK$5.0M</span></div></div>
+    <p class="rl" data-b="2" style="top:45px"><b>{{rmp_income}} a year for life, from {{rmp_year}}</b>a reverse mortgage; or they downsize: they choose at 65</p>
+    <p class="rl" data-b="3" style="top:135px"><b>{{floor_2039_ann}} a year for life</b>two HKMC annuities, bought at 65 and 62</p>
+    <p class="rl" data-b="4" style="top:225px"><b>Sold in stages, 2035–39</b>to her co-founder and managers; their own way sells it too</p>
+    <div class="dst inc" data-b="3"><h4>Guaranteed income, for life</h4><strong>{{floor_2039_pct}}</strong><p>of their essential bills, covered in 2039</p></div>
+    <div class="dst sav" data-b="4"><strong>HK$3.0M</strong><p><b>into savings</b>counted low, of HK$5.0M</p></div>
+  </div>
+  <p class="f6b" data-b="4"><b>And their budget:</b> a survivor plans on 70%, agreed now, for the years after the first death</p>
+  <div class="x4-i" data-b="5">
+    <p class="l">Chance the money lasts to Carmen's 89</p>
+    <p class="v"><strong>{{own_89}}</strong><span>their own way</span></p>
+    <p class="ar">→</p>
+    <p class="v on"><strong>{{ladder_5_89}}</strong><span>four decisions, taken now</span></p>
+    <p class="h">decided at 65, not forced at {{own_sale_age}}</p>
   </div>
   <p class="bar" data-b="5">Decided now, four decisions close most of the gap; what's left is a cost the budget ignores.</p>
   <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89, 10,000 simulated markets (measured); both ways pay the Flexi medical plan for life. Their own way: the business sold, the budget kept after a death, the flat sold for a HK$7M one when the money runs out. Assets: case.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">6 / 15</span></footer>

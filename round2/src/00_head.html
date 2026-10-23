@@ -410,6 +410,59 @@ p,li,span,b{text-wrap:pretty}
 .x2t .st strong.on{font-size:64px;color:var(--accent);letter-spacing:-1px}
 .x2t .st p{font:400 15px/1.3 var(--text);color:var(--slate);margin-top:4px}
 
+/* ==================== slide 6, Call 2 (23 Oct): a flow, assets into income ====================
+   What they own (grey bars to scale, the flat = the full track) flows into what it becomes: the flat and the MPF into
+   one wine box, guaranteed income for life (its share of essential bills in 2039); the business into savings. The
+   ribbons carry their own labels; no ribbon crosses another. The fourth decision, a spending one, sits under the flow.
+   The band below gives the claim, as on slide 4. Geometry: the flow box is 1184 x 270; rows at y 45, 135, 225. */
+.f6{position:relative;height:270px;margin-top:40px}
+.f6~.x4-i{margin-top:auto}   /* the band sits on the base; spare space goes above it */
+.f6 svg{position:absolute;inset:0;width:100%;height:100%}
+.f6 .own{position:absolute;left:0;width:300px;transform:translateY(-50%)}
+.f6 .own b{display:block;font:600 16px/1.3 var(--text)}
+.f6 .own .tr{display:flex;align-items:center;gap:10px;margin-top:6px}
+.f6 .own .tr i{display:block;height:16px;background:var(--grey)}
+.f6 .own .tr span{font:600 16px/1 var(--text);white-space:nowrap}
+.f6 .rl{position:absolute;left:350px;width:420px;transform:translateY(-100%);padding-bottom:12px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.f6 .rl b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.f6 .dst{position:absolute;left:810px;right:0;padding:14px 18px}
+.f6 .dst.inc{top:0;height:166px;background:var(--wine);color:#fff;display:flex;flex-direction:column;justify-content:center}
+.f6 .dst.inc h4{font:600 20px/1.2 var(--head)}
+.f6 .dst.inc strong{display:block;font:600 56px/1 var(--head);margin:8px 0 4px}
+.f6 .dst.inc p{font:400 14px/1.35 var(--text);opacity:.9}
+.f6 .dst.sav{top:192px;height:78px;background:var(--tint);border:1.5px solid var(--rose);display:flex;align-items:center;gap:14px}
+.f6 .dst.sav strong{font:600 32px/1 var(--head);white-space:nowrap}
+.f6 .dst.sav p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.f6 .dst.sav p b{color:var(--ink);font-weight:600;display:block}
+.f6b{display:flex;align-items:center;gap:14px;margin-top:14px;padding:10px 14px;border:1.5px dashed var(--rose);font:400 15px/1.35 var(--text);color:var(--slate)}
+.f6b b{color:var(--ink);font-weight:600}
+
+/* ==================== slide 8, Call 4 (23 Oct): every dollar gets a job ====================
+   The parents' HK$7.7M outside the home and the MPF, drawn twice on one scale (block width = value): today in grey,
+   with no job; with the plan in the crimson family, each block a job and an owner's face. */
+.b8{flex:1;display:flex;flex-direction:column;justify-content:space-between;margin-top:22px;min-height:0}
+.b8 .rw{display:grid;grid-template-columns:150px 1fr;column-gap:20px;align-items:stretch}
+.b8 .rw>p{font:600 22px/1.2 var(--head);padding-top:10px}
+.b8 .rw>p small{display:block;font:400 14px/1.35 var(--text);color:var(--slate);margin-top:4px}
+.b8 .bk{display:flex;gap:4px}
+.b8 .bk>div{position:relative;padding:12px 14px;min-width:0;display:flex;flex-direction:column;justify-content:space-between}
+.b8 .bk strong{display:block;font:600 30px/1 var(--head)}
+.b8 .bk b{display:block;font:600 15px/1.3 var(--text);margin-top:8px}
+.b8 .bk span{display:block;font:400 14px/1.35 var(--text)}
+.b8 .t .bk>div{height:128px;background:var(--mist);color:var(--ink)}
+.b8 .t .bk span{color:var(--slate)}
+.b8 .p .bk>div{height:168px;color:#fff}
+.b8 .p .bk span{opacity:.92}
+.b8 .p .bk .pic{position:absolute;right:12px;top:12px;width:52px;height:52px;margin:0;border:2px solid #fff;background:#fff}
+.b8 .mid{margin-left:170px;font:600 15px/1 var(--text);color:var(--accent-deep);display:flex;align-items:center;gap:8px}
+.b8 .mid::before{content:"";width:2px;height:22px;background:var(--accent)}
+.b8 .st{display:grid;grid-template-columns:1fr 1fr;column-gap:24px;margin-left:170px}
+.b8 .st div{display:flex;align-items:center;gap:14px;padding:10px 14px;border:1.5px dashed var(--rose)}
+.b8 .st .pic{width:44px;height:44px;margin:0;border:0;background:var(--mist);flex:none}
+.b8 .st p{font:400 15px/1.35 var(--text);color:var(--slate)}
+.b8 .st p b{color:var(--ink);font-weight:600}
+.b8 .st strong{font:600 30px/1 var(--head);color:var(--ink);white-space:nowrap}
+
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}
 .pic img{width:100%;height:100%;object-fit:cover}

@@ -1,7 +1,8 @@
-# Built to Last, Round Two: Deck Plan (v9, "Their own way, then five calls")
+# Built to Last, Round Two: Deck Plan (v10, "Their own way, then five calls", the house we build)
 
-**Status:** v9 agreed with Pete, 22 Oct 2026: the problem before the answer, "their own way" as the baseline, Lookbua
-reads slide 11. The talk, timed, with the full draft script: `round2/Talk_Outline.md`. Look B chosen (20 Oct, §6).
+**Status:** v10, 23 Oct 2026. The story is v9's (agreed 22 Oct: the problem before the answer, "their own way" as the
+baseline, Lookbua reads slide 11); v10 is the design pass (Pete, 23 Oct: "the story is ok, the pages are not"): the
+house as the deck's idea, and a picture that portrays each slide's point (§6, §5). The talk, timed, with the full draft script: `round2/Talk_Outline.md`. Look B chosen (20 Oct, §6).
 v8 ("Five calls", 20 Oct) is in git (commit 0b0a985 and before); v1 to v7 in `archive/Round2_Deck_Plan_v1-v7.md`.
 **Deck type:** a 10-minute recorded video presented over these slides, and the PowerPoint file scored on its own
 ("Quality of ppt"). Pete chose **hybrid** (20 Oct): every slide is presented, and also makes sense read alone.
@@ -179,6 +180,12 @@ The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` w
 "Built to Last", the promise line, the team; an illustration of the family (image set, §7). No numbers.
 
 ### 2 · On paper, secure (Pete; 0:30)
+**v10 (23 Oct): forty years on one line** (Pete chose it over "what HK$24.4M is made of"). Title: "On paper, the Wongs
+are secure, for a plan that must last forty years". One row per person on a shared 2026-2066 axis: working years an ink
+line, retirement a rose band, Chloe's university a tint band, milestones labelled (Adrian retires at 65 in 2037, Carmen
+at 62 in 2039, Chloe's university 2028-32); the plan's horizon, Carmen's 89, a crimson line. The strength as a band
+below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cash). Bar: "But will it last to Carmen's
+89? We tested it in 10,000 futures." The earlier specs below are superseded.
 **Built 23 Oct** (`src/01_s01-02.html`; 96 words). Stacked: "Four people, four wants…" (upright cards, portraits
 150 px) over "…and on paper, secure" (one band; HK$24.4M at 72 px in the accent).
 - Four portraits with age, risk profile and want (case): Adrian 54, low to medium, capital, retirement and health
@@ -207,6 +214,9 @@ the other lines were, and gave little context; the flat placeholder took a quart
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
 ### 4 · Our answer (Pete; 0:45)
+**v10 (23 Oct): the whole house.** Left, the house with each part named; right, each floor's calls and their one
+result, level with the floor; the house builds as Pete names each call. The band below: {{own_89}} their own way →
+{{switch_89}} with the five calls. Superseded: the five columns and the brief as a quote.
 **Built 23 Oct** (`src/03_s04-05.html`; about 150 words). The brief as a quote, the five calls as five columns (ink
 number squares matching the tracker, an icon each), the impact band under a rule: {{own_89}} grey → {{switch_89}} in
 the accent, the only accent on the slide.
@@ -243,6 +253,11 @@ first: now the plan can turn what they own into income": the old bar repeated th
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 6 · Call 2: decide now, not at {{own_sale_age}} (Fahtai; 0:45)
+**v10 (23 Oct): a flow, assets into income** (Pete chose it over the rows). The flat ({{rmp_income}} a year for life
+from {{rmp_year}}) and the MPF ({{floor_2039_ann}} a year, two HKMC annuities) flow into one wine box, "Guaranteed income,
+for life": {{floor_2039_pct}} of essential bills in 2039; the business flows into savings (HK$3.0M, counted low; their own
+way sells it too). Under the flow, the fourth decision as what it is, a spending one: a survivor plans on 70%. The band:
+{{own_89}} their own way → {{ladder_5_89}} four decisions, decided at 65, not forced at {{own_sale_age}}.
 **Built 22 Oct** (prototype `looks/src/08_call2_v9.html`, render `looks/build/slide-14.png`; 172 words). Title (23 Oct, Fahtai's review): "Decide
 now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to
 {{ladder_5_89}}": about half of the rise is the survivor budget, a spending decision, so "the same assets" and a title
@@ -283,6 +298,11 @@ Notes answer "why does the plan look poorer until about 2056?" (the annuities an
 - Bar: "Question 1, answered: they retire on time, keep the way they live, and keep the home."
 
 ### 8 · Call 4: one family policy, a plan for each person (Win; 0:50)
+**v10 (23 Oct): blocks with jobs and faces** (Pete chose it over two bars). The parents' HK$7.7M drawn twice on one
+scale: today, grey blocks with no job (cash HK$2.5M, 30 months, idle; bond funds HK$1.35M; equity funds HK$3.85M at
+about 1.5% a year); with the plan, crimson-family blocks, each a job and an owner's face (reserve HK$1.0M; Chloe's degree
+HK$2.57M; Adrian HK$2.07M, 40% shares; Carmen HK$2.07M, 60% shares, led by ESG). Strip: Ryan's own plan (30% of his
+pay); HK$45K a year less in fees.
 - **"Today, one pot that fits nobody…"**: the parents' HK$7.7M outside the MPF and the home: cash HK$2.5M (30 months
   of spending), bonds HK$1.35M, shares HK$3.85M in funds at about 1.5% a year: more risk than Adrian's profile allows
   (case; proposal §5).
@@ -371,9 +391,12 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
   (the conclusion bar, the home layer, the family panels, cost bars), rose #E6CBCF and #D3A1A8 (savings, lighter
   series), tint #F7ECED; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate #5A5250,
   ink #1B1716). No blue. Events on wine-and-rose charts in ink.
-- **One decorative idea: the family's lifeline.** A ruler from 2026 to Carmen's 89 on the kicker row of each content
-  slide; the crimson span is when that slide's decisions act ("When: now, until they retire"; "from 2035, for life";
-  "from 2039; the review in 2047"). The same years are the time axis of slides 3, 7 and 11. Not used on 1, 13 to 15.
+- **One decorative idea: the house we build** (Pete chose it, 23 Oct, over the lifeline and over no thread). "Built to
+  Last" drawn as a house from the written case's pillars (`round2/house.py`): the foundation is Call 1 (protected
+  first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
+  passes on. Slide 4 draws the whole house as the answer, built part by part as the calls are named; each call slide
+  carries a small house beside its title (built parts wine, this call crimson, the rest dashed); the close shows it
+  complete. The lifeline ruler is gone; time stays where it is data (the axes of slides 2, 3, 7, 11).
 - **Signature:** a short crimson mark before every kicker (the call's numbered square on call slides); the cover's
   crimson bar; the family on a wine panel (cover, slide 2).
 - **Not used:** gridlines across chart areas; a section tracker (the kicker navigates); grey-only charts; blue.
