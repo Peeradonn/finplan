@@ -43,16 +43,16 @@ def house(state=None, w=72, labels=False, cls="house", steps=None):
         if labels:
             num, name = NAMES[part]
             if part == "1":   # the foundation is shallow: number and name on one line
-                out.append(f'<text x="{cx}" y="{cy + 7}" text-anchor="middle" font-family="Inter, Arial, sans-serif" '
-                           f'font-weight="600" font-size="17" fill="{ink}"><tspan font-family="Inter, Arial, sans-serif" '
+                out.append(f'<text x="{cx}" y="{cy + 7}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" '
+                           f'font-weight="600" font-size="17" fill="{ink}"><tspan font-family="Plus Jakarta Sans, Arial, sans-serif" '
                            f'font-size="24">{num}</tspan>   {name}</text>')
             elif num:
-                out.append(f'<text x="{cx}" y="{cy - 6}" text-anchor="middle" font-family="Inter, Arial, sans-serif" '
+                out.append(f'<text x="{cx}" y="{cy - 6}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" '
                            f'font-weight="600" font-size="30" fill="{ink}">{num}</text>')
-                out.append(f'<text x="{cx}" y="{cy + 24}" text-anchor="middle" font-family="Inter, Arial, sans-serif" '
+                out.append(f'<text x="{cx}" y="{cy + 24}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" '
                            f'font-weight="600" font-size="17" fill="{ink}">{name}</text>')
             else:
-                out.append(f'<text x="{cx}" y="{cy + 12}" text-anchor="middle" font-family="Inter, Arial, sans-serif" '
+                out.append(f'<text x="{cx}" y="{cy + 12}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" '
                            f'font-weight="600" font-size="17" fill="{ink}">{name}</text>')
         out.append("</g>")
     out.append("</svg>")
@@ -106,7 +106,7 @@ def elevation(w=360):
             cx, cy = x + ww / 2, y + hh / 2
         num = "" if part == "roof" else part
         if num:
-            o.append(f'<text x="{cx}" y="{cy + 13}" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600" '
+            o.append(f'<text x="{cx}" y="{cy + 13}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="600" '
                      f'font-size="{30 if part == "1" else 40}" fill="#A81E2D">{num}</text>')
         o.append("</g>")
     o.append("</svg>")

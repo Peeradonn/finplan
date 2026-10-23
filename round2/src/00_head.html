@@ -6,34 +6,28 @@
 <title>Built to Last</title>
 <!--
   Built to Last, Round Two deck: the plan is round2/Round2_Deck_Plan.md (the look in §6; the tests, the type scale
-  and the grid in §4); the talk and its timing are round2/Talk_Outline.md. One family, Inter, for every part (Pete,
-  23 Oct evening): the hierarchy comes from size, weight and colour. The written case's crimson as the one accent, its wine for weight, a greyed rose and warm neutrals for the rest.
+  and the grid in §4); the talk and its timing are round2/Talk_Outline.md. One family, Plus Jakarta Sans, for every part
+  (Pete chose it on 24 Oct from four candidates set side by side): the hierarchy comes from size, weight and colour. The written case's crimson as the one accent, its wine for weight, a greyed rose and warm neutrals for the rest.
   Fonts: SIL Open Font License (fonts/OFL-*.txt).
   Every slide's script is its <aside class="notes">: the spoken words, then "[Notes: ...]" for background. make.py
   writes them to Axis_Script.html and Axis_Script.md.
 -->
 <style>
-@font-face{font-family:"ArchN";src:url("fonts/ArchivoNarrow-500.ttf");font-weight:500}
-@font-face{font-family:"ArchN";src:url("fonts/ArchivoNarrow-600.ttf");font-weight:600}
-@font-face{font-family:"ArchN";src:url("fonts/ArchivoNarrow-700.ttf");font-weight:700}
-@font-face{font-family:"Inter";src:url("fonts/Inter-400.ttf");font-weight:400}
-@font-face{font-family:"Inter";src:url("fonts/Inter-500.ttf");font-weight:500}
-@font-face{font-family:"Inter";src:url("fonts/Inter-600.ttf");font-weight:600}
-@font-face{font-family:"Inter";src:url("fonts/Inter-700.ttf");font-weight:700}
-@font-face{font-family:"EBG";src:url("fonts/EBGaramond-Regular.ttf");font-weight:400}
-@font-face{font-family:"EBG";src:url("fonts/EBGaramond-Medium.ttf");font-weight:500}
-@font-face{font-family:"EBG";src:url("fonts/EBGaramond-MediumItalic.ttf");font-weight:500;font-style:italic}
-@font-face{font-family:"EBG";src:url("fonts/EBGaramond-SemiBold.ttf");font-weight:600}
-@font-face{font-family:"EBG";src:url("fonts/EBGaramond-SemiBold.ttf");font-weight:700}
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-Regular.ttf");font-weight:400}
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-Medium.ttf");font-weight:500}
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
 
 /* ---- look B, as tokens ---- */
-/* 23 Oct, evening (Pete): one clear font for every part, as in e-Sentry: Inter throughout, the hierarchy made by size,
-   weight and colour, not by switching faces. (Earlier the same day: EB Garamond for titles and numbers.) warm neutrals tuned to the crimson;
+/* 23 Oct, evening (Pete): one clear font for every part, as in e-Sentry: Plus Jakarta Sans throughout (Pete's pick, 24 Oct, over
+   Bricolage Grotesque, Schibsted Grotesk and Manrope; Inter before it), the hierarchy made by size, weight and colour, not by
+   switching faces. (Earlier the same day: EB Garamond for titles and numbers.) warm neutrals tuned to the crimson;
    wine for weight; a greyed rose for secondary fills (23 Oct: the pale pinks read as pink, not as the
    crimson's family). */
 .lb{--paper:#FFFFFF;--mist:#F5F1F0;--rule:#DDD6D4;--grey:#A69E9C;--slate:#5A5250;--ink:#1B1716;
     --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#DDD0CD;--tint:#F5F1F0;
-    --text:"Inter",Arial,sans-serif;--head:"Inter",Arial,sans-serif;font-variant-numeric:lining-nums}
+    --text:"Plus Jakarta Sans",Arial,sans-serif;--head:"Plus Jakarta Sans",Arial,sans-serif;font-variant-numeric:lining-nums}
 
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -105,7 +99,7 @@ p,li,span,b{text-wrap:pretty}
    to the window's start) and --yn (the window's length); the lines fade in from the left, and make_looks.py fails if
    any event falls before the window. The accent is the title's claim: on 3 the sale and what it leaves the children;
    on 7 the futures that reach 89. */
-.c9{--text:"Inter",Arial,sans-serif}
+.c9{--text:"Plus Jakarta Sans",Arial,sans-serif}
 .c9 .pn>h3{font-size:20px;margin-bottom:0}
 .c9 .bar{font-size:20px;margin-top:18px}
 .c9 .ic{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}

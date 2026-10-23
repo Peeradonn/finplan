@@ -136,7 +136,7 @@ the failures we've already seen. Each slide's form is chosen for its point.
 
 **Fixed** (constraints, on every slide):
 - 1280 × 720. Nothing meant to be read under 14 px: the judges may watch on Zoom.
-- The identity (§6) and the tokens in `src/00_head.html`. One type scale in Inter, so the deck looks like one deck: title 33
+- The identity (§6) and the tokens in `src/00_head.html`. One type scale in Plus Jakarta Sans, so the deck looks like one deck: title 33
   (600, tracked -0.6) · panel heading 19 bold · body and bold label 16 · small 14 · tag and source 12 · numbers 40 and 72 (76 for
   slide 2's net worth). Use these sizes rather than new ones.
 - A 12-column grid with 48 px side margins and 24 px gutters. How a slide divides it is open.
@@ -452,8 +452,10 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 ## 6. The look
 **23 Oct: the deck's identity** (Pete: "all default fonts with no clear design work"; e-Sentry has a clear style; slide
 2 a weak first impression). Look B's structure stays; its "no motif" plainness goes.
-- **Type: one family, Inter, for every part** (Pete, 23 Oct evening: "keep one clear font for all of the parts", as in
-  e-Sentry, which uses Barlow throughout). The hierarchy comes from size, weight and colour, never from switching
+- **Type: one family, Plus Jakarta Sans, for every part.** Pete, 23 Oct evening: "keep one clear font for all of the
+  parts", as in e-Sentry, which uses Barlow throughout; Inter first, then "I want a font that makes us stand out"; he
+  chose Plus Jakarta Sans on 24 Oct from four candidates set side by side on one page (with Bricolage Grotesque,
+  Schibsted Grotesk and Manrope). Weights 400 to 800, in `round2/fonts/`, SIL OFL, embeddable. The hierarchy comes from size, weight and colour, never from switching
   faces: with Garamond for numbers and Inter for labels, the same kind of thing (a share, an amount) looked like two
   kinds. EB Garamond stays the written case's face only.
 - **Colour:** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
