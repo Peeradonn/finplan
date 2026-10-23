@@ -47,9 +47,38 @@ Aspect 2:1.
 > The same family of four around a wooden dining table at home, talking together with a few blank sheets of paper and
 > a teapot on the table, no writing visible on anything. Warm, relaxed, everyone included in the conversation.
 
-## 6 · Not needed now: the four portraits again
-23 Oct: the accent is crimson again, so the current portraits (`round2/img/*.jpg`) already match. Only if the set needs
-redoing for another reason:
-Regenerate each with its own photo-free description and the style block, changing only the clothing: Adrian a navy
-blazer, Carmen a crimson top, Ryan a dark grey shirt, Chloe a light grey sweater. Square, head and shoulders, the
-same light grey background as now.
+## 6 · The four portraits again, each with one detail from the case (needed, 24 Oct)
+Pete, 24 Oct: the current portraits read as generic stock avatars. Keep the same four people (same faces, hair and
+clothing, so they stay recognisable on slides 1, 2, 8 and 9) and the same flat style, and give each one object from
+the case, held close to the face so it survives the round crop. Upload the person's current portrait
+(`round2/img/<name>.jpg`) as the reference for that prompt, plus the style block.
+Square, 1024 × 1024. Head and upper chest, centred, facing the viewer, the object at chest height and inside the middle
+two-thirds of the frame (the deck crops a circle). Plain light grey background (#F2F2F2), nothing else in the scene.
+The object is drawn as simple shapes with no text, numbers, logos or labels on it.
+
+**Adrian, 54** (Regional Operations Director, a logistics technology company across Hong Kong, the Greater Bay Area
+and Southeast Asia):
+> The same man as the reference: Hong Kong Chinese, 54, short greying hair, glasses, a navy blazer over a light shirt.
+> He holds a tablet at chest height, turned slightly towards the viewer; on its screen, a simple map of a few dots
+> joined by curved lines, like delivery routes between cities, drawn in grey with one crimson line. Calm, competent,
+> a slight smile.
+
+**Carmen, 49** (co-founder and managing director of a sustainable packaging distributor):
+> The same woman as the reference: Hong Kong Chinese, 49, shoulder-length dark hair, a crimson top. She holds a
+> small plain brown recycled-paper box in both hands at chest height, lid slightly open, with a sprig of green leaves
+> tucked in it. Warm, confident, proud of what she has built.
+
+**Ryan, 24** (a data analyst at a virtual insurer, who holds crypto):
+> The same young man as the reference: Hong Kong Chinese, 24, short black hair, a dark grey shirt with the sleeves
+> rolled up. He holds a phone at chest height, screen half turned towards the viewer, showing a simple rising line
+> chart in grey with one crimson point at the end, no numbers. Relaxed, curious, optimistic.
+
+**Chloe, 16** (a secondary school student choosing between business, psychology and design):
+> The same girl as the reference: Hong Kong Chinese, 16, long dark hair, a light grey sweater (no school uniform, no
+> badge or crest). She holds an open sketchbook against her chest showing a few simple pencil sketches of shapes and a
+> small chair design, a pencil in her other hand. Thoughtful, hopeful.
+
+**Check before sending:** the same face as the old portrait; no text, numbers or logos anywhere, including on the
+screens and the box; no school uniform, crest, lanyard or name badge (CLAUDE.md bans any university identity, which can
+disqualify; keep every school identity out too); the object inside the round crop. Save as `round2/img/<name>.jpg` over the old file and rebuild; every
+slide that shows the person updates at once.

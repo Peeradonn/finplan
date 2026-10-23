@@ -207,6 +207,15 @@ The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` w
 "Built to Last", the promise line, the team; an illustration of the family (image set, §7). No numbers.
 
 ### 2 · On paper, secure (Pete; 0:30)
+**Rebuilt 24 Oct, layout A** (Pete chose it over "the family as the hero" and over keeping the rows). The 23 Oct build
+repeated the cover (the four faces, names and wants) and slide 3 (its timeline's milestones are on slide 3's axis),
+and Ryan's row carried no event. Now two pieces for the title's two halves: "What they have today…" (HK$24.4M, the
+only accent, then 41% saved, 10% debt, 30 months of cash) and "…and the forty years it has to last": one line from
+2026 to 2066, the four faces as markers (Ryan, his own plan from now; Chloe, university 2028 to 2032; Adrian retires at
+65 in 2037; Carmen at 62 in 2039), the retirement years shaded, "Both retired from 2039: 27 years paid from what they
+own", and the end marked "2066: Carmen is 89, the money must last to here". Builds: the line as the people are named,
+then the strength. The portraits will be regenerated with one detail from the case each (Image_Prompts.md §6). The
+earlier specs below are superseded.
 **v10 (23 Oct): forty years on one line** (Pete chose it over "what HK$24.4M is made of"). Title: "On paper, the Wongs
 are secure, for a plan that must last forty years". One row per person on a shared 2026-2066 axis: working years an ink
 line, retirement a rose band, Chloe's university a tint band, milestones labelled (Adrian retires at 65 in 2037, Carmen
@@ -499,6 +508,7 @@ History: look B (Swiss, cobalt, Archivo Narrow + Inter) chosen 20 Oct; crimson 2
 One consistent flat-illustration set (Pete, 20 Oct), in look B's palette, no text in any image, every person labelled
 fictional. Prompts are written for Pete's image tool; the four existing portraits (`img/*.jpg`) are the style
 reference. Needed:
+- the four portraits again, each with one detail from the case (Pete, 24 Oct: the current ones read as generic);
 - the family together (cover and close);
 - the family's flat (slide 3: the home their own way sells; slide 6: the home put to work);
 - Carmen at 89 (slide 7: the futures that now reach her 89);
