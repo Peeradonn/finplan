@@ -200,8 +200,10 @@ the other lines were, and gave little context; the flat placeholder took a quart
   (light). In the accent: "Savings run out: the flat is sold, Carmen {{story_sale_age}}" and "Out again at
   {{story_out_age}}". "Carmen on her own" over 2056 to 2066. Same scale as slide 7 (`series.py`).
 - **Right:** the 10,000-future facts, each number centred on its label: {{own_sold_pct}} sell the flat (about
-  {{own_sale_age}}); {{own_89}} the money lasts to 89 even after the sale; {{own_legacy_sold}} left to Ryan and Chloe
-  (median, the accent, 72 px).
+  {{own_sale_age}}, usually on her own); {{own_89}} the money lasts to 89 even after the sale; {{own_legacy_sold}} left to
+  Ryan and Chloe (median, the accent, 72 px); then **"Why it runs out"** (added 23 Oct: the panel was empty, and the slide
+  showed the result but not the cause): 61% of their wealth is the home and the business, which pay nothing until sold;
+  HK$375K a year of medical premiums outside the budget, kept for life. The two causes Calls 2 and 3 fix.
 - Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left and the bar.
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
