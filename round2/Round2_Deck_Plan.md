@@ -159,8 +159,11 @@ worked); everything else is redrawn in the system.
 **Numbers:** tagged as a quiet "(measured)", "(case)" or "(sourced)" after the claim. MEASURED = the team model
 (`numbers.json`); CASE = the case; SOURCED = a named public source.
 
-**Builds:** each slide reveals in speaking order (`data-b`); present from the builds PDF; the PowerPoint gets native
-"appear" animations.
+**Builds:** each slide reveals in speaking order (`data-b`). **Later steps stay on the page in grey** (Pete, 23 Oct:
+don't remove what's coming, grey it), so the layout never moves and the eye goes to what is in colour. `make.py
+--builds` writes one frame per step (`Axis_builds.html`, `build/frames/`) for the video. Red reads as alarm: crimson
+marks the title's claim as a point or a number, never a wall of lines (slide 7: ink lines, crimson ticks).
+**Keep it simple** (Pete, 23 Oct): each slide as simple as it can be while its point stays clear.
 
 ## 5. Slide by slide
 Each spec: the point; the panels in order (headings reading as one sentence); the evidence and its keys; the bar.
@@ -360,8 +363,9 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 "Built to Last"; the five calls in one line each; the home their choice; the inheritance kept; the team; "Thank you."
 
 ## 6. The look
-**Chosen: B · Swiss (Pete, 20 Oct), with Inter for all text below the headings.** White, near-black ink #121212, one
-cobalt accent #1D4ED8; Archivo Narrow for display; no decorative motif, big type and generous space. Prototypes and
+**Chosen: B · Swiss (Pete, 20 Oct), with Inter for all text below the headings, and the written case's crimson as
+the one accent (Pete, 23 Oct: #A81E2D, darker #6F1320, from `document/styles-v2.css`), so the deck and the document
+match.** White, near-black ink #121212; Archivo Narrow for display; no decorative motif, big type and generous space. Prototypes and
 tokens in `round2/looks/` (`src/00_head.html`, class `.lb`). Option A (a drawing set: navy, brass, IBM Plex) was not
 chosen. v4 (warm paper, EB Garamond, crimson) sat close to the look the slide-design skill lists as generated.
 

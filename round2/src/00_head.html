@@ -6,7 +6,7 @@
 <title>Built to Last</title>
 <!--
   Built to Last, Round Two deck (v9, 22 Oct 2026): the plan is round2/Round2_Deck_Plan.md; the talk and its timing are
-  round2/Talk_Outline.md. Look B (Pete, 20 Oct): white, near-black ink, one cobalt accent; Archivo Narrow for titles,
+  round2/Talk_Outline.md. Look B (Pete, 20 Oct), with the written case's crimson as the one accent (Pete, 23 Oct): white, near-black ink; Archivo Narrow for titles,
   panel headings and big numbers, Inter for all text. Scale, no other sizes: title 32, panel heading 20, bold label and
   body 16, small 14, tag and source 12, numbers 40 and 72. Fonts: SIL Open Font License (fonts/OFL-*.txt).
   Every slide's script is its <aside class="notes">: the spoken words, then "[Notes: ...]" for background. make.py
@@ -23,7 +23,7 @@
 
 /* ---- look B, as tokens ---- */
 .lb{--paper:#FFFFFF;--mist:#F2F2F2;--rule:#D9D9D9;--grey:#A0A0A0;--slate:#545454;--ink:#121212;
-    --accent:#1D4ED8;--accent-deep:#173EA9;--text:"Inter",Arial,sans-serif;--head:"ArchN","Arial Narrow",sans-serif}
+    --accent:#A81E2D;--accent-deep:#6F1320;--text:"Inter",Arial,sans-serif;--head:"ArchN","Arial Narrow",sans-serif}
 
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -152,9 +152,9 @@ p,li,span,b{text-wrap:pretty}
 .k9b .now .tk strong{font-size:72px;color:var(--accent);letter-spacing:-1px}
 .k9b .c p{font:600 16px/1.3 var(--text);margin-top:8px}
 .k9b .c p span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
-/* slide 7: every line reaches 89 in the accent; slide 3's sales stay as hollow grey ghosts */
-.f9.won .f9r .ln{background:linear-gradient(to right,rgba(29,78,216,0),var(--accent) 56px)}
-.f9.won .f9r.lasts .end{border-color:var(--accent);color:var(--accent)}
+/* slide 7: every line reaches 89, its tick in the accent; slide 3's sales stay as hollow grey ghosts */
+.f9.won .f9r .ln{background:linear-gradient(to right,rgba(18,18,18,0),var(--ink) 56px)}   /* ink lines: a wall of crimson read as alarm (23 Oct) */
+.f9.won .f9r.lasts .end{background:var(--accent);border-color:var(--accent);color:#fff}   /* the title's claim: every future reaches 89 */
 .f9r .gh{position:absolute;top:50%;left:calc((var(--s) * 40 - var(--y0) * 100%) / var(--yn));width:26px;height:26px;margin:-13px 0 0 -13px;border:1.5px dashed var(--grey);background:var(--paper);color:var(--grey);display:flex;align-items:center;justify-content:center;z-index:3}
 .f9r .gh .ic{width:15px;height:15px;stroke-width:2}
 .f9r.g-kept .gh{display:none}
@@ -283,16 +283,17 @@ p,li,span,b{text-wrap:pretty}
 .todo-box b{font:600 20px/1.2 var(--head);color:var(--slate)}
 .todo-box p{font:400 16px/1.4 var(--text);color:var(--slate);max-width:760px}
 
-/* ---- builds: data-b="n" is the step an element appears in; make.py --builds repeats a slide once per step with class
-   upto-k, which hides later steps (visibility, so the layout never moves) ---- */
-.upto-1 [data-b="2"],.upto-1 [data-b="3"],.upto-1 [data-b="4"],.upto-1 [data-b="5"],.upto-1 [data-b="6"],.upto-1 [data-b="7"],.upto-1 [data-b="8"],.upto-1 [data-b="9"]{visibility:hidden}
-.upto-2 [data-b="3"],.upto-2 [data-b="4"],.upto-2 [data-b="5"],.upto-2 [data-b="6"],.upto-2 [data-b="7"],.upto-2 [data-b="8"],.upto-2 [data-b="9"]{visibility:hidden}
-.upto-3 [data-b="4"],.upto-3 [data-b="5"],.upto-3 [data-b="6"],.upto-3 [data-b="7"],.upto-3 [data-b="8"],.upto-3 [data-b="9"]{visibility:hidden}
-.upto-4 [data-b="5"],.upto-4 [data-b="6"],.upto-4 [data-b="7"],.upto-4 [data-b="8"],.upto-4 [data-b="9"]{visibility:hidden}
-.upto-5 [data-b="6"],.upto-5 [data-b="7"],.upto-5 [data-b="8"],.upto-5 [data-b="9"]{visibility:hidden}
-.upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{visibility:hidden}
-.upto-7 [data-b="8"],.upto-7 [data-b="9"]{visibility:hidden}
-.upto-8 [data-b="9"]{visibility:hidden}
+/* ---- builds: data-b="n" is the step an element is spoken in. make.py --builds repeats a slide once per step with
+   class upto-k; later steps stay on the page in grey (Pete, 23 Oct: keep the context, don't remove it), so the layout
+   never moves and the eye goes to what is in colour ---- */
+.upto-1 [data-b="2"],.upto-1 [data-b="3"],.upto-1 [data-b="4"],.upto-1 [data-b="5"],.upto-1 [data-b="6"],.upto-1 [data-b="7"],.upto-1 [data-b="8"],.upto-1 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-2 [data-b="3"],.upto-2 [data-b="4"],.upto-2 [data-b="5"],.upto-2 [data-b="6"],.upto-2 [data-b="7"],.upto-2 [data-b="8"],.upto-2 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-3 [data-b="4"],.upto-3 [data-b="5"],.upto-3 [data-b="6"],.upto-3 [data-b="7"],.upto-3 [data-b="8"],.upto-3 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-4 [data-b="5"],.upto-4 [data-b="6"],.upto-4 [data-b="7"],.upto-4 [data-b="8"],.upto-4 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-5 [data-b="6"],.upto-5 [data-b="7"],.upto-5 [data-b="8"],.upto-5 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-7 [data-b="8"],.upto-7 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-8 [data-b="9"]{filter:grayscale(1);opacity:.3}
 .notes{display:none}
 </style>
 </head>

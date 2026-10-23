@@ -128,7 +128,7 @@ page = f"""<!DOCTYPE html>
 @font-face{{font-family:"ArchN";src:url("fonts/ArchivoNarrow-600.ttf");font-weight:600}}
 @font-face{{font-family:"Inter";src:url("fonts/Inter-400.ttf");font-weight:400}}
 @font-face{{font-family:"Inter";src:url("fonts/Inter-600.ttf");font-weight:600}}
-:root{{--ink:#121212;--slate:#545454;--rule:#D9D9D9;--accent:#1D4ED8}}
+:root{{--ink:#121212;--slate:#545454;--rule:#D9D9D9;--accent:#A81E2D}}
 body{{margin:0;background:#fff;color:var(--ink);font:400 16px/1.55 "Inter",Arial,sans-serif}}
 main{{max-width:860px;margin:0 auto;padding:40px 24px 64px}}
 h1{{font:600 40px/1.1 "ArchN","Arial Narrow",sans-serif;margin:0 0 12px}}
