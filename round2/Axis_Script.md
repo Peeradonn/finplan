@@ -102,7 +102,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 
 **Win:** I want to be an investment strategist for family clients across Asia-Pacific, fitting each portfolio to its owner on either side of the boundary.
 
-**Lookbua:** I plan further study in systemic risk. The Connect links two markets with different rules, so a shock in one can reach families in the other. Stress-testing this plan taught me that every risk needs a named defence.
+**Lookbua:** I aim to focus on systems risk. The Connect links two markets with different rules, so a shock in one can cross the boundary and reach the other side. Stress-testing this plan taught me that every risk needs a named defence.
 
 > Notes: Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.
 
