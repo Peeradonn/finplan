@@ -123,6 +123,8 @@ Reasons are in `document/manuscript.md`. These are content decisions; how the de
   - the slides are scored on their own (Pete, 23 Oct), so each lists the most important facts a reader needs to follow
     without the voice; the claim and the focal number are always spoken;
   - one point a slide, one accent on it, and a conclusion bar that hands over to the next slide.
+- **The look** (plan §6, 23 Oct): EB Garamond titles and numbers with Inter text, the written case's crimson and its
+  wine and rose family, warm neutrals, and one decorative idea, the family's lifeline (when each slide's decisions act).
 - **The system** (plan §4): six type sizes, one 12-column grid, three panels whose headings read as one sentence,
   one navigation device (the kicker), nothing meant to be read under 14 px. Word budgets are warnings, not limits.
 

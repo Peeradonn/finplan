@@ -6,7 +6,7 @@ Generated 2026-10-23 by `round2/make.py` from the slides' speaker notes; numbers
 
 Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1:38.
 
-## 1 · Built to Last
+## 1 · Built toLast
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
 
 **Pete:** Hello, we're Team Axis, and this is Built to Last, our plan for the Wong family. I'm Pete, the lead adviser.
@@ -18,7 +18,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 **Lookbua:** And I'm Lookbua: protection and risk.
 
 ## 2 · On paper, the Wongs are secure
-*Where they stand · Pete · 0:30 · 59 spoken words (≈26 s at 135)*
+*Meet the Wongs · Pete · 0:30 · 59 spoken words (≈26 s at 135)*
 
 **Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
 

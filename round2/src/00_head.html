@@ -20,10 +20,19 @@
 @font-face{font-family:"Inter";src:url("fonts/Inter-500.ttf");font-weight:500}
 @font-face{font-family:"Inter";src:url("fonts/Inter-600.ttf");font-weight:600}
 @font-face{font-family:"Inter";src:url("fonts/Inter-700.ttf");font-weight:700}
+@font-face{font-family:"EBG";src:url("fonts/EBGaramond-Regular.ttf");font-weight:400}
+@font-face{font-family:"EBG";src:url("fonts/EBGaramond-Medium.ttf");font-weight:500}
+@font-face{font-family:"EBG";src:url("fonts/EBGaramond-MediumItalic.ttf");font-weight:500;font-style:italic}
+@font-face{font-family:"EBG";src:url("fonts/EBGaramond-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"EBG";src:url("fonts/EBGaramond-SemiBold.ttf");font-weight:700}
 
 /* ---- look B, as tokens ---- */
-.lb{--paper:#FFFFFF;--mist:#F2F2F2;--rule:#D9D9D9;--grey:#A0A0A0;--slate:#545454;--ink:#121212;
-    --accent:#A81E2D;--accent-deep:#6F1320;--text:"Inter",Arial,sans-serif;--head:"ArchN","Arial Narrow",sans-serif}
+/* 23 Oct (Pete: "all default fonts, no clear design work"): EB Garamond, the written case's display face, for titles,
+   headings and numbers, so deck and document are one brand; Inter for text; warm neutrals tuned to the crimson;
+   wine and rose, the crimson's own family, for fills. */
+.lb{--paper:#FFFFFF;--mist:#F5F1F0;--rule:#DDD6D4;--grey:#A69E9C;--slate:#5A5250;--ink:#1B1716;
+    --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#E6CBCF;--tint:#F7ECED;
+    --text:"Inter",Arial,sans-serif;--head:"EBG",Georgia,serif;font-variant-numeric:lining-nums}
 
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -52,7 +61,7 @@ p,li,span,b{text-wrap:pretty}
 .cap{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:auto;padding-top:8px}
 
 /* ---- conclusion bar ---- */
-.bar{flex:none;margin-top:16px;background:var(--ink);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
+.bar{flex:none;margin-top:16px;background:var(--wine);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
 
 /* ---- footer ---- */
 .ft{flex:none;height:52px;display:flex;align-items:center;gap:20px;font:400 12px/1.3 var(--text);color:var(--slate)}
@@ -61,7 +70,10 @@ p,li,span,b{text-wrap:pretty}
 
 /* ==================== B · Swiss ==================== */
 .lb .gb{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--accent);color:#fff;font:700 18px/1 var(--head);flex:none}
-.lb .kick{color:var(--accent-deep)}
+.lb .kick{color:var(--accent-deep);font:600 16px/1.2 var(--text)}
+.lb .kick:not(:has(.gb))::before{content:"";width:26px;height:4px;background:var(--accent);flex:none}   /* the mark of every section */
+.lb .hd h2{font-size:35px;line-height:1.08;letter-spacing:0}
+.lb .pn>h3,.lb .x2 h3{font-size:22px}
 .lb .dimn{position:absolute;top:8px;height:12px;border:2px solid var(--ink);border-top:0}
 .lb .dimn span{position:absolute;left:50%;top:18px;transform:translateX(-50%);font:600 14px/1 var(--head);white-space:nowrap}
 .lb .dimx{display:none}
@@ -255,7 +267,7 @@ p,li,span,b{text-wrap:pretty}
 .x5-p .tk i{position:absolute;left:0;top:0;bottom:0}
 .x5-p .tk.no i{width:100%;border:1.5px dashed var(--grey)}
 .x5-p .tk.no em{position:absolute;left:10px;top:50%;transform:translateY(-50%);font:400 14px/1 var(--text);font-style:normal;color:var(--slate)}
-.x5-p .tk.yes i{background:var(--ink)}
+.x5-p .tk.yes i{background:var(--wine)}
 .x5-p .tk.yes em{position:absolute;top:50%;transform:translateY(-50%);font:600 16px/1 var(--text);font-style:normal;white-space:nowrap}
 .x5-c strong{display:block;font:700 72px/1 var(--head);color:var(--accent);letter-spacing:-1px}
 .x5-c .s{font:600 16px/1.35 var(--text);margin-top:6px}
@@ -320,6 +332,51 @@ p,li,span,b{text-wrap:pretty}
 .x3f p{font:400 14px/1.35 var(--text);color:var(--slate)}
 .x3f p b{color:var(--ink);font-weight:600}
 .x3f .on strong{display:block;font-size:72px;color:var(--accent);letter-spacing:-1px;margin:4px 0}
+
+/* ==================== the deck's one decorative idea: the family's lifeline (23 Oct) ====================
+   A ruler from 2026 to Carmen's 89 (2066), top right, with the family's milestones; the crimson span is when the
+   slide's decisions act. The same years and ticks are the time axis of slides 3, 7 and 11. */
+.life{position:absolute;top:36px;right:48px;display:flex;align-items:center;gap:12px;height:20px}   /* one line, on the kicker's row */
+.life p{font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.life p b{font-weight:600;color:var(--ink)}
+.life .lr{position:relative;width:200px;height:0;border-top:2px solid var(--rule);margin:0 40px}
+.life .lr i{position:absolute;top:-4px;height:6px;left:var(--a);width:calc(var(--b) - var(--a));min-width:6px;background:var(--accent)}
+.life .lr span{position:absolute;top:-5px;height:8px;border-left:1.5px solid var(--grey)}
+.life .lr em{display:none}
+.life .lr em:first-of-type,.life .lr em:last-of-type{display:block;position:absolute;top:-7px;font:400 12px/1 var(--text);font-style:normal;color:var(--slate)}
+.life .lr em:first-of-type{left:0;transform:translateX(calc(-100% - 7px))}
+.life .lr em:last-of-type{left:100%;transform:translateX(7px)}
+
+/* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
+.cv9{padding:0;flex-direction:row}
+.cv9 .l{flex:1;position:relative;padding:58px 56px 0}
+.cv9 .top{height:10px;background:var(--accent);width:200px}
+.cv9 .ev{font:400 15px/1.45 var(--text);color:var(--slate);margin-top:22px}
+.cv9 h1{font:600 132px/.92 var(--head);letter-spacing:-2px;margin-top:62px}
+.cv9 .sub{font:500 30px/1.3 var(--head);font-style:italic;margin-top:24px;max-width:560px;color:var(--accent-deep)}
+.cv9 .who{position:absolute;left:56px;right:40px;bottom:44px;display:flex;gap:26px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.cv9 .who b{display:block;font:600 19px/1.25 var(--head);color:var(--ink)}
+.cv9 .r{width:470px;flex:none;background:var(--wine);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:0 48px}
+.cv9 .fam{display:grid;grid-template-columns:1fr 1fr;gap:30px 26px}
+.cv9 .fam div{text-align:center}
+.cv9 .fam .pic{width:138px;height:138px;margin:0 auto 10px;border:3px solid #fff;background:#fff}
+.cv9 .fam b{display:block;font:600 22px/1.2 var(--head)}
+.cv9 .fam span{font:400 14px/1.3 var(--text);opacity:.85}
+.cv9 .note{font:400 12px/1.3 var(--text);opacity:.75;text-align:center;margin-top:26px}
+
+/* ==================== slide 2 (23 Oct): the opener, the family on a wine panel beside the strength ==================== */
+.x2b{flex:1;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-top:22px;min-height:0}
+.x2b .fam{grid-column:span 8;background:var(--wine);color:#fff;padding:26px;display:grid;grid-template-columns:repeat(4,1fr);column-gap:20px;align-content:center}
+.x2b .fam .pic{width:150px;height:150px;border:3px solid #fff;background:#fff;margin:0 0 16px}
+.x2b .fam h4{font:600 26px/1.15 var(--head)}
+.x2b .fam .r{font:400 14px/1.35 var(--text);color:var(--rose);margin-top:3px}
+.x2b .fam .w{font:500 17px/1.4 var(--text);margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.35)}
+.x2b .st{grid-column:span 4;display:flex;flex-direction:column;justify-content:space-between;padding:4px 0}
+.x2b .st h3{font:600 22px/1.25 var(--head);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.x2b .st div{display:block}
+.x2b .st strong{font:600 44px/1 var(--head)}
+.x2b .st strong.on{font-size:76px;color:var(--accent);letter-spacing:-1px}
+.x2b .st p{font:400 16px/1.35 var(--text);color:var(--slate);margin-top:4px}
 
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}

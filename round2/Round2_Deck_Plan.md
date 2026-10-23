@@ -144,10 +144,9 @@ fewer facts.
 **Hierarchy inside a panel:** rank items by what the evidence says matters (the biggest contributions lead; small ones
 go to a note). Never list unlike things (a cost, a safety margin, a legacy) as equal rows.
 
-**Type (look B, 20 Oct):** Archivo Narrow only for the title, panel headings, lane names and big numbers; **Inter** for
-everything else, bold labels included (Pete: Inter for the small text; a condensed bold label looked smaller than
-Inter's small text). **Scale, no other sizes:** title 32 · panel heading 20 · bold label and body 16 (Inter) · small 14
-(Inter) · tag and source 12 · numbers 40 and 72. Nothing meant to be read is under 14 px.
+**Type (23 Oct):** EB Garamond for the title, panel headings and big numbers; **Inter** for everything else, bold
+labels included. **Scale:** title 35 · panel heading 22 · bold label and body 16 (Inter) · small 14 (Inter) · tag and
+source 12 · numbers 40 and 72 (76 on slide 2's net worth). Nothing meant to be read is under 14 px.
 
 **The slides are scored on their own** (Pete, 23 Oct: the video and the slides are scored independently). So each
 slide **lists the most important facts**, enough for someone reading the file to follow the argument without the
@@ -364,13 +363,21 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 "Built to Last"; the five calls in one line each; the home their choice; the inheritance kept; the team; "Thank you."
 
 ## 6. The look
-**Chosen: B · Swiss (Pete, 20 Oct), with Inter for all text below the headings, and the written case's crimson as
-the one accent (Pete, 23 Oct: #A81E2D, darker #6F1320, from `document/styles-v2.css`), so the deck and the document
-match.** **Chart fills in the same family** (Pete, 23 Oct: more colour, but crimson, not blue): the home deep wine
-#7D1D2A, savings a muted rose #E6CBCF; events on those charts in ink, so they read on white, rose and wine; no
-gridlines across areas, ticks on the value axis. White, near-black ink #121212; Archivo Narrow for display; no decorative motif, big type and generous space. Prototypes and
-tokens in `round2/looks/` (`src/00_head.html`, class `.lb`). Option A (a drawing set: navy, brass, IBM Plex) was not
-chosen. v4 (warm paper, EB Garamond, crimson) sat close to the look the slide-design skill lists as generated.
+**23 Oct: the deck's identity** (Pete: "all default fonts with no clear design work"; e-Sentry has a clear style; slide
+2 a weak first impression). Look B's structure stays; its "no motif" plainness goes.
+- **Type:** EB Garamond, the written case's own display face, for titles (35 px), panel headings (22 px) and big numbers
+  (lining figures), so the deck and the PDF are one brand; Inter for all text (Pete liked it for small text).
+- **Colour:** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
+  (the conclusion bar, the home layer, the family panels, cost bars), rose #E6CBCF and #D3A1A8 (savings, lighter
+  series), tint #F7ECED; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate #5A5250,
+  ink #1B1716). No blue. Events on wine-and-rose charts in ink.
+- **One decorative idea: the family's lifeline.** A ruler from 2026 to Carmen's 89 on the kicker row of each content
+  slide; the crimson span is when that slide's decisions act ("When: now, until they retire"; "from 2035, for life";
+  "from 2039; the review in 2047"). The same years are the time axis of slides 3, 7 and 11. Not used on 1, 13 to 15.
+- **Signature:** a short crimson mark before every kicker (the call's numbered square on call slides); the cover's
+  crimson bar; the family on a wine panel (cover, slide 2).
+- **Not used:** gridlines across chart areas; a section tracker (the kicker navigates); grey-only charts; blue.
+History: look B (Swiss, cobalt, Archivo Narrow + Inter) chosen 20 Oct; crimson 23 Oct; this identity 23 Oct.
 
 ## 7. Images (one illustrated set)
 One consistent flat-illustration set (Pete, 20 Oct), in look B's palette, no text in any image, every person labelled
