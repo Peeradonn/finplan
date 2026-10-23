@@ -82,3 +82,22 @@ and Southeast Asia):
 screens and the box; no school uniform, crest, lanyard or name badge (CLAUDE.md bans any university identity, which can
 disqualify; keep every school identity out too); the object inside the round crop. Save as `round2/img/<name>.jpg` over the old file and rebuild; every
 slide that shows the person updates at once.
+
+## 7 · Slide 4: the house as a realistic 3D render (Pete, 24 Oct; an alternative to the coded model)
+Not in the flat style: this one is a photoreal render, so skip the style block. The slide already carries a coded
+exploded model (`house.exploded()`); this render would replace it, with the same labels laid over it in HTML, so the
+pieces must sit where the labels expect them. Aspect 16:9, 2400 × 1350.
+> A photorealistic studio render of an architect's scale model of a simple two-storey house, pulled apart vertically
+> into floating layers with even gaps between them, like an exploded diagram: at the bottom a thin solid base slab in
+> deep wine red; above it the ground floor, made of two box-shaped blocks side by side with a narrow gap between them,
+> in muted dusty rose; above that the upper floor, two matching blocks, in a lighter rose; at the top a simple pitched
+> roof in pale warm grey, its gable end facing the front-left. Each wall block has one or two small square window
+> openings cut into it; the left ground-floor block has a small door. Matte card and painted wood, crisp edges, no
+> people, no furniture, no text, numbers, logos or signs anywhere. Three-quarter view from the front-left, camera a little
+> above (about 20 degrees), the model centred and filling only the middle third of the frame's width, with plenty of
+> empty background on both sides. Plain warm light grey background (#F5F1F0) fading to white, one soft key light from
+> the upper left, soft contact shadows under each floating layer and on the ground. Calm, premium, precise.
+
+**Check before sending:** five clearly separate pieces plus the roof, in the order above; even gaps; the model in the
+middle third (the labels need both sides); no text or numbers anywhere. Save as `round2/img/house-render.png`. When it
+is in, the build loses one thing the coded model has: the parts cannot light up one by one, only their labels can.
