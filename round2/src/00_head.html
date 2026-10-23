@@ -44,7 +44,7 @@ p,li,span,b{text-wrap:pretty}
 .tag::before{content:"("}.tag::after{content:")"}
 
 /* ---- header: kicker, title ---- */
-.hd{display:flex;flex-direction:column;gap:8px}
+.hd{display:flex;flex-direction:column;gap:5px}
 .kick{display:flex;align-items:center;gap:10px;font:600 18px/1.2 var(--head);color:var(--slate)}
 .kick small{font:400 14px/1 var(--text);color:var(--slate)}
 .hd h2{font:600 32px/1.12 var(--head);letter-spacing:-.2px;max-width:1100px;text-wrap:balance}
@@ -67,8 +67,8 @@ p,li,span,b{text-wrap:pretty}
 
 /* ==================== B · Swiss ==================== */
 .lb .gb{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--accent);color:#fff;font:700 18px/1 var(--head);flex:none}
-.lb .kick{color:var(--accent-deep);font:600 16px/1.2 var(--text)}
-.lb .hd h2{font-size:33px;line-height:1.14;letter-spacing:-.6px}
+.lb .kick{color:var(--accent);font:600 14px/1.3 var(--text)}
+.lb .hd h2{font-size:29px;font-weight:700;line-height:1.16;letter-spacing:-.5px}
 .lb .pn>h3,.lb .x2 h3{font-size:22px}
 .lb .dimn{position:absolute;top:8px;height:12px;border:2px solid var(--ink);border-top:0}
 .lb .dimn span{position:absolute;left:50%;top:18px;transform:translateX(-50%);font:600 14px/1 var(--head);white-space:nowrap}
@@ -412,7 +412,7 @@ p,li,span,b{text-wrap:pretty}
    2037/2039 sit close. (23 Oct: a portrait column repeated the cover, and four timeline rows repeated slide 3's axis,
    one of them, Ryan's, with no event.) */
 .r2{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0}
-.r2 h3{font:700 19px/1.25 var(--text);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.r2 h3{font:600 17px/1.25 var(--text);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
 /* what they have today, as one picture: what they own (a bar to scale, the home in wine as on slide 3's chart), what
    they owe (the same scale), and the net worth they leave, the only accent. The four facts sit on the picture: cash as
    months of spending, debt as a share, the savings rate beside the net worth. (24 Oct, Pete: four separate numbers
@@ -612,11 +612,12 @@ p,li,span,b{text-wrap:pretty}
    chart that needs one (.tk9); one dashed ring on the moment that matters; icons that name a real thing, neutral
    except the focal row's; a quiet section tracker in the footer. Not taken: chevrons, numbered discs with no legend,
    lightbulbs, a crimson punch-line restating the title. */
-/* the rail beside the title spans the header, kicker to the title's last line (24 Oct, Pete: a fixed 66 px block sat
-   off centre on two-line titles); the header is the positioning box, so the house icon is placed from it too */
-.c9 .hd{position:relative}
-.c9 .hd::before{content:"";position:absolute;left:-48px;top:0;bottom:0;width:7px;background:var(--accent)}
-.c9 .pn>h3,.lb .x2 h3{font:700 19px/1.25 var(--text);letter-spacing:-.1px;padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+/* the header as in e-Sentry (24 Oct, Pete): a 5 px crimson rule on the title block, kicker and title 14 px in from it,
+   a smaller header (kicker 14, title 29 bold) and panel headings at 17 semibold, so no heading competes with the title.
+   (Before: a 7 px rail at the slide's edge, a 33 px semibold title and 19 px bold panel headings that out-weighed it.)
+   The header is the positioning box, so the house icon is placed from it. */
+.c9 .hd{position:relative;border-left:5px solid var(--accent);padding:1px 0 2px 14px}
+.c9 .pn>h3,.lb .x2 h3{font:600 17px/1.25 var(--text);letter-spacing:-.1px;padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
 .c9 .lede{font:400 15px/1.4 var(--text);color:var(--slate);margin-top:8px}
 .c9 .lede b{color:var(--ink);font-weight:600}
 .tk9{border:1.5px dashed var(--grey);padding:10px 16px;font:400 16px/1.4 var(--text);text-align:center;background:var(--paper);margin-top:6px}
