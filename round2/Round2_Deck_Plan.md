@@ -209,8 +209,11 @@ The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` w
 ### 2 · On paper, secure (Pete; 0:30)
 **Rebuilt 24 Oct, layout A** (Pete chose it over "the family as the hero" and over keeping the rows). The 23 Oct build
 repeated the cover (the four faces, names and wants) and slide 3 (its timeline's milestones are on slide 3's axis),
-and Ryan's row carried no event. Now two pieces for the title's two halves: "What they have today…" (HK$24.4M, the
-only accent, then 41% saved, 10% debt, 30 months of cash) and "…and the forty years it has to last": one line from
+and Ryan's row carried no event. Now two pieces for the title's two halves: "What they have today…", redrawn the same day as one picture (Pete:
+four separate numbers were not the way, and the slide felt empty): what they own, HK$27.2M, as a bar to scale (the
+home in wine as on slide 3, the business, investments, MPF, cash marked "30 months of spending"), what they owe,
+HK$2.8M, on the same scale ("10% of what they own"), and HK$24.4M net worth beside them, the only accent, with "41% of
+after-tax income saved each year" under it and "…and the forty years it has to last": one line from
 2026 to 2066, the four faces as markers (Ryan, his own plan from now; Chloe, university 2028 to 2032; Adrian retires at
 65 in 2037; Carmen at 62 in 2039), the retirement years shaded, "Both retired from 2039: 27 years paid from what they
 own", and the end marked "2066: Carmen is 89, the money must last to here". Builds: the line as the people are named,
