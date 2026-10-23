@@ -238,7 +238,9 @@ below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cas
 deserves bold; the descriptions under the years were not emphasised enough). Right: one focal point, "What Ryan and Chloe
 inherit, where the flat is sold": HK$24.4M today as a grey bar, {{own_legacy_sold}} left as a crimson bar on the same scale
 (width [[own_legacy_sold_w]] from series.py) and the only big number; {{own_sold_pct}} and {{own_89}} as small supporting rows (a
-small icon, a 28 px number, no bold); "Why it runs out" a quiet note under a thin rule. Left: area labels regular, only
+small icon, a 28 px number, no bold); "Why it runs out" a quiet note, its two causes side by side (second pass the same day: Pete found it crammed and the
+spacing odd; the right side is now three groups, the odds, the inheritance, the causes, each opening on a thin rule, with
+equal gaps). Left: area labels regular, only
 the event bold in each event label ("The flat is sold", "Runs out again", with "Carmen 86, short of 89"); the reading
 box under the chart removed (the run-out label carries it); the axis bold on Carmen's age and Adrian's events, the
 years grey (shared with slide 7). Supersedes the notes below where they differ.

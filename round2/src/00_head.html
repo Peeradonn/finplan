@@ -652,12 +652,12 @@ p,li,span,b{text-wrap:pretty}
    inherit, drawn against today's net worth on one scale; the two odds as small supporting rows; the causes as a quiet
    note. (Before: five numbers of near-equal weight, three icon circles, three bold leads and a shaded box.) */
 .x3p .body{flex:1;display:flex;flex-direction:column}
-.x3q{flex:1;display:flex;flex-direction:column}
-.x3p .sm{display:grid;grid-template-columns:20px 70px 1fr;column-gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--rule)}
+.x3q{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding-top:4px}   /* three groups, equal gaps */
+.x3p .sm{display:grid;grid-template-columns:20px 70px 1fr;column-gap:12px;align-items:center;padding:5px 0}
 .x3p .sm .ic,.x3p .k .ic{width:20px;height:20px;stroke:var(--slate);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .x3p .sm strong{font:700 28px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
 .x3p .sm p{font:400 14px/1.35 var(--text);color:var(--slate)}
-.x3p .hero{margin-top:18px}
+.x3p .hero{padding-top:14px;border-top:1px solid var(--rule)}   /* each group opens on a thin rule */
 .x3p .k{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
 .x3p .hb{display:grid;grid-template-columns:92px 1fr;column-gap:12px;align-items:center;margin-top:12px}
 .x3p .hb>span{font:400 14px/1.25 var(--text);color:var(--slate)}
@@ -667,10 +667,11 @@ p,li,span,b{text-wrap:pretty}
 .x3p .hb i.g b{font:700 16px/1 var(--text);color:var(--ink)}
 .x3p .hb.on i{background:var(--accent)}
 .x3p .hb.on strong{font:700 52px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1.5px}
-.x3p .why{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)}
-.x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:4px}
-.x3p .why p{font:400 14px/1.4 var(--text);color:var(--slate)}
-.x3p .why p b{color:var(--ink);font-weight:600}
+.x3p .why{padding-top:14px;border-top:1px solid var(--rule)}
+.x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:8px}
+.x3p .why .wc{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+.x3p .why p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.x3p .why p b{display:block;font:700 22px/1.1 var(--head);color:var(--ink);margin-bottom:4px;letter-spacing:-.3px}
 /* slide 7: the same result rows as slide 3, at the foot of the premium panel */
 .x3r.x7{flex:none;padding-top:0;gap:8px}
 .x3r.x7 .row{padding-bottom:8px}
