@@ -4,7 +4,7 @@ Generated 2026-10-23 by `round2/make.py` from the slides' speaker notes; numbers
 
 1200 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:16 at 145 words a minute (8:31 with handovers); 8:53 at 135 words a minute (9:08 with handovers); 9:36 at 125 words a minute (9:51 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:38, Lookbua 1:56, Win 1:39, Fahtai 1:37.
+Speaking time at 135 words a minute: Pete 3:36, Lookbua 1:56, Win 1:39, Fahtai 1:39.
 
 ## 1 · Built to Last
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -18,16 +18,16 @@ Speaking time at 135 words a minute: Pete 3:38, Lookbua 1:56, Win 1:39, Fahtai 1
 **Lookbua:** And I'm Lookbua: protection and risk.
 
 ## 2 · On paper, the Wongs are secure
-*Where they stand · Pete · 0:30 · 61 spoken words (≈27 s at 135)*
+*Where they stand · Pete · 0:30 · 59 spoken words (≈26 s at 135)*
 
-**Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs her own business and wants their money to reflect her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
+**Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
 
 ## 3 · Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills
 *Will it last? · Pete · 0:45 · 99 spoken words (≈44 s at 135)*
 
 **Pete:** But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them.
 
-> Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%.
+> Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.
 
 ## 4 · The family asked for innovative yet prudent: five calls make the home their choice and their wealth last
 *Our answer · Pete · 0:45 · 92 spoken words (≈41 s at 135)*
@@ -41,19 +41,19 @@ Speaking time at 135 words a minute: Pete 3:38, Lookbua 1:56, Win 1:39, Fahtai 1
 
 > Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.
 
-## 6 · Decide now, not at 83: the home pays from 65, the business sells in stages, and the odds rise from 62% to 83%
-*Call 2: The home and the business · Fahtai · 0:45 · 94 spoken words (≈42 s at 135)*
+## 6 · Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%
+*Call 2: The home and the business · Fahtai · 0:45 · 93 spoken words (≈41 s at 135)*
 
-**Fahtai:** Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. A survivor plans on 70%, and the MPF buys annuities. The same assets, decided now: 83%, not 62%.
+**Fahtai:** Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: 83%, not 62%.
 
-> Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62.
+> Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.
 
-## 7 · Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none sells the home
+## 7 · Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home
 *Call 3: Retirement · Fahtai · 0:40 · 81 spoken words (≈36 s at 135)*
 
-**Fahtai:** Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, simple spending rules protect the bad years, and essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one sells the home. Win.
+**Fahtai:** Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win.
 
-> Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is subject to underwriting until the insurer confirms.
+> Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.
 
 ## 8 · One family policy, a plan for each person: every dollar gets a job
 *Call 4: Each person · Win · 0:50 · 104 spoken words (≈46 s at 135)*
@@ -87,16 +87,16 @@ Speaking time at 135 words a minute: Pete 3:38, Lookbua 1:56, Win 1:39, Fahtai 1
 > Notes: the plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
 
 ## 13 · The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve
-*Wealth Management Connect · Pete · 0:40 · 88 spoken words (≈39 s at 135)*
+*Wealth Management Connect · Pete · 0:40 · 86 spoken words (≈38 s at 135)*
 
-**Pete:** And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer when asked. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
+**Pete:** And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
 
 ## 14 · Four planners, one aim: families like the Wongs, on both sides of the boundary
-*Who we want to become · All · 1:10 · 148 spoken words (≈66 s at 135)*
+*Who we want to become · All · 1:10 · 153 spoken words (≈68 s at 135)*
 
 **Pete:** In five years I want to be an investment specialist in a Hong Kong bank's wealth team, matching each Connect client's portfolio to their risk, with the currency risk made clear. Fitting the Wongs' three risk profiles into one plan was that job in miniature.
 
-**Fahtai:** I want to build the risk models that wealth managers across Asia use for families. This plan taught me that a model's job is to price the trade-offs between people. Next is the FRM, with Connect funds as my first case.
+**Fahtai:** I want to build the data and risk models that wealth managers across East and Southeast Asia use for families. This plan taught me that a model's job is to price the trade-offs between people. Next is the FRM, with Connect funds as my first case.
 
 **Win:** I want to be an investment strategist for family clients across Asia-Pacific, fitting each portfolio to its owner on either side of the boundary.
 

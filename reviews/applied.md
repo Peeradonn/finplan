@@ -332,3 +332,21 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   that still run out, the years from the forced sale to the money running out. Slide 3 labels the lowest cross "the
   sale buys just 2 to 3 years" and the script says it (Pete agreed, 22 Oct). `make_charts.py` rerun: 253 values; no
   existing value changed or removed; `figure-data.md` unchanged. Round Two only.
+
+### Round Two deck (23 Oct): Fahtai's deck review and fact checks applied (round2/reviews/round2-deck-fixes-fahtai.md)
+- 1 Slide 6: "the same assets" overclaimed (about half of 62% → 83% is the survivor budget, a spending decision). The
+  title is now "four decisions on what they own and spend"; the bar label "Decided now · four decisions"; the bar and
+  the script ("Four decisions, taken now") follow. The notes give the split and the answer to "a widow spending the
+  full budget is a straw man".
+- 2 Slide 3 notes: why not a reverse mortgage at 83 (it lets Carmen stay, but in Fahtai's test the money lasts less
+  often than selling, and the loan eats the inheritance). Written without numbers: his test isn't in the model.
+- 3 Slide 7: "none sells the home" → "none is forced to sell the home"; script "not one has to sell the home".
+- 4 Slide 7 notes and the plan: the Flexi → Standard switch is guaranteed under the VHIS rules (Code of Practice
+  s.2.11; FAQ Q30, 25 Sep 2025); "subject to underwriting" removed everywhere, including the plan's slide 10 spec.
+- 5 Slide 6 notes: the HKMC annuity's death benefit (premium less payments as a lump sum, or paid on to 105%).
+- 6 Plan §5 slide 8: Carmen 60 · 35 · 5 (written case Figure 14).
+- 7 Slide 14: Fahtai's short option ("data and risk models… across East and Southeast Asia"); his full line costs
+  about 15 s and waits for time.
+- 8 Slide 6 notes: HK$230K is about right for a joint loan; not "conservative".
+- The script stays at 1,200 spoken words (six words cut on slides 2, 7 and 13). Plan §8 and §10, the outline's titles
+  and CLAUDE.md's open items updated; Carmen's MPF withdrawal at 62 added as unconfirmed.

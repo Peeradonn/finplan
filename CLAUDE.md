@@ -171,10 +171,8 @@ Reviewers only append findings to their own files; the builder edits the page so
 - The slide-design render script needs absolute paths.
 
 ## Open items (need outside facts or teammates)
-- **Round Two:** the illustrated image set in look B (prompts in the deck plan §7, for Pete to generate); HKMC
-  reverse-mortgage payouts for a borrower in their 80s (the "late reverse mortgage" question); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
-- **Facts:** insurer allows Flexi → Standard at 75 without new underwriting (the 97% rests on it); HKMC annuity death
-  benefit; BOC-Prudential fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund
+- **Round Two:** the illustrated image set in look B (prompts in the deck plan §7, for Pete to generate); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
+- **Facts:** Carmen can withdraw her MPF at 62 (early retirement, MPFA; unconfirmed, Fahtai 23 Oct); BOC-Prudential fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund
   fee; Ryan's crypto vs tokenised-MMF split; MPF passes to the estate (no nomination); card revolving; tax filing
   status.
 

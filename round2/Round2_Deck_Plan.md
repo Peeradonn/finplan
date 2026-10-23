@@ -80,8 +80,8 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:45 |
 | 4 | Our answer | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
-| 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: the same home and business, put to work at 65, lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
-| 7 | Call 3 · Retirement | Fix the cost the budget ignores: now all {{plan_fut_lasts_n_word}} futures reach Carmen's 89, and none sells the home | Fahtai | 0:40 |
+| 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
+| 7 | Call 3 · Retirement | Fix the cost the budget ignores: now all {{plan_fut_lasts_n_word}} futures reach Carmen's 89, and none is forced to sell the home | Fahtai | 0:40 |
 | 8 | Call 4 · Each person | One family policy, a plan for each person: every dollar gets a job | Win | 0:50 |
 | 9 | Call 5 · Values and innovation | Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | Win | 0:45 |
 | 10 | Will it hold? | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Lookbua | 0:30 |
@@ -239,9 +239,10 @@ first: now the plan can turn what they own into income": the old bar repeated th
 - Bar: "Every income insured for about 14% of their surplus, and the papers signed in month one."
 
 ### 6 · Call 2: decide now, not at {{own_sale_age}} (Fahtai; 0:45)
-**Built 22 Oct** (prototype `looks/src/08_call2_v9.html`, render `looks/build/slide-14.png`; 172 words). Title: "Decide
-now, not at {{own_sale_age}}: the home pays from 65, the business sells in stages, and the odds rise from {{own_89}} to
-{{ladder_5_89}}". Option B, "Put to work" (Pete, 20 Oct), set against their own way; v1 to v6 in `round2/looks/`.
+**Built 22 Oct** (prototype `looks/src/08_call2_v9.html`, render `looks/build/slide-14.png`; 172 words). Title (23 Oct, Fahtai's review): "Decide
+now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to
+{{ladder_5_89}}": about half of the rise is the survivor budget, a spending decision, so "the same assets" and a title
+crediting only the home and the business overclaimed. Option B, "Put to work" (Pete, 20 Oct), set against their own way; v1 to v6 in `round2/looks/`.
 Rows run across the first two columns (each asset beside its decision), ranked by what moves the odds: the flat (the
 tallest row, {{rmp_income}} the one large number), the business, the budget, the MPF. **The business row says "their
 own way sells it too"**: the model sells it for the same HK$3.0M in both ways, so the rise from {{own_89}} comes from
@@ -258,7 +259,7 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   Adrian's profile); the 2039 floor ({{floor_2039_pct}} of essential bills; {{floor_2057_pct}} after Adrian's death, so
   never "for life"); even if the business never sells, {{biz_not_sold_89}}; the annuity is last on purpose, insurance
   for the worst markets ({{ann_w1_with_real}} vs {{ann_w1_without_real}}).
-- Bar: "Decided at 65, the home and the business close most of the gap; what's left is a cost the budget ignores."
+- Bar: "Decided now, four decisions close most of the gap; what's left is a cost the budget ignores."
 - Answers questions 1, 7 and 8.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
@@ -274,8 +275,8 @@ stay as hollow grey ghosts, labelled "where their own way sold the flat" (the ch
   essentials never cut.
 - Speaker notes: the defence (cut the budget now instead? The problem arrives after 2047, so the decision waits);
   the guardrail details; the worst one in twenty ({{guardswitch_worst5_real}} vs {{fixswitch_worst5_real}}); the rules
-  cost about {{guard_cost}} a year of typical spending; the switch is subject to underwriting until the insurer
-  confirms (Fahtai).
+  cost about {{guard_cost}} a year of typical spending; the switch is guaranteed under the VHIS rules (Code of Practice
+  s.2.11, FAQ Q30; Fahtai, 23 Oct), so "subject to underwriting" appears nowhere.
 - Bar: "Question 1, answered: they retire on time, keep the way they live, and keep the home."
 
 ### 8 · Call 4: one family policy, a plan for each person (Win; 0:50)
@@ -284,7 +285,8 @@ stay as hollow grey ghosts, labelled "where their own way sold the flat" (the ch
   (case; proposal §5).
 - **"…every dollar a job, by person…"**: a 12-month reserve HK$1.0M; Chloe HK$2.57M ring-fenced in HK dollars until
   she accepts an offer (covers the UK, Canada, Singapore and Hong Kong even after a currency shock); Adrian HK$2.07M,
-  shares 40 · bonds 55 · cash 5, with US Treasuries maturing 2037 to 41; Carmen HK$2.07M, 60 · 33 · 7, led by ESG
+  shares 40 · bonds 55 · cash 5, with US Treasuries maturing 2037 to 41; Carmen HK$2.07M, 60 · 35 · 5 (written case
+  Figure 14; Fahtai, 23 Oct), led by ESG
   funds; Ryan saves 30% of his pay in his own three pots, his parents match half up to HK$24K a year until 2037.
 - **"…with rules agreed in advance" (defend):** the alternative: one household portfolio. Why not: it would break
   Adrian's profile or under-serve Carmen's. All Treasuries for Adrian? After inflation they fail almost every time.
@@ -316,7 +318,7 @@ stay as hollow grey ghosts, labelled "where their own way sold the flat" (the ch
   profile per person), crypto rules (licensed channels), greenwashing (two ratings), model risk (compare decisions,
   not forecasts), the business unsold (buy-sell agreement now).
 - Footer: we compare decisions in the same 10,000 markets, we don't forecast them; premiums are from rate cards until
-  quotes arrive; the tier switch is subject to underwriting.
+  quotes arrive; the tier switch is guaranteed under the VHIS rules.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
 ### 11 · What happens when (Lookbua; 0:30)
@@ -378,9 +380,9 @@ reference. Needed:
 
 | Evidence | Slides | Owner | If it doesn't arrive |
 |---|---|---|---|
-| Insurer allows Flexi → Standard at 75 without new underwriting | 4, 7, 15 | Fahtai | Say "subject to underwriting" on 7 and 10 |
-| HKMC reverse-mortgage payout for a borrower in their 80s (the late reverse mortgage, §10) | 3 (notes) | Fahtai | The talk says "sold" (what we measured); the inheritance line carries the point |
-| HKMC annuity terms if Adrian dies soon after buying | 6 (notes) | Fahtai | Keep to the notes; not on screen |
+| ~~Insurer allows Flexi → Standard at 75 without new underwriting~~ | 7 | Fahtai | **Done 23 Oct:** guaranteed under the VHIS rules (Code of Practice s.2.11; FAQ Q30) |
+| ~~HKMC reverse-mortgage payout for a borrower in their 80s~~ | 3 (notes) | Fahtai | **Done 23 Oct:** it lets Carmen stay, but in Fahtai's test the money lasts less often than selling; slide 3 keeps "sells" (`reviews/round2-fact-checks-fahtai.md` §b) |
+| ~~HKMC annuity terms if Adrian dies soon after buying~~ | 6 (notes) | Fahtai | **Done 23 Oct:** the premium comes back, as a lump sum (premium less payments) or paid on to 105%; in the notes |
 | Win's careers line; Lookbua's OK on his | 14 | Win, Lookbua | Use the manuscript's wording; Win's card says "investment and ESG" only |
 | The illustrated set (§7) | 1, 3, 6, 7, 8, 15 | Pete | The four existing portraits; no scenes |
 | BOC-Prudential fund's own fee and a channel without the 5% initial charge | 8, 9 (notes) | Win | "≈HK$45K a year" stays as in the written case |
@@ -401,7 +403,8 @@ reference. Needed:
 | Who asks | Question | Answered on |
 |---|---|---|
 | A practitioner | "They'd just sell the flat if they had to." | 3: we tested it; the sale comes at about {{own_sale_age}}, buys two to three years, and the inheritance pays the bills |
-| A practitioner | "Couldn't they take a reverse mortgage at 83 and stay?" | Yes; that is our plan done late: fewer years of income, and the loan still eats the inheritance. Not yet measured (HKMC payouts at that age, §8) |
+| A practitioner | "Couldn't they take a reverse mortgage at 83 and stay?" | Yes, and she could stay; but the fixed payout doesn't cover her bills, so in Fahtai's test the money lasts less often than selling, and the loan still eats the inheritance (slide 3 notes) |
+| A practitioner | "A widow spending the couple's full budget? Your own way is a straw man." | 6 (notes): about half of the rise is the survivor budget; even with it cut in their own way, deciding the home, business and MPF now adds about ten points |
 | A practitioner | "Why not rent, or buy cheaper than HK$7M?" | Either releases more; we use the same flat as our own downsizing option, so the two ways compare on the same terms |
 | A judge with the PDF | "The written case says 33%; why 62% now?" | 3 footer: 33% is investments alone; 62% is their own way, the fairer start |
 | An insurance adviser | "Why term cover, not more whole-life?" | 5, defend panel |
