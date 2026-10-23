@@ -77,12 +77,12 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | # | Kicker | Title | Speaker | Time |
 |---|---|---|---|---|
 | 1 | — | Built to Last: five calls that make the Wong family's wealth last | Pete, all | 0:20 |
-| 2 | Where they stand | On paper, the Wongs are secure | Pete | 0:30 |
+| 2 | Meet the Wongs | On paper, the Wongs are secure, for a plan that must last forty years | Pete | 0:30 |
 | 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:45 |
 | 4 | Our answer | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
 | 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
-| 7 | Call 3 · Retirement | Fix the cost the budget ignores: now all {{plan_fut_lasts_n_word}} futures reach Carmen's 89, and none is forced to sell the home | Fahtai | 0:40 |
+| 7 | Call 3 · Retirement | Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs | Fahtai | 0:40 |
 | 8 | Call 4 · Each person | One family policy, a plan for each person: every dollar gets a job | Win | 0:50 |
 | 9 | Call 5 · Values and innovation | Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | Win | 0:45 |
 | 10 | Will it hold? | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Lookbua | 0:30 |
@@ -127,11 +127,15 @@ different grid on every slide.
 - one **conclusion bar**: the slide's point in one sentence, worded to lead into the next slide;
 - **the hierarchy inside a panel** (23 Oct, from Pete's own decks and Nordea's; Pete: "missing a lot of icons", "so
   many things to focus on", "a document put into a powerpoint slide format"): heading (Inter bold 19 px on an ink rule)
-  → a one-line lede (15 px, its key phrase bold) → the content → a **takeaway** (a dashed box: the key phrase bold, the
-  punch in crimson italic; under a grey chevron where it follows from the picture, never under a cause). Charts carry
-  their annotation on the data: a dashed ring on the moment that matters, numbered crimson discs on events. Each point
-  in a list gets a Lucide **icon** in a circle, neutral, except the focal row's (crimson on tint). The focal number is
-  the largest type in the body and the only crimson number;
+  → a one-line lede (15 px, its key phrase bold) → the content. **Taken only where a planner would use it** (Pete,
+  23 Oct: "take the good parts, and apply it where it is reasonable"; would a world-class planner pitching put this on
+  screen?): a plain **reading** under a chart that needs one (a dashed box, the key phrase bold; it says what the
+  picture shows, never restates the title); one dashed **ring** on the moment that matters; **icons that name a real
+  thing** (the home, the pension, the business, the chance the money lasts), neutral except the focal row's (crimson
+  on tint); the same result rows wherever the same kind of result appears (slides 3 and 7). The focal number is the
+  largest type in the body and the only crimson number. **Not taken:** chevrons, numbered discs with no legend,
+  lightbulbs, a crimson punch-line in every box, a takeaway under a shape that already speaks (the house, the flow,
+  the blocks);
 - **navigation:** the kicker (the section) and a quiet **section tracker in the footer** (The problem · The answer ·
   The five calls · Will it hold · What next · Us; the current one in ink). **Back on trial, pending Pete:** it was
   dropped on 23 Oct on my recommendation (titles needed the width; three signals for one fact), but both winning
@@ -217,15 +221,15 @@ managed their own way…" / "…and across 10,000 futures".
   2026 to 89: the home (dark, labelled "since 2015, where Ryan and Chloe grew up") under savings, investments and MPF
   (light). A dashed ring on the sale; numbered callouts ① "Savings run out: the flat is sold, Carmen
   {{story_sale_age}}" and ② "Out again at {{story_out_age}}". Same scale as slide 7 (`series.py`).
-- **Under it, the takeaway** (chevron, dashed box): "Their savings run out first; **the flat they raised Ryan and Chloe
-  in carries Carmen only to {{story_out_age}}**, and *what was meant for the children pays the bills.*"
+- **Under it, the reading** (dashed box, on the panel's floor): "Their savings run out first. **Selling the flat they
+  raised Ryan and Chloe in carries Carmen only from {{story_sale_age}} to {{story_out_age}}.**" (Not the title again.)
 - **Right:** three icon rows from the 10,000 futures: {{own_sold_pct}} sell the flat (Carmen about {{own_sale_age}},
   usually alone); {{own_89}} see the money last to 89, even after the sale; then the focal row, stacked, the only
   crimson: {{own_legacy_sold}} (46 px) left to Ryan and Chloe where the flat is sold, of HK$24.4M today. On the panel's
-  floor, level with the left takeaway, **"Why:"** (lightbulb, no chevron: it is a cause): 61% of their wealth is a home
-  and a business that pay nothing until sold, and HK$375K a year of medical premiums sit outside their budget (both
-  typed in the written case). The two causes Calls 2 and 3 fix.
-- Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left, both takeaways and the bar.
+  floor, level with the reading, **"Why it runs out"** on mist: 61% of their wealth is a home and a business that pay
+  nothing until sold; HK$375K a year of medical premiums sit outside their budget (both typed in the written case).
+  The two causes Calls 2 and 3 fix.
+- Builds (reveal): the future → the sale and 51% → the run-out and 62% → what's left, the reading, the why and the bar.
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
 ### 4 · Our answer (Pete; 0:45)
@@ -299,6 +303,8 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   for the worst markets ({{ann_w1_with_real}} vs {{ann_w1_without_real}}).
 - Bar: "Decided now, four decisions close most of the gap; what's left is a cost the budget ignores."
 - Answers questions 1, 7 and 8.
+- **Icons** (23 Oct): the three things they own carry a neutral icon each (house, piggy bank, briefcase); the bars
+  stay to scale (14 px per HK$1M).
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
 **Rebuilt 23 Oct with slide 3.** Title: "Fix the cost the budget ignores: in that same future, the money now lasts to 89
@@ -314,7 +320,10 @@ Notes answer "why does the plan look poorer until about 2056?" (the annuities an
   the guardrail details; the worst one in twenty ({{guardswitch_worst5_real}} vs {{fixswitch_worst5_real}}); the rules
   cost about {{guard_cost}} a year of typical spending; the switch is guaranteed under the VHIS rules (Code of Practice
   s.2.11, FAQ Q30; Fahtai, 23 Oct), so "subject to underwriting" appears nowhere.
-- Bar: "Question 1, answered: they retire on time, keep the way they live, and keep the home."
+- **Results** under the premium line, in slide 3's row form: {{switch_89}} see the money last to 89, with the review
+  (the hourglass, as on slide 3); from 2039, spending rules protect the bad years, essentials never cut (a shield).
+- Bar: "Will it last? In almost every future: they retire on time, keep the way they live, and keep the home." (23 Oct:
+  answers slide 2's question and slide 3's kicker; "Question 1" pointed to a list no slide shows.)
 
 ### 8 · Call 4: one family policy, a plan for each person (Win; 0:50)
 **v10 (23 Oct): blocks with jobs and faces** (Pete chose it over two bars). The parents' HK$7.7M drawn twice on one
