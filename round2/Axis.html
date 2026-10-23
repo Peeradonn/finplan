@@ -439,7 +439,8 @@ p,li,span,b{text-wrap:pretty}
    A way in: three column labels (what they own and spend / what each becomes / what it gives them). Four rows, one per
    decision, so "four decisions" can be counted; ribbons never cross. Each row is one band (24 Oct, Pete: the left and
    middle were not aligned, too many icons): the asset's grey bar, to scale, starts its own ribbon, and the left and
-   middle labels sit above the line in the same metrics, so their lines align. No icons. The destinations are quiet (mist, a wine rule, ink
+   middle labels sit above the line in the same metrics, so their lines align. Icons back the same day (Pete), as
+   circles beside the left labels. The destinations are quiet (mist, a wine rule, ink
    numbers): the only accent is the result. The result is a bar on one scale: their own way, then four decisions in
    crimson, then a dashed stretch to Call 3, so the slide shows what is left for the next one. (23 Oct: a wine income
    box outweighed the result, the budget floated in a dashed box, and the band only restated the title.)
@@ -450,8 +451,11 @@ p,li,span,b{text-wrap:pretty}
 .f6h span:nth-child(3){left:810px}
 .f6{flex:none;position:relative;height:274px;margin-top:2px}
 .f6 svg{position:absolute;inset:0;width:100%;height:100%}
-.f6 .ol{position:absolute;left:0;width:300px;transform:translateY(-100%);padding-bottom:12px;font:600 14px/1.35 var(--text);color:var(--slate)}
-.f6 .ol b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.f6 .ol{position:absolute;left:0;width:310px;transform:translateY(-100%);padding-bottom:12px;display:flex;align-items:center;gap:12px}
+.f6 .ol .ic9{width:40px;height:40px;background:var(--mist);color:var(--slate)}
+.f6 .ol .ic9 .ic{width:21px;height:21px}
+.f6 .ol p{font:600 14px/1.35 var(--text);color:var(--slate)}
+.f6 .ol p b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .f6 .rl{position:absolute;left:350px;width:430px;transform:translateY(-100%);padding-bottom:12px;font:400 14px/1.35 var(--text);color:var(--slate)}
 .f6 .rl b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .f6 .dst{position:absolute;left:810px;right:0;padding:10px 18px;background:var(--mist);border-left:3px solid var(--wine)}
@@ -660,12 +664,15 @@ p,li,span,b{text-wrap:pretty}
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
 <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
 <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14" /> <path d="M5 2h14" /> <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /> <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol>
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+<symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /> <path d="M2 9v1c0 1.1.9 2 2 2h1" /> <path d="M16 11h.01" /></symbol>
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
 </svg>
 <main class="deck">
 
@@ -881,10 +888,10 @@ p,li,span,b{text-wrap:pretty}
       <path data-b="3" d="M 70,184 L 810,184" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
       <path data-b="4" d="M 0,248 L 810,248" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
     </svg>
-    <p class="ol" style="top:56px"><b>The flat</b>HK$11.5M</p>
-    <p class="ol" style="top:120px"><b>The MPF</b>HK$1.7M</p>
-    <p class="ol" style="top:184px"><b>The business</b>HK$5.0M</p>
-    <p class="ol" style="top:248px"><b>Their budget</b>HK$780K a year</p>
+    <div class="ol" style="top:56px"><span class="ic9"><svg class="ic"><use href="#i-house"/></svg></span><p><b>The flat</b>HK$11.5M</p></div>
+    <div class="ol" style="top:120px"><span class="ic9"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><p><b>The MPF</b>HK$1.7M</p></div>
+    <div class="ol" style="top:184px"><span class="ic9"><svg class="ic"><use href="#i-briefcase"/></svg></span><p><b>The business</b>HK$5.0M</p></div>
+    <div class="ol" style="top:248px"><span class="ic9"><svg class="ic"><use href="#i-wallet"/></svg></span><p><b>Their budget</b>HK$780K a year</p></div>
     <p class="rl" data-b="2" style="top:56px"><b>HK$230K a year for life, from 2037</b>a reverse mortgage, or they downsize: they choose at 65</p>
     <p class="rl" data-b="5" style="top:120px"><b>HK$268K a year for life</b>two HKMC annuities, bought at 65 and 62</p>
     <p class="rl" data-b="3" style="top:184px"><b>Sold in stages, 2035–39</b>to her co-founder and managers; their own way sells it too</p>

@@ -439,7 +439,8 @@ p,li,span,b{text-wrap:pretty}
    A way in: three column labels (what they own and spend / what each becomes / what it gives them). Four rows, one per
    decision, so "four decisions" can be counted; ribbons never cross. Each row is one band (24 Oct, Pete: the left and
    middle were not aligned, too many icons): the asset's grey bar, to scale, starts its own ribbon, and the left and
-   middle labels sit above the line in the same metrics, so their lines align. No icons. The destinations are quiet (mist, a wine rule, ink
+   middle labels sit above the line in the same metrics, so their lines align. Icons back the same day (Pete), as
+   circles beside the left labels. The destinations are quiet (mist, a wine rule, ink
    numbers): the only accent is the result. The result is a bar on one scale: their own way, then four decisions in
    crimson, then a dashed stretch to Call 3, so the slide shows what is left for the next one. (23 Oct: a wine income
    box outweighed the result, the budget floated in a dashed box, and the band only restated the title.)
@@ -450,8 +451,11 @@ p,li,span,b{text-wrap:pretty}
 .f6h span:nth-child(3){left:810px}
 .f6{flex:none;position:relative;height:274px;margin-top:2px}
 .f6 svg{position:absolute;inset:0;width:100%;height:100%}
-.f6 .ol{position:absolute;left:0;width:300px;transform:translateY(-100%);padding-bottom:12px;font:600 14px/1.35 var(--text);color:var(--slate)}
-.f6 .ol b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.f6 .ol{position:absolute;left:0;width:310px;transform:translateY(-100%);padding-bottom:12px;display:flex;align-items:center;gap:12px}
+.f6 .ol .ic9{width:40px;height:40px;background:var(--mist);color:var(--slate)}
+.f6 .ol .ic9 .ic{width:21px;height:21px}
+.f6 .ol p{font:600 14px/1.35 var(--text);color:var(--slate)}
+.f6 .ol p b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .f6 .rl{position:absolute;left:350px;width:430px;transform:translateY(-100%);padding-bottom:12px;font:400 14px/1.35 var(--text);color:var(--slate)}
 .f6 .rl b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .f6 .dst{position:absolute;left:810px;right:0;padding:10px 18px;background:var(--mist);border-left:3px solid var(--wine)}
