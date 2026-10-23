@@ -1,10 +1,10 @@
 # Built to Last: the script (Team Axis)
 
-Generated 2026-10-22 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
+Generated 2026-10-23 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
 1200 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:16 at 145 words a minute (8:31 with handovers); 8:53 at 135 words a minute (9:08 with handovers); 9:36 at 125 words a minute (9:51 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:54, Win 1:40, Fahtai 1:37.
+Speaking time at 135 words a minute: Pete 3:38, Lookbua 1:56, Win 1:39, Fahtai 1:37.
 
 ## 1 · Built to Last
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -35,9 +35,9 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:54, Win 1:40, Fahtai 1
 **Pete:** They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.
 
 ## 5 · Insure the income, not the life: about HK$100K a year closes every gap
-*Call 1: Protection · Lookbua · 0:40 · 86 spoken words (≈38 s at 135)*
+*Call 1: Protection · Lookbua · 0:40 · 93 spoken words (≈41 s at 135)*
 
-**Lookbua:** Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, nothing would replace their pay. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And in month one: wills, a guardian for Chloe, and powers of attorney. Fahtai.
+**Lookbua:** Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai.
 
 > Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.
 
@@ -63,9 +63,9 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:54, Win 1:40, Fahtai 1
 > Notes: Adrian's Treasuries maturing 2037–41; Carmen's portfolio led by the ESG core; the parents' match for Ryan.
 
 ## 9 · Values and innovation, with guardrails: ESG at 25%, crypto sized for each person
-*Call 5: Values and innovation · Win · 0:45 · 96 spoken words (≈43 s at 135)*
+*Call 5: Values and innovation · Win · 0:45 · 93 spoken words (≈41 s at 135)*
 
-**Win:** Call five: values and innovation, with guardrails. Carmen asked for 20 to 25% in ESG. We reach 25%, up from 11%, in SFC-listed funds that must pass two ratings. Crypto isn't yes or no: it's size and form for each person. Adrian holds none; Carmen up to 2%, through an ETF; Ryan keeps his HK$500K but adds nothing new, so its share falls from 74% of his wealth to 20% by 35. Lookbua.
+**Win:** Call five: values and innovation, with guardrails. Carmen asked for 20 to 25% in ESG. We reach 25%, up from 11%, in SFC-listed funds that must pass two ratings. Crypto isn't yes or no, it's sized per person. Adrian holds none; Carmen up to 2%, through an ETF; Ryan keeps his HK$500K but adds nothing new, so its share falls from 74% of his wealth to 20% by 35. Lookbua.
 
 ## 10 · Tested against the worst: even if Adrian loses his job at 60, the plan holds
 *Will it hold? · Lookbua · 0:30 · 67 spoken words (≈30 s at 135)*
@@ -75,9 +75,9 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:54, Win 1:40, Fahtai 1
 > Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).
 
 ## 11 · It starts this month; after that, dates trigger each step
-*What happens when · Lookbua · 0:30 · 60 spoken words (≈27 s at 135)*
+*What happens when · Lookbua · 0:30 · 59 spoken words (≈26 s at 135)*
 
-**Lookbua:** It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a first family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
+**Lookbua:** It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
 
 ## 12 · In the very futures where their own way sells the home, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M
 *What passes on · Pete · 0:25 · 56 spoken words (≈25 s at 135)*
@@ -87,9 +87,9 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:54, Win 1:40, Fahtai 1
 > Notes: the plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
 
 ## 13 · The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve
-*Wealth Management Connect · Pete · 0:40 · 91 spoken words (≈40 s at 135)*
+*Wealth Management Connect · Pete · 0:40 · 88 spoken words (≈39 s at 135)*
 
-**Pete:** What does this mean for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer when asked. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
+**Pete:** And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer when asked. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
 
 ## 14 · Four planners, one aim: families like the Wongs, on both sides of the boundary
 *Who we want to become · All · 1:10 · 148 spoken words (≈66 s at 135)*

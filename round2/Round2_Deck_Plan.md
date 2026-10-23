@@ -170,6 +170,8 @@ The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` w
 "Built to Last", the promise line, the team; an illustration of the family (image set, §7). No numbers.
 
 ### 2 · On paper, secure (Pete; 0:30)
+**Built 23 Oct** (`src/01_s01-02.html`; 96 words). Stacked: "Four people, four wants…" (upright cards, portraits
+150 px) over "…and on paper, secure" (one band; HK$24.4M at 72 px in the accent).
 - Four portraits with age, risk profile and want (case): Adrian 54, low to medium, capital, retirement and health
   protected; Carmen 49, medium to high, money that reflects her values; Ryan 24, high, crypto; Chloe 16, university in
   2028.
@@ -201,6 +203,9 @@ window, so the two pictures still match.
 - Image (optional, §7): the family's flat.
 
 ### 4 · Our answer (Pete; 0:45)
+**Built 23 Oct** (`src/03_s04-05.html`; about 150 words). The brief as a quote, the five calls as five columns (ink
+number squares matching the tracker, an icon each), the impact band under a rule: {{own_89}} grey → {{switch_89}} in
+the accent, the only accent on the slide.
 - **Question band:** the family's brief in its own words: "innovative yet prudent, forward-looking yet practical, and
   aligned with both financial goals and family values" (case p.5).
 - **Five calls in a row**, each a number, a three-to-five-word name and one result:
@@ -214,6 +219,12 @@ window, so the two pictures still match.
 - Bar: "Five calls, one family: the rest of this talk defends each one."
 
 ### 5 · Call 1: insure the income, not the life (Lookbua; 0:40)
+**Built 23 Oct** (`src/03_s04-05.html`; 169 words). Panels 5 + 4 + 3: "If a parent can't work, nothing replaces their
+pay…" (Adrian and Carmen, today a dashed empty bar, with cover an ink bar) / "…so we insure the income first…"
+(HK$100K in the accent, the year-1 cost as one stacked bar) / "…and sign the papers now" (within three months: wills,
+a guardian for Chloe, powers of attorney, **a buy-sell agreement**: added 23 Oct because the case asks for business
+continuity and key-person risk, case p.6, and Call 1 had neither; the script says it). **Bar changed** to "Protected
+first: now the plan can turn what they own into income": the old bar repeated the panels and led nowhere.
 - **"Their biggest risk is an income stopping…"**: pay that continues if a parent can't work: today nothing (no
   disability cover) vs with the plan HK$65K a month to 65 (Adrian) and HK$39K to 62 (Carmen). Disability ranks first
   for both on severity, likelihood and warning time (proposal §8).
