@@ -124,7 +124,8 @@ different grid on every slide.
   obvious alternative in the model and draw it beside the call (Call 2: their own way, `own_*`); where it can't, a
   ledger with one figure a row. Each panel opens with its hero number or object;
 - one **conclusion bar**: the slide's point in one sentence, worded to lead into the next slide;
-- footer: **one** navigation device (the deck's sections), the source, the page number. Nothing else.
+- **one navigation device: the kicker** (the section, with the call's number); the tracker was dropped (Pete, 23 Oct:
+  three signals for one fact). Footer: the source and the page number. Nothing else.
 - Not used (v7 lessons): a second tracker, question pills, "slide 5's…" references, tags inside sentences.
 
 **Grid:** 1280 × 720; margins 48 px left and right, 34 px top; 12 columns, 24 px gutters. Panels are 4 + 4 + 4,
@@ -148,9 +149,15 @@ everything else, bold labels included (Pete: Inter for the small text; a condens
 Inter's small text). **Scale, no other sizes:** title 32 · panel heading 20 · bold label and body 16 (Inter) · small 14
 (Inter) · tag and source 12 · numbers 40 and 72. Nothing meant to be read is under 14 px.
 
-**Density:** hybrid. 120 to 180 words on a call slide (titles and labels included), at most 150 on the summary; the
-script carries the reasoning in 60 to 110 spoken words a slide (measured, `Talk_Outline.md`). **Every on-screen phrase
-is spoken** as it appears; if a slide shows a number the script doesn't say, cut one of them.
+**The slides are scored on their own** (Pete, 23 Oct: the video and the slides are scored independently). So each
+slide **lists the most important facts**, enough for someone reading the file to follow the argument without the
+voice. The title's claim and the focal number are always spoken; supporting facts may stay unspoken on screen, as long
+as they don't compete with the focal point. (Replaces "every on-screen phrase is spoken; cut a number the script
+doesn't say", which stripped facts the separately scored slides need.)
+**Density:** about 120 to 180 words on a call slide, about 150 on the summary: **warnings, not limits.** Never make a
+phrase vaguer to meet a count (slide 4 lost "forced" that way, 23 Oct). The script: about 1,200 spoken words in all,
+until the team's timed read-through sets the real cap (if they average 135 words a minute or faster, about 1,240, and
+the extra goes to the personal statements).
 
 **Charts:** one style. Grey series, the accent only on the value the title claims, labels on the data (no legends
 where a label fits), axis text at 14 px. The ten futures (3, 7) and the premium line (7) come back from v7 (they

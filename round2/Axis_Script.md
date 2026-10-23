@@ -2,9 +2,9 @@
 
 Generated 2026-10-23 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
-1200 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:16 at 145 words a minute (8:31 with handovers); 8:53 at 135 words a minute (9:08 with handovers); 9:36 at 125 words a minute (9:51 with handovers).
+1204 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:18 at 145 words a minute (8:33 with handovers); 8:55 at 135 words a minute (9:10 with handovers); 9:37 at 125 words a minute (9:52 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:36, Lookbua 1:56, Win 1:39, Fahtai 1:39.
+Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1:39.
 
 ## 1 · Built to Last
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -23,11 +23,11 @@ Speaking time at 135 words a minute: Pete 3:36, Lookbua 1:56, Win 1:39, Fahtai 1
 **Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
 
 ## 3 · Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills
-*Will it last? · Pete · 0:45 · 99 spoken words (≈44 s at 135)*
+*Will it last? · Pete · 0:45 · 110 spoken words (≈49 s at 135) · over its time*
 
-**Pete:** But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them.
+**Pete:** But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them.
 
-> Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.
+> Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.
 
 ## 4 · The family asked for innovative yet prudent: five calls make the home their choice and their wealth last
 *Our answer · Pete · 0:45 · 92 spoken words (≈41 s at 135)*
@@ -68,9 +68,9 @@ Speaking time at 135 words a minute: Pete 3:36, Lookbua 1:56, Win 1:39, Fahtai 1
 **Win:** Call five: values and innovation, with guardrails. Carmen asked for 20 to 25% in ESG. We reach 25%, up from 11%, in SFC-listed funds that must pass two ratings. Crypto isn't yes or no, it's sized per person. Adrian holds none; Carmen up to 2%, through an ETF; Ryan keeps his HK$500K but adds nothing new, so its share falls from 74% of his wealth to 20% by 35. Lookbua.
 
 ## 10 · Tested against the worst: even if Adrian loses his job at 60, the plan holds
-*Will it hold? · Lookbua · 0:30 · 67 spoken words (≈30 s at 135)*
+*Will it hold? · Lookbua · 0:30 · 64 spoken words (≈28 s at 135)*
 
-**Lookbua:** Then we tried to break the plan. The hardest test: Adrian loses his job at 60, with no severance. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%.
+**Lookbua:** Then we tried to break the plan. The hardest test: Adrian loses his job at 60. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%.
 
 > Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).
 
@@ -87,9 +87,9 @@ Speaking time at 135 words a minute: Pete 3:36, Lookbua 1:56, Win 1:39, Fahtai 1
 > Notes: the plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
 
 ## 13 · The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve
-*Wealth Management Connect · Pete · 0:40 · 86 spoken words (≈38 s at 135)*
+*Wealth Management Connect · Pete · 0:40 · 82 spoken words (≈36 s at 135)*
 
-**Pete:** And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
+**Pete:** And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.
 
 ## 14 · Four planners, one aim: families like the Wongs, on both sides of the boundary
 *Who we want to become · All · 1:10 · 153 spoken words (≈68 s at 135)*

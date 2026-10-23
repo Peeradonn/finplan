@@ -171,9 +171,12 @@ p,li,span,b{text-wrap:pretty}
 .f9ax span:last-child{transform:translateX(-100%);text-align:right}
 .f9ax span i{display:block;font-style:normal;font-weight:400;color:var(--slate)}
 /* slide 3, right: the home, then what the children are left */
-.c9 .home{height:190px;background:var(--mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font:400 14px/1.3 var(--text);color:var(--slate);text-align:center}
+.c9 .home{height:136px;background:var(--mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font:400 14px/1.3 var(--text);color:var(--slate);text-align:center}
 .c9 .home .ic{width:44px;height:44px;stroke-width:1.4;color:var(--ink)}
 .c9 .homec{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:8px}
+.x3-62{display:flex;align-items:baseline;gap:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.x3-62 strong{font:700 40px/1 var(--head)}
+.x3-62 p{font:400 14px/1.35 var(--text);color:var(--slate)}
 .c9 .inh .l{font:600 16px/1.3 var(--text)}
 .c9 .inh strong{display:block;font:700 72px/1 var(--head);color:var(--accent);margin:8px 0 6px;letter-spacing:-1px}
 .c9 .inh p.s{font:400 14px/1.35 var(--text);color:var(--slate)}
@@ -336,7 +339,6 @@ p,li,span,b{text-wrap:pretty}
 <!-- v9 slide 2 (23 Oct): on paper, secure. Plan §5, slide 2. Four people and their wants (each returns as a call),
      then the strength in three numbers, the net worth in the accent: the title's claim. All figures: case. -->
 <section class="slide lb c9 upto-1" data-time="0:30" data-speaker="Pete">
-  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Where they stand</p>
     <h2>On paper, the Wongs are secure</h2>
@@ -365,7 +367,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.</aside>
 </section>
 <section class="slide lb c9 upto-2" data-time="0:30" data-speaker="Pete">
-  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Where they stand</p>
     <h2>On paper, the Wongs are secure</h2>
@@ -398,7 +399,6 @@ p,li,span,b{text-wrap:pretty}
      (business sold, flat kept and sold only when the money runs out), ranked best (top) to worst. The accent is the
      title's claim: where the flat is sold, and what that leaves the children. -->
 <section class="slide lb c9 reveal upto-1" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
     <h2>Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills</h2>
@@ -406,7 +406,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="panels">
     <div class="pn" style="grid-column:span 8">
       <h3>Ten typical futures, managed their own way…</h3>
-      <p class="lede">The business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
+      <p class="lede">Our written case measured investments alone: 33%. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
       <div class="body">
         <div class="f9">
           <div class="alone"><span>Carmen on her own</span></div>
@@ -430,9 +430,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
     <div class="pn" style="grid-column:span 4">
       <h3>…and leave Ryan and Chloe little</h3>
-      <p class="lede">Home since 2015, where Ryan and Chloe grew up (case)</p>
+      <p class="lede">Tai Kok Tsui, home since 2015, where Ryan and Chloe grew up (case)</p>
       <div class="body">
         <div class="home" data-b="2"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
+        <div class="x3-62" data-b="3"><strong>62%</strong><p>even after the sale, the chance the money lasts to Carmen's 89</p></div>
         <div class="inh" data-b="4">
           <p class="l">Left to Ryan and Chloe where the flat is sold</p>
           <strong>HK$2.3M</strong>
@@ -442,11 +443,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
 <section class="slide lb c9 reveal upto-2" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
     <h2>Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills</h2>
@@ -454,7 +454,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="panels">
     <div class="pn" style="grid-column:span 8">
       <h3>Ten typical futures, managed their own way…</h3>
-      <p class="lede">The business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
+      <p class="lede">Our written case measured investments alone: 33%. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
       <div class="body">
         <div class="f9">
           <div class="alone"><span>Carmen on her own</span></div>
@@ -478,9 +478,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
     <div class="pn" style="grid-column:span 4">
       <h3>…and leave Ryan and Chloe little</h3>
-      <p class="lede">Home since 2015, where Ryan and Chloe grew up (case)</p>
+      <p class="lede">Tai Kok Tsui, home since 2015, where Ryan and Chloe grew up (case)</p>
       <div class="body">
         <div class="home" data-b="2"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
+        <div class="x3-62" data-b="3"><strong>62%</strong><p>even after the sale, the chance the money lasts to Carmen's 89</p></div>
         <div class="inh" data-b="4">
           <p class="l">Left to Ryan and Chloe where the flat is sold</p>
           <strong>HK$2.3M</strong>
@@ -490,11 +491,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
 <section class="slide lb c9 reveal upto-3" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
     <h2>Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills</h2>
@@ -502,7 +502,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="panels">
     <div class="pn" style="grid-column:span 8">
       <h3>Ten typical futures, managed their own way…</h3>
-      <p class="lede">The business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
+      <p class="lede">Our written case measured investments alone: 33%. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
       <div class="body">
         <div class="f9">
           <div class="alone"><span>Carmen on her own</span></div>
@@ -526,9 +526,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
     <div class="pn" style="grid-column:span 4">
       <h3>…and leave Ryan and Chloe little</h3>
-      <p class="lede">Home since 2015, where Ryan and Chloe grew up (case)</p>
+      <p class="lede">Tai Kok Tsui, home since 2015, where Ryan and Chloe grew up (case)</p>
       <div class="body">
         <div class="home" data-b="2"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
+        <div class="x3-62" data-b="3"><strong>62%</strong><p>even after the sale, the chance the money lasts to Carmen's 89</p></div>
         <div class="inh" data-b="4">
           <p class="l">Left to Ryan and Chloe where the flat is sold</p>
           <strong>HK$2.3M</strong>
@@ -538,11 +539,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
 <section class="slide lb c9 reveal upto-4" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
     <h2>Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills</h2>
@@ -550,7 +550,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="panels">
     <div class="pn" style="grid-column:span 8">
       <h3>Ten typical futures, managed their own way…</h3>
-      <p class="lede">The business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
+      <p class="lede">Our written case measured investments alone: 33%. The fairer test is their own way: the business sold when Carmen retires; the flat kept, and sold only when the money runs out</p>
       <div class="body">
         <div class="f9">
           <div class="alone"><span>Carmen on her own</span></div>
@@ -574,9 +574,10 @@ p,li,span,b{text-wrap:pretty}
     </div>
     <div class="pn" style="grid-column:span 4">
       <h3>…and leave Ryan and Chloe little</h3>
-      <p class="lede">Home since 2015, where Ryan and Chloe grew up (case)</p>
+      <p class="lede">Tai Kok Tsui, home since 2015, where Ryan and Chloe grew up (case)</p>
       <div class="body">
         <div class="home" data-b="2"><svg class="ic"><use href="#i-house"/></svg>The family's flat: illustration to come</div>
+        <div class="x3-62" data-b="3"><strong>62%</strong><p>even after the sale, the chance the money lasts to Carmen's 89</p></div>
         <div class="inh" data-b="4">
           <p class="l">Left to Ryan and Chloe where the flat is sold</p>
           <strong>HK$2.3M</strong>
@@ -586,14 +587,13 @@ p,li,span,b{text-wrap:pretty}
     </div>
   </div>
   <p class="bar" data-b="4">Their wealth will pay for their retirement either way. The question is when, and on whose terms.</p>
-  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
-  <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
+  <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
+  <aside class="notes">PETE: But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
 
 <!-- v9 slide 4 (23 Oct): our answer. Plan §5, slide 4. The family's brief in its own words, the five calls in the order
      the talk takes them (the tracker's numbers), and the impact band; the accent only on the plan's result. -->
 <section class="slide lb c9 upto-1" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -620,7 +620,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.</aside>
 </section>
 <section class="slide lb c9 upto-2" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -647,7 +646,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.</aside>
 </section>
 <section class="slide lb c9 upto-3" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -674,7 +672,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.</aside>
 </section>
 <section class="slide lb c9 upto-4" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -701,7 +698,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.</aside>
 </section>
 <section class="slide lb c9 upto-5" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -728,7 +724,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.</aside>
 </section>
 <section class="slide lb c9 upto-6" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -755,7 +750,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">PETE: They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.</aside>
 </section>
 <section class="slide lb c9 upto-7" data-time="0:45" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span class="on">Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -786,7 +780,6 @@ p,li,span,b{text-wrap:pretty}
      (the year-1 cost as one stacked bar; HK$100K in the accent, the title's claim), the papers in month one. Figures:
      written case §8 (Figure 19); premiums from 2026 rate cards and the market range, quotes to follow. -->
 <section class="slide lb c9 upto-1" data-time="0:40" data-speaker="Lookbua">
-  <div class="trk"><span>Today</span><span>Answer</span><span class="on">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">1</span>Call 1: Protection</p>
     <h2>Insure the income, not the life: about HK$100K a year closes every gap</h2>
@@ -848,7 +841,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai. [Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.]</aside>
 </section>
 <section class="slide lb c9 upto-2" data-time="0:40" data-speaker="Lookbua">
-  <div class="trk"><span>Today</span><span>Answer</span><span class="on">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">1</span>Call 1: Protection</p>
     <h2>Insure the income, not the life: about HK$100K a year closes every gap</h2>
@@ -910,7 +902,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai. [Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.]</aside>
 </section>
 <section class="slide lb c9 upto-3" data-time="0:40" data-speaker="Lookbua">
-  <div class="trk"><span>Today</span><span>Answer</span><span class="on">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">1</span>Call 1: Protection</p>
     <h2>Insure the income, not the life: about HK$100K a year closes every gap</h2>
@@ -972,7 +963,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai. [Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.]</aside>
 </section>
 <section class="slide lb c9 upto-4" data-time="0:40" data-speaker="Lookbua">
-  <div class="trk"><span>Today</span><span>Answer</span><span class="on">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">1</span>Call 1: Protection</p>
     <h2>Insure the income, not the life: about HK$100K a year closes every gap</h2>
@@ -1035,7 +1025,6 @@ p,li,span,b{text-wrap:pretty}
 </section>
 
 <section class="slide lb c9 upto-1" data-time="0:45" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">2</span>Call 2: The home and the business</p>
     <h2>Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%</h2>
@@ -1066,8 +1055,8 @@ p,li,span,b{text-wrap:pretty}
         <div class="rw">
           <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
           <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Two annuities, each for life</b>
-            <p>Insurance for the worst markets</p></div>
+            <b>Two annuities, each for life: HK$268K a year</b>
+            <p>HKMC, bought at 65 and 62; with the home's income, 116% of essential bills in 2039</p></div>
         </div>
       </div>
     </div>
@@ -1087,7 +1076,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: 83%, not 62%. [Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.]</aside>
 </section>
 <section class="slide lb c9 upto-2" data-time="0:45" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">2</span>Call 2: The home and the business</p>
     <h2>Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%</h2>
@@ -1118,8 +1106,8 @@ p,li,span,b{text-wrap:pretty}
         <div class="rw">
           <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
           <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Two annuities, each for life</b>
-            <p>Insurance for the worst markets</p></div>
+            <b>Two annuities, each for life: HK$268K a year</b>
+            <p>HKMC, bought at 65 and 62; with the home's income, 116% of essential bills in 2039</p></div>
         </div>
       </div>
     </div>
@@ -1139,7 +1127,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: 83%, not 62%. [Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.]</aside>
 </section>
 <section class="slide lb c9 upto-3" data-time="0:45" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">2</span>Call 2: The home and the business</p>
     <h2>Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%</h2>
@@ -1170,8 +1157,8 @@ p,li,span,b{text-wrap:pretty}
         <div class="rw">
           <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
           <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Two annuities, each for life</b>
-            <p>Insurance for the worst markets</p></div>
+            <b>Two annuities, each for life: HK$268K a year</b>
+            <p>HKMC, bought at 65 and 62; with the home's income, 116% of essential bills in 2039</p></div>
         </div>
       </div>
     </div>
@@ -1191,7 +1178,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: 83%, not 62%. [Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.]</aside>
 </section>
 <section class="slide lb c9 upto-4" data-time="0:45" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">2</span>Call 2: The home and the business</p>
     <h2>Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%</h2>
@@ -1222,8 +1208,8 @@ p,li,span,b{text-wrap:pretty}
         <div class="rw">
           <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
           <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Two annuities, each for life</b>
-            <p>Insurance for the worst markets</p></div>
+            <b>Two annuities, each for life: HK$268K a year</b>
+            <p>HKMC, bought at 65 and 62; with the home's income, 116% of essential bills in 2039</p></div>
         </div>
       </div>
     </div>
@@ -1243,7 +1229,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: 83%, not 62%. [Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.]</aside>
 </section>
 <section class="slide lb c9 upto-5" data-time="0:45" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">2</span>Call 2: The home and the business</p>
     <h2>Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%</h2>
@@ -1274,8 +1259,8 @@ p,li,span,b{text-wrap:pretty}
         <div class="rw">
           <div class="own"><b>The MPF</b><div class="tr"><i style="width:35px"></i><span>HK$1.7M</span></div></div>
           <div class="to" data-b="4"><svg class="ic"><use href="#i-chevron-right"/></svg>
-            <b>Two annuities, each for life</b>
-            <p>Insurance for the worst markets</p></div>
+            <b>Two annuities, each for life: HK$268K a year</b>
+            <p>HKMC, bought at 65 and 62; with the home's income, 116% of essential bills in 2039</p></div>
         </div>
       </div>
     </div>
@@ -1299,7 +1284,6 @@ p,li,span,b{text-wrap:pretty}
      futures reach 89 (the accent), and the places where their own way sold the flat stay as hollow ghosts. Right: why,
      the premium line (series.py) reviewed at Adrian's 75, the review's result, the spending rules. -->
 <section class="slide lb c9 reveal upto-1" data-time="0:40" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
     <h2>Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home</h2>
@@ -1359,7 +1343,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
 <section class="slide lb c9 reveal upto-2" data-time="0:40" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
     <h2>Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home</h2>
@@ -1419,7 +1402,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
 <section class="slide lb c9 reveal upto-3" data-time="0:40" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
     <h2>Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home</h2>
@@ -1479,7 +1461,6 @@ p,li,span,b{text-wrap:pretty}
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
 <section class="slide lb c9 reveal upto-4" data-time="0:40" data-speaker="Fahtai">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
     <h2>Fix the cost the budget ignores: now all ten futures reach Carmen's 89, and none is forced to sell the home</h2>
@@ -1541,7 +1522,6 @@ p,li,span,b{text-wrap:pretty}
 
 <!-- v9 slide 8: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="0:50" data-speaker="Win">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span class="on">4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">4</span>Call 4: Each person</p>
     <h2>One family policy, a plan for each person: every dollar gets a job</h2>
@@ -1554,7 +1534,6 @@ p,li,span,b{text-wrap:pretty}
 
 <!-- v9 slide 9: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="0:45" data-speaker="Win">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span class="on">5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">5</span>Call 5: Values and innovation</p>
     <h2>Values and innovation, with guardrails: ESG at 25%, crypto sized for each person</h2>
@@ -1567,7 +1546,6 @@ p,li,span,b{text-wrap:pretty}
 
 <!-- v9 slide 10: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="0:30" data-speaker="Lookbua">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span class="on">Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it hold?</p>
     <h2>Tested against the worst: even if Adrian loses his job at 60, the plan holds</h2>
@@ -1575,12 +1553,11 @@ p,li,span,b{text-wrap:pretty}
   <div class="todo-box"><b>To build</b><p>Paired bars per test (the four decisions alone vs the full plan), the lost job highlighted</p></div>
   <p class="bar">It holds when the hardest things happen, and it starts this month.</p>
   <footer class="ft"><p class="src">Draft: the picture is still to build (plan §5).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">10 / 15</span></footer>
-  <aside class="notes">LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60, with no severance. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%. [Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).]</aside>
+  <aside class="notes">LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%. [Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).]</aside>
 </section>
 
 <!-- v9 slide 11: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="0:30" data-speaker="Lookbua">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span class="on">Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">What happens when</p>
     <h2>It starts this month; after that, dates trigger each step</h2>
@@ -1593,7 +1570,6 @@ p,li,span,b{text-wrap:pretty}
 
 <!-- v9 slide 12: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="0:25" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span class="on">Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">What passes on</p>
     <h2>In the very futures where their own way sells the home, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M</h2>
@@ -1606,7 +1582,6 @@ p,li,span,b{text-wrap:pretty}
 
 <!-- v9 slide 13: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="0:40" data-speaker="Pete">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span class="on">Us</span></div>
   <header class="hd">
     <p class="kick">Wealth Management Connect</p>
     <h2>The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve</h2>
@@ -1614,12 +1589,11 @@ p,li,span,b{text-wrap:pretty}
   <div class="todo-box"><b>To build</b><p>The two flows across the boundary; the advice rule on Southbound (HKMA)</p></div>
   <p class="bar">Under the Connect, an adviser's value is a clear, suitable answer when the client asks.</p>
   <footer class="ft"><p class="src">Draft: the picture is still to build (plan §5).</p><span style="font:600 14px/1 var(--head);color:var(--ink)">13 / 15</span></footer>
-  <aside class="notes">PETE: And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out of the Wongs' plan: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.</aside>
+  <aside class="notes">PETE: And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.</aside>
 </section>
 
 <!-- v9 slide 14: to build (plan §5). The title and the script are final drafts. -->
 <section class="slide lb c9" data-time="1:10" data-speaker="All">
-  <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span class="on">Us</span></div>
   <header class="hd">
     <p class="kick">Who we want to become</p>
     <h2>Four planners, one aim: families like the Wongs, on both sides of the boundary</h2>

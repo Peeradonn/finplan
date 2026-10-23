@@ -120,9 +120,11 @@ Reasons are in `document/manuscript.md`. These are content decisions; how the de
   - every panel adds a new fact that moves the argument a step; nothing restates a previous panel or slide;
   - every claim gets a shape (a measured comparison, a chart with one annotation, a ledger), not a paragraph; the
     reasoning is spoken and lives in the speaker notes;
+  - the slides are scored on their own (Pete, 23 Oct), so each lists the most important facts a reader needs to follow
+    without the voice; the claim and the focal number are always spoken;
   - one point a slide, one accent on it, and a conclusion bar that hands over to the next slide.
 - **The system** (plan §4): six type sizes, one 12-column grid, three panels whose headings read as one sentence,
-  one navigation device, nothing meant to be read under 14 px.
+  one navigation device (the kicker), nothing meant to be read under 14 px. Word budgets are warnings, not limits.
 
 ## Round One: the document (frozen)
 ```
