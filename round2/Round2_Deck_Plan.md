@@ -364,7 +364,9 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 ## 6. The look
 **Chosen: B · Swiss (Pete, 20 Oct), with Inter for all text below the headings, and the written case's crimson as
 the one accent (Pete, 23 Oct: #A81E2D, darker #6F1320, from `document/styles-v2.css`), so the deck and the document
-match.** White, near-black ink #121212; Archivo Narrow for display; no decorative motif, big type and generous space. Prototypes and
+match.** **Chart fills in the same family** (Pete, 23 Oct: more colour, but crimson, not blue): the home deep wine
+#7D1D2A, savings a muted rose #E6CBCF; events on those charts in ink, so they read on white, rose and wine; no
+gridlines across areas, ticks on the value axis. White, near-black ink #121212; Archivo Narrow for display; no decorative motif, big type and generous space. Prototypes and
 tokens in `round2/looks/` (`src/00_head.html`, class `.lb`). Option A (a drawing set: navy, brass, IBM Plex) was not
 chosen. v4 (warm paper, EB Garamond, crimson) sat close to the look the slide-design skill lists as generated.
 

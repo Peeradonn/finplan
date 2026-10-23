@@ -104,9 +104,12 @@ def story():
     top = [h + s for h, s in zip(ser["own_home"], ser["own_sav"])]
     T["story_sale_l"], T["story_sale_t"] = f"{X(js) / W * 100:.2f}%", f"{Y(top[js]) / H * 100:.1f}%"
     T["story_out_l"], T["story_out_t"] = f"{X(jo) / W * 100:.2f}%", f"{Y(top[jo]) / H * 100:.1f}%"
-    # slide 7: label their own way's dashed line where it rises furthest above the plan's area (years 2040-2050)
+    # slide 7: their own way is ahead on paper until the plan's total passes it (the plan has turned the home and the
+    # MPF into income for life, which the chart does not count as wealth); the label sits on the dashed line, mid-gap
     ptop = [h + s for h, s in zip(ser["plan_home"], ser["plan_sav"])]
-    jl = max(range(14, 25), key=lambda j: top[j] - ptop[j])
+    jc = next(j for j in range(14, n + 1) if ptop[j] >= top[j])
+    T["story_cross_year"] = str(2026 + jc)
+    jl = (14 + jc) // 2 + 2
     T["story_ownlbl_l"], T["story_ownlbl_t"] = f"{X(jl) / W * 100:.1f}%", f"{Y(top[jl]) / H * 100:.1f}%"
     T["story_g10_t"], T["story_g20_t"], T["story_g30_t"] = (f"{Y(v) / H * 100:.1f}%" for v in (10, 20, 30))
     return T
