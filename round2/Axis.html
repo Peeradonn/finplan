@@ -437,13 +437,18 @@ p,li,span,b{text-wrap:pretty}
 .x2t .st strong.on{font-size:64px;color:var(--accent);letter-spacing:-1px}
 .x2t .st p{font:400 15px/1.3 var(--text);color:var(--slate);margin-top:4px}
 
-/* ==================== slide 6, Call 2 (23 Oct): a flow, assets into income ====================
-   What they own (grey bars to scale, the flat = the full track) flows into what it becomes: the flat and the MPF into
-   one wine box, guaranteed income for life (its share of essential bills in 2039); the business into savings. The
-   ribbons carry their own labels; no ribbon crosses another. The fourth decision, a spending one, sits under the flow.
-   The band below gives the claim, as on slide 4. Geometry: the flow box is 1184 x 270; rows at y 45, 135, 225. */
-.f6{flex:none;position:relative;height:270px;margin-top:16px}
-.f6~.x4-i{margin-top:auto}   /* the band sits on the base; spare space goes above it */
+/* ==================== slide 6, Call 2 (24 Oct): four decisions, one row each, and the odds they buy ====================
+   A way in: three column labels (what they own and spend / what each becomes / what it gives them). Four rows, one per
+   decision, so "four decisions" can be counted; ribbons never cross. The destinations are quiet (mist, a wine rule, ink
+   numbers): the only accent is the result. The result is a bar on one scale: their own way, then four decisions in
+   crimson, then a dashed stretch to Call 3, so the slide shows what is left for the next one. (23 Oct: a wine income
+   box outweighed the result, the budget floated in a dashed box, and the band only restated the title.)
+   Geometry: the flow box is 1184 x 274; rows at y 56, 120, 184, 248. */
+.f6h{flex:none;position:relative;height:20px;margin-top:14px;font:700 14px/1 var(--text);color:var(--slate);letter-spacing:.2px}
+.f6h span{position:absolute;top:0}
+.f6h span:nth-child(2){left:350px}
+.f6h span:nth-child(3){left:810px}
+.f6{flex:none;position:relative;height:274px;margin-top:2px}
 .f6 svg{position:absolute;inset:0;width:100%;height:100%}
 .f6 .own{position:absolute;left:0;width:300px;transform:translateY(-50%);display:flex;align-items:center;gap:12px}
 .f6 .own .ic9{background:var(--mist);color:var(--slate)}
@@ -451,19 +456,34 @@ p,li,span,b{text-wrap:pretty}
 .f6 .own .tr{display:flex;align-items:center;gap:10px;margin-top:6px}
 .f6 .own .tr i{display:block;height:16px;background:var(--grey)}
 .f6 .own .tr span{font:600 16px/1 var(--text);white-space:nowrap}
-.f6 .rl{position:absolute;left:350px;width:420px;transform:translateY(-100%);padding-bottom:12px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.f6 .rl{position:absolute;left:350px;width:430px;transform:translateY(-100%);padding-bottom:12px;font:400 14px/1.35 var(--text);color:var(--slate)}
 .f6 .rl b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
-.f6 .dst{position:absolute;left:810px;right:0;padding:14px 18px}
-.f6 .dst.inc{top:0;height:166px;background:var(--wine);color:#fff;display:flex;flex-direction:column;justify-content:center}
-.f6 .dst.inc h4{font:600 20px/1.2 var(--head)}
-.f6 .dst.inc strong{display:block;font:600 56px/1 var(--head);margin:8px 0 4px}
-.f6 .dst.inc p{font:400 14px/1.35 var(--text);opacity:.9}
-.f6 .dst.sav{top:192px;height:78px;background:var(--tint);border:1.5px solid var(--rose);display:flex;align-items:center;gap:14px}
-.f6 .dst.sav strong{font:600 32px/1 var(--head);white-space:nowrap}
-.f6 .dst.sav p{font:400 14px/1.35 var(--text);color:var(--slate)}
-.f6 .dst.sav p b{color:var(--ink);font-weight:600;display:block}
-.f6b{flex:none;display:flex;align-items:center;gap:14px;margin-top:10px;padding:10px 14px;border:1.5px dashed var(--rose);font:400 15px/1.35 var(--text);color:var(--slate)}
-.f6b b{color:var(--ink);font-weight:600}
+.f6 .dst{position:absolute;left:810px;right:0;padding:10px 18px;background:var(--mist);border-left:3px solid var(--wine)}
+.f6 .dst.inc{top:20px;height:136px;display:flex;flex-direction:column;justify-content:center}
+.f6 .dst.inc h4{font:700 16px/1.25 var(--text);color:var(--ink)}
+.f6 .dst.inc strong{display:block;font:700 40px/1 var(--head);color:var(--ink);margin:8px 0 4px;letter-spacing:-1px}
+.f6 .dst.inc p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.f6 .dst.sav,.f6 .dst.spd{height:48px;display:flex;align-items:center;gap:14px}
+.f6 .dst.sav{top:160px}
+.f6 .dst.spd{top:224px}
+.f6 .dst.sav strong,.f6 .dst.spd strong{font:700 26px/1 var(--head);white-space:nowrap;letter-spacing:-.5px}
+.f6 .dst.sav p,.f6 .dst.spd p{font:400 14px/1.3 var(--text);color:var(--slate)}
+.f6 .dst.sav p b,.f6 .dst.spd p b{color:var(--ink);font-weight:600;display:block}
+/* the odds, on one scale: dashed to Call 3's result, crimson to four decisions, grey to their own way (stacked).
+   Own class names: .trk is the old tracker's, and it moved this track and boxed its labels. */
+.f6~.o6{margin-top:auto}
+.o6{flex:none;display:grid;grid-template-columns:180px 1fr;column-gap:24px;align-items:end;padding-top:10px;border-top:1.5px solid var(--ink)}
+.o6 .l{font:700 16px/1.3 var(--text);padding-bottom:26px}
+.o6t{position:relative;height:96px}
+.o6t>i{position:absolute;left:0;top:52px;height:24px}
+.o6t>i.o6x{border:1.5px dashed var(--grey);background:var(--paper)}
+.o6t>i.o6c{background:var(--accent)}
+.o6t>i.o6g{background:#CFC7C5}
+.o6u{position:absolute;bottom:48px;transform:translateX(-100%);width:max-content;display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+.o6u span{font:600 15px/1.2 var(--text);color:var(--ink)}
+.o6u strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1px}
+.o6d{position:absolute;top:82px;transform:translateX(-100%);width:max-content;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.o6d b{font-weight:700;color:var(--ink)}
 
 /* ==================== slide 8, Call 4 (23 Oct): every dollar gets a job ====================
    The parents' HK$7.7M outside the home and the MPF, drawn twice on one scale (block width = value): today in grey,
@@ -645,6 +665,7 @@ p,li,span,b{text-wrap:pretty}
 <symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /> <path d="M2 9v1c0 1.1.9 2 2 2h1" /> <path d="M16 11h.01" /></symbol>
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
 </svg>
 <main class="deck">
 
@@ -851,30 +872,37 @@ p,li,span,b{text-wrap:pretty}
     <p class="kick">Call 2: The home and the business</p>
     <h2>Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%</h2>
   </header>
+  <div class="f6h"><span>What they own and spend</span><span>What each becomes, decided now</span><span>What it gives them</span></div>
   <div class="f6">
-    <svg viewBox="0 0 1184 270" preserveAspectRatio="none" aria-hidden="true">
-      <path data-b="2" d="M 320,45 L 640,45 C 730,45 730,55 810,55" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
-      <path data-b="3" d="M 320,135 L 640,135 C 730,135 730,110 810,110" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
-      <path data-b="4" d="M 320,225 L 640,225 C 730,225 730,231 810,231" fill="none" stroke="#EFDDE0" stroke-width="18" stroke-linecap="butt"/>
+    <svg viewBox="0 0 1184 274" preserveAspectRatio="none" aria-hidden="true">
+      <path data-b="2" d="M 320,56 L 640,56 C 730,56 730,70 810,70" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
+      <path data-b="5" d="M 320,120 L 640,120 C 730,120 730,106 810,106" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
+      <path data-b="3" d="M 320,184 L 810,184" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
+      <path data-b="4" d="M 320,248 L 810,248" fill="none" stroke="#DDD0CD" stroke-width="18" stroke-linecap="butt"/>
     </svg>
-    <div class="own" style="top:45px"><span class="ic9"><svg class="ic"><use href="#i-house"/></svg></span><div><b>The flat</b><div class="tr"><i style="width:161px"></i><span>HK$11.5M</span></div></div></div>
-    <div class="own" style="top:135px"><span class="ic9"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><div><b>The MPF</b><div class="tr"><i style="width:24px"></i><span>HK$1.7M</span></div></div></div>
-    <div class="own" style="top:225px"><span class="ic9"><svg class="ic"><use href="#i-briefcase"/></svg></span><div><b>The business</b><div class="tr"><i style="width:70px"></i><span>HK$5.0M</span></div></div></div>
-    <p class="rl" data-b="2" style="top:45px"><b>HK$230K a year for life, from 2037</b>a reverse mortgage; or they downsize: they choose at 65</p>
-    <p class="rl" data-b="3" style="top:135px"><b>HK$268K a year for life</b>two HKMC annuities, bought at 65 and 62</p>
-    <p class="rl" data-b="4" style="top:225px"><b>Sold in stages, 2035–39</b>to her co-founder and managers; their own way sells it too</p>
-    <div class="dst inc" data-b="3"><h4>Guaranteed income, for life</h4><strong>116%</strong><p>of their essential bills, covered in 2039</p></div>
-    <div class="dst sav" data-b="4"><strong>HK$3.0M</strong><p><b>into savings</b>counted low, of HK$5.0M</p></div>
+    <div class="own" style="top:56px"><span class="ic9"><svg class="ic"><use href="#i-house"/></svg></span><div><b>The flat</b><div class="tr"><i style="width:161px"></i><span>HK$11.5M</span></div></div></div>
+    <div class="own" style="top:120px"><span class="ic9"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><div><b>The MPF</b><div class="tr"><i style="width:24px"></i><span>HK$1.7M</span></div></div></div>
+    <div class="own" style="top:184px"><span class="ic9"><svg class="ic"><use href="#i-briefcase"/></svg></span><div><b>The business</b><div class="tr"><i style="width:70px"></i><span>HK$5.0M</span></div></div></div>
+    <div class="own" style="top:248px"><span class="ic9"><svg class="ic"><use href="#i-wallet"/></svg></span><div><b>Their budget</b><div class="tr"><span>HK$780K a year</span></div></div></div>
+    <p class="rl" data-b="2" style="top:56px"><b>HK$230K a year for life, from 2037</b>a reverse mortgage, or they downsize: they choose at 65</p>
+    <p class="rl" data-b="5" style="top:120px"><b>HK$268K a year for life</b>two HKMC annuities, bought at 65 and 62</p>
+    <p class="rl" data-b="3" style="top:184px"><b>Sold in stages, 2035–39</b>to her co-founder and managers; their own way sells it too</p>
+    <p class="rl" data-b="4" style="top:248px"><b>Planned now, for a survivor</b>for the years after the first death</p>
+    <div class="dst inc" data-b="5"><h4>Guaranteed income, for life</h4><strong>116%</strong><p>of their essential bills, covered in 2039</p></div>
+    <div class="dst sav" data-b="3"><strong>HK$3.0M</strong><p><b>into savings</b>counted low, of HK$5.0M</p></div>
+    <div class="dst spd" data-b="4"><strong>70%</strong><p><b>of today's budget</b>for the one who survives</p></div>
   </div>
-  <p class="f6b" data-b="4"><b>And their budget:</b> a survivor plans on 70%, agreed now, for the years after the first death</p>
-  <div class="x4-i" data-b="5">
+  <div class="o6" data-b="6">
     <p class="l">Chance the money lasts to Carmen's 89</p>
-    <p class="v"><strong>62%</strong><span>their own way</span></p>
-    <p class="ar">→</p>
-    <p class="v on"><strong>83%</strong><span>four decisions, taken now</span></p>
+    <div class="o6t">
+      <i class="o6x" style="width:97%"></i><i class="o6c" style="width:83%"></i><i class="o6g" style="width:62%"></i>
+      <p class="o6u" style="left:83%"><span>four decisions, taken now</span><strong>83%</strong></p>
+      <p class="o6d" style="left:62%">their own way <b>62%</b></p>
+      <p class="o6d" style="left:97%">with Call 3, next <b>97%</b></p>
+    </div>
   </div>
-  <p class="tr9" data-b="5"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>Staying in the home leaves HK$4.1M less to Ryan and Chloe than downsizing would, and the annuities can't be undone.</span></p>
-  <p class="bar" data-b="5">Decided now, four decisions close most of the gap; what's left is a cost the budget ignores.</p>
+  <p class="tr9" data-b="6"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>Staying in the home leaves HK$4.1M less to Ryan and Chloe than downsizing would, and the annuities can't be undone.</span></p>
+  <p class="bar" data-b="6">Decided now, four decisions close most of the gap; what's left is a cost the budget ignores.</p>
   <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89, 10,000 simulated markets (measured); both ways pay Flexi premiums for life. Assets: case; the business counted at HK$3.0M, as in the written case.</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">6 / 15</span></footer>
   <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. At 65 they choose: stay, with a reverse mortgage paying HK$230K a year for life, or downsize. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: 83%, not 62%. [Notes: more shares instead? 80% in shares reaches only 43%, with a worst year of −24%, and breaks Adrian's low-to-medium profile. The annuities: HK$161K and HK$107K a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers 116% of essential bills; after Adrian's death 72%, so never "for life". Even if the business never sells, 66%. Stay or move keeps the odds at 83% either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.]</aside>
 </section>
