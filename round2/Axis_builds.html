@@ -294,6 +294,15 @@ p,li,span,b{text-wrap:pretty}
 .upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{filter:grayscale(1);opacity:.3}
 .upto-7 [data-b="8"],.upto-7 [data-b="9"]{filter:grayscale(1);opacity:.3}
 .upto-8 [data-b="9"]{filter:grayscale(1);opacity:.3}
+/* the ten-futures slides (3, 7) reveal instead: greyed, their payoff showed before it was spoken (Pete, 23 Oct) */
+.reveal.upto-1 [data-b="2"],.reveal.upto-1 [data-b="3"],.reveal.upto-1 [data-b="4"],.reveal.upto-1 [data-b="5"],.reveal.upto-1 [data-b="6"],.reveal.upto-1 [data-b="7"],.reveal.upto-1 [data-b="8"],.reveal.upto-1 [data-b="9"]{visibility:hidden}
+.reveal.upto-2 [data-b="3"],.reveal.upto-2 [data-b="4"],.reveal.upto-2 [data-b="5"],.reveal.upto-2 [data-b="6"],.reveal.upto-2 [data-b="7"],.reveal.upto-2 [data-b="8"],.reveal.upto-2 [data-b="9"]{visibility:hidden}
+.reveal.upto-3 [data-b="4"],.reveal.upto-3 [data-b="5"],.reveal.upto-3 [data-b="6"],.reveal.upto-3 [data-b="7"],.reveal.upto-3 [data-b="8"],.reveal.upto-3 [data-b="9"]{visibility:hidden}
+.reveal.upto-4 [data-b="5"],.reveal.upto-4 [data-b="6"],.reveal.upto-4 [data-b="7"],.reveal.upto-4 [data-b="8"],.reveal.upto-4 [data-b="9"]{visibility:hidden}
+.reveal.upto-5 [data-b="6"],.reveal.upto-5 [data-b="7"],.reveal.upto-5 [data-b="8"],.reveal.upto-5 [data-b="9"]{visibility:hidden}
+.reveal.upto-6 [data-b="7"],.reveal.upto-6 [data-b="8"],.reveal.upto-6 [data-b="9"]{visibility:hidden}
+.reveal.upto-7 [data-b="8"],.reveal.upto-7 [data-b="9"]{visibility:hidden}
+.reveal.upto-8 [data-b="9"]{visibility:hidden}
 .notes{display:none}
 </style>
 </head>
@@ -388,7 +397,7 @@ p,li,span,b{text-wrap:pretty}
 <!-- v9 slide 3 (22 Oct): their own way. Plan §5, slide 3. Ten typical futures under what a sensible family would do
      (business sold, flat kept and sold only when the money runs out), ranked best (top) to worst. The accent is the
      title's claim: where the flat is sold, and what that leaves the children. -->
-<section class="slide lb c9 upto-1" data-time="0:45" data-speaker="Pete">
+<section class="slide lb c9 reveal upto-1" data-time="0:45" data-speaker="Pete">
   <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
@@ -436,7 +445,7 @@ p,li,span,b{text-wrap:pretty}
   <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
   <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
-<section class="slide lb c9 upto-2" data-time="0:45" data-speaker="Pete">
+<section class="slide lb c9 reveal upto-2" data-time="0:45" data-speaker="Pete">
   <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
@@ -484,7 +493,7 @@ p,li,span,b{text-wrap:pretty}
   <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
   <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
-<section class="slide lb c9 upto-3" data-time="0:45" data-speaker="Pete">
+<section class="slide lb c9 reveal upto-3" data-time="0:45" data-speaker="Pete">
   <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
@@ -532,7 +541,7 @@ p,li,span,b{text-wrap:pretty}
   <footer class="ft"><p class="src">Their own way: the business sold, the budget kept after a death, the Flexi medical plan for life, the flat sold for a HK$7M one when the money runs out. Ten futures: the 5th to 95th percentile of 10,000 simulated markets (measured). On investments alone, the written case's measure: 33%.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">3 / 15</span></footer>
   <aside class="notes">PETE: But will it last? A sensible family would do it their own way: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. Carmen, at about 83 and usually on her own, sells the home where they raised Ryan and Chloe. In most, the sale buys just 2 to 3 years, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them. [Notes: on investments alone, the written case's measure, 33%. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.]</aside>
 </section>
-<section class="slide lb c9 upto-4" data-time="0:45" data-speaker="Pete">
+<section class="slide lb c9 reveal upto-4" data-time="0:45" data-speaker="Pete">
   <div class="trk"><span class="on">Today</span><span>Answer</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick">Will it last?</p>
@@ -593,7 +602,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -620,7 +629,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -647,7 +656,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -674,7 +683,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -701,7 +710,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -728,7 +737,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -755,7 +764,7 @@ p,li,span,b{text-wrap:pretty}
   <div class="x4-q"><p>“Innovative yet prudent, forward-looking yet practical, and aligned with both financial goals and family values”</p><span>The family's brief</span></div>
   <div class="x4-c">
     <div data-b="2"><p class="t"><i>1</i><svg class="ic"><use href="#i-shield-check"/></svg></p><h4>Insure the income, not the life</h4><p>HK$100K a year closes every gap</p></div>
-    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not at 83</p></div>
+    <div data-b="3"><p class="t"><i>2</i><svg class="ic"><use href="#i-house"/></svg></p><h4>Put the home and business to work</h4><p>Decided at 65, not forced at 83</p></div>
     <div data-b="4"><p class="t"><i>3</i><svg class="ic"><use href="#i-heart-pulse"/></svg></p><h4>Fix the cost the budget ignores</h4><p>Medical review at 75; spending rules</p></div>
     <div data-b="5"><p class="t"><i>4</i><svg class="ic"><use href="#i-users"/></svg></p><h4>A plan for each person</h4><p>Chloe funded; HK$45K a year less in fees</p></div>
     <div data-b="6"><p class="t"><i>5</i><svg class="ic"><use href="#i-leaf"/></svg></p><h4>Values and crypto, with guardrails</h4><p>ESG at 25%; crypto sized per person</p></div>
@@ -1289,7 +1298,7 @@ p,li,span,b{text-wrap:pretty}
 <!-- v9 slide 7 (22 Oct): Call 3. Plan §5, slide 7. Slide 3's picture, redrawn with the plan in the same place: all ten
      futures reach 89 (the accent), and the places where their own way sold the flat stay as hollow ghosts. Right: why,
      the premium line (series.py) reviewed at Adrian's 75, the review's result, the spending rules. -->
-<section class="slide lb c9 upto-1" data-time="0:40" data-speaker="Fahtai">
+<section class="slide lb c9 reveal upto-1" data-time="0:40" data-speaker="Fahtai">
   <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
@@ -1349,7 +1358,7 @@ p,li,span,b{text-wrap:pretty}
   <footer class="ft"><p class="src">Ten futures: the 5th to 95th percentile of 10,000 simulated markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured). Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
-<section class="slide lb c9 upto-2" data-time="0:40" data-speaker="Fahtai">
+<section class="slide lb c9 reveal upto-2" data-time="0:40" data-speaker="Fahtai">
   <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
@@ -1409,7 +1418,7 @@ p,li,span,b{text-wrap:pretty}
   <footer class="ft"><p class="src">Ten futures: the 5th to 95th percentile of 10,000 simulated markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured). Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
-<section class="slide lb c9 upto-3" data-time="0:40" data-speaker="Fahtai">
+<section class="slide lb c9 reveal upto-3" data-time="0:40" data-speaker="Fahtai">
   <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
@@ -1469,7 +1478,7 @@ p,li,span,b{text-wrap:pretty}
   <footer class="ft"><p class="src">Ten futures: the 5th to 95th percentile of 10,000 simulated markets, with the four decisions, the review at Adrian's 75 and the spending rules (measured). Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds; the Standard plan costs about a third of Flexi.</p><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to 97%. From 2039, spending rules protect the bad years; essentials are never cut. Remember the ten futures? Now all ten reach Carmen's 89, and not one has to sell the home. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. The worst one in twenty: HK$382K vs HK$111K without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
-<section class="slide lb c9 upto-4" data-time="0:40" data-speaker="Fahtai">
+<section class="slide lb c9 reveal upto-4" data-time="0:40" data-speaker="Fahtai">
   <div class="trk"><span>Today</span><span>Answer</span><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>5</span><span>Proof</span><span>Plan</span><span>Us</span></div>
   <header class="hd">
     <p class="kick"><span class="gb">3</span>Call 3: Retirement</p>
