@@ -2,7 +2,8 @@
 
 **Status:** v10, 23 Oct 2026. The story is v9's (agreed 22 Oct: the problem before the answer, "their own way" as the
 baseline, Lookbua reads slide 11); v10 is the design pass (Pete, 23 Oct: "the story is ok, the pages are not"): the
-house as the deck's idea, and a picture that portrays each slide's point (§6, §5). The talk, timed, with the full draft script: `round2/Talk_Outline.md`. Look B chosen (20 Oct, §6).
+house as the deck's idea, and a picture that portrays each slide's point (§6, §5). §4 rewritten the same day from a list of
+required parts into tests, a few fixed things and a toolbox (Pete: the rules were locking the results into one way). The talk, timed, with the full draft script: `round2/Talk_Outline.md`. Look B chosen (20 Oct, §6).
 v8 ("Five calls", 20 Oct) is in git (commit 0b0a985 and before); v1 to v7 in `archive/Round2_Deck_Plan_v1-v7.md`.
 **Deck type:** a 10-minute recorded video presented over these slides, and the PowerPoint file scored on its own
 ("Quality of ppt"). Pete chose **hybrid** (20 Oct): every slide is presented, and also makes sense read alone.
@@ -112,85 +113,87 @@ the home (3, 6, 12). The case's eleven sections: summary (4), cash flow and net 
 education (8), investment (8), ESG (9), digital assets (9), protection (5), property, succession and legacy (6, 12),
 roadmap (11), risk and compliance (10).
 
-## 4. Rules for every slide (the system)
-These rules hold on every slide. They exist because v7 had 40 font sizes, about ten navigation items a slide, and a
-different grid on every slide.
+## 4. What every slide must do, and what's open
+**Rewritten 23 Oct** (Pete: the instructions were locking the results into one way, below standard). This section used to list the
+parts every content slide must have: kicker, panels whose headings read as one sentence, a lede, a hero number, icons,
+a conclusion bar, a trade-off strip on call slides, a footer tracker. Every built slide got all of them, and even the
+unbuilt placeholders got a bar. It now holds the tests a slide must pass, the few things that are fixed, the pieces we can use, and
+the failures we've already seen. Each slide's form is chosen for its point.
 
-**Anatomy of a content slide (3 to 13):**
-- kicker (the section: "Call 2 · The home and the business"), then the title, two lines at most;
-- **panels whose headings read as one sentence across the slide** ("What they own…" / "…what each becomes…" /
-  "…and what it achieves"); **each panel is one step of the argument and adds a new fact**: no panel restates another
-  panel or an earlier slide (Pete, 20 Oct: v8's first Call 2 spent a third of the slide repeating 33%);
-- **every claim gets a shape, not a paragraph.** The defence of a call is **measured** where it can be: run the
-  obvious alternative in the model and draw it beside the call (Call 2: their own way, `own_*`); where it can't, a
-  ledger with one figure a row. Each panel opens with its hero number or object;
-- one **conclusion bar**: the slide's point in one sentence, worded to lead into the next slide;
-- on every call slide (5 to 9), **the trade-off** on a mist strip sitting on the bar (scale icon, "The trade-off", one
-  sentence from the written case's defend paragraphs): what the family gives up for the call (Pete, 23 Oct; a planner
-  says the cost before the client asks, and the judges score "client suitability awareness");
-- **the hierarchy inside a panel** (23 Oct, from Pete's own decks and Nordea's; Pete: "missing a lot of icons", "so
-  many things to focus on", "a document put into a powerpoint slide format"): heading (Inter bold 19 px on an ink rule)
-  → a one-line lede (15 px, its key phrase bold) → the content. **Taken only where a planner would use it** (Pete,
-  23 Oct: "take the good parts, and apply it where it is reasonable"; would a world-class planner pitching put this on
-  screen?): a plain **reading** under a chart that needs one (a dashed box, the key phrase bold; it says what the
-  picture shows, never restates the title); one dashed **ring** on the moment that matters; **icons that name a real
-  thing** (the home, the pension, the business, the chance the money lasts), neutral except the focal row's (crimson
-  on tint); the same result rows wherever the same kind of result appears (slides 3 and 7). The focal number is the
-  largest type in the body and the only crimson number. **Not taken:** chevrons, numbered discs with no legend,
-  lightbulbs, a crimson punch-line in every box, a takeaway under a shape that already speaks (the house, the flow,
-  the blocks);
-- **navigation:** the kicker (the section) and a quiet **section tracker in the footer** (The problem · The answer ·
-  The five calls · Will it hold · What next · Us; the current one in ink). **Back on trial, pending Pete:** it was
-  dropped on 23 Oct on my recommendation (titles needed the width; three signals for one fact), but both winning
-  references (Nordea's, Pete's Banyan) carry one, and in the footer it costs the titles nothing. Footer: the source
-  (two lines at most; the detail goes to the notes), the tracker, the page number.
-- Not used (v7 lessons): a second tracker, question pills, "slide 5's…" references, tags inside sentences.
+**The tests** (each slide, then the whole deck on a contact sheet):
+1. **Would a world-class financial planner, pitching to this family, put this on screen?** (Pete, 23 Oct.)
+2. **One point in five seconds.** The title states it. The one thing that proves it is the largest type in the body and
+   the only accent; everything else is quieter.
+3. **Its claim is shown, not argued.** A measured comparison where one can be run (the obvious alternative in the
+   model, drawn beside the call, as Call 2 does with their own way), a chart with the one thing marked, a ledger with
+   one figure a row; not a paragraph.
+4. **It reads alone.** The PowerPoint is scored on its own (Pete, 23 Oct), so a reader without the voice gets the claim
+   and the facts behind it. The reasoning is spoken and lives in the speaker notes; the claim and the focal number are
+   always spoken.
+5. **It moves the story.** It answers what the last slide left open and leaves the next question; the problem comes
+   before the answer (§2). Nothing on it repeats the title, another part of the slide, or an earlier slide.
+6. **As simple as it can be while the point stays clear** (Pete, 23 Oct): fewer pieces, never a vaguer message.
 
-**Grid:** 1280 × 720; margins 48 px left and right, 34 px top; 12 columns, 24 px gutters. Panels are 4 + 4 + 4,
-5 + 4 + 3 or 7 + 5 columns. **One top line, one baseline** (Pete, 20 Oct): every panel's content starts 20 px under its
-heading rule and ends on one baseline; spare space is spread inside the content, never left as a gap at one end.
-Measure it on the render, don't eyeball it.
+**Fixed** (constraints, on every slide):
+- 1280 × 720. Nothing meant to be read under 14 px: the judges may watch on Zoom.
+- The identity (§6) and the tokens in `src/00_head.html`. One type scale, so the deck looks like one deck: title 35 ·
+  panel heading 19 Inter bold · body and bold label 16 · small 14 · tag and source 12 · numbers 40 and 72 (76 for
+  slide 2's net worth). Use these sizes rather than new ones. (§6 still gives panel headings as EB Garamond 22, and the
+  CSS has both; settle on one.)
+- A 12-column grid with 48 px side margins and 24 px gutters. How a slide divides it is open.
+- Every model number is a `{{key}}` (CLAUDE.md), tagged as a quiet "(measured)", "(case)" or "(sourced)": MEASURED is
+  the team model (`numbers.json`), CASE the case, SOURCED a named public source.
+- Builds reveal in speaking order (`data-b`) and grey what is still to come, so the layout never moves (Pete, 23 Oct),
+  except where the grey would give the payoff away (the ten futures reveal). `make.py --builds` writes one frame per
+  step (`Axis_builds.html`, `build/frames/`) for the video.
+- Each call (5 to 9) shows on the slide what the family gives up for it (Pete, 23 Oct: a planner names the cost before
+  the client asks, and the judges score "client suitability awareness"). Where and how it shows is open.
 
-**Text on a slide (Pete, 20 Oct: "many disconnected text, we're just pushing out text everywhere"):** say each thing
-once (the title is the claim, the picture the evidence, the bar the so-what; cut any caption that repeats one of
-them); attach every label to what it explains (a result carries its own qualifier, a segment its own name; no
-floating sentences, legends or notes that restate); one block per idea. The reasons are spoken and live in the
-speaker notes, which the PowerPoint carries for anyone reading the file. **But not empty** (Pete, 20 Oct, on Call 2
-v6): a slide needs enough on it to tell its story read alone; the fix for clutter is fewer, connected pieces, not
-fewer facts.
+**Defaults** (break one when the slide is better for it, and say why in its §5 section):
+- Charts: grey or rose series, the accent only on the value the title claims, labels on the data rather than legends,
+  axis text 14 px, no gridlines, events anchored to the axis. Crimson marks a point or a number, never a wall of lines.
+- The kicker names the section; the footer carries the source (two lines at most; the detail goes to the notes), the
+  page number and, on trial pending Pete, a quiet section tracker (The problem · The answer · The five calls · Will it
+  hold · What next · Us).
+- Density: a dense slide reads well at about 120 to 180 words. **A warning, not a limit:** never make a phrase vaguer
+  to meet a count.
+- The script: about 1,200 spoken words in all, until the team's timed read-through sets the real cap
+  (`Talk_Outline.md`).
 
-**Hierarchy inside a panel:** rank items by what the evidence says matters (the biggest contributions lead; small ones
-go to a note). Never list unlike things (a cost, a safety margin, a legacy) as equal rows.
+**Pieces we can use** (none is required; each earns its place on a slide or stays off it):
 
-**Type (23 Oct):** EB Garamond for the title and big numbers; **Inter** for everything else, panel headings (bold 19,
-from Pete's decks) and bold labels included. **Scale:** title 35 · panel heading 19 · bold label and body 16 (Inter) · small 14 (Inter) · tag and
-source 12 · numbers 40 and 72 (76 on slide 2's net worth). Nothing meant to be read is under 14 px.
+| Piece | Earns its place when | Leave it off when |
+|---|---|---|
+| Two or three panels whose headings read as one sentence | the point is a chain of steps | the point is one picture, one number or one comparison |
+| A conclusion bar | the slide needs a handover its title doesn't give | it would restate the title or the panels |
+| A one-line lede under a heading | the content needs a bridge to make sense | the heading already says it |
+| A reading under a chart (dashed box) | the chart doesn't speak alone | it would repeat the chart's labels or the title |
+| One dashed ring | one moment on a chart matters most | nothing stands out more than the rest |
+| Icons | they name a real thing (the home, the pension, the business) | they decorate, or every row gets one by habit |
+| The small house by a call's title | it shows where the call sits in the plan | the slide already draws the house |
+| A picture from the image set (§7) | a real person or place carries the stakes | it pushes out evidence the slide needs |
 
-**The slides are scored on their own** (Pete, 23 Oct: the video and the slides are scored independently). So each
-slide **lists the most important facts**, enough for someone reading the file to follow the argument without the
-voice. The title's claim and the focal number are always spoken; supporting facts may stay unspoken on screen, as long
-as they don't compete with the focal point. (Replaces "every on-screen phrase is spoken; cut a number the script
-doesn't say", which stripped facts the separately scored slides need.)
-**Density:** about 120 to 180 words on a call slide, about 150 on the summary: **warnings, not limits.** Never make a
-phrase vaguer to meet a count (slide 4 lost "forced" that way, 23 Oct). The script: about 1,200 spoken words in all,
-until the team's timed read-through sets the real cap (if they average 135 words a minute or faster, about 1,240, and
-the extra goes to the personal statements).
-
-**Charts:** one style. Grey series, the accent only on the value the title claims, labels on the data (no legends
-where a label fits), axis text at 14 px. The ten futures (3, 7) and the premium line (7) come back from v7 (they
-worked); everything else is redrawn in the system.
-
-**Numbers:** tagged as a quiet "(measured)", "(case)" or "(sourced)" after the claim. MEASURED = the team model
-(`numbers.json`); CASE = the case; SOURCED = a named public source.
-
-**Builds:** each slide reveals in speaking order (`data-b`). **Later steps stay on the page in grey** (Pete, 23 Oct:
-don't remove what's coming, grey it), so the layout never moves and the eye goes to what is in colour. `make.py
---builds` writes one frame per step (`Axis_builds.html`, `build/frames/`) for the video. Red reads as alarm: crimson
-marks the title's claim as a point or a number, never a wall of lines (slide 7: ink lines, crimson ticks).
-**Keep it simple** (Pete, 23 Oct): each slide as simple as it can be while its point stays clear.
+**Failures we've seen** (add here, with the reason, instead of adding a rule):
+- **v7: 40 font sizes, about ten navigation items a slide, a different grid on every slide** (before 20 Oct), plus
+  question pills, "slide 5's…" references and tags inside sentences. This is why the scale and the grid are fixed.
+- **A third of Call 2 restating the written case's headline** (Pete, 20 Oct). The repeat took the space the new fact
+  needed.
+- **"Many disconnected text, we're just pushing out text everywhere"** (Pete, 20 Oct): labels floating away from what
+  they explain, captions repeating the title. Attach every label to its thing; say each thing once. But the fix for
+  clutter is fewer, connected pieces, not fewer facts (Pete, 20 Oct, on Call 2 v6).
+- **"A document put into a powerpoint slide format"; "boxes of information with no clear visual guideline"** (Pete,
+  19 and 23 Oct): rows of text hiding a shape, no entry point for the eye, no mark on the one thing to see.
+- **The result shown before the problem** (19 Oct: slide 3 drew the plan's result and killed the tension).
+- **Too many accents** (19 Oct: crimson nine times on one slide; four 32 px numbers out-shouting the point).
+- **A phrase made vaguer to meet a word count** (23 Oct: slide 4 lost "forced").
+- **Unlike things listed as equal rows** (a cost, a safety margin and a legacy side by side). Rank by what the evidence
+  says matters; small items go to a note.
+- **One device on every slide** (23 Oct, from the reference decks: a takeaway box, a chevron, a crimson punch-line in
+  every panel) reads as a template, and so did this section's old list of required parts (23 Oct).
 
 ## 5. Slide by slide
-Each spec: the point; the panels in order (headings reading as one sentence); the evidence and its keys; the bar.
+Each spec: the point, the evidence and its keys, and the form as built so far. The form is a draft, not an order
+(§4): when a better one fits the point, change it and record here what changed and why.
 The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` writes them to `Axis_Script.html`.
 
 ### 1 · Cover (Pete, all; 0:20)

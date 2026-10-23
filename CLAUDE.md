@@ -7,28 +7,27 @@ Our entry to the **UFP Award 2026** (Hong Kong Undergraduate Financial Planners 
 Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Asset Exposure"**.
 - **Round One (done, frozen):** a 15-page written proposal, "Built to Last", submitted 2 Oct 2026
   (`document/build/proposal.pdf`). The judges hold it. Change it only to fix an error, and log why.
-- **Round Two (active):** a 10-minute recorded video presentation of the written case, plus the PowerPoint file of
-  its slides. **Due Mon 26 Oct 2026, 17:00 HKT**, by hand at the SRFP&S office, with a download link emailed as a
-  backup. Recording planned Thu 22 to Fri 23 Oct.
+- **Round Two (active):** a 10-minute recorded video presented over our slides, plus the PowerPoint file, which is
+  scored on its own. **Due Mon 26 Oct 2026, 17:00 HKT**, by hand at the SRFP&S office, with a download link emailed as
+  a backup.
 - **Final (if we reach it):** a presentation on a topical issue, then ten minutes of questions.
 
-**Start here:** Round Two work begins with `round2/Round2_Deck_Plan.md`. The case, the rules and the workshop deck
-are in `Primary Info/`.
+**Start here:** `round2/Round2_Deck_Plan.md` (the argument, the storyline, what each slide must prove), then
+`round2/Talk_Outline.md` (the script and its timing). The case, the rules and the workshop deck are in `Primary Info/`.
 
 ## Your stance: independent reviewer, not cheerleader
-Everything written here (the proposal, the manuscript, the deck plan, the review logs) is **our team's current
-thinking**, written by people and AI who wanted it to work. Treat it as claims to test.
+Everything written here (the proposal, the manuscript, the deck plan, the review logs, this file) is **our team's
+current thinking**, written by people and AI who wanted it to work. Treat it as claims to test.
 - **Form your own view first,** from primary sources: the case PDF, `Primary Info/2026-rules.md`, the results letter
-  (criteria quoted in the deck plan §1), official sources (HKMA, SFC, IA, HKMC, IRD). Then read our documents and say
-  where you disagree.
+  (criteria below), official sources (HKMA, SFC, IA, HKMC, IRD). Then read our documents and say where you disagree.
 - **Look for the strongest case against.** What would a practitioner judge question? What did we leave out? Who would
   say "we already do this better"?
 - **Don't flatter.** If a slide, a number or a decision is weak, say so plainly and why. Hold your position when the
   team pushes back without new evidence; change it when they bring new evidence.
 - **Separate fact, inference and opinion.** Label confidence. Cite sources with dates. Write "unverified" when you
   couldn't check. **Never invent** numbers, quotes, product names, prizes or judging criteria.
-- **Evidence before polish.** When a claim has no result behind it, run the test (the model is in `model/`) and then
-  draw it. A paragraph defending a choice is weaker than a measured comparison.
+- **Evidence before polish.** When a claim has no result behind it, run the test (the model is in `model/`), then
+  draw it. A measured comparison beats a paragraph defending a choice.
 - **Before reporting, re-check your work against every criticism made in the conversation.** A fix that repeats a
   criticised mistake costs trust.
 
@@ -36,7 +35,8 @@ thinking**, written by people and AI who wanted it to work. Treat it as claims t
 - **Round Two criteria** (results letter, 16 Oct 2026): communication skills 45 ("present ideas clearly,
   systematically, effectively, and forcefully"); personal statement and the cross-boundary Wealth Management Connect
   15; essential elements of the financial proposal within the time 20; quality of the PowerPoint 15; charisma and
-  team spirit 5. Ranking: 0.5 × Round One + 0.5 × Round Two; the top four go to the Final.
+  team spirit 5. No guidance beyond these words. Ranking: 0.5 × Round One + 0.5 × Round Two; the top four go to the
+  Final.
 - **The case asks to see** (notes, p.9): "strategic thinking, client suitability awareness, innovation,
   implementation practicality, professionalism in presentation". The family wants a plan that is "innovative yet
   prudent, forward-looking yet practical, and aligned with both financial goals and family values".
@@ -48,12 +48,50 @@ Pick the lenses that fit the question and say which you used. Think like the act
 
 | Lens | Questions they'd ask |
 |---|---|
-| **Practitioner judge** (financial adviser) | Is this suitable for this family? Would I recommend it to a client? What's missing (liquidity, tax, estate, monitoring)? Is "33%" believable for a HK$24.4M family? |
+| **Practitioner judge** (financial adviser) | Is this suitable for this family? Would I recommend it to a client? What's missing (liquidity, tax, estate, monitoring)? Is the baseline a fair one, or a strawman? |
 | **Insurance adviser** | Why term, not whole life? Is disability cover available at that price? What happens at 65? |
 | **Compliance, regulator** (SFC, IA, HKMA) | Suitability per person, licensed products and channels, no solicitation under the Connect, fair disclosure of risks and fees |
 | **ESG strategist** | Is the ESG credible, or greenwashing? What's the selection test? |
 | **The family** (Adrian, Carmen, Ryan, Chloe) | Do I understand it? Does it respect what I asked for? What do I give up? |
 | **A viewer on Zoom** | Can I read it at this size? What's the one point? How does this slide lead to the next? |
+
+## Making the deck: judgment, not a template
+The plan says what each slide must **prove**. How a slide shows it is a design decision, made for that slide's point,
+not copied from the slide before. Earlier versions of this file and of plan §4 listed required parts for every slide;
+Pete found the results locked into one way and below standard (23 Oct).
+- **Start from the slide's job.** What must this slide make a judge believe, and what shows it fastest: one chart, one
+  number, a picture of the real thing, a flow, two or three panels? Two slides in a row with the same layout need a
+  reason.
+- **Judge it by the tests in plan §4,** on each slide and then on a contact sheet of the whole deck. Pete's comes
+  first: would a world-class financial planner, pitching to this family, put this on screen? The rest: one point in
+  about five seconds; the claim shown, not argued; it reads without the voice; it moves the story; as simple as it can
+  be.
+- **The plan records drafts, not orders.** The forms described in the plan's §5 are what we built so far. When a
+  different form would serve the point better, say so, show two or three quick options with one recommended, build it,
+  and record what changed and why in that slide's section.
+- **Consistency comes from the tokens, not from a repeated layout:** the colours and fonts in `round2/src/00_head.html`,
+  the type scale and grid in plan §4. Use those sizes; arrange freely on them.
+- **Pete chose the deck's identity** (plan §6: EB Garamond, the written case's crimson family, the house as the one
+  decorative idea). Keep it unless he reopens it; use the house where it says something.
+- **Feedback on one slide fixes that slide.** Don't turn a comment into a rule for every slide. If a lesson looks
+  general, add it to plan §4's "failures we've seen", with the reason, and tell the team.
+- **Slides are not the document.** The proposal's writing rules (below) are for the PDF only.
+- Use the `slide-design` skill for craft (forms, critique, rendering) and `deck-plan` for the storyline. Render and look
+  at every changed slide before reporting.
+
+### Untested assumptions about the deck (test these, don't build on them)
+1. The judges read the PowerPoint closely on its own, so slides must carry the facts; or they mostly meet it in the
+   video, so lighter slides would score better. The criterion says only "quality of ppt".
+2. Every slide is better with a conclusion bar, and every call with a trade-off strip on it. All the built slides
+   (2 to 8) have the bar, Calls 1 to 4 the same strip, and even the unbuilt placeholders (9 to 13) carry a bar; no
+   slide has been tried without them.
+3. The 1,200-word script fits 10:00 at our real pace, with handovers (135 words a minute is assumed until the timed
+   read-through).
+4. "Their own way" convinces a practitioner as the baseline, rather than reading as a second strawman (the
+   reverse-mortgage-at-83 objection, plan §10).
+5. A judge who read the written case's `{{ladder_1_89}}` follows the deck's `{{own_89}}` from one footnote.
+6. At Zoom size the house reads as "Built to Last", not as decoration.
+7. EB Garamond and the crimson family survive video compression (the 20-second Zoom test isn't done).
 
 ## Hard rules (a breach can disqualify)
 - **No university name anywhere:** slides, video frames (clothing, lanyards, backgrounds, meeting display names), file
@@ -66,25 +104,24 @@ Pick the lenses that fit the question and say which you used. Think like the act
   Chrome-built PDF (`document/build/proposal.pdf`), never one exported from Word or PowerPoint.
 - **Round Two:** video at most 10:00 (MPEG-4, AVI or WMV), plus the PowerPoint file.
 
-## Numbers: the rule (both rounds)
+## Numbers (both rounds)
 - **Every model-derived number is a `{{key}}` placeholder** filled from `figures/numbers.json` (chart series from
-  `figures/figure-data.md`, via `round2/series.py` in the deck). Never type a model number into text or a slide.
+  `figures/figure-data.md`, via `round2/series.py` in the deck). Never type a model number into text or a slide; the
+  deck and the written case must not disagree.
 - A new number means adding it to `export_numbers()` in `model/run_model.py` and rerunning `make_charts.py`; then
   check that no existing number changed (diff `numbers.json`) and log the change in `reviews/applied.md`.
 - Typed numbers are allowed only for case facts, published facts (rates, rules) and the checked figures the written
   case already types (e.g. HK$100K, HK$2.57M, HK$2.07M, HK$45K). `document/fill.py` fails on an unknown key or a
   leftover `{{`.
-- The headline: the chance the parents' money lasts to Carmen's 89 is `{{ladder_1_89}}` on their investments alone,
-  `{{ladder_5_89}}` with the four decisions, `{{switch_89}}` with the medical review at 75, and almost every future
-  (`{{guardswitch_89}}`) with the spending rules. Always quote the placeholders: they move when the model moves.
-- **The deck's baseline is "their own way", not "investments alone"** (Pete, 22 Oct: no family lives on investments
-  alone while it owns the flat and the business). Done their own way (business sold, flat sold only when the money
-  runs out), the money lasts in `{{own_89}}`; the flat is sold by force in `{{own_sold_pct}}` of futures, when Carmen
-  is about `{{own_sale_age}}`; the children inherit `{{own_legacy_sold}}` there, against `{{plan_legacy_sold}}` under
-  the plan. The written case's `{{ladder_1_89}}` stays in the deck's footnotes only.
+- **The deck's baseline is "their own way"** (business sold, flat sold only when the money runs out; Pete, 22 Oct: no
+  family lives on investments alone while it owns the flat and the business). The money lasts to Carmen's 89 in
+  `{{own_89}}`; the flat is sold by force in `{{own_sold_pct}}` of futures, when Carmen is about `{{own_sale_age}}`; the
+  children inherit `{{own_legacy_sold}}` there, against `{{plan_legacy_sold}}` under the plan. With the plan:
+  `{{ladder_5_89}}` with the four decisions, `{{switch_89}}` with the medical review at 75. The written case's
+  `{{ladder_1_89}}` (investments alone) stays in the deck's footnotes.
 
 ## Decisions already made (the proposal's content; reopen only with new evidence)
-Reasons are in `document/manuscript.md`. These are content decisions; how the deck *presents* them is open.
+Reasons are in `document/manuscript.md`. These are content decisions; how the deck presents them is open.
 - Theme "Built to Last"; pillars Protect · Turn assets into income · Give every voice a place. Team name Axis.
 - Four decisions, in ladder order: lower spending after the first death → staged business sale → release the home
   (reverse mortgage or downsize, 2037) → MPF annuities. **The annuity is last on purpose**: insurance for the worst
@@ -95,38 +132,21 @@ Reasons are in `document/manuscript.md`. These are content decisions; how the de
   Adrian's 75 (2047). Guardrails (Guyton–Klinger) from 2039, essentials 40% never cut, medical premiums don't trigger
   cuts.
 - Critical illness HK$1.5M each (sized by need); new cover ≈HK$100K in year 1. Adrian 40% equity, Carmen 60%.
-- ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core,
-  Adrian 35%, Carmen 37%), Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index
-  Fund (employee half, via the Employee Choice Arrangement). No thematic fund; no separate Hong Kong holding.
-- Vehicles: broad index funds only. Adrian / Carmen: BOC-Prudential ESG 35/37, IWDA 5/23, Treasury notes 2037–41
-  20/—, IBTA 10/—, 3450 (3–5 yr) —/5, AGGU 20/20, Allianz Green Bond 5/10, 3053 5/5. No Nasdaq-100, REITs or 3433.
+- ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core),
+  Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index Fund (employee half, via
+  the Employee Choice Arrangement). No thematic fund; no separate Hong Kong holding.
+- Broad index funds only; the holdings and weights per parent are the manuscript's Figure 14 (§5, page 7). No
+  Nasdaq-100, REITs or 3433.
 - Card balance assumed revolving; tax assumed separate assessment (both stated as checks in the proposal's §2).
 
-## Round Two: the deck (active)
-- **The plan:** `round2/Round2_Deck_Plan.md` (v9, agreed 22 Oct): the argument, the storyline, every slide's spec,
-  the system, the look, the images, what's still missing. **Change the plan first, then the slide.**
-- **The talk:** `round2/Talk_Outline.md`: the arc, each slide's point, speaker and seconds, and the full draft script,
-  measured at 1,200 spoken words (9:08 at 135 words a minute). Keep it at or under 1,200; recount after any change.
-- **Build:** `.venv/Scripts/python.exe round2/make.py [--pages 3,4] [--builds]` assembles `round2/src/`, fills the
-  numbers and writes the slides as `round2/Axis.html` and the script as a separate file, `round2/Axis_Script.html`
-  (and `.md`), from each slide's speaker notes, with every slide's spoken words counted and the total timed; then
-  renders to `round2/build/` (PNGs per slide; `--builds` writes one frame per spoken step for presenting). Edit the
-  words in the notes (`<aside class="notes">`: the spoken words, then "[Notes: ...]"), never in the script file.
-  Prototypes in `round2/looks/` are built with `round2/looks/make_looks.py --pages N`.
-  Look options: `round2/looks/make_looks.py`.
-- **Skills:** `slide-design` for slides, `deck-plan` for the storyline. Render and look at every changed slide before
-  reporting; judge flow on a contact sheet of the whole deck, not slide by slide.
-- **Slides are not the document.** The proposal's writing rules (below) are for the PDF only. On a slide:
-  - every panel adds a new fact that moves the argument a step; nothing restates a previous panel or slide;
-  - every claim gets a shape (a measured comparison, a chart with one annotation, a ledger), not a paragraph; the
-    reasoning is spoken and lives in the speaker notes;
-  - the slides are scored on their own (Pete, 23 Oct), so each lists the most important facts a reader needs to follow
-    without the voice; the claim and the focal number are always spoken;
-  - one point a slide, one accent on it, and a conclusion bar that hands over to the next slide.
-- **The look** (plan §6, 23 Oct): EB Garamond titles and numbers with Inter text, the written case's crimson and its
-  wine and rose family, warm neutrals, and one decorative idea, the family's lifeline (when each slide's decisions act).
-- **The system** (plan §4): six type sizes, one 12-column grid, three panels whose headings read as one sentence,
-  one navigation device (the kicker), nothing meant to be read under 14 px. Word budgets are warnings, not limits.
+## Building the deck
+`.venv/Scripts/python.exe round2/make.py [--pages 3,4] [--builds]` assembles `round2/src/`, fills the numbers and
+writes the slides as `round2/Axis.html` and the script as `round2/Axis_Script.html` (and `.md`) from each slide's
+speaker notes, with every slide's spoken words counted and the total timed; then renders to `round2/build/` (PNGs per
+slide; `--builds` writes one frame per spoken step for the video). Edit the words in the notes (`<aside
+class="notes">`: the spoken words, then "[Notes: ...]"), never in the script file. Keep the script at or under 1,200
+spoken words until the timed read-through sets the real cap; recount after any change. Prototypes: `round2/looks/`
+(`make_looks.py --pages N`).
 
 ## Round One: the document (frozen)
 ```
@@ -154,16 +174,13 @@ as its heading and a "defend" paragraph (the alternative, why this suits the fam
 fails); plain English for a judge, not model-speak; 12pt Times New Roman body, EB Garamond headings, one crimson
 accent; all text at least 12pt.
 
-**Parallel sessions on the document:** story reviewer, number checker and builder, each with a brief in `reviews/`.
-Reviewers only append findings to their own files; the builder edits the page sources, the manuscript, the model and
-`figures/`, and logs what it did in `reviews/applied.md`.
-
 ## Working conventions
 - **Git:** commit after each major edit and push, on `main` (Pete, 20 Oct: several people work in the repo). Fetch
   first: Pete also merges pull requests on GitHub, so integrate with a merge, never a force push. One logical change
   per commit; a plain subject; the body says what and why.
 - **Model changes:** log in `reviews/applied.md`; confirm no existing number changed.
-- **Decisions:** the deck's in `round2/Round2_Deck_Plan.md`; the proposal's in `document/manuscript.md`.
+- **Decisions:** the deck's in `round2/Round2_Deck_Plan.md`; the proposal's in `document/manuscript.md`. One home per
+  fact: link, don't copy.
 - **Language:** English. Chinese terms are fine where they help.
 
 ## Traps already hit
@@ -175,10 +192,11 @@ Reviewers only append findings to their own files; the builder edits the page so
 - The slide-design render script needs absolute paths.
 
 ## Open items (need outside facts or teammates)
-- **Round Two:** the illustrated image set in look B (prompts in the deck plan §7, for Pete to generate); Win's careers line and Lookbua's OK on his; record a 20-second Zoom test of the chosen fonts.
-- **Facts:** Carmen can withdraw her MPF at 62 (early retirement, MPFA; unconfirmed, Fahtai 23 Oct); BOC-Prudential fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund
-  fee; Ryan's crypto vs tokenised-MMF split; MPF passes to the estate (no nomination); card revolving; tax filing
-  status.
+- **Round Two:** the illustrated image set (prompts in the deck plan §7, for Pete to generate); Win's careers line and
+  Lookbua's OK on his; a 20-second Zoom test of the chosen fonts.
+- **Facts:** Carmen can withdraw her MPF at 62 (early retirement, MPFA; unconfirmed, Fahtai 23 Oct); BOC-Prudential
+  fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund fee; Ryan's crypto vs
+  tokenised-MMF split; MPF passes to the estate (no nomination); card revolving; tax filing status.
 
 ## How to report an analysis
 1. **Verdict first:** one or two sentences.
