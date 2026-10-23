@@ -138,8 +138,7 @@ the failures we've already seen. Each slide's form is chosen for its point.
 - 1280 × 720. Nothing meant to be read under 14 px: the judges may watch on Zoom.
 - The identity (§6) and the tokens in `src/00_head.html`. One type scale, so the deck looks like one deck: title 35 ·
   panel heading 19 Inter bold · body and bold label 16 · small 14 · tag and source 12 · numbers 40 and 72 (76 for
-  slide 2's net worth). Use these sizes rather than new ones. (§6 still gives panel headings as EB Garamond 22, and the
-  CSS has both; settle on one.)
+  slide 2's net worth). Use these sizes rather than new ones.
 - A 12-column grid with 48 px side margins and 24 px gutters. How a slide divides it is open.
 - Every model number is a `{{key}}` (CLAUDE.md), tagged as a quiet "(measured)", "(case)" or "(sourced)": MEASURED is
   the team model (`numbers.json`), CASE the case, SOURCED a named public source.
@@ -165,7 +164,7 @@ the failures we've already seen. Each slide's form is chosen for its point.
 | Piece | Earns its place when | Leave it off when |
 |---|---|---|
 | Two or three panels whose headings read as one sentence | the point is a chain of steps | the point is one picture, one number or one comparison |
-| A conclusion bar | the slide needs a handover its title doesn't give | it would restate the title or the panels |
+| A conclusion line (ink on a crimson rule) | the slide needs a handover its title doesn't give | it would restate the title or the panels |
 | A one-line lede under a heading | the content needs a bridge to make sense | the heading already says it |
 | A reading under a chart (dashed box) | the chart doesn't speak alone | it would repeat the chart's labels or the title |
 | One dashed ring | one moment on a chart matters most | nothing stands out more than the rest |
@@ -434,12 +433,14 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 ## 6. The look
 **23 Oct: the deck's identity** (Pete: "all default fonts with no clear design work"; e-Sentry has a clear style; slide
 2 a weak first impression). Look B's structure stays; its "no motif" plainness goes.
-- **Type:** EB Garamond, the written case's own display face, for titles (35 px), panel headings (22 px) and big numbers
-  (lining figures), so the deck and the PDF are one brand; Inter for all text (Pete liked it for small text).
+- **Type:** EB Garamond, the written case's own display face, for titles (35 px), names and big numbers (lining
+  figures), so the deck and the PDF are one brand; Inter for all text, panel headings included (bold 19, as built on
+  slides 3, 5 and 7; settled 23 Oct). Pete liked Inter for small text.
 - **Colour:** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
-  (the conclusion bar, the home layer, the family panels, cost bars), rose #E6CBCF and #D3A1A8 (savings, lighter
-  series), tint #F7ECED; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate #5A5250,
-  ink #1B1716). No blue. Events on wine-and-rose charts in ink.
+  (the home layer, the family panels, the guaranteed income, cost bars), a greyed rose #DDD0CD and #B99A9C (savings,
+  lighter series), tint = mist; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate
+  #5A5250, ink #1B1716). No blue. Events on wine-and-rose charts in ink. The conclusion is a line of ink on a crimson
+  rule, not a wine block.
 - **One decorative idea: the house we build** (Pete chose it, 23 Oct, over the lifeline and over no thread). "Built to
   Last" drawn as a house from the written case's pillars (`round2/house.py`): the foundation is Call 1 (protected
   first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
@@ -449,6 +450,14 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
 - **Signature:** a short crimson mark before every kicker (the call's numbered square on call slides); the cover's
   crimson bar; the family on a wine panel (cover, slide 2).
 - **Not used:** gridlines across chart areas; grey-only charts; blue. (The footer tracker is back on trial, §4.)
+**Reviewed 23 Oct, evening** (Pete handed the identity to Claude to judge). Kept: EB Garamond and the crimson. They read
+as heritage and trust, they fit "Built to Last" and a family legacy, and they make the deck and the written case
+(half the score, already in the judges' hands) one brand. Changed, rendered side by side first: (1) the wine
+conclusion bar became a line, because it was the darkest thing on every slide, outweighed each slide's focal number and
+repeated down the deck as a template; (2) the pale pinks became a greyed rose (Pete dislikes pale pink tints of the
+accent; the old rose read as pink, not as the crimson's family). Known and accepted: Hong Kong screens show a fall in
+red (綠升紅跌), so a crimson result could read as a loss for a moment; the arrow and the grey baseline beside each
+result make the direction plain, so it stays.
 History: look B (Swiss, cobalt, Archivo Narrow + Inter) chosen 20 Oct; crimson 23 Oct; this identity 23 Oct.
 
 ## 7. Images (one illustrated set)

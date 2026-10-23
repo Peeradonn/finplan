@@ -71,8 +71,9 @@ Pete found the results locked into one way and below standard (23 Oct).
   and record what changed and why in that slide's section.
 - **Consistency comes from the tokens, not from a repeated layout:** the colours and fonts in `round2/src/00_head.html`,
   the type scale and grid in plan §4. Use those sizes; arrange freely on them.
-- **Pete chose the deck's identity** (plan §6: EB Garamond, the written case's crimson family, the house as the one
-  decorative idea). Keep it unless he reopens it; use the house where it says something.
+- **The identity is yours to judge** (Pete, 23 Oct; plan §6: EB Garamond, the written case's crimson family, the house
+  as the one decorative idea). Keep what works; change it after rendering the options side by side, and record why in
+  §6. Use the house where it says something.
 - **Feedback on one slide fixes that slide.** Don't turn a comment into a rule for every slide. If a lesson looks
   general, add it to plan §4's "failures we've seen", with the reason, and tell the team.
 - **Slides are not the document.** The proposal's writing rules (below) are for the PDF only.
@@ -82,8 +83,8 @@ Pete found the results locked into one way and below standard (23 Oct).
 ### Untested assumptions about the deck (test these, don't build on them)
 1. The judges read the PowerPoint closely on its own, so slides must carry the facts; or they mostly meet it in the
    video, so lighter slides would score better. The criterion says only "quality of ppt".
-2. Every slide is better with a conclusion bar, and every call with a trade-off strip on it. All the built slides
-   (2 to 8) have the bar, Calls 1 to 4 the same strip, and even the unbuilt placeholders (9 to 13) carry a bar; no
+2. Every slide is better with a conclusion line, and every call with a trade-off strip on it. All the built slides
+   (2 to 8) have the line, Calls 1 to 4 the same strip, and even the unbuilt placeholders (9 to 13) carry a line; no
    slide has been tried without them.
 3. The 1,200-word script fits 10:00 at our real pace, with handovers (135 words a minute is assumed until the timed
    read-through).

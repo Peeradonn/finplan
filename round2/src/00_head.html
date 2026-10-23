@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Built to Last</title>
 <!--
-  Built to Last, Round Two deck (v9, 22 Oct 2026): the plan is round2/Round2_Deck_Plan.md; the talk and its timing are
-  round2/Talk_Outline.md. Look B (Pete, 20 Oct), with the written case's crimson as the one accent (Pete, 23 Oct): white, near-black ink; Archivo Narrow for titles,
-  panel headings and big numbers, Inter for all text. Scale, no other sizes: title 32, panel heading 20, bold label and
-  body 16, small 14, tag and source 12, numbers 40 and 72. Fonts: SIL Open Font License (fonts/OFL-*.txt).
+  Built to Last, Round Two deck: the plan is round2/Round2_Deck_Plan.md (the look in §6; the tests, the type scale
+  and the grid in §4); the talk and its timing are round2/Talk_Outline.md. EB Garamond, the written case's display
+  face, for titles, names and big numbers; Inter for all text, panel headings included. The written case's crimson
+  as the one accent, its wine for weight, a greyed rose and warm neutrals for the rest.
+  Fonts: SIL Open Font License (fonts/OFL-*.txt).
   Every slide's script is its <aside class="notes">: the spoken words, then "[Notes: ...]" for background. make.py
   writes them to Axis_Script.html and Axis_Script.md.
 -->
@@ -29,9 +30,10 @@
 /* ---- look B, as tokens ---- */
 /* 23 Oct (Pete: "all default fonts, no clear design work"): EB Garamond, the written case's display face, for titles,
    headings and numbers, so deck and document are one brand; Inter for text; warm neutrals tuned to the crimson;
-   wine and rose, the crimson's own family, for fills. */
+   wine for weight; a greyed rose for secondary fills (23 Oct: the pale pinks read as pink, not as the
+   crimson's family). */
 .lb{--paper:#FFFFFF;--mist:#F5F1F0;--rule:#DDD6D4;--grey:#A69E9C;--slate:#5A5250;--ink:#1B1716;
-    --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#E6CBCF;--tint:#F7ECED;
+    --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#DDD0CD;--tint:#F5F1F0;
     --text:"Inter",Arial,sans-serif;--head:"EBG",Georgia,serif;font-variant-numeric:lining-nums}
 
 *,*::before,*::after{box-sizing:border-box}
@@ -61,7 +63,9 @@ p,li,span,b{text-wrap:pretty}
 .cap{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:auto;padding-top:8px}
 
 /* ---- conclusion bar ---- */
-.bar{flex:none;margin-top:16px;background:var(--wine);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
+/* 23 Oct: the conclusion is a line of ink on a crimson rule. As a wine block it was the darkest thing on
+   every slide, so it outweighed each slide's focal number and repeated as a template down the deck. */
+.bar{flex:none;margin-top:16px;border-top:2px solid var(--accent);color:var(--ink);font:600 18px/1.3 var(--head);padding:10px 0 4px;text-align:left;text-wrap:balance}
 
 /* ---- footer ---- */
 .ft{flex:none;height:52px;display:flex;align-items:center;gap:20px;font:400 12px/1.3 var(--text);color:var(--slate)}

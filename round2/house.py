@@ -18,10 +18,10 @@ PARTS = {  # viewBox 0 0 440 400
 }
 NAMES = {"1": ("1", "Insure the income"), "2": ("2", "Home and business"), "3": ("3", "Fix the cost"),
          "4": ("4", "A plan each"), "5": ("5", "Values and crypto"), "roof": ("", "What passes on")}
-FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#D3A1A8", "#A69E9C"),
+FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#B99A9C", "#A69E9C"),
         "all": ("#7D1D2A", "none", "#fff")}
 # the small title houses, in slide 4's line style (23 Oct): this call solid crimson, built parts rose, the rest dashed
-LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#F1DADD", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#D3A1A8", "dash")}
+LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#F1DADD", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#B99A9C", "dash")}
 
 
 def house(state=None, w=72, labels=False, cls="house", steps=None):
@@ -91,11 +91,11 @@ def elevation(w=360):
     steps = {"1": 2, "2": 3, "3": 4, "4": 5, "5": 6, "roof": 7}
     o = [f'<svg class="house elev" viewBox="-60 0 560 410" width="{w}" height="{round(w * 410 / 560)}" aria-hidden="true">',
          '<defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-         '<rect width="12" height="12" fill="#F7ECED"/><line x1="0" y1="0" x2="0" y2="12" stroke="#D3A1A8" stroke-width="3"/>'
+         '<rect width="12" height="12" fill="#F5F1F0"/><line x1="0" y1="0" x2="0" y2="12" stroke="#B99A9C" stroke-width="3"/>'
          '</pattern></defs>',
          '<line x1="-10" y1="386" x2="450" y2="386" stroke="#5A5250" stroke-width="2.5"/>']
     for part, (kind, geo) in PARTS.items():
-        fill = "url(#hatch)" if part == "1" else ("#F7ECED" if part == "roof" else "#FBF4F5")
+        fill = "url(#hatch)" if part == "1" else ("#F5F1F0" if part == "roof" else "#FBF4F5")
         o.append(f'<g class="hq" data-b="{steps[part]}">')
         if kind == "poly":
             o.append(f'<polygon points="{geo}" fill="{fill}" stroke="#A81E2D" stroke-width="3" stroke-linejoin="round"/>')
