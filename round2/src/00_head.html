@@ -333,19 +333,21 @@ p,li,span,b{text-wrap:pretty}
 .x3f p b{color:var(--ink);font-weight:600}
 .x3f .on strong{display:block;font-size:72px;color:var(--accent);letter-spacing:-1px;margin:4px 0}
 
-/* ==================== the deck's one decorative idea: the family's lifeline (23 Oct) ====================
-   A ruler from 2026 to Carmen's 89 (2066), top right, with the family's milestones; the crimson span is when the
-   slide's decisions act. The same years and ticks are the time axis of slides 3, 7 and 11. */
-.life{position:absolute;top:36px;right:48px;display:flex;align-items:center;gap:12px;height:20px}   /* one line, on the kicker's row */
-.life p{font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
-.life p b{font-weight:600;color:var(--ink)}
-.life .lr{position:relative;width:200px;height:0;border-top:2px solid var(--rule);margin:0 40px}
-.life .lr i{position:absolute;top:-4px;height:6px;left:var(--a);width:calc(var(--b) - var(--a));min-width:6px;background:var(--accent)}
-.life .lr span{position:absolute;top:-5px;height:8px;border-left:1.5px solid var(--grey)}
-.life .lr em{display:none}
-.life .lr em:first-of-type,.life .lr em:last-of-type{display:block;position:absolute;top:-7px;font:400 12px/1 var(--text);font-style:normal;color:var(--slate)}
-.life .lr em:first-of-type{left:0;transform:translateX(calc(-100% - 7px))}
-.life .lr em:last-of-type{left:100%;transform:translateX(7px)}
+/* ==================== the deck's one decorative idea: the house we build (23 Oct) ====================
+   "Built to Last" as a house from the written case's pillars (round2/house.py): the foundation is Call 1 (protected
+   first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
+   passes on. Each call slide carries a small house beside its title: built parts in wine, this call in crimson, the
+   rest dashed; slide 4 draws the whole house as the answer, the close shows it complete. */
+.hd.hh{position:relative;padding-left:96px;min-height:72px}
+.hd.hh .house.mini{position:absolute;left:0;top:0}
+.x4h{flex:1;display:grid;grid-template-columns:376px 1fr;column-gap:40px;margin-top:20px;min-height:0;align-items:start}
+.x4h .fl{display:grid;grid-template-rows:128px 85px 85px 48px;margin-top:0}   /* the house's floors at w=376 */
+.x4h .fl>div{display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--rule);padding:4px 0}
+.x4h .fl>div:last-child{border-bottom:0}
+.x4h .fl h4{font:600 22px/1.2 var(--head);color:var(--accent-deep)}
+.x4h .fl p{font:400 15px/1.35 var(--text);color:var(--slate);margin-top:3px}
+.x4h .fl p b{color:var(--ink);font-weight:600}
+.x4h .fl p i{font-style:normal;display:inline-block;min-width:18px;font:600 16px/1 var(--head);color:var(--accent)}
 
 /* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
 .cv9{padding:0;flex-direction:row}
@@ -377,6 +379,36 @@ p,li,span,b{text-wrap:pretty}
 .x2b .st strong{font:600 44px/1 var(--head)}
 .x2b .st strong.on{font-size:76px;color:var(--accent);letter-spacing:-1px}
 .x2b .st p{font:400 16px/1.35 var(--text);color:var(--slate);margin-top:4px}
+
+/* ==================== slide 2 (23 Oct): forty years on one line ====================
+   One row per person on a shared 2026-2066 axis (x = (year - 2026) / 40): working years an ink line, retirement a rose
+   band, Chloe's university a tint band; the plan's horizon, Carmen's 89, a crimson line. Then the strength as a band. */
+.x2t{flex:1;display:flex;flex-direction:column;justify-content:space-between;margin-top:18px;min-height:0}
+.x2t .rows{position:relative;display:grid;grid-template-rows:repeat(4,82px);row-gap:0}
+.x2t .rw{display:grid;grid-template-columns:300px 1fr;column-gap:28px;align-items:center}
+.x2t .who{display:flex;align-items:center;gap:14px}
+.x2t .who .pic{width:66px;height:66px;border:0;background:var(--mist);margin:0;flex:none}
+.x2t .who h4{font:600 23px/1.15 var(--head)}
+.x2t .who p{font:400 14px/1.3 var(--text);color:var(--slate)}
+.x2t .tr{position:relative;height:82px}
+.x2t .tr .ln{position:absolute;top:40px;height:3px;background:var(--ink)}
+.x2t .tr .rt{position:absolute;top:34px;height:13px;background:var(--rose)}
+.x2t .tr .un{position:absolute;top:34px;height:13px;background:var(--tint);border:1.5px solid var(--rose)}
+.x2t .tr .dt{position:absolute;top:36px;width:11px;height:11px;margin-left:-5.5px;border-radius:50%;background:var(--ink)}
+.x2t .tr .lb{position:absolute;top:10px;font:600 14px/1.2 var(--text);white-space:nowrap}
+.x2t .tr .lb small{font-weight:400;color:var(--slate)}
+.x2t .tr .lb.b{top:44px;font-weight:400;color:var(--slate)}
+.x2t .tr .end{position:absolute;top:33px;font:600 16px/1 var(--head);white-space:nowrap}
+.x2t .hz{position:absolute;top:0;bottom:-6px;left:calc(328px + (100% - 328px));border-left:2px dashed var(--accent)}
+.x2t .hz span{position:absolute;top:0;right:8px;font:600 14px/1.2 var(--text);color:var(--accent-deep);white-space:nowrap}
+.x2t .ax{position:relative;height:28px;margin-left:328px;border-top:1.5px solid var(--ink)}
+.x2t .ax span{position:absolute;top:6px;transform:translateX(-50%);font:400 14px/1.25 var(--text);color:var(--slate);white-space:nowrap;text-align:center}
+.x2t .ax span b{font-weight:600;color:var(--accent-deep);margin-left:6px;white-space:nowrap;text-wrap:nowrap}
+.x2t .ax span:first-child{transform:none}.x2t .ax span:last-child{transform:translateX(-100%)}
+.x2t .st{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;column-gap:24px;align-items:end;border-top:3px solid var(--ink);padding-top:14px}
+.x2t .st strong{display:block;font:600 40px/1 var(--head)}
+.x2t .st strong.on{font-size:64px;color:var(--accent);letter-spacing:-1px}
+.x2t .st p{font:400 15px/1.3 var(--text);color:var(--slate);margin-top:4px}
 
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}

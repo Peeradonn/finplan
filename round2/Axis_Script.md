@@ -17,7 +17,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:55, Win 1:39, Fahtai 1
 
 **Lookbua:** And I'm Lookbua: protection and risk.
 
-## 2 · On paper, the Wongs are secure
+## 2 · On paper, the Wongs are secure, for a plan that must last forty years
 *Meet the Wongs · Pete · 0:30 · 59 spoken words (≈26 s at 135)*
 
 **Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
