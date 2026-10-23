@@ -16,7 +16,7 @@ passes on in stages. Then: what this means for planners like us.
 | Act | Slides | What the audience feels | Time |
 |---|---|---|---|
 | 1. The question | 1 to 4 | Who they are; "they're fine"; the turn: "Carmen sells the family home at {{own_sale_age}}"; then relief: "five calls" | 2:15 |
-| 2. The five calls | 5 to 9 | Each call answers one part of the problem; the climax is 7, where slide 3's ten futures all reach 89 and none sells the home | 3:40 |
+| 2. The five calls | 5 to 9 | Each call answers one part of the problem; the climax is 7, where slide 3's future is redrawn: the money reaches 89 and the home is never sold | 3:40 |
 | 3. Will it hold? | 10 to 12 | Tension again ("then we tried to break it"), then resolution: it holds, it starts now, and in the very futures where the home was sold, the children keep their inheritance | 1:25 |
 | 4. Us | 13 to 15 | From the Wongs to families like them across the boundary; four faces; one close | 2:10 |
 | | | | **9:30** |
@@ -34,14 +34,10 @@ passes on in stages. Then: what this means for planners like us.
    {{plan_legacy_sold}} under the plan in the same markets. The proposal's "investments alone" ({{ladder_1_89}}) stays
    in slide 3's footer, so the written case and the talk agree.
 
-**Threads that tie it together:**
-- **The home:** sold at about {{own_sale_age}} by force (3) → their choice at 65, stay or move (6) → none of the ten
-  futures sells it (7) → the inheritance kept (12).
-- **The ten futures:** five-odd stop at a "flat sold" mark (3) → all ten reach 89, no mark (7).
-- **The inheritance:** {{own_legacy_sold}} where the home is sold (3) → {{plan_legacy_sold}} in the same markets (12).
-- **The chance the money lasts:** {{own_89}} their own way (3, 4) → {{ladder_5_89}} (6) → {{switch_89}}, almost every
-  future with spending rules (7) → still {{rec_adrian60_89}} if Adrian loses his job at 60 (10).
-- The family's own questions (each call answers named ones); the footer tracker follows the five calls.
+**Threads that tie it together:** now drawn on the page, not only spoken: see the deck plan §3, "The spine" and
+"Setups and payoffs" (v10, 23 Oct). Slide 3's picture of their money is the road: problems marked on it (3), the five
+calls laid on its years (4), the same picture redrawn with the plan (7), and its end paid off (12). v9's "ten futures"
+thread was dropped on 23 Oct, when slides 3 and 7 became one typical future.
 
 ## Slide by slide
 
