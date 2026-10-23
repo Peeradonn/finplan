@@ -377,11 +377,11 @@ only on 25% (the one number the title names). Left: "Carmen's values: ESG from 1
 the family's 20–25% goal band, the plan bar split into its three funds and labelled on the data; "like for like" (same
 risk, no extra return) under the axis, because a practitioner asks that first. Right: "…and Ryan's conviction: crypto
 sized for each person": one row a person on one scale, in rising size (Adrian none, Chloe none, Carmen up to 2%, Ryan
-up to 74% today and 20% by 35, no new money). The foot, level across both, rebuilt the same evening (Pete: no hierarchy, "just doesn't draw me in"): each
-guardrail is a claim with a shield ("Every fund must pass two ratings"; "Held only where a regulator watches"), why in
-grey (raters agree about 0.54 on ESG against 0.99 on credit; Carmen's worries in the case), the rules as ticks, and
-what happens when one breaks (downgraded: replaced within three months; licence lost: moved to an ETF within 30
-days). The unlabelled rater chart went; Ryan's bar now says its finding, "20% by 35, without selling". Builds in speaking order:
+up to 74% today and 20% by 35, no new money). The guardrails, rebuilt twice the same evening (Pete: no hierarchy, so many things to focus on, left and right
+repeated): each column now ends on one sentence under its own chart, on a wine rule, its lead in bold ("Tested, not
+trusted: each fund needs two ratings ..."; "Held where a regulator watches: bought only through HKEX-listed ETFs or
+SFC-licensed platforms ..."). The detail (ICMA, the three-month and 30-day rules, key recovery, the 0.54 against
+0.99 correlation, like for like) is in the notes. Ryan's bar says its finding, "20% by 35, without selling". Builds in speaking order:
 ESG → its test → Adrian, Chloe, Carmen → Ryan, the custody rules, the trade-off and the bar. Product names and the
 downgrade rule are in the notes.
 - **"ESG from 11% to 25%…"**: a progress bar into the family's 20 to 25% goal band, of HK$10.47M; the three holdings
