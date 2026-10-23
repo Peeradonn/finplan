@@ -20,6 +20,8 @@ NAMES = {"1": ("1", "Insure the income"), "2": ("2", "Home and business"), "3": 
          "4": ("4", "A plan each"), "5": ("5", "Values and crypto"), "roof": ("", "What passes on")}
 FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#D3A1A8", "#A69E9C"),
         "all": ("#7D1D2A", "none", "#fff")}
+# the small title houses, in slide 4's line style (23 Oct): this call solid crimson, built parts rose, the rest dashed
+LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#F1DADD", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#D3A1A8", "dash")}
 
 
 def house(state=None, w=72, labels=False, cls="house", steps=None):
@@ -57,11 +59,23 @@ def house(state=None, w=72, labels=False, cls="house", steps=None):
     return "".join(out)
 
 
-def progress(call):
-    """The small house on call slide N: earlier calls built, this one lit, the rest to come."""
+def progress(call, w=76):
+    """The small house beside a call slide's title: earlier calls built (rose), this one lit (crimson), the rest to come
+    (dashed), drawn in slide 4's line style."""
     st = {str(k): "done" for k in range(1, call)}
     st[str(call)] = "on"
-    return house(st, w=76, cls="house mini")
+    o = [f'<svg class="house mini" viewBox="0 0 440 400" width="{w}" height="{round(w * 400 / 440)}" aria-hidden="true">']
+    for part, (kind, geo) in PARTS.items():
+        fill, stroke, style = LINE[st.get(part, "todo")]
+        extra = ' stroke-dasharray="14 10"' if style == "dash" else ""
+        attrs = f'fill="{fill}" stroke="{stroke}" stroke-width="10" stroke-linejoin="round"{extra}'
+        if kind == "poly":
+            o.append(f'<polygon points="{geo}" {attrs}/>')
+        else:
+            x, y, ww, hh = geo
+            o.append(f'<rect x="{x}" y="{y}" width="{ww}" height="{hh}" {attrs}/>')
+    o.append("</svg>")
+    return "".join(o)
 
 
 if __name__ == "__main__":
