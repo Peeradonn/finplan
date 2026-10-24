@@ -465,6 +465,13 @@ def export_numbers():
     N["story_out_year"], N["story_out_age"] = str(int(ot["runout"][k])), str(int(ot["runout"][k]) - (C89 - 89))
     N["story_own_left"], N["story_plan_left"] = Mn(o_sav[-1] * 1e6 + o_home[-1] * 1e6), Mn(p_sav[-1] * 1e6 + p_home[-1] * 1e6)
     N["story_plan_lasts"] = "yes" if pt["alive"][k] else "no"
+    # slide 7 (24 Oct, Fahtai): the same future with the four decisions alone (slide 6: Flexi kept for life, no
+    # spending rules), so the slide can split the savings into what slide 6 keeps and what call 3 (the review at 75
+    # and the spending rules) adds. Savings only, today's money; the home is the same in both (same reverse mortgage).
+    p6 = sim(*MIX2, C89, detail=True, trace=True, **full)
+    p6_sav = [POOL / 1e6] + [p6["pot_by_year"][i][k] / (1 + CPI) ** (i + 1) / 1e6 for i in range(C89 - BY)]
+    N["story_plan6_sav"] = ",".join(f"{v:.2f}" for v in p6_sav)
+    N["story_plan6_left"] = Mn(p6_sav[-1] * 1e6)
     # rebalancing rules
     N["rebal_target_89"], N["rebal_bands_89"], N["rebal_drift_89"] = (P(sim_rules(p_, C89)[0]) for p_ in ("target", "bands", "drift"))
     # what happens when the plan falls short

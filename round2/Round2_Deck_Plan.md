@@ -429,7 +429,31 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
-**Endings marked, 24 Oct** (with slides 10 to 15): the chart now says how this future ends, as slide 3 does. A
+**Reworked 24 Oct (Fahtai): why, then the fix, then the result.** What the slide must say: after slide 6, two things
+still break the plan, a cost (medical premiums outside the budget) and a risk (bad markets late in life); the review at
+75 fixes the first, spending rules from 2039 the second; in slide 3's future the money now lasts to 89 and the home
+stays theirs. Read left to right: the two threats, each with its why and its fix, then the payoff.
+- **Left, "Two things still break the plan…":** *The cost*: premiums above the budget's HK$65K; the fix highlighted
+  and in italics, *review the plan at Adrian's 75*; a key in the lines' own colours, same format for both ("Flexi, kept
+  for life: up to HK$375K a year"; "Standard, from Adrian's 75: about a third of the cost"); in the chart "the saving"
+  (in the saving's pink) and "Adrian dies" at the drop (the footer says why the drop). *The risk*, in two balanced lines
+  mirroring the cost's: in the worst 1 future in 20 her leanest year falls to {{fixswitch_worst5_real}}; the fix,
+  *spending rules from 2039* (highlighted), keeps it at {{guardswitch_worst5_real}} or more; the three rules as three short blocks (no raise after markets fall; trim 10% if drawing too
+  fast; essentials never cut).
+- **Right, "…so in slide 3's future, the money lasts and the home stays theirs":** the savings split in two, the four
+  decisions alone (darker pink) and what call 3 adds (lighter): in this future the four decisions alone leave
+  {{story_plan6_left}} of savings at 89, under a year of spending. "The home: still theirs", with the reverse
+  mortgage's {{rmp_income}} a year from {{rmp_year}} (it shrinks because the loan grows against it: notes). Their own
+  way dashed, slide 3's two events as dots, each label set on its dot's x with a dotted leader straight down; what
+  is left at 89 in a gutter: {{story_plan_left}} with the
+  plan (the accent) against {{story_own_left}}.
+- **The bar as four blocks:** they retire on time | they keep their spending | they keep the home | {{ladder_5_89}} →
+  **{{switch_89}}** of futures last to Carmen's 89 (the largest type on the slide). "Almost every future with the
+  rules" is spoken and in the notes. Version B of two compared on 24 Oct (A: one line).
+- Flat colours on this slide, no gradients (Fahtai, 24 Oct). Script: premiums, the review, the rules, the future, the
+  odds (about 95 spoken words, was 80).
+- Earlier drafts below.
+**Endings marked, 24 Oct (Pete; carried into the rework above as the dots, leaders and the gutter; Fahtai's gutter also shows their own way's figure, open for Pete to keep or move to slide 12)** (with slides 10 to 15): the chart now says how this future ends, as slide 3 does. A
 crimson dot at the plan's end with a leader up to "{{story_plan_left}} left at 89 · and still their home". Slide 3's sale
 and run-out sit as hollow ghosts on their own way's dashed line ("sold, {{story_sale_age}}", "ran out,
 {{story_out_age}}"). The comparison with {{story_own_left}} is left to slide 12, the payoff.

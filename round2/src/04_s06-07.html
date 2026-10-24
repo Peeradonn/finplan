@@ -41,9 +41,14 @@
   <aside class="notes">FAHTAI: Thanks, Lookbua. Call two: the home and the business will pay for their retirement either way. The question is when, and on whose terms. At 65 they choose: stay, with a reverse mortgage paying {{rmp_income}} a year for life, or downsize. The business is sold in stages to her co-founder and managers; we count only HK$3 million of its five. A survivor plans on 70%, and the MPF buys annuities. Four decisions, taken now: {{ladder_5_89}}, not {{own_89}}. [Notes: more shares instead? 80% in shares reaches only {{alone_eq80_89}}, with a worst year of {{alone_eq80_worst}}, and breaks Adrian's low-to-medium profile. The annuities: {{annuity_adrian}} and {{annuity_carmen}} a year, single life; last on purpose, insurance for the worst markets. By 2039 guaranteed income covers {{floor_2039_pct}} of essential bills; after Adrian's death {{floor_2057_pct}}, so never "for life". Even if the business never sells, {{biz_not_sold_89}}. Stay or move keeps the odds at {{prop_rmp_89}} either way; moving leaves more to the children. The annuities are HKMC's, bought at Adrian's 65 and Carmen's 62. If Adrian died soon after buying, the family wouldn't lose the money: HKMC pays the premium less what has been received as a lump sum, or keeps paying until 105% is returned (HKMC Annuity Plan brochure, April 2024); single life only, so one policy each. Why the rise isn't only the assets: about half of it is the survivor planning on 70%; even if their own way also cut her budget, deciding the home, business and MPF now still adds about ten points (Fahtai's model check, 23 Oct). HK$230K matches a joint loan with Carmen as the younger borrower: don't call it conservative.]</aside>
 </section>
 
-<!-- v9 slide 7 (22 Oct): Call 3. Plan §5, slide 7. Slide 3's picture, redrawn with the plan in the same place: all ten
-     futures reach 89 (the accent), and the places where their own way sold the flat stay as hollow ghosts. Right: why,
-     the premium line (series.py) reviewed at Adrian's 75, the review's result, the spending rules. -->
+<!-- v9 slide 7 (24 Oct, Fahtai's rework, option 1: why, then fix, then result). Left, read first: the two things that
+     still break the plan, each with its why and its fix (the cost: premiums, the review; the risk: bad markets, the
+     rules). Right, read second: slide 3's future under the plan, the savings
+     split into what the four decisions alone keep (slide 6, the darker pink) and what call 3 adds (the review and the
+     rules, the lighter pink; flat colours, no gradients), the home still theirs, their own way dashed with slide 3's two
+     events numbered, and what
+     is left at 89 in a gutter at the lines' ends. Right: the review of the premiums, every part of the chart named in
+     plain words; the spending rules as rules, with their result. The odds come last, in four blocks, the 97% raised. -->
 <section class="slide lb c9 reveal" data-time="0:40" data-speaker="Fahtai">
   <header class="hd hh">
     <svg class="house mini" viewBox="-146 -202 332 318" width="66" height="63" aria-hidden="true"><polygon points="0,-23 173,42 40,92 -133,27" fill="#A4616A" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-133,45 40,110 40,92 -133,27" fill="#7D1D2A" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="173,60 40,110 40,92 173,42" fill="#641722" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="0,-88 76,-59 -42,-14 -119,-43" fill="#BF8890" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-119,15 -42,44 -42,-14 -119,-43" fill="#A35560" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="76,-1 -42,44 -42,-14 76,-59" fill="#82444D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="82,-57 158,-28 40,17 -37,-12" fill="#C9505D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-37,46 40,75 40,17 -37,-12" fill="#A81E2D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="158,30 40,75 40,17 158,-28" fill="#7A1622" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="0,-158 76,-129 -42,-84 -119,-113" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="-119,-55 -42,-26 -42,-84 -119,-113" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="76,-71 -42,-26 -42,-84 76,-129" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="82,-127 158,-98 40,-53 -37,-82" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="-37,-24 40,5 40,-53 -37,-82" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="158,-40 40,5 40,-53 158,-98" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="0,-178 -140,-125 -50,-143 90,-196" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="90,-196 -50,-143 40,-57 180,-110" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/><polygon points="-140,-125 40,-57 -50,-143" fill="#FFFFFF" stroke="#D3A6AD" stroke-width="4" stroke-linejoin="round" stroke-dasharray="12 8"/></svg>
@@ -51,57 +56,71 @@
     <h2>Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs</h2>
   </header>
   <div class="panels">
-    <div class="pn" style="grid-column:span 8" data-b="4">
-      <h3>The same future, with the plan…</h3>
-      <p class="lede">With the four decisions, the review at 75 and the spending rules; their own way dashed</p>
+    <div class="pn x7w" style="grid-column:span 5">
+      <h3>Two things still break the plan…</h3>
+      <div class="x7t">
+        <h4><span class="tg">The cost</span>Medical premiums the budget ignores</h4>
+        <p class="sub">A year, above the budget's HK$65K. The fix: <em class="hl">review the plan at Adrian's 75</em></p>
+        <div class="x7key"><p class="fx"><i></i><b>Flexi, kept for life</b><span>up to [[prem_peak_v]] a year</span></p><p class="st" data-b="2"><i></i><b>Standard, from Adrian's 75</b><span>about a third of the cost</span></p></div>
+        <div>
+          <div class="pc x7p">
+            <span class="gl" style="top:0"><span>400K</span></span><span class="gl" style="top:25%"><span>300K</span></span><span class="gl" style="top:50%"><span>200K</span></span><span class="gl" style="top:75%"><span>100K</span></span>
+            <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+              <polygon data-b="2" points="[[prem_saving_poly]]" style="fill:#F3E2E4"/>
+              <polyline points="[[prem_flexi_pts]]" fill="none" style="stroke:#B57D86" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+              <polyline data-b="2" points="[[prem_rec_pts]]" fill="none" style="stroke:var(--wine)" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <span class="sw" style="left:[[prem_switch_l]]" data-b="2"><span>The review</span></span>
+            <span class="x7dl" style="left:[[prem_death_l]]"></span>
+            <p class="x7v" data-b="2" style="left:[[prem_save_l]];top:[[prem_save_t]]">the saving</p>
+          </div>
+          <div class="pcx x7px"><span style="left:0">2037</span><span style="left:[[prem_switch_l]]">2047</span><span class="dd" style="left:[[prem_death_l]]">Adrian dies</span><span style="left:100%">2066</span></div>
+        </div>
+      </div>
+      <div class="x7t" data-b="3">
+        <h4><span class="tg">The risk</span>Bad markets late in life</h4>
+        <p class="sub">In the worst 1 future in 20, her leanest year falls to <b>{{fixswitch_worst5_real}}</b>.<br>The fix: <em class="hl">spending rules from 2039</em> keep it at <b>{{guardswitch_worst5_real}}</b> or more.</p>
+        <ul class="x7c"><li>No raise after markets fall</li><li>Trim 10% if drawing too fast</li><li>Essentials never cut</li></ul>
+      </div>
+    </div>
+    <div class="pn" style="grid-column:span 7" data-b="4">
+      <h3>…so in slide 3's future, the money lasts and the home stays theirs</h3>
+      <p class="lede x7lg">Savings: <i class="sw6"></i>the four decisions alone <i class="sw3"></i>added by call 3 <i class="swd"></i>their own way</p>
       <div class="body">
         <div>
-          <div class="sx">
+          <div class="sx x7s">
             <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
-              <polygon points="[[story_plan_home_poly]]" style="fill:url(#p4wine)"/>
-              <polygon points="[[story_plan_sav_poly]]" style="fill:url(#p4rose)"/>
+              <polygon points="[[story_plan_home_poly]]" style="fill:#7D1D2A"/>
+              <polygon points="[[story_plan_sav_poly]]" style="fill:#F3E2E4"/>
+              <polygon points="[[story_plan6_poly]]" style="fill:#D3A6AD"/>
+              <polyline points="[[story_plan_top_pts]]" fill="none" style="stroke:#D3A6AD" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
               <polyline points="[[story_own_top_pts]]" fill="none" style="stroke:var(--ink)" stroke-width="2" stroke-dasharray="6 5" vector-effect="non-scaling-stroke"/>
             </svg>
             <span class="gy" style="top:[[story_g10_t]]"><span>HK$10M</span></span><span class="gy" style="top:[[story_g20_t]]"><span>HK$20M</span></span><span class="gy" style="top:[[story_g30_t]]"><span>HK$30M</span></span>
             <p class="al" style="left:14px;top:[[story_plan_savlbl_t]];transform:translateY(-50%)">Savings, investments and MPF</p>
-            <p class="al h" style="left:14px;bottom:12px">The home<small>paying {{rmp_income}} a year from {{rmp_year}}; still theirs</small></p>
-            <p class="own" style="left:[[story_ownlbl_l]];top:calc([[story_ownlbl_t]] - 10px);transform:translateY(-100%)">their own way<small>ahead on paper until [[story_cross_year]]: the plan turns<br>the home and the MPF into income for life</small></p>
-            <span class="x7g" style="left:[[story_sale_l]];top:[[story_sale_t]]"><em>sold, {{story_sale_age}}</em></span><span class="x7g" style="left:[[story_out_l]];top:[[story_out_t]]"><em>ran out, {{story_out_age}}</em></span>
-            <p class="x3k x7e" style="left:100%;top:36%;height:calc([[story_plan_end_t]] - 36%)"><span><b>{{story_plan_left}} left at 89</b><br>and still their home</span></p>
+            <p class="al h" style="left:14px;bottom:12px">The home: still theirs<small>a reverse mortgage pays {{rmp_income}} a year from {{rmp_year}}</small></p>
+            <span class="x7m" style="left:[[story_sale_l]];top:[[story_sale_t]]"></span>
+            <span class="x7m" style="left:[[story_out_l]];top:[[story_out_t]]"></span>
+            <div class="x7k"><p class="h" style="left:calc([[story_sale_l]] - 1px)">Their own way</p><p style="left:calc([[story_sale_l]] - 1px);top:24px">sells the home at {{story_sale_age}}</p><p style="left:calc([[story_out_l]] - 1px);top:46px">savings run out at {{story_out_age}}</p></div>
+            <svg class="x7ld" aria-hidden="true"><line x1="[[story_sale_l]]" y1="17%" x2="[[story_sale_l]]" y2="[[story_sale_t]]"/><line x1="[[story_out_l]]" y1="26%" x2="[[story_out_l]]" y2="[[story_out_t]]"/></svg>
+            <div class="x7g">
+              <p class="h">Left at 89</p>
+              <p class="pl" style="top:[[story_plan_end_t]]"><strong>{{story_plan_left}}</strong><span>with the plan</span></p>
+              <p class="ow" style="top:[[story_own_end_t]]"><b>{{story_own_left}}</b><span>their own way</span></p>
+            </div>
           </div>
-          <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>Carmen 69</i></span><span style="left:75%">2056<i>Adrian dies</i></span><span style="left:100%">2066<i>Carmen 89</i></span></div>
-        </div>
-      </div>
-    </div>
-    <div class="pn" style="grid-column:span 4">
-      <h3>…once the premiums are reviewed at 75</h3>
-      <p class="lede">Premiums outside the budget, a year (today's money)</p>
-      <div class="body">
-        <div>
-          <div class="pc">
-            <span class="gl" style="top:0"><span>400K</span></span><span class="gl" style="top:25%"><span>300K</span></span><span class="gl" style="top:50%"><span>200K</span></span><span class="gl" style="top:75%"><span>100K</span></span>
-            <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
-              <polygon data-b="2" points="[[prem_saving_poly]]" style="fill:#F3E2E4"/>
-              <polyline points="[[prem_flexi_pts]]" fill="none" style="stroke:#D3A6AD" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-              <polyline data-b="2" points="[[prem_rec_pts]]" fill="none" style="stroke:var(--wine)" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-            </svg>
-            <span class="sw" style="left:[[prem_switch_l]]" data-b="2"><span>Review at Adrian's 75</span></span>
-            <p class="pk" style="left:[[prem_peak_l]];top:[[prem_peak_t]]"><b>[[prem_peak_v]]</b><span>kept for life</span></p>
-            <span class="en" data-b="2" style="top:[[prem_rec_end_t]]">with the review</span>
-          </div>
-          <div class="pcx"><span style="left:0">2037</span><span style="left:[[prem_switch_l]]">2047</span><span style="left:100%">2066</span></div>
-        </div>
-        <div>
-          <div class="x3r x7">
-            <div class="row" data-b="2"><span class="ic9"><svg class="ic"><use href="#i-hourglass"/></svg></span><strong>{{switch_89}}</strong><p><b>see the money last</b> to 89, with the review</p></div>
-            <div class="row nn" data-b="3"><span class="ic9"><svg class="ic"><use href="#i-shield-check"/></svg></span><p><b>From 2039, spending rules</b> protect the bad years; essentials are never cut</p></div>
-          </div>
+          <div class="sxa x7a"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>Carmen 69</i></span><span style="left:75%">2056<i>Adrian dies</i></span><span style="left:100%">2066<i>Carmen 89</i></span></div>
         </div>
       </div>
     </div>
   </div>
   <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>The Standard plan has lower limits and fewer private-hospital choices; the spending rules trim typical spending by about {{guard_cost}} a year.</span></p>
-  <p class="bar" data-b="4">Will it last? In almost every future: they retire on time, keep the way they live, and keep the home.</p>
-  <footer class="ft"><p class="src">The same future, in the same markets, with the plan: an illustration in today's money, not a forecast. Premiums: individual cover by age and medical inflation, above the HK$65K the budget holds.</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
-  <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept for life, medical premiums climb to HK$375K a year. At Adrian's 75 they review the tier: the Standard plan costs about a third as much, and the odds rise to {{switch_89}}. From 2039, spending rules protect the bad years; essentials are never cut. Remember that future? With the plan, the money lasts to Carmen's 89, and the home stays theirs. Win. [Notes: cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Guardrails: no raise after a bad year; ±10% when withdrawals drift 20%; spending never below 70% of the budget. Why does the plan look poorer until about 2056? Part of the savings buys the annuities, and the home's value is drawn as income from 2037: the plan trades a peak for a floor, and then keeps going where their own way runs out. The worst one in twenty: {{guardswitch_worst5_real}} vs {{fixswitch_worst5_real}} without the rules. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
+  <div class="bar x7b4" data-b="4">
+    <p><svg class="ic"><use href="#i-hourglass"/></svg><span>They retire<br>on time</span></p>
+    <p><svg class="ic"><use href="#i-wallet"/></svg><span>They keep<br>their spending</span></p>
+    <p><svg class="ic"><use href="#i-house"/></svg><span>They keep<br>the home</span></p>
+    <p class="hi"><span class="from">{{ladder_5_89}} →</span><strong>{{switch_89}}</strong><span class="of">of futures last<br>to Carmen's 89</span></p>
+  </div>
+  <footer class="ft"><p class="src">The same future as slide 3, in the same markets: an illustration in today's money, not a forecast. Premiums: individual cover by age and medical inflation; one policy from 2057, when Adrian's cover ends at the case's life expectancy (84).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
+  <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept on Flexi for life, medical premiums climb to HK$375K a year. So at Adrian's 75 they review the tier: the Standard plan costs about a third as much. And from 2039, two spending rules: no raise for inflation after a year markets fall, and a 10% trim only if they draw on savings too fast; essentials are never cut. Remember that future? Now the money lasts to 89, and the home stays theirs. The odds: {{switch_89}} with the review, almost every future with the rules. Win. [Notes: in this future the four decisions alone leave {{story_plan6_left}} of savings at 89, under a year of spending; the review and the rules keep the rest (the lighter band). "Too fast": withdrawals 20% above their starting rate; spending rises back 10% when they run 20% below it, never above the budget. Cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Why does the plan's total sit below their own way until about 2053? Part of the savings buys the annuities, and the home's value is drawn as income from 2037: the plan trades a peak for a floor, and then keeps going where their own way runs out. The home: worth less on the chart because the reverse-mortgage loan grows against it; it is still theirs, and they still live there. "19 futures out of 20": {{guardswitch_worst5_real}} is the 5th percentile of each future's leanest year, in today's money, with the rules; {{fixswitch_worst5_real}} without them. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>

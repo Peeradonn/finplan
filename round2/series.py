@@ -74,6 +74,12 @@ def tokens():
         "prem_switch_l": f"{xy(SWITCH, 0)[0] / W * 100:.2f}%",
         "prem_rec_end_t": f"{xy(X1, rec[-1][1])[1] / H * 100:.2f}%",   # where the recommended line ends (its label)
     }
+    # slide 7 (24 Oct, Fahtai): the drop after Adrian's death (one policy left) and the middle of the saving's gap
+    dy = next(y for y, f in flexi if y > peak_y)                        # the first table year after the peak
+    T["prem_death_l"], T["prem_death_t"] = (f"{v:.2f}%" for v in (xy(dy, 0)[0] / W * 100, xy(dy, dict(flexi)[dy])[1] / H * 100))
+    mid = (SWITCH + peak_y) / 2
+    T["prem_save_l"] = f"{xy(mid, 0)[0] / W * 100:.2f}%"
+    T["prem_save_t"] = f"{xy(mid, (at(flexi, mid) + at(std, mid)) / 2)[1] / H * 100:.2f}%"
     return T
 
 
@@ -98,6 +104,17 @@ def story():
         T[f"story_{w}_top_pts"] = " ".join(f"{X(j)},{Y(v)}" for j, v in enumerate(top))
         T[f"story_{w}_end_t"] = f"{Y(top[-1]) / H * 100:.1f}%"
         T[f"story_{w}_savlbl_t"] = f"{Y(home[1] + sav[1] / 2) / H * 100:.1f}%"   # the savings label, mid-layer near the left
+    # slide 7 (24 Oct, Fahtai): the plan's savings split in two, what the four decisions alone keep (slide 6) and what
+    # call 3 adds (the review at 75 and the spending rules), in the same future; the call-3 label sits mid-gap
+    if "story_plan6_sav" in N:
+        home, sav = ser["plan_home"], ser["plan_sav"]
+        p6 = [min(float(v), s_) for v, s_ in zip(N["story_plan6_sav"].split(","), sav)]
+        T["story_plan6_poly"] = " ".join([f"{X(j)},{Y(home[j] + p6[j])}" for j in range(n + 1)]
+                                         + [f"{X(j)},{Y(home[j])}" for j in range(n, -1, -1)])
+        jg = n - 7
+        T["story_call3_l"] = f"{X(jg) / W * 100:.1f}%"
+        T["story_call3_t"] = f"{Y(home[jg] + (p6[jg] + sav[jg]) / 2) / H * 100:.1f}%"
+        T["story_plan6_t"] = f"{Y(home[n] + p6[n]) / H * 100:.1f}%"
     # events, as positions in the box: the forced sale shows as the drop after its year, the run-out as savings at zero
     sale, out = int(N["story_sale_year"]), int(N["story_out_year"])
     js, jo = sale - 2026 + 1, out - 2026 + 1

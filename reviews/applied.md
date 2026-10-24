@@ -363,3 +363,15 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   `story_plan_lasts` yes. `round2/series.py` draws them on one scale for both slides (it now also reads these keys
   from `numbers.json`, besides `figure-data.md`).
 - `make_charts.py` rerun: 264 values; no existing value changed or removed; `figure-data.md` unchanged. Round Two only.
+
+### Round Two deck (24 Oct, Fahtai): slide 7 shows what call 3 adds, in the same future
+- `export_numbers()` adds `story_plan6_sav` (41 values, HK$M today's money, 2026 to 2066) and `story_plan6_left`
+  (HK$0.6M): the story future (path k) under the four decisions alone (slide 6: Flexi kept for life, no spending
+  rules). Slide 7 splits the plan's savings into what the four decisions keep and what the review at 75 and the rules
+  add (HK$0.6M vs HK$7.0M of savings at 89 in this future). The plan's savings are at or above it in every year.
+- Computed by running the same code path; `story_plan_sav` reproduced exactly (path k = 4764), so the two new keys were
+  added to `numbers.json` after `story_plan_lasts`. No existing value changed or removed. `make_charts.py` not rerun
+  on Windows yet: rerun it once and diff `numbers.json` (expect only these two keys).
+- `round2/series.py`: `story_plan6_poly`, `story_call3_l/_t`, `story_plan6_t` (the split), `prem_death_l/_t` (the drop
+  when one policy is left) and `prem_save_l/_t` (the saving's label).
+
