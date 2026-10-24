@@ -465,12 +465,15 @@ downgrade rule are in the notes.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
 ### 11 · What happens when (Lookbua; 0:30)
+- title: **"It starts this month; Close all gap within the first year"**
+- three phase panels: "This year: close every gap..." - month 1-12, "...hand over to the next generation..." - 2028-2036, "...then turn assets into income" - 2037-
 - One dated sequence (a true sequence, so a line): month 1 the papers, the joint account, idle cash moved; months 1 to
   3 the cover; months 1 to 6 a portfolio each, the investment policy signed, voluntary MPF; month 12 the first family
   meeting (charter, Ryan's plan, the one-person budget); 2028 Chloe's offer, fees converted; 2032 managers built up;
   2037 mortgage cleared, Adrian's annuity, the home released; 2039 Carmen's annuity, the business sold, rules begin;
   2047 the medical review.
-- Under it, the reviews: quarterly portfolio, annual family meeting, a full review after a death, a disability, a
+- under the line: 2 thin lanes - first is Ryan and Chloe's (to support the argument 'it lasts beyond it'): Chloe's first job in 2032, Ryan turns 35 in 2037, trusts at 25, 30, 35
+- Under it, the second lane the reviews: quarterly portfolio, annual family meeting, a full review after a death, a disability, a
   business sale, a 20% market fall or a 1.5-point rate move (proposal Figure 23).
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
