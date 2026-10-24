@@ -429,6 +429,10 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Endings marked, 24 Oct** (with slides 10 to 15): the chart now says how this future ends, as slide 3 does. A
+crimson dot at the plan's end with a leader up to "{{story_plan_left}} left at 89 · and still their home". Slide 3's sale
+and run-out sit as hollow ghosts on their own way's dashed line ("sold, {{story_sale_age}}", "ran out,
+{{story_out_age}}"). The comparison with {{story_own_left}} is left to slide 12, the payoff.
 **Rebuilt 23 Oct with slide 3.** Title: "Fix the cost the budget ignores: in that same future, the money now lasts to 89
 and the home stays theirs". Left: the same future in the same markets under the plan (four decisions, the review at 75,
 the spending rules): the home pays {{rmp_income}} a year from {{rmp_year}} and stays theirs; savings never run out;
