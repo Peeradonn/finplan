@@ -511,7 +511,13 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
   Schibsted Grotesk and Manrope). Weights 400 to 800, in `round2/fonts/`, SIL OFL, embeddable. The hierarchy comes from size, weight and colour, never from switching
   faces: with Garamond for numbers and Inter for labels, the same kind of thing (a share, an amount) looked like two
   kinds. EB Garamond stays the written case's face only.
-- **Colour:** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
+- **Colour, since 24 Oct: slide 4's tones on every slide, on white** (Pete liked slide 4's colours; tried on slide 3,
+  then rolled out): secondary text a rose-tinted grey (slate #80606A, grey #B5979D), rules #ECDADD, panels #F8EFF0;
+  soft rose fills (#EFD9DC, #E6CDD1, #D3A6AD) in place of the greyed rose and warm greys; wine and crimson with depth,
+  as gradients (--wine-g #A62535 to #5A1520, --accent-g #B3202F to #7D1D2A, and #p4wine / #p4rose for SVG areas, in
+  99_tail); the conclusion bar a small stage (a radial gradient, crimson at the centre, wine at the ends). The text
+  above this line in earlier versions, kept below for the record:
+- **Colour (23 Oct):** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
   (the home layer, the family panels, the guaranteed income, cost bars), a greyed rose #DDD0CD and #B99A9C (savings,
   lighter series), tint = mist; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate
   #5A5250, ink #1B1716). No blue. Events on wine-and-rose charts in ink. The conclusion is a crimson bar, white text

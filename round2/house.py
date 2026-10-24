@@ -18,10 +18,10 @@ PARTS = {  # viewBox 0 0 440 400
 }
 NAMES = {"1": ("1", "Insure the income"), "2": ("2", "Home and business"), "3": ("3", "Fix the cost"),
          "4": ("4", "A plan each"), "5": ("5", "Values and crypto"), "roof": ("", "What passes on")}
-FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#B99A9C", "#A69E9C"),
+FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#D3A6AD", "#B5979D"),
         "all": ("#7D1D2A", "none", "#fff")}
 # the small title houses, in slide 4's line style (23 Oct): this call solid crimson, built parts rose, the rest dashed
-LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#E8DEDC", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#B99A9C", "dash")}
+LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#E8DEDC", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#D3A6AD", "dash")}
 
 
 def house(state=None, w=72, labels=False, cls="house", steps=None):
@@ -199,7 +199,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
     for part, (side, _, _) in CALLOUTS.items():
         ax, ay = anchors[part]
         x2 = edgex[side]
-        o.append(f'<g class="ld" data-b="{steps[part]}"><line x1="{ax:.1f}" y1="{ay:.1f}" x2="{x2}" y2="{ay:.1f}" stroke="#B99A9C" stroke-width="1.5"/>'
+        o.append(f'<g class="ld" data-b="{steps[part]}"><line x1="{ax:.1f}" y1="{ay:.1f}" x2="{x2}" y2="{ay:.1f}" stroke="#D3A6AD" stroke-width="1.5"/>'
                  f'<circle cx="{x2}" cy="{ay:.1f}" r="3" fill="#A81E2D"/></g>')
     o.append("</svg>")
     for part, (side, title, line) in CALLOUTS.items():
@@ -235,7 +235,7 @@ def progress3d(call, w=66, W=176, D=132, hf=18, hw=58, rh=52, gap=12, gx=6, ov=1
 
     def add(pts, state, shade, col):
         if state == "todo":
-            faces.append((pts, "#FFFFFF", "#B99A9C", True))
+            faces.append((pts, "#FFFFFF", "#D3A6AD", True))
         elif state == "on":
             faces.append((pts, CRIMSON[shade], "#FFFFFF", False))
         else:
@@ -276,11 +276,11 @@ def elevation(w=360):
     steps = {"1": 2, "2": 3, "3": 4, "4": 5, "5": 6, "roof": 7}
     o = [f'<svg class="house elev" viewBox="-60 0 560 410" width="{w}" height="{round(w * 410 / 560)}" aria-hidden="true">',
          '<defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-         '<rect width="12" height="12" fill="#F5F1F0"/><line x1="0" y1="0" x2="0" y2="12" stroke="#B99A9C" stroke-width="3"/>'
+         '<rect width="12" height="12" fill="#F8EFF0"/><line x1="0" y1="0" x2="0" y2="12" stroke="#D3A6AD" stroke-width="3"/>'
          '</pattern></defs>',
-         '<line x1="-10" y1="386" x2="450" y2="386" stroke="#5A5250" stroke-width="2.5"/>']
+         '<line x1="-10" y1="386" x2="450" y2="386" stroke="#80606A" stroke-width="2.5"/>']
     for part, (kind, geo) in PARTS.items():
-        fill = "url(#hatch)" if part == "1" else ("#F5F1F0" if part == "roof" else "#FBF4F5")
+        fill = "url(#hatch)" if part == "1" else ("#F8EFF0" if part == "roof" else "#FBF4F5")
         o.append(f'<g class="hq" data-b="{steps[part]}">')
         if kind == "poly":
             o.append(f'<polygon points="{geo}" fill="{fill}" stroke="#A81E2D" stroke-width="3" stroke-linejoin="round"/>')

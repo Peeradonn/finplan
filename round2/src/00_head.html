@@ -20,13 +20,18 @@
 @font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
 
 /* ---- look B, as tokens ---- */
+/* 24 Oct, Pete (after a trial on slide 3): slide 4's tones for every slide, on white: rose-tinted secondary text
+   and rules, soft rose fills, wine and crimson with depth (--wine-g, --accent-g; #p4wine and #p4rose in 99_tail
+   for SVG), the conclusion bar as a small stage. */
 /* 23 Oct, evening (Pete): one clear font for every part, as in e-Sentry: Plus Jakarta Sans throughout (Pete's pick, 24 Oct, over
    Bricolage Grotesque, Schibsted Grotesk and Manrope; Inter before it), the hierarchy made by size, weight and colour, not by
    switching faces. (Earlier the same day: EB Garamond for titles and numbers.) warm neutrals tuned to the crimson;
    wine for weight; a greyed rose for secondary fills (23 Oct: the pale pinks read as pink, not as the
    crimson's family). */
-.lb{--paper:#FFFFFF;--mist:#F5F1F0;--rule:#DDD6D4;--grey:#A69E9C;--slate:#5A5250;--ink:#1B1716;
-    --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#DDD0CD;--tint:#F5F1F0;
+.lb{--paper:#FFFFFF;--mist:#F8EFF0;--rule:#ECDADD;--grey:#B5979D;--slate:#80606A;--ink:#1B1716;
+    --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#EFD9DC;--tint:#F8EFF0;
+    --wine-g:linear-gradient(180deg,#A62535 0%,#5A1520 100%);--accent-g:linear-gradient(180deg,#B3202F 0%,#7D1D2A 100%);
+    --rose-g:linear-gradient(90deg,#F3E2E4 0%,#E7CCD1 100%);
     --text:"Plus Jakarta Sans",Arial,sans-serif;--head:"Plus Jakarta Sans",Arial,sans-serif;font-variant-numeric:lining-nums}
 
 *,*::before,*::after{box-sizing:border-box}
@@ -58,7 +63,7 @@ p,li,span,b{text-wrap:pretty}
 /* ---- conclusion bar ---- */
 /* 24 Oct (Pete): the conclusion is a crimson bar, white text, centred: without a bar the last line didn't read as the
    slide's conclusion. (23 Oct it was a line on a crimson rule, after a wine block had outweighed the focal numbers.) */
-.bar{flex:none;margin-top:16px;background:var(--accent);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
+.bar{flex:none;margin-top:16px;background:radial-gradient(ellipse 70% 260% at 50% 50%,#A62535 0%,#8A1F2E 45%,#5A1520 100%);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
 
 /* ---- footer ---- */
 .ft{flex:none;height:52px;display:flex;align-items:center;gap:20px;font:400 12px/1.3 var(--text);color:var(--slate)}
@@ -258,7 +263,7 @@ p,li,span,b{text-wrap:pretty}
 .x5-p .tk i{position:absolute;left:0;top:0;bottom:0}
 .x5-p .tk.no i{width:100%;border:1.5px dashed var(--grey)}
 .x5-p .tk.no em{position:absolute;left:10px;top:50%;transform:translateY(-50%);font:400 14px/1 var(--text);font-style:normal;color:var(--slate)}
-.x5-p .tk.yes i{background:var(--wine)}
+.x5-p .tk.yes i{background:var(--wine-g)}
 .x5-p .tk.yes em{position:absolute;top:50%;transform:translateY(-50%);font:600 16px/1 var(--text);font-style:normal;white-space:nowrap}
 .x5-c strong{display:block;font:700 72px/1 var(--head);color:var(--accent);letter-spacing:-1px}
 .x5-c .s{font:600 16px/1.35 var(--text);margin-top:6px}
@@ -479,12 +484,12 @@ p,li,span,b{text-wrap:pretty}
 .b2a{display:flex;height:54px}
 .b2a i{display:flex;flex-direction:column;justify-content:center;padding:0 12px;min-width:0;font:400 14px/1.25 var(--text);font-style:normal;white-space:nowrap;overflow:hidden}
 .b2a i b{font:700 15px/1.25 var(--text)}
-.b2a i.h{background:var(--wine);color:#fff}
+.b2a i.h{background:var(--wine-g);color:#fff}
 .b2a i.z{background:#A35560;color:#fff}
-.b2a i.v{background:#B99A9C;color:var(--ink)}
-.b2a i.m{background:#DDD0CD;padding:0}
-.b2a i.c{background:#CFC7C5;padding:0}
-.b2a i.o{background:#A69E9C;padding:0}
+.b2a i.v{background:#D3A6AD;color:var(--ink)}
+.b2a i.m{background:#EFD9DC;padding:0}
+.b2a i.c{background:#E6CDD1;padding:0}
+.b2a i.o{background:#B5979D;padding:0}
 .b2a i+i{border-left:2px solid var(--paper)}
 .b2k{position:relative;height:50px}
 .b2k p{position:absolute;top:0;width:max-content;padding:4px 0 0 7px;border-left:1.5px solid var(--grey);font:400 14px/1.3 var(--text);color:var(--slate)}
@@ -565,8 +570,8 @@ p,li,span,b{text-wrap:pretty}
 .o6t{position:relative;height:96px}
 .o6t>i{position:absolute;left:0;top:52px;height:24px}
 .o6t>i.o6x{border:1.5px dashed var(--grey);background:var(--paper)}
-.o6t>i.o6c{background:var(--accent)}
-.o6t>i.o6g{background:#CFC7C5}
+.o6t>i.o6c{background:var(--accent-g)}
+.o6t>i.o6g{background:#E6CDD1}
 .o6u{position:absolute;bottom:48px;transform:translateX(-100%);width:max-content;display:flex;align-items:baseline;gap:10px;white-space:nowrap}
 .o6u span{font:600 15px/1.2 var(--text);color:var(--ink)}
 .o6u strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1px}
@@ -610,11 +615,11 @@ p,li,span,b{text-wrap:pretty}
 .e9r>span{font:600 15px/1.25 var(--text);color:var(--ink)}
 .e9t{position:relative;display:flex;align-items:center;min-width:0}
 .e9t>i{display:block;flex:none;height:48px}
-.e9 i.g{background:#CFC7C5}
-.e9 i.s1{background:var(--wine)}
+.e9 i.g{background:#E6CDD1}
+.e9 i.s1{background:var(--wine-g)}
 .e9 i.s2{background:#A35560}
-.e9 i.s3{background:#B99A9C}
-.e9 i.on{background:var(--accent)}
+.e9 i.s3{background:#D3A6AD}
+.e9 i.on{background:var(--accent-g)}
 .e9t>em{font:600 16px/1 var(--text);font-style:normal;color:var(--ink);margin-left:10px;white-space:nowrap}
 .e9t>em small{font:400 14px/1 var(--text);color:var(--slate);margin-left:6px}
 .e9t>strong{font:700 42px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1px}
@@ -715,9 +720,9 @@ p,li,span,b{text-wrap:pretty}
 .x3p .hb>span{font:400 14px/1.25 var(--text);color:var(--slate)}
 .x3p .hb .t{display:flex;align-items:center;min-width:0}
 .x3p .hb i{display:block;height:30px;flex:none}
-.x3p .hb i.g{background:#CFC7C5;display:flex;align-items:center;justify-content:flex-end;padding-right:10px}
+.x3p .hb i.g{background:var(--rose-g);display:flex;align-items:center;justify-content:flex-end;padding-right:10px}
 .x3p .hb i.g b{font:700 16px/1 var(--text);color:var(--ink)}
-.x3p .hb.on i{background:var(--accent)}
+.x3p .hb.on i{background:var(--accent-g)}
 .x3p .hb.on strong{font:700 52px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1.5px}
 .x3p .why{padding-top:14px;border-top:1px solid var(--rule)}
 .x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:8px}
