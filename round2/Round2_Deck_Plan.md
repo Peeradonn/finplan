@@ -596,6 +596,16 @@ register, the price and the bar.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
 ### 11 · What happens when (Lookbua; 0:30)
+**Layout review, 24 Oct evening** (Pete: is the layout ideal yet?). No; three changes, then one addition.
+(1) Ryan and Chloe's strip is gone, its facts kept: it repeated the line (Ryan's plan is in the month-12 meeting,
+Chloe's offer is 2028) and said slide 12's point early (trusts at 25, 30, 35); its new fact, Chloe starting work in 2032,
+is now a step on the line, so the children stay in the story the bar promises (the lane came from the 24 Oct plan edit
+above; this is how it's carried now). (2) 2037 and 2039 merged into "They retire, 2037–39: the home released; an
+annuity each", as the script says it ("the home and the annuities from 2037"). (3) Each step is a date, a bold action
+and one short detail, about half the words, on larger dates and circles. Added: who acts on each step, as small
+overlapping portraits on one row, from the written case's Figure 23 owners (the parents; the family; all four; Chloe;
+Carmen). It fills the space the strip left with something a practitioner looks for, and the footer had promised the
+owners without showing them.
 **One timeline, 24 Oct evening** (Pete: the left half read as a chart of progress, not a timeline, and after slide
 10's bars it looked like more chances of success). Now nine steps on one line across the slide, each a date over a
 circle over what happens. The first year (month 1, by month 3, by month 6, month 12) sits on a soft band, its dates,
