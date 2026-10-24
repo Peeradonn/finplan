@@ -237,6 +237,14 @@ below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cas
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
 ### 3 · Their own way (Pete; 0:45)
+**Right side, third pass, 24 Oct** (Pete: still conflicting; the point is clear but it takes time to understand).
+Cause: six numbers on screen (51%, 62%, HK$24.4M, HK$2.3M, 61%, HK$375K), three of them percentages of different
+things, two never spoken, so the eye read one thing while the voice said another. Now only what is said, in its
+order: "{{own_sold_pct}} of futures sell the home" as 100 small houses with the sold ones filled ([[own_sold_icons]],
+series.py, from the model), then what Ryan and Chloe inherit (HK$24.4M today, {{own_legacy_sold}} left, the focal
+point). {{own_89}} moves to the notes (it is slide 4's baseline); "Why it runs out" moves to the notes too, reversing
+23 Oct's choice, since slides 6 and 7 show and fix each cause (the home and business put to work; the HK$375K
+premium line).
 **Revised 24 Oct** (Pete: the right side conflicted for attention; too many annotations on the chart; not every text
 deserves bold; the descriptions under the years were not emphasised enough). Right: one focal point, "What Ryan and Chloe
 inherit, where the flat is sold": HK$24.4M today as a grey bar, {{own_legacy_sold}} left as a crimson bar on the same scale
