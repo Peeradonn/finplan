@@ -865,6 +865,165 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .reveal.upto-7 [data-b="8"],.reveal.upto-7 [data-b="9"]{visibility:hidden}
 .reveal.upto-8 [data-b="9"]{visibility:hidden}
 .notes{display:none}
+/* ==================== slides 10 to 15, drafted fresh (24 Oct) ==================== */
+/* the icon in a soft circle, beside a bold claim and its detail (slides 10 and 12) */
+.q10m,.q12m{display:flex;flex-direction:column;margin-top:10px}
+.q12m{flex:1}
+.q10m li,.q12m li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--rule)}
+.q10m li:last-child,.q12m li:last-child{border-bottom:0}
+.q10m .ci,.q12m .ci{flex:none;width:36px;height:36px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center}
+.q10m .ci .ic,.q12m .ci .ic{width:19px;height:19px;stroke:var(--wine);stroke-width:2}
+.q10m b,.q12m b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.q10m p,.q12m p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:1px}
+
+/* slide 10: each hard test as one row, a dumbbell from the four decisions alone (hollow) to the full plan (filled) on
+   one 0-100% scale, then what holds it. Only the title's test, the lost job, is crimson. */
+.q10 .pn>h3{margin-bottom:0}
+.q10k{display:inline-flex;align-items:center;gap:6px;margin-right:22px;white-space:nowrap}
+.q10k i{display:inline-block;width:12px;height:12px;border-radius:50%}
+.q10k i.o{background:#fff;border:2.5px solid var(--grey)}
+.q10k i.p{background:var(--wine)}
+.q10h,.q10r,.q10x{display:grid;grid-template-columns:220px 1fr 196px;column-gap:36px}
+.q10h{margin-top:16px;padding-bottom:6px;border-bottom:1.5px solid var(--ink);font:600 14px/1.2 var(--text);color:var(--slate)}
+.q10x{margin-top:6px;font:400 14px/1 var(--text);color:var(--slate)}
+.q10x .ax{position:relative;height:14px}
+.q10x .ax i{position:absolute;top:0;font-style:normal;font-weight:400;transform:translateX(-50%)}
+.q10x .ax i:nth-child(1){left:0;transform:none}.q10x .ax i:nth-child(2){left:50%}.q10x .ax i:nth-child(3){left:100%;transform:translateX(-100%)}
+.q10c{flex:1;display:flex;flex-direction:column}
+.q10r{flex:1;align-items:center;border-bottom:1px solid var(--rule);padding:4px 0}
+.q10l b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
+.q10t{position:relative;height:58px}
+.q10t::before{content:"";position:absolute;left:0;right:0;bottom:15px;border-top:1.5px solid var(--rule)}   /* the 0-100% track */
+.q10g{position:absolute;bottom:10px;height:11px;background:var(--rose-g)}   /* the gain, from one dot to the other */
+.q10t i{position:absolute;bottom:8px;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;z-index:2}
+.q10t i.o{background:#fff;border:2.5px solid var(--grey)}
+.q10t i.p{background:var(--wine)}
+.q10t em{position:absolute;bottom:21px;left:50%;transform:translateX(-50%);font-style:normal;white-space:nowrap}
+.q10t i.o em{font:500 15px/1 var(--text);color:var(--slate)}
+.q10t i.p em{font:700 24px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
+.q10r.on .q10t i.p{background:var(--accent);width:17px;height:17px;margin-left:-8.5px;bottom:7px}
+.q10r.on .q10t i.p em{font-size:36px;color:var(--accent);letter-spacing:-1px}
+.q10d{display:flex;gap:8px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.q10d .ic{flex:none;width:18px;height:18px;stroke:var(--wine);stroke-width:2;margin-top:1px}
+.q10r.on .q10d{color:var(--ink)}
+
+/* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
+   steps on one line with an icon a step, then the reviews. */
+.q11{flex:1;min-height:0;display:grid;grid-template-columns:5fr 7fr;column-gap:40px}
+.q11 h3{font:600 17px/1.25 var(--text);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
+.q11g{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+.q11b p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.q11b p b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.q11b .bb{position:relative;height:12px;margin-top:6px;background:var(--mist);border-radius:0 6px 6px 0}
+.q11b .bb i{position:absolute;left:0;top:0;bottom:0;width:var(--e);background:var(--wine-g);border-radius:0 6px 6px 0}
+.q11b .bb em{position:absolute;left:var(--e);top:50%;transform:translate(8px,-50%);font:600 14px/1 var(--text);font-style:normal;color:var(--wine);white-space:nowrap}
+.q11b.ms .bb i{left:auto;right:-2px;width:16px;height:16px;top:-2px;border-radius:50%}
+.q11b.ms .bb em{left:auto;right:24px;transform:translateY(-50%)}
+.q11t{position:relative;display:grid;grid-template-columns:repeat(5,1fr);column-gap:16px;margin-top:16px}
+.q11t::before{content:"";position:absolute;left:0;right:0;top:47px;border-top:2px solid var(--rose)}   /* the line through the steps */
+.q11t>div{position:relative}
+.q11t .y{display:block;font:700 20px/1.2 var(--head);color:var(--ink)}
+.q11t .ci{position:relative;display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin:4px 0 12px;border-radius:50%;background:var(--wine-g);box-shadow:0 0 0 4px #fff}
+.q11t .ci .ic{width:20px;height:20px;stroke:#fff;stroke-width:2}
+.q11t b{display:block;font:600 16px/1.3 var(--text)}
+.q11t p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:3px}
+.q11k{margin-top:16px;padding-top:10px;border-top:1px solid var(--rule)}
+.q11k h4{font:600 15px/1.3 var(--text);color:var(--slate)}
+.q11k>div{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;column-gap:20px;margin-top:8px}
+.q11k span{font:400 14px/1.35 var(--text);color:var(--slate)}
+.q11k span b{display:block;font:600 15px/1.3 var(--text);color:var(--ink)}
+.q11r{flex:none;display:grid;grid-template-columns:auto .7fr 1.6fr 1.9fr;align-items:center;column-gap:26px;margin-top:16px;padding:12px 20px;background:var(--mist)}
+.q11r>b{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
+.q11r>b .ic{width:20px;height:20px;stroke:var(--wine);stroke-width:2}
+.q11r span{font:400 14px/1.35 var(--text);color:var(--slate)}
+.q11r span b{display:block;font:600 15px/1.3 var(--text);color:var(--ink)}
+
+/* slide 12: slide 3's inheritance bars redrawn on the same scale, the plan beside their own way; then how it passes on */
+.q12b{display:flex;flex-direction:column;gap:18px;margin-top:26px}
+.q12b .r{display:grid;grid-template-columns:118px 1fr;column-gap:14px;align-items:center}
+.q12b .r>span{font:400 15px/1.25 var(--text);color:var(--slate)}
+.q12b .r.on>span{color:var(--ink);font-weight:600}
+.q12b .t{display:flex;align-items:center;min-width:0;height:72px}
+.q12b i{display:block;height:40px;flex:none;background:#D3A6AD}
+.q12b i.g{background:var(--rose-g);display:flex;align-items:center;justify-content:flex-end;padding-right:12px}
+.q12b i.g b{font:700 17px/1 var(--text);color:var(--ink)}
+.q12b strong{font:700 34px/1 var(--head);color:var(--slate);margin-left:14px;letter-spacing:-1px}
+.q12b .on i{background:var(--accent-g)}
+.q12b .on strong{font-size:72px;color:var(--accent);letter-spacing:-2px}
+.q12n{margin-top:auto;padding:12px 16px;background:var(--mist);font:400 15px/1.4 var(--text);color:var(--slate)}
+.q12n b{color:var(--ink);font-weight:600}
+.q12s{position:relative;display:flex;justify-content:space-between;width:200px;margin:10px 0 2px}
+.q12s::before{content:"";position:absolute;left:8px;right:8px;top:7px;border-top:2px solid var(--rose)}
+.q12s span{position:relative;display:flex;flex-direction:column;align-items:center;gap:5px;font:600 14px/1 var(--text);color:var(--ink)}
+.q12s span::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--wine-g)}
+
+/* slide 13: the scheme's growth in three facts, then the two flows across one boundary, drawn north up; each arrow carries
+   one half of the title: Northbound dashed (kept out today), Southbound solid crimson (the market we want to serve) */
+.q13f{flex:none;display:grid;grid-template-columns:repeat(3,1fr);column-gap:28px}
+.q13f>div{display:flex;align-items:center;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.q13f strong{flex:none;font:700 40px/1 var(--head);color:var(--ink);letter-spacing:-1px;white-space:nowrap}
+.q13f span{font:400 15px/1.35 var(--text);color:var(--slate)}
+.q13m{flex:1;min-height:0;display:flex;flex-direction:column;margin-top:18px}
+.q13m .band{flex:none;padding:9px 16px;font:600 15px/1.2 var(--text);text-align:center}
+.q13m .band.top{background:var(--rose-g);color:var(--ink)}
+.q13m .band.bot{background:var(--mist);color:var(--wine);border-top:2px solid var(--wine)}
+.q13m .mid{position:relative;flex:1;display:grid;grid-template-columns:1fr 1fr;column-gap:56px;padding:0 12px}
+.q13m .bd{position:absolute;left:0;right:0;top:50%;border-top:1.5px dashed var(--grey);z-index:0}
+.q13m .bd span{position:absolute;right:0;top:-9px;padding-left:8px;background:#fff;font:400 14px/1 var(--text);color:var(--slate)}
+.q13m .fl{position:relative;display:grid;grid-template-columns:52px 1fr;grid-template-rows:1fr 1fr;column-gap:16px;z-index:1}
+.q13m .ar{grid-row:1/3;position:relative}
+.q13m .ar::before{content:"";position:absolute;left:50%;top:18px;bottom:18px;margin-left:-3px;border-left:6px solid var(--accent)}
+.q13m .ar::after{content:"";position:absolute;left:50%;margin-left:-15px;border:15px solid transparent}
+.q13m .s .ar::after{bottom:0;border-top:20px solid var(--accent);border-bottom:0}
+.q13m .n .ar::before{margin-left:-2px;border-left:4px dashed var(--wine)}
+.q13m .n .ar::after{top:0;border-bottom:20px solid var(--wine);border-top:0}
+.q13m .fl .a,.q13m .fl .b{align-self:center;padding:8px 0}
+.q13m h4{font:700 17px/1.3 var(--text);color:var(--ink)}
+.q13m .s h4{color:var(--accent)}
+.q13m .n .a h4{color:var(--wine)}
+.q13m .fl p{font:400 15px/1.4 var(--text);color:var(--slate);margin-top:3px}
+.q13m .b h4{color:var(--ink)}
+.q13m .s .b h4{color:var(--accent)}
+
+/* slide 14: one column a speaker, in speaking order: where, the goal in five years and its link, what this plan taught */
+.q14{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,1fr);column-gap:24px}
+.q14 .c{display:flex;flex-direction:column;border-top:3px solid var(--wine);padding-top:16px}
+.q14 .who{display:flex;align-items:center;gap:12px}
+.q14 .who .ci{flex:none;width:46px;height:46px;border-radius:50%;background:var(--wine-g);display:flex;align-items:center;justify-content:center}
+.q14 .who .ci .ic{width:22px;height:22px;stroke:#fff;stroke-width:2}
+.q14 .who b{display:block;font:700 20px/1.2 var(--head);color:var(--ink)}
+.q14 .who span{font:400 14px/1.3 var(--text);color:var(--slate)}
+.q14 .where{display:flex;align-items:center;gap:6px;margin-top:14px;font:600 14px/1.3 var(--text);color:var(--accent)}
+.q14 .where .ic{flex:none;width:16px;height:16px;stroke:var(--accent);stroke-width:2}
+.q14 .k{font:600 14px/1.3 var(--text);color:var(--slate);margin-top:16px}
+.q14 h4{font:600 18px/1.3 var(--text);color:var(--ink);margin-top:4px}
+.q14 .d{font:400 15px/1.4 var(--text);color:var(--slate);margin-top:6px}
+.q14 .led{display:flex;gap:8px;margin-top:16px;padding-top:12px;border-top:1px solid var(--rule);font:400 15px/1.4 var(--text);color:var(--slate)}
+.q14 .led .ic{flex:none;width:18px;height:18px;stroke:var(--wine);stroke-width:2;margin-top:2px}
+.q14 .led b{display:block;font:600 14px/1.3 var(--text);color:var(--slate)}
+.q14 .t{margin-top:auto;background:var(--mist);padding:12px 14px;min-height:124px}
+.q14 .t .k{margin:0 0 4px}
+.q14 .t p:not(.k){font:500 15px/1.4 var(--text);color:var(--ink)}
+.q14 .t.todo{background:none;border:1.5px dashed var(--grey)}
+.q14 .t.todo p:not(.k){color:var(--slate);font-weight:400}
+
+/* slide 15: the close mirrors the cover; where the cover had the family, the house built for them */
+.q15 .l{padding-top:58px}
+.q15 h1{font-size:112px;margin-top:40px}
+.q15o{display:grid;grid-template-columns:repeat(3,1fr);column-gap:26px;margin-top:34px;max-width:700px}
+.q15o div{border-top:2px solid var(--accent);padding-top:10px}
+.q15o strong{display:block;font:700 40px/1 var(--head);color:var(--ink);letter-spacing:-1px}
+.q15o span{display:block;font:400 14px/1.35 var(--text);color:var(--slate);margin-top:6px}
+.q15t{position:absolute;left:56px;bottom:108px;font:600 34px/1.2 var(--head);color:var(--accent-deep)}
+.q15s{position:absolute;left:56px;bottom:16px;font:400 12px/1.3 var(--text);color:var(--slate)}
+.q15 .r{width:560px;padding:0 30px 0 34px}
+.q15w{position:relative;display:grid;grid-template-columns:290px 1fr;column-gap:18px}
+.q15h svg{display:block;width:100%;height:100%;overflow:visible}
+.q15h .hx ellipse{opacity:.28}
+.q15p{position:relative}
+.q15p p{position:absolute;left:0;transform:translateY(-50%);font:400 14px/1.3 var(--text);color:#E8C6CB;white-space:nowrap}
+.q15p p b{display:block;font:600 16px/1.25 var(--head);color:#fff}
 </style>
 </head>
 <body>

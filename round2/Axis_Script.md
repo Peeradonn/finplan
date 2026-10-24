@@ -76,7 +76,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1
 
 > Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).
 
-## 11 · It starts this month; close every gap within the first year
+## 11 · It starts this month and closes every gap within a year; after that, dates trigger each step
 *What happens when · Lookbua · 0:30 · 59 spoken words (≈26 s at 135)*
 
 **Lookbua:** It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
@@ -106,7 +106,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1
 
 > Notes: Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.
 
-## 15 · Built to last
+## 15 · Built toLast
 *Pete, all · 0:15 · 32 spoken words (≈14 s at 135)*
 
 **Pete:** Protected first, income for life, and a place for every voice. The home stays their choice, and the next generation keeps its inheritance: built to last. We are Team Axis.

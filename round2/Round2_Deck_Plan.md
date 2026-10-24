@@ -87,7 +87,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | 8 | Call 4 · Each person | One family policy, a plan for each person: every dollar gets a job | Win | 0:50 |
 | 9 | Call 5 · Values and innovation | Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | Win | 0:45 |
 | 10 | Will it hold? | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Lookbua | 0:30 |
-| 11 | What happens when | It starts this month; after that, dates trigger each step | Lookbua | 0:30 |
+| 11 | What happens when | It starts this month and closes every gap within a year; after that, dates trigger each step | Lookbua | 0:30 |
 | 12 | What passes on | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Pete | 0:25 |
 | 13 | Wealth Management Connect | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | Pete | 0:40 |
 | 14 | Who we want to become | Four planners, one aim: families like the Wongs, on both sides of the boundary | All | 1:10 |
@@ -504,6 +504,17 @@ downgrade rule are in the notes.
   Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
+**Drafted 24 Oct** (Pete: draft our own version, not the teammate's of the same afternoon, which is in git, commits
+1ef9433 and e8d5f30). Left: each hard test as one row, a dumbbell on one 0–100% scale from the four decisions alone
+(hollow grey) to the full plan (filled), then "what holds it" (the written case's defence for that row). Only the
+title's test is crimson ({{adrian60_89}} → {{rec_adrian60_89}}, 36 px); the others are ink. Rows in speaking order: the
+lost job; low returns every year ({{stressA_89}} → {{rec_lowret_89}}); inflation and medical costs together
+({{stressB_89}} → {{rec_stressB_89}}); Carmen to 95 ({{ladder_5_95}} → {{guardswitch_95}}). Stress inputs typed from the
+written case's A1 (shares 4%, bonds 2.5%, inflation 3.5%, medical 8.5%). Right: "…and every other risk has a named
+defence", five rows from Figure 26 (the business unsold, three risk appetites, crypto rules, greenwashing, model risk).
+A strip under both names the price, so "holds" isn't read as "nothing changes": in years of low returns the rules trim
+typical spending to about {{rec_lowret_typical_pct}} of the budget. Builds: the lost job, the two market tests, 95, then the
+register, the price and the bar.
 - **"Tested against the worst…"**: paired bars per test, the four decisions alone vs the full plan: Adrian's job ends
   at 60 ({{adrian60_89}} → {{rec_adrian60_89}}), low returns every year ({{stressA_89}} → {{rec_lowret_89}}), inflation
   and medical costs ({{stressB_89}} → {{rec_stressB_89}}); Carmen lives to 95: {{guardswitch_95}} (measured).
@@ -515,6 +526,15 @@ downgrade rule are in the notes.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
 ### 11 · What happens when (Lookbua; 0:30)
+**Drafted 24 Oct.** Title: "It starts this month and closes every gap within a year; after that, dates trigger each step". It joins the storyline's title (and the script's "after that, dates trigger
+each step") to the written case's §10 heading, which the 24 Oct plan edit below had brought in. Left, "This year: close
+every gap…": the first year as a staircase of deadlines, each bar ending on its month on a 12-month track (month 1 the
+papers and the joint account; by month 3 the cover and the buy-sell agreement; by month 6 a portfolio each; month 12
+the first family meeting). Right, "…then dates trigger each step": five dated steps on one line, an icon each (2028
+Chloe's offer, 2035–39 the business, 2037 Adrian retires, 2039 Carmen retires, 2047 the medical review), equally
+spaced (a sequence of triggers, not a time scale). Under them, "Alongside, Ryan and Chloe": Ryan's own plan now, Chloe's
+own plan from 2032, their inheritance in stages at 25, 30 and 35, the support for the bar's "it lasts beyond it". The
+reviews strip (quarterly, yearly, and at once after the written case's five events) runs under both.
 - title: **"It starts this month; Close all gap within the first year"**
 - three phase panels: "This year: close every gap..." - month 1-12, "...hand over to the next generation..." - 2028-2036, "...then turn assets into income" - 2037-
 - One dated sequence (a true sequence, so a line): month 1 the papers, the joint account, idle cash moved; months 1 to
@@ -528,6 +548,12 @@ downgrade rule are in the notes.
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**Drafted 24 Oct.** The payoff of slide 3, in slide 3's own form: the inheritance bars on the same scale
+(HK$24.4M today), their own way {{own_legacy_sold}} in rose, the plan {{plan_legacy_sold}} in crimson at 72 px, the only
+accent; under them, the plan leaves more in {{plan_legacy_more_pct}} of those futures and releases the home at 65, not
+by force at about {{own_sale_age}}. Right: mirror wills with staged trusts (a 25 · 30 · 35 track), a guardian for Chloe,
+the scholarship; lede "Signed in the first three months, for under HK$25K"; on the floor, level with the left, "Control,
+not tax" (estate duty abolished 2006). The title house is complete with its roof crimson (`house.progress3d(6)`).
 - **The payoff of slide 3:** in the {{own_sold_pct}} of futures where their own way sells the flat, what Ryan and
   Chloe inherit in the same markets: their own way {{own_legacy_sold}} vs the plan {{plan_legacy_sold}} (two bars, the
   plan in the accent; the plan leaves more in {{plan_legacy_more_pct}} of them; today's money, measured).
@@ -539,6 +565,16 @@ downgrade rule are in the notes.
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**Drafted 24 Oct.** The growth in three facts across the top (2021; RMB 3M per investor since 2024, from RMB
+1M; securities firms admitted in 2024), then the two flows on one boundary, drawn north up: the nine cities in a rose
+band, Hong Kong and Macao in a light band (not wine: it sat on the conclusion bar as a second wine strip). Each arrow
+carries one half of the title. Northbound is dashed wine, kept out today: "For the Wongs: a tool for later". Southbound
+is solid crimson: "For us: the market we want to serve", with the advice rule. Above the boundary, what each flow is
+(the investors or products on the mainland side); below it, what it means on the Hong Kong side. Facts checked on 24
+Oct against the HKMA's Southbound page (revised 11 May 2026): "Without the request or agreement from the investors,
+Hong Kong banks will not proactively conduct" cross-boundary solicitation or recommendation; the individual quota is
+RMB 3M (RMB 1.5M each if a bank and a securities firm are both used); eligible funds are rated low to medium-high risk
+and non-complex. Not on screen: the in-person exception on that page, and "RMB 150bn each way" (§9).
 - The two flows between Hong Kong and Macao and the nine mainland Greater Bay Area cities; the advice rule on
   Southbound (without the investor's request or agreement, Hong Kong banks don't solicit or recommend across the
   boundary; HKMA Southbound page, checked 22 Oct); facts: since 2021; up to RMB 3M per investor since 2024 (RMB 1.5M
@@ -549,10 +585,22 @@ downgrade rule are in the notes.
 - Bar: "Under the Connect, an adviser's value is a clear, suitable answer when the client asks."
 
 ### 14 · Who we want to become (all; 1:10)
+**Drafted 24 Oct.** One column a speaker, in speaking order, each with an icon for the work: where (Hong Kong;
+East and Southeast Asia; Asia-Pacific; across the boundary), the goal in five years and its link to the Connect (the
+script's words), "In this plan, I led" (from the written case p.14, its owner notes and each statement; **each member
+to confirm his line**), then "What this plan taught me" on mist, level across the four. Win's lesson is a dashed
+placeholder until he gives it. Bar: "What the Wongs taught all four of us: a plan is a set of choices between people,
+each made clear" (it draws the three lessons together; the title already says the aim).
 Four cards: the goal in five years, what this plan taught each of us, the link to the Connect (personal statement,
 proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.**
 
 ### 15 · Close (Pete, all; 0:15)
+**Drafted 24 Oct.** The cover mirrored: "Built to Last", the three results the talk promised ({{switch_89}}
+from {{own_89}}; {{plan_legacy_sold}} where their own way leaves {{own_legacy_sold}}; the home their choice at 65, not
+forced at about {{own_sale_age}}), "Thank you" and the team at the foot. On the wine panel, where the cover had the
+family, the house built for them, complete (slide 4's model in light tones, assembled closer), labelled with the
+written case's four pillars from the roof down: what passes on; a place for every voice (Calls 4, 5); income for life
+(2, 3); protected first (1).
 "Built to Last"; the five calls in one line each; the home their choice; the inheritance kept; the team; "Thank you."
 
 ## 6. The look

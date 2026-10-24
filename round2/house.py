@@ -216,7 +216,8 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
 def progress3d(call, w=66, W=176, D=132, hf=18, hw=58, rh=52, gap=12, gx=6, ov=12, c=0.90, s=0.34):
     """The small house beside a call slide's title, as slide 4's 3D model in miniature (24 Oct, Pete): earlier calls built
     in the house's colours, this call crimson, the calls still to come (and the roof, slide 12) as dashed ghosts. White
-    seams between the faces keep it crisp at icon size."""
+    seams between the faces keep it crisp at icon size. call=6 is slide 12: every call built, the roof
+    (what passes on) crimson."""
     st = {str(k): "done" for k in range(1, call)}
     st[str(call)] = "on"
     zf = (0, hf)
@@ -249,9 +250,10 @@ def progress3d(call, w=66, W=176, D=132, hf=18, hw=58, rh=52, gap=12, gx=6, ov=1
         add([(x0, y1, za), (x1, y1, za), (x1, y1, zb), (x0, y1, zb)], state, 1, col)
         add([(x1, y0, za), (x1, y1, za), (x1, y1, zb), (x1, y0, zb)], state, 2, col)
     x0, x1, y0, y1 = -ov, W + ov, -ov, D + ov
-    add([(x0, y0, zr), (x0, y1, zr), (half, y1, zr + rh), (half, y0, zr + rh)], "todo", 0, LAYER["roof"])
-    add([(half, y0, zr + rh), (half, y1, zr + rh), (x1, y1, zr), (x1, y0, zr)], "todo", 2, LAYER["roof"])
-    add([(x0, y1, zr), (x1, y1, zr), (half, y1, zr + rh)], "todo", 1, LAYER["roof"])
+    roof = "on" if call >= 6 else "todo"
+    add([(x0, y0, zr), (x0, y1, zr), (half, y1, zr + rh), (half, y0, zr + rh)], roof, 0, LAYER["roof"])
+    add([(half, y0, zr + rh), (half, y1, zr + rh), (x1, y1, zr), (x1, y0, zr)], roof, 2, LAYER["roof"])
+    add([(x0, y1, zr), (x1, y1, zr), (half, y1, zr + rh)], roof, 1, LAYER["roof"])
     pts2 = [[XY(*q) for q in f[0]] for f in faces]
     xs = [p[0] for f in pts2 for p in f]
     ys = [p[1] for f in pts2 for p in f]

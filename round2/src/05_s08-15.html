@@ -62,361 +62,277 @@
   <aside class="notes">WIN: Call five: values and innovation, with guardrails. Carmen asked for 20 to 25% in ESG. We reach 25%, up from 11%, in SFC-listed funds that must pass two ratings. Crypto isn't yes or no, it's sized per person. Adrian holds none; Carmen up to 2%, through an ETF; Ryan keeps his HK$500K but adds nothing new, so its share falls from 74% of his wealth to 20% by 35. Lookbua. [Notes: The 25% replaces like for like (the global equity core, part of the bonds, half of each MPF), so each parent's risk stays where Call 4 set it; no return premium is assumed. Two ratings because ESG raters agree far less than credit raters (correlation about 0.54 against 0.99, Berg, Kölbel and Rigobon 2022); green bond funds also check every bond against ICMA; a downgraded fund is replaced within three months. Crypto: a platform that loses its licence means a move to an ETF within 30 days; self-custody only with a key-recovery plan, so heirs can inherit it. If the MPF move can't be made, the family still holds about 20%. Ryan at 30: about 32%; a rally more than 10 points above his path is trimmed back. A 70% fall costs Carmen about HK$29K at her cap. The three funds (written case Figure 16): BOC-Prudential MSCI World ESG Index Fund HK$1.49M, Sun Life MPF Global Low Carbon Index Fund HK$0.84M, Allianz Green Bond HK$0.31M.]</aside>
 </section>
 
-<!-- v11 slide 10 (24 Oct, enriched): Will it hold? Four stress tests on the left (paired bars), a methodology band
-     under them; five named defences on the right. All numbers measured in the same 10,000 markets (model/run_model.py). -->
+<!-- slide 10 (24 Oct, drafted fresh): will it hold? Each hard test as one row: the four decisions alone (hollow) to the
+     full plan (filled) on one scale, then what holds it; only the title's test, the lost job, in crimson. The risks the
+     tests don't cover, each with its defence (written case Figure 26). -->
 <section class="slide lb c9" data-time="0:30" data-speaker="Lookbua">
   <header class="hd">
     <p class="kick">Will it hold?</p>
     <h2>Tested against the worst: even if Adrian loses his job at 60, the plan holds</h2>
   </header>
-  <div class="panels">
-    <div class="pn" style="grid-column:span 7">
-      <h3>Four tests: the four decisions alone vs the full plan</h3>
-      <p class="lede">Chance the money lasts to Carmen's 89, same 10,000 markets</p>
-      <div class="body">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <div style="display:grid;grid-template-columns:200px 1fr 72px;column-gap:12px;align-items:center">
-            <div style="font:600 15px/1.2 var(--head)">Adrian loses his job at 60<span style="display:block;font-weight:400;color:var(--slate);font-size:12px;margin-top:2px">pay stops, before his annuity</span></div>
-            <div style="position:relative;height:34px">
-              <div style="position:absolute;left:0;top:0;height:14px;width:30%;background:var(--grey)"></div>
-              <div style="position:absolute;left:0;top:18px;height:14px;width:83%;background:var(--accent)"></div>
-              <span style="position:absolute;left:calc(30% + 6px);top:-1px;font:600 11px/1 var(--head);color:var(--slate)">{{adrian60_89}}</span>
-            </div>
-            <strong style="font:700 22px/1 var(--head);color:var(--accent);text-align:right">{{rec_adrian60_89}}</strong>
-          </div>
-          <div style="display:grid;grid-template-columns:200px 1fr 72px;column-gap:12px;align-items:center">
-            <div style="font:600 15px/1.2 var(--head)">Low returns every year<span style="display:block;font-weight:400;color:var(--slate);font-size:12px;margin-top:2px">equities 3%, bonds 1%</span></div>
-            <div style="position:relative;height:34px">
-              <div style="position:absolute;left:0;top:0;height:14px;width:32%;background:var(--grey)"></div>
-              <div style="position:absolute;left:0;top:18px;height:14px;width:95%;background:var(--wine)"></div>
-              <span style="position:absolute;left:calc(32% + 6px);top:-1px;font:600 11px/1 var(--head);color:var(--slate)">{{stressA_89}}</span>
-            </div>
-            <strong style="font:700 22px/1 var(--head);color:var(--wine);text-align:right">{{rec_lowret_89}}</strong>
-          </div>
-          <div style="display:grid;grid-template-columns:200px 1fr 72px;column-gap:12px;align-items:center">
-            <div style="font:600 15px/1.2 var(--head)">High inflation, dearer medical<span style="display:block;font-weight:400;color:var(--slate);font-size:12px;margin-top:2px">inflation 4%, medical trend +2pt</span></div>
-            <div style="position:relative;height:34px">
-              <div style="position:absolute;left:0;top:0;height:14px;width:28%;background:var(--grey)"></div>
-              <div style="position:absolute;left:0;top:18px;height:14px;width:92%;background:var(--wine)"></div>
-              <span style="position:absolute;left:calc(28% + 6px);top:-1px;font:600 11px/1 var(--head);color:var(--slate)">{{stressB_89}}</span>
-            </div>
-            <strong style="font:700 22px/1 var(--head);color:var(--wine);text-align:right">{{rec_stressB_89}}</strong>
-          </div>
-          <div style="display:grid;grid-template-columns:200px 1fr 72px;column-gap:12px;align-items:center">
-            <div style="font:600 15px/1.2 var(--head)">Carmen lives to 95<span style="display:block;font-weight:400;color:var(--slate);font-size:12px;margin-top:2px">six extra years to fund</span></div>
-            <div style="position:relative;height:34px">
-              <div style="position:absolute;left:0;top:9px;height:16px;width:99%;background:var(--wine)"></div>
-            </div>
-            <strong style="font:700 22px/1 var(--head);color:var(--wine);text-align:right">{{guardswitch_95}}</strong>
-          </div>
-          <div style="display:flex;gap:16px;font:400 11px/1 var(--text);color:var(--slate);margin-top:2px">
-            <span style="display:inline-flex;align-items:center;gap:6px"><i style="display:inline-block;width:16px;height:8px;background:var(--grey)"></i>four decisions alone</span>
-            <span style="display:inline-flex;align-items:center;gap:6px"><i style="display:inline-block;width:16px;height:8px;background:var(--accent)"></i>full plan, lost job</span>
-            <span style="display:inline-flex;align-items:center;gap:6px"><i style="display:inline-block;width:16px;height:8px;background:var(--wine)"></i>full plan</span>
-          </div>
-          <!-- Methodology band -->
-          <div style="margin-top:4px;padding:10px 12px;background:var(--mist);border-left:3px solid var(--ink);display:flex;align-items:center;gap:12px">
-            <svg class="ic" style="width:20px;height:20px;color:var(--ink);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none"><use href="#i-scale"/></svg>
-            <p style="font:400 11px/1.4 var(--text);color:var(--ink);margin:0"><b style="font-weight:700">How we measured:</b> each test re-runs the same 10,000 simulated markets with one input changed; results are decisions compared, not forecasts. Guardrails hold essentials at 40% of today's budget even in the worst 1-in-20 year.</p>
-          </div>
-        </div>
+  <div class="panels q10">
+    <div class="pn" style="grid-column:span 8">
+      <h3>Four hard tests, in the same 10,000 markets…</h3>
+      <p class="lede q10e"><span class="q10k"><i class="o"></i>the four decisions alone</span><span class="q10k"><i class="p"></i>the full plan, with the review at 75 and the spending rules</span></p>
+      <div class="q10h"><span>The test</span><span>Chance the money lasts to Carmen's 89</span><span>What holds it</span></div>
+      <div class="q10c">
+        <div class="q10r on" data-b="2"><div class="q10l"><b>Adrian's job ends at 60</b><span>no pay or MPF to 65, no severance</span></div>
+          <div class="q10t"><span class="q10g" style="left:{{adrian60_89}};width:calc({{rec_adrian60_89}} - {{adrian60_89}})"></span><i class="o" style="left:{{adrian60_89}}"><em>{{adrian60_89}}</em></i><i class="p" style="left:{{rec_adrian60_89}}"><em>{{rec_adrian60_89}}</em></i></div>
+          <p class="q10d"><svg class="ic"><use href="#i-shield-check"/></svg>the 12-month reserve, the spending rules, a full review</p></div>
+        <div class="q10r " data-b="3"><div class="q10l"><b>Low returns, every year</b><span>shares 4%, bonds 2.5%, to 2066</span></div>
+          <div class="q10t"><span class="q10g" style="left:{{stressA_89}};width:calc({{rec_lowret_89}} - {{stressA_89}})"></span><i class="o" style="left:{{stressA_89}}"><em>{{stressA_89}}</em></i><i class="p" style="left:{{rec_lowret_89}}"><em>{{rec_lowret_89}}</em></i></div>
+          <p class="q10d"><svg class="ic"><use href="#i-shield-check"/></svg>the spending rules; Adrian's Treasury ladder</p></div>
+        <div class="q10r " data-b="3"><div class="q10l"><b>Inflation and medical costs</b><span>inflation 3.5%, medical 8.5% a year</span></div>
+          <div class="q10t"><span class="q10g" style="left:{{stressB_89}};width:calc({{rec_stressB_89}} - {{stressB_89}})"></span><i class="o" style="left:{{stressB_89}}"><em>{{stressB_89}}</em></i><i class="p" style="left:{{rec_stressB_89}}"><em>{{rec_stressB_89}}</em></i></div>
+          <p class="q10d"><svg class="ic"><use href="#i-shield-check"/></svg>the review at 75; the spending rules</p></div>
+        <div class="q10r " data-b="4"><div class="q10l"><b>Carmen lives to 95</b><span>six years past the plan's 89</span></div>
+          <div class="q10t"><span class="q10g" style="left:{{ladder_5_95}};width:calc({{guardswitch_95}} - {{ladder_5_95}})"></span><i class="o" style="left:{{ladder_5_95}}"><em>{{ladder_5_95}}</em></i><i class="p" style="left:{{guardswitch_95}}"><em>{{guardswitch_95}}</em></i></div>
+          <p class="q10d"><svg class="ic"><use href="#i-shield-check"/></svg>the annuities pay for life</p></div>
       </div>
+      <div class="q10x"><span></span><span class="ax"><i>0%</i><i>50%</i><i>100%</i></span><span></span></div>
     </div>
-    <div class="pn" style="grid-column:span 5">
-      <h3>Every risk has a named defence</h3>
-      <p class="lede">The risk register in brief (proposal Figure 26)</p>
-      <div class="body">
-        <ul style="display:flex;flex-direction:column;gap:9px;list-style:none;padding:0;margin:0">
-          <li style="display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:8px 10px;background:var(--mist)"><svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px"><use href="#i-users"/></svg><div><b style="font:700 13px/1.3 var(--head)">Suitability</b><p style="font:400 12px/1.4 var(--text);color:var(--slate);margin-top:2px">one risk profile per person: Adrian 40, Carmen 60, Ryan his own; written in the IPS</p></div></li>
-          <li style="display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:8px 10px;background:var(--mist)"><svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px"><use href="#i-shield-check"/></svg><div><b style="font:700 13px/1.3 var(--head)">Crypto rules</b><p style="font:400 12px/1.4 var(--text);color:var(--slate);margin-top:2px">HKEX ETFs or SFC-licensed platforms; no lending or leverage; moves to ETF in 30 days if a platform loses its licence</p></div></li>
-          <li style="display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:8px 10px;background:var(--mist)"><svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px"><use href="#i-leaf"/></svg><div><b style="font:700 13px/1.3 var(--head)">Greenwashing</b><p style="font:400 12px/1.4 var(--text);color:var(--slate);margin-top:2px">two ratings each (MSCI A+, Sustainalytics risk &lt;20); ICMA check on green bonds; replace within three months on downgrade</p></div></li>
-          <li style="display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:8px 10px;background:var(--mist)"><svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px"><use href="#i-scale"/></svg><div><b style="font:700 13px/1.3 var(--head)">Model risk</b><p style="font:400 12px/1.4 var(--text);color:var(--slate);margin-top:2px">we compare decisions in the same markets; returns are normal and uncorrelated, which understates crashes</p></div></li>
-          <li style="display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:8px 10px;background:var(--mist)"><svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px"><use href="#i-briefcase"/></svg><div><b style="font:700 13px/1.3 var(--head)">Business unsold</b><p style="font:400 12px/1.4 var(--text);color:var(--slate);margin-top:2px">buy-sell with co-founder from month 1; key-person cover; even if the business never sells, the plan still holds in 66%</p></div></li>
-        </ul>
-      </div>
+    <div class="pn" style="grid-column:span 4" data-b="5">
+      <h3>…and every other risk has a named defence</h3>
+      <p class="lede">From our written case's risk register</p>
+      <ul class="q10m">
+        <li><span class="ci"><svg class="ic"><use href="#i-briefcase"/></svg></span><div><b>The business doesn't sell</b><p>a buy-sell agreement now; the plan lasts without the sale</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-users"/></svg></span><div><b>Three different risk appetites</b><p>one risk profile and one portfolio per person</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-bitcoin"/></svg></span><div><b>Crypto rules or licences change</b><p>licensed channels only; into an ETF within 30 days</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-leaf"/></svg></span><div><b>Greenwashing</b><p>two ESG ratings per equity fund; replaced within three months of a downgrade</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-chart-line"/></svg></span><div><b>Model risk</b><p>we compare decisions in the same markets; we don't forecast</p></div></li>
+      </ul>
     </div>
   </div>
-  <p class="bar">It holds when the hardest things happen, and it starts this month.</p>
-  <footer class="ft"><p class="src">Model, 10,000 markets (`model/run_model.py`). We compare decisions in the same markets, we don't forecast them; premiums from rate cards until quotes arrive; the tier switch is guaranteed under VHIS rules.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><b>Will it hold</b><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">10 / 15</span></footer>
+  <p class="tr9" data-b="5"><svg class="ic"><use href="#i-scale"/></svg><b>The price of holding</b>in years of low returns, the rules trim typical spending to about {{rec_lowret_typical_pct}} of the budget; essentials are never cut.</p>
+  <p class="bar" data-b="5">It holds when the hardest things happen, and it starts this month.</p>
+  <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89 (95 in the last test), 10,000 simulated markets (measured): decisions compared in the same markets, not forecasts. Written case §11, Figure 26, A1.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><b>Will it hold</b><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">10 / 15</span></footer>
   <aside class="notes">LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60. The four decisions alone last in {{adrian60_89}} of futures; the full plan, {{rec_adrian60_89}}. Years of low returns, or high inflation with dearer medical care: {{rec_stressB_89}} or better. And if Carmen lives to 95: {{guardswitch_95}}. [Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).]</aside>
 </section>
 
-<!-- v11 slide 11 (24 Oct, rebuilt): three phase panels, dated line, two lanes under it (Ryan & Chloe's story,
-     reviews). Content from Round2_Deck_Plan.md §5 slide 11. -->
+<!-- slide 11 (24 Oct, drafted fresh): what happens when. The first year as a staircase of deadlines (each bar ends on
+     its month), then the dated steps on one line, then the reviews that follow life as it changes (written case §10,
+     Figure 23). The title joins the storyline's and the written case's: it starts now, closes the gaps within a year,
+     then dates trigger each step. -->
 <section class="slide lb c9" data-time="0:30" data-speaker="Lookbua">
   <header class="hd">
     <p class="kick">What happens when</p>
-    <h2>It starts this month; close every gap within the first year</h2>
+    <h2>It starts this month and closes every gap within a year; after that, dates trigger each step</h2>
   </header>
-  <div style="margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);column-gap:14px">
-    <div style="padding:10px 12px;background:var(--accent);color:#fff">
-      <b style="display:block;font:700 12px/1.2 var(--head);letter-spacing:0.5px">PHASE 1 · MONTHS 1-12</b>
-      <p style="font:700 16px/1.2 var(--head);margin-top:4px">This year: close every gap</p>
-      <p style="font:400 12px/1.4 var(--text);margin-top:4px;opacity:0.92">Papers, cover, portfolios: the plan goes live.</p>
-    </div>
-    <div style="padding:10px 12px;background:var(--wine);color:#fff">
-      <b style="display:block;font:700 12px/1.2 var(--head);letter-spacing:0.5px">PHASE 2 · 2028-2036</b>
-      <p style="font:700 16px/1.2 var(--head);margin-top:4px">Hand over to the next generation</p>
-      <p style="font:400 12px/1.4 var(--text);margin-top:4px;opacity:0.92">Chloe starts, the business is passed on.</p>
-    </div>
-    <div style="padding:10px 12px;background:var(--accent-deep);color:#fff">
-      <b style="display:block;font:700 12px/1.2 var(--head);letter-spacing:0.5px">PHASE 3 · 2037 ONWARDS</b>
-      <p style="font:700 16px/1.2 var(--head);margin-top:4px">Turn assets into income</p>
-      <p style="font:400 12px/1.4 var(--text);margin-top:4px;opacity:0.92">Home and MPF become a lifetime floor.</p>
-    </div>
-  </div>
-  <div style="flex:1;margin-top:16px;display:flex;flex-direction:column;min-height:0">
-    <div style="position:relative;padding-top:22px">
-      <div style="position:absolute;left:0;right:0;top:8px;height:2px;background:var(--ink)"></div>
-      <div style="display:grid;grid-template-columns:repeat(9,1fr);column-gap:8px">
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent)">Month 1</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">wills, PoA, buy-sell; joint account; idle cash moved</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent)">Months 1-3</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">disability, CI, medical, term-life bound</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent)">Months 1-6</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">a portfolio each; IPS signed; voluntary MPF</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent)">Month 12</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">first family meeting: charter, Ryan's plan</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--wine);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--wine)">2028</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">Chloe's offer; HK$2.57M converts to fees</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--wine);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--wine)">2035</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">business sale begins, co-founder &amp; managers</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent-deep);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent-deep)">2037</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">mortgage cleared; Adrian's annuity; home released</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent-deep);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent-deep)">2039</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">Carmen's annuity; business fully sold; rules begin</p></div>
-        <div style="position:relative"><span style="position:absolute;left:0;top:-18px;width:12px;height:12px;background:var(--accent);border-radius:50%"></span><b style="display:block;font:700 12px/1 var(--head);color:var(--accent)">2047</b><p style="font:400 11px/1.35 var(--text);color:var(--ink);margin-top:4px">medical review at Adrian's 75: Flexi -> Standard</p></div>
+  <div class="q11">
+    <div data-b="1">
+      <h3>This year: close every gap…</h3>
+      <div class="q11g">
+        <div class="q11b" style="--e:8.33%"><p><b>Wills, a guardian, powers of attorney</b>and a joint account that pays every bill for a year</p><div class="bb"><i></i><em>month 1</em></div></div>
+        <div class="q11b" style="--e:25%"><p><b>The cover, and the buy-sell agreement</b>four covers for about HK$100K a year</p><div class="bb"><i></i><em>by month 3</em></div></div>
+        <div class="q11b" style="--e:50%"><p><b>A portfolio each</b>the investment policy signed; HK$45K a year less in fees</p><div class="bb"><i></i><em>by month 6</em></div></div>
+        <div class="q11b ms" style="--e:100%"><p><b>The first family meeting</b>a family charter, Ryan's plan, the budget for one</p><div class="bb"><i></i><em>month 12</em></div></div>
       </div>
     </div>
-    <div style="margin-top:12px;padding:8px 12px;background:var(--mist);display:flex;align-items:center;gap:12px;border-left:3px solid var(--wine)">
-      <span style="font:700 11px/1 var(--head);color:var(--wine);letter-spacing:0.5px;width:120px;flex:none">RYAN &amp; CHLOE</span>
-      <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;font:400 11px/1.3 var(--text);color:var(--ink)">
-        <span><b style="font-weight:700;color:var(--wine)">2032:</b> Chloe's first job</span>
-        <span><b style="font-weight:700;color:var(--wine)">2037:</b> Ryan 35, final trust tranche</span>
-        <span><b style="font-weight:700;color:var(--wine)">25 / 30 / 35:</b> staged trusts per child</span>
-        <span><b style="font-weight:700;color:var(--wine)">Scholarship:</b> funded from Carmen's trust</span>
+    <div data-b="2">
+      <h3>…then dates trigger each step</h3>
+      <div class="q11t">
+        <div><span class="y">2028</span><span class="ci"><svg class="ic"><use href="#i-graduation-cap"/></svg></span><b>Chloe accepts an offer</b><p>the first fees converted: no currency risk</p></div>
+        <div><span class="y">2035–39</span><span class="ci"><svg class="ic"><use href="#i-briefcase"/></svg></span><b>Carmen's business</b><p>sold in stages to her co-founder and managers</p></div>
+        <div><span class="y">2037</span><span class="ci"><svg class="ic"><use href="#i-house"/></svg></span><b>Adrian retires</b><p>the mortgage cleared, his annuity, the home released</p></div>
+        <div><span class="y">2039</span><span class="ci"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><b>Carmen retires</b><p>her annuity; the spending rules begin</p></div>
+        <div><span class="y">2047</span><span class="ci"><svg class="ic"><use href="#i-heart-pulse"/></svg></span><b>The medical review</b><p>at Adrian's 75, the tier reviewed</p></div>
       </div>
-    </div>
-    <div style="margin-top:6px;padding:8px 12px;background:var(--mist);display:flex;align-items:center;gap:12px;border-left:3px solid var(--ink)">
-      <span style="font:700 11px/1 var(--head);color:var(--ink);letter-spacing:0.5px;width:120px;flex:none">REVIEWS</span>
-      <div style="flex:1;display:grid;grid-template-columns:1fr 1fr 2fr;gap:10px;font:400 11px/1.3 var(--text);color:var(--ink)">
-        <span><b style="font-weight:700">Quarterly:</b> portfolio</span>
-        <span><b style="font-weight:700">Annual:</b> family meeting</span>
-        <span><b style="font-weight:700">Event-driven:</b> death, disability, business sale, 20% market fall, 1.5-pt rate move</span>
+      <div class="q11k" data-b="2">
+        <h4>Alongside, Ryan and Chloe</h4>
+        <div><span><b>Now</b>Ryan's own plan: 30% of his pay, his parents matching half to 2037</span><span><b>2032</b>Chloe starts work, with a plan of her own</span><span><b>Beyond</b>their inheritance, passed on in stages at 25, 30 and 35</span></div>
       </div>
     </div>
   </div>
-  <p class="bar">For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it.</p>
-  <footer class="ft"><p class="src">Dates: proposal §10 (the roadmap) and Figure 23. The 2047 date is Adrian's 75, the VHIS-guaranteed Flexi -> Standard switch (VHIS Code of Practice s.2.11).</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><b>What next</b><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">11 / 15</span></footer>
+  <div class="q11r" data-b="3"><b><svg class="ic"><use href="#i-refresh-cw"/></svg>Reviewed as life changes</b><span><b>Every quarter</b>the portfolio</span><span><b>Every year</b>a family meeting; rebalance; the mortgage, cover and ESG list reviewed</span><span><b>At once</b>after a death, a disability, a business sale, a 20% market fall or a 1.5-point rate move</span></div>
+  <p class="bar" data-b="3">For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it.</p>
+  <footer class="ft"><p class="src">The roadmap: written case §10, Figure 23, with each action's owner and cost.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><b>What next</b><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">11 / 15</span></footer>
   <aside class="notes">LOOKBUA: It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.</aside>
 </section>
 
-<!-- v11 slide 12 (24 Oct, enriched): What passes on. Left: two bars same-markets ($2.3M vs $7.7M); middle:
-     across-all-futures legacy by home choice (keep / reverse mortgage / downsize); right: how it passes on, the
-     scholarship, control-not-tax notes. From Round2_Deck_Plan.md §5 slide 12. -->
+<!-- slide 12 (24 Oct, drafted fresh): what passes on, the payoff of slide 3. Slide 3's inheritance bars redrawn on
+     the same scale with the plan beside their own way, in the same futures; then how it passes on. The title house is
+     complete, its roof crimson. -->
 <section class="slide lb c9" data-time="0:25" data-speaker="Pete">
-  <header class="hd">
+  <header class="hd hh">
+    <svg class="house mini" viewBox="-146 -202 332 318" width="66" height="63" aria-hidden="true"><polygon points="0,-23 173,42 40,92 -133,27" fill="#A4616A" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-133,45 40,110 40,92 -133,27" fill="#7D1D2A" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="173,60 40,110 40,92 173,42" fill="#641722" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="0,-88 76,-59 -42,-14 -119,-43" fill="#BF8890" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-119,15 -42,44 -42,-14 -119,-43" fill="#A35560" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="76,-1 -42,44 -42,-14 76,-59" fill="#82444D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="82,-57 158,-28 40,17 -37,-12" fill="#BF8890" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-37,46 40,75 40,17 -37,-12" fill="#A35560" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="158,30 40,75 40,17 158,-28" fill="#82444D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="0,-158 76,-129 -42,-84 -119,-113" fill="#D6AEB3" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-119,-55 -42,-26 -42,-84 -119,-113" fill="#C48C93" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="76,-71 -42,-26 -42,-84 76,-129" fill="#9D7076" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="82,-127 158,-98 40,-53 -37,-82" fill="#D6AEB3" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-37,-24 40,5 40,-53 -37,-82" fill="#C48C93" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="158,-40 40,5 40,-53 158,-98" fill="#9D7076" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="0,-178 -140,-125 -50,-143 90,-196" fill="#C9505D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="90,-196 -50,-143 40,-57 180,-110" fill="#7A1622" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/><polygon points="-140,-125 40,-57 -50,-143" fill="#A81E2D" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/></svg>
     <p class="kick">What passes on</p>
     <h2>In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}}</h2>
   </header>
   <div class="panels">
-    <div class="pn" style="grid-column:span 7">
-      <h3>Two bars, same {{own_sold_pct}} of futures where the home was sold</h3>
-      <p class="lede">What Ryan and Chloe inherit, today's money (measured)</p>
-      <div class="body">
-        <div style="display:flex;flex-direction:column;gap:16px;margin-top:8px">
-          <div>
-            <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:6px">
-              <span style="font:600 14px/1.2 var(--head);width:120px">Their own way</span>
-              <strong style="font:700 28px/1 var(--head);color:var(--grey)">{{own_legacy_sold}}</strong>
-            </div>
-            <div style="height:26px;background:var(--mist);position:relative">
-              <div style="position:absolute;left:0;top:0;bottom:0;width:30%;background:var(--grey)"></div>
-            </div>
-          </div>
-          <div>
-            <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:6px">
-              <span style="font:600 14px/1.2 var(--head);width:120px">With the plan</span>
-              <strong style="font:700 42px/1 var(--head);color:var(--accent);letter-spacing:-1px">{{plan_legacy_sold}}</strong>
-              <span style="font:400 12px/1.3 var(--text);color:var(--slate);margin-left:6px">more in {{plan_legacy_more_pct}} of them</span>
-            </div>
-            <div style="height:26px;background:var(--mist);position:relative">
-              <div style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--accent)"></div>
-            </div>
-          </div>
-        </div>
-        <!-- Legacy by home choice, across all futures -->
-        <div style="margin-top:16px;padding:10px 12px;background:var(--mist);border-left:3px solid var(--wine)">
-          <b style="display:block;font:700 12px/1.2 var(--head);color:var(--wine);letter-spacing:0.5px;margin-bottom:8px">ACROSS ALL FUTURES, BY THE HOME CHOICE AT 65</b>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:12px;align-items:end">
-            <div style="text-align:center">
-              <strong style="display:block;font:700 20px/1 var(--head);color:var(--wine)">{{legacy_keep}}</strong>
-              <span style="display:block;font:400 11px/1.3 var(--text);color:var(--slate);margin-top:4px">Keep the home</span>
-            </div>
-            <div style="text-align:center">
-              <strong style="display:block;font:700 20px/1 var(--head);color:var(--wine)">{{legacy_rmp}}</strong>
-              <span style="display:block;font:400 11px/1.3 var(--text);color:var(--slate);margin-top:4px">Reverse mortgage</span>
-            </div>
-            <div style="text-align:center">
-              <strong style="display:block;font:700 20px/1 var(--head);color:var(--wine)">{{legacy_down}}</strong>
-              <span style="display:block;font:400 11px/1.3 var(--text);color:var(--slate);margin-top:4px">Downsize</span>
-            </div>
-          </div>
-        </div>
+    <div class="pn q12l" style="grid-column:span 7">
+      <h3>What Ryan and Chloe inherit, at Carmen's 89…</h3>
+      <p class="lede">In the {{own_sold_pct}} of futures where their own way sells the home; the same markets, today's money (measured)</p>
+      <div class="q12b">
+        <div class="r"><span>Today</span><div class="t"><i class="g" style="width:100%"><b>HK$24.4M</b></i></div></div>
+        <div class="r o"><span>Their own way</span><div class="t"><i style="width:[[own_legacy_sold_w]]"></i><strong>{{own_legacy_sold}}</strong></div></div>
+        <div class="r on" data-b="2"><span>With the plan</span><div class="t"><i style="width:[[plan_legacy_sold_w]]"></i><strong>{{plan_legacy_sold}}</strong></div></div>
       </div>
+      <p class="q12n" data-b="2"><b>The plan leaves more in {{plan_legacy_more_pct}} of those futures,</b> and the home is released at 65, on their terms, not sold at about {{own_sale_age}}.</p>
     </div>
-    <div class="pn" style="grid-column:span 5">
-      <h3>Passed on in stages, with a purpose</h3>
-      <p class="lede">Mirror wills, staged trusts, a scholarship</p>
-      <div class="body">
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="padding:10px 12px;background:var(--mist);border-left:3px solid var(--wine)">
-            <b style="font:700 13px/1.3 var(--head)">Staged trusts, not a lump sum</b>
-            <div style="display:flex;gap:8px;margin-top:8px">
-              <div style="flex:1;text-align:center;padding:6px 0;background:var(--rose)"><strong style="display:block;font:700 18px/1 var(--head);color:var(--wine)">25</strong><span style="font:400 10px/1.2 var(--text);color:var(--slate)">a third</span></div>
-              <div style="flex:1;text-align:center;padding:6px 0;background:var(--rose)"><strong style="display:block;font:700 18px/1 var(--head);color:var(--wine)">30</strong><span style="font:400 10px/1.2 var(--text);color:var(--slate)">a third</span></div>
-              <div style="flex:1;text-align:center;padding:6px 0;background:var(--rose)"><strong style="display:block;font:700 18px/1 var(--head);color:var(--wine)">35</strong><span style="font:400 10px/1.2 var(--text);color:var(--slate)">the rest</span></div>
-            </div>
-            <p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:6px">Mirror wills; guardian for Chloe named now, while she is a minor.</p>
-          </div>
-          <div style="padding:10px 12px;background:var(--mist);border-left:3px solid var(--accent);display:flex;gap:10px;align-items:flex-start">
-            <svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:2px"><use href="#i-leaf"/></svg>
-            <div><b style="font:700 13px/1.3 var(--head)">Scholarship, ≈HK$30K a year</b><p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:2px">In sustainable design: Carmen's mission, Chloe's interest; funded from the trust at Carmen's death.</p></div>
-          </div>
-          <div style="padding:10px 12px;background:var(--mist);display:flex;gap:10px;align-items:flex-start">
-            <svg class="ic" style="width:20px;height:20px;color:var(--slate);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:2px"><use href="#i-scale"/></svg>
-            <div><b style="font:700 13px/1.3 var(--head)">Control, not tax</b><p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:2px">Estate duty abolished 2006. MPF passes to the estate (no nomination); the wills cover it, the joint account bridges probate.</p></div>
-          </div>
-        </div>
-      </div>
+    <div class="pn" style="grid-column:span 5" data-b="3">
+      <h3>…passed on in stages, with a purpose</h3>
+      <p class="lede">Signed in the first three months, for under HK$25K</p>
+      <ul class="q12m">
+        <li><span class="ci"><svg class="ic"><use href="#i-scroll-text"/></svg></span><div><b>Mirror wills, with staged trusts</b><p>each child's share paid in stages; the MPF, which has no nominee, passes through the wills</p><div class="q12s"><span>25</span><span>30</span><span>35</span></div></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-users"/></svg></span><div><b>A guardian named for Chloe</b><p>while she is 16, in the same wills</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-graduation-cap"/></svg></span><div><b>A scholarship in sustainable design</b><p>about HK$30K a year through a registered charity: Carmen's mission, Chloe's interest</p></div></li>
+      </ul>
+      <p class="q12n"><b>Control, not tax:</b> Hong Kong abolished estate duty in 2006, so the wills decide who receives what, and when.</p>
     </div>
   </div>
-  <p class="bar">Built to last: for their lifetimes, and after.</p>
-  <footer class="ft"><p class="src">Legacies: measured in the same 10,000 markets as slides 3 and 10, today's money. "Those futures" = the {{own_sold_pct}} where their own way must sell the home. Succession: proposal §9.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><b>What next</b><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">12 / 15</span></footer>
+  <p class="bar" data-b="3">Built to last: for their lifetimes, and after.</p>
+  <footer class="ft"><p class="src">Inheritance at Carmen's 89: savings and home equity, less unpaid bills, today's money; the same 10,000 markets (measured). Succession: written case §9, Figure 22.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><b>What next</b><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">12 / 15</span></footer>
   <aside class="notes">PETE: The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}}, passed on in stages at 25, 30 and 35, with a scholarship in sustainable design: Carmen's mission, Chloe's interest. [Notes: the plan leaves more than their own way in {{plan_legacy_more_pct}} of those futures; part of the gap is our advice on the survivor budget and the medical review.]</aside>
 </section>
 
-<!-- v11 slide 13 (24 Oct, enriched): Wealth Management Connect. Southbound and Northbound flow blocks with the
-     HKMA advice rule, plus a facts strip (since 2021, RMB 3M, 1.5M split, securities firms 2024, non-complex).
-     For the Wongs: Northbound kept out today, revisited if Adrian's work moves across. From deck plan §5 slide 13. -->
+<!-- slide 13 (24 Oct, drafted fresh): the Connect. The scheme's growth in three facts, then the two flows on one
+     boundary, drawn north up: each arrow carries one half of the title. Northbound dashed (kept out today, a tool for
+     the Wongs later); Southbound solid crimson (the market we want to serve), with its advice rule. HKMA Southbound page,
+     revised 11 May 2026, checked 24 Oct. -->
 <section class="slide lb c9" data-time="0:40" data-speaker="Pete">
   <header class="hd">
     <p class="kick">Wealth Management Connect</p>
     <h2>The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve</h2>
   </header>
-  <!-- Facts strip -->
-  <div style="margin-top:14px;display:grid;grid-template-columns:repeat(4,1fr);column-gap:12px">
-    <div style="padding:8px 12px;background:var(--mist);border-top:3px solid var(--ink)">
-      <b style="display:block;font:700 11px/1 var(--head);color:var(--slate);letter-spacing:0.5px">SINCE</b>
-      <strong style="display:block;font:700 22px/1 var(--head);color:var(--ink);margin-top:4px">2021</strong>
-      <span style="font:400 11px/1.3 var(--text);color:var(--slate)">launched by HKMA, PBoC &amp; SFC</span>
-    </div>
-    <div style="padding:8px 12px;background:var(--mist);border-top:3px solid var(--ink)">
-      <b style="display:block;font:700 11px/1 var(--head);color:var(--slate);letter-spacing:0.5px">PER INVESTOR</b>
-      <strong style="display:block;font:700 22px/1 var(--head);color:var(--ink);margin-top:4px">RMB 3M</strong>
-      <span style="font:400 11px/1.3 var(--text);color:var(--slate)">1.5M each if bank + securities firm</span>
-    </div>
-    <div style="padding:8px 12px;background:var(--mist);border-top:3px solid var(--ink)">
-      <b style="display:block;font:700 11px/1 var(--head);color:var(--slate);letter-spacing:0.5px">ADMITTED 2024</b>
-      <strong style="display:block;font:700 22px/1 var(--head);color:var(--ink);margin-top:4px">Securities firms</strong>
-      <span style="font:400 11px/1.3 var(--text);color:var(--slate)">beside banks, broadening access</span>
-    </div>
-    <div style="padding:8px 12px;background:var(--mist);border-top:3px solid var(--ink)">
-      <b style="display:block;font:700 11px/1 var(--head);color:var(--slate);letter-spacing:0.5px">ELIGIBLE PRODUCTS</b>
-      <strong style="display:block;font:700 15px/1.2 var(--head);color:var(--ink);margin-top:4px">Low to medium-high risk</strong>
-      <span style="font:400 11px/1.3 var(--text);color:var(--slate)">non-complex only (HKMA)</span>
-    </div>
+  <div class="q13f" data-b="1">
+    <div><strong>2021</strong><span>launched across Hong Kong, Macao and nine mainland cities</span></div>
+    <div><strong>RMB 3M</strong><span>each investor's limit since 2024, up from RMB 1M</span></div>
+    <div><strong>2024</strong><span>securities firms admitted beside the banks; more funds on offer</span></div>
   </div>
-  <div class="panels" style="margin-top:16px">
-    <div class="pn" style="grid-column:span 7">
-      <h3>Two flows, Hong Kong &amp; Macao ⇄ nine GBA cities</h3>
-      <p class="lede">The adviser's value sits on one rule</p>
-      <div class="body">
-        <div style="display:flex;flex-direction:column;gap:12px;margin-top:6px">
-          <div style="padding:10px 14px;border-left:3px solid var(--accent);background:var(--mist)">
-            <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px">
-              <b style="font:700 14px/1.2 var(--head);color:var(--accent)">Southbound →</b>
-              <span style="font:400 12px/1.3 var(--text);color:var(--ink)">GBA residents invest through HK banks and (since 2024) securities firms</span>
-            </div>
-            <p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:4px"><b style="font-weight:700">Advice rule:</b> without the investor's request or agreement, HK banks don't solicit or recommend across the boundary (HKMA Southbound page, 22 Oct 2026). Products: HK-domiciled funds and bonds at low to medium-high risk.</p>
-          </div>
-          <div style="padding:10px 14px;border-left:3px solid var(--wine);background:var(--mist)">
-            <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px">
-              <b style="font:700 14px/1.2 var(--head);color:var(--wine)">← Northbound</b>
-              <span style="font:400 12px/1.3 var(--text);color:var(--ink)">HK/Macao residents invest onshore RMB funds through mainland partners</span>
-            </div>
-            <p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:4px">One-visit account opening at a mainland partner; FX managed at the border; onshore funds only.</p>
-          </div>
-        </div>
+  <div class="q13m">
+    <div class="band top">The nine mainland cities of the Greater Bay Area</div>
+    <div class="mid">
+      <div class="bd"><span>the boundary</span></div>
+      <div class="fl n" data-b="3">
+        <div class="ar"></div>
+        <div class="a"><h4>Northbound</h4><p>Hong Kong and Macao residents buy mainland wealth products, through banks in the nine cities</p></div>
+        <div class="b"><h4>For the Wongs: a tool for later</h4><p>Kept out today: their home, income and business are all in Hong Kong. It comes in at the annual review if Adrian's work moves across the boundary.</p></div>
+      </div>
+      <div class="fl s" data-b="2">
+        <div class="ar"></div>
+        <div class="a"><h4>Southbound</h4><p>Mainland residents buy Hong Kong funds, bonds and deposits; funds rated low to medium-high risk, non-complex</p></div>
+        <div class="b"><h4>For us: the market we want to serve</h4><p>A Hong Kong bank won't solicit or recommend across the boundary unless the investor asks or agrees, so the client's question comes first.</p></div>
       </div>
     </div>
-    <div class="pn" style="grid-column:span 5">
-      <h3>For the Wongs: kept out today</h3>
-      <p class="lede">Home, income and business all in HK dollars</p>
-      <div class="body">
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="padding:10px 12px;background:var(--mist);display:flex;gap:10px;align-items:flex-start">
-            <svg class="ic" style="width:20px;height:20px;color:var(--slate);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:2px"><use href="#i-house"/></svg>
-            <div><b style="font:700 13px/1.3 var(--head)">Today</b><p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:2px">Northbound out: everything they own, earn and spend is in HK. No currency mismatch to fix; adding RMB exposure would add risk, not reward.</p></div>
-          </div>
-          <div style="padding:10px 12px;background:var(--mist);display:flex;gap:10px;align-items:flex-start">
-            <svg class="ic" style="width:20px;height:20px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:2px"><use href="#i-hourglass"/></svg>
-            <div><b style="font:700 13px/1.3 var(--head)">At the annual review</b><p style="font:400 11px/1.4 var(--text);color:var(--slate);margin-top:2px">If Adrian's work moves across the boundary, Northbound comes in: onshore RMB funds match the new currency of pay.</p></div>
-          </div>
-          <div style="padding:10px 12px;background:var(--accent);color:#fff">
-            <b style="font:700 13px/1.3 var(--head);display:block">For us</b>
-            <p style="font:400 11px/1.4 var(--text);margin-top:4px;color:#fff;opacity:0.95">The Connect is the market we want to serve. The advice rule turns the adviser's value into one thing: a clear, suitable answer when the client asks.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="band bot">Hong Kong and Macao</div>
   </div>
-  <p class="bar">Under the Connect, an adviser's value is a clear, suitable answer when the client asks.</p>
-  <footer class="ft"><p class="src">HKMA, Southbound &amp; Northbound Trading pages (checked 22 Oct 2026); SFC Code of Conduct §5. RMB 1.5M each if both a bank and a securities firm (since 2024).</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><span>What next</span><b>Us</b></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">13 / 15</span></footer>
+  <p class="bar" data-b="3">Under the Connect, an adviser's value is a clear, suitable answer when the client asks.</p>
+  <footer class="ft"><p class="src">HKMA, Wealth Management Connect, Southbound Scheme (page revised 11 May 2026, checked 24 Oct 2026): the quota, the eligible funds, the solicitation rule (sourced).</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><span>What next</span><b>Us</b></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">13 / 15</span></footer>
   <aside class="notes">PETE: And for us? Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. Southbound, a Hong Kong bank won't solicit or recommend across the boundary unless the investor asks, so an adviser's value is a clear, suitable answer. We kept Northbound out: their home, income and business are all in Hong Kong. If Adrian's work moves across the boundary, it becomes the right tool.</aside>
 </section>
 
-<!-- v10 slide 14 (24 Oct): Who we want to become. Four cards, one per speaker: goal in five years, what this plan
-     taught, the link to the Connect. From proposal p.14 (personal statement). Win/Lookbua lines noted as drafts. -->
+<!-- slide 14 (24 Oct, drafted fresh): who we want to become. One column a speaker, in speaking order: where each
+     of us wants to work, the goal in five years and its link to the Connect, then what this plan taught us (Win's line
+     is still to confirm, so it shows as a placeholder). -->
 <section class="slide lb c9" data-time="1:10" data-speaker="All">
   <header class="hd">
     <p class="kick">Who we want to become</p>
     <h2>Four planners, one aim: families like the Wongs, on both sides of the boundary</h2>
   </header>
-  <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);column-gap:16px;margin-top:22px;min-height:0">
-    <div style="display:flex;flex-direction:column;border-top:3px solid var(--accent);padding-top:12px">
-      <b style="font:700 18px/1.2 var(--head);color:var(--ink)">Pete</b>
-      <span style="font:400 12px/1.3 var(--text);color:var(--slate);margin-top:2px">Lead adviser</span>
-      <p style="font:600 13px/1.4 var(--head);color:var(--accent);margin-top:12px">In five years, an investment specialist in a Hong Kong bank's wealth team</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--ink);margin-top:8px">Matching each Connect client's portfolio to their risk, with the currency risk made clear.</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--slate);margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)"><b style="font-weight:700;color:var(--ink)">This plan:</b> fitting the Wongs' three risk profiles into one plan was that job in miniature.</p>
+  <div class="q14">
+    <div class="c" data-b="1">
+      <div class="who"><span class="ci"><svg class="ic"><use href="#i-landmark"/></svg></span><div><b>Pete</b><span>Lead adviser</span></div></div>
+      <p class="where"><svg class="ic"><use href="#i-map-pin"/></svg>Hong Kong, for Connect clients</p>
+      <p class="k">In five years</p><h4>An investment specialist in a Hong Kong bank's wealth team</h4><p class="d">matching each Connect client's portfolio to their risk, with the currency risk made clear</p>
+      <p class="led"><svg class="ic"><use href="#i-pen-line"/></svg><span><b>In this plan, I led</b>the integration: four parts, one plan</span></p>
+      <div class="t"><p class="k">What this plan taught me</p><p>Fitting the Wongs' three risk profiles into one plan was that job in miniature.</p></div>
     </div>
-    <div style="display:flex;flex-direction:column;border-top:3px solid var(--wine);padding-top:12px">
-      <b style="font:700 18px/1.2 var(--head);color:var(--ink)">Fahtai</b>
-      <span style="font:400 12px/1.3 var(--text);color:var(--slate);margin-top:2px">Retirement</span>
-      <p style="font:600 13px/1.4 var(--head);color:var(--wine);margin-top:12px">The data and risk models that wealth managers across East and Southeast Asia use for families</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--ink);margin-top:8px">Next is the FRM, with Connect funds as the first case.</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--slate);margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)"><b style="font-weight:700;color:var(--ink)">This plan:</b> a model's job is to price the trade-offs between people.</p>
+    <div class="c" data-b="2">
+      <div class="who"><span class="ci"><svg class="ic"><use href="#i-chart-line"/></svg></span><div><b>Fahtai</b><span>Retirement</span></div></div>
+      <p class="where"><svg class="ic"><use href="#i-map-pin"/></svg>East and Southeast Asia</p>
+      <p class="k">In five years</p><h4>Building the data and risk models wealth managers use for families</h4><p class="d">next, the FRM, with Connect funds as the first case</p>
+      <p class="led"><svg class="ic"><use href="#i-pen-line"/></svg><span><b>In this plan, I led</b>the model, from the tax engine to 10,000 markets</span></p>
+      <div class="t"><p class="k">What this plan taught me</p><p>A model's job is to price the trade-offs between people.</p></div>
     </div>
-    <div style="display:flex;flex-direction:column;border-top:3px solid var(--accent);padding-top:12px">
-      <b style="font:700 18px/1.2 var(--head);color:var(--ink)">Win</b>
-      <span style="font:400 12px/1.3 var(--text);color:var(--slate);margin-top:2px">Investments</span>
-      <p style="font:600 13px/1.4 var(--head);color:var(--accent);margin-top:12px">An investment strategist for family clients across Asia-Pacific</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--ink);margin-top:8px">Fitting each portfolio to its owner on either side of the boundary.</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--slate);margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)"><b style="font-weight:700;color:var(--ink)">This plan:</b> every dollar wants a job, and every owner wants their own.</p>
+    <div class="c" data-b="3">
+      <div class="who"><span class="ci"><svg class="ic"><use href="#i-compass"/></svg></span><div><b>Win</b><span>Investment</span></div></div>
+      <p class="where"><svg class="ic"><use href="#i-map-pin"/></svg>Asia-Pacific, on either side</p>
+      <p class="k">In five years</p><h4>An investment strategist for family clients</h4><p class="d">fitting each portfolio to its owner, on either side of the boundary</p>
+      <p class="led"><svg class="ic"><use href="#i-pen-line"/></svg><span><b>In this plan, I led</b>the funds, ESG and digital assets</span></p>
+      <div class="t todo"><p class="k">What this plan taught me</p><p>Win's line, to confirm</p></div>
     </div>
-    <div style="display:flex;flex-direction:column;border-top:3px solid var(--wine);padding-top:12px">
-      <b style="font:700 18px/1.2 var(--head);color:var(--ink)">Lookbua</b>
-      <span style="font:400 12px/1.3 var(--text);color:var(--slate);margin-top:2px">Protection and risk</span>
-      <p style="font:600 13px/1.4 var(--head);color:var(--wine);margin-top:12px">A focus on systems risk, where two markets link under different rules</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--ink);margin-top:8px">A shock in one can cross the boundary and reach the other side.</p>
-      <p style="font:400 12px/1.5 var(--text);color:var(--slate);margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)"><b style="font-weight:700;color:var(--ink)">This plan:</b> every risk needs a named defence.</p>
+    <div class="c" data-b="4">
+      <div class="who"><span class="ci"><svg class="ic"><use href="#i-network"/></svg></span><div><b>Lookbua</b><span>Protection and risk</span></div></div>
+      <p class="where"><svg class="ic"><use href="#i-map-pin"/></svg>Across the boundary</p>
+      <p class="k">In five years</p><h4>A specialist in systems risk</h4><p class="d">the Connect links two markets with different rules, so a shock in one can reach the other</p>
+      <p class="led"><svg class="ic"><use href="#i-pen-line"/></svg><span><b>In this plan, I led</b>protection, the stress tests and the risk register</span></p>
+      <div class="t"><p class="k">What this plan taught me</p><p>Every risk needs a named defence.</p></div>
     </div>
   </div>
-  <p class="bar">Four planners, one aim: families like the Wongs, on both sides of the boundary.</p>
-  <footer class="ft"><p class="src">Personal statement: proposal p.14. Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><span>What next</span><b>Us</b></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">14 / 15</span></footer>
+  <p class="bar" data-b="4">What the Wongs taught all four of us: a plan is a set of choices between people, each made clear.</p>
+  <footer class="ft"><p class="src">Personal statement and roles: written case p.14. Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><span>What next</span><b>Us</b></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">14 / 15</span></footer>
   <aside class="notes">PETE: In five years I want to be an investment specialist in a Hong Kong bank's wealth team, matching each Connect client's portfolio to their risk, with the currency risk made clear. Fitting the Wongs' three risk profiles into one plan was that job in miniature. FAHTAI: I want to build the data and risk models that wealth managers across East and Southeast Asia use for families. This plan taught me that a model's job is to price the trade-offs between people. Next is the FRM, with Connect funds as my first case. WIN: I want to be an investment strategist for family clients across Asia-Pacific, fitting each portfolio to its owner on either side of the boundary. LOOKBUA: I aim to focus on systems risk. The Connect links two markets with different rules, so a shock in one can cross the boundary and reach the other side. Stress-testing this plan taught me that every risk needs a named defence. [Notes: Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.]</aside>
 </section>
 
-<!-- v9 slide 15: to build (plan §5). The title and the script are final drafts. -->
-<section class="slide lb c9" data-time="0:15" data-speaker="Pete, all">
-  <header class="hd">
-    <p class="kick"></p>
-    <h2>Built to last</h2>
-  </header>
-  <div class="todo-box"><b>To build</b><p>The five calls; the home their choice; the inheritance kept; the team</p></div>
-  <footer class="ft"><p class="src">Draft: the picture is still to build (plan §5).</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><span>Will it hold</span><span>What next</span><b>Us</b></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">15 / 15</span></footer>
+<!-- slide 15 (24 Oct, drafted fresh): the close mirrors the cover. The title again, the three results the talk
+     promised (the money lasts, the inheritance kept, the home their choice), the team; on the wine panel, where the
+     cover had the family, the house built for them, complete, with the written case's four pillars. -->
+<section class="slide lb cv9 q15" data-time="0:15" data-speaker="Pete, all">
+  <div class="l">
+    <div class="top"></div>
+    <h1>Built to<br>Last</h1>
+    <div class="q15o">
+      <div><strong>{{switch_89}}</strong><span>chance the money lasts to Carmen's 89, from {{own_89}} their own way</span></div>
+      <div><strong>{{plan_legacy_sold}}</strong><span>left to Ryan and Chloe where their own way leaves {{own_legacy_sold}}</span></div>
+      <div><strong>At 65</strong><span>the home their choice, to stay or to move, not forced at about {{own_sale_age}}</span></div>
+    </div>
+    <p class="q15t">Thank you</p>
+    <div class="who"><p><b>Team Axis</b>2026</p><p><b>Pete</b>Lead adviser</p><p><b>Fahtai</b>Retirement</p><p><b>Win</b>Investment</p><p><b>Lookbua</b>Protection and risk</p></div>
+    <p class="q15s">Chance and inheritance: 10,000 simulated markets, today's money (measured).</p>
+  </div>
+  <div class="r">
+    <div class="q15w">
+      <div class="q15h" style="aspect-ratio:332/324"><svg class="hx" viewBox="134 45 332 324" aria-hidden="true">
+    <ellipse cx="300.0" cy="319.4" rx="171.9" ry="52.4" fill="#1B1716" opacity=".07"/>
+    <g class="hq5">
+    <polygon class="t" points="280.2,229.6 453.0,294.8 319.8,345.2 147.0,279.9" fill="#E4C6CA" stroke="#987A7E" stroke-width=".8"/>
+    <polygon class="l" points="147.0,297.9 319.8,363.2 319.8,345.2 147.0,279.9" fill="#D9AEB4" stroke="#987A7E" stroke-width=".8"/>
+    <polygon class="r" points="453.0,312.8 319.8,363.2 319.8,345.2 453.0,294.8" fill="#AE8B90" stroke="#987A7E" stroke-width=".8"/>
+    <circle cx="166.8" cy="296.4" r="10" fill="#FFFFFF" stroke="#987A7E" stroke-width=".8"/><text x="166.8" y="301.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="13" fill="#1B1716">1</text></g>
+    <g class="hq5">
+    <polygon points="280.2,235.0 356.7,263.9 237.9,308.8 161.4,279.9" fill="#1B1716" opacity=".16"/>
+    <polygon class="t" points="280.2,163.0 356.7,191.9 237.9,236.8 161.4,207.9" fill="#F0DCDF" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="l" points="161.4,265.9 237.9,294.8 237.9,236.8 161.4,207.9" fill="#E9CDD1" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="r" points="356.7,249.9 237.9,294.8 237.9,236.8 356.7,191.9" fill="#BAA4A7" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="188.4,276.1 202.8,281.5 202.8,245.5 188.4,240.1" fill="#BC838B" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="211.8,264.9 233.4,273.1 233.4,251.1 211.8,242.9" fill="#BC838B" stroke="#A39092" stroke-width=".8"/>
+    <circle cx="174.0" cy="241.6" r="13" fill="#FFFFFF" stroke="#A39092" stroke-width=".8"/><text x="174.0" y="247.4" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">2</text></g>
+    <g class="hq5">
+    <polygon points="362.1,265.9 438.6,294.8 319.8,339.7 243.3,310.8" fill="#1B1716" opacity=".16"/>
+    <polygon class="t" points="362.1,193.9 438.6,222.8 319.8,267.7 243.3,238.8" fill="#F0DCDF" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="l" points="243.3,296.8 319.8,325.7 319.8,267.7 243.3,238.8" fill="#E9CDD1" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="r" points="438.6,280.8 319.8,325.7 319.8,267.7 438.6,222.8" fill="#BAA4A7" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="255.9,281.6 281.1,291.1 281.1,269.1 255.9,259.6" fill="#BC838B" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="337.8,298.9 363.0,289.4 363.0,267.4 337.8,276.9" fill="#B1717A" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="377.4,284.0 402.6,274.4 402.6,252.4 377.4,262.0" fill="#B1717A" stroke="#A39092" stroke-width=".8"/>
+    <circle cx="424.2" cy="257.3" r="13" fill="#FFFFFF" stroke="#A39092" stroke-width=".8"/><text x="424.2" y="263.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">3</text></g>
+    <g class="hq5">
+    <polygon points="280.2,163.0 356.7,191.9 237.9,236.8 161.4,207.9" fill="#1B1716" opacity=".16"/>
+    <polygon class="t" points="280.2,91.0 356.7,119.9 237.9,164.8 161.4,135.9" fill="#F7EBEC" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="l" points="161.4,193.9 237.9,222.8 237.9,164.8 161.4,135.9" fill="#F3E2E4" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="r" points="356.7,177.9 237.9,222.8 237.9,164.8 356.7,119.9" fill="#C2B5B6" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="188.4,184.1 208.2,191.6 208.2,169.6 188.4,162.1" fill="#C18F96" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="215.4,194.3 233.4,201.1 233.4,179.1 215.4,172.3" fill="#C18F96" stroke="#AA9EA0" stroke-width=".8"/>
+    <circle cx="174.0" cy="169.6" r="13" fill="#FFFFFF" stroke="#AA9EA0" stroke-width=".8"/><text x="174.0" y="175.4" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">4</text></g>
+    <g class="hq5">
+    <polygon points="362.1,193.9 438.6,222.8 319.8,267.7 243.3,238.8" fill="#1B1716" opacity=".16"/>
+    <polygon class="t" points="362.1,121.9 438.6,150.8 319.8,195.7 243.3,166.8" fill="#F7EBEC" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="l" points="243.3,224.8 319.8,253.7 319.8,195.7 243.3,166.8" fill="#F3E2E4" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="r" points="438.6,208.8 319.8,253.7 319.8,195.7 438.6,150.8" fill="#C2B5B6" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="255.9,209.6 281.1,219.1 281.1,197.1 255.9,187.6" fill="#C18F96" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="337.8,226.9 363.0,217.4 363.0,195.4 337.8,204.9" fill="#B67C83" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="377.4,212.0 402.6,202.4 402.6,180.4 377.4,190.0" fill="#B67C83" stroke="#AA9EA0" stroke-width=".8"/>
+    <circle cx="424.2" cy="185.3" r="13" fill="#FFFFFF" stroke="#AA9EA0" stroke-width=".8"/><text x="424.2" y="191.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">5</text></g>
+    <g class="hq5"><polygon points="280.2,91.0 438.6,150.8 319.8,195.7 161.4,135.9" fill="#1B1716" opacity=".16"/><polygon class="t" points="280.2,68.8 139.8,121.9 229.8,103.9 370.2,50.8" fill="#FFFFFF" stroke="#B2B2B2" stroke-width=".8"/><polygon class="r" points="370.2,50.8 229.8,103.9 319.8,189.9 460.2,136.8" fill="#D6D6D6" stroke="#B2B2B2" stroke-width=".8"/><polygon class="l" points="139.8,121.9 319.8,189.9 229.8,103.9" fill="#FFFFFF" stroke="#B2B2B2" stroke-width=".8"/><polygon class="w" points="217.2,141.1 242.4,150.6 242.4,130.6 217.2,121.1" fill="#CBA5AA" stroke="#B2B2B2" stroke-width=".8"/></g>
+    
+    
+    
+    
+    
+    
+    </svg></div>
+      <div class="q15p"><p style="top:18.1%"><b>What passes on</b>the inheritance kept</p><p style="top:38.5%"><b>A place for every voice</b>Calls 4 and 5</p><p style="top:60.7%"><b>Income for life</b>Calls 2 and 3</p><p style="top:77.5%"><b>Protected first</b>Call 1</p></div>
+    </div>
+  </div>
   <aside class="notes">PETE: Protected first, income for life, and a place for every voice. The home stays their choice, and the next generation keeps its inheritance: built to last. We are Team Axis. ALL: Thank you.</aside>
 </section>
