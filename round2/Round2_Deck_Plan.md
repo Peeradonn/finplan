@@ -596,6 +596,14 @@ register, the price and the bar.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
 ### 11 · What happens when (Lookbua; 0:30)
+**One timeline, 24 Oct evening** (Pete: the left half read as a chart of progress, not a timeline, and after slide
+10's bars it looked like more chances of success). Now nine steps on one line across the slide, each a date over a
+circle over what happens. The first year (month 1, by month 3, by month 6, month 12) sits on a soft band, its dates,
+circles and stretch of line in crimson: the zoom into this year, which the title starts with. The later steps (2028 to
+2047) are on the rose line in wine. Equal spacing: it's a sequence of triggers, not a time scale. Ryan and Chloe's
+strip and the reviews run underneath as before. Pete's idea of deep dives per step, raised the same evening, was not
+built: the speech gives each later step about 3 seconds, and the scored PowerPoint must read in its final state. A
+crimson highlight that moves along the line as Lookbua names each step is offered, not built.
 **Drafted 24 Oct.** Title: "It starts this month and closes every gap within a year; after that, dates trigger each step". It joins the storyline's title (and the script's "after that, dates trigger
 each step") to the written case's §10 heading, which the 24 Oct plan edit below had brought in. Left, "This year: close
 every gap…": the first year as a staircase of deadlines, each bar ending on its month on a 12-month track (month 1 the
