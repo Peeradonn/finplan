@@ -917,6 +917,11 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10m li:last-child,.q12m li:last-child{border-bottom:0}
 .q10m .ci,.q12m .ci{flex:none;width:36px;height:36px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center}
 .q10m .ci .ic,.q12m .ci .ic{width:19px;height:19px;stroke:var(--wine);stroke-width:2}
+/* slide 10's risks as filled pictograms (Pete, 24 Oct: his picks, a briefcase, people, bitcoin, a leaf, a rising chart;
+   drawn from Phosphor's filled set, MIT, since his files were stock previews in four colours): white on wine, as on
+   slides 11 and 14 */
+.q10m .ci{background:var(--wine-g);color:#fff;box-shadow:var(--lift)}
+.q10m .ci .ic{width:20px;height:20px}
 .q10m b,.q12m b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .q10m p,.q12m p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:1px}
 
@@ -1144,7 +1149,6 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-accessibility" viewBox="0 0 24 24"><circle cx="16" cy="4" r="1" /> <path d="m18 19 1-7-6 1" /> <path d="m5 8 3-3 5.5 3-2.36 3.5" /> <path d="M4.24 14.5a5 5 0 0 0 6.88 6" /> <path d="M13.76 17.5a5 5 0 0 0-6.88-6" /></symbol>
-<symbol id="i-bitcoin" viewBox="0 0 24 24"><path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727" /></symbol>
 <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
@@ -1160,6 +1164,11 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol>
 <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1" /> <rect x="2" y="16" width="6" height="6" rx="1" /> <rect x="9" y="2" width="6" height="6" rx="1" /> <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /> <path d="M12 12V8" /></symbol>
 <symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M12 20h9" /> <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" /></symbol>
+<symbol id="i-ph-briefcase" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M152,112a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,112Zm80-40V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56H80V48a24,24,0,0,1,24-24h48a24,24,0,0,1,24,24v8h40A16,16,0,0,1,232,72ZM96,56h64V48a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8Zm120,57.61V72H40v41.61A184,184,0,0,0,128,136,184,184,0,0,0,216,113.61Z"/></g></symbol>
+<symbol id="i-ph-chart-line-up" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM200,192H56a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v76.69l34.34-34.35a8,8,0,0,1,11.32,0L128,132.69,172.69,88H144a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8v48a8,8,0,0,1-16,0V99.31l-50.34,50.35a8,8,0,0,1-11.32,0L104,131.31l-40,40V176H200a8,8,0,0,1,0,16Z"/></g></symbol>
+<symbol id="i-ph-currency-btc" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M176,152a16,16,0,0,1-16,16H112V136h48A16,16,0,0,1,176,152Zm64-24A104,104,0,1,1,136,24,104.11,104.11,0,0,1,240,128Zm-48,24a32,32,0,0,0-15.51-27.42A32,32,0,0,0,160,73V64a8,8,0,0,0-16,0v8H128V64a8,8,0,0,0-16,0v8H96a8,8,0,0,0,0,16v80a8,8,0,0,0,0,16h16v8a8,8,0,0,0,16,0v-8h16v8a8,8,0,0,0,16,0v-8A32,32,0,0,0,192,152Zm-24-48a16,16,0,0,0-16-16H112v32h40A16,16,0,0,0,168,104Z"/></g></symbol>
+<symbol id="i-ph-leaf" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49A101.72,101.72,0,0,0,46.7,175.2a4,4,0,0,0,6.61,1.43l85-86.3a8,8,0,0,1,11.32,11.32L56.74,195.94,42.55,210.13a8.2,8.2,0,0,0-.6,11.1,8,8,0,0,0,11.71.43l16.79-16.79c14.14,6.84,28.41,10.57,42.56,11.07q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07Z"/></g></symbol>
+<symbol id="i-ph-users-three" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M64.12,147.8a4,4,0,0,1-4,4.2H16a8,8,0,0,1-7.8-6.17,8.35,8.35,0,0,1,1.62-6.93A67.79,67.79,0,0,1,37,117.51a40,40,0,1,1,66.46-35.8,3.94,3.94,0,0,1-2.27,4.18A64.08,64.08,0,0,0,64,144C64,145.28,64,146.54,64.12,147.8Zm182-8.91A67.76,67.76,0,0,0,219,117.51a40,40,0,1,0-66.46-35.8,3.94,3.94,0,0,0,2.27,4.18A64.08,64.08,0,0,1,192,144c0,1.28,0,2.54-.12,3.8a4,4,0,0,0,4,4.2H240a8,8,0,0,0,7.8-6.17A8.33,8.33,0,0,0,246.17,138.89Zm-89,43.18a48,48,0,1,0-58.37,0A72.13,72.13,0,0,0,65.07,212,8,8,0,0,0,72,224H184a8,8,0,0,0,6.93-12A72.15,72.15,0,0,0,157.19,182.07Z"/></g></symbol>
 <symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /> <path d="M2 9v1c0 1.1.9 2 2 2h1" /> <path d="M16 11h.01" /></symbol>
 <symbol id="i-refresh-cw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /> <path d="M8 16H3v5" /></symbol>
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></symbol>
@@ -1654,11 +1663,11 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
       <h3>…and every other risk has a named defence</h3>
       <p class="lede">From our written case's risk register</p>
       <ul class="q10m">
-        <li><span class="ci"><svg class="ic"><use href="#i-briefcase"/></svg></span><div><b>The business doesn't sell</b><p>a buy-sell agreement now; the plan lasts without the sale</p></div></li>
-        <li><span class="ci"><svg class="ic"><use href="#i-users"/></svg></span><div><b>Three different risk appetites</b><p>one risk profile and one portfolio per person</p></div></li>
-        <li><span class="ci"><svg class="ic"><use href="#i-bitcoin"/></svg></span><div><b>Crypto rules or licences change</b><p>licensed channels only; into an ETF within 30 days</p></div></li>
-        <li><span class="ci"><svg class="ic"><use href="#i-leaf"/></svg></span><div><b>Greenwashing</b><p>two ESG ratings per equity fund; replaced within three months of a downgrade</p></div></li>
-        <li><span class="ci"><svg class="ic"><use href="#i-chart-line"/></svg></span><div><b>Model risk</b><p>we compare decisions in the same markets; we don't forecast</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-ph-briefcase"/></svg></span><div><b>The business doesn't sell</b><p>a buy-sell agreement now; the plan lasts without the sale</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-ph-users-three"/></svg></span><div><b>Three different risk appetites</b><p>one risk profile and one portfolio per person</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-ph-currency-btc"/></svg></span><div><b>Crypto rules or licences change</b><p>licensed channels only; into an ETF within 30 days</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-ph-leaf"/></svg></span><div><b>Greenwashing</b><p>two ESG ratings per equity fund; replaced within three months of a downgrade</p></div></li>
+        <li><span class="ci"><svg class="ic"><use href="#i-ph-chart-line-up"/></svg></span><div><b>Model risk</b><p>we compare decisions in the same markets; we don't forecast</p></div></li>
       </ul>
     </div>
   </div>

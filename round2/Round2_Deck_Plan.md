@@ -554,6 +554,10 @@ downgrade rule are in the notes.
   Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
+**Icons, 24 Oct evening** (Pete sent five icons for the risk list: a briefcase, people, bitcoin, a leaf, a rising chart).
+Kept his choice of pictures, drawn from Phosphor's filled set (MIT; `src/lucide/ph-*.svg`, scaled to the 24-unit box),
+white on a wine circle. His files themselves stay out of the deck: the leaf is a VectorStock preview with its watermark,
+the others look like stock downloads with no licence on file, and they bring four new colours on white squares.
 **Second pass, 24 Oct evening** (Pete: does red suit this chart? more bold or italic? at first glance the big red number
 didn't say it was the full plan). Red kept: crimson means "with our plan" across the deck (97%, 25%, HK$7.7M), and A
 against B (numbers in ink, red on all four arrows) showed B with four red marks and no focal point. Each gain bar now
@@ -694,6 +698,9 @@ written case's four pillars from the roof down: what passes on; a place for ever
 - **Signature:** a 5 px crimson rule on the title block, kicker and title 14 px in from it, as in e-Sentry (Pete, 24
   Oct: the header was too big and its title competed with the panel headings); the cover's crimson bar (no dash before the kicker: Pete, 24 Oct,
   "not needed"); the family on a wine panel (cover, slide 2).
+- **Icons:** Lucide line icons (ISC, `src/lucide/`) for the deck; Phosphor's filled set (MIT, `src/lucide/ph-*.svg`)
+  where a list needs pictograms that read at a glance (slide 10's risks). Downloaded stock images only with a licence
+  on file.
 - **Not used:** gridlines across chart areas; grey-only charts; blue. (The footer tracker is back on trial, §4.)
 **Reviewed 23 Oct, evening** (Pete handed the identity to Claude to judge). Kept: EB Garamond and the crimson. They read
 as heritage and trust, they fit "Built to Last" and a family legacy, and they make the deck and the written case
