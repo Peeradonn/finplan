@@ -120,6 +120,13 @@ a conclusion bar, a trade-off strip on call slides, a footer tracker. Every buil
 unbuilt placeholders got a bar. It now holds the tests a slide must pass, the few things that are fixed, the pieces we can use, and
 the failures we've already seen. Each slide's form is chosen for its point.
 
+**Three minds to build with** (Pete, 24 Oct, after a table on slide 5: "think of the winning teams, the world-class
+financial planner and an expert deck builder"). The winning team: each slide answers the judge's question of the
+moment, with one picture of a change (before to after), and keeps the tension. The planner: one vivid what-if in the
+family's own money, the biggest risk first, the price in their terms, never a product list. The deck builder: a
+three-second glance, the voice carries the detail, builds pace the reveal, and tables go to an appendix, never into
+the talk.
+
 **The tests** (each slide, then the whole deck on a contact sheet):
 1. **Would a world-class financial planner, pitching to this family, put this on screen?** (Pete, 23 Oct.)
 2. **One point in five seconds.** The title states it. The one thing that proves it is the largest type in the body and
@@ -329,7 +336,13 @@ the accent, the only accent on the slide.
 - Bar: "Five calls, one family: the rest of this talk defends each one."
 
 ### 5 · Call 1: insure the income, not the life (Lookbua; 0:40)
-**Rebuilt 24 Oct as a gap scorecard** (Pete: not good yet, covering so many things; invent a layout if three
+**Rebuilt again the same day around one scenario** (Pete: a big table is not a presentation). Left: "If Adrian
+couldn't work tomorrow…", the household's money each month against its HK$82K of bills: today Carmen's HK$60K leaves
+HK$22K short every month (a dashed gap); with the plan his cover, HK$65K a month to 65, lifts them over the line
+(Carmen's own: HK$39K to 62, in a note). Right: "…so we insure the income first", HK$100K a year, 14% of their
+surplus, the four covers as chips with their prices, Ryan in one line, then the five papers within three months.
+Builds follow the script: the gap, the cover, the four covers, the papers. The scorecard below is superseded.
+**Built 24 Oct as a gap scorecard** (Pete: not good yet, covering so many things; invent a layout if three
 panels don't fit). The three panels (the income gap as bars, the HK$100K split as a stacked bar with a legend, the
 papers as a checklist) spoke three visual languages for one claim. Now one form: a row per risk, in the case's own
 list of what they have (p.4): can't work, seriously ill, in hospital, dies, can't decide or no will, the business

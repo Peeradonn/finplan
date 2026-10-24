@@ -434,32 +434,43 @@ p,li,span,b{text-wrap:pretty}
 /* slide 4, treatment B, the spotlight (for comparison): the deck's white page with a soft rose glow behind the house */
 .s4s{background:radial-gradient(ellipse 50% 62% at 50% 50%,#F6E6E8 0%,#FFFFFF 70%)}
 
-/* ==================== slide 5, Call 1 (24 Oct): a gap scorecard ====================
-   Pete: too many things on one slide, in three visual languages. One form instead: a row per risk, in the case's own
-   list (p.4), today against the plan, what each costs a year (bars to scale), and the total, the one crimson number.
-   Builds: the gaps first (the Today column), then each row closes in the order Lookbua says it. */
-.s5g{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:space-between}
-.r5{display:grid;grid-template-columns:262px 300px 1fr 212px;column-gap:22px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule)}
-.r5 p{display:flex;align-items:center;gap:10px;min-width:0}
-.r5 .ic{flex:none;width:18px;height:18px;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.r5.hdr{padding:0 0 6px;border-bottom:1.5px solid var(--ink)}
-.r5.hdr p{font:600 14px/1.2 var(--text);color:var(--slate)}
-.r5 .rk{font:600 15px/1.3 var(--text);color:var(--ink)}
-.r5 .rk .ic{width:22px;height:22px;stroke:var(--wine)}
-.r5 .td{font:400 14px/1.35 var(--text);color:var(--slate)}
-.r5 .td .ic{stroke:var(--grey)}
-.r5 .wp{font:600 14px/1.35 var(--text);color:var(--ink)}
-.r5 .wp .ic{stroke:var(--wine);stroke-width:2.8}
-.r5 .ct{gap:10px;font:600 15px/1.2 var(--text);color:var(--ink)}
-.r5 .ct i{display:block;flex:none;height:14px;background:var(--wine-g)}
-.r5 .ct.nb{font:400 14px/1.3 var(--text);color:var(--slate)}
-.r5.tot{border-bottom:0;padding-top:12px}
-.r5.tot .nt{font:400 13px/1.4 var(--text);color:var(--slate);grid-column:1 / 3;display:block}
-.r5.tot .nt b{color:var(--ink);font-weight:600}
-.r5.tot .sm{justify-content:flex-end;font:600 15px/1.3 var(--text);color:var(--ink)}
-.r5.tot .tv{flex-direction:column;align-items:flex-start;gap:2px}
-.r5.tot .tv strong{font:700 44px/1 var(--head);color:var(--accent);letter-spacing:-1px}
-.r5.tot .tv span{font:400 14px/1.3 var(--text);color:var(--slate)}
+/* ==================== slide 5, Call 1 (24 Oct, second build): one scenario, then the price ====================
+   Pete: a big table is not a presentation. The planner's way: one vivid what-if in the family's own money ("If Adrian
+   couldn't work tomorrow": Carmen's pay against the bills, today and with his cover), then the price in their terms
+   (HK$100K a year, 14% of surplus) and the rest as chips. The table this replaces is in git (0b7addb). */
+.s5w{flex:1;min-height:0;display:grid;grid-template-columns:7fr 5fr;column-gap:48px}
+.s5w>.pn{display:flex;flex-direction:column;min-width:0}
+.s5c{position:relative;flex:1;display:flex;align-items:flex-end;gap:36px;padding:0 0 0 8px;margin-top:10px}
+.s5c .col{display:flex;flex-direction:column;align-items:center;width:150px;z-index:1}
+.s5c .stack{display:flex;flex-direction:column;width:150px}
+.s5c .stack i{display:flex;align-items:center;justify-content:center;text-align:center;font:400 14px/1.3 var(--text);font-style:normal}
+.s5c .stack i b{font:700 18px/1.2 var(--head)}
+.s5c .cp{background:var(--rose-g);color:var(--ink)}
+.s5c .ac{background:var(--wine-g);color:#fff;align-items:flex-start!important;padding-top:18px}
+.s5c .gap{border:2px dashed var(--accent);border-bottom:0;background:#FFFFFF;color:var(--accent)}
+.s5c .gap span{font:400 13px/1.3 var(--text)}
+.s5c .gap b{display:block;font:700 15px/1.2 var(--text);color:var(--accent)}
+.s5c .cl{font:600 15px/1.2 var(--text);margin-top:10px;color:var(--ink)}
+.s5c .bills{position:absolute;left:0;right:0;border-top:2px solid var(--ink);z-index:2;pointer-events:none;margin-bottom:31px}
+.s5c .bills span{position:absolute;right:0;top:-24px;font:400 14px/1.2 var(--text);color:var(--slate);white-space:nowrap}
+.s5c .bills span b{color:var(--ink);font-weight:700}
+.s5c .s5n{align-self:flex-end;margin-bottom:96px;max-width:220px;font:400 14px/1.4 var(--text);color:var(--slate);margin-left:4px}
+.s5c .s5n b{color:var(--ink);font-weight:600;display:block}
+.s5p{display:flex;align-items:center;gap:16px;margin-top:14px}
+.s5p strong{font:700 52px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
+.s5p span{font:400 15px/1.35 var(--text);color:var(--slate)}
+.s5k{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.s5k p{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--mist);box-shadow:var(--lift)}
+.s5k .ic{flex:none;width:22px;height:22px;fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.s5k span{font:400 13px/1.3 var(--text);color:var(--slate)}
+.s5k span b{display:block;font:600 15px/1.25 var(--text);color:var(--ink)}
+.s5y{font:400 13px/1.4 var(--text);color:var(--slate);margin-top:10px}
+.s5y b{color:var(--ink);font-weight:600}
+.s5d{margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
+.s5d h4{font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:8px}
+.s5d ul{display:flex;flex-wrap:wrap;gap:6px 14px}
+.s5d li{display:flex;align-items:center;gap:6px;font:400 14px/1.3 var(--text);color:var(--ink)}
+.s5d .ic{flex:none;width:16px;height:16px;fill:none;stroke:var(--wine);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
 
 /* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
 .cv9{padding:0;flex-direction:row}
@@ -833,19 +844,16 @@ p,li,span,b{text-wrap:pretty}
 <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
 <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
-<symbol id="i-heart-crack" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="m12 13-1-1 2-2-3-3 2-2" /></symbol>
 <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol>
 <symbol id="i-hospital" viewBox="0 0 24 24"><path d="M12 6v4" /> <path d="M14 14h-4" /> <path d="M14 18h-4" /> <path d="M14 8h-4" /> <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2" /> <path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18" /></symbol>
 <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14" /> <path d="M5 2h14" /> <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /> <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol>
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
 <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol>
-<symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol>
 <symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /> <path d="M2 9v1c0 1.1.9 2 2 2h1" /> <path d="M16 11h.01" /></symbol>
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
 <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
 <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
-<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
 </svg>
 <main class="deck">
 
@@ -1047,45 +1055,45 @@ p,li,span,b{text-wrap:pretty}
     <p class="kick">Call 1: Protection</p>
     <h2>Insure the income, not the life: about HK$100K a year closes every gap</h2>
   </header>
-  <div class="s5g">
-      <div class="r5 hdr"><p></p><p>Today</p><p data-b="2">With the plan</p><p data-b="2">A year</p></div>
-      <div class="r5">
-        <p class="rk"><svg class="ic"><use href="#i-accessibility"/></svg><b>If a parent can't work</b></p>
-        <p class="td x"><svg class="ic"><use href="#i-x"/></svg><span>No disability cover; the household spends HK$82K a month</span></p>
-        <p class="wp" data-b="2"><svg class="ic"><use href="#i-check"/></svg><span>65% of pay until each retires: Adrian HK$65K, Carmen HK$39K a month</span></p>
-        <p class="ct" data-b="2"><i style="width:108px"></i><span>HK$37K</span></p>
+  <div class="s5w">
+    <div class="pn s5l">
+      <h3>If Adrian couldn't work tomorrow…</h3>
+      <p class="lede">The household's money each month, against its bills (case)</p>
+      <div class="s5c">
+        <div class="bills" style="bottom:208px"><span><b>HK$82K a month</b> of bills</span></div>
+        <div class="col">
+          <div class="stack">
+            <i class="gap" style="height:56px"><span><b>HK$22K short</b> every month</span></i>
+            <i class="cp" style="height:152px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
+          </div>
+          <p class="cl">Today</p>
+        </div>
+        <div class="col" data-b="2">
+          <div class="stack">
+            <i class="ac" style="height:165px"><span>Adrian's cover<br><b>HK$65K</b></span></i>
+            <i class="cp" style="height:152px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
+          </div>
+          <p class="cl">With the plan</p>
+        </div>
+        <p class="s5n" data-b="2"><b>65% of his pay, until 65.</b> The same for Carmen: HK$39K a month, until 62.</p>
       </div>
-      <div class="r5">
-        <p class="rk"><svg class="ic"><use href="#i-heart-pulse"/></svg><b>If one is seriously ill</b></p>
-        <p class="td x"><svg class="ic"><use href="#i-x"/></svg><span>No critical-illness cover</span></p>
-        <p class="wp" data-b="3"><svg class="ic"><use href="#i-check"/></svg><span>HK$1.5M each, paid as a lump sum</span></p>
-        <p class="ct" data-b="3"><i style="width:120px"></i><span>HK$41K</span></p>
+    </div>
+    <div class="pn s5r" data-b="3">
+      <h3>…so we insure the income first</h3>
+      <div class="s5p"><strong>HK$100K</strong><span>a year for four new covers,<br>14% of their surplus</span></div>
+      <div class="s5k">
+        <p><svg class="ic"><use href="#i-accessibility"/></svg><span><b>Disability</b>HK$37K</span></p>
+        <p><svg class="ic"><use href="#i-heart-pulse"/></svg><span><b>Critical illness</b>HK$41K, HK$1.5M each</span></p>
+        <p><svg class="ic"><use href="#i-hospital"/></svg><span><b>Medical of their own</b>HK$15K</span></p>
+        <p><svg class="ic"><use href="#i-shield-check"/></svg><span><b>Term-life top-up</b>HK$7K</span></p>
       </div>
-      <div class="r5">
-        <p class="rk"><svg class="ic"><use href="#i-hospital"/></svg><b>If one is in hospital</b></p>
-        <p class="td p"><svg class="ic"><use href="#i-minus"/></svg><span>Group cover through work, which ends when they retire</span></p>
-        <p class="wp" data-b="3"><svg class="ic"><use href="#i-check"/></svg><span>A medical plan of their own, bought before group cover ends</span></p>
-        <p class="ct" data-b="3"><i style="width:44px"></i><span>HK$15K</span></p>
+      <p class="s5y"><b>Ryan:</b> about HK$900 a year, term life only. On average, about HK$114K a year until each retires.</p>
+      <div class="s5d" data-b="4">
+        <h4>And within three months, under HK$25K</h4>
+        <ul><li><svg class="ic"><use href="#i-check"/></svg>Wills, staged trusts</li><li><svg class="ic"><use href="#i-check"/></svg>A guardian for Chloe</li><li><svg class="ic"><use href="#i-check"/></svg>Powers of attorney</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Advance directives</li><li><svg class="ic"><use href="#i-check"/></svg>A buy-sell agreement</li></ul>
       </div>
-      <div class="r5">
-        <p class="rk"><svg class="ic"><use href="#i-heart-crack"/></svg><b>If one dies</b></p>
-        <p class="td p"><svg class="ic"><use href="#i-minus"/></svg><span>Whole life: HK$2.0M for Adrian, HK$1.8M for Carmen</span></p>
-        <p class="wp" data-b="3"><svg class="ic"><use href="#i-check"/></svg><span>A term top-up to what the family needs, until 65 and 62</span></p>
-        <p class="ct" data-b="3"><i style="width:20px"></i><span>HK$7K</span></p>
-      </div>
-      <div class="r5">
-        <p class="rk"><svg class="ic"><use href="#i-shield-check"/></svg><b>If one can't decide, or dies without a will</b></p>
-        <p class="td x"><svg class="ic"><use href="#i-x"/></svg><span>No wills, trusts, powers of attorney or directives</span></p>
-        <p class="wp" data-b="4"><svg class="ic"><use href="#i-check"/></svg><span>Wills with staged trusts, a guardian for Chloe, powers of attorney, advance directives</span></p>
-        <p class="ct nb" data-b="4"><span>under HK$25K, once</span></p>
-      </div>
-      <div class="r5">
-        <p class="rk"><svg class="ic"><use href="#i-briefcase"/></svg><b>If the business loses Carmen</b></p>
-        <p class="td x"><svg class="ic"><use href="#i-x"/></svg><span>No buy-sell agreement or key-person cover</span></p>
-        <p class="wp" data-b="4"><svg class="ic"><use href="#i-check"/></svg><span>A buy-sell agreement, and key-person cover paid by the company</span></p>
-        <p class="ct nb" data-b="4"><span>paid by the company</span></p>
-      </div>
-      <div class="r5 tot" data-b="3"><p class="nt"><b>Ryan:</b> about HK$900 a year, term life only. On average, about HK$114K a year until each retires.</p><p class="sm">Every income insured, for</p><p class="tv"><strong>HK$100K</strong><span>a year, 14% of their surplus</span></p></div>
+    </div>
   </div>
   <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>Term cover costs a fraction of whole life, but it lapses at 65 and 62; after that, their existing policies and savings carry the risk.</span></p>
   <p class="bar" data-b="4">Protected first: now the plan can turn what they own into income.</p>
