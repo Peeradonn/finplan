@@ -502,6 +502,21 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Reworked 24 Oct, evening** (Pete: the right side missed the main point, that Ryan isn't selling his crypto, we let it
+size down over time; on the left, annotate the growth, and ask whether to explain why the world ESG index, why MPF
+low-carbon, why these sizes, and the financial side of risk and diversification). Verdict: yes, one line each, because
+"what does ESG cost in risk and return?" is a practitioner's first question, and the written case already answers it
+(§6). Left: a crimson arrow from 11% to 25%, "+14 points". "Like for like, not a new bet: each fund is sized by what it
+replaces, so risk and expected return stay where Call 4 set them; no ESG premium assumed." Then each fund keyed to its
+segment by colour, with its role: the world ESG index is the global shares core (the highest-rated firms in each
+sector, so still diversified); MPF low-carbon is the half of each MPF from their own contributions (Employee Choice);
+green bonds are part of the bonds, each checked against ICMA. The two-rating test now says "per equity fund", as the
+written case does (green bonds are checked against ICMA instead). Right: Adrian, Carmen and Chloe in one row; then
+"Ryan keeps his HK$500K: nothing sold, nothing added", with his wealth at 24, 30 and 35 as three columns on one scale.
+The crypto block is the same size in each, with a dashed line along its top; the shares 74% → 32% → 20% (the cap at 35 in
+crimson) come from Figure 18 (30% of his pay saved, prices held flat), and each column's total is HK$500K over its
+share. The trim rule (a rally more than 10 points above the path) makes the 20% a cap, not a hope. The axis under the
+ESG bars went to make room.
 **Built 23 Oct** (`src/05_s08-15.html`; about 225 words, the densest slide: it carries two of the case title's four
 topics). Two columns, so it doesn't repeat slide 8's rows, in one language: grey today, the wine family the plan, crimson
 only on 25% (the one number the title names). Left: "Carmen's values: ESG from 11% to 25%…": two bars on one scale over

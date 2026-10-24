@@ -665,14 +665,14 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 /* ==================== slide 9, Call 5 (23 Oct): two wants, each on one scale, each ending on its test ====================
    One language across both panels: grey is today, the wine family is the plan, crimson the number the title names.
    A 2 x 2 grid, so the two tests ("how a fund gets in", "how it is held") sit level at the foot. */
-.e9{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;column-gap:56px;margin-top:18px;padding-bottom:14px}
+.e9{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;column-gap:56px;margin-top:18px;padding-bottom:10px}
 .e9>.pn{min-height:0}
 .e9 .lede{margin-top:6px}
 .e9c{position:relative;--lab:112px;margin-top:18px}
 .e9r{position:relative;z-index:1;display:grid;grid-template-columns:var(--lab) 1fr;align-items:center}
 .e9r>span{font:600 15px/1.25 var(--text);color:var(--ink)}
 .e9t{position:relative;display:flex;align-items:center;min-width:0}
-.e9t>i{display:block;flex:none;height:48px}
+.e9t>i{display:block;flex:none;height:36px}
 .e9 i.g{background:#E6CDD1}
 .e9 i.s1{background:var(--wine-g)}
 .e9 i.s2{background:#A35560}
@@ -723,6 +723,46 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .e9>.pn{display:flex;flex-direction:column}
 .e9gr{margin-top:auto;border-left:3px solid var(--wine);padding:2px 0 2px 14px;font:400 15px/1.45 var(--text);color:var(--slate)}
 .e9gr b{color:var(--ink);font-weight:700}
+/* slide 9, 24 Oct rework (Pete: the right side missed that Ryan's crypto is kept and shrinks as he saves; the left should
+   mark the growth and say why each fund, why these sizes, and the risk): the growth as one arrow; "like for like" as the
+   financial answer; each fund's role keyed to its segment; Ryan's wealth as three columns on one scale, the crypto block
+   the same size in each, so only the share falls */
+.e9 .e9bars{padding-top:30px;gap:12px}
+.e9lk{margin-top:12px;font:400 15px/1.4 var(--text);color:var(--slate)}
+.e9lk b{color:var(--ink);font-weight:700}
+.e9w{display:flex;flex-direction:column;margin-top:6px}
+.e9w li{display:flex;gap:12px;align-items:flex-start;padding:3px 0;border-bottom:1px solid var(--rule)}
+.e9w li:last-child{border-bottom:0}
+.e9w li>i{flex:none;width:14px;height:14px;margin-top:3px}
+.e9w p{font:400 14px/1.35 var(--text);color:var(--slate)}
+.e9w p b{display:block;font:600 15px/1.3 var(--text);color:var(--ink)}
+.e9w p b small{font:400 14px/1 var(--text);color:var(--slate);margin-left:8px}
+.e9o{display:grid;grid-template-columns:repeat(3,1fr);column-gap:14px;margin-top:12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.e9o>div{display:flex;gap:10px;align-items:flex-start}
+.e9o .pic,.e9y .pic{flex:none;width:38px;height:38px;margin:0;border:0;background:var(--mist);box-shadow:var(--lift)}
+.e9o p{font:400 14px/1.3 var(--text);color:var(--slate)}
+.e9o p b{display:block;font:600 15px/1.25 var(--text);color:var(--ink)}
+.e9y{flex:1;min-height:0;display:grid;grid-template-columns:190px 1fr;grid-template-rows:auto 1fr;column-gap:22px;align-items:end;padding:10px 0 8px}
+.e9y>.nm{grid-column:1/3;display:flex;align-items:center;gap:10px;align-self:start}
+.e9y>.nm b{font:700 16px/1.25 var(--text);color:var(--ink)}
+.e9y .tx{align-self:end;padding-bottom:20px}
+.e9y .tx p{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:6px}
+.e9y .tx p b{color:var(--ink);font-weight:700}
+.e9y .tx .nm{display:flex;align-items:center;gap:10px;margin-top:0}
+.e9y .tx .nm b{font:700 16px/1.25 var(--text)}
+.e9v{position:relative;display:flex;align-items:flex-end;gap:18px;padding-right:128px}
+.e9v .cl{display:flex;flex-direction:column;align-items:center;width:64px}
+.e9v .cl em{font:700 22px/1 var(--head);font-style:normal;color:var(--ink);margin-bottom:6px;letter-spacing:-.3px}
+.e9v .cl.on em{font-size:34px;color:var(--accent);letter-spacing:-1px}
+.e9v .st{display:flex;flex-direction:column;width:64px}
+.e9v .st i{display:block;width:100%}
+.e9v .rs{background:var(--rose-g)}
+.e9v .cr{background:var(--wine-g)}
+.e9v .cl.on .cr{background:var(--accent-g)}
+.e9v .cl>span{font:400 14px/1.2 var(--text);color:var(--slate);margin-top:6px;white-space:nowrap}
+.e9v::before{content:"";position:absolute;left:0;right:122px;bottom:calc(20px + var(--cr));border-top:1.5px dashed var(--ink);z-index:1}   /* the crypto block's top, flat across the columns */
+.e9v .lv{position:absolute;right:0;bottom:calc(20px + var(--cr) - 18px);width:116px;font:400 14px/1.3 var(--text);color:var(--slate)}
+.e9v .lv b{display:block;font:600 14px/1.3 var(--text);color:var(--ink)}
 
 /* ==================== the presentation system, after Pete's own decks (23 Oct) ====================
    Taken from Banyan and Nordea only where a planner would use it (Pete: "take the good parts ... where it is
