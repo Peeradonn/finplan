@@ -213,6 +213,61 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
     return "\n    ".join(o), anchors
 
 
+def progress3d(call, w=66, W=176, D=132, hf=18, hw=58, rh=52, gap=12, gx=6, ov=12, c=0.90, s=0.34):
+    """The small house beside a call slide's title, as slide 4's 3D model in miniature (24 Oct, Pete): earlier calls built
+    in the house's colours, this call crimson, the calls still to come (and the roof, slide 12) as dashed ghosts. White
+    seams between the faces keep it crisp at icon size."""
+    st = {str(k): "done" for k in range(1, call)}
+    st[str(call)] = "on"
+    zf = (0, hf)
+    z2 = (hf + gap, hf + gap + hw)
+    z3 = (z2[1] + gap, z2[1] + gap + hw)
+    zr = z3[1] + gap
+    half = W / 2
+
+    def XY(x, y, z):
+        return (x - y) * c, (x + y) * s - z
+
+    blocks = {"1": (-8, W + 8, -8, D + 8, zf), "2": (0, half - gx / 2, 0, D, z2), "3": (half + gx / 2, W, 0, D, z2),
+              "4": (0, half - gx / 2, 0, D, z3), "5": (half + gx / 2, W, 0, D, z3)}
+    CRIMSON = ("#C9505D", "#A81E2D", "#7A1622")
+    faces = []        # (points, fill, stroke, dashed)
+
+    def add(pts, state, shade, col):
+        if state == "todo":
+            faces.append((pts, "#FFFFFF", "#B99A9C", True))
+        elif state == "on":
+            faces.append((pts, CRIMSON[shade], "#FFFFFF", False))
+        else:
+            fill = (_mix(col, "#FFFFFF", .30), col, _mix(col, "#000000", .20))[shade]
+            faces.append((pts, fill, "#FFFFFF", False))
+
+    for part in ("1", "2", "3", "4", "5"):
+        x0, x1, y0, y1, (za, zb) = blocks[part]
+        state, col = st.get(part, "todo"), LAYER[part]
+        add([(x0, y0, zb), (x1, y0, zb), (x1, y1, zb), (x0, y1, zb)], state, 0, col)
+        add([(x0, y1, za), (x1, y1, za), (x1, y1, zb), (x0, y1, zb)], state, 1, col)
+        add([(x1, y0, za), (x1, y1, za), (x1, y1, zb), (x1, y0, zb)], state, 2, col)
+    x0, x1, y0, y1 = -ov, W + ov, -ov, D + ov
+    add([(x0, y0, zr), (x0, y1, zr), (half, y1, zr + rh), (half, y0, zr + rh)], "todo", 0, LAYER["roof"])
+    add([(half, y0, zr + rh), (half, y1, zr + rh), (x1, y1, zr), (x1, y0, zr)], "todo", 2, LAYER["roof"])
+    add([(x0, y1, zr), (x1, y1, zr), (half, y1, zr + rh)], "todo", 1, LAYER["roof"])
+    pts2 = [[XY(*q) for q in f[0]] for f in faces]
+    xs = [p[0] for f in pts2 for p in f]
+    ys = [p[1] for f in pts2 for p in f]
+    pad = 6
+    vx, vy = min(xs) - pad, min(ys) - pad
+    vw, vh = max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad
+    o = [f'<svg class="house mini" viewBox="{vx:.0f} {vy:.0f} {vw:.0f} {vh:.0f}" width="{w}" height="{round(w * vh / vw)}" aria-hidden="true">']
+    for (pts, fill, stroke, dashed), q in zip(faces, pts2):
+        dash = ' stroke-dasharray="12 8"' if dashed else ""
+        sw = 4 if dashed else 3
+        o.append(f'<polygon points="{" ".join(f"{x:.0f},{y:.0f}" for x, y in q)}" fill="{fill}" stroke="{stroke}" '
+                 f'stroke-width="{sw}" stroke-linejoin="round"{dash}/>')
+    o.append("</svg>")
+    return "".join(o)
+
+
 def elevation(w=360):
     """Slide 4: the house drawn as an architect's elevation (Pete chose it, 23 Oct): fine crimson lines, light rose fills,
     the foundation hatched like concrete, one ground line, each part numbered. Each part is a group with its build step

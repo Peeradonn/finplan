@@ -518,7 +518,8 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
   first), the walls Calls 2 and 3 (income that lasts), the rooms Calls 4 and 5 (a place for every voice), the roof what
   passes on. Slide 4 draws the whole house as the answer, an exploded 3D model since 24 Oct (`house.exploded()`), built part by
   part as the calls are named; each call slide
-  carries a small house beside its title (built parts wine, this call crimson, the rest dashed); the close shows it
+  carries a small house beside its title, since 24 Oct slide 4's 3D model in miniature (`house.progress3d(call)`):
+  earlier calls built in the house's colours, this call crimson, the rest and the roof dashed ghosts; the close shows it
   complete. The lifeline ruler is gone; time stays where it is data (the axes of slides 2, 3, 7, 11).
 - **Slide 4 is the one dark slide after the cover** (24 Oct): the answer reveal, on a wine stage; every other content
   slide stays on white.
