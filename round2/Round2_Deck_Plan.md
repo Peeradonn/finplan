@@ -560,8 +560,9 @@ seam, is what the review at 75 and the spending rules add (crimson on the lost j
 reads as a level against 100%, as slide 5's bar list does, and a bar from zero can't read as a fall. Rendered against a
 refined dot plot, the bars read faster. The sentence above the chart names both parts with colour swatches, which
 replaces the labels under the first bar (they ran into each other where the rose part is short). "What holds it" is
-plain text, one defence a line in ink (12-month reserve, spending rules, full review, Treasury ladder, review at 75,
-annuities for life); Pete tried pills with icons the same evening and went back to text.
+one line a defence, its name in bold and what it does in a few quiet words ("**Spending rules** trim lean years",
+"**Treasuries** mature on schedule", "**Annuities** pay for life"). Tried the same evening: pills with icons (Pete: back
+to text), names alone (they didn't say how) and full sentences (too busy for a 30-second slide).
 **Icons, 24 Oct evening** (Pete sent five icons for the risk list: a briefcase, people, bitcoin, a leaf, a rising chart).
 Kept his choice of pictures, drawn from Phosphor's filled set (MIT; `src/lucide/ph-*.svg`, scaled to the 24-unit box),
 white on a wine circle. His files themselves stay out of the deck: the leaf is a VectorStock preview with its watermark,

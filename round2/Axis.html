@@ -932,10 +932,10 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10k i{display:inline-block;width:12px;height:12px;border-radius:50%}
 .q10k i.o{background:#fff;border:2.5px solid var(--grey)}
 .q10k i.p{background:var(--wine)}
-.q10h,.q10r,.q10x{display:grid;grid-template-columns:220px 1fr 196px;column-gap:36px}
+.q10h,.q10r,.q10x{display:grid;grid-template-columns:216px 1fr 214px;column-gap:32px}
 .q10h{margin-top:16px;padding-bottom:6px;border-bottom:1.5px solid var(--ink);font:600 14px/1.2 var(--text);color:var(--slate)}
 .q10x{margin-top:6px;font:400 14px/1 var(--text);color:var(--slate)}
-.q10x .ax{position:relative;height:14px}
+.q10x .ax{position:relative;height:14px;margin-right:16px}
 .q10x .ax i{position:absolute;top:0;font-style:normal;font-weight:400;transform:translateX(-50%)}
 .q10x .ax i:nth-child(1){left:0;transform:none}.q10x .ax i:nth-child(2){left:50%}.q10x .ax i:nth-child(3){left:100%;transform:translateX(-100%)}
 .q10c{flex:1;display:flex;flex-direction:column}
@@ -944,7 +944,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
 /* each test as one rounded bar from 0% (Pete, 24 Oct: the arrows weren't premium): the four decisions alone in rose,
    then what the full plan adds in wine (crimson on the title's test), a white seam between; each value above its end */
-.q10t{position:relative;height:60px;--bb:12px}
+.q10t{position:relative;height:60px;--bb:12px;margin-right:16px}   /* the scale ends short of the column, so a 99% label clears the next one */
 .q10t::before{content:"";position:absolute;left:0;right:0;bottom:var(--bb);height:14px;border-radius:7px;background:var(--mist)}
 .q10b{position:absolute;left:0;bottom:var(--bb);height:14px;border-radius:7px 0 0 7px;background:#E3C3C9}
 .q10g{position:absolute;bottom:var(--bb);height:14px;border-radius:0 7px 7px 0;border-left:2px solid #fff;background:var(--wine-g)}
@@ -959,9 +959,11 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10e .sw.a{background:#E3C3C9}
 .q10e .sw.p{background:var(--wine-g)}
 .q10e b{color:var(--ink);font-weight:600}
-/* what holds each test: plain text, one defence a line (Pete, 24 Oct: back to text, not pills) */
-.q10d{display:flex;flex-direction:column;gap:2px}
-.q10d span{font:500 15px/1.4 var(--text);color:var(--ink)}
+/* what holds each test: one line a defence, its name in bold and what it does (Pete, 24 Oct: text, not pills; a list of
+   names didn't say how, and full sentences were too busy for the column) */
+.q10d{display:flex;flex-direction:column;gap:3px}
+.q10d span{font:400 14px/1.35 var(--text);color:var(--slate);white-space:nowrap}
+.q10d b{font-weight:600;color:var(--ink)}
 
 /* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
    steps on one line with an icon a step, then the reviews. */
@@ -1643,16 +1645,16 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
       <div class="q10c">
         <div class="q10r on" data-b="2"><div class="q10l"><b>Adrian's job ends at 60</b><span>no pay or MPF to 65, no severance</span></div>
           <div class="q10t"><span class="q10b" style="width:30%"></span><span class="q10g" style="left:30%;width:calc(83% - 30%)"></span><i class="o" style="left:30%"><em>30%</em></i><i class="p" style="left:83%"><em>83%</em></i></div>
-          <p class="q10d"><span>12-month reserve</span><span>Spending rules</span><span>Full review</span></p></div>
+          <p class="q10d"><span><b>Reserve</b> pays a year of bills</span><span><b>Spending rules</b> trim lean years</span><span><b>Full review</b> resets the plan</span></p></div>
         <div class="q10r" data-b="3"><div class="q10l"><b>Low returns, every year</b><span>shares 4%, bonds 2.5%, to 2066</span></div>
           <div class="q10t"><span class="q10b" style="width:32%"></span><span class="q10g" style="left:32%;width:calc(95% - 32%)"></span><i class="o" style="left:32%"><em>32%</em></i><i class="p" style="left:95%"><em>95%</em></i></div>
-          <p class="q10d"><span>Spending rules</span><span>Treasury ladder</span></p></div>
+          <p class="q10d"><span><b>Spending rules</b> trim lean years</span><span><b>Treasuries</b> mature on schedule</span></p></div>
         <div class="q10r" data-b="3"><div class="q10l"><b>Inflation and medical costs</b><span>inflation 3.5%, medical 8.5% a year</span></div>
           <div class="q10t"><span class="q10b" style="width:28%"></span><span class="q10g" style="left:28%;width:calc(92% - 28%)"></span><i class="o" style="left:28%"><em>28%</em></i><i class="p" style="left:92%"><em>92%</em></i></div>
-          <p class="q10d"><span>Review at 75</span><span>Spending rules</span></p></div>
+          <p class="q10d"><span><b>Review at 75</b> cuts the premiums</span><span><b>Spending rules</b> absorb the rest</span></p></div>
         <div class="q10r" data-b="4"><div class="q10l"><b>Carmen lives to 95</b><span>six years past the plan's 89</span></div>
           <div class="q10t"><span class="q10b" style="width:61%"></span><span class="q10g" style="left:61%;width:calc(99% - 61%)"></span><i class="o" style="left:61%"><em>61%</em></i><i class="p" style="left:99%"><em>99%</em></i></div>
-          <p class="q10d"><span>Annuities for life</span></p></div>
+          <p class="q10d"><span><b>Annuities</b> pay for life</span></p></div>
       </div>
       <div class="q10x"><span></span><span class="ax"><i>0%</i><i>50%</i><i>100%</i></span><span></span></div>
     </div>
