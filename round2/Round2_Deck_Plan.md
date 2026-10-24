@@ -445,15 +445,15 @@ stays theirs. Read left to right: the two threats, each with its why and its fix
   {{story_plan6_left}} of savings at 89, under a year of spending. "The home: still theirs", with the reverse
   mortgage's {{rmp_income}} a year from {{rmp_year}} (it shrinks because the loan grows against it: notes). Their own
   way dashed, slide 3's two events as dots, each label set on its dot's x with a dotted leader straight down; what
-  is left at 89 in a gutter: {{story_plan_left}} with the
-  plan (the accent) against {{story_own_left}}.
+  is left at 89 in a gutter: {{story_plan_left}} with the plan (the accent). Their own way's
+  {{story_own_left}} is left to slide 12 (Pete's call, agreed by Fahtai 24 Oct: one comparison, one set of numbers).
 - **The bar as four blocks:** they retire on time | they keep their spending | they keep the home | {{ladder_5_89}} →
   **{{switch_89}}** of futures last to Carmen's 89 (the largest type on the slide). "Almost every future with the
   rules" is spoken and in the notes. Version B of two compared on 24 Oct (A: one line).
 - Flat colours on this slide, no gradients (Fahtai, 24 Oct). Script: premiums, the review, the rules, the future, the
   odds (about 95 spoken words, was 80).
 - Earlier drafts below.
-**Endings marked, 24 Oct (Pete; carried into the rework above as the dots, leaders and the gutter; Fahtai's gutter also shows their own way's figure, open for Pete to keep or move to slide 12)** (with slides 10 to 15): the chart now says how this future ends, as slide 3 does. A
+**Endings marked, 24 Oct (Pete; carried into the rework above as the dots, leaders and the gutter; their own way's figure left to slide 12, as Pete wrote)** (with slides 10 to 15): the chart now says how this future ends, as slide 3 does. A
 crimson dot at the plan's end with a leader up to "{{story_plan_left}} left at 89 · and still their home". Slide 3's sale
 and run-out sit as hollow ghosts on their own way's dashed line ("sold, {{story_sale_age}}", "ran out,
 {{story_out_age}}"). The comparison with {{story_own_left}} is left to slide 12, the payoff.
