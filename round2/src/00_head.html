@@ -939,7 +939,10 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
 .q10t{position:relative;height:58px}
 .q10t::before{content:"";position:absolute;left:0;right:0;bottom:15px;border-top:1.5px solid var(--rule)}   /* the 0-100% track */
-.q10g{position:absolute;bottom:10px;height:11px;background:var(--rose-g)}   /* the gain, from one dot to the other */
+.q10g{position:absolute;bottom:11.5px;height:8px;background:#E3BFC5;color:#E3BFC5}   /* the gain, as an arrow from one dot to the other: it points up the scale, so a red result can't read as a fall */
+.q10g::after{content:"";position:absolute;right:5px;top:50%;transform:translateY(-50%);border-left:12px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}
+.q10g{background-clip:content-box;padding-right:17px;box-sizing:border-box}
+.q10r.on .q10g{background:#E8A9B2;color:var(--accent)}
 .q10t i{position:absolute;bottom:8px;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;z-index:2}
 .q10t i.o{background:#fff;border:2.5px solid var(--grey)}
 .q10t i.p{background:var(--wine)}
@@ -948,6 +951,12 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10t i.p em{font:700 24px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
 .q10r.on .q10t i.p{background:var(--accent);width:17px;height:17px;margin-left:-8.5px;bottom:7px}
 .q10r.on .q10t i.p em{font-size:36px;color:var(--accent);letter-spacing:-1px}
+/* the first row names its dots, so the big number says what it is */
+.q10r.on .q10t{height:84px}
+.q10r.on .q10t::before{bottom:37px}.q10r.on .q10g{bottom:33.5px}.q10r.on .q10t i{bottom:30px}.q10r.on .q10t i.p{bottom:29px}
+.q10t i b{position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);font:400 14px/1.2 var(--text);color:var(--slate);white-space:nowrap}
+.q10t i.p b{font-weight:600;color:var(--accent)}
+.tr9 strong{font-weight:600;color:var(--ink)}
 .q10d{display:flex;gap:8px;font:400 14px/1.35 var(--text);color:var(--slate)}
 .q10d .ic{flex:none;width:18px;height:18px;stroke:var(--wine);stroke-width:2;margin-top:1px}
 .q10r.on .q10d{color:var(--ink)}

@@ -939,7 +939,10 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
 .q10t{position:relative;height:58px}
 .q10t::before{content:"";position:absolute;left:0;right:0;bottom:15px;border-top:1.5px solid var(--rule)}   /* the 0-100% track */
-.q10g{position:absolute;bottom:10px;height:11px;background:var(--rose-g)}   /* the gain, from one dot to the other */
+.q10g{position:absolute;bottom:11.5px;height:8px;background:#E3BFC5;color:#E3BFC5}   /* the gain, as an arrow from one dot to the other: it points up the scale, so a red result can't read as a fall */
+.q10g::after{content:"";position:absolute;right:5px;top:50%;transform:translateY(-50%);border-left:12px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}
+.q10g{background-clip:content-box;padding-right:17px;box-sizing:border-box}
+.q10r.on .q10g{background:#E8A9B2;color:var(--accent)}
 .q10t i{position:absolute;bottom:8px;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;z-index:2}
 .q10t i.o{background:#fff;border:2.5px solid var(--grey)}
 .q10t i.p{background:var(--wine)}
@@ -948,6 +951,12 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10t i.p em{font:700 24px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
 .q10r.on .q10t i.p{background:var(--accent);width:17px;height:17px;margin-left:-8.5px;bottom:7px}
 .q10r.on .q10t i.p em{font-size:36px;color:var(--accent);letter-spacing:-1px}
+/* the first row names its dots, so the big number says what it is */
+.q10r.on .q10t{height:84px}
+.q10r.on .q10t::before{bottom:37px}.q10r.on .q10g{bottom:33.5px}.q10r.on .q10t i{bottom:30px}.q10r.on .q10t i.p{bottom:29px}
+.q10t i b{position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);font:400 14px/1.2 var(--text);color:var(--slate);white-space:nowrap}
+.q10t i.p b{font-weight:600;color:var(--accent)}
+.tr9 strong{font-weight:600;color:var(--ink)}
 .q10d{display:flex;gap:8px;font:400 14px/1.35 var(--text);color:var(--slate)}
 .q10d .ic{flex:none;width:18px;height:18px;stroke:var(--wine);stroke-width:2;margin-top:1px}
 .q10r.on .q10d{color:var(--ink)}
@@ -1623,11 +1632,11 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
   <div class="panels q10">
     <div class="pn" style="grid-column:span 8">
       <h3>Four hard tests, in the same 10,000 markets…</h3>
-      <p class="lede q10e"><span class="q10k"><i class="o"></i>the four decisions alone</span><span class="q10k"><i class="p"></i>the full plan, with the review at 75 and the spending rules</span></p>
+      <p class="lede">Each row: the four decisions alone, then the full plan, with the review at 75 and the spending rules</p>
       <div class="q10h"><span>The test</span><span>Chance the money lasts to Carmen's 89</span><span>What holds it</span></div>
       <div class="q10c">
         <div class="q10r on" data-b="2"><div class="q10l"><b>Adrian's job ends at 60</b><span>no pay or MPF to 65, no severance</span></div>
-          <div class="q10t"><span class="q10g" style="left:30%;width:calc(83% - 30%)"></span><i class="o" style="left:30%"><em>30%</em></i><i class="p" style="left:83%"><em>83%</em></i></div>
+          <div class="q10t"><span class="q10g" style="left:30%;width:calc(83% - 30%)"></span><i class="o" style="left:30%"><em>30%</em><b>the four decisions alone</b></i><i class="p" style="left:83%"><em>83%</em><b>the full plan</b></i></div>
           <p class="q10d"><svg class="ic"><use href="#i-shield-check"/></svg>the 12-month reserve, the spending rules, a full review</p></div>
         <div class="q10r " data-b="3"><div class="q10l"><b>Low returns, every year</b><span>shares 4%, bonds 2.5%, to 2066</span></div>
           <div class="q10t"><span class="q10g" style="left:32%;width:calc(95% - 32%)"></span><i class="o" style="left:32%"><em>32%</em></i><i class="p" style="left:95%"><em>95%</em></i></div>
@@ -1653,7 +1662,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
       </ul>
     </div>
   </div>
-  <p class="tr9" data-b="5"><svg class="ic"><use href="#i-scale"/></svg><b>The price of holding</b>in years of low returns, the rules trim typical spending to about 86% of the budget; essentials are never cut.</p>
+  <p class="tr9" data-b="5"><svg class="ic"><use href="#i-scale"/></svg><b>The price of holding</b><span>in years of low returns, the rules trim typical spending to <strong>about 86% of the budget</strong>; essentials are never cut.</span></p>
   <p class="bar" data-b="5">It holds when the hardest things happen, and it starts this month.</p>
   <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89 (95 in the last test), 10,000 simulated markets (measured): decisions compared in the same markets, not forecasts. Written case §11, Figure 26, A1.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><b>Will it hold</b><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">10 / 15</span></footer>
   <aside class="notes">LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%. [Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).]</aside>

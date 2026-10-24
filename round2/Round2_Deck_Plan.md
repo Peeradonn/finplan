@@ -554,6 +554,13 @@ downgrade rule are in the notes.
   Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
+**Second pass, 24 Oct evening** (Pete: does red suit this chart? more bold or italic? at first glance the big red number
+didn't say it was the full plan). Red kept: crimson means "with our plan" across the deck (97%, 25%, HK$7.7M), and A
+against B (numbers in ink, red on all four arrows) showed B with four red marks and no focal point. Each gain bar now
+ends in an arrowhead, so the move reads as up the scale, not as a red fall (Hong Kong screens show falls in red). The
+first row names its dots ("the four decisions alone", "the full plan", the second in crimson), and the legend is
+replaced by one plain sentence. No italics (one font, Zoom), no extra bold: the one bold added is "about
+{{rec_lowret_typical_pct}} of the budget" in the price strip.
 **Drafted 24 Oct** (Pete: draft our own version, not the teammate's of the same afternoon, which is in git, commits
 1ef9433 and e8d5f30). Left: each hard test as one row, a dumbbell on one 0–100% scale from the four decisions alone
 (hollow grey) to the full plan (filled), then "what holds it" (the written case's defence for that row). Only the
