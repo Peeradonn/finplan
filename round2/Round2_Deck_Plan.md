@@ -429,6 +429,16 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Second pass, 24 Oct evening** (Pete: not the deck's palette; "The cost:" and "The risk:" fought the title; text too
+small, no hierarchy; does it need this much depth; would the planner, the winning team and the deck builder push it
+out?). Not as it was. The left now leads with the two fixes, as the title does ("Fix…"): numbered 18 px ink headings
+(the number in a wine disc, no crimson), each ending on its result. (1) "Review the medical plan at Adrian's 75":
+the premium chart, a quiet caption, then {{ladder_5_89}} → {{switch_89}} of futures last to 89. (2) "From 2039,
+spending rules for the bad years": the rules on two quiet lines, then "with the rules, almost every future lasts to 89".
+The leanest-year figures ({{guardswitch_worst5_real}}, {{fixswitch_worst5_real}}) are unspoken, so they're in the
+notes only, which already explain them. The right chart takes slide 3's fills (the home in the wine gradient, the four
+decisions' savings in the rose gradient, what Call 3 adds a paler tint), so the payoff looks like the problem it
+answers, and it is taller so both columns end level.
 **Refined, 24 Oct evening** (Pete: cluttered; keep the depth that's needed, make it nicer, take out what isn't).
 Fahtai's structure is kept (two things still break the plan, then the same future, fixed), with every number his
 script speaks. Out: the "THE COST" / "THE RISK" chips and the italic highlights (now "The cost:" and "The risk:" in
