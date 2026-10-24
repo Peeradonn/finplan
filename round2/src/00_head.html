@@ -434,6 +434,33 @@ p,li,span,b{text-wrap:pretty}
 /* slide 4, treatment B, the spotlight (for comparison): the deck's white page with a soft rose glow behind the house */
 .s4s{background:radial-gradient(ellipse 50% 62% at 50% 50%,#F6E6E8 0%,#FFFFFF 70%)}
 
+/* ==================== slide 5, Call 1 (24 Oct): a gap scorecard ====================
+   Pete: too many things on one slide, in three visual languages. One form instead: a row per risk, in the case's own
+   list (p.4), today against the plan, what each costs a year (bars to scale), and the total, the one crimson number.
+   Builds: the gaps first (the Today column), then each row closes in the order Lookbua says it. */
+.s5g{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:space-between}
+.r5{display:grid;grid-template-columns:262px 300px 1fr 212px;column-gap:22px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule)}
+.r5 p{display:flex;align-items:center;gap:10px;min-width:0}
+.r5 .ic{flex:none;width:18px;height:18px;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.r5.hdr{padding:0 0 6px;border-bottom:1.5px solid var(--ink)}
+.r5.hdr p{font:600 14px/1.2 var(--text);color:var(--slate)}
+.r5 .rk{font:600 15px/1.3 var(--text);color:var(--ink)}
+.r5 .rk .ic{width:22px;height:22px;stroke:var(--wine)}
+.r5 .td{font:400 14px/1.35 var(--text);color:var(--slate)}
+.r5 .td .ic{stroke:var(--grey)}
+.r5 .wp{font:600 14px/1.35 var(--text);color:var(--ink)}
+.r5 .wp .ic{stroke:var(--wine);stroke-width:2.8}
+.r5 .ct{gap:10px;font:600 15px/1.2 var(--text);color:var(--ink)}
+.r5 .ct i{display:block;flex:none;height:14px;background:var(--wine-g)}
+.r5 .ct.nb{font:400 14px/1.3 var(--text);color:var(--slate)}
+.r5.tot{border-bottom:0;padding-top:12px}
+.r5.tot .nt{font:400 13px/1.4 var(--text);color:var(--slate);grid-column:1 / 3;display:block}
+.r5.tot .nt b{color:var(--ink);font-weight:600}
+.r5.tot .sm{justify-content:flex-end;font:600 15px/1.3 var(--text);color:var(--ink)}
+.r5.tot .tv{flex-direction:column;align-items:flex-start;gap:2px}
+.r5.tot .tv strong{font:700 44px/1 var(--head);color:var(--accent);letter-spacing:-1px}
+.r5.tot .tv span{font:400 14px/1.3 var(--text);color:var(--slate)}
+
 /* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
 .cv9{padding:0;flex-direction:row}
 .cv9 .l{flex:1;position:relative;padding:58px 56px 0}

@@ -329,6 +329,14 @@ the accent, the only accent on the slide.
 - Bar: "Five calls, one family: the rest of this talk defends each one."
 
 ### 5 · Call 1: insure the income, not the life (Lookbua; 0:40)
+**Rebuilt 24 Oct as a gap scorecard** (Pete: not good yet, covering so many things; invent a layout if three
+panels don't fit). The three panels (the income gap as bars, the HK$100K split as a stacked bar with a legend, the
+papers as a checklist) spoke three visual languages for one claim. Now one form: a row per risk, in the case's own
+list of what they have (p.4): can't work, seriously ill, in hospital, dies, can't decide or no will, the business
+loses Carmen; Today (a cross, or a dash where cover is partial) against With the plan (a tick), what each costs a
+year as a bar to scale, and the total, about HK$100K a year, 14% of their surplus, the one crimson number. Ryan and
+the average premium sit in one quiet line. Builds: the gaps first, then each row closes in the order Lookbua says it.
+The earlier specs below are superseded.
 **Built 23 Oct** (`src/03_s04-05.html`; 169 words). Panels 5 + 4 + 3: "If a parent can't work, nothing replaces their
 pay…" (Adrian and Carmen, today a dashed empty bar, with cover an ink bar) / "…so we insure the income first…"
 (HK$100K in the accent, the year-1 cost as one stacked bar) / "…and sign the papers now" (within three months: wills,
