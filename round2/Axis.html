@@ -851,8 +851,6 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .x3p .sold .s{font:400 15px/1.35 var(--text);color:var(--slate);margin-top:10px}
 .x3p .hero{margin-top:26px;padding-top:22px}
 /* slide 7: the same result rows as slide 3, at the foot of the premium panel */
-.x3r.x7{flex:none;padding-top:0;gap:8px}
-.x3r.x7 .row{padding-bottom:8px}
 .x3r .row.nn{grid-template-columns:46px 1fr}
 .x3r .row{display:grid;grid-template-columns:46px 112px 1fr;column-gap:12px;align-items:center;padding-bottom:8px;border-bottom:1px solid var(--rule)}
 .x3r .row strong{font:600 34px/1 var(--head)}
@@ -1090,19 +1088,8 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
    call 3, lighter); slide 3's events as numbered marks keyed in white space; what is left at 89 in a gutter; the
    premium chart named in plain words; the spending rules as rules; the odds in four blocks, the 97% raised.
    Classes prefixed x7 so they restyle nothing else. */
-.x7lg{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px}
-.x7lg i{display:inline-block;width:14px;height:14px;margin-left:6px}
-.x7lg .sw6{background:#D3A6AD}.x7lg .sw3{background:#F3E2E4;outline:1px solid #D3A6AD}   /* flat fills: no gradients on slide 7 (Fahtai, 24 Oct) */
-.x7lg .swd{width:22px;height:0;border-top:2px dashed var(--ink)}
 .c9 .x7s{height:250px;margin-top:20px}
 .c9 .x7s,.c9 .x7a{margin-right:118px}
-.x7m{position:absolute;z-index:6;width:10px;height:10px;border-radius:50%;background:var(--ink);border:2px solid #fff;transform:translate(-50%,-50%)}
-.x7k{position:absolute;inset:0;z-index:5;pointer-events:none}   /* each label sits on its own marker's x: leaders drop straight down */
-.x7k p{position:absolute;top:2px;height:22px;display:flex;align-items:center;gap:6px;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
-.x7k p.h{height:20px;font-weight:600;color:var(--ink)}
-.x7k em{font-style:normal;flex:none;width:20px;height:20px;border-radius:50%;border:2px solid var(--ink);background:#fff;font:700 12px/16px var(--text);text-align:center;color:var(--ink)}
-.x7ld{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:4;pointer-events:none}
-.x7ld line{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:2 4;stroke-linecap:round}
 .x7g{position:absolute;left:100%;top:0;bottom:0;width:118px}
 .x7g .h{position:absolute;left:10px;top:49%;font:600 14px/1.2 var(--text);color:var(--ink)}
 .x7g .pl,.x7g .ow{position:absolute;left:10px;transform:translateY(-50%);white-space:nowrap}
@@ -1114,40 +1101,23 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .x7dl{position:absolute;top:0;bottom:0;border-left:1.5px dashed var(--grey)}
 .c9 .x7px span.dd{font-weight:600;color:var(--ink)}
 .x7v{position:absolute;transform:translate(-50%,-50%);font:600 14px/1.2 var(--text);color:var(--wine);white-space:nowrap;text-align:center}
-.x7rb{justify-content:flex-start;gap:10px}
-.x7r{border-top:1px solid var(--rule);padding-top:8px}
-.x7r h4{font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
-.x7r p{display:flex;justify-content:space-between;gap:10px;font:400 14px/1.4 var(--text);color:var(--slate)}
-.x7r p b{font-weight:600;color:var(--ink)}
-.x7r p.w{display:block;margin-top:4px;padding-top:4px;border-top:1px dashed var(--rule);line-height:1.35}
-.x7key{margin-top:6px;display:flex;flex-direction:column;gap:2px}
-.x7key p{display:flex;align-items:center;gap:8px;font:400 14px/1.3 var(--text);white-space:nowrap}
-.x7key i{flex:none;width:22px;height:0;border-top:3.5px solid currentColor}
-.x7key b{font-weight:700}
-.x7key .fx{color:#B57D86}.x7key .st{color:var(--wine)}
-.c9 .x7a1,.c9 .x7b4{background:#8A1F2E}   /* flat, no gradient (Fahtai, 24 Oct) */
-.c9 .x7a1{font-size:18px;padding:12px 20px;white-space:nowrap}
-.x7a1 b{font-weight:800}
-.c9 .x7b4{display:grid;grid-template-columns:1fr 1fr 1fr 1.35fr;align-items:center;padding:0;text-align:left}
-.x7b4 p{display:flex;align-items:center;gap:12px;padding:12px 20px;border-right:1px solid rgba(255,255,255,.25)}
-.x7b4 .ic{flex:none;width:28px;height:28px;stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.x7b4 span{font:600 17px/1.2 var(--text)}
-.x7b4 p.hi{background:#fff;color:var(--accent);border-right:0;gap:10px;padding:6px 20px;align-self:stretch}
-.x7b4 p.hi .from{font:600 20px/1 var(--text);color:var(--slate);white-space:nowrap}
-.x7b4 p.hi strong{font:800 52px/1 var(--head);letter-spacing:-1px}
-.x7b4 p.hi .of{font:600 15px/1.2 var(--text)}
+/* slide 7, refined (Pete, 24 Oct: cluttered): no chips, highlights or legends; labels on the lines, each block ending on
+   its measured result; slide 3's endings as two marked dots; the one crimson number is what is left at 89 */
+.x7t h4{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
+.x7t h4 span{color:var(--accent);margin-right:6px}
+.x7t h4 span::after{content:":"}
+.c9 .x7p{height:112px;margin-top:32px}
+.x7o{display:flex;align-items:baseline;gap:8px;margin-top:12px;padding-top:10px;border-top:1px solid var(--rule)}
+.x7o span{font:600 18px/1 var(--text);color:var(--slate);white-space:nowrap}
+.x7o strong{font:700 34px/1 var(--head);color:var(--ink);letter-spacing:-1px}
+.x7o em{font:400 14px/1.3 var(--text);font-style:normal;color:var(--slate)}
+.x7rl{margin-top:8px;font:500 14px/1.4 var(--text);color:var(--ink)}
+.x7s .x3k.x7c3::after{background:var(--wine)}   /* the band's marker in wine: the one crimson number is what is left at 89 */
 .x7w{gap:0}
 .x7w>h3{margin-bottom:10px}
 .x7t+.x7t{margin-top:12px;padding-top:10px;border-top:1px solid var(--rule)}
-.x7t h4{display:flex;align-items:center;gap:8px;font:700 16px/1.25 var(--text);color:var(--ink)}
-.x7t h4 .tg{flex:none;font:700 12px/1 var(--text);letter-spacing:.3px;text-transform:uppercase;color:#fff;background:var(--wine);padding:4px 7px}
 .x7t .sub{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:3px}
 .x7t .sub b{font-weight:700;color:var(--ink)}
-.x7t .x7key{margin-top:4px}
-.x7t .x7r{border-top:0;padding-top:4px}
-.x7t .hl{font-style:italic;font-weight:700;color:var(--wine);background:#F3E2E4;padding:1px 5px}
-.x7c{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
-.x7c li{font:600 14px/1.3 var(--text);color:var(--ink);border-top:2px solid var(--wine);padding-top:6px}
 </style>
 </head>
 <body>
@@ -1162,7 +1132,6 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 <symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol>
 <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol>
 <symbol id="i-hospital" viewBox="0 0 24 24"><path d="M12 6v4" /> <path d="M14 14h-4" /> <path d="M14 18h-4" /> <path d="M14 8h-4" /> <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2" /> <path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18" /></symbol>
-<symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14" /> <path d="M5 2h14" /> <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /> <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol>
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
 <symbol id="i-landmark" viewBox="0 0 24 24"><line x1="3" x2="21" y1="22" y2="22" /> <line x1="6" x2="6" y1="18" y2="11" /> <line x1="10" x2="10" y1="18" y2="11" /> <line x1="14" x2="14" y1="18" y2="11" /> <line x1="18" x2="18" y1="18" y2="11" /> <polygon points="12 2 20 7 4 7" /></symbol>
 <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol>
@@ -1488,33 +1457,33 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
     <div class="pn x7w" style="grid-column:span 5">
       <h3>Two things still break the plan…</h3>
       <div class="x7t">
-        <h4><span class="tg">The cost</span>Medical premiums the budget ignores</h4>
-        <p class="sub">A year, above the budget's HK$65K. The fix: <em class="hl">review the plan at Adrian's 75</em></p>
-        <div class="x7key"><p class="fx"><i></i><b>Flexi, kept for life</b><span>up to HK$375K a year</span></p><p class="st" data-b="2"><i></i><b>Standard, from Adrian's 75</b><span>about a third of the cost</span></p></div>
+        <h4><span>The cost</span>medical premiums the budget ignores</h4>
+        <p class="sub">A year, above the HK$65K the budget holds</p>
         <div>
           <div class="pc x7p">
-            <span class="gl" style="top:0"><span>400K</span></span><span class="gl" style="top:25%"><span>300K</span></span><span class="gl" style="top:50%"><span>200K</span></span><span class="gl" style="top:75%"><span>100K</span></span>
+            <span class="gl" style="top:0"><span>400K</span></span><span class="gl" style="top:50%"><span>200K</span></span>
             <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
               <polygon data-b="2" points="344.8,173.6 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2 1000.0,261.8 689.7,300.0 655.2,250.5 448.3,282.8 344.8,293.1" style="fill:#F3E2E4"/>
-              <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2" fill="none" style="stroke:#B57D86" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+              <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2" fill="none" style="stroke:#C9939B" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
               <polyline data-b="2" points="0.0,300.0 69.0,261.8 275.9,201.8 344.8,173.6 344.8,293.1 448.3,282.8 655.2,250.5 689.7,300.0 1000.0,261.8" fill="none" style="stroke:var(--wine)" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
             </svg>
-            <span class="sw" style="left:34.48%" data-b="2"><span>The review</span></span>
+            <span class="sw" style="left:34.48%" data-b="2"><span>The review at Adrian's 75</span></span>
             <span class="x7dl" style="left:68.97%"></span>
-            <p class="x7v" data-b="2" style="left:50.00%;top:62.97%">the saving</p>
+            <p class="pk" style="left:65.52%;top:6.27%"><b>HK$375K</b><span>kept for life</span></p>
+            <p class="x7v" data-b="2" style="left:52%;top:64%">saves about<br>two-thirds</p>
           </div>
           <div class="pcx x7px"><span style="left:0">2037</span><span style="left:34.48%">2047</span><span class="dd" style="left:68.97%">Adrian dies</span><span style="left:100%">2066</span></div>
         </div>
+        <p class="x7o" data-b="2"><span>83% →</span><strong>97%</strong><em>of futures last to 89, with the review</em></p>
       </div>
       <div class="x7t" data-b="3">
-        <h4><span class="tg">The risk</span>Bad markets late in life</h4>
-        <p class="sub">In the worst 1 future in 20, her leanest year falls to <b>HK$111K</b>.<br>The fix: <em class="hl">spending rules from 2039</em> keep it at <b>HK$382K</b> or more.</p>
-        <ul class="x7c"><li>No raise after markets fall</li><li>Trim 10% if drawing too fast</li><li>Essentials never cut</li></ul>
+        <h4><span>The risk</span>bad markets late in life</h4>
+        <p class="sub">From 2039, spending rules keep her leanest year at <b>HK$382K</b> or more in 19 futures of 20; without them, as low as <b>HK$111K</b>.</p>
+        <p class="x7rl">No raise after a fall · a 10% trim if drawing too fast · essentials never cut</p>
       </div>
     </div>
     <div class="pn" style="grid-column:span 7" data-b="4">
-      <h3>…so in slide 3's future, the money lasts and the home stays theirs</h3>
-      <p class="lede x7lg">Savings: <i class="sw6"></i>the four decisions alone <i class="sw3"></i>added by call 3 <i class="swd"></i>their own way</p>
+      <h3>…so the future that ran out at 86 now reaches 89</h3>
       <div class="body">
         <div>
           <div class="sx x7s">
@@ -1526,15 +1495,12 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
               <polyline points="0.0,112.8 25.0,99.6 50.0,93.9 75.0,91.7 100.0,88.2 125.0,74.6 150.0,71.7 175.0,65.4 200.0,51.1 225.0,51.7 250.0,50.5 275.0,41.9 300.0,23.3 325.0,21.7 350.0,4.8 375.0,10.5 400.0,10.7 425.0,25.0 450.0,20.7 475.0,38.1 500.0,33.3 525.0,46.5 550.0,68.2 575.0,86.5 600.0,91.4 625.0,102.0 650.0,118.3 675.0,130.1 700.0,139.2 725.0,149.6 750.0,170.4 775.0,177.6 800.0,188.2 825.0,198.7 850.0,208.8 875.0,225.9 900.0,234.8 925.0,244.1 950.0,254.7 975.0,265.7 1000.0,277.0" fill="none" style="stroke:var(--ink)" stroke-width="2" stroke-dasharray="6 5" vector-effect="non-scaling-stroke"/>
             </svg>
             <span class="gy" style="top:66.7%"><span>HK$10M</span></span><span class="gy" style="top:33.3%"><span>HK$20M</span></span><span class="gy" style="top:0.0%"><span>HK$30M</span></span>
-            <p class="al" style="left:14px;top:47.6%;transform:translateY(-50%)">Savings, investments and MPF</p>
+            <p class="al" style="left:14px;top:47.6%;transform:translateY(-50%)">Savings with the four decisions</p>
+            <p class="x3k x7c3" style="left:92.5%;top:30%;height:calc(73% - 30%)"><span><b>Added by Call 3</b></span></p>
+            <p class="own" style="left:55.0%;top:calc(22.7% - 8px);transform:translateY(-100%)">their own way</p>
             <p class="al h" style="left:14px;bottom:12px">The home: still theirs<small>a reverse mortgage pays HK$230K a year from 2037</small></p>
-            <span class="x7m" style="left:87.50%;top:75.3%"></span>
-            <span class="x7m" style="left:95.00%;top:84.9%"></span>
-            <div class="x7k"><p class="h" style="left:calc(87.50% - 1px)">Their own way</p><p style="left:calc(87.50% - 1px);top:24px">sells the home at 83</p><p style="left:calc(95.00% - 1px);top:46px">savings run out at 86</p></div>
-            <svg class="x7ld" aria-hidden="true"><line x1="87.50%" y1="17%" x2="87.50%" y2="75.3%"/><line x1="95.00%" y1="26%" x2="95.00%" y2="84.9%"/></svg>
             <div class="x7g">
-              <p class="h">Left at 89</p>
-              <p class="pl" style="top:70.5%"><strong>HK$8.9M</strong><span>with the plan</span></p>
+              <p class="pl" style="top:70.5%"><strong>HK$8.9M</strong><span>left at 89</span></p>
             </div>
           </div>
           <div class="sxa x7a"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>Carmen 69</i></span><span style="left:75%">2056<i>Adrian dies</i></span><span style="left:100%">2066<i>Carmen 89</i></span></div>
@@ -1543,13 +1509,8 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
     </div>
   </div>
   <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>The Standard plan has lower limits and fewer private-hospital choices; the spending rules trim typical spending by about HK$41K a year.</span></p>
-  <div class="bar x7b4" data-b="4">
-    <p><svg class="ic"><use href="#i-hourglass"/></svg><span>They retire<br>on time</span></p>
-    <p><svg class="ic"><use href="#i-wallet"/></svg><span>They keep<br>their spending</span></p>
-    <p><svg class="ic"><use href="#i-house"/></svg><span>They keep<br>the home</span></p>
-    <p class="hi"><span class="from">83% →</span><strong>97%</strong><span class="of">of futures last<br>to Carmen's 89</span></p>
-  </div>
-  <footer class="ft"><p class="src">The same future as slide 3, in the same markets: an illustration in today's money, not a forecast. Premiums: individual cover by age and medical inflation; one policy from 2057, when Adrian's cover ends at the case's life expectancy (84).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
+  <p class="bar" data-b="4">Will it last? In almost every future: they retire on time, keep the way they live, and keep the home.</p>
+  <footer class="ft"><p class="src">Slide 3's future, same markets, today's money: an illustration, not a forecast. Premiums: individual cover by age and medical inflation; one policy from 2057 (Adrian's life expectancy, 84).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept on Flexi for life, medical premiums climb to HK$375K a year. So at Adrian's 75 they review the tier: the Standard plan costs about a third as much. And from 2039, two spending rules: no raise for inflation after a year markets fall, and a 10% trim only if they draw on savings too fast; essentials are never cut. Remember that future? Now the money lasts to 89, and the home stays theirs. The odds: 97% with the review, almost every future with the rules. Win. [Notes: in this future the four decisions alone leave HK$0.6M of savings at 89, under a year of spending; the review and the rules keep the rest (the lighter band). "Too fast": withdrawals 20% above their starting rate; spending rises back 10% when they run 20% below it, never above the budget. Cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Why does the plan's total sit below their own way until about 2053? Part of the savings buys the annuities, and the home's value is drawn as income from 2037: the plan trades a peak for a floor, and then keeps going where their own way runs out. The home: worth less on the chart because the reverse-mortgage loan grows against it; it is still theirs, and they still live there. "19 futures out of 20": HK$382K is the 5th percentile of each future's leanest year, in today's money, with the rules; HK$111K without them. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
 </section>
 

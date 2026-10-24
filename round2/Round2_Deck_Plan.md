@@ -429,6 +429,17 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Refined, 24 Oct evening** (Pete: cluttered; keep the depth that's needed, make it nicer, take out what isn't).
+Fahtai's structure is kept (two things still break the plan, then the same future, fixed), with every number his
+script speaks. Out: the "THE COST" / "THE RISK" chips and the italic highlights (now "The cost:" and "The risk:" in
+crimson); both legends (the premium lines and the savings band are labelled on the chart); the three rule boxes (one
+quiet line); the dotted leaders, their label stack and the ghost dots (the right heading now carries the thread: "…so
+the future that ran out at {{story_out_age}} now reaches 89"); and the four-block bar (the deck's one-sentence bar:
+"Will it last? In almost every future: they retire on time, keep the way they live, and keep the home"). Each left
+block ends on its measured result: {{ladder_5_89}} → {{switch_89}} with the review, and her leanest year at
+{{guardswitch_worst5_real}} or more in 19 futures of 20 ({{fixswitch_worst5_real}} without the rules). On the right,
+the light band carries one label, "Added by Call 3", with a leader from white space. The one crimson number is
+{{story_plan_left}} left at 89.
 **Reworked 24 Oct (Fahtai): why, then the fix, then the result.** What the slide must say: after slide 6, two things
 still break the plan, a cost (medical premiums outside the budget) and a risk (bad markets late in life); the review at
 75 fixes the first, spending rules from 2039 the second; in slide 3's future the money now lasts to 89 and the home
