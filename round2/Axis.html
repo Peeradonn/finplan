@@ -43,7 +43,7 @@ ul,ol{padding:0;list-style:none}
 .slide{position:relative;width:1280px;height:720px;flex:none;overflow:hidden;background:var(--paper);color:var(--ink);
   font:400 16px/1.42 var(--text);padding:34px 48px 0;display:flex;flex-direction:column}
 @page{size:1280px 720px;margin:0}
-@media print{body{background:#fff}.deck{gap:0;padding:0;display:block}.slide{break-after:page}}
+@media print{body{background:#fff}.deck{gap:0;padding:0;display:block}.slide{break-after:page}.slide:last-of-type{break-after:auto}}
 p,li,span,b{text-wrap:pretty}
 .tag{font:400 12px/1 var(--text);color:var(--slate);white-space:nowrap}
 .tag::before{content:"("}.tag::after{content:")"}
@@ -774,14 +774,14 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .x3p .sm p{font:400 14px/1.35 var(--text);color:var(--slate)}
 .x3p .hero{padding-top:14px;border-top:1px solid var(--rule)}   /* each group opens on a thin rule */
 .x3p .k{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
-.x3p .hb{display:grid;grid-template-columns:92px 1fr;column-gap:12px;align-items:center;margin-top:12px}
-.x3p .hb>span{font:400 14px/1.25 var(--text);color:var(--slate)}
+.x3p .hb{display:grid;grid-template-columns:100px 1fr;column-gap:12px;align-items:center;margin-top:16px}
+.x3p .hb>span{font:400 15px/1.25 var(--text);color:var(--slate)}
 .x3p .hb .t{display:flex;align-items:center;min-width:0}
-.x3p .hb i{display:block;height:30px;flex:none}
+.x3p .hb i{display:block;height:38px;flex:none}
 .x3p .hb i.g{background:var(--rose-g);display:flex;align-items:center;justify-content:flex-end;padding-right:10px}
 .x3p .hb i.g b{font:700 16px/1 var(--text);color:var(--ink)}
 .x3p .hb.on i{background:var(--accent-g)}
-.x3p .hb.on strong{font:700 52px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1.5px}
+.x3p .hb.on strong{font:700 60px/1 var(--head);color:var(--accent);margin-left:14px;letter-spacing:-2px}
 .x3p .why{padding-top:14px;border-top:1px solid var(--rule)}
 .x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:8px}
 .x3p .why .wc{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
@@ -793,10 +793,19 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
    moved to the notes: on screen they were read while something else was being said. */
 .x3q{justify-content:flex-start;gap:0}
 .x3p .sold .k{display:flex;align-items:baseline;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
-.x3p .sold .k strong{font:700 40px/1 var(--head);color:var(--ink);letter-spacing:-1px}
-.x3ia{display:block;width:100%;height:auto;margin-top:10px}
-.x3p .sold .s{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:6px}
-.x3p .hero{margin-top:14px;padding-top:14px}
+.x3p .sold .k strong{font:700 48px/1 var(--head);color:var(--ink);letter-spacing:-1.5px}
+/* 24 Oct, fourth pass (Pete: do we need the big house chart?): the 100 houses said 51% a second time, in the slide's
+   largest mass of crimson; one split bar shows the same half in a line, sold in wine, kept in rose */
+.x3v{display:flex;height:38px;margin-top:14px;border-radius:0 6px 6px 0;overflow:hidden;background:var(--rose-g);box-shadow:var(--lift)}
+.x3v i{display:flex;align-items:center;padding-left:12px;background:var(--wine-g);color:#fff;font:600 15px/1 var(--text);font-style:normal}
+.x3v span{margin-left:auto;align-self:center;padding-right:12px;font:600 15px/1 var(--text);color:var(--slate)}
+/* the chart's events, as e-Sentry marks them: a dot on the data, a leader up into white space, the label at its top */
+.sx .x3k{position:absolute;width:0;border-left:1.5px solid var(--ink);z-index:4;margin:0}
+.sx .x3k::after{content:"";position:absolute;left:-7px;bottom:-6px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 1px 3px rgba(60,10,20,.35)}
+.sx .x3k span{position:absolute;top:0;right:8px;width:max-content;font:400 14px/1.3 var(--text);color:var(--slate);white-space:nowrap;text-align:right}
+.sx .x3k b{font-weight:700;color:var(--ink)}
+.x3p .sold .s{font:400 15px/1.35 var(--text);color:var(--slate);margin-top:10px}
+.x3p .hero{margin-top:26px;padding-top:22px}
 /* slide 7: the same result rows as slide 3, at the foot of the premium panel */
 .x3r.x7{flex:none;padding-top:0;gap:8px}
 .x3r.x7 .row{padding-bottom:8px}
@@ -961,8 +970,8 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
             <span class="gy" style="top:66.7%"><span>HK$10M</span></span><span class="gy" style="top:33.3%"><span>HK$20M</span></span><span class="gy" style="top:0.0%"><span>HK$30M</span></span>
             <p class="al" style="left:14px;top:47.6%;transform:translateY(-50%)">Savings, investments and MPF</p>
             <p class="al h" style="left:14px;bottom:12px">The home<small>since 2015, where Ryan and Chloe grew up</small></p>
-            <span class="ring" data-b="2" style="left:87.50%;top:75.3%;width:46px;height:46px"></span><p class="ev" data-b="2" style="left:87.50%;top:calc(75.3% - 44px)"><span><b>The flat is sold</b><br>savings gone, Carmen 83</span></p>
-            <p class="ev out" data-b="3" style="left:95.00%;top:0"><span><b>Runs out again</b><br>Carmen 86, short of 89</span></p>
+            <p class="x3k" data-b="2" style="left:87.50%;top:30px;height:calc(75.3% - 30px)"><span><b>The flat is sold, Carmen 83</b><br>when her savings are gone</span></p>
+            <p class="x3k" data-b="3" style="left:95.00%;top:-14px;height:calc(84.9% + 14px)"><span><b>Runs out again, Carmen 86</b><br>then unpaid bills eat into the smaller flat</span></p>
           </div>
           <div class="sxa"><span style="left:0">2026<i>Carmen 49</i></span><span style="left:27.5%">2037<i>Adrian retires</i></span><span style="left:50%">2046<i>Carmen 69</i></span><span style="left:75%">2056<i>Adrian dies</i></span><span style="left:100%">2066<i>Carmen 89</i></span></div>
         </div>
@@ -975,7 +984,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
         <div class="x3q">
           <div class="sold" data-b="2">
             <p class="k"><strong>51%</strong>of futures are forced to sell the home</p>
-            <svg class="x3ia" viewBox="0 0 480 120" aria-hidden="true"><polygon points="2,10 11,2 20,10 20,21 2,21" fill="url(#p4wine)"/><polygon points="26,10 35,2 44,10 44,21 26,21" fill="url(#p4wine)"/><polygon points="50,10 59,2 68,10 68,21 50,21" fill="url(#p4wine)"/><polygon points="74,10 83,2 92,10 92,21 74,21" fill="url(#p4wine)"/><polygon points="98,10 107,2 116,10 116,21 98,21" fill="url(#p4wine)"/><polygon points="122,10 131,2 140,10 140,21 122,21" fill="url(#p4wine)"/><polygon points="146,10 155,2 164,10 164,21 146,21" fill="url(#p4wine)"/><polygon points="170,10 179,2 188,10 188,21 170,21" fill="url(#p4wine)"/><polygon points="194,10 203,2 212,10 212,21 194,21" fill="url(#p4wine)"/><polygon points="218,10 227,2 236,10 236,21 218,21" fill="url(#p4wine)"/><polygon points="242,10 251,2 260,10 260,21 242,21" fill="url(#p4wine)"/><polygon points="266,10 275,2 284,10 284,21 266,21" fill="url(#p4wine)"/><polygon points="290,10 299,2 308,10 308,21 290,21" fill="url(#p4wine)"/><polygon points="314,10 323,2 332,10 332,21 314,21" fill="url(#p4wine)"/><polygon points="338,10 347,2 356,10 356,21 338,21" fill="url(#p4wine)"/><polygon points="362,10 371,2 380,10 380,21 362,21" fill="url(#p4wine)"/><polygon points="386,10 395,2 404,10 404,21 386,21" fill="url(#p4wine)"/><polygon points="410,10 419,2 428,10 428,21 410,21" fill="url(#p4wine)"/><polygon points="434,10 443,2 452,10 452,21 434,21" fill="url(#p4wine)"/><polygon points="458,10 467,2 476,10 476,21 458,21" fill="url(#p4wine)"/><polygon points="2,34 11,26 20,34 20,45 2,45" fill="url(#p4wine)"/><polygon points="26,34 35,26 44,34 44,45 26,45" fill="url(#p4wine)"/><polygon points="50,34 59,26 68,34 68,45 50,45" fill="url(#p4wine)"/><polygon points="74,34 83,26 92,34 92,45 74,45" fill="url(#p4wine)"/><polygon points="98,34 107,26 116,34 116,45 98,45" fill="url(#p4wine)"/><polygon points="122,34 131,26 140,34 140,45 122,45" fill="url(#p4wine)"/><polygon points="146,34 155,26 164,34 164,45 146,45" fill="url(#p4wine)"/><polygon points="170,34 179,26 188,34 188,45 170,45" fill="url(#p4wine)"/><polygon points="194,34 203,26 212,34 212,45 194,45" fill="url(#p4wine)"/><polygon points="218,34 227,26 236,34 236,45 218,45" fill="url(#p4wine)"/><polygon points="242,34 251,26 260,34 260,45 242,45" fill="url(#p4wine)"/><polygon points="266,34 275,26 284,34 284,45 266,45" fill="url(#p4wine)"/><polygon points="290,34 299,26 308,34 308,45 290,45" fill="url(#p4wine)"/><polygon points="314,34 323,26 332,34 332,45 314,45" fill="url(#p4wine)"/><polygon points="338,34 347,26 356,34 356,45 338,45" fill="url(#p4wine)"/><polygon points="362,34 371,26 380,34 380,45 362,45" fill="url(#p4wine)"/><polygon points="386,34 395,26 404,34 404,45 386,45" fill="url(#p4wine)"/><polygon points="410,34 419,26 428,34 428,45 410,45" fill="url(#p4wine)"/><polygon points="434,34 443,26 452,34 452,45 434,45" fill="url(#p4wine)"/><polygon points="458,34 467,26 476,34 476,45 458,45" fill="url(#p4wine)"/><polygon points="2,58 11,50 20,58 20,69 2,69" fill="url(#p4wine)"/><polygon points="26,58 35,50 44,58 44,69 26,69" fill="url(#p4wine)"/><polygon points="50,58 59,50 68,58 68,69 50,69" fill="url(#p4wine)"/><polygon points="74,58 83,50 92,58 92,69 74,69" fill="url(#p4wine)"/><polygon points="98,58 107,50 116,58 116,69 98,69" fill="url(#p4wine)"/><polygon points="122,58 131,50 140,58 140,69 122,69" fill="url(#p4wine)"/><polygon points="146,58 155,50 164,58 164,69 146,69" fill="url(#p4wine)"/><polygon points="170,58 179,50 188,58 188,69 170,69" fill="url(#p4wine)"/><polygon points="194,58 203,50 212,58 212,69 194,69" fill="url(#p4wine)"/><polygon points="218,58 227,50 236,58 236,69 218,69" fill="url(#p4wine)"/><polygon points="242,58 251,50 260,58 260,69 242,69" fill="url(#p4wine)"/><polygon points="266,58 275,50 284,58 284,69 266,69" fill="#F1DFE2"/><polygon points="290,58 299,50 308,58 308,69 290,69" fill="#F1DFE2"/><polygon points="314,58 323,50 332,58 332,69 314,69" fill="#F1DFE2"/><polygon points="338,58 347,50 356,58 356,69 338,69" fill="#F1DFE2"/><polygon points="362,58 371,50 380,58 380,69 362,69" fill="#F1DFE2"/><polygon points="386,58 395,50 404,58 404,69 386,69" fill="#F1DFE2"/><polygon points="410,58 419,50 428,58 428,69 410,69" fill="#F1DFE2"/><polygon points="434,58 443,50 452,58 452,69 434,69" fill="#F1DFE2"/><polygon points="458,58 467,50 476,58 476,69 458,69" fill="#F1DFE2"/><polygon points="2,82 11,74 20,82 20,93 2,93" fill="#F1DFE2"/><polygon points="26,82 35,74 44,82 44,93 26,93" fill="#F1DFE2"/><polygon points="50,82 59,74 68,82 68,93 50,93" fill="#F1DFE2"/><polygon points="74,82 83,74 92,82 92,93 74,93" fill="#F1DFE2"/><polygon points="98,82 107,74 116,82 116,93 98,93" fill="#F1DFE2"/><polygon points="122,82 131,74 140,82 140,93 122,93" fill="#F1DFE2"/><polygon points="146,82 155,74 164,82 164,93 146,93" fill="#F1DFE2"/><polygon points="170,82 179,74 188,82 188,93 170,93" fill="#F1DFE2"/><polygon points="194,82 203,74 212,82 212,93 194,93" fill="#F1DFE2"/><polygon points="218,82 227,74 236,82 236,93 218,93" fill="#F1DFE2"/><polygon points="242,82 251,74 260,82 260,93 242,93" fill="#F1DFE2"/><polygon points="266,82 275,74 284,82 284,93 266,93" fill="#F1DFE2"/><polygon points="290,82 299,74 308,82 308,93 290,93" fill="#F1DFE2"/><polygon points="314,82 323,74 332,82 332,93 314,93" fill="#F1DFE2"/><polygon points="338,82 347,74 356,82 356,93 338,93" fill="#F1DFE2"/><polygon points="362,82 371,74 380,82 380,93 362,93" fill="#F1DFE2"/><polygon points="386,82 395,74 404,82 404,93 386,93" fill="#F1DFE2"/><polygon points="410,82 419,74 428,82 428,93 410,93" fill="#F1DFE2"/><polygon points="434,82 443,74 452,82 452,93 434,93" fill="#F1DFE2"/><polygon points="458,82 467,74 476,82 476,93 458,93" fill="#F1DFE2"/><polygon points="2,106 11,98 20,106 20,117 2,117" fill="#F1DFE2"/><polygon points="26,106 35,98 44,106 44,117 26,117" fill="#F1DFE2"/><polygon points="50,106 59,98 68,106 68,117 50,117" fill="#F1DFE2"/><polygon points="74,106 83,98 92,106 92,117 74,117" fill="#F1DFE2"/><polygon points="98,106 107,98 116,106 116,117 98,117" fill="#F1DFE2"/><polygon points="122,106 131,98 140,106 140,117 122,117" fill="#F1DFE2"/><polygon points="146,106 155,98 164,106 164,117 146,117" fill="#F1DFE2"/><polygon points="170,106 179,98 188,106 188,117 170,117" fill="#F1DFE2"/><polygon points="194,106 203,98 212,106 212,117 194,117" fill="#F1DFE2"/><polygon points="218,106 227,98 236,106 236,117 218,117" fill="#F1DFE2"/><polygon points="242,106 251,98 260,106 260,117 242,117" fill="#F1DFE2"/><polygon points="266,106 275,98 284,106 284,117 266,117" fill="#F1DFE2"/><polygon points="290,106 299,98 308,106 308,117 290,117" fill="#F1DFE2"/><polygon points="314,106 323,98 332,106 332,117 314,117" fill="#F1DFE2"/><polygon points="338,106 347,98 356,106 356,117 338,117" fill="#F1DFE2"/><polygon points="362,106 371,98 380,106 380,117 362,117" fill="#F1DFE2"/><polygon points="386,106 395,98 404,106 404,117 386,117" fill="#F1DFE2"/><polygon points="410,106 419,98 428,106 428,117 410,117" fill="#F1DFE2"/><polygon points="434,106 443,98 452,106 452,117 434,117" fill="#F1DFE2"/><polygon points="458,106 467,98 476,106 476,117 458,117" fill="#F1DFE2"/></svg>
+            <div class="x3v"><i style="width:51%">Sold</i><span>Kept</span></div>
             <p class="s">when the money runs out, Carmen about 83, usually on her own</p>
           </div>
           <div class="hero" data-b="4">

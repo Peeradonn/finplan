@@ -244,6 +244,18 @@ below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cas
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
 ### 3 · Their own way (Pete; 0:45)
+**Fourth pass, 24 Oct** (Pete: do we need the big house chart, or can the space be used for something else? Look at
+the annotation). The 100 houses are gone: they said {{own_sold_pct}} a second time, under the number that already said
+it, and were the slide's largest block of crimson, pulling the eye from the chart and from {{own_legacy_sold}}. One
+split bar (sold in wine, kept in rose, its width straight from {{own_sold_pct}}) shows the same half in one line. The
+freed height went to the two blocks that remain (51% at 48 px, bars 38 px, {{own_legacy_sold}} at 60 px), not to new
+content: "Why it runs out" stays in the notes (third pass, below). The chart's events are now a dot on the data with a
+leader up to a label in the white space (no ring, no line to the axis). Both labels read the same way, event and age
+in bold and the consequence quiet: "The flat is sold, Carmen {{story_sale_age}}: when her savings are gone"; "Runs out
+again, Carmen {{story_out_age}}: then unpaid bills eat into the smaller flat". The second label now explains why the
+home layer shrinks after 86 (the model nets unpaid bills against the smaller flat); "short of 89" said nothing a judge
+could check. Trade-off: the run-out label sits above the sale label, so reading top-down meets the later event first.
+That is the only order in which neither leader crosses a label; the dots and the builds keep the sequence.
 **Retitled 24 Oct** (Pete: if the problem is "51% sell the home" and the plan releases it with a reverse mortgage,
 isn't that conflicting?). The model says the home pays either way: kept untouched, even the plan lasts in only
 {{prop_keep_89}}; the written case calls downsizing the stronger option. So the harm is now worded as what the model

@@ -76,7 +76,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1
 
 > Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).
 
-## 11 · It starts this month; after that, dates trigger each step
+## 11 · It starts this month; close every gap within the first year
 *What happens when · Lookbua · 0:30 · 59 spoken words (≈26 s at 135)*
 
 **Lookbua:** It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.

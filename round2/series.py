@@ -119,17 +119,6 @@ def story():
         return float(s[:-1]) / (1000 if s.endswith("K") else 1)
     for k in ("own_legacy_sold", "plan_legacy_sold"):
         T[f"{k}_w"] = f"{hkm(N[k]) / 24.405 * 100:.1f}%"
-    # slide 3: the share of futures where their own way sells the home, as 100 small houses (20 x 5), the sold ones
-    # filled, in reading order; the count comes from the model's own_sold_pct (24 Oct)
-    sold = round(float(str(N["own_sold_pct"]).rstrip("%")))
-    cell, cols, rows = 24, 20, 5
-    houses = []
-    for i in range(cols * rows):
-        x, y = (i % cols) * cell, (i // cols) * cell
-        fill = "url(#p4wine)" if i < sold else "#F1DFE2"
-        houses.append(f'<polygon points="{x + 2},{y + 10} {x + 11},{y + 2} {x + 20},{y + 10} {x + 20},{y + 21} {x + 2},{y + 21}" fill="{fill}"/>')
-    T["own_sold_icons"] = (f'<svg class="x3ia" viewBox="0 0 {cols * cell} {rows * cell}" aria-hidden="true">'
-                           + "".join(houses) + "</svg>")
     return T
 
 

@@ -43,7 +43,7 @@ ul,ol{padding:0;list-style:none}
 .slide{position:relative;width:1280px;height:720px;flex:none;overflow:hidden;background:var(--paper);color:var(--ink);
   font:400 16px/1.42 var(--text);padding:34px 48px 0;display:flex;flex-direction:column}
 @page{size:1280px 720px;margin:0}
-@media print{body{background:#fff}.deck{gap:0;padding:0;display:block}.slide{break-after:page}}
+@media print{body{background:#fff}.deck{gap:0;padding:0;display:block}.slide{break-after:page}.slide:last-of-type{break-after:auto}}
 p,li,span,b{text-wrap:pretty}
 .tag{font:400 12px/1 var(--text);color:var(--slate);white-space:nowrap}
 .tag::before{content:"("}.tag::after{content:")"}
@@ -774,14 +774,14 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .x3p .sm p{font:400 14px/1.35 var(--text);color:var(--slate)}
 .x3p .hero{padding-top:14px;border-top:1px solid var(--rule)}   /* each group opens on a thin rule */
 .x3p .k{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
-.x3p .hb{display:grid;grid-template-columns:92px 1fr;column-gap:12px;align-items:center;margin-top:12px}
-.x3p .hb>span{font:400 14px/1.25 var(--text);color:var(--slate)}
+.x3p .hb{display:grid;grid-template-columns:100px 1fr;column-gap:12px;align-items:center;margin-top:16px}
+.x3p .hb>span{font:400 15px/1.25 var(--text);color:var(--slate)}
 .x3p .hb .t{display:flex;align-items:center;min-width:0}
-.x3p .hb i{display:block;height:30px;flex:none}
+.x3p .hb i{display:block;height:38px;flex:none}
 .x3p .hb i.g{background:var(--rose-g);display:flex;align-items:center;justify-content:flex-end;padding-right:10px}
 .x3p .hb i.g b{font:700 16px/1 var(--text);color:var(--ink)}
 .x3p .hb.on i{background:var(--accent-g)}
-.x3p .hb.on strong{font:700 52px/1 var(--head);color:var(--accent);margin-left:12px;letter-spacing:-1.5px}
+.x3p .hb.on strong{font:700 60px/1 var(--head);color:var(--accent);margin-left:14px;letter-spacing:-2px}
 .x3p .why{padding-top:14px;border-top:1px solid var(--rule)}
 .x3p .why h4{font:600 14px/1.3 var(--text);color:var(--slate);margin-bottom:8px}
 .x3p .why .wc{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
@@ -793,10 +793,19 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
    moved to the notes: on screen they were read while something else was being said. */
 .x3q{justify-content:flex-start;gap:0}
 .x3p .sold .k{display:flex;align-items:baseline;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
-.x3p .sold .k strong{font:700 40px/1 var(--head);color:var(--ink);letter-spacing:-1px}
-.x3ia{display:block;width:100%;height:auto;margin-top:10px}
-.x3p .sold .s{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:6px}
-.x3p .hero{margin-top:14px;padding-top:14px}
+.x3p .sold .k strong{font:700 48px/1 var(--head);color:var(--ink);letter-spacing:-1.5px}
+/* 24 Oct, fourth pass (Pete: do we need the big house chart?): the 100 houses said 51% a second time, in the slide's
+   largest mass of crimson; one split bar shows the same half in a line, sold in wine, kept in rose */
+.x3v{display:flex;height:38px;margin-top:14px;border-radius:0 6px 6px 0;overflow:hidden;background:var(--rose-g);box-shadow:var(--lift)}
+.x3v i{display:flex;align-items:center;padding-left:12px;background:var(--wine-g);color:#fff;font:600 15px/1 var(--text);font-style:normal}
+.x3v span{margin-left:auto;align-self:center;padding-right:12px;font:600 15px/1 var(--text);color:var(--slate)}
+/* the chart's events, as e-Sentry marks them: a dot on the data, a leader up into white space, the label at its top */
+.sx .x3k{position:absolute;width:0;border-left:1.5px solid var(--ink);z-index:4;margin:0}
+.sx .x3k::after{content:"";position:absolute;left:-7px;bottom:-6px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 1px 3px rgba(60,10,20,.35)}
+.sx .x3k span{position:absolute;top:0;right:8px;width:max-content;font:400 14px/1.3 var(--text);color:var(--slate);white-space:nowrap;text-align:right}
+.sx .x3k b{font-weight:700;color:var(--ink)}
+.x3p .sold .s{font:400 15px/1.35 var(--text);color:var(--slate);margin-top:10px}
+.x3p .hero{margin-top:26px;padding-top:22px}
 /* slide 7: the same result rows as slide 3, at the foot of the premium panel */
 .x3r.x7{flex:none;padding-top:0;gap:8px}
 .x3r.x7 .row{padding-bottom:8px}
