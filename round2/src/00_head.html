@@ -727,16 +727,20 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
    mark the growth and say why each fund, why these sizes, and the risk): the growth as one arrow; "like for like" as the
    financial answer; each fund's role keyed to its segment; Ryan's wealth as three columns on one scale, the crypto block
    the same size in each, so only the share falls */
-.e9 .e9bars{padding-top:30px;gap:12px}
-.e9lk{margin-top:12px;font:400 15px/1.4 var(--text);color:var(--slate)}
-.e9lk b{color:var(--ink);font-weight:700}
-.e9w{display:flex;flex-direction:column;margin-top:6px}
-.e9w li{display:flex;gap:12px;align-items:flex-start;padding:3px 0;border-bottom:1px solid var(--rule)}
-.e9w li:last-child{border-bottom:0}
-.e9w li>i{flex:none;width:14px;height:14px;margin-top:3px}
-.e9w p{font:400 14px/1.35 var(--text);color:var(--slate)}
-.e9w p b{display:block;font:600 15px/1.3 var(--text);color:var(--ink)}
-.e9w p b small{font:400 14px/1 var(--text);color:var(--slate);margin-left:8px}
+.e9 .e9bars{padding-top:32px;gap:18px}
+.e9 i.g{position:relative}
+.e9 i.g b{position:absolute;right:10px;top:50%;transform:translateY(-50%);font:700 16px/1 var(--text);color:var(--ink)}
+/* the key: what the 25% is made of, in the segments' own colours, one row */
+.e9w{display:flex;flex-direction:column;gap:5px;margin-top:14px}
+.e9w li{display:flex;gap:8px;align-items:flex-start}
+.e9w li>i{flex:none;width:12px;height:12px;margin-top:4px}
+.e9w p{display:grid;grid-template-columns:136px 76px 1fr;font:400 14px/1.35 var(--text);color:var(--slate)}
+.e9w p span{font-weight:600;color:var(--ink)}
+.e9w p b{font:600 15px/1.3 var(--text);color:var(--ink)}
+/* the claim: a heading a step below the panel's, then its reason in one quiet sentence */
+.e9lk{margin:16px 0 14px;padding-top:10px;border-top:1px solid var(--rule)}
+.e9lk h4{font:700 16px/1.3 var(--text);color:var(--ink)}
+.e9lk p{font:400 15px/1.45 var(--text);color:var(--slate);margin-top:4px}
 .e9o{display:grid;grid-template-columns:repeat(3,1fr);column-gap:14px;margin-top:12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
 .e9o>div{display:flex;gap:10px;align-items:flex-start}
 .e9o .pic,.e9y .pic{flex:none;width:38px;height:38px;margin:0;border:0;background:var(--mist);box-shadow:var(--lift)}

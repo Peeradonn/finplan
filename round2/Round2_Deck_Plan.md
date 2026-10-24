@@ -502,6 +502,13 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Left column, second pass, 24 Oct evening** (Pete: still too full, no hierarchy, and the arrow pointed nowhere). Now
+three levels, one job each. The picture: the arrow joins the end of today's bar to the end of the plan's, "+14 points"
+under its curve, and "11%" sits inside today's bar so the arrow has a start. The key: one line a fund, in its segment's
+colour (name, amount, what it replaces). The claim: a 16 px heading, "Like for like, not a new bet", and one quiet
+sentence (sized by what it replaces; risk and return as Call 4 set them; every sector still held; no ESG premium). The
+test sits on the floor, level with the right column's custody rule. Gone: HK$1.15M today (it's in the written case)
+and each fund's longer description (in the notes and the written case §6).
 **Reworked 24 Oct, evening** (Pete: the right side missed the main point, that Ryan isn't selling his crypto, we let it
 size down over time; on the left, annotate the growth, and ask whether to explain why the world ESG index, why MPF
 low-carbon, why these sizes, and the financial side of risk and diversification). Verdict: yes, one line each, because
