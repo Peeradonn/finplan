@@ -22,7 +22,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1
 
 **Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million, 41% of income saved, little debt.
 
-## 3 · Their own way, Carmen sells the family home at about 83, and the children's inheritance pays the bills
+## 3 · Their own way, Carmen is forced to sell the home at about 83, too late to save the money or the inheritance
 *Will it last? · Pete · 0:45 · 111 spoken words (≈49 s at 135) · over its time*
 
 **Pete:** But will it last? Our written case measured investments alone: 33%. The fairer test is what a sensible family would do: sell the business when Carmen retires, keep the flat, and sell it only if they must. Across 10,000 simulated markets, in 51% they must. In a typical one, Carmen, at 83 and on her own, sells the home where they raised Ryan and Chloe. By 86 the money has run out again, and the wealth meant for their children pays the bills: of HK$24.4 million, just HK$2.3M is left to them.

@@ -79,7 +79,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 |---|---|---|---|---|
 | 1 | — | Built to Last: five calls that make the Wong family's wealth last | Pete, all | 0:20 |
 | 2 | Meet the Wongs | On paper, the Wongs are secure, for a plan that must last forty years | Pete | 0:30 |
-| 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:45 |
+| 3 | Will it last? | Their own way, Carmen is forced to sell the home at about {{own_sale_age}}, too late to save the money or the inheritance | Pete | 0:45 |
 | 4 | Our answer | Five calls make their wealth last, on their terms | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
 | 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
@@ -237,6 +237,12 @@ below (HK$24.4M in the accent, 41% saved, 10% debt, 30 months of spending in cas
 - Bar: "On paper, secure. But will it last?" (hands to 3).
 
 ### 3 · Their own way (Pete; 0:45)
+**Retitled 24 Oct** (Pete: if the problem is "51% sell the home" and the plan releases it with a reverse mortgage,
+isn't that conflicting?). The model says the home pays either way: kept untouched, even the plan lasts in only
+{{prop_keep_89}}; the written case calls downsizing the stronger option. So the harm is now worded as what the model
+shows, forced, late and not enough: "Their own way, Carmen is forced to sell the home at about {{own_sale_age}}, too late
+to save the money or the inheritance", and "{{own_sold_pct}} of futures are forced to sell the home". Slide 6's flat row
+says "they stay, with a reverse mortgage, or downsize: their choice". The objection and its answer are in §10.
 **Right side, third pass, 24 Oct** (Pete: still conflicting; the point is clear but it takes time to understand).
 Cause: six numbers on screen (51%, 62%, HK$24.4M, HK$2.3M, 61%, HK$375K), three of them percentages of different
 things, two never spoken, so the eye read one thing while the voice said another. Now only what is said, in its
@@ -600,6 +606,7 @@ reference. Needed:
 | Who asks | Question | Answered on |
 |---|---|---|
 | A practitioner | "They'd just sell the flat if they had to." | 3: we tested it; the sale comes at about {{own_sale_age}}, buys two to three years, and the inheritance pays the bills |
+| A practitioner | "You attack selling the home, then release it with a reverse mortgage. Isn't that the same?" | 3, 6: the home pays for retirement either way (kept untouched, even the plan lasts to 89 in only {{prop_keep_89}}); the difference is when (at 65, not forced at about {{own_sale_age}}), who decides (both of them, not Carmen alone in {{own_alone_pct}} of forced sales), whether they stay (the reverse mortgage keeps them home; downsizing is the stronger financial option, written case §9), and what is left ({{plan_legacy_sold}}, not {{own_legacy_sold}}, in the same futures) |
 | A practitioner | "Couldn't they take a reverse mortgage at 83 and stay?" | Yes, and she could stay; but the fixed payout doesn't cover her bills, so in Fahtai's test the money lasts less often than selling, and the loan still eats the inheritance (slide 3 notes) |
 | A practitioner | "A widow spending the couple's full budget? Your own way is a straw man." | 6 (notes): about half of the rise is the survivor budget; even with it cut in their own way, deciding the home, business and MPF now adds about ten points |
 | A practitioner | "Why not rent, or buy cheaper than HK$7M?" | Either releases more; we use the same flat as our own downsizing option, so the two ways compare on the same terms |
