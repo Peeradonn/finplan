@@ -91,7 +91,8 @@ Pete found the results locked into one way and below standard (23 Oct).
    reverse-mortgage-at-83 objection, plan §10).
 5. A judge who read the written case's `{{ladder_1_89}}` follows the deck's `{{own_89}}` from one footnote.
 6. At Zoom size the house reads as "Built to Last", not as decoration.
-7. EB Garamond and the crimson family survive video compression (the 20-second Zoom test isn't done).
+7. Plus Jakarta Sans, the crimson family and slide 4's dark wine stage survive video compression (the 20-second Zoom
+   test isn't done).
 
 ## Hard rules (a breach can disqualify)
 - **No university name anywhere:** slides, video frames (clothing, lanyards, backgrounds, meeting display names), file

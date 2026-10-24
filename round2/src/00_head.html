@@ -360,7 +360,7 @@ p,li,span,b{text-wrap:pretty}
 .x4e>svg{position:absolute;top:0}
 .x4e .house.elev{left:342px}
 .x4e .ld{left:0;width:100%;height:100%}
-.x4e .co{position:absolute;transform:translateY(-11px);display:flex;align-items:flex-start;gap:12px;width:302px}
+.x4e .co{position:absolute;transform:translateY(-11px);display:flex;align-items:flex-start;gap:12px;width:350px}
 .x4e .co.l{justify-content:flex-end;text-align:right}
 .x4e .co i{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;
   border:1.5px solid var(--accent);font:600 19px/1 var(--head);font-style:normal;color:var(--accent)}
@@ -382,6 +382,46 @@ p,li,span,b{text-wrap:pretty}
 .upto-5 .hq[data-b="5"] .t{fill:#C9505D}.upto-5 .hq[data-b="5"] .l{fill:#A81E2D}.upto-5 .hq[data-b="5"] .r{fill:#7A1622}
 .upto-6 .hq[data-b="6"] .t{fill:#C9505D}.upto-6 .hq[data-b="6"] .l{fill:#A81E2D}.upto-6 .hq[data-b="6"] .r{fill:#7A1622}
 .upto-7 .hq[data-b="7"] .t{fill:#C9505D}.upto-7 .hq[data-b="7"] .l{fill:#A81E2D}.upto-7 .hq[data-b="7"] .r{fill:#7A1622}
+
+/* the calls: an icon that names the call's subject, nearest the leader line, and the call's number before its title */
+.x4e .co .ci{flex:none;width:38px;height:38px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center;margin-top:-8px}
+.x4e .co .ci .ic{width:20px;height:20px;stroke:var(--wine);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.x4e .co b em{font-style:normal;font-weight:700;color:var(--accent);margin-right:8px}
+/* slide 4, treatment A, the stage (24 Oct, Pete: make it unmistakably the answer reveal): a dark wine stage lit from
+   behind the house, the only dark slide after the cover; the house in light tones (house.exploded(palette="light"));
+   white text; in the build frames the block being named glows white. The bar stays crimson, on the stage's darker foot. */
+.s4r{background:radial-gradient(ellipse 58% 72% at 50% 44%,#9E2433 0%,#7D1D2A 40%,#5A1520 72%,#3C0D15 100%);color:#fff}
+.s4r .hd{border-left-color:#E8B9C0}
+.s4r .kick{color:#F0C9CE}
+.s4r .hd h2{color:#fff}
+.s4r .hx ellipse{opacity:.28}
+.s4r .ld line{stroke:rgba(255,255,255,.38)}
+.s4r .ld circle{fill:#fff}
+.s4r .x4e .co b{color:#fff}
+.s4r .x4e .co b em{color:#F3B5BE}
+.s4r .x4e .co p{color:#E8C6CB}
+.s4r .x4e .co .ci{background:rgba(255,255,255,.12)}
+.s4r .x4e .co .ci .ic{stroke:#fff}
+.s4r .x4p{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.38)}
+.s4r .x4p .l{color:#fff}
+.s4r .x4p .v strong{color:#C9A2A8}
+.s4r .x4p .v span{color:#E8C6CB}
+.s4r .x4p .v.on strong{color:#fff}
+.s4r .x4p .v.on span{color:#fff}
+.s4r .x4p .ar{color:#C9A2A8}
+.s4r .bar{background:#B3202F;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.s4r .ft{color:#D9B3B9}
+.s4r .ft .nv{color:#A9858B}
+.s4r .ft .nv b{color:#fff}
+.s4r .ft>span{color:#fff!important}
+.s4r.upto-2 .hq[data-b="2"] .t{fill:#FFFFFF}.s4r.upto-2 .hq[data-b="2"] .l{fill:#FFF2F4}.s4r.upto-2 .hq[data-b="2"] .r{fill:#F0D3D7}.s4r.upto-2 .hq[data-b="2"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-3 .hq[data-b="3"] .t{fill:#FFFFFF}.s4r.upto-3 .hq[data-b="3"] .l{fill:#FFF2F4}.s4r.upto-3 .hq[data-b="3"] .r{fill:#F0D3D7}.s4r.upto-3 .hq[data-b="3"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-4 .hq[data-b="4"] .t{fill:#FFFFFF}.s4r.upto-4 .hq[data-b="4"] .l{fill:#FFF2F4}.s4r.upto-4 .hq[data-b="4"] .r{fill:#F0D3D7}.s4r.upto-4 .hq[data-b="4"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-5 .hq[data-b="5"] .t{fill:#FFFFFF}.s4r.upto-5 .hq[data-b="5"] .l{fill:#FFF2F4}.s4r.upto-5 .hq[data-b="5"] .r{fill:#F0D3D7}.s4r.upto-5 .hq[data-b="5"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-6 .hq[data-b="6"] .t{fill:#FFFFFF}.s4r.upto-6 .hq[data-b="6"] .l{fill:#FFF2F4}.s4r.upto-6 .hq[data-b="6"] .r{fill:#F0D3D7}.s4r.upto-6 .hq[data-b="6"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-7 .hq[data-b="7"] .t{fill:#FFFFFF}.s4r.upto-7 .hq[data-b="7"] .l{fill:#FFF2F4}.s4r.upto-7 .hq[data-b="7"] .r{fill:#F0D3D7}.s4r.upto-7 .hq[data-b="7"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+/* slide 4, treatment B, the spotlight (for comparison): the deck's white page with a soft rose glow behind the house */
+.s4s{background:radial-gradient(ellipse 50% 62% at 50% 50%,#F6E6E8 0%,#FFFFFF 70%)}
 
 /* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
 .cv9{padding:0;flex-direction:row}

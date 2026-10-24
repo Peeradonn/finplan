@@ -91,6 +91,9 @@ def _mix(hex_, other, f):
 
 # slide 4's exploded house (24 Oct): each layer a colour, darkest at the base, shaded top / front-left / front-right
 LAYER = {"1": "#7D1D2A", "2": "#A35560", "3": "#A35560", "4": "#C48C93", "5": "#C48C93", "roof": "#D9C3C6"}
+# the same house in light tones, for slide 4 drawn on a dark wine stage (24 Oct): the base a little deeper, the roof white
+LAYER_LIGHT = {"1": "#D9AEB4", "2": "#E9CDD1", "3": "#E9CDD1", "4": "#F3E2E4", "5": "#F3E2E4", "roof": "#FFFFFF"}
+ICON = {"1": "shield-check", "2": "house", "3": "heart-pulse", "4": "users", "5": "leaf", "roof": "gift"}
 CALLOUTS = {   # part: (side, title, line)
     "roof": ("r", "What passes on", "the inheritance kept, passed on in stages"),
     "5": ("r", "Values and crypto, with guardrails", "ESG at 25%; crypto sized per person"),
@@ -101,7 +104,8 @@ CALLOUTS = {   # part: (side, title, line)
 }
 
 
-def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0.34, low=362, box=(1184, 372)):
+def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0.34, low=362, box=(1184, 372),
+             palette="deck"):
     """Slide 4 (Pete, 24 Oct: the elevation was too simple): the house as an exploded 3D model, the foundation, two
     floors of two blocks and the roof pulled apart, so it reads as built from parts. A flat dimetric view (x to the
     right-front, y to the left-front, z up) keeps the walls tall; each floating layer casts a soft shadow on the one below;
@@ -126,8 +130,10 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
     def P(*pts):
         return " ".join(f"{XY(*q)[0]:.1f},{XY(*q)[1]:.1f}" for q in pts)
 
+    layer = LAYER_LIGHT if palette == "light" else LAYER
+
     def edge(col):
-        return _mix(col, "#000000", .32)
+        return _mix(col, "#000000", .32 if palette != "light" else .30)
 
     steps = {"1": 2, "2": 3, "3": 4, "4": 5, "5": 6, "roof": 7}
     blocks = {"1": (-8, W + 8, -8, D + 8, zf), "2": (0, half - gx / 2, 0, D, z2), "3": (half + gx / 2, W, 0, D, z2),
@@ -145,7 +151,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
     below = {"2": "1", "3": "1", "4": "2", "5": "3"}
     for part in ("1", "2", "3", "4", "5"):
         x0, x1, y0, y1, (za, zb) = blocks[part]
-        col = LAYER[part]
+        col = layer[part]
         o.append(f'<g class="hq" data-b="{steps[part]}">')
         if part in below:      # the soft shadow this floating block casts on the layer below
             lz = blocks[below[part]][4][1]
@@ -155,7 +161,10 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
         o.append(f'<polygon class="l" points="{P((x0, y1, za), (x1, y1, za), (x1, y1, zb), (x0, y1, zb))}" fill="{col}" stroke="{e}" stroke-width=".8"/>')
         o.append(f'<polygon class="r" points="{P((x1, y0, za), (x1, y1, za), (x1, y1, zb), (x1, y0, zb))}" fill="{_mix(col, "#000000", .20)}" stroke="{e}" stroke-width=".8"/>')
         for face, u0, u1, v0, v1 in holes.get(part, []):
-            glass = _mix(col, "#FFFFFF", .62) if face == "L" else _mix(col, "#FFFFFF", .42)
+            if palette == "light":   # on light walls the windows read darker, like glass at dusk
+                glass = _mix(col, "#7D1D2A", .42) if face == "L" else _mix(col, "#7D1D2A", .52)
+            else:
+                glass = _mix(col, "#FFFFFF", .62) if face == "L" else _mix(col, "#FFFFFF", .42)
             if face == "L":
                 q = ((x0 + u0, y1, za + v0), (x0 + u1, y1, za + v0), (x0 + u1, y1, za + v1), (x0 + u0, y1, za + v1))
             else:
@@ -174,7 +183,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
                  f'<text x="{ax:.1f}" y="{ay + fs * 0.36:.1f}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" '
                  f'font-weight="700" font-size="{fs}" fill="#1B1716">{part}</text></g>')
     # the roof: a gable along the depth, overhanging the walls, its triangle facing front-left; it casts a shadow too
-    col, e = LAYER["roof"], edge(LAYER["roof"])
+    col, e = layer["roof"], edge(layer["roof"])
     lz = z3[1]
     x0, x1, y0, y1 = -ov, W + ov, -ov, D + ov
     o.append(f'<g class="hq" data-b="7">'
@@ -182,7 +191,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
              f'<polygon class="t" points="{P((x0, y0, zr), (x0, y1, zr), (half, y1, zr + rh), (half, y0, zr + rh))}" fill="{_mix(col, "#FFFFFF", .40)}" stroke="{e}" stroke-width=".8"/>'
              f'<polygon class="r" points="{P((half, y0, zr + rh), (half, y1, zr + rh), (x1, y1, zr), (x1, y0, zr))}" fill="{_mix(col, "#000000", .16)}" stroke="{e}" stroke-width=".8"/>'
              f'<polygon class="l" points="{P((x0, y1, zr), (x1, y1, zr), (half, y1, zr + rh))}" fill="{col}" stroke="{e}" stroke-width=".8"/>'
-             f'<polygon class="w" points="{P((half - 14, y1, zr + 10), (half + 14, y1, zr + 10), (half + 14, y1, zr + 30), (half - 14, y1, zr + 30))}" fill="{_mix(col, "#FFFFFF", .55)}" stroke="{e}" stroke-width=".8"/>'
+             f'<polygon class="w" points="{P((half - 14, y1, zr + 10), (half + 14, y1, zr + 10), (half + 14, y1, zr + 30), (half - 14, y1, zr + 30))}" fill="{_mix(col, "#7D1D2A", .40) if palette == "light" else _mix(col, "#FFFFFF", .55)}" stroke="{e}" stroke-width=".8"/>'
              f'</g>')
     tr = 0.55                     # a point on the right slope, between the ridge and the eave, near the back
     anchors["roof"] = XY(half + tr * (W + ov - half), 4, zr + rh * (1 - tr))
@@ -190,13 +199,17 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
     for part, (side, _, _) in CALLOUTS.items():
         ax, ay = anchors[part]
         x2 = edgex[side]
-        o.append(f'<g data-b="{steps[part]}"><line x1="{ax:.1f}" y1="{ay:.1f}" x2="{x2}" y2="{ay:.1f}" stroke="#B99A9C" stroke-width="1.5"/>'
+        o.append(f'<g class="ld" data-b="{steps[part]}"><line x1="{ax:.1f}" y1="{ay:.1f}" x2="{x2}" y2="{ay:.1f}" stroke="#B99A9C" stroke-width="1.5"/>'
                  f'<circle cx="{x2}" cy="{ay:.1f}" r="3" fill="#A81E2D"/></g>')
     o.append("</svg>")
     for part, (side, title, line) in CALLOUTS.items():
         ay = anchors[part][1]
         pos = "right:834px" if side == "l" else "left:834px"
-        o.append(f'<div class="co {side}" data-b="{steps[part]}" style="{pos};top:{ay:.0f}px"><div><b>{title}</b><p>{line}</p></div></div>')
+        num = "" if part == "roof" else f'<em>{part}</em>'
+        icon = f'<span class="ci"><svg class="ic"><use href="#i-{ICON[part]}"/></svg></span>'
+        text = f'<div><b>{num}{title}</b><p>{line}</p></div>'
+        inner = text + icon if side == "l" else icon + text      # the icon sits nearest the leader line
+        o.append(f'<div class="co {side}" data-b="{steps[part]}" style="{pos};top:{ay:.0f}px">{inner}</div>')
     return "\n    ".join(o), anchors
 
 

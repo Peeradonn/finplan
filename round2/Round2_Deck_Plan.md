@@ -276,8 +276,15 @@ of two blocks and an overhanging roof pulled apart, each floating layer casting 
 and a door make it a house; colours step from a dark wine foundation to a pale roof, each face shaded. The number badges
 sit at each face's outer edge so the leader lines leave the model at once; callouts align on their titles. Builds: a
 grey draft, each block crimson (shading kept) as its call is named. The realistic render's prompt is Image_Prompts.md §7;
-when it comes back it can replace the model under the same labels, but its parts cannot light up one by one. The
-elevation notes below are superseded.
+when it comes back it can replace the model under the same labels, but its parts cannot light up one by one.
+**Same day, the reveal** (Pete: keep it 3D in code, no AI; make it unmistakably the answer reveal; look at density).
+Treatment A, "the stage", chosen over B, "the spotlight" (the white page with a rose glow), after both were rendered
+side by side: a dark wine stage lit from behind the house, the only dark slide after the cover (it echoes the cover's
+wine panel); the house in light tones (`house.exploded(palette="light")`); white text; 97% in white, the brightest
+thing on the slide; the bar stays crimson on the stage's darker foot. Each call's callout carries an icon that names its
+subject (shield, home, pulse, people, leaf, gift) and its number, which fills the empty third the density check found.
+Builds: the house a faint ghost, each block glowing white as its call is named. The elevation notes below are
+superseded.
 **v10 (23 Oct): one house, drawn and labelled** (Pete chose it over a five-step sequence, after the first house, a wine
 block with a legend beside it, said everything twice). An architect's elevation (`house.elevation`): fine crimson lines,
 rose fills, the foundation hatched, one ground line, each part numbered; each part labelled directly by a callout on a
@@ -513,6 +520,8 @@ proposal p.14). **Win's line is a draft for Win to confirm; Lookbua's edited lin
   part as the calls are named; each call slide
   carries a small house beside its title (built parts wine, this call crimson, the rest dashed); the close shows it
   complete. The lifeline ruler is gone; time stays where it is data (the axes of slides 2, 3, 7, 11).
+- **Slide 4 is the one dark slide after the cover** (24 Oct): the answer reveal, on a wine stage; every other content
+  slide stays on white.
 - **Signature:** a 5 px crimson rule on the title block, kicker and title 14 px in from it, as in e-Sentry (Pete, 24
   Oct: the header was too big and its title competed with the panel headings); the cover's crimson bar (no dash before the kicker: Pete, 24 Oct,
   "not needed"); the family on a wine panel (cover, slide 2).

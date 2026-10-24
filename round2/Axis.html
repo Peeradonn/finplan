@@ -360,7 +360,7 @@ p,li,span,b{text-wrap:pretty}
 .x4e>svg{position:absolute;top:0}
 .x4e .house.elev{left:342px}
 .x4e .ld{left:0;width:100%;height:100%}
-.x4e .co{position:absolute;transform:translateY(-11px);display:flex;align-items:flex-start;gap:12px;width:302px}
+.x4e .co{position:absolute;transform:translateY(-11px);display:flex;align-items:flex-start;gap:12px;width:350px}
 .x4e .co.l{justify-content:flex-end;text-align:right}
 .x4e .co i{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;
   border:1.5px solid var(--accent);font:600 19px/1 var(--head);font-style:normal;color:var(--accent)}
@@ -382,6 +382,46 @@ p,li,span,b{text-wrap:pretty}
 .upto-5 .hq[data-b="5"] .t{fill:#C9505D}.upto-5 .hq[data-b="5"] .l{fill:#A81E2D}.upto-5 .hq[data-b="5"] .r{fill:#7A1622}
 .upto-6 .hq[data-b="6"] .t{fill:#C9505D}.upto-6 .hq[data-b="6"] .l{fill:#A81E2D}.upto-6 .hq[data-b="6"] .r{fill:#7A1622}
 .upto-7 .hq[data-b="7"] .t{fill:#C9505D}.upto-7 .hq[data-b="7"] .l{fill:#A81E2D}.upto-7 .hq[data-b="7"] .r{fill:#7A1622}
+
+/* the calls: an icon that names the call's subject, nearest the leader line, and the call's number before its title */
+.x4e .co .ci{flex:none;width:38px;height:38px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center;margin-top:-8px}
+.x4e .co .ci .ic{width:20px;height:20px;stroke:var(--wine);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.x4e .co b em{font-style:normal;font-weight:700;color:var(--accent);margin-right:8px}
+/* slide 4, treatment A, the stage (24 Oct, Pete: make it unmistakably the answer reveal): a dark wine stage lit from
+   behind the house, the only dark slide after the cover; the house in light tones (house.exploded(palette="light"));
+   white text; in the build frames the block being named glows white. The bar stays crimson, on the stage's darker foot. */
+.s4r{background:radial-gradient(ellipse 58% 72% at 50% 44%,#9E2433 0%,#7D1D2A 40%,#5A1520 72%,#3C0D15 100%);color:#fff}
+.s4r .hd{border-left-color:#E8B9C0}
+.s4r .kick{color:#F0C9CE}
+.s4r .hd h2{color:#fff}
+.s4r .hx ellipse{opacity:.28}
+.s4r .ld line{stroke:rgba(255,255,255,.38)}
+.s4r .ld circle{fill:#fff}
+.s4r .x4e .co b{color:#fff}
+.s4r .x4e .co b em{color:#F3B5BE}
+.s4r .x4e .co p{color:#E8C6CB}
+.s4r .x4e .co .ci{background:rgba(255,255,255,.12)}
+.s4r .x4e .co .ci .ic{stroke:#fff}
+.s4r .x4p{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.38)}
+.s4r .x4p .l{color:#fff}
+.s4r .x4p .v strong{color:#C9A2A8}
+.s4r .x4p .v span{color:#E8C6CB}
+.s4r .x4p .v.on strong{color:#fff}
+.s4r .x4p .v.on span{color:#fff}
+.s4r .x4p .ar{color:#C9A2A8}
+.s4r .bar{background:#B3202F;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.s4r .ft{color:#D9B3B9}
+.s4r .ft .nv{color:#A9858B}
+.s4r .ft .nv b{color:#fff}
+.s4r .ft>span{color:#fff!important}
+.s4r.upto-2 .hq[data-b="2"] .t{fill:#FFFFFF}.s4r.upto-2 .hq[data-b="2"] .l{fill:#FFF2F4}.s4r.upto-2 .hq[data-b="2"] .r{fill:#F0D3D7}.s4r.upto-2 .hq[data-b="2"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-3 .hq[data-b="3"] .t{fill:#FFFFFF}.s4r.upto-3 .hq[data-b="3"] .l{fill:#FFF2F4}.s4r.upto-3 .hq[data-b="3"] .r{fill:#F0D3D7}.s4r.upto-3 .hq[data-b="3"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-4 .hq[data-b="4"] .t{fill:#FFFFFF}.s4r.upto-4 .hq[data-b="4"] .l{fill:#FFF2F4}.s4r.upto-4 .hq[data-b="4"] .r{fill:#F0D3D7}.s4r.upto-4 .hq[data-b="4"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-5 .hq[data-b="5"] .t{fill:#FFFFFF}.s4r.upto-5 .hq[data-b="5"] .l{fill:#FFF2F4}.s4r.upto-5 .hq[data-b="5"] .r{fill:#F0D3D7}.s4r.upto-5 .hq[data-b="5"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-6 .hq[data-b="6"] .t{fill:#FFFFFF}.s4r.upto-6 .hq[data-b="6"] .l{fill:#FFF2F4}.s4r.upto-6 .hq[data-b="6"] .r{fill:#F0D3D7}.s4r.upto-6 .hq[data-b="6"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+.s4r.upto-7 .hq[data-b="7"] .t{fill:#FFFFFF}.s4r.upto-7 .hq[data-b="7"] .l{fill:#FFF2F4}.s4r.upto-7 .hq[data-b="7"] .r{fill:#F0D3D7}.s4r.upto-7 .hq[data-b="7"]{filter:drop-shadow(0 0 12px rgba(255,255,255,.6))}
+/* slide 4, treatment B, the spotlight (for comparison): the deck's white page with a soft rose glow behind the house */
+.s4s{background:radial-gradient(ellipse 50% 62% at 50% 50%,#F6E6E8 0%,#FFFFFF 70%)}
 
 /* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
 .cv9{padding:0;flex-direction:row}
@@ -734,11 +774,14 @@ p,li,span,b{text-wrap:pretty}
 <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
 <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
+<symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol>
 <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14" /> <path d="M5 2h14" /> <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /> <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol>
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol>
 <symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /> <path d="M2 9v1c0 1.1.9 2 2 2h1" /> <path d="M16 11h.01" /></symbol>
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
 <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
 </svg>
 <main class="deck">
@@ -860,7 +903,7 @@ p,li,span,b{text-wrap:pretty}
 
 <!-- v9 slide 4 (23 Oct): our answer. Plan §5, slide 4. The family's brief in its own words, the five calls in the order
      the talk takes them (the tracker's numbers), and the impact band; the accent only on the plan's result. -->
-<section class="slide lb c9" data-time="0:45" data-speaker="Pete">
+<section class="slide lb c9 s4r" data-time="0:45" data-speaker="Pete">
   <header class="hd">
     <p class="kick">Our answer</p>
     <h2>The family asked for innovative yet prudent: five calls make the home their choice and their wealth last</h2>
@@ -869,58 +912,58 @@ p,li,span,b{text-wrap:pretty}
     <svg class="hx" viewBox="0 0 1184 372" aria-hidden="true">
     <ellipse cx="592.0" cy="300.4" rx="171.9" ry="52.4" fill="#1B1716" opacity=".07"/>
     <g class="hq" data-b="2">
-    <polygon class="t" points="572.2,210.6 745.0,275.8 611.8,326.2 439.0,260.9" fill="#A4616A" stroke="#55141D" stroke-width=".8"/>
-    <polygon class="l" points="439.0,278.9 611.8,344.2 611.8,326.2 439.0,260.9" fill="#7D1D2A" stroke="#55141D" stroke-width=".8"/>
-    <polygon class="r" points="745.0,293.8 611.8,344.2 611.8,326.2 745.0,275.8" fill="#641722" stroke="#55141D" stroke-width=".8"/>
-    <circle cx="458.8" cy="277.4" r="10" fill="#FFFFFF" stroke="#55141D" stroke-width=".8"/><text x="458.8" y="282.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="13" fill="#1B1716">1</text></g>
+    <polygon class="t" points="572.2,210.6 745.0,275.8 611.8,326.2 439.0,260.9" fill="#E4C6CA" stroke="#987A7E" stroke-width=".8"/>
+    <polygon class="l" points="439.0,278.9 611.8,344.2 611.8,326.2 439.0,260.9" fill="#D9AEB4" stroke="#987A7E" stroke-width=".8"/>
+    <polygon class="r" points="745.0,293.8 611.8,344.2 611.8,326.2 745.0,275.8" fill="#AE8B90" stroke="#987A7E" stroke-width=".8"/>
+    <circle cx="458.8" cy="277.4" r="10" fill="#FFFFFF" stroke="#987A7E" stroke-width=".8"/><text x="458.8" y="282.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="13" fill="#1B1716">1</text></g>
     <g class="hq" data-b="3">
     <polygon points="572.2,216.0 648.7,244.9 529.9,289.8 453.4,260.9" fill="#1B1716" opacity=".16"/>
-    <polygon class="t" points="572.2,134.0 648.7,162.9 529.9,207.8 453.4,178.9" fill="#BF8890" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="l" points="453.4,236.9 529.9,265.8 529.9,207.8 453.4,178.9" fill="#A35560" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="r" points="648.7,220.9 529.9,265.8 529.9,207.8 648.7,162.9" fill="#82444D" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="w" points="480.4,247.1 494.8,252.5 494.8,216.5 480.4,211.1" fill="#DCBEC3" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="w" points="503.8,235.9 525.4,244.1 525.4,222.1 503.8,213.9" fill="#DCBEC3" stroke="#6F3A41" stroke-width=".8"/>
-    <circle cx="466.0" cy="212.6" r="13" fill="#FFFFFF" stroke="#6F3A41" stroke-width=".8"/><text x="466.0" y="218.4" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">2</text></g>
+    <polygon class="t" points="572.2,134.0 648.7,162.9 529.9,207.8 453.4,178.9" fill="#F0DCDF" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="l" points="453.4,236.9 529.9,265.8 529.9,207.8 453.4,178.9" fill="#E9CDD1" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="r" points="648.7,220.9 529.9,265.8 529.9,207.8 648.7,162.9" fill="#BAA4A7" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="480.4,247.1 494.8,252.5 494.8,216.5 480.4,211.1" fill="#BC838B" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="503.8,235.9 525.4,244.1 525.4,222.1 503.8,213.9" fill="#BC838B" stroke="#A39092" stroke-width=".8"/>
+    <circle cx="466.0" cy="212.6" r="13" fill="#FFFFFF" stroke="#A39092" stroke-width=".8"/><text x="466.0" y="218.4" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">2</text></g>
     <g class="hq" data-b="4">
     <polygon points="654.1,246.9 730.6,275.8 611.8,320.7 535.3,291.8" fill="#1B1716" opacity=".16"/>
-    <polygon class="t" points="654.1,164.9 730.6,193.8 611.8,238.7 535.3,209.8" fill="#BF8890" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="l" points="535.3,267.8 611.8,296.7 611.8,238.7 535.3,209.8" fill="#A35560" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="r" points="730.6,251.8 611.8,296.7 611.8,238.7 730.6,193.8" fill="#82444D" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="w" points="547.9,252.6 573.1,262.1 573.1,240.1 547.9,230.6" fill="#DCBEC3" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="w" points="629.8,269.9 655.0,260.4 655.0,238.4 629.8,247.9" fill="#CA9CA3" stroke="#6F3A41" stroke-width=".8"/>
-    <polygon class="w" points="669.4,255.0 694.6,245.4 694.6,223.4 669.4,233.0" fill="#CA9CA3" stroke="#6F3A41" stroke-width=".8"/>
-    <circle cx="716.2" cy="228.3" r="13" fill="#FFFFFF" stroke="#6F3A41" stroke-width=".8"/><text x="716.2" y="234.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">3</text></g>
+    <polygon class="t" points="654.1,164.9 730.6,193.8 611.8,238.7 535.3,209.8" fill="#F0DCDF" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="l" points="535.3,267.8 611.8,296.7 611.8,238.7 535.3,209.8" fill="#E9CDD1" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="r" points="730.6,251.8 611.8,296.7 611.8,238.7 730.6,193.8" fill="#BAA4A7" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="547.9,252.6 573.1,262.1 573.1,240.1 547.9,230.6" fill="#BC838B" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="629.8,269.9 655.0,260.4 655.0,238.4 629.8,247.9" fill="#B1717A" stroke="#A39092" stroke-width=".8"/>
+    <polygon class="w" points="669.4,255.0 694.6,245.4 694.6,223.4 669.4,233.0" fill="#B1717A" stroke="#A39092" stroke-width=".8"/>
+    <circle cx="716.2" cy="228.3" r="13" fill="#FFFFFF" stroke="#A39092" stroke-width=".8"/><text x="716.2" y="234.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">3</text></g>
     <g class="hq" data-b="5">
     <polygon points="572.2,134.0 648.7,162.9 529.9,207.8 453.4,178.9" fill="#1B1716" opacity=".16"/>
-    <polygon class="t" points="572.2,52.0 648.7,80.9 529.9,125.8 453.4,96.9" fill="#D6AEB3" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="l" points="453.4,154.9 529.9,183.8 529.9,125.8 453.4,96.9" fill="#C48C93" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="r" points="648.7,138.9 529.9,183.8 529.9,125.8 648.7,80.9" fill="#9D7076" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="w" points="480.4,145.1 500.2,152.6 500.2,130.6 480.4,123.1" fill="#E9D3D6" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="w" points="507.4,155.3 525.4,162.1 525.4,140.1 507.4,133.3" fill="#E9D3D6" stroke="#855F64" stroke-width=".8"/>
-    <circle cx="466.0" cy="130.6" r="13" fill="#FFFFFF" stroke="#855F64" stroke-width=".8"/><text x="466.0" y="136.4" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">4</text></g>
+    <polygon class="t" points="572.2,52.0 648.7,80.9 529.9,125.8 453.4,96.9" fill="#F7EBEC" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="l" points="453.4,154.9 529.9,183.8 529.9,125.8 453.4,96.9" fill="#F3E2E4" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="r" points="648.7,138.9 529.9,183.8 529.9,125.8 648.7,80.9" fill="#C2B5B6" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="480.4,145.1 500.2,152.6 500.2,130.6 480.4,123.1" fill="#C18F96" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="507.4,155.3 525.4,162.1 525.4,140.1 507.4,133.3" fill="#C18F96" stroke="#AA9EA0" stroke-width=".8"/>
+    <circle cx="466.0" cy="130.6" r="13" fill="#FFFFFF" stroke="#AA9EA0" stroke-width=".8"/><text x="466.0" y="136.4" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">4</text></g>
     <g class="hq" data-b="6">
     <polygon points="654.1,164.9 730.6,193.8 611.8,238.7 535.3,209.8" fill="#1B1716" opacity=".16"/>
-    <polygon class="t" points="654.1,82.9 730.6,111.8 611.8,156.7 535.3,127.8" fill="#D6AEB3" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="l" points="535.3,185.8 611.8,214.7 611.8,156.7 535.3,127.8" fill="#C48C93" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="r" points="730.6,169.8 611.8,214.7 611.8,156.7 730.6,111.8" fill="#9D7076" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="w" points="547.9,170.6 573.1,180.1 573.1,158.1 547.9,148.6" fill="#E9D3D6" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="w" points="629.8,187.9 655.0,178.4 655.0,156.4 629.8,165.9" fill="#DDBCC0" stroke="#855F64" stroke-width=".8"/>
-    <polygon class="w" points="669.4,173.0 694.6,163.4 694.6,141.4 669.4,151.0" fill="#DDBCC0" stroke="#855F64" stroke-width=".8"/>
-    <circle cx="716.2" cy="146.3" r="13" fill="#FFFFFF" stroke="#855F64" stroke-width=".8"/><text x="716.2" y="152.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">5</text></g>
-    <g class="hq" data-b="7"><polygon points="572.2,52.0 730.6,111.8 611.8,156.7 453.4,96.9" fill="#1B1716" opacity=".16"/><polygon class="t" points="572.2,19.8 431.8,72.9 521.8,54.9 662.2,1.8" fill="#E8DBDD" stroke="#948587" stroke-width=".8"/><polygon class="r" points="662.2,1.8 521.8,54.9 611.8,140.9 752.2,87.8" fill="#B6A4A6" stroke="#948587" stroke-width=".8"/><polygon class="l" points="431.8,72.9 611.8,140.9 521.8,54.9" fill="#D9C3C6" stroke="#948587" stroke-width=".8"/><polygon class="w" points="509.2,92.1 534.4,101.6 534.4,81.6 509.2,72.1" fill="#EEE4E5" stroke="#948587" stroke-width=".8"/></g>
-    <g data-b="7"><line x1="697.3" y1="54.6" x2="822" y2="54.6" stroke="#B99A9C" stroke-width="1.5"/><circle cx="822" cy="54.6" r="3" fill="#A81E2D"/></g>
-    <g data-b="6"><line x1="716.2" y1="146.3" x2="822" y2="146.3" stroke="#B99A9C" stroke-width="1.5"/><circle cx="822" cy="146.3" r="3" fill="#A81E2D"/></g>
-    <g data-b="4"><line x1="716.2" y1="228.3" x2="822" y2="228.3" stroke="#B99A9C" stroke-width="1.5"/><circle cx="822" cy="228.3" r="3" fill="#A81E2D"/></g>
-    <g data-b="5"><line x1="466.0" y1="130.6" x2="362" y2="130.6" stroke="#B99A9C" stroke-width="1.5"/><circle cx="362" cy="130.6" r="3" fill="#A81E2D"/></g>
-    <g data-b="3"><line x1="466.0" y1="212.6" x2="362" y2="212.6" stroke="#B99A9C" stroke-width="1.5"/><circle cx="362" cy="212.6" r="3" fill="#A81E2D"/></g>
-    <g data-b="2"><line x1="458.8" y1="277.4" x2="362" y2="277.4" stroke="#B99A9C" stroke-width="1.5"/><circle cx="362" cy="277.4" r="3" fill="#A81E2D"/></g>
+    <polygon class="t" points="654.1,82.9 730.6,111.8 611.8,156.7 535.3,127.8" fill="#F7EBEC" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="l" points="535.3,185.8 611.8,214.7 611.8,156.7 535.3,127.8" fill="#F3E2E4" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="r" points="730.6,169.8 611.8,214.7 611.8,156.7 730.6,111.8" fill="#C2B5B6" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="547.9,170.6 573.1,180.1 573.1,158.1 547.9,148.6" fill="#C18F96" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="629.8,187.9 655.0,178.4 655.0,156.4 629.8,165.9" fill="#B67C83" stroke="#AA9EA0" stroke-width=".8"/>
+    <polygon class="w" points="669.4,173.0 694.6,163.4 694.6,141.4 669.4,151.0" fill="#B67C83" stroke="#AA9EA0" stroke-width=".8"/>
+    <circle cx="716.2" cy="146.3" r="13" fill="#FFFFFF" stroke="#AA9EA0" stroke-width=".8"/><text x="716.2" y="152.0" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="16" fill="#1B1716">5</text></g>
+    <g class="hq" data-b="7"><polygon points="572.2,52.0 730.6,111.8 611.8,156.7 453.4,96.9" fill="#1B1716" opacity=".16"/><polygon class="t" points="572.2,19.8 431.8,72.9 521.8,54.9 662.2,1.8" fill="#FFFFFF" stroke="#B2B2B2" stroke-width=".8"/><polygon class="r" points="662.2,1.8 521.8,54.9 611.8,140.9 752.2,87.8" fill="#D6D6D6" stroke="#B2B2B2" stroke-width=".8"/><polygon class="l" points="431.8,72.9 611.8,140.9 521.8,54.9" fill="#FFFFFF" stroke="#B2B2B2" stroke-width=".8"/><polygon class="w" points="509.2,92.1 534.4,101.6 534.4,81.6 509.2,72.1" fill="#CBA5AA" stroke="#B2B2B2" stroke-width=".8"/></g>
+    <g class="ld" data-b="7"><line x1="697.3" y1="54.6" x2="822" y2="54.6" stroke="#B99A9C" stroke-width="1.5"/><circle cx="822" cy="54.6" r="3" fill="#A81E2D"/></g>
+    <g class="ld" data-b="6"><line x1="716.2" y1="146.3" x2="822" y2="146.3" stroke="#B99A9C" stroke-width="1.5"/><circle cx="822" cy="146.3" r="3" fill="#A81E2D"/></g>
+    <g class="ld" data-b="4"><line x1="716.2" y1="228.3" x2="822" y2="228.3" stroke="#B99A9C" stroke-width="1.5"/><circle cx="822" cy="228.3" r="3" fill="#A81E2D"/></g>
+    <g class="ld" data-b="5"><line x1="466.0" y1="130.6" x2="362" y2="130.6" stroke="#B99A9C" stroke-width="1.5"/><circle cx="362" cy="130.6" r="3" fill="#A81E2D"/></g>
+    <g class="ld" data-b="3"><line x1="466.0" y1="212.6" x2="362" y2="212.6" stroke="#B99A9C" stroke-width="1.5"/><circle cx="362" cy="212.6" r="3" fill="#A81E2D"/></g>
+    <g class="ld" data-b="2"><line x1="458.8" y1="277.4" x2="362" y2="277.4" stroke="#B99A9C" stroke-width="1.5"/><circle cx="362" cy="277.4" r="3" fill="#A81E2D"/></g>
     </svg>
-    <div class="co r" data-b="7" style="left:834px;top:55px"><div><b>What passes on</b><p>the inheritance kept, passed on in stages</p></div></div>
-    <div class="co r" data-b="6" style="left:834px;top:146px"><div><b>Values and crypto, with guardrails</b><p>ESG at 25%; crypto sized per person</p></div></div>
-    <div class="co r" data-b="4" style="left:834px;top:228px"><div><b>Fix the cost the budget ignores</b><p>a medical review at 75; spending rules</p></div></div>
-    <div class="co l" data-b="5" style="right:834px;top:131px"><div><b>A plan for each person</b><p>Chloe funded; HK$45K a year less in fees</p></div></div>
-    <div class="co l" data-b="3" style="right:834px;top:213px"><div><b>The home and the business</b><p>decided at 65, not forced at 83</p></div></div>
-    <div class="co l" data-b="2" style="right:834px;top:277px"><div><b>Insure the income, not the life</b><p>about HK$100K a year closes every gap</p></div></div>
+    <div class="co r" data-b="7" style="left:834px;top:55px"><span class="ci"><svg class="ic"><use href="#i-gift"/></svg></span><div><b>What passes on</b><p>the inheritance kept, passed on in stages</p></div></div>
+    <div class="co r" data-b="6" style="left:834px;top:146px"><span class="ci"><svg class="ic"><use href="#i-leaf"/></svg></span><div><b><em>5</em>Values and crypto, with guardrails</b><p>ESG at 25%; crypto sized per person</p></div></div>
+    <div class="co r" data-b="4" style="left:834px;top:228px"><span class="ci"><svg class="ic"><use href="#i-heart-pulse"/></svg></span><div><b><em>3</em>Fix the cost the budget ignores</b><p>a medical review at 75; spending rules</p></div></div>
+    <div class="co l" data-b="5" style="right:834px;top:131px"><div><b><em>4</em>A plan for each person</b><p>Chloe funded; HK$45K a year less in fees</p></div><span class="ci"><svg class="ic"><use href="#i-users"/></svg></span></div>
+    <div class="co l" data-b="3" style="right:834px;top:213px"><div><b><em>2</em>The home and the business</b><p>decided at 65, not forced at 83</p></div><span class="ci"><svg class="ic"><use href="#i-house"/></svg></span></div>
+    <div class="co l" data-b="2" style="right:834px;top:277px"><div><b><em>1</em>Insure the income, not the life</b><p>about HK$100K a year closes every gap</p></div><span class="ci"><svg class="ic"><use href="#i-shield-check"/></svg></span></div>
   </div>
   <div class="x4p" data-b="7">
     <p class="l">Chance the money lasts to Carmen's 89</p>
