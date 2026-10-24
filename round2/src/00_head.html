@@ -457,6 +457,19 @@ p,li,span,b{text-wrap:pretty}
 .s5c .bills span b{color:var(--ink);font-weight:700}
 .s5c .s5n{align-self:flex-end;margin-bottom:104px;max-width:190px;font:400 15px/1.4 var(--text);color:var(--slate);margin-left:4px}
 .s5c .s5n b{color:var(--ink);font-weight:600;display:block}
+/* the chart's annotations, as e-Sentry draws them: a curved crimson arrow with the finding on it, a bracket that measures
+   a span; the bills label under its line, clear of the bracket's label */
+.s5c .stack{position:relative}
+.s5c .brk{position:absolute;left:calc(100% + 12px);width:10px;border:1.5px solid var(--ink);border-left:0;z-index:3}
+.s5c .brk>span{position:absolute;left:22px;top:-2px;width:196px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.s5c .brk b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
+.s5c .bills span{top:6px!important}
+.s5c .s5w2{position:absolute;right:0;bottom:92px;width:200px;font:400 14px/1.4 var(--text);color:var(--slate);border-left:3px solid var(--rule);padding-left:12px}
+.s5c .s5w2 b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
+/* the deck's arrows (99_tail.html draws them; 24 Oct, first used on slide 5) */
+svg.conn{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:visible;pointer-events:none;z-index:6;color:var(--accent)}
+svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.conn-label{position:absolute;transform:translate(-50%,-50%);font:600 14px/1.25 var(--text);color:var(--accent);white-space:nowrap;z-index:6;margin:0}
 .s5p{display:flex;align-items:center;gap:16px;margin-top:12px}
 .s5p strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
 .s5p span{font:400 15px/1.35 var(--text);color:var(--slate)}

@@ -457,6 +457,19 @@ p,li,span,b{text-wrap:pretty}
 .s5c .bills span b{color:var(--ink);font-weight:700}
 .s5c .s5n{align-self:flex-end;margin-bottom:104px;max-width:190px;font:400 15px/1.4 var(--text);color:var(--slate);margin-left:4px}
 .s5c .s5n b{color:var(--ink);font-weight:600;display:block}
+/* the chart's annotations, as e-Sentry draws them: a curved crimson arrow with the finding on it, a bracket that measures
+   a span; the bills label under its line, clear of the bracket's label */
+.s5c .stack{position:relative}
+.s5c .brk{position:absolute;left:calc(100% + 12px);width:10px;border:1.5px solid var(--ink);border-left:0;z-index:3}
+.s5c .brk>span{position:absolute;left:22px;top:-2px;width:196px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.s5c .brk b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
+.s5c .bills span{top:6px!important}
+.s5c .s5w2{position:absolute;right:0;bottom:92px;width:200px;font:400 14px/1.4 var(--text);color:var(--slate);border-left:3px solid var(--rule);padding-left:12px}
+.s5c .s5w2 b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
+/* the deck's arrows (99_tail.html draws them; 24 Oct, first used on slide 5) */
+svg.conn{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:visible;pointer-events:none;z-index:6;color:var(--accent)}
+svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.conn-label{position:absolute;transform:translate(-50%,-50%);font:600 14px/1.25 var(--text);color:var(--accent);white-space:nowrap;z-index:6;margin:0}
 .s5p{display:flex;align-items:center;gap:16px;margin-top:12px}
 .s5p strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
 .s5p span{font:400 15px/1.35 var(--text);color:var(--slate)}
@@ -1079,10 +1092,11 @@ p,li,span,b{text-wrap:pretty}
           <div class="stack">
             <i class="ac" style="height:162px"><span>Adrian's cover<br><b>HK$65K</b></span></i>
             <i class="cp" style="height:150px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
+            <span class="brk" data-b="2" style="bottom:150px;height:162px"><span><b>65% of his pay, until 65</b>Carmen's own cover: HK$39K a month, until 62</span></span>
           </div>
           <p class="cl">With the plan</p>
         </div>
-        <p class="s5n" data-b="2"><b>65% of his pay, until 65.</b> The same for Carmen: HK$39K a month, until 62.</p>
+        <p class="s5w2" data-b="2"><b>Why not more life cover?</b>His HK$2.0M whole-life policy pays only if he dies, not if he can't work (case).</p>
       </div>
     </div>
     <div class="pn s5r" data-b="3">
@@ -1102,6 +1116,7 @@ p,li,span,b{text-wrap:pretty}
   </div>
   <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>Term cover costs a fraction of whole life, but it lapses at 65 and 62; after that, their existing policies and savings carry the risk.</span></p>
   <p class="bar" data-b="4">Protected first: now the plan can turn what they own into income.</p>
+  <svg class="conn" data-from=".s5c .gap" data-to=".s5c .ac" data-fa="tc" data-ta="cl" data-o1="0,-4" data-o2="-4,0" data-bend="0.8" data-label="his cover closes the gap" data-lo="-32,-40" data-b="2"></svg>
   <footer class="ft"><p class="src">Year-1 premiums from 2026 rate cards and the market range for disability cover; quotes to follow (estimated from market range and rate cards). Surplus: HK$718K a year after tax and MPF (written case §2).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 15</span></footer>
   <aside class="notes">LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai. [Notes: Ryan: about HK$900 a year, term life only. On average the covers cost about HK$114K a year until each retires. Why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.]</aside>
 </section>
