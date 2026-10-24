@@ -441,36 +441,43 @@ p,li,span,b{text-wrap:pretty}
 .s5w{flex:1;min-height:0;display:grid;grid-template-columns:7fr 5fr;column-gap:48px}
 .s5w>.pn{display:flex;flex-direction:column;min-width:0}
 .s5c{position:relative;flex:1;display:flex;align-items:flex-end;gap:36px;padding:0 0 0 8px;margin-top:10px}
-.s5c .col{display:flex;flex-direction:column;align-items:center;width:150px;z-index:1}
-.s5c .stack{display:flex;flex-direction:column;width:150px}
-.s5c .stack i{display:flex;align-items:center;justify-content:center;text-align:center;font:400 14px/1.3 var(--text);font-style:normal}
-.s5c .stack i b{font:700 18px/1.2 var(--head)}
+.s5c .col{display:flex;flex-direction:column;align-items:center;width:176px;z-index:1}
+.s5c .stack{display:flex;flex-direction:column;width:176px}
+.s5c .stack i{display:flex;align-items:center;justify-content:center;text-align:center;font:400 15px/1.3 var(--text);font-style:normal}
+.s5c .stack i:first-child{border-radius:6px 6px 0 0}
+.s5c .stack i b{font:700 20px/1.2 var(--head)}
 .s5c .cp{background:var(--rose-g);color:var(--ink)}
 .s5c .ac{background:var(--wine-g);color:#fff;align-items:flex-start!important;padding-top:18px}
 .s5c .gap{border:2px dashed var(--accent);border-bottom:0;background:#FFFFFF;color:var(--accent)}
-.s5c .gap span{font:400 13px/1.3 var(--text)}
-.s5c .gap b{display:block;font:700 15px/1.2 var(--text);color:var(--accent)}
-.s5c .cl{font:600 15px/1.2 var(--text);margin-top:10px;color:var(--ink)}
+.s5c .gap span{font:400 14px/1.3 var(--text)}
+.s5c .gap b{display:block;font:700 17px/1.2 var(--text);color:var(--accent)}
+.s5c .cl{font:600 16px/1.2 var(--text);margin-top:10px;color:var(--ink)}
 .s5c .bills{position:absolute;left:0;right:0;border-top:2px solid var(--ink);z-index:2;pointer-events:none;margin-bottom:31px}
-.s5c .bills span{position:absolute;right:0;top:-24px;font:400 14px/1.2 var(--text);color:var(--slate);white-space:nowrap}
+.s5c .bills span{position:absolute;right:0;top:-24px;font:400 15px/1.2 var(--text);color:var(--slate);white-space:nowrap}
 .s5c .bills span b{color:var(--ink);font-weight:700}
-.s5c .s5n{align-self:flex-end;margin-bottom:96px;max-width:220px;font:400 14px/1.4 var(--text);color:var(--slate);margin-left:4px}
+.s5c .s5n{align-self:flex-end;margin-bottom:104px;max-width:230px;font:400 15px/1.4 var(--text);color:var(--slate);margin-left:4px}
 .s5c .s5n b{color:var(--ink);font-weight:600;display:block}
-.s5p{display:flex;align-items:center;gap:16px;margin-top:14px}
-.s5p strong{font:700 52px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
+.s5p{display:flex;align-items:center;gap:16px;margin-top:12px}
+.s5p strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
 .s5p span{font:400 15px/1.35 var(--text);color:var(--slate)}
-.s5k{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
-.s5k p{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--mist);box-shadow:var(--lift)}
-.s5k .ic{flex:none;width:22px;height:22px;fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.s5k span{font:400 13px/1.3 var(--text);color:var(--slate)}
-.s5k span b{display:block;font:600 15px/1.25 var(--text);color:var(--ink)}
-.s5y{font:400 13px/1.4 var(--text);color:var(--slate);margin-top:10px}
+/* the four covers as e-Sentry's bar list: name left, value right, a soft track and a filled bar with a rounded end */
+.s5b{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.s5b .lb{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
+.s5b .lb .ic{flex:none;align-self:center;width:20px;height:20px;fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.s5b .lb b{font:600 16px/1.2 var(--text);color:var(--ink)}
+.s5b .lb span{font:400 14px/1.2 var(--text);color:var(--slate)}
+.s5b .lb em{margin-left:auto;font:700 17px/1 var(--head);font-style:normal;color:var(--ink)}
+.s5b .tk{height:12px;background:var(--mist);border-radius:0 6px 6px 0}
+.s5b .tk i{display:block;height:12px;background:var(--wine-g);border-radius:0 6px 6px 0;min-width:6px}
+.s5y{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:10px}
 .s5y b{color:var(--ink);font-weight:600}
-.s5d{margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
-.s5d h4{font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:8px}
-.s5d ul{display:flex;flex-wrap:wrap;gap:6px 14px}
-.s5d li{display:flex;align-items:center;gap:6px;font:400 14px/1.3 var(--text);color:var(--ink)}
-.s5d .ic{flex:none;width:16px;height:16px;fill:none;stroke:var(--wine);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+/* the papers with e-Sentry's checks: a filled circle and a bold white tick, on ruled rows */
+.s5d{margin-top:auto;padding-top:8px}
+.s5d h4{font:600 16px/1.3 var(--text);color:var(--ink);padding-bottom:6px;border-bottom:1.5px solid var(--ink)}
+.s5d ul{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+.s5d li{display:flex;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid var(--rule);font:500 15px/1.25 var(--text);color:var(--ink)}
+.s5d .mk{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--wine);flex:none}
+.s5d .mk .ic{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* ==================== the cover (23 Oct): the title, and the family on a wine panel ==================== */
 .cv9{padding:0;flex-direction:row}
@@ -1060,18 +1067,18 @@ p,li,span,b{text-wrap:pretty}
       <h3>If Adrian couldn't work tomorrow…</h3>
       <p class="lede">The household's money each month, against its bills (case)</p>
       <div class="s5c">
-        <div class="bills" style="bottom:208px"><span><b>HK$82K a month</b> of bills</span></div>
+        <div class="bills" style="bottom:218px"><span><b>HK$82K a month</b> of bills</span></div>
         <div class="col">
           <div class="stack">
-            <i class="gap" style="height:56px"><span><b>HK$22K short</b> every month</span></i>
-            <i class="cp" style="height:152px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
+            <i class="gap" style="height:58px"><span><b>HK$22K short</b> every month</span></i>
+            <i class="cp" style="height:159px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
           </div>
           <p class="cl">Today</p>
         </div>
         <div class="col" data-b="2">
           <div class="stack">
-            <i class="ac" style="height:165px"><span>Adrian's cover<br><b>HK$65K</b></span></i>
-            <i class="cp" style="height:152px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
+            <i class="ac" style="height:172px"><span>Adrian's cover<br><b>HK$65K</b></span></i>
+            <i class="cp" style="height:159px"><span>Carmen's pay<br><b>HK$60K</b></span></i>
           </div>
           <p class="cl">With the plan</p>
         </div>
@@ -1081,24 +1088,23 @@ p,li,span,b{text-wrap:pretty}
     <div class="pn s5r" data-b="3">
       <h3>…so we insure the income first</h3>
       <div class="s5p"><strong>HK$100K</strong><span>a year for four new covers,<br>14% of their surplus</span></div>
-      <div class="s5k">
-        <p><svg class="ic"><use href="#i-accessibility"/></svg><span><b>Disability</b>HK$37K</span></p>
-        <p><svg class="ic"><use href="#i-heart-pulse"/></svg><span><b>Critical illness</b>HK$41K, HK$1.5M each</span></p>
-        <p><svg class="ic"><use href="#i-hospital"/></svg><span><b>Medical of their own</b>HK$15K</span></p>
-        <p><svg class="ic"><use href="#i-shield-check"/></svg><span><b>Term-life top-up</b>HK$7K</span></p>
+      <div class="s5b">
+        <div class="br"><p class="lb"><svg class="ic"><use href="#i-accessibility"/></svg><b>Disability</b><span>65% of pay, to retirement</span><em>HK$37K</em></p><div class="tk"><i style="width:90%"></i></div></div>
+        <div class="br"><p class="lb"><svg class="ic"><use href="#i-heart-pulse"/></svg><b>Critical illness</b><span>HK$1.5M each</span><em>HK$41K</em></p><div class="tk"><i style="width:100%"></i></div></div>
+        <div class="br"><p class="lb"><svg class="ic"><use href="#i-hospital"/></svg><b>Medical of their own</b><span>before group cover ends</span><em>HK$15K</em></p><div class="tk"><i style="width:37%"></i></div></div>
+        <div class="br"><p class="lb"><svg class="ic"><use href="#i-shield-check"/></svg><b>Term-life top-up</b><span>to 65 and 62</span><em>HK$7K</em></p><div class="tk"><i style="width:17%"></i></div></div>
       </div>
-      <p class="s5y"><b>Ryan:</b> about HK$900 a year, term life only. On average, about HK$114K a year until each retires.</p>
+      <p class="s5y"><b>Ryan:</b> about HK$900 a year, term life only.</p>
       <div class="s5d" data-b="4">
         <h4>And within three months, under HK$25K</h4>
-        <ul><li><svg class="ic"><use href="#i-check"/></svg>Wills, staged trusts</li><li><svg class="ic"><use href="#i-check"/></svg>A guardian for Chloe</li><li><svg class="ic"><use href="#i-check"/></svg>Powers of attorney</li>
-        <li><svg class="ic"><use href="#i-check"/></svg>Advance directives</li><li><svg class="ic"><use href="#i-check"/></svg>A buy-sell agreement</li></ul>
+        <ul><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>Wills, with staged trusts</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>A guardian for Chloe</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>Powers of attorney</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>Advance directives</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>A buy-sell agreement</li></ul>
       </div>
     </div>
   </div>
   <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>Term cover costs a fraction of whole life, but it lapses at 65 and 62; after that, their existing policies and savings carry the risk.</span></p>
   <p class="bar" data-b="4">Protected first: now the plan can turn what they own into income.</p>
   <footer class="ft"><p class="src">Year-1 premiums from 2026 rate cards and the market range for disability cover; quotes to follow (estimated from market range and rate cards). Surplus: HK$718K a year after tax and MPF (written case §2).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 15</span></footer>
-  <aside class="notes">LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai. [Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.]</aside>
+  <aside class="notes">LOOKBUA: Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai. [Notes: on average the covers cost about HK$114K a year until each retires. Why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.]</aside>
 </section>
 
 <section class="slide lb c9" data-time="0:45" data-speaker="Fahtai">

@@ -39,7 +39,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1
 
 **Lookbua:** Thanks, Pete. Call one: insure the income, not the life. Neither parent has disability cover: if one couldn't work, their pay would stop. So disability cover comes first, 65% of pay until they retire; then critical illness, medical cover of their own, and a term-life top-up. About HK$100K a year, 14% of their surplus. Term, because the need ends at retirement. And within three months: wills, a guardian for Chloe, powers of attorney, and a buy-sell agreement so her business survives her. Fahtai.
 
-> Notes: why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.
+> Notes: on average the covers cost about HK$114K a year until each retires. Why term, not more whole life (whole life mostly buys savings they already hold); individual medical cover bought before group cover ends at 65 and 62.
 
 ## 6 · Decide now, not at 83: four decisions on what they own and spend lift the odds from 62% to 83%
 *Call 2: The home and the business · Fahtai · 0:45 · 93 spoken words (≈41 s at 135)*
