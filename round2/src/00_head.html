@@ -747,6 +747,16 @@ p,li,span,b{text-wrap:pretty}
    had set its own (14 to 22 px), and the tight ones put the content against the title. */
 .c9 .hd+*{margin-top:26px}
 
+/* depth on objects only (24 Oct, Pete: shadows where they apply): one soft, wine-tinted lift for things the viewer
+   should read as objects (portraits, slide 6's results, slide 8's planned pots, the conclusion bar). Nothing drawn to a
+   scale gets one: a shadow moves an edge, so a bar or an area would read longer or thicker than its value. */
+.lb{--lift:0 6px 18px rgba(90,21,32,.14),0 1px 3px rgba(90,21,32,.10)}
+.r2p .pic,.x5-p .who .pic,.e9q .pic,.b8 .st .pic{box-shadow:var(--lift)}
+.b8 .p .bk .pic{box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.f6 .dst{box-shadow:var(--lift)}
+.b8 .p .bk>div{box-shadow:var(--lift)}
+.bar{box-shadow:0 8px 22px rgba(90,21,32,.20)}
+
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}
 .pic img{width:100%;height:100%;object-fit:cover}

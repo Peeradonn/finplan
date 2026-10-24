@@ -151,6 +151,9 @@ the failures we've already seen. Each slide's form is chosen for its point.
   the client asks, and the judges score "client suitability awareness"). Where and how it shows is open.
 
 **Defaults** (break one when the slide is better for it, and say why in its §5 section):
+- Shadows on objects only (Pete, 24 Oct): one soft wine-tinted lift (--lift) for portraits, slide 6's results,
+  slide 8's planned pots and the conclusion bar; never on anything drawn to a scale (a shadow moves an edge, so a bar
+  or area reads longer or thicker than its value).
 - Charts: grey or rose series, the accent only on the value the title claims, labels on the data rather than legends,
   axis text 14 px, no gridlines, events anchored to the axis. Crimson marks a point or a number, never a wall of lines.
 - The kicker names the section; the footer carries the source (two lines at most; the detail goes to the notes), the
