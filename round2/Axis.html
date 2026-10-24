@@ -959,10 +959,9 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10e .sw.a{background:#E3C3C9}
 .q10e .sw.p{background:var(--wine-g)}
 .q10e b{color:var(--ink);font-weight:600}
-/* what holds each test: one pill a defence, with its icon */
-.q10d{display:flex;flex-wrap:wrap;gap:6px}
-.q10d span{display:inline-flex;align-items:center;gap:6px;padding:4px 11px 4px 8px;border-radius:14px;background:var(--mist);font:600 14px/1.2 var(--text);color:var(--wine);white-space:nowrap}
-.q10d .ic{flex:none;width:15px;height:15px;stroke:var(--wine);stroke-width:2}
+/* what holds each test: plain text, one defence a line (Pete, 24 Oct: back to text, not pills) */
+.q10d{display:flex;flex-direction:column;gap:2px}
+.q10d span{font:500 15px/1.4 var(--text);color:var(--ink)}
 
 /* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
    steps on one line with an icon a step, then the reviews. */
@@ -1147,7 +1146,6 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-accessibility" viewBox="0 0 24 24"><circle cx="16" cy="4" r="1" /> <path d="m18 19 1-7-6 1" /> <path d="m5 8 3-3 5.5 3-2.36 3.5" /> <path d="M4.24 14.5a5 5 0 0 0 6.88 6" /> <path d="M13.76 17.5a5 5 0 0 0-6.88-6" /></symbol>
-<symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2" /> <circle cx="12" cy="12" r="2" /> <path d="M6 12h.01M18 12h.01" /></symbol>
 <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
@@ -1158,9 +1156,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 <symbol id="i-hospital" viewBox="0 0 24 24"><path d="M12 6v4" /> <path d="M14 14h-4" /> <path d="M14 18h-4" /> <path d="M14 8h-4" /> <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2" /> <path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18" /></symbol>
 <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14" /> <path d="M5 2h14" /> <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /> <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol>
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
-<symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" /></symbol>
 <symbol id="i-landmark" viewBox="0 0 24 24"><line x1="3" x2="21" y1="22" y2="22" /> <line x1="6" x2="6" y1="18" y2="11" /> <line x1="10" x2="10" y1="18" y2="11" /> <line x1="14" x2="14" y1="18" y2="11" /> <line x1="18" x2="18" y1="18" y2="11" /> <polygon points="12 2 20 7 4 7" /></symbol>
-<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></symbol>
 <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol>
 <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol>
 <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1" /> <rect x="2" y="16" width="6" height="6" rx="1" /> <rect x="9" y="2" width="6" height="6" rx="1" /> <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /> <path d="M12 12V8" /></symbol>
@@ -1647,16 +1643,16 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
       <div class="q10c">
         <div class="q10r on" data-b="2"><div class="q10l"><b>Adrian's job ends at 60</b><span>no pay or MPF to 65, no severance</span></div>
           <div class="q10t"><span class="q10b" style="width:30%"></span><span class="q10g" style="left:30%;width:calc(83% - 30%)"></span><i class="o" style="left:30%"><em>30%</em></i><i class="p" style="left:83%"><em>83%</em></i></div>
-          <p class="q10d"><span><svg class="ic"><use href="#i-banknote"/></svg>12-month reserve</span><span><svg class="ic"><use href="#i-shield-check"/></svg>Spending rules</span><span><svg class="ic"><use href="#i-refresh-cw"/></svg>Full review</span></p></div>
+          <p class="q10d"><span>12-month reserve</span><span>Spending rules</span><span>Full review</span></p></div>
         <div class="q10r" data-b="3"><div class="q10l"><b>Low returns, every year</b><span>shares 4%, bonds 2.5%, to 2066</span></div>
           <div class="q10t"><span class="q10b" style="width:32%"></span><span class="q10g" style="left:32%;width:calc(95% - 32%)"></span><i class="o" style="left:32%"><em>32%</em></i><i class="p" style="left:95%"><em>95%</em></i></div>
-          <p class="q10d"><span><svg class="ic"><use href="#i-shield-check"/></svg>Spending rules</span><span><svg class="ic"><use href="#i-layers"/></svg>Treasury ladder</span></p></div>
+          <p class="q10d"><span>Spending rules</span><span>Treasury ladder</span></p></div>
         <div class="q10r" data-b="3"><div class="q10l"><b>Inflation and medical costs</b><span>inflation 3.5%, medical 8.5% a year</span></div>
           <div class="q10t"><span class="q10b" style="width:28%"></span><span class="q10g" style="left:28%;width:calc(92% - 28%)"></span><i class="o" style="left:28%"><em>28%</em></i><i class="p" style="left:92%"><em>92%</em></i></div>
-          <p class="q10d"><span><svg class="ic"><use href="#i-heart-pulse"/></svg>Review at 75</span><span><svg class="ic"><use href="#i-shield-check"/></svg>Spending rules</span></p></div>
+          <p class="q10d"><span>Review at 75</span><span>Spending rules</span></p></div>
         <div class="q10r" data-b="4"><div class="q10l"><b>Carmen lives to 95</b><span>six years past the plan's 89</span></div>
           <div class="q10t"><span class="q10b" style="width:61%"></span><span class="q10g" style="left:61%;width:calc(99% - 61%)"></span><i class="o" style="left:61%"><em>61%</em></i><i class="p" style="left:99%"><em>99%</em></i></div>
-          <p class="q10d"><span><svg class="ic"><use href="#i-infinity"/></svg>Annuities for life</span></p></div>
+          <p class="q10d"><span>Annuities for life</span></p></div>
       </div>
       <div class="q10x"><span></span><span class="ax"><i>0%</i><i>50%</i><i>100%</i></span><span></span></div>
     </div>

@@ -959,10 +959,9 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10e .sw.a{background:#E3C3C9}
 .q10e .sw.p{background:var(--wine-g)}
 .q10e b{color:var(--ink);font-weight:600}
-/* what holds each test: one pill a defence, with its icon */
-.q10d{display:flex;flex-wrap:wrap;gap:6px}
-.q10d span{display:inline-flex;align-items:center;gap:6px;padding:4px 11px 4px 8px;border-radius:14px;background:var(--mist);font:600 14px/1.2 var(--text);color:var(--wine);white-space:nowrap}
-.q10d .ic{flex:none;width:15px;height:15px;stroke:var(--wine);stroke-width:2}
+/* what holds each test: plain text, one defence a line (Pete, 24 Oct: back to text, not pills) */
+.q10d{display:flex;flex-direction:column;gap:2px}
+.q10d span{font:500 15px/1.4 var(--text);color:var(--ink)}
 
 /* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
    steps on one line with an icon a step, then the reviews. */
