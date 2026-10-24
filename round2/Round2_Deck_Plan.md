@@ -554,6 +554,14 @@ downgrade rule are in the notes.
   Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
+**Third pass, 24 Oct evening** (Pete: the arrows weren't premium; "what holds it" needed to look better). Each test is
+now one rounded bar from 0% on a soft track. The rose part is the four decisions alone, and the wine part, after a white
+seam, is what the review at 75 and the spending rules add (crimson on the lost job); each value sits above its end. It
+reads as a level against 100%, as slide 5's bar list does, and a bar from zero can't read as a fall. Rendered against a
+refined dot plot, the bars read faster. The sentence above the chart names both parts with colour swatches, which
+replaces the labels under the first bar (they ran into each other where the rose part is short). "What holds it" is
+one pill per defence with its icon (12-month reserve, spending rules, full review, Treasury ladder, review at 75,
+annuities for life), so "spending rules" recurring in three rows shows which defence holds most.
 **Icons, 24 Oct evening** (Pete sent five icons for the risk list: a briefcase, people, bitcoin, a leaf, a rising chart).
 Kept his choice of pictures, drawn from Phosphor's filled set (MIT; `src/lucide/ph-*.svg`, scaled to the 24-unit box),
 white on a wine circle. His files themselves stay out of the deck: the leaf is a VectorStock preview with its watermark,

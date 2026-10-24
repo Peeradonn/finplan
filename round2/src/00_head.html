@@ -942,29 +942,27 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10r{flex:1;align-items:center;border-bottom:1px solid var(--rule);padding:4px 0}
 .q10l b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
 .q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
-.q10t{position:relative;height:58px}
-.q10t::before{content:"";position:absolute;left:0;right:0;bottom:15px;border-top:1.5px solid var(--rule)}   /* the 0-100% track */
-.q10g{position:absolute;bottom:11.5px;height:8px;background:#E3BFC5;color:#E3BFC5}   /* the gain, as an arrow from one dot to the other: it points up the scale, so a red result can't read as a fall */
-.q10g::after{content:"";position:absolute;right:5px;top:50%;transform:translateY(-50%);border-left:12px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}
-.q10g{background-clip:content-box;padding-right:17px;box-sizing:border-box}
-.q10r.on .q10g{background:#E8A9B2;color:var(--accent)}
-.q10t i{position:absolute;bottom:8px;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;z-index:2}
-.q10t i.o{background:#fff;border:2.5px solid var(--grey)}
-.q10t i.p{background:var(--wine)}
-.q10t em{position:absolute;bottom:21px;left:50%;transform:translateX(-50%);font-style:normal;white-space:nowrap}
+/* each test as one rounded bar from 0% (Pete, 24 Oct: the arrows weren't premium): the four decisions alone in rose,
+   then what the full plan adds in wine (crimson on the title's test), a white seam between; each value above its end */
+.q10t{position:relative;height:60px;--bb:12px}
+.q10t::before{content:"";position:absolute;left:0;right:0;bottom:var(--bb);height:14px;border-radius:7px;background:var(--mist)}
+.q10b{position:absolute;left:0;bottom:var(--bb);height:14px;border-radius:7px 0 0 7px;background:#E3C3C9}
+.q10g{position:absolute;bottom:var(--bb);height:14px;border-radius:0 7px 7px 0;border-left:2px solid #fff;background:var(--wine-g)}
+.q10r.on .q10g{background:var(--accent-g)}
+.q10t i{position:absolute;bottom:calc(var(--bb) + 14px);width:0;height:0}
+.q10t em{position:absolute;bottom:7px;left:0;transform:translateX(-50%);font-style:normal;white-space:nowrap}
 .q10t i.o em{font:500 15px/1 var(--text);color:var(--slate)}
 .q10t i.p em{font:700 24px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
-.q10r.on .q10t i.p{background:var(--accent);width:17px;height:17px;margin-left:-8.5px;bottom:7px}
 .q10r.on .q10t i.p em{font-size:36px;color:var(--accent);letter-spacing:-1px}
-/* the first row names its dots, so the big number says what it is */
-.q10r.on .q10t{height:84px}
-.q10r.on .q10t::before{bottom:37px}.q10r.on .q10g{bottom:33.5px}.q10r.on .q10t i{bottom:30px}.q10r.on .q10t i.p{bottom:29px}
-.q10t i b{position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);font:400 14px/1.2 var(--text);color:var(--slate);white-space:nowrap}
-.q10t i.p b{font-weight:600;color:var(--accent)}
-.tr9 strong{font-weight:600;color:var(--ink)}
-.q10d{display:flex;gap:8px;font:400 14px/1.35 var(--text);color:var(--slate)}
-.q10d .ic{flex:none;width:18px;height:18px;stroke:var(--wine);stroke-width:2;margin-top:1px}
-.q10r.on .q10d{color:var(--ink)}
+/* the sentence above the chart names the two parts with their own colours (a legend inside the sentence) */
+.q10e .sw{display:inline-block;width:22px;height:10px;border-radius:5px;margin:0 7px 1px 2px;vertical-align:middle}
+.q10e .sw.a{background:#E3C3C9}
+.q10e .sw.p{background:var(--wine-g)}
+.q10e b{color:var(--ink);font-weight:600}
+/* what holds each test: one pill a defence, with its icon */
+.q10d{display:flex;flex-wrap:wrap;gap:6px}
+.q10d span{display:inline-flex;align-items:center;gap:6px;padding:4px 11px 4px 8px;border-radius:14px;background:var(--mist);font:600 14px/1.2 var(--text);color:var(--wine);white-space:nowrap}
+.q10d .ic{flex:none;width:15px;height:15px;stroke:var(--wine);stroke-width:2}
 
 /* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
    steps on one line with an icon a step, then the reviews. */
