@@ -29,7 +29,7 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Win 1:39, Fahtai 1
 
 > Notes: Their own way: the business sold when Carmen retires; the flat kept and swapped for a HK$7M one only when the money runs out; the full budget after a death; the Flexi plan for life; equities 6% a year, inflation 2.5%, as in the written case. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit.
 
-## 4 · The family asked for innovative yet prudent: five calls make the home their choice and their wealth last
+## 4 · Five calls make their wealth last, on their terms
 *Our answer · Pete · 0:45 · 92 spoken words (≈41 s at 135)*
 
 **Pete:** They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.

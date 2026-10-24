@@ -80,7 +80,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | 1 | — | Built to Last: five calls that make the Wong family's wealth last | Pete, all | 0:20 |
 | 2 | Meet the Wongs | On paper, the Wongs are secure, for a plan that must last forty years | Pete | 0:30 |
 | 3 | Will it last? | Their own way, Carmen sells the family home at about {{own_sale_age}}, and the children's inheritance pays the bills | Pete | 0:45 |
-| 4 | Our answer | The family asked for innovative yet prudent: five calls make the home their choice and their wealth last | Pete | 0:45 |
+| 4 | Our answer | Five calls make their wealth last, on their terms | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
 | 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
 | 7 | Call 3 · Retirement | Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs | Fahtai | 0:40 |
@@ -283,8 +283,12 @@ side by side: a dark wine stage lit from behind the house, the only dark slide a
 wine panel); the house in light tones (`house.exploded(palette="light")`); white text; 97% in white, the brightest
 thing on the slide; the bar stays crimson on the stage's darker foot. Each call's callout carries an icon that names its
 subject (shield, home, pulse, people, leaf, gift) and its number, which fills the empty third the density check found.
-Builds: the house a faint ghost, each block glowing white as its call is named. The elevation notes below are
-superseded.
+Builds: the house a faint ghost, each block glowing white as its call is named. Second pass the same day (Pete: two
+long horizontal bars at the bottom, keep one, the result box; the heading too long): no conclusion bar on this slide
+(its handover is spoken; the one exception to the bar), the result box the only ending; the title shortened and set
+larger on one line, "Five calls make their wealth last, on their terms", answering slide 3's bar ("when, and on whose
+terms"); "innovative yet prudent" stays in the spoken opening; the house larger in the freed space. The elevation
+notes below are superseded.
 **v10 (23 Oct): one house, drawn and labelled** (Pete chose it over a five-step sequence, after the first house, a wine
 block with a legend beside it, said everything twice). An architect's elevation (`house.elevation`): fine crimson lines,
 rose fills, the foundation hatched, one ground line, each part numbered; each part labelled directly by a callout on a
