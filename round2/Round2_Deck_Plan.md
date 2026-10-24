@@ -429,6 +429,13 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Third pass, 24 Oct evening** (Pete: heading 1 clashed with the chart's lines; grey text hard to read; is the
+trade-off strip needed on every slide?). The review's label now sits inside the chart beside its line, so the line no
+longer rises into the heading. Every content line is ink; grey (slate) is kept for the caption and the axis labels.
+The trade-off strip is off this slide: each fix carries its own price as its last line ("The price: lower limits and
+fewer private-hospital choices"; "The price: typical spending about {{guard_cost}} a year lower"). The trade-off is
+still on the slide, where it belongs, which §4 requires ("where and how it shows is open"); the strip was the same
+device on five slides.
 **Second pass, 24 Oct evening** (Pete: not the deck's palette; "The cost:" and "The risk:" fought the title; text too
 small, no hierarchy; does it need this much depth; would the planner, the winning team and the deck builder push it
 out?). Not as it was. The left now leads with the two fixes, as the title does ("Fix…"): numbered 18 px ink headings

@@ -1106,18 +1106,25 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 /* the two fixes lead, numbered: an 18 px ink heading a step under the panel's, the number in a wine disc */
 .x7t h4{display:flex;align-items:center;gap:10px;font:700 18px/1.3 var(--text);color:var(--ink)}
 .x7t h4 i{flex:none;display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--wine-g);color:#fff;font:700 14px/1 var(--text);font-style:normal}
-.c9 .x7p{height:108px;margin-top:30px}
-.x7o{display:flex;align-items:baseline;gap:10px;margin-top:10px}
+.c9 .x7p{height:92px;margin:14px 0 0 44px}
+.x7o{display:flex;align-items:baseline;gap:10px;margin:8px 0 0 36px}
 .x7o span{font:600 18px/1 var(--text);color:var(--slate);white-space:nowrap}
-.x7o strong{flex:none;font:700 36px/1 var(--head);color:var(--ink);letter-spacing:-1px}
-.x7o2{margin:8px 0 0 36px;font:600 15px/1.35 var(--text);color:var(--ink)}
-.x7o em{font:400 15px/1.35 var(--text);font-style:normal;color:var(--slate)}
-.x7rl{margin:8px 0 0 36px;font:400 15px/1.45 var(--text);color:var(--slate)}
+.x7o strong{flex:none;font:700 34px/1 var(--head);color:var(--ink);letter-spacing:-1px}
+.x7o2{margin:6px 0 0 36px;font:600 15px/1.35 var(--text);color:var(--ink)}
+.x7o em{font:400 15px/1.35 var(--text);font-style:normal;color:var(--ink)}
+.x7rl{margin:6px 0 0 36px;font:400 15px/1.45 var(--text);color:var(--ink)}
+/* each fix's price sits in its own block (Pete, 24 Oct: the trade-off is needed, the repeated strip isn't) */
+.x7pr{margin:6px 0 0 36px;font:400 14px/1.4 var(--text);color:var(--ink)}
+.x7pr b{font-weight:600;color:var(--wine)}
+/* the review's label inside the chart, beside its line, so the line doesn't rise into the heading */
+.c9 .x7p .sw{top:0}
+.c9 .x7p .sw span{right:auto;left:8px;top:2px;font-weight:600}
+.c9 .x7p .pk span{color:var(--ink)}
 .x7s .x3k.x7c3::after{background:var(--wine)}   /* the band's marker in wine: the one crimson number is what is left at 89 */
 .x7w{gap:0}
 .x7w>h3{margin-bottom:10px}
-.x7t+.x7t{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
-.x7t .sub{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:4px}
+.x7t+.x7t{margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.x7t .sub{font:400 14px/1.35 var(--text);color:var(--slate);margin:4px 0 0 36px}
 .x7t .sub b{font-weight:700;color:var(--ink)}
 </style>
 </head>
@@ -1476,11 +1483,13 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
         </div>
         <p class="sub">Premiums a year, above the HK$65K the budget holds</p>
         <p class="x7o"><span>83% →</span><strong>97%</strong><em>of futures last to 89, with the review</em></p>
+        <p class="x7pr"><b>The price:</b> lower limits and fewer private-hospital choices.</p>
       </div>
       <div class="x7t" data-b="3">
         <h4><i>2</i>From 2039, spending rules for the bad years</h4>
         <p class="x7rl">No raise after a fall · a 10% trim if drawing too fast<br>Essentials are never cut</p>
         <p class="x7o2">With the rules, almost every future lasts to 89</p>
+        <p class="x7pr"><b>The price:</b> typical spending about HK$41K a year lower.</p>
       </div>
     </div>
     <div class="pn" style="grid-column:span 7" data-b="4">
@@ -1509,7 +1518,6 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
       </div>
     </div>
   </div>
-  <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>The Standard plan has lower limits and fewer private-hospital choices; the spending rules trim typical spending by about HK$41K a year.</span></p>
   <p class="bar" data-b="4">Will it last? In almost every future: they retire on time, keep the way they live, and keep the home.</p>
   <footer class="ft"><p class="src">Slide 3's future, same markets, today's money: an illustration, not a forecast. Premiums: individual cover by age and medical inflation; one policy from 2057 (Adrian's life expectancy, 84).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">7 / 15</span></footer>
   <aside class="notes">FAHTAI: Call three: the cost their budget leaves out. Kept on Flexi for life, medical premiums climb to HK$375K a year. So at Adrian's 75 they review the tier: the Standard plan costs about a third as much. And from 2039, two spending rules: no raise for inflation after a year markets fall, and a 10% trim only if they draw on savings too fast; essentials are never cut. Remember that future? Now the money lasts to 89, and the home stays theirs. The odds: 97% with the review, almost every future with the rules. Win. [Notes: in this future the four decisions alone leave HK$0.6M of savings at 89, under a year of spending; the review and the rules keep the rest (the lighter band). "Too fast": withdrawals 20% above their starting rate; spending rises back 10% when they run 20% below it, never above the budget. Cut the budget now instead? The problem arrives after 2047, so the decision waits until then. Why does the plan's total sit below their own way until about 2053? Part of the savings buys the annuities, and the home's value is drawn as income from 2037: the plan trades a peak for a floor, and then keeps going where their own way runs out. The home: worth less on the chart because the reverse-mortgage loan grows against it; it is still theirs, and they still live there. "19 futures out of 20": HK$382K is the 5th percentile of each future's leanest year, in today's money, with the rules; HK$111K without them. The switch is guaranteed: under the VHIS rules every Flexi policyholder can move to the insurer's Standard Plan at renewal without new medical checks, at any age (VHIS Code of Practice s.2.11; VHIS FAQ Q30, 25 Sep 2025); exclusions from the original policy stay, and no new ones can be added.]</aside>
