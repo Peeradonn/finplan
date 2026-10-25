@@ -8,8 +8,9 @@ Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Ass
 - **Round One (done, frozen):** a 15-page written proposal, "Built to Last", submitted 2 Oct 2026
   (`document/build/proposal.pdf`). The judges hold it. Change it only to fix an error, and log why.
 - **Round Two (active):** a 10-minute recorded video presented over our slides, plus the PowerPoint file, which is
-  scored on its own. **Due Mon 26 Oct 2026, 17:00 HKT**, by hand at the SRFP&S office, with a download link emailed as
-  a backup.
+  scored on its own. **Due Mon 26 Oct 2026, 17:00 HKT**, by email to info@hkrfp.org (rules p.4): the video as a download
+  link, `Axis.pptx` attached; no hand delivery (Pete, 26 Oct). Send from a personal account, signed with the sender's
+  name and "Team Axis" only.
 - **Final (if we reach it):** a presentation on a topical issue, then ten minutes of questions.
 
 **Start here:** `round2/Round2_Deck_Plan.md` (the argument, the storyline, what each slide must prove), then

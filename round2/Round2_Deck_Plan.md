@@ -1040,7 +1040,7 @@ reference. Needed:
 ## 11. Compliance and logistics (a breach can disqualify)
 No university name, logo, campus, clothing, lanyard or account in any frame or file; files named "Axis"; PowerPoint
 and MP4 metadata scrubbed (Office stamps the signed-in account: never submit an Office-exported PDF; `Fin Plan.pdf` in
-the repo root is one, and is git-ignored); deliver by hand on Monday morning with a download link emailed as a backup.
+the repo root is one, and is git-ignored); submit by email to info@hkrfp.org (the video as a download link, Axis.pptx attached), no hand delivery (Pete, 26 Oct).
 
 ## 12. From v8 to v9 (22 Oct)
 - **The problem before the answer:** v8's "where they stand" split into "on paper, secure" (2) and "their own way" (3);
