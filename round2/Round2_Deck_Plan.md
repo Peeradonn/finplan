@@ -785,6 +785,14 @@ not tax" (estate duty abolished 2006). The title house is complete with its roof
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**Flows fixed, 25 Oct evening** (Pete: the arrows didn't point correctly; Northbound didn't start from Hong Kong and
+Southbound pointed back into the mainland). Both ended about 14 map units north of Hong Kong's centre, in Shenzhen.
+Now each flow joins Hong Kong and the nine cities, with a ring at its start and an arrowhead at its end: Northbound
+(dashed wine) from Hong Kong's New Territories to the Guangzhou-Foshan core; Southbound (solid crimson) from the
+Dongguan-Huizhou side to an arrowhead on Hong Kong. A white casing keeps both readable over Hong Kong's crimson. The
+headings' leaders are straight elbows (across, then down onto the middle of each flow), so they read as callouts, not
+as a third and fourth flow. `gba_map.py --flows round2/img/gba_map.svg` redraws only the flows (the boundary file
+isn't needed) and prints where the leaders land.
 **Emphasis, 24 Oct evening** (Pete: bold or italicise the parts we want to highlight, not only the headings). Bold
 on the phrase each paragraph turns on: "mainland wealth products", "Kept out today", "if Adrian's work moves across the
 boundary"; "Hong Kong funds, bonds and deposits", "won't solicit or recommend", "unless the investor asks or agrees".

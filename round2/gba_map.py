@@ -6,7 +6,8 @@ Data: geoBoundaries, gbHumanitarian CHN ADM2 (prefecture-level, with the Hong Ko
 release 9469f09, CC BY 3.0 IGO (source: OCHA / HDX); the credit is in slide 13's footer.
 Run: .venv/Scripts/python.exe -I round2/gba_map.py geoBoundaries-CHN-ADM2_simplified.geojson round2/img/gba_map.svg
 It writes the map as a standalone SVG (its own gradients and arrowheads) and prints the anchor points, as shares of the
-drawing, for the labels slide 13 lays over it."""
+drawing, for the labels slide 13 lays over it.
+To change only the two flows (no boundary file needed): .venv/Scripts/python.exe -I round2/gba_map.py --flows round2/img/gba_map.svg"""
 import json
 import math
 import sys
@@ -88,6 +89,48 @@ def slab(rs, depth, side, top, stroke, sw):
     return o
 
 
+def flows():
+    """The two flows, each joining Hong Kong and the nine cities (Pete, 25 Oct: Northbound didn't start on Hong Kong,
+    and Southbound ended in Shenzhen, so it read as pointing back into the mainland). Northbound, dashed wine (kept out
+    for the Wongs today): from a ring on Hong Kong's New Territories, west over the estuary, to an arrowhead in the
+    Guangzhou-Foshan core. Southbound, solid crimson (the market we want to serve): from a ring in Dongguan and Huizhou,
+    round the east, to an arrowhead on Hong Kong. A white casing under each line and marker keeps them readable where
+    they cross Hong Kong's crimson. Returns the SVG pieces and the middle of each flow (where the headings' leaders land)."""
+    nb0, nbc, nb1 = proj(114.03, 22.41), proj(113.58, 22.50), proj(113.30, 23.08)
+    sb0, sbc, sb1 = proj(114.25, 23.12), proj(114.62, 22.60), proj(114.19, 22.43)   # bowed east, so the heading's leader lands clear of its start
+    o = ['<defs>'
+         '<marker id="gbaArW" viewBox="0 0 12 12" refX="8" refY="6" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
+         '<path d="M1,1 L11,6 L1,11 Z" fill="#971320" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round"/></marker>'
+         '<marker id="gbaArC" viewBox="0 0 12 12" refX="8" refY="6" markerWidth="4.4" markerHeight="4.4" orient="auto-start-reverse">'
+         '<path d="M1,1 L11,6 L1,11 Z" fill="#C80E1E" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round"/></marker>'
+         '<marker id="gbaOrW" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="3.4" markerHeight="3.4">'
+         '<circle cx="6" cy="6" r="4.4" fill="#FFFFFF" stroke="#971320" stroke-width="2.4"/></marker>'
+         '<marker id="gbaOrC" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="2.8" markerHeight="2.8">'
+         '<circle cx="6" cy="6" r="4.4" fill="#FFFFFF" stroke="#C80E1E" stroke-width="2.4"/></marker>'
+         '</defs>']
+    q = lambda a, c, b: f"M{a[0]:.1f},{a[1]:.1f} Q{c[0]:.1f},{c[1]:.1f} {b[0]:.1f},{b[1]:.1f}"
+    o.append(f'<path d="{q(nb0, nbc, nb1)}" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>')
+    o.append(f'<path class="nb" d="{q(nb0, nbc, nb1)}" fill="none" stroke="#971320" stroke-width="3.5" stroke-dasharray="9 6" '
+             'stroke-linecap="round" marker-start="url(#gbaOrW)" marker-end="url(#gbaArW)"/>')
+    o.append(f'<path d="{q(sb0, sbc, sb1)}" fill="none" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round"/>')
+    o.append(f'<path class="sb" d="{q(sb0, sbc, sb1)}" fill="none" stroke="#C80E1E" stroke-width="4.5" stroke-linecap="round" '
+             'marker-start="url(#gbaOrC)" marker-end="url(#gbaArC)"/>')
+    mid = lambda a, c, b: (a[0] / 4 + c[0] / 2 + b[0] / 4, a[1] / 4 + c[1] / 2 + b[1] / 4)
+    return o, mid(nb0, nbc, nb1), mid(sb0, sbc, sb1)
+
+
+def redraw_flows(svg_path):
+    """Rewrite only the flows in an existing map (the boundary file isn't needed): everything from the flows' <defs>
+    to the end is replaced. Prints where the two leaders should land, as shares of the drawing."""
+    s = open(svg_path, encoding="utf-8").read()
+    cut = s.index('<defs><marker id="gbaArW"')
+    o, nb_mid, sb_mid = flows()
+    open(svg_path, "w", encoding="utf-8", newline="\n").write(s[:cut] + "\n".join(o) + "\n</svg>\n")
+    vb = (0, -6, W, H + 40)
+    print(json.dumps({k: (f"{(v[0] - vb[0]) / vb[2] * 100:.1f}%", f"{(v[1] - vb[1]) / vb[3] * 100:.1f}%")
+                      for k, v in {"nb_mid": nb_mid, "sb_mid": sb_mid}.items()}))
+
+
 def main():
     data = json.load(open(sys.argv[1], encoding="utf-8"))
     ctx, sar, gba = [], {}, {}
@@ -119,23 +162,8 @@ def main():
     o.append("</g>")
     o += slab([r for rs in gba.values() for r in rs], 12, "#B98891", "url(#gbaRose)", "#FFFFFF", ".9")   # the nine cities
     o += slab(sar["hk"] + sar["mo"], 15, "#5F0A14", "url(#gbaWine)", "#FFFFFF", ".7")                   # Hong Kong, Macao
-    # the two flows over the water: Northbound (west, dashed: kept out today), Southbound (east, solid: the market we serve)
-    hk = proj(114.12, 22.42)
-    nb0, nb1 = (hk[0] - 18, hk[1] - 10), proj(113.30, 23.05)
-    sb0, sb1 = proj(114.55, 23.02), (hk[0] + 16, hk[1] - 14)
-    o.append('<defs><marker id="gbaArW" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
-             '<path d="M0,0 L10,5 L0,10 Z" fill="#971320"/></marker>'
-             '<marker id="gbaArC" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
-             '<path d="M0,0 L10,5 L0,10 Z" fill="#C80E1E"/></marker></defs>')
-    nbc, nbe = (nb0[0] - 120, nb0[1] + 20), (nb1[0], nb1[1] + 6)
-    sbc = (sb0[0] + 70, sb0[1] + 90)
-    o.append(f'<path class="nb" d="M{nb0[0]:.1f},{nb0[1]:.1f} Q{nbc[0]:.1f},{nbc[1]:.1f} {nbe[0]:.1f},{nbe[1]:.1f}" '
-             'fill="none" stroke="#971320" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round" marker-end="url(#gbaArW)"/>')
-    o.append(f'<path class="sb" d="M{sb0[0]:.1f},{sb0[1]:.1f} Q{sbc[0]:.1f},{sbc[1]:.1f} {sb1[0]:.1f},{sb1[1]:.1f}" '
-             'fill="none" stroke="#C80E1E" stroke-width="4" stroke-linecap="round" marker-end="url(#gbaArC)"/>')
-    # where the side headings' leaders land: the middle of each flow (a quadratic's point at t = 1/2)
-    mid = lambda a, c, b: (a[0] / 4 + c[0] / 2 + b[0] / 4, a[1] / 4 + c[1] / 2 + b[1] / 4)
-    nb_mid, sb_mid = mid(nb0, nbc, nbe), mid(sb0, sbc, sb1)
+    flow_svg, nb_mid, sb_mid = flows()
+    o += flow_svg
     o.append("</svg>")
 
     def centre(rs):
@@ -151,4 +179,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if sys.argv[1] == "--flows":     # gba_map.py --flows round2/img/gba_map.svg
+        redraw_flows(sys.argv[2])
+    else:
+        main()
