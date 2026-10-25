@@ -691,6 +691,10 @@ not tax" (estate duty abolished 2006). The title house is complete with its roof
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**Emphasis, 24 Oct evening** (Pete: bold or italicise the parts we want to highlight, not only the headings). Bold
+on the phrase each paragraph turns on: "mainland wealth products", "Kept out today", "if Adrian's work moves across the
+boundary"; "Hong Kong funds, bonds and deposits", "won't solicit or recommend", "unless the investor asks or agrees".
+No italics: the deck builds emphasis from weight and colour in one face, and slanted text blurs in video.
 **Second pass, 24 Oct evening** (Pete: point the headings at the arrows, not a legend; the map's text is hard to
 read; why an oval under the raised area?). "Northbound" and "Southbound" lost their line swatches. Each now has a thin
 leader in its flow's colour, ending on a dot at the middle of its flow on the map (the arrow helper in `99_tail.html`
