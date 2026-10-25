@@ -1,0 +1,22 @@
+# Script cuts, ready if the timed read-through runs long (25 Oct)
+
+Not applied. The script is 1,300 spoken words (`Axis_Script.md`): 9:52 at 135 words a minute with handovers, 10:39 at 125, and the video may not run past 10:00. These 10 cuts save **83 spoken words** (about 37 s at 135 a minute), which brings it to about 1217: roughly 9:15 at 135, and 10:00 at 125.
+
+Every cut removes something the screen already shows, or something said again on a later slide. No focal number, no price and no conclusion bar is cut. Slide 14's two lines are the speakers' own words: cut them only with Pete's and Lookbua's OK. Win's lesson line is still to come and will add about 12 to 15 words.
+
+To apply: edit the speaker notes in `round2/src/*.html` (the spoken part, before `[Notes:`), then run `make.py`, `make.py --builds` and `make_pptx.py`.
+
+| Slide | Words | Now | Cut to | Why it is safe |
+|---|---|---|---|---|
+| 3 | 25 → 17 (−8) | Living on investments alone, as our written case measured, the money lasts in only 33%. The fairer test is their own way: | Our written case tested investments alone: 33%. The fairer test is their own way: | the method is on screen (slide 3's lede); the number and the turn stay |
+| 4 | 42 → 30 (−12) | Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. | Insure the income. Put the home and the business to work. Fix the cost the budget ignores. A plan for each person. And their values and Ryan's crypto, with guardrails. | each call's full title is said again on its own slide (5 to 9); here the five names are a map, one per click |
+| 5 | 25 → 20 (−5) | So disability cover comes first, then critical illness, medical cover of their own, and a term-life top-up: about HK$100K a year. | So disability cover comes first, then critical illness, medical and term life: about HK$100K a year. | the four covers are listed with their prices on screen |
+| 6 | 19 → 9 (−10) | The business is sold in stages to Carmen's team; we count only HK$3 million of its five. | The business is sold in stages to Carmen's team. | "HK$3.0M into savings, counted low, of HK$5.0M" is on screen; the conservative count is in the notes for Q&A |
+| 8 | 15 → 7 (−8) | Ryan saves 30% of his pay in a plan of his own. | Ryan gets a plan of his own. | his 30% is on screen ("he saves 30% of his pay"); the want from slide 2 is still answered aloud |
+| 9 | 51 → 37 (−14) | ESG rises from 11% to 25%, only in funds on the SFC's ESG list that pass two ratings, because raters often disagree. Crypto is sized per person, and held only where a regulator watches. Adrian holds none; Carmen up to 2%; Ryan keeps | ESG rises from 11% to 25%, in SFC-listed funds that pass two ratings, because raters often disagree. Crypto is sized per person and held only where a regulator watches: Ryan keeps | Adrian's none and Carmen's 2% are on screen, by their portraits; the reason for two ratings stays |
+| 12 | 26 → 17 (−9) | If a parent dies early, the wills name Chloe's guardian and hold each child's share in trust, paid at 25, 30 and 35. | If a parent dies early, the wills name Chloe's guardian and pay each child's share in stages. | the 25 / 30 / 35 stages and their years are drawn on the family tree |
+| 13 | 37 → 31 (−6) | The Wongs are one family; on both sides of the boundary there are many more like them. Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across it, | The Wongs are one family; across the boundary there are many more like them. Since 2021, Wealth Management Connect has let residents of the Greater Bay Area invest across it, | "Hong Kong, Macao and nine mainland cities" is the first fact on screen and the map's label |
+| 14 (Pete) | 14 → 8 (−6) | matching each Connect client's portfolio to their risk, with the currency risk made clear. | matching each Connect client's portfolio to their risk. | the currency point is on his column; his OK needed |
+| 14 (Lookbua) | 14 → 9 (−5) | so a shock in one can cross the boundary and reach the other side. | so a shock in one can reach the other. | same meaning, shorter; his OK needed |
+
+**If more is needed (about 8 words):** drop the four ages on slide 2 ("Ryan, 24" → "Ryan", and so on); they are on screen beside each portrait.
