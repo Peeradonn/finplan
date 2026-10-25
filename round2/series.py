@@ -78,9 +78,12 @@ def tokens():
     # slide 7 (24 Oct, Fahtai): the drop after Adrian's death (one policy left) and the middle of the saving's gap
     dy = next(y for y, f in flexi if y > peak_y)                        # the first table year after the peak
     T["prem_death_l"], T["prem_death_t"] = (f"{v:.2f}%" for v in (xy(dy, 0)[0] / W * 100, xy(dy, dict(flexi)[dy])[1] / H * 100))
-    mid = (SWITCH + peak_y) / 2
+    # "saves about two-thirds" sits in the saving's gap where it is tall enough for two lines: two-thirds of the way
+    # from the review to the peak, centred between Flexi at the label's left edge and Standard at its right edge
+    # (about 3.3 years each side). Halfway, as before 25 Oct, the rising Flexi line clipped the label's top.
+    mid, half = SWITCH + (peak_y - SWITCH) * 0.67, 3.3
     T["prem_save_l"] = f"{xy(mid, 0)[0] / W * 100:.2f}%"
-    T["prem_save_t"] = f"{xy(mid, (at(flexi, mid) + at(std, mid)) / 2)[1] / H * 100:.2f}%"
+    T["prem_save_t"] = f"{xy(mid, (at(flexi, mid - half) + at(std, min(mid + half, peak_y))) / 2)[1] / H * 100:.2f}%"
     return T
 
 

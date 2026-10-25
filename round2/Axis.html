@@ -827,7 +827,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .e9v .cr b{font-size:14px}
 .e9d{position:absolute;top:50%;height:0;border-top:2px solid var(--wine);z-index:2}
 .e9d::after{content:"";position:absolute;right:-2px;top:-7px;border:6px solid transparent;border-left:10px solid var(--wine);border-right:0}
-.e9d b{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--wine);white-space:nowrap}
+.e9d b{position:absolute;left:32%;bottom:6px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--wine);white-space:nowrap}   /* centred on the arrow's run before the goal band, so the band's dashed edge doesn't cross it (25 Oct) */
 
 /* ==================== the presentation system, after Pete's own decks (23 Oct) ====================
    Taken from Banyan and Nordea only where a planner would use it (Pete: "take the good parts ... where it is
@@ -1043,7 +1043,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10t i.p em{font:700 20px/1 var(--head);color:var(--ink);letter-spacing:-.3px}
 .q10r.on .q10t i.p em{font-size:40px;color:var(--accent);letter-spacing:-1px}
 .q10r.on .q10l b{font-size:18px}   /* the title's test leads its column too */
-.q10r.on{padding-top:14px}   /* room for the 40 px figure under the header rule */
+.q10r.on{padding-top:20px}   /* room for the 40 px figure under the header rule (PowerPoint sets it a few px higher) */
 /* the sentence above the chart names the two parts with their own colours (a legend inside the sentence) */
 .q10e .sw{display:inline-block;width:22px;height:10px;border-radius:5px;margin:0 7px 1px 2px;vertical-align:middle}
 .q10e .sw.a{background:#E3C3C9}
@@ -1242,6 +1242,9 @@ svg.conn.q13c path{stroke-width:1.6}
 .x7g .pl span{font-size:14px}
 .x7od{font:400 16px/1.35 var(--text);color:var(--ink);padding-top:10px;border-top:1px solid var(--rule)}
 .x7od b{font-weight:700}
+/* 25 Oct (text review): "Adrian dies" and "Carmen 89" were 4 px apart; the last label is centred on its tick like the
+   others, its overhang in the empty gutter under HK$8.9M */
+.c9 .x7a span:last-child{transform:translateX(-50%);text-align:center}
 .x7s .al.h small{font-size:14px}   /* was 12 px, under the deck's 14 px floor for anything meant to be read */
 /* slide 7, left, 25 Oct late (Pete: "the content is ok, I don't like how it looks"; chose "clean chart + tiles"):
    the premium chart taller and full width, no y-axis; its caption on top as the chart's title; each line named at its
@@ -1690,7 +1693,7 @@ svg.conn.q13c path{stroke-width:1.6}
             <span class="x7rv" style="left:34.48%"><span>Review at 75</span></span>
             <span class="x7dl" style="left:68.97%"></span>
             <p class="x7pk" style="left:65.52%;top:6.27%">HK$375K</p>
-            <p class="x7v" style="left:50.00%;top:62.97%">saves about<br>two-thirds</p>
+            <p class="x7v" style="left:55.28%;top:64.27%">saves about<br>two-thirds</p>
             <p class="x7e f" style="top:18.73%">Flexi<br>for life</p>
             <p class="x7e r" style="top:87.27%">Standard,<br>after review</p>
           </div>
