@@ -83,7 +83,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | 4 | Our answer | Five calls make their wealth last, on their terms | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
 | 6 | Call 2 · The home and the business | Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | Fahtai | 0:45 |
-| 7 | Call 3 · Retirement | Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs | Fahtai | 0:40 |
+| 7 | Call 3 · Retirement | Fix the cost the budget ignores: in that same future, the money now lasts to 89 and they stay in their home | Fahtai | 0:40 |
 | 8 | Call 4 · Each person | One family policy, a plan for each person: every dollar gets a job | Win | 0:50 |
 | 9 | Call 5 · Values and innovation | Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | Win | 0:45 |
 | 10 | Will it hold? | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Lookbua | 0:30 |
@@ -499,6 +499,7 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**"They stay in their home", 25 Oct** (Pete: our own plan also spends the home through a reverse mortgage; is it the same thing?). On the money, yes: the reverse mortgage spends the home's value, and the inheritance ({{plan_legacy_sold}}) is already counted after the loan is repaid. What differs is the parents' lives and the timing: chosen at 65, together, and they never have to leave (HKMC: owners for life; the heirs may repay and keep the flat, owe no shortfall and keep any surplus), against a forced move at about {{own_sale_age}}, usually with Carmen alone, after which the money still runs out. So the slide no longer says "keep the home": the title ends "and they stay in their home", the bar "…and stay in their home", the chart's label is "Their home, for life", and the script matches. The notes carry the answer for the Final's Q&A. Slides 3, 4 and 15 already frame it as forced versus chosen, and stay as they are.
 **Left redrawn, 25 Oct late** (Pete: the content is fine, the look isn't; chose "clean chart + tiles" of three options,
 over two big-number rows and before/after bars). The premium chart had no names on its lines and "HK$375K kept for life"
 read as money saved. Now the caption is the chart's title ("Medical premiums a year, above the HK$65K the budget holds"),

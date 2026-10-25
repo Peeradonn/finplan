@@ -57,7 +57,7 @@ for builds and pauses.
 | 4 | Pete | Five calls make their wealth last, on their terms | The five calls in a row, one result each; the impact band {{own_89}} → {{switch_89}} | 0:45 | 92 |
 | 5 | Lookbua | Call 1. Insure the income, not the life: about HK$100K a year closes every gap | Pay that continues if a parent can't work: nothing today → 65%; the cost as one bar | 0:40 | 86 |
 | 6 | Fahtai | Call 2. Decide now, not at {{own_sale_age}}: four decisions on what they own and spend lift the odds from {{own_89}} to {{ladder_5_89}} | What they own → what each becomes → {{ladder_5_89}} (the flow, option B); "their own way, {{own_89}}" as the strip | 0:45 | 94 |
-| 7 | Fahtai | Call 3. Fix the cost the budget ignores: in that same future, the money now lasts to 89 and the home stays theirs | The same future with the plan: the money lasts, the home stays; the premium line reviewed at 75 | 0:40 | 81 |
+| 7 | Fahtai | Call 3. Fix the cost the budget ignores: in that same future, the money now lasts to 89 and they stay in their home | The same future with the plan: the money lasts, the home stays; the premium line reviewed at 75 | 0:40 | 81 |
 | 8 | Win | Call 4. One family policy, a plan for each person: every dollar gets a job | Today vs the plan as two bars of the same HK$7.7M, each job with its owner's face | 0:50 | 104 |
 | 9 | Win | Call 5. Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | ESG 11% → 25% into the goal band; crypto by person (four people, four sizes) | 0:45 | 96 |
 | 10 | Lookbua | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Paired bars per test, the lost job highlighted | 0:30 | 67 |
