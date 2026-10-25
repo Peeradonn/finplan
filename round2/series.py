@@ -73,6 +73,7 @@ def tokens():
         "prem_std_t": f"{sy / H * 100:.2f}%",
         "prem_switch_l": f"{xy(SWITCH, 0)[0] / W * 100:.2f}%",
         "prem_rec_end_t": f"{xy(X1, rec[-1][1])[1] / H * 100:.2f}%",   # where the recommended line ends (its label)
+        "prem_flexi_end_t": f"{xy(X1, flexi[-1][1])[1] / H * 100:.2f}%",   # where Flexi ends (slide 7's end label, 25 Oct)
     }
     # slide 7 (24 Oct, Fahtai): the drop after Adrian's death (one policy left) and the middle of the saving's gap
     dy = next(y for y, f in flexi if y > peak_y)                        # the first table year after the peak

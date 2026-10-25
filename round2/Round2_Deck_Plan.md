@@ -456,6 +456,13 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Left redrawn, 25 Oct late** (Pete: the content is fine, the look isn't; chose "clean chart + tiles" of three options,
+over two big-number rows and before/after bars). The premium chart had no names on its lines and "HK$375K kept for life"
+read as money saved. Now the caption is the chart's title ("Medical premiums a year, above the HK$65K the budget holds"),
+the chart runs the panel's width without a y-axis, each line is named at its end in its own colour ("Flexi for life";
+"Standard, after review", the end heights from series.py's `prem_flexi_end_t` and `prem_rec_end_t`), the peak carries
+HK$375K, and the review is a thin marker labelled "Review at 75". Fix 2's rules are three icon tiles (40 px mist
+circles, the label under each), so the two fixes weigh the same. Everything under a heading starts under its text.
 **Hierarchy pass, 25 Oct evening** (deck review: the left panel was a slide of its own, 20 text styles). The left is
 now the two fixes, each with its picture and its price; the numbered discs and rule icons are quiet (mist, wine). The
 odds moved under the redrawn future, as its result across all futures: "In 10,000 futures: {{ladder_5_89}} →

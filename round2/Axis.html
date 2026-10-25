@@ -1236,6 +1236,34 @@ svg.conn.q13c path{stroke-width:1.6}
 .x7od{font:400 16px/1.35 var(--text);color:var(--ink);padding-top:10px;border-top:1px solid var(--rule)}
 .x7od b{font-weight:700}
 .x7s .al.h small{font-size:14px}   /* was 12 px, under the deck's 14 px floor for anything meant to be read */
+/* slide 7, left, 25 Oct late (Pete: "the content is ok, I don't like how it looks"; chose "clean chart + tiles"):
+   the premium chart taller and full width, no y-axis; its caption on top as the chart's title; each line named at its
+   end in its own colour (Flexi for life; Standard, after review); the peak's value beside the peak; the review a thin
+   marker labelled at its top. Fix 2's rules as three icon tiles (a 44 px mist circle, the label under it), so the two
+   fixes weigh the same. Everything under a heading starts 36 px in, under its text. */
+.x7cap{margin:6px 0 0 36px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.x7ch{margin:10px 0 0 36px;padding-right:92px}
+.x7pl{position:relative;height:98px}
+.x7pl .x7dl{top:26%}   /* the death marker starts under the peak's label */
+.x7pl svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.x7rv{position:absolute;top:-6px;bottom:0;border-left:1.5px solid var(--slate)}
+.x7rv span{position:absolute;top:-4px;left:6px;font:600 14px/1 var(--text);color:var(--ink);white-space:nowrap}
+.x7pl .x7dl{border-left-color:var(--grey)}
+.x7pk{position:absolute;transform:translateY(-50%);padding-left:10px;font:700 18px/1 var(--head);color:var(--ink);white-space:nowrap}
+.x7pl .x7v{font-size:14px;line-height:1.2}
+.x7e{position:absolute;left:calc(100% + 10px);transform:translateY(-50%);font:600 14px/1.15 var(--text);white-space:nowrap}
+.x7e.f{color:#A9707A}
+.x7e.r{color:var(--wine)}
+.x7ax{position:relative;height:22px;border-top:1.5px solid var(--ink)}
+.x7ax span{position:absolute;top:5px;transform:translateX(-50%);font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
+.x7ax span:first-child{transform:none}
+.x7ax span:last-child{transform:translateX(-100%)}
+.x7t .x7pr{margin-top:8px}
+.x7t+.x7t{margin-top:12px;padding-top:12px}
+.x7ru{grid-template-columns:repeat(3,1fr);column-gap:16px;margin:10px 0 0 36px}
+.x7ru li{flex-direction:column;align-items:flex-start;gap:6px;font:500 14px/1.3 var(--text)}
+.x7ru .ci{width:40px;height:40px}
+.x7ru .ic{width:20px;height:20px;stroke-width:2}
 
 /* slide 12 (25 Oct, Fahtai): the left, what is left at Carmen's 89, compact; the right, larger, in two groups by when
    it applies: if they die early (wills, guardian, staged trusts) and a legacy with purpose (the scholarship, while they
@@ -1648,22 +1676,23 @@ svg.conn.q13c path{stroke-width:1.6}
       <h3>Two fixes for what the budget leaves out…</h3>
       <div class="x7t" data-b="2">
         <h4><i>1</i>Review the medical plan at Adrian's 75</h4>
-        <div>
-          <div class="pc x7p">
-            <span class="gl" style="top:0"><span>400K</span></span><span class="gl" style="top:50%"><span>200K</span></span>
+        <p class="x7cap">Medical premiums a year, above the HK$65K the budget holds</p>
+        <div class="x7ch">
+          <div class="x7pl">
             <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
               <polygon points="344.8,173.6 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2 1000.0,261.8 689.7,300.0 655.2,250.5 448.3,282.8 344.8,293.1" style="fill:#F3E2E4"/>
               <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 448.3,131.2 655.2,18.8 689.7,188.2 1000.0,56.2" fill="none" style="stroke:#C9939B" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
               <polyline points="0.0,300.0 69.0,261.8 275.9,201.8 344.8,173.6 344.8,293.1 448.3,282.8 655.2,250.5 689.7,300.0 1000.0,261.8" fill="none" style="stroke:var(--wine)" stroke-width="3.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
             </svg>
-            <span class="sw" style="left:34.48%"><span>The review</span></span>
+            <span class="x7rv" style="left:34.48%"><span>Review at 75</span></span>
             <span class="x7dl" style="left:68.97%"></span>
-            <p class="pk" style="left:65.52%;top:6.27%"><b>HK$375K</b><span>kept for life</span></p>
-            <p class="x7v" style="left:52%;top:64%">saves about<br>two-thirds</p>
+            <p class="x7pk" style="left:65.52%;top:6.27%">HK$375K</p>
+            <p class="x7v" style="left:50.00%;top:62.97%">saves about<br>two-thirds</p>
+            <p class="x7e f" style="top:18.73%">Flexi<br>for life</p>
+            <p class="x7e r" style="top:87.27%">Standard,<br>after review</p>
           </div>
-          <div class="pcx x7px"><span style="left:0">2037</span><span style="left:34.48%">2047</span><span class="dd" style="left:68.97%">Adrian dies</span><span style="left:100%">2066</span></div>
+          <div class="x7ax"><span style="left:0">2037</span><span style="left:34.48%">2047</span><span style="left:68.97%">Adrian dies</span><span style="left:100%">2066</span></div>
         </div>
-        <p class="sub">Premiums a year, above the HK$65K the budget holds</p>
         <p class="x7pr"><b>The price:</b> lower limits and fewer private-hospital choices.</p>
       </div>
       <div class="x7t" data-b="3">
