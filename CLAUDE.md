@@ -161,8 +161,9 @@ is on Pete's machine); the script rewrites that copy's metadata to "Team Axis" a
 university name is left in the package. Rebuild after any slide change; edit the HTML, not the .pptx, or the next
 build overwrites the edit. **Two files** (Pete, 25 Oct: we record in Zoom, sharing PowerPoint): `Axis.pptx` is the one
 submitted, every slide complete; `Axis_present.pptx` is the one shared in Zoom, one click per build step in the deck's
-`data-b` order (the script's order; each slide's notes end with its click cues). Both have a 0.5 s fade between slides
-and Morph into Calls 1 to 5 (slides 5 to 9): the house from slide 4 glides into the corner and fills floor by floor.
+`data-b` order (the script's order; each slide's notes end with its click cues). Both have Morph into Calls 1 to 5
+(slides 5 to 9): the house from slide 4 glides into the corner and fills floor by floor; every other slide changes with
+no transition (Pete, 25 Oct: no fade).
 Every shape is named "!!…" so Morph pairs only identical things (the footer, the house) and fades the rest; slide 4's
 wine stage is the slide background, not a shape, for the same reason. `make_pptx.py --only present|submit` rebuilds
 one; it stops if the target file is open in PowerPoint. **Don't open and re-save it in PowerPoint while signed in** (Office stamps the account into

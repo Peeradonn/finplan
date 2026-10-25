@@ -548,7 +548,10 @@ def greyed(it):
 
 
 def transition_el(kind):
-    """Morph between slides that keep the same frame and house; a quick fade elsewhere"""
+    """Morph into the slides that keep the same frame and house (5 to 9); no transition elsewhere (Pete, 25 Oct:
+    no fade between slides). Returns None for no transition."""
+    if kind != "morph":
+        return None
     if kind == "morph":
         xml = ('<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">'
                '<mc:Choice xmlns:p159="http://schemas.microsoft.com/office/powerpoint/2015/09/main" Requires="p159">'
@@ -702,7 +705,9 @@ def build(data, info, path, cal, present=False):
         # transition into this slide
         kind = "morph" if i > 1 and has_house[i - 1] and has_house[i - 2] else "fade"
         root = s._element
-        root.insert(list(root).index(root.find(qn("p:clrMapOvr"))) + 1, transition_el(kind))
+        tr = transition_el(kind)
+        if tr is not None:
+            root.insert(list(root).index(root.find(qn("p:clrMapOvr"))) + 1, tr)
         if present and (steps or swap_in):
             clicks = [(steps[k], []) for k in sorted(steps)]
             if swap_in:

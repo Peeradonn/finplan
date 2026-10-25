@@ -164,7 +164,8 @@ the talk.
   `build/frames/`) for the video; rebuild the frames after any slide change, before recording.
   **Recording in Zoom (25 Oct):** the team shares `round2/Axis_present.pptx` (`make_pptx.py`), where the same steps are
   PowerPoint clicks (a 300 ms fade each; hidden on the reveal slides, greyed on 2, 4 and 14), with Morph into Calls 1 to
-  5 so slide 4's house glides into each call's corner. The submitted `Axis.pptx` has the transitions but no builds, so
+  5 so slide 4's house glides into each call's corner, and no transition between any other slides (Pete, 25 Oct: the
+  fade between slides went). The submitted `Axis.pptx` has the transitions but no builds, so
   a judge clicking through sees every slide complete. Checked in a video PowerPoint exported itself (slides 3 to 6, 13
   and 14): no blink on slide 4's last click, no stray shapes in the Morphs.
 - Each call (5 to 9) shows on the slide what the family gives up for it (Pete, 23 Oct: a planner names the cost before
