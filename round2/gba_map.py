@@ -114,8 +114,7 @@ def main():
          '<defs><radialGradient id="gbaFade" cx="50%" cy="52%" r="62%"><stop offset=".55" stop-color="#fff"/>'
          '<stop offset="1" stop-color="#000"/></radialGradient>'
          f'<mask id="gbaMask"><rect x="-20" y="-20" width="{W + 40}" height="{H + 80}" fill="url(#gbaFade)"/></mask></defs>',
-         f'<ellipse cx="{cx:.0f}" cy="{cy + 40:.0f}" rx="{W * .36:.0f}" ry="{H * .2:.0f}" fill="#5A1520" opacity=".07"/>',
-         '<g mask="url(#gbaMask)">']
+         '<g mask="url(#gbaMask)">']                # (no drop shadow under the map: Pete, 24 Oct, it read as a stray oval)
     o += slab(ctx, 3, "#E9DCDF", "#F6EFF0", "#E9DCDF", ".6")          # the land around, pale and fading out
     o.append("</g>")
     o += slab([r for rs in gba.values() for r in rs], 12, "#B98891", "url(#gbaRose)", "#FFFFFF", ".9")   # the nine cities
@@ -128,10 +127,15 @@ def main():
              '<path d="M0,0 L10,5 L0,10 Z" fill="#7D1D2A"/></marker>'
              '<marker id="gbaArC" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
              '<path d="M0,0 L10,5 L0,10 Z" fill="#A81E2D"/></marker></defs>')
-    o.append(f'<path class="nb" d="M{nb0[0]:.1f},{nb0[1]:.1f} Q{nb0[0] - 120:.1f},{nb0[1] + 20:.1f} {nb1[0]:.1f},{nb1[1] + 6:.1f}" '
+    nbc, nbe = (nb0[0] - 120, nb0[1] + 20), (nb1[0], nb1[1] + 6)
+    sbc = (sb0[0] + 70, sb0[1] + 90)
+    o.append(f'<path class="nb" d="M{nb0[0]:.1f},{nb0[1]:.1f} Q{nbc[0]:.1f},{nbc[1]:.1f} {nbe[0]:.1f},{nbe[1]:.1f}" '
              'fill="none" stroke="#7D1D2A" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round" marker-end="url(#gbaArW)"/>')
-    o.append(f'<path class="sb" d="M{sb0[0]:.1f},{sb0[1]:.1f} Q{sb0[0] + 70:.1f},{sb0[1] + 90:.1f} {sb1[0]:.1f},{sb1[1]:.1f}" '
+    o.append(f'<path class="sb" d="M{sb0[0]:.1f},{sb0[1]:.1f} Q{sbc[0]:.1f},{sbc[1]:.1f} {sb1[0]:.1f},{sb1[1]:.1f}" '
              'fill="none" stroke="#A81E2D" stroke-width="4" stroke-linecap="round" marker-end="url(#gbaArC)"/>')
+    # where the side headings' leaders land: the middle of each flow (a quadratic's point at t = 1/2)
+    mid = lambda a, c, b: (a[0] / 4 + c[0] / 2 + b[0] / 4, a[1] / 4 + c[1] / 2 + b[1] / 4)
+    nb_mid, sb_mid = mid(nb0, nbc, nbe), mid(sb0, sbc, sb1)
     o.append("</svg>")
 
     def centre(rs):
@@ -139,7 +143,7 @@ def main():
         ys = [proj(*p)[1] for r in rs for p in r]
         return (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
     anchors = {"hk": centre(sar["hk"]), "mo": centre(sar["mo"]), "gz": proj(113.26, 23.13), "sz": proj(114.06, 22.54),
-               "gba": centre([r for rs in gba.values() for r in rs]), "w": W, "h": H + 40}
+               "gba": centre([r for rs in gba.values() for r in rs]), "nb_mid": nb_mid, "sb_mid": sb_mid, "w": W, "h": H + 40}
     open(sys.argv[2], "w", encoding="utf-8", newline="\n").write("\n".join(o) + "\n")
     vb = (0, -6, W, H + 40)
     print(json.dumps({k: (f"{(v[0] - vb[0]) / vb[2] * 100:.1f}%", f"{(v[1] - vb[1]) / vb[3] * 100:.1f}%")

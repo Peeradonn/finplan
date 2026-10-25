@@ -691,6 +691,12 @@ not tax" (estate duty abolished 2006). The title house is complete with its roof
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**Second pass, 24 Oct evening** (Pete: point the headings at the arrows, not a legend; the map's text is hard to
+read; why an oval under the raised area?). "Northbound" and "Southbound" lost their line swatches. Each now has a thin
+leader in its flow's colour, ending on a dot at the middle of its flow on the map (the arrow helper in `99_tail.html`
+gained `data-end="dot"` for leaders that point at something). Northbound's leader runs along its heading to the column
+edge before it curves, so it never crosses the text. The on-map flow labels went (the headings now point). Map labels
+sit on a white backing; the drop shadow under the map is gone.
 **The map, 24 Oct evening** (Pete: the flows diagram was bland and didn't say it clearly; a 3D map of the Greater Bay
 Area). The middle of the slide is now the real region, drawn from boundary data by `round2/gba_map.py` into
 `img/gba_map.svg`. The nine mainland cities are one raised rose slab, Hong Kong and Macao a higher wine block, and the
