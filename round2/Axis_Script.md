@@ -104,7 +104,7 @@ Speaking time at 135 words a minute: Pete 3:48, Lookbua 1:56, Fahtai 1:51, Win 1
 
 **Lookbua:** I aim to focus on systems risk. The Connect links two markets with different rules, so a shock in one can cross the boundary and reach the other side. Stress-testing this plan taught me that every risk needs a named defence.
 
-> Notes: Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK.
+> Notes: Win's line is a draft for Win to confirm; Lookbua's edited line needs his OK. What each led in this plan (off the slide since 25 Oct; to settle, since the written case's notes and Fahtai's statement disagree on the model): Pete the integration; Fahtai the model, from the tax engine to 10,000 markets; Win the funds, ESG and digital assets; Lookbua protection, the stress tests and the risk register.
 
 ## 15 · Built toLast
 *Pete, all · 0:15 · 32 spoken words (≈14 s at 135)*

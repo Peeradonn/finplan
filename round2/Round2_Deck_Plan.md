@@ -749,6 +749,13 @@ and non-complex. Not on screen: the in-person exception on that page, and "RMB 1
 - Bar: "Under the Connect, an adviser's value is a clear, suitable answer when the client asks."
 
 ### 14 · Who we want to become (all; 1:10)
+**Two sections a person, 25 Oct** (Pete: what are the location tags, and are they true; "In this plan, I led" in
+grey; are three sections ideal?). The location tags were my inference from each script, not anyone's words (Lookbua's
+not even that), and a pin under a name reads as where someone is from: removed. "In this plan, I led" was unspoken and
+disputed (the written case's notes and Fahtai's statement disagree on who led the model): moved to the notes for the
+team to settle. Each column is now the person (photo, name, role), the goal in five years with its Connect link (the
+link in bold, since the criterion scores the Connect), and the lesson as a quote at 18 px on mist. All content in ink;
+the two labels in wine.
 **The team's photos, 25 Oct** (Pete: use photos of ourselves; can we, without being disqualified?). Yes: the rules
 ban naming the university ("do NOT mention your university names and related words"), not faces; the video shows us
 anyway, and the Final asks for names and name tags. Pete, Fahtai and Win now appear as their own photos, cropped
