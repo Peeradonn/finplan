@@ -664,6 +664,13 @@ reviews strip (quarterly, yearly, and at once after the written case's five even
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**Left side reframed, 24 Oct evening** (Pete: with HK$24.4M today drawn beside HK$7.7M, the plan read as if it loses
+the family's money; we never said why HK$7.7M is good). Their wealth's first job is their own forty years, so the left
+now tells it in that order. HK$24.4M today stands as a figure, not a bar to compare lengths with. "First, it pays for
+40 years of the life they chose: their HK$780K a year, Chloe's degree, the medical cover" (case facts). Then what is
+left at Carmen's 89, in the futures where their own way sells the home: {{own_legacy_sold}} against
+{{plan_legacy_sold}}, drawn on each other's scale, with "[[legacy_times_word]] as much, and more in
+{{plan_legacy_more_pct}} of those futures". The multiple comes from the two model figures (series.py), not typed.
 **Rebalanced 25 Oct (Fahtai, for Pete's OK).** The two halves were about different moments, and the script mixed
 them: the {{plan_legacy_sold}} arrives at Carmen's 89, when Ryan is 64 and Chloe 56, so it cannot be "passed on in
 stages at 25, 30 and 35"; the staged trusts matter only if a parent dies early. Now the left (5 columns) is the

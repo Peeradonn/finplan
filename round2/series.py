@@ -136,6 +136,12 @@ def story():
         return float(s[:-1]) / (1000 if s.endswith("K") else 1)
     for k in ("own_legacy_sold", "plan_legacy_sold"):
         T[f"{k}_w"] = f"{hkm(N[k]) / 24.405 * 100:.1f}%"
+    # slide 12 (24 Oct): their own way's inheritance on the plan's scale, and the plan's multiple in words
+    own, plan = hkm(N["own_legacy_sold"]), hkm(N["plan_legacy_sold"])
+    T["legacy_own_rel_w"] = f"{own / plan * 100:.1f}%"
+    r, words = plan / own, {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six"}
+    whole = int(r)
+    T["legacy_times_word"] = (f"More than {words[whole]} times" if r - whole >= 0.1 else f"About {words[round(r)]} times")
     return T
 
 
