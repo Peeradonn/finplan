@@ -2,9 +2,9 @@
 
 Generated 2026-10-25 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
-1256 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:39 at 145 words a minute (8:54 with handovers); 9:18 at 135 words a minute (9:33 with handovers); 10:02 at 125 words a minute (10:17 with handovers).
+1273 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:46 at 145 words a minute (9:01 with handovers); 9:25 at 135 words a minute (9:40 with handovers); 10:11 at 125 words a minute (10:26 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:53, Fahtai 1:50, Lookbua 1:46, Win 1:46.
+Speaking time at 135 words a minute: Pete 4:01, Fahtai 1:50, Lookbua 1:46, Win 1:46.
 
 ## 1 · Built toLast
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -18,9 +18,11 @@ Speaking time at 135 words a minute: Pete 3:53, Fahtai 1:50, Lookbua 1:46, Win 1
 **Lookbua:** And I'm Lookbua: protection and risk.
 
 ## 2 · On paper, the Wongs are secure, for a plan that must last forty years
-*Meet the Wongs · Pete · 0:40 · 84 spoken words (≈37 s at 135)*
+*Meet the Wongs · Pete · 0:40 · 101 spoken words (≈45 s at 135) · over its time*
 
-**Pete:** Meet the Wongs. Adrian, 54, wants his capital, retirement and health protected. Carmen, 49, runs a business and wants money that reflects her values. Ryan, 24, holds crypto. Chloe, 16, starts university in 2028. On paper, they're secure: HK$24.4 million. The parents want to retire at 65 and 62, on HK$780K a year. But will it last to Carmen's 89? We tested it in 10,000 futures.
+**Pete:** Meet the Wongs. On paper, they're secure: HK$24.4 million, but most of it is their home and Carmen's business. And it must last forty years. Ryan, 24, holds crypto and wants his own plan. Chloe, 16, may study here or abroad. Adrian, 54, wants capital and health protected; he retires at 65. Carmen, 49, wants money that reflects her values; she retires at 62. Then 27 years on HK$780K a year. Will it last to Carmen's 89? We tested it in 10,000 futures.
+
+> Notes: the click comes on "And it must last forty years": the money first, then the timeline left to right, ending on the bar's question. "Most of it": the home and the business are 61% of what they own (57% of net worth after the mortgage and the business loan), and pay nothing until sold; slide 3 shows what that costs. Chloe's options (case): Hong Kong, the United Kingdom, Canada or Singapore.
 
 ## 3 · Their own way, Carmen is forced to sell the home at about 83, too late to save the money or the inheritance
 *Will it last? · Pete · 0:45 · 101 spoken words (≈45 s at 135)*

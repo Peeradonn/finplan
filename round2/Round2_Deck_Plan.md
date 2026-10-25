@@ -268,6 +268,14 @@ for permission, or go back to the illustrated family (git history) if the risk i
 Before 25 Oct: "Built to Last", the promise line, the team; an illustration of the family (image set, §7).
 
 ### 2 · On paper, secure (Pete; 0:40)
+**Order, 25 Oct** (Pete: the slide reads from the money to the family, the voice from the family to the money). The
+layout had been flipped on 24 Oct (the money on top), but the build and the script still went people first. Now all
+three follow the layout: the money (on screen from the start), then on the click the timeline and the bar. The script:
+"On paper, they're secure: HK$24.4 million, but most of it is their home and Carmen's business" (the reason "on paper"
+matters, spoken nowhere before: 61% of what they own pays nothing until sold), then "And it must last forty years",
+the four people left to right along the line, each with a want (Ryan "wants his own plan", Chloe "may study here or
+abroad", as the calls answer them), and the line's end: 27 years on HK$780K a year, to Carmen's 89, the bar's question.
+101 spoken words (was 84).
 **Rebuilt 24 Oct, layout A** (Pete chose it over "the family as the hero" and over keeping the rows). The 23 Oct build
 repeated the cover (the four faces, names and wants) and slide 3 (its timeline's milestones are on slide 3's axis),
 and Ryan's row carried no event. Now two pieces for the title's two halves: "What they have today…", redrawn the same day as one picture (Pete:
