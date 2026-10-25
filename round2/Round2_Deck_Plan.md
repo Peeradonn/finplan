@@ -365,6 +365,7 @@ managed their own way…" / "…and across 10,000 futures".
 - Bar: "Their wealth will pay for their retirement either way. The question is when, and on whose terms."
 
 ### 4 · Our answer (Pete; 0:45)
+**Opening line, 25 Oct** (Pete: "they ask, we answer" doesn't follow slide 3). Slide 3 ends on the loss (the home sold at about {{own_sale_age}}, {{own_legacy_sold}} left to the children); "They asked for a plan that's innovative yet prudent" went back to the brief instead of answering it. Now: "It doesn't have to end that way. Our answer: five calls." The case's phrase is no longer spoken; Call 5's name ("Values and innovation, with guardrails") carries it.
 **Rebuilt 24 Oct: the house as an exploded 3D model** (Pete: the elevation was too simple; he asked for both a coded
 exploded 3D house and a realistic AI render). `house.exploded()` draws a flat dimetric model: the foundation, two floors
 of two blocks and an overhanging roof pulled apart, each floating layer casting a soft shadow on the one below; windows

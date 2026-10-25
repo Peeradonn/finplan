@@ -2,9 +2,9 @@
 
 Generated 2026-10-25 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
-1274 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:47 at 145 words a minute (9:02 with handovers); 9:26 at 135 words a minute (9:41 with handovers); 10:11 at 125 words a minute (10:26 with handovers).
+1272 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:46 at 145 words a minute (9:01 with handovers); 9:25 at 135 words a minute (9:40 with handovers); 10:10 at 125 words a minute (10:25 with handovers).
 
-Speaking time at 135 words a minute: Pete 4:01, Fahtai 1:51, Lookbua 1:46, Win 1:46.
+Speaking time at 135 words a minute: Pete 4:00, Fahtai 1:51, Lookbua 1:46, Win 1:46.
 
 ## 1 · Built toLast
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -32,9 +32,9 @@ Speaking time at 135 words a minute: Pete 4:01, Fahtai 1:51, Lookbua 1:46, Win 1
 > Notes: Their own way: the business sold when Carmen retires; the flat kept and swapped for a HK$7M one only when the money runs out; the full budget after a death; the Flexi plan for life; equities 6% a year, inflation 2.5%, as in the written case. "Usually on her own": Adrian dies at 84 on the case's life expectancy, when Carmen is 79; she is alone in 83% of the forced sales. Even after the sale, the money lasts to 89 in only 62%. Why not a reverse mortgage at 83? It would let Carmen stay, but HKMC's fixed payout doesn't keep up with her bills and premiums: in Fahtai's test (HKMC's March 2026 table) the money lasts to 89 less often than selling, and the loan eats into what Ryan and Chloe inherit. Why it runs out (off the slide since 24 Oct; slides 6 and 7 fix each): 61% of their wealth, the home and the business, pays nothing until sold; HK$375K a year of medical premiums sit outside their budget.
 
 ## 4 · Five calls make their wealth last, on their terms
-*Our answer · Pete · 0:45 · 92 spoken words (≈41 s at 135)*
+*Our answer · Pete · 0:45 · 90 spoken words (≈40 s at 135)*
 
-**Pete:** They asked for a plan that's innovative yet prudent. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.
+**Pete:** It doesn't have to end that way. Our answer: five calls. Insure the income, not the life. Put the home and the business to work, on their terms. Fix the cost the budget ignores. Give each person a plan of their own. And make room for their values and Ryan's crypto, with guardrails. Done their own way, the money lasts to Carmen's 89 in 62%; the five calls lift it to 97%, and the home becomes their choice, not their last resort. Lookbua.
 
 ## 5 · Insure the income, not the life: about HK$100K a year closes every gap
 *Call 1: Protection · Lookbua · 0:40 · 81 spoken words (≈36 s at 135)*
