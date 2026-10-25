@@ -230,7 +230,16 @@ Each spec: the point, the evidence and its keys, and the form as built so far. T
 The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` writes them to `Axis_Script.html`.
 
 ### 1 · Cover (Pete, all; 0:20)
-"Built to Last", the promise line, the team; an illustration of the family (image set, §7). No numbers.
+**The written case's photograph, 25 Oct** (Pete asked whether the cover was ideal; four covers were rendered side by
+side: the illustrated family on wine, the written case's photo in colour and in a wine duotone, and a stock beach
+photo). Now the right panel is Peter Steinhauer's *Cocoons* (Hong Kong towers under construction, in green netting),
+credited on the photo. Why: the judges hold the written case with this cover (half the score), so the deck and the
+document share one picture; it is Hong Kong; buildings under construction open the deck and the finished house closes
+it (slide 15); and the cover no longer repeats slide 2's four portraits. The beach photo was 547 px wide (soft at
+video size), showed two small boys (the Wongs' children are 24 and 16), clashed with the crimson and had no known
+licence; the duotone read gloomy. **Open: the photograph is credited but no licence is on file; ask the photographer
+for permission, or go back to the illustrated family (git history) if the risk isn't wanted.** No numbers.
+Before 25 Oct: "Built to Last", the promise line, the team; an illustration of the family (image set, §7).
 
 ### 2 · On paper, secure (Pete; 0:30)
 **Rebuilt 24 Oct, layout A** (Pete chose it over "the family as the hero" and over keeping the rows). The 23 Oct build
@@ -916,7 +925,7 @@ written case's four pillars from the roof down: what passes on; a place for ever
   slide stays on white.
 - **Signature:** a 5 px crimson rule on the title block, kicker and title 14 px in from it, as in e-Sentry (Pete, 24
   Oct: the header was too big and its title competed with the panel headings); the cover's crimson bar (no dash before the kicker: Pete, 24 Oct,
-  "not needed"); the family on a wine panel (cover, slide 2).
+  "not needed"); the family on a wine panel (slide 2; the cover until 25 Oct, now the written case's photograph, §5).
 - **Icons:** Lucide line icons (ISC, `src/lucide/`) for the deck; Phosphor's filled set (MIT, `src/lucide/ph-*.svg`)
   where a list needs pictograms that read at a glance (slide 10's risks). Downloaded stock images only with a licence
   on file.
