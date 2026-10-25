@@ -2,9 +2,9 @@
 
 Generated 2026-10-25 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
-1272 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:46 at 145 words a minute (9:01 with handovers); 9:25 at 135 words a minute (9:40 with handovers); 10:10 at 125 words a minute (10:25 with handovers).
+1300 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:57 at 145 words a minute (9:12 with handovers); 9:37 at 135 words a minute (9:52 with handovers); 10:24 at 125 words a minute (10:39 with handovers).
 
-Speaking time at 135 words a minute: Pete 4:00, Fahtai 1:51, Lookbua 1:46, Win 1:46.
+Speaking time at 135 words a minute: Pete 4:12, Fahtai 1:51, Lookbua 1:46, Win 1:46.
 
 ## 1 · Built toLast
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -86,16 +86,16 @@ Speaking time at 135 words a minute: Pete 4:00, Fahtai 1:51, Lookbua 1:46, Win 1
 > Notes: the yearly review (off the slide since 25 Oct): a family meeting, a rebalance, and the mortgage, the cover and the ESG list reviewed (written case §10, Figure 23).
 
 ## 12 · In the very futures where their own way sells the home, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M
-*What passes on · Pete · 0:25 · 72 spoken words (≈32 s at 135) · over its time*
+*What passes on · Pete · 0:25 · 84 spoken words (≈37 s at 135) · over its time*
 
-**Pete:** The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M. If a parent dies early, the wills name Chloe's guardian and hold each child's share in trust, paid at 25, 30 and 35. And a scholarship in sustainable design joins Carmen's mission to Chloe's interest.
+**Pete:** The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M. If a parent dies early, the wills name Chloe's guardian and hold each child's share in trust, paid at 25, 30 and 35. And a scholarship in sustainable design, for the education and environmental causes they asked to support. Built to last: for their lifetimes, and after.
 
 > Notes: the MPF has no nominee, so it passes through the wills. Control, not tax: Hong Kong abolished estate duty in 2006, so the wills decide who receives what, and when. The staged trusts matter only if a parent dies early: at Carmen's 89 Ryan is 64 and Chloe 56, so the HK$7.7M passes outright. The plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
 
 ## 13 · The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve
-*Wealth Management Connect · Pete · 0:40 · 81 spoken words (≈36 s at 135)*
+*Wealth Management Connect · Pete · 0:40 · 97 spoken words (≈43 s at 135) · over its time*
 
-**Pete:** Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across the boundary, now up to three million renminbi each. For the Wongs, Northbound is a tool for later: their home, income and business are all in Hong Kong. For us, Southbound is the market we want to serve: a Hong Kong bank won't solicit or recommend across the boundary unless the client asks, so an adviser's value is a clear, suitable answer.
+**Pete:** The Wongs are one family; on both sides of the boundary there are many more like them. Since 2021, Wealth Management Connect has let residents of Hong Kong, Macao and nine mainland cities invest across it, now up to three million renminbi each. For the Wongs, Northbound is a tool for later: their home, income and business are all in Hong Kong. For us, Southbound is the market we want to serve: a Hong Kong bank won't solicit or recommend across the boundary unless the client asks, so an adviser's value is a clear, suitable answer.
 
 ## 14 · Four planners, one aim: families like the Wongs, on both sides of the boundary
 *Who we want to become · All · 1:10 · 156 spoken words (≈69 s at 135)*

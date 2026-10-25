@@ -53,7 +53,8 @@ WORK = os.path.join(HERE, "build", "pptx")
 CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
           r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
 SECTIONS = [("Cover", [1]), ("The problem", [2, 3]), ("The answer", [4]), ("The five calls", [5, 6, 7, 8, 9]),
-            ("Will it hold", [10]), ("What next", [11, 12]), ("Us", [13, 14]), ("Close", [15])]
+            ("Will it hold", [10]), ("What next", [11]), ("What passes on", [12]),
+            ("Us", [13, 14]), ("Close", [15])]
 E = 9525                                   # EMU per CSS px (a 1280 px slide is 13.333 in)
 A = "http://schemas.openxmlformats.org/drawingml/2006/main"
 FONT = {400: "Plus Jakarta Sans", 500: "Plus Jakarta Sans Medium", 600: "Plus Jakarta Sans SemiBold",

@@ -179,7 +179,8 @@ the talk.
   axis text 14 px, no gridlines, events anchored to the axis. Crimson marks a point or a number, never a wall of lines.
 - The kicker names the section; the footer carries the source (two lines at most; the detail goes to the notes), the
   page number and, on trial pending Pete, a quiet section tracker (The problem · The answer · The five calls · Will it
-  hold · What next · Us).
+  hold · What next · What passes on · Us; "What passes on" added 25 Oct, so the end of the Wongs' story has its own
+  name before the turn to us).
 - Density: a dense slide reads well at about 120 to 180 words. **A warning, not a limit:** never make a phrase vaguer
   to meet a count.
 - The script: about 1,200 spoken words in all, until the team's timed read-through sets the real cap
@@ -786,6 +787,7 @@ reviews strip (quarterly, yearly, and at once after the written case's five even
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**The Wongs' ending and the turn to us, 25 Oct** (Pete: slide 12 to 13 jumped from the end of the case to the Connect; anticlimactic). Moving the payoff to just before the close was built and rendered, then Pete chose the original order with a real ending and a bridge: slide 12 now ends aloud on its bar, "Built to last: for their lifetimes, and after", the end of the Wongs' story; the footer tracker names it ("What passes on", before "Us"). The scholarship line no longer ties the gift to Chloe ("…for the education and environmental causes they asked to support"): the case lists her interests as business, psychology or design, and her fund already covers any of them; the gift answers the family's goal 8.
 **Hierarchy pass, 25 Oct evening** (deck review: HK$24.4M out-shouted the title's HK$7.7M; three messages). The
 inheritance is the hero: the left takes seven columns and HK$7.7M is 72 px, the only crimson ("more than three times
 as much" in ink). Pete's 24 Oct order is kept (what they have, what it pays for first, what is left), with HK$24.4M
@@ -837,6 +839,7 @@ not tax" (estate duty abolished 2006). The title house is complete with its roof
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**Bridge, 25 Oct.** Slide 13 opens "The Wongs are one family; on both sides of the boundary there are many more like them", which turns from their plan to the market and sets up slide 14's title ("families like the Wongs, on both sides of the boundary").
 **Northbound first, 25 Oct** (script review). The voice spoke Southbound first while the slide reads left to right
 and the title puts the Wongs first. Now the voice and the builds follow the title: the three facts (step 1), Northbound
 and the Wongs (step 2, "a tool for later", which closes their story), then Southbound and us with the bar (step 3),
