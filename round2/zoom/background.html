@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <!-- Team Axis, Zoom virtual background for the Round Two recording. 1920 x 1080, rendered by Chrome to
-     Axis_Zoom_Background.png. 25 Oct (Pete): simple, "Built to Last" alone on a soft grey gradient. The wordmark sits top
-     left, clear of the head and shoulders in the middle; the light ground helps Zoom separate the speaker. No university
-     name, logo or campus (CLAUDE.md). -->
+     Axis_Zoom_Background.png. 25 Oct (Pete): simple, on a soft grey gradient: the cover's crimson rule, "Built to Last"
+     and a "Team Axis" line, top left, clear of the head and shoulders in the middle; the light ground helps Zoom separate
+     the speaker. No university name, logo or campus (CLAUDE.md). -->
 <html><head><meta charset="utf-8"><style>
+@font-face{font-family:"PJS";src:url("../fonts/PlusJakartaSans-Regular.ttf");font-weight:400}
 @font-face{font-family:"PJS";src:url("../fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}
 html,body{margin:0;padding:0}
 .bg{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:"PJS",Arial,sans-serif;
   background:linear-gradient(135deg,#F7F7F8 0%,#ECECEE 45%,#D5D6D9 100%)}
-.mark{position:absolute;left:96px;top:84px;font-weight:600;font-size:88px;line-height:1;letter-spacing:-2px;color:#1B1716}
-</style></head><body><div class="bg"><div class="mark">Built to Last</div></div></body></html>
+.rule{position:absolute;left:96px;top:84px;width:180px;height:9px;background:#C80E1E}
+.mark{position:absolute;left:94px;top:118px;font-weight:600;font-size:88px;line-height:1;letter-spacing:-2px;color:#1B1716}
+.team{position:absolute;left:98px;top:236px;font-weight:400;font-size:32px;line-height:1.2;color:#5E5A5C}
+</style></head><body><div class="bg">
+<div class="rule"></div>
+<div class="mark">Built to Last</div>
+<div class="team">Team Axis</div>
+</div></body></html>
