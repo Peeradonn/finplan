@@ -691,6 +691,15 @@ not tax" (estate duty abolished 2006). The title house is complete with its roof
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**The map, 24 Oct evening** (Pete: the flows diagram was bland and didn't say it clearly; a 3D map of the Greater Bay
+Area). The middle of the slide is now the real region, drawn from boundary data by `round2/gba_map.py` into
+`img/gba_map.svg`. The nine mainland cities are one raised rose slab, Hong Kong and Macao a higher wine block, and the
+land around fades out. It is tilted toward the viewer with a little perspective, in the spirit of slide 4's house. Both
+flows are drawn over the water: Northbound west (dashed wine, from Hong Kong into the mainland), Southbound east (solid
+crimson, into Hong Kong). The text sits either side, each heading carrying its line style (Northbound and the Wongs
+left, Southbound and us right), and the labels lie over the map as text at true size. The three growth facts stay on
+top. Data: geoBoundaries gbHumanitarian CHN ADM2 (prefecture-level, with the SARs), CC BY 3.0 IGO, credited in the
+footer. The gbOpen file was tried first and is county-level, so each city came out as its urban core only.
 **Drafted 24 Oct.** The growth in three facts across the top (2021; RMB 3M per investor since 2024, from RMB
 1M; securities firms admitted in 2024), then the two flows on one boundary, drawn north up: the nine cities in a rose
 band, Hong Kong and Macao in a light band (not wine: it sat on the conclusion bar as a second wine strip). Each arrow

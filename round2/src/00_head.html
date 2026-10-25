@@ -1023,28 +1023,29 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q13f{flex:none;display:grid;grid-template-columns:repeat(3,1fr);column-gap:28px}
 .q13f>div{display:flex;align-items:center;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--rule)}
 .q13f strong{flex:none;font:700 40px/1 var(--head);color:var(--ink);letter-spacing:-1px;white-space:nowrap}
-.q13f span{font:400 15px/1.35 var(--text);color:var(--slate)}
-.q13m{flex:1;min-height:0;display:flex;flex-direction:column;margin-top:18px}
-.q13m .band{flex:none;padding:9px 16px;font:600 15px/1.2 var(--text);text-align:center}
-.q13m .band.top{background:var(--rose-g);color:var(--ink)}
-.q13m .band.bot{background:var(--mist);color:var(--wine);border-top:2px solid var(--wine)}
-.q13m .mid{position:relative;flex:1;display:grid;grid-template-columns:1fr 1fr;column-gap:56px;padding:0 12px}
-.q13m .bd{position:absolute;left:0;right:0;top:50%;border-top:1.5px dashed var(--grey);z-index:0}
-.q13m .bd span{position:absolute;right:0;top:-9px;padding-left:8px;background:#fff;font:400 14px/1 var(--text);color:var(--slate)}
-.q13m .fl{position:relative;display:grid;grid-template-columns:52px 1fr;grid-template-rows:1fr 1fr;column-gap:16px;z-index:1}
-.q13m .ar{grid-row:1/3;position:relative}
-.q13m .ar::before{content:"";position:absolute;left:50%;top:18px;bottom:18px;margin-left:-3px;border-left:6px solid var(--accent)}
-.q13m .ar::after{content:"";position:absolute;left:50%;margin-left:-15px;border:15px solid transparent}
-.q13m .s .ar::after{bottom:0;border-top:20px solid var(--accent);border-bottom:0}
-.q13m .n .ar::before{margin-left:-2px;border-left:4px dashed var(--wine)}
-.q13m .n .ar::after{top:0;border-bottom:20px solid var(--wine);border-top:0}
-.q13m .fl .a,.q13m .fl .b{align-self:center;padding:8px 0}
-.q13m h4{font:700 17px/1.3 var(--text);color:var(--ink)}
-.q13m .s h4{color:var(--accent)}
-.q13m .n .a h4{color:var(--wine)}
-.q13m .fl p{font:400 15px/1.4 var(--text);color:var(--slate);margin-top:3px}
-.q13m .b h4{color:var(--ink)}
-.q13m .s .b h4{color:var(--accent)}
+.q13f span{font:400 15px/1.35 var(--text);color:var(--ink)}
+/* slide 13's map (24 Oct, Pete: bland; a 3D map): the two flows either side of the Greater Bay Area, drawn from real
+   boundaries (round2/gba_map.py); each side's heading carries its line, dashed for the Wongs, solid crimson for us */
+.q13g{flex:1;min-height:0;display:grid;grid-template-columns:280px 1fr 280px;column-gap:12px;align-items:center;margin-top:6px}
+.q13g .sd{align-self:start;padding-top:44px}   /* both sides start on one line, whatever their length */
+.q13g .mp{position:relative;margin:0 -44px;z-index:0}   /* the map runs under the side columns: its edges are faint land fading out */
+.q13g .sd{position:relative;z-index:1}
+.q13g .mp img{display:block;width:100%;height:auto}
+.q13g .lb{position:absolute;margin:0;transform:translate(-50%,-50%);font:600 15px/1.25 var(--text);color:var(--ink);white-space:nowrap;text-align:center}
+.q13g .lb.l{transform:translate(0,-50%);text-align:left}
+.q13g .lb.r{transform:translate(-100%,-50%);text-align:right}
+.q13g .lb.hk{font-weight:700;color:var(--wine)}
+.q13g .lb.fl{font:700 14px/1 var(--text);letter-spacing:.2px}
+.q13g .lb.nb{color:var(--wine)}
+.q13g .lb.sb{color:var(--accent)}
+.q13g .sd h4{display:flex;align-items:center;gap:10px;font:700 19px/1.25 var(--text);color:var(--ink);white-space:nowrap}
+.q13g .sd h4 i{flex:none;width:34px;height:0}
+.q13g .sd.n h4 i{border-top:3px dashed var(--wine)}
+.q13g .sd.s h4 i{border-top:4px solid var(--accent)}
+.q13g .sd>p{font:400 15px/1.45 var(--text);color:var(--ink);margin-top:6px}
+.q13g .sd h5{font:700 16px/1.3 var(--text);color:var(--wine);margin:16px 0 0;padding-top:12px;border-top:1px solid var(--rule)}
+.q13g .sd.s h5{color:var(--accent)}
+
 
 /* slide 14: one column a speaker, in speaking order: where, the goal in five years and its link, what this plan taught */
 .q14{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,1fr);column-gap:24px}
