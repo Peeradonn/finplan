@@ -195,7 +195,8 @@ accent; all text at least 12pt.
 
 ## Open items (need outside facts or teammates)
 - **Round Two:** the illustrated image set (prompts in the deck plan §7, for Pete to generate); Win's careers line and
-  Lookbua's OK on his; a 20-second Zoom test of the chosen fonts.
+  Lookbua's OK on his; a 20-second Zoom test of the chosen fonts; Lookbua's plain photo for slide 14 (no badge,
+  no campus behind; strip its metadata as `img/team/` does).
 - **Facts:** Carmen can withdraw her MPF at 62 (early retirement, MPFA; unconfirmed, Fahtai 23 Oct); BOC-Prudential
   fund's own fee and a channel without the 5% initial charge; each parent's current MPF fund fee; Ryan's crypto vs
   tokenised-MMF split; MPF passes to the estate (no nomination); card revolving; tax filing status.

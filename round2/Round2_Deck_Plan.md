@@ -749,6 +749,13 @@ and non-complex. Not on screen: the in-person exception on that page, and "RMB 1
 - Bar: "Under the Connect, an adviser's value is a clear, suitable answer when the client asks."
 
 ### 14 · Who we want to become (all; 1:10)
+**The team's photos, 25 Oct** (Pete: use photos of ourselves; can we, without being disqualified?). Yes: the rules
+ban naming the university ("do NOT mention your university names and related words"), not faces; the video shows us
+anyway, and the Final asks for names and name tags. Pete, Fahtai and Win now appear as their own photos, cropped
+to matching head-and-shoulders circles and re-saved without metadata (`img/team/`; the built deck carries no
+original file name and no EXIF). Lookbua keeps his role icon: his photo showed a badge on his blazer and a campus
+window, either of which could identify the university. **A plain head-and-shoulders photo from Lookbua (plain
+background, no badge or logo) replaces the icon.** The raw folders (`Photos/`, `Icons/`) are git-ignored.
 **Drafted 24 Oct.** One column a speaker, in speaking order, each with an icon for the work: where (Hong Kong;
 East and Southeast Asia; Asia-Pacific; across the boundary), the goal in five years and its link to the Connect (the
 script's words), "In this plan, I led" (from the written case p.14, its owner notes and each statement; **each member

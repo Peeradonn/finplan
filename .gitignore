@@ -15,3 +15,8 @@ document/proposal.html
 # Never commit: Office exports carry the signed-in university account in their metadata; reference decks name the university
 Fin Plan.pdf
 reference/Slides/
+
+# raw images dropped in by the team (25 Oct): the deck uses cleaned copies in round2/img/. Photos/ holds
+# a photo with a university badge and a file named with a full name; Icons/ holds a watermarked stock preview.
+Photos/
+Icons/
