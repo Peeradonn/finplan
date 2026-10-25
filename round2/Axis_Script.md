@@ -74,12 +74,14 @@ Speaking time at 135 words a minute: Pete 3:48, Lookbua 1:56, Fahtai 1:51, Win 1
 
 **Lookbua:** Then we tried to break the plan. The hardest test: Adrian loses his job at 60. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%.
 
-> Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).
+> Notes: we compare decisions in the same markets, we don't forecast them (also in the footer). The risk register's defences (off the slide since 25 Oct, said here if asked; written case Figure 26): the business doesn't sell: a buy-sell agreement now, and the plan lasts without the sale; three risk appetites: one risk profile and one portfolio per person; crypto rules or licences change: licensed channels only, into an ETF within 30 days; greenwashing: two ESG ratings per equity fund, replaced within three months of a downgrade; model risk: we compare decisions in the same markets, we don't forecast.
 
 ## 11 · It starts this month and closes every gap within a year; after that, dates trigger each step
 *What happens when · Lookbua · 0:30 · 59 spoken words (≈26 s at 135)*
 
 **Lookbua:** It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
+
+> Notes: the yearly review (off the slide since 25 Oct): a family meeting, a rebalance, and the mortgage, the cover and the ESG list reviewed (written case §10, Figure 23).
 
 ## 12 · In the very futures where their own way sells the home, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M
 *What passes on · Pete · 0:25 · 74 spoken words (≈33 s at 135) · over its time*

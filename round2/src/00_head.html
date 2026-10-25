@@ -61,9 +61,12 @@ p,li,span,b{text-wrap:pretty}
 .cap{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:auto;padding-top:8px}
 
 /* ---- conclusion bar ---- */
-/* 24 Oct (Pete): the conclusion is a crimson bar, white text, centred: without a bar the last line didn't read as the
-   slide's conclusion. (23 Oct it was a line on a crimson rule, after a wine block had outweighed the focal numbers.) */
-.bar{flex:none;margin-top:16px;background:radial-gradient(ellipse 70% 260% at 50% 50%,#C41627 0%,#A51322 45%,#700E19 100%);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
+/* 25 Oct (Pete): the bar is ink, as e-Sentry's was. Measured on the 24 Oct crimson bar: on slides 2, 6 and 9-14 it
+   was 72-89% of all the crimson on the page, so the eye went to the conclusion before the evidence and the focal number
+   was never the only red. In ink it still reads as the conclusion, and crimson is left to the title's number.
+   (24 Oct: a crimson bar, because without a bar the last line didn't read as the conclusion; 23 Oct: a line on a
+   crimson rule.) */
+.bar{flex:none;margin-top:16px;background:var(--ink);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
 
 /* ---- footer ---- */
 .ft{flex:none;height:52px;display:flex;align-items:center;gap:20px;font:400 12px/1.3 var(--text);color:var(--slate)}
@@ -635,6 +638,16 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .o6u strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1px}
 .o6d{position:absolute;top:82px;transform:translateX(-100%);width:max-content;font:400 14px/1 var(--text);color:var(--slate);white-space:nowrap}
 .o6d b{font-weight:700;color:var(--ink)}
+/* 25 Oct evening (Pete: no eye path): the title's 83% is the largest type (60 px, as slide 3's 51%); the three
+   destinations share one quieter size (26 px), so 116% no longer reads first */
+.f6 .dst.inc strong{font-size:26px;margin:6px 0 2px;letter-spacing:-.5px}
+.f6 .dst.inc h4{font-size:16px}
+.o6t{height:108px}
+.o6t>i{top:64px}
+.o6u strong{font-size:60px;letter-spacing:-1.5px}
+.o6u span{font-size:16px}
+.o6d{top:94px}
+.o6 .l{padding-bottom:20px}
 
 /* ==================== slide 8, Call 4 (23 Oct): every dollar gets a job ====================
    The parents' HK$7.7M outside the home and the MPF, drawn twice on one scale (block width = value): today in grey,
@@ -787,6 +800,27 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .e9v::before{content:"";position:absolute;left:0;right:0;bottom:calc(20px + var(--cr));border-top:1.5px dashed var(--ink);z-index:1}   /* the crypto block's top, flat across the columns */
 .e9v .lv{position:absolute;right:0;bottom:calc(20px + var(--cr) - 18px);width:116px;font:400 14px/1.3 var(--text);color:var(--ink)}
 .e9v .lv b{display:block;font:600 14px/1.3 var(--text);color:var(--ink)}
+/* slide 9, 25 Oct evening (Pete: some slides have too much text and no eye path; the deck-wide review measured 13 font
+   sizes and 21 text styles here): one scale, four steps of text (14 asides and labels, 16 body, 18 the block's claim,
+   20 the panel heading), 20 for the supporting figures and 40 for the two the title names. Bold and italic kept (Pete,
+   25 Oct): bold on each line's lead, italic on asides and prices. The curved arrow is a straight change label: the
+   deck's own lessons rule out hand-drawn curves. */
+.e9r>span{font-size:16px}
+.e9t>strong{font-size:40px}
+.e9 i.g b{font-size:16px}
+.e9w p{font-size:16px;grid-template-columns:146px 96px 1fr}
+.e9 .e9w p em{font-size:14px}
+.e9lk p{font-size:16px}
+.e9 .e9gr,.e9 .e9gr b{font-size:16px}
+.e9o p{font-size:14px}
+.e9 .e9o p b,.e9o p b{font-size:16px}
+.e9y .tx p{font-size:16px}
+.e9v .cl em{font-size:20px}
+.e9v .cl.on em{font-size:40px}
+.e9v .cr b{font-size:14px}
+.e9d{position:absolute;top:50%;height:0;border-top:2px solid var(--wine);z-index:2}
+.e9d::after{content:"";position:absolute;right:-2px;top:-7px;border:6px solid transparent;border-left:10px solid var(--wine);border-right:0}
+.e9d b{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font:600 14px/1 var(--text);color:var(--wine);white-space:nowrap}
 
 /* ==================== the presentation system, after Pete's own decks (23 Oct) ====================
    Taken from Banyan and Nordea only where a planner would use it (Pete: "take the good parts ... where it is
@@ -826,12 +860,18 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .s5q{margin-top:auto;padding-top:12px;border-top:1px solid var(--rule);font:400 15px/1.45 var(--text);color:var(--ink)}
 .s5q b{font-weight:700}
 .e9pr{margin-top:8px}
-.q10pr{margin-top:12px;padding:10px 14px;background:var(--mist);font-size:15px}
+.q10pr{margin-top:12px;padding:0;background:none;font-size:14px}
 .q10pr strong{font-weight:700}
 .tr9{flex:none;display:flex;align-items:center;gap:10px;margin-top:14px;padding:9px 18px;background:var(--mist);font:400 15px/1.35 var(--text);color:var(--slate)}
 .tr9 b{flex:none;color:var(--ink);font-weight:600}
 .tr9 .ic{flex:none;width:20px;height:20px;stroke:var(--ink);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .c9 .tr9+.bar{margin-top:0}
+/* 25 Oct evening: the last two trade-off strips (slides 6 and 8) become a price line, as Calls 1, 3 and 5 already were:
+   on slide 6 a mist strip, the result bar and the conclusion bar made three bands stacked at the foot. The label in
+   wine, the price in ink, at the foot of the content it belongs to. */
+.cpr{flex:none;margin-top:12px;font:400 14px/1.4 var(--text);color:var(--ink)}
+.cpr b{font-weight:700;color:var(--wine)}
+.c9 .cpr+.bar{margin-top:14px}
 .x3w h4{font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:4px}
 .x3w p{font:400 15px/1.4 var(--text);color:var(--slate)}
 .x3w p+p{margin-top:6px}
@@ -903,7 +943,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .b8 .p .bk .pic{box-shadow:0 2px 6px rgba(0,0,0,.25)}
 .f6 .dst{box-shadow:var(--lift)}
 .b8 .p .bk>div{box-shadow:var(--lift)}
-.bar{box-shadow:0 8px 22px rgba(90,21,32,.20)}
+/* the ink bar sits flat (25 Oct): a lift under a dark band read as a smudge */
 
 /* ---- a portrait: a circle that crops its image (the cover's family; later the people on 2 and 14) ---- */
 .pic{display:block;width:160px;height:160px;border-radius:50%;overflow:hidden;border:1.5px solid var(--ink);background:#fff;margin-bottom:10px}
@@ -926,7 +966,10 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{filter:grayscale(1);opacity:.3}
 .upto-7 [data-b="8"],.upto-7 [data-b="9"]{filter:grayscale(1);opacity:.3}
 .upto-8 [data-b="9"]{filter:grayscale(1);opacity:.3}
-/* the ten-futures slides (3, 7) reveal instead: greyed, their payoff showed before it was spoken (Pete, 23 Oct) */
+/* the ten-futures slides (3, 7) reveal instead: greyed, their payoff showed before it was spoken (Pete, 23 Oct).
+   25 Oct evening (Pete): the dense slides (5, 6, 8 to 13) reveal too, so the video shows only what has been said; the
+   layout still never moves (visibility keeps the space). Slides 2, 4 and 14 keep the grey, where seeing what is coming
+   helps (the family, the house, the four of us). */
 .reveal.upto-1 [data-b="2"],.reveal.upto-1 [data-b="3"],.reveal.upto-1 [data-b="4"],.reveal.upto-1 [data-b="5"],.reveal.upto-1 [data-b="6"],.reveal.upto-1 [data-b="7"],.reveal.upto-1 [data-b="8"],.reveal.upto-1 [data-b="9"]{visibility:hidden}
 .reveal.upto-2 [data-b="3"],.reveal.upto-2 [data-b="4"],.reveal.upto-2 [data-b="5"],.reveal.upto-2 [data-b="6"],.reveal.upto-2 [data-b="7"],.reveal.upto-2 [data-b="8"],.reveal.upto-2 [data-b="9"]{visibility:hidden}
 .reveal.upto-3 [data-b="4"],.reveal.upto-3 [data-b="5"],.reveal.upto-3 [data-b="6"],.reveal.upto-3 [data-b="7"],.reveal.upto-3 [data-b="8"],.reveal.upto-3 [data-b="9"]{visibility:hidden}
@@ -954,12 +997,23 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 
 /* slide 10: each hard test as one row, a dumbbell from the four decisions alone (hollow) to the full plan (filled) on
    one 0-100% scale, then what holds it. Only the title's test, the lost job, is crimson. */
-.q10 .pn>h3{margin-bottom:0}
+/* 25 Oct (Pete: too much text, no eye path): one message, the four tests, across the whole slide; the risk register is
+   one quiet line of Pete's icons, its defences in the notes. Crimson only on the title's test. */
+.q10{flex:1;min-height:0;display:flex;flex-direction:column}
+.q10w{flex:1;min-height:0;display:flex;flex-direction:column}
+.q10 .lede{margin-top:0;font-size:14px}
+.q10o{flex:none;display:flex;align-items:center;gap:18px;margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)}
+.q10o>p{flex:none;width:200px;font:600 16px/1.3 var(--text);color:var(--ink)}
+.q10o>p span{display:block;font:400 14px/1.3 var(--text);color:var(--slate)}
+.q10o ul{flex:1;display:flex;justify-content:space-between;gap:12px}
+.q10o li{display:flex;align-items:center;gap:8px;font:500 14px/1.25 var(--text);color:var(--ink);white-space:nowrap}
+.q10o .ci{flex:none;width:30px;height:30px;border-radius:50%;background:var(--mist);color:var(--wine);display:flex;align-items:center;justify-content:center}
+.q10o .ci .ic{width:17px;height:17px}
 .q10k{display:inline-flex;align-items:center;gap:6px;margin-right:22px;white-space:nowrap}
 .q10k i{display:inline-block;width:12px;height:12px;border-radius:50%}
 .q10k i.o{background:#fff;border:2.5px solid var(--grey)}
 .q10k i.p{background:var(--wine)}
-.q10h,.q10r,.q10x{display:grid;grid-template-columns:216px 1fr 214px;column-gap:32px}
+.q10h,.q10r,.q10x{display:grid;grid-template-columns:268px 1fr 268px;column-gap:40px}
 .q10h{margin-top:16px;padding-bottom:6px;border-bottom:1.5px solid var(--ink);font:600 14px/1.2 var(--text);color:var(--slate)}
 .q10x{margin-top:6px;font:400 14px/1 var(--text);color:var(--slate)}
 .q10x .ax{position:relative;height:14px;margin-right:16px}
@@ -978,9 +1032,11 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10r.on .q10g{background:var(--accent-g)}
 .q10t i{position:absolute;bottom:calc(var(--bb) + 14px);width:0;height:0}
 .q10t em{position:absolute;bottom:7px;left:0;transform:translateX(-50%);font-style:normal;white-space:nowrap}
-.q10t i.o em{font:500 15px/1 var(--text);color:var(--slate)}
-.q10t i.p em{font:700 24px/1 var(--head);color:var(--ink);letter-spacing:-.5px}
-.q10r.on .q10t i.p em{font-size:36px;color:var(--accent);letter-spacing:-1px}
+.q10t i.o em{font:500 14px/1 var(--text);color:var(--slate)}
+.q10t i.p em{font:700 20px/1 var(--head);color:var(--ink);letter-spacing:-.3px}
+.q10r.on .q10t i.p em{font-size:40px;color:var(--accent);letter-spacing:-1px}
+.q10r.on .q10l b{font-size:18px}   /* the title's test leads its column too */
+.q10r.on{padding-top:14px}   /* room for the 40 px figure under the header rule */
 /* the sentence above the chart names the two parts with their own colours (a legend inside the sentence) */
 .q10e .sw{display:inline-block;width:22px;height:10px;border-radius:5px;margin:0 7px 1px 2px;vertical-align:middle}
 .q10e .sw.a{background:#E3C3C9}
@@ -992,41 +1048,41 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10d span{font:400 14px/1.35 var(--text);color:var(--ink);white-space:nowrap}
 .q10d b{font-weight:600;color:var(--ink)}
 
-/* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
-   steps on one line with an icon a step, then the reviews. */
-.q11{flex:1;min-height:0;display:grid;grid-template-columns:repeat(9,1fr);column-gap:16px;align-content:start}
-.q11 h3{font:600 17px/1.25 var(--text);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}
-.q11 h3.a{grid-column:1/5}
-.q11 h3.b{grid-column:5/10}
-/* the line through every step: crimson through this year, rose after; this year sits on a soft band, the zoom */
-.q11 .tl{grid-column:1/10;position:relative;isolation:isolate;display:grid;grid-template-columns:subgrid;margin-top:18px;padding:22px 0 24px}
-.q11 .tl::before{content:"";position:absolute;left:0;right:0;top:83px;border-top:2px solid var(--rose);z-index:-1}
-.q11 .tl::after{content:"";position:absolute;left:-12px;top:0;bottom:0;width:calc((100% - 8 * 16px) * 4 / 9 + 3 * 16px + 24px);background:var(--mist);z-index:-2}
-.q11 .st.now::after{content:"";position:absolute;left:0;right:-16px;top:61px;border-top:2px solid var(--accent);z-index:-1}   /* this year's stretch of the line, crimson */
-.q11 .st.now:nth-child(4)::after{right:0}
-.q11 .st{position:relative;display:flex;flex-direction:column}
-/* who acts on each step (the written case's owners), as small overlapping portraits on one row */
-.q11 .st .who{display:flex;margin-top:auto;padding-top:14px}
-.q11 .st .who img{width:34px;height:34px;border-radius:50%;border:2px solid var(--paper);background:var(--mist);object-fit:cover;box-shadow:0 1px 3px rgba(90,21,32,.18)}
-.q11 .st .who img+img{margin-left:-10px}
-.q11 .st.now .who img{border-color:var(--mist)}
-.q11 .st .y{display:block;font:700 21px/1.2 var(--head);color:var(--ink);white-space:nowrap;letter-spacing:-.3px}
-.q11 .st.now .y{color:var(--accent)}
-.q11 .st .ci{position:relative;display:flex;align-items:center;justify-content:center;width:46px;height:46px;margin:10px 0 16px;border-radius:50%;background:var(--wine-g);box-shadow:0 0 0 4px var(--paper)}
-.q11 .st.now .ci{background:var(--accent-g);box-shadow:0 0 0 4px var(--mist)}
-.q11 .st .ci .ic{width:22px;height:22px;stroke:#fff;stroke-width:2}
-.q11 .st b{display:block;font:600 16px/1.3 var(--text);color:var(--ink);padding-right:6px}
-.q11 .st p{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:4px;padding-right:6px}
-.q11k{margin-top:10px;padding-top:10px;border-top:1px solid var(--rule)}
-.q11k h4{font:600 15px/1.3 var(--text);color:var(--slate)}
-.q11k>div{display:grid;grid-template-columns:1.45fr 1fr 1.1fr;column-gap:24px;margin-top:6px}
-.q11k span{font:400 14px/1.35 var(--text);color:var(--slate)}
-.q11k span b{display:block;font:600 15px/1.3 var(--text);color:var(--ink)}
-.q11r{flex:none;display:grid;grid-template-columns:auto .7fr 1.6fr 1.9fr;align-items:center;column-gap:26px;margin-top:16px;padding:12px 20px;background:var(--mist)}
-.q11r>b{display:flex;align-items:center;gap:10px;font:600 16px/1.3 var(--text);color:var(--ink)}
-.q11r>b .ic{width:20px;height:20px;stroke:var(--wine);stroke-width:2}
-.q11r span{font:400 14px/1.35 var(--text);color:var(--slate)}
-.q11r span b{display:block;font:600 15px/1.3 var(--text);color:var(--ink)}
+/* slide 11, 25 Oct evening (Pete: no eye path; the review found nine equal columns and no focal point). The title says
+   "it starts this month", so the first year is the hero: four steps on the left, large, on one line (a true sequence),
+   Month 1 the one crimson mark. The later dated steps are a quieter list on the right, a thin line down their dates
+   (also a sequence). Faces are who acts on each step (written case Figure 23 owners). Icons quiet: mist circles, wine
+   marks. The reviews are one line at the foot; the yearly review's detail is in the notes. */
+.q11{flex:1;min-height:0;display:grid;grid-template-columns:7fr 5fr;column-gap:48px}
+.q11 h3{font:600 17px/1.25 var(--head);padding-bottom:8px;border-bottom:1.5px solid var(--ink)}   /* the deck's panel heading */
+.q11y{display:flex;flex-direction:column;min-height:0}
+.q11y .tl{flex:1;position:relative;display:grid;grid-template-columns:repeat(4,1fr);column-gap:18px;padding:40px 0 6px}
+.q11y .tl::before{content:"";position:absolute;left:0;right:0;top:129px;border-top:2px solid var(--wine);z-index:0}   /* through the circles' centres: 40 + 32 (date) + 32 + 26 */
+.q11y .st{position:relative;display:flex;flex-direction:column}
+.q11y .st .y{font:700 29px/1.1 var(--head);color:var(--ink);letter-spacing:-.5px;white-space:nowrap}
+.q11y .st.now1 .y{color:var(--accent)}
+.q11y .st .ci{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:32px 0 22px;border-radius:50%;background:var(--mist);box-shadow:0 0 0 5px var(--paper)}
+.q11y .st .ci .ic{width:24px;height:24px;stroke:var(--wine);stroke-width:2}
+.q11y .st.now1 .ci{background:var(--accent-g)}
+.q11y .st.now1 .ci .ic{stroke:#fff}
+.q11y .st b{display:block;font:600 18px/1.3 var(--text);color:var(--ink);padding-right:8px}
+.q11y .st p{font:400 14px/1.4 var(--text);color:var(--ink);margin-top:6px;padding-right:8px}
+.q11y .st .who,.q11d .who{display:flex;margin-top:auto;padding-top:16px}
+.q11 .who img{width:36px;height:36px;border-radius:50%;border:2px solid var(--paper);background:var(--mist);object-fit:cover;box-shadow:0 1px 3px rgba(90,21,32,.18)}
+.q11 .who img+img{margin-left:-10px}
+.q11d{display:flex;flex-direction:column;min-height:0}
+.q11d ol{flex:1;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:16px 0 0}
+.q11d ol::before{content:"";position:absolute;left:5px;top:28px;bottom:22px;border-left:2px solid var(--rose)}
+.q11d li{position:relative;display:grid;grid-template-columns:96px 1fr auto;column-gap:12px;align-items:center;padding-left:22px}
+.q11d li::before{content:"";position:absolute;left:0;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--wine)}
+.q11d .y{font:700 16px/1.3 var(--head);color:var(--ink);white-space:nowrap}
+.q11d p{font:400 14px/1.35 var(--text);color:var(--ink)}
+.q11d p b{display:block;font:600 16px/1.3 var(--text)}
+.q11d .who{padding-top:0;margin-top:0}
+.q11d .who img{width:28px;height:28px}
+.q11v{flex:none;display:flex;align-items:center;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid var(--rule);font:400 14px/1.4 var(--text);color:var(--ink)}
+.q11v b{font-weight:700}
+.q11v .ic{flex:none;width:20px;height:20px;stroke:var(--wine);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 
 /* slide 12: slide 3's inheritance bars redrawn on the same scale, the plan beside their own way; then how it passes on */
 .q12b{display:flex;flex-direction:column;gap:18px;margin-top:26px}
@@ -1161,6 +1217,25 @@ svg.conn.q13c path{stroke-width:1.6}
 .x7t+.x7t{margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
 .x7t .sub{font:400 14px/1.35 var(--text);color:var(--slate);margin:4px 0 0 36px}
 .x7t .sub b{font-weight:700;color:var(--ink)}
+/* slide 7, 25 Oct evening (Pete: too much text, no eye path; the review measured 20 text styles, the left panel a
+   slide of its own): the left is the two fixes, each with its picture and its price, and nothing else; its numbered
+   discs and rule icons are quiet (mist, wine marks), so the eye goes to the redrawn future on the right. The odds sit
+   under that chart, as its result across all futures; the one crimson figure is what is left at 89, now 34 px (40 px
+   pushed the chart narrow enough that its axis labels collided). */
+.x7t h4 i{background:var(--mist);color:var(--wine)}
+.x7ru .ci{background:var(--mist)}
+.x7ru .ic{stroke:var(--wine)}
+.x7ru li{font-size:14px}
+.x7t+.x7t{margin-top:18px;padding-top:16px}
+.x7pr{margin-top:10px}
+.c9 .x7s{height:286px}
+.c9 .x7s,.c9 .x7a{margin-right:166px}
+.x7g{width:166px}
+.x7g .pl strong{font-size:34px;font-weight:700;letter-spacing:-1px}
+.x7g .pl span{font-size:14px}
+.x7od{font:400 16px/1.35 var(--text);color:var(--ink);padding-top:10px;border-top:1px solid var(--rule)}
+.x7od b{font-weight:700}
+.x7s .al.h small{font-size:14px}   /* was 12 px, under the deck's 14 px floor for anything meant to be read */
 
 /* slide 12 (25 Oct, Fahtai): the left, what is left at Carmen's 89, compact; the right, larger, in two groups by when
    it applies: if they die early (wills, guardian, staged trusts) and a legacy with purpose (the scholarship, while they
@@ -1213,6 +1288,35 @@ svg.conn.q13c path{stroke-width:1.6}
 .q12w .q12b i{height:34px}
 .q12w .q12b strong{font-size:28px;margin-left:10px}
 .q12w .q12b .on strong{font-size:48px}
+/* 25 Oct (Pete: no hierarchy, HK$24.4M out-shouted the title's HK$7.7M): the inheritance is the slide's one message, so
+   the left takes 7 columns and the plan's HK$7.7M is the largest type (72 px, the only crimson); today's net worth is
+   the quiet start of the sentence (Pete's 24 Oct order kept: what they have, what it pays for first, what is left); the
+   tree on the right is smaller and quiet (mist circles, wine marks). */
+.q12f .s1 .n{font:700 20px/1.2 var(--head);letter-spacing:-.2px}
+.q12f .s1{align-items:baseline;gap:10px}
+.q12f .s1 p{font-size:14px}
+.q12f .s2 p{font-size:14px}
+.q12f .s3{margin-top:auto;padding-top:16px}
+.q12f .s3 .k{font:600 16px/1.35 var(--text)}
+.q12w .q12b{gap:4px;margin-top:10px}
+.q12w .q12b .r{grid-template-columns:120px 1fr;column-gap:14px}
+.q12w .q12b .r>span{font-size:16px}
+.q12w .q12b .t{height:84px}
+.q12w .q12b i{height:44px}
+.q12w .q12b strong{font-size:40px;font-weight:600;margin-left:16px}
+.q12w .q12b .on strong{font-size:72px;font-weight:700}
+.q12f .s3 .x{font-size:16px;margin-top:14px;color:var(--ink)}
+.q12w .q12f{padding-bottom:4px}
+.q12r .q12sc{margin-bottom:4px}
+.q12sc{font-size:14px;padding:10px 14px}
+.q12sc .ci{width:32px;height:32px;background:#fff;color:var(--wine)}
+.q12sc .ci .ic{stroke:var(--wine)}
+.q12t{margin-top:10px}
+.q12t .kid p{font-size:14px}
+.q12t .st{gap:20px}
+.q12t .st span{font-size:14px}
+.q12t .st span::before{width:12px;height:12px;background:var(--wine)}
+.q12t .st::before{top:5px}
 </style>
 </head>
 <body>

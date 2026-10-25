@@ -157,9 +157,11 @@ the talk.
   had its own, 14 to 22 px, and the tight ones pressed the content against the title).
 - Every model number is a `{{key}}` (CLAUDE.md), tagged as a quiet "(measured)", "(case)" or "(sourced)": MEASURED is
   the team model (`numbers.json`), CASE the case, SOURCED a named public source.
-- Builds reveal in speaking order (`data-b`) and grey what is still to come, so the layout never moves (Pete, 23 Oct),
-  except where the grey would give the payoff away (the ten futures reveal). `make.py --builds` writes one frame per
-  step (`Axis_builds.html`, `build/frames/`) for the video.
+- Builds reveal in speaking order (`data-b`), so the layout never moves (Pete, 23 Oct). Since 25 Oct the dense slides
+  (3, 5 to 13) **hide** what is still to come (class `reveal`; visibility keeps the space), so the video shows only what
+  has been said: greyed text still pulled the eye while the speaker was on something else. Slides 2, 4 and 14 keep the
+  grey, where seeing what is coming helps. `make.py --builds` writes one frame per step (`Axis_builds.html`,
+  `build/frames/`) for the video; rebuild the frames after any slide change, before recording.
 - Each call (5 to 9) shows on the slide what the family gives up for it (Pete, 23 Oct: a planner names the cost before
   the client asks, and the judges score "client suitability awareness"). Where and how it shows is open.
 
@@ -182,7 +184,7 @@ the talk.
 | Piece | Earns its place when | Leave it off when |
 |---|---|---|
 | Two or three panels whose headings read as one sentence | the point is a chain of steps | the point is one picture, one number or one comparison |
-| The conclusion bar (crimson, white text, centred) | the slide needs a handover its title doesn't give | it would restate the title or the panels |
+| The conclusion bar (ink since 25 Oct, white text, centred) | the slide needs a handover its title doesn't give | it would restate the title or the panels |
 | A one-line lede under a heading | the content needs a bridge to make sense | the heading already says it |
 | A reading under a chart (dashed box) | the chart doesn't speak alone | it would repeat the chart's labels or the title |
 | One dashed ring | one moment on a chart matters most | nothing stands out more than the rest |
@@ -213,6 +215,14 @@ the talk.
 - **Two typefaces splitting the hierarchy** (Pete, 23 Oct evening): one family; size, weight and colour do the work.
 - **One device on every slide** (23 Oct, from the reference decks: a takeaway box, a chevron, a crimson punch-line in
   every panel) reads as a template, and so did this section's old list of required parts (23 Oct).
+- **The loudest thing on the slide wasn't the point** (deck review, 25 Oct; Pete: "so much text, no hierarchy, no
+  clear eye path"). Measured on the renders: the crimson conclusion bar was 72-89% of all the crimson on slides 2, 6 and
+  9-14, so the eye went to the conclusion before the evidence; crimson icon circles (five on 10, nine on 11) pulled it
+  away again; slides carried 14-21 text styles and up to 13 font sizes; slides 10 and 12 each held a second message;
+  the screen showed about twice the words the voice said (slide 10: 265 shown, 64 spoken). Fixed: the bar is ink;
+  icon circles are quiet (mist, wine marks); the title's number is the largest type and the only crimson; one message
+  a slide, the second one cut to a line and the notes. Check a slide at thumbnail size: the first thing you see should
+  be the number the title names.
 
 ## 5. Slide by slide
 Each spec: the point, the evidence and its keys, and the form as built so far. The form is a draft, not an order
@@ -354,6 +364,9 @@ the accent, the only accent on the slide.
 - Bar: "Five calls, one family: the rest of this talk defends each one."
 
 ### 5 · Call 1: insure the income, not the life (Lookbua; 0:40)
+**Hierarchy pass, 25 Oct evening** (deck review, Pete: no eye path). The curved arrow "his cover closes the gap" is
+gone: the deck's lessons rule out hand-drawn curves, the two columns are too close for a straight arrow with a label,
+and the bills line, the dashed gap and the bracket already show the gap closing. Builds now hide what is still to come.
 **Presentation pass, 25 Oct** (Pete: slides 5, 7, 9, 10 present their points poorly). The trade-off strip is gone: its
 price now ends the covers ("The price: term cover lapses at 65 and 62 …", on mist). The papers checklist (five ticked
 boxes) is one line at the panel's floor, since Lookbua speaks them and slides 11 and 12 show them. Content text in ink;
@@ -395,6 +408,10 @@ first: now the plan can turn what they own into income": the old bar repeated th
   ends at retirement" (the reason, not the cost).
 
 ### 6 · Call 2: decide now, not at {{own_sale_age}} (Fahtai; 0:45)
+**Hierarchy pass, 25 Oct evening** (deck review). 116% was larger and higher than the title's 83%, so it was read
+first: the three destinations now share one quiet size (26 px) and 83% is 60 px, the slide's only crimson. The
+trade-off strip is a price line under the result ("The price: staying in the home leaves …"), as on Calls 1, 3 and 5:
+the strip, the result bar and the conclusion bar had stacked three bands at the foot. Builds now hide.
 **Rebuilt 24 Oct** (Pete: the same hierarchy problem as slide 9). Before: the wine income box (116%) was the darkest thing
 on the slide and outweighed the result; the flow had no way in; the budget floated in a dashed box; the band only
 restated the title. Now: three column labels ("What they own and spend" / "What each becomes, decided now" / "What it
@@ -439,6 +456,11 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Hierarchy pass, 25 Oct evening** (deck review: the left panel was a slide of its own, 20 text styles). The left is
+now the two fixes, each with its picture and its price; the numbered discs and rule icons are quiet (mist, wine). The
+odds moved under the redrawn future, as its result across all futures: "In 10,000 futures: {{ladder_5_89}} →
+{{switch_89}} last to 89 with the review; almost all with the rules". {{story_plan_left}} left at 89 is the one crimson
+figure, 34 px (40 px narrowed the chart until its axis labels collided). The home's caption is 14 px (was 12).
 **Presentation pass, 25 Oct.** Fix 2's three rules are a row of icons with short labels (pause, a 10% trim, a shield
 for essentials) rather than a line of text, so both fixes have a picture.
 **Third pass, 24 Oct evening** (Pete: heading 1 clashed with the chart's lines; grey text hard to read; is the
@@ -518,6 +540,8 @@ Notes answer "why does the plan look poorer until about 2056?" (the annuities an
   the spending rules trim typical spending by about {{guard_cost}} a year."
 
 ### 8 · Call 4: one family policy, a plan for each person (Win; 0:50)
+**25 Oct evening:** the trade-off strip is a price line ("The price: Chloe's HK$2.57M stays in deposits …"), as on
+every other call since slide 6 lost its strip. Builds now hide. The layout is otherwise unchanged.
 **v10 (23 Oct): blocks with jobs and faces** (Pete chose it over two bars). The parents' HK$7.7M drawn twice on one
 scale: today, grey blocks with no job (cash HK$2.5M, 30 months, idle; bond funds HK$1.35M; equity funds HK$3.85M at
 about 1.5% a year); with the plan, crimson-family blocks, each a job and an owner's face (reserve HK$1.0M; Chloe's degree
@@ -542,6 +566,11 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Hierarchy pass, 25 Oct evening** (deck review: 13 font sizes, 21 styles). One scale: 14 for asides and labels, 16
+body, 18 Ryan's claim, 17 the panel headings, 20 the supporting figures (74%, 32%), 40 the two the title names (25%,
+20%, the only crimson). Bold leads and italic asides kept (Pete, 25 Oct). "Like for like, not a new bet" is one line
+with its lead in bold, not a heading and a sentence. The curved "+14 points" arrow is a straight arrow from the end of
+today's bar to where the plan's ends. Builds now hide.
 **Four levels, 25 Oct** (Pete: keep bold and italic; vary the size by importance; annotate). 25% and 20% largest;
 "Like for like, not a new bet" at 19 px and Ryan's line at 18 px; body 15 px with its key phrase bold; the fund
 roles, the price lines and "(case)" in italic as asides; a note on Ryan's chart ("The dark block: his HK$500K, the
@@ -612,6 +641,10 @@ downgrade rule are in the notes.
   Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
+**One message, 25 Oct evening** (deck review: 265 words shown for 64 spoken, two messages, five crimson icon circles
+competing with the result). The four tests take the whole width, larger; the lost job's 83% is 40 px, the only crimson,
+and its row leads. The risk register is one quiet line at the foot: Pete's five icons (mist circles, wine marks) and
+each risk's name; the defences are in the notes, said if asked. 209 words. Builds now hide.
 **Presentation pass, 25 Oct.** The price-of-holding strip now sits under the chart it belongs to, inside the left
 panel; the risk register's detail and the rows' descriptions in ink.
 **Third pass, 24 Oct evening** (Pete: the arrows weren't premium; "what holds it" needed to look better). Each test is
@@ -656,6 +689,11 @@ register, the price and the bar.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
 ### 11 · What happens when (Lookbua; 0:30)
+**First year as the hero, 25 Oct evening** (deck review: nine equal columns, no focal point). The title says "it starts
+this month", so the first year is the left seven columns: four steps on one line, large, Month 1 the only crimson
+(its date and its circle). The dated steps after it are a quieter list on the right, a thin line down their dates
+(a sequence), each with its owners' faces. The reviews are one line at the foot; the yearly review's detail
+(rebalance; the mortgage, cover and ESG list) is in the notes. Builds now hide.
 **Layout review, 24 Oct evening** (Pete: is the layout ideal yet?). No; three changes, then one addition.
 (1) Ryan and Chloe's strip is gone, its facts kept: it repeated the line (Ryan's plan is in the month-12 meeting,
 Chloe's offer is 2028) and said slide 12's point early (trusts at 25, 30, 35); its new fact, Chloe starting work in 2032,
@@ -696,6 +734,11 @@ reviews strip (quarterly, yearly, and at once after the written case's five even
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**Hierarchy pass, 25 Oct evening** (deck review: HK$24.4M out-shouted the title's HK$7.7M; three messages). The
+inheritance is the hero: the left takes seven columns and HK$7.7M is 72 px, the only crimson ("more than three times
+as much" in ink). Pete's 24 Oct order is kept (what they have, what it pays for first, what is left), with HK$24.4M
+now a quiet 20 px start to the sentence. The tree and the scholarship are smaller, on the right five columns, with
+quiet marks. This reverses Fahtai's 25 Oct split (left 5, right 7) in size only; his two groups by moment stay.
 **The scholarship's reason, 25 Oct** (Pete: why a legacy with purpose; did Chloe say sustainable design?). She didn't:
 the case says she "has expressed interest in pursuing undergraduate studies in business, psychology or design". The
 reason is the family's goal 8: "a possible philanthropic plan related to education or environmental causes". The slide
@@ -835,6 +878,11 @@ written case's four pillars from the roof down: what passes on; a place for ever
   as gradients (--wine-g #A62535 to #5A1520, --accent-g #B3202F to #7D1D2A, and #p4wine / #p4rose for SVG areas, in
   99_tail); the conclusion bar a small stage (a radial gradient, crimson at the centre, wine at the ends). The text
   above this line in earlier versions, kept below for the record:
+- **The conclusion bar, since 25 Oct: ink** (#1B1716, flat, white text; Pete, after the deck review). The crimson bar
+  was 72-89% of all the crimson on slides 2, 6 and 9-14, so the eye reached the conclusion before the evidence and the
+  focal number was never the only red. Ink keeps the bar (it still reads as the conclusion, as e-Sentry's black bar
+  did) and leaves crimson to the number the title names. Measured after: crimson is 0.5-2.3% of slides 2, 6, 9-14, all of
+  it on the focal figures. Still to watch: the ink bar is the darkest block on the page; it no longer competes in colour.
 - **Colour (23 Oct):** the written case's crimson #A81E2D as the accent (#6F1320 deeper); its family for fills: wine #7D1D2A
   (the home layer, the family panels, the guaranteed income, cost bars), a greyed rose #DDD0CD and #B99A9C (savings,
   lighter series), tint = mist; warm neutrals tuned to the crimson (mist #F5F1F0, rule #DDD6D4, grey #A69E9C, slate
