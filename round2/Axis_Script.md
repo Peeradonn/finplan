@@ -86,7 +86,7 @@ Speaking time at 135 words a minute: Pete 3:48, Lookbua 1:56, Fahtai 1:51, Win 1
 
 **Pete:** The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M. And if either parent dies early, the wills name a guardian for Chloe and hold each child's share in trust until 25, 30 and 35. Meanwhile, a scholarship in sustainable design joins Carmen's mission to Chloe's interest.
 
-> Notes: the staged trusts matter only if a parent dies early: at Carmen's 89 Ryan is 64 and Chloe 56, so the HK$7.7M passes outright. The plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
+> Notes: the MPF has no nominee, so it passes through the wills. Control, not tax: Hong Kong abolished estate duty in 2006, so the wills decide who receives what, and when. The staged trusts matter only if a parent dies early: at Carmen's 89 Ryan is 64 and Chloe 56, so the HK$7.7M passes outright. The plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
 
 ## 13 · The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve
 *Wealth Management Connect · Pete · 0:40 · 82 spoken words (≈36 s at 135)*

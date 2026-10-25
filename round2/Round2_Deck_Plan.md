@@ -664,6 +664,13 @@ reviews strip (quarterly, yearly, and at once after the written case's five even
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**Right side as a family tree, 24 Oct evening** (Pete: too text-heavy, bland?). Yes on both: 240 words, the second
+densest slide, for 25 seconds; no picture at the emotional payoff; and the "IF THEY DIE EARLY" chips were the device
+removed from slide 7. Now "…and if a parent dies early, it still passes on safely": Adrian and Carmen's portraits
+("each to the other first, then to Ryan and Chloe", the mirror wills), a line down that branches to Ryan, 24 (his share
+in trust, paid at 25, 30, 35: 2027, 2032, 2037) and Chloe, 16 (a guardian until 18; 2035, 2040, 2045). The years come
+from the case ages. The scholarship is one line on mist. The MPF detail and "control, not tax" moved to the notes.
+200 words.
 **Left side reframed, 24 Oct evening** (Pete: with HK$24.4M today drawn beside HK$7.7M, the plan read as if it loses
 the family's money; we never said why HK$7.7M is good). Their wealth's first job is their own forty years, so the left
 now tells it in that order. HK$24.4M today stands as a figure, not a bar to compare lengths with. "First, it pays for

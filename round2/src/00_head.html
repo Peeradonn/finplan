@@ -1132,6 +1132,33 @@ svg.conn.q13c path{stroke-width:1.6}
 /* slide 12 (25 Oct, Fahtai): the left, what is left at Carmen's 89, compact; the right, larger, in two groups by when
    it applies: if they die early (wills, guardian, staged trusts) and a legacy with purpose (the scholarship, while they
    are alive). Classes q12w/q12r/q12g/q12h/q12c/q12p are this slide's only. */
+/* slide 12, right (24 Oct, Pete: too text-heavy, bland): how it passes on, as a small family tree in the family's own
+   portraits; each child's trust as three dated stages */
+.q12r{display:flex;flex-direction:column}
+.q12t{display:flex;flex-direction:column;align-items:center;margin-top:16px}
+.q12t .pic{width:52px;height:52px;margin:0;border:2px solid #fff;background:var(--mist);box-shadow:var(--lift);flex:none}
+.q12t .par{display:flex;flex-direction:column;align-items:center;text-align:center}
+.q12t .pp{display:flex}
+.q12t .pp .pic+.pic{margin-left:-12px}
+.q12t .par p{margin-top:6px;font:400 14px/1.35 var(--text);color:var(--ink)}
+.q12t .par p b{display:block;font:700 16px/1.3 var(--text)}
+.q12t .tree{position:relative;width:50%;height:30px;margin-top:8px}
+.q12t .tree::before{content:"";position:absolute;left:50%;top:0;height:14px;border-left:2px solid #D3A6AD}
+.q12t .tree::after{content:"";position:absolute;left:0;right:0;top:14px;height:16px;border:2px solid #D3A6AD;border-bottom:0;border-radius:10px 10px 0 0}
+.q12t .kids{display:grid;grid-template-columns:1fr 1fr;width:100%}
+.q12t .kid{display:flex;flex-direction:column;align-items:center;text-align:center}
+.q12t .kid>div{margin-top:6px}
+.q12t .kid b{display:block;font:700 16px/1.3 var(--text);color:var(--ink)}
+.q12t .kid p{font:400 14px/1.35 var(--text);color:var(--ink)}
+.q12t .st{position:relative;display:inline-flex;gap:24px;margin-top:8px}
+.q12t .st::before{content:"";position:absolute;left:8px;right:8px;top:7px;border-top:2px solid var(--rose)}
+.q12t .st span{position:relative;display:flex;flex-direction:column;align-items:center;gap:4px;font:700 15px/1 var(--text);color:var(--ink)}
+.q12t .st span::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--wine-g)}
+.q12t .st i{font:400 14px/1 var(--text);font-style:normal;color:var(--slate)}
+.q12sc{display:flex;gap:12px;align-items:center;margin-top:auto;padding:12px 16px;background:var(--mist);font:400 15px/1.4 var(--text);color:var(--ink)}
+.q12sc b{font-weight:700}
+.q12sc .ci{flex:none;width:36px;height:36px;border-radius:50%;background:var(--wine-g);display:flex;align-items:center;justify-content:center}
+.q12sc .ci .ic{width:19px;height:19px;stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 /* slide 12, left (24 Oct, Pete: beside HK$24.4M today, HK$7.7M looked like a loss): the wealth's first job is their own
    forty years, so today's figure stands alone, then what it pays for, then what is left, own way against plan */
 .q12f{flex:1;display:flex;flex-direction:column;margin-top:14px}
@@ -1153,18 +1180,6 @@ svg.conn.q13c path{stroke-width:1.6}
 .q12w .q12b i{height:34px}
 .q12w .q12b strong{font-size:28px;margin-left:10px}
 .q12w .q12b .on strong{font-size:48px}
-.q12r .q12g+.q12g{margin-top:12px}
-.q12h{display:flex;align-items:center;gap:10px;margin-top:12px;font:400 14px/1.3 var(--text);color:var(--slate)}
-.q12h .tg{flex:none;font:700 12px/1 var(--text);letter-spacing:.3px;text-transform:uppercase;color:#fff;background:var(--wine);padding:4px 7px}
-.q12c{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
-.q12c li{display:flex;flex-direction:column;gap:4px;border-top:1px solid var(--rule);padding-top:10px}
-.q12c .ci,.q12p .ci{flex:none;width:36px;height:36px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center}
-.q12c .ci .ic,.q12p .ci .ic{width:19px;height:19px;stroke:var(--wine);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.q12c b,.q12p b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
-.q12c p,.q12p p{font:400 14px/1.35 var(--text);color:var(--slate)}
-.q12c .q12s{width:150px;margin-top:6px}
-.q12p{display:flex;gap:12px;align-items:flex-start;margin-top:10px;border-top:1px solid var(--rule);padding-top:10px}
-.q12r .q12n{margin-top:auto}
 </style>
 </head>
 <body>
