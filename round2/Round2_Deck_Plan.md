@@ -140,6 +140,10 @@ the talk.
 5. **It moves the story.** It answers what the last slide left open and leaves the next question; the problem comes
    before the answer (§2). Nothing on it repeats the title, another part of the slide, or an earlier slide.
 6. **As simple as it can be while the point stays clear** (Pete, 23 Oct): fewer pieces, never a vaguer message.
+7. **An easy eye path, one focal point, nothing fighting** (Pete, 25 Oct): the reader can tell at once what to read
+   first and in what order. One entry per block (its heading, or one bold phrase, not both); crimson only on the
+   number the title names (one per half on a two-topic slide); labels such as "The price:" in ink, not a second accent.
+   Count the bold and coloured accents on a rendered slide: more than one per block means something is fighting.
 
 **Fixed** (constraints, on every slide):
 - 1280 × 720. Nothing meant to be read under 14 px: the judges may watch on Zoom.
@@ -536,6 +540,10 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**White space and eye path, 25 Oct.** The gaps left by the text cut went to the charts (taller ESG bars, a roomier key,
+wider and taller columns for Ryan, his text centred against them). Then the accents were cut to one per block: no
+inline bold under "Like for like" or in Ryan's text, the fund amounts plain, the price labels in ink. Crimson is on
+25% and 20% only, the two numbers the title names.
 **Text cut, 25 Oct** (Pete: still too text-heavy). 253 words to 190. Kept: what Win says and what a judge needs to
 trust it, one short line each ("the same risk, the same expected return"; "two ESG ratings per equity fund, or it is
 replaced"; Adrian none, Carmen up to 2% (ETF), Chloe none; Ryan's savings go to a world index fund, so the crypto's
