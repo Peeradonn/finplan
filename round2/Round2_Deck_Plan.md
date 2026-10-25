@@ -664,6 +664,11 @@ reviews strip (quarterly, yearly, and at once after the written case's five even
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**The scholarship's reason, 25 Oct** (Pete: why a legacy with purpose; did Chloe say sustainable design?). She didn't:
+the case says she "has expressed interest in pursuing undergraduate studies in business, psychology or design". The
+reason is the family's goal 8: "a possible philanthropic plan related to education or environmental causes". The slide
+now says so ("the education and environmental causes the family asked to support") instead of "Carmen's mission to
+Chloe's interest". The spoken line still says "joins Carmen's mission to Chloe's interest": Pete to approve a change.
 **Right side as a family tree, 24 Oct evening** (Pete: too text-heavy, bland?). Yes on both: 240 words, the second
 densest slide, for 25 seconds; no picture at the emotional payoff; and the "IF THEY DIE EARLY" chips were the device
 removed from slide 7. Now "…and if a parent dies early, it still passes on safely": Adrian and Carmen's portraits
