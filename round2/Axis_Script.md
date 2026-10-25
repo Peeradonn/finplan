@@ -2,9 +2,9 @@
 
 Generated 2026-10-25 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
-1235 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:31 at 145 words a minute (8:46 with handovers); 9:08 at 135 words a minute (9:23 with handovers); 9:52 at 125 words a minute (10:07 with handovers).
+1253 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:38 at 145 words a minute (8:53 with handovers); 9:16 at 135 words a minute (9:31 with handovers); 10:01 at 125 words a minute (10:16 with handovers).
 
-Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Fahtai 1:51, Win 1:39.
+Speaking time at 135 words a minute: Pete 3:48, Lookbua 1:56, Fahtai 1:51, Win 1:39.
 
 ## 1 · Built toLast
 *Pete, all · 0:20 · 33 spoken words (≈15 s at 135)*
@@ -82,11 +82,11 @@ Speaking time at 135 words a minute: Pete 3:40, Lookbua 1:56, Fahtai 1:51, Win 1
 **Lookbua:** It starts this month: wills and a joint account in month one, the cover within three months, a portfolio each within six, a family meeting at a year. After that, dates trigger each step: Chloe's offer in 2028, the business from 2035, the home and the annuities from 2037, the medical review in 2047. Pete.
 
 ## 12 · In the very futures where their own way sells the home, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M
-*What passes on · Pete · 0:25 · 56 spoken words (≈25 s at 135)*
+*What passes on · Pete · 0:25 · 74 spoken words (≈33 s at 135) · over its time*
 
-**Pete:** The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M, passed on in stages at 25, 30 and 35, with a scholarship in sustainable design: Carmen's mission, Chloe's interest.
+**Pete:** The legacy the case is named for: in the futures where Carmen had to sell, the plan leaves Ryan and Chloe HK$7.7M, not HK$2.3M. And if either parent dies early, the wills name a guardian for Chloe and hold each child's share in trust until 25, 30 and 35. Meanwhile, a scholarship in sustainable design joins Carmen's mission to Chloe's interest.
 
-> Notes: the plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
+> Notes: the staged trusts matter only if a parent dies early: at Carmen's 89 Ryan is 64 and Chloe 56, so the HK$7.7M passes outright. The plan leaves more than their own way in 97% of those futures; part of the gap is our advice on the survivor budget and the medical review.
 
 ## 13 · The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve
 *Wealth Management Connect · Pete · 0:40 · 82 spoken words (≈36 s at 135)*
