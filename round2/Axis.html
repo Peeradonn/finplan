@@ -461,10 +461,10 @@ p,li,span,b{text-wrap:pretty}
    a span; the bills label under its line, clear of the bracket's label */
 .s5c .stack{position:relative}
 .s5c .brk{position:absolute;left:calc(100% + 12px);width:10px;border:1.5px solid var(--ink);border-left:0;z-index:3}
-.s5c .brk>span{position:absolute;left:22px;top:-2px;width:196px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.s5c .brk>span{position:absolute;left:22px;top:-2px;width:196px;font:400 14px/1.35 var(--text);color:var(--ink)}
 .s5c .brk b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
 .s5c .bills span{top:6px!important}
-.s5c .s5w2{position:absolute;right:0;bottom:92px;width:200px;font:400 14px/1.4 var(--text);color:var(--slate);border-left:3px solid var(--rule);padding-left:12px}
+.s5c .s5w2{position:absolute;right:0;bottom:92px;width:200px;font:400 14px/1.4 var(--text);color:var(--ink);border-left:3px solid var(--rule);padding-left:12px}
 .s5c .s5w2 b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
 /* the deck's arrows (99_tail.html draws them; 24 Oct, first used on slide 5) */
 svg.conn{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:visible;pointer-events:none;z-index:6;color:var(--accent)}
@@ -472,13 +472,13 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .conn-label{position:absolute;transform:translate(-50%,-50%);font:600 14px/1.25 var(--text);color:var(--accent);white-space:nowrap;z-index:6;margin:0}
 .s5p{display:flex;align-items:center;gap:16px;margin-top:12px}
 .s5p strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
-.s5p span{font:400 15px/1.35 var(--text);color:var(--slate)}
+.s5p span{font:400 15px/1.35 var(--text);color:var(--ink)}
 /* the four covers as e-Sentry's bar list: name left, value right, a soft track and a filled bar with a rounded end */
-.s5b{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.s5b{display:flex;flex-direction:column;gap:16px;margin-top:18px}
 .s5b .lb{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
 .s5b .lb .ic{flex:none;align-self:center;width:20px;height:20px;fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .s5b .lb b{font:600 16px/1.2 var(--text);color:var(--ink)}
-.s5b .lb span{font:400 14px/1.2 var(--text);color:var(--slate)}
+.s5b .lb span{font:400 14px/1.2 var(--text);color:var(--ink)}
 .s5b .lb em{margin-left:auto;font:700 17px/1 var(--head);font-style:normal;color:var(--ink)}
 .s5b .tk{height:12px;background:var(--mist);border-radius:0 6px 6px 0}
 .s5b .tk i{display:block;height:12px;background:var(--wine-g);border-radius:0 6px 6px 0;min-width:6px}
@@ -721,7 +721,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
    boxes of claim, why, ticks and "if" lines they made eight blocks of equal weight, and left and right read as one box
    copied twice.) */
 .e9>.pn{display:flex;flex-direction:column}
-.e9gr{margin-top:auto;border-left:3px solid var(--wine);padding:2px 0 2px 14px;font:400 15px/1.45 var(--text);color:var(--slate)}
+.e9gr{margin-top:auto;border-left:3px solid var(--wine);padding:2px 0 2px 14px;font:400 15px/1.45 var(--text);color:var(--ink)}
 .e9gr b{color:var(--ink);font-weight:700}
 /* slide 9, 24 Oct rework (Pete: the right side missed that Ryan's crypto is kept and shrinks as he saves; the left should
    mark the growth and say why each fund, why these sizes, and the risk): the growth as one arrow; "like for like" as the
@@ -734,38 +734,39 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .e9w{display:flex;flex-direction:column;gap:5px;margin-top:14px}
 .e9w li{display:flex;gap:8px;align-items:flex-start}
 .e9w li>i{flex:none;width:12px;height:12px;margin-top:4px}
-.e9w p{display:grid;grid-template-columns:136px 76px 1fr;font:400 14px/1.35 var(--text);color:var(--slate)}
+.e9w p{display:grid;grid-template-columns:136px 76px 1fr;font:400 14px/1.35 var(--text);color:var(--ink)}
 .e9w p span{font-weight:600;color:var(--ink)}
 .e9w p b{font:600 15px/1.3 var(--text);color:var(--ink)}
 /* the claim: a heading a step below the panel's, then its reason in one quiet sentence */
 .e9lk{margin:16px 0 14px;padding-top:10px;border-top:1px solid var(--rule)}
 .e9lk h4{font:700 16px/1.3 var(--text);color:var(--ink)}
-.e9lk p{font:400 15px/1.45 var(--text);color:var(--slate);margin-top:4px}
+.e9lk p{font:400 15px/1.45 var(--text);color:var(--ink);margin-top:4px}
 .e9o{display:grid;grid-template-columns:repeat(3,1fr);column-gap:14px;margin-top:12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
 .e9o>div{display:flex;gap:10px;align-items:flex-start}
 .e9o .pic,.e9y .pic{flex:none;width:38px;height:38px;margin:0;border:0;background:var(--mist);box-shadow:var(--lift)}
-.e9o p{font:400 14px/1.3 var(--text);color:var(--slate)}
+.e9o p{font:400 14px/1.3 var(--text);color:var(--ink)}
 .e9o p b{display:block;font:600 15px/1.25 var(--text);color:var(--ink)}
 .e9y{flex:1;min-height:0;display:grid;grid-template-columns:190px 1fr;grid-template-rows:auto 1fr;column-gap:22px;align-items:end;padding:10px 0 8px}
 .e9y>.nm{grid-column:1/3;display:flex;align-items:center;gap:10px;align-self:start}
 .e9y>.nm b{font:700 16px/1.25 var(--text);color:var(--ink)}
 .e9y .tx{align-self:end;padding-bottom:20px}
-.e9y .tx p{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:6px}
+.e9y .tx p{font:400 14px/1.4 var(--text);color:var(--ink);margin-top:6px}
 .e9y .tx p b{color:var(--ink);font-weight:700}
 .e9y .tx .nm{display:flex;align-items:center;gap:10px;margin-top:0}
 .e9y .tx .nm b{font:700 16px/1.25 var(--text)}
-.e9v{position:relative;display:flex;align-items:flex-end;gap:18px;padding-right:128px}
-.e9v .cl{display:flex;flex-direction:column;align-items:center;width:64px}
+.e9v{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:22px}
+.e9v .cl{display:flex;flex-direction:column;align-items:center;width:78px}
 .e9v .cl em{font:700 22px/1 var(--head);font-style:normal;color:var(--ink);margin-bottom:6px;letter-spacing:-.3px}
 .e9v .cl.on em{font-size:34px;color:var(--accent);letter-spacing:-1px}
-.e9v .st{display:flex;flex-direction:column;width:64px}
-.e9v .st i{display:block;width:100%}
+.e9v .st{display:flex;flex-direction:column;width:78px}
+.e9v .st i{display:block;width:100%;position:relative}
+.e9v .cr b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 12px/1 var(--text);color:#fff;white-space:nowrap}
 .e9v .rs{background:var(--rose-g)}
 .e9v .cr{background:var(--wine-g)}
 .e9v .cl.on .cr{background:var(--accent-g)}
-.e9v .cl>span{font:400 14px/1.2 var(--text);color:var(--slate);margin-top:6px;white-space:nowrap}
-.e9v::before{content:"";position:absolute;left:0;right:122px;bottom:calc(20px + var(--cr));border-top:1.5px dashed var(--ink);z-index:1}   /* the crypto block's top, flat across the columns */
-.e9v .lv{position:absolute;right:0;bottom:calc(20px + var(--cr) - 18px);width:116px;font:400 14px/1.3 var(--text);color:var(--slate)}
+.e9v .cl>span{font:400 14px/1.2 var(--text);color:var(--ink);margin-top:6px;white-space:nowrap}
+.e9v::before{content:"";position:absolute;left:0;right:0;bottom:calc(20px + var(--cr));border-top:1.5px dashed var(--ink);z-index:1}   /* the crypto block's top, flat across the columns */
+.e9v .lv{position:absolute;right:0;bottom:calc(20px + var(--cr) - 18px);width:116px;font:400 14px/1.3 var(--text);color:var(--ink)}
 .e9v .lv b{display:block;font:600 14px/1.3 var(--text);color:var(--ink)}
 
 /* ==================== the presentation system, after Pete's own decks (23 Oct) ====================
@@ -799,6 +800,15 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .x3w{background:var(--mist);padding:10px 16px}
 /* the trade-off (23 Oct): on every call slide, what the family gives up, from the written case; a mist strip on the
    conclusion bar, so benefit and cost read together. A planner says the cost before the client asks. */
+/* 25 Oct (Pete: slides 5, 9, 10's presentation): each trade-off as its content's last line, the label in wine */
+.s5pr,.e9pr,.q10pr{font:400 14px/1.4 var(--text);color:var(--ink)}
+.s5pr b,.e9pr b,.q10pr b{font-weight:700;color:var(--wine)}
+.s5pr{margin-top:18px;padding:10px 14px;background:var(--mist);font-size:15px}
+.s5q{margin-top:auto;padding-top:12px;border-top:1px solid var(--rule);font:400 15px/1.45 var(--text);color:var(--ink)}
+.s5q b{font-weight:700}
+.e9pr{margin-top:8px}
+.q10pr{margin-top:12px;padding:10px 14px;background:var(--mist);font-size:15px}
+.q10pr strong{font-weight:700}
 .tr9{flex:none;display:flex;align-items:center;gap:10px;margin-top:14px;padding:9px 18px;background:var(--mist);font:400 15px/1.35 var(--text);color:var(--slate)}
 .tr9 b{flex:none;color:var(--ink);font-weight:600}
 .tr9 .ic{flex:none;width:20px;height:20px;stroke:var(--ink);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -921,7 +931,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10m .ci{background:var(--wine-g);color:#fff;box-shadow:var(--lift)}
 .q10m .ci .ic{width:20px;height:20px}
 .q10m b,.q12m b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
-.q10m p,.q12m p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:1px}
+.q10m p,.q12m p{font:400 14px/1.35 var(--text);color:var(--ink);margin-top:1px}
 
 /* slide 10: each hard test as one row, a dumbbell from the four decisions alone (hollow) to the full plan (filled) on
    one 0-100% scale, then what holds it. Only the title's test, the lost job, is crimson. */
@@ -939,7 +949,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10c{flex:1;display:flex;flex-direction:column}
 .q10r{flex:1;align-items:center;border-bottom:1px solid var(--rule);padding:4px 0}
 .q10l b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
-.q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
+.q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--ink)}
 /* each test as one rounded bar from 0% (Pete, 24 Oct: the arrows weren't premium): the four decisions alone in rose,
    then what the full plan adds in wine (crimson on the title's test), a white seam between; each value above its end */
 .q10t{position:relative;height:60px;--bb:12px;margin-right:16px}   /* the scale ends short of the column, so a 99% label clears the next one */
@@ -960,7 +970,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 /* what holds each test: one line a defence, its name in bold and what it does (Pete, 24 Oct: text, not pills; a list of
    names didn't say how, and full sentences were too busy for the column) */
 .q10d{display:flex;flex-direction:column;gap:3px}
-.q10d span{font:400 14px/1.35 var(--text);color:var(--slate);white-space:nowrap}
+.q10d span{font:400 14px/1.35 var(--text);color:var(--ink);white-space:nowrap}
 .q10d b{font-weight:600;color:var(--ink)}
 
 /* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
@@ -1108,13 +1118,17 @@ svg.conn.q13c path{stroke-width:1.6}
 /* the two fixes lead, numbered: an 18 px ink heading a step under the panel's, the number in a wine disc */
 .x7t h4{display:flex;align-items:center;gap:10px;font:700 18px/1.3 var(--text);color:var(--ink)}
 .x7t h4 i{flex:none;display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--wine-g);color:#fff;font:700 14px/1 var(--text);font-style:normal}
-.c9 .x7p{height:92px;margin:14px 0 0 44px}
+.c9 .x7p{height:96px;margin:14px 0 0 44px}
 .x7o{display:flex;align-items:baseline;gap:10px;margin:8px 0 0 36px}
 .x7o span{font:600 18px/1 var(--text);color:var(--slate);white-space:nowrap}
 .x7o strong{flex:none;font:700 34px/1 var(--head);color:var(--ink);letter-spacing:-1px}
 .x7o2{margin:6px 0 0 36px;font:600 15px/1.35 var(--text);color:var(--ink)}
 .x7o em{font:400 15px/1.35 var(--text);font-style:normal;color:var(--ink)}
-.x7rl{margin:6px 0 0 36px;font:400 15px/1.45 var(--text);color:var(--ink)}
+/* fix 2's three rules as a row of icons with short labels (25 Oct, Pete: slide 7 still read as text) */
+.x7ru{display:grid;grid-template-columns:1fr 1.1fr 1fr;column-gap:10px;margin:8px 0 0 36px}
+.x7ru li{display:flex;align-items:center;gap:8px;font:500 14px/1.25 var(--text);color:var(--ink)}
+.x7ru .ci{flex:none;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--wine-g)}
+.x7ru .ic{width:15px;height:15px;stroke:#fff;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 /* each fix's price sits in its own block (Pete, 24 Oct: the trade-off is needed, the repeated strip isn't) */
 .x7pr{margin:6px 0 0 36px;font:400 14px/1.4 var(--text);color:var(--ink)}
 .x7pr b{font-weight:600;color:var(--wine)}
@@ -1188,7 +1202,6 @@ svg.conn.q13c path{stroke-width:1.6}
 <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-briefcase-business" viewBox="0 0 24 24"><path d="M12 12h.01" /> <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /> <path d="M22 13a18.15 18.15 0 0 1-20 0" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol>
-<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
 <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
 <symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol>
 <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol>
@@ -1196,6 +1209,7 @@ svg.conn.q13c path{stroke-width:1.6}
 <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
 <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol>
 <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1" /> <rect x="2" y="16" width="6" height="6" rx="1" /> <rect x="9" y="2" width="6" height="6" rx="1" /> <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /> <path d="M12 12V8" /></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="4" width="4" height="16" rx="1" /> <rect x="6" y="4" width="4" height="16" rx="1" /></symbol>
 <symbol id="i-ph-briefcase" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M152,112a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,112Zm80-40V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56H80V48a24,24,0,0,1,24-24h48a24,24,0,0,1,24,24v8h40A16,16,0,0,1,232,72ZM96,56h64V48a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8Zm120,57.61V72H40v41.61A184,184,0,0,0,128,136,184,184,0,0,0,216,113.61Z"/></g></symbol>
 <symbol id="i-ph-chart-line-up" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM200,192H56a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v76.69l34.34-34.35a8,8,0,0,1,11.32,0L128,132.69,172.69,88H144a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8v48a8,8,0,0,1-16,0V99.31l-50.34,50.35a8,8,0,0,1-11.32,0L104,131.31l-40,40V176H200a8,8,0,0,1,0,16Z"/></g></symbol>
 <symbol id="i-ph-currency-btc" viewBox="0 0 24 24"><g transform="scale(0.09375)" fill="currentColor" stroke="none"><path d="M176,152a16,16,0,0,1-16,16H112V136h48A16,16,0,0,1,176,152Zm64-24A104,104,0,1,1,136,24,104.11,104.11,0,0,1,240,128Zm-48,24a32,32,0,0,0-15.51-27.42A32,32,0,0,0,160,73V64a8,8,0,0,0-16,0v8H128V64a8,8,0,0,0-16,0v8H96a8,8,0,0,0,0,16v80a8,8,0,0,0,0,16h16v8a8,8,0,0,0,16,0v-8h16v8a8,8,0,0,0,16,0v-8A32,32,0,0,0,192,152Zm-24-48a16,16,0,0,0-16-16H112v32h40A16,16,0,0,0,168,104Z"/></g></symbol>
@@ -1206,6 +1220,7 @@ svg.conn.q13c path{stroke-width:1.6}
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></symbol>
 <symbol id="i-scroll-text" viewBox="0 0 24 24"><path d="M15 12h-5" /> <path d="M15 8h-5" /> <path d="M19 17V5a2 2 0 0 0-2-2H4" /> <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-trending-down" viewBox="0 0 24 24"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7" /> <polyline points="16 17 22 17 22 11" /></symbol>
 <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
 <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
 </svg>
@@ -1442,13 +1457,10 @@ svg.conn.q13c path{stroke-width:1.6}
         <div class="br"><p class="lb"><svg class="ic"><use href="#i-hospital"/></svg><b>Medical of their own</b><span>before group cover ends</span><em>HK$15K</em></p><div class="tk"><i style="width:37%"></i></div></div>
         <div class="br"><p class="lb"><svg class="ic"><use href="#i-shield-check"/></svg><b>Term-life top-up</b><span>to 65 and 62</span><em>HK$7K</em></p><div class="tk"><i style="width:17%"></i></div></div>
       </div>
-      <div class="s5d" data-b="4">
-        <h4>And within three months, under HK$25K</h4>
-        <ul><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>Wills, with staged trusts</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>A guardian for Chloe</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>Powers of attorney</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>Advance directives</li><li><span class="mk"><svg class="ic"><use href="#i-check"/></svg></span>A buy-sell agreement</li></ul>
-      </div>
+      <p class="s5pr"><b>The price:</b> term cover lapses at 65 and 62; after that, their own policies and savings carry the risk.</p>
+      <p class="s5q" data-b="4"><b>And within three months, under HK$25K:</b> wills, a guardian for Chloe, powers of attorney, a buy-sell agreement</p>
     </div>
   </div>
-  <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>Term cover costs a fraction of whole life, but it lapses at 65 and 62; after that, their existing policies and savings carry the risk.</span></p>
   <p class="bar" data-b="4">Protected first: now the plan can turn what they own into income.</p>
   <svg class="conn" data-from=".s5c .gap" data-to=".s5c .ac" data-fa="tc" data-ta="cl" data-o1="0,-4" data-o2="-4,0" data-bend="0.8" data-label="his cover closes the gap" data-lo="-32,-40" data-b="2"></svg>
   <footer class="ft"><p class="src">Year-1 premiums from 2026 rate cards and the market range for disability cover; quotes to follow (estimated from market range and rate cards). Surplus: HK$718K a year after tax and MPF (written case §2).</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">5 / 15</span></footer>
@@ -1537,7 +1549,7 @@ svg.conn.q13c path{stroke-width:1.6}
       </div>
       <div class="x7t" data-b="3">
         <h4><i>2</i>From 2039, spending rules for the bad years</h4>
-        <p class="x7rl">No raise after a fall · a 10% trim if drawing too fast<br>Essentials are never cut</p>
+        <ul class="x7ru"><li><span class="ci"><svg class="ic"><use href="#i-pause"/></svg></span>No raise after a market fall</li><li><span class="ci"><svg class="ic"><use href="#i-trending-down"/></svg></span>A 10% trim if drawing too fast</li><li><span class="ci"><svg class="ic"><use href="#i-shield-check"/></svg></span>Essentials are never cut</li></ul>
         <p class="x7o2">With the rules, almost every future lasts to 89</p>
         <p class="x7pr"><b>The price:</b> typical spending about HK$41K a year lower.</p>
       </div>
@@ -1622,6 +1634,7 @@ svg.conn.q13c path{stroke-width:1.6}
       <div class="e9lk" data-b="2">
         <h4>Like for like, not a new bet</h4>
         <p>Each fund is sized by what it replaces, so risk and expected return stay where Call 4 set them, every sector still held. No ESG premium assumed.</p>
+        <p class="e9pr"><b>The price:</b> ESG funds cost a little more, and the choice is narrower.</p>
       </div>
       <p class="e9gr" data-b="2"><b>Tested, not trusted:</b> each equity fund must rate MSCI A or better and Sustainalytics below 20, or it is replaced within three months.</p>
     </div>
@@ -1637,18 +1650,17 @@ svg.conn.q13c path{stroke-width:1.6}
         <div class="tx">
           <p>His savings, 30% of his pay, go into a world index fund, so the crypto's share falls as everything else grows.</p>
           <p>A rally more than 10 points above the path is trimmed back.</p>
+          <p class="e9pr"><b>The price:</b> Ryan keeps the risk; a 70% fall would cost him HK$350K today.</p>
         </div>
-        <div class="e9v" style="--cr:22.4px">
-          <div class="cl"><em>74%</em><div class="st" style="height:30.2px"><i class="rs" style="height:7.8px"></i><i class="cr" style="height:22.4px"></i></div><span>today, 24</span></div>
-          <div class="cl"><em>32%</em><div class="st" style="height:70.0px"><i class="rs" style="height:47.6px"></i><i class="cr" style="height:22.4px"></i></div><span>at 30</span></div>
-          <div class="cl on"><em>20%</em><div class="st" style="height:112.0px"><i class="rs" style="height:89.6px"></i><i class="cr" style="height:22.4px"></i></div><span>at 35</span></div>
-          <p class="lv"><b>HK$500K of crypto</b>the same in every column</p>
+        <div class="e9v" style="--cr:20.0px">
+          <div class="cl"><em>74%</em><div class="st" style="height:27.0px"><i class="rs" style="height:7.0px"></i><i class="cr" style="height:20.0px"><b>HK$500K</b></i></div><span>today, 24</span></div>
+          <div class="cl"><em>32%</em><div class="st" style="height:62.5px"><i class="rs" style="height:42.5px"></i><i class="cr" style="height:20.0px"></i></div><span>at 30</span></div>
+          <div class="cl on"><em>20%</em><div class="st" style="height:100.0px"><i class="rs" style="height:80.0px"></i><i class="cr" style="height:20.0px"></i></div><span>at 35</span></div>
         </div>
       </div>
       <p class="e9gr" data-b="4"><b>Held where a regulator watches:</b> bought only through HKEX-listed ETFs or SFC-licensed platforms, with no lending or leverage.</p>
     </div>
   </div>
-  <p class="tr9" data-b="4"><svg class="ic"><use href="#i-scale"/></svg><b>The trade-off</b><span>ESG funds cost a little more and the choice is narrower; Ryan keeps his crypto, so a 70% fall would cost him HK$350K today.</span></p>
   <p class="bar" data-b="4">Their values and Ryan's conviction both fit, without risk the family can't carry.</p>
   <svg class="conn" data-from=".e9 i.g" data-to=".e9 i.s3" data-fa="cr" data-ta="tr" data-o1="6,0" data-o2="-3,-4" data-bend="0.28" data-label="+14 points" data-lo="-4,15"></svg>
   <footer class="ft"><p class="src">ESG: written case §6, Figure 16; raters: Berg, Kölbel and Rigobon (2022). Crypto: §7, Figures 17–18: Ryan's wealth sized from his crypto share, if all HK$500K is crypto, prices held flat, saving 30% of his pay.</p><nav class="nv"><span>The problem</span><span>The answer</span><b>The five calls</b><span>Will it hold</span><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">9 / 15</span></footer>
@@ -1683,6 +1695,7 @@ svg.conn.q13c path{stroke-width:1.6}
           <p class="q10d"><span><b>Annuities</b> pay for life</span></p></div>
       </div>
       <div class="q10x"><span></span><span class="ax"><i>0%</i><i>50%</i><i>100%</i></span><span></span></div>
+      <p class="q10pr" data-b="5"><b>The price of holding:</b> in years of low returns, the rules trim typical spending to <strong>about 86% of the budget</strong>; essentials are never cut.</p>
     </div>
     <div class="pn" style="grid-column:span 4" data-b="5">
       <h3>…and every other risk has a named defence</h3>
@@ -1696,7 +1709,6 @@ svg.conn.q13c path{stroke-width:1.6}
       </ul>
     </div>
   </div>
-  <p class="tr9" data-b="5"><svg class="ic"><use href="#i-scale"/></svg><b>The price of holding</b><span>in years of low returns, the rules trim typical spending to <strong>about 86% of the budget</strong>; essentials are never cut.</span></p>
   <p class="bar" data-b="5">It holds when the hardest things happen, and it starts this month.</p>
   <footer class="ft"><p class="src">Chance the money lasts to Carmen's 89 (95 in the last test), 10,000 simulated markets (measured): decisions compared in the same markets, not forecasts. Written case §11, Figure 26, A1.</p><nav class="nv"><span>The problem</span><span>The answer</span><span>The five calls</span><b>Will it hold</b><span>What next</span><span>Us</span></nav><span style="font:600 14px/1 var(--head);color:var(--ink)">10 / 15</span></footer>
   <aside class="notes">LOOKBUA: Then we tried to break the plan. The hardest test: Adrian loses his job at 60. The four decisions alone last in 30% of futures; the full plan, 83%. Years of low returns, or high inflation with dearer medical care: 92% or better. And if Carmen lives to 95: 99%. [Notes: we compare decisions in the same markets, we don't forecast them (also in the footer).]</aside>

@@ -461,10 +461,10 @@ p,li,span,b{text-wrap:pretty}
    a span; the bills label under its line, clear of the bracket's label */
 .s5c .stack{position:relative}
 .s5c .brk{position:absolute;left:calc(100% + 12px);width:10px;border:1.5px solid var(--ink);border-left:0;z-index:3}
-.s5c .brk>span{position:absolute;left:22px;top:-2px;width:196px;font:400 14px/1.35 var(--text);color:var(--slate)}
+.s5c .brk>span{position:absolute;left:22px;top:-2px;width:196px;font:400 14px/1.35 var(--text);color:var(--ink)}
 .s5c .brk b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
 .s5c .bills span{top:6px!important}
-.s5c .s5w2{position:absolute;right:0;bottom:92px;width:200px;font:400 14px/1.4 var(--text);color:var(--slate);border-left:3px solid var(--rule);padding-left:12px}
+.s5c .s5w2{position:absolute;right:0;bottom:92px;width:200px;font:400 14px/1.4 var(--text);color:var(--ink);border-left:3px solid var(--rule);padding-left:12px}
 .s5c .s5w2 b{display:block;font:600 15px/1.3 var(--text);color:var(--ink);margin-bottom:2px}
 /* the deck's arrows (99_tail.html draws them; 24 Oct, first used on slide 5) */
 svg.conn{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:visible;pointer-events:none;z-index:6;color:var(--accent)}
@@ -472,13 +472,13 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .conn-label{position:absolute;transform:translate(-50%,-50%);font:600 14px/1.25 var(--text);color:var(--accent);white-space:nowrap;z-index:6;margin:0}
 .s5p{display:flex;align-items:center;gap:16px;margin-top:12px}
 .s5p strong{font:700 46px/1 var(--head);color:var(--accent);letter-spacing:-1.5px}
-.s5p span{font:400 15px/1.35 var(--text);color:var(--slate)}
+.s5p span{font:400 15px/1.35 var(--text);color:var(--ink)}
 /* the four covers as e-Sentry's bar list: name left, value right, a soft track and a filled bar with a rounded end */
-.s5b{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.s5b{display:flex;flex-direction:column;gap:16px;margin-top:18px}
 .s5b .lb{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
 .s5b .lb .ic{flex:none;align-self:center;width:20px;height:20px;fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .s5b .lb b{font:600 16px/1.2 var(--text);color:var(--ink)}
-.s5b .lb span{font:400 14px/1.2 var(--text);color:var(--slate)}
+.s5b .lb span{font:400 14px/1.2 var(--text);color:var(--ink)}
 .s5b .lb em{margin-left:auto;font:700 17px/1 var(--head);font-style:normal;color:var(--ink)}
 .s5b .tk{height:12px;background:var(--mist);border-radius:0 6px 6px 0}
 .s5b .tk i{display:block;height:12px;background:var(--wine-g);border-radius:0 6px 6px 0;min-width:6px}
@@ -721,7 +721,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
    boxes of claim, why, ticks and "if" lines they made eight blocks of equal weight, and left and right read as one box
    copied twice.) */
 .e9>.pn{display:flex;flex-direction:column}
-.e9gr{margin-top:auto;border-left:3px solid var(--wine);padding:2px 0 2px 14px;font:400 15px/1.45 var(--text);color:var(--slate)}
+.e9gr{margin-top:auto;border-left:3px solid var(--wine);padding:2px 0 2px 14px;font:400 15px/1.45 var(--text);color:var(--ink)}
 .e9gr b{color:var(--ink);font-weight:700}
 /* slide 9, 24 Oct rework (Pete: the right side missed that Ryan's crypto is kept and shrinks as he saves; the left should
    mark the growth and say why each fund, why these sizes, and the risk): the growth as one arrow; "like for like" as the
@@ -734,38 +734,39 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .e9w{display:flex;flex-direction:column;gap:5px;margin-top:14px}
 .e9w li{display:flex;gap:8px;align-items:flex-start}
 .e9w li>i{flex:none;width:12px;height:12px;margin-top:4px}
-.e9w p{display:grid;grid-template-columns:136px 76px 1fr;font:400 14px/1.35 var(--text);color:var(--slate)}
+.e9w p{display:grid;grid-template-columns:136px 76px 1fr;font:400 14px/1.35 var(--text);color:var(--ink)}
 .e9w p span{font-weight:600;color:var(--ink)}
 .e9w p b{font:600 15px/1.3 var(--text);color:var(--ink)}
 /* the claim: a heading a step below the panel's, then its reason in one quiet sentence */
 .e9lk{margin:16px 0 14px;padding-top:10px;border-top:1px solid var(--rule)}
 .e9lk h4{font:700 16px/1.3 var(--text);color:var(--ink)}
-.e9lk p{font:400 15px/1.45 var(--text);color:var(--slate);margin-top:4px}
+.e9lk p{font:400 15px/1.45 var(--text);color:var(--ink);margin-top:4px}
 .e9o{display:grid;grid-template-columns:repeat(3,1fr);column-gap:14px;margin-top:12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
 .e9o>div{display:flex;gap:10px;align-items:flex-start}
 .e9o .pic,.e9y .pic{flex:none;width:38px;height:38px;margin:0;border:0;background:var(--mist);box-shadow:var(--lift)}
-.e9o p{font:400 14px/1.3 var(--text);color:var(--slate)}
+.e9o p{font:400 14px/1.3 var(--text);color:var(--ink)}
 .e9o p b{display:block;font:600 15px/1.25 var(--text);color:var(--ink)}
 .e9y{flex:1;min-height:0;display:grid;grid-template-columns:190px 1fr;grid-template-rows:auto 1fr;column-gap:22px;align-items:end;padding:10px 0 8px}
 .e9y>.nm{grid-column:1/3;display:flex;align-items:center;gap:10px;align-self:start}
 .e9y>.nm b{font:700 16px/1.25 var(--text);color:var(--ink)}
 .e9y .tx{align-self:end;padding-bottom:20px}
-.e9y .tx p{font:400 14px/1.4 var(--text);color:var(--slate);margin-top:6px}
+.e9y .tx p{font:400 14px/1.4 var(--text);color:var(--ink);margin-top:6px}
 .e9y .tx p b{color:var(--ink);font-weight:700}
 .e9y .tx .nm{display:flex;align-items:center;gap:10px;margin-top:0}
 .e9y .tx .nm b{font:700 16px/1.25 var(--text)}
-.e9v{position:relative;display:flex;align-items:flex-end;gap:18px;padding-right:128px}
-.e9v .cl{display:flex;flex-direction:column;align-items:center;width:64px}
+.e9v{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:22px}
+.e9v .cl{display:flex;flex-direction:column;align-items:center;width:78px}
 .e9v .cl em{font:700 22px/1 var(--head);font-style:normal;color:var(--ink);margin-bottom:6px;letter-spacing:-.3px}
 .e9v .cl.on em{font-size:34px;color:var(--accent);letter-spacing:-1px}
-.e9v .st{display:flex;flex-direction:column;width:64px}
-.e9v .st i{display:block;width:100%}
+.e9v .st{display:flex;flex-direction:column;width:78px}
+.e9v .st i{display:block;width:100%;position:relative}
+.e9v .cr b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 12px/1 var(--text);color:#fff;white-space:nowrap}
 .e9v .rs{background:var(--rose-g)}
 .e9v .cr{background:var(--wine-g)}
 .e9v .cl.on .cr{background:var(--accent-g)}
-.e9v .cl>span{font:400 14px/1.2 var(--text);color:var(--slate);margin-top:6px;white-space:nowrap}
-.e9v::before{content:"";position:absolute;left:0;right:122px;bottom:calc(20px + var(--cr));border-top:1.5px dashed var(--ink);z-index:1}   /* the crypto block's top, flat across the columns */
-.e9v .lv{position:absolute;right:0;bottom:calc(20px + var(--cr) - 18px);width:116px;font:400 14px/1.3 var(--text);color:var(--slate)}
+.e9v .cl>span{font:400 14px/1.2 var(--text);color:var(--ink);margin-top:6px;white-space:nowrap}
+.e9v::before{content:"";position:absolute;left:0;right:0;bottom:calc(20px + var(--cr));border-top:1.5px dashed var(--ink);z-index:1}   /* the crypto block's top, flat across the columns */
+.e9v .lv{position:absolute;right:0;bottom:calc(20px + var(--cr) - 18px);width:116px;font:400 14px/1.3 var(--text);color:var(--ink)}
 .e9v .lv b{display:block;font:600 14px/1.3 var(--text);color:var(--ink)}
 
 /* ==================== the presentation system, after Pete's own decks (23 Oct) ====================
@@ -799,6 +800,15 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .x3w{background:var(--mist);padding:10px 16px}
 /* the trade-off (23 Oct): on every call slide, what the family gives up, from the written case; a mist strip on the
    conclusion bar, so benefit and cost read together. A planner says the cost before the client asks. */
+/* 25 Oct (Pete: slides 5, 9, 10's presentation): each trade-off as its content's last line, the label in wine */
+.s5pr,.e9pr,.q10pr{font:400 14px/1.4 var(--text);color:var(--ink)}
+.s5pr b,.e9pr b,.q10pr b{font-weight:700;color:var(--wine)}
+.s5pr{margin-top:18px;padding:10px 14px;background:var(--mist);font-size:15px}
+.s5q{margin-top:auto;padding-top:12px;border-top:1px solid var(--rule);font:400 15px/1.45 var(--text);color:var(--ink)}
+.s5q b{font-weight:700}
+.e9pr{margin-top:8px}
+.q10pr{margin-top:12px;padding:10px 14px;background:var(--mist);font-size:15px}
+.q10pr strong{font-weight:700}
 .tr9{flex:none;display:flex;align-items:center;gap:10px;margin-top:14px;padding:9px 18px;background:var(--mist);font:400 15px/1.35 var(--text);color:var(--slate)}
 .tr9 b{flex:none;color:var(--ink);font-weight:600}
 .tr9 .ic{flex:none;width:20px;height:20px;stroke:var(--ink);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -921,7 +931,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10m .ci{background:var(--wine-g);color:#fff;box-shadow:var(--lift)}
 .q10m .ci .ic{width:20px;height:20px}
 .q10m b,.q12m b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
-.q10m p,.q12m p{font:400 14px/1.35 var(--text);color:var(--slate);margin-top:1px}
+.q10m p,.q12m p{font:400 14px/1.35 var(--text);color:var(--ink);margin-top:1px}
 
 /* slide 10: each hard test as one row, a dumbbell from the four decisions alone (hollow) to the full plan (filled) on
    one 0-100% scale, then what holds it. Only the title's test, the lost job, is crimson. */
@@ -939,7 +949,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .q10c{flex:1;display:flex;flex-direction:column}
 .q10r{flex:1;align-items:center;border-bottom:1px solid var(--rule);padding:4px 0}
 .q10l b{display:block;font:600 16px/1.3 var(--text);color:var(--ink)}
-.q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--slate)}
+.q10l span{display:block;font:400 14px/1.35 var(--text);color:var(--ink)}
 /* each test as one rounded bar from 0% (Pete, 24 Oct: the arrows weren't premium): the four decisions alone in rose,
    then what the full plan adds in wine (crimson on the title's test), a white seam between; each value above its end */
 .q10t{position:relative;height:60px;--bb:12px;margin-right:16px}   /* the scale ends short of the column, so a 99% label clears the next one */
@@ -960,7 +970,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 /* what holds each test: one line a defence, its name in bold and what it does (Pete, 24 Oct: text, not pills; a list of
    names didn't say how, and full sentences were too busy for the column) */
 .q10d{display:flex;flex-direction:column;gap:3px}
-.q10d span{font:400 14px/1.35 var(--text);color:var(--slate);white-space:nowrap}
+.q10d span{font:400 14px/1.35 var(--text);color:var(--ink);white-space:nowrap}
 .q10d b{font-weight:600;color:var(--ink)}
 
 /* slide 11: the first year as a staircase of deadlines (each bar ends on its month, on a 12-month track), then the dated
@@ -1108,13 +1118,17 @@ svg.conn.q13c path{stroke-width:1.6}
 /* the two fixes lead, numbered: an 18 px ink heading a step under the panel's, the number in a wine disc */
 .x7t h4{display:flex;align-items:center;gap:10px;font:700 18px/1.3 var(--text);color:var(--ink)}
 .x7t h4 i{flex:none;display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--wine-g);color:#fff;font:700 14px/1 var(--text);font-style:normal}
-.c9 .x7p{height:92px;margin:14px 0 0 44px}
+.c9 .x7p{height:96px;margin:14px 0 0 44px}
 .x7o{display:flex;align-items:baseline;gap:10px;margin:8px 0 0 36px}
 .x7o span{font:600 18px/1 var(--text);color:var(--slate);white-space:nowrap}
 .x7o strong{flex:none;font:700 34px/1 var(--head);color:var(--ink);letter-spacing:-1px}
 .x7o2{margin:6px 0 0 36px;font:600 15px/1.35 var(--text);color:var(--ink)}
 .x7o em{font:400 15px/1.35 var(--text);font-style:normal;color:var(--ink)}
-.x7rl{margin:6px 0 0 36px;font:400 15px/1.45 var(--text);color:var(--ink)}
+/* fix 2's three rules as a row of icons with short labels (25 Oct, Pete: slide 7 still read as text) */
+.x7ru{display:grid;grid-template-columns:1fr 1.1fr 1fr;column-gap:10px;margin:8px 0 0 36px}
+.x7ru li{display:flex;align-items:center;gap:8px;font:500 14px/1.25 var(--text);color:var(--ink)}
+.x7ru .ci{flex:none;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--wine-g)}
+.x7ru .ic{width:15px;height:15px;stroke:#fff;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 /* each fix's price sits in its own block (Pete, 24 Oct: the trade-off is needed, the repeated strip isn't) */
 .x7pr{margin:6px 0 0 36px;font:400 14px/1.4 var(--text);color:var(--ink)}
 .x7pr b{font-weight:600;color:var(--wine)}

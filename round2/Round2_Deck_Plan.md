@@ -348,6 +348,10 @@ the accent, the only accent on the slide.
 - Bar: "Five calls, one family: the rest of this talk defends each one."
 
 ### 5 · Call 1: insure the income, not the life (Lookbua; 0:40)
+**Presentation pass, 25 Oct** (Pete: slides 5, 7, 9, 10 present their points poorly). The trade-off strip is gone: its
+price now ends the covers ("The price: term cover lapses at 65 and 62 …", on mist). The papers checklist (five ticked
+boxes) is one line at the panel's floor, since Lookbua speaks them and slides 11 and 12 show them. Content text in ink;
+the bar list breathes.
 **Rebuilt again the same day around one scenario** (Pete: a big table is not a presentation). Left: "If Adrian
 couldn't work tomorrow…", the household's money each month against its HK$82K of bills: today Carmen's HK$60K leaves
 HK$22K short every month (a dashed gap); with the plan his cover, HK$65K a month to 65, lifts them over the line
@@ -429,6 +433,8 @@ column is two bars on one scale: their own way (grey) and decided now (the accen
   {{own_sale_age}}" is cut: it restated the title.
 
 ### 7 · Call 3: fix the cost the budget ignores (Fahtai; 0:40)
+**Presentation pass, 25 Oct.** Fix 2's three rules are a row of icons with short labels (pause, a 10% trim, a shield
+for essentials) rather than a line of text, so both fixes have a picture.
 **Third pass, 24 Oct evening** (Pete: heading 1 clashed with the chart's lines; grey text hard to read; is the
 trade-off strip needed on every slide?). The review's label now sits inside the chart beside its line, so the line no
 longer rises into the heading. Every content line is ink; grey (slate) is kept for the caption and the axis labels.
@@ -530,6 +536,10 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Presentation pass, 25 Oct.** The trade-off strip is gone: each half ends on its own price ("The price: ESG funds
+cost a little more …"; "The price: Ryan keeps the risk; a 70% fall would cost him HK$350K today"). Ryan's columns are
+wider and centred, the crypto block labelled HK$500K inside the first column instead of a legend at the side. All
+content text in ink.
 **Left column, second pass, 24 Oct evening** (Pete: still too full, no hierarchy, and the arrow pointed nowhere). Now
 three levels, one job each. The picture: the arrow joins the end of today's bar to the end of the plan's, "+14 points"
 under its curve, and "11%" sits inside today's bar so the arrow has a start. The key: one line a fund, in its segment's
@@ -582,6 +592,8 @@ downgrade rule are in the notes.
   Ryan keeps his crypto, so a 70% fall would cost him HK$350K today (his cap brings it to 14% of his wealth by 35).
 
 ### 10 · Will it hold? (Lookbua; 0:30)
+**Presentation pass, 25 Oct.** The price-of-holding strip now sits under the chart it belongs to, inside the left
+panel; the risk register's detail and the rows' descriptions in ink.
 **Third pass, 24 Oct evening** (Pete: the arrows weren't premium; "what holds it" needed to look better). Each test is
 now one rounded bar from 0% on a soft track. The rose part is the four decisions alone, and the wine part, after a white
 seam, is what the review at 75 and the spending rules add (crimson on the lost job); each value sits above its end. It

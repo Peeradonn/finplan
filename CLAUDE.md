@@ -83,9 +83,9 @@ Pete found the results locked into one way and below standard (23 Oct).
 ### Untested assumptions about the deck (test these, don't build on them)
 1. The judges read the PowerPoint closely on its own, so slides must carry the facts; or they mostly meet it in the
    video, so lighter slides would score better. The criterion says only "quality of ppt".
-2. Every call is better with a trade-off strip on it. Slide 7 (Call 3) dropped it on 24 Oct, with each fix's price
-   inside its own block; Calls 1, 2, 4 and 5 still carry the same strip. Each call must still show its price (plan §4);
-   the strip is only one way. (The crimson conclusion bar is Pete's decision, 24 Oct, not an assumption.)
+2. Every call is better with a trade-off strip on it. Calls 1, 3 and 5 (slides 5, 7, 9) dropped it on 24-25 Oct, each
+   price now inside the content it belongs to; Calls 2 and 4 (slides 6, 8) still carry the strip. Each call must still
+   show its price (plan §4); the strip is only one way. (The crimson bar is Pete's decision, 24 Oct.)
 3. The 1,200-word script fits 10:00 at our real pace, with handovers (135 words a minute is assumed until the timed
    read-through).
 4. "Their own way" convinces a practitioner as the baseline, rather than reading as a second strawman (the
