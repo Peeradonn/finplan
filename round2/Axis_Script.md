@@ -1,6 +1,6 @@
 # Built to Last: the script (Team Axis)
 
-Generated 2026-10-24 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
+Generated 2026-10-25 by `round2/make.py` from the slides' speaker notes; numbers from `figures/numbers.json`. Edit the words in `round2/src/*.html`, not here.
 
 1235 spoken words (the budget is 1,200). Slides allotted 9:30. Speech: 8:31 at 145 words a minute (8:46 with handovers); 9:08 at 135 words a minute (9:23 with handovers); 9:52 at 125 words a minute (10:07 with handovers).
 
