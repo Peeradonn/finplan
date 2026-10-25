@@ -162,6 +162,11 @@ the talk.
   has been said: greyed text still pulled the eye while the speaker was on something else. Slides 2, 4 and 14 keep the
   grey, where seeing what is coming helps. `make.py --builds` writes one frame per step (`Axis_builds.html`,
   `build/frames/`) for the video; rebuild the frames after any slide change, before recording.
+  **Recording in Zoom (25 Oct):** the team shares `round2/Axis_present.pptx` (`make_pptx.py`), where the same steps are
+  PowerPoint clicks (a 300 ms fade each; hidden on the reveal slides, greyed on 2, 4 and 14), with Morph into Calls 1 to
+  5 so slide 4's house glides into each call's corner. The submitted `Axis.pptx` has the transitions but no builds, so
+  a judge clicking through sees every slide complete. Checked in a video PowerPoint exported itself (slides 3 to 6, 13
+  and 14): no blink on slide 4's last click, no stray shapes in the Morphs.
 - Each call (5 to 9) shows on the slide what the family gives up for it (Pete, 23 Oct: a planner names the cost before
   the client asks, and the judges score "client suitability awareness"). Where and how it shows is open.
 

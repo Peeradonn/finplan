@@ -85,14 +85,22 @@
     'stroke-dashoffset', 'stroke-linecap', 'stroke-linejoin', 'stroke-miterlimit', 'opacity', 'color', 'font-family',
     'font-size', 'font-weight', 'font-style', 'text-anchor', 'dominant-baseline', 'vector-effect', 'marker-start',
     'marker-mid', 'marker-end', 'stop-color', 'stop-opacity'];
-  function standaloneSvg(svg, crop) {
+  const DEFS = 'defs,linearGradient,radialGradient,stop,marker,clipPath,mask,pattern,symbol,filter';
+  function standaloneSvg(svg, crop, layer) {
+    // layer: {step, base} -> keep only what is spoken in that build step (a house floor, a ribbon); undefined -> all
     const clone = svg.cloneNode(true);
     const os = [svg, ...svg.querySelectorAll('*')], cl = [clone, ...clone.querySelectorAll('*')];
+    const stepIn = o => { for (let x = o; x && x !== svg; x = x.parentElement) if (x.dataset && x.dataset.b) return +x.dataset.b; return layer ? layer.base : 1; };
     os.forEach((o, i) => {
       const cs = getComputedStyle(o);
       let s = '';
       for (const p of PROPS) { const v = cs.getPropertyValue(p); if (v && v !== 'none' || p === 'fill' || p === 'stroke') s += `${p}:${v};`; }
       if (cs.display === 'none' || cs.visibility === 'hidden') s += 'display:none;';
+      if (layer && o !== svg && !o.closest(DEFS)) {
+        const keep = stepIn(o) === layer.step || o.querySelector(`[data-b="${layer.step}"]`) ||
+                     (layer.step === layer.base && [...o.querySelectorAll('[data-b]')].some(e => !e.closest(DEFS) && +e.dataset.b === layer.base));
+        if (!keep) s += 'display:none;';
+      }
       cl[i].setAttribute('style', s);
       cl[i].removeAttribute('class');
       cl[i].removeAttribute('data-b');
@@ -301,9 +309,11 @@
       }
       return 0;
     };
+    // the build step an element is spoken in: data-b on it or its nearest ancestor (1 = on screen from the start)
+    const stepOf = el => { for (let x = el; x && x !== slide.parentElement; x = x.parentElement) if (x.dataset && x.dataset.b) return +x.dataset.b; return 1; };
     const push0 = items.push.bind(items);
     let zEl = slide;
-    items.push = it => push0({...it, z: it.z !== undefined ? it.z : zOf(zEl)});
+    items.push = it => push0({...it, z: it.z !== undefined ? it.z : zOf(zEl), b: it.b !== undefined ? it.b : stepOf(zEl)});
 
     function clipOf(el) {
       for (let a = el.parentElement; a && a !== slide; a = a.parentElement) {
@@ -337,11 +347,22 @@
           crop = {x: bb.x - 8, y: bb.y - 8, w: bb.width + 16, h: bb.height + 16};
           pos = {x: b.x + crop.x * b.w / 1280, y: b.y + crop.y * b.h / 720, w: crop.w * b.w / 1280, h: crop.h * b.h / 720};
         }
-        const sv = standaloneSvg(el, crop);
-        if (!crop && (sv.dx || sv.dy || Math.abs(sv.w - b.w) > 0.5 || Math.abs(sv.h - b.h) > 0.5)) pos = {x: b.x + sv.dx, y: b.y + sv.dy, w: sv.w, h: sv.h};
-        const ix = asset('svg:' + sv.text, () => ({kind: 'svg', svg: sv.text, png: null, w: sv.w, h: sv.h}));
-        if (!assets[ix].queued) { assets[ix].queued = true; pending.push(rasterize(sv.text, sv.w, sv.h, 3).then(p => { assets[ix].png = p; })); }
-        items.push({k: 'svg', ...pos, op: o, a: ix});
+        const role = el.classList.contains('hx') || el.classList.contains('house') ? 'house' : '';
+        const base = stepOf(el);
+        const steps = new Set([base]);
+        el.querySelectorAll('[data-b]').forEach(e => { if (!e.closest(DEFS)) steps.add(+e.dataset.b); });
+        const add = (layer, extra) => {
+          const sv = standaloneSvg(el, crop, layer);
+          let p = pos;
+          if (!crop && (sv.dx || sv.dy || Math.abs(sv.w - b.w) > 0.5 || Math.abs(sv.h - b.h) > 0.5)) p = {x: b.x + sv.dx, y: b.y + sv.dy, w: sv.w, h: sv.h};
+          const ix = asset('svg:' + sv.text, () => ({kind: 'svg', svg: sv.text, png: null, w: sv.w, h: sv.h}));
+          if (!assets[ix].queued) { assets[ix].queued = true; pending.push(rasterize(sv.text, sv.w, sv.h, 3).then(q => { assets[ix].png = q; })); }
+          items.push({k: 'svg', ...p, op: o, a: ix, role, b: base, ...extra});
+        };
+        add(undefined, steps.size > 1 ? {whole: true} : {});
+        // a drawing whose parts are spoken in turn (slide 4's house, slide 6's ribbons): one layer per step as well,
+        // for the presenting copy's builds; the submitted copy uses the whole drawing
+        if (steps.size > 1) for (const s of [...steps].sort((p, q) => p - q)) add({step: s, base}, {b: s, layer: true});
         return;
       }
       if (tag === 'img') {
@@ -364,8 +385,7 @@
       if (byOwner.has(el)) { const t = textItem(el); if (t) items.push(t); }
     }
     walk(slide, 1);
-    // text owned by elements the walk didn't reach (shouldn't happen) is reported, not lost silently
-    return items;
+    return {items, reveal: slide.classList.contains('reveal')};
   }
 
   async function main() {

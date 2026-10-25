@@ -159,7 +159,13 @@ fallback. PowerPoint itself (`tools/pptx_office.ps1`) then renders every slide t
 checking and saves a copy with Plus Jakarta Sans embedded (whole fonts; the font must be installed for the user, as it
 is on Pete's machine); the script rewrites that copy's metadata to "Team Axis" and stops if any e-mail address or
 university name is left in the package. Rebuild after any slide change; edit the HTML, not the .pptx, or the next
-build overwrites the edit. **Don't open and re-save it in PowerPoint while signed in** (Office stamps the account into
+build overwrites the edit. **Two files** (Pete, 25 Oct: we record in Zoom, sharing PowerPoint): `Axis.pptx` is the one
+submitted, every slide complete; `Axis_present.pptx` is the one shared in Zoom, one click per build step in the deck's
+`data-b` order (the script's order; each slide's notes end with its click cues). Both have a 0.5 s fade between slides
+and Morph into Calls 1 to 5 (slides 5 to 9): the house from slide 4 glides into the corner and fills floor by floor.
+Every shape is named "!!…" so Morph pairs only identical things (the footer, the house) and fades the rest; slide 4's
+wine stage is the slide background, not a shape, for the same reason. `make_pptx.py --only present|submit` rebuilds
+one; it stops if the target file is open in PowerPoint. **Don't open and re-save it in PowerPoint while signed in** (Office stamps the account into
 the file); if someone must, scrub it and check with `make_pptx.py --check round2/Axis.pptx`.
 
 ## Round One: the document (frozen)

@@ -1,9 +1,16 @@
 # PowerPoint's own step for round2/make_pptx.py: open the generated deck read-only, export each slide as a PNG (for
 # checking against the HTML), and, with -Out, save a copy with the TrueType fonts embedded (Plus Jakarta Sans must be
 # installed for the user). make_pptx.py then rewrites the copy's metadata: saving here stamps the signed-in account.
+# If PowerPoint is already open (someone viewing the deck), this works inside that instance and leaves it open: it
+# closes only the presentation it opened.
 param([string]$In, [string]$Out = "", [string]$PngDir = "")
 $ErrorActionPreference = "Stop"
-$pp = New-Object -ComObject PowerPoint.Application
+$wasRunning = [bool](Get-Process POWERPNT -ErrorAction SilentlyContinue)
+$pp = $null
+for ($try = 0; $try -lt 20 -and -not $pp; $try++) {
+  try { $pp = New-Object -ComObject PowerPoint.Application } catch { Start-Sleep -Milliseconds 750 }
+}
+if (-not $pp) { throw "PowerPoint did not answer (busy with a dialog?)" }
 try {
   $pres = $pp.Presentations.Open($In, -1, 0, 0)          # ReadOnly, not Untitled, no window
   if ($PngDir) {
@@ -19,6 +26,6 @@ try {
   }
   $pres.Close()
 } finally {
-  $pp.Quit()
+  if (-not $wasRunning -and $pp.Presentations.Count -eq 0) { $pp.Quit() }
   [System.Runtime.Interopservices.Marshal]::ReleaseComObject($pp) | Out-Null
 }

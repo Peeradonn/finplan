@@ -47,7 +47,8 @@ from pptx.util import Emu, Pt
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DECK = os.path.join(HERE, "Axis.html")
-OUT = os.path.join(HERE, "Axis.pptx")
+OUT = os.path.join(HERE, "Axis.pptx")                     # submitted: every slide complete, transitions only
+OUT_PRESENT = os.path.join(HERE, "Axis_present.pptx")     # shared in Zoom: one click per build step
 WORK = os.path.join(HERE, "build", "pptx")
 CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
           r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
@@ -474,6 +475,8 @@ def add_picture(slide, prs, it, assets, svg_parts):
     if it["op"] < 0.98:
         blip = pic._element.blipFill.find(qn("a:blip"))
         blip.append(a("alphaModFix", amt=int(it["op"] * 100000)))
+    if it.get("grey"):
+        pic._element.blipFill.find(qn("a:blip")).append(a("grayscl"))
     if ast["kind"] in ("svg", "svgimg") and ast.get("svg"):    # the vector original, PowerPoint 365 shows it
         key = it["a"]
         if key not in svg_parts:
@@ -509,24 +512,211 @@ def add_sections(prs):
     lst.append(ext)
 
 
-def build(data, info, path, cal):
+# ---------------------------------------------------------------- 2b. motion: transitions, builds
+P_NS = "http://schemas.openxmlformats.org/presentationml/2006/main"
+
+
+def grey_rgba(c):
+    g = 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2]
+    return [g, g, g] + list(c[3:4] or [1])
+
+
+def greyed(it):
+    """the deck's 'still to come' look (filter: grayscale(1); opacity: .3), for slides 2, 4 and 14"""
+    import copy
+    it = copy.deepcopy(it)
+    it["op"] = it.get("op", 1) * 0.3
+    if it.get("fill"):
+        it["fill"] = grey_rgba(it["fill"])
+    if it.get("tri"):
+        it["tri"]["c"] = grey_rgba(it["tri"]["c"])
+    for b in (it.get("border") or {}).values():
+        b["c"] = grey_rgba(b["c"])
+    sub = lambda s: re.sub(r"rgba?\(([^)]+)\)", lambda m: "rgba(%s)" % ", ".join(
+        [str(round(grey_rgba(parse_rgba(m.group(0)))[0]))] * 3 + [str(parse_rgba(m.group(0))[3])]), s)
+    for key in ("grad", "shadow"):
+        if it.get(key):
+            it[key] = sub(it[key])
+    for L in it.get("lines", []):
+        for r in L["runs"]:
+            r["op"] = r.get("op", 1) * 0.3
+            if r.get("col"):
+                r["col"] = grey_rgba(r["col"])
+    if it["k"] in ("img", "svg"):
+        it["grey"] = True
+    return it
+
+
+def transition_el(kind):
+    """Morph between slides that keep the same frame and house; a quick fade elsewhere"""
+    if kind == "morph":
+        xml = ('<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">'
+               '<mc:Choice xmlns:p159="http://schemas.microsoft.com/office/powerpoint/2015/09/main" Requires="p159">'
+               f'<p:transition xmlns:p="{P_NS}" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" '
+               'spd="slow" p14:dur="900"><p159:morph option="byObject"/></p:transition></mc:Choice>'
+               f'<mc:Fallback><p:transition xmlns:p="{P_NS}" spd="fast"><p:fade/></p:transition></mc:Fallback>'
+               '</mc:AlternateContent>')
+    else:
+        xml = f'<p:transition xmlns:p="{P_NS}" spd="fast"><p:fade/></p:transition>'
+    return etree.fromstring(xml)
+
+
+def timing_el(clicks, bld):
+    """the slide's main sequence: one click per build step; each shape fades in (300 ms), all of a step together;
+    'exits' disappear in the same click (the house swap before the Morph). bld: spids of shapes with a text body."""
+    n = [2]
+
+    def nid():
+        n[0] += 1
+        return n[0]
+
+    def effect(spid, first, exit_=False):
+        a_id, s_id = nid(), nid()
+        if exit_:                                       # after the entrances' 300 ms fade, so nothing blinks
+            return (f'<p:par><p:cTn id="{a_id}" presetID="1" presetClass="exit" presetSubtype="0" fill="hold" grpId="1" '
+                    f'nodeType="{"clickEffect" if first else "withEffect"}"><p:stCondLst><p:cond delay="320"/></p:stCondLst>'
+                    f'<p:childTnLst><p:set><p:cBhvr><p:cTn id="{s_id}" dur="1" fill="hold"><p:stCondLst><p:cond delay="0"/>'
+                    f'</p:stCondLst></p:cTn><p:tgtEl><p:spTgt spid="{spid}"/></p:tgtEl><p:attrNameLst><p:attrName>'
+                    'style.visibility</p:attrName></p:attrNameLst></p:cBhvr><p:to><p:strVal val="hidden"/></p:to></p:set>'
+                    '</p:childTnLst></p:cTn></p:par>')
+        f_id = nid()
+        return (f'<p:par><p:cTn id="{a_id}" presetID="10" presetClass="entr" presetSubtype="0" fill="hold" grpId="0" '
+                f'nodeType="{"clickEffect" if first else "withEffect"}"><p:stCondLst><p:cond delay="0"/></p:stCondLst>'
+                f'<p:childTnLst><p:set><p:cBhvr><p:cTn id="{s_id}" dur="1" fill="hold"><p:stCondLst><p:cond delay="0"/>'
+                f'</p:stCondLst></p:cTn><p:tgtEl><p:spTgt spid="{spid}"/></p:tgtEl><p:attrNameLst><p:attrName>'
+                'style.visibility</p:attrName></p:attrNameLst></p:cBhvr><p:to><p:strVal val="visible"/></p:to></p:set>'
+                f'<p:animEffect transition="in" filter="fade"><p:cBhvr><p:cTn id="{f_id}" dur="300"/><p:tgtEl>'
+                f'<p:spTgt spid="{spid}"/></p:tgtEl></p:cBhvr></p:animEffect></p:childTnLst></p:cTn></p:par>')
+
+    groups = ""
+    for ins, outs in clicks:
+        g1, g2 = nid(), nid()
+        eff = "".join(effect(sp, i == 0) for i, sp in enumerate(ins))
+        eff += "".join(effect(sp, not ins and i == 0, exit_=True) for i, sp in enumerate(outs))
+        groups += (f'<p:par><p:cTn id="{g1}" fill="hold"><p:stCondLst><p:cond delay="indefinite"/></p:stCondLst>'
+                   f'<p:childTnLst><p:par><p:cTn id="{g2}" fill="hold"><p:stCondLst><p:cond delay="0"/></p:stCondLst>'
+                   f'<p:childTnLst>{eff}</p:childTnLst></p:cTn></p:par></p:childTnLst></p:cTn></p:par>')
+    blds = "".join(f'<p:bldP spid="{sp}" grpId="{g}" animBg="1"/>' for sp, g in bld)
+    xml = (f'<p:timing xmlns:p="{P_NS}"><p:tnLst><p:par><p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">'
+           '<p:childTnLst><p:seq concurrent="1" nextAc="seek"><p:cTn id="2" dur="indefinite" nodeType="mainSeq">'
+           f'<p:childTnLst>{groups}</p:childTnLst></p:cTn><p:prevCondLst><p:cond evt="onPrev" delay="0"><p:tgtEl>'
+           '<p:sldTgt/></p:tgtEl></p:cond></p:prevCondLst><p:nextCondLst><p:cond evt="onNext" delay="0"><p:tgtEl>'
+           '<p:sldTgt/></p:tgtEl></p:cond></p:nextCondLst></p:seq></p:childTnLst></p:cTn></p:par></p:tnLst>'
+           + (f'<p:bldLst>{blds}</p:bldLst>' if blds else "") + '</p:timing>')
+    return etree.fromstring(xml)
+
+
+def first_text(items):
+    def line(L):
+        out, last = "", None
+        for r in L["runs"]:
+            if last is not None and r["l"] - last["r"] > 0.15 * r["fs"] and not out.endswith(" "):
+                out += " "
+            out += r["s"]
+            last = r
+        return out.strip()
+    for it in items:
+        if it["k"] == "text":
+            t = " ".join(line(L) for L in it["lines"]).strip()
+            if t:
+                return t if len(t) <= 60 else t[:57] + "…"
+    return "(a drawing)"
+
+
+def build(data, info, path, cal, present=False):
+    """present=False: the submitted file, every slide complete. present=True: the copy shared in Zoom, each build
+    step one click (the HTML deck's data-b order, which the script follows)."""
     prs = Presentation()
     prs.slide_width, prs.slide_height = Emu(1280 * E), Emu(720 * E)
     blank = prs.slide_layouts[6]
     svg_parts = {}
     counts = []
-    for i, (items, (title, spoken)) in enumerate(zip(data["slides"], info), 1):
+    has_house = [any(it.get("role") == "house" for it in sl["items"]) for sl in data["slides"]]
+    for i, (sl, (title, spoken)) in enumerate(zip(data["slides"], info), 1):
         s = prs.slides.add_slide(blank)
+        items = sl["items"]
+        if present:
+            items = [it for it in items if not it.get("whole") or it.get("role")]
+        else:
+            items = [it for it in items if not it.get("layer")]
         # paint order: the deck's stacking (z-index), stable, the slide's own background first
         items = sorted(items, key=lambda it: -10 ** 9 if it.get("tag") == "section" else it.get("z", 0))
+        last = max([it.get("b", 1) for it in items] + [1])
+        steps, swap_in, swap_out = {}, [], []
         for it in items:
             k = it["k"]
-            if k == "box":
-                add_box(s, it)
-            elif k == "text":
-                add_text(s, it, cal)
-            elif k in ("img", "svg"):
-                add_picture(s, prs, it, data["assets"], svg_parts)
+            if it.get("tag") == "section" and (it.get("grad") or it.get("fill")):
+                # the slide's own colour (slide 4's wine stage) as the slide background, not a shape: Morph
+                # cross-fades backgrounds, but would fly a full-slide shape into some shape on the next slide
+                fill = grad_fill(it["grad"], it["w"], it["h"], 1) if it.get("grad") else None
+                if fill is None:
+                    fill = solid(it["fill"])
+                bg = etree.Element(qn("p:bg"))
+                bgpr = etree.SubElement(bg, qn("p:bgPr"))
+                bgpr.append(fill)
+                bgpr.append(a("effectLst"))
+                s._element.cSld.insert(0, bg)
+                continue
+            draw = add_box if k == "box" else (lambda sl_, it_: add_text(sl_, it_, cal)) if k == "text" else \
+                (lambda sl_, it_: add_picture(sl_, prs, it_, data["assets"], svg_parts))
+            step = it.get("b", 1) if present else 1
+            if present and it.get("whole"):                 # the whole house, swapped in on the last click for Morph
+                n0 = len(s.shapes)
+                draw(s, it)
+                swap_in += [sh.shape_id for sh in list(s.shapes)[n0:]]
+                continue
+            if step > 1 and not sl["reveal"]:              # still to come: grey until spoken
+                n0 = len(s.shapes)
+                draw(s, greyed(it))
+                if it.get("role") and it.get("layer"):
+                    swap_out += [sh.shape_id for sh in list(s.shapes)[n0:]]
+            n0 = len(s.shapes)
+            draw(s, it)
+            new = list(s.shapes)[n0:]
+            if step > 1:
+                steps.setdefault(step, []).extend(sh.shape_id for sh in new)
+            if it.get("role") and it.get("layer"):
+                swap_out += [sh.shape_id for sh in new]
+            elif it.get("role") == "house":                  # one name on every slide, so Morph carries the house
+                for sh in new:
+                    sh.name = "!!house"
+        for sh in s.shapes:
+            if sh.shape_id in swap_in:
+                sh.name = "!!house"
+        # names for Morph: identical things on two slides (the footer's tracker, the page frame) share a name and stay
+        # put; everything else gets a name of its own, so Morph fades it instead of flying unrelated text across
+        import hashlib
+        seen = {}
+        for sh in s.shapes:
+            if sh.name == "!!house":
+                continue
+            if sh.has_text_frame and sh.text_frame.text.strip():
+                sig = "T " + re.sub(r"\s+", " ", sh.text_frame.text.strip())[:40]
+            else:
+                sig = sh.name + " " + hashlib.md5(etree.tostring(sh._element.spPr if hasattr(sh._element, "spPr")
+                                                                 else sh._element)).hexdigest()[:8]
+            seen[sig] = seen.get(sig, 0) + 1
+            # "!!" tells Morph to pair a shape only with the same name on the next slide; without it, Morph also
+            # pairs unrelated shapes of one kind (slide 4's result box flew into slide 5's rules, 25 Oct)
+            sh.name = "!!" + (sig if seen[sig] == 1 else f"{sig} #{seen[sig]}")
+        # transition into this slide
+        kind = "morph" if i > 1 and has_house[i - 1] and has_house[i - 2] else "fade"
+        root = s._element
+        root.insert(list(root).index(root.find(qn("p:clrMapOvr"))) + 1, transition_el(kind))
+        if present and (steps or swap_in):
+            clicks = [(steps[k], []) for k in sorted(steps)]
+            if swap_in:
+                if clicks:
+                    clicks[-1] = (clicks[-1][0] + swap_in, swap_out)
+                else:
+                    clicks = [(swap_in, swap_out)]
+            sp_ids = {int(sp.get("id")) for sp in root.iter(qn("p:cNvPr")) if sp.getparent().getparent().tag == qn("p:sp")}
+            bld = [(sp, 0) for sp in sorted({x for c in clicks for x in c[0]} & sp_ids)]
+            bld += [(sp, 1) for sp in sorted({x for c in clicks for x in c[1]} & sp_ids)]
+            root.append(timing_el(clicks, bld))
+            cues = [f"Click {n}: {first_text([it for it in items if it.get('b', 1) == k and not it.get('whole')])}"
+                    for n, k in enumerate(sorted(steps), 1)]
+            spoken = spoken + "\n\n[Clicks on this slide]\n" + "\n".join(cues)
         s.notes_slide.notes_text_frame.text = spoken
         s._element.cSld.set("name", title[:250])
         counts.append(len(s.shapes))
@@ -546,7 +736,9 @@ def build(data, info, path, cal):
 # ---------------------------------------------------------------- 3. PowerPoint: render, embed the font
 def office(src, out, pngdir):
     ps = os.path.join(ROOT, "tools", "pptx_office.ps1")
-    args = ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", ps, "-In", src, "-PngDir", pngdir]
+    args = ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", ps, "-In", src]
+    if pngdir:
+        args += ["-PngDir", pngdir]
     if out:
         args += ["-Out", out]
     r = subprocess.run(args, capture_output=True, text=True)
@@ -645,26 +837,38 @@ def main():
     print("extracted:", len(data["slides"]), "slides,", len(data["assets"]), "pictures and drawings;",
           data["check"]["pseudos"], "pseudo-elements made real,", data["check"]["moved"], "elements moved by it")
     info = slide_info(deck)
-    raw = os.path.join(WORK, "Axis_raw.pptx")
-    counts = build(data, info, raw, cal)
-    print("built:", " ".join(f"{i}:{c}" for i, c in enumerate(counts, 1)), "shapes")
-    if "--no-office" in sys.argv:
-        shutil.copy(raw, OUT)
-        print("->", OUT, "(no PowerPoint step: font not embedded)")
-        return
-    for f in os.listdir(WORK):
-        if f.startswith("ppt-") and f.endswith(".png"):
-            os.remove(os.path.join(WORK, f))
-    tmp_out = os.path.join(WORK, "Axis_office.pptx")
-    if os.path.exists(tmp_out):
-        os.remove(tmp_out)
-    print(office(raw, tmp_out, WORK))
-    dropped, hits = scrub(tmp_out, len(info))
-    if hits:
-        sys.exit(f"STOP: identifying text in the file: {hits[:5]}")
-    shutil.copy(tmp_out, OUT)
-    print(f"-> {OUT} ({os.path.getsize(OUT) / 1e6:.1f} MB); metadata parts dropped: {dropped or 'none'}")
-    check(OUT)
+    # two files: the submitted one (every slide complete) and the one shared in Zoom (one click per build step)
+    only = sys.argv[sys.argv.index("--only") + 1] if "--only" in sys.argv else ""    # --only submit | present
+    for present, out in ((False, OUT), (True, OUT_PRESENT)):
+        tag = "present" if present else "submit"
+        if only and only != tag:
+            continue
+        raw = os.path.join(WORK, f"Axis_raw_{tag}.pptx")
+        counts = build(data, info, raw, cal, present=present)
+        print(f"built ({tag}):", " ".join(f"{i}:{c}" for i, c in enumerate(counts, 1)), "shapes")
+        if "--no-office" in sys.argv:
+            shutil.copy(raw, out)
+            print("->", out, "(no PowerPoint step: font not embedded)")
+            continue
+        if not present:
+            for f in os.listdir(WORK):
+                if f.startswith("ppt-") and f.endswith(".png"):
+                    os.remove(os.path.join(WORK, f))
+        tmp_out = os.path.join(WORK, f"Axis_office_{tag}.pptx")
+        if os.path.exists(tmp_out):
+            os.remove(tmp_out)
+        print(office(raw, tmp_out, "" if present else WORK))
+        dropped, hits = scrub(tmp_out, len(info))
+        if hits:
+            sys.exit(f"STOP: identifying text in the file: {hits[:5]}")
+        try:
+            shutil.copy(tmp_out, out)
+        except PermissionError:
+            sys.exit(f"STOP: {os.path.basename(out)} is open in PowerPoint; close it and run again "
+                     f"(the new file is ready at {tmp_out})")
+        print(f"-> {out} ({os.path.getsize(out) / 1e6:.1f} MB); metadata parts dropped: {dropped or 'none'}")
+    if not only or only == "submit":
+        check(OUT)
 
 
 if __name__ == "__main__":
