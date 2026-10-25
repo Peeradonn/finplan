@@ -78,7 +78,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | # | Kicker | Title | Speaker | Time |
 |---|---|---|---|---|
 | 1 | — | Built to Last: five calls that make the Wong family's wealth last | Pete, all | 0:20 |
-| 2 | Meet the Wongs | On paper, the Wongs are secure, for a plan that must last forty years | Pete | 0:30 |
+| 2 | Meet the Wongs | On paper, the Wongs are secure, for a plan that must last forty years | Pete | 0:40 |
 | 3 | Will it last? | Their own way, Carmen is forced to sell the home at about {{own_sale_age}}, too late to save the money or the inheritance | Pete | 0:45 |
 | 4 | Our answer | Five calls make their wealth last, on their terms | Pete | 0:45 |
 | 5 | Call 1 · Protection | Insure the income, not the life: about HK$100K a year closes every gap | Lookbua | 0:40 |
@@ -87,7 +87,7 @@ Read the titles aloud in order: they make the whole argument. Times and words ar
 | 8 | Call 4 · Each person | One family policy, a plan for each person: every dollar gets a job | Win | 0:50 |
 | 9 | Call 5 · Values and innovation | Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | Win | 0:45 |
 | 10 | Will it hold? | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Lookbua | 0:30 |
-| 11 | What happens when | It starts this month and closes every gap within a year; after that, dates trigger each step | Lookbua | 0:30 |
+| 11 | What happens when | It starts this month and closes every gap within a year; after that, dates trigger each step | Lookbua | 0:20 |
 | 12 | What passes on | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Pete | 0:25 |
 | 13 | Wealth Management Connect | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | Pete | 0:40 |
 | 14 | Who we want to become | Four planners, one aim: families like the Wongs, on both sides of the boundary | All | 1:10 |
@@ -223,11 +223,31 @@ the talk.
   icon circles are quiet (mist, wine marks); the title's number is the largest type and the only crimson; one message
   a slide, the second one cut to a line and the notes. Check a slide at thumbnail size: the first thing you see should
   be the number the title names.
+- **The voice said what we recommend, the screen said why and at what cost** (script review, 25 Oct). Every call
+  slide showed "The price:", but no call said it aloud; "because" was spoken once in the whole talk; the family's goal
+  (retire at 65 and 62 on HK$780K a year) was never said, so slide 3's odds came before anyone had said what they
+  measure; and 9 of the 12 conclusion bars were never spoken, so on video the judges read one sentence while hearing
+  another. A practitioner hears the reasons and the price, not the slide. Say the question before the first number,
+  and say the reason and the price where they matter most; pay for them by cutting what the screen already shows.
 
 ## 5. Slide by slide
 Each spec: the point, the evidence and its keys, and the form as built so far. The form is a draft, not an order
 (§4): when a better one fits the point, change it and record here what changed and why.
 The scripts are in each slide's speaker notes (`round2/src/*.html`); `make.py` writes them to `Axis_Script.html`.
+**Script pass, 25 Oct** (review as a practitioner judge and a presenter; Pete approved all fixes). Spoken words 1,253
+→ 1,257: the added reasons and prices were paid for by cutting what the screen carries. Slide 2 now asks the question
+(the goal, then "will it last to Carmen's 89? We tested it in 10,000 futures", its bar), so slide 3's 33% and 51% have a
+frame. Prices and reasons said aloud: slide 5's HK$22K a month if Adrian couldn't work; slide 6's annuities ("an income
+each can't outlive"; "the price: the annuities can't be undone"); slide 7's premiums "close to half the budget" and
+the Standard plan's lower limits; slide 9's two ratings "because raters often disagree", the regulated channels, and
+Ryan's price (a 70% fall costs him HK$350K). Ear fixes: slide 6's "after the first death, the survivor plans on 70% of
+the budget"; slide 10's 83% now follows "Here", so it isn't heard as slide 6's 83%; slide 5's "so Carmen's business
+survives her" (the old "her" pointed at Chloe); slide 8's "one family investment policy" (it followed the insurance
+slide); slide 9's "on the SFC's ESG list" (not "SFC-listed"). Cut from the voice, still on screen: slide 2's 41%,
+slide 5's 14% of surplus and the wills list (wills are said on 11 and 12), slide 7's rule mechanics, slide 11's later
+dates and first-year tail, slide 13's Adrian clause. Times: slide 2 0:30 → 0:40, slide 11 0:30 → 0:20 (total 9:30).
+Left for their owners: Win's line, Lookbua's "systems risk" (if he means a shock crossing markets, the finance term is
+"systemic risk").
 
 ### 1 · Cover (Pete, all; 0:20)
 **The written case's photograph, 25 Oct** (Pete asked whether the cover was ideal; four covers were rendered side by
@@ -241,7 +261,7 @@ licence; the duotone read gloomy. **Open: the photograph is credited but no lice
 for permission, or go back to the illustrated family (git history) if the risk isn't wanted.** No numbers.
 Before 25 Oct: "Built to Last", the promise line, the team; an illustration of the family (image set, §7).
 
-### 2 · On paper, secure (Pete; 0:30)
+### 2 · On paper, secure (Pete; 0:40)
 **Rebuilt 24 Oct, layout A** (Pete chose it over "the family as the hero" and over keeping the rows). The 23 Oct build
 repeated the cover (the four faces, names and wants) and slide 3 (its timeline's milestones are on slide 3's axis),
 and Ryan's row carried no event. Now two pieces for the title's two halves: "What they have today…", redrawn the same day as one picture (Pete:
@@ -704,7 +724,7 @@ register, the price and the bar.
   quotes arrive; the tier switch is guaranteed under the VHIS rules.
 - Bar: "It holds when the hardest things happen, and it starts this month."
 
-### 11 · What happens when (Lookbua; 0:30)
+### 11 · What happens when (Lookbua; 0:20)
 **First year as the hero, 25 Oct evening** (deck review: nine equal columns, no focal point). The title says "it starts
 this month", so the first year is the left seven columns: four steps on one line, large, Month 1 the only crimson
 (its date and its circle). The dated steps after it are a quieter list on the right, a thin line down their dates
@@ -801,6 +821,10 @@ not tax" (estate duty abolished 2006). The title house is complete with its roof
 - Bar: "Built to last: for their lifetimes, and after."
 
 ### 13 · Wealth Management Connect (Pete; 0:40)
+**Northbound first, 25 Oct** (script review). The voice spoke Southbound first while the slide reads left to right
+and the title puts the Wongs first. Now the voice and the builds follow the title: the three facts (step 1), Northbound
+and the Wongs (step 2, "a tool for later", which closes their story), then Southbound and us with the bar (step 3),
+which leads into slide 14.
 **Flows fixed, 25 Oct evening** (Pete: the arrows didn't point correctly; Northbound didn't start from Hong Kong and
 Southbound pointed back into the mainland). Both ended about 14 map units north of Hong Kong's centre, in Shenzhen.
 Now each flow joins Hong Kong and the nine cities, with a ring at its start and an arrowhead at its end: Northbound

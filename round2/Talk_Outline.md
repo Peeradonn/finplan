@@ -52,7 +52,7 @@ for builds and pauses.
 | # | Speaker | The point (title) | The one picture | Time | Words |
 |---|---|---|---|---|---|
 | 1 | Pete, all | Built to Last: five calls that make the Wong family's wealth last | The family (illustration to generate) | 0:20 | 33 |
-| 2 | Pete | On paper, the Wongs are secure | Four faces, each with a want; HK$24.4M, 41% saved, 10% debt | 0:30 | 61 |
+| 2 | Pete | On paper, the Wongs are secure | Four faces, each with a want; HK$24.4M, 41% saved, 10% debt | 0:40 | 61 |
 | 3 | Pete | Their own way, Carmen is forced to sell the home at about {{own_sale_age}}, too late to save the money or the inheritance | One typical future with the money: the home under savings; the forced sale at {{story_sale_age}}, out again at {{story_out_age}}; beside it the 10,000-future facts | 0:45 | 99 |
 | 4 | Pete | Five calls make their wealth last, on their terms | The five calls in a row, one result each; the impact band {{own_89}} → {{switch_89}} | 0:45 | 92 |
 | 5 | Lookbua | Call 1. Insure the income, not the life: about HK$100K a year closes every gap | Pay that continues if a parent can't work: nothing today → 65%; the cost as one bar | 0:40 | 86 |
@@ -61,7 +61,7 @@ for builds and pauses.
 | 8 | Win | Call 4. One family policy, a plan for each person: every dollar gets a job | Today vs the plan as two bars of the same HK$7.7M, each job with its owner's face | 0:50 | 104 |
 | 9 | Win | Call 5. Values and innovation, with guardrails: ESG at 25%, crypto sized for each person | ESG 11% → 25% into the goal band; crypto by person (four people, four sizes) | 0:45 | 96 |
 | 10 | Lookbua | Tested against the worst: even if Adrian loses his job at 60, the plan holds | Paired bars per test, the lost job highlighted | 0:30 | 67 |
-| 11 | Lookbua | It starts this month and closes every gap within a year; after that, dates trigger each step | The first year's deadlines, then the dated steps | 0:30 | 60 |
+| 11 | Lookbua | It starts this month and closes every gap within a year; after that, dates trigger each step | The first year's deadlines, then the dated steps | 0:20 | 60 |
 | 12 | Pete | In the very futures where their own way sells the home, the plan leaves Ryan and Chloe {{plan_legacy_sold}}, not {{own_legacy_sold}} | Two bars, same markets; then how it passes on: staged trusts at 25, 30, 35 and the scholarship | 0:25 | 56 |
 | 13 | Pete | The Connect is growing both ways: for the Wongs a tool for later, for us the market we want to serve | The two flows across the boundary, the advice rule on Southbound | 0:40 | 91 |
 | 14 | All | Four planners, one aim: families like the Wongs, on both sides of the boundary | Four cards, one per speaker | 1:10 | 148 |
