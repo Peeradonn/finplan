@@ -141,9 +141,11 @@ the talk.
    before the answer (§2). Nothing on it repeats the title, another part of the slide, or an earlier slide.
 6. **As simple as it can be while the point stays clear** (Pete, 23 Oct): fewer pieces, never a vaguer message.
 7. **An easy eye path, one focal point, nothing fighting** (Pete, 25 Oct): the reader can tell at once what to read
-   first and in what order. One entry per block (its heading, or one bold phrase, not both); crimson only on the
-   number the title names (one per half on a two-topic slide); labels such as "The price:" in ink, not a second accent.
-   Count the bold and coloured accents on a rendered slide: more than one per block means something is fighting.
+   first and in what order. Hierarchy comes from contrast, not from sameness: size steps by importance (the title's
+   number largest; each block's claim a step up, 18-19 px; body 15 px with its key phrase in bold; annotations and
+   asides small and italic, 14 px), and notes on the pictures where they need one. Crimson only on the number(s) the
+   title names. Pete corrected a first reading of this (25 Oct): stripping bold made every line the same weight, the
+   opposite of what he meant.
 
 **Fixed** (constraints, on every slide):
 - 1280 × 720. Nothing meant to be read under 14 px: the judges may watch on Zoom.
@@ -540,6 +542,10 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Four levels, 25 Oct** (Pete: keep bold and italic; vary the size by importance; annotate). 25% and 20% largest;
+"Like for like, not a new bet" at 19 px and Ryan's line at 18 px; body 15 px with its key phrase bold; the fund
+roles, the price lines and "(case)" in italic as asides; a note on Ryan's chart ("The dark block: his HK$500K, the
+same at every age") in the space above his first column.
 **White space and eye path, 25 Oct.** The gaps left by the text cut went to the charts (taller ESG bars, a roomier key,
 wider and taller columns for Ryan, his text centred against them). Then the accents were cut to one per block: no
 inline bold under "Like for like" or in Ryan's text, the fund amounts plain, the price labels in ink. Crimson is on
