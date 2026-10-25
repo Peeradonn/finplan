@@ -536,6 +536,12 @@ pay); HK$45K a year less in fees.
   title).
 
 ### 9 · Call 5: values and innovation, with guardrails (Win; 0:45)
+**Text cut, 25 Oct** (Pete: still too text-heavy). 253 words to 190. Kept: what Win says and what a judge needs to
+trust it, one short line each ("the same risk, the same expected return"; "two ESG ratings per equity fund, or it is
+replaced"; Adrian none, Carmen up to 2% (ETF), Chloe none; Ryan's savings go to a world index fund, so the crypto's
+share falls; a 70% fall would cost him HK$350K; HKEX-listed ETFs or SFC-licensed platforms only). To the notes: the
+rating thresholds and the three-month rule, tokenised cash, "while she studies", the rally trim, no lending or
+leverage. The ESG bars and Ryan's columns are larger in the space freed.
 **Presentation pass, 25 Oct.** The trade-off strip is gone: each half ends on its own price ("The price: ESG funds
 cost a little more …"; "The price: Ryan keeps the risk; a 70% fall would cost him HK$350K today"). Ryan's columns are
 wider and centred, the crypto block labelled HK$500K inside the first column instead of a legend at the side. All
