@@ -152,11 +152,15 @@ spoken words until the timed read-through sets the real cap; recount after any c
 (`make_looks.py --pages N`).
 
 **The PowerPoint file** (the scored "set of Power point slides"): after `make.py`, run
-`.venv/Scripts/python.exe round2/make_pptx.py` → `round2/Axis.pptx`. Each slide is the HTML slide in its final state as
-a 2560 × 1440 picture (the font isn't on the judges' machines; the charts, map and house are HTML/SVG), its title as alt
-text, the spoken script as speaker notes (not the bracketed team notes), sections from the footer tracker, metadata
-"Team Axis" only. Rebuild it after any slide change. **Don't open and re-save it in PowerPoint while signed in** (Office
-stamps the account into the file); if someone must, scrub it and check with `make_pptx.py --check round2/Axis.pptx`.
+`.venv/Scripts/python.exe round2/make_pptx.py` → `round2/Axis.pptx`, **editable** (Pete, 25 Oct): `round2/pptx_extract.js`
+reads each slide's layout in Chrome, and the script rebuilds it from native text boxes (one paragraph per line, as the
+deck breaks them), shapes and pictures; drawings (area charts, map, house, icons, arrows) are SVG pictures with a PNG
+fallback. PowerPoint itself (`tools/pptx_office.ps1`) then renders every slide to `round2/build/pptx/ppt-NN.png` for
+checking and saves a copy with Plus Jakarta Sans embedded (whole fonts; the font must be installed for the user, as it
+is on Pete's machine); the script rewrites that copy's metadata to "Team Axis" and stops if any e-mail address or
+university name is left in the package. Rebuild after any slide change; edit the HTML, not the .pptx, or the next
+build overwrites the edit. **Don't open and re-save it in PowerPoint while signed in** (Office stamps the account into
+the file); if someone must, scrub it and check with `make_pptx.py --check round2/Axis.pptx`.
 
 ## Round One: the document (frozen)
 ```
