@@ -664,6 +664,16 @@ reviews strip (quarterly, yearly, and at once after the written case's five even
 - Bar: "For the Wongs, it starts this month; for Ryan and Chloe, it lasts beyond it."
 
 ### 12 · What passes on (Pete; 0:25)
+**Rebalanced 25 Oct (Fahtai, for Pete's OK).** The two halves were about different moments, and the script mixed
+them: the {{plan_legacy_sold}} arrives at Carmen's 89, when Ryan is 64 and Chloe 56, so it cannot be "passed on in
+stages at 25, 30 and 35"; the staged trusts matter only if a parent dies early. Now the left (5 columns) is the
+inheritance at 89, compact; the right (7 columns), "…passed on safely, and with a purpose", in two groups by when they
+apply: **If they die early** (signed in month 1, under HK$25K): mirror wills (the MPF, with no nominee, passes through
+them), a guardian for Chloe while she is under 18, each child's share held in trust and paid at 25 · 30 · 35; **A
+legacy with purpose** (every year, while they are alive): the scholarship in sustainable design, about HK$30K a year
+through a registered charity, tax-deductible, the case's "education or environmental causes" (case §8). Script: "And if
+either parent dies early, the wills name a guardian for Chloe and hold each child's share in trust until 25, 30 and 35.
+Meanwhile, a scholarship…" (about 10 words more).
 **Drafted 24 Oct.** The payoff of slide 3, in slide 3's own form: the inheritance bars on the same scale
 (HK$24.4M today), their own way {{own_legacy_sold}} in rose, the plan {{plan_legacy_sold}} in crimson at 72 px, the only
 accent; under them, the plan leaves more in {{plan_legacy_more_pct}} of those futures and releases the home at 65, not
