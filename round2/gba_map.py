@@ -110,7 +110,7 @@ def main():
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -6 {W} {H + 40}">',
          '<defs><linearGradient id="gbaRose" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0DADE"/>'
          '<stop offset="1" stop-color="#DDB7BE"/></linearGradient><linearGradient id="gbaWine" x1="0" y1="0" x2="0" y2="1">'
-         '<stop offset="0" stop-color="#B3202F"/><stop offset="1" stop-color="#7D1D2A"/></linearGradient></defs>',
+         '<stop offset="0" stop-color="#D40F1F"/><stop offset="1" stop-color="#971320"/></linearGradient></defs>',
          '<defs><radialGradient id="gbaFade" cx="50%" cy="52%" r="62%"><stop offset=".55" stop-color="#fff"/>'
          '<stop offset="1" stop-color="#000"/></radialGradient>'
          f'<mask id="gbaMask"><rect x="-20" y="-20" width="{W + 40}" height="{H + 80}" fill="url(#gbaFade)"/></mask></defs>',
@@ -118,21 +118,21 @@ def main():
     o += slab(ctx, 3, "#E9DCDF", "#F6EFF0", "#E9DCDF", ".6")          # the land around, pale and fading out
     o.append("</g>")
     o += slab([r for rs in gba.values() for r in rs], 12, "#B98891", "url(#gbaRose)", "#FFFFFF", ".9")   # the nine cities
-    o += slab(sar["hk"] + sar["mo"], 15, "#4A1019", "url(#gbaWine)", "#FFFFFF", ".7")                   # Hong Kong, Macao
+    o += slab(sar["hk"] + sar["mo"], 15, "#5F0A14", "url(#gbaWine)", "#FFFFFF", ".7")                   # Hong Kong, Macao
     # the two flows over the water: Northbound (west, dashed: kept out today), Southbound (east, solid: the market we serve)
     hk = proj(114.12, 22.42)
     nb0, nb1 = (hk[0] - 18, hk[1] - 10), proj(113.30, 23.05)
     sb0, sb1 = proj(114.55, 23.02), (hk[0] + 16, hk[1] - 14)
     o.append('<defs><marker id="gbaArW" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
-             '<path d="M0,0 L10,5 L0,10 Z" fill="#7D1D2A"/></marker>'
+             '<path d="M0,0 L10,5 L0,10 Z" fill="#971320"/></marker>'
              '<marker id="gbaArC" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
-             '<path d="M0,0 L10,5 L0,10 Z" fill="#A81E2D"/></marker></defs>')
+             '<path d="M0,0 L10,5 L0,10 Z" fill="#C80E1E"/></marker></defs>')
     nbc, nbe = (nb0[0] - 120, nb0[1] + 20), (nb1[0], nb1[1] + 6)
     sbc = (sb0[0] + 70, sb0[1] + 90)
     o.append(f'<path class="nb" d="M{nb0[0]:.1f},{nb0[1]:.1f} Q{nbc[0]:.1f},{nbc[1]:.1f} {nbe[0]:.1f},{nbe[1]:.1f}" '
-             'fill="none" stroke="#7D1D2A" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round" marker-end="url(#gbaArW)"/>')
+             'fill="none" stroke="#971320" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round" marker-end="url(#gbaArW)"/>')
     o.append(f'<path class="sb" d="M{sb0[0]:.1f},{sb0[1]:.1f} Q{sbc[0]:.1f},{sbc[1]:.1f} {sb1[0]:.1f},{sb1[1]:.1f}" '
-             'fill="none" stroke="#A81E2D" stroke-width="4" stroke-linecap="round" marker-end="url(#gbaArC)"/>')
+             'fill="none" stroke="#C80E1E" stroke-width="4" stroke-linecap="round" marker-end="url(#gbaArC)"/>')
     # where the side headings' leaders land: the middle of each flow (a quadratic's point at t = 1/2)
     mid = lambda a, c, b: (a[0] / 4 + c[0] / 2 + b[0] / 4, a[1] / 4 + c[1] / 2 + b[1] / 4)
     nb_mid, sb_mid = mid(nb0, nbc, nbe), mid(sb0, sbc, sb1)

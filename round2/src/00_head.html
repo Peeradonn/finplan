@@ -29,8 +29,8 @@
    wine for weight; a greyed rose for secondary fills (23 Oct: the pale pinks read as pink, not as the
    crimson's family). */
 .lb{--paper:#FFFFFF;--mist:#F8EFF0;--rule:#ECDADD;--grey:#B5979D;--slate:#80606A;--ink:#1B1716;
-    --accent:#A81E2D;--accent-deep:#6F1320;--wine:#7D1D2A;--rose:#EFD9DC;--tint:#F8EFF0;
-    --wine-g:linear-gradient(180deg,#A62535 0%,#5A1520 100%);--accent-g:linear-gradient(180deg,#B3202F 0%,#7D1D2A 100%);
+    --accent:#C80E1E;--accent-deep:#890816;--wine:#971320;--rose:#EFD9DC;--tint:#F8EFF0;
+    --wine-g:linear-gradient(180deg,#C41627 0%,#700E19 100%);--accent-g:linear-gradient(180deg,#D40F1F 0%,#971320 100%);
     --rose-g:linear-gradient(90deg,#F3E2E4 0%,#E7CCD1 100%);
     --text:"Plus Jakarta Sans",Arial,sans-serif;--head:"Plus Jakarta Sans",Arial,sans-serif;font-variant-numeric:lining-nums}
 
@@ -63,7 +63,7 @@ p,li,span,b{text-wrap:pretty}
 /* ---- conclusion bar ---- */
 /* 24 Oct (Pete): the conclusion is a crimson bar, white text, centred: without a bar the last line didn't read as the
    slide's conclusion. (23 Oct it was a line on a crimson rule, after a wine block had outweighed the focal numbers.) */
-.bar{flex:none;margin-top:16px;background:radial-gradient(ellipse 70% 260% at 50% 50%,#A62535 0%,#8A1F2E 45%,#5A1520 100%);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
+.bar{flex:none;margin-top:16px;background:radial-gradient(ellipse 70% 260% at 50% 50%,#C41627 0%,#A51322 45%,#700E19 100%);color:#fff;font:600 18px/1.3 var(--head);padding:12px 24px;text-align:center;text-wrap:balance}
 
 /* ---- footer ---- */
 .ft{flex:none;height:52px;display:flex;align-items:center;gap:20px;font:400 12px/1.3 var(--text);color:var(--slate)}
@@ -381,12 +381,12 @@ p,li,span,b{text-wrap:pretty}
 .x4p .v.on span{color:var(--ink);font-weight:600}
 .x4p .ar{font:400 34px/1 var(--text);color:var(--grey)}
 
-.upto-2 .hq[data-b="2"] .t{fill:#C9505D}.upto-2 .hq[data-b="2"] .l{fill:#A81E2D}.upto-2 .hq[data-b="2"] .r{fill:#7A1622}
-.upto-3 .hq[data-b="3"] .t{fill:#C9505D}.upto-3 .hq[data-b="3"] .l{fill:#A81E2D}.upto-3 .hq[data-b="3"] .r{fill:#7A1622}
-.upto-4 .hq[data-b="4"] .t{fill:#C9505D}.upto-4 .hq[data-b="4"] .l{fill:#A81E2D}.upto-4 .hq[data-b="4"] .r{fill:#7A1622}
-.upto-5 .hq[data-b="5"] .t{fill:#C9505D}.upto-5 .hq[data-b="5"] .l{fill:#A81E2D}.upto-5 .hq[data-b="5"] .r{fill:#7A1622}
-.upto-6 .hq[data-b="6"] .t{fill:#C9505D}.upto-6 .hq[data-b="6"] .l{fill:#A81E2D}.upto-6 .hq[data-b="6"] .r{fill:#7A1622}
-.upto-7 .hq[data-b="7"] .t{fill:#C9505D}.upto-7 .hq[data-b="7"] .l{fill:#A81E2D}.upto-7 .hq[data-b="7"] .r{fill:#7A1622}
+.upto-2 .hq[data-b="2"] .t{fill:#DB4E5A}.upto-2 .hq[data-b="2"] .l{fill:#C80E1E}.upto-2 .hq[data-b="2"] .r{fill:#950B17}
+.upto-3 .hq[data-b="3"] .t{fill:#DB4E5A}.upto-3 .hq[data-b="3"] .l{fill:#C80E1E}.upto-3 .hq[data-b="3"] .r{fill:#950B17}
+.upto-4 .hq[data-b="4"] .t{fill:#DB4E5A}.upto-4 .hq[data-b="4"] .l{fill:#C80E1E}.upto-4 .hq[data-b="4"] .r{fill:#950B17}
+.upto-5 .hq[data-b="5"] .t{fill:#DB4E5A}.upto-5 .hq[data-b="5"] .l{fill:#C80E1E}.upto-5 .hq[data-b="5"] .r{fill:#950B17}
+.upto-6 .hq[data-b="6"] .t{fill:#DB4E5A}.upto-6 .hq[data-b="6"] .l{fill:#C80E1E}.upto-6 .hq[data-b="6"] .r{fill:#950B17}
+.upto-7 .hq[data-b="7"] .t{fill:#DB4E5A}.upto-7 .hq[data-b="7"] .l{fill:#C80E1E}.upto-7 .hq[data-b="7"] .r{fill:#950B17}
 
 /* the calls: an icon that names the call's subject, nearest the leader line, and the call's number before its title */
 .x4e .co .ci{flex:none;width:38px;height:38px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center;margin-top:-8px}
@@ -395,7 +395,7 @@ p,li,span,b{text-wrap:pretty}
 /* slide 4, treatment A, the stage (24 Oct, Pete: make it unmistakably the answer reveal): a dark wine stage lit from
    behind the house, the only dark slide after the cover; the house in light tones (house.exploded(palette="light"));
    white text; in the build frames the block being named glows white. The bar stays crimson, on the stage's darker foot. */
-.s4r{background:radial-gradient(ellipse 58% 72% at 50% 44%,#9E2433 0%,#7D1D2A 40%,#5A1520 72%,#3C0D15 100%);color:#fff}
+.s4r{background:radial-gradient(ellipse 58% 72% at 50% 44%,#BB1626 0%,#971320 40%,#700E19 72%,#500911 100%);color:#fff}
 .s4r .hd{border-left-color:#E8B9C0}
 .s4r .kick{color:#F0C9CE}
 .s4r .hd h2{color:#fff}
@@ -414,7 +414,7 @@ p,li,span,b{text-wrap:pretty}
 .s4r .x4p .v.on strong{color:#fff}
 .s4r .x4p .v.on span{color:#fff}
 .s4r .x4p .ar{color:#C9A2A8}
-.s4r .bar{background:#B3202F;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.s4r .bar{background:#D40F1F;box-shadow:0 10px 28px rgba(0,0,0,.28)}
 .s4r .ft{color:#D9B3B9}
 .s4r .ft .nv{color:#A9858B}
 .s4r .ft .nv b{color:#fff}
@@ -543,7 +543,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .b2a i{display:flex;flex-direction:column;justify-content:center;padding:0 12px;min-width:0;font:400 14px/1.25 var(--text);font-style:normal;white-space:nowrap;overflow:hidden}
 .b2a i b{font:700 15px/1.25 var(--text)}
 .b2a i.h{background:var(--wine-g);color:#fff}
-.b2a i.z{background:#A35560;color:#fff}
+.b2a i.z{background:#B4535D;color:#fff}
 .b2a i.v{background:#D3A6AD;color:var(--ink)}
 .b2a i.m{background:#EFD9DC;padding:0}
 .b2a i.c{background:#E6CDD1;padding:0}
@@ -675,7 +675,7 @@ svg.conn path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .e9t>i{display:block;flex:none;height:36px}
 .e9 i.g{background:#E6CDD1}
 .e9 i.s1{background:var(--wine-g)}
-.e9 i.s2{background:#A35560}
+.e9 i.s2{background:#B4535D}
 .e9 i.s3{background:#D3A6AD}
 .e9 i.on{background:var(--accent-g)}
 .e9t>em{font:600 16px/1 var(--text);font-style:normal;color:var(--ink);margin-left:10px;white-space:nowrap}

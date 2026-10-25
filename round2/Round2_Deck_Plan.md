@@ -790,6 +790,13 @@ written case's four pillars from the roof down: what passes on; a place for ever
   Schibsted Grotesk and Manrope). Weights 400 to 800, in `round2/fonts/`, SIL OFL, embeddable. The hierarchy comes from size, weight and colour, never from switching
   faces: with Garamond for numbers and Inter for labels, the same kind of thing (a share, an amount) looked like two
   kinds. EB Garamond stays the written case's face only.
+- **Colour, 25 Oct: a brighter crimson (red B)** (Pete: more colour, more red than the low-saturation crimson). Three
+  strengths were rendered on slides 4, 6 and 10: today's, a brighter crimson, a vivid red. The vivid red read as an
+  alert or a sale, blurs most in video compression, and strengthens "red means down" on Hong Kong screens; Pete chose
+  B. Every strong red is pushed half way toward 356 degrees, saturated by 1.25 and lightened by 0.03: the accent
+  #A81E2D becomes #C80E1E, wine #7D1D2A becomes #971320, the gradients #A62535/#5A1520 become #C41627/#700E19. Pale
+  tints, ink and greys are unchanged. Applied to the sources (`src/*.html`, `house.py`, `gba_map.py`, `img/gba_map.svg`),
+  so every build keeps it. The written case keeps its own #A81E2D: the same family, a step brighter on screen.
 - **Colour, since 24 Oct: slide 4's tones on every slide, on white** (Pete liked slide 4's colours; tried on slide 3,
   then rolled out): secondary text a rose-tinted grey (slate #80606A, grey #B5979D), rules #ECDADD, panels #F8EFF0;
   soft rose fills (#EFD9DC, #E6CDD1, #D3A6AD) in place of the greyed rose and warm greys; wine and crimson with depth,

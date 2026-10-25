@@ -18,10 +18,10 @@ PARTS = {  # viewBox 0 0 440 400
 }
 NAMES = {"1": ("1", "Insure the income"), "2": ("2", "Home and business"), "3": ("3", "Fix the cost"),
          "4": ("4", "A plan each"), "5": ("5", "Values and crypto"), "roof": ("", "What passes on")}
-FILL = {"on": ("#A81E2D", "none", "#fff"), "done": ("#7D1D2A", "none", "#fff"), "todo": ("#fff", "#D3A6AD", "#B5979D"),
-        "all": ("#7D1D2A", "none", "#fff")}
+FILL = {"on": ("#C80E1E", "none", "#fff"), "done": ("#971320", "none", "#fff"), "todo": ("#fff", "#D3A6AD", "#B5979D"),
+        "all": ("#971320", "none", "#fff")}
 # the small title houses, in slide 4's line style (23 Oct): this call solid crimson, built parts rose, the rest dashed
-LINE = {"on": ("#A81E2D", "#A81E2D", "solid"), "done": ("#E8DEDC", "#A81E2D", "solid"), "todo": ("#FFFFFF", "#D3A6AD", "dash")}
+LINE = {"on": ("#C80E1E", "#C80E1E", "solid"), "done": ("#E8DEDC", "#C80E1E", "solid"), "todo": ("#FFFFFF", "#D3A6AD", "dash")}
 
 
 def house(state=None, w=72, labels=False, cls="house", steps=None):
@@ -90,7 +90,7 @@ def _mix(hex_, other, f):
 
 
 # slide 4's exploded house (24 Oct): each layer a colour, darkest at the base, shaded top / front-left / front-right
-LAYER = {"1": "#7D1D2A", "2": "#A35560", "3": "#A35560", "4": "#C48C93", "5": "#C48C93", "roof": "#D9C3C6"}
+LAYER = {"1": "#971320", "2": "#B4535D", "3": "#B4535D", "4": "#C48C93", "5": "#C48C93", "roof": "#D9C3C6"}
 # the same house in light tones, for slide 4 drawn on a dark wine stage (24 Oct): the base a little deeper, the roof white
 LAYER_LIGHT = {"1": "#D9AEB4", "2": "#E9CDD1", "3": "#E9CDD1", "4": "#F3E2E4", "5": "#F3E2E4", "roof": "#FFFFFF"}
 ICON = {"1": "shield-check", "2": "house", "3": "heart-pulse", "4": "users", "5": "leaf", "roof": "gift"}
@@ -162,7 +162,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
         o.append(f'<polygon class="r" points="{P((x1, y0, za), (x1, y1, za), (x1, y1, zb), (x1, y0, zb))}" fill="{_mix(col, "#000000", .20)}" stroke="{e}" stroke-width=".8"/>')
         for face, u0, u1, v0, v1 in holes.get(part, []):
             if palette == "light":   # on light walls the windows read darker, like glass at dusk
-                glass = _mix(col, "#7D1D2A", .42) if face == "L" else _mix(col, "#7D1D2A", .52)
+                glass = _mix(col, "#971320", .42) if face == "L" else _mix(col, "#971320", .52)
             else:
                 glass = _mix(col, "#FFFFFF", .62) if face == "L" else _mix(col, "#FFFFFF", .42)
             if face == "L":
@@ -191,7 +191,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
              f'<polygon class="t" points="{P((x0, y0, zr), (x0, y1, zr), (half, y1, zr + rh), (half, y0, zr + rh))}" fill="{_mix(col, "#FFFFFF", .40)}" stroke="{e}" stroke-width=".8"/>'
              f'<polygon class="r" points="{P((half, y0, zr + rh), (half, y1, zr + rh), (x1, y1, zr), (x1, y0, zr))}" fill="{_mix(col, "#000000", .16)}" stroke="{e}" stroke-width=".8"/>'
              f'<polygon class="l" points="{P((x0, y1, zr), (x1, y1, zr), (half, y1, zr + rh))}" fill="{col}" stroke="{e}" stroke-width=".8"/>'
-             f'<polygon class="w" points="{P((half - 14, y1, zr + 10), (half + 14, y1, zr + 10), (half + 14, y1, zr + 30), (half - 14, y1, zr + 30))}" fill="{_mix(col, "#7D1D2A", .40) if palette == "light" else _mix(col, "#FFFFFF", .55)}" stroke="{e}" stroke-width=".8"/>'
+             f'<polygon class="w" points="{P((half - 14, y1, zr + 10), (half + 14, y1, zr + 10), (half + 14, y1, zr + 30), (half - 14, y1, zr + 30))}" fill="{_mix(col, "#971320", .40) if palette == "light" else _mix(col, "#FFFFFF", .55)}" stroke="{e}" stroke-width=".8"/>'
              f'</g>')
     tr = 0.55                     # a point on the right slope, between the ridge and the eave, near the back
     anchors["roof"] = XY(half + tr * (W + ov - half), 4, zr + rh * (1 - tr))
@@ -200,7 +200,7 @@ def exploded(W=176, D=132, hf=18, hw=58, rh=52, gap=24, gx=6, ov=12, c=0.90, s=0
         ax, ay = anchors[part]
         x2 = edgex[side]
         o.append(f'<g class="ld" data-b="{steps[part]}"><line x1="{ax:.1f}" y1="{ay:.1f}" x2="{x2}" y2="{ay:.1f}" stroke="#D3A6AD" stroke-width="1.5"/>'
-                 f'<circle cx="{x2}" cy="{ay:.1f}" r="3" fill="#A81E2D"/></g>')
+                 f'<circle cx="{x2}" cy="{ay:.1f}" r="3" fill="#C80E1E"/></g>')
     o.append("</svg>")
     for part, (side, title, line) in CALLOUTS.items():
         ay = anchors[part][1]
@@ -231,7 +231,7 @@ def progress3d(call, w=66, W=176, D=132, hf=18, hw=58, rh=52, gap=12, gx=6, ov=1
 
     blocks = {"1": (-8, W + 8, -8, D + 8, zf), "2": (0, half - gx / 2, 0, D, z2), "3": (half + gx / 2, W, 0, D, z2),
               "4": (0, half - gx / 2, 0, D, z3), "5": (half + gx / 2, W, 0, D, z3)}
-    CRIMSON = ("#C9505D", "#A81E2D", "#7A1622")
+    CRIMSON = ("#DB4E5A", "#C80E1E", "#950B17")
     faces = []        # (points, fill, stroke, dashed)
 
     def add(pts, state, shade, col):
@@ -285,16 +285,16 @@ def elevation(w=360):
         fill = "url(#hatch)" if part == "1" else ("#F8EFF0" if part == "roof" else "#FBF4F5")
         o.append(f'<g class="hq" data-b="{steps[part]}">')
         if kind == "poly":
-            o.append(f'<polygon points="{geo}" fill="{fill}" stroke="#A81E2D" stroke-width="3" stroke-linejoin="round"/>')
+            o.append(f'<polygon points="{geo}" fill="{fill}" stroke="#C80E1E" stroke-width="3" stroke-linejoin="round"/>')
             cx, cy = 220, 108
         else:
             x, y, ww, hh = geo
-            o.append(f'<rect x="{x}" y="{y}" width="{ww}" height="{hh}" fill="{fill}" stroke="#A81E2D" stroke-width="3"/>')
+            o.append(f'<rect x="{x}" y="{y}" width="{ww}" height="{hh}" fill="{fill}" stroke="#C80E1E" stroke-width="3"/>')
             cx, cy = x + ww / 2, y + hh / 2
         num = "" if part == "roof" else part
         if num:
             o.append(f'<text x="{cx}" y="{cy + 13}" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="600" '
-                     f'font-size="{30 if part == "1" else 40}" fill="#A81E2D">{num}</text>')
+                     f'font-size="{30 if part == "1" else 40}" fill="#C80E1E">{num}</text>')
         o.append("</g>")
     o.append("</svg>")
     return "".join(o)
