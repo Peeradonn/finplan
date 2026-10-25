@@ -151,6 +151,13 @@ class="notes">`: the spoken words, then "[Notes: ...]"), never in the script fil
 spoken words until the timed read-through sets the real cap; recount after any change. Prototypes: `round2/looks/`
 (`make_looks.py --pages N`).
 
+**The PowerPoint file** (the scored "set of Power point slides"): after `make.py`, run
+`.venv/Scripts/python.exe round2/make_pptx.py` → `round2/Axis.pptx`. Each slide is the HTML slide in its final state as
+a 2560 × 1440 picture (the font isn't on the judges' machines; the charts, map and house are HTML/SVG), its title as alt
+text, the spoken script as speaker notes (not the bracketed team notes), sections from the footer tracker, metadata
+"Team Axis" only. Rebuild it after any slide change. **Don't open and re-save it in PowerPoint while signed in** (Office
+stamps the account into the file); if someone must, scrub it and check with `make_pptx.py --check round2/Axis.pptx`.
+
 ## Round One: the document (frozen)
 ```
 model/wong_model.xlsx (Inputs tab)  →  model/run_model.py (Monte Carlo)  →  model/make_charts.py
