@@ -142,7 +142,9 @@ Reasons are in `document/manuscript.md`. These are content decisions; how the de
 - Critical illness HK$1.5M each (sized by need); new cover ≈HK$100K in year 1. Adrian 40% equity, Carmen 60%.
 - ESG 25% of HK$10.47M investable assets, SFC-listed ESG funds only: BOC-Prudential MSCI World ESG Index Fund (core),
   Allianz Green Bond (each bond checked against ICMA), Sun Life MPF Global Low Carbon Index Fund (employee half, via
-  the Employee Choice Arrangement). No thematic fund; no separate Hong Kong holding.
+  the Employee Choice Arrangement). No thematic fund; no separate Hong Kong holding. **New evidence, 4 Nov:** the
+  BOC-Prudential fund shows US$0.00 of assets on HKEX's fund platform every month since Sep 2024 and has no offering
+  document; the Final names no fund without checking both (`Final/Final_Plan.md` §2).
 - Broad index funds only; the holdings and weights per parent are the manuscript's Figure 14 (§5, page 7). No
   Nasdaq-100, REITs or 3433.
 - Card balance assumed revolving; tax assumed separate assessment (both stated as checks in the proposal's §2).
