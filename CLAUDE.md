@@ -7,14 +7,18 @@ Our entry to the **UFP Award 2026** (Hong Kong Undergraduate Financial Planners 
 Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Asset Exposure"**.
 - **Round One (done, frozen):** a 15-page written proposal, "Built to Last", submitted 2 Oct 2026
   (`document/build/proposal.pdf`). The judges hold it. Change it only to fix an error, and log why.
-- **Round Two (active):** a 10-minute recorded video presented over our slides, plus the PowerPoint file, which is
-  scored on its own. **Due Mon 26 Oct 2026, 17:00 HKT**, by email to info@hkrfp.org (rules p.4): the video as a download
-  link, `Axis.pptx` attached; no hand delivery (Pete, 26 Oct). Send from a personal account, signed with the sender's
-  name and "Team Axis" only.
-- **Final (if we reach it):** a presentation on a topical issue, then ten minutes of questions.
+- **Round Two (done, frozen):** a 10-minute recorded video presented over our slides, plus the PowerPoint file,
+  submitted 26 Oct 2026 by email to info@hkrfp.org. We reached the Final.
+- **Final (active):** a 10-minute live presentation on the topic "Beyond Green Labels" (sustainable and green finance
+  in financial planning), then ten minutes of questions; Sat 21 Nov 2026. Slides due before 17:00 Mon 16 Nov to
+  info@srfpns.org per the finalist guidelines (the older rules page says 11 Nov, info@hkrfp.org: confirm). No slide can
+  change after submission. Criteria: knowledge 20, logical thinking 20, presentation 20, innovation and independent
+  thinking 40; ranking 0.15 × Round One + 0.15 × Round Two + 0.7 × Final. Our client is the Wong family (Pete, 4 Nov).
 
-**Start here:** `round2/Round2_Deck_Plan.md` (the argument, the storyline, what each slide must prove), then
-`round2/Talk_Outline.md` (the script and its timing). The case, the rules and the workshop deck are in `Primary Info/`.
+**Start here:** `Final/Final_Plan.md` (the brief, the thesis, the storyline, who does what), then the research briefs in
+`Final/research/`. The Final brief and guidelines are the PDFs in `Final/`. Round Two's plan
+(`round2/Round2_Deck_Plan.md`) and build tools still apply for how we make and check slides. The case, the rules and the
+workshop deck are in `Primary Info/`.
 
 ## Your stance: independent reviewer, not cheerleader
 Everything written here (the proposal, the manuscript, the deck plan, the review logs, this file) is **our team's
