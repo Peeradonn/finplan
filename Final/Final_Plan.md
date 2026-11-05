@@ -1,7 +1,7 @@
 # Final Round: plan
 
 **Status:** draft, 5 Nov 2026. Decided: the client is the Wongs (Pete, 4 and 5 Nov). Open: the thesis, the framework and
-storyline v2 (§4, for the team workshop, §4.6); the research split (§5). Everyone starts on work that waits for nobody.
+storyline v2 (§4, agreed by messages, §4.6); the research split (§5). Everyone starts on work that waits for nobody.
 **What it is:** a 10-minute live presentation in English, then 10 minutes of questions from the panel. Sat 21 Nov 2026,
 FellowSPACE, 28/F Tower A, Southmark, Wong Chuk Hang. Arrive by 09:30 (registration, ballot for the order, machine test).
 **Slides due:** before **17:00 Mon 16 Nov 2026** to **info@srfpns.org** (finalist guidelines, p.1). Our 14 Sep copy of the
@@ -361,18 +361,24 @@ minutes of 9: someone else must present the business and the home, and own their
 **Old slide numbers → new (v1 → v2):** 1 → 1 · 2 → 2 · 3 → 4 · 4 → 3 · 5 → 7 · 6, 7 → 8 · 8, 9, 10 → 6 (detail to backup) ·
 11 → 9 · 12 → 10 · 13 → 11 · 14 → 12 · new: 5 (the chart). §8's slide numbers are still v1's until v2 is agreed.
 
-### 4.6 The workshop (about 2 hours, whole team)
+### 4.6 Agreeing it: by messages, not a meeting (Pete, 5 Nov)
 
-1. **10 min.** Read aloud: the brief's "Your Task", Key Areas §7, and "What distinguishes a strong answer".
-2. **25 min.** Thesis: read 4.1's options aloud; each person says which they'd remember tomorrow; pick or rewrite. Test:
-   everyone says it in one breath, without notes.
-3. **20 min.** Framework: name, steps, verdict rules. **Live test:** run it on a decision nobody has prepared ("Adrian
-   wants to buy carbon credits to offset the family's flights", or "Ryan wants tokenised green bonds"). If it gives an
-   answer in about a minute, it works; if not, fix the framework, not the example.
-4. **15 min.** The three takeaways, the hook, the close.
-5. **30 min.** Storyline v2: read the titles aloud in order; cut or merge; settle the speakers.
-6. **20 min.** Each owner lists their slides' claims from the "Must prove" column: that list is the remaining research.
-   Anything not needed by a slide goes to backup or nowhere.
+Pete sends the team his defaults for §4 (thesis A′, framework F1, storyline v2, speakers, the open facts) and locks them
+on **Sat 7 Nov, morning**, unless someone objects. Silence in a chat can look like agreement, so the message asks for
+replies only a reader of §4 can give:
+1. Any objection (by **Fri 6, 21:00**).
+2. The thesis in their own words, one sentence: the check that everyone owns the argument.
+3. **The live test:** "Adrian wants to buy carbon credits to offset the family's flights. Which corner, and why?" If the
+   answers land in about the same place, the framework works; if they scatter, fix the framework, not the example.
+   *Expected answer:* it costs money, and changes something real only if the credits are verified and additional (would
+   the cut have happened anyway?). Cheap avoidance credits mostly fail that test: refuse the label ("carbon-neutral
+   flights"). High-quality removal credits could be "pay for it knowingly" from Carmen's values budget. And the family's
+   own cuts (the vans, recycled content) give measured tonnes and pay.
+4. By **Sun 8**: each owner's list of the claims their slides must prove, marked have or need to check (§4.5's "Must
+   prove" column). That list is the remaining research; anything no slide needs goes to backup or nowhere.
+
+If the replies show real disagreement (on the thesis, the client or the split), hold a 15-minute call rather than
+argue it out in the chat.
 
 **Then:** an outside critic (a lecturer or practitioner) hears the agreed storyline before the build; the script is
 written before the slides; rehearsals are recorded and watched back.
@@ -464,7 +470,7 @@ closes Tue 10 Nov;** after that, fact checks only, so the build and the rehearsa
 | When | What |
 |---|---|
 | Thu 5 Nov | Team meeting held: research first (§5). Deadline still to confirm with the organiser |
-| Fri 6 | Shared context done (one afternoon each); **the workshop (§4.6)**: thesis, framework, storyline v2 and speakers agreed; the split settled (§5); the open decisions (Carmen's share, the warehouse, the building, the fund) made. Pete starts the model price tags now (they gate slides 2 and 5) |
+| Fri 6 | Shared context done (one afternoon each); **replies due 21:00 (§4.6)**; Pete locks thesis, framework, storyline v2 and speakers on Sat 7 morning; the split settled (§5); the open decisions (Carmen's share, the warehouse, the building, the fund) made. Pete starts the model price tags now (they gate slides 2 and 5) |
 | Sat 7 | Go / no-go on the business structure (the Wongs stay or we switch); area 2's owner decides |
 | Sat 7 – Tue 10 | Targeted research to numbers; inputs to the model (Mon 9); model numbers and price tags out (Tue 10); first slides. **Research closes Tue 10** |
 | Wed 11 | Full draft deck; first timed run (the submission itself if 11 Nov is the deadline) |
