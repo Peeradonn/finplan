@@ -119,13 +119,24 @@ in them are EXPLORATORY. Headlines, with the claim to check before it goes on a 
   doesn't change, 2.7 through the business and 2.2 through the flat. A green lease for the warehouse is worth more as a
   secure lease to the 2035–39 sale than for its kWh. *Check:* the building's age (1996 is our assumption), HKMC payouts
   by age, CLP's 2026 tariffs.
+- **Supply chain, PLA, the green premium** (`area2_supply_chain.md`, 5 Nov; area 2's owner). Bank supply-chain finance
+  doesn't reach Carmen: her purchases (about US$3.4M a year, ILLUSTRATIVE) are about 1/30 of one bank's published guide
+  for an anchor (US$100M of trade spend); the Hong Kong programmes found are anchored by CLP Power, Towngas and Sanfield,
+  none by a food-and-beverage or packaging buyer; no programme publishes its ESG discount, and at an assumed 10–25bp it
+  is worth HK$600–1,500 a year against HK$3.9–23K for an ESG rating. What works instead: one rating used several ways,
+  early payment from her own cash in return for supplier data, and recycled-content options priced to customers per
+  tonne. **The green premium has collapsed:** recycled PET traded at the same price as virgin in Southeast Asia in Oct
+  2026 (search extracts of S&P and Argus), so the biggest cut (about 108 t a year) costs HK$0–1,395 a tonne, about 1.4 HK
+  cents a cup even at the 2023 peak; the earlier 10% (HK$328K a year) was too high. PLA is regulated plastic (EPD
+  guidance; its Sep 2025 packaging guide calls compostables "premature"); Phase 2 has no date; food-waste collectors
+  reject loads over 20% packaging. *Check:* the ordinance text itself (not read), the resin prices, certification costs.
 
 **What this does to the thesis.** It holds for what sustainability can *change*: the business (data, vans, its own
 label) and the flat (how and when to leave) move the money more than the ESG label does. It needs one refinement: in a
 climate scenario most of the loss comes through ordinary market and inflation risk, which no green label hedges; the
 plan's defences there are diversification, the guardrails and the reserve. Say both.
 
-**Two Round One issues found (Round One is frozen and the judges hold it; the Final must not repeat either):**
+**Two Round One issues found (Round One is frozen; the Final must not repeat either):**
 1. The BOC-Prudential ESG fund above. The Final names a fund only after checking it has assets and an offering document.
    **Pete to decide** whether to say it on stage ("a fund on the SFC's ESG list that holds US$0": a label is not a
    product) or keep it for the questions. Either way, be ready if a judge asks.
@@ -139,6 +150,25 @@ business worth a slide (a real project, an instrument, a number), the transition
 team whose client runs a factory. Fallback: a new client whose factory exports steel or aluminium goods to the EU, at the
 cost of building a client and a baseline from scratch.
 
+**Reviewed 5 Nov: keep the Wongs** (area 2's owner confirms by Sat 7). The test was: no bank supply-chain finance at her
+scale *and* no customer willing to pay a premium. The first failed (it doesn't reach her); the second mostly dissolved
+(recycled PET at about the same price as virgin, so there is little premium to pay). Area 2's story is now: **Carmen's
+transition is cheap, and the finance products the brief lists aren't built for her size; what she needs is data.** The
+structure compares all five instruments and picks: a plain equipment loan for the vans (HKMC guarantee), recycled
+content on supplier terms, supplier data bought with early payment from her own cash, a green lease at the 2027
+renewal; it refuses the green-loan label and finds no bank supply-chain programme. That covers the brief's bullets with
+numbers. The remaining worry (moderate): it can read as dodging "Financing the Transition". Insurance: one backup slide
+running the same framework on a factory owner exporting to the EU, where CBAM and a sustainability-linked loan do apply
+and the verdicts change.
+
+**Why the Wongs, against a client built to fit the brief (5 Nov):** a real "before" (our October plan, written before
+this brief existed: no strawman); the core figures are the organiser's own case, so we can tag "case figure" vs "our
+assumption", where an invented client is all assumption; the US$0 fund; four of the six areas fit strongly; Hong Kong
+has about 12 import/export and wholesale SMEs for every manufacturing one (TID, June 2025). **Correction (5 Nov):** we
+don't know who the Final judges are (the guidelines name none; the rules page's list is "under construction"), so don't
+assume any judge read Round One or the case. A judge new to the case meets the Wongs as any client would be met; the
+advantages above survive that, as long as the talk stands alone (§3).
+
 ## 3. Rules for every slide
 - **Numbers:** every model number is a `{{key}}` from `figures/numbers.json` (CLAUDE.md "Numbers"). New Final numbers go
   through `export_numbers()`, then diff `numbers.json` (no Round One number may change) and log in `reviews/applied.md`.
@@ -150,6 +180,15 @@ cost of building a client and a baseline from scratch.
   crimson family, the house) unless a projector test says otherwise. This is a projector in a room, not Zoom: check
   contrast. Don't depend on Morph (the venue notebook's PowerPoint version is unknown); embed the font.
 - **Live talk:** about 1,200 spoken words for 9:20. A slide carries one point and its number; the reasoning is spoken.
+- **Assume no judge has read anything** (5 Nov):
+  1. Every slide stands alone. Never "as you'll remember" or "you hold our proposal".
+  2. Introduce the family on screen in one picture: four people, what they own (flat HK$11.5M, business HK$5.0M, savings
+     and investments HK$10.5M), what each wants, who disagrees (slide 3, with where the money is).
+  3. Show the October advice as a concrete "before" beside each change (e.g. "October: 25% in three ESG funds").
+  4. Say where the client comes from in one line: "the family in this year's competition case; we wrote their plan in
+     Round One".
+  5. Cold read before submitting: two or three people who've never seen the case watch it without explanation; if they
+     can't say who the family is and what changed within a minute, fix the introduction.
 - **Every decision carries the same price tag** (Pete, 5 Nov), in the brief's own four words ("cash flow, balance sheet,
   risk profile or estate ... by how much, over what horizon"), and a verdict:
 
@@ -189,20 +228,21 @@ still open (Pete, 5 Nov: he takes areas 1, 2 and 4; see §5): re-assign the spea
 |---|---|---|---|---|
 | 1 | Pete | 0:20 | [Hook, if Pete decides: "a fund on the SFC's ESG list, recommended by us in October, holds US$0: a label isn't a product"] Team name said first | — |
 | 2 | Pete | 0:45 | [The recommendation: N decisions, capital HK$…, odds the money lasts … → …, HK$… more to the children, about … t CO2e a year less] | Recommendation, capital, outcomes |
-| 3 | Pete | 0:40 | The family's HK$27M is mostly a flat and a business; October's answer touched only the HK$2.6M in ESG funds | The gap |
+| 3 | Pete | 0:55 | Meet the Wongs: four people who want different things, and HK$27M that is mostly a flat and a business; October's answer touched only the HK$2.6M in ESG funds | The client; the gap |
 | 4 | Pete | 0:50 | One test for every sustainability decision: what it changes in cash flow, net worth, risk and estate, by how much, by when, on what evidence; then do it, pay for it knowingly, or refuse it | The framework; five kinds of finance placed |
 | 5 | Win | 0:45 | [Three decision-makers, one mandate: Adrian's money stays as he wants it; Carmen's values get their own portion with a cost limit of HK$… a year] | Profile, mandate, price of values |
 | 6 | Win | 0:50 | [The portfolio, measured not labelled: weights per parent, fees ≈HK$… a year, carbon intensity …% below the plain index] | Portfolio with weights and costs |
 | 7 | Win | 0:30 | [What we won't buy: the clean-energy fund, sustainability-linked bonds, a green bond fund whose fee is many times the greenium] | A refusal |
 | 8 | Fahtai | 0:45 | [Carmen's business: about … t a year, 98% in what it buys and sells; her listed customers must report it from FY2026; her own "compostable" label is a risk] | Baseline |
-| 9 | Fahtai | 0:50 | [The structure: electric vans and LED, HK$1.9M, saving ≈HK$… a year without green finance; the green loan label refused at this size] | Quantified structure, a refusal |
+| 9 | Fahtai | 0:50 | [Her transition is cheap; the products aren't built for her: vans and LED HK$1.9M on a plain loan, saving ≈HK$… a year; recycled content at about the price of virgin; supplier data bought with early payment; the green-loan label refused, no bank supply-chain programme at her size] | Quantified structure, a refusal |
 | 10 | Fahtai | 0:40 | [It protects the sale: each 1% of sales lost costs her stake ≈HK$…; each HK$1M off the price costs the family … points] | Enterprise value, succession |
 | 11 | Lookbua | 0:50 | [The flat: if old flats lose value, downsizing loses … points and the reverse mortgage …; downsizing still leaves HK$… more; leave by the building's 50th year; green mortgage refused] | A trade-off, a refusal |
 | 12 | Lookbua | 0:45 | [A late, sudden transition takes the odds from … to …; most of the loss is ordinary market risk no label hedges; our defences] | A scenario; risk register |
 | 13 | Pete | 0:40 | One page the family checks every year: money, carbon, impact and milestones, each with a trigger that forces a decision | A dashboard; governance; funded giving |
 | 14 | Pete | 0:20 | [From a label to a price: N decisions, HK$…] | — |
 
-Total ≈9:30 (trim to 9:20 in the build). Handovers: Pete → Win → Fahtai → Lookbua → Pete (four). Speaking: Pete 3:35,
+Total ≈9:45 with the family introduction (5 Nov); trim to 9:20 in the build, first by showing slide 4's five kinds of
+finance as one picture rather than speaking them. Handovers: Pete → Win → Fahtai → Lookbua → Pete (four). Speaking: Pete 3:35,
 Fahtai 2:15, Win 2:05, Lookbua 1:35. Test the titles by reading them aloud in order.
 
 ### How we stand out (5 Nov; inference about the other teams, not fact)
@@ -226,7 +266,7 @@ from ESG funds. The brief's hints (a refusal, a trade-off, honesty about the gre
    manufacturing (TID, as at June 2025, https://success.tid.gov.hk/english/aboutus/what_are_sme.html). Say it when we
    introduce the business.
 5. **The client's own label as the risk:** Carmen's "compostable" products count as plastic under HK law and nothing
-   here composts them (Fahtai to confirm both).
+   here composts them (EPD guidance supports both, `area2_supply_chain.md`; the ordinance text is still to read).
 6. **Dates, not just weights:** e-van tax waiver ends 31 Mar 2028; warehouse lease renews 2027; customers report from
    FY2026; solar feed-in tariff ends 2033; HKMC case by case above building age 50; the sale 2035–39.
 
@@ -302,19 +342,21 @@ abatement curve in full; the instrument comparison (tenor, covenants, verificati
 carbon figures; the risk register in full; the scenario's inputs and sources; the sustainability annex to the
 investment policy; the model's assumptions; the rules map (what applies to the Wongs, what doesn't).
 
-## 8. Hard questions (first list; owners add to it)
+## 8. Hard questions (first list; owners add to it; slide numbers from storyline v1)
 
 | Who asks | Question | Answered on | Weak? |
 |---|---|---|---|
-| ESG strategist | Is "sustainable packaging" itself a green label? Compostable packaging in a city without industrial composting? | 6–7 | Open (Fahtai) |
-| Practitioner | Why not a sustainability-linked loan? Why not the Grant Scheme? | 7 | Grant scheme starts at HK$100M (secondary sources; confirm) |
-| Practitioner | You reused the case: what's new? | 3, 14 | The before / after must be explicit |
-| ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 9 | Open (Win) |
-| Banker | Would a bank lend for this? Coverage, collateral? | 7 | Open (Fahtai) |
+| ESG strategist | Is "sustainable packaging" itself a green label? Compostable packaging in a city without industrial composting? | 8 | EPD guidance: PLA is regulated plastic, compostables "premature"; ordinance text to read |
+| Practitioner | Why not a sustainability-linked loan? Why not the Grant Scheme? Why no supply-chain finance? | 9 | Grant: HK$100M minimum (HKMA guideline, 24 Apr 2026); supply-chain finance: anchors ~US$100M of trade spend; the ESG discount unpublished |
+| Practitioner | You reused the case: what's new? | 1, 3, 14 | The October "before" on screen beside each change |
+| Any judge new to the case | Who are these people, and why them? | 3 | One-line origin + the family picture (§3) |
+| Practitioner | Your financing part is thin: isn't "Financing the Transition" the topic? | 9; backup | The five instruments compared with numbers; the factory-owner backup slide |
+| ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 6 | Open (Win): no measured carbon figure yet |
+| Banker | Would a bank lend for the vans? Coverage, collateral? | 9 | Open (area 2's owner) |
 | Regulator | Are you licensed to advise on the loan or the funds? Suitability per person? | 5, 13 | Draft: we coordinate with the bank and licensed parties |
 | The family | What does Adrian give up for Carmen's values? | 5 | Price of values in HK$ (Win, Pete) |
 | Practitioner | Your scenario: why those shocks, from where? | 12 | Sources from NGFS / HKMA (Lookbua) |
-| Anyone | What would you not do? | 7, 10 | Need two clear refusals with numbers |
+| Anyone | What would you not do? | 7, 9, 11 | Refusals with numbers: clean-energy ETF, green-loan label, green mortgage |
 
 ## 9. Facts to check before they go on a slide
 
@@ -329,6 +371,9 @@ Each research brief has its own full list (its last section). The ones the story
 | HKMC reverse mortgage pays about 36% more per HK$1M at 68 than at 60 | From HKMC's 2026 examples (single borrower, ages 60 and 70); check the joint-borrower table |
 | ESG ETFs trailed IWDA by 0.4–2.9 points a year over five years | Window-dependent; quote with the period and the long-run figure beside it |
 | Scope 3 about 98% of the business's footprint | ILLUSTRATIVE business, published factors (UK DESNZ 2025): say "on our assumptions" |
+| Recycled PET at the same price as virgin, Southeast Asia, Oct 2026 | Read from search extracts of S&P Global and Argus (the sites refused automated fetches); find a readable source and date it. Prices swing: quote the 2023 peak beside it |
+| PLA counts as regulated plastic; compostables "premature" | EPD guidance and its Sep 2025 packaging guide; the ordinance text itself wasn't read |
+| Supply-chain finance anchor guide US$100M of trade spend | One bank's published guide; no Hong Kong bank states a minimum |
 | EU CBAM: definitive from 1 Jan 2026; importers under 50 t a year exempt; ~180 downstream products proposed from 2028, not adopted | Law-firm and press summaries; check the Official Journal and the Commission's CBAM pages |
 | HKEX: Scope 3 mandatory for LargeCap issuers from financial years starting 1 Jan 2026; comply-or-explain for the rest | Law-firm summaries; check Appendix C2 Part D itself |
 | Hong Kong Taxonomy Phase 2A in 2026 (transition and adaptation) | From the brief; confirm with HKMA |
