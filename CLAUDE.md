@@ -11,9 +11,13 @@ Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Ass
   submitted 26 Oct 2026 by email to info@hkrfp.org. We reached the Final.
 - **Final (active):** a 10-minute live presentation on the topic "Beyond Green Labels" (sustainable and green finance
   in financial planning), then ten minutes of questions; Sat 21 Nov 2026. Slides due before 17:00 Mon 16 Nov to
-  info@srfpns.org per the finalist guidelines (the older rules page says 11 Nov, info@hkrfp.org: confirm). No slide can
+  info@srfpns.org per the finalist guidelines (confirmed by Pete, 5 Nov). No slide can
   change after submission. Criteria: knowledge 20, logical thinking 20, presentation 20, innovation and independent
   thinking 40; ranking 0.15 × Round One + 0.15 × Round Two + 0.7 × Final. Our client is the Wong family (Pete, 4 Nov).
+  **Not confined by Rounds One and Two** (Pete, 5 Nov): not every judge will remember them. The Final compares against
+  "the label approach" (what a careful planner does by default; our Round One is one line of proof, never the spine),
+  introduces the family from scratch, and changes any earlier choice the framework disagrees with. The Round Two look
+  (the house, "Built to Last") isn't the default for the Final either.
 
 **Start here:** `Final/Final_Plan.md` (the brief, the thesis, the storyline, who does what), then the research briefs in
 `Final/research/`. The Final brief and guidelines are the PDFs in `Final/`. Round Two's plan

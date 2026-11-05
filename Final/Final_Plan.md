@@ -4,9 +4,8 @@
 storyline v2 (§4, agreed by messages, §4.6); the research split (§5). Everyone starts on work that waits for nobody.
 **What it is:** a 10-minute live presentation in English, then 10 minutes of questions from the panel. Sat 21 Nov 2026,
 FellowSPACE, 28/F Tower A, Southmark, Wong Chuk Hang. Arrive by 09:30 (registration, ballot for the order, machine test).
-**Slides due:** before **17:00 Mon 16 Nov 2026** to **info@srfpns.org** (finalist guidelines, p.1). Our 14 Sep copy of the
-rules page says 23:59 Wed 11 Nov to info@hkrfp.org (`Primary Info/2026-rules.md`). **Unconfirmed which holds: Pete asks
-the organiser today** (WhatsApp 9078 1829 or info@srfpns.org). Until they answer, keep the 11 Nov date in sight.
+**Slides due:** before **17:00 Mon 16 Nov 2026** to **info@srfpns.org** (finalist guidelines, p.1; **confirmed by Pete, 5
+Nov**). The older rules page's 11 Nov date no longer applies.
 **No slide can change after submission** (guidelines, rule 7): the deck must survive two timed run-throughs before we send it.
 **Sources:** `Final/2026 UFP Final Round Topic.pdf` (the brief), `Final/2026 UFP Final Round Topic Key Areas.pdf` (what
 the ten minutes must contain), `Final/2026 UFP Final 4teams + Guidelines for Finalists.pdf` (criteria, rules).
@@ -38,7 +37,7 @@ and show how the framework changes the advice you would otherwise give. Address 
 
 | Criterion | What it rewards here (our reading, not the organisers') | Where we answer it (§4) |
 |---|---|---|
-| Innovation, independent thinking (40) | Conclusions that differ from the easy answer, each with a number: what we refuse, where the brief's tools don't fit this client, what changed since October | 3, 6, 7, 10, 11 |
+| Innovation, independent thinking (40) | Conclusions that differ from the easy answer, each with a number: what we refuse, where the brief's tools don't fit this client, what the framework changes against the label approach | 3, 6, 7, 10, 11 |
 | Knowledge of the topic (20) | Precise terms (green vs sustainability-linked vs transition; greenium vs green premium); the rules that really touch the client, and the ones that don't | 4, 5, 6, 9 |
 | Logical thinking (20) | One chain: values → mandate → decisions ranked by money → structure → scenario → dashboard; never six mini-talks | the order of §4 |
 | Presentation skills (20) | Live delivery by four, on time, the Q&A | §11 |
@@ -59,9 +58,31 @@ HK$10.47M; the HK$30K-a-year design scholarship. What the case doesn't give (the
 emissions, the building's age) we define and tag ILLUSTRATIVE. We say in the first minute which figures are the case's
 and which are ours.
 
-**The thesis (to test, not yet a finding):** in October we gave the Wongs the label answer, 25% in SFC-listed ESG funds.
-The sustainability decisions that move their money are in Carmen's business (what a buyer pays in 2035–39) and the flat
+**The thesis (to test, not yet a finding):** the label approach puts 25% in SFC-listed ESG funds and stops there. The
+sustainability decisions that move their money are in Carmen's business (what a buyer pays in 2035–39) and the flat
 (what it is worth when they leave it), not in the 25%.
+
+**The baseline is the label approach, not our Round One plan (Pete, 5 Nov: "we don't want to be confined by our past
+submission ... not all judges might remember").** The brief's "the advice you would otherwise give" is the advice a
+careful planner gives by default: funds picked from the SFC's ESG list to hit the 20–25% target, the green mortgage and
+green loan the banks offer, a pledge to a charity, and nothing on the business or the flat. Our Round One did exactly
+that, which is the proof it isn't a strawman: say so once, in one line ("we did this ourselves in Round One"), never as
+the spine. Every comparison on screen is framework vs label approach, and stands alone for a judge who never saw
+Rounds One or Two. In the model, the label approach is Round One as written (`Final/model_runs.md`).
+
+**Free of Rounds One and Two, what we'd do differently (5 Nov):**
+1. **The before:** the label approach (above), not "October".
+2. **The hook:** "One of the few global equity index funds on the SFC's ESG list holds US$0." It needs no history; "we
+   know because we recommended it" is optional, one line.
+3. **The family's plan, in plain words:** retire at 65 and 62 on HK$780K a year, sell the business in stages, release
+   the flat's value at retirement. None of Round One's machinery on screen (annuity ladders, "their own way").
+4. **The 20–25% ESG target is the case's, not a fixed goal:** the framework treats the share as an output of each
+   person's budgets, landing at 24.8% or 27.7% (`Decision_List.md` P6). We say why we're near the family's wish, not
+   that we hit a number.
+5. **The look:** not Round Two's by default. "Built to Last" and the house belonged to that plan; this talk's idea is
+   the label against what it does, so a label or price-tag motif may say more (§3, "Look").
+6. **Round One's choices are open:** where the framework disagrees with them (the fund, Adrian's green bonds, the
+   unfunded pledge, "decide the flat in 2037"), the new advice wins without apology.
 
 **First evidence: exploratory runs, 4 Nov** (the Round One model, `model/run_model.py`; script `Final/explore_runs.py`).
 EXPLORATORY: not for slides until added to `export_numbers()` and logged. Each row changes one input; the rest is the
@@ -161,8 +182,8 @@ numbers. The remaining worry (moderate): it can read as dodging "Financing the T
 running the same framework on a factory owner exporting to the EU, where CBAM and a sustainability-linked loan do apply
 and the verdicts change.
 
-**Why the Wongs, against a client built to fit the brief (5 Nov):** a real "before" (our October plan, written before
-this brief existed: no strawman); the core figures are the organiser's own case, so we can tag "case figure" vs "our
+**Why the Wongs, against a client built to fit the brief (5 Nov):** a "before" that isn't a strawman (the label
+approach, which our own Round One followed); the core figures are the organiser's own case, so we can tag "case figure" vs "our
 assumption", where an invented client is all assumption; the US$0 fund; four of the six areas fit strongly; Hong Kong
 has about 12 import/export and wholesale SMEs for every manufacturing one (TID, June 2025). **Correction (5 Nov):** we
 don't know who the Final judges are (the guidelines name none; the rules page's list is "under construction"), so don't
@@ -176,17 +197,19 @@ advantages above survive that, as long as the talk stands alone (§3).
   sourced inputs) or ILLUSTRATIVE (our assumption). The brief asks for "measured, estimated and illustrative"; showing
   the tags is itself an answer to it.
 - **HK dollars only.** Sources on the slide, dated.
-- **Look:** decided in the build (the slide-design skill). Default: keep the Round Two identity (Plus Jakarta Sans, the
-  crimson family, the house) unless a projector test says otherwise. This is a projector in a room, not Zoom: check
-  contrast. Don't depend on Morph (the venue notebook's PowerPoint version is unknown); embed the font.
+- **Look:** decided in the build (the slide-design skill), for this talk, not inherited (5 Nov). Round Two's house said
+  "Built to Last"; this talk's idea is the label against what it does, so render a label or price-tag motif beside a
+  plain option and choose. Keep Plus Jakarta Sans if it tests well on a projector. This is a projector in a room, not
+  Zoom: check contrast. Don't depend on Morph (the venue notebook's PowerPoint version is unknown); embed the font.
 - **Live talk:** about 1,200 spoken words for 9:20. A slide carries one point and its number; the reasoning is spoken.
 - **Assume no judge has read anything** (5 Nov):
   1. Every slide stands alone. Never "as you'll remember" or "you hold our proposal".
   2. Introduce the family on screen in one picture: four people, what they own (flat HK$11.5M, business HK$5.0M, savings
      and investments HK$10.5M), what each wants, who disagrees (slide 3, with where the money is).
-  3. Show the October advice as a concrete "before" beside each change (e.g. "October: 25% in three ESG funds").
-  4. Say where the client comes from in one line: "the family in this year's competition case; we wrote their plan in
-     Round One".
+  3. Show the label approach as the concrete "before" beside each change (e.g. "Label approach: 25% in funds from the
+     SFC's ESG list"), never "October" or "our Round One plan".
+  4. Say where the client comes from in one line: "the family in this year's competition case". Round One appears at
+     most once, as proof that the label approach is what careful planners do ("we did it ourselves").
   5. Cold read before submitting: two or three people who've never seen the case watch it without explanation; if they
      can't say who the family is and what changed within a minute, fix the introduction.
 - **Every decision carries the same two-sided price tag** (Pete, 5 Nov): what it does to the family's money, in the
@@ -293,8 +316,9 @@ scholarship (and the business's own cuts); ESG integration → the portfolio.
   worth HK$0–4K here. A green grant: starts at HK$100M.
 - **H2, the cup:** hold up a "compostable" cup. "Sold as sustainable. Hong Kong's law counts it as plastic, and it goes to
   landfill." Strong in a room; a gimmick if delivered nervously.
-- **H3, the fund alone:** "In October we put this family's ESG money in a fund on the SFC's official ESG list. Last week we
-  checked: it holds US$0." Call BOCI-Prudential first (Win).
+- **H3, the fund alone:** "One of the few global equity index funds on the SFC's official ESG list holds US$0." Stands
+  alone for any judge; optionally one more line: "We know, because we recommended it ourselves." Call BOCI-Prudential
+  first (Win).
 
 **Close options:**
 - **C1, the callback** (recommended): "A label tells you what something is called. We showed what it does. For the Wongs,
@@ -333,7 +357,7 @@ slide) · **MODEL** (Pete's runs) · **CALL** (ask someone) · **CASE** (the cas
 | 1 | Hook | 0:45 | A green label says what it's called, not what it does | ESG fund on the SFC list holds US$0; "compostable" is regulated plastic and landfilled; green mortgage HK$0–4K; grant from HK$100M | Fund: HAVE + CALL; PLA: CHECK (ordinance text); mortgage: HAVE; grant: CHECK (HKMA guideline) | — |
 | 2 | Answer | 0:40 | [N decisions, HK$… capital: odds … → …, HK$… more to the children, … t less a year] | The recommendation, the capital, both outcomes | MODEL; vans HK$1.9M ESTIMATED; scholarship fund ≈HK$0.48M ESTIMATED | Recommendation, capital, outcomes |
 | 3 | Framework | 0:45 | Four steps show what a decision does, not what it's called | Map, Price, Decide, Govern; the two-sided price tag; the four corners; the five kinds of finance placed | Framework brief (definitions) | The framework |
-| 4 | Map | 0:50 | The Wongs' sustainability sits where their money sits: a flat and a business | Four people and what each wants; flat HK$11.5M, business HK$5.0M, investments HK$10.5M; October touched only the HK$2.6M in ESG funds; "the family in this year's case; we wrote their plan in Round One" | CASE; Round One manuscript | Profiles (area 1) |
+| 4 | Map | 0:50 | The Wongs' sustainability sits where their money sits: a flat and a business | Four people and what each wants; flat HK$11.5M, business HK$5.0M, investments HK$10.5M; their plan in plain words (retire at 65 and 62, sell the business in stages, release the flat at retirement); the label approach touches only the HK$2.6M in ESG funds; "the family in this year's competition case" | CASE | Profiles (area 1) |
 | 5 | Price | 0:50 | [Most of what's real also pays: … of … decisions in the top-left corner] (if the numbers bear it out; §10, 7) | The centrepiece chart (§4.4): every decision's money side and world side | MODEL; tonnes ESTIMATED | Trade-off visible |
 | 6 | Decide: business | 1:00 | Carmen's transition is cheap; the finance products don't fit her size | ≈98% of emissions upstream; vans and LED HK$1.9M pay without green finance; green-loan label refused (discount ≈ review cost); grant HK$100M+; supply-chain finance anchors ≈US$100M; customer data protects the sale (≈HK$209K per 1% of sales) | Baseline ESTIMATED on an ILLUSTRATIVE business; vans: CHECK diesel price; grant: CHECK; HKEX Scope 3: CHECK; data → sale: ESTIMATED | Quantified structure; a refusal |
 | 7 | Decide: mandate | 0:40 | Carmen's values get a budget; Adrian's money stays his | Separate portions; a cost limit in HK$ a year; Hong Kong doesn't require asking about sustainability preferences, we do | Fees: CHECK (Win, fund documents); HKMA FAQ: CHECK; price of values: MODEL | Mandate; price of values |
@@ -403,9 +427,10 @@ from ESG funds. The brief's hints (a refusal, a trade-off, honesty about the gre
    minimum; green mortgage: HK$0–4K and Gold/Platinum buildings only; CBAM: doesn't apply; the Taxonomy: no packaging or
    wholesale activity), then what does reach her (the e-van tax waiver to 31 Mar 2028, the HKMC loan guarantee, her
    customers' FY2026 reporting). The brief: "Plumbing, however, does not tell a client what to do."
-3. **The framework catching a real failure in our own plan:** the US$0 fund (§2). It is the brief's "difference between
-   a label and a financed outcome" and its task, "show how the framework changes the advice you would otherwise give".
-   Call BOCI-Prudential first (Win).
+3. **The framework catching a real failure:** a fund on the SFC's ESG list that holds US$0 (§2). It is the brief's
+   "difference between a label and a financed outcome", and it lands with any judge without history. That the label
+   approach (our own Round One included) recommended it is one optional line, not the point. Call BOCI-Prudential first
+   (Win).
 4. **Our client is the representative one:** Hong Kong has 84,395 import/export and wholesale SMEs against 7,208 in
    manufacturing (TID, as at June 2025, https://success.tid.gov.hk/english/aboutus/what_are_sme.html). Say it when we
    introduce the business.
@@ -469,7 +494,7 @@ closes Tue 10 Nov;** after that, fact checks only, so the build and the rehearsa
 
 | When | What |
 |---|---|
-| Thu 5 Nov | Team meeting held: research first (§5). Deadline still to confirm with the organiser |
+| Thu 5 Nov | Team meeting held: research first (§5). Slide deadline confirmed: 17:00 Mon 16 Nov |
 | Fri 6 | Shared context done (one afternoon each); **replies due 21:00 (§4.6)**; Pete locks thesis, framework, storyline v2 and speakers on Sat 7 morning; the split settled (§5); the open decisions (Carmen's share, the warehouse, the building, the fund) made. Pete starts the model price tags now (they gate slides 2 and 5) |
 | Sat 7 | Go / no-go on the business structure (the Wongs stay or we switch); area 2's owner decides |
 | Sat 7 – Tue 10 | Targeted research to numbers; inputs to the model (Mon 9); model numbers and price tags out (Tue 10); first slides. **Research closes Tue 10** |
@@ -492,7 +517,8 @@ investment policy; the model's assumptions; the rules map (what applies to the W
 |---|---|---|---|
 | ESG strategist | Is "sustainable packaging" itself a green label? Compostable packaging in a city without industrial composting? | 8 | EPD guidance: PLA is regulated plastic, compostables "premature"; ordinance text to read |
 | Practitioner | Why not a sustainability-linked loan? Why not the Grant Scheme? Why no supply-chain finance? | 9 | Grant: HK$100M minimum (HKMA guideline, 24 Apr 2026); supply-chain finance: anchors ~US$100M of trade spend; the ESG discount unpublished |
-| Practitioner | You reused the case: what's new? | 1, 3, 14 | The October "before" on screen beside each change |
+| Practitioner | You reused the case: what's new? | 1, 4, 12 | The framework, and its verdicts against the label approach; the case only supplies the family's facts |
+| A judge who read Round One | Your Round One recommended that fund. Why should we trust this plan? | Q&A | Own it: the framework's product check (assets, documents, tracking) caught it; the label didn't. That is the argument of the talk |
 | Any judge new to the case | Who are these people, and why them? | 3 | One-line origin + the family picture (§3) |
 | Practitioner | Your financing part is thin: isn't "Financing the Transition" the topic? | 9; backup | The five instruments compared with numbers; the factory-owner backup slide |
 | ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 6 | Open (Win): no measured carbon figure yet |
@@ -523,8 +549,10 @@ Each research brief has its own full list (its last section). The ones the story
 | Hong Kong Taxonomy Phase 2A in 2026 (transition and adaptation) | From the brief; confirm with HKMA |
 
 ## 10. Untested assumptions (test, don't build on)
-1. Judges reward building on the case and our own October plan, rather than marking it down as recycled.
-2. Calling our Round One ESG answer "the label answer" reads as independent thinking, not as admitting a weak plan.
+1. Judges accept the competition's own family as a "representative Hong Kong client" rather than marking it down as
+   recycled (the talk introduces them from scratch and compares against the label approach, not our Round One).
+2. Naming the label approach, and saying in one line that we followed it in Round One, reads as independent thinking,
+   not as admitting a weak plan.
 3. A distributor's transition story is rich enough for "Financing the Transition" (Fahtai's go / no-go, Sat 7).
 4. Sustainability moves the business's sale price or the flat's value enough to matter. The research found no
    published evidence that emissions data raises an SME's sale price, and one old study of BEAM Plus price premiums
