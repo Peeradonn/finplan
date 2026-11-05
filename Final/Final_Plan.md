@@ -189,20 +189,24 @@ advantages above survive that, as long as the talk stands alone (§3).
      Round One".
   5. Cold read before submitting: two or three people who've never seen the case watch it without explanation; if they
      can't say who the family is and what changed within a minute, fix the introduction.
-- **Every decision carries the same price tag** (Pete, 5 Nov), in the brief's own four words ("cash flow, balance sheet,
-  risk profile or estate ... by how much, over what horizon"), and a verdict:
+- **Every decision carries the same two-sided price tag** (Pete, 5 Nov): what it does to the family's money, in the
+  brief's own four words ("cash flow, balance sheet, risk profile or estate ... by how much, over what horizon"), and
+  what it does in the world (the brief's title: "Measuring Real Impact"; its dashboard: "sustainability outcomes,
+  impact outcomes"):
 
-  | Line | What we report | Source |
-  |---|---|---|
-  | Cash flow | HK$ a year, and from when | Research briefs (ESTIMATED) |
-  | Balance sheet | HK$ of net worth (e.g. Carmen's stake) | Research briefs (ESTIMATED) |
-  | Risk | Odds the money lasts to Carmen's 89, and the worst 10% of futures | Model (MEASURED) |
-  | Estate | HK$ left to Ryan and Chloe, today's money, **including the flat** | Model (MEASURED) |
+  | Side | Line | What we report | Source |
+  |---|---|---|---|
+  | Money | Cash flow | HK$ a year, and from when | Research briefs (ESTIMATED) |
+  | Money | Balance sheet | HK$ of net worth (e.g. Carmen's stake) | Research briefs (ESTIMATED) |
+  | Money | Risk | Odds the money lasts to Carmen's 89, and the worst 10% of futures | Model (MEASURED) |
+  | Money | Estate | HK$ left to Ryan and Chloe, today's money, **including the flat** | Model (MEASURED) |
+  | World | Emissions | Tonnes CO2e a year, tagged measured (meters, fuel receipts), estimated or modelled | Research briefs |
+  | World | Other real effects | E.g. students the scholarship funds | Framework brief |
+  | World | Would it happen anyway? | Additionality: does this decision cause the change, or only own it? (Shares bought on the market fund nothing new: alignment, not impact) | Framework brief |
 
-  Verdict: **do it** (both the odds and the estate rise, or one rises at no cost to the other), **pay for it knowingly**
-  (it costs money and the family chooses it for its values), **refuse it** (it costs and buys nothing). Where the odds and
-  the estate move in opposite directions, the family faces a real choice: that is the trade-off the brief requires
-  (e.g. downsizing leaves more to the children; the reverse mortgage protects the odds if old flats lose value).
+  The verdict comes from the four corners in §4.2. Where the odds and the estate move in opposite directions (downsizing
+  leaves more to the children; the reverse mortgage protects the odds if old flats lose value), the family chooses, and
+  the slide says so: that is the trade-off the brief requires.
 - **Two model fixes before any price tag goes on a slide (Pete):**
   1. The estate line must include the flat (home equity after any reverse-mortgage loan, or the smaller flat), as
      `property_options()` already does. The exploratory tables in §2 show only the portfolio left at 89: don't quote
@@ -223,18 +227,20 @@ model's numbers. Titles are short, because this is a live talk.
 
 | Option | Thesis | For | Against |
 |---|---|---|---|
-| **A. Price, not label** (recommended) | "A green label tells you what something is called; a price tells you what it does. We price every sustainability decision in the family's own money, and decide on the price." | Answers the title "Beyond Green Labels" head-on; sets up the hook and the closing callback; a phrase judges can repeat | Can sound anti-ESG unless the close lands positive |
+| **A′. What it does** (recommended, 5 Nov) | "A green label tells you what something is called. We show what it does, to the family's money and to the world, so the family can choose with open eyes." | Keeps A's punch, hook and callback; adds the world side an ESG strategist looks for; leaves the choice with the family, which is where suitability puts it | One more idea to carry than A (money *and* world) |
+| A. Price, not label (first draft) | "A green label tells you what something is called; a price tells you what it does. We price every sustainability decision in the family's own money, and decide on the price." | Answers the title "Beyond Green Labels" head-on; a phrase judges can repeat | Sounds as if money is all that counts: an ESG strategist could say "you turned sustainability into finance and lost the sustainability"; the people disappear behind HK$ |
 | B. Follow the money | "A family's sustainability sits where its money sits. For the Wongs that is a business and a flat, not a fund, so that is where the plan acts." | The sharpest insight about the Wongs; concrete | It's a finding about one client, not a framework |
 | C. A planning decision, not a product | "Sustainability is a planning decision, not a product: each choice must show what it does to the family's cash, wealth, security and legacy, or it stays out of the plan." | Closest to the brief's own words | Every team will echo the brief; least memorable |
 
-B can live inside A: it is what the framework's first step (Map) finds.
+B can live inside A′: it is what the framework's first step (Map) finds. "Price tag" stays as the name of the tool inside
+the framework.
 
 ### 4.2 The framework
 
 | Option | Shape | For | Against |
 |---|---|---|---|
 | **F1. Map → Price → Decide → Govern** (recommended) | Four plain verbs, done in order | Covers all six areas by construction (below), so a judge with the brief's checklist sees every box ticked; gives the talk its spine | Four steps to explain (about 45 seconds) |
-| F2. The price tag alone | One tool: four lines and three verdicts | Simplest | Leaves out mapping and governance, so reads as a tool, not a framework |
+| F2. The price tag alone | One tool: the two-sided tag and the four corners | Simplest | Leaves out mapping and governance, so reads as a tool, not a framework |
 | F3. Three questions | "Where is the money? What does this do to it? What do we do now?" | Very plain | Hard to show as a system; weak on governance |
 
 **F1 in full:**
@@ -242,18 +248,32 @@ B can live inside A: it is what the framework's first step (Map) finds.
 | Step | What it does | Brief areas | Output for the Wongs |
 |---|---|---|---|
 | **Map** | Where sustainability touches this family's money; who decides what, and how disagreement is settled | 1, 2 (baseline), 4 | The balance sheet by exposure; four profiles; the mandate |
-| **Price** | The four-line price tag on each decision (cash flow, net worth, odds the money lasts, inheritance), with its evidence tag and horizon | 2 (cost curve), 3 (evidence), 5 (scenario) | The centrepiece chart (§4.4) |
-| **Decide** | One verdict per decision, then the instrument and the date | 2 (instrument), 3 (allocation), 4 | The decisions; the refusals |
+| **Price** | The two-sided price tag on each decision (§3: the money side and the world side), with its evidence tag and horizon | 2 (cost curve), 3 (evidence), 5 (scenario) | The centrepiece chart (§4.4) |
+| **Decide** | Each decision's corner (below), then the instrument and the date | 2 (instrument), 3 (allocation), 4 | The decisions; the refusals |
 | **Govern** | Dashboard, triggers, restating when data improves, giving that is funded | 5 (controls), 6 | One page, checked yearly |
 
-**The verdicts** (rules, so the framework decides, not us):
-- **Do it:** the price tag is positive on balance (it earns or protects money). E.g. the vans; customer emissions data.
-- **Pay for it knowingly:** it costs money, the family chooses it for its values, and the cost fits inside an agreed
-  values budget. E.g. Carmen's ESG portion; the scholarship.
-- **Refuse it:** it costs money or credibility and buys nothing measurable, or its label overstates what it does. E.g.
-  the green-loan label at HK$0.9M; the clean-energy fund; "compostable" claims for packaging nobody composts.
-- Where the odds and the inheritance move in opposite directions, the family chooses, and the slide says so (the
-  trade-off the brief asks for).
+**The four corners** (rules, so the framework decides, not us; 5 Nov). Each decision lands in one corner by its two-sided
+price tag:
+
+| | **Changes something real** | **Changes nothing real** |
+|---|---|---|
+| **Good for their money** | **Do it.** No choice needed: both win. E.g. the vans; recycled content; customer emissions data protecting the sale | **Do it, but don't call it green.** Good finance or risk management. E.g. the reverse mortgage as a hedge against old flats losing value |
+| **Costs them money** | **The only real choice: pay for it knowingly,** within a values budget the family set in advance. E.g. the scholarship | **Refuse it.** It costs and changes nothing; the label is all it offers. E.g. the green-loan label at HK$0.9M; the clean-energy fund; "compostable" claims for packaging nobody composts |
+
+- **We are not asking the family to choose between their money and the world.** Most of the time they don't have to; where
+  they do, the cost is small, visible and theirs to decide. Line for the talk: *"Most of the time, the family doesn't
+  have to choose. Where it does, the cost is small, visible, and theirs to decide."* This is the brief's "quantify the
+  price of values ... and the evidence that it need not give up much".
+- **The choice is made once, in the mandate, not decision by decision:** Carmen's values budget (up to HK$… a year, or …
+  points of the odds) covers the "pay for it knowingly" corner; Adrian's portion isn't touched. That is also the brief's
+  "how disagreement between decision-makers is resolved".
+- **Carmen's ESG funds** cost a little and change nothing real (shares bought on the market fund nothing new). The
+  framework doesn't block them: she can choose them from her values budget, labelled honestly as alignment, not impact.
+  Line for the talk: *"We don't refuse Carmen's values. We refuse the label."*
+- **Two caveats to keep:** (1) "most of the Wongs' real impact sits in the top-left corner" is EXPECTED until the model
+  prices each decision (§10); (2) win-wins have dates: the vans pay partly because of today's fuel prices and a tax
+  waiver that ends 31 Mar 2028, and recycled-PET prices swing (well above virgin in 2023). Saying when "green pays" and
+  acting before the window closes is more credible than saying it always pays, and it is what "decision-ready" means.
 
 **The five kinds of finance, placed** (a small picture on the framework slide, not spoken): green finance → the vans and
 LED; sustainability-linked → refused at this size; transition finance → Carmen's business plan; impact → the funded
@@ -263,7 +283,7 @@ scholarship (and the business's own cuts); ESG integration → the portfolio.
 
 **Three takeaways:**
 1. Labels mislead (the opening).
-2. Price every decision in the family's money: four lines, three verdicts.
+2. Show what every decision does, to the family's money and to the world: most of the time they don't have to choose.
 3. For the Wongs, pricing changed [N] decisions: the sustainability that matters was in the business and the flat,
    and they end up [HK$…] better off and [… t] a year lower.
 
@@ -277,10 +297,10 @@ scholarship (and the business's own cuts); ESG integration → the portfolio.
   checked: it holds US$0." Call BOCI-Prudential first (Win).
 
 **Close options:**
-- **C1, the callback** (recommended): "A label tells you what something is called. A price tells you what it does. For
-  the Wongs, pricing changed [N] decisions, cut [… t] a year and left Ryan and Chloe [HK$…] more."
-- **C2, the family's voice:** "Carmen asked for her values in the plan. Now they have a price, and she can choose them."
-  Can follow C1.
+- **C1, the callback** (recommended): "A label tells you what something is called. We showed what it does. For the Wongs,
+  that changed [N] decisions, cut [… t] a year and left Ryan and Chloe [HK$…] more."
+- **C2, the family's voice:** "Carmen asked for her values in the plan. We didn't refuse her values; we refused the
+  label." Can follow C1.
 
 **Land positive:** the opening montage can read as cynical about ESG. The close must show the Wongs doing *more* real
 sustainability (about 127 t a year from the vans and recycled content, ESTIMATED; a scholarship actually funded) and
@@ -296,6 +316,10 @@ business. No other team can draw it without a model like ours.
   mortgage (refused); the warehouse green lease; the funded scholarship.
 - **One measure on the axis** (Pete decides in the build): the change in the inheritance (HK$, today's money) or points
   of the odds; the other as a label on each bar.
+- **Alternative form (5 Nov):** plot each decision as a dot on the four corners (across: what it does to the family's
+  money; up: what it changes in the world, in tonnes or another real effect). It shows the framework and the result in
+  one picture, and makes "most of what's real also pays" visible at a glance, if the numbers bear it out. Render both
+  and choose (the slide-design skill).
 - **Needs** the two model fixes in §3 and a price tag per decision. **By Tue 10 (Pete).**
 - The business's own abatement cost curve (the brief's area 2 asks for one) goes on slide 6 or in the backup.
 
@@ -308,16 +332,16 @@ slide) · **MODEL** (Pete's runs) · **CALL** (ask someone) · **CASE** (the cas
 |---|---|---|---|---|---|---|
 | 1 | Hook | 0:45 | A green label says what it's called, not what it does | ESG fund on the SFC list holds US$0; "compostable" is regulated plastic and landfilled; green mortgage HK$0–4K; grant from HK$100M | Fund: HAVE + CALL; PLA: CHECK (ordinance text); mortgage: HAVE; grant: CHECK (HKMA guideline) | — |
 | 2 | Answer | 0:40 | [N decisions, HK$… capital: odds … → …, HK$… more to the children, … t less a year] | The recommendation, the capital, both outcomes | MODEL; vans HK$1.9M ESTIMATED; scholarship fund ≈HK$0.48M ESTIMATED | Recommendation, capital, outcomes |
-| 3 | Framework | 0:45 | Four steps turn a label into a price | Map, Price, Decide, Govern; the verdict rules; the five kinds of finance placed | Framework brief (definitions) | The framework |
+| 3 | Framework | 0:45 | Four steps show what a decision does, not what it's called | Map, Price, Decide, Govern; the two-sided price tag; the four corners; the five kinds of finance placed | Framework brief (definitions) | The framework |
 | 4 | Map | 0:50 | The Wongs' sustainability sits where their money sits: a flat and a business | Four people and what each wants; flat HK$11.5M, business HK$5.0M, investments HK$10.5M; October touched only the HK$2.6M in ESG funds; "the family in this year's case; we wrote their plan in Round One" | CASE; Round One manuscript | Profiles (area 1) |
-| 5 | Price | 0:50 | [Priced in their money: … earns most, … costs most] | The centrepiece chart (§4.4) | MODEL; tonnes ESTIMATED | Trade-off visible |
+| 5 | Price | 0:50 | [Most of what's real also pays: … of … decisions in the top-left corner] (if the numbers bear it out; §10, 7) | The centrepiece chart (§4.4): every decision's money side and world side | MODEL; tonnes ESTIMATED | Trade-off visible |
 | 6 | Decide: business | 1:00 | Carmen's transition is cheap; the finance products don't fit her size | ≈98% of emissions upstream; vans and LED HK$1.9M pay without green finance; green-loan label refused (discount ≈ review cost); grant HK$100M+; supply-chain finance anchors ≈US$100M; customer data protects the sale (≈HK$209K per 1% of sales) | Baseline ESTIMATED on an ILLUSTRATIVE business; vans: CHECK diesel price; grant: CHECK; HKEX Scope 3: CHECK; data → sale: ESTIMATED | Quantified structure; a refusal |
 | 7 | Decide: mandate | 0:40 | Carmen's values get a budget; Adrian's money stays his | Separate portions; a cost limit in HK$ a year; Hong Kong doesn't require asking about sustainability preferences, we do | Fees: CHECK (Win, fund documents); HKMA FAQ: CHECK; price of values: MODEL | Mandate; price of values |
 | 8 | Decide: portfolio | 0:50 | [The portfolio is measured, not labelled: weights, HK$… a year, carbon …% lower] | Weights per parent; fees; a carbon figure; refusals (clean-energy fund −31% in 2023; ≈80% of sustainability-linked bonds fail CBI alignment); greenium 0–8bp | Weights and fees: CHECK; carbon: none measured yet; refusals: CHECK | Portfolio with weights and costs; a refusal |
 | 9 | Decide: home | 0:50 | [The reverse mortgage protects the odds; downsizing leaves the children more] | If old flats lose value, downsizing loses … points, the reverse mortgage …; leave by the building's 50th year; green mortgage refused; warehouse green lease at the 2027 renewal | MODEL (inheritance must include the flat); HKMC rules HAVE; payouts by age CHECK | A trade-off; a refusal |
 | 10 | Stress | 0:50 | [A sudden transition costs … points; most of it is market risk no label hedges] | The scenario's effect on business, flat and portfolio; the defences | MODEL (Lookbua's shocks); NGFS/HKMA sources CHECK | A scenario; risk register (one line, full in backup) |
 | 11 | Govern | 0:45 | One page, checked every year, with triggers that force a decision | Money, carbon, impact, milestones; a "can't measure yet" column; restating when data improves; the scholarship funded in 2027–36 while tax relief applies | Framework brief; IRD relief HAVE; cost MODEL | A dashboard; governance; funded giving |
-| 12 | Close | 0:20 | [From a label to a price: N decisions changed, … t a year, HK$… more] | The callback | MODEL | — |
+| 12 | Close | 0:20 | [From a label to what it does: N decisions changed, … t a year, HK$… more] | The callback; "we don't refuse Carmen's values, we refuse the label" | MODEL | — |
 
 **Backup slides** (after slide 12; §7): the business's abatement cost curve; the five instruments compared (tenor,
 covenants, review cost, subsidy); fund-by-fund fees and carbon; the full risk register; the scenario's inputs; the
@@ -367,8 +391,8 @@ factory owner who exports to the EU; repeat "the greenium is small" (the brief h
 from ESG funds. The brief's hints (a refusal, a trade-off, honesty about the greenium) are table stakes.
 
 **Our moves, strongest first:**
-1. **One measure for every decision:** the price tag (§3), from our model. Nobody else can show sustainability in the
-   family's odds and inheritance.
+1. **One tag for every decision:** the two-sided price tag (§3) and its four corners (§4.2), the money side from our
+   model. Nobody else can show sustainability in the family's odds and inheritance beside its tonnes.
 2. **Check the brief's toolkit against the client:** one slide, tool by tool, with checked numbers (grant: HK$100M
    minimum; green mortgage: HK$0–4K and Gold/Platinum buildings only; CBAM: doesn't apply; the Taxonomy: no packaging or
    wholesale activity), then what does reach her (the e-van tax waiver to 31 Mar 2028, the HKMC loan guarantee, her
@@ -502,6 +526,9 @@ Each research brief has its own full list (its last section). The ones the story
    about 4 points"), not as findings.
 5. About 1,200 words fit 9:20 live, with four speakers each saying their name.
 6. The venue notebook shows our font, and the file needs nothing newer than its PowerPoint.
+7. Most of the Wongs' real impact sits in the corner that also pays (vans, recycled content, customer data), and the
+   corner that costs money for real impact is small (5 Nov). EXPECTED until the model prices each decision; if it comes
+   out the other way, the talk says so and the values budget carries more of the plan.
 
 ## 11. On the day (guidelines, rules 4–14)
 - Dress formally; name tags visible. Say "Team Axis" before the first speaker; each speaker says their simple name before
