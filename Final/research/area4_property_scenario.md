@@ -4,6 +4,8 @@
 sources checked that day, five research passes and exploratory model runs. **Status:** research brief, not deck
 copy. A number goes on a slide only after the checks in §8.
 
+**Correction (5 Nov, `hook_fact_checks.md`, primary sources):** green mortgage rebates on HK$1.8M are HK$0–3K, not HK$0–4K; Standard Chartered and HSBC exclude refinancing; HKMC also accepts a flat-level BEAM Plus Interiors certificate. Quote those, not the figures below.
+
 **Tags used.** SOURCED: a named source says it. ESTIMATED: our arithmetic on sourced inputs, working shown.
 ILLUSTRATIVE: our assumption, because the case doesn't give it. EXPLORATORY: a run of the Round One model
 (`model/run_model.py`) from a scratch script, not yet in `export_numbers()`. On a slide, EXPLORATORY numbers become

@@ -146,7 +146,8 @@ established and point to the run.
   widens by 10% or more, decide the route that year. Release by the building's 50th year.
 
 ### H2–H4. Green mortgage, retrofit, the next flat (`area4_property_scenario.md` §3.1–3.2, 3.4)
-- H2: HK$0–4K one-off on HK$1.8M, Gold/Platinum buildings only (`hook_fact_checks.md`).
+- H2: no lower rate; HK$0–3K one-off on HK$1.8M, only if the building (or, for HKMC, the flat) is BEAM Plus certified;
+  SC and HSBC exclude refinancing (`research/hook_fact_checks.md`).
 - H3: ≈HK$1,900 a year; no solar (the roof is the owners' corporation's).
 - H4: the one Hong Kong study's 4.4% premium is ≈HK$0.3M on HK$7M, for ≈HK$2K a year of energy savings.
 
