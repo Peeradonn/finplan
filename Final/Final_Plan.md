@@ -123,7 +123,12 @@ in them are EXPLORATORY. Headlines, with the claim to check before it goes on a 
   fund that trails its own benchmark by about 1 point a year. Candidate refusals with numbers: the SFC-listed clean-energy
   ETF (−31% in 2023), sustainability-linked bonds (about 80% fail CBI alignment), a personal green deposit at 0.001%.
   Candidate allocation: ESG 27.7% (24.8% variant) via a climate-benchmark ETF (EDMW) at IWDA's fee; fees about HK$5.1K a
-  year. *Check:* measured carbon intensity (none yet), EDMW beyond justETF.
+  year. *Measured since* (8 Nov, primary iShares/BlackRock factsheet + EU reg text; `research/portfolio_final_round_EN.md`):
+  EDMW WACI **63.67** vs plain world ≈90.8 = **−30%** (coverage 99.6%, MSCI data Aug 2026); ITR one band lower; EU CTB
+  rule confirmed (≥30% below the universe incl. Scope 3, −7% a year; CTBs carry no fossil-fuel revenue screen — that is
+  PAB). EDMW holds 1,099 names, top-10 27.3% ≈ the parent's 26.6%, so **no concentration cost** (the brief's 632-name /
+  35% figure is the *Selection* index, not EDMW); likewise the 1.42% tracking error is a Selection proxy, not EDMW's own
+  (EDMW tracks its own index to ≈0.03 pts a year).
 - **Framework** (`area1_6_framework.md`, Pete). By the CFA/GSIA/PRI definitions (Nov 2023) Round One's ESG is screening:
   alignment, not impact; only the business transition and a funded scholarship can pass an additionality test. Hong Kong
   doesn't require advisers to ask about sustainability preferences (HKMA FAQ, Nov 2023: "not a mandatory requirement");
@@ -364,7 +369,7 @@ slide) · **MODEL** (Pete's runs) · **CALL** (ask someone) · **CASE** (the cas
 | 5 | Price | 0:50 | [Most of what's real also pays: … of … decisions in the top-left corner] (if the numbers bear it out; §10, 7) | The centrepiece chart (§4.4): every decision's money side and world side | MODEL; tonnes ESTIMATED | Trade-off visible |
 | 6 | Decide: business | 1:00 | Carmen's transition is cheap; the finance products don't fit her size | ≈98% of emissions upstream; vans and LED HK$1.9M pay without green finance; green-loan label refused (discount ≈ review cost); grant HK$100M+; supply-chain finance anchors ≈US$100M; customer data protects the sale (≈HK$209K per 1% of sales) | Baseline ESTIMATED on an ILLUSTRATIVE business; vans: CHECK diesel price; grant, HKEX Scope 3: HAVE (`hook_fact_checks.md`); data → sale: ESTIMATED | Quantified structure; a refusal |
 | 7 | Decide: mandate | 0:40 | Carmen's values get a budget; Adrian's money stays his | Separate portions; a cost limit in HK$ a year; Hong Kong doesn't require asking about sustainability preferences, we do | Fees: CHECK (Win, fund documents); HKMA FAQ: CHECK; price of values: MODEL | Mandate; price of values |
-| 8 | Decide: portfolio | 0:50 | [The portfolio is measured, not labelled: weights, HK$… a year, carbon …% lower] | Weights per parent; fees; a carbon figure; refusals (clean-energy fund −31% in 2023; ≈80% of sustainability-linked bonds fail CBI alignment); greenium 0–8bp | Weights and fees: CHECK; carbon: none measured yet; refusals: CHECK | Portfolio with weights and costs; a refusal |
+| 8 | Decide: portfolio | 0:50 | [The portfolio is measured, not labelled: weights, HK$… a year, carbon −30% lower] | Weights per parent; fees; a carbon figure; refusals (clean-energy fund −31% in 2023; ≈80% of sustainability-linked bonds fail CBI alignment); greenium 0–8bp | Weights and fees: HAVE; carbon: **−30% measured** (EDMW 63.67 vs ≈91, BlackRock/MSCI Aug 2026); refusals: HAVE | Portfolio with weights and costs; a refusal |
 | 9 | Decide: home | 0:50 | [The reverse mortgage protects the odds; downsizing leaves the children more] | If old flats lose value, downsizing loses … points, the reverse mortgage …; leave by the building's 50th year; green mortgage refused; warehouse green lease at the 2027 renewal | MODEL (inheritance must include the flat); HKMC rules HAVE; payouts by age CHECK | A trade-off; a refusal |
 | 10 | Stress | 0:50 | [A sudden transition costs … points; most of it is market risk no label hedges] | The scenario's effect on business, flat and portfolio; the defences | MODEL (Lookbua's shocks); NGFS/HKMA sources CHECK | A scenario; risk register (one line, full in backup) |
 | 11 | Govern | 0:45 | One page, checked every year, with triggers that force a decision | Money, carbon, impact, milestones; a "can't measure yet" column; restating when data improves; the scholarship funded in 2027–36 while tax relief applies | Framework brief; IRD relief HAVE; cost MODEL | A dashboard; governance; funded giving |
@@ -524,7 +529,7 @@ investment policy; the model's assumptions; the rules map (what applies to the W
 | A judge who read Round One | Your Round One recommended that fund. Why should we trust this plan? | Q&A | Own it: the framework's product check (assets, documents, tracking) caught it; the label didn't. That is the argument of the talk |
 | Any judge new to the case | Who are these people, and why them? | 3 | One-line origin + the family picture (§3) |
 | Practitioner | Your financing part is thin: isn't "Financing the Transition" the topic? | 9; backup | The five instruments compared with numbers; the factory-owner backup slide |
-| ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 6 | Open (Win): no measured carbon figure yet |
+| ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 8 | **Resolved** (Win, 8 Nov): EDMW WACI 63.67 vs ≈91 = −30% measured, coverage 99.6% (BlackRock factsheet, MSCI data Aug 2026); EU CTB rule ≥30% below, −7%/yr. Report it as footprint, not impact |
 | Banker | Would a bank lend for the vans? Coverage, collateral? | 9 | Open (area 2's owner) |
 | Regulator | Are you licensed to advise on the loan or the funds? Suitability per person? | 5, 13 | Draft: we coordinate with the bank and licensed parties |
 | The family | What does Adrian give up for Carmen's values? | 5 | Price of values in HK$ (Win, Pete) |
