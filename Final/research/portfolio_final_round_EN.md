@@ -154,8 +154,20 @@ brief explicitly rewards over illustrative.
 **Honesty guardrails on this slide (say these if asked, don't hide them):**
 - The −30% carbon is **footprint (exposure), not impact.** We own lower-carbon firms; we didn't cut anyone's tonnes. The
   tonnes the family *causes* are Carmen's vans (area 2).
+- **Why the number can fall for the wrong reason (the measurement trap).** A *lower attributed figure is not proof of a
+  real cut.* Portfolio-attributed emissions can drop because valuations, holdings or data coverage changed, even when the
+  underlying companies emit exactly the same tonnes — the same way an electricity bill can fall on a tariff change, a
+  cooler month or less activity, not efficiency. So we report WACI as **exposure we hold**, dated and caveated; we never
+  present a fall in it as tonnes the family abated. *(This is the "Beyond Green Labels" thesis applied to our own number.)*
 - Over 19 years the best-in-class screen returned ≈ the market (+0.03/yr); over the **last 5 years** the tighter CTB
   screen lagged ≈1 pt/yr. We show both, cap the gap per person, and review it.
+
+**Governance note this slide hands to the Govern slide (not Win's to present, but his number depends on it):**
+Keep **five separate ledgers** and never net one against another: (1) operational inventory (Carmen's vans), (2)
+portfolio-attributed emissions (WACI), (3) alignment to a rule (EU CTB −7%/yr), (4) project benefits, (5) charitable
+outcomes. Each answers a different question; mixing them double-counts. A tonne "avoided" in a project ledger is not a
+tonne removed from the portfolio ledger. This is what lets Win claim the carbon figure *honestly* — it is ledger (2)
+only, measured and dated, not a family-wide impact claim.
 
 ---
 
@@ -204,6 +216,12 @@ measured figure and the rule floor agree. State it as "measured −30%, and a ru
    plain one. "We won't pay 50× the greenium for a label" — Carmen keeps green bonds only on proof of impact + no entry
    charge.
 5. **US$0 fund as the one-slide proof the framework catches what the label misses** — but only after the phone call.
+6. **The measurement-trap line (from the attribution problem).** "A number that falls is not a cut." A WACI drop can come
+   from price moves, rebalancing or new data, not real abatement — just as a lower power bill can be tariff, weather or
+   activity, not efficiency. We therefore keep five separate ledgers (operational, portfolio, alignment, project,
+   charitable) and check for double-counting. Saying this out loud — *refusing* to pass our own measured −30% off as
+   impact — is a sharper independent-thinking signal than any green claim a checklist team will make. Portfolio holdings
+   do **not** change; only how the number is reported and governed.
 
 ## C-inputs — what to hand Pete by Mon 9 (corrected)
 
