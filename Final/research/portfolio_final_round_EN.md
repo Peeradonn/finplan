@@ -104,8 +104,8 @@ review, not orders** (`CLAUDE.md`: "the plan records drafts, not orders").
 
 **On screen (one idea, shown — not argued):**
 - Two columns, two people, two budgets:
-  - **Adrian** — prudent, retires 2037 → **tracking-error budget ≤0.5%/yr** → ESG core = **30%** of his equity.
-  - **Carmen** — values, co-founder → **≤3%/yr** → ESG core = **100%** of her equity.
+  - **Adrian** — prudent, retires 2037 → **tracking-error budget ≤0.5%/yr** → ESG core = **30% of his portfolio** (≈¾ of his equity; he keeps 10% plain IWDA).
+  - **Carmen** — values, co-founder → **≤3%/yr** → ESG core = **60% of her portfolio** (all her equity).
 - An arrow down to: **Family ESG share = 27.7%** — labelled **"output, not target (case asked 20–25%)."**
 - Footer line, small: *Hong Kong does not require advisers to ask about sustainability preferences (HKMA FAQ, 2023:
   "not a mandatory requirement"). We ask — and write the answer into a binding mandate.*
@@ -115,7 +115,7 @@ review, not orders** (`CLAUDE.md`: "the plan records drafts, not orders").
 > "Most teams will tell you they put twenty-five percent in ESG. Twenty-five percent of what — and why that number? We
 > don't start from a number. We start from each person's risk budget. Adrian is ten years from retirement; his money can
 > drift at most half a percent a year from the market. Carmen can take three. Put the same ESG core inside each budget
-> and the share *falls out*: thirty percent of Adrian's equity, all of Carmen's — twenty-eight for the family. We didn't
+> and the share *falls out*: thirty percent for Adrian, sixty for Carmen — three-quarters of his equity, all of hers — twenty-eight percent for the family. We didn't
 > aim at twenty-five. Hong Kong doesn't even require us to ask Carmen. We ask, and we make it binding."
 
 **Why this slide (what it must prove):** that suitability, done per person, *produces* the ESG share — the opposite of

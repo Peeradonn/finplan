@@ -482,9 +482,13 @@ all four briefs in `Final/research/`; the judges can ask anyone anything). After
 slide asks: start from your brief's "check" items and open items (the research agents ran out of web searches). **Research
 closes Tue 10 Nov;** after that, fact checks only, so the build and the rehearsals get their days.
 
+**Decided (Pete, 9 Nov):** Carmen owns **50%** of the business (her co-founder 50%; the company worth HK$10.0M). The
+model's base is **the family's plan with the medical review at 75** (`{{switch_89}}`, 96.8%); lead price tags with the
+inheritance in HK$ (`Decision_List.md` §4). **Recommended, Pete to confirm:** a dividend policy for the van saving from
+2033, outside the headline (`Decision_List.md` B8).
+
 **Team decisions still open** (the briefs had to assume these; every number downstream depends on them):
-1. **Carmen's share of the business.** Fahtai's brief assumes 50% (the company worth HK$10.0M); Round One treated the
-   case's HK$5.0M as her interest. If she owns 100%, the business's HK$ and tonnes halve; the conclusions stand.
+1. ~~Carmen's share of the business~~ decided above: 50%.
 2. **The warehouse.** Fahtai's brief: leased, 7,500 sq ft in a Kwai Chung industrial building, 60,000 kWh a year.
    Lookbua's brief used a 3,000 sq ft placeholder: align to Fahtai's.
 3. **The flat's building:** completed 1996 (30 years old now, 50 in 2046), about 900 sq ft, not certified (Lookbua's

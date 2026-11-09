@@ -17,7 +17,9 @@ Odds 82.6%; inheritance median HK$8.15M, worst 10% HK$1.46M.
 |---|---|---|---|---|---|---|
 | Saving at the diesel list price (HK$372K a year): sale +HK$0.52M | 84.7% | +2.1 | 8.77 | +0.62 | 1.46 | +0.00 |
 | Saving at HK$25/L diesel (HK$240K a year): sale +HK$0.34M | 84.1% | +1.5 | 8.54 | +0.39 | 1.46 | +0.00 |
-| List price, plus Carmen's half paid out as dividends 2028-38 | 90.8% | +8.2 | 11.48 | +3.33 | 1.79 | +0.33 |
+| List price, plus Carmen's half paid out as dividends 2028-38 (ignores the loan: an upper bound) | 90.8% | +8.2 | 11.48 | +3.33 | 1.79 | +0.33 |
+| Diesel at list price, plus Carmen's half paid out once the van loan is repaid (2033-38) | 87.9% | +5.3 | 10.10 | +1.95 | 1.46 | +0.00 |
+| Diesel at HK$25/L, plus Carmen's half paid out once the van loan is repaid (2033-38) | 86.3% | +3.7 | 9.41 | +1.27 | 1.46 | +0.00 |
 
 ### M3. B3 emissions data: what a lost customer would cost (a sensitivity, not a forecast)
 
@@ -33,7 +35,8 @@ Odds 82.6%; inheritance median HK$8.15M, worst 10% HK$1.46M.
 |---|---|---|---|---|---|---|
 | Fees: label-approach funds → candidate A (HK$9,647 a year saved) | 85.3% | +2.7 | 9.18 | +1.04 | 1.46 | +0.00 |
 | Price of values in fees vs an all-plain twin (HK$5,107 a year) | 81.0% | -1.7 | 7.63 | -0.52 | 1.46 | +0.00 |
-| Tracking, if the last five years repeated every year (HK$26,600 a year) | 72.8% | -9.8 | 5.59 | -2.56 | 1.46 | +0.00 |
+| Tracking: a bad five years, 2027-31, at the worst five-year lag (HK$26,600 a year) | 81.3% | -1.3 | 7.80 | -0.35 | 1.46 | +0.00 |
+| Tracking, if that lag repeated every year to 89 (a stress) | 72.8% | -9.8 | 5.59 | -2.56 | 1.46 | +0.00 |
 
 ### M5. G1 the scholarship
 
@@ -69,12 +72,13 @@ Odds 82.6%; inheritance median HK$8.15M, worst 10% HK$1.46M.
 |---|---|---|---|---|---|---|
 | New plan: vans (list diesel) + portfolio fees + funded scholarship | 85.0% | +2.4 | 9.00 | +0.85 | 1.46 | +0.00 |
 | New plan, diesel at HK$25/L | 84.4% | +1.8 | 8.76 | +0.61 | 1.46 | +0.00 |
+| New plan + dividends once the van loan is repaid (2033-38) | 88.3% | +5.7 | 10.38 | +2.23 | 1.46 | +0.00 |
 | Label approach (Round One as written: list funds, unfunded lifelong pledge) | 75.7% | -6.9 | 6.55 | -1.59 | 1.46 | +0.00 |
 
 Against the label approach, the framework's plan changes the odds by +9.3 points and the median inheritance by HK$+2.44M.
 
 
-## Base: The family's plan with the medical review at 75 (`switch_89`, recommended base)
+## Base: The family's plan with the medical review at 75 (`switch_89`, the base: Pete, 9 Nov)
 
 Odds 96.8%; inheritance median HK$13.01M, worst 10% HK$3.97M.
 
@@ -84,7 +88,9 @@ Odds 96.8%; inheritance median HK$13.01M, worst 10% HK$3.97M.
 |---|---|---|---|---|---|---|
 | Saving at the diesel list price (HK$372K a year): sale +HK$0.52M | 97.4% | +0.7 | 13.64 | +0.63 | 4.47 | +0.50 |
 | Saving at HK$25/L diesel (HK$240K a year): sale +HK$0.34M | 97.2% | +0.5 | 13.42 | +0.41 | 4.30 | +0.33 |
-| List price, plus Carmen's half paid out as dividends 2028-38 | 98.8% | +2.0 | 16.34 | +3.33 | 6.21 | +2.24 |
+| List price, plus Carmen's half paid out as dividends 2028-38 (ignores the loan: an upper bound) | 98.8% | +2.0 | 16.34 | +3.33 | 6.21 | +2.24 |
+| Diesel at list price, plus Carmen's half paid out once the van loan is repaid (2033-38) | 98.4% | +1.6 | 14.95 | +1.95 | 5.32 | +1.35 |
+| Diesel at HK$25/L, plus Carmen's half paid out once the van loan is repaid (2033-38) | 97.9% | +1.1 | 14.27 | +1.26 | 4.88 | +0.91 |
 
 ### M3. B3 emissions data: what a lost customer would cost (a sensitivity, not a forecast)
 
@@ -100,7 +106,8 @@ Odds 96.8%; inheritance median HK$13.01M, worst 10% HK$3.97M.
 |---|---|---|---|---|---|---|
 | Fees: label-approach funds → candidate A (HK$9,647 a year saved) | 97.5% | +0.7 | 14.14 | +1.13 | 4.60 | +0.63 |
 | Price of values in fees vs an all-plain twin (HK$5,107 a year) | 96.3% | -0.5 | 12.43 | -0.57 | 3.66 | -0.31 |
-| Tracking, if the last five years repeated every year (HK$26,600 a year) | 93.7% | -3.1 | 10.23 | -2.78 | 2.48 | -1.49 |
+| Tracking: a bad five years, 2027-31, at the worst five-year lag (HK$26,600 a year) | 96.5% | -0.3 | 12.64 | -0.37 | 3.76 | -0.21 |
+| Tracking, if that lag repeated every year to 89 (a stress) | 93.7% | -3.1 | 10.23 | -2.78 | 2.48 | -1.49 |
 
 ### M5. G1 the scholarship
 
@@ -136,6 +143,7 @@ Odds 96.8%; inheritance median HK$13.01M, worst 10% HK$3.97M.
 |---|---|---|---|---|---|---|
 | New plan: vans (list diesel) + portfolio fees + funded scholarship | 97.5% | +0.8 | 13.95 | +0.94 | 4.58 | +0.61 |
 | New plan, diesel at HK$25/L | 97.3% | +0.5 | 13.71 | +0.70 | 4.40 | +0.43 |
+| New plan + dividends once the van loan is repaid (2033-38) | 98.4% | +1.6 | 15.30 | +2.29 | 5.49 | +1.52 |
 | Label approach (Round One as written: list funds, unfunded lifelong pledge) | 94.0% | -2.8 | 11.38 | -1.63 | 2.72 | -1.25 |
 
 Against the label approach, the framework's plan changes the odds by +3.6 points and the median inheritance by HK$+2.57M.
