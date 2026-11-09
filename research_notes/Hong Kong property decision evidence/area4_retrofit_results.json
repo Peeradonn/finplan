@@ -1,0 +1,142 @@
+﻿{
+  "status": "ILLUSTRATIVE, not shared model outputs or presentation figures",
+  "led": {
+    "base_no_grant": {
+      "hours": 3000,
+      "tariff": 1.58,
+      "years": 3,
+      "kwh_saved_per_year": 7200.0,
+      "annual_net_saving": 11876.0,
+      "subsidy_year1": 0,
+      "exit_cost": 0,
+      "company_npv": 10341.2935968038,
+      "Carmen_50pct_economic_share": 5170.6467984019,
+      "gross_simple_payback_years": 1.852475581003705
+    },
+    "conditional_6000_grant": {
+      "hours": 3000,
+      "tariff": 1.58,
+      "years": 3,
+      "kwh_saved_per_year": 7200.0,
+      "annual_net_saving": 11876.0,
+      "subsidy_year1": 6000,
+      "exit_cost": 0,
+      "company_npv": 16055.579311089514,
+      "Carmen_50pct_economic_share": 8027.789655544757,
+      "gross_simple_payback_years": 1.852475581003705
+    },
+    "short_lease_one_year": {
+      "hours": 3000,
+      "tariff": 1.58,
+      "years": 1,
+      "kwh_saved_per_year": 7200.0,
+      "annual_net_saving": 11876.0,
+      "subsidy_year1": 0,
+      "exit_cost": 0,
+      "company_npv": -10689.523809523811,
+      "Carmen_50pct_economic_share": -5344.7619047619055,
+      "gross_simple_payback_years": 1.852475581003705
+    },
+    "low_use_and_tariff": {
+      "hours": 1200,
+      "tariff": 1.2,
+      "years": 3,
+      "kwh_saved_per_year": 2880.0,
+      "annual_net_saving": 3956.0,
+      "subsidy_year1": 0,
+      "exit_cost": 0,
+      "company_npv": -11226.830795810387,
+      "Carmen_50pct_economic_share": -5613.4153979051935,
+      "gross_simple_payback_years": 5.5611729019211324
+    },
+    "low_use_with_grant": {
+      "hours": 1200,
+      "tariff": 1.2,
+      "years": 3,
+      "kwh_saved_per_year": 2880.0,
+      "annual_net_saving": 3956.0,
+      "subsidy_year1": 6000,
+      "exit_cost": 0,
+      "company_npv": -5512.545081524673,
+      "Carmen_50pct_economic_share": -2756.2725407623366,
+      "gross_simple_payback_years": 5.5611729019211324
+    },
+    "reinstatement_5000": {
+      "hours": 3000,
+      "tariff": 1.58,
+      "years": 3,
+      "kwh_saved_per_year": 7200.0,
+      "annual_net_saving": 11876.0,
+      "subsidy_year1": 0,
+      "exit_cost": 5000,
+      "company_npv": 6022.10560414642,
+      "Carmen_50pct_economic_share": 3011.05280207321,
+      "gross_simple_payback_years": 1.852475581003705
+    },
+    "high_use_and_tariff": {
+      "hours": 4500,
+      "tariff": 1.9,
+      "years": 3,
+      "kwh_saved_per_year": 10800.0,
+      "annual_net_saving": 21020.0,
+      "subsidy_year1": 0,
+      "exit_cost": 0,
+      "company_npv": 35242.67357736746,
+      "Carmen_50pct_economic_share": 17621.33678868373,
+      "gross_simple_payback_years": 1.0466222645099905
+    }
+  },
+  "led_break_even_hours_3yr_no_grant": 1998.57289606735,
+  "home_failed_AC": {
+    "incremental_capex": 2000,
+    "annual_kwh_saving": 500,
+    "tariff_assumption": 1.5,
+    "extra_annual_maintenance": 50,
+    "horizon": 8,
+    "npv": 2524.2489315983785,
+    "break_even_annual_kwh": 239.62908483690822
+  },
+  "home_early_AC_vs_wait3": {
+    "cost_efficient_each_time": 7000,
+    "old_unit_years_remaining": 3,
+    "old_vs_new_kwh_saving": 400,
+    "tariff_assumption": 1.5,
+    "matched_horizon": 8,
+    "terminal_residual_difference": -2100,
+    "npv": -740.5506529176234
+  },
+  "home_window_film": {
+    "capex": 3000,
+    "kwh_saved_per_year": 100,
+    "tariff_assumption": 1.5,
+    "horizon": 10,
+    "npv": -1841.7397606222785,
+    "break_even_kwh_per_year": 259.00914993091345
+  },
+  "landlord_savings_share_example": {
+    "capex": 50000,
+    "annual_tenant_net_saving": 7000,
+    "savings_share_for_landlord": 0.7,
+    "horizon": 5,
+    "landlord_npv": -28785.564313908988,
+    "tenant_npv": 9091.90100832472,
+    "landlord_needed_annual_recovery": 11548.739906413408
+  },
+  "solar_3year": {
+    "capex": 20000,
+    "npv": -9704.26519814275,
+    "break_even_max_capex": 10295.73480185725
+  },
+  "solar_7year": {
+    "capex": 20000,
+    "npv": 1666.1800446906927,
+    "break_even_max_capex": 21666.180044690693
+  },
+  "financed_led": {
+    "loan_principal": 22000,
+    "loan_nominal_annual_rate": 0.08,
+    "annual_payments": 3,
+    "annual_debt_service": 8536.737309019221,
+    "saving_to_debt_service_ratio": 1.3911638100252641
+  }
+}
