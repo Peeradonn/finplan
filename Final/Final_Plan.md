@@ -501,7 +501,10 @@ inheritance in HK$ (`Decision_List.md` §4). **Recommended, Pete to confirm:** a
    scaled up by area (`area4_assets_update.md`): use the new brief's.
 3. **The flat's building:** completed 1996 (50 in 2046). In use in both new briefs; confirm at the next meeting.
    About 900 sq ft and not certified are still unverified assumptions.
-4. **The Round One fund:** say it on stage or keep it for the questions (§2).
+4. **The Round One fund: recommended (9 Nov), on stage, without naming the manager aloud.** The spoken line: "a fund
+   on the SFC's list of ESG funds has held nothing for two years"; the slide's footnote names the fund and the three
+   sources, so a judge can check it. Naming a Hong Kong manager on stage reads as an attack; the point is the label, not
+   the firm. If a judge who read Round One asks, own it (§8). Wording waits on Win's call (`research/boc_fund_call.md`).
 
 | Who | Owns | Starts now (needs no one) | Gives (to whom, by when) |
 |---|---|---|---|
@@ -560,7 +563,7 @@ Each research brief has its own full list (its last section). The ones the story
 | Fact | Problem |
 |---|---|
 | Grant Scheme (GSF): loans use Track II only, "at least HK$100 million", up to 75% subsidy if Taxonomy-aligned, caps HK$800K | **Confirmed** at the HKMA guideline (24 Apr 2026): caps are per loan; the grant pays for the review, not interest (`research/hook_fact_checks.md`) |
-| BOC-Prudential MSCI World ESG Index Fund: US$0.00 every month Sep 2024 – Sep 2026; no offering document | Checked twice (agent and us, 4 Nov, HKEX fund platform and SFC data file). Ask BOCI-Prudential before saying "never launched": the record shows zero assets, not the reason |
+| BOC-Prudential MSCI World ESG Index Fund: US$0.00 every month Sep 2024 – Sep 2026; no offering document | Checked three times (4 Nov twice; 9 Nov). Still on the SFC's ESG list and unit trust register (6 Nov 2026), not deauthorised (Aug–Sep lists); latest filing 30 Sep 2026, US$0.00. **New, 9 Nov:** the series' audited report at 31 Mar 2026 counts 7 sub-funds and this isn't one. Safe line: "on the SFC's list; US$0 at every filing for two years". Ask BOCI-Prudential (2280 8615) before saying "never launched" (`research/boc_fund_call.md`) |
 | Van saving HK$86K a year each | **Corrected (9 Nov):** HK$68.7K a year each at HK$31/L, the government's average after forecourt discounts (Aug 2026, HK$30.91–31.51; LCQ11 Annex I, 7 Oct 2026). About 85% of diesel is sold on contract, with discounts "as high as $27 per litre" (same answer), so a fleet may pay less: keep HK$25/L as the low case. Motor diesel is Euro V, duty HK$0.00 (C&ED; ULSD is HK$2.89). The e-van first registration tax waiver runs to 31 Mar 2028 (Budget 2026–27, para 207); nothing said after |
 | Green-loan discount 25bp; sustainability-linked ratchet size; external review fees | ILLUSTRATIVE: no HK bank publishes an SME green discount; find a bank quote or a published range |
 | HKMC reverse mortgage pays about 36% more per HK$1M at 68 than at 60 | **Confirmed** (HKMC payout table, March 2026: two borrowers, life, fixed HK$1,810 a month per HK$1M at 60, HK$2,470 at 68; the youngest borrower's age counts). The model's HK$230K in 2037 matches the age-60 fixed rate. Two more facts: the reverse mortgage's lump sum can repay an existing mortgage, so it doesn't need a clear title first (CLAUDE.md's reason for clearing the HK$0.46M is wrong; clearing it may still be right, see below); a "refinancing property" counts at most 80% of value, which binds only if the flat is below ≈HK$13.3M in 2037 (the plan's value is HK$13.55M; the scenario's isn't). Buildings over 50: case by case, an inspection report may be needed. *Earlier note:* From HKMC's 2026 examples (single borrower, ages 60 and 70); check the joint-borrower table |
