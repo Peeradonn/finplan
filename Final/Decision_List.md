@@ -11,11 +11,11 @@ Round One did, so its advice fills the "before" column. On slides, say "the labe
 its two-sided price tag (money side, world side), the capital and who pays, when, and the evidence status. Money at
 the family level (the odds the money lasts, the inheritance) comes from the model and is filled in from
 `Final/model_runs.md`; everything else comes from the briefs, with their tags (SOURCED, ESTIMATED, ILLUSTRATIVE). The
-business is our illustrative HK$35M-revenue distributor, Carmen owning 50% (a team decision still open).
+business is our illustrative HK$35M-revenue distributor, Carmen owning 50% (decided, Pete, 9 Nov).
 
-**Corners:** DO (good for their money, changes something real) · FINANCE (good for their money, changes nothing real:
-do it, don't call it green) · PAY (costs money, changes something real or reflects their values: within a budget set in
-advance) · REFUSE (costs money or credibility, changes nothing real).
+**Corners:** DO (good for their money, real effect shown) · FINANCE (good for their money, no real effect shown:
+do it, don't call it green) · PAY (costs money, real effect shown or reflects their values: within a budget set in
+advance) · REFUSE (costs money or credibility, no real effect shown).
 
 ---
 
@@ -78,8 +78,9 @@ established and point to the run.
   lapses after 31 Mar 2028.
 - **Money (family):** through the sale price (extra profit × the sale multiple × Carmen's share × the plan's 60% haircut)
   and, as a variant, through dividends. Run M2.
-- **World:** 26.1 t a year (vans 19.3, LED 4.1, air-con 2.8), 54% of Scope 1+2; additional (her own operations);
-  measured once running (fuel receipts, meter).
+- **World:** 26.1 t a year (vans 19.3, LED 4.1, air-con 2.8), 54% of Scope 1+2, against
+  replacing them with new diesel vans (the counterfactual we state; owning the project doesn't by itself prove the
+  cut additional). Fuel and kWh are measured once running; the tonnes are estimated from them with published factors.
 - **Green finance:** a green label on the loan only if free (self-certified or the bank's SME framework); net greenium
   ≈HK$0 (B2). **CHECK:** a fleet diesel price.
 
@@ -125,9 +126,14 @@ established and point to the run.
 - **Money:** fees for both portfolios HK$18,175 → HK$8,528 a year (≈HK$9.6K saved, mostly the wrapper). Against an
   all-plain twin, values cost ≈HK$5.1K a year in fees (0.05% of investable assets). The real price is tracking: ±HK$26.5K
   in a typical year on the HK$1.863M climate sleeve; −HK$26.6K a year if the last five years repeat; ≈0 over 2007–26.
-  Run M4.
-- **World:** alignment, not impact (shares bought on the market fund nothing new). Carbon intensity ≥27% below an
-  all-plain equity book by the index rule; **no measured figure yet** (CHECK: Win).
+  Run M4. Fees and tracking don't overlap: the lag compares the two equity funds' returns after their own fees, and
+  EDMW and IWDA charge the same, so the HK$5.1K fee price (the bond fund and the MPF) adds without double counting.
+  The ±HK$26.5K typical year uses a proxy index's tracking error (MSCI Selection), not EDMW's own; the −HK$26.6K is
+  the last five years (to 31 Oct 2026), not the worst five-year window, which nobody has measured.
+- **World:** alignment, not impact (shares bought on the market give companies no new money; no effect on them
+  shown). The climate fund's carbon intensity is **measured: 30% below the plain world index** (EDMW 63.67 vs ≈90.8 t
+  CO2e per US$M of sales, 99.6% covered; BlackRock factsheet, MSCI data Aug 2026; Win, 8 Nov). A footprint, not an
+  impact.
 - **P3:** Adrian's 1.04-point fee gap against a 0–8bp greenium: saves ≈HK$1,076 a year.
 - **P4:** Carmen's HK$2,153 a year buys bond-by-bond checks; the fund trails its benchmark by ≈1 point a year since 2017;
   keep only with an impact report and the entry charge waived.
@@ -154,9 +160,16 @@ established and point to the run.
 
 ### G1. The scholarship (`area1_6_framework.md` §7)
 - **Money:** the label approach's "about HK$30K a year" from cash flow, for life, costs ≈6.9 points (82.6% base) and was never in the
-  model. A funded 20-year fund (2 × HK$240K in 2027–28, 17% relief) costs ≈2.6 points. Perpetual only from sale proceeds
+  model. A funded 20-year fund (2 × HK$240K in 2027–28) costs ≈2.6 points. The 17% relief is checked on each parent's own
+  2027/28 salaries tax (9 Nov): after a HK$240K gift either parent is still in the 17% band, the gift is within the
+  35%-of-income cap, and the progressive rates still beat the standard rate. After retirement there is no salaries
+  tax to relieve, so lifelong gifts lose it. Adrian should give: HK$40,800 saved per gift in every case we ran, and
+  Carmen's HK$720K may be partly dividends, which salaries tax doesn't reach. Perpetual only from sale proceeds
   above HK$3.0M: ≈0. Run M5.
-- **World:** students funded (≈HK$30K a year for 20 years); additional (it pays for awards that would not exist).
+- **World:** students funded (≈HK$30K a year for 20 years). Additional only if the awards wouldn't exist otherwise:
+  the written agreement with the charity says so, and the charity holds the money, so it is a funded promise, not a
+  pledge (Fahtai's Area 6 brief: a will or a family reserve is not the same thing). Amount and terms to agree with an
+  existing s.88 charity.
 - **Wording fix:** "a tax-exempt charity under s.88", not "a registered charity".
 
 ---
@@ -179,7 +192,7 @@ futures: it can't show anything.)
 | B3 data: a customer worth 5% / 10% of sales leaves (what the data protects) | −0.9 / −2.4 | −0.77 / −1.55 | −0.57 / −1.09 | FINANCE |
 | Each HK$1M off the sale price | −1.8 | −1.22 | −0.88 | — |
 | P1–P5 price of values in fees, against an all-plain twin (HK$5.1K a year) | −0.5 | −0.57 | −0.31 | PAY |
-| P1–P5 tracking: a bad five years (2027–31) at the worst five-year lag, HK$26.6K a year | −0.3 | −0.37 | −0.21 | PAY (capped by the budget) |
+| P1–P5 tracking: a bad five years (2027–31) at the last five years' lag (−1.43 points a year), HK$26.6K a year | −0.3 | −0.37 | −0.21 | PAY (watched against the budget, which can't cap a lag once it happens) |
 | P1–P5 tracking, if that lag repeated every year to 89 (a stress the budget review is there to stop) | −3.1 | −2.78 | −1.49 | — |
 | P1–P5 fees, the label approach's funds → the new ones (HK$9.6K a year saved; see caveat) | +0.7 | +1.13 | +0.63 | — |
 | G1 scholarship, label approach (lifelong pledge, from cash flow) | −2.8 | −1.63 | −1.25 | — |

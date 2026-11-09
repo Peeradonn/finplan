@@ -140,7 +140,7 @@ def check_against_round_one():
 
 
 # ---------- inputs for the price tags (ILLUSTRATIVE unless marked; sources in Final/Decision_List.md) ----------
-SHARE = 0.5                      # Carmen's share of the business (team decision open)
+SHARE = 0.5                      # Carmen's share of the business (decided, Pete, 9 Nov)
 EQ_MULT = 5.6                    # equity value / net profit (area2_business.md §3a; no HK SME source)
 TAX_KEEP = 0.835                 # after 16.5% profits tax at the margin
 HAIRCUT = m.BIZ / 5_000_000      # the plan counts HK$3.0M of the HK$5.0M: 60%
@@ -258,7 +258,7 @@ def main():
         w(row(f"Fees: label-approach funds → candidate A (HK${FEE_SAVED:,} a year saved)", run(base, r_eq=r_eq_for(FEE_SAVED)), b))
         w(row(f"Price of values in fees vs an all-plain twin (HK${FEE_VALUES:,} a year)",
               run(base, r_eq=r_eq_for(-FEE_VALUES)), b))
-        w(row(f"Tracking: a bad five years, 2027-31, at the worst five-year lag (HK${TRACK_BAD:,} a year)",
+        w(row(f"Tracking: a bad five years, 2027-31, at the last five years' lag (HK${TRACK_BAD:,} a year)",
               run(base, ret_add={y: (-(TRACK_BAD / m.POOL) / W_EQ, 0.0) for y in range(2027, 2032)}), b))
         w(row(f"Tracking, if that lag repeated every year to 89 (a stress)",
               run(base, r_eq=r_eq_for(-TRACK_BAD)), b))

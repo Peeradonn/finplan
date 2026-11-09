@@ -285,10 +285,15 @@ the framework.
 **The four corners** (rules, so the framework decides, not us; 5 Nov). Each decision lands in one corner by its two-sided
 price tag:
 
-| | **Changes something real** | **Changes nothing real** |
+| | **Real effect shown** | **No real effect shown** |
 |---|---|---|
 | **Good for their money** | **Do it.** No choice needed: both win. E.g. the vans; recycled content; customer emissions data protecting the sale | **Do it, but don't call it green.** Good finance or risk management. E.g. the reverse mortgage as a hedge against old flats losing value |
-| **Costs them money** | **The only real choice: pay for it knowingly,** within a values budget the family set in advance. E.g. the scholarship | **Refuse it.** It costs and changes nothing; the label is all it offers. E.g. the green-loan label at HK$0.9M; the clean-energy fund; "compostable" claims for packaging the food-waste bins turn away |
+| **Costs them money** | **The only real choice: pay for it knowingly,** within a values budget the family set in advance. E.g. the scholarship | **Refuse it.** It costs, and nothing shows it changes anything; the label is all it offers. E.g. the green-loan label at HK$0.9M; the clean-energy fund; "compostable" claims for packaging the food-waste bins turn away |
+
+*Wording (9 Nov, from Fahtai's Area 6 brief):* the columns were "changes something real / changes nothing real".
+"Changes nothing" claims more than anyone can show: an ESG strategist can point to engagement and price effects. The
+rule is the same and easier to defend: the family pays for effects it can be shown, and we say "not shown" for the
+rest. It is also the thesis ("we show what it does").
 
 - **We are not asking the family to choose between their money and the world.** Most of the time they don't have to; where
   they do, the cost is small, visible and theirs to decide. Line for the talk: *"Most of the time, the family doesn't
@@ -297,7 +302,8 @@ price tag:
 - **The choice is made once, in the mandate, not decision by decision:** Carmen's values budget (up to HK$… a year, or …
   points of the odds) covers the "pay for it knowingly" corner; Adrian's portion isn't touched. That is also the brief's
   "how disagreement between decision-makers is resolved".
-- **Carmen's ESG funds** cost a little and change nothing real (shares bought on the market fund nothing new). The
+- **Carmen's ESG funds** cost a little and show no real effect (shares bought on the market give companies no new
+  money, and no one has shown that this allocation changes what they do). The
   framework doesn't block them: she can choose them from her values budget, labelled honestly as alignment, not impact.
   Line for the talk: *"We don't refuse Carmen's values. We refuse the label."*
 - **Two caveats to keep:** (1) "most of the Wongs' real impact sits in the top-left corner" is EXPECTED until the model
@@ -372,7 +378,7 @@ slide) · **MODEL** (Pete's runs) · **CALL** (ask someone) · **CASE** (the cas
 | 8 | Decide: portfolio | 0:50 | [The portfolio is measured, not labelled: weights, HK$… a year, carbon −30% lower] | Weights per parent; fees; a carbon figure; refusals (clean-energy fund −31% in 2023; ≈80% of sustainability-linked bonds fail CBI alignment); greenium 0–8bp | Weights and fees: HAVE; carbon: **−30% measured** (EDMW 63.67 vs ≈91, BlackRock/MSCI Aug 2026); refusals: HAVE | Portfolio with weights and costs; a refusal |
 | 9 | Decide: home | 0:50 | [The reverse mortgage protects the odds; downsizing leaves the children more] | If old flats lose value, downsizing loses … points, the reverse mortgage …; leave by the building's 50th year; green mortgage refused; warehouse green lease at the 2027 renewal | MODEL (inheritance must include the flat); HKMC rules HAVE; payouts by age CHECK | A trade-off; a refusal |
 | 10 | Stress | 0:50 | [A sudden transition costs … points; most of it is market risk no label hedges] | The scenario's effect on business, flat and portfolio; the defences | MODEL (Lookbua's shocks); NGFS/HKMA sources CHECK | A scenario; risk register (one line, full in backup) |
-| 11 | Govern | 0:45 | One page, checked every year, with triggers that force a decision | Money, carbon, impact, milestones; a "can't measure yet" column; restating when data improves; the scholarship funded in 2027–36 while tax relief applies | Framework brief; IRD relief HAVE; cost MODEL | A dashboard; governance; funded giving |
+| 11 | Govern | 0:45 | One page, checked every year, with triggers that force a decision | Money, carbon, impact, milestones; a "can't measure yet" column; restating when data improves; the scholarship funded in 2027–28, while tax relief applies (17%: checked on each parent's own tax, 9 Nov) | Framework brief; IRD relief HAVE; cost MODEL | A dashboard; governance; funded giving |
 | 12 | Close | 0:20 | [From a label to what it does: N decisions changed, … t a year, HK$… more] | The callback; "we don't refuse Carmen's values, we refuse the label" | MODEL | — |
 
 **Backup slides** (after slide 12; §7): the business's abatement cost curve; the five instruments compared (tenor,
@@ -449,9 +455,9 @@ from ESG funds. The brief's hints (a refusal, a trade-off, honesty about the gre
 
 **What most teams will miss, and where we cover it:** ESG funds bought on the market are alignment, not impact (slide
 4); a sudden transition raises inflation, which hurts fixed-HK$ retirement income (slide 12); here the physical risk is
-heat, not flood (slide 11; a heat-and-health source would strengthen it, Lookbua); only the family's own emissions are
-measured, the rest estimated or modelled (slide 13, a column); a restatement policy when the data improves (slide 13);
-tax relief on gifts only while earning, so fund the scholarship in 2027–36 (slide 13); half the business's savings are
+heat, not flood (slide 11; a heat-and-health source would strengthen it, Lookbua); only the business's own fuel and electricity
+are measured, and every tonne is estimated from them or modelled (slide 13, a column); a restatement policy when the data improves (slide 13);
+tax relief on gifts only while earning, so fund the scholarship in 2027–28 (slide 13); half the business's savings are
 Carmen's if she owns half (§5 decision); Hong Kong doesn't require advisers to ask about sustainability preferences (slide
 5); a "can't measure yet" column on the dashboard (slide 13).
 
@@ -489,10 +495,11 @@ inheritance in HK$ (`Decision_List.md` §4). **Recommended, Pete to confirm:** a
 
 **Team decisions still open** (the briefs had to assume these; every number downstream depends on them):
 1. ~~Carmen's share of the business~~ decided above: 50%.
-2. **The warehouse.** Fahtai's brief: leased, 7,500 sq ft in a Kwai Chung industrial building, 60,000 kWh a year.
-   Lookbua's brief used a 3,000 sq ft placeholder: align to Fahtai's.
-3. **The flat's building:** completed 1996 (30 years old now, 50 in 2046), about 900 sq ft, not certified (Lookbua's
-   assumption).
+2. **The warehouse:** leased, 7,500 sq ft in a Kwai Chung industrial building. In use in both of Fahtai's 8–9 Nov
+   briefs; confirm at the next meeting. The 3,000 sq ft retrofit figures in `area4_property_scenario.md` can't be
+   scaled up by area (`area4_assets_update.md`): use the new brief's.
+3. **The flat's building:** completed 1996 (50 in 2046). In use in both new briefs; confirm at the next meeting.
+   About 900 sq ft and not certified are still unverified assumptions.
 4. **The Round One fund:** say it on stage or keep it for the questions (§2).
 
 | Who | Owns | Starts now (needs no one) | Gives (to whom, by when) |
@@ -539,6 +546,11 @@ investment policy; the model's assumptions; the rules map (what applies to the W
 | The family | What does Adrian give up for Carmen's values? | 5 | Price of values in HK$ (Win, Pete) |
 | Practitioner | Your scenario: why those shocks, from where? | 12 | Sources from NGFS / HKMA (Lookbua) |
 | Anyone | What would you not do? | 7, 9, 11 | Refusals with numbers: clean-energy ETF, green-loan label, green mortgage |
+| ESG strategist | "Shares bought on the market change nothing": what about engagement and the cost of capital? | 4, 7 | We don't say "nothing": we say no effect has been shown for this allocation, so we don't pay for it as impact, and Carmen can still choose it as alignment (wording fixed 9 Nov) |
+| ESG strategist | Are the vans' tonnes additional, or would the company switch anyway? | 6 | Against a stated counterfactual (new diesel vans); fuel and kWh measured, tonnes estimated with published factors |
+| Practitioner | Doesn't your fee cost double-count the tracking lag? | 7 | No: the lag is after each fund's own fee, and the two equity funds charge the same (`Decision_List.md` P1–P5) |
+| Practitioner | Is the 17% tax relief real for this family? | 11 | Yes in 2027–28: HK$40,800 saved per HK$240K gift (Adrian gives: his salary is taxed; part of Carmen's HK$720K may be untaxed dividends); within the 35% cap; none after retirement |
+| A judge who read Round One | Your proposal said waiting to 2045 for the reverse mortgage costs about 9 points (83% to 73%). | 9 | That run kept the 2037 payout; at the 2045 value and age it costs ≈2 points on that base, ≈0.5 on today's (logged 9 Nov) |
 
 ## 9. Facts to check before they go on a slide
 
