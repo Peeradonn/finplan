@@ -144,15 +144,34 @@ SHARE = 0.5                      # Carmen's share of the business (decided, Pete
 EQ_MULT = 5.6                    # equity value / net profit (area2_business.md §3a; no HK SME source)
 TAX_KEEP = 0.835                 # after 16.5% profits tax at the margin
 HAIRCUT = m.BIZ / 5_000_000      # the plan counts HK$3.0M of the HK$5.0M: 60%
-SAVE_LIST, SAVE_25 = 372_000, 240_300   # vans + LED + air-con a year: diesel at HK$37.93/L list; at HK$25/L
+def saving(diesel):
+    """Vans + LED + air-con, HK$ a year: 4 vans × (2,500 L × diesel − HK$8,788 of power), LED HK$16,872,
+    air-con HK$11,389 (area2_business.md §3)."""
+    return 4 * (2_500 * diesel - 8_788) + 16_872 + 11_389
+
+
+# Diesel: HK$31/L is the government's average after forecourt discounts, Aug 2026 (HK$30.91-31.51; LCQ11 Annex I,
+# 7 Oct 2026); contract fleets pay less, unpublished. HK$37.93 is the pump list (4 Nov); HK$25 the low case.
+SAVE, SAVE_LIST, SAVE_25 = saving(31.0), saving(37.93), saving(25.0)
 STAKE_PER_PCT = 209_000          # Carmen's stake per 1% of sales lost (area2_business.md §3e)
 FEE_SAVED = 18_175 - 8_528       # both portfolios' fees, Round One -> candidate A (area3_portfolio.md §3)
 FEE_VALUES = 5_107               # price of values in fees against an all-plain twin (area3 §4)
 TRACK_BAD = 26_600               # the climate sleeve's lag a year if the last five years repeat (area3 §4)
-RELIEF = 0.17                    # salaries tax relief on cash gifts while earning (area1_6 §7)
+RELIEF = 0.17                    # salaries tax relief on cash gifts while earning (checked on each parent, 9 Nov)
+# HKMC reverse mortgage, two borrowers, life, fixed rate, HK$ a month per HK$1M (HKMC table, March 2026): the
+# youngest borrower's entry age counts, so Carmen's: 60 in 2037, 68 in 2045.
+RMP_AGE_60, RMP_AGE_68 = 1_810, 2_470
 
 
 DIV_FROM = 2033                  # the 5-year van loan (HK$1.5M, ≈HK$349K a year) takes the saving to 2032
+
+
+def rmp_from(base, year, income):
+    """The plan with the reverse mortgage starting in `year` at a level `income`: odds and inheritance."""
+    s, pot = sim_x(**{**base, "rmp": income, "rmp_y": year})
+    equity = max(flat_value(END) - rmp_balance_x(year, END, income), 0)
+    return dict(odds=s, leg_med=(np.median(pot) + equity) / DEFL / 1e6,
+                leg_p10=(np.percentile(pot, 10) + equity) / DEFL / 1e6)
 
 
 def sale_uplift(saving):
@@ -235,14 +254,16 @@ def main():
 
         w("### M2. B1 the vans, LED and air-con, through the sale price\n")
         w(head)
-        for lbl, save in [("Saving at the diesel list price (HK$372K a year)", SAVE_LIST),
-                          ("Saving at HK$25/L diesel (HK$240K a year)", SAVE_25)]:
+        diesel = [("HK$31/L, the government's after-discount average (base)", SAVE),
+                  ("HK$37.93/L, the pump list price", SAVE_LIST), ("HK$25/L, the low case", SAVE_25)]
+        for lbl, save in diesel:
             up = sale_uplift(save)
-            w(row(f"{lbl}: sale +HK${up/1e6:.2f}M", run(base, biz=m.BIZ + up), b))
-        divs = {y: SAVE_LIST * TAX_KEEP * SHARE for y in range(2028, 2039)}
-        w(row("List price, plus Carmen's half paid out as dividends 2028-38 (ignores the loan: an upper bound)",
-              run(base, biz=m.BIZ + sale_uplift(SAVE_LIST), inflows=divs), b))
-        for lbl, save in [("list price", SAVE_LIST), ("HK$25/L", SAVE_25)]:
+            w(row(f"Diesel at {lbl}: saving HK${save/1e3:.0f}K a year, sale +HK${up/1e6:.2f}M",
+                  run(base, biz=m.BIZ + up), b))
+        divs = {y: SAVE * TAX_KEEP * SHARE for y in range(2028, 2039)}
+        w(row("HK$31/L, plus Carmen's half paid out as dividends 2028-38 (ignores the loan: an upper bound)",
+              run(base, biz=m.BIZ + sale_uplift(SAVE), inflows=divs), b))
+        for lbl, save in diesel:
             w(row(f"Diesel at {lbl}, plus Carmen's half paid out once the van loan is repaid ({DIV_FROM}-38)",
                   run(base, biz=m.BIZ + sale_uplift(save), inflows=dividends(save)), b))
 
@@ -274,6 +295,11 @@ def main():
             mult = (lambda d: (lambda y: 1 - d if y >= m.RMP_Y else 1.0))(d)
             w(row(f"Reverse mortgage, old flat {d:.0%} lower from 2037", run(base, "rmp", mult), b))
             w(row(f"Downsize in {m.DS_Y}, old flat {d:.0%} lower", run(base, "down", mult), b))
+        w(row("Reverse mortgage from 2045 instead, 2037's payout kept (Round One's `rmp2045_89` run: understated)",
+              rmp_from(base, 2045, m.RMP), b))
+        w(row("Reverse mortgage from 2045 instead, at the 2045 flat value and Carmen's age 68 (HKMC 2026 table)",
+              rmp_from(base, 2045, m.RMP * counted(m.home_value(2045)) / counted(m.home_value(m.RMP_Y))
+                       * RMP_AGE_68 / RMP_AGE_60), b))
 
         w("\n### M7. The scenario: late and sudden (2030-31)\n")
         w(head)
@@ -287,12 +313,12 @@ def main():
 
         w("\n### The recommendation: the framework's plan against the label approach\n")
         w(head)
-        new = dict(biz=m.BIZ + sale_uplift(SAVE_LIST), r_eq=r_eq_for(FEE_SAVED), inflows=scholarship_funded())
-        new_25 = dict(new, biz=m.BIZ + sale_uplift(SAVE_25))
-        w(row("New plan: vans (list diesel) + portfolio fees + funded scholarship", run(base, **new), b))
-        w(row("New plan, diesel at HK$25/L", run(base, **new_25), b))
-        new_div = dict(new, inflows={**dividends(SAVE_LIST),
-                                     **{y: v + dividends(SAVE_LIST).get(y, 0) for y, v in scholarship_funded().items()}})
+        new = dict(biz=m.BIZ + sale_uplift(SAVE), r_eq=r_eq_for(FEE_SAVED), inflows=scholarship_funded())
+        w(row("New plan: vans (diesel HK$31/L) + portfolio fees + funded scholarship", run(base, **new), b))
+        w(row("New plan, diesel at the HK$37.93/L list price", run(base, **dict(new, biz=m.BIZ + sale_uplift(SAVE_LIST))), b))
+        w(row("New plan, diesel at HK$25/L", run(base, **dict(new, biz=m.BIZ + sale_uplift(SAVE_25))), b))
+        new_div = dict(new, inflows={**dividends(SAVE),
+                                     **{y: v + dividends(SAVE).get(y, 0) for y, v in scholarship_funded().items()}})
         w(row(f"New plan + dividends once the van loan is repaid ({DIV_FROM}-38)", run(base, **new_div), b))
         written = run(base, inflows=scholarship_as_written())
         w(row("Label approach (Round One as written: list funds, unfunded lifelong pledge)", written, b))

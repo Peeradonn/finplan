@@ -112,7 +112,8 @@ in them are EXPLORATORY. Headlines, with the claim to check before it goes on a 
   as plastic under HK law (Cap. 603 s.3A), and the food-waste bins turn away packaging and utensils: Carmen's own
   label is a greenwashing risk. The value lever is
   customer data: each 1% of sales lost to a rival with better data costs her stake about HK$209K. CBAM doesn't apply.
-  *Check:* the diesel price used (HK$37.93/L is a list price; fleets pay less; at HK$25/L the vans still pay); the
+  *Diesel (checked 9 Nov):* HK$31/L, the government's after-discount average, is the base; at it the vans still pay
+  but don't cover a 5-year loan (`Decision_List.md` B1). *Check:* the
   sustainability-linked loan ratchet and review fees; any evidence that emissions data raises SME sale prices.
 - **Portfolio** (`area3_portfolio.md`, Win). **Round One's ESG core appears never to have launched:** the BOC-Prudential
   MSCI World ESG Index Fund (BUM645) is on the SFC's ESG list (authorised 2 May 2024) with no offering document, and its
@@ -136,9 +137,9 @@ in them are EXPLORATORY. Headlines, with the claim to check before it goes on a 
   One's ESG funds cost about HK$11.9K a year more than plain twins (3.8–6.2 points); the green bond fee gap (about 104bp)
   is about 50 times the greenium. A lifelong HK$30K-a-year scholarship costs about 6.9 points; a funded 20-year fund
   (about HK$0.48M in 2027–28) about 2.6. *Check:* every fee (Win's documents), GIIN wording, HK donor-advised funds.
-- **Flat, warehouse, scenario** (`area4_property_scenario.md`, Lookbua). Refuse the green mortgage: banks give a one-off
-  HK$0–3K rebate on HK$1.8M, and only if the building (or, for HKMC, the flat) is BEAM Plus certified; SC and HSBC
-  exclude refinancing (`hook_fact_checks.md`). The flat's retrofit saves about HK$1,900 a
+- **Flat, warehouse, scenario** (`area4_property_scenario.md`, Lookbua). Refuse the green mortgage: moving their HK$1.8M
+  loan earns at most a one-off HK$1,000, and only with a BEAM Plus rating; SC and HSBC exclude refinancing
+  (`hook_fact_checks.md`, corrected 9 Nov). The flat's retrofit saves about HK$1,900 a
   year. Tai Kok Tsui is on no official flood or storm-surge list; heat is here now (52–53 very hot days in 2024–25 vs a
   baseline of 14). An old-building discount hits downsizing about five times harder than the reverse mortgage (HKMC counts
   only half the value above HK$8M): at 10% less, downsizing loses about 6 points, the reverse mortgage about 1.4. Release
@@ -153,9 +154,9 @@ in them are EXPLORATORY. Headlines, with the claim to check before it goes on a 
   none by a food-and-beverage or packaging buyer; no programme publishes its ESG discount, and at an assumed 10–25bp it
   is worth HK$600–1,500 a year against HK$3.9–23K for an ESG rating. What works instead: one rating used several ways,
   early payment from her own cash in return for supplier data, and recycled-content options priced to customers per
-  tonne. **The green premium has collapsed:** recycled PET traded at the same price as virgin in Southeast Asia in Oct
-  2026 (search extracts of S&P and Argus), so the biggest cut (about 108 t a year) costs HK$0–1,395 a tonne, about 1.4 HK
-  cents a cup even at the 2023 peak; the earlier 10% (HK$328K a year) was too high. PLA is regulated plastic (EPD
+  tonne. **The green premium has collapsed:** recycled PET traded at the same price as virgin in Southeast Asia on 7
+  Oct 2026 (Platts, checked 9 Nov), so the biggest cut (about 108 t a year) costs about nothing now and ≈2.3 HK cents a
+  cup at the 2025 peak (US$485/t, S&P); the earlier 10% (HK$328K a year) was too high. PLA is regulated plastic (EPD
   guidance; its Sep 2025 packaging guide calls compostables "premature"); Phase 2 has no date; food-waste collectors
   reject loads over 20% packaging. *Check:* the ordinance text itself (not read), the resin prices, certification costs.
 
@@ -308,7 +309,7 @@ rest. It is also the thesis ("we show what it does").
   Line for the talk: *"We don't refuse Carmen's values. We refuse the label."*
 - **Two caveats to keep:** (1) "most of the Wongs' real impact sits in the top-left corner" is EXPECTED until the model
   prices each decision (§10); (2) win-wins have dates: the vans pay partly because of today's fuel prices and a tax
-  waiver that ends 31 Mar 2028, and recycled-PET prices swing (well above virgin in 2023). Saying when "green pays" and
+  waiver that ends 31 Mar 2028, and recycled-PET prices swing (US$485/t above virgin in Asia in Aug 2025, level by Oct 2026). Saying when "green pays" and
   acting before the window closes is more credible than saying it always pays, and it is what "decision-ready" means.
 
 **The five kinds of finance, placed** (a small picture on the framework slide, not spoken): green finance → the vans and
@@ -326,7 +327,7 @@ scholarship (and the business's own cuts); ESG integration → the portfolio.
 **Hook options:**
 - **H1, labels vs reality** (recommended, combined with H3's first line): four labels, each with its reality, one line
   each. An ESG fund on the SFC's list: US$0 in assets. "Compostable": legally plastic, and the food-waste bins turn it away. A
-  green mortgage: no lower rate, a one-off HK$0–3K here. A green grant: starts at a HK$100M loan, and pays for the
+  green mortgage: no lower rate in any published terms, at most a one-off HK$1,000 here. A green grant: starts at a HK$100M loan, and pays for the
   review, not the interest. (Wording checked at primary sources: `research/hook_fact_checks.md`.)
 - **H2, the cup:** hold up a "compostable" cup. "Sold as sustainable. Hong Kong's law counts it as plastic, and the food-waste
   bins turn it away." (Don't say "landfilled" unless EPD confirms it.) Strong in a room; a gimmick if delivered nervously.
@@ -368,7 +369,7 @@ slide) · **MODEL** (Pete's runs) · **CALL** (ask someone) · **CASE** (the cas
 
 | # | Step | Time | Title (draft) | Must prove | Evidence | Required item |
 |---|---|---|---|---|---|---|
-| 1 | Hook | 0:45 | A green label says what it's called, not what it does | ESG fund on the SFC list holds US$0; "compostable" is legally plastic and the food-waste bins turn it away; green mortgage: no lower rate, HK$0–3K; grant from a HK$100M loan, for the review, not the interest | Fund: HAVE + CALL; PLA, mortgage, grant: HAVE (primary sources, `hook_fact_checks.md`) | — |
+| 1 | Hook | 0:45 | A green label says what it's called, not what it does | ESG fund on the SFC list holds US$0; "compostable" is legally plastic and the food-waste bins turn it away; green mortgage: no lower rate, at most HK$1,000 once; grant from a HK$100M loan, for the review, not the interest | Fund: HAVE + CALL; PLA, mortgage, grant: HAVE (primary sources, `hook_fact_checks.md`) | — |
 | 2 | Answer | 0:40 | [N decisions, HK$… capital: odds … → …, HK$… more to the children, … t less a year] | The recommendation, the capital, both outcomes | MODEL; vans HK$1.9M ESTIMATED; scholarship fund ≈HK$0.48M ESTIMATED | Recommendation, capital, outcomes |
 | 3 | Framework | 0:45 | Four steps show what a decision does, not what it's called | Map, Price, Decide, Govern; the two-sided price tag; the four corners; the five kinds of finance placed | Framework brief (definitions) | The framework |
 | 4 | Map | 0:50 | The Wongs' sustainability sits where their money sits: a flat and a business | Four people and what each wants; flat HK$11.5M, business HK$5.0M, investments HK$10.5M; their plan in plain words (retire at 65 and 62, sell the business in stages, release the flat at retirement); the label approach touches only the HK$2.6M in ESG funds; "the family in this year's competition case" | CASE | Profiles (area 1) |
@@ -438,7 +439,7 @@ from ESG funds. The brief's hints (a refusal, a trade-off, honesty about the gre
 1. **One tag for every decision:** the two-sided price tag (§3) and its four corners (§4.2), the money side from our
    model. Nobody else can show sustainability in the family's odds and inheritance beside its tonnes.
 2. **Check the brief's toolkit against the client:** one slide, tool by tool, with checked numbers (grant: HK$100M
-   minimum; green mortgage: no lower rate, HK$0–3K, BEAM Plus certified only; CBAM: doesn't apply; the Taxonomy: no packaging or
+   minimum; green mortgage: no lower rate, at most HK$1,000 once, BEAM Plus rated only; CBAM: doesn't apply; the Taxonomy: no packaging or
    wholesale activity), then what does reach her (the e-van tax waiver to 31 Mar 2028, the HKMC loan guarantee, her
    customers' FY2026 reporting). The brief: "Plumbing, however, does not tell a client what to do."
 3. **The framework catching a real failure:** a fund on the SFC's ESG list that holds US$0 (§2). It is the brief's
@@ -560,17 +561,18 @@ Each research brief has its own full list (its last section). The ones the story
 |---|---|
 | Grant Scheme (GSF): loans use Track II only, "at least HK$100 million", up to 75% subsidy if Taxonomy-aligned, caps HK$800K | **Confirmed** at the HKMA guideline (24 Apr 2026): caps are per loan; the grant pays for the review, not interest (`research/hook_fact_checks.md`) |
 | BOC-Prudential MSCI World ESG Index Fund: US$0.00 every month Sep 2024 – Sep 2026; no offering document | Checked twice (agent and us, 4 Nov, HKEX fund platform and SFC data file). Ask BOCI-Prudential before saying "never launched": the record shows zero assets, not the reason |
-| Van saving HK$86K a year each | Rests on a HK$37.93/L diesel list price; find a fleet price; at HK$25/L the saving is smaller and the vans still pay |
+| Van saving HK$86K a year each | **Corrected (9 Nov):** HK$68.7K a year each at HK$31/L, the government's average after forecourt discounts (Aug 2026, HK$30.91–31.51; LCQ11 Annex I, 7 Oct 2026). About 85% of diesel is sold on contract, with discounts "as high as $27 per litre" (same answer), so a fleet may pay less: keep HK$25/L as the low case. Motor diesel is Euro V, duty HK$0.00 (C&ED; ULSD is HK$2.89). The e-van first registration tax waiver runs to 31 Mar 2028 (Budget 2026–27, para 207); nothing said after |
 | Green-loan discount 25bp; sustainability-linked ratchet size; external review fees | ILLUSTRATIVE: no HK bank publishes an SME green discount; find a bank quote or a published range |
-| HKMC reverse mortgage pays about 36% more per HK$1M at 68 than at 60 | From HKMC's 2026 examples (single borrower, ages 60 and 70); check the joint-borrower table |
+| HKMC reverse mortgage pays about 36% more per HK$1M at 68 than at 60 | **Confirmed** (HKMC payout table, March 2026: two borrowers, life, fixed HK$1,810 a month per HK$1M at 60, HK$2,470 at 68; the youngest borrower's age counts). The model's HK$230K in 2037 matches the age-60 fixed rate. Two more facts: the reverse mortgage's lump sum can repay an existing mortgage, so it doesn't need a clear title first (CLAUDE.md's reason for clearing the HK$0.46M is wrong; clearing it may still be right, see below); a "refinancing property" counts at most 80% of value, which binds only if the flat is below ≈HK$13.3M in 2037 (the plan's value is HK$13.55M; the scenario's isn't). Buildings over 50: case by case, an inspection report may be needed. *Earlier note:* From HKMC's 2026 examples (single borrower, ages 60 and 70); check the joint-borrower table |
 | ESG ETFs trailed IWDA by 0.4–2.9 points a year over five years | Window-dependent; quote with the period and the long-run figure beside it |
 | Scope 3 about 98% of the business's footprint | ILLUSTRATIVE business, published factors (UK DESNZ 2025): say "on our assumptions" |
-| Recycled PET at the same price as virgin, Southeast Asia, Oct 2026 | Read from search extracts of S&P Global and Argus (the sites refused automated fetches); find a readable source and date it. Prices swing: quote the 2023 peak beside it |
+| Recycled PET at the same price as virgin, Southeast Asia, Oct 2026 | **Checked 9 Nov, medium confidence:** both US$1,240/t FOB SE Asia on 7 Oct 2026 (S&P headline "Recycled-virgin PET spread hits zero", 7 Oct; figures via a vendor blog citing Platts; OPIS consistent). **The peak was 2025, not 2023** in Asia: US$485/t in mid-Aug 2025 (S&P *Platts Chemical Trends H1 2026*, p.27, opens without a login); in 2023 the SE Asian flake spread was about zero. Say "for now": ICIS expects premiums to return (Americas) |
 | PLA counts as regulated plastic; compostables "premature" | **Confirmed** in Cap. 603 s.3A and EPD to LegCo (30 May 2023). Don't say "O·PARK rejects PLA" or "landfilled": say the food-waste bins turn away packaging and utensils. Phase 2: no date as of 7 May 2025 |
 | Supply-chain finance anchor guide US$100M of trade spend | One bank's published guide; no Hong Kong bank states a minimum |
-| EU CBAM: definitive from 1 Jan 2026; importers under 50 t a year exempt; ~180 downstream products proposed from 2028, not adopted | Law-firm and press summaries; check the Official Journal and the Commission's CBAM pages |
+| EU CBAM: definitive from 1 Jan 2026; importers under 50 t a year exempt; ~180 downstream products proposed from 2028, not adopted | **Confirmed (9 Nov), wording tightened:** certificates on sale from 1 Feb 2027, first surrender by 30 Sep 2027 for 2026 imports; exempt at 50 t or less of steel, aluminium, cement and fertiliser combined, per EU importer per year, and over it the whole year counts (Reg. (EU) 2025/2083, OJ 17 Oct 2025; not electricity or hydrogen); the downstream extension (COM(2025) 989, 17 Dec 2025) is in trilogue, no deal on 20 Oct 2026. The duty falls on the EU importer; plastics and paper packaging aren't covered. *Earlier note:* Law-firm and press summaries; check the Official Journal and the Commission's CBAM pages |
 | HKEX: Scope 3 mandatory for LargeCap issuers from financial years starting 1 Jan 2026; comply-or-explain for the rest | **Confirmed** in Appendix C2 (paras 16–17, 28(c)): FY2026 reports, published in 2027, with a data relief |
-| Hong Kong Taxonomy Phase 2A in 2026 (transition and adaptation) | From the brief; confirm with HKMA |
+| Hong Kong Taxonomy Phase 2A in 2026 (transition and adaptation) | **Confirmed:** Phase 2A final, 22 Jan 2026 (HKMA): manufacturing and ICT added, transition activities, an adaptation objective. Phase 2B is a prototype (7 Sep 2026; consultation closed 7 Oct): 39 activities. No packaging or wholesale activity |
+| NGFS long-term scenarios: Phase V (Nov 2024) is current | **Confirmed 9 Nov:** Phase VI not out; NGFS says "end of 2026". Check again on Sun 15 before the slides freeze |
 
 ## 10. Untested assumptions (test, don't build on)
 1. Judges accept the competition's own family as a "representative Hong Kong client" rather than marking it down as

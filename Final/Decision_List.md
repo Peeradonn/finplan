@@ -72,8 +72,11 @@ Money at the family level (odds, inheritance) is in `Final/model_runs.md`; the l
 established and point to the run.
 
 ### B1. Electric vans, LED, office air-con (`area2_business.md` §3c–3d)
-- **Money (business):** saves ≈HK$372K a year before tax (vans HK$344K at the HK$37.93/L diesel list price; ≈HK$212K at
-  HK$25/L), payback 5.1 years on full capex, year-1 cash after debt service +HK$23.6K, debt cover 5.7× → 3.3×. The
+- **Money (business):** saves ≈HK$303K a year before tax with diesel at **HK$31/L, the government's average after
+  forecourt discounts** (Aug 2026, HK$30.91–31.51; LCQ11 Annex I, 7 Oct 2026); HK$372K at the HK$37.93/L pump list,
+  HK$243K at HK$25/L. Payback ≈6.3 years on full capex (8-year van life). **The saving no longer covers a 5-year
+  loan** (≈HK$349K a year): the company tops up ≈HK$46K a year to 2032, or borrows over longer (bank terms
+  UNVERIFIED). Debt cover 5.7× before, ≈3× after (at list diesel 3.3×). The
   electric van costs ≈HK$12.4K more than diesel after the first-registration-tax waiver, ≈HK$83K more if the waiver
   lapses after 31 Mar 2028.
 - **Money (family):** through the sale price (extra profit × the sale multiple × Carmen's share × the plan's 60% haircut)
@@ -101,8 +104,12 @@ established and point to the run.
   multiple premium.
 
 ### B4. Recycled content (`area2_supply_chain.md` §4)
-- **Money (business):** ≈HK$0 at Oct 2026 resin parity in Southeast Asia (search extract: CHECK); up to ≈HK$151K a year
-  at the 2023 peak, passed to customers as an itemised line (1.4 HK cents a cup). Not the family's values budget.
+- **Money (business):** ≈HK$0 at resin parity: food-grade rPET pellets and virgin bottle-grade PET both US$1,240/t FOB
+  Southeast Asia on 7 Oct 2026 (Platts, via S&P's headline and a vendor blog: medium confidence), because the Middle
+  East war pushed virgin prices up. At the 2025 Asian peak (US$485/t premium, mid-Aug 2025; S&P *Chemical Trends H1
+  2026*, p.27, a PDF a judge can open) it would be ≈HK$248K a year on 65.5 t, ≈2.3 HK cents a cup (ESTIMATED), passed
+  to customers as an itemised line. Parity is a window, not a fact for good: resin isn't packaging (conversion and
+  certified food-contact supply add cost, UNVERIFIED). Not the family's values budget.
 - **World:** ≈108 t a year (Scope 3, purchased goods; ESTIMATED with DESNZ factors).
 - **Caveat:** Phase 2 of the plastics rules would ban plastic tableware regardless; aim recycled content at
   pre-packaged and retail packaging, fibre at tableware.
@@ -153,8 +160,11 @@ established and point to the run.
   widens by 10% or more, decide the route that year. Release by the building's 50th year.
 
 ### H2–H4. Green mortgage, retrofit, the next flat (`area4_property_scenario.md` §3.1–3.2, 3.4)
-- H2: no lower rate; HK$0–3K one-off on HK$1.8M, only if the building (or, for HKMC, the flat) is BEAM Plus certified;
-  SC and HSBC exclude refinancing (`research/hook_fact_checks.md`).
+- H2: no lower rate in any published terms; moving their HK$1.8M loan earns at most HK$1,000 once (Hang Seng takes a
+  transfer from another bank, Gold/Platinum building, drawdown by 31 Dec 2026; HKMC's fixed-rate scheme, if it takes a
+  refinancing, unconfirmed), and the family pays the solicitor and any early-repayment charge. BEA: HK$0 at this size;
+  SC and HSBC exclude refinancing; HKMC's HK$3,000 is for insured high-ratio loans, and theirs is ≈16% of the flat's
+  value (`research/hook_fact_checks.md`, corrected 9 Nov).
 - H3: ≈HK$1,900 a year; no solar (the roof is the owners' corporation's).
 - H4: the one Hong Kong study's 4.4% premium is ≈HK$0.3M on HK$7M, for ≈HK$2K a year of energy savings.
 
@@ -186,9 +196,9 @@ futures: it can't show anything.)
 
 | Decision | Odds | Inheritance, median | Worst 10% | Corner |
 |---|---|---|---|---|
-| B1 vans, LED, air-con, through the sale price (diesel at list; at HK$25/L) | +0.7 (+0.5) | +0.63 (+0.41) | +0.50 (+0.33) | DO |
-| B1 + B8: Carmen's half paid out once the van loan is repaid, 2033–38 (diesel at list; at HK$25/L) | +1.6 (+1.1) | +1.95 (+1.26) | +1.35 (+0.91) | FINANCE |
-| ... the same paid out from 2028 (ignores the loan: an upper bound, don't quote) | +2.0 | +3.33 | +2.24 | — |
+| B1 vans, LED, air-con, through the sale price (diesel HK$31/L; at list, at HK$25/L) | +0.6 (+0.7, +0.5) | +0.51 (+0.63, +0.41) | +0.41 (+0.50, +0.33) | DO |
+| B1 + B8: Carmen's half paid out once the van loan is repaid, 2033–38 (diesel HK$31/L; at list, at HK$25/L) | +1.3 (+1.6, +1.1) | +1.60 (+1.95, +1.28) | +1.12 (+1.35, +0.92) | FINANCE |
+| ... the same paid out from 2028 (ignores the loan: an upper bound, don't quote; HK$31/L) | +1.8 | +2.72 | +1.80 | — |
 | B3 data: a customer worth 5% / 10% of sales leaves (what the data protects) | −0.9 / −2.4 | −0.77 / −1.55 | −0.57 / −1.09 | FINANCE |
 | Each HK$1M off the sale price | −1.8 | −1.22 | −0.88 | — |
 | P1–P5 price of values in fees, against an all-plain twin (HK$5.1K a year) | −0.5 | −0.57 | −0.31 | PAY |
@@ -201,34 +211,34 @@ futures: it can't show anything.)
 | H1 old flat 20% lower: reverse mortgage / downsize | −1.0 / −6.9 | −1.42 / +0.56 | −1.30 / +0.76 | FINANCE |
 | Scenario, late and sudden (all channels; downsizing instead) | −7.3 (−14.1) | −4.60 (−1.93) | −3.41 (+0.76) | — |
 | ... of which the portfolio / the flat / the business | −3.8 / −0.7 / −0.8 | −2.48 / −1.44 / −0.71 | | — |
-| **The new plan** (B1 at list diesel + the new portfolio's fees + G1 funded), against the family's plan without them | **+0.8** | **+0.94** | **+0.61** | |
-| **The new plan, against the label approach** (list funds, the lifelong pledge actually paid) | **+3.6** | **+2.57** | | |
-| The new plan + B8 dividends (2033–38), against the base / against the label approach | +1.6 / +4.4 | +2.29 / +3.92 | +1.52 | |
+| **The new plan** (B1 at HK$31/L diesel + the new portfolio's fees + G1 funded), against the family's plan without them | **+0.6** | **+0.81** | **+0.51** | |
+| **The new plan, against the label approach** (list funds, the lifelong pledge actually paid) | **+3.4** | **+2.44** | | |
+| The new plan + B8 dividends (2033–38), against the base / against the label approach | +1.4 / +4.2 | +1.92 / +3.55 | +1.27 | |
 
 **What this does to the story:**
 1. **"Most of what's real also pays" holds in direction.** All ≈134 t a year come from decisions that pay (the vans:
-   +HK$0.63M to the inheritance) or cost about nothing (recycled content at resin parity). What costs money is the ESG
+   +HK$0.51M to the inheritance at HK$31/L diesel) or cost about nothing (recycled content at resin parity). What costs money is the ESG
    funds' alignment (≈HK$0.57M in fees against plain twins, plus ≈HK$0.37M if a bad five years of tracking comes), a
    label kept only as Carmen's values
    choice, and the scholarship (≈HK$0.80M, real and chosen). This supports the upgraded thesis (`Final_Plan.md` §4,
    "what doesn't pay is mostly the label"); it stays EXPECTED until Pete reviews these runs.
 2. **A new decision the model found: B8, pay out Carmen's share of the van saving.** Recommended (9 Nov), as a policy:
-   - **When:** only once the 5-year van loan is repaid (2033). Until then the saving (≈HK$372K a year) pays the loan
-     (≈HK$349K a year); paying out earlier would strain the company's cash.
+   - **When:** only once the 5-year van loan is repaid (2033). Until then the saving (≈HK$303K a year at HK$31/L) goes
+     to the loan (≈HK$349K a year) and the company tops up the rest; paying out earlier would strain its cash.
    - **Why a planner wants it:** it moves money from a concentrated, illiquid business into the family's diversified
      portfolio before the sale (the home and the business are 61% of the family's assets). Hong Kong taxes neither
      dividends nor the sale, so tax doesn't decide it.
    - **Conditions:** agreed with the co-founder, who receives the other half, and written into the shareholders' agreement
      the plan already drafts; a cash buffer stays in the company; the 2035–36 fleet replacement is financed as the first
      one was.
-   - **Worth:** ≈HK$1.3M more to the children on top of the vans' sale-price effect (≈+HK$1.95M with it; +HK$1.26M at
-     HK$25/L diesel). It slightly overstates: Carmen's stake falls as the staged sale proceeds from 2035, and the model
+   - **Worth:** ≈HK$1.1M more to the children on top of the vans' sale-price effect (+HK$1.60M with it at HK$31/L;
+     +HK$1.28M at HK$25/L, +HK$1.95M at the list price). It slightly overstates: Carmen's stake falls as the staged sale proceeds from 2035, and the model
      sells in one lump in 2039.
    - **In the headline:** no. It needs the co-founder's consent and rests on ILLUSTRATIVE business numbers, so the
-     headline stays the conservative +HK$2.57M against the label approach; the dividend is one line on slide 6 ("from 2033,
-     paying it out adds ≈HK$1.3M for the children"). Ignore the earlier upper bound (payouts from 2028, +HK$3.3M).
-3. **Don't credit sustainability with plan hygiene.** Of the new plan's +HK$2.57M against the label approach, roughly
-   HK$1.1M is cheaper fund wrappers and HK$0.8M is funding the scholarship properly; the vans give ≈HK$0.6M. The talk
+     headline stays the conservative +HK$2.44M against the label approach; the dividend is one line on slide 6 ("from 2033,
+     paying it out adds ≈HK$1.1M for the children"). Ignore the upper bound (payouts from 2028, +HK$2.7M).
+3. **Don't credit sustainability with plan hygiene.** Of the new plan's +HK$2.44M against the label approach, roughly
+   HK$1.1M is cheaper fund wrappers and HK$0.8M is funding the scholarship properly; the vans give ≈HK$0.5M. The talk
    should say which is which.
 4. **The scenario on the plan as presented:** 96.8% → 89.5%, the median inheritance −HK$4.6M. The portfolio is still the
    largest channel; the route out of the flat decides the rest (downsizing in the scenario: 82.7%, but HK$11.1M median).

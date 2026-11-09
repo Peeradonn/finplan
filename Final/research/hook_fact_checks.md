@@ -156,6 +156,8 @@ Avoid saying "O·PARK rejects PLA" or "it all goes to landfill" unless EPD confi
 
 ## 3. Green mortgages are worth little to this family
 
+**Correction (9 Nov, primary sources re-read):** for the Wongs the range is **HK$0–1,000**, not HK$0–3,000. HKMC's HK$3,000 is for the Mortgage Insurance Programme, which insures the part of a loan above 70% of the flat's value; theirs is ≈16%, so it doesn't apply. What a refinancing can get: Hang Seng's HK$1,000 for a transfer from another bank (Gold/Platinum building, drawdown by 31 Dec 2026; factsheet HSBGM06/25) and, if it takes refinancings (unconfirmed), HKMC's fixed-rate scheme's HK$1,000. Slide line: "A green mortgage buys no lower rate in any published terms: moving their HK$1.8M loan earns at most HK$1,000, once, and only with a BEAM Plus rating." Fahtai's `area4_assets_update.md` (8 Nov) makes the same point: don't merge bank, MIP and reverse-mortgage rewards into one range.
+
 **Verdict: CORRECTED.** "No lower rate" is confirmed. At a HK$1.8M loan the **published** one-off green rebate is **HK$0 to
 HK$3,000**, not HK$0–4K: BEA HK$0, Standard Chartered HK$888, HKMC HK$1,000 or HK$3,000. HSBC publishes no amount. The
 building-rating requirement is confirmed for the three banks. Three facts we had missed:
