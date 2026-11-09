@@ -152,8 +152,16 @@ TRACK_BAD = 26_600               # the climate sleeve's lag a year if the last f
 RELIEF = 0.17                    # salaries tax relief on cash gifts while earning (area1_6 §7)
 
 
+DIV_FROM = 2033                  # the 5-year van loan (HK$1.5M, ≈HK$349K a year) takes the saving to 2032
+
+
 def sale_uplift(saving):
     return saving * TAX_KEEP * EQ_MULT * SHARE * HAIRCUT
+
+
+def dividends(saving, start=DIV_FROM, end=m.BIZ_Y):
+    """Carmen's half of the after-tax saving, paid out once the van loan is repaid, until the sale."""
+    return {y: saving * TAX_KEEP * SHARE for y in range(start, end)}
 
 
 def r_eq_for(pot_addend_hkd):
@@ -199,7 +207,7 @@ def main():
     leg_check = check_against_round_one()
     full = m.full_plan()
     bases = [("The family's plan without the medical review at 75 (`ladder_5_89`, the briefs' base)", full),
-             ("The family's plan with the medical review at 75 (`switch_89`, recommended base)", {**full, "med": m.SWITCH})]
+             ("The family's plan with the medical review at 75 (`switch_89`, the base: Pete, 9 Nov)", {**full, "med": m.SWITCH})]
     out = []
     w = out.append
     w("# Final Round model runs (EXPLORATORY)\n")
@@ -232,8 +240,11 @@ def main():
             up = sale_uplift(save)
             w(row(f"{lbl}: sale +HK${up/1e6:.2f}M", run(base, biz=m.BIZ + up), b))
         divs = {y: SAVE_LIST * TAX_KEEP * SHARE for y in range(2028, 2039)}
-        w(row("List price, plus Carmen's half paid out as dividends 2028-38",
+        w(row("List price, plus Carmen's half paid out as dividends 2028-38 (ignores the loan: an upper bound)",
               run(base, biz=m.BIZ + sale_uplift(SAVE_LIST), inflows=divs), b))
+        for lbl, save in [("list price", SAVE_LIST), ("HK$25/L", SAVE_25)]:
+            w(row(f"Diesel at {lbl}, plus Carmen's half paid out once the van loan is repaid ({DIV_FROM}-38)",
+                  run(base, biz=m.BIZ + sale_uplift(save), inflows=dividends(save)), b))
 
         w("\n### M3. B3 emissions data: what a lost customer would cost (a sensitivity, not a forecast)\n")
         w(head)
@@ -247,7 +258,9 @@ def main():
         w(row(f"Fees: label-approach funds → candidate A (HK${FEE_SAVED:,} a year saved)", run(base, r_eq=r_eq_for(FEE_SAVED)), b))
         w(row(f"Price of values in fees vs an all-plain twin (HK${FEE_VALUES:,} a year)",
               run(base, r_eq=r_eq_for(-FEE_VALUES)), b))
-        w(row(f"Tracking, if the last five years repeated every year (HK${TRACK_BAD:,} a year)",
+        w(row(f"Tracking: a bad five years, 2027-31, at the worst five-year lag (HK${TRACK_BAD:,} a year)",
+              run(base, ret_add={y: (-(TRACK_BAD / m.POOL) / W_EQ, 0.0) for y in range(2027, 2032)}), b))
+        w(row(f"Tracking, if that lag repeated every year to 89 (a stress)",
               run(base, r_eq=r_eq_for(-TRACK_BAD)), b))
 
         w("\n### M5. G1 the scholarship\n")
@@ -278,6 +291,9 @@ def main():
         new_25 = dict(new, biz=m.BIZ + sale_uplift(SAVE_25))
         w(row("New plan: vans (list diesel) + portfolio fees + funded scholarship", run(base, **new), b))
         w(row("New plan, diesel at HK$25/L", run(base, **new_25), b))
+        new_div = dict(new, inflows={**dividends(SAVE_LIST),
+                                     **{y: v + dividends(SAVE_LIST).get(y, 0) for y, v in scholarship_funded().items()}})
+        w(row(f"New plan + dividends once the van loan is repaid ({DIV_FROM}-38)", run(base, **new_div), b))
         written = run(base, inflows=scholarship_as_written())
         w(row("Label approach (Round One as written: list funds, unfunded lifelong pledge)", written, b))
         w(f"\nAgainst the label approach, the framework's plan changes the odds by "

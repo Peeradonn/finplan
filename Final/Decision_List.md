@@ -30,6 +30,7 @@ advance) · REFUSE (costs money or credibility, changes nothing real).
 | B5 | "Compostable" PLA claims | Business called "sustainable" unquestioned → stop the claim; short tableware stock | REFUSE (the label) | — | Now | 1, 6 |
 | B6 | Green lease at the warehouse renewal | Nothing → do it | FINANCE | — | 2027 | 9 |
 | B7 | The sale, 2035–39 | HK$3.0M counted → same, with data and fleet as sale assets | FINANCE | — | 2035–39 | 6 |
+| B8 | Dividend policy for the van saving | Nothing → pay Carmen's half out once the van loan is repaid, agreed with the co-founder | FINANCE (moves money out of a concentrated business) | — | 2033–38 | 6 (one line) |
 | P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee | PAY (Carmen) / within budget (Adrian) | Reallocation | Months 1–3 | 8 |
 | P2 | What counts as sustainable | "On the SFC list" → a binding, measured outcome rule | — (governance) | — | Months 1–3 | 8, 11 |
 | P3 | Adrian's green bond fund | Allianz 5% → plain global bonds (AGGU) | REFUSE (for prudent money) | Reallocation | Months 1–3 | 8 |
@@ -160,9 +161,9 @@ established and point to the run.
 
 ---
 
-## 4. What the model runs say (5 Nov; `Final/model_runs.md`, EXPLORATORY)
+## 4. What the model runs say (5 Nov, dividends and tracking updated 9 Nov; `Final/model_runs.md`, EXPLORATORY)
 
-**Use the family's plan as the base:** with the medical review at 75 (`switch_89`): 96.8% to
+**The base (Pete, 9 Nov): the family's plan** with the medical review at 75 (`switch_89`): 96.8% to
 Carmen's 89, inheritance HK$13.01M median, HK$3.97M in the worst 10% of futures. Near 97% the odds can barely move, so
 **lead each price tag with the inheritance in HK$** and use the worst-10% inheritance as the risk line. (On the 82.6%
 base the briefs used, the worst-10% line is stuck at the home equity, HK$1.46M, because the money has run out in those
@@ -173,11 +174,13 @@ futures: it can't show anything.)
 | Decision | Odds | Inheritance, median | Worst 10% | Corner |
 |---|---|---|---|---|
 | B1 vans, LED, air-con, through the sale price (diesel at list; at HK$25/L) | +0.7 (+0.5) | +0.63 (+0.41) | +0.50 (+0.33) | DO |
-| B1, if Carmen's half of the saving is also paid out as dividends, 2028–38 | +2.0 | +3.33 | +2.24 | DO |
+| B1 + B8: Carmen's half paid out once the van loan is repaid, 2033–38 (diesel at list; at HK$25/L) | +1.6 (+1.1) | +1.95 (+1.26) | +1.35 (+0.91) | FINANCE |
+| ... the same paid out from 2028 (ignores the loan: an upper bound, don't quote) | +2.0 | +3.33 | +2.24 | — |
 | B3 data: a customer worth 5% / 10% of sales leaves (what the data protects) | −0.9 / −2.4 | −0.77 / −1.55 | −0.57 / −1.09 | FINANCE |
 | Each HK$1M off the sale price | −1.8 | −1.22 | −0.88 | — |
 | P1–P5 price of values in fees, against an all-plain twin (HK$5.1K a year) | −0.5 | −0.57 | −0.31 | PAY |
-| P1–P5 tracking, if the last five years' lag repeated every year (a stress) | −3.1 | −2.78 | −1.49 | PAY (capped by the budget) |
+| P1–P5 tracking: a bad five years (2027–31) at the worst five-year lag, HK$26.6K a year | −0.3 | −0.37 | −0.21 | PAY (capped by the budget) |
+| P1–P5 tracking, if that lag repeated every year to 89 (a stress the budget review is there to stop) | −3.1 | −2.78 | −1.49 | — |
 | P1–P5 fees, the label approach's funds → the new ones (HK$9.6K a year saved; see caveat) | +0.7 | +1.13 | +0.63 | — |
 | G1 scholarship, label approach (lifelong pledge, from cash flow) | −2.8 | −1.63 | −1.25 | — |
 | G1 scholarship funded (20-year fund, ≈HK$0.48M in 2027–28) | −0.7 | −0.80 | −0.49 | PAY |
@@ -187,16 +190,30 @@ futures: it can't show anything.)
 | ... of which the portfolio / the flat / the business | −3.8 / −0.7 / −0.8 | −2.48 / −1.44 / −0.71 | | — |
 | **The new plan** (B1 at list diesel + the new portfolio's fees + G1 funded), against the family's plan without them | **+0.8** | **+0.94** | **+0.61** | |
 | **The new plan, against the label approach** (list funds, the lifelong pledge actually paid) | **+3.6** | **+2.57** | | |
+| The new plan + B8 dividends (2033–38), against the base / against the label approach | +1.6 / +4.4 | +2.29 / +3.92 | +1.52 | |
 
 **What this does to the story:**
 1. **"Most of what's real also pays" holds in direction.** All ≈134 t a year come from decisions that pay (the vans:
    +HK$0.63M to the inheritance) or cost about nothing (recycled content at resin parity). What costs money is the ESG
-   funds' alignment (≈HK$0.57M in fees against plain twins, plus tracking risk), a label kept only as Carmen's values
+   funds' alignment (≈HK$0.57M in fees against plain twins, plus ≈HK$0.37M if a bad five years of tracking comes), a
+   label kept only as Carmen's values
    choice, and the scholarship (≈HK$0.80M, real and chosen). This supports the upgraded thesis (`Final_Plan.md` §4,
    "what doesn't pay is mostly the label"); it stays EXPECTED until Pete reviews these runs.
-2. **A new decision the model found: pay out Carmen's share of the van saving.** Through the sale price alone, the vans
-   add ≈HK$0.6M to the inheritance; paid out as dividends while she works, ≈HK$3.3M. The family's plan counts no dividends.
-   Whether the company pays it out is a business decision (the co-founder's half too); worth one line on slide 6.
+2. **A new decision the model found: B8, pay out Carmen's share of the van saving.** Recommended (9 Nov), as a policy:
+   - **When:** only once the 5-year van loan is repaid (2033). Until then the saving (≈HK$372K a year) pays the loan
+     (≈HK$349K a year); paying out earlier would strain the company's cash.
+   - **Why a planner wants it:** it moves money from a concentrated, illiquid business into the family's diversified
+     portfolio before the sale (the home and the business are 61% of the family's assets). Hong Kong taxes neither
+     dividends nor the sale, so tax doesn't decide it.
+   - **Conditions:** agreed with the co-founder, who receives the other half, and written into the shareholders' agreement
+     the plan already drafts; a cash buffer stays in the company; the 2035–36 fleet replacement is financed as the first
+     one was.
+   - **Worth:** ≈HK$1.3M more to the children on top of the vans' sale-price effect (≈+HK$1.95M with it; +HK$1.26M at
+     HK$25/L diesel). It slightly overstates: Carmen's stake falls as the staged sale proceeds from 2035, and the model
+     sells in one lump in 2039.
+   - **In the headline:** no. It needs the co-founder's consent and rests on ILLUSTRATIVE business numbers, so the
+     headline stays the conservative +HK$2.57M against the label approach; the dividend is one line on slide 6 ("from 2033,
+     paying it out adds ≈HK$1.3M for the children"). Ignore the earlier upper bound (payouts from 2028, +HK$3.3M).
 3. **Don't credit sustainability with plan hygiene.** Of the new plan's +HK$2.57M against the label approach, roughly
    HK$1.1M is cheaper fund wrappers and HK$0.8M is funding the scholarship properly; the vans give ≈HK$0.6M. The talk
    should say which is which.
@@ -209,9 +226,8 @@ was never verified, so quote the price of values against plain twins (−HK$0.57
 `switch_89`.
 
 ## 5. Open before the numbers are final
-1. **Carmen's share of the business** (50% assumed): halves or doubles every business HK$ at the family level.
-2. **The model's base:** recommended: the plan as presented, with the medical review (`{{switch_89}}`, 96.8%), §4.
-   The briefs used the plan without it (82.6%); `Final/model_runs.md` reports both. Pete decides, then moves the chosen
-   keys into `export_numbers()`.
-3. **Dividends:** whether the company pays out the van saving (§4, point 2).
+1. ~~Carmen's share of the business~~ **Decided (Pete, 9 Nov): 50%**, her co-founder 50%.
+2. ~~The model's base~~ **Decided (Pete, 9 Nov): the family's plan with the medical review** (`{{switch_89}}`, 96.8%).
+   Next: Pete moves the chosen keys into `export_numbers()` (diff `numbers.json`, log in `reviews/applied.md`).
+3. ~~Dividends~~ **Recommended (9 Nov): B8 as a policy from 2033, outside the headline** (§4, point 2). Pete to confirm.
 4. **The facts marked CHECK** above, and `Final_Plan.md` §9.
