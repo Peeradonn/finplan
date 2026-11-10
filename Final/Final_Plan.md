@@ -206,10 +206,22 @@ advantages above survive that, as long as the talk stands alone (§3).
   sourced inputs) or ILLUSTRATIVE (our assumption). The brief asks for "measured, estimated and illustrative"; showing
   the tags is itself an answer to it.
 - **HK dollars only.** Sources on the slide, dated.
-- **Look:** decided in the build (the slide-design skill), for this talk, not inherited (5 Nov). Round Two's house said
-  "Built to Last"; this talk's idea is the label against what it does, so render a label or price-tag motif beside a
-  plain option and choose. Keep Plus Jakarta Sans if it tests well on a projector. This is a projector in a room, not
-  Zoom: check contrast. Don't depend on Morph (the venue notebook's PowerPoint version is unknown); embed the font.
+- **Look: A′** (Pete, 11 Nov; chosen from four options rendered on the same two slides, `Final/looks/looks.html`):
+  - **Type:** Plus Jakarta Sans for every role (text, heads, numbers), as in Round Two: heavy weights read from the
+    back of a room, it's installed for the PowerPoint step to embed, and Pete chose one sans family over serif titles
+    on 23 Oct. Scale: titles 34px, column heads 19–21, body 16–19, footer 13, big numbers 30–150. Nothing under 16px
+    on the slide itself.
+  - **Colour:** crimson `#C80E1E` (5.9:1 on white) is the one accent: money at risk, the point a slide makes. Ink
+    `#1B1716`; slate `#5E4A50` (8.2:1) is the lightest text colour; `#3F3538` for what the money does to the world
+    (tonnes). **Green `#3F9A55` has one job, the label**, always with its word on it: it passes both red-green
+    colour-blind checks against the crimson (ΔE 26 and 28; Round Two's `#2F7A43` failed protanopia at 15).
+  - **The decorative idea: the facts-label rule.** A thick ink rule under each title and ink rules between rows,
+    as on a nutrition-facts label: the talk opens on a green label and ends its demonstration on the family's
+    honest one (Climate Facts, slide 10). Pale tints only behind ink, never as the carrier of meaning: projectors
+    wash them out.
+  - **Not used:** the house; Morph or any transition (the venue's PowerPoint version is unknown); serif titles;
+    colour alone for any status. Embed the font.
+  - **Still to test:** 20 seconds on a projector or a TV from across a room (the light green, the slate text).
 - **Live talk:** about 1,200 spoken words for 9:20. A slide carries one point and its number; the reasoning is spoken.
 - **Assume no judge has read anything** (5 Nov):
   1. Every slide stands alone. Never "as you'll remember" or "you hold our proposal".
@@ -540,7 +552,8 @@ inside it, v3's close (11) becomes the replay, and every title becomes the idea 
 
 ### 4.6 Agreeing it (proposed, 10 Nov; v4 on 11 Nov)
 
-Pete sends the team v4 (this section) and locks it unless someone objects by **Wed 11, 12:00**. The message asks for
+Pete sends the team v4 (this section). Replies 1–3 by **Wed 11, 21:00**; Pete locks v4 at **09:00 Thu 12** unless
+someone objects; reply 4 (each owner's "must prove" list) by **Thu 12, 18:00** (Pete, 11 Nov). The message asks for
 replies only a reader can give:
 1. Any objection.
 2. The thesis in their own words, one sentence.

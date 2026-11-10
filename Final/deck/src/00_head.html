@@ -21,13 +21,17 @@
 @font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
 @font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
 :root{
-  /* LOOK: placeholder tokens (Round Two's, as in Final/looks/) until the Final's look is chosen side by side and tested
-     on a projector (Final_Plan.md §3). Change the values here; every slide follows. */
-  --paper:#FFFFFF; --mist:#F8EFF0; --block:#F3E4E7; --rule:#ECDADD; --grey:#A88C92;
-  --ink:#1B1716; --slate:#7A5C65;
-  --accent:#C80E1E; --accent-deep:#971320; --accent-tint:#EFD9DC;   /* money at risk; the point a slide makes */
-  --out:#4A3F43;                                                     /* what the money does to the world (tonnes) */
-  --leaf:#2F7A43; --leaf-tint:#E3F1E6;                               /* the green label: one job only */
+  /* Look A′ (Pete, 11 Nov; Final_Plan.md §3 "Look"): Plus Jakarta Sans, the crimson accent, and the facts-label rule
+     (a thick ink rule under each title, ink rules between rows). Chosen from four options rendered side by side
+     (Final/looks/looks.html). Still to do: the 20-second projector test. Change values here; every slide follows. */
+  --paper:#FFFFFF; --mist:#FBF3F4; --block:#F4E6E9; --rule:#E2CFD3; --grey:#8A747A;   /* tints wash out on a projector:
+                                                                    use them for fills behind ink, never for text */
+  --ink:#1B1716; --slate:#5E4A50;                                    /* slate 8.2:1 on white: the lightest text colour */
+  --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* money at risk; the point a slide makes (5.9:1) */
+  --out:#3F3538;                                                     /* what the money does to the world (tonnes) */
+  --leaf:#3F9A55; --leaf-tint:#E3F1E6;                               /* the green label, one job only; passes both
+                                                                    red-green checks against the crimson; always
+                                                                    carries its word, never colour alone */
   --text:"PJS","Plus Jakarta Sans",Arial,sans-serif;
   --head:"PJS","Plus Jakarta Sans",Arial,sans-serif;
   --num:"PJS","Plus Jakarta Sans",Arial,sans-serif;
@@ -53,10 +57,13 @@ b,strong{font-weight:600}
 .ic.lg{width:28px;height:28px}
 .ic.sm{width:16px;height:16px}
 
-/* header: the kicker names the step and its rule; the title is the idea (any client) */
-.head{border-left:5px solid var(--accent);padding:1px 0 2px 14px}
+/* header: the kicker names the step and its rule; the title is the idea (any client); the facts-label rule under it */
+.head{padding-bottom:12px;border-bottom:9px solid var(--ink)}
 .kick{font:700 15px/1.3 var(--head);color:var(--accent);letter-spacing:.2px}
-.head h2{font:700 32px/1.14 var(--head);letter-spacing:-.3px;margin-top:4px;max-width:1100px;text-wrap:balance}
+.head h2{font:700 34px/1.12 var(--head);letter-spacing:-.4px;margin-top:5px;max-width:1120px;text-wrap:balance}
+
+/* the green label: a sticker with its word on it (the one job green has) */
+.chip{display:inline-block;white-space:nowrap;background:var(--leaf);color:#fff;font:800 16px/1 var(--text);padding:9px 14px;border-radius:20px}
 
 /* body */
 .body{flex:1;min-height:0;margin-top:18px;display:flex;gap:30px}
@@ -74,7 +81,7 @@ b,strong{font-weight:600}
 .todo b{color:var(--ink)}
 
 /* the one-sentence conclusion */
-.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 19px/1.28 var(--head);padding:11px 22px;border-radius:3px}
+.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px}
 
 /* footer: the framework tracker (Map · Price · Decide · Govern), the brief's areas, the source, the page */
 .foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:18px;font-size:12px;color:var(--slate)}
@@ -96,8 +103,11 @@ b,strong{font-weight:600}
 
 /* tables */
 table{border-collapse:collapse;width:100%}
-th,td{text-align:left;padding:8px 12px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th,td{text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);vertical-align:top}
 th{font:700 14px/1.3 var(--head);color:var(--slate);border-bottom:1.5px solid var(--ink)}
+tr.total td{border-top:6px solid var(--ink);font-weight:700}
+
+/* type scale (projector): titles 34, column heads 19-21, body 16-19, smallest 13 (footer only), big numbers 30-150 */
 
 /* ---- forms for the Final go below, one commented block per form; class names are global, so grep first ---- */
 
