@@ -1,7 +1,7 @@
 # Final Round: plan
 
 **Status:** draft, 10 Nov 2026. Decided: the client is the Wongs (Pete, 4 and 5 Nov). New, to agree: the thesis, the
-framework ("Look both ways", twelve tests) and storyline v4 (§4, 11 Nov; agreed by messages, §4.6). Everyone starts on work that
+framework (PRISM: Profile, Risk, Impact, Select, Monitor; twelve tests) and storyline v4 (§4, 11 Nov; agreed by messages, §4.6). Everyone starts on work that
 waits for nobody.
 **What it is:** a 10-minute live presentation in English, then 10 minutes of questions from the panel. Sat 21 Nov 2026,
 FellowSPACE, 28/F Tower A, Southmark, Wong Chuk Hang. Arrive by 09:30 (registration, ballot for the order, machine test).
@@ -40,7 +40,7 @@ and show how the framework changes the advice you would otherwise give. Address 
 |---|---|---|
 | Innovation, independent thinking (40) | Conclusions that differ from the easy answer, each with a number: what we refuse, where the brief's tools don't fit this client, what the framework changes against the label approach | 2, 4, 8, 9, 11 (v3) |
 | Knowledge of the topic (20) | Precise terms (green vs sustainability-linked vs transition; greenium vs green premium); the rules that really touch the client, and the ones that don't | 2, 4, 5, 8 (v3) |
-| Logical thinking (20) | One chain: today's default → the framework → Map → Price → Decide → Govern, run on one family; never six mini-talks | the order of §4.5 |
+| Logical thinking (20) | One chain: today's default → the framework → Profile → Risk → Impact → Select → Monitor, run on one family; never six mini-talks | the order of §4.5 |
 | Presentation skills (20) | Live delivery by four, on time, the Q&A | §11 |
 
 **Our reading of the brief** (inference): "Beyond Green Labels" warns against the answer most teams will give, buying ESG
@@ -273,7 +273,9 @@ advantages above survive that, as long as the talk stands alone (§3).
    benefits, the risk register, the rules map, attribution, biases, the sustainable share as an output).
 4. **The stress runs are in** (`model_runs.md` M8): our plan comes through the storm better than the label approach,
    but not because anything in it protects against climate. No slide says "climate-resilient".
-5. **Kept from v3:** climate is already in every plan; look both ways (outside in and inside out); every decision priced
+5. **The framework is named PRISM** (Pete, 11 Nov): Profile, Risk, Impact, Select, Monitor, the same twelve tests
+   regrouped (§4.2). Slide 2 becomes "five letters, five twists".
+6. **Kept from v3:** climate is already in every plan; look both ways (outside in and inside out); every decision priced
    in a normal future and under stress; one recurring picture (the balance sheet with two new columns); the five kinds of
    finance sorted by direction; each Decide slide a before-and-after against the label approach.
 
@@ -282,8 +284,11 @@ advantages above survive that, as long as the talk stands alone (§3).
 > **Climate is already in every client's plan. A label tells you what a product is called; our framework shows what each
 > decision does to the client's money and to the world, and when to decide again.**
 
-- **Working name: "Look both ways"** (Claude, 10 Nov; Pete to confirm). Before any green decision, look at what the
-  world does to the family's money and what the family's money does to the world. No zebra crossings on screen.
+- **The name: PRISM** (Pete, 11 Nov): **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor. A green label shows one
+  colour; a prism splits it into what's really there: the risk climate brings to the money, and the impact the money
+  has. The two directions sit side by side in the name. Its rule: **look both ways**. (Earlier: "Look both ways" as
+  the name, 10 Nov; "Climate Facts", which Pete turned down: not how a framework is named. Climate Facts stays as the
+  dashboard's name.) The name carries the innovation; it isn't the innovation (the five twists, below).
 - **The closing line stays v2's A′:** "A label says what it's called. We showed what it does."
 - **The argument judges should leave with:**
   1. Climate reaches every client's money, green products or not, so the framework is for Adrian as much as for Carmen.
@@ -298,7 +303,7 @@ advantages above survive that, as long as the talk stands alone (§3).
      (true since 7 Oct 2026); at the 2025 premium it would cost ≈HK$248K a year and move to "pay knowingly", so it gets
      a trigger, not a guess.
 
-### 4.2 The framework: Look both ways
+### 4.2 The framework: PRISM
 
 **What it is for:** a decision-ready framework any planner can run on any client, demonstrated on the Wongs. It replaces
 the label approach's question ("is it green?") with three: what does climate do to this client's money, what does the
@@ -320,24 +325,25 @@ client's money do to the world, and what should we do about each, at what price?
   other effects this family's rules or values bring in: packaging waste (the plastics rules) and the scholarship's
   students (Claude's call, 10 Nov; Pete to confirm).
 
-**The four steps, as twelve tests.** Each test has a rule for its answer, so two planners reach the same verdict. On
-screen: the four steps and their questions, and on each slide the one rule it demonstrates; the full list is one backup
-slide.
+**PRISM's five steps, as twelve tests.** Each test has a rule for its answer, so two planners reach the same verdict.
+Renamed on 11 Nov (Pete) from Map → Price → Decide → Govern, with the same tests in the same order: Map became P, R
+and I; Price and Decide became S (they were already done together for each asset); Govern became M. On screen: the
+five letters and their questions, and on each slide the one rule it demonstrates; the full list is one backup slide.
 
 | Step (its question) | Test | Rule | What it gives for the Wongs |
 |---|---|---|---|
-| **Map** (where does climate touch them, both ways?) | 1. The family | Profile each decision-maker on the brief's seven dimensions (values intensity, return requirement, liquidity, time horizon, tolerance for tracking error, illiquidity and complexity): what each will and won't accept, and who decides what. This becomes the mandate (guardrails, values budget, decision rights), **set before any option is priced**, so nobody moves the goalposts | Profiles for Adrian, Carmen, Ryan; floors of 95% and 85%; one family values budget (below) |
-| | 2. Outside in | Trace each force by **cause, then route, then HK$**, with when and on what evidence. Check it against the brief's eight risk types (transition, physical, liability, reputational, liquidity, valuation, data, conduct): that is the risk register. Map which rules reach this client and which don't. Would a planner who ignores climate draw this arrow anyway? If yes, say what makes it climate, or drop it | Customers' supply-chain carbon → the sale; older flats → the exit; a late, sudden carbon policy → the portfolio; weather → insurance (not priced yet); "compostable" claims → liability and reputation; the EU border carbon tax doesn't reach them |
-| | 3. Inside out | Measured activity first (meters, fuel, an energy audit), then the footprint from published factors, then the part the family controls. A footprint is not an effect | Business ≈2,760–3,250 t a year, 98% the packaging it sells; shares: a footprint they own, not one they change; home: not estimated |
-| | 4. The whole household | How the exposures move together (climate is a shared factor) and where the money is concentrated. **Run a pre-mortem:** imagine the plan has failed in a sudden transition, and ask what failed | Flat and business are 61% of assets; in the 2030–31 scenario the odds fall 7.3 points together against 5.3 for the parts; most of the shared loss is market risk in the portfolio, which no label hedges |
-| **Price** (what does each option do, both ways?) | 5. Options, through the product gate | For each force or impact: reduce, hedge or accept; **plus every green product on offer**, so the label approach's list is tested, not assumed. A product is priced only after due diligence: does it exist and hold assets, are its documents there, is its rule binding and published, what is its engagement policy, is the label a financed outcome? It gets in only if it answers a force or a value | The US$0 fund fails the gate; the climate index fund passes (a binding carbon rule, measured 30% below its parent) |
+| **P · Profile** (who decides, and within what limits?) | 1. The family | Profile each decision-maker on the brief's seven dimensions (values intensity, return requirement, liquidity, time horizon, tolerance for tracking error, illiquidity and complexity): what each will and won't accept, and who decides what. This becomes the mandate (guardrails, values budget, decision rights), **set before any option is priced**, so nobody moves the goalposts | Profiles for Adrian, Carmen, Ryan; floors of 95% and 85%; one family values budget (below) |
+| **R · Risk** (what does climate do to their money?) | 2. Outside in | Trace each force by **cause, then route, then HK$**, with when and on what evidence. Check it against the brief's eight risk types (transition, physical, liability, reputational, liquidity, valuation, data, conduct): that is the risk register. Map which rules reach this client and which don't. Would a planner who ignores climate draw this arrow anyway? If yes, say what makes it climate, or drop it | Customers' supply-chain carbon → the sale; older flats → the exit; a late, sudden carbon policy → the portfolio; weather → insurance (not priced yet); "compostable" claims → liability and reputation; the EU border carbon tax doesn't reach them |
+| | 3. The whole household | How the exposures move together (climate is a shared factor) and where the money is concentrated. **Run a pre-mortem:** imagine the plan has failed in a sudden transition, and ask what failed | Flat and business are 61% of assets; in the 2030–31 scenario the odds fall 7.3 points together against 5.3 for the parts; most of the shared loss is market risk in the portfolio, which no label hedges |
+| **I · Impact** (what does their money do to the world?) | 4. Inside out | Measured activity first (meters, fuel, an energy audit), then the footprint from published factors, then the part the family controls. A footprint is not an effect | Business ≈2,760–3,250 t a year, 98% the packaging it sells; shares: a footprint they own, not one they change; home: not estimated |
+| **S · Select** (what does each option do, both ways, and what do we do?) | 5. Options, through the product gate | For each force or impact: reduce, hedge or accept; **plus every green product on offer**, so the label approach's list is tested, not assumed. A product is priced only after due diligence: does it exist and hold assets, are its documents there, is its rule binding and published, what is its engagement policy, is the label a financed outcome? It gets in only if it answers a force or a value | The US$0 fund fails the gate; the climate index fund passes (a binding carbon rule, measured 30% below its parent) |
 | | 6. Money, on the whole | Against the **best plain alternative**, not against doing nothing: cash flow, balance sheet, risk, estate, **in a normal future and under stress**, measured **on the whole** (the investment portfolio: tracking error, concentration, liquidity; the household: the stress result, concentration, cash). The price of values in return, diversification and liquidity. **Who pays and who benefits** (each family member, the co-founder, the landlord, customers, the children) | Price of values −HK$0.57M against plain twins; the unfunded pledge costs 5.4 points under stress against 2.8 in a normal future; half the van saving is the co-founder's; the green lease splits cost and benefit with the landlord |
 | | 7. World | Does it change something directly, that wouldn't happen anyway, and can it be measured? If not: "no effect shown". Every number tagged measured, estimated or illustrative | Vans 19.3 t a year against new diesel vans (ESTIMATED); ESG funds: no effect shown |
 | | 8. Missing prices | When a price is missing, decide how to get it: **buy the information** (if it costs less than the decision it could change), **use a range**, or **set a trigger** and wait | The fund's status: a phone call (buy); carbon data pays for itself if it keeps 0.6% of sales (buy); ESG funds under stress: no credit until measured (range); recycled-PET premium (trigger); the flat's building insurance: ask the owners' corporation (buy) |
-| **Decide** (what do we do, and how do we pay?) | 9. Pass or fail | The guardrails, then the corner (below) | The label approach's pledge fails the 95% floor (94.0%); downsizing fails the 85% stressed floor (82.7%); the reverse mortgage passes both |
+| | 9. Pass or fail | The guardrails, then the corner (below) | The label approach's pledge fails the 95% floor (94.0%); downsizing fails the 85% stressed floor (82.7%); the reverse mortgage passes both |
 | | 10. What goes first, and how to pay | Most effect per HK$ first (the cost curve). **The kind of finance sets the test** (below); compare tenor, covenants, verification cost and subsidy. Bankability: debt-service cover, collateral, offtake, and who pays the green premium. Owner and date | Vans before 31 Mar 2028 (tax waiver); the cheapest loan, labelled green only if free; the saving covers ≈87% of the loan payments; at today's parity nobody pays a recycled-PET premium |
 | | 11. The whole plan | **The sustainable share is an output of the risk and values budgets, not a target.** Together, still inside the guardrails in a normal future and under stress; timed against life events (retirement, the sale, leaving the flat); against the label approach | +3.4 points, +HK$2.44M in a normal future; under stress 91.0% against the label approach's 84.1% (+6.9 points, +HK$2.25M) (EXPLORATORY, before the re-base) |
-| **Govern** (how do we know it's still true?) | 12. Keep checking | Measure money, sustainability and impact outcomes and milestones (carbon intensity with coverage; implied temperature rise where published; taxonomy alignment; avoided emissions only for use-of-proceeds bonds, never netted). Claim only what is shown, verified by a third party where a claim is made. Restate when the data improves. **Attribute:** what the plan changed, what the market did, what can't be measured yet. Triggers send the family back to test 1 | Climate Facts, once a year; triggers such as the recycled-PET premium returning, the old-flat price gap, customers' data requests |
+| **M · Monitor** (how do we know it's still true?) | 12. Keep checking | Measure money, sustainability and impact outcomes and milestones (carbon intensity with coverage; implied temperature rise where published; taxonomy alignment; avoided emissions only for use-of-proceeds bonds, never netted). Claim only what is shown, verified by a third party where a claim is made. Restate when the data improves. **Attribute:** what the plan changed, what the market did, what can't be measured yet. Triggers send the family back to test 1 | Climate Facts, once a year; triggers such as the recycled-PET premium returning, the old-flat price gap, customers' data requests |
 
 **The guardrails** (set in test 1, applied in tests 9 and 11): the goals stay safe (odds of at least **95% in a
 normal future and 85% in the 2030–31 scenario**, Pete, 10 Nov; essentials never cut); no year short of cash; nothing
@@ -413,7 +419,7 @@ in the mandate, not decision by decision.
 (`research/area2_business.md`) and the definitions say otherwise; the scholarship is giving, not investing.
 
 **Why it isn't "planning with green added", and why it's better, not just different** (the practitioner's objection:
-the four steps alone look like the planning process). The label approach *is* planning with green added. Ours differs
+the steps alone look like the planning process). The label approach *is* planning with green added. Ours differs
 in ways that make the advice better for the client, each shown on the Wongs:
 
 | An average team shows | Ours does | Why it's better for the client |
@@ -424,19 +430,35 @@ in ways that make the advice better for the client, each shown on the Wongs:
 | An annual review | Conditional decisions with expiry dates (the tax waiver ends 2028; the building turns 50 in 2046; recycled PET at parity) | The plan says in advance when it stops being right |
 | Green products added | Green products also taken out (green mortgage, green-loan label, clean-energy fund, the US$0 fund) and advice that isn't green changed (the flat's route, the sale's protection) | Climate treated like inflation: in every number, not a product to buy |
 
+**Five letters, five twists** (slide 2; Claude, 11 Nov). Each letter is the usual step with one change that makes the
+advice better, each proven on the Wongs:
+
+| Letter | The usual way | Ours | Proof on the Wongs |
+|---|---|---|---|
+| **P**rofile | Ask the client's ESG preference | Limits and a values budget set before anything is priced | Floors of 95% and 85%; one family budget of ≈HK$1.4M |
+| **R**isk | Rate each product's ESG risk | The whole household in one storm, run as a pre-mortem | The labelled plan falls to 84.1%, below the floor; nothing in either plan hedges climate |
+| **I**mpact | Report the portfolio's carbon footprint | Footprint or effect: no impact claimed for shares bought on the market | All ≈134 t a year come from the business; its tonnes come back as its customers' carbon |
+| **S**elect | Hit a 20–25% ESG target with labelled products | The share is an output of the budgets; a product check before pricing; every missing price a decision | The check catches the US$0 fund; downsizing fails the stress floor; three green products refused |
+| **M**onitor | An annual review | Decisions with expiry dates and triggers; attribution that doesn't label our own result green | The tax waiver ends 2028; the recycled-PET trigger; ≈HK$0.5M of the gain is green, the rest ordinary planning |
+
+**Say the objection first:** "PRISM builds on double materiality, which the EU requires of companies (CSRD). We apply
+it where it isn't used: a family's whole balance sheet, including a private business and a home, with rules a planner
+can run." Naming the standard earns knowledge marks; applying it somewhere new, with numbers, earns innovation marks.
+Don't claim nobody has done it for households (unchecked): show it.
+
 **What it produces:** the recommendation with numbers; a sustainability annex to the family's investment policy (the
 mandate); the risk register; the decision list (each decision's tag, corner, instrument, owner, date); the one-page
 dashboard.
 
 **The pictures** (rough mockups in Round Two's colours, `Final/looks/`; the look is still open, §3):
-- **Map: the balance sheet with two new columns** (`two-columns.png`): the case's assets, plus "what climate does to it"
+- **R and I: the balance sheet with two new columns** (`two-columns.png`; in look A′, `look-option-04.png`): the case's assets, plus "what climate does to it"
   and "what it does to climate". It is the recurring picture: it fills in as the talk goes, each Decide slide highlights
   its row, and the replay shows the whole sheet after the plan. Line: *"The label approach adds one line. The framework
   adds two columns to every line."* Alternative if it reads too much like a spreadsheet: the band (`band.png`), the only
   one that draws the loop.
 - **Decide: a price tag on each decision** (`price-tag.png`): the money side, the world side, the verdict. The opening's
   green label is peeled off to reveal the first one.
-- **Govern: Climate Facts** (`climate-facts.png`): the family's honest label, reviewed once a year. The talk opens on a
+- **M: Climate Facts, the dashboard** (`climate-facts.png`): the family's honest label, reviewed once a year. The talk opens on a
   label that names a product, and its demonstration ends (slide 10) on one that tells the truth.
 
 ### 4.3 The story: a pre-mortem and a replay
@@ -462,7 +484,7 @@ line that another client (an exporter to the EU) reaches different verdicts, and
 it's called. We showed what it does."* Land positive: the Wongs do more real sustainability and end up safer.
 
 **Why this works, beyond the competition:** the pre-mortem is a real decision technique (Gary Klein's) that counters
-overconfidence, and it is test 4 of the framework, so the story device and the method are the same thing. It makes
+overconfidence, and it is test 3 of the framework (in R), so the story device and the method are the same thing. It makes
 "outside in" felt before any term is explained, turns the required scenario into the story's spine, and sets up the
 payoff the close delivers.
 
@@ -482,7 +504,7 @@ for both plans.
 ### 4.4 Why this order (Claude, 10–11 Nov; Pete's calls on the default, the pre-mortem and ideas first)
 
 - **The arc is pre-mortem → how we think → the advice → the ideas, each proven → the replay.** The framework's order
-  (Map → Price → Decide → Govern) still runs underneath, with a small tracker on every slide.
+  (PRISM: Profile → Risk → Impact → Select → Monitor) runs underneath, with a tracker on every slide.
 - **Each slide's title is one idea, true for any client; the Wongs are the evidence panel.** Each speaker opens their
   slide with the idea in one sentence ("For any client, …"), then "For the Wongs, …". A judge leaves with the rules, each
   with a number behind it.
@@ -505,15 +527,15 @@ The title is the idea (any client); the Wongs' proof is in "Must prove".
 | # | Step | Who | Time | Title (draft) | Must prove | Evidence | Required item; areas |
 |---|---|---|---|---|---|---|---|
 | 1 | Pre-mortem | Pete | 0:55 | [2031, a scenario: the plan built on labels falls below the family's safety floor] | The dated card; the shocks; the label approach under stress (84.1%, HK$6.83M) against the 85% floor; "a pre-mortem"; why: the labels they were handed (179 funds on the SFC's list; a fund that has held nothing for two years; a green mortgage worth ≤HK$1,000 once; a grant that needs a HK$100M loan; "compostable" that is legally plastic); the gap; one line of our result | MODEL (M8); shocks HAVE (`area4_property_scenario.md` §5.1); labels HAVE; fund CALL (Win, Thu 12); SFC count CHECK (Sun 15) | — ; 3, 5 |
-| 2 | How we think | Pete | 0:45 | Look both ways | For any client: the two directions; the four steps as four questions; climate treated like inflation, not a product; the five kinds of finance sorted by direction (small) | Definitions HAVE (`area1_6_framework.md`) | The framework; 1 |
-| 3 | The advice | Pete | 0:45 | [For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less] | Who the Wongs are and why we chose them (a business, a home, a portfolio, decision-makers who disagree; "the family in this year's competition case"; case figures vs ours); each person's want and limit in one line; the recommendation, the capital (≈HK$0.48M of the family's, ≈HK$1.9M of the business's) and both outcomes against the label approach | CASE; MODEL (EXPLORATORY, before the re-base); tonnes ESTIMATED | **Recommendation, capital, outcomes**; 1 |
-| 4 | Map | Lookbua | 0:45 | Climate reaches every line of a balance sheet; a label covers one | The two new columns, cause first: customers must report supply-chain carbon (−HK$1.55M if one worth 10% of sales leaves); older flats fall behind (−HK$0.71M if worth 10% less in 2037); a late, sudden carbon policy (−HK$2.48M); weather not priced. Out: ≈2,760–3,250 t (98% packaging); a footprint they own; home not estimated. The loop. The rules that reach them and the one that doesn't (EU border carbon tax); the risk register in one line | MODEL (M3, M6, M7, each on its own); HKEX Scope 3 HAVE; tonnes ESTIMATED (ILLUSTRATIVE business) | — ; 2 (baseline), 4, 5 (rules, risk register) |
-| 5 | Map | Lookbua | 0:40 | Judge the whole household: climate hits everything at once | Doing nothing in the 2030–31 storm costs the children HK$4.6M (business −HK$0.71M, flat −HK$1.44M, portfolio −HK$2.48M); the odds fall more together than apart (−7.3 points against −5.3); 61% of assets in the flat and the business; most of the shared loss is market risk, which no label hedges | MODEL (M7, M8); sources HAVE; NGFS Phase VI CHECK Sun 15 | **Scenario**; 5 |
-| 6 | Decide: the flat | Lookbua | 0:45 | The guardrails decide before preferences | Before and after, with the first price tag explained. The reverse mortgage passes both floors; downsizing leaves the children more (+HK$4.07M median if nothing falls) but fails under stress (82.7%), so it is the family's priced alternative with a trigger (the price gap against newer flats) and a deadline (the building's 50th year, 2046). Green mortgage refused (≤HK$1,000 once). Weather and insurance ("not priced yet" if still true). Retrofit when things fail | MODEL (M6, M7); HKMC HAVE; green mortgage HAVE; physical risk OPEN (Lookbua) | **Trade-off; refusal**; 4 |
-| 7 | Decide: the business (1) | Fahtai | 0:55 | Most effect per HK$ first | Label approach: nothing on the business. Baseline (98% Scope 3); the cost curve: vans ≈−HK$16,000 per tonne (at the pump list price; less at HK$31/L), lighter packaging ≈−HK$5,800, LED, air-con; recycled PET ≈+HK$3,030 at a 10% premium, ≈0 at today's parity; the fibre trap; the "compostable" claim stopped | ESTIMATED on an ILLUSTRATIVE business (`area2_business.md` §3); lighter packaging: add to `Decision_List.md` (Fahtai) | — ; 2 (baseline, cost curve), 5 (greenwashing) |
-| 8 | Decide: the business (2) | Fahtai | 0:55 | The kind of finance sets the test: judge a green loan as a loan | The five instruments against her size (green-loan discount ≈ its review fee; sustainability-linked worth HK$450–2,250 a year; grant from a HK$100M loan; transition finance doesn't fit; no bank supply-chain programme at her size; green lease at the 2027 renewal). Bankability: the saving covers ≈87% of the loan payments, so the company tops up ≈HK$46K a year to 2032. Who pays, who benefits: half the saving is the co-founder's. The loop to the sale: carbon data (≈HK$54–73K a year) protects it. The vans add ≈HK$0.5M to the children through the sale price (in the headline); paying out the saving from 2033 would add ≈HK$1.1M more (one line; not in the headline: it needs the co-founder's consent) | ESTIMATED (`Decision_List.md` B1, B3, B8; `area2_supply_chain.md`); MODEL (M2, M3) | **Quantified structure; refusal**; 2 |
-| 9 | Decide: the portfolio | Win | 1:00 | The sustainable share is an output of the budgets, not a target | Label approach: 25% from the SFC's list. Ours: the product gate (the US$0 fund fails; the climate index fund passes); weights and costs per parent, and the share that comes out; the family values budget (≈HK$1.4M expected, ≈HK$1.7M at worst; both parents agree; the annex to the investment policy); ESG integration judged on risk, impact must be shown; footprint 30% below the world index (measured: a footprint, not a change); price of values −HK$0.57M against plain twins; clean-energy fund refused; ESG funds under stress: no credit until measured | Weights, fees, carbon HAVE (Win); MODEL (M4); the share: OPEN (21.8% or 27.7% in the two briefs, `portfolio_final_round_EN.md` C1: Win and Pete settle) | **Portfolio with weights and costs; refusal**; 1, 3 |
-| 10 | Govern | Win | 0:45 | Every missing price is a decision, and the plan knows when it's wrong | Climate Facts: money, sustainability and impact outcomes, milestones, a "can't measure yet" line; buy, range or trigger, with the Wongs' cases (the fund call, carbon data, ESG under stress, the recycled-PET trigger, the building's insurance); what the family may claim; restating; attribution; the scholarship funded in 2027–28 while the 17% relief applies; the biases the design handles | `area6_measurement_update.md`; IRD relief HAVE; MODEL (M5, M8) | **Dashboard**; 6 |
+| 2 | How we think | Pete | 0:45 | PRISM: look both ways | For any client: five letters, five twists (each letter with the usual way and ours, §4.2); the two directions in R and I; built on double materiality, applied to a family's whole balance sheet; climate treated like inflation, not a product; the five kinds of finance sorted by direction (small) | Definitions HAVE (`area1_6_framework.md`) | The framework; 1 |
+| 3 | The advice (P) | Pete | 0:45 | [For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less] | Who the Wongs are and why we chose them (a business, a home, a portfolio, decision-makers who disagree; "the family in this year's competition case"; case figures vs ours); each person's want and limit in one line; the recommendation, the capital (≈HK$0.48M of the family's, ≈HK$1.9M of the business's) and both outcomes against the label approach | CASE; MODEL (EXPLORATORY, before the re-base); tonnes ESTIMATED | **Recommendation, capital, outcomes**; 1 |
+| 4 | R and I | Lookbua | 0:45 | Climate reaches every line of a balance sheet; a label covers one | The two new columns, cause first: customers must report supply-chain carbon (−HK$1.55M if one worth 10% of sales leaves); older flats fall behind (−HK$0.71M if worth 10% less in 2037); a late, sudden carbon policy (−HK$2.48M); weather not priced. Out: ≈2,760–3,250 t (98% packaging); a footprint they own; home not estimated. The loop. The rules that reach them and the one that doesn't (EU border carbon tax); the risk register in one line | MODEL (M3, M6, M7, each on its own); HKEX Scope 3 HAVE; tonnes ESTIMATED (ILLUSTRATIVE business) | — ; 2 (baseline), 4, 5 (rules, risk register) |
+| 5 | R | Lookbua | 0:40 | Judge the whole household: climate hits everything at once | Doing nothing in the 2030–31 storm costs the children HK$4.6M (business −HK$0.71M, flat −HK$1.44M, portfolio −HK$2.48M); the odds fall more together than apart (−7.3 points against −5.3); 61% of assets in the flat and the business; most of the shared loss is market risk, which no label hedges | MODEL (M7, M8); sources HAVE; NGFS Phase VI CHECK Sun 15 | **Scenario**; 5 |
+| 6 | S: the flat | Lookbua | 0:45 | The guardrails decide before preferences | Before and after, with the first price tag explained. The reverse mortgage passes both floors; downsizing leaves the children more (+HK$4.07M median if nothing falls) but fails under stress (82.7%), so it is the family's priced alternative with a trigger (the price gap against newer flats) and a deadline (the building's 50th year, 2046). Green mortgage refused (≤HK$1,000 once). Weather and insurance ("not priced yet" if still true). Retrofit when things fail | MODEL (M6, M7); HKMC HAVE; green mortgage HAVE; physical risk OPEN (Lookbua) | **Trade-off; refusal**; 4 |
+| 7 | S: the business (1) | Fahtai | 0:55 | Most effect per HK$ first | Label approach: nothing on the business. Baseline (98% Scope 3); the cost curve: vans ≈−HK$16,000 per tonne (at the pump list price; less at HK$31/L), lighter packaging ≈−HK$5,800, LED, air-con; recycled PET ≈+HK$3,030 at a 10% premium, ≈0 at today's parity; the fibre trap; the "compostable" claim stopped | ESTIMATED on an ILLUSTRATIVE business (`area2_business.md` §3); lighter packaging: add to `Decision_List.md` (Fahtai) | — ; 2 (baseline, cost curve), 5 (greenwashing) |
+| 8 | S: the business (2) | Fahtai | 0:55 | The kind of finance sets the test: judge a green loan as a loan | The five instruments against her size (green-loan discount ≈ its review fee; sustainability-linked worth HK$450–2,250 a year; grant from a HK$100M loan; transition finance doesn't fit; no bank supply-chain programme at her size; green lease at the 2027 renewal). Bankability: the saving covers ≈87% of the loan payments, so the company tops up ≈HK$46K a year to 2032. Who pays, who benefits: half the saving is the co-founder's. The loop to the sale: carbon data (≈HK$54–73K a year) protects it. The vans add ≈HK$0.5M to the children through the sale price (in the headline); paying out the saving from 2033 would add ≈HK$1.1M more (one line; not in the headline: it needs the co-founder's consent) | ESTIMATED (`Decision_List.md` B1, B3, B8; `area2_supply_chain.md`); MODEL (M2, M3) | **Quantified structure; refusal**; 2 |
+| 9 | S: the portfolio | Win | 1:00 | The sustainable share is an output of the budgets, not a target | Label approach: 25% from the SFC's list. Ours: the product gate (the US$0 fund fails; the climate index fund passes); weights and costs per parent, and the share that comes out; the family values budget (≈HK$1.4M expected, ≈HK$1.7M at worst; both parents agree; the annex to the investment policy); ESG integration judged on risk, impact must be shown; footprint 30% below the world index (measured: a footprint, not a change); price of values −HK$0.57M against plain twins; clean-energy fund refused; ESG funds under stress: no credit until measured | Weights, fees, carbon HAVE (Win); MODEL (M4); the share: OPEN (21.8% or 27.7% in the two briefs, `portfolio_final_round_EN.md` C1: Win and Pete settle) | **Portfolio with weights and costs; refusal**; 1, 3 |
+| 10 | M | Win | 0:45 | Every missing price is a decision, and the plan knows when it's wrong | Climate Facts: money, sustainability and impact outcomes, milestones, a "can't measure yet" line; buy, range or trigger, with the Wongs' cases (the fund call, carbon data, ESG under stress, the recycled-PET trigger, the building's insurance); what the family may claim; restating; attribution; the scholarship funded in 2027–28 while the 17% relief applies; the biases the design handles | `area6_measurement_update.md`; IRD relief HAVE; MODEL (M5, M8) | **Dashboard**; 6 |
 | 11 | Replay | Pete | 0:40 | [Same storm, our plan: above the floor, because the framework took out what didn't work] | Our plan under the same scenario (91.0%, HK$9.07M) against the label approach's 84.1%; the honest reason; the balance sheet complete; the honest split (≈HK$0.5M green, the rest ordinary planning; after the re-base); the framework on one page; another client reaches different verdicts (backup); the callback | MODEL (M8); `Decision_List.md` §4 | — ; 6 (attribution) |
 
 **Speakers:** Pete 1–3, 11 (3:05) · Lookbua 4–6 (2:10) · Fahtai 7–8 (1:50) · Win 9–10 (1:45). Four handovers; each
@@ -576,7 +598,7 @@ factory owner who exports to the EU; repeat "the greenium is small"; claim "impa
 refusal, a trade-off, honesty about the greenium) are table stakes.
 
 **Our moves, strongest first:**
-1. **Look both ways, on the client's whole balance sheet:** two new columns on every line, and the loop where the
+1. **PRISM: risk and impact on the client's whole balance sheet:** two new columns on every line, and the loop where the
    family's impact comes back as a risk to its money. The story runs the same way: a pre-mortem in 2031, and the same
    storm replayed on our plan at the close (§4.3). Nobody else can put sustainability in the family's odds and
    inheritance beside its tonnes.
@@ -702,6 +724,7 @@ cost and subsidy.
 | ESG strategist | Why only carbon? | 4, 10 | Carbon first because the rules price it; packaging waste (the plastics rules) and the scholarship's students are counted too |
 | Practitioner | Isn't the 2031 scene scaremongering? | 1, 11 | A scenario, not a forecast, sized between published bounds (§4.3); the same storm for both plans; three numbers, no theatre |
 | ESG strategist | So is your plan climate-resilient? | 5, 11 | No claim: nothing in it hedges climate (M8). It comes through the storm better because it carries less waste; the guardrails and the reserve protect them, not green products |
+| ESG strategist | Isn't PRISM just double materiality with a new name? | 2 | Yes, on purpose: built on the EU's double materiality, applied to a family's whole balance sheet (a private business and a home included) with rules a planner can run, and five twists the usual steps don't have (§4.2) |
 
 ## 9. Facts to check before they go on a slide
 

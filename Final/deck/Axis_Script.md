@@ -1,4 +1,4 @@
-# Look both ways: the script (Team Axis)
+# PRISM: the script (Team Axis)
 
 Generated 2026-11-11 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
@@ -13,7 +13,7 @@ Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:04, Fahtai 0:02, Win 0
 
 > Notes: Pete says their simple name before their part. Say "Team Axis" before the first words. Evidence status per claim in §4.5.
 
-## 2 · Look both ways
+## 2 · PRISM: look both ways
 *How we think · Pete · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Pete:** [script to write]
@@ -21,56 +21,56 @@ Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:04, Fahtai 0:02, Win 0
 > Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 3 · [For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less]
-*Our advice for one Hong Kong family · Pete · 0:45 · 3 spoken words (≈1 s at 135)*
+*P · Profile: our advice for one Hong Kong family · Pete · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Pete:** [script to write]
 
 > Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 4 · Climate reaches every line of a balance sheet; a label covers one
-*Map · tests 2 and 3, both ways · Lookbua · 0:45 · 3 spoken words (≈1 s at 135)*
+*R and I · both ways · Lookbua · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Lookbua:** [script to write]
 
 > Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 5 · Judge the whole household: climate hits everything at once
-*Map · test 4, the whole household · Lookbua · 0:40 · 3 spoken words (≈1 s at 135)*
+*R · the whole household · Lookbua · 0:40 · 3 spoken words (≈1 s at 135)*
 
 **Lookbua:** [script to write]
 
 > Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 6 · The guardrails decide before preferences
-*Price and decide · the flat · Lookbua · 0:45 · 3 spoken words (≈1 s at 135)*
+*S · Select: the flat · Lookbua · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Lookbua:** [script to write]
 
 > Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 7 · Most effect per HK$ first
-*Price and decide · the business · Fahtai · 0:55 · 3 spoken words (≈1 s at 135)*
+*S · Select: the business · Fahtai · 0:55 · 3 spoken words (≈1 s at 135)*
 
 **Fahtai:** [script to write]
 
 > Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 8 · The kind of finance sets the test: judge a green loan as a loan
-*Price and decide · the business · Fahtai · 0:55 · 3 spoken words (≈1 s at 135)*
+*S · Select: the business · Fahtai · 0:55 · 3 spoken words (≈1 s at 135)*
 
 **Fahtai:** [script to write]
 
 > Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 9 · The sustainable share is an output of the budgets, not a target
-*Price and decide · the portfolio · Win · 1:00 · 3 spoken words (≈1 s at 135)*
+*S · Select: the portfolio · Win · 1:00 · 3 spoken words (≈1 s at 135)*
 
 **Win:** [script to write]
 
 > Notes: Win says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 10 · Every missing price is a decision, and the plan knows when it's wrong
-*Govern · test 12 · Win · 0:45 · 3 spoken words (≈1 s at 135)*
+*M · Monitor · Win · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Win:** [script to write]
 

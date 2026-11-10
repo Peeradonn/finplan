@@ -57,8 +57,8 @@ OUT = os.path.join(HERE, "Axis.pptx")                     # the one file: submit
 WORK = os.path.join(HERE, "build", "pptx")
 CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
           r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
-TALK_SECTIONS = [("The pre-mortem", [1]), ("How we think", [2]), ("Our advice", [3]), ("Map", [4, 5]),
-                 ("Decide", [6, 7, 8, 9]), ("Govern", [10]), ("The replay", [11])]
+TALK_SECTIONS = [("The pre-mortem", [1]), ("PRISM", [2]), ("Profile: our advice", [3]), ("Risk and impact", [4, 5]),
+                 ("Select", [6, 7, 8, 9]), ("Monitor", [10]), ("The replay", [11])]
 SECTIONS = TALK_SECTIONS        # set from the slide count in main(); slides after 11 are the backup
 E = 9525                                   # EMU per CSS px (a 1280 px slide is 13.333 in)
 A = "http://schemas.openxmlformats.org/drawingml/2006/main"
@@ -737,7 +737,7 @@ def build(data, info, path, cal, present=False):
     cp = prs.core_properties
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None, microsecond=0)
     cp.author = cp.last_modified_by = "Team Axis"
-    cp.title, cp.subject = "Look both ways", "UFP Award 2026, Final: sustainable finance in financial planning"
+    cp.title, cp.subject = "PRISM", "UFP Award 2026, Final: sustainable finance in financial planning"
     cp.keywords = cp.comments = cp.category = ""
     cp.revision, cp.created, cp.modified = 1, now, now
     prs.save(path)
@@ -769,7 +769,7 @@ def scrub(path, n_slides):
             '<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" '
             'xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" '
             'xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'
-            '<dc:title>Look both ways</dc:title><dc:subject>UFP Award 2026, Final: sustainable finance in financial '
+            '<dc:title>PRISM</dc:title><dc:subject>UFP Award 2026, Final: sustainable finance in financial '
             'planning</dc:subject><dc:creator>Team Axis</dc:creator><cp:lastModifiedBy>Team Axis</cp:lastModifiedBy>'
             '<cp:revision>1</cp:revision><dcterms:created xsi:type="dcterms:W3CDTF">{t}</dcterms:created>'
             '<dcterms:modified xsi:type="dcterms:W3CDTF">{t}</dcterms:modified></cp:coreProperties>')

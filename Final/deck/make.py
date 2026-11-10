@@ -103,7 +103,7 @@ summary = (f"{total} spoken words (the budget is about 1,200 for 9:20). Slides a
 who_line = "Speaking time at 135 words a minute: " + ", ".join(
     f"{w.title()} {mmss(c / 135 * 60)}" for w, c in sorted(people.items(), key=lambda kv: -kv[1])) + "."
 
-md = [f"# Look both ways: the script (Team Axis)\n",
+md = [f"# PRISM: the script (Team Axis)\n",
       f"Generated {today} by `Final/deck/make.py` from the slides' speaker notes. "
       "Edit the words in `Final/deck/src/*.html`, not here.\n", summary, "", who_line, ""]
 cards = []
@@ -124,7 +124,7 @@ with open(os.path.join(HERE, "Axis_Script.md"), "w", encoding="utf-8", newline="
     f.write("\n".join(md))
 page = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Look both ways: the script</title>
+<title>PRISM: the script</title>
 <style>
 @font-face{{font-family:"PJS";src:url("fonts/PlusJakartaSans-Regular.ttf");font-weight:400}}
 @font-face{{font-family:"PJS";src:url("fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}}
@@ -144,7 +144,7 @@ section p b{{display:inline-block;min-width:76px;font-weight:600;font-size:14px;
 .x{{font-size:14px;color:var(--slate);border-left:3px solid var(--rule);padding-left:10px}}
 @media print{{main{{padding:0}}}}
 </style></head><body><main>
-<h1>Look both ways: the script</h1>
+<h1>PRISM: the script</h1>
 <p class="sum">Team Axis · generated {today} from the slides' speaker notes.</p>
 <p class="sum">{H.escape(summary)}</p>
 <p class="sum">{H.escape(who_line)}</p>
