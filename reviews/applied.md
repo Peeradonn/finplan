@@ -386,3 +386,16 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   against 96.8%). The direction (waiting costs a little) is unchanged; the size was overstated by about 7 points.
 - **Not changed:** `run_model.py`, `numbers.json` and the proposal. The judges hold the submitted PDF, so the repo's
   copy should match it unless Pete decides to correct it. The Final uses `final_model.py`'s corrected run.
+
+### Final (10 Nov): M8, the whole household under stress (`Final/final_model.py`, EXPLORATORY)
+- New section M8 in `Final/model_runs.md`: each decision, the new plan and the label approach run under the 2030–31
+  scenario (all channels, reverse mortgage), against the plan as it stands under the same scenario (reproduces M7's
+  "All together" exactly; the script stops if not). Also each decision's change under stress minus its change in a
+  normal future, and a variant of the new plan that pays for the carbon data (≈HK$54–73K a year, through the sale price).
+- Switch base: the label approach falls to 84.1% under stress, the new plan to 91.0% (+6.9 points, median +HK$2.25M;
+  normal future +3.4, +HK$2.44M). The lead grows in points because more futures sit near running out, not because any
+  decision hedges climate: in the model diesel doesn't rise in the scenario and the ESG sleeve takes the same shock.
+  The unfunded pledge is the most stress-sensitive item (−5.4 points under stress, −2.8 normal).
+- Paying for the carbon data costs the new plan ≈HK$0.10–0.13M (normal); its benefit (customers kept, M3) isn't modelled.
+- No existing line of `model_runs.md` changed (diff: additions only; a rerun reproduces the file). `run_model.py` and
+  `numbers.json` untouched.

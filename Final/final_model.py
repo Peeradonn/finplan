@@ -12,6 +12,8 @@ What it adds to the Round One model:
   run_model.property_options() defines legacy: the portfolio left plus home equity.
 - A price tag per decision (Final/Decision_List.md), on two bases: Round One's plan without the medical
   review (82.6%, the base the research briefs used) and with it (switch_89, the plan as presented).
+- M8: each decision under the 2030-31 scenario on all channels at once (stressed()), against its value in a
+  normal future, and the carbon data's cost inside the new plan.
 """
 import os, sys
 import numpy as np
@@ -164,6 +166,8 @@ RMP_AGE_60, RMP_AGE_68 = 1_810, 2_470
 
 
 DIV_FROM = 2033                  # the 5-year van loan (HK$1.5M, ≈HK$349K a year) takes the saving to 2032
+# B3 carbon data: ≈HK$54-73K a year, paid by the business from 2027 (Final/Decision_List.md B3; ILLUSTRATIVE).
+CARBON_LO, CARBON_HI = 54_000, 73_000
 
 
 def rmp_from(base, year, income):
@@ -217,6 +221,24 @@ def scenario():
         return drag * shock
     flows = {2030: -100_000, 2031: -100_000}
     return dict(ret_add=ret, level=level, inflows=flows, biz=m.BIZ * 0.9), mult
+
+
+def plus(*flows):
+    """Sum {year: HK$} dicts, e.g. the scenario's draw cut and a decision's own flows."""
+    out = {}
+    for f in flows:
+        for y, v in (f or {}).items():
+            out[y] = out.get(y, 0) + v
+    return out
+
+
+def stressed(base, sc, mult, biz_add=0.0, flows=None, **kw):
+    """M7's 'All together' (reverse-mortgage route) with a decision on top. biz_add (a change in the sale price)
+    takes the scenario's cut like the rest of the sale; flows are added to the scenario's own. With no decision
+    it is exactly run(base, 'rmp', mult, **sc)."""
+    biz = sc["biz"] + biz_add * sc["biz"] / m.BIZ if biz_add else sc["biz"]
+    return run(base, "rmp", mult, ret_add=sc["ret_add"], level=sc["level"],
+               inflows=plus(sc["inflows"], flows), biz=biz, **kw)
 
 
 # ---------- the runs ----------
@@ -325,6 +347,114 @@ def main():
         w(f"\nAgainst the label approach, the framework's plan changes the odds by "
           f"{(run(base, **new)['odds']-written['odds'])*100:+.1f} points and the median inheritance by "
           f"HK${run(base, **new)['leg_med']-written['leg_med']:+.2f}M.\n")
+
+        # ---------- M8: each decision under the 2030-31 scenario, against its value in a normal future ----------
+        w("### M8. The whole household under stress (2030-31, all channels)\n")
+        w("Every row runs M7's **All together** scenario (portfolio returns and inflation, the flat, the business at "
+          "once; reverse-mortgage route). **Change is against row 1**, the plan as it stands under the scenario. A "
+          "decision that moves the sale price takes the scenario's 10% cut with the rest of the sale; a decision's "
+          "own flows are added to the scenario's (Carmen's draw −HK$100K in 2030-31).\n")
+        w(head)
+        st0 = stressed(base, sc, mult)
+        m7 = run(base, "rmp", mult, **sc)
+        if any(abs(st0[k] - m7[k]) > 1e-12 for k in st0):
+            sys.exit(f"M8 row 1 does not reproduce M7's All together: {st0} vs {m7}")
+        w(row("The plan as it stands, under the scenario (reproduces M7's All together exactly)", st0, st0))
+        label_st = stressed(base, sc, mult, flows=scholarship_as_written())
+        w(row("Label approach (list funds, unfunded lifelong pledge), under the scenario", label_st, st0))
+        new_st_kw = dict(biz_add=sale_uplift(SAVE), flows=scholarship_funded(), r_eq=r_eq_for(FEE_SAVED))
+        new_st = stressed(base, sc, mult, **new_st_kw)
+        w(row("New plan: vans (diesel HK$31/L) + portfolio fees + funded scholarship, under the scenario", new_st, st0))
+        new_div_st = stressed(base, sc, mult, **dict(new_st_kw, flows=plus(scholarship_funded(), dividends(SAVE))))
+        w(row(f"New plan + dividends once the van loan is repaid ({DIV_FROM}-38), under the scenario", new_div_st, st0))
+        up = sale_uplift(SAVE)
+        decisions = [
+            ("Vans", f"Vans, LED and air-con alone (HK$31/L): sale +HK${up/1e6:.2f}M before the 10% cut",
+             dict(biz_add=up), dict(biz=m.BIZ + up)),
+            ("Dividends", f"Dividends {DIV_FROM}-38 alone (Carmen's half of the HK$31/L saving; no sale uplift)",
+             dict(flows=dividends(SAVE)), dict(inflows=dividends(SAVE))),
+            ("Fees", f"Fees alone: label-approach funds → candidate A (HK${FEE_SAVED:,} a year saved)",
+             dict(r_eq=r_eq_for(FEE_SAVED)), dict(r_eq=r_eq_for(FEE_SAVED))),
+            ("Price of values", f"Price of values in fees vs an all-plain twin (HK${FEE_VALUES:,} a year)",
+             dict(r_eq=r_eq_for(-FEE_VALUES)), dict(r_eq=r_eq_for(-FEE_VALUES))),
+            ("Funded scholarship", "Funded scholarship alone: 2 × HK$240K in 2027-28, with relief",
+             dict(flows=scholarship_funded()), dict(inflows=scholarship_funded())),
+            ("Lifelong pledge", "The label approach's lifelong pledge alone: ≈HK$30K a year from cash flow",
+             dict(flows=scholarship_as_written()), dict(inflows=scholarship_as_written())),
+        ]
+        pairs = []
+        for short, lbl, skw, nkw in decisions:
+            s_r = stressed(base, sc, mult, **skw)
+            w(row(lbl, s_r, st0))
+            pairs.append((short, s_r, run(base, **nkw)))
+        pairs += [("New plan (the package)", new_st, run(base, **new)),
+                  ("New plan + dividends (the package)", new_div_st, run(base, **new_div))]
+        w("\n**Stress minus normal:** each decision's change under the scenario (against row 1) minus its change in a "
+          "normal future (against the base, as in M2-M5 and the recommendation). Odds in points, inheritance in HK$M. "
+          "Positive: the decision is worth more when climate hits; negative: it adds value mainly in calm times.\n")
+        for short, s_r, n_r in pairs:
+            d = {k: (s_r[k] - st0[k], n_r[k] - b[k]) for k in ("odds", "leg_med", "leg_p10")}
+            w(f"- {short}: odds {d['odds'][0]*100:+.1f} under stress, {d['odds'][1]*100:+.1f} normal "
+              f"(**{(d['odds'][0]-d['odds'][1])*100:+.1f}**); median {d['leg_med'][0]:+.2f} under stress, "
+              f"{d['leg_med'][1]:+.2f} normal (**{d['leg_med'][0]-d['leg_med'][1]:+.2f}**); worst 10% "
+              f"{d['leg_p10'][0]:+.2f} under stress, {d['leg_p10'][1]:+.2f} normal "
+              f"(**{d['leg_p10'][0]-d['leg_p10'][1]:+.2f}**).")
+        new_n, new_div_n = run(base, **new), run(base, **new_div)
+
+        def vs(a, c):
+            return (f"{(a['odds']-c['odds'])*100:+.1f} points, median HK${a['leg_med']-c['leg_med']:+.2f}M, "
+                    f"worst 10% HK${a['leg_p10']-c['leg_p10']:+.2f}M")
+        w(f"\n**Headline under stress:** against the label approach, both under the scenario, the new plan changes "
+          f"the odds by {vs(new_st, label_st)} (normal future: {vs(new_n, written)}). With the dividends: "
+          f"{vs(new_div_st, label_st)} under stress (normal: {vs(new_div_n, written)}).\n")
+
+        w(f"**The carbon data's cost in the new plan** (≈HK${CARBON_LO/1e3:.0f}-{CARBON_HI/1e3:.0f}K a year, paid "
+          f"by the business from 2027; `Decision_List.md` B3). It goes through the sale price as the vans' saving "
+          f"does: × {TAX_KEEP:.1%} kept after tax × {EQ_MULT} × Carmen's {SHARE:.0%} × the {HAIRCUT:.0%} counted, "
+          f"so the buyer is assumed to keep paying it; like the saving, the cost before the sale is not taken from "
+          f"Carmen's draw. Change against the base in a normal future, against row 1 above under the scenario.\n")
+        w(head)
+        carbon = []
+        for cost in (CARBON_LO, CARBON_HI):
+            cut = sale_uplift(-cost)
+            n_r = run(base, **dict(new, biz=m.BIZ + up + cut))
+            w(row(f"Normal future: new plan + carbon data at HK${cost/1e3:.0f}K a year (sale −HK${-cut/1e6:.2f}M)",
+                  n_r, b))
+            carbon.append((cost, cut, n_r))
+        lines = []
+        for cost, cut, n_r in carbon:
+            s_r = stressed(base, sc, mult, **dict(new_st_kw, biz_add=up + cut))
+            w(row(f"Under the scenario: new plan + carbon data at HK${cost/1e3:.0f}K a year "
+                  f"(sale −HK${-cut/1e6:.2f}M before the 10% cut)", s_r, st0))
+            lines.append(f"- At HK${cost/1e3:.0f}K a year, the carbon data costs the new plan {vs(n_r, new_n)} in a "
+                         f"normal future and {vs(s_r, new_st)} under the scenario. The new plan with it, against the "
+                         f"label approach: {vs(n_r, written)} normal; {vs(s_r, label_st)} under stress.")
+        w("")
+        for line in lines:
+            w(line)
+
+        nw = {k.split(".", 1)[1]: v for k, v in m.O.items() if k.startswith("BalanceSheet.")}
+        fixed = nw["Residential property"] + nw["Carmen's business"]
+        fixed_net = fixed - nw["Mortgage"] - nw["Business term loan"]
+        w(f"\nNotes on M8:\n"
+          f"- The scenario does not raise diesel prices, so the vans' saving is not larger under stress; and the ESG "
+          f"sleeve takes the same shock as other equity (M7), so the fee change and the price of values get no "
+          f"stress-specific credit. Any difference between stress and normal for them comes only from the model's "
+          f"arithmetic (a fixed sum or return on a pot that is smaller or empty in more futures).\n"
+          f"- Under the scenario the worst-10% future has already run out of money (its inheritance is the flat's "
+          f"equity only): a cost cannot lower it further, and a gain moves it only if it keeps that future solvent. "
+          f"So the positive worst-10% gaps of the costs above are a floor, not risk removed; read the odds.\n"
+          f"- The label approach is the plan as it stands plus the lifelong pledge (the plan's fees are already the "
+          f"list funds'), so its row and the pledge's are the same by construction.\n"
+          f"- The carbon data's benefit (customers kept, M3) is not in these rows: they price its cost only.\n"
+          f"- Dividends start in {DIV_FROM}, after the shock; the scenario's draw cut in 2030-31 is unchanged.\n"
+          f"- Not run: the median share of net worth in the flat and the business in 2033 and 2039. The model has no "
+          f"business value before the {m.BIZ_Y} sale and no mortgage balance before {m.RETA}, and `sim_x()` keeps only "
+          f"the end pot, so it would need new ILLUSTRATIVE paths; in {m.BIZ_Y} the business is sold in the year, so its "
+          f"share is nil by construction. In {m.BY} (the case's balance sheet; no decision acts before 2027, so the "
+          f"same for both plans) the flat and the business are HK${fixed/1e6:.2f}M of HK${nw['TOTAL ASSETS']/1e6:.2f}M "
+          f"of assets ({fixed/nw['TOTAL ASSETS']:.0%}); net of the mortgage and the business loan, "
+          f"HK${fixed_net/1e6:.2f}M of HK${nw['NET WORTH']/1e6:.2f}M net worth ({fixed_net/nw['NET WORTH']:.0%}).\n")
 
     w("\n## What is not in these runs\n")
     w("- Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, "
