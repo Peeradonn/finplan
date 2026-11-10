@@ -164,8 +164,19 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
     assumed separate assessment.
 
 ## Building the deck
-**The Final deck goes in `Final/deck/`** (10 Nov), set up from Round Two's tools (`Final_Plan.md` §5). It isn't set up
-yet: until it is, the commands below are Round Two's. Replace them with the Final's once those run.
+**The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/` holds one placeholder slide per
+row of storyline v4 (`Final_Plan.md` §4.5), each pointing at what it must prove; the look's tokens are placeholders
+until §3's look is chosen (build.py warns about the one `LOOK:` marker on purpose).
+```
+.venv/Scripts/python.exe Final/deck/make.py [--pages 3,4] [--builds]   # Axis.html, the script (Axis_Script.md), PNGs in build/
+.venv/Scripts/python.exe Final/deck/make_pptx.py                       # Axis.pptx: the one file, via PowerPoint (font, metadata)
+.venv/Scripts/python.exe Final/deck/make_pptx.py --no-office           # a quick draft without PowerPoint: never send it
+.venv/Scripts/python.exe Final/deck/make_pptx.py --check Final/deck/Axis.pptx
+```
+Speaker notes open each turn with `PETE:`, `FAHTAI:`, `WIN:` or `LOOKBUA:`; build steps are `data-b="2"`, `"3"`…;
+a slide with class `reveal` shows its steps from nothing instead of grey; backup slides carry `data-backup` (not timed).
+The full PowerPoint step (`tools/pptx_office.ps1`) hasn't run on the Final deck yet: run it once the first real slides
+exist, and check the file on a PC without our font.
 
 What changes for a live talk on the venue's notebook and projector (`Final_Plan.md` §3, §6):
 - **One file.** The PowerPoint we submit is the only one we can use on the day, so it holds the talk and, after the

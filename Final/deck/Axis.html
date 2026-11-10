@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Look both ways</title>
+<!--
+  The Final deck (Team Axis), storyline v4: Final/Final_Plan.md §4.5 says what each slide must prove; §4.2 the
+  framework; §4.3 the story. One file of 1280 x 720 slides. Build: .venv/Scripts/python.exe Final/deck/make.py, then
+  Final/deck/make_pptx.py (AGENTS.md "Building the deck").
+  Started 10 Nov from the slide-design starter. Each slide's script is its <aside class="notes">: the spoken words, each
+  turn opened by PETE:, FAHTAI:, WIN: or LOOKBUA:, then "[Notes: ...]" for background. Build steps: data-b="2", "3"...
+  on an element (one click each, in the script's order); a slide with class "reveal" shows them from nothing instead of
+  grey. Backup slides carry data-backup and are not timed.
+  Fonts: Plus Jakarta Sans, SIL Open Font License (fonts/OFL.txt). Icons: Lucide (ISC License).
+-->
+<style>
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Regular.ttf");font-weight:400}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Medium.ttf");font-weight:500}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
+:root{
+  /* LOOK: placeholder tokens (Round Two's, as in Final/looks/) until the Final's look is chosen side by side and tested
+     on a projector (Final_Plan.md §3). Change the values here; every slide follows. */
+  --paper:#FFFFFF; --mist:#F8EFF0; --block:#F3E4E7; --rule:#ECDADD; --grey:#A88C92;
+  --ink:#1B1716; --slate:#7A5C65;
+  --accent:#C80E1E; --accent-deep:#971320; --accent-tint:#EFD9DC;   /* money at risk; the point a slide makes */
+  --out:#4A3F43;                                                     /* what the money does to the world (tonnes) */
+  --leaf:#2F7A43; --leaf-tint:#E3F1E6;                               /* the green label: one job only */
+  --text:"PJS","Plus Jakarta Sans",Arial,sans-serif;
+  --head:"PJS","Plus Jakarta Sans",Arial,sans-serif;
+  --num:"PJS","Plus Jakarta Sans",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#E2E2DF;color:var(--ink);font:400 16px/1.42 var(--text);font-variant-numeric:lining-nums}
+p,h1,h2,h3,h4,ul,ol,figure,table,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+b,strong{font-weight:600}
+.deck{zoom:var(--z,1);display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
+.slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;
+  padding:34px 48px 56px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(29,29,27,.18)}
+@page{size:1280px 720px;margin:0}
+@media print{
+  body{background:#fff}
+  .deck{zoom:1;gap:0;padding:0;display:block}
+  .slide{box-shadow:none;break-after:page;page-break-after:always}
+}
+
+/* icons */
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ic.lg{width:28px;height:28px}
+.ic.sm{width:16px;height:16px}
+
+/* header: the kicker names the step and its rule; the title is the idea (any client) */
+.head{border-left:5px solid var(--accent);padding:1px 0 2px 14px}
+.kick{font:700 15px/1.3 var(--head);color:var(--accent);letter-spacing:.2px}
+.head h2{font:700 32px/1.14 var(--head);letter-spacing:-.3px;margin-top:4px;max-width:1100px;text-wrap:balance}
+
+/* body */
+.body{flex:1;min-height:0;margin-top:18px;display:flex;gap:30px}
+.body.stack{flex-direction:column;gap:0}
+.col{flex:1;min-width:0;display:flex;flex-direction:column}
+.sub{font:700 19px/1.22 var(--head);padding-bottom:6px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
+.muted{color:var(--slate)}
+.push{margin-top:auto}
+.tag{display:inline-block;font:600 10px/1 var(--text);letter-spacing:.05em;padding:2.5px 5px 2px;border:1px solid var(--grey);
+  color:var(--slate);border-radius:2px;vertical-align:1px;white-space:nowrap}
+
+/* a slide still to build: what it must prove lives in the plan, not here (one home per fact) */
+.todo{flex:1;border:2px dashed var(--grey);border-radius:8px;padding:22px 26px;display:flex;flex-direction:column;gap:10px;
+  color:var(--slate);font:500 17px/1.45 var(--text)}
+.todo b{color:var(--ink)}
+
+/* the one-sentence conclusion */
+.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 19px/1.28 var(--head);padding:11px 22px;border-radius:3px}
+
+/* footer: the framework tracker (Map · Price · Decide · Govern), the brief's areas, the source, the page */
+.foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:18px;font-size:12px;color:var(--slate)}
+.line{display:flex;align-items:center}
+.line .st{position:relative;padding-left:15px;margin-right:30px;white-space:nowrap}
+.line .st::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;border:2px solid var(--grey);background:#fff}
+.line .st::after{content:"";position:absolute;left:calc(100% + 5px);top:50%;width:20px;height:2px;margin-top:-1px;background:var(--rule)}
+.line .st:last-child{margin-right:0}
+.line .st:last-child::after{display:none}
+.line .st.on{color:var(--ink);font-weight:700}
+.line .st.on::before{background:var(--accent);border-color:var(--accent)}
+.areas{white-space:nowrap;color:var(--grey)}
+.src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
+
+/* big numbers */
+.hero{font:800 96px/0.92 var(--num);letter-spacing:-1px}
+.num{font:800 38px/1 var(--num)}
+
+/* tables */
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;padding:8px 12px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:700 14px/1.3 var(--head);color:var(--slate);border-bottom:1.5px solid var(--ink)}
+
+/* ---- forms for the Final go below, one commented block per form; class names are global, so grep first ---- */
+
+/* speaker notes: written in the slide, never shown or printed; make.py turns them into the script */
+.notes{display:none}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+
+</svg>
+<main class="deck">
+<!-- Storyline v4 (Final/Final_Plan.md §4.5). Each slide below is a placeholder: build it from its row in §4.5
+     (what it must prove) and §4.3 (the story). The title is the idea, true for any client; the Wongs are the
+     proof underneath. Brackets wait for numbers in export_numbers(). -->
+
+<!-- 1 · Pete, 0:55 -->
+<section class="slide reveal" id="s1" data-time="0:55" data-speaker="Pete">
+  <header class="head">
+    <p class="kick">The pre-mortem · 2031, a scenario, not a forecast</p>
+    <h2>[The plan built on labels falls below the family's safety floor]</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 1.</p>
+      <p>Form (a draft, not an order): A plain dated card and three numbers from the model (M8), then the four labels and what each does; ends on the gap and one line of our result.</p>
+      <p>Mockup: <code>Final/looks/price-tag.png (the label peeled off)</code></p>
+    </div>
+  </div>
+  <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Say "Team Axis" before the first words. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Areas 3, 5</span>
+    <p class="src">Sources: to add</p><span class="pg">1</span>
+  </footer>
+</section>
+
+<!-- 2 · Pete, 0:45 -->
+<section class="slide" id="s2" data-time="0:45" data-speaker="Pete">
+  <header class="head">
+    <p class="kick">How we think</p>
+    <h2>Look both ways</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 2.</p>
+      <p>Form (a draft, not an order): The two directions; the four steps as four questions; climate treated like inflation; the five kinds of finance sorted by direction (small).</p>
+      
+    </div>
+  </div>
+  <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st on">Map</span><span class="st on">Price</span><span class="st on">Decide</span><span class="st on">Govern</span></nav>
+    <span class="areas">Area 1</span>
+    <p class="src">Sources: to add</p><span class="pg">2</span>
+  </footer>
+</section>
+
+<!-- 3 · Pete, 0:45 -->
+<section class="slide" id="s3" data-time="0:45" data-speaker="Pete">
+  <header class="head">
+    <p class="kick">Our advice for one Hong Kong family</p>
+    <h2>[For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less]</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 3.</p>
+      <p>Form (a draft, not an order): Who the Wongs are and why we chose them; each person's want and limit; the recommendation, the capital and both outcomes against the label approach.</p>
+      
+    </div>
+  </div>
+  <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Area 1</span>
+    <p class="src">Sources: to add</p><span class="pg">3</span>
+  </footer>
+</section>
+
+<!-- 4 · Lookbua, 0:45 -->
+<section class="slide" id="s4" data-time="0:45" data-speaker="Lookbua">
+  <header class="head">
+    <p class="kick">Map · tests 2 and 3, both ways</p>
+    <h2>Climate reaches every line of a balance sheet; a label covers one</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Lookbua).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 4.</p>
+      <p>Form (a draft, not an order): The balance sheet with two new columns, cause first; the loop; the rules that reach them and the one that doesn't.</p>
+      <p>Mockup: <code>Final/looks/two-columns.png (or band.png)</code></p>
+    </div>
+  </div>
+  <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st on">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Areas 2, 4, 5</span>
+    <p class="src">Sources: to add</p><span class="pg">4</span>
+  </footer>
+</section>
+
+<!-- 5 · Lookbua, 0:40 -->
+<section class="slide" id="s5" data-time="0:40" data-speaker="Lookbua">
+  <header class="head">
+    <p class="kick">Map · test 4, the whole household</p>
+    <h2>Judge the whole household: climate hits everything at once</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Lookbua).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 5.</p>
+      <p>Form (a draft, not an order): Doing nothing in the 2030–31 storm, by asset and together; the risks stack; what no label hedges.</p>
+      
+    </div>
+  </div>
+  <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st on">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Area 5</span>
+    <p class="src">Sources: to add</p><span class="pg">5</span>
+  </footer>
+</section>
+
+<!-- 6 · Lookbua, 0:45 -->
+<section class="slide" id="s6" data-time="0:45" data-speaker="Lookbua">
+  <header class="head">
+    <p class="kick">Price and decide · the flat</p>
+    <h2>The guardrails decide before preferences</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Lookbua).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 6.</p>
+      <p>Form (a draft, not an order): Before and after; the first price tag explained; the reverse mortgage passes both floors, downsizing fails under stress; the green mortgage refused.</p>
+      <p>Mockup: <code>Final/looks/price-tag.png</code></p>
+    </div>
+  </div>
+  <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st on">Price</span><span class="st on">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Area 4</span>
+    <p class="src">Sources: to add</p><span class="pg">6</span>
+  </footer>
+</section>
+
+<!-- 7 · Fahtai, 0:55 -->
+<section class="slide" id="s7" data-time="0:55" data-speaker="Fahtai">
+  <header class="head">
+    <p class="kick">Price and decide · the business</p>
+    <h2>Most effect per HK$ first</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Fahtai).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 7.</p>
+      <p>Form (a draft, not an order): The baseline and the cost curve; the fibre trap; the "compostable" claim stopped.</p>
+      
+    </div>
+  </div>
+  <aside class="notes">FAHTAI: [script to write] [Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st on">Price</span><span class="st on">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Areas 2, 5</span>
+    <p class="src">Sources: to add</p><span class="pg">7</span>
+  </footer>
+</section>
+
+<!-- 8 · Fahtai, 0:55 -->
+<section class="slide" id="s8" data-time="0:55" data-speaker="Fahtai">
+  <header class="head">
+    <p class="kick">Price and decide · the business</p>
+    <h2>The kind of finance sets the test: judge a green loan as a loan</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Fahtai).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 8.</p>
+      <p>Form (a draft, not an order): The five instruments against her size; bankability; who pays, who benefits; the loop to the sale.</p>
+      
+    </div>
+  </div>
+  <aside class="notes">FAHTAI: [script to write] [Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st on">Price</span><span class="st on">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Area 2</span>
+    <p class="src">Sources: to add</p><span class="pg">8</span>
+  </footer>
+</section>
+
+<!-- 9 · Win, 1:00 -->
+<section class="slide" id="s9" data-time="1:00" data-speaker="Win">
+  <header class="head">
+    <p class="kick">Price and decide · the portfolio</p>
+    <h2>The sustainable share is an output of the budgets, not a target</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Win).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 9.</p>
+      <p>Form (a draft, not an order): The product gate; weights and costs per parent; the family values budget; refusals; ESG under stress (no credit until measured).</p>
+      
+    </div>
+  </div>
+  <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st on">Price</span><span class="st on">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Areas 1, 3</span>
+    <p class="src">Sources: to add</p><span class="pg">9</span>
+  </footer>
+</section>
+
+<!-- 10 · Win, 0:45 -->
+<section class="slide" id="s10" data-time="0:45" data-speaker="Win">
+  <header class="head">
+    <p class="kick">Govern · test 12</p>
+    <h2>Every missing price is a decision, and the plan knows when it's wrong</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Win).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 10.</p>
+      <p>Form (a draft, not an order): Climate Facts: outcomes, triggers, what the family may claim, restating, attribution; buy, range or trigger.</p>
+      <p>Mockup: <code>Final/looks/climate-facts.png</code></p>
+    </div>
+  </div>
+  <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st on">Govern</span></nav>
+    <span class="areas">Area 6</span>
+    <p class="src">Sources: to add</p><span class="pg">10</span>
+  </footer>
+</section>
+
+<!-- 11 · Pete, 0:40 -->
+<section class="slide" id="s11" data-time="0:40" data-speaker="Pete">
+  <header class="head">
+    <p class="kick">The replay · 2031, the same storm</p>
+    <h2>[Same storm, our plan: above the floor, because the framework took out what didn't work]</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 11.</p>
+      <p>Form (a draft, not an order): Our plan under the same scenario against the label approach; the honest reason; the balance sheet complete; the honest split; the framework on one page; the callback.</p>
+      <p>Mockup: <code>Final/looks/two-columns.png</code></p>
+    </div>
+  </div>
+  <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas">Area 6</span>
+    <p class="src">Sources: to add</p><span class="pg">11</span>
+  </footer>
+</section>
+<!-- Backup slides for the questions (Final_Plan.md §4.5, "Backup slides"): numbered, after the replay, so a
+     speaker can type the number and press Enter. data-backup: not spoken, not timed. -->
+
+<section class="slide" id="b0" data-backup>
+  <header class="head">
+    <p class="kick">Backup for the questions</p>
+    <h2>The framework, the evidence and the second client, slide by slide</h2>
+  </header>
+  <div class="body">
+    <div class="todo">
+      <p><b>To build.</b> The list and order: <code>Final/Final_Plan.md</code> §4.5, "Backup slides" (the twelve tests on
+      one card first). This page becomes the index: each backup's number and title.</p>
+    </div>
+  </div>
+  <footer class="foot">
+    <nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav>
+    <span class="areas"></span>
+    <p class="src">Sources: to add</p><span class="pg">12</span>
+  </footer>
+</section>
+</main>
+<script>
+/* On screen, shrink the deck to fit narrow windows. Print ignores this. */
+(function () {
+  function fit() {
+    var z = Math.min(1, (window.innerWidth - 24) / 1280);
+    document.documentElement.style.setProperty('--z', z);
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+</body>
+</html>
