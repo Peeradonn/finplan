@@ -2,16 +2,16 @@
 
 Generated 2026-11-11 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-30 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:35. Speech: 0:12 at 145 words a minute (0:32 with names and handovers); 0:13 at 135 words a minute (0:33 with names and handovers); 0:14 at 125 words a minute (0:34 with names and handovers). Over 10:30 disqualifies the team.
+173 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:45. Speech: 1:11 at 145 words a minute (1:31 with names and handovers); 1:16 at 135 words a minute (1:36 with names and handovers); 1:23 at 125 words a minute (1:43 with names and handovers). Over 10:30 disqualifies the team.
 
-Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:02, Fahtai 0:02, Win 0:02.
+Speaking time at 135 words a minute: Pete 1:08, Lookbua 0:02, Fahtai 0:02, Win 0:02.
 
-## 1 · [The plan built on labels falls below the family's safety floor]
-*The pre-mortem · 2031, a scenario, not a forecast · Pete · 0:55 · 3 spoken words (≈1 s at 135)*
+## 1 · [A label tells you what a product is called, not what it does]
+*The open · Pete · 1:05 · 146 spoken words (≈65 s at 135)*
 
-**Pete:** [script to write]
+**Pete:** Good morning, we're Team Axis. I'm Pete. Today, ESG in a family's plan usually comes down to one question: are we putting enough into ESG funds? Yet one fund with the ESG tick still owns oil and gas; another must cut its carbon every year. And the tick says nothing about what climate can do to the family. Take a Hong Kong family that followed the labels. It's 2031, and a sudden crackdown on carbon hits the markets. Within two years they're three million dollars poorer, and they never catch up. Almost half of it lands on their home and their business, where no fund label looks. A label tells you what a product is called, not what it does. Our framework leaves the same family, in the same crisis, [two million dollars] more, and we'll show you how much of that is really green.
 
-> Notes: Pete says their simple name before their part. Say "Team Axis" before the first words. Evidence status per claim in §4.5.
+> Notes: DRAFT (Claude, 11 Nov, in plain words after Pete's note on jargon; Pete to make it his own). Sources and status: Final_Plan.md §4.3 "The open". The fund contrast: MSCI Selection (formerly ESG Leaders) does not exclude conventional oil and gas and has no carbon target; an EU climate-transition index must be at least 30% below the market and cut 7% a year. Never "greenwashing": the label is true, it answers a different question. The HK$3M and "almost half" are exploratory runs on the label approach until they are number keys.
 
 ## 2 · PRISM
 *Pete · 1:00 · 3 spoken words (≈1 s at 135)*
