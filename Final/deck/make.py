@@ -7,7 +7,8 @@
 Then the PowerPoint: .venv/Scripts/python.exe Final/deck/make_pptx.py (one file, the one we submit and present from).
 
 1. slide-design build.py: Final/deck/src/*.html -> _raw.html (icons inlined, images embedded, notes collected)
-2. document/fill.py: {{key}} placeholders -> values from figures/numbers.json (AGENTS.md "Numbers"; the Final's runs
+2. series.py: [[tokens]] -> chart series from figures/figure-data.md (slide 5's lines); then
+   document/fill.py: {{key}} placeholders -> values from figures/numbers.json (AGENTS.md "Numbers"; the Final's runs
    are EXPLORATORY until Pete moves them into export_numbers()) -> Final/deck/Axis.html
 3. The script: each slide's <aside class="notes"> (the spoken words, each turn opened by PETE:, FAHTAI:, WIN: or
    LOOKBUA:, then "[Notes: ...]" for background) -> Axis_Script.html and Axis_Script.md, each slide's spoken words
@@ -23,13 +24,15 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 SKILL = os.path.join(os.path.expanduser("~"), ".claude", "skills", "slide-design", "scripts")
 sys.path.insert(0, os.path.join(ROOT, "document"))
 import fill  # noqa: E402
+sys.path.insert(0, HERE)
+import series  # noqa: E402
 
 PY = sys.executable
 raw = os.path.join(HERE, "_raw.html")
 out = os.path.join(HERE, "Axis.html")
 subprocess.run([PY, os.path.join(SKILL, "build.py"), HERE, "--out", raw], check=True)
 with open(raw, encoding="utf-8") as f:
-    deck = fill.fill_text(f.read())
+    deck = fill.fill_text(series.fill(f.read()))
 with open(out, "w", encoding="utf-8", newline="\n") as f:
     f.write(deck)
 for tmp in (raw, os.path.join(HERE, "_raw_notes.md")):

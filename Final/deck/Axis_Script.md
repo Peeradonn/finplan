@@ -34,12 +34,12 @@ Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:04, Fahtai 0:02, Win 0
 
 > Notes: Lookbua says her simple name before her part. Must prove: Final_Plan.md §4.5, slide 4. Money: change in the children's median inheritance at Carmen's 89, each on its own (our model, M3, M6, M7: MEASURED, exploratory runs). Customers: HKEX Listing Rules App. C2 (LargeCap Scope 3 from FY2026, first reports 2027). Tonnes: area2_business.md §3b (ESTIMATED, ILLUSTRATIVE business).
 
-## 5 · Judge the whole household: climate hits everything at once
+## 5 · A sudden carbon policy hits the whole household at once, and the gap never closes
 *R · the whole household · Lookbua · 0:40 · 3 spoken words (≈1 s at 135)*
 
 **Lookbua:** [script to write]
 
-> Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.
+> Notes: Lookbua says their simple name before their part. Must prove: Final_Plan.md §4.5, slide 5. Lines: the parents' net worth at the start of each year (the median portfolio after the children's education money, the flat less the mortgage and the reverse-mortgage loan, the business at its HK$3.0M sale price until 2039: ILLUSTRATIVE before the sale), final_model.py net_worth_path(), MEASURED on our model. The normal line falls after 2037 by design: retirement spending, the two annuities, the reverse-mortgage loan. The shock: area4_property_scenario.md §5.1 (sizes ILLUSTRATIVE, set between NGFS, HKMA, BoE, ECB and CISL bounds; the ESG sleeve takes the same shock as other shares). The three parts are each run on its own; together they explain the gap. If asked "isn't the portfolio what matters?": it is the biggest part, and it is market risk no label changes; the decision that moves the outcome is on the flat (slide 6).
 
 ## 6 · The guardrails decide before preferences
 *S · Select: the flat · Lookbua · 0:45 · 3 spoken words (≈1 s at 135)*
