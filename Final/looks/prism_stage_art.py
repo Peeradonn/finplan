@@ -33,6 +33,9 @@ defs = [
     '<stop offset=".5" stop-color="#FFFFFF" stop-opacity=".09"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/></linearGradient>',
     '<linearGradient id="side" x1="0" y1="0" x2="1" y2="0.3"><stop offset="0" stop-color="#C9D6FF" stop-opacity=".16"/>'
     '<stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/></linearGradient>',
+    '<linearGradient id="glint" gradientUnits="userSpaceOnUse" x1="417" y1="265" x2="294" y2="607">'
+    '<stop offset="0" stop-color="#FFFFFF" stop-opacity=".8"/><stop offset=".3" stop-color="#FFFFFF" stop-opacity=".22"/>'
+    '<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>',
     '<radialGradient id="floorglow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".16"/>'
     '<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>',
     '<radialGradient id="spot" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>'
@@ -64,7 +67,7 @@ def prism(alpha=1.0):
             f'<line x1="{B[0]}" y1="{B[1]}" x2="{B2[0]}" y2="{B2[1]}"/></g>'
             f'<polygon points="{pt(A, C, C2, A2)}" fill="url(#side)"/>'
             f'<polygon points="{pt(A, B, C)}" fill="url(#front)"/>'
-            f'<polygon points="{pt((413, 268), (422, 262), (300, 606), (290, 608))}" fill="#FFFFFF" fill-opacity=".32"/>'
+            f'<polygon points="{pt((414, 268), (418, 265), (296, 606), (292, 607))}" fill="url(#glint)"/>'
             f'<g fill="none" stroke="#FFFFFF" stroke-linejoin="round"><polygon points="{pt(A, B, C)}" stroke-width="2.6" stroke-opacity=".9"/>'
             f'<polyline points="{pt(A, A2, C2, C)}" stroke-width="2" stroke-opacity=".55"/></g></g>')
 
