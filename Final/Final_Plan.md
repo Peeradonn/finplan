@@ -444,7 +444,7 @@ advice better, each proven on the Wongs:
 |---|---|---|---|
 | **P**rofile | Ask the client's ESG preference | Limits and a values budget set before anything is priced | Floors of 95% and 85%; one family budget of ≈HK$1.4M |
 | **R**isk | Rate each product's ESG risk | The whole household in one storm, run as a pre-mortem | The labelled plan falls to 84.1%, below the floor; nothing in either plan hedges climate |
-| **I**mpact | Report the portfolio's carbon footprint | Footprint or effect: no impact claimed for shares bought on the market | All ≈134 t a year come from the business; its tonnes come back as its customers' carbon |
+| **I**mpact | Report a lower carbon footprint as impact | Report the footprint and the real changes apart; claim as impact only what the family's decisions change (shares bought on the market: footprint only, labelled so) | All ≈134 t a year come from the business; its tonnes come back as its customers' carbon |
 | **S**elect | Hit a 20–25% ESG target with labelled products | The share is an output of the budgets; a product check before pricing; every missing price a decision | The check catches the US$0 fund; downsizing fails the stress floor; three green products refused |
 | **M**onitor | An annual review | Decisions with expiry dates and triggers; attribution that doesn't label our own result green | The tax waiver ends 2028; the recycled-PET trigger; ≈HK$0.5M of the gain is green, the rest ordinary planning |
 
