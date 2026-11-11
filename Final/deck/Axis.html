@@ -171,6 +171,35 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s3-out span{display:block;font:500 15px/1.3 var(--text);color:#D8CFD1}
 .s3-split{margin-top:auto;font:500 13.5px/1.4 var(--text);color:#B9ACAF;font-style:italic;padding-top:12px}
 
+/* ---- slide 3: our answer, first (ans- classes; Pete, 11 Nov) ---- */
+.ans-body{display:flex;flex-direction:column}
+.ans-fam{font:600 16px/1.3 var(--text);color:var(--slate);margin-bottom:16px}
+.ans-groups{display:grid;grid-template-columns:1.25fr 1.15fr 1fr 1fr;gap:16px;flex:1}
+.ans-g{border-top:4px solid var(--ink);padding-top:12px}
+.ans-h{display:flex;align-items:center;gap:8px;font:800 19px/1.2 var(--head);margin-bottom:10px}
+.ans-h .ic{width:26px;height:26px;color:var(--accent)}
+.ans-g ul{list-style:none;margin:0;padding:0}
+.ans-g li{font:600 17px/1.32 var(--text);padding:8px 0 8px 14px;border-left:3px solid var(--rule);margin-bottom:8px}
+.ans-foot{display:flex;gap:36px;justify-content:space-between;border-top:1px solid var(--rule);padding-top:12px;margin-top:6px}
+.ans-foot p{font:500 15.5px/1.35 var(--text);color:var(--slate)}
+.ans-foot b{color:var(--ink)}
+
+/* ---- slide 4: Profile, the limits first (pro- classes; Pete, 11 Nov) ---- */
+.pro-body{display:flex;flex-direction:column;justify-content:center;gap:22px}
+.pro-row{display:flex;align-items:center;gap:16px}
+.pro-who{flex:1;border-top:5px solid var(--P);padding-top:12px}
+.pro-n{font:800 22px/1.2 var(--head)}
+.pro-q{font:500 17px/1.35 var(--text);font-style:italic;margin-top:6px}
+.pro-l{font:700 16px/1.35 var(--text);color:var(--P);margin-top:8px}
+.pro-arr{font:800 40px/1 var(--head);color:var(--P)}
+.pro-mid{width:380px;flex:none;background:var(--P);color:#fff;border-radius:10px;padding:22px 24px;text-align:center}
+.pro-cap{font:800 14px/1 var(--text);letter-spacing:1px;text-transform:uppercase;opacity:.9}
+.pro-big{font:800 64px/1.05 var(--num);margin:8px 0 6px}
+.pro-s{font:500 15.5px/1.4 var(--text)}
+.pro-limit{font:500 21px/1.35 var(--text);border-left:6px solid var(--P);padding:6px 0 6px 16px}
+.pro-limit b{font-weight:800}
+.pro-also{font:500 15px/1.4 var(--text);color:var(--slate)}
+
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
 .slide.s2-stage{padding:0;display:block;background:#120E0F;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}
@@ -237,7 +266,10 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
-
+<symbol id="i-briefcase-business" viewBox="0 0 24 24"><path d="M12 12h.01" /> <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /> <path d="M22 13a18.15 18.15 0 0 1-20 0" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
+<symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
 </svg>
 <main class="deck">
 <!-- Storyline v4 (Final/Final_Plan.md §4.5). Each slide below is a placeholder: build it from its row in §4.5
@@ -345,63 +377,82 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     Final/Final_Plan.md §4.5, slide 2, and §4.2 "five letters, five twists". Evidence status per claim in §4.5.]</aside>
 </section>
 
-<!-- 3 · Pete, 0:45. P, Profile (Pete, 11 Nov): who decides, and within what limits, set before anything is priced; then
-     what PRISM recommends for them (Key Areas §7: lead with the recommendation, the capital and both outcomes). Three
-     clicks. The wants are the case's words; the limits are ours (Final_Plan.md §4.2). The answer's money figures stay in
-     brackets until the label approach is re-based on a fund that can be bought (§4.5). -->
-<section class="slide sec-P" id="s3" data-time="0:45" data-speaker="Pete">
+<!-- 3 · Pete, 0:25. Our answer, first (Pete, 11 Nov: slide 3 split in two; Key Areas §7: "lead with a recommendation,
+     the capital required and the expected financial and sustainability outcomes"). One point: what PRISM recommends for
+     the Wongs. The seven changes are Decision_List.md §1's B1, B3, B4, P1, P3, G1, H1; the money stays in brackets until
+     the label approach is re-based on a fund that can be bought (Final_Plan.md §4.5). -->
+<section class="slide" id="s3" data-time="0:25" data-speaker="Pete">
   <header class="head">
-    <p class="kick kt"><b class="kt-L">P</b><b class="kt-n">Profile</b><span class="kt-do">Each person's limits and a values budget, set first</span><span class="kt-not">instead of asking whether they like ESG</span></p>
-    <h2>Set each person's limits first; then every decision is priced against them</h2>
+    <p class="kick">Our answer, first · the Wongs, from this year's competition case</p>
+    <h2>[Seven changes: about HK$2.4M more for their children, and 134 tonnes of carbon a year less]</h2>
   </header>
-  <div class="body s3-body">
-    <div class="s3-left">
-      <p class="s3-cap">The Wongs · this year's competition case</p>
-      <div class="s3-grid"><div class="s3-p"><p class="s3-n">Adrian, 54</p><p class="s3-r">retires at 65</p><p class="s3-w">“capital preservation”</p><p class="s3-l">funds within 0.5% a year of the market</p></div><div class="s3-p"><p class="s3-n">Carmen, 49</p><p class="s3-r">runs a packaging firm</p><p class="s3-w">ESG, for “her personal values”</p><p class="s3-l">funds may stray up to 3% a year</p></div><div class="s3-p"><p class="s3-n">Ryan, 24</p><p class="s3-r">data analyst, holds crypto</p><p class="s3-w">“financial independence”</p><p class="s3-l">decides for his own money</p></div><div class="s3-p"><p class="s3-n">Chloe, 16</p><p class="s3-r">university from 2028</p><p class="s3-w">“without excessive ... debt”</p><p class="s3-l">HK$2.57M set aside first</p></div></div>
-      <p class="s3-own">A flat (<b>HK$11.5M</b>), Carmen's stake in her business (<b>HK$5.0M</b>), savings and investments
-        (<b>HK$10.5M</b>). Their ESG goal: <i>“20% to 25% of investable assets ... through product selection”</i>.</p>
-      <div class="s3-limits" data-b="2">
-        <p class="s3-cap">Their limits, set before any option is priced</p>
-        <div class="s3-lims">
-          <div><b>95 in 100</b><span>futures where the money lasts their whole life; 85 in a crisis</span></div>
-          <div><b>≈HK$1.4M</b><span>one values budget for both parents, agreed once</span></div>
-          <div><b>Both parents</b><span>for any choice that can't be undone</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="s3-ans" data-b="3">
-      <p class="s3-acap">What PRISM recommends</p>
-      <p class="s3-big">[7] changes</p>
-      <p class="s3-cap2">Capital: <b>HK$0.48M</b> of the family's (a scholarship fund) and <b>HK$1.91M</b> of the business's
-        (electric vans, lights, air-con)</p>
-      <div class="s3-out"><b>[+HK$2.4M]</b><span>for their children, against following the labels</span></div>
-      <div class="s3-out"><b>≈134 t</b><span>of carbon a year less, all from the business</span></div>
-      <p class="s3-split">[About HK$0.5M of it comes from green decisions; the rest is ordinary good planning. We say which is which.]</p>
+  <div class="body ans-body">
+    <p class="ans-fam">Adrian 54, Carmen 49, Ryan 24, Chloe 16 · a flat, Carmen's packaging business, HK$10.5M of savings</p>
+    <div class="ans-groups"><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-briefcase-business"/></svg>The business</p><ul><li>Electric vans, LED lights, new air-con</li><li>Carbon data before customers ask</li><li>Recycled plastic at the same price</li></ul></div><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-chart-line"/></svg>The savings</p><ul><li>A climate index fund at the plain fund's fee</li><li>Plain bonds for Adrian, not green ones</li></ul></div><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-house"/></svg>The flat</p><ul><li>A reverse mortgage at retirement, with a yearly price trigger</li></ul></div><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-gift"/></svg>Their giving</p><ul><li>Fund the scholarship now, instead of a lifelong pledge</li></ul></div></div>
+    <div class="ans-foot">
+      <p><b>Capital:</b> HK$0.48M of the family's, HK$1.91M of the business's</p>
+      <p><b>Refused:</b> a green mortgage, a paid green-loan label, a clean-energy fund, "compostable" claims</p>
     </div>
   </div>
+  <p class="sowhat">All the carbon cut comes from the business, not the funds.</p>
+  <aside class="notes">PETE: [script to write] [Notes: the answer before the steps. Changes: Decision_List.md §1 (B1 vans, LED,
+    air-con; B3 emissions data; B4 recycled content at parity; P1 climate-benchmark index fund at the plain fund's fee; P3
+    plain bonds for Adrian; G1 the scholarship funded in 2027–28; H1 the reverse mortgage with a yearly price trigger and
+    the building's 50th year as a deadline). Capital: Decision_List.md §2 (ESTIMATED). Outcomes: model_runs.md, +HK$2.44M
+    against the label approach (EXPLORATORY until the re-base); ≈134 t a year (ESTIMATED; 108 t rest on recycled PET at
+    parity). The honest split: ≈HK$0.5M the vans; ≈HK$1.1M cheaper funds and ≈HK$0.8M the scholarship funded are ordinary
+    planning. Pete settles the count of changes (Decision_List.md §1).]</aside>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#B45309"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#0E7490"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B45309">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#0E7490">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>ALL FIVE STEPS<span>Area 1</span></p></div>
+    <p class="src">Award 2026 case · changes: our decision list · capital ESTIMATED · money: our model (MEASURED, before the re-base) · tonnes ESTIMATED</p><span class="pg">3</span>
+  </footer>
+</section>
+<!-- 4 · Pete, 0:30. P, Profile (Pete, 11 Nov: split from slide 3). One point: the parents disagree, and PRISM settles it once,
+     before anything is priced: one values budget between them, and a limit no option may break. The wants are the case's
+     words; the limits and the budget are ours (Final_Plan.md §4.2). -->
+<section class="slide sec-P" id="s4" data-time="0:30" data-speaker="Pete">
+  <header class="head">
+    <p class="kick kt"><b class="kt-L">P</b><b class="kt-n">Profile</b><span class="kt-do">Each person's limits and a values budget, set first</span><span class="kt-not">instead of asking whether they like ESG</span></p>
+    <h2>Settle the family's disagreements once, before any option is priced</h2>
+  </header>
+  <div class="body pro-body">
+    <div class="pro-row">
+      <div class="pro-who"><p class="pro-n">Adrian, 54</p><p class="pro-q">“Capital preservation, retirement adequacy”</p>
+        <p class="pro-l">His funds stay within 0.5% a year of the market</p></div>
+      <span class="pro-arr">→</span>
+      <div class="pro-mid">
+        <p class="pro-cap">One values budget</p>
+        <p class="pro-big">≈HK$1.4M</p>
+        <p class="pro-s">agreed once by both parents (≈HK$1.7M at worst). Anything green that costs them money comes out of it.</p>
+      </div>
+      <span class="pro-arr">←</span>
+      <div class="pro-who"><p class="pro-n">Carmen, 49</p><p class="pro-q">ESG for “her personal values”</p>
+        <p class="pro-l">Her funds may stray up to 3% a year from it</p></div>
+    </div>
+    <p class="pro-limit"><b>Their limit:</b> the money lasts their whole life in at least <b>95 futures out of 100</b>, and 85 in
+      a crisis. No option may break it.</p>
+    <p class="pro-also">Also set first: Ryan decides for his own money · Chloe's HK$2.57M for university is set aside · anything
+      that can't be undone needs both parents</p>
+  </div>
   <p class="sowhat">The limits come first, so no option, green or not, can move the goalposts later.</p>
-  <aside class="notes">PETE: [script to write] [Notes: Pete says his simple name before his part. Wants: the case's words
-    (Award2026Case, background and goals). Limits: ours (Final_Plan.md §4.2): the floors of 95 and 85 in 100 (Pete, 10
-    Nov), the family values budget (≈HK$1.4M expected, ≈HK$1.7M at worst; MODEL, EXPLORATORY), tracking-error limits
-    (Adrian ≤0.5% a year, Carmen ≤3%), the education reserve (HK$2.57M, Round One). Capital: Decision_List.md §2 (ESTIMATED).
-    Outcomes: model_runs.md (EXPLORATORY until the re-base): +HK$2.44M against the label approach in a normal future,
-    +HK$2.25M under stress; ≈134 t a year (ESTIMATED; 108 t rest on recycled PET at parity). The honest split: ≈HK$0.5M the
-    vans; the rest cheaper funds and the scholarship funded. The case's ESG goal is "to align at least 20% to 25% of
-    investable assets with ESG principles through appropriate product selection and due diligence": the label approach in
-    the client's own words.]</aside>
+  <aside class="notes">PETE: [script to write] [Notes: wants: the case's words (Award2026Case, background). Limits ours
+    (Final_Plan.md §4.2): the floors of 95 and 85 in 100 (Pete, 10 Nov); the family values budget (≈HK$1.4M expected,
+    ≈HK$1.7M at worst: Carmen's ESG funds against plain twins and the funded scholarship; MODEL, EXPLORATORY); tracking-error
+    limits (Adrian ≤0.5% a year, Carmen ≤3%); the education reserve (HK$2.57M, Round One). The values budget is a mental
+    account used on purpose, to lock the choice in advance (§4.2, biases).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#B45309"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B45309">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
-    <p class="src">Award 2026 case · limits ours · capital ESTIMATED · outcomes our model (MEASURED, before the re-base) · tonnes ESTIMATED</p><span class="pg">3</span>
+    <p class="src">Award 2026 case (their words) · limits and budget ours · budget: our model (MEASURED, exploratory)</p><span class="pg">4</span>
   </footer>
 </section>
 
-<!-- 4 · Lookbua, 0:55. R and I (Pete, 11 Nov, version C; sectioned the same day: outside in and inside out split by a
+<!-- 5 · Lookbua, 0:55. R and I (Pete, 11 Nov, version C; sectioned the same day: outside in and inside out split by a
      rule, the causes as lanes from when they start to where they land, each cost at the end of its own lane; then fewer levels: three red lanes and one teal
      lane for inside out (the business pointing out to its tonnes), the flat's cause named as warming, HKMA RM05/2023): one point, "the causes start now; the costs land on the plan's
      big moments", on the plan's own timeline. Each cost is the change in the children's median inheritance at Carmen's
      89, each on its own (our model: "fin_" keys in double braces); the business's tonnes ESTIMATED on an ILLUSTRATIVE business.
      Weather moved to slide 6 (the flat). Earlier versions: the two-column balance sheet (git history, 11 Nov). -->
-<section class="slide sec-R" id="s4" data-time="0:55" data-speaker="Lookbua">
+<section class="slide sec-R" id="s5" data-time="0:55" data-speaker="Lookbua">
   <header class="head"><p class="kick kt"><b class="kt-L">R</b><b class="kt-L kt-I">I</b><b class="kt-n">Risk and <span class="kt-i">Impact</span></b><span class="kt-do">Look both ways, from each cause to the moment it lands</span><span class="kt-not">instead of a fund's ESG rating</span></p>
     <h2>Climate lands on the plan's biggest moments; a label checks only today's funds</h2></header>
   <div class="body stack s4-body"><svg viewBox="0 0 1184 420" width="1184" height="420" style="font-family:var(--text);overflow:visible"><defs><marker id="aR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C80E1E"/></marker><marker id="aI" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0E7490"/></marker></defs><text x="0" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#C80E1E">OUTSIDE IN · WHAT CLIMATE COULD COST THE CHILDREN</text><rect x="696.3000000000001" y="36" width="273.15" height="246" fill="#F3EEEF"/><text x="832.875" y="56" font-size="13" font-weight="800" fill="#1B1716" text-anchor="middle">the sale and retirement</text><circle cx="150.0" cy="90" r="5.5" fill="#C80E1E"/><line x1="150.0" y1="90" x2="694.3000000000001" y2="90" stroke="#C80E1E" stroke-width="3" marker-end="url(#aR)"/><text x="162.0" y="79" font-size="16" font-weight="700" fill="#C80E1E">A hotter Hong Kong: older flats lose the most value</text><text x="706.3000000000001" y="99" font-size="26" font-weight="800" fill="#C80E1E">−HK$0.71M</text><text x="706.3000000000001" y="119" font-size="14" fill="#5E4A50">if the flat is worth 10% less by 2037</text><circle cx="392.8" cy="156" r="5.5" fill="#C80E1E"/><line x1="392.8" y1="156" x2="694.3000000000001" y2="156" stroke="#C80E1E" stroke-width="3" marker-end="url(#aR)"/><text x="404.8" y="145" font-size="16" font-weight="700" fill="#C80E1E">2030–31: a sudden carbon policy</text><text x="706.3000000000001" y="165" font-size="26" font-weight="800" fill="#C80E1E">−HK$2.48M</text><text x="706.3000000000001" y="185" font-size="14" fill="#5E4A50">they retire with a smaller pot</text><circle cx="210.7" cy="222" r="5.5" fill="#C80E1E"/><line x1="210.7" y1="222" x2="694.3000000000001" y2="222" stroke="#C80E1E" stroke-width="3" marker-end="url(#aR)"/><text x="222.7" y="211" font-size="16" font-weight="700" fill="#C80E1E">From 2027, listed customers must report her carbon</text><text x="706.3000000000001" y="231" font-size="26" font-weight="800" fill="#C80E1E">−HK$1.55M</text><text x="706.3000000000001" y="251" font-size="14" fill="#5E4A50">if she has no carbon data and a customer worth 10% of sales leaves</text><line x1="150.0" y1="282" x2="999.8000000000001" y2="282" stroke="#1B1716" stroke-width="6" stroke-linecap="round"/><line x1="999.8000000000001" y1="282" x2="1105" y2="282" stroke="#1B1716" stroke-width="3" stroke-dasharray="6 6"/><text x="1110" y="287" font-size="14" font-weight="700" fill="#1B1716">Carmen's 89</text><circle cx="150.0" cy="282" r="9" fill="#3F9A55" stroke="#fff" stroke-width="3"/><line x1="0" y1="312" x2="1184" y2="312" stroke="#E2CFD3" stroke-width="1.5"/><text x="0" y="336" font-size="13" font-weight="800" letter-spacing="1" fill="#0E7490">INSIDE OUT · WHAT THEIR MONEY DOES TO THE CLIMATE</text><circle cx="150.0" cy="376" r="5.5" fill="#0E7490"/><line x1="150.0" y1="376" x2="694.3000000000001" y2="376" stroke="#0E7490" stroke-width="3" marker-end="url(#aI)"/><text x="162.0" y="365" font-size="16" font-weight="700" fill="#0E7490">Carmen's business, every year until it is sold</text><text x="706.3000000000001" y="385" font-size="26" font-weight="800" fill="#0E7490">≈2,760–3,250 t CO2e a year</text><text x="706.3000000000001" y="405" font-size="14" fill="#5E4A50">the same tonnes its listed customers must report</text></svg>
@@ -409,7 +460,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <p class="sowhat">Two of these three costs never touch a fund, whatever its label.</p>
   <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says her simple name before her part. Must prove:
-    Final_Plan.md §4.5, slide 4. Money: change in the children's median inheritance at Carmen's 89, each on its own
+    Final_Plan.md §4.5, slide 5. Money: change in the children's median inheritance at Carmen's 89, each on its own
     (our model, M3, M6, M7: MEASURED, exploratory runs). Customers: HKEX Listing Rules App. C2 (LargeCap Scope 3 from
     FY2026, first reports 2027). Tonnes: area2_business.md §3b (ESTIMATED, ILLUSTRATIVE business). Older flats, if
     asked "isn't that just ageing?": HKMA Research Memorandum 05/2023 finds that in a hotter Hong Kong (HKO's "High"
@@ -430,13 +481,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     only the flat and the business.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#0E7490"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#0E7490">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>RISK · IMPACT<span>Areas 2, 4, 5</span></p></div>
-    <p class="src">Our model (MEASURED, each on its own) · tonnes ESTIMATED, ILLUSTRATIVE business · HKEX App. C2 · HKMA RM05/2023</p><span class="pg">4</span>
+    <p class="src">Our model (MEASURED, each on its own) · tonnes ESTIMATED, ILLUSTRATIVE business · HKEX App. C2 · HKMA RM05/2023</p><span class="pg">5</span>
   </footer>
 </section>
 
 
-<!-- 5 · Lookbua, 0:45 -->
-<section class="slide sec-S" id="s5" data-time="0:45" data-speaker="Lookbua">
+<!-- 6 · Lookbua, 0:45 -->
+<section class="slide sec-S" id="s6" data-time="0:45" data-speaker="Lookbua">
   <header class="head">
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">Each route priced in HK$ under stress; the floors decide</span><span class="kt-not">instead of the bank's green mortgage</span></p>
     <h2>The guardrails decide before preferences</h2>
@@ -451,12 +502,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>SELECT<span>Area 4</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">5</span>
+    <p class="src">Sources: to add</p><span class="pg">6</span>
   </footer>
 </section>
 
-<!-- 6 · Fahtai, 0:55 -->
-<section class="slide sec-S" id="s6" data-time="0:55" data-speaker="Fahtai">
+<!-- 7 · Fahtai, 0:55 -->
+<section class="slide sec-S" id="s7" data-time="0:55" data-speaker="Fahtai">
   <header class="head">
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The business's cuts ranked, cheapest tonne first</span><span class="kt-not">instead of leaving the business out</span></p>
     <h2>Most effect per HK$ first</h2>
@@ -471,12 +522,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <aside class="notes">FAHTAI: [script to write] [Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">6</span>
+    <p class="src">Sources: to add</p><span class="pg">7</span>
   </footer>
 </section>
 
-<!-- 7 · Fahtai, 0:55 -->
-<section class="slide sec-S" id="s7" data-time="0:55" data-speaker="Fahtai">
+<!-- 8 · Fahtai, 0:55 -->
+<section class="slide sec-S" id="s8" data-time="0:55" data-speaker="Fahtai">
   <header class="head">
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">A green loan judged as a loan, against the cheapest plain one</span><span class="kt-not">instead of taking the label</span></p>
     <h2>The kind of finance sets the test: judge a green loan as a loan</h2>
@@ -491,12 +542,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <aside class="notes">FAHTAI: [script to write] [Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>SELECT<span>Area 2</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">7</span>
+    <p class="src">Sources: to add</p><span class="pg">8</span>
   </footer>
 </section>
 
-<!-- 8 · Win, 1:00 -->
-<section class="slide sec-S" id="s8" data-time="1:00" data-speaker="Win">
+<!-- 9 · Win, 1:00 -->
+<section class="slide sec-S" id="s9" data-time="1:00" data-speaker="Win">
   <header class="head">
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">Products checked, then priced; the share comes out of the budgets</span><span class="kt-not">instead of filling a 25% ESG quota</span></p>
     <h2>The sustainable share is an output of the budgets, not a target</h2>
@@ -511,12 +562,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">8</span>
+    <p class="src">Sources: to add</p><span class="pg">9</span>
   </footer>
 </section>
 
-<!-- 9 · Win, 0:45 -->
-<section class="slide sec-M" id="s9" data-time="0:45" data-speaker="Win">
+<!-- 10 · Win, 0:45 -->
+<section class="slide sec-M" id="s10" data-time="0:45" data-speaker="Win">
   <header class="head">
     <p class="kick kt"><b class="kt-L">M</b><b class="kt-n">Monitor</b><span class="kt-do">Each decision comes with a trigger to look again</span><span class="kt-not">instead of a yearly review</span></p>
     <h2>Every missing price is a decision, and the plan knows when it's wrong</h2>
@@ -531,12 +582,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">9</span>
+    <p class="src">Sources: to add</p><span class="pg">10</span>
   </footer>
 </section>
 
-<!-- 10 · Pete, 0:40 -->
-<section class="slide" id="s10" data-time="0:40" data-speaker="Pete">
+<!-- 11 · Pete, 0:40 -->
+<section class="slide" id="s11" data-time="0:40" data-speaker="Pete">
   <header class="head">
     <p class="kick">The replay · 2031, the same storm</p>
     <h2>[Same storm, our plan: above the floor, because the framework took out what didn't work]</h2>
@@ -552,7 +603,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <footer class="foot">
     <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
     <span class="areas">Area 6</span>
-    <p class="src">Sources: to add</p><span class="pg">10</span>
+    <p class="src">Sources: to add</p><span class="pg">11</span>
   </footer>
 </section>
 <!-- Backup slides for the questions (Final_Plan.md §4.5, "Backup slides"): numbered, after the replay, so a
@@ -572,7 +623,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <footer class="foot">
     <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
     <span class="areas"></span>
-    <p class="src">Sources: to add</p><span class="pg">11</span>
+    <p class="src">Sources: to add</p><span class="pg">12</span>
   </footer>
 </section>
 <!-- Backup · the whole household in one storm (cut from the talk, Pete 11 Nov: it repeated slide 4
@@ -659,7 +710,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     changes; the decision that moves the outcome is on the flat (slide 6).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>RISK<span>Area 5</span></p></div>
-    <p class="src">Our model, 10,000 futures (MEASURED) · shock sizes ILLUSTRATIVE, within NGFS, HKMA, BoE, ECB bounds · business before its sale ILLUSTRATIVE</p><span class="pg">12</span>
+    <p class="src">Our model, 10,000 futures (MEASURED) · shock sizes ILLUSTRATIVE, within NGFS, HKMA, BoE, ECB bounds · business before its sale ILLUSTRATIVE</p><span class="pg">13</span>
   </footer>
 </section>
 </main>
