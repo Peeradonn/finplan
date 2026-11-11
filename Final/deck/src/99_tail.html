@@ -1,0 +1,14 @@
+</main>
+<script>
+/* On screen, shrink the deck to fit narrow windows. Print ignores this. */
+(function () {
+  function fit() {
+    var z = Math.min(1, (window.innerWidth - 24) / 1280);
+    document.documentElement.style.setProperty('--z', z);
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+</body>
+</html>

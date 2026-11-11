@@ -375,3 +375,27 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
 - `round2/series.py`: `story_plan6_poly`, `story_call3_l/_t`, `story_plan6_t` (the split), `prem_death_l/_t` (the drop
   when one policy is left) and `prem_save_l/_t` (the saving's label).
 
+
+### Final (9 Nov): Round One's `rmp2045_89` is understated — found, not fixed (Pete to decide)
+- Proposal p.11 says starting the reverse mortgage in 2045 instead of 2037 lowers the plan from `{{ladder_5_89}}` to
+  `{{rmp2045_89}}` (73%). `export_numbers()` sets `RMP_Y = 2045` but keeps the 2037 payout (HK$230K a year), so the run
+  reproduces 73.5% exactly (`Final/final_model.py`, M6).
+- HKMC pays more per HK$1M at an older entry age (payout table, March 2026: two borrowers, life, fixed rate, HK$1,810 a
+  month at 60, HK$2,470 at 68; the youngest borrower's age counts, Carmen's). With the 2045 flat value and that age,
+  the payout is ≈HK$339K a year and the plan lasts to 89 in **80.5%** of futures (the Final's base, `switch_89`: 96.3%
+  against 96.8%). The direction (waiting costs a little) is unchanged; the size was overstated by about 7 points.
+- **Not changed:** `run_model.py`, `numbers.json` and the proposal. The judges hold the submitted PDF, so the repo's
+  copy should match it unless Pete decides to correct it. The Final uses `final_model.py`'s corrected run.
+
+### Final (10 Nov): M8, the whole household under stress (`Final/final_model.py`, EXPLORATORY)
+- New section M8 in `Final/model_runs.md`: each decision, the new plan and the label approach run under the 2030–31
+  scenario (all channels, reverse mortgage), against the plan as it stands under the same scenario (reproduces M7's
+  "All together" exactly; the script stops if not). Also each decision's change under stress minus its change in a
+  normal future, and a variant of the new plan that pays for the carbon data (≈HK$54–73K a year, through the sale price).
+- Switch base: the label approach falls to 84.1% under stress, the new plan to 91.0% (+6.9 points, median +HK$2.25M;
+  normal future +3.4, +HK$2.44M). The lead grows in points because more futures sit near running out, not because any
+  decision hedges climate: in the model diesel doesn't rise in the scenario and the ESG sleeve takes the same shock.
+  The unfunded pledge is the most stress-sensitive item (−5.4 points under stress, −2.8 normal).
+- Paying for the carbon data costs the new plan ≈HK$0.10–0.13M (normal); its benefit (customers kept, M3) isn't modelled.
+- No existing line of `model_runs.md` changed (diff: additions only; a rerun reproduces the file). `run_model.py` and
+  `numbers.json` untouched.

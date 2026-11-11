@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRISM</title>
+<!--
+  The Final deck (Team Axis), storyline v4: Final/Final_Plan.md §4.5 says what each slide must prove; §4.2 the
+  framework; §4.3 the story. One file of 1280 x 720 slides. Build: .venv/Scripts/python.exe Final/deck/make.py, then
+  Final/deck/make_pptx.py (AGENTS.md "Building the deck").
+  Started 10 Nov from the slide-design starter. Each slide's script is its <aside class="notes">: the spoken words, each
+  turn opened by PETE:, FAHTAI:, WIN: or LOOKBUA:, then "[Notes: ...]" for background. Build steps: data-b="2", "3"...
+  on an element (one click each, in the script's order); a slide with class "reveal" shows them from nothing instead of
+  grey. Backup slides carry data-backup and are not timed.
+  Fonts: Plus Jakarta Sans, SIL Open Font License (fonts/OFL.txt). Icons: Lucide (ISC License).
+-->
+<style>
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Regular.ttf");font-weight:400}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Medium.ttf");font-weight:500}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
+:root{
+  /* Look A′ (Pete, 11 Nov; Final_Plan.md §3 "Look"): Plus Jakarta Sans, the crimson accent, and the facts-label rule
+     (a thick ink rule under each title, ink rules between rows). Chosen from four options rendered side by side
+     (Final/looks/looks.html). Still to do: the 20-second projector test. Change values here; every slide follows. */
+  --paper:#FFFFFF; --mist:#FBF3F4; --block:#F4E6E9; --rule:#E2CFD3; --grey:#8A747A;   /* tints wash out on a projector:
+                                                                    use them for fills behind ink, never for text */
+  --ink:#1B1716; --slate:#5E4A50;                                    /* slate 8.2:1 on white: the lightest text colour */
+  --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* money at risk; the point a slide makes (5.9:1) */
+  --out:#3F3538;                                                     /* what the money does to the world (tonnes) */
+  --leaf:#3F9A55; --leaf-tint:#E3F1E6;                               /* the green label, one job only; passes both
+                                                                    red-green checks against the crimson; always
+                                                                    carries its word, never colour alone */
+  --text:"PJS","Plus Jakarta Sans",Arial,sans-serif;
+  --head:"PJS","Plus Jakarta Sans",Arial,sans-serif;
+  --num:"PJS","Plus Jakarta Sans",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#E2E2DF;color:var(--ink);font:400 16px/1.42 var(--text);font-variant-numeric:lining-nums}
+p,h1,h2,h3,h4,ul,ol,figure,table,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+b,strong{font-weight:600}
+.deck{zoom:var(--z,1);display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
+.slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;
+  padding:34px 48px 56px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(29,29,27,.18)}
+@page{size:1280px 720px;margin:0}
+@media print{
+  body{background:#fff}
+  .deck{zoom:1;gap:0;padding:0;display:block}
+  .slide{box-shadow:none;break-after:page;page-break-after:always}
+}
+
+/* icons */
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ic.lg{width:28px;height:28px}
+.ic.sm{width:16px;height:16px}
+
+/* header: the kicker names the step and its rule; the title is the idea (any client); the facts-label rule under it */
+.head{padding-bottom:12px;border-bottom:9px solid var(--ink)}
+.kick{font:700 15px/1.3 var(--head);color:var(--accent);letter-spacing:.2px}
+.head h2{font:700 34px/1.12 var(--head);letter-spacing:-.4px;margin-top:5px;max-width:1120px;text-wrap:balance}
+
+/* the green label: a sticker with its word on it (the one job green has) */
+.chip{display:inline-block;white-space:nowrap;background:var(--leaf);color:#fff;font:800 16px/1 var(--text);padding:9px 14px;border-radius:20px}
+
+/* body */
+.body{flex:1;min-height:0;margin-top:18px;display:flex;gap:30px}
+.body.stack{flex-direction:column;gap:0}
+.col{flex:1;min-width:0;display:flex;flex-direction:column}
+.sub{font:700 19px/1.22 var(--head);padding-bottom:6px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
+.muted{color:var(--slate)}
+.push{margin-top:auto}
+.tag{display:inline-block;font:600 10px/1 var(--text);letter-spacing:.05em;padding:2.5px 5px 2px;border:1px solid var(--grey);
+  color:var(--slate);border-radius:2px;vertical-align:1px;white-space:nowrap}
+
+/* a slide still to build: what it must prove lives in the plan, not here (one home per fact) */
+.todo{flex:1;border:2px dashed var(--grey);border-radius:8px;padding:22px 26px;display:flex;flex-direction:column;gap:10px;
+  color:var(--slate);font:500 17px/1.45 var(--text)}
+.todo b{color:var(--ink)}
+
+/* the one-sentence conclusion */
+.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px}
+
+/* footer: the framework tracker (Profile · Risk · Impact · Select · Monitor), the brief's areas, the source, the page */
+.foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:18px;font-size:12px;color:var(--slate)}
+.line{display:flex;align-items:center}
+.line .st{position:relative;padding-left:15px;margin-right:30px;white-space:nowrap}
+.line .st::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;border:2px solid var(--grey);background:#fff}
+.line .st::after{content:"";position:absolute;left:calc(100% + 5px);top:50%;width:20px;height:2px;margin-top:-1px;background:var(--rule)}
+.line .st:last-child{margin-right:0}
+.line .st:last-child::after{display:none}
+.line .st.on{color:var(--ink);font-weight:700}
+.line .st.on::before{background:var(--accent);border-color:var(--accent)}
+.areas{white-space:nowrap;color:var(--grey)}
+.src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
+
+/* big numbers */
+.hero{font:800 96px/0.92 var(--num);letter-spacing:-1px}
+.num{font:800 38px/1 var(--num)}
+
+/* tables */
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);vertical-align:top}
+th{font:700 14px/1.3 var(--head);color:var(--slate);border-bottom:1.5px solid var(--ink)}
+tr.total td{border-top:6px solid var(--ink);font-weight:700}
+
+/* type scale (projector): titles 34, column heads 19-21, body 16-19, smallest 13 (footer only), big numbers 30-150 */
+
+/* ---- forms for the Final go below, one commented block per form; class names are global, so grep first ---- */
+
+/* speaker notes: written in the slide, never shown or printed; make.py turns them into the script */
+.notes{display:none}
+</style>
+</head>
+<body>
+<!--ICON_SPRITE-->
+<main class="deck">

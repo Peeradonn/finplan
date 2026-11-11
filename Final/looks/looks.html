@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Final look options</title>
+<!-- Three looks for the Final (11 Nov), each on the same two slides: the pre-mortem and the dense balance sheet.
+     Numbers EXPLORATORY (Final/model_runs.md M3, M6, M7, M8; the case p.4; area2_business.md). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"PJS";src:url("../deck/fonts/PlusJakartaSans-Regular.ttf");font-weight:400}
+@font-face{font-family:"PJS";src:url("../deck/fonts/PlusJakartaSans-Medium.ttf");font-weight:500}
+@font-face{font-family:"PJS";src:url("../deck/fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"PJS";src:url("../deck/fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
+@font-face{font-family:"PJS";src:url("../deck/fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#E2E2DF}
+p,h2{margin:0}
+.deck{display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
+.slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;color:var(--ink);
+  padding:34px 48px 56px;display:flex;flex-direction:column;font:400 17px/1.42 var(--text);font-variant-numeric:lining-nums}
+@page{size:1280px 720px;margin:0}
+@media print{body{background:#fff}.deck{gap:0;padding:0;display:block}.slide{break-after:page}}
+.opt{position:absolute;top:0;right:48px;background:#1B1716;color:#fff;font:700 13px/1 Arial,sans-serif;letter-spacing:.6px;padding:8px 12px;border-radius:0 0 6px 6px}
+
+/* ---------- the three looks, as tokens ---------- */
+.lookA{--paper:#FFFFFF;--ink:#1B1716;--slate:#5E4A50;--grey:#8A747A;--rule:#E2CFD3;--block:#F4E6E9;--tint:#FBF3F4;
+  --accent:#C80E1E;--accent-deep:#8E0A16;--out:#3F3538;--label:#3F9A55;--label-ink:#FFFFFF;
+  --text:"PJS",Arial,sans-serif;--head:"PJS",Arial,sans-serif;--num:"PJS",Arial,sans-serif;--hw:800;--tw:700}
+.lookB{--paper:#FFFFFF;--ink:#16191D;--slate:#4F5660;--grey:#7D848D;--rule:#D9DDE2;--block:#EEF0F3;--tint:#F6F7F9;
+  --accent:#C2410C;--accent-deep:#8A2E08;--out:#2F3640;--label:#1E5C34;--label-ink:#FFFFFF;
+  --text:"IBM Plex Sans",Arial,sans-serif;--head:"IBM Plex Sans",Arial,sans-serif;--num:"IBM Plex Sans Condensed","IBM Plex Sans",Arial,sans-serif;--hw:700;--tw:600}
+.lookC{--paper:#FFFFFF;--ink:#1A1617;--slate:#5B4E50;--grey:#857779;--rule:#DCD3D4;--block:#F3EDEE;--tint:#FAF7F7;
+  --accent:#A3122A;--accent-deep:#6E0C1C;--out:#3A3436;--label:#5DAE5A;--label-ink:#1A1617;
+  --text:"Source Sans 3",Arial,sans-serif;--head:"Source Serif 4",Georgia,serif;--num:"Source Serif 4",Georgia,serif;--hw:700;--tw:600}
+
+.lookA2{--paper:#FFFFFF;--ink:#1B1716;--slate:#5E4A50;--grey:#8A747A;--rule:#E2CFD3;--block:#F4E6E9;--tint:#FBF3F4;
+  --accent:#C80E1E;--accent-deep:#8E0A16;--out:#3F3538;--label:#3F9A55;--label-ink:#FFFFFF;
+  --text:"PJS",Arial,sans-serif;--head:"PJS",Arial,sans-serif;--num:"PJS",Arial,sans-serif;--hw:800;--tw:700}
+.lookA2 .head{padding-bottom:12px;border-bottom:9px solid var(--ink)}
+.lookA2 .bs td{border-top:1.5px solid var(--ink)}
+.lookA2 .bs td.in,.lookA2 .bs td.out{background:transparent}
+.lookA2 .bs tr.tot td{border-top:6px solid var(--ink)}
+.lookA2 .sowhat{border-radius:0}
+/* ---------- shared structure ---------- */
+.kick{font:700 15px/1.3 var(--text);color:var(--accent);letter-spacing:.2px}
+h2{font:var(--tw) 34px/1.12 var(--head);letter-spacing:-.4px;margin-top:5px;max-width:1120px;text-wrap:balance}
+.body{flex:1;min-height:0;margin-top:20px;display:flex;gap:44px}
+.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px;border-radius:3px}
+.foot{position:absolute;left:48px;right:48px;bottom:16px;height:24px;display:flex;align-items:center;gap:18px;font:500 13px var(--text);color:var(--slate)}
+.line{display:flex;align-items:center}
+.st{position:relative;padding-left:15px;margin-right:30px;white-space:nowrap}
+.st::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;border:2px solid var(--grey);background:#fff}
+.st::after{content:"";position:absolute;left:calc(100% + 5px);top:50%;width:20px;height:2px;margin-top:-1px;background:var(--rule)}
+.st:last-child{margin-right:0}.st:last-child::after{display:none}
+.st.on{color:var(--ink);font-weight:700}.st.on::before{background:var(--accent);border-color:var(--accent)}
+.src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg{font-weight:700;color:var(--ink)}
+.chip{display:inline-block;white-space:nowrap;background:var(--label);color:var(--label-ink);font:800 16px/1 var(--text);padding:9px 14px;border-radius:20px}
+
+/* Look A: the ledger. The accent bar marks the slide's point; the two new columns carry "NEW" tabs */
+.lookA .head{border-left:6px solid var(--accent);padding:1px 0 2px 16px}
+/* Look B: the price tag. A notched tag marks the kicker; verdicts sit in tags */
+.lookB .kick{display:inline-flex;align-items:center;gap:10px}
+.lookB .kick::before{content:"";width:26px;height:16px;background:var(--accent);clip-path:polygon(7px 0,100% 0,100% 100%,7px 100%,0 50%)}
+/* Look C: the facts label. A thick ink rule under the title, thin rules between rows, a serif voice */
+.lookC .head{padding-bottom:12px;border-bottom:9px solid var(--ink)}
+.lookC .sowhat{border-radius:0}
+
+/* ---------- slide P: the pre-mortem ---------- */
+.storm{width:470px;flex:none;display:flex;flex-direction:column}
+.year{font:var(--hw) 150px/0.85 var(--num);color:var(--accent);letter-spacing:-4px}
+.lookB .year{letter-spacing:-2px}
+.storm .what{font:600 19px/1.35 var(--text);margin-top:18px}
+.shocks{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.shocks div{border-top:2px solid var(--ink);padding-top:7px}
+.shocks b{display:block;font:var(--hw) 32px/1 var(--num);color:var(--ink)}
+.shocks span{font:500 15px/1.3 var(--text);color:var(--slate)}
+.storm .note{margin-top:auto;font:500 13.5px/1.35 var(--text);color:var(--slate)}
+.result{flex:1;display:flex;flex-direction:column}
+.result .lab{font:700 15px/1.3 var(--text);color:var(--slate);letter-spacing:.2px}
+.big{font:var(--hw) 96px/0.95 var(--num);color:var(--accent);letter-spacing:-2px;margin-top:8px}
+.lookB .big{letter-spacing:-1px}
+.bar{position:relative;height:16px;background:var(--block);margin:20px 0 8px;border-radius:2px}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:2px}
+.bar u{position:absolute;top:-10px;bottom:-10px;width:3px;background:var(--ink)}
+.scale{display:flex;justify-content:space-between;font:500 13.5px var(--text);color:var(--slate)}
+.floor{font:700 16px/1.3 var(--text);margin-top:10px}
+.inh{margin-top:22px;border-top:2px solid var(--ink);padding-top:10px;display:flex;align-items:baseline;gap:16px}
+.inh b{font:var(--hw) 44px/1 var(--num)}
+.inh span{font:500 16px/1.35 var(--text);color:var(--slate)}
+.built{margin-top:auto;display:flex;align-items:center;gap:14px;font:600 16px/1.35 var(--text)}
+
+/* ---------- slide S: the balance sheet with two new columns ---------- */
+.bs{width:100%;border-collapse:collapse;table-layout:fixed}
+.bs th{font:700 13.5px/1.25 var(--text);letter-spacing:.6px;text-align:left;padding:10px 14px;color:var(--slate);vertical-align:bottom}
+.bs th.newin{background:var(--accent);color:#fff}
+.bs th.newout{background:var(--out);color:#fff}
+.lookA .bs th.newin,.lookA .bs th.newout{border-radius:8px 8px 0 0}
+.bs th .new{display:inline-block;font:800 10.5px/1 var(--text);background:#fff;color:var(--ink);padding:3px 5px;border-radius:3px;margin-right:7px;vertical-align:2px}
+.bs td{padding:14px 14px;border-top:1.5px solid var(--rule);vertical-align:top}
+.lookC .bs td{border-top:1.5px solid var(--ink)}
+.bs td.a{font:700 21px/1.25 var(--head)}
+.bs td.v{font:500 19px/1.25 var(--text);color:var(--slate);text-align:right;padding-right:24px}
+.bs td.in{background:var(--tint)}
+.bs td.out{background:var(--block)}
+.lookC .bs td.in,.lookC .bs td.out{background:transparent}
+.bs .n{font:var(--hw) 30px/1.05 var(--num);color:var(--accent);letter-spacing:-.4px}
+.bs .no{font:var(--hw) 26px/1.05 var(--num);color:var(--out);letter-spacing:-.3px}
+.bs .s{font:500 16px/1.35 var(--text);color:var(--slate);margin-top:3px}
+.bs .na{font:600 16px/1.35 var(--text);color:var(--slate)}
+.bs .loop{font:700 15px/1.35 var(--text);color:var(--accent-deep);margin-top:6px}
+.bs tr.esg td{border-top:none;padding-top:9px;padding-bottom:9px;background:transparent}
+.bs tr.esg td.a{padding-left:28px}
+.bs tr.tot td{border-top:2.5px solid var(--ink);font:700 18px/1.25 var(--text);padding-top:9px}
+.lookC .bs tr.tot td{border-top:6px solid var(--ink)}
+</style>
+</head>
+<body>
+<main class="deck">
+
+<section class="slide lookA">
+  <span class="opt">A · CRIMSON LEDGER · PLUS JAKARTA SANS · 1 OF 2</span>
+  <header class="head"><p class="kick">The pre-mortem · 2031, a scenario, not a forecast</p>
+    <h2>The plan built on green labels falls below the family's safety floor</h2></header>
+  <div class="body">
+    <div class="storm">
+      <p class="year">2031</p>
+      <p class="what">A late, sudden transition hits in 2030–31</p>
+      <div class="shocks">
+        <div><b>−14%</b><span>shares</span></div>
+        <div><b>−15%</b><span>their flat</span></div>
+        <div><b>−10%</b><span>the business's sale</span></div>
+        <div><b>+3%</b><span>prices, for good</span></div>
+      </div>
+      <p class="note">Sized between NGFS, HKMA, Bank of England, ECB and CISL scenarios (ILLUSTRATIVE)</p>
+    </div>
+    <div class="result">
+      <p class="lab">ODDS THEIR MONEY LASTS TO CARMEN'S 89</p>
+      <p class="big">84.1%</p>
+      <div class="bar"><i style="width:20.5%"></i><u style="left:25%"></u></div>
+      <div class="scale" style="position:relative;height:18px">
+        <span style="position:absolute;left:0">80%</span>
+        <span style="position:absolute;left:25%;transform:translateX(-50%);color:var(--ink);font-weight:700">85% floor</span>
+        <span style="position:absolute;right:0">100%</span></div>
+      <p class="floor">Below the floor we'd set for this family</p>
+      <div class="inh"><b>HK$6.83M</b><span>left to the children (median, today's money)</span></div>
+      <div class="built"><span class="chip">ESG ✓ 25%</span><span>The plan built on labels: funds from the SFC's ESG list, the bank's green mortgage, a pledge</span></div>
+    </div>
+  </div>
+  <p class="sowhat">Planners call this a pre-mortem: imagine the plan has failed, then ask why.</p>
+  <footer class="foot"><nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">Our model, 10,000 futures (MEASURED, exploratory runs)</p><span class="pg">1</span></footer>
+</section>
+<section class="slide lookA">
+  <span class="opt">A · CRIMSON LEDGER · PLUS JAKARTA SANS · 2 OF 2</span>
+  <header class="head"><p class="kick">Map · tests 2 and 3, both ways</p>
+    <h2>Climate reaches every line of a balance sheet; a label covers one</h2></header>
+  <div class="body" style="display:block">
+    <table class="bs">
+      <colgroup><col style="width:270px"><col style="width:120px"><col style="width:430px"><col></colgroup>
+      <tr><th>THE WONGS' ASSETS</th><th style="text-align:right;padding-right:24px">HK$</th>
+        <th class="newin"><span class="new">NEW</span>WHAT CLIMATE DOES TO IT</th>
+        <th class="newout"><span class="new">NEW</span>WHAT IT DOES TO CLIMATE</th></tr>
+      <tr><td class="a">Carmen's business</td><td class="v">5.0M</td>
+        <td class="in"><p class="n">−HK$1.55M</p><p class="s">Customers must report supply-chain carbon: if one worth 10% of sales leaves</p></td>
+        <td class="out"><p class="no">≈2,760–3,250 t a year</p><p class="s">98% the packaging it sells</p><p class="loop">↻ comes back as its customers' carbon</p></td></tr>
+      <tr><td class="a">The flat</td><td class="v">11.5M</td>
+        <td class="in"><p class="n">−HK$0.71M</p><p class="s">Older flats fall behind: if worth 10% less in 2037</p></td>
+        <td class="out"><p class="na">Home energy: not estimated</p></td></tr>
+      <tr><td class="a">Investments, cash, MPF</td><td class="v">10.47M</td>
+        <td class="in"><p class="n">−HK$2.48M</p><p class="s">A late, sudden carbon policy: markets fall, prices rise</p></td>
+        <td class="out"><p class="na" style="color:var(--ink)">A footprint they own, not one they change</p></td></tr>
+      <tr class="esg"><td class="a" style="font-size:17px"><span class="chip" style="font-size:13px;padding:6px 10px">ESG label</span> 25% of it</td><td class="v">2.6M</td>
+        <td colspan="2" style="font:700 16px/1.3 var(--text);color:var(--slate);padding-top:12px">← the only line the label approach works on</td></tr>
+      <tr class="tot"><td>Total assets</td><td class="v" style="color:var(--ink);font-weight:700">27.2M</td><td></td><td></td></tr>
+    </table>
+  </div>
+  <p class="sowhat">The label approach adds one line. The framework adds two columns to every line.</p>
+  <footer class="foot"><nav class="line"><span class="st on">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">The case p.4; our model (MEASURED, exploratory); tonnes ESTIMATED on an ILLUSTRATIVE business</p><span class="pg">4</span></footer>
+</section>
+<section class="slide lookA2">
+  <span class="opt">A′ · CRIMSON + FACTS-LABEL RULE · PLUS JAKARTA SANS · 1 OF 2</span>
+  <header class="head"><p class="kick">The pre-mortem · 2031, a scenario, not a forecast</p>
+    <h2>The plan built on green labels falls below the family's safety floor</h2></header>
+  <div class="body">
+    <div class="storm">
+      <p class="year">2031</p>
+      <p class="what">A late, sudden transition hits in 2030–31</p>
+      <div class="shocks">
+        <div><b>−14%</b><span>shares</span></div>
+        <div><b>−15%</b><span>their flat</span></div>
+        <div><b>−10%</b><span>the business's sale</span></div>
+        <div><b>+3%</b><span>prices, for good</span></div>
+      </div>
+      <p class="note">Sized between NGFS, HKMA, Bank of England, ECB and CISL scenarios (ILLUSTRATIVE)</p>
+    </div>
+    <div class="result">
+      <p class="lab">ODDS THEIR MONEY LASTS TO CARMEN'S 89</p>
+      <p class="big">84.1%</p>
+      <div class="bar"><i style="width:20.5%"></i><u style="left:25%"></u></div>
+      <div class="scale" style="position:relative;height:18px">
+        <span style="position:absolute;left:0">80%</span>
+        <span style="position:absolute;left:25%;transform:translateX(-50%);color:var(--ink);font-weight:700">85% floor</span>
+        <span style="position:absolute;right:0">100%</span></div>
+      <p class="floor">Below the floor we'd set for this family</p>
+      <div class="inh"><b>HK$6.83M</b><span>left to the children (median, today's money)</span></div>
+      <div class="built"><span class="chip">ESG ✓ 25%</span><span>The plan built on labels: funds from the SFC's ESG list, the bank's green mortgage, a pledge</span></div>
+    </div>
+  </div>
+  <p class="sowhat">Planners call this a pre-mortem: imagine the plan has failed, then ask why.</p>
+  <footer class="foot"><nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">Our model, 10,000 futures (MEASURED, exploratory runs)</p><span class="pg">1</span></footer>
+</section>
+<section class="slide lookA2">
+  <span class="opt">A′ · CRIMSON + FACTS-LABEL RULE · PLUS JAKARTA SANS · 2 OF 2</span>
+  <header class="head"><p class="kick">Map · tests 2 and 3, both ways</p>
+    <h2>Climate reaches every line of a balance sheet; a label covers one</h2></header>
+  <div class="body" style="display:block">
+    <table class="bs">
+      <colgroup><col style="width:270px"><col style="width:120px"><col style="width:430px"><col></colgroup>
+      <tr><th>THE WONGS' ASSETS</th><th style="text-align:right;padding-right:24px">HK$</th>
+        <th class="newin"><span class="new">NEW</span>WHAT CLIMATE DOES TO IT</th>
+        <th class="newout"><span class="new">NEW</span>WHAT IT DOES TO CLIMATE</th></tr>
+      <tr><td class="a">Carmen's business</td><td class="v">5.0M</td>
+        <td class="in"><p class="n">−HK$1.55M</p><p class="s">Customers must report supply-chain carbon: if one worth 10% of sales leaves</p></td>
+        <td class="out"><p class="no">≈2,760–3,250 t a year</p><p class="s">98% the packaging it sells</p><p class="loop">↻ comes back as its customers' carbon</p></td></tr>
+      <tr><td class="a">The flat</td><td class="v">11.5M</td>
+        <td class="in"><p class="n">−HK$0.71M</p><p class="s">Older flats fall behind: if worth 10% less in 2037</p></td>
+        <td class="out"><p class="na">Home energy: not estimated</p></td></tr>
+      <tr><td class="a">Investments, cash, MPF</td><td class="v">10.47M</td>
+        <td class="in"><p class="n">−HK$2.48M</p><p class="s">A late, sudden carbon policy: markets fall, prices rise</p></td>
+        <td class="out"><p class="na" style="color:var(--ink)">A footprint they own, not one they change</p></td></tr>
+      <tr class="esg"><td class="a" style="font-size:17px"><span class="chip" style="font-size:13px;padding:6px 10px">ESG label</span> 25% of it</td><td class="v">2.6M</td>
+        <td colspan="2" style="font:700 16px/1.3 var(--text);color:var(--slate);padding-top:12px">← the only line the label approach works on</td></tr>
+      <tr class="tot"><td>Total assets</td><td class="v" style="color:var(--ink);font-weight:700">27.2M</td><td></td><td></td></tr>
+    </table>
+  </div>
+  <p class="sowhat">The label approach adds one line. The framework adds two columns to every line.</p>
+  <footer class="foot"><nav class="line"><span class="st on">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">The case p.4; our model (MEASURED, exploratory); tonnes ESTIMATED on an ILLUSTRATIVE business</p><span class="pg">4</span></footer>
+</section>
+<section class="slide lookB">
+  <span class="opt">B · SIGNAL PRICE TAG · IBM PLEX SANS · 1 OF 2</span>
+  <header class="head"><p class="kick">The pre-mortem · 2031, a scenario, not a forecast</p>
+    <h2>The plan built on green labels falls below the family's safety floor</h2></header>
+  <div class="body">
+    <div class="storm">
+      <p class="year">2031</p>
+      <p class="what">A late, sudden transition hits in 2030–31</p>
+      <div class="shocks">
+        <div><b>−14%</b><span>shares</span></div>
+        <div><b>−15%</b><span>their flat</span></div>
+        <div><b>−10%</b><span>the business's sale</span></div>
+        <div><b>+3%</b><span>prices, for good</span></div>
+      </div>
+      <p class="note">Sized between NGFS, HKMA, Bank of England, ECB and CISL scenarios (ILLUSTRATIVE)</p>
+    </div>
+    <div class="result">
+      <p class="lab">ODDS THEIR MONEY LASTS TO CARMEN'S 89</p>
+      <p class="big">84.1%</p>
+      <div class="bar"><i style="width:20.5%"></i><u style="left:25%"></u></div>
+      <div class="scale" style="position:relative;height:18px">
+        <span style="position:absolute;left:0">80%</span>
+        <span style="position:absolute;left:25%;transform:translateX(-50%);color:var(--ink);font-weight:700">85% floor</span>
+        <span style="position:absolute;right:0">100%</span></div>
+      <p class="floor">Below the floor we'd set for this family</p>
+      <div class="inh"><b>HK$6.83M</b><span>left to the children (median, today's money)</span></div>
+      <div class="built"><span class="chip">ESG ✓ 25%</span><span>The plan built on labels: funds from the SFC's ESG list, the bank's green mortgage, a pledge</span></div>
+    </div>
+  </div>
+  <p class="sowhat">Planners call this a pre-mortem: imagine the plan has failed, then ask why.</p>
+  <footer class="foot"><nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">Our model, 10,000 futures (MEASURED, exploratory runs)</p><span class="pg">1</span></footer>
+</section>
+<section class="slide lookB">
+  <span class="opt">B · SIGNAL PRICE TAG · IBM PLEX SANS · 2 OF 2</span>
+  <header class="head"><p class="kick">Map · tests 2 and 3, both ways</p>
+    <h2>Climate reaches every line of a balance sheet; a label covers one</h2></header>
+  <div class="body" style="display:block">
+    <table class="bs">
+      <colgroup><col style="width:270px"><col style="width:120px"><col style="width:430px"><col></colgroup>
+      <tr><th>THE WONGS' ASSETS</th><th style="text-align:right;padding-right:24px">HK$</th>
+        <th class="newin"><span class="new">NEW</span>WHAT CLIMATE DOES TO IT</th>
+        <th class="newout"><span class="new">NEW</span>WHAT IT DOES TO CLIMATE</th></tr>
+      <tr><td class="a">Carmen's business</td><td class="v">5.0M</td>
+        <td class="in"><p class="n">−HK$1.55M</p><p class="s">Customers must report supply-chain carbon: if one worth 10% of sales leaves</p></td>
+        <td class="out"><p class="no">≈2,760–3,250 t a year</p><p class="s">98% the packaging it sells</p><p class="loop">↻ comes back as its customers' carbon</p></td></tr>
+      <tr><td class="a">The flat</td><td class="v">11.5M</td>
+        <td class="in"><p class="n">−HK$0.71M</p><p class="s">Older flats fall behind: if worth 10% less in 2037</p></td>
+        <td class="out"><p class="na">Home energy: not estimated</p></td></tr>
+      <tr><td class="a">Investments, cash, MPF</td><td class="v">10.47M</td>
+        <td class="in"><p class="n">−HK$2.48M</p><p class="s">A late, sudden carbon policy: markets fall, prices rise</p></td>
+        <td class="out"><p class="na" style="color:var(--ink)">A footprint they own, not one they change</p></td></tr>
+      <tr class="esg"><td class="a" style="font-size:17px"><span class="chip" style="font-size:13px;padding:6px 10px">ESG label</span> 25% of it</td><td class="v">2.6M</td>
+        <td colspan="2" style="font:700 16px/1.3 var(--text);color:var(--slate);padding-top:12px">← the only line the label approach works on</td></tr>
+      <tr class="tot"><td>Total assets</td><td class="v" style="color:var(--ink);font-weight:700">27.2M</td><td></td><td></td></tr>
+    </table>
+  </div>
+  <p class="sowhat">The label approach adds one line. The framework adds two columns to every line.</p>
+  <footer class="foot"><nav class="line"><span class="st on">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">The case p.4; our model (MEASURED, exploratory); tonnes ESTIMATED on an ILLUSTRATIVE business</p><span class="pg">4</span></footer>
+</section>
+<section class="slide lookC">
+  <span class="opt">C · FACTS LABEL · SOURCE SERIF + SANS · 1 OF 2</span>
+  <header class="head"><p class="kick">The pre-mortem · 2031, a scenario, not a forecast</p>
+    <h2>The plan built on green labels falls below the family's safety floor</h2></header>
+  <div class="body">
+    <div class="storm">
+      <p class="year">2031</p>
+      <p class="what">A late, sudden transition hits in 2030–31</p>
+      <div class="shocks">
+        <div><b>−14%</b><span>shares</span></div>
+        <div><b>−15%</b><span>their flat</span></div>
+        <div><b>−10%</b><span>the business's sale</span></div>
+        <div><b>+3%</b><span>prices, for good</span></div>
+      </div>
+      <p class="note">Sized between NGFS, HKMA, Bank of England, ECB and CISL scenarios (ILLUSTRATIVE)</p>
+    </div>
+    <div class="result">
+      <p class="lab">ODDS THEIR MONEY LASTS TO CARMEN'S 89</p>
+      <p class="big">84.1%</p>
+      <div class="bar"><i style="width:20.5%"></i><u style="left:25%"></u></div>
+      <div class="scale" style="position:relative;height:18px">
+        <span style="position:absolute;left:0">80%</span>
+        <span style="position:absolute;left:25%;transform:translateX(-50%);color:var(--ink);font-weight:700">85% floor</span>
+        <span style="position:absolute;right:0">100%</span></div>
+      <p class="floor">Below the floor we'd set for this family</p>
+      <div class="inh"><b>HK$6.83M</b><span>left to the children (median, today's money)</span></div>
+      <div class="built"><span class="chip">ESG ✓ 25%</span><span>The plan built on labels: funds from the SFC's ESG list, the bank's green mortgage, a pledge</span></div>
+    </div>
+  </div>
+  <p class="sowhat">Planners call this a pre-mortem: imagine the plan has failed, then ask why.</p>
+  <footer class="foot"><nav class="line"><span class="st">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">Our model, 10,000 futures (MEASURED, exploratory runs)</p><span class="pg">1</span></footer>
+</section>
+<section class="slide lookC">
+  <span class="opt">C · FACTS LABEL · SOURCE SERIF + SANS · 2 OF 2</span>
+  <header class="head"><p class="kick">Map · tests 2 and 3, both ways</p>
+    <h2>Climate reaches every line of a balance sheet; a label covers one</h2></header>
+  <div class="body" style="display:block">
+    <table class="bs">
+      <colgroup><col style="width:270px"><col style="width:120px"><col style="width:430px"><col></colgroup>
+      <tr><th>THE WONGS' ASSETS</th><th style="text-align:right;padding-right:24px">HK$</th>
+        <th class="newin"><span class="new">NEW</span>WHAT CLIMATE DOES TO IT</th>
+        <th class="newout"><span class="new">NEW</span>WHAT IT DOES TO CLIMATE</th></tr>
+      <tr><td class="a">Carmen's business</td><td class="v">5.0M</td>
+        <td class="in"><p class="n">−HK$1.55M</p><p class="s">Customers must report supply-chain carbon: if one worth 10% of sales leaves</p></td>
+        <td class="out"><p class="no">≈2,760–3,250 t a year</p><p class="s">98% the packaging it sells</p><p class="loop">↻ comes back as its customers' carbon</p></td></tr>
+      <tr><td class="a">The flat</td><td class="v">11.5M</td>
+        <td class="in"><p class="n">−HK$0.71M</p><p class="s">Older flats fall behind: if worth 10% less in 2037</p></td>
+        <td class="out"><p class="na">Home energy: not estimated</p></td></tr>
+      <tr><td class="a">Investments, cash, MPF</td><td class="v">10.47M</td>
+        <td class="in"><p class="n">−HK$2.48M</p><p class="s">A late, sudden carbon policy: markets fall, prices rise</p></td>
+        <td class="out"><p class="na" style="color:var(--ink)">A footprint they own, not one they change</p></td></tr>
+      <tr class="esg"><td class="a" style="font-size:17px"><span class="chip" style="font-size:13px;padding:6px 10px">ESG label</span> 25% of it</td><td class="v">2.6M</td>
+        <td colspan="2" style="font:700 16px/1.3 var(--text);color:var(--slate);padding-top:12px">← the only line the label approach works on</td></tr>
+      <tr class="tot"><td>Total assets</td><td class="v" style="color:var(--ink);font-weight:700">27.2M</td><td></td><td></td></tr>
+    </table>
+  </div>
+  <p class="sowhat">The label approach adds one line. The framework adds two columns to every line.</p>
+  <footer class="foot"><nav class="line"><span class="st on">Map</span><span class="st">Price</span><span class="st">Decide</span><span class="st">Govern</span></nav><p class="src">The case p.4; our model (MEASURED, exploratory); tonnes ESTIMATED on an ILLUSTRATIVE business</p><span class="pg">4</span></footer>
+</section>
+</main>
+</body>
+</html>
