@@ -21,9 +21,10 @@
 @font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
 @font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
 :root{
-  /* Look A′ (Pete, 11 Nov; Final_Plan.md §3 "Look"): Plus Jakarta Sans, the crimson accent, and the facts-label rule
-     (a thick ink rule under each title, ink rules between rows). Chosen from four options rendered side by side
-     (Final/looks/looks.html). Still to do: the 20-second projector test. Change values here; every slide follows. */
+  /* Look A (Pete, 11 Nov; Final_Plan.md §3 "Look"): Plus Jakarta Sans, the crimson accent, the crimson bar beside
+     each title, and the ledger's two new columns. A′'s thick rule under the title was tried and dropped the same day.
+     Chosen from options rendered side by side (Final/looks/looks.html). Still to do: the 20-second projector test.
+     Change values here; every slide follows. */
   --paper:#FFFFFF; --mist:#FBF3F4; --block:#F4E6E9; --rule:#E2CFD3; --grey:#8A747A;   /* tints wash out on a projector:
                                                                     use them for fills behind ink, never for text */
   --ink:#1B1716; --slate:#5E4A50;                                    /* slate 8.2:1 on white: the lightest text colour */
@@ -57,8 +58,8 @@ b,strong{font-weight:600}
 .ic.lg{width:28px;height:28px}
 .ic.sm{width:16px;height:16px}
 
-/* header: the kicker names the step and its rule; the title is the idea (any client); the facts-label rule under it */
-.head{padding-bottom:12px;border-bottom:9px solid var(--ink)}
+/* header: the kicker names the step and its rule; the title is the idea (any client); the crimson bar marks the point */
+.head{border-left:6px solid var(--accent);padding:1px 0 2px 16px}
 .kick{font:700 15px/1.3 var(--head);color:var(--accent);letter-spacing:.2px}
 .head h2{font:700 34px/1.12 var(--head);letter-spacing:-.4px;margin-top:5px;max-width:1120px;text-wrap:balance}
 
@@ -81,7 +82,7 @@ b,strong{font-weight:600}
 .todo b{color:var(--ink)}
 
 /* the one-sentence conclusion */
-.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px}
+.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px;border-radius:3px}
 
 /* footer: the framework tracker (Profile · Risk · Impact · Select · Monitor), the brief's areas, the source, the page */
 .foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:18px;font-size:12px;color:var(--slate)}
@@ -103,9 +104,9 @@ b,strong{font-weight:600}
 
 /* tables */
 table{border-collapse:collapse;width:100%}
-th,td{text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);vertical-align:top}
+th,td{text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--rule);vertical-align:top}
 th{font:700 14px/1.3 var(--head);color:var(--slate);border-bottom:1.5px solid var(--ink)}
-tr.total td{border-top:6px solid var(--ink);font-weight:700}
+tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 
 /* type scale (projector): titles 34, column heads 19-21, body 16-19, smallest 13 (footer only), big numbers 30-150 */
 
@@ -134,7 +135,7 @@ tr.total td{border-top:6px solid var(--ink);font-weight:700}
     <div class="todo">
       <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 1.</p>
       <p>Form (a draft, not an order): A plain dated card and three numbers from the model (M8), then the four labels and what each does; ends on the gap and one line of our result.</p>
-      <p>Mockup: <code>Final/looks/look-option-03.png (the pre-mortem in look A′)</code></p>
+      <p>Mockup: <code>Final/looks/look-option-01.png (the pre-mortem in look A)</code></p>
     </div>
   </div>
   <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Say "Team Axis" before the first words. Evidence status per claim in §4.5.]</aside>
@@ -155,7 +156,7 @@ tr.total td{border-top:6px solid var(--ink);font-weight:700}
     <div class="todo">
       <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 2.</p>
       <p>Form (a draft, not an order): Five letters, five twists: each letter with the usual way and ours (§4.2); the two directions in R and I; built on double materiality, applied to a family's whole balance sheet; the five kinds of finance sorted by direction (small).</p>
-      
+      <p>Mockup: <code>Final/looks/prism-light.png</code> or <code>prism-dark.png</code> (Pete to choose)</p>
     </div>
   </div>
   <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>
@@ -197,7 +198,7 @@ tr.total td{border-top:6px solid var(--ink);font-weight:700}
     <div class="todo">
       <p><b>To build (Lookbua).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 4.</p>
       <p>Form (a draft, not an order): The balance sheet with two new columns, cause first; the loop; the rules that reach them and the one that doesn't.</p>
-      <p>Mockup: <code>Final/looks/look-option-04.png (in look A′; band.png is the alternative)</code></p>
+      <p>Mockup: <code>Final/looks/look-option-02.png (in look A; band.png is the alternative)</code></p>
     </div>
   </div>
   <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
@@ -344,7 +345,7 @@ tr.total td{border-top:6px solid var(--ink);font-weight:700}
     <div class="todo">
       <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 11.</p>
       <p>Form (a draft, not an order): Our plan under the same scenario against the label approach; the honest reason; the balance sheet complete; the honest split; the framework on one page; the callback.</p>
-      <p>Mockup: <code>Final/looks/look-option-04.png (complete, after the plan)</code></p>
+      <p>Mockup: <code>Final/looks/look-option-02.png (complete, after the plan)</code></p>
     </div>
   </div>
   <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>

@@ -165,7 +165,7 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
 
 ## Building the deck
 **The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/` holds one placeholder slide per
-row of storyline v4 (`Final_Plan.md` §4.5), each pointing at what it must prove. The look is A′ (`Final_Plan.md` §3): its tokens are in
+row of storyline v4 (`Final_Plan.md` §4.5), each pointing at what it must prove. The look is A (`Final_Plan.md` §3): its tokens are in
 `Final/deck/src/00_head.html`.
 ```
 .venv/Scripts/python.exe Final/deck/make.py [--pages 3,4] [--builds]   # Axis.html, the script (Axis_Script.md), PNGs in build/

@@ -206,7 +206,8 @@ advantages above survive that, as long as the talk stands alone (§3).
   sourced inputs) or ILLUSTRATIVE (our assumption). The brief asks for "measured, estimated and illustrative"; showing
   the tags is itself an answer to it.
 - **HK dollars only.** Sources on the slide, dated.
-- **Look: A′** (Pete, 11 Nov; chosen from four options rendered on the same two slides, `Final/looks/looks.html`):
+- **Look: A** (Pete, 11 Nov; chosen from four options rendered on the same two slides, `Final/looks/looks.html`; A′'s
+  thick rule under the title was tried and dropped the same day: Pete didn't like the bold underline):
   - **Type:** Plus Jakarta Sans for every role (text, heads, numbers), as in Round Two: heavy weights read from the
     back of a room, it's installed for the PowerPoint step to embed, and Pete chose one sans family over serif titles
     on 23 Oct. Scale: titles 34px, column heads 19–21, body 16–19, footer 13, big numbers 30–150. Nothing under 16px
@@ -215,10 +216,11 @@ advantages above survive that, as long as the talk stands alone (§3).
     `#1B1716`; slate `#5E4A50` (8.2:1) is the lightest text colour; `#3F3538` for what the money does to the world
     (tonnes). **Green `#3F9A55` has one job, the label**, always with its word on it: it passes both red-green
     colour-blind checks against the crimson (ΔE 26 and 28; Round Two's `#2F7A43` failed protanopia at 15).
-  - **The decorative idea: the facts-label rule.** A thick ink rule under each title and ink rules between rows,
-    as on a nutrition-facts label: the talk opens on a green label and ends its demonstration on the family's
-    honest one (Climate Facts, slide 10). Pale tints only behind ink, never as the carrier of meaning: projectors
-    wash them out.
+  - **The decorative idea: the ledger.** The crimson bar beside each title marks the slide's point; the balance sheet's
+    two new columns ("what climate does to it", "what it does to climate") carry "NEW" tabs and come back as the
+    recurring picture. Pale fills sit behind ink only: projectors wash them out, so check them on the projector.
+  - **One exception, slide 2:** the PRISM diagram (a glass prism splitting one beam into the five letters), drawn as
+    a picture so it looks the same in any PowerPoint. Light or dark version: Pete to choose (`Final/looks/`).
   - **Not used:** the house; Morph or any transition (the venue's PowerPoint version is unknown); serif titles;
     colour alone for any status. Embed the font.
   - **Still to test:** 20 seconds on a projector or a TV from across a room (the light green, the slate text).
@@ -451,7 +453,7 @@ mandate); the risk register; the decision list (each decision's tag, corner, ins
 dashboard.
 
 **The pictures** (rough mockups in Round Two's colours, `Final/looks/`; the look is still open, §3):
-- **R and I: the balance sheet with two new columns** (`two-columns.png`; in look A′, `look-option-04.png`): the case's assets, plus "what climate does to it"
+- **R and I: the balance sheet with two new columns** (`two-columns.png`; in look A, `look-option-02.png`): the case's assets, plus "what climate does to it"
   and "what it does to climate". It is the recurring picture: it fills in as the talk goes, each Decide slide highlights
   its row, and the replay shows the whole sheet after the plan. Line: *"The label approach adds one line. The framework
   adds two columns to every line."* Alternative if it reads too much like a spreadsheet: the band (`band.png`), the only
