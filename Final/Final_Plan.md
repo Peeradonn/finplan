@@ -477,7 +477,8 @@ NGFS, HKMA, BoE, ECB and CISL bounds, `area4_property_scenario.md` §5.1). The o
 **84.1%**, below the floor we'd set for this family (85%), and the children's median inheritance to **HK$6.83M** (M8,
 EXPLORATORY). *"Planners call this a pre-mortem: imagine the plan has failed, then ask why."* Then why: the tools they
 were handed were labels (**179 funds on the SFC's list of ESG funds**, saved 4 Nov, re-count on Sun 15; the four labels
-and what each does, `research/hook_fact_checks.md`; the US$0 fund's wording waits on Win's call). Say "a careful planner
+and what each does, `research/hook_fact_checks.md`; the US$0 fund: the record only, "US$0 at every filing for two years", since we won't call the manager, Pete, 11 Nov;
+never "never launched"). Say "a careful planner
 uses these tools; we did too", never that clients want labels or that planners only sell them. The gap: **a label says
 what a product is called, not what climate does to the client's money, or what the money does to climate.** Then one
 line of our result, so a number lands in the first minute (Key Areas §7: "Lead with a recommendation").
@@ -607,7 +608,9 @@ factory owner exporting to the EU** (the border carbon tax and a sustainability-
 not built yet, and its verdicts need checking before anyone says them on stage).
 
 **Waiting on evidence** (fallback in brackets):
-- The chosen numbers in `export_numbers()` (slides 1, 3, 4, 5, 11): Pete. [Brackets stay until then.]
+- The chosen numbers in `export_numbers()` (slides 1, 3, 4, 5, 11): **slide 4's are in** (`fin_cust10_leg`,
+  `fin_flat10_leg`, `fin_shockport_leg` and their odds, 11 Nov, through `Final/final_model.py` `export_final()`); the rest
+  follow slide by slide. [Brackets stay until then.]
 - **Re-base the label approach on a fund that can be bought** (Pete, 10 Nov): Win picks a fund on the SFC's ESG list
   with assets, an offering document and a published fee; Pete re-runs the label approach, the headline and the replay
   (slides 1, 3, 11). Today's ≈HK$1.1M "cheaper funds" compares against the US$0 fund's 0.775% fee, never verified.
@@ -622,7 +625,8 @@ not built yet, and its verdicts need checking before anyone says them on stage).
 - Whether ESG funds lose less under stress (slide 9): Win, with a sourced assumption. [Say "not measured; no credit
   given".]
 - Physical risk priced into the flat's insurance and value (slides 4, 6): Lookbua. [Say "not priced yet".]
-- Win's call about the US$0 fund (slide 1): Thu 12. [The record only: "US$0 at every filing for two years".]
+- ~~Win's call about the US$0 fund~~ **No call (Pete, 11 Nov):** slide 1 uses the record only, "on the SFC's list of
+  ESG funds; US$0 at every filing for two years, and its own series' accounts don't count it"; never "never launched".
 - The SFC list count (slide 1): re-count Sun 15.
 - Lighter packaging as a decision (slide 7): Fahtai adds it to `Decision_List.md`. [Leave it on the cost curve only.]
 
@@ -724,7 +728,7 @@ inheritance in HK$ (`Decision_List.md` §4). **Recommended, Pete to confirm:** a
 4. **The Round One fund: recommended (9 Nov), on stage, without naming the manager aloud.** The spoken line: "a fund
    on the SFC's list of ESG funds has held nothing for two years"; the slide's footnote names the fund and the three
    sources, so a judge can check it. Naming a Hong Kong manager on stage reads as an attack; the point is the label, not
-   the firm. If a judge who read Round One asks, own it (§8). Wording waits on Win's call (`research/boc_fund_call.md`).
+   the firm. If a judge who read Round One asks, own it (§8). No call (Pete, 11 Nov): the record-only wording in `research/boc_fund_call.md`.
 
 | Who | Owns | Starts now (needs no one) | Gives (to whom, by when) |
 |---|---|---|---|

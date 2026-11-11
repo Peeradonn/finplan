@@ -241,6 +241,27 @@ def stressed(base, sc, mult, biz_add=0.0, flows=None, **kw):
                inflows=plus(sc["inflows"], flows), biz=biz, **kw)
 
 
+# ---------- the slides' numbers (into figures/numbers.json through run_model.export_numbers()) ----------
+def export_final():
+    """The Final deck's model numbers, formatted as printed, on the Final's base (`switch_89`, Pete 9 Nov). Added slide by
+    slide (Final_Plan.md §4.5); every key starts with "fin_". Each is the change in the children's median inheritance at
+    Carmen's 89 (today's HK$, including the flat), or in the odds (points), against the base."""
+    base = {**m.full_plan(), "med": m.SWITCH}
+    b = run(base)
+    dM = lambda r: ("−" if r["leg_med"] < b["leg_med"] else "+") + f"HK${abs(r['leg_med'] - b['leg_med']):.2f}M"
+    dP = lambda r: f"{(r['odds'] - b['odds']) * 100:+.1f}".replace("-", "−")
+    out = {}
+    # slide 4 (R and I): what each climate route does to the family's money, each on its own (M3, M6, M7)
+    r = run(base, biz=m.BIZ - STAKE_PER_PCT * 10 * HAIRCUT)          # a customer worth 10% of sales leaves
+    out["fin_cust10_leg"], out["fin_cust10_pts"] = dM(r), dP(r)
+    r = run(base, "rmp", lambda y: 0.9 if y >= m.RMP_Y else 1.0)     # older flats fall behind: 10% lower from 2037
+    out["fin_flat10_leg"], out["fin_flat10_pts"] = dM(r), dP(r)
+    sc, _ = scenario()
+    r = run(base, ret_add=sc["ret_add"], level=sc["level"])          # a late, sudden carbon policy: the portfolio
+    out["fin_shockport_leg"], out["fin_shockport_pts"] = dM(r), dP(r)
+    return out
+
+
 # ---------- the runs ----------
 def main():
     if hasattr(sys.stdout, "reconfigure"):

@@ -112,6 +112,36 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 
 /* ---- forms for the Final go below, one commented block per form; class names are global, so grep first ---- */
 
+/* ---- slide 4: the balance sheet with two new columns (s4- classes; the "NEW" tabs are look A's ledger idea) ---- */
+.s4-sheet{width:100%;border-collapse:collapse;table-layout:fixed}
+.s4-sheet th{font:700 14px/1.25 var(--text);letter-spacing:.6px;text-align:left;padding:9px 14px;color:var(--slate);
+  vertical-align:bottom;border-bottom:none}
+.s4-sheet th em{display:block;font:500 14px/1.3 var(--text);letter-spacing:0;font-style:normal;margin-top:2px;opacity:.85}
+.s4-sheet th.in{background:var(--accent);color:#fff;border-radius:8px 8px 0 0}
+.s4-sheet th.out{background:var(--out);color:#fff;border-radius:8px 8px 0 0}
+.s4-sheet th .new{display:inline-block;font:800 10.5px/1 var(--text);background:#fff;color:var(--ink);padding:3px 5px;
+  border-radius:3px;margin-right:7px;vertical-align:1px}
+.s4-sheet th.v,.s4-sheet td.v{text-align:right;padding-right:24px}
+.s4-sheet td{padding:10px 14px;border-top:1.5px solid var(--rule);border-bottom:none;vertical-align:top}
+.s4-sheet td.a{font:700 21px/1.25 var(--head)}
+.s4-sheet td.v{font:500 19px/1.25 var(--text);color:var(--slate)}
+.s4-sheet td.in{background:var(--mist)}
+.s4-sheet td.out{background:var(--block)}
+.s4-sheet .n{font:800 28px/1.05 var(--num);color:var(--accent);letter-spacing:-.3px}
+.s4-sheet .no{font:800 25px/1.05 var(--num);color:var(--out);letter-spacing:-.3px}
+.s4-sheet .s{font:500 16px/1.35 var(--text);color:var(--slate);margin-top:3px}
+.s4-sheet .na{font:600 16px/1.35 var(--text);color:var(--slate);margin-top:4px}
+.s4-sheet .ink{font:600 16px/1.35 var(--text);color:var(--ink)}
+.s4-sheet .loop{font:700 15px/1.35 var(--text);color:var(--accent-deep);margin-top:5px}
+.s4-sheet tr.esg td{border-top:none;padding-top:8px;padding-bottom:8px}
+.s4-sheet tr.esg td.a{font:700 17px/1.25 var(--text);padding-left:28px}
+.s4-sheet .s4-chip{font-size:13px;padding:6px 10px;vertical-align:1px}
+.s4-sheet .esgnote{font:700 16px/1.3 var(--text);color:var(--slate);padding-top:12px}
+.s4-sheet tr.tot td{border-top:2.5px solid var(--ink);font:700 18px/1.25 var(--text);padding-top:9px}
+.s4-sheet tr.tot td.v{color:var(--ink)}
+.s4-rules{margin-top:10px;font:500 15px/1.45 var(--text);color:var(--slate)}
+.s4-rules b{font-weight:700;color:var(--ink)}
+
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
 .slide.s2-stage{padding:0;display:block;background:#120E0F;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}
@@ -213,24 +243,49 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </footer>
 </section>
 
-<!-- 4 · Lookbua, 0:45 -->
+<!-- 4 · Lookbua, 0:45. The recurring picture (Final_Plan.md §4.2, "The pictures"): the case's balance sheet with two
+     new columns. Slides 6-9 highlight one row each; the replay (11) shows it complete. Model numbers are "fin_" keys in double braces
+     (Final/final_model.py export_final(), through model/run_model.py export_numbers()); case figures and the research
+     briefs' tonnes are typed, with their tags. -->
 <section class="slide" id="s4" data-time="0:45" data-speaker="Lookbua">
   <header class="head">
     <p class="kick">R and I · both ways</p>
     <h2>Climate reaches every line of a balance sheet; a label covers one</h2>
   </header>
-  <div class="body">
-    <div class="todo">
-      <p><b>To build (Lookbua).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 4.</p>
-      <p>Form (a draft, not an order): The balance sheet with two new columns, cause first; the loop; the rules that reach them and the one that doesn't.</p>
-      <p>Mockup: <code>Final/looks/look-option-02.png (in look A; band.png is the alternative)</code></p>
-    </div>
+  <div class="body stack">
+    <table class="s4-sheet">
+      <colgroup><col style="width:286px"><col style="width:96px"><col style="width:432px"><col></colgroup>
+      <tr><th>THE WONGS' ASSETS</th><th class="v">HK$</th>
+        <th class="in"><span class="new">NEW</span>WHAT CLIMATE DOES TO IT<em>children's inheritance, if it happens</em></th>
+        <th class="out"><span class="new">NEW</span>WHAT IT DOES TO CLIMATE<em>t CO2e a year</em></th></tr>
+      <tr><td class="a">Carmen's business</td><td class="v">5.0M</td>
+        <td class="in"><p class="n">−HK$1.55M</p><p class="s">Customers must report supply-chain carbon: if one worth 10% of sales leaves</p></td>
+        <td class="out"><p class="no">≈2,760–3,250 t</p><p class="s">98% is the packaging it sells</p><p class="loop">↻ comes back as its customers' carbon</p></td></tr>
+      <tr><td class="a">The flat</td><td class="v">11.5M</td>
+        <td class="in"><p class="n">−HK$0.71M</p><p class="s">Older flats fall behind: if it's worth 10% less in 2037</p>
+          <p class="na">Typhoon, flood, heat: not priced yet</p></td>
+        <td class="out"><p class="na">Home energy: not estimated</p></td></tr>
+      <tr><td class="a">Investments, cash, MPF</td><td class="v">10.47M</td>
+        <td class="in"><p class="n">−HK$2.48M</p><p class="s">A late, sudden carbon policy: markets fall, prices rise</p></td>
+        <td class="out"><p class="ink">A footprint they own, not one they change</p></td></tr>
+      <tr class="esg"><td class="a"><span class="chip s4-chip">ESG ✓</span> 25% of it</td><td class="v">2.6M</td>
+        <td colspan="2" class="esgnote">← the only line the label approach works on</td></tr>
+      <tr class="tot"><td>Total assets</td><td class="v">27.2M</td><td></td><td></td></tr>
+    </table>
+    <div class="s4-rules"><p><b>Rules that reach them:</b> HKEX supply-chain carbon reporting from FY2026 · the plastics
+      rules · lenders' limits on old buildings</p><p><b>One that doesn't:</b> the EU's border carbon tax (paper and plastic
+      aren't covered)</p></div>
   </div>
-  <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <p class="sowhat">The label approach adds one line. The framework adds two columns to every line.</p>
+  <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says her simple name before her part. Must prove:
+    Final_Plan.md §4.5, slide 4. Each money figure is the change in the children's median inheritance at Carmen's 89,
+    each on its own (our model, M3, M6, M7: MEASURED, exploratory runs); tonnes ESTIMATED on an ILLUSTRATIVE business
+    (area2_business.md §3b); assets: the case, p.4 (the total includes the car); 2.6M = 25% of 10.47M. Rules:
+    HKEX Listing Rules App. C2; Cap. 603 and EPD; HKMC age-plus-term limit; EU CBAM Reg. 2025/2083.]</aside>
   <footer class="foot">
     <nav class="line"><span class="st">Profile</span><span class="st on">Risk</span><span class="st on">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
     <span class="areas">Areas 2, 4, 5</span>
-    <p class="src">Sources: to add</p><span class="pg">4</span>
+    <p class="src">Case p.4 · our model (MEASURED) · tonnes ESTIMATED, ILLUSTRATIVE business · HKEX App. C2 · EU CBAM</p><span class="pg">4</span>
   </footer>
 </section>
 

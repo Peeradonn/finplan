@@ -553,7 +553,16 @@ def export_numbers():
     finally:
         M_LR = keep
     N["med45_89"] = P(s89(full, med=f45))
+    # the Final's slides (Final/final_model.py, export_final(); Final_Plan.md §4.5): keys start with "fin_" (11 Nov)
+    N.update(final_numbers())
     return N
+
+
+def final_numbers():
+    """The Final deck's numbers. Final/final_model.py imports this module, so it is imported here, lazily."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Final"))
+    import final_model
+    return final_model.export_final()
 
 # ---------- printout ----------
 def main():

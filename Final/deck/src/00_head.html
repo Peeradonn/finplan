@@ -112,6 +112,36 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 
 /* ---- forms for the Final go below, one commented block per form; class names are global, so grep first ---- */
 
+/* ---- slide 4: the balance sheet with two new columns (s4- classes; the "NEW" tabs are look A's ledger idea) ---- */
+.s4-sheet{width:100%;border-collapse:collapse;table-layout:fixed}
+.s4-sheet th{font:700 14px/1.25 var(--text);letter-spacing:.6px;text-align:left;padding:9px 14px;color:var(--slate);
+  vertical-align:bottom;border-bottom:none}
+.s4-sheet th em{display:block;font:500 14px/1.3 var(--text);letter-spacing:0;font-style:normal;margin-top:2px;opacity:.85}
+.s4-sheet th.in{background:var(--accent);color:#fff;border-radius:8px 8px 0 0}
+.s4-sheet th.out{background:var(--out);color:#fff;border-radius:8px 8px 0 0}
+.s4-sheet th .new{display:inline-block;font:800 10.5px/1 var(--text);background:#fff;color:var(--ink);padding:3px 5px;
+  border-radius:3px;margin-right:7px;vertical-align:1px}
+.s4-sheet th.v,.s4-sheet td.v{text-align:right;padding-right:24px}
+.s4-sheet td{padding:10px 14px;border-top:1.5px solid var(--rule);border-bottom:none;vertical-align:top}
+.s4-sheet td.a{font:700 21px/1.25 var(--head)}
+.s4-sheet td.v{font:500 19px/1.25 var(--text);color:var(--slate)}
+.s4-sheet td.in{background:var(--mist)}
+.s4-sheet td.out{background:var(--block)}
+.s4-sheet .n{font:800 28px/1.05 var(--num);color:var(--accent);letter-spacing:-.3px}
+.s4-sheet .no{font:800 25px/1.05 var(--num);color:var(--out);letter-spacing:-.3px}
+.s4-sheet .s{font:500 16px/1.35 var(--text);color:var(--slate);margin-top:3px}
+.s4-sheet .na{font:600 16px/1.35 var(--text);color:var(--slate);margin-top:4px}
+.s4-sheet .ink{font:600 16px/1.35 var(--text);color:var(--ink)}
+.s4-sheet .loop{font:700 15px/1.35 var(--text);color:var(--accent-deep);margin-top:5px}
+.s4-sheet tr.esg td{border-top:none;padding-top:8px;padding-bottom:8px}
+.s4-sheet tr.esg td.a{font:700 17px/1.25 var(--text);padding-left:28px}
+.s4-sheet .s4-chip{font-size:13px;padding:6px 10px;vertical-align:1px}
+.s4-sheet .esgnote{font:700 16px/1.3 var(--text);color:var(--slate);padding-top:12px}
+.s4-sheet tr.tot td{border-top:2.5px solid var(--ink);font:700 18px/1.25 var(--text);padding-top:9px}
+.s4-sheet tr.tot td.v{color:var(--ink)}
+.s4-rules{margin-top:10px;font:500 15px/1.45 var(--text);color:var(--slate)}
+.s4-rules b{font-weight:700;color:var(--ink)}
+
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
 .slide.s2-stage{padding:0;display:block;background:#120E0F;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}

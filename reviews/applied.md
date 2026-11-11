@@ -399,3 +399,13 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
 - Paying for the carbon data costs the new plan ≈HK$0.10–0.13M (normal); its benefit (customers kept, M3) isn't modelled.
 - No existing line of `model_runs.md` changed (diff: additions only; a rerun reproduces the file). `run_model.py` and
   `numbers.json` untouched.
+
+### Final (11 Nov): the Final's slide numbers enter `numbers.json` (`fin_` keys)
+- `model/run_model.py` `export_numbers()` now ends with `N.update(final_numbers())`; `final_numbers()` imports
+  `Final/final_model.py` lazily and returns its `export_final()`: the Final deck's numbers, formatted as printed, on the
+  Final's base (`switch_89`). Keys start with `fin_`; they are added slide by slide.
+- Slide 4: `fin_cust10_leg` −HK$1.55M (`fin_cust10_pts` −2.4), a customer worth 10% of sales leaves (M3);
+  `fin_flat10_leg` −HK$0.71M (−0.5), the old flat 10% lower from 2037, reverse mortgage (M6); `fin_shockport_leg`
+  −HK$2.48M (−3.8), the 2030–31 shock on the portfolio (M7). They match `Final/model_runs.md`.
+- `figures/numbers.json` was rewritten by the same `export_numbers()` call `make_charts.py` makes (charts not rerun:
+  nothing they draw changed). Diff: 266 existing values unchanged, none removed, 6 added.

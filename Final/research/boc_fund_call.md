@@ -1,5 +1,9 @@
 # Win's call to BOCI-Prudential: the ESG fund that holds US$0 (9 Nov)
 
+**Not calling (Pete, 11 Nov).** Slide 1 uses the record only (the "No answer" line in the table below):
+"On the SFC's list of ESG funds. US$0 at every filing for two years, and its own series' accounts don't count it."
+Never "never launched". The questions below stay as the reference if a judge asks.
+
 **Why we're calling.** The opening slide may say "a fund on the SFC's list of ESG funds holds no money". The records show
 zero assets; they don't say why. The call turns "the record shows zero" into "the manager confirms", or tells us to
 change the line. Ask as a student researching for a financial-planning competition, not as a client: name and "Team

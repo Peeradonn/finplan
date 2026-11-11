@@ -264,5 +264,11 @@
  "premiums_avg": "HK$114K",
  "surplus": "HK$718K",
  "no_med_1_89": "64%",
- "med45_89": "91%"
+ "med45_89": "91%",
+ "fin_cust10_leg": "−HK$1.55M",
+ "fin_cust10_pts": "−2.4",
+ "fin_flat10_leg": "−HK$0.71M",
+ "fin_flat10_pts": "−0.5",
+ "fin_shockport_leg": "−HK$2.48M",
+ "fin_shockport_pts": "−3.8"
 }
