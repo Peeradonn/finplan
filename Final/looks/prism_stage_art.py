@@ -7,7 +7,8 @@ A, B, C = (420, 240), (285, 620), (555, 620)
 D = (72, -42)
 A2, B2, C2 = [(x + D[0], y + D[1]) for x, y in (A, B, C)]
 E = (352, 430)          # the beam enters the front face
-X = (535, 442)          # and leaves the right face
+X = (536, 444)          # the middle of the exit, on the right face
+EXITS = [(522, 405), (529, 425), (536, 445), (543, 465), (550, 485)]   # where each colour leaves the glass
 FLOOR = 620
 RX = 724                # where the rays reach the letters
 ROWS = [  # letter, colour, name, question, the usual way, ours
@@ -46,10 +47,15 @@ defs = [
     '<linearGradient id="fan" x1="0" y1="0" x2="0" y2="1">'
     + "".join(f'<stop offset="{i / 4:.2f}" stop-color="{r[1]}"/>' for i, r in enumerate(ROWS)) + '</linearGradient>',
 ]
-for i, (r, y) in enumerate(zip(ROWS, YS)):
-    defs.append(f'<linearGradient id="ray{i}" gradientUnits="userSpaceOnUse" x1="{X[0]}" y1="{X[1]}" x2="{RX}" y2="{y}">'
-                f'<stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".25" stop-color="{r[1]}" stop-opacity="1"/>'
-                f'<stop offset="1" stop-color="{r[1]}" stop-opacity=".75"/></linearGradient>')
+for i, (r, y, ex) in enumerate(zip(ROWS, YS, EXITS)):
+    defs.append(f'<linearGradient id="in{i}" gradientUnits="userSpaceOnUse" x1="{E[0]}" y1="{E[1]}" x2="{ex[0]}" y2="{ex[1]}">'
+                f'<stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity=".55"/>'
+                f'<stop offset="1" stop-color="{r[1]}" stop-opacity=".95"/></linearGradient>')
+    defs.append(f'<linearGradient id="ray{i}" gradientUnits="userSpaceOnUse" x1="{ex[0]}" y1="{ex[1]}" x2="{RX}" y2="{y}">'
+                f'<stop offset="0" stop-color="{r[1]}" stop-opacity="1"/><stop offset="1" stop-color="{r[1]}" stop-opacity=".78"/></linearGradient>')
+defs.append(f'<linearGradient id="core" gradientUnits="userSpaceOnUse" x1="{E[0]}" y1="{E[1]}" x2="{X[0]}" y2="{X[1]}">'
+            '<stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity=".25"/>'
+            '<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>')
 
 
 def prism(alpha=1.0):
@@ -81,13 +87,17 @@ g.append(f'<line x1="160" y1="{E[1]}" x2="{E[0]}" y2="{E[1]}" stroke="#FFFFFF" s
 for k, xx in enumerate(range(185, 345, 23)):
     g.append(f'<circle cx="{xx}" cy="{E[1] + (7 if k % 2 else -8)}" r="1.4" fill="#FFFFFF" fill-opacity=".5"/>')
 g.append(prism())
-# inside the glass: the beam bends
-g.append(f'<polygon points="{pt((E[0], E[1] - 5), (X[0], X[1] - 9), (X[0], X[1] + 9), (E[0], E[1] + 5))}" fill="#FFFFFF" fill-opacity=".6" filter="url(#glow)"/>')
-# the five rays
-for i, y in enumerate(YS):
+# inside the glass: the white beam fades as it spreads into a narrow coloured fan
+g.append(f'<polygon points="{pt((E[0], E[1] - 5), (X[0], X[1] - 3), (X[0], X[1] + 3), (E[0], E[1] + 5))}" fill="url(#core)" filter="url(#glow)"/>')
+for i, ex in enumerate(EXITS):
+    g.append(f'<polygon points="{pt((E[0], E[1] - 2.5), (ex[0], ex[1] - 3.5), (ex[0], ex[1] + 3.5), (E[0], E[1] + 2.5))}" '
+             f'fill="url(#in{i})" filter="url(#glow)"/>')
+# out of the glass: each colour from its own point on the face
+for i, (y, ex) in enumerate(zip(YS, EXITS)):
     w = 20
-    g.append(f'<polygon points="{pt((X[0], X[1] - 2), (RX, y - w / 2), (RX, y + w / 2), (X[0], X[1] + 2))}" fill="url(#ray{i})" filter="url(#glow)"/>')
-g.append(f'<circle cx="{X[0]}" cy="{X[1]}" r="26" fill="url(#spot)"/>')
+    g.append(f'<polygon points="{pt((ex[0], ex[1] - 3.5), (RX, y - w / 2), (RX, y + w / 2), (ex[0], ex[1] + 3.5))}" '
+             f'fill="url(#ray{i})" filter="url(#glow)"/>')
+g.append(f'<ellipse cx="{X[0]}" cy="{X[1]}" rx="15" ry="58" fill="url(#spot)" opacity=".75" transform="rotate(-20 {X[0]} {X[1]})"/>')
 svg = f'<svg viewBox="0 0 1280 720" width="1280" height="720" style="position:absolute;left:0;top:0">{"".join(g)}</svg>'
 
 rows = "".join(
