@@ -111,7 +111,7 @@ Target = emergency 1,000,000 + education 2,567,698 (half deposits, half short bo
 | A. Low returns every year | 32% | 95% |
 | B. Inflation + medical costs | 28% | 92% |
 
-## fin-storm-path: Final deck slide 5. The parents' net worth at the start of each year (median portfolio, the flat less its loans, the business at its sale price until 2039), HK$M today's money: the plan in a normal future against the 2030-31 scenario on every channel (M7, All together)
+## fin-storm-path: Final deck backup 12 (cut slide 5). The parents' net worth at the start of each year (median portfolio, the flat less its loans, the business at its sale price until 2039), HK$M today's money: the plan in a normal future against the 2030-31 scenario on every channel (M7, All together)
 
 | Year | Normal | Storm | Gap |
 |---|---|---|---|
@@ -156,3 +156,49 @@ Target = emergency 1,000,000 + education 2,567,698 (half deposits, half short bo
 | 2064 | 14.115 | 9.688 | -4.428 |
 | 2065 | 13.564 | 9.021 | -4.543 |
 | 2066 | 13.008 | 8.404 | -4.604 |
+
+## fin-label-path: Final deck slide 1. The same measure for the family that followed the labels (the label approach, as in M8): a normal future against the same 2030-31 scenario
+
+| Year | Normal | Storm | Gap |
+|---|---|---|---|
+| 2026 | 19.922 | 19.922 | +0.000 |
+| 2027 | 20.697 | 20.697 | +0.000 |
+| 2028 | 21.453 | 21.436 | -0.017 |
+| 2029 | 22.243 | 22.209 | -0.033 |
+| 2030 | 23.042 | 22.993 | -0.050 |
+| 2031 | 23.865 | 21.642 | -2.222 |
+| 2032 | 24.707 | 21.572 | -3.135 |
+| 2033 | 25.569 | 22.457 | -3.112 |
+| 2034 | 26.465 | 23.374 | -3.091 |
+| 2035 | 27.395 | 24.327 | -3.068 |
+| 2036 | 28.346 | 25.311 | -3.035 |
+| 2037 | 29.281 | 26.280 | -3.001 |
+| 2038 | 27.455 | 24.438 | -3.017 |
+| 2039 | 27.578 | 24.532 | -3.046 |
+| 2040 | 25.826 | 22.747 | -3.079 |
+| 2041 | 25.358 | 22.222 | -3.136 |
+| 2042 | 24.925 | 21.743 | -3.182 |
+| 2043 | 24.373 | 21.142 | -3.231 |
+| 2044 | 23.873 | 20.599 | -3.275 |
+| 2045 | 23.304 | 19.969 | -3.336 |
+| 2046 | 22.702 | 19.315 | -3.387 |
+| 2047 | 22.026 | 18.610 | -3.417 |
+| 2048 | 21.525 | 18.055 | -3.470 |
+| 2049 | 21.042 | 17.486 | -3.556 |
+| 2050 | 20.527 | 16.935 | -3.592 |
+| 2051 | 19.948 | 16.304 | -3.644 |
+| 2052 | 19.384 | 15.677 | -3.707 |
+| 2053 | 18.759 | 15.019 | -3.739 |
+| 2054 | 18.175 | 14.354 | -3.821 |
+| 2055 | 17.501 | 13.614 | -3.887 |
+| 2056 | 16.804 | 12.898 | -3.906 |
+| 2057 | 16.171 | 12.158 | -4.013 |
+| 2058 | 15.692 | 11.641 | -4.051 |
+| 2059 | 15.239 | 11.120 | -4.120 |
+| 2060 | 14.760 | 10.555 | -4.205 |
+| 2061 | 14.294 | 10.034 | -4.260 |
+| 2062 | 13.693 | 9.411 | -4.282 |
+| 2063 | 13.153 | 8.751 | -4.402 |
+| 2064 | 12.624 | 8.159 | -4.465 |
+| 2065 | 11.988 | 7.472 | -4.517 |
+| 2066 | 11.379 | 6.826 | -4.553 |

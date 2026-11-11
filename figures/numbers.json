@@ -282,5 +282,8 @@
  "fin_storm_odds": "89.5%",
  "fin_base_leg89": "HK$13.0M",
  "fin_storm_leg89": "HK$8.4M",
- "fin_storm_gap32": "−HK$3.1M"
+ "fin_storm_gap32": "−HK$3.1M",
+ "fin_lab_homebiz": "47%",
+ "fin_lab_gap32": "HK$3.1M",
+ "fin_lab_gap89": "HK$4.6M"
 }

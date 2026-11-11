@@ -298,15 +298,36 @@ def storm_path():
     return a, s
 
 
+@functools.lru_cache(maxsize=None)
+def label_storm_path():
+    """Slide 1 (the open, Pete 11 Nov): the family that followed the labels (the label approach: the plan plus the
+    unfunded lifelong pledge, as in M8) in a normal future against the same 2030-31 scenario. Stops unless each path
+    ends at run()'s and stressed()'s inheritance."""
+    base = {**m.full_plan(), "med": m.SWITCH}
+    sc, mult = scenario()
+    pl = scholarship_as_written()
+    a = net_worth_path(base, inflows=pl)
+    s = net_worth_path(base, mult, biz_from=min(sc["ret_add"]) + 1, ret_add=sc["ret_add"], level=sc["level"],
+                       inflows=plus(sc["inflows"], pl), biz=sc["biz"])
+    for p, r in ((a, run(base, inflows=pl)), (s, stressed(base, sc, mult, flows=pl))):
+        if abs(p[END] - r["leg_med"]) > 1e-9:
+            sys.exit(f"label_storm_path() does not end at the label approach's inheritance: {p[END]} vs {r['leg_med']}")
+    return a, s
+
+
 def export_final_series():
     """The Final deck's chart series, as (heading, markdown table) for figures/figure-data.md (through
     run_model.final_series() and make_charts.py); Final/deck/series.py draws them."""
-    a, s = storm_path()
-    rows = "\n".join(f"| {t} | {a[t]:.3f} | {s[t]:.3f} | {s[t] - a[t]:+.3f} |" for t in sorted(a))
-    return [("fin-storm-path: Final deck slide 5. The parents' net worth at the start of each year (median portfolio, "
-             "the flat less its loans, the business at its sale price until 2039), HK$M today's money: the plan in a "
-             "normal future against the 2030-31 scenario on every channel (M7, All together)",
-             "| Year | Normal | Storm | Gap |\n|---|---|---|---|\n" + rows)]
+    out = []
+    for name, what, (a, s) in (
+            ("fin-storm-path", "backup 12 (cut slide 5). The parents' net worth at the start of each year (median "
+             "portfolio, the flat less its loans, the business at its sale price until 2039), HK$M today's money: the "
+             "plan in a normal future against the 2030-31 scenario on every channel (M7, All together)", storm_path()),
+            ("fin-label-path", "slide 1. The same measure for the family that followed the labels (the label approach, "
+             "as in M8): a normal future against the same 2030-31 scenario", label_storm_path())):
+        rows = "\n".join(f"| {t} | {a[t]:.3f} | {s[t]:.3f} | {s[t] - a[t]:+.3f} |" for t in sorted(a))
+        out.append((f"{name}: Final deck {what}", "| Year | Normal | Storm | Gap |\n|---|---|---|---|\n" + rows))
+    return out
 
 
 # ---------- the slides' numbers (into figures/numbers.json through run_model.export_numbers()) ----------
@@ -341,6 +362,17 @@ def export_final():
     out["fin_base_leg89"], out["fin_storm_leg89"] = f"HK${b['leg_med']:.1f}M", f"HK${allr['leg_med']:.1f}M"
     a, s = storm_path()
     out["fin_storm_gap32"] = f"−HK${a[2032] - s[2032]:.1f}M"         # the gap once the two years are over
+    # slide 1 (the open): the family that followed the labels, in the same storm
+    pl = scholarship_as_written()
+    ln = run(base, inflows=pl)
+    lp = [x["leg_med"] - ln["leg_med"] for x in (
+        run(base, inflows=pl, ret_add=sc["ret_add"], level=sc["level"]),        # the portfolio
+        run(base, "rmp", mult, inflows=pl),                                     # the flat
+        run(base, biz=sc["biz"], inflows=plus(sc["inflows"], pl)))]             # the business
+    out["fin_lab_homebiz"] = f"{(lp[1] + lp[2]) / sum(lp):.0%}"     # share of the loss on the home and the business
+    a, s = label_storm_path()
+    out["fin_lab_gap32"] = f"HK${a[2032] - s[2032]:.1f}M"             # poorer within two years
+    out["fin_lab_gap89"] = f"HK${a[END] - s[END]:.1f}M"               # what the children inherit, at the end
     return out
 
 

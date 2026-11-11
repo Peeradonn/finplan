@@ -425,3 +425,13 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   HK$13.0M, `fin_storm_leg89` HK$8.4M, `fin_storm_gap32` −HK$3.1M. They match M7 in `Final/model_runs.md`.
 - `make_charts.py` rerun in full. Diff: every existing value of `numbers.json` unchanged, none removed, 12 added;
   `figure-data.md` gains only the new table; no chart changed.
+
+### Final (11 Nov): slide 1's numbers (`Final/final_model.py`)
+- New `label_storm_path()`: `net_worth_path()` for the label approach (the plan plus the unfunded lifelong pledge, as in
+  M8), a normal future against the 2030–31 scenario; it stops unless each path ends exactly at `run()`'s and
+  `stressed()`'s inheritance (11.379 and 6.826). Its series goes to `figure-data.md` as "fin-label-path";
+  `Final/deck/series.py` now draws two charts (prefixes `sp` and `lp`).
+- New keys: `fin_lab_gap32` HK$3.1M (poorer within two years), `fin_lab_gap89` HK$4.6M (less for the children at the
+  end), `fin_lab_homebiz` 47% (the home's and the business's share of the loss, each run on its own).
+- `make_charts.py` rerun in full. Diff: every existing value of `numbers.json` unchanged, none removed, 3 added;
+  `figure-data.md` gains the new table, and the "fin-storm-path" heading now says backup 12 (slide 5 was cut).
