@@ -235,7 +235,7 @@ futures: it can't show anything.)
      +HK$1.28M at HK$25/L, +HK$1.95M at the list price). It slightly overstates: Carmen's stake falls as the staged sale proceeds from 2035, and the model
      sells in one lump in 2039.
    - **In the headline:** no. It needs the co-founder's consent and rests on ILLUSTRATIVE business numbers, so the
-     headline stays the conservative +HK$2.44M against the label approach; the dividend is one line on slide 6 ("from 2033,
+     headline stays the conservative +HK$2.44M against the label approach; the dividend is one line on slide 7, the business's second ("from 2033,
      paying it out adds ≈HK$1.1M for the children"). Ignore the upper bound (payouts from 2028, +HK$2.7M).
 3. **Don't credit sustainability with plan hygiene.** Of the new plan's +HK$2.44M against the label approach, roughly
    HK$1.1M is cheaper fund wrappers and HK$0.8M is funding the scholarship properly; the vans give ≈HK$0.5M. The talk

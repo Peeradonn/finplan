@@ -13,7 +13,7 @@ What changes from Round Two (a live talk on the venue's notebook and projector):
   is still in the file, so it reads complete in edit view and in print.
 - **No Morph, no transitions:** the venue's PowerPoint version is unknown (AGENTS.md). Steps still to come show grey
   until spoken unless the slide has class "reveal", which makes them appear from nothing.
-- Sections follow storyline v4; slides after 11 go into "Backup for the questions".
+- Sections follow storyline v4 (slide 5 cut, 11 Nov); slides after 10 go into "Backup for the questions".
 
 How (unchanged from Round Two):
 1. pptx_extract.js runs inside headless Chrome on a copy of Axis.html and reads every slide's layout: boxes, fills,
@@ -57,9 +57,9 @@ OUT = os.path.join(HERE, "Axis.pptx")                     # the one file: submit
 WORK = os.path.join(HERE, "build", "pptx")
 CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
           r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
-TALK_SECTIONS = [("The pre-mortem", [1]), ("PRISM", [2]), ("Profile: our advice", [3]), ("Risk and impact", [4, 5]),
-                 ("Select", [6, 7, 8, 9]), ("Monitor", [10]), ("The replay", [11])]
-SECTIONS = TALK_SECTIONS        # set from the slide count in main(); slides after 11 are the backup
+TALK_SECTIONS = [("The pre-mortem", [1]), ("PRISM", [2]), ("Profile: our advice", [3]), ("Risk and impact", [4]),
+                 ("Select", [5, 6, 7, 8]), ("Monitor", [9]), ("The replay", [10])]
+SECTIONS = TALK_SECTIONS        # set from the slide count in main(); slides after 10 are the backup
 E = 9525                                   # EMU per CSS px (a 1280 px slide is 13.333 in)
 A = "http://schemas.openxmlformats.org/drawingml/2006/main"
 FONT = {400: "Plus Jakarta Sans", 500: "Plus Jakarta Sans Medium", 600: "Plus Jakarta Sans SemiBold",
@@ -850,13 +850,13 @@ def main():
     print("extracted:", len(data["slides"]), "slides,", len(data["assets"]), "pictures and drawings;",
           data["check"]["pseudos"], "pseudo-elements made real,", data["check"]["moved"], "elements moved by it")
     info = slide_info(deck)
-    # sections: storyline v4, then everything after slide 11 as the backup for the questions
+    # sections: storyline v4 (slide 5 cut, 11 Nov), then everything after slide 10 as the backup for the questions
     global SECTIONS
     n = len(info)
     SECTIONS = [(name, [i for i in nums if i <= n]) for name, nums in TALK_SECTIONS]
     SECTIONS = [(name, nums) for name, nums in SECTIONS if nums]
-    if n > 11:
-        SECTIONS.append(("Backup for the questions", list(range(12, n + 1))))
+    if n > 10:
+        SECTIONS.append(("Backup for the questions", list(range(11, n + 1))))
     # one file: the submitted one is the one used on the day, so it carries the click builds
     raw = os.path.join(WORK, "Axis_raw.pptx")
     counts = build(data, info, raw, cal, present=True)
