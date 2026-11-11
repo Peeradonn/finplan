@@ -32,7 +32,7 @@ Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:04, Fahtai 0:02, Win 0
 
 **Lookbua:** [script to write]
 
-> Notes: Lookbua says her simple name before her part. Must prove: Final_Plan.md §4.5, slide 4. Money: change in the children's median inheritance at Carmen's 89, each on its own (our model, M3, M6, M7: MEASURED, exploratory runs). Customers: HKEX Listing Rules App. C2 (LargeCap Scope 3 from FY2026, first reports 2027). Tonnes: area2_business.md §3b (ESTIMATED, ILLUSTRATIVE business).
+> Notes: Lookbua says her simple name before her part. Must prove: Final_Plan.md §4.5, slide 4. Money: change in the children's median inheritance at Carmen's 89, each on its own (our model, M3, M6, M7: MEASURED, exploratory runs). Customers: HKEX Listing Rules App. C2 (LargeCap Scope 3 from FY2026, first reports 2027). Tonnes: area2_business.md §3b (ESTIMATED, ILLUSTRATIVE business). Older flats, if asked "isn't that just ageing?": HKMA Research Memorandum 05/2023 finds that in a hotter Hong Kong (HKO's "High" scenario) average prices could be 4% to 21% lower by about 2050, and "the older the property, the larger the expected adverse impact". Ageing would lower an old flat's price anyway; the climate part is the extra the HKMA finds. Our −10% by 2037 is a test, not the HKMA's number (ILLUSTRATIVE); area4_property_scenario.md §3.3. The packaging share (98%) is on slide 7; shares as a footprint, not a change, on slide 9.
 
 ## 5 · Test the whole household in one storm: climate hits every asset at once, and the loss lasts
 *Lookbua · 0:40 · 3 spoken words (≈1 s at 135)*
