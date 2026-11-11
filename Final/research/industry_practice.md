@@ -16,6 +16,13 @@ climate does to a client's **whole household** (the home, a business, the plan's
 what ESG did to their money, and the climate scenarios Morgan Stanley does run protect **the firm's own book**. That is
 the gap PRISM fills. (Inference from two documents; see the caveats.)
 
+**Widened the same day (§6–8 below):** two documents can't show "what's being done" (Pete), so two researchers checked
+the rules in the EU, UK, Hong Kong and Singapore, four Hong Kong banks' public pages, surveys of adviser practice,
+professional-body guidance, and anyone who already looks at a client's whole household. The verdict holds, and gets
+sharper: **the law, the training and the banks all point ESG in advice at products; banks do assess climate risk to a
+client's home and business, but for their own lending, not in the client's advice.** The nearest counter-examples
+(J.P. Morgan Private Bank's warning about home insurance; the HKMA's stress test and building-risk platform) are in §8.
+
 ## 1. What they do (SOURCED, with pages)
 
 **JPMorgan Asset Management (inside its funds)**
@@ -76,7 +83,7 @@ outcome" (p. 20), which supports a late, sudden transition as a scenario worth t
 
 **The one-line version:** *the best firms make ESG part of the portfolio; PRISM makes climate part of the plan.*
 
-## 4. Caveats (how far this evidence goes)
+## 4. Caveats (how far the first two documents go; §6–8 widen it)
 - **Two firms, both global, both leaders.** Hong Kong practice may be thinner: we found no Hong Kong rule that makes
   advisers ask about sustainability preferences (Final_Plan.md §9, CHECK). So "even the leaders" is the safer claim, not
   "every planner".
@@ -100,3 +107,96 @@ outcome" (p. 20), which supports a late, sudden transition as a scenario worth t
 4. **Hard question to add to §8:** *"Morgan Stanley already lets clients set impact profiles. What's new?"* Answer: their
    tool measures how the portfolio lines up with the client's values; we start from the family's limits, test every asset
    the family owns in one storm, and price each decision in HK$. We'd use a tool like theirs inside our Impact step.
+
+## 6. The rules: what advice must do (two researchers, 11 Nov; all pages accessed 11 Nov 2026)
+
+Tags as the researchers gave them: SOURCED (the primary text was read), SECONDARY (law firm or news summary),
+UNVERIFIED (couldn't open). **Re-open any line before saying it on stage** (§9 of the plan).
+
+- **EU, the legal default (SOURCED).** Delegated Regulation (EU) 2021/1253, applying from 2 Aug 2022, Art 2(7): a client's
+  sustainability preferences are "a client's or potential client's choice as to whether and, if so, to what extent, one or
+  more of the following **financial instruments** shall be integrated into his or her investment": a minimum share of
+  Taxonomy-aligned investments, a minimum share of SFDR sustainable investments, or a product that considers principal
+  adverse impacts. Nothing about the client's home or business.
+- **ESMA's suitability guidelines** (ESMA35-43-3172, 23 Sep 2022, SOURCED), para 81: "Sustainability preferences should only
+  be addressed once the suitability has been assessed ... in a second step the product ... that fulfils the client's
+  sustainability preferences should be identified." A client who doesn't answer can be treated as "sustainability-neutral".
+- **ESMA's review of 245 firms** (ESMA35-915049491-6291, 6 May 2026, SOURCED): the questionnaire is "the most popular
+  means"; the most common method applies preferences "on average at the level of the portfolio as a whole"; Taxonomy
+  ranges offered to clients "frequently remain below 10%", set "to correspond to the sustainable products currently
+  available in their offering"; some firms collect preferences "only for those product categories included in their own
+  offering".
+- **UK** (SECONDARY; the FCA's site refused automated reading): four fund labels since 2024 (Sustainability Focus,
+  Improvers, Impact, Mixed Goals) and an anti-greenwashing rule; the SDR rules don't cover advisers' suitability checks.
+  The industry's Advisers' Sustainability Group (*Sustainability in Practice*, Sept 2026, SOURCED) recommends asking
+  preferences as "standard practice"; its questions are all about investments, and it treats the client's banking,
+  mortgage and insurance as optional areas "beyond investment" (p. 36).
+- **Hong Kong** (SOURCED):
+  - SFC ESG funds circular (21EC27, 29 Jun 2021): how ESG funds are named and disclosed; nothing on advisers or clients.
+  - HKMA, *Sale and Distribution of Green and Sustainable Investment Products* (29 Nov 2023), FAQ Q7: "Is it mandatory for
+    RIs to make enquiry about a customer's sustainability preference? **It is not a mandatory requirement.**" Asking is
+    listed as good practice, with the EU's "sustainability-neutral" wording.
+  - HKMA, *Due diligence processes for green and sustainable products* (9 Dec 2022): green mortgages mean BEAM Plus
+    Platinum or Gold buildings; green personal loans are mainly for electric cars. Retail green lending is label-based too.
+  - Insurance Authority and IFPHK: nothing found on advice (UNVERIFIED negatives).
+- **Singapore** (SOURCED): MAS Circular CFC 02/2022 (28 Jul 2022) governs ESG fund names and disclosure (a fund that only
+  screens or only integrates ESG for returns "would not be regarded as having an ESG investment focus"). No adviser rule
+  found (UNVERIFIED).
+
+## 7. What Hong Kong banks show wealth clients (public pages, SOURCED unless noted)
+- **HSBC HK:** a "Sustainability Preferences Questionnaire" in online banking ("just a few minutes"); product tiers
+  (Enhanced, Thematic, Purpose); an ESG tick box to filter funds. No household or carbon report.
+- **Standard Chartered** (Sustainable Investing approach, Apr 2026): a "sustainable investment universe" of funds, equities,
+  bonds and structured products, chosen by Morningstar's "ESG Intentional Investments" label and Sustainalytics risk ratings.
+- **BOCHK:** a green mortgage for BEAM Plus Platinum or Gold projects, an electric-car green loan, a green time deposit, an
+  ESG multi-asset fund. No climate tool for customers.
+- **Hang Seng:** "green and ESG investment funds, bonds and equity-linked structured products"; a 2022 "Invest Green"
+  promotion with lucky draws.
+- So in Hong Kong "the usual way" is a shelf of labelled products, sometimes with a preference questionnaire (HSBC asks,
+  though no rule requires it).
+
+## 8. Practice, and the counter-examples (who comes closest to PRISM)
+
+**Surveys of practice** (SOURCED unless noted): Capgemini (Sept 2023; 3,170+ wealthy investors, ~800 relationship
+managers): 63% of wealthy investors likely to request "the ESG score of an asset"; 61% of firms have embedded ESG
+"across their investment portfolios". Cerulli (US, 2024, SECONDARY): 65% of advisers don't discuss ESG with clients. No
+survey found that measures advisers' climate work on clients' homes or businesses. The one figure on climate beyond the
+portfolio comes from clients: Allianz Life's 2024 retirement study (US, 1,000 adults): of those worried about extreme
+weather, "just 10%" have discussed it with a financial professional (an insurer's survey; US only).
+
+**Professional bodies:** CFA Institute's Sustainable Investing Certificate: all eight topics are investment topics. FPSB:
+no climate or sustainability guidance found. UK PFS good-practice guide (2021): every question is about investments.
+
+**The counter-examples, closest first:**
+1. **J.P. Morgan Private Bank** (16 May 2025, SOURCED): "Luxury housing is more often situated in climate risky areas where
+   insurers are pulling coverage ... Consider insurance challenges in the context of your long-term wealth plan." Advice in
+   general, not a priced assessment of the client's own home.
+2. **The HKMA's climate stress test** (2023–24, 46 banks, SOURCED): physical risk covered "mortgages and other types of
+   property-related lending" and borrowers such as manufacturers; one bank modelled owners' building-upgrade costs hurting
+   their "ability to repay mortgage loans". It measured **the banks' capital** (ratios fell 1.4–3.1 points).
+3. **The HKMA's Physical Risk Assessment Platform** (with KPMG and XDI; 2024, formal Jul 2025, SOURCED): rates "residential
+   and commercial buildings in Hong Kong under different climate scenarios", free for banks only. HKMA good practices (Oct
+   2025): banks track "credit exposures with property collateral vulnerable to physical risks". **The tool that could rate
+   the Wongs' flat exists in Hong Kong; only their bank can use it, for its own loan.** No evidence the results reach the
+   borrower as advice.
+4. **UBS Global Family Office Report 2024** (SOURCED): 57% of family offices with an operating business apply
+   sustainability considerations to it, or plan to. The nearest to "looking both ways" across a family's business.
+5. Start-ups building "climate-aware planning" (Stewy & Terra, SECONDARY); Ortec's private-wealth platform (UNVERIFIED).
+   Check these two before claiming no one prices a household.
+6. **Double materiality for a household:** no published application found (moderate confidence). The EU's adverse-impact
+   preference is inside-out at product level only; Citi HK and BOCHK apps track a customer's spending footprint.
+
+**What we may say** (the evidence supports it): *"The rules and the training point ESG in advice at products: the EU
+defines a client's sustainability preferences as a choice of financial instruments, and Hong Kong's bank regulator says
+asking is 'not a mandatory requirement'. Banks do assess climate risk to a client's home and business, but for their own
+lending. We found no adviser who prices one family's home, business, retirement and insurance under one climate
+scenario."*
+
+**What we must not say:** "nobody does this"; "first ever"; "advisers ignore homes" (J.P. Morgan, the US FPA's training
+and some UK planners raise it); that HKMA results never reach borrowers (say we found no evidence); the Allianz 10% as
+adviser practice; any UNVERIFIED line; "double materiality has never been applied to households" (say we found no
+published application).
+
+**Strongest objection on stage:** "Banks already do this." Answer: *for their own book* (the HKMA's test and platform) or
+*as general advice* (J.P. Morgan); not priced for the client's whole plan. And a better PRISM: **ask the bank for the
+flat's physical-risk rating** in the Risk step (buy the information, test 8).
