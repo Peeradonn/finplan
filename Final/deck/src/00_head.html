@@ -108,6 +108,16 @@ b,strong{font-weight:600}
 .badge-prism p{font:700 14px/1.2 var(--text);letter-spacing:.4px;color:var(--slate)}
 .badge-prism p span{display:block;font:500 12px/1.3 var(--text);letter-spacing:0;color:var(--grey);margin-top:1px}
 .kick b.k-impact{color:var(--I)}
+/* the twist kicker (Pete, 11 Nov): a step slide names its PRISM letter and the twist slide 2 gives it, so the framework
+   is the spine of every slide, not only of slide 2. kt- classes only here. */
+.kt{display:flex;align-items:center;gap:9px;white-space:nowrap}
+.kt-L{display:inline-flex;align-items:center;justify-content:center;width:23px;height:23px;border-radius:3px;
+  color:#fff;background:var(--accent);font:800 14px/1 var(--head)}
+.sec-P .kt-L{background:var(--P)} .sec-R .kt-L{background:var(--R)} .sec-S .kt-L{background:var(--S)}
+.sec-M .kt-L{background:var(--M)} .kt-L.kt-I{background:var(--I);margin-left:-5px}
+.kt-n{font-weight:800;margin-right:4px} .kt-n .kt-i{color:var(--I)}
+.kt-do{font:700 15px/1.3 var(--text);color:var(--ink)}
+.kt-not{font:500 15px/1.3 var(--text);color:var(--grey)}
 /* each section's kicker and side bar take its letter's colour, matching the lit ray in the badge */
 .sec-P .head{border-left-color:var(--P)} .sec-P .kick{color:var(--P)}
 .sec-R .head{border-left-color:var(--R)} .sec-R .kick{color:var(--R)}
