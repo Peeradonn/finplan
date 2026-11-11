@@ -20,12 +20,12 @@ Speaking time at 135 words a minute: Pete 1:08, Lookbua 0:02, Fahtai 0:02, Win 0
 
 > Notes: Pete says his simple name before his part. What it must prove: Final/Final_Plan.md §4.5, slide 2, and §4.2 "five letters, five twists". Evidence status per claim in §4.5.
 
-## 3 · [For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less]
+## 3 · Set each person's limits first; then every decision is priced against them
 *Pete · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Pete:** [script to write]
 
-> Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.
+> Notes: Pete says his simple name before his part. Wants: the case's words (Award2026Case, background and goals). Limits: ours (Final_Plan.md §4.2): the floors of 95 and 85 in 100 (Pete, 10 Nov), the family values budget (≈HK$1.4M expected, ≈HK$1.7M at worst; MODEL, EXPLORATORY), tracking-error limits (Adrian ≤0.5% a year, Carmen ≤3%), the education reserve (HK$2.57M, Round One). Capital: Decision_List.md §2 (ESTIMATED). Outcomes: model_runs.md (EXPLORATORY until the re-base): +HK$2.44M against the label approach in a normal future, +HK$2.25M under stress; ≈134 t a year (ESTIMATED; 108 t rest on recycled PET at parity). The honest split: ≈HK$0.5M the vans; the rest cheaper funds and the scholarship funded. The case's ESG goal is "to align at least 20% to 25% of investable assets with ESG principles through appropriate product selection and due diligence": the label approach in the client's own words.
 
 ## 4 · Climate lands on the plan's biggest moments; a label checks only today's funds
 *Lookbua · 0:55 · 3 spoken words (≈1 s at 135)*

@@ -145,6 +145,32 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s4-lbl p{font:600 13px/1.3 var(--text);color:var(--leaf)}
 .s4-lbl .chip{font-size:14px;padding:7px 11px}
 
+/* ---- slide 3: Profile, the family and their limits, and the answer (s3- classes; Pete, 11 Nov) ---- */
+.s3-body{display:flex;gap:28px;align-items:stretch}
+.s3-left{flex:1;display:flex;flex-direction:column}
+.s3-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--P);margin-bottom:10px}
+.s3-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.s3-p{border-top:5px solid var(--P);background:#FBF4EC;border-radius:0 0 6px 6px;padding:10px 12px}
+.s3-n{font:800 18px/1.2 var(--head)}
+.s3-r{font:500 13.5px/1.3 var(--text);color:var(--slate)}
+.s3-w{font:500 14.5px/1.3 var(--text);font-style:italic;margin-top:6px}
+.s3-l{font:700 14.5px/1.3 var(--text);color:var(--P);margin-top:6px}
+.s3-own{font:500 15.5px/1.4 var(--text);margin:12px 0 14px}
+.s3-own i{color:var(--slate)}
+.s3-lims{display:flex;gap:12px}
+.s3-lims div{flex:1;border-left:3px solid var(--P);padding:2px 0 2px 12px}
+.s3-lims b{display:block;font:800 24px/1.1 var(--num);color:var(--P)}
+.s3-lims span{display:block;font:500 14px/1.3 var(--text);margin-top:4px}
+.s3-ans{width:410px;flex:none;background:var(--ink);color:#fff;border-radius:8px;padding:20px 22px;display:flex;flex-direction:column}
+.s3-acap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#F4B740}
+.s3-big{font:800 40px/1.1 var(--head);margin-top:10px}
+.s3-cap2{font:500 15px/1.4 var(--text);color:#D8CFD1;margin-top:6px;padding-bottom:14px;border-bottom:1px solid #3A2F31}
+.s3-cap2 b{color:#fff}
+.s3-out{margin-top:14px}
+.s3-out b{display:block;font:800 34px/1.1 var(--num);color:#fff}
+.s3-out span{display:block;font:500 15px/1.3 var(--text);color:#D8CFD1}
+.s3-split{margin-top:auto;font:500 13.5px/1.4 var(--text);color:#B9ACAF;font-style:italic;padding-top:12px}
+
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
 .slide.s2-stage{padding:0;display:block;background:#120E0F;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}
@@ -319,23 +345,53 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     Final/Final_Plan.md §4.5, slide 2, and §4.2 "five letters, five twists". Evidence status per claim in §4.5.]</aside>
 </section>
 
-<!-- 3 · Pete, 0:45 -->
+<!-- 3 · Pete, 0:45. P, Profile (Pete, 11 Nov): who decides, and within what limits, set before anything is priced; then
+     what PRISM recommends for them (Key Areas §7: lead with the recommendation, the capital and both outcomes). Three
+     clicks. The wants are the case's words; the limits are ours (Final_Plan.md §4.2). The answer's money figures stay in
+     brackets until the label approach is re-based on a fund that can be bought (§4.5). -->
 <section class="slide sec-P" id="s3" data-time="0:45" data-speaker="Pete">
   <header class="head">
     <p class="kick kt"><b class="kt-L">P</b><b class="kt-n">Profile</b><span class="kt-do">Each person's limits and a values budget, set first</span><span class="kt-not">instead of asking whether they like ESG</span></p>
-    <h2>[For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less]</h2>
+    <h2>Set each person's limits first; then every decision is priced against them</h2>
   </header>
-  <div class="body">
-    <div class="todo">
-      <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 3.</p>
-      <p>Form (a draft, not an order): Who the Wongs are and why we chose them; each person's want and limit; the recommendation, the capital and both outcomes against the label approach.</p>
-      
+  <div class="body s3-body">
+    <div class="s3-left">
+      <p class="s3-cap">The Wongs · this year's competition case</p>
+      <div class="s3-grid"><div class="s3-p"><p class="s3-n">Adrian, 54</p><p class="s3-r">retires at 65</p><p class="s3-w">“capital preservation”</p><p class="s3-l">funds within 0.5% a year of the market</p></div><div class="s3-p"><p class="s3-n">Carmen, 49</p><p class="s3-r">runs a packaging firm</p><p class="s3-w">ESG, for “her personal values”</p><p class="s3-l">funds may stray up to 3% a year</p></div><div class="s3-p"><p class="s3-n">Ryan, 24</p><p class="s3-r">data analyst, holds crypto</p><p class="s3-w">“financial independence”</p><p class="s3-l">decides for his own money</p></div><div class="s3-p"><p class="s3-n">Chloe, 16</p><p class="s3-r">university from 2028</p><p class="s3-w">“without excessive ... debt”</p><p class="s3-l">HK$2.57M set aside first</p></div></div>
+      <p class="s3-own">A flat (<b>HK$11.5M</b>), Carmen's stake in her business (<b>HK$5.0M</b>), savings and investments
+        (<b>HK$10.5M</b>). Their ESG goal: <i>“20% to 25% of investable assets ... through product selection”</i>.</p>
+      <div class="s3-limits" data-b="2">
+        <p class="s3-cap">Their limits, set before any option is priced</p>
+        <div class="s3-lims">
+          <div><b>95 in 100</b><span>futures where the money lasts their whole life; 85 in a crisis</span></div>
+          <div><b>≈HK$1.4M</b><span>one values budget for both parents, agreed once</span></div>
+          <div><b>Both parents</b><span>for any choice that can't be undone</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="s3-ans" data-b="3">
+      <p class="s3-acap">What PRISM recommends</p>
+      <p class="s3-big">[7] changes</p>
+      <p class="s3-cap2">Capital: <b>HK$0.48M</b> of the family's (a scholarship fund) and <b>HK$1.91M</b> of the business's
+        (electric vans, lights, air-con)</p>
+      <div class="s3-out"><b>[+HK$2.4M]</b><span>for their children, against following the labels</span></div>
+      <div class="s3-out"><b>≈134 t</b><span>of carbon a year less, all from the business</span></div>
+      <p class="s3-split">[About HK$0.5M of it comes from green decisions; the rest is ordinary good planning. We say which is which.]</p>
     </div>
   </div>
-  <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <p class="sowhat">The limits come first, so no option, green or not, can move the goalposts later.</p>
+  <aside class="notes">PETE: [script to write] [Notes: Pete says his simple name before his part. Wants: the case's words
+    (Award2026Case, background and goals). Limits: ours (Final_Plan.md §4.2): the floors of 95 and 85 in 100 (Pete, 10
+    Nov), the family values budget (≈HK$1.4M expected, ≈HK$1.7M at worst; MODEL, EXPLORATORY), tracking-error limits
+    (Adrian ≤0.5% a year, Carmen ≤3%), the education reserve (HK$2.57M, Round One). Capital: Decision_List.md §2 (ESTIMATED).
+    Outcomes: model_runs.md (EXPLORATORY until the re-base): +HK$2.44M against the label approach in a normal future,
+    +HK$2.25M under stress; ≈134 t a year (ESTIMATED; 108 t rest on recycled PET at parity). The honest split: ≈HK$0.5M the
+    vans; the rest cheaper funds and the scholarship funded. The case's ESG goal is "to align at least 20% to 25% of
+    investable assets with ESG principles through appropriate product selection and due diligence": the label approach in
+    the client's own words.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#B45309"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B45309">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">3</span>
+    <p class="src">Award 2026 case · limits ours · capital ESTIMATED · outcomes our model (MEASURED, before the re-base) · tonnes ESTIMATED</p><span class="pg">3</span>
   </footer>
 </section>
 
