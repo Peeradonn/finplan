@@ -6,8 +6,8 @@ Generated 2026-11-11 by `Final/deck/make.py` from the slides' speaker notes. Edi
 
 Speaking time at 135 words a minute: Pete 1:08, Lookbua 0:02, Fahtai 0:02, Win 0:02.
 
-## 1 · [A label tells you what a product is called, not what it does]
-*The open · Pete · 1:05 · 146 spoken words (≈65 s at 135)*
+## 1 · A label tells you what a product is called, not what it does.
+*Pete · 1:05 · 146 spoken words (≈65 s at 135)*
 
 **Pete:** Good morning, we're Team Axis. I'm Pete. Today, ESG in a family's plan usually comes down to one question: are we putting enough into ESG funds? Yet one fund with the ESG tick still owns oil and gas; another must cut its carbon every year. And the tick says nothing about what climate can do to the family. Take a Hong Kong family that followed the labels. It's 2031, and a sudden crackdown on carbon hits the markets. Within two years they're three million dollars poorer, and they never catch up. Almost half of it lands on their home and their business, where no fund label looks. A label tells you what a product is called, not what it does. Our framework leaves the same family, in the same crisis, [two million dollars] more, and we'll show you how much of that is really green.
 

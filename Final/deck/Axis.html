@@ -164,6 +164,47 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s2-std{position:absolute;left:48px;bottom:22px;width:440px;font:500 13.5px/1.4 var(--text);color:#9C9093}
 .s2-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#9C9093}
 
+/* ---- slide 1: the open (dark stage like slide 2; s1- classes are used on this slide only; Pete, 11 Nov) ---- */
+.slide.s1-stage{padding:0;display:block;background:#120E0F;color:#fff}
+.s1-kick{position:absolute;left:48px;top:44px;font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#FF6B75}
+.s1-q{position:absolute;left:48px;top:68px;width:430px;font:800 38px/1.12 var(--head);color:#fff}
+.s1-chip{position:absolute;left:48px;top:192px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:11px 16px;
+  border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}
+.s1-funds{position:absolute;left:48px;top:262px;width:430px}
+.s1-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#B9ACAF;margin-bottom:12px}
+.s1-card{display:flex;align-items:center;gap:14px;background:#1E1719;border:1px solid #3A2F31;border-radius:10px;
+  padding:14px 16px;margin-bottom:10px}
+.s1-card p{font:700 18px/1.3 var(--text);color:#fff}
+.s1-mini{flex:none;background:var(--leaf);color:#fff;font:800 14px/1 var(--text);padding:8px 11px;border-radius:16px;white-space:nowrap}
+.s1-src{font:500 12.5px/1.4 var(--text);color:#8C8083;margin-top:8px}
+.s1-chart{position:absolute;left:520px;top:36px;width:712px}
+.s1-svg{display:block;font-family:var(--text)}
+.s1-chart .s1-src{margin-top:-6px;padding-left:56px}
+.s1-end{position:absolute;left:48px;right:48px;top:596px;border-top:1px solid #3A2F31;padding-top:16px}
+.s1-stage h2.s1-line{margin:0;font:800 30px/1.15 var(--head);color:#fff;letter-spacing:-.2px}
+.s1-result{font:500 17px/1.35 var(--text);color:#B9ACAF;margin-top:8px}
+.s1-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#9C9093}
+
+/* builds (from Round Two): data-b="n" is the step an element is spoken in. make.py --builds repeats a slide once per
+   step with class upto-k; later steps stay in grey, or are hidden on a slide with class "reveal" (space kept, so the
+   layout never moves). The HTML preview only: make_pptx.py writes PowerPoint's own click animations. */
+.upto-1 [data-b="2"],.upto-1 [data-b="3"],.upto-1 [data-b="4"],.upto-1 [data-b="5"],.upto-1 [data-b="6"],.upto-1 [data-b="7"],.upto-1 [data-b="8"],.upto-1 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-2 [data-b="3"],.upto-2 [data-b="4"],.upto-2 [data-b="5"],.upto-2 [data-b="6"],.upto-2 [data-b="7"],.upto-2 [data-b="8"],.upto-2 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-3 [data-b="4"],.upto-3 [data-b="5"],.upto-3 [data-b="6"],.upto-3 [data-b="7"],.upto-3 [data-b="8"],.upto-3 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-4 [data-b="5"],.upto-4 [data-b="6"],.upto-4 [data-b="7"],.upto-4 [data-b="8"],.upto-4 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-5 [data-b="6"],.upto-5 [data-b="7"],.upto-5 [data-b="8"],.upto-5 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-6 [data-b="7"],.upto-6 [data-b="8"],.upto-6 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-7 [data-b="8"],.upto-7 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.upto-8 [data-b="9"]{filter:grayscale(1);opacity:.3}
+.reveal.upto-1 [data-b="2"],.reveal.upto-1 [data-b="3"],.reveal.upto-1 [data-b="4"],.reveal.upto-1 [data-b="5"],.reveal.upto-1 [data-b="6"],.reveal.upto-1 [data-b="7"],.reveal.upto-1 [data-b="8"],.reveal.upto-1 [data-b="9"]{visibility:hidden}
+.reveal.upto-2 [data-b="3"],.reveal.upto-2 [data-b="4"],.reveal.upto-2 [data-b="5"],.reveal.upto-2 [data-b="6"],.reveal.upto-2 [data-b="7"],.reveal.upto-2 [data-b="8"],.reveal.upto-2 [data-b="9"]{visibility:hidden}
+.reveal.upto-3 [data-b="4"],.reveal.upto-3 [data-b="5"],.reveal.upto-3 [data-b="6"],.reveal.upto-3 [data-b="7"],.reveal.upto-3 [data-b="8"],.reveal.upto-3 [data-b="9"]{visibility:hidden}
+.reveal.upto-4 [data-b="5"],.reveal.upto-4 [data-b="6"],.reveal.upto-4 [data-b="7"],.reveal.upto-4 [data-b="8"],.reveal.upto-4 [data-b="9"]{visibility:hidden}
+.reveal.upto-5 [data-b="6"],.reveal.upto-5 [data-b="7"],.reveal.upto-5 [data-b="8"],.reveal.upto-5 [data-b="9"]{visibility:hidden}
+.reveal.upto-6 [data-b="7"],.reveal.upto-6 [data-b="8"],.reveal.upto-6 [data-b="9"]{visibility:hidden}
+.reveal.upto-7 [data-b="8"],.reveal.upto-7 [data-b="9"]{visibility:hidden}
+.reveal.upto-8 [data-b="9"]{visibility:hidden}
+
 /* speaker notes: written in the slide, never shown or printed; make.py turns them into the script */
 .notes{display:none}
 </style>
@@ -177,18 +218,65 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
      (what it must prove) and §4.3 (the story). The title is the idea, true for any client; the Wongs are the
      proof underneath. Brackets wait for numbers in export_numbers(). -->
 
-<!-- 1 · Pete, 1:05 -->
-<section class="slide reveal" id="s1" data-time="1:05" data-speaker="Pete">
-  <header class="head">
-    <p class="kick">The open</p>
-    <h2>[A label tells you what a product is called, not what it does]</h2>
-  </header>
-  <div class="body">
-    <div class="todo">
-      <p><b>To build (Pete).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 1.</p>
-      <p>Form (a draft, not an order): in plain words (§4.3): today's question; two funds with the same ESG tick; a family that followed the labels in a 2031 carbon crackdown, its net worth falling and never catching up; one line of our result.</p>
-    </div>
+<!-- 1 · Pete, 1:05. The open, in plain words (Pete, 11 Nov; Final_Plan.md §4.3): a dark stage like slide 2, four clicks in
+     the script's order: today's question; two funds with the same tick; the family that followed the labels, its net worth
+     in a 2031 carbon crackdown (from figures/figure-data.md "fin-label-path" through series.py; numbers are "fin_lab_" keys
+     in double braces); the line and one result. No US$0 fund, odds, floor or "pre-mortem" here. -->
+<section class="slide reveal s1-stage" id="s1" data-time="1:05" data-speaker="Pete">
+  <p class="s1-kick">Today's question</p>
+  <p class="s1-q">Are we putting enough into ESG funds?</p>
+  <span class="s1-chip">ESG ✓</span>
+  <div class="s1-funds" data-b="2">
+    <p class="s1-cap">The same tick on two funds</p>
+    <div class="s1-card"><span class="s1-mini">ESG ✓</span><p>Still owns oil and gas, with no target to cut carbon</p></div>
+    <div class="s1-card"><span class="s1-mini">ESG ✓</span><p>Has to cut its carbon every year</p></div>
+    <p class="s1-src">MSCI World Selection Index (formerly ESG Leaders), methodology Dec 2025 · an EU climate-transition
+      index, Regulation (EU) 2020/1818 · SOURCED</p>
   </div>
+  <div class="s1-chart" data-b="3">
+      <svg class="s1-svg" viewBox="0 0 712 520" width="712" height="520">
+        <text x="0" y="16" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">A FAMILY THAT FOLLOWED THE LABELS</text>
+        <text x="0" y="38" font-size="14" fill="#B9ACAF">its net worth, HK$ million in today's money</text>
+        <g stroke="#2E2527" stroke-width="1">
+          <line x1="56.0" x2="680.0" y1="333.2" y2="333.2"/>
+          <line x1="56.0" x2="680.0" y1="214.5" y2="214.5"/>
+          <line x1="56.0" x2="680.0" y1="95.8" y2="95.8"/>
+        </g>
+        <line x1="56.0" x2="680.0" y1="452.0" y2="452.0" stroke="#5A4F52" stroke-width="1.5"/>
+        <g font-size="13" font-weight="600" fill="#8C8083" text-anchor="end">
+          <text x="46.0" y="456.0">0</text><text x="46.0" y="337.2">10</text>
+          <text x="46.0" y="218.5">20</text><text x="46.0" y="99.8">30</text>
+        </g>
+        <polygon points="118.4,72.0 149.6,72.0 149.6,452.0 118.4,452.0" fill="#FF4A57" fill-opacity=".16"/>
+        <text x="118.4" y="62.0" font-size="15" font-weight="700" fill="#FF6B75">2030–31: a crackdown on carbon</text>
+        <polygon points="56.0,215.4 71.6,206.2 87.2,197.2 102.8,187.9 118.4,178.4 134.0,168.6 149.6,158.6 165.2,148.4 180.8,137.7 196.4,126.7 212.0,115.4 227.6,104.3 243.2,126.0 258.8,124.5 274.4,145.3 290.0,150.9 305.6,156.0 321.2,162.6 336.8,168.5 352.4,175.3 368.0,182.4 383.6,190.4 399.2,196.4 414.8,202.1 430.4,208.2 446.0,215.1 461.6,221.8 477.2,229.2 492.8,236.2 508.4,244.2 524.0,252.5 539.6,260.0 555.2,265.7 570.8,271.0 586.4,276.7 602.0,282.3 617.6,289.4 633.2,295.8 648.8,302.1 664.4,309.6 680.0,316.9 680.0,370.9 664.4,363.3 648.8,355.1 633.2,348.1 617.6,340.2 602.0,332.8 586.4,326.7 570.8,320.0 555.2,313.8 539.6,307.6 524.0,298.8 508.4,290.3 492.8,281.5 477.2,273.6 461.6,265.8 446.0,258.4 430.4,250.9 414.8,244.4 399.2,237.6 383.6,231.0 368.0,222.6 352.4,214.9 336.8,207.4 321.2,200.9 305.6,193.8 290.0,188.1 274.4,181.9 258.8,160.7 243.2,161.8 227.6,139.9 212.0,151.4 196.4,163.1 180.8,174.4 165.2,185.3 149.6,195.8 134.0,195.0 118.4,179.0 102.8,188.3 87.2,197.4 71.6,206.2 56.0,215.4" fill="#FF4A57" fill-opacity=".22"/>
+        <polyline points="56.0,215.4 71.6,206.2 87.2,197.2 102.8,187.9 118.4,178.4 134.0,168.6 149.6,158.6 165.2,148.4 180.8,137.7 196.4,126.7 212.0,115.4 227.6,104.3 243.2,126.0 258.8,124.5 274.4,145.3 290.0,150.9 305.6,156.0 321.2,162.6 336.8,168.5 352.4,175.3 368.0,182.4 383.6,190.4 399.2,196.4 414.8,202.1 430.4,208.2 446.0,215.1 461.6,221.8 477.2,229.2 492.8,236.2 508.4,244.2 524.0,252.5 539.6,260.0 555.2,265.7 570.8,271.0 586.4,276.7 602.0,282.3 617.6,289.4 633.2,295.8 648.8,302.1 664.4,309.6 680.0,316.9" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="3" stroke-linejoin="round"/>
+        <polyline points="56.0,215.4 71.6,206.2 87.2,197.4 102.8,188.3 118.4,179.0 134.0,195.0 149.6,195.8 165.2,185.3 180.8,174.4 196.4,163.1 212.0,151.4 227.6,139.9 243.2,161.8 258.8,160.7 274.4,181.9 290.0,188.1 305.6,193.8 321.2,200.9 336.8,207.4 352.4,214.9 368.0,222.6 383.6,231.0 399.2,237.6 414.8,244.4 430.4,250.9 446.0,258.4 461.6,265.8 477.2,273.6 492.8,281.5 508.4,290.3 524.0,298.8 539.6,307.6 555.2,313.8 570.8,320.0 586.4,326.7 602.0,332.8 617.6,340.2 633.2,348.1 648.8,355.1 664.4,363.3 680.0,370.9" fill="none" stroke="#FF4A57" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="63.6" y="160.2" width="78" height="30" rx="15" fill="#3F9A55"/>
+        <text x="102.6" y="180.2" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">ESG ✓</text>
+        <text x="336.8" y="154.5" font-size="15" font-weight="700" fill="#D8CFD1">if it never came</text>
+        <text x="586.4" y="352.7" font-size="15" font-weight="700" fill="#FF4A57" text-anchor="end">with the crackdown</text>
+        <line x1="152.6" x2="152.6" y1="158.6" y2="195.8" stroke="#FFFFFF" stroke-width="3"/>
+        <line x1="152.6" x2="152.6" y1="199.8" y2="225.8" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text x="161.6" y="247.8" font-size="28" font-weight="800" fill="#FFFFFF">HK$3.1M poorer</text>
+        <text x="161.6" y="269.8" font-size="15" fill="#B9ACAF">within two years; almost half of it</text>
+        <text x="161.6" y="288.8" font-size="15" fill="#B9ACAF">on their home and their business</text>
+        <text x="680.0" y="400.9" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="end">and it never closes:</text>
+        <text x="680.0" y="421.9" font-size="15" fill="#B9ACAF" text-anchor="end">HK$4.6M less for their children</text>
+        <g font-size="13" font-weight="600" fill="#8C8083">
+          <text x="56.0" y="474.0">2026</text>
+          <text x="227.6" y="474.0" text-anchor="middle">2037, they retire</text>
+          <text x="680.0" y="474.0" text-anchor="end">2066</text>
+        </g>
+      </svg>
+    <p class="s1-src">Our model: the middle of 10,000 futures (MEASURED) · the crackdown's size ILLUSTRATIVE, set within
+      NGFS, HKMA, BoE and ECB bounds</p>
+  </div>
+  <div class="s1-end" data-b="4">
+    <h2 class="s1-line">A label tells you what a product is called, not what it does.</h2>
+    <p class="s1-result">Our framework: [about HK$2M more] for the same family in the same crisis, and we'll show how much of that is really green.</p>
+  </div>
+  <span class="s1-pg">1</span>
   <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. Today, ESG in a family's plan usually comes down
     to one question: are we putting enough into ESG funds? Yet one fund with the ESG tick still owns oil and gas; another
     must cut its carbon every year. And the tick says nothing about what
@@ -202,11 +290,6 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     conventional oil and gas and has no carbon target; an EU climate-transition index must be at least 30% below the
     market and cut 7% a year. Never "greenwashing": the label is true, it answers a different question. The HK$3M and
     "almost half" are exploratory runs on the label approach until they are number keys.]</aside>
-  <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Areas 3, 5</span>
-    <p class="src">Sources: to add</p><span class="pg">1</span>
-  </footer>
 </section>
 
 <!-- 2 · Pete, 1:00. The framework's introduction page (Pete, 11 Nov): a dark stage, unlike any other slide; the
