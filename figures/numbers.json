@@ -270,5 +270,17 @@
  "fin_flat10_leg": "−HK$0.71M",
  "fin_flat10_pts": "−0.5",
  "fin_shockport_leg": "−HK$2.48M",
- "fin_shockport_pts": "−3.8"
+ "fin_shockport_pts": "−3.8",
+ "fin_stormflat_leg": "−HK$1.44M",
+ "fin_stormflat_pts": "−0.7",
+ "fin_stormbiz_leg": "−HK$0.71M",
+ "fin_stormbiz_pts": "−0.8",
+ "fin_storm_leg": "−HK$4.60M",
+ "fin_storm_pts": "−7.3",
+ "fin_storm_apart_pts": "−5.3",
+ "fin_base_odds": "96.8%",
+ "fin_storm_odds": "89.5%",
+ "fin_base_leg89": "HK$13.0M",
+ "fin_storm_leg89": "HK$8.4M",
+ "fin_storm_gap32": "−HK$3.1M"
 }

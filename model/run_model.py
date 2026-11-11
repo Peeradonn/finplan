@@ -564,6 +564,13 @@ def final_numbers():
     import final_model
     return final_model.export_final()
 
+
+def final_series():
+    """The Final deck's chart series, (heading, table) pairs for figure-data.md (make_charts.py)."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Final"))
+    import final_model
+    return final_model.export_final_series()
+
 # ---------- printout ----------
 def main():
     if hasattr(sys.stdout, "reconfigure"):

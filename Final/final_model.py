@@ -15,7 +15,7 @@ What it adds to the Round One model:
 - M8: each decision under the 2030-31 scenario on all channels at once (stressed()), against its value in a
   normal future, and the carbon data's cost inside the new plan.
 """
-import os, sys
+import functools, os, sys
 import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,9 +30,10 @@ DEFL = (1 + m.CPI) ** (END - m.BY)
 
 # ---------- the simulation, with hooks ----------
 def sim_x(end=END, annuity=True, med=None, surv=1.0, biz=0, rmp=0, rmp_y=None, r_eq=None, cpi=None,
-          inflows=None, ret_add=None, level=None, n=N, seed=SEED):
+          inflows=None, ret_add=None, level=None, n=N, seed=SEED, track=None):
     """run_model.sim() without guardrails, plus: ret_add {year: (equity addend, bond addend)},
     level {year: factor} (a permanent price-level step on retirement spending from that year), rmp_y.
+    track: a dict that receives the median pot at the start of each later year (nominal HK$), for slide 5's path.
     Returns (success share, pot at `end` per path)."""
     r_eq = m.R_EQ if r_eq is None else r_eq
     cpi = m.CPI if cpi is None else cpi
@@ -69,6 +70,8 @@ def sim_x(end=END, annuity=True, med=None, surv=1.0, biz=0, rmp=0, rmp_y=None, r
         pot -= med.get(y, 0)
         pot = np.maximum(pot, 0)
         alive &= pot > 0
+        if track is not None:
+            track[y + 1] = float(np.median(pot))
     return alive.mean(), pot
 
 
@@ -241,6 +244,71 @@ def stressed(base, sc, mult, biz_add=0.0, flows=None, **kw):
                inflows=plus(sc["inflows"], flows), biz=biz, **kw)
 
 
+# ---------- slide 5: the parents' net worth, year by year (Pete, 11 Nov) ----------
+MORT0 = m.O["BalanceSheet.Mortgage"]                        # the case's balance sheet, 2026
+MORT_R = m.I["Mortgage rate (for HLI deduction)"] / 12
+
+
+def mortgage_owed(t):
+    """The mortgage at the start of year t: the case's HK$1.8M in 2026, repaid monthly down to the model's balance in
+    2037 (MORT), which the plan clears from the portfolio that year. The payment is the one that joins the two."""
+    if t > m.RETA:
+        return 0.0
+    g, k, j = 1 + MORT_R, 12 * (m.RETA - m.BY), 12 * (t - m.BY)
+    pay = (MORT0 * g ** k - m.MORT) * MORT_R / (g ** k - 1)
+    return MORT0 * g ** j - pay * (g ** j - 1) / MORT_R
+
+
+def net_worth_path(base, mult=lambda y: 1.0, biz_from=None, **kw):
+    """The parents' net worth at the start of each year, 2026 to Carmen's 89 (HK$M, today's money; the median
+    portfolio across the futures): the portfolio (after the children's education money), plus the flat less the
+    mortgage and the reverse-mortgage loan, plus the business at its modelled sale price until it is sold (ILLUSTRATIVE
+    before the sale: the model has no business value until then). The scenario's cut to the sale counts from
+    biz_from. A point is the start of a year, so the flat carries the shocks of the years before it (mult(t − 1)):
+    the 2030 shock shows at the start of 2031, inside 2030-31 on the chart, like the portfolio's. The last point
+    uses mult(END), so it is run()'s median inheritance exactly (storm_path() checks it)."""
+    args = dict(base)
+    args.update(kw)
+    inc = rmp_income(mult) if mult(m.RMP_Y) != 1.0 else args.get("rmp", m.RMP)
+    args["rmp"] = inc
+    track = {m.BY: float(m.POOL)}
+    sim_x(track=track, **args)
+    sale_before, sale_after = base.get("biz") or 0, args.get("biz") or 0
+    out = {}
+    for t in range(m.BY, END + 1):
+        loan = rmp_balance_x(m.RMP_Y, t, inc, mult) if t > m.RMP_Y else 0.0
+        flat = flat_value(t, mult) if t == END else m.home_value(t) * mult(t - 1)
+        home = max(flat - loan, 0) - mortgage_owed(t)
+        biz = (sale_after if biz_from and t >= biz_from else sale_before) if t <= m.BIZ_Y else 0.0
+        out[t] = (track[t] + home + biz) / (1 + m.CPI) ** (t - m.BY) / 1e6
+    return out
+
+
+@functools.lru_cache(maxsize=None)
+def storm_path():
+    """Slide 5: the plan (the Final's base) in a normal future against M7's 'All together' (the 2030-31 scenario on
+    every channel). Returns two {year: HK$M} dicts; stops if either path doesn't end at run()'s inheritance."""
+    base = {**m.full_plan(), "med": m.SWITCH}
+    sc, mult = scenario()
+    a = net_worth_path(base)
+    s = net_worth_path(base, mult, biz_from=min(sc["ret_add"]) + 1, **sc)   # the sale is worth less once 2030 is over
+    for p, r in ((a, run(base)), (s, run(base, "rmp", mult, **sc))):
+        if abs(p[END] - r["leg_med"]) > 1e-9:
+            sys.exit(f"net_worth_path() does not end at run()'s inheritance: {p[END]} vs {r['leg_med']}")
+    return a, s
+
+
+def export_final_series():
+    """The Final deck's chart series, as (heading, markdown table) for figures/figure-data.md (through
+    run_model.final_series() and make_charts.py); Final/deck/series.py draws them."""
+    a, s = storm_path()
+    rows = "\n".join(f"| {t} | {a[t]:.3f} | {s[t]:.3f} | {s[t] - a[t]:+.3f} |" for t in sorted(a))
+    return [("fin-storm-path: Final deck slide 5. The parents' net worth at the start of each year (median portfolio, "
+             "the flat less its loans, the business at its sale price until 2039), HK$M today's money: the plan in a "
+             "normal future against the 2030-31 scenario on every channel (M7, All together)",
+             "| Year | Normal | Storm | Gap |\n|---|---|---|---|\n" + rows)]
+
+
 # ---------- the slides' numbers (into figures/numbers.json through run_model.export_numbers()) ----------
 def export_final():
     """The Final deck's model numbers, formatted as printed, on the Final's base (`switch_89`, Pete 9 Nov). Added slide by
@@ -256,9 +324,23 @@ def export_final():
     out["fin_cust10_leg"], out["fin_cust10_pts"] = dM(r), dP(r)
     r = run(base, "rmp", lambda y: 0.9 if y >= m.RMP_Y else 1.0)     # older flats fall behind: 10% lower from 2037
     out["fin_flat10_leg"], out["fin_flat10_pts"] = dM(r), dP(r)
-    sc, _ = scenario()
+    sc, mult = scenario()
     r = run(base, ret_add=sc["ret_add"], level=sc["level"])          # a late, sudden carbon policy: the portfolio
     out["fin_shockport_leg"], out["fin_shockport_pts"] = dM(r), dP(r)
+    port = r
+    # slide 5 (R, the whole household): the same scenario on the flat, the business, and all at once (M7)
+    flat = run(base, "rmp", mult)
+    out["fin_stormflat_leg"], out["fin_stormflat_pts"] = dM(flat), dP(flat)
+    biz = run(base, biz=sc["biz"], inflows=sc["inflows"])
+    out["fin_stormbiz_leg"], out["fin_stormbiz_pts"] = dM(biz), dP(biz)
+    allr = run(base, "rmp", mult, **sc)
+    out["fin_storm_leg"], out["fin_storm_pts"] = dM(allr), dP(allr)
+    apart = sum(x["odds"] - b["odds"] for x in (port, flat, biz)) * 100
+    out["fin_storm_apart_pts"] = f"{apart:+.1f}".replace("-", "−")
+    out["fin_base_odds"], out["fin_storm_odds"] = f"{b['odds']:.1%}", f"{allr['odds']:.1%}"
+    out["fin_base_leg89"], out["fin_storm_leg89"] = f"HK${b['leg_med']:.1f}M", f"HK${allr['leg_med']:.1f}M"
+    a, s = storm_path()
+    out["fin_storm_gap32"] = f"−HK${a[2032] - s[2032]:.1f}M"         # the gap once the two years are over
     return out
 
 

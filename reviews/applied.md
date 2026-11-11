@@ -409,3 +409,19 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   −HK$2.48M (−3.8), the 2030–31 shock on the portfolio (M7). They match `Final/model_runs.md`.
 - `figures/numbers.json` was rewritten by the same `export_numbers()` call `make_charts.py` makes (charts not rerun:
   nothing they draw changed). Diff: 266 existing values unchanged, none removed, 6 added.
+
+### Final (11 Nov): slide 5's net-worth path and its keys (`Final/final_model.py`)
+- `sim_x()` takes an optional `track` dict that records the median portfolio at the start of each year (no effect when
+  absent). New `net_worth_path()`: the parents' net worth at the start of each year, today's money: the median
+  portfolio (after the education money), the flat less the mortgage (the case's HK$1.8M repaid monthly down to the
+  model's HK$0.46M in 2037) and the reverse-mortgage loan, and the business at its HK$3.0M sale price until 2039
+  (ILLUSTRATIVE before the sale). The flat carries each year's scenario shock from the next year's start, so the drop
+  sits in 2030–31. `storm_path()` runs it for the plan and for M7's "All together" and stops unless each path ends
+  exactly at `run()`'s median inheritance (13.008 and 8.404).
+- The series goes to `figures/figure-data.md` ("fin-storm-path") through `run_model.final_series()` and one line in
+  `make_charts.py`; `Final/deck/series.py` turns it into the slide's `[[tokens]]` (as `round2/series.py` does).
+- New keys: `fin_stormflat_leg` −HK$1.44M (−0.7), `fin_stormbiz_leg` −HK$0.71M (−0.8), `fin_storm_leg` −HK$4.60M
+  (`fin_storm_pts` −7.3), `fin_storm_apart_pts` −5.3, `fin_base_odds` 96.8%, `fin_storm_odds` 89.5%, `fin_base_leg89`
+  HK$13.0M, `fin_storm_leg89` HK$8.4M, `fin_storm_gap32` −HK$3.1M. They match M7 in `Final/model_runs.md`.
+- `make_charts.py` rerun in full. Diff: every existing value of `numbers.json` unchanged, none removed, 12 added;
+  `figure-data.md` gains only the new table; no chart changed.
