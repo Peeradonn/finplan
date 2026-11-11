@@ -27,12 +27,12 @@ Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:04, Fahtai 0:02, Win 0
 
 > Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.
 
-## 4 · Climate reaches every line of a balance sheet; a label covers one
+## 4 · Climate lands on the plan's biggest moments; a label checks only today's funds
 *R and I · both ways · Lookbua · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Lookbua:** [script to write]
 
-> Notes: Lookbua says her simple name before her part. Must prove: Final_Plan.md §4.5, slide 4. Each money figure is the change in the children's median inheritance at Carmen's 89, each on its own (our model, M3, M6, M7: MEASURED, exploratory runs); tonnes ESTIMATED on an ILLUSTRATIVE business (area2_business.md §3b); assets: the case, p.4 (the total includes the car); 2.6M = 25% of 10.47M. Rules: HKEX Listing Rules App. C2; Cap. 603 and EPD; HKMC age-plus-term limit; EU CBAM Reg. 2025/2083.
+> Notes: Lookbua says her simple name before her part. Must prove: Final_Plan.md §4.5, slide 4. Money: change in the children's median inheritance at Carmen's 89, each on its own (our model, M3, M6, M7: MEASURED, exploratory runs). Customers: HKEX Listing Rules App. C2 (LargeCap Scope 3 from FY2026, first reports 2027). Tonnes: area2_business.md §3b (ESTIMATED, ILLUSTRATIVE business).
 
 ## 5 · Judge the whole household: climate hits everything at once
 *R · the whole household · Lookbua · 0:40 · 3 spoken words (≈1 s at 135)*
