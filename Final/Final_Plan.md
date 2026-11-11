@@ -227,7 +227,9 @@ advantages above survive that, as long as the talk stands alone (§3).
     prism-stage.png`, 2560 x 1440, drawn by `Final/looks/prism_stage_art.py`) so PowerPoint shows it exactly; all
     words are live text. These five colours belong to this slide; elsewhere the crimson stays the one accent.
   - **The recurring element: the prism badge** (Pete, 11 Nov, after rendering white-with-badge against dark-throughout,
-    `Final/looks/`): a small dark prism in the footer of every content slide (3 to 10), the current section's rays lit
+    `Final/looks/`): a small prism drawn in ink in the footer of every content slide (3 to 10), the current section's rays
+    in its colour (Pete chose this light badge over putting the prism inside the conclusion bar, 11 Nov: a dark
+    badge under the ink conclusion bar made two black blocks at the bottom; `Final/looks/badge-fix-compare.png`)
     (P on 3; R and I on 4 and 5; S on 6 to 9; M on 10), as Round Two's house filled floor by floor. Each section's
     kicker and side bar take its letter's colour, in deeper shades on white: P `#B45309`, R `#C80E1E` (still money
     at risk), I `#0E7490` (what the money does to the world, replacing the grey), S `#6D28D9`, M `#475569`. The dark
