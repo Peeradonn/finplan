@@ -397,7 +397,7 @@ def add_text(slide, it, cal):
                 elif gap > 0.5 * r["fs"]:
                     r["s"] = " " * max(1, round((gap - 0.17 * r["fs"]) / (0.17 * r["fs"]))) + r["s"]
             last = r
-            key = (r["fs"], r["fw"], r["it"], tuple(r["col"] or []), r["ls"], round(r["op"], 3), r.get("u"))
+            key = (r["fs"], r["fw"], r["it"], tuple(r["col"] or []), r["ls"], round(r["op"], 3), r.get("u"), r.get("st"))
             if runs and runs[-1][0] == key:
                 runs[-1][1]["s"] += r["s"]
             else:
@@ -415,6 +415,8 @@ def add_text(slide, it, cal):
             if r.get("u"):
                 f.underline = True
             rPr = run._r.get_or_add_rPr()
+            if r.get("st"):                      # strikethrough: the "usual way" crossed out (slide 2)
+                rPr.set("strike", "sngStrike")
             rPr.set("kern", "100")
             if r["ls"]:
                 rPr.set("spc", str(int(round(r["ls"] * 75))))

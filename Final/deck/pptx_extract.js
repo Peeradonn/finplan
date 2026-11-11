@@ -218,7 +218,8 @@
       const style = {fs, fw: num(cs.fontWeight) || 400, it: cs.fontStyle !== 'normal', col: rgba(cs.color),
                      ls: cs.letterSpacing === 'normal' ? 0 : num(cs.letterSpacing), op: effOp(p),
                      lh: cs.lineHeight === 'normal' ? fs * 1.26 : num(cs.lineHeight),
-                     u: cs.textDecorationLine.includes('underline')};
+                     u: cs.textDecorationLine.includes('underline'),
+                     st: cs.textDecorationLine.includes('line-through')};   // strikethrough (Final, 11 Nov)
       let run = null;
       for (let i = 0; i < t.length; i++) {
         range.setStart(node, i); range.setEnd(node, i + 1);

@@ -13,12 +13,12 @@ Speaking time at 135 words a minute: Pete 0:05, Lookbua 0:04, Fahtai 0:02, Win 0
 
 > Notes: Pete says their simple name before their part. Say "Team Axis" before the first words. Evidence status per claim in §4.5.
 
-## 2 · PRISM: look both ways
-*How we think · Pete · 0:45 · 3 spoken words (≈1 s at 135)*
+## 2 · PRISM
+*Pete · 0:45 · 3 spoken words (≈1 s at 135)*
 
 **Pete:** [script to write]
 
-> Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.
+> Notes: Pete says his simple name before his part. What it must prove: Final/Final_Plan.md §4.5, slide 2, and §4.2 "five letters, five twists". Evidence status per claim in §4.5.
 
 ## 3 · [For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less]
 *P · Profile: our advice for one Hong Kong family · Pete · 0:45 · 3 spoken words (≈1 s at 135)*

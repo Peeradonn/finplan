@@ -219,8 +219,13 @@ advantages above survive that, as long as the talk stands alone (§3).
   - **The decorative idea: the ledger.** The crimson bar beside each title marks the slide's point; the balance sheet's
     two new columns ("what climate does to it", "what it does to climate") carry "NEW" tabs and come back as the
     recurring picture. Pale fills sit behind ink only: projectors wash them out, so check them on the projector.
-  - **One exception, slide 2:** the PRISM diagram (a glass prism splitting one beam into the five letters), drawn as
-    a picture so it looks the same in any PowerPoint. Light or dark version: Pete to choose (`Final/looks/`).
+  - **One exception, slide 2, the framework's introduction page** (Pete, 11 Nov): a dark stage unlike any other
+    slide; a large glass prism on the left as the focal point, the label's one white beam splitting into five
+    coloured rays, one per letter (P gold `#F4B740`, R crimson `#FF4A57`, I cyan `#3CC8E6`, S violet `#9B7BFF`,
+    M silver `#E6E9EE`), each labelled by its letter so colour is never the only carrier; a large PRISM title; no
+    sowhat bar and no tracker (they competed with the prism). The stage is one picture (`Final/deck/img/
+    prism-stage.png`, 2560 x 1440, drawn by `Final/looks/prism_stage_art.py`) so PowerPoint shows it exactly; all
+    words are live text. These five colours belong to this slide; elsewhere the crimson stays the one accent.
   - **Not used:** the house; Morph or any transition (the venue's PowerPoint version is unknown); serif titles;
     colour alone for any status. Embed the font.
   - **Still to test:** 20 seconds on a projector or a TV from across a room (the light green, the slate text).
