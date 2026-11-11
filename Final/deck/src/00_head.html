@@ -29,7 +29,9 @@
                                                                     use them for fills behind ink, never for text */
   --ink:#1B1716; --slate:#5E4A50;                                    /* slate 8.2:1 on white: the lightest text colour */
   --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* money at risk; the point a slide makes (5.9:1) */
-  --out:#3F3538;                                                     /* what the money does to the world (tonnes) */
+  --out:#0E7490;                                                     /* what the money does to the world: Impact teal */
+  /* section colours, one per PRISM letter (slide 2's rays; deeper shades here so text on white passes contrast) */
+  --P:#B45309; --R:#C80E1E; --I:#0E7490; --S:#6D28D9; --M:#475569;
   --leaf:#3F9A55; --leaf-tint:#E3F1E6;                               /* the green label, one job only; passes both
                                                                     red-green checks against the crimson; always
                                                                     carries its word, never colour alone */
@@ -45,7 +47,7 @@ ul,ol{padding:0;list-style:none}
 b,strong{font-weight:600}
 .deck{zoom:var(--z,1);display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
 .slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;
-  padding:34px 48px 56px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(29,29,27,.18)}
+  padding:34px 48px 64px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(29,29,27,.18)}
 @page{size:1280px 720px;margin:0}
 @media print{
   body{background:#fff}
@@ -98,6 +100,20 @@ b,strong{font-weight:600}
 .src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
 
+/* the prism badge (look A, Pete 11 Nov): the deck's recurring element, as the house was in Round Two. It sits in the
+   footer of every content slide; the current section's rays are lit. Slides 1, 2 and 11 (the dark stage) don't carry it. */
+.foot{height:44px;bottom:9px}
+.badge-prism{display:flex;align-items:center;gap:14px;flex:none}
+.badge-prism svg text{font-family:var(--text)}
+.badge-prism p{font:700 14px/1.2 var(--text);letter-spacing:.4px;color:var(--slate)}
+.badge-prism p span{display:block;font:500 12px/1.3 var(--text);letter-spacing:0;color:var(--grey);margin-top:1px}
+.kick b.k-impact{color:var(--I)}
+/* each section's kicker and side bar take its letter's colour, matching the lit ray in the badge */
+.sec-P .head{border-left-color:var(--P)} .sec-P .kick{color:var(--P)}
+.sec-R .head{border-left-color:var(--R)} .sec-R .kick{color:var(--R)}
+.sec-S .head{border-left-color:var(--S)} .sec-S .kick{color:var(--S)}
+.sec-M .head{border-left-color:var(--M)} .sec-M .kick{color:var(--M)}
+
 /* big numbers */
 .hero{font:800 96px/0.92 var(--num);letter-spacing:-1px}
 .num{font:800 38px/1 var(--num)}
@@ -126,13 +142,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s4-sheet td.a{font:700 21px/1.25 var(--head)}
 .s4-sheet td.v{font:500 19px/1.25 var(--text);color:var(--slate)}
 .s4-sheet td.in{background:var(--mist)}
-.s4-sheet td.out{background:var(--block)}
+.s4-sheet td.out{background:#E7F3F6}
 .s4-sheet .n{font:800 28px/1.05 var(--num);color:var(--accent);letter-spacing:-.3px}
 .s4-sheet .no{font:800 25px/1.05 var(--num);color:var(--out);letter-spacing:-.3px}
 .s4-sheet .s{font:500 16px/1.35 var(--text);color:var(--slate);margin-top:3px}
 .s4-sheet .na{font:600 16px/1.35 var(--text);color:var(--slate);margin-top:4px}
 .s4-sheet .ink{font:600 16px/1.35 var(--text);color:var(--ink)}
-.s4-sheet .loop{font:700 15px/1.35 var(--text);color:var(--accent-deep);margin-top:5px}
+.s4-sheet .loop{font:700 15px/1.35 var(--text);color:var(--out);margin-top:5px}
 .s4-sheet tr.esg td{border-top:none;padding-top:8px;padding-bottom:8px}
 .s4-sheet tr.esg td.a{font:700 17px/1.25 var(--text);padding-left:28px}
 .s4-sheet .s4-chip{font-size:13px;padding:6px 10px;vertical-align:1px}

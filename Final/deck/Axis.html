@@ -29,7 +29,9 @@
                                                                     use them for fills behind ink, never for text */
   --ink:#1B1716; --slate:#5E4A50;                                    /* slate 8.2:1 on white: the lightest text colour */
   --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* money at risk; the point a slide makes (5.9:1) */
-  --out:#3F3538;                                                     /* what the money does to the world (tonnes) */
+  --out:#0E7490;                                                     /* what the money does to the world: Impact teal */
+  /* section colours, one per PRISM letter (slide 2's rays; deeper shades here so text on white passes contrast) */
+  --P:#B45309; --R:#C80E1E; --I:#0E7490; --S:#6D28D9; --M:#475569;
   --leaf:#3F9A55; --leaf-tint:#E3F1E6;                               /* the green label, one job only; passes both
                                                                     red-green checks against the crimson; always
                                                                     carries its word, never colour alone */
@@ -45,7 +47,7 @@ ul,ol{padding:0;list-style:none}
 b,strong{font-weight:600}
 .deck{zoom:var(--z,1);display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0}
 .slide{position:relative;width:1280px;height:720px;flex:none;background:var(--paper);overflow:hidden;
-  padding:34px 48px 56px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(29,29,27,.18)}
+  padding:34px 48px 64px;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(29,29,27,.18)}
 @page{size:1280px 720px;margin:0}
 @media print{
   body{background:#fff}
@@ -98,6 +100,20 @@ b,strong{font-weight:600}
 .src{flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pg{font-weight:700;color:var(--ink);min-width:16px;text-align:right}
 
+/* the prism badge (look A, Pete 11 Nov): the deck's recurring element, as the house was in Round Two. It sits in the
+   footer of every content slide; the current section's rays are lit. Slides 1, 2 and 11 (the dark stage) don't carry it. */
+.foot{height:44px;bottom:9px}
+.badge-prism{display:flex;align-items:center;gap:14px;flex:none}
+.badge-prism svg text{font-family:var(--text)}
+.badge-prism p{font:700 14px/1.2 var(--text);letter-spacing:.4px;color:var(--slate)}
+.badge-prism p span{display:block;font:500 12px/1.3 var(--text);letter-spacing:0;color:var(--grey);margin-top:1px}
+.kick b.k-impact{color:var(--I)}
+/* each section's kicker and side bar take its letter's colour, matching the lit ray in the badge */
+.sec-P .head{border-left-color:var(--P)} .sec-P .kick{color:var(--P)}
+.sec-R .head{border-left-color:var(--R)} .sec-R .kick{color:var(--R)}
+.sec-S .head{border-left-color:var(--S)} .sec-S .kick{color:var(--S)}
+.sec-M .head{border-left-color:var(--M)} .sec-M .kick{color:var(--M)}
+
 /* big numbers */
 .hero{font:800 96px/0.92 var(--num);letter-spacing:-1px}
 .num{font:800 38px/1 var(--num)}
@@ -126,13 +142,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s4-sheet td.a{font:700 21px/1.25 var(--head)}
 .s4-sheet td.v{font:500 19px/1.25 var(--text);color:var(--slate)}
 .s4-sheet td.in{background:var(--mist)}
-.s4-sheet td.out{background:var(--block)}
+.s4-sheet td.out{background:#E7F3F6}
 .s4-sheet .n{font:800 28px/1.05 var(--num);color:var(--accent);letter-spacing:-.3px}
 .s4-sheet .no{font:800 25px/1.05 var(--num);color:var(--out);letter-spacing:-.3px}
 .s4-sheet .s{font:500 16px/1.35 var(--text);color:var(--slate);margin-top:3px}
 .s4-sheet .na{font:600 16px/1.35 var(--text);color:var(--slate);margin-top:4px}
 .s4-sheet .ink{font:600 16px/1.35 var(--text);color:var(--ink)}
-.s4-sheet .loop{font:700 15px/1.35 var(--text);color:var(--accent-deep);margin-top:5px}
+.s4-sheet .loop{font:700 15px/1.35 var(--text);color:var(--out);margin-top:5px}
 .s4-sheet tr.esg td{border-top:none;padding-top:8px;padding-bottom:8px}
 .s4-sheet tr.esg td.a{font:700 17px/1.25 var(--text);padding-left:28px}
 .s4-sheet .s4-chip{font-size:13px;padding:6px 10px;vertical-align:1px}
@@ -223,7 +239,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 </section>
 
 <!-- 3 · Pete, 0:45 -->
-<section class="slide" id="s3" data-time="0:45" data-speaker="Pete">
+<section class="slide sec-P" id="s3" data-time="0:45" data-speaker="Pete">
   <header class="head">
     <p class="kick">P · Profile: our advice for one Hong Kong family</p>
     <h2>[For one Hong Kong family: N changes, HK$… of capital, HK$… more to the children, … t a year less]</h2>
@@ -237,8 +253,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">PETE: [script to write] [Notes: Pete says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st on">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Area 1</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#F4B740"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#F4B740">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#6F6366">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6F6366">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">3</span>
   </footer>
 </section>
@@ -247,9 +262,9 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
      new columns. Slides 6-9 highlight one row each; the replay (11) shows it complete. Model numbers are "fin_" keys in double braces
      (Final/final_model.py export_final(), through model/run_model.py export_numbers()); case figures and the research
      briefs' tonnes are typed, with their tags. -->
-<section class="slide" id="s4" data-time="0:45" data-speaker="Lookbua">
+<section class="slide sec-R" id="s4" data-time="0:45" data-speaker="Lookbua">
   <header class="head">
-    <p class="kick">R and I · both ways</p>
+    <p class="kick">R and <b class="k-impact">I</b> · both ways</p>
     <h2>Climate reaches every line of a balance sheet; a label covers one</h2>
   </header>
   <div class="body stack">
@@ -283,14 +298,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     (area2_business.md §3b); assets: the case, p.4 (the total includes the car); 2.6M = 25% of 10.47M. Rules:
     HKEX Listing Rules App. C2; Cap. 603 and EPD; HKMC age-plus-term limit; EU CBAM Reg. 2025/2083.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st on">Risk</span><span class="st on">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Areas 2, 4, 5</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#FF4A57"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#3CC8E6"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#FF4A57">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#3CC8E6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6F6366">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>RISK · IMPACT<span>Areas 2, 4, 5</span></p></div>
     <p class="src">Case p.4 · our model (MEASURED) · tonnes ESTIMATED, ILLUSTRATIVE business · HKEX App. C2 · EU CBAM</p><span class="pg">4</span>
   </footer>
 </section>
 
 <!-- 5 · Lookbua, 0:40 -->
-<section class="slide" id="s5" data-time="0:40" data-speaker="Lookbua">
+<section class="slide sec-R" id="s5" data-time="0:40" data-speaker="Lookbua">
   <header class="head">
     <p class="kick">R · the whole household</p>
     <h2>Judge the whole household: climate hits everything at once</h2>
@@ -304,14 +318,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st on">Risk</span><span class="st">Impact</span><span class="st">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Area 5</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#FF4A57"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#FF4A57">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6F6366">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>RISK<span>Area 5</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">5</span>
   </footer>
 </section>
 
 <!-- 6 · Lookbua, 0:45 -->
-<section class="slide" id="s6" data-time="0:45" data-speaker="Lookbua">
+<section class="slide sec-S" id="s6" data-time="0:45" data-speaker="Lookbua">
   <header class="head">
     <p class="kick">S · Select: the flat</p>
     <h2>The guardrails decide before preferences</h2>
@@ -325,14 +338,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">LOOKBUA: [script to write] [Notes: Lookbua says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st on">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Area 4</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#9B7BFF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#6F6366">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#9B7BFF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>SELECT<span>Area 4</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">6</span>
   </footer>
 </section>
 
 <!-- 7 · Fahtai, 0:55 -->
-<section class="slide" id="s7" data-time="0:55" data-speaker="Fahtai">
+<section class="slide sec-S" id="s7" data-time="0:55" data-speaker="Fahtai">
   <header class="head">
     <p class="kick">S · Select: the business</p>
     <h2>Most effect per HK$ first</h2>
@@ -346,14 +358,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">FAHTAI: [script to write] [Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st on">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Areas 2, 5</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#9B7BFF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#6F6366">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#9B7BFF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">7</span>
   </footer>
 </section>
 
 <!-- 8 · Fahtai, 0:55 -->
-<section class="slide" id="s8" data-time="0:55" data-speaker="Fahtai">
+<section class="slide sec-S" id="s8" data-time="0:55" data-speaker="Fahtai">
   <header class="head">
     <p class="kick">S · Select: the business</p>
     <h2>The kind of finance sets the test: judge a green loan as a loan</h2>
@@ -367,14 +378,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">FAHTAI: [script to write] [Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st on">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Area 2</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#9B7BFF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#6F6366">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#9B7BFF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>SELECT<span>Area 2</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">8</span>
   </footer>
 </section>
 
 <!-- 9 · Win, 1:00 -->
-<section class="slide" id="s9" data-time="1:00" data-speaker="Win">
+<section class="slide sec-S" id="s9" data-time="1:00" data-speaker="Win">
   <header class="head">
     <p class="kick">S · Select: the portfolio</p>
     <h2>The sustainable share is an output of the budgets, not a target</h2>
@@ -388,14 +398,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st on">Select</span><span class="st">Monitor</span></nav>
-    <span class="areas">Areas 1, 3</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#9B7BFF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#5A4F52"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#6F6366">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#9B7BFF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#6F6366">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">9</span>
   </footer>
 </section>
 
 <!-- 10 · Win, 0:45 -->
-<section class="slide" id="s10" data-time="0:45" data-speaker="Win">
+<section class="slide sec-M" id="s10" data-time="0:45" data-speaker="Win">
   <header class="head">
     <p class="kick">M · Monitor</p>
     <h2>Every missing price is a decision, and the plan knows when it's wrong</h2>
@@ -409,8 +418,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </div>
   <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
   <footer class="foot">
-    <nav class="line"><span class="st">Profile</span><span class="st">Risk</span><span class="st">Impact</span><span class="st">Select</span><span class="st on">Monitor</span></nav>
-    <span class="areas">Area 6</span>
+    <div class="badge-prism"><svg viewBox="0 0 248 44" width="248" height="44"><rect width="248" height="44" rx="10" fill="#17120F"/><line x1="10" y1="23" x2="52" y2="23" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#5A4F52"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#E6E9EE"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#6F6366">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#6F6366">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#6F6366">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6F6366">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#E6E9EE">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
     <p class="src">Sources: to add</p><span class="pg">10</span>
   </footer>
 </section>

@@ -226,7 +226,19 @@ advantages above survive that, as long as the talk stands alone (§3).
     sowhat bar and no tracker (they competed with the prism). The stage is one picture (`Final/deck/img/
     prism-stage.png`, 2560 x 1440, drawn by `Final/looks/prism_stage_art.py`) so PowerPoint shows it exactly; all
     words are live text. These five colours belong to this slide; elsewhere the crimson stays the one accent.
-  - **Not used:** the house; Morph or any transition (the venue's PowerPoint version is unknown); serif titles;
+  - **The recurring element: the prism badge** (Pete, 11 Nov, after rendering white-with-badge against dark-throughout,
+    `Final/looks/`): a small dark prism in the footer of every content slide (3 to 10), the current section's rays lit
+    (P on 3; R and I on 4 and 5; S on 6 to 9; M on 10), as Round Two's house filled floor by floor. Each section's
+    kicker and side bar take its letter's colour, in deeper shades on white: P `#B45309`, R `#C80E1E` (still money
+    at risk), I `#0E7490` (what the money does to the world, replacing the grey), S `#6D28D9`, M `#475569`. The dark
+    stage is kept for the story: slide 1 (the pre-mortem), 2 (PRISM) and 11 (the replay). Why not dark throughout:
+    slide 2 must stay unlike any other page, and the dense evidence slides read better dark-on-white in a lit room.
+  - **Morph, three times only** (Pete, 11 Nov; to build last, once slides 1, 3 and 11 exist): 1 → 2, the green label
+    moves to where the beam starts; 2 → 3, the big prism shrinks into the badge; 10 → 11, the badge grows back into
+    the stage with all five rays lit. Elsewhere no transition. Built with the fade fallback (as in Round Two), so an
+    older PowerPoint shows a fade and nothing breaks; Lookbua asks the organiser for the notebook's PowerPoint version
+    (Morph needs 2019 or Microsoft 365); tested in PowerPoint before sending.
+  - **Not used:** the house; any transition beyond the three morphs above; serif titles;
     colour alone for any status. Embed the font.
   - **Still to test:** 20 seconds on a projector or a TV from across a room (the light green, the slate text).
 - **Live talk:** about 1,200 spoken words for 9:20. A slide carries one point and its number; the reasoning is spoken.
