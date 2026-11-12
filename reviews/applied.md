@@ -452,3 +452,17 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
 - New helpers only (`label_core_at`, `pledge_for`, `fund_size`, `funded_for`, `m9`); `export_final()` unchanged.
   No existing line of `model_runs.md` changed (diff: 56 additions, no removals). `run_model.py` and `numbers.json`
   untouched.
+
+### Final (13 Nov): slide 3's numbers, every decision on one measure (`Final/final_model.py` `export_final()`)
+
+Pete (13 Nov) made the one measure and the values budget the spine and asked for slide 3 as one chart with every
+decision on it. Thirteen keys added to `export_final()`, all from runs already in `model_runs.md`:
+- `fin_dot_{vans,div,values,gift,data}_n`: each decision against the base (`switch_89`), the children's median
+  inheritance at Carmen's 89: vans +HK$0.51M (M2), dividends 2033-38 +HK$1.09M (M8's normal figure), the price of
+  values in fees −HK$0.57M (M4), the 20-year scholarship fund −HK$0.80M (M5), carbon data at HK$54K a year −HK$0.09M
+  (its cost alone, through the sale price; M8's −0.10 was measured on the new plan, not the base).
+- `fin_dot_*_s`: the same under the 2030-31 scenario, against the plan under it (M8): +0.47, +1.07, −0.48, −0.73, −0.07.
+- `fin_dot_flat_n` −HK$4.07M and `fin_dot_flat_s` −HK$2.68M: the reverse mortgage against downsizing (M6; M7, all
+  together, downsizing instead). `fin_dot_down_sodds` 82.7%: downsizing under the scenario, below the 85% floor.
+- Checked: `numbers.json` before and after differ only by these 13 additions; `figure-data.md` and every PNG unchanged.
+  `Final/deck/series.py` turns them into the dots' positions (the `dx_` tokens) and refuses a value off the axis.

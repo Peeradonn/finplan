@@ -410,6 +410,23 @@ def export_final():
     a, s = label_storm_path()
     out["fin_lab_gap32"] = f"HK${a[2032] - s[2032]:.1f}M"             # poorer within two years
     out["fin_lab_gap89"] = f"HK${a[END] - s[END]:.1f}M"               # what the children inherit, at the end
+    # slide 3 (the answer, Pete 13 Nov: one measure for every decision): each decision against its best ordinary
+    # alternative, in the children's median inheritance; _n a normal future (against the base), _s under the 2030-31
+    # scenario (against the plan under it, as in M8). The flat is the reverse mortgage against downsizing.
+    sg = lambda v: ("−" if v < 0 else "+") + f"HK${abs(v):.2f}M"
+    st0 = stressed(base, sc, mult)
+    up, dcut = sale_uplift(SAVE), sale_uplift(-CARBON_LO)
+    for k, nkw, skw in (("vans", dict(biz=m.BIZ + up), dict(biz_add=up)),
+                        ("div", dict(inflows=dividends(SAVE)), dict(flows=dividends(SAVE))),
+                        ("values", dict(r_eq=r_eq_for(-FEE_VALUES)), dict(r_eq=r_eq_for(-FEE_VALUES))),
+                        ("gift", dict(inflows=scholarship_funded()), dict(flows=scholarship_funded())),
+                        ("data", dict(biz=m.BIZ + dcut), dict(biz_add=dcut))):
+        out[f"fin_dot_{k}_n"] = sg(run(base, **nkw)["leg_med"] - b["leg_med"])
+        out[f"fin_dot_{k}_s"] = sg(stressed(base, sc, mult, **skw)["leg_med"] - st0["leg_med"])
+    down, down_s = run(base, "down"), run(base, "down", mult, **sc)
+    out["fin_dot_flat_n"] = sg(b["leg_med"] - down["leg_med"])
+    out["fin_dot_flat_s"] = sg(allr["leg_med"] - down_s["leg_med"])
+    out["fin_dot_down_sodds"] = f"{down_s['odds']:.1%}"              # downsizing under the scenario: below the 85 floor
     return out
 
 

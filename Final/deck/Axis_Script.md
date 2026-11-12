@@ -1,6 +1,6 @@
 # PRISM: the script (Team Axis)
 
-Generated 2026-11-12 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
+Generated 2026-11-13 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
 173 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:55. Speech: 1:11 at 145 words a minute (1:31 with names and handovers); 1:16 at 135 words a minute (1:36 with names and handovers); 1:23 at 125 words a minute (1:43 with names and handovers). Over 10:30 disqualifies the team.
 
@@ -20,12 +20,12 @@ Speaking time at 135 words a minute: Pete 1:08, Lookbua 0:02, Fahtai 0:02, Win 0
 
 > Notes: Pete says his simple name before his part. What it must prove: Final/Final_Plan.md §4.5, slide 2, and §4.2 "five letters, five twists". Evidence status per claim in §4.5.
 
-## 3 · [Seven changes: about HK$2.4M more for their children, and 134 tonnes of carbon a year less]
+## 3 · One measure for every decision: the biggest price buys safety, and all the carbon we cut is in the business
 *Our answer, first · the Wongs, from this year's competition case · Pete · 0:25 · 3 spoken words (≈1 s at 135)*
 
 **Pete:** [script to write]
 
-> Notes: the answer before the steps. Changes: Decision_List.md §1 (B1 vans, LED, air-con; B3 emissions data; B4 recycled content at parity; P1 climate-benchmark index fund at the plain fund's fee; P3 plain bonds for Adrian; G1 the scholarship funded in 2027–28; H1 the reverse mortgage with a yearly price trigger and the building's 50th year as a deadline). Capital: Decision_List.md §2 (ESTIMATED). Outcomes: model_runs.md, +HK$2.44M against the label approach (EXPLORATORY until the re-base); ≈134 t a year (ESTIMATED; 108 t rest on recycled PET at parity). The honest split: ≈HK$0.5M the vans; ≈HK$1.1M cheaper funds and ≈HK$0.8M the scholarship funded are ordinary planning. Pete settles the count of changes (Decision_List.md §1).
+> Notes: the answer before the steps, drawn as the thesis (Pete, 13 Nov). Each dot is one decision against its best ordinary choice, in the children's median inheritance at Carmen's 89 (today's HK$, including the flat): filled, a normal future against the base (switch_89); ring, the 2030–31 scenario against the plan under it (M8). Keys fin_dot_* (Final/final_model.py export_final, 13 Nov). The vans: B1 through the sale price, diesel HK$31/L (M2). The scholarship: G1's 20-year fund, ≈HK$0.48M in 2027–28 (M5; Final_Plan.md §5.3 open: 39 years would be ≈HK$0.74M). ESG funds: the price of values in fees against all-plain twins, HK$5,107 a year (M4); kept as Carmen's values from the budget, not called impact. Carbon data: its cost at HK$54K a year through the sale price; what it protects is a customer worth 10% of sales, −HK$1.55M (M3). Paying out Carmen's half of the van saving 2033–38 (B8): needs the co-founder, outside the headline; the only decision worth more in odds under stress (M8). Recycled plastic: B4 at today's price parity (US$1,240/t, S&P Platts, 7 Oct 2026), not a model run; 108 t a year ESTIMATED. Tonnes: Decision_List.md (vans 19.3 + LED 4.1 + air-con 2.8 ≈ 26 t; recycled PET 108.1 t), ESTIMATED on an ILLUSTRATIVE business. The flat: the reverse mortgage against downsizing in 2037 (M6 normal; M7 under the scenario, downsizing 82.7% against the reverse mortgage's 89.5%); under the scenario downsizing still leaves the median more (−HK$2.68M for keeping it), so the limit, not the median, decides. Capital: Decision_List.md §2 (ESTIMATED); the data's ≈HK$54–73K a year is in the notes, not on screen. The limit (95 in 100 normally, 85 under the scenario) is ours, ILLUSTRATIVE. Headline: Final_Plan.md §5.1.
 
 ## 4 · Settle the family's disagreements once, before any option is priced
 *Pete · 0:30 · 3 spoken words (≈1 s at 135)*

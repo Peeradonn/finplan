@@ -89,12 +89,43 @@ def bars(c):
     return tok
 
 
+def signed(key):
+    """A '−HK$0.57M' or '+HK$0.51M' value from numbers.json, as a signed number in HK$M."""
+    s = json.load(open(NUMBERS, encoding="utf-8"))[key]
+    v = float(re.sub(r"[^\d.]", "", s))
+    return -v if s.strip()[0] in "−-" else v
+
+
+# slide 3: every decision on one measure (Pete, 13 Nov). x of a value in HK$M inside the SVG's plot, from DOT_V0 to DOT_V1
+DOT_V0, DOT_V1, DOT_X0, DOT_X1 = -1.0, 1.3, 30.0, 800.0
+DOTS = ("vans", "div", "values", "gift", "data")
+
+
+def dot_x(v):
+    if not DOT_V0 <= v <= DOT_V1:
+        raise ValueError(f"slide 3: {v:+.2f} is off the axis ({DOT_V0} to {DOT_V1}); widen DOT_V0/DOT_V1")
+    return DOT_X0 + (v - DOT_V0) / (DOT_V1 - DOT_V0) * (DOT_X1 - DOT_X0)
+
+
+def dots():
+    """Slide 3: [[dx_vans_n]] and [[dx_vans_s]], the x of each decision in a normal future and under the scenario;
+    [[dx_zero]] and [[dx_tick_m1]], [[dx_tick_m05]], [[dx_tick_p05]], [[dx_tick_p1]] for the axis."""
+    tok = {"dx_zero": f"{dot_x(0):.1f}"}
+    for name, v in (("m1", -1.0), ("m05", -0.5), ("p05", 0.5), ("p1", 1.0)):
+        tok[f"dx_tick_{name}"] = f"{dot_x(v):.1f}"
+    for d in DOTS:
+        for f in ("n", "s"):
+            tok[f"dx_{d}_{f}"] = f"{dot_x(signed(f'fin_dot_{d}_{f}')):.1f}"
+    return tok
+
+
 def fill(text):
     charts = {p: Chart(p) for p in BOX}
     tok = {}
     for p, c in charts.items():
         tok.update(c.tokens(p))
     tok.update(bars(charts["sp"]))
+    tok.update(dots())
 
     def sub(m):
         name, arg, off = m.group(1), m.group(2), float(m.group(3) or 0)

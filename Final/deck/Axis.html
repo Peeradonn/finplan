@@ -171,18 +171,26 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s3-out span{display:block;font:500 15px/1.3 var(--text);color:#D8CFD1}
 .s3-split{margin-top:auto;font:500 13.5px/1.4 var(--text);color:#B9ACAF;font-style:italic;padding-top:12px}
 
-/* ---- slide 3: our answer, first (ans- classes; Pete, 11 Nov) ---- */
-.ans-body{display:flex;flex-direction:column}
-.ans-fam{font:600 16px/1.3 var(--text);color:var(--slate);margin-bottom:16px}
-.ans-groups{display:grid;grid-template-columns:1.25fr 1.15fr 1fr 1fr;gap:16px;flex:1}
-.ans-g{border-top:4px solid var(--ink);padding-top:12px}
-.ans-h{display:flex;align-items:center;gap:8px;font:800 19px/1.2 var(--head);margin-bottom:10px}
-.ans-h .ic{width:26px;height:26px;color:var(--accent)}
-.ans-g ul{list-style:none;margin:0;padding:0}
-.ans-g li{font:600 17px/1.32 var(--text);padding:8px 0 8px 14px;border-left:3px solid var(--rule);margin-bottom:8px}
-.ans-foot{display:flex;gap:36px;justify-content:space-between;border-top:1px solid var(--rule);padding-top:12px;margin-top:6px}
-.ans-foot p{font:500 15.5px/1.35 var(--text);color:var(--slate)}
-.ans-foot b{color:var(--ink)}
+/* ---- slide 3: our answer on one measure (om- classes; Pete, 13 Nov: every decision priced the same way, the limit
+   first). Left: the limit settles the flat before any price. Right: each decision as a dot on what the children
+   inherit, two rows for real effect shown or not; the dots' x come from numbers.json through series.py (the dx_ tokens). ---- */
+.om-body{display:flex;flex-direction:column}
+.om-fam{font:600 16px/1.3 var(--text);color:var(--slate);margin-bottom:10px}
+.om-main{flex:1;min-height:0;display:flex;gap:26px}
+.om-limit{flex:0 0 272px;border-top:4px solid var(--accent);padding-top:10px;display:flex;flex-direction:column;gap:7px}
+.om-limit .om-h{font:800 19px/1.2 var(--head);color:var(--ink)}
+.om-limit .om-h span{color:var(--accent)}
+.om-limit p{font:500 16px/1.34 var(--text);color:var(--slate)}
+.om-limit .om-big{font:800 34px/1 var(--num);color:var(--accent);letter-spacing:-.5px}
+.om-limit .om-rule{font:700 17px/1.3 var(--text);color:var(--ink);margin-top:auto}
+.om-chart{flex:1;min-width:0;border-top:4px solid var(--ink);padding-top:10px;display:flex;flex-direction:column}
+.om-chart svg{display:block;width:100%;height:auto;overflow:visible}
+.om-chart svg text{font-family:var(--text);font-size:16px}
+.om-cap{display:flex;justify-content:space-between;gap:12px;font:600 16px/1.3 var(--text);color:var(--slate);margin-top:2px;padding:0 0 0 2%}
+.om-cap span:nth-child(2){font-weight:500;text-align:center}
+.om-foot{display:flex;gap:30px;justify-content:space-between;border-top:1px solid var(--rule);padding-top:10px;margin-top:8px}
+.om-foot p{font:500 16px/1.32 var(--text);color:var(--slate)}
+.om-foot b{color:var(--ink)}
 
 /* ---- slide 4: Profile, the limits first (pro- classes; Pete, 11 Nov) ---- */
 .pro-body{display:flex;flex-direction:column;justify-content:center;gap:22px}
@@ -266,10 +274,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
-<symbol id="i-briefcase-business" viewBox="0 0 24 24"><path d="M12 12h.01" /> <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /> <path d="M22 13a18.15 18.15 0 0 1-20 0" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
-<symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol>
-<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
-<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+
 </svg>
 <main class="deck">
 <!-- Storyline v4 (Final/Final_Plan.md §4.5). Each slide below is a placeholder: build it from its row in §4.5
@@ -377,34 +382,105 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     Final/Final_Plan.md §4.5, slide 2, and §4.2 "five letters, five twists". Evidence status per claim in §4.5.]</aside>
 </section>
 
-<!-- 3 · Pete, 0:25. Our answer, first (Pete, 11 Nov: slide 3 split in two; Key Areas §7: "lead with a recommendation,
-     the capital required and the expected financial and sustainability outcomes"). One point: what PRISM recommends for
-     the Wongs. The seven changes are Decision_List.md §1's B1, B3, B4, P1, P3, G1, H1; the money stays in brackets until
-     the label approach is re-based on a fund that can be bought (Final_Plan.md §4.5). -->
+<!-- 3 · Pete, 0:25 (a chart needs ≈0:45: Pete to retime). Our answer, first (Key Areas §7: "lead with a recommendation,
+     the capital required and the expected financial and sustainability outcomes"). Redrawn 13 Nov (Pete: the one measure
+     and the values budget are the spine): every decision on one measure, what the children inherit (median, today's
+     HK$), against its best ordinary choice; the limit decides the flat before any price. Dots: numbers.json fin_dot_*
+     through series.py. The headline against the label approach stays in brackets until the re-base (Final_Plan.md §5.1).
+     The old four-group layout is in git (c1d8cfe). -->
 <section class="slide" id="s3" data-time="0:25" data-speaker="Pete">
   <header class="head">
     <p class="kick">Our answer, first · the Wongs, from this year's competition case</p>
-    <h2>[Seven changes: about HK$2.4M more for their children, and 134 tonnes of carbon a year less]</h2>
+    <h2>One measure for every decision: the biggest price buys safety, and all the carbon we cut is in the business</h2>
   </header>
-  <div class="body ans-body">
-    <p class="ans-fam">Adrian 54, Carmen 49, Ryan 24, Chloe 16 · a flat, Carmen's packaging business, HK$10.5M of savings</p>
-    <div class="ans-groups"><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-briefcase-business"/></svg>The business</p><ul><li>Electric vans, LED lights, new air-con</li><li>Carbon data before customers ask</li><li>Recycled plastic at the same price</li></ul></div><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-chart-line"/></svg>The savings</p><ul><li>A climate index fund at the plain fund's fee</li><li>Plain bonds for Adrian, not green ones</li></ul></div><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-house"/></svg>The flat</p><ul><li>A reverse mortgage at retirement, with a yearly price trigger</li></ul></div><div class="ans-g"><p class="ans-h"><svg class="ic"><use href="#i-gift"/></svg>Their giving</p><ul><li>Fund the scholarship now, instead of a lifelong pledge</li></ul></div></div>
-    <div class="ans-foot">
-      <p><b>Capital:</b> HK$0.48M of the family's, HK$1.91M of the business's</p>
-      <p><b>Refused:</b> a green mortgage, a paid green-loan label, a clean-energy fund, "compostable" claims</p>
+  <div class="body om-body">
+    <p class="om-fam">Adrian 54, Carmen 49, Ryan 24, Chloe 16 · a flat, Carmen's packaging business, HK$10.5M of savings</p>
+    <div class="om-main">
+      <div class="om-limit">
+        <p class="om-h"><span>Limits first:</span> the flat</p>
+        <p>Selling it in 2037 for a smaller one leaves the children more. Keeping it, in a normal future:</p>
+        <p class="om-big">−HK$4.07M</p>
+        <p>But in the 2030–31 downturn, downsizing keeps the money lasting in 82.7% of futures: below their
+          85% limit. A reverse mortgage keeps 89.5%.</p>
+        <p class="om-rule">The limit decides: keep the flat, release it by 2046.</p>
+      </div>
+      <div class="om-chart">
+        <svg viewBox="0 0 820 262" role="img" aria-label="Each decision on one measure: what the children inherit">
+          <!-- the values budget: the two choices that cost money for values -->
+          <rect x="52" y="22" width="206" height="214" rx="6" fill="#F4E6E9"/>
+          <text x="64" y="42" font-weight="800" fill="#8E0A16">Values budget</text>
+          <!-- rows; the zero line, broken where a label sits -->
+          <text x="0" y="14" font-weight="800" fill="#0E7490">A REAL EFFECT WE CAN SHOW</text>
+          <line x1="0" y1="131" x2="820" y2="131" stroke="#E2CFD3" stroke-width="1.5"/>
+          <text x="0" y="150" font-weight="800" fill="#5E4A50">NO REAL EFFECT SHOWN</text>
+          <line x1="364.8" y1="70" x2="364.8" y2="196" stroke="#5E4A50" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <line x1="364.8" y1="230" x2="364.8" y2="240" stroke="#5E4A50" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <!-- legend -->
+          <circle cx="602" cy="9" r="6" fill="#1B1716"/><text x="614" y="14" fill="#5E4A50">normal</text>
+          <circle cx="689" cy="9" r="7" fill="none" stroke="#1B1716" stroke-width="1.6"/><text x="702" y="14" fill="#5E4A50">downturn</text>
+          <!-- top row: a real effect shown -->
+          <circle cx="120.4" cy="78" r="9" fill="none" stroke="#0E7490" stroke-width="1.6"/>
+          <circle cx="97.0" cy="78" r="7" fill="#0E7490"/>
+          <text x="85.0" y="105" font-weight="700" fill="#1B1716">Fund the scholarship</text>
+          <text x="85.0" y="123" fill="#5E4A50"><tspan font-weight="700" fill="#1B1716">−HK$0.80M</tspan> · 20 years</text>
+          <circle cx="364.8" cy="78" r="7" fill="#0E7490"/>
+          <text x="364.8" y="42" text-anchor="middle" font-weight="700" fill="#1B1716">Recycled plastic</text>
+          <text x="364.8" y="60" text-anchor="middle" fill="#5E4A50">at today's price · <tspan font-weight="700" fill="#0E7490">−108 t a year</tspan></text>
+          <circle cx="522.1" cy="78" r="9" fill="none" stroke="#0E7490" stroke-width="1.6"/>
+          <circle cx="535.5" cy="78" r="7" fill="#0E7490"/>
+          <text x="535.5" y="105" text-anchor="middle" font-weight="700" fill="#1B1716">Electric vans, LED, air-con</text>
+          <text x="535.5" y="123" text-anchor="middle" fill="#5E4A50"><tspan font-weight="700" fill="#1B1716">+HK$0.51M</tspan> · <tspan font-weight="700" fill="#0E7490">−26 t a year</tspan></text>
+          <!-- bottom row: no real effect shown -->
+          <circle cx="204.1" cy="208" r="9" fill="none" stroke="#1B1716" stroke-width="1.6"/>
+          <circle cx="174.0" cy="208" r="7" fill="#1B1716"/>
+          <text x="174.0" y="172" text-anchor="middle" font-weight="700" fill="#1B1716">ESG funds, Carmen's</text>
+          <text x="174.0" y="190" text-anchor="middle" fill="#5E4A50"><tspan font-weight="700" fill="#1B1716">−HK$0.57M</tspan> · her values</text>
+          <circle cx="341.3" cy="208" r="9" fill="none" stroke="#1B1716" stroke-width="1.6"/>
+          <circle cx="334.7" cy="208" r="7" fill="#1B1716"/>
+          <text x="358.7" y="203" font-weight="700" fill="#1B1716">Carbon data</text>
+          <text x="358.7" y="222" fill="#5E4A50"><tspan font-weight="700" fill="#1B1716">−HK$0.09M</tspan> · protects the sale</text>
+          <circle cx="723.0" cy="208" r="9" fill="none" stroke="#1B1716" stroke-width="1.6"/>
+          <circle cx="729.7" cy="208" r="7" fill="#1B1716"/>
+          <text x="745.7" y="172" text-anchor="end" font-weight="700" fill="#1B1716">Pay out Carmen's share</text>
+          <text x="745.7" y="190" text-anchor="end" fill="#5E4A50"><tspan font-weight="700" fill="#1B1716">+HK$1.09M</tspan> · if her partner agrees</text>
+          <!-- axis -->
+          <line x1="30" y1="242" x2="800" y2="242" stroke="#1B1716" stroke-width="1.5"/>
+          <text x="30.0" y="260" text-anchor="middle" fill="#5E4A50">−1</text>
+          <text x="197.4" y="260" text-anchor="middle" fill="#5E4A50">−0.5</text>
+          <text x="364.8" y="260" text-anchor="middle" font-weight="700" fill="#1B1716">0</text>
+          <text x="532.2" y="260" text-anchor="middle" fill="#5E4A50">+0.5</text>
+          <text x="699.6" y="260" text-anchor="middle" fill="#5E4A50">+1</text>
+          <text x="800" y="260" text-anchor="end" fill="#5E4A50">HK$M</text>
+        </svg>
+        <p class="om-cap"><span>← Costs the children</span><span>Change in what the children inherit (median), against the best ordinary choice</span><span>Adds →</span></p>
+      </div>
+    </div>
+    <div class="om-foot">
+      <p><b>Capital:</b> family HK$0.48M · business HK$1.91M, plus ≈HK$0.27M working capital</p>
+      <p><b>Outcome:</b> [against the label approach: after the re-base] · 134 t of carbon a year less</p>
+      <p><b>Refused:</b> a green mortgage, a paid green-loan label, a clean-energy fund, "compostable"</p>
     </div>
   </div>
-  <p class="sowhat">All the carbon cut comes from the business, not the funds.</p>
-  <aside class="notes">PETE: [script to write] [Notes: the answer before the steps. Changes: Decision_List.md §1 (B1 vans, LED,
-    air-con; B3 emissions data; B4 recycled content at parity; P1 climate-benchmark index fund at the plain fund's fee; P3
-    plain bonds for Adrian; G1 the scholarship funded in 2027–28; H1 the reverse mortgage with a yearly price trigger and
-    the building's 50th year as a deadline). Capital: Decision_List.md §2 (ESTIMATED). Outcomes: model_runs.md, +HK$2.44M
-    against the label approach (EXPLORATORY until the re-base); ≈134 t a year (ESTIMATED; 108 t rest on recycled PET at
-    parity). The honest split: ≈HK$0.5M the vans; ≈HK$1.1M cheaper funds and ≈HK$0.8M the scholarship funded are ordinary
-    planning. Pete settles the count of changes (Decision_List.md §1).]</aside>
+  <p class="sowhat">Limits first. A budget for values. One measure for every decision.</p>
+  <aside class="notes">PETE: [script to write] [Notes: the answer before the steps, drawn as the thesis (Pete, 13 Nov). Each dot
+    is one decision against its best ordinary choice, in the children's median inheritance at Carmen's 89 (today's HK$,
+    including the flat): filled, a normal future against the base (switch_89); ring, the 2030–31 scenario against the plan
+    under it (M8). Keys fin_dot_* (Final/final_model.py export_final, 13 Nov). The vans: B1 through the sale price, diesel
+    HK$31/L (M2). The scholarship: G1's 20-year fund, ≈HK$0.48M in 2027–28 (M5; Final_Plan.md §5.3 open: 39 years would be
+    ≈HK$0.74M). ESG funds: the price of values in fees against all-plain twins, HK$5,107 a year (M4); kept as Carmen's
+    values from the budget, not called impact. Carbon data: its cost at HK$54K a year through the sale price; what it
+    protects is a customer worth 10% of sales, −HK$1.55M (M3). Paying out Carmen's half of the van saving
+    2033–38 (B8): needs the co-founder, outside the headline; the only decision worth more in odds under stress (M8).
+    Recycled plastic: B4 at today's price parity (US$1,240/t, S&P Platts, 7 Oct 2026), not a model run; 108 t a year
+    ESTIMATED. Tonnes: Decision_List.md (vans 19.3 + LED 4.1 + air-con 2.8 ≈ 26 t; recycled PET 108.1 t), ESTIMATED on
+    an ILLUSTRATIVE business. The flat: the reverse mortgage against downsizing in 2037 (M6 normal; M7 under the scenario,
+    downsizing 82.7% against the reverse mortgage's 89.5%); under the scenario downsizing
+    still leaves the median more (−HK$2.68M for keeping it), so the limit, not the median, decides. Capital:
+    Decision_List.md §2 (ESTIMATED); the data's ≈HK$54–73K a year is in the notes, not on screen. The limit (95 in 100
+    normally, 85 under the scenario) is ours, ILLUSTRATIVE. Headline: Final_Plan.md §5.1.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#B45309"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#0E7490"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B45309">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#0E7490">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>ALL FIVE STEPS<span>Area 1</span></p></div>
-    <p class="src">Award 2026 case · changes: our decision list · capital ESTIMATED · money: our model (MEASURED, before the re-base) · tonnes ESTIMATED</p><span class="pg">3</span>
+    <p class="src">Award 2026 case · money: our model (MEASURED) · tonnes ESTIMATED · plastic price: S&amp;P Platts, 7 Oct 2026 · limit ILLUSTRATIVE</p><span class="pg">3</span>
   </footer>
 </section>
 <!-- 4 · Pete, 0:30. P, Profile (Pete, 11 Nov: split from slide 3). One point: the parents disagree, and PRISM settles it once,
