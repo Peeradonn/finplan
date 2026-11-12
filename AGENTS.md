@@ -3,6 +3,31 @@
 Guidance for every AI assistant in this repo: Codex reads this file, and Claude Code loads it through `CLAUDE.md`. Edit
 this file, not `CLAUDE.md`. Team Axis: Pete (lead), Win, Fahtai, Lookbua.
 
+## Codex: continuing this project
+- This is Codex's project guidance as well as Claude's. Keep one shared source; do not create a competing
+  `CODEX.md` or copy this text into `CLAUDE.md`.
+- The existing local skills are readable by Codex: `C:/Users/User/.claude/skills/deck-plan/SKILL.md` (storyline and
+  evidence) and `C:/Users/User/.claude/skills/slide-design/SKILL.md` (craft and visual review). The first is called
+  **deck-plan**, not deck-planning. Read them when using them; resolve their references against their own folders.
+  They are not automatically listed in Codex's skill catalog. If unavailable on another PC, report that fact.
+- Translate Claude-specific tool names to available Codex tools: read files with the shell, inspect PNGs with
+  `view_image`, and use the repo's `.venv/Scripts/python.exe` and existing Final build scripts. Keep the established
+  deck and its tokens; do not copy a new starter over it. Render and inspect every changed slide and relevant builds.
+- **Current handoff (Pete, 12 Nov):** developing slides 1 and 3, first checking exactly what the argument claims.
+  Read `Final/research/claims_audit_2026-11-12.md` alongside the plan and `industry_practice.md`; inspect the PDFs in
+  `Final/Relative Research/`. This is working context, not an instruction to redesign both slides automatically.
+- **Claims about other advisers:** ESG integration, screening, alignment and additional impact are different.
+  Do not imply ESG is absent from ordinary investment analysis, or that practitioners ignore homes and businesses.
+  A public report's silence is not evidence that a service is absent. Say what the named source actually describes;
+  label any broader inference. The label approach is our specified comparison, not verified typical industry practice.
+  Our earlier proposal shows we used it; it does not establish how other advisers work.
+- **Claims about our results:** distinguish scenario losses from losses caused by choosing labels, model outputs
+  from observed outcomes, and a modelled benefit from the sustainable part from ordinary planning savings. A number
+  exported successfully can still rely on an unsuitable comparator. Clear the baseline and full-cost questions in the
+  plan before promoting draft headlines. Unknown or unmeasured impact is not proven zero impact.
+- Preserve teammates' edits and unrelated local files. Fetch before editing; integrate new team commits without
+  overwriting local work. Stage only this task's files. Never add restricted research PDFs just because they are untracked.
+
 ## What this repo is
 Our entry to the **UFP Award 2026** (Hong Kong Undergraduate Financial Planners of the Year) for the case **"The Wong
 Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Asset Exposure"**.
@@ -25,10 +50,11 @@ PDFs in `Final/` (the topic, its key areas, the finalist guidelines); the case, 
 **How the Final differs from Rounds One and Two** (Pete, 5 Nov; details in `Final_Plan.md` §2–3):
 - **No judge is assumed to have read Rounds One or Two.** The talk introduces the family from scratch; every slide stands
   alone.
-- **The "before" is the label approach:** what a careful planner does by default (funds from the SFC's ESG list to hit
-  the target, the banks' green mortgage and loan, a pledge to a charity, nothing on the business or the flat). Our Round
-  One did exactly that, which shows it isn't a strawman: say so at most once, never as the spine. Never "October" or "our
-  Round One plan" on a slide.
+- **The "before" is the label approach:** our specified fund-and-label-led comparison (funds from the SFC's ESG list
+  to hit the target, labelled bank products considered, a charitable pledge, no business transition or property-climate
+  intervention). Establish what the actual model includes; do not assume every example is in it. Our Round One is a
+  concrete precedent, not evidence of typical adviser practice (12 Nov claims audit). Mention it at most once, never
+  as the spine. Never "October" or "our Round One plan" on a slide.
 - **Round One's choices are open.** Where the framework disagrees, the new advice wins without apology. Round Two's look
   (the house, "Built to Last") isn't the default either.
 
@@ -102,7 +128,7 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
   `round2/Round2_Deck_Plan.md` §4, "Failures we've seen".
 - **Slides are not the document.** The proposal's writing rules (below) are for the PDF only.
 - **Untested assumptions** about the Final are in `Final_Plan.md` §10: test them, don't build on them.
-- In Claude Code, use the `slide-design` skill for craft (forms, critique, rendering) and `deck-plan` for the storyline.
+- Use the `slide-design` skill for craft (forms, critique, rendering) and `deck-plan` for the storyline (Codex paths above).
   Render and look at every changed slide before reporting.
 
 ## Hard rules (a breach can disqualify)

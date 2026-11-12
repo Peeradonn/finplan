@@ -1,5 +1,14 @@
 # Final Round: plan
 
+**Evidence review, 12 Nov (Codex; before continuing slides 1 and 3):**
+[`research/claims_audit_2026-11-12.md`](research/claims_audit_2026-11-12.md) records the primary-source check and existing
+render review. Its scope correction supersedes the draft generalisations below about what advisers “usually” do or
+“nobody” considers: the label approach is our specified comparator, not verified industry practice. Existing ESG
+integration and client-facing climate/insurance advice must be acknowledged. Proposed replacement wording is in the
+audit; the storyline and slide layouts are unchanged. Slide 1's loss is a normal-vs-stress comparison of one baseline,
+not a measured penalty caused by labels. Slide 3's final headline still waits for the purchasable-fund re-base and a
+complete package including data costs and working capital (existing open items below).
+
 **Status:** draft, 10 Nov 2026. Decided: the client is the Wongs (Pete, 4 and 5 Nov). New, to agree: the thesis, the
 framework (PRISM: Profile, Risk, Impact, Select, Monitor; twelve tests) and storyline v4 (§4, 11 Nov; agreed by messages, §4.6). Everyone starts on work that
 waits for nobody.

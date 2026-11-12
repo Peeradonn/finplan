@@ -1,5 +1,12 @@
 # What leading firms do with ESG for clients, and the gaps PRISM fills (Claude, 11 Nov)
 
+> **Review correction, 12 Nov (Codex):** the source descriptions below are useful, but the absence claims and proposed
+> contrasts are not established by these documents. Read [the claims audit](claims_audit_2026-11-12.md) before using
+> this brief. In particular, “nobody”, “only”, “the usual way” and “now sourced” below are historical draft conclusions,
+> not approved evidence about adviser practice. The private-bank counter-example also gives explicit client-facing
+> guidance about climate, property, insurance and wealth goals. A public document's silence cannot establish that a
+> firm does not offer a service. The audit supersedes those interpretations, without re-verifying every other claim.
+
 **Why this brief:** Pete asked us to be accurate about what firms actually do, so "the usual way" in our talk is a fair
 description and not a strawman (Final_Plan.md §2–4). The two documents are in `Final/Relative Research/` (Pete, 11 Nov).
 They are **not in git**: JPMorgan's is marked "For institutional and professional investors only. Not for retail use or
