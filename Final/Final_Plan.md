@@ -573,9 +573,14 @@ the items below apply to them.
 1. **Financial outcome from ESG** — the brief's strongest scoring line ("evidence that the sustainable finance element
    changes the client's financial outcome, not just the vocabulary"); show one number for what the family gets in
    return for the ~1.4 pts/yr trailing cost (transition-risk reduction under NGFS disorderly). ESTIMATED.
+   **Status (Win, 12 Nov):** no published CTB-vs-parent comparison under transition stress found; honest line is
+   "not measured; no credit given". The whole plan's financial outcome (§4.1) is the number. See resolved items below.
 2. **Climate scenario on portfolio** — brief area 5 bullet 3 and area 7: "run at least one scenario ... show the
    financial consequence ... for the portfolio." One line on NGFS disorderly + CTB −7%/yr pathway.
+   **Status (Win, 12 Nov):** NGFS Phase V Net Zero 2050: US equity −6% to −15% vs baseline. For the Wongs' ≈60%
+   equity portfolio: HK$0.38–0.94M at risk before guardrails. ESTIMATED. See resolved items below.
 3. **Implied Temperature Rise (ITR)** — brief area 3 bullet 3; add alongside WACI: "ITR one band lower."
+   **Status (Win, 12 Nov):** EDMW ITR >2.0–2.5°C confirmed (MSCI, coverage 99.69%). SOURCED.
 4. **Currency and liquidity** — brief area 3 bullet 1: "the currency and the liquidity." USD (HKD-pegged); daily dealing.
 5. **Engagement policy** — brief area 3 bullet 4: BlackRock stewardship votes on climate; we report the rule, not the claim.
 6. **Regulatory reference** — brief area 5 bullet 1: SFC-authorised fund; EU CTB-regulated index.
@@ -592,6 +597,8 @@ the items below apply to them.
 11. **Named behavioural biases** — brief area 6 bullet 3 names five; show at least three on the Wongs: anchoring (on the
     25% label), loss aversion (the flat; Adrian's TE caution), social desirability (claiming "green" without measuring),
     mental accounting (separating "green money" from "normal money").
+    **Status (Win, 12 Nov):** all five mapped to the Wongs with design responses, plus anchoring as a sixth.
+    See resolved items below.
 12. **Risk register row** — brief area 5 bullet 2: transition risk, data risk, reputational/conduct risk → mitigation.
 13. **HK Taxonomy alignment** — brief area 5 bullet 1: not yet reported by fund manager → "can't measure yet" column.
 
@@ -611,6 +618,60 @@ Win's slides show a cost (price of values) with no payoff.
   aversion, mental accounting), as §4.2's "Biases, designed in" does; anchoring on the 25% target is a sixth worth
   keeping. "Carmen's reluctance to sell the flat" isn't in the case: label it our assumption or drop it.
 - The v2 storyline table that came back with the 11 Nov merge was removed: v4 (§4.5) replaces it.
+
+**Win's open items resolved (Win, 12 Nov):**
+
+1. **EDMW fund figures updated.** iShares MSCI World CTB Enhanced ESG UCITS ETF (IE00BHZPJ569):
+   - WACI **63.39 tCO2e/$M revenue** vs parent ≈90.8 = **−30.2%** (BlackRock/MSCI, coverage 99.82%). SOURCED.
+   - ITR band **>2.0°C – 2.5°C** (MSCI, coverage 99.69%). SOURCED.
+   - Fund size **USD 6.36 bn** (BlackRock factsheet, Oct 2026); 1,081 holdings; TER 0.20%; MSCI ESG Rating A;
+     SFDR Article 8. SOURCED.
+   - MSCI World CTB index tracking error vs MSCI World: **2.09%** (MSCI factsheet, 31 Oct 2026); 1,185 constituents;
+     YTD return 9.77% vs parent 10.89%. SOURCED.
+   - EU CTB rule confirmed: ≥30% below parent carbon intensity including Scope 3, declining 7% a year
+     (Regulation (EU) 2019/2089, Article 3 and Commission Delegated Regulation (EU) 2020/1818). SOURCED.
+   - The 8 Nov figure (WACI 63.67) is replaced by 63.39; the difference is a data refresh, not a methodology change.
+
+2. **ESG funds under stress: not measured; no credit given.** Searched for a published CTB-vs-parent comparison under
+   transition stress (MSCI Climate VaR, NGFS scenarios, SSGA transition-risk papers, academic literature). **No source
+   found** that gives a portfolio-level drawdown reduction for holding the CTB index vs the MSCI World parent under an
+   NGFS disorderly or Net Zero 2050 scenario. What exists:
+   - **NGFS Phase V** (Nov 2024; confirmed current): US equity −6% to −15% vs baseline under Net Zero 2050 by 2050;
+     the range spans models (GCAM, REMIND, MESSAGEix). SOURCED.
+   - **MSCI sector-level transition risk** (MSCI ESG Research): Energy sector enterprise value −31% under orderly 1.5°C,
+     −62% under delayed 2°C; Food & Staples −6.73% to −33.46%. SOURCED.
+   - The CTB index underweights high-carbon sectors (its WACI is 30% below the parent), so it would lose *less* under a
+     carbon-price shock — but no published source quantifies the gap for this index. ESTIMATED (inference, no number).
+   - **Fallback for slide 9:** show the whole plan's financial outcome (§4.1), not the fund's. If Pete runs a variant
+     with sector-level MSCI shocks applied to the CTB tilt, it becomes ESTIMATED with a sourced input and can go on
+     slide 9. Until then the honest line is: "The ESG fund's carbon underweight would reduce transition losses, but no
+     published study measures the gap; we give it no credit in our numbers." Tag: ILLUSTRATIVE (direction only).
+
+3. **Climate scenario on portfolio (slide 9, item 2).** One line for the slide:
+   - Under NGFS Net Zero 2050 (orderly), US equity loses **6–15%** of value vs baseline by 2050 (NGFS Phase V,
+     Nov 2024; models GCAM 7.0, REMIND 3.3, MESSAGEix 2.0). SOURCED.
+   - Under NGFS Fragmented World (disorderly), GDP losses sit **below −1%** vs baseline by 2050 in most models; the
+     equity impact is higher because equity concentrates in exposed sectors. SOURCED (direction); the exact equity
+     figure depends on the model and region.
+   - For the Wongs' portfolio (≈60% equity, ≈40% bonds/cash): a rough 6–15% equity loss on 60% of HK$10.47M =
+     **HK$0.38–0.94M** at risk under Net Zero 2050, before guardrails and rebalancing. ESTIMATED.
+   - The CTB pathway (−7%/yr carbon intensity) tracks Net Zero 2050's required decarbonisation, so the portfolio is
+     *aligned with* the orderly path, not *hedged against* the disorderly one. Say both.
+
+4. **Behavioural biases mapped to the brief's five** (topic p.3: "present bias, ambiguity aversion, social
+   desirability, loss aversion and mental accounting"). Each bias, its Wong-family symptom, and our design against it:
+
+   | Bias | How it shows on the Wongs | How the plan designs against it |
+   |---|---|---|
+   | **Present bias** | Climate risk is decades away; the energy audit and data pack are effort now with payoff later. The scholarship is a cost now for students they won't meet. | Dated milestones (energy audit 2027, data pack by 2034); the gift funded *before* retirement while the 17% tax relief exists; pre-committed, not pledged for life (Thaler & Benartzi 2004) |
+   | **Ambiguity aversion** | ESG outcomes are uncertain; "how much does carbon intensity matter?" has no crisp answer. Adrian may reject the ESG option because its odds feel vaguer than the plain index's. | Same uncertainty display for every option: odds to 89 and a range, never a crisp number for the plain plan beside a fuzzy one for the ESG choice. Evidence tags (MEASURED, SOURCED, ESTIMATED, ILLUSTRATIVE) on every number (Fox & Tversky 1995) |
+   | **Social desirability** | Carmen says she wants ESG; stated and revealed preferences differ (Anderson & Robinson 2022). The family may claim "green" without measuring. | Revealed-preference profiling: priced trade-off cards in HK$/yr and points to 89; one indirect question ("what would families like yours choose?"); each parent answers separately. A label alone isn't an effect (Heeb et al. 2023: warm glow, not impact) |
+   | **Loss aversion** | Adrian's low TE budget (≤0.5%) may reflect aversion to any underperformance he can see. Carmen may resist selling the flat (a loss of "home") even when releasing the equity helps. | One substantive review a year, not monthly (Benartzi & Thaler 1995); the ESG sleeve judged over rolling 3–5 years. Guardrails set *before* any option is seen; the worst 10% shown beside the median. The flat and the business shown as "what you keep", not "what you lose" |
+   | **Mental accounting** | "Green money" separated from "normal money" — judging the ESG sleeve as if it were a separate portfolio. "We did our ESG" (25% in green funds) could substitute for the bigger decisions (the business, the flat). | One household balance sheet on page one; the 25% shown as a slice beside the business (HK$5.0M) and the flat (HK$11.5M), so the label can't stand in for the bigger decisions. Sleeves kept for *who pays*, never for *what risk* (Thaler 1999) |
+   | **Anchoring** (sixth, worth keeping) | The 25% label target anchors both the planner and the family. Round One set it; the framework's mandate-as-output (27.7% or 21.8%) should replace it, but the anchor may persist. | The sustainable share is an *output* of each person's TE budget, not an input. State the number after the budgets are set, never before. Show what the label approach's 25% costs vs the mandate's output |
+
+   Note: "Carmen's reluctance to sell the flat" is our assumption, not in the case. If used, tag it ILLUSTRATIVE.
+   The biases table draws on `research/area1_6_framework.md` §5 (verified citations).
 
 ### 4.4 Why this order (Claude, 10–11 Nov; Pete's calls on the default, the pre-mortem and ideas first)
 
@@ -679,8 +740,8 @@ not built yet, and its verdicts need checking before anyone says them on stage).
   decide whether the headline carries it (Pete). The payout of the van saving from 2033 stays outside on purpose.
 - ~~The new plan under the 2030–31 scenario~~ **Done (M8, 10 Nov).**
 - The sustainable share that comes out of the budgets (slide 9): Win and Pete settle 21.8% or 27.7%.
-- Whether ESG funds lose less under stress (slide 9): Win, with a sourced assumption. [Say "not measured; no credit
-  given".]
+- ~~Whether ESG funds lose less under stress (slide 9)~~ **Resolved (Win, 12 Nov):** no published CTB-vs-parent
+  comparison found under transition stress; honest line is "not measured; no credit given" (§4.5a item 1, resolved).
 - Physical risk priced into the flat's insurance and value (slides 5, 6): Lookbua. [Say "not priced yet".]
 - ~~Win's call about the US$0 fund~~ **No call (Pete, 11 Nov):** slide 1 uses the record only, "on the SFC's list of
   ESG funds; US$0 at every filing for two years, and its own series' accounts don't count it"; never "never launched".
@@ -825,7 +886,7 @@ cost and subsidy.
 | Any judge new to the case | Who are these people, and why them? | 3 | One-line origin + the family picture (§3) |
 | Practitioner, ESG strategist | Who does this already? Morgan Stanley lets clients set impact profiles; JPMorgan integrates ESG in its funds. What's new? | 2, backup | In what they publish, both point ESG at the portfolio: aligning funds with the client's preferences (MS IQ, 115 metrics), or ESG inside funds, whose effect on performance JPMorgan says "is not specifically measurable". Morgan Stanley runs climate scenarios for its own book. We start from the family's limits, test every asset they own (home, business) in one storm, and price each decision in HK$; a tool like IQ would sit inside our Impact step (`research/industry_practice.md`) | Fair if we say "in what they publish"; their private wealth advisers may plan holistically |
 | Practitioner | Your financing part is thin: isn't "Financing the Transition" the topic? | 8; backup | The five instruments compared with numbers; the factory-owner backup slide |
-| ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 9 | **Resolved** (Win, 8 Nov): EDMW WACI 63.67 vs ≈91 = −30% measured, coverage 99.6% (BlackRock factsheet, MSCI data Aug 2026); EU CTB rule ≥30% below, −7%/yr. Report it as footprint, not impact |
+| ESG strategist | How do you know your ESG fund is better than the plain index? Carbon intensity, coverage? | 9 | **Resolved** (Win, 8 Nov; updated 12 Nov): EDMW WACI **63.39** vs ≈90.8 = −30.2% measured, coverage **99.82%** (BlackRock/MSCI, Oct 2026); ITR >2.0–2.5°C; EU CTB rule ≥30% below, −7%/yr. Report it as footprint, not impact |
 | Banker | Would a bank lend for the vans? Coverage, collateral? | 8 | The saving covers ≈87% of the payments; the company tops up ≈HK$46K a year to 2032 (`Decision_List.md` B1). Collateral: open (Fahtai) |
 | Regulator | Are you licensed to advise on the loan or the funds? Suitability per person? | 3, 9 | Draft: we coordinate with the bank and licensed parties |
 | The family | What does Adrian give up for Carmen's values? | 9 | Price of values in HK$ (Win, Pete) |
