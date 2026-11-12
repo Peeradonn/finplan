@@ -96,26 +96,22 @@ def signed(key):
     return -v if s.strip()[0] in "−-" else v
 
 
-# slide 3: every decision on one measure (Pete, 13 Nov). x of a value in HK$M inside the SVG's plot, from DOT_V0 to DOT_V1
-DOT_V0, DOT_V1, DOT_X0, DOT_X1 = -1.0, 1.3, 30.0, 800.0
-DOTS = ("vans", "div", "values", "gift", "data")
+# slide 3: every decision on one measure (Pete, 13 Nov), as bars from zero in its SVG (units = px). Each decision's
+# change in the children's median inheritance in a normal future (numbers.json fin_dot_*_n), against its ordinary choice.
+BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 825.0, 116.0, 345.0, 1000.0
+BARS = ("vans", "data", "values", "gift", "flat")
 
 
-def dot_x(v):
-    if not DOT_V0 <= v <= DOT_V1:
-        raise ValueError(f"slide 3: {v:+.2f} is off the axis ({DOT_V0} to {DOT_V1}); widen DOT_V0/DOT_V1")
-    return DOT_X0 + (v - DOT_V0) / (DOT_V1 - DOT_V0) * (DOT_X1 - DOT_X0)
-
-
-def dots():
-    """Slide 3: [[dx_vans_n]] and [[dx_vans_s]], the x of each decision in a normal future and under the scenario;
-    [[dx_zero]] and [[dx_tick_m1]], [[dx_tick_m05]], [[dx_tick_p05]], [[dx_tick_p1]] for the axis."""
-    tok = {"dx_zero": f"{dot_x(0):.1f}"}
-    for name, v in (("m1", -1.0), ("m05", -0.5), ("p05", 0.5), ("p1", 1.0)):
-        tok[f"dx_tick_{name}"] = f"{dot_x(v):.1f}"
-    for d in DOTS:
-        for f in ("n", "s"):
-            tok[f"dx_{d}_{f}"] = f"{dot_x(signed(f'fin_dot_{d}_{f}')):.1f}"
+def bars3():
+    """[[b3_zero]]; for each decision [[b3_vans_l]] (left x), [[b3_vans_w]] (width), [[b3_vans_e]] (the outer end)."""
+    tok = {"b3_zero": f"{BAR_ZERO:.1f}"}
+    for d in BARS:
+        v = signed(f"fin_dot_{d}_n")
+        end = BAR_ZERO + v * BAR_SCALE
+        if not BAR_MIN <= end <= BAR_MAX:
+            raise ValueError(f"slide 3: {d} at {v:+.2f} runs off the chart; change BAR_ZERO or BAR_SCALE")
+        tok[f"b3_{d}_l"], tok[f"b3_{d}_w"] = f"{min(BAR_ZERO, end):.1f}", f"{abs(v) * BAR_SCALE:.1f}"
+        tok[f"b3_{d}_e"] = f"{end:.1f}"
     return tok
 
 
@@ -125,7 +121,7 @@ def fill(text):
     for p, c in charts.items():
         tok.update(c.tokens(p))
     tok.update(bars(charts["sp"]))
-    tok.update(dots())
+    tok.update(bars3())
 
     def sub(m):
         name, arg, off = m.group(1), m.group(2), float(m.group(3) or 0)
