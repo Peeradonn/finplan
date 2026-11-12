@@ -673,6 +673,251 @@ Win's slides show a cost (price of values) with no payoff.
    Note: "Carmen's reluctance to sell the flat" is our assumption, not in the case. If used, tag it ILLUSTRATIVE.
    The biases table draws on `research/area1_6_framework.md` §5 (verified citations).
 
+### 4.5b Slide 9 and 10: chart, figure and content specifications (Win, 12 Nov)
+
+Detailed specifications for every visual element on Win's two slides — what each chart must show, the data behind it,
+and how it connects to the rest of the deck. These add detail for building; they do not change any decision in §4.5 or
+`Decision_List.md`. Each figure earns marks in at least one of: innovation (40), knowledge (20), logical thinking (20).
+
+#### Slide 9 figures and content (S: the portfolio, 1:00)
+
+**Figure 9-A: Product gate (funnel or filter).** Shows the three-gate counting rule applied to the family's products.
+The funnel has three gates from left to right: (1) binding published outcome rule, (2) measured and reported yearly,
+(3) within the owner's budgets. Products enter on the left; each gate passes or stops them:
+
+| Product tested | Gate 1: binding rule? | Gate 2: measured yearly? | Gate 3: within budget? | Verdict |
+|---|---|---|---|---|
+| BOC-Prudential MSCI World ESG (Round One) | ✗ US$0.00 at every filing; no holdings | — | — | **FAIL** (slide 1's reveal) |
+| EDMW (iShares MSCI World CTB Enhanced ESG) | ✓ EU CTB: ≥30% below parent, −7%/yr | ✓ WACI 63.39, coverage 99.82% | ✓ TE 2.09% within Carmen's 3% budget | **PASS** |
+| Clean-energy thematic fund | ✓ has a rule | ✓ reported | ✗ concentration risk exceeds Adrian's 0.5% TE | **REFUSED** |
+| Green bond ETF (BGRN) | ✗ WACI 708.64, ITR >3.0°C | — | — | **REFUSED** for prudent money; keep only with impact report (P4) |
+| Green deposit | ✗ no binding carbon rule; no published outcome | — | — | **REFUSED** |
+
+Mark: innovation (the gate is ours, not standard practice); knowledge (the data is sourced). The funnel calls back to
+slide 1 (the label problem) and slide 2 (the S in PRISM: "the share is an output, not a target"). Tag each product's
+data: SOURCED (EDMW, BGRN from BlackRock/MSCI factsheets); CASE (BOC-Prudential from SFC filings).
+
+**Figure 9-B: Weights, costs and the mandate output.** Two-column panel, one per parent, with the blended output:
+
+| | Adrian | Carmen | Blended |
+|---|---|---|---|
+| TE budget (set in P, slide 4) | ≤0.5%/yr | ≤3%/yr | — |
+| ESG share that fits the budget | 30% | 60% | **27.7%** (weighted by investable assets) |
+| ESG instrument | EDMW (CTB ETF) | EDMW (CTB ETF) | — |
+| TER | 0.20% | 0.20% | — |
+| Fee above plain index ETF | ≈2 bps | ≈2 bps | ≈HK$2.1K/yr on HK$10.47M |
+| Tracking difference (5-yr ann.) | −1.43 pts/yr (ESTIMATED, proxy from CTB Select index) | same | — |
+| Currency / liquidity | USD (HKD-pegged) / daily dealing | same | — |
+| Regulatory status | SFC-authorised; EU CTB-regulated index | same | — |
+
+Key point for the speaker: 27.7% is the *output* of each parent's risk budget, not a target. The label approach's 25%
+was an *input*; if Adrian's budget were tighter, the share would be lower and that would be correct. This earns
+innovation marks (mandate as output) and logical thinking marks (the maths is shown).
+
+**Figure 9-C: Carbon metrics evidence card.** A compact 2×3 panel, each cell one metric:
+
+| Metric | Value | Source and tag |
+|---|---|---|
+| WACI | 63.39 vs parent ≈90.8 (−30.2%) | BlackRock/MSCI, coverage 99.82%. SOURCED |
+| ITR | >2.0°C – 2.5°C (one band lower than parent) | MSCI, coverage 99.69%. SOURCED |
+| EU CTB pathway | ≥30% below parent incl. Scope 3, declining 7%/yr | EU 2020/1818. SOURCED |
+| Engagement | BlackRock stewardship votes on climate; reported, not claimed as our impact | BlackRock annual report. SOURCED |
+| Avoided emissions from portfolio | **Zero.** Secondary-market purchases finance nothing new | PCAF supplement. SOURCED |
+| Label vs financed outcome | "Our ETF carries a label; it finances nothing new. We say so." | — |
+
+The bottom two rows earn ESG-strategist marks: they prevent greenwashing by the team itself. The "zero avoided
+emissions" line answers brief area 3 bullet 3 and distinguishes footprint from impact (slide 2's I twist).
+
+**Figure 9-D: Price of values callout.** One number, large, with what it buys:
+
+> **−HK$0.57M** against plain twins over the plan's horizon (ESTIMATED)
+> = 30% lower carbon intensity · the CTB pathway · a footprint, not a change
+
+Break it down (small text underneath): fee price ≈HK$5.1K/yr; return price up to ≈HK$26.6K/yr if the last 5 years
+repeat; combined ≈HK$0.57M in today's money (from `area3_portfolio.md` §1). Compare to the values budget set on
+slide 4: ≈HK$1.4M expected, ≈HK$1.7M at worst — so the portfolio cost is well within it.
+
+**Figure 9-E: Climate scenario on the portfolio (one line).** Not a full chart — one sentence with the number:
+
+> Under NGFS Net Zero 2050 (orderly), the Wongs' ≈60% equity portfolio faces **HK$0.38–0.94M** at risk before
+> guardrails. The CTB pathway aligns with Net Zero 2050's required decarbonisation — it is *aligned with* the orderly
+> path, not *hedged against* the disorderly one. ESTIMATED (NGFS Phase V, Nov 2024).
+
+This answers brief area 5 bullet 3 and area 7 ("run at least one scenario"). It sits beside the price of values so the
+judge sees both sides of the trade-off on the same slide.
+
+**Figure 9-F: Refusal panel (compact list).** Brief area 7 requires "a refusal". Show them as a strip at the bottom
+or side of the slide, each with the gate that stopped it and what replaces it:
+
+| Refused | Why (which gate) | What instead |
+|---|---|---|
+| Clean-energy fund | Concentration risk > Adrian's TE budget (gate 3) | Broad CTB index with sector tilts |
+| Green deposit | No binding carbon rule (gate 1) | Cash in the liquidity reserve |
+| SL bond (for portfolio) | Ratchet worth HK$450–2,250/yr: immaterial at this portfolio size (gate 3) | Plain bonds for Adrian (P3) |
+| Green bond ETF for Adrian | WACI 708.64, ITR >3.0°C (gate 1 and 2) | Plain global bonds AGGU |
+
+Each refusal paired with a positive action prevents "these students just say no" (§4.3's strongest-case-against).
+
+**Additional content ideas for slide 9 (brainstormed, Win to pick):**
+
+- **"Footprint, not impact" two-column distinction:** left column "What we measure" (WACI, ITR, coverage, pathway),
+  right column "What we don't claim" (additionality, primary capital, causal contribution). One visual line connecting
+  to the business slides (7–8) where the real impact lives. This is the I twist from slide 2 applied to the portfolio.
+- **Before/after comparison strip:** the label approach's 25% (input, one green box) beside the mandate's 27.7% (output,
+  the same green box emerging from the TE funnel). Shows the same result happened to be similar, but the *reason* is
+  different — one is a target, the other is a consequence. Earns innovation marks.
+- **Connection arrow to slide 5 (R):** the portfolio scenario (HK$0.38–0.94M) is one of the three routes in slide 5's
+  risk scan (portfolio −HK$2.48M under disorderly); slide 9 shows the orderly case, slide 5 the disorderly one. The
+  speaker can say: "slide 5 showed the storm; this is the everyday weather."
+- **Engagement transparency:** one line — "BlackRock voted on 96% of climate-related shareholder proposals in 2024
+  (SOURCED if verified; CHECK before slide). We report the rule, not the claim." This answers brief area 3 bullet 4
+  without overclaiming.
+- **Instrument mix acknowledgment:** a small legend — "ESG index equity ✓ · Green bond (Carmen only, with conditions) ✓ ·
+  Thematic ✗ · Impact ✗ · Green deposit ✗ · each with reason." Answers §4.5a item 10.
+
+#### Slide 10 figures and content (M: Climate Facts, 0:45)
+
+**Figure 10-A: Climate Facts dashboard (the one-page mockup).** Based on `area6_measurement_update.md` §2, adapted for
+a slide (7 rows compressed into a compact visual). The dashboard is the M of PRISM applied to the Wongs:
+
+| Row | Client question | What we show | Status at advice date | Trigger → action |
+|---|---|---|---|---|
+| 1. Financial | Are retirement, healthcare and education protected? | Odds to 89, floor, inheritance | 97% / 85% crisis (MODEL) | Material income, health or liquidity change → reforecast before new commitments |
+| 2. Values price | What did our values cost? | Twin gap in HK$ | −HK$0.57M (ESTIMATED) | Fee/mandate notice or budget breach → reconcile and renew consent |
+| 3. Operations | Did the operational project work? | kWh/fuel, calculated emissions, net cash flow | Baseline not yet taken (2027) | KPI failure → inspect records, revisit economics |
+| 4. Alignment | Does the portfolio still match the agreed preference? | WACI, coverage, ITR | 63.39 / 99.82% / >2.0–2.5°C (SOURCED) | Product method or holdings change → investigate suitability |
+| 5. Outcome | What outcome and contribution can we evidence? | Evidence chain: capital → activity → output → outcome | No causal result established | Missing evidence → qualify/correct the claim |
+| 6. Giving | Is the giving promise paid for and delivered? | Charity-held resources vs remaining payouts | To be funded 2027–28 (ESTIMATED) | Fees/loss threaten promise → protect funded obligations |
+| 7. Next steps | What must happen next? | Dated milestones, owners, dependencies | See decision timeline below | Missed deadline → identify owner, remedy, revised date |
+
+Design notes: the "Status" column uses evidence tags (MEASURED, SOURCED, ESTIMATED, ILLUSTRATIVE) beside each number.
+Empty cells say "unavailable" — missing data are not zero (area6 §2). The dashboard is a design proposal, not a populated
+report (area6's caveat). This earns all four scoring criteria: innovation (the dashboard format), knowledge (the metrics),
+logical thinking (the trigger logic), presentation (the visual).
+
+**Figure 10-B: "Buy / Range / Trigger" decision table.** Shows how every missing price becomes a decision (the M twist
+from slide 2). Five Wong-family cases:
+
+| Decision | Type | Rule | Wong case | When |
+|---|---|---|---|---|
+| The fund call | Buy | WACI drops below 30% of parent; or TE exceeds Carmen's 3% for 2 consecutive quarters | EDMW data refreshed quarterly | Quarterly review |
+| Carbon data for the business | Buy | Baseline taken; supplier footprints started | Carmen orders baseline 2027 | 2027; annual after |
+| ESG fund under transition stress | Range | "Not measured; no credit given" until a published source quantifies CTB-vs-parent drawdown gap | Direction: CTB should lose less (30% lower carbon); no number to claim | Annual literature check |
+| Recycled PET premium | Trigger | At parity: DO (gate 1 passed). At 10% premium: PAY (≈HK$0.27M, within the values budget). Above: REFUSE | Monitor PET-vs-rPET spot price quarterly | Quarterly; first order 2027 |
+| Building insurance / physical risk | Range | "Not priced yet" until physical-risk data available for the building | Lookbua researching; HKMA RM05/2023 gives direction only | Annual; the building's 50th year 2046 |
+
+This table answers the brief's premise — "planning with an incomplete set of prices" — and shows the plan knows when it's
+wrong (the slide title). Each row links to a decision in `Decision_List.md`. Earns innovation and logical thinking marks.
+
+**Figure 10-C: Biases designed in (compact panel, 3–4 biases shown).** From the full table in the resolved items above,
+pick the 3–4 most visual for the slide:
+
+| Bias | Wong symptom (one line) | Design response (one line) |
+|---|---|---|
+| **Anchoring** | "25% in ESG funds" becomes the target | The sustainable share is an output, not an input (slide 9) |
+| **Loss aversion** | Adrian's 0.5% TE; Carmen resists selling the flat | One review a year; guardrails set before options seen; worst 10% shown beside median |
+| **Social desirability** | "We did our ESG" substitutes for bigger decisions | One household balance sheet; the 25% shown beside the business (HK$5.0M) and flat (HK$11.5M) |
+| **Mental accounting** | "Green money" separate from "normal money" | Sleeves kept for *who pays*, never for *what risk*; one balance sheet |
+
+The full table (all six biases with citations) stays in the backup. The speaker names 3 in 15 seconds: "Anchoring: the
+25% label is the wrong starting point. Loss aversion: Adrian's caution is real and we designed around it. Social
+desirability: saying 'we did our ESG' is easier than measuring." Brief area 6 bullet 3 answered.
+
+**Figure 10-D: Attribution waterfall.** The honest split of the plan's financial gain, probably a small waterfall or
+stacked bar:
+
+> Total gain vs label approach under stress: **+HK$2.25M** (M8, EXPLORATORY; re-run after re-base)
+> - Business decisions (vans, sale protection, carbon data): ≈HK$1.7M
+> - Cheaper/better funds (fee saving, avoided entry charges): ≈HK$0.5M (the "green" part)
+> - Scholarship funded (a cost, not a gain): −HK$0.48M
+> - Net: about HK$0.5M is green; the rest is ordinary planning made possible by the framework
+
+This is the slide's strongest innovation moment: "We don't label our own result." It calls back to slide 1's label
+problem and forward to slide 11's replay. The exact numbers come from Pete's model (EXPLORATORY until the re-base);
+the structure and direction are fixed.
+
+**Figure 10-E: Risk register row (compact).** Three risk types from §4.5a item 12:
+
+| Risk type | What it is for the Wongs | Mitigation |
+|---|---|---|
+| Transition | Carbon-price shock on the portfolio and business; the 2030–31 scenario (slide 5) | CTB pathway; business decarbonisation; the pre-mortem showed it |
+| Data | WACI coverage could drop; business baseline not yet taken; fund methodology changes | Coverage reported on the dashboard (99.82% today); restatement protocol |
+| Reputational/conduct | Carmen's "compostable" claim; overclaiming ESG impact from listed shares | The claim stopped (slide 7); "footprint, not impact" stated (slide 9) |
+
+**Figure 10-F: "Can't measure yet" column.** A small panel or sidebar listing what the plan honestly cannot report:
+
+| Item | Why not yet | When it could be measured |
+|---|---|---|
+| HK Taxonomy alignment of the fund | Fund manager does not yet report Taxonomy-eligible share | When the HK Taxonomy reporting rules take effect (§4.5a item 13) |
+| Avoided emissions from the portfolio | Secondary-market purchases; no primary capital (PCAF) | Never, for this instrument; only the business generates avoided emissions |
+| CTB-vs-parent drawdown gap under stress | No published study measures it (§4.5a item 1) | When a source publishes a portfolio-level comparison |
+| Physical-risk pricing on the flat | No property-level climate-risk data for the building | When physical-risk data becomes available (Lookbua; RM05/2023 gives direction) |
+
+This earns the "honest treatment of trade-offs, data limits and what you would not do" mark from Key Areas.
+
+**Figure 10-G: Decision timeline (horizontal strip).** Shows conditional decisions along a time axis, each with its
+trigger or expiry:
+
+```
+2027 ─── 2028 ─── 2030 ─── 2033 ─── 2035 ─── 2037 ─── 2039 ─── 2046
+  │        │                  │        │        │                  │
+  │        │                  │        │        │                  │
+Scholarship  Tax waiver      Sale     Solar    Sale     Reverse   Building's
+funded ×2    ends (vans      window   FIT      window   mortgage  50th year
+(HK$240K    must order       opens    ends     closes   / downsize (deadline)
+each yr)    by 31 Mar)                                  triggered
+                                                        yearly
+Carbon
+baseline
+taken
+```
+
+Each date is a trigger, not a calendar entry. The plan says *in advance* when it stops being right. This earns
+innovation marks (conditional decisions with expiry dates) and answers the brief's "planning with an incomplete set of
+prices".
+
+**Additional content ideas for slide 10 (brainstormed, Win to pick):**
+
+- **Restatement protocol (one line):** "Every correction is recorded: old value, new value, cause, affected decisions,
+  reviewer. Favourable and unfavourable corrections treated the same way." Shows maturity; answers area 6.
+- **Five separate ledgers (icon row):** five small icons representing operational inventory, portfolio WACI, alignment to
+  rule, project benefits, charitable outcomes — to show that the plan doesn't mix different kinds of evidence. Cross-
+  reference: "a warehouse reduction is not counted again as a portfolio benefit." Answers area6 §2.
+- **Scholarship timing rationale:** "Funded in 2027–28 while the 17% tax relief applies (IRD s.26C); relief available
+  only while earning; actual relief ≈HK$82K on HK$480K gross (ESTIMATED). Pre-committed, not pledged for life." This
+  answers a judge's tax question and shows planning discipline.
+- **"What the family may claim" panel:** a traffic-light list:
+  - ✓ Can claim: "Our business cuts ≈134 t CO₂e/yr from switching to electric vans" (ESTIMATED, measured activity)
+  - ◐ Partial: "Our savings are 30% less carbon-intensive than the market" (footprint, not impact)
+  - ✗ Cannot claim: "We offset our carbon" or "Our ESG funds create impact" (no evidence of additionality)
+  This earns ESG-strategist marks and prevents greenwashing on stage.
+- **Connection to the replay (slide 11):** the dashboard's attribution line (≈HK$0.5M green, the rest ordinary planning)
+  is the same honest split Pete uses in the replay. Win hands off by saying: "Our last number: about HK$0.5M of the gain
+  is green. The rest is ordinary planning, made possible by the framework. Pete will show you what that looks like."
+
+#### Coherence check: slides 9–10 against the rest of the deck (Win, 12 Nov)
+
+| Win's element | Must match | Status |
+|---|---|---|
+| Product gate (9-A): US$0 fund fails | Slide 1 uses it as the label's failure | ✓ Consistent: slide 1 reveals it, slide 9 explains the gate |
+| TE budgets (9-B): Adrian ≤0.5%, Carmen ≤3% | Slide 4 sets these as P | ✓ Consistent: slide 9 takes them as inputs |
+| Values budget (9-D): ≈HK$1.4M / ≈HK$1.7M | Slide 4 introduces it | ✓ Consistent: slide 9 shows the portfolio cost (−HK$0.57M) fits within it |
+| WACI 63.39, −30.2% (9-C) | §8 hard questions: WACI row updated 12 Nov | ✓ Consistent |
+| Climate scenario HK$0.38–0.94M (9-E) | Slide 5: portfolio route −HK$2.48M (disorderly) | ✓ Compatible: 9-E is orderly (Net Zero 2050), slide 5 is disorderly; different scenarios, consistent direction |
+| Carbon data cost (10-B) | Slide 8: ≈HK$54–73K/yr | ✓ Consistent: both from `Decision_List.md` B3 |
+| Recycled PET trigger (10-B) | Slide 7: cost curve shows it at parity and at 10% premium | ✓ Consistent: same decision (B4) |
+| Attribution split (10-D): ≈HK$0.5M green | Slide 11: Pete uses the same honest split | ✓ Consistent: Win states the number, Pete shows it in the replay |
+| Business tonnes ≈134 t/yr (10 claims panel) | Slides 7–8: baseline, cost curve | ✓ Consistent: from `Decision_List.md` |
+| Scholarship HK$0.48M (10-G timeline) | Slide 3: "the scholarship funded"; `Decision_List.md` G1 | ✓ Consistent |
+| Building's 50th year 2046 (10-G timeline) | Slide 6: "the building's 50th year" as deadline | ⚠ Check: slide 6 says 2046 (1996 building); slide 5 says 2045 for a 1996 building → resolve (Win to flag to Pete) |
+| "Compostable" claim stopped (10-E risk register) | Slide 7: "the fibre trap; the 'compostable' claim stopped" | ✓ Consistent |
+| Biases (10-C): anchoring on 25% | Slide 4 and slide 9: the 25% as a label target vs mandate output | ✓ Consistent |
+
+**One flag:** the building's 50th year is listed as 2045 in slide 5's notes ("HKMC case by case above building age 50;
+2045 for a 1996 building") but as 2046 in slide 6 ("the building's 50th year, 2046"). A 1996 building turns 50 in 2046.
+Win to flag to Pete/Lookbua: use 2046 consistently (50th year of a building completed in 1996). This is cosmetic but a
+judge who notices it loses trust.
+
 ### 4.4 Why this order (Claude, 10–11 Nov; Pete's calls on the default, the pre-mortem and ideas first)
 
 - **The arc is pre-mortem → how we think → the advice → the ideas, each proven → the replay.** The framework's order
