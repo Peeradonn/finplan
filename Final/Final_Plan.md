@@ -21,7 +21,8 @@ an argument; where it disagrees with those files, they win.
 | **Client** | The Wongs, the competition's case family, introduced from scratch |
 | **Comparison** | "The label approach": our specified fund-and-label-led plan (§2), not a claim about how advisers usually work |
 | **Framework** | PRISM: **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor (§4.2) |
-| **Thesis** | A label doesn't show what a decision does; we show what each decision does to the family's money and to the world, and when to decide again (§4.1; wording under review, §5.6) |
+| **Thesis** | **Limits first. A budget for values. One measure for every decision.** (Pete, 13 Nov; §4.1) |
+| **Our innovation** | One measure for every decision across the business, the home, the portfolio and the giving; and a values budget sized by the family's limits. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.48M the family's; HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline is open (§5.1):** +HK$2.44M as drafted, ≈+HK$1.05M against a fair comparison |
 | **Now** | Pete decides §5 today. Slides 6–11 built with their words by Fri 13; first timed run Sat 14. Only slide 1 has its spoken words so far |
 
@@ -31,7 +32,7 @@ an argument; where it disagrees with those files, they win.
 |---|---|---|---|---|---|
 | 1 | Open | Pete | 1:05 | Test the whole plan, then choose the products | Yes, with notes (12 Nov) |
 | 2 | PRISM | Pete | 1:00 | PRISM: look both ways | Layout; contrasts to reword (§5.6) |
-| 3 | Answer | Pete | 0:25 | [Seven changes: headline open, §5.1] | Layout; headline in brackets |
+| 3 | Answer | Pete | 0:25 (needs ≈0:45) | One measure for every decision: the biggest price buys safety, and all the carbon we cut is in the business | Draft chart (13 Nov); headline in brackets |
 | 4 | P | Pete | 0:30 | Settle the family's disagreements once, before any option is priced | Layout |
 | 5 | R + I | Lookbua | 0:55 | Check every way risk can reach the family; price only the few that matter | Layout (the scan) |
 | 6 | S: the flat | Lookbua | 0:45 | The guardrails decide before preferences | Placeholder |
@@ -168,18 +169,36 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 
 ### 4.1 The thesis
 
-> **Climate is already in every client's plan. A label tells you what a product is called; our framework shows what
-> each decision does to the client's money and to the world, and when to decide again.**
+> **Limits first. A budget for values. One measure for every decision.** (Pete, 13 Nov)
 
-The claims audit (12 Nov) found "a label tells you ... not what it does" too absolute and proposes "A label alone does
-not tell us whether the whole plan works." Pete to choose one line for slides 1, 2, 3 and 11 (§5.6).
+In full: first agree what the plan must never risk (the limits: the floors and each person's tolerances), and how much
+the family will pay for its values (the budget: the room above the floors that the parents choose to spend). Then price
+every decision, green or not, against the best ordinary choice, in what the children inherit, in normal times and under
+stress. Where that lands depends on the client; for the Wongs, it's the business and the home.
+
+- **Spoken, then shown:** say the three beats, then one example within ten seconds (the flat: downsizing leaves the
+  children more in a normal future but fails the limit in the downturn, so the limit decides). The test is the cold
+  read: can people who've never seen the case repeat the three beats after slides 1–4?
+- **Why it changed** (13 Nov review): the old line ("A label tells you what a product is called; our framework shows
+  what each decision does to the client's money and to the world, and when to decide again") restated the topic clause
+  by clause: "Beyond Green Labels", "Pricing Climate Risk", "Measuring Real Impact", area 6's "review triggers", and the
+  brief's own "not to sell green products but to make sustainability legible in financial terms". It earned knowledge
+  marks, not innovation. The audit's "A label alone does not tell us whether the whole plan works" had the same problem.
+- **Words not to use:** "safety first" (an existing school of retirement planning, Pfau's, which locks in a guaranteed
+  floor; our limits are odds, the other school); "plain option" (team jargon: say "the ordinary choice").
+- **"Limits" means risk only:** the floors (95 in 100 normally, 85 in the 2030–31 scenario; essentials never cut; no
+  year short of cash; nothing that adds to the concentration in the flat and the business) and each person's tolerances
+  (tracking error, liquidity, complexity). The values budget is spending, not a limit, and it caps what green *costs*,
+  not green itself: a choice that pays for itself never draws on it. Decision rights say who signs; they live in the
+  mandate.
 
 **The opening question** (12 Nov): *What makes the whole plan sustainable?* Choosing ESG funds is one decision; the
 whole plan needs two checks: what climate does to their money, and what their decisions change in the world. ESG
 integration already considers investment risks: never claim nobody asks these questions.
 
 **What judges should leave with** (v4; the third is under review):
-1. Climate reaches every client's money, green products or not, so the framework is for Adrian as much as for Carmen.
+1. Limits first, a budget for values, one measure for every decision: a rule any planner can run, and it lands
+   differently for each client (13 Nov; replaces "climate reaches every client's money", which restated the brief).
 2. For this family the lever isn't the fund: all ≈134 t a year of the cuts we quantified come from the business (108 t of
    them recycled PET at today's price parity).
 3. ~~In the same storm the labelled plan falls below the family's floor and ours doesn't~~: holds only if the labelled
@@ -314,6 +333,24 @@ or a green sticker peeled off a printed factsheet.
 - **Depth is placed for the questions** (half the judged time): the business loop, the flat's exit, the stress results,
   each with a numbered backup slide.
 
+**What is ours, and what isn't** (13 Nov review; Pete: "isn't this just what every financial planner does?"). Setting
+goals and limits, modelling the whole household and comparing options is ordinary good planning, and PRISM's five steps
+are the planning process with the brief's six areas inside. A practitioner will see that, so we say it. What is ours:
+
+- **One measure for every decision.** The vans in Carmen's business, the ESG funds, the loan label, the scholarship and
+  the flat are all priced the same way: what the children inherit (median, today's HK$) and the odds the money lasts,
+  in a normal future and in the same downturn (`Decision_List.md` §4). The brief gives each area its own measure (a cost
+  curve per tonne for the business, the greenium in basis points, carbon intensity for the portfolio, BEAM Plus for the
+  home); one measure is what lets us rank a van against a scholarship. Slide 3 draws it.
+- **A values budget sized by the limits** (§5.4): the room above the floor is measured (2.7 points for the Wongs), each
+  values choice is priced in the same units, and the parents agree once how much to spend (0.9 points, ≈HK$1.47M; M9c).
+  It also settles Adrian against Carmen, which the brief asks for.
+- **Findings ordinary planning wouldn't produce:** the downturn reverses the flat's route (not a green decision); paying
+  out Carmen's share (B8) is the only decision worth more in odds under stress; the vans reach the family through the sale.
+- **The defence when asked "isn't this goals-based planning?":** yes, built on it. Goals-based wealth management funds
+  "aspirational" goals from the surplus above essential ones (Chhabra 2005; Das, Markowitz, Scheid and Statman 2010;
+  §9). What's new is applying it to values and to the business's transition. Cite it; don't hide it.
+
 **How we stand out** (inference about the other teams, not fact). Most teams will probably walk the six areas in order,
 open with definitions, present the grant, green mortgages and CBAM as benefits without checking they reach the client,
 invent a factory owner exporting to the EU, and claim "impact" from ESG funds. Our moves, strongest first: (1) the
@@ -334,7 +371,7 @@ in "Must prove". Build forms are drafts, not orders.
 |---|---|---|---|---|---|
 | 1 | Open · Pete · 1:05 | Test the whole plan, then choose the products | §4.3: the question, the two checks, the Wongs, the shock as exposure (not a loss caused by labels), the handoff | CASE; MODEL (exported 11 Nov); shock ILLUSTRATIVE; re-base pending | Scenario introduced; 1, 5 |
 | 2 | PRISM · Pete · 1:00 | PRISM: look both ways | Five letters, each with its question, our rule and the label approach's way (§4.2); the two directions in R and I; built on double materiality, applied to a family's whole balance sheet | Definitions HAVE (`area1_6_framework.md`) | The framework; 1 |
-| 3 | Answer · Pete · 0:25 | [Seven changes: headline open, §5.1] | The family in one line; the seven changes grouped by where they act; the capital in full (the family's HK$0.48M; the business's HK$1.91M, ≈HK$0.27M working capital and ≈HK$54–73K a year of data); what we refuse; all the quantified carbon cut comes from the business | CASE; `Decision_List.md` §1–2; MODEL after the re-base; tonnes ESTIMATED | **Recommendation, capital, outcomes**; 1 |
+| 3 | Answer · Pete · 0:25 (a chart needs ≈0:45: retime) | One measure for every decision: the biggest price buys safety, and all the carbon we cut is in the business | **Redrawn 13 Nov as the thesis:** left, the limit settles the flat before any price (keeping it: `fin_dot_flat_n`; downsizing `fin_dot_down_sodds` under the downturn against the 85% limit); right, every other decision as a dot on one measure (the children's median inheritance against its best ordinary choice; filled normal, ring the downturn), two rows for real effect shown or not, the values budget shaded around the two values choices; tonnes on the business's dots; the capital, the outcome (headline in brackets, §5.1) and the refusals underneath. The old four-group layout is in git (c1d8cfe) | MODEL (`fin_dot_*`, exported 13 Nov); `Decision_List.md` §1–2; tonnes ESTIMATED; recycled plastic at parity SOURCED | **Recommendation, capital, outcomes; trade-off**; 1 |
 | 4 | P · Pete · 0:30 | Settle the family's disagreements once, before any option is priced | Adrian ("capital preservation, retirement adequacy"; his funds within 0.5% a year of the market) and Carmen (ESG for "her personal values"; up to 3%) meet in one values budget agreed once; their limit (95 in 100; 85 in a crisis); Ryan decides his own money; Chloe's HK$2.57M set aside; both parents for anything irreversible | CASE (their words); limits ILLUSTRATIVE; budget MODEL (§5.4) | — ; 1, 6 |
 | 5 | R + I · Lookbua · 0:55 | Check every way risk can reach the family; price only the few that matter | The risk register as a grid (what they own × the brief's eight risk types); 22 routes checked; three priced (the flat −HK$0.71M, the sale −HK$1.55M, the portfolio −HK$2.48M); CBAM crossed out; the label looks only at the savings row; inside out in one line (the business's tonnes, which its listed customers must report). Sowhat: of 22, three matter, and two never touch a fund | MODEL (`fin_cust10_leg`, `fin_flat10_leg`, `fin_shockport_leg`, each on its own); HKEX App. C2 HAVE; HKMA RM05/2023; tonnes ESTIMATED | — ; 2, 4, 5 |
 | 6 | S: the flat · Lookbua · 0:45 | The guardrails decide before preferences | Before and after, with the first price tag explained. The reverse mortgage passes both floors; downsizing leaves the children more (+HK$4.07M median normally) but falls to 82.7% under the shock: the family's priced alternative, with a trigger (the price gap against newer flats) and a deadline (the building's 50th year, 2046). Green mortgage refused (≤HK$1,000 once). Weather and insurance: "not priced yet" if still true. Retrofit as things fail. **Proposed as the talk's main proof (§5.7)** | MODEL (M6, M7); HKMC HAVE; green mortgage HAVE; physical risk OPEN (Lookbua) | **Trade-off; refusal**; 4 |
@@ -372,7 +409,10 @@ exporting to the EU (not built; its verdicts need checking before anyone says th
 
 **Decided:** the client is the Wongs (4–5 Nov); Carmen owns 50% (9 Nov); the base is `switch_89`, price tags lead with
 the inheritance in HK$ (9 Nov); the US$0 fund on stage in the record-only wording, the manager not named aloud (9 and 11
-Nov); look A, the prism stage and badge (11 Nov); storyline v4 (11 Nov) with slide 1 revised (12 Nov). **Recommended,
+Nov); look A, the prism stage and badge (11 Nov); storyline v4 (11 Nov) with slide 1 revised (12 Nov); **13 Nov:** the
+thesis "Limits first. A budget for values. One measure for every decision." (§4.1); the one measure and the values budget
+as the spine, the five letters as the route (§4.4); slide 3 as one chart with every decision on it (§4.5). The spine
+includes §5.4's mechanism (the floors size the budget): Pete to confirm the numbers on slide 4. **Recommended,
 Pete to confirm:** B8, a dividend policy for Carmen's half of the van saving from 2033, outside the headline.
 
 ### Proposed by the 12 Nov review (Pete decides; evidence in `model_runs.md` M8–M9)
@@ -418,8 +458,11 @@ build, or slide 3 before PRISM. Owner: Pete.
 **5.6 One thesis line, safe under the audit.** Slide 1 closes "Test the whole plan, then choose the products"; slide 2
 says "Look both ways" with "instead of …" contrasts; the close says "A label says what it's called. We showed what it
 does." The audit found the "instead of" lines and the absolute label line unsupported as claims about other advisers.
-**Proposed:** one line on slides 1, 2, 3 and 11 (the audit's: "A label alone does not tell us whether the whole plan
-works"); slide 2's grey halves name what the label approach (our comparison) does, not what advisers do. Owner: Pete.
+**Decided 13 Nov:** the thesis is "Limits first. A budget for values. One measure for every decision." (§4.1); the
+audit's line was withdrawn because it restates the topic's title. Still to do: carry it onto slides 1, 2 and 11 (slide 3
+has it as its closing line); slide 2 shows the rules (limits first, the four corners, the ordinary-choice comparison, a
+missing price as a trigger), not only the five letters; its grey halves name what the label approach (our comparison)
+does, not what advisers do. Owner: Pete.
 
 **5.7 Put the weight where the proof is strongest.**
 - **The flat** is the one decision where the climate test reverses advice that isn't about green products. Normally,
@@ -479,7 +522,7 @@ In the submitted file, after the close (it is the only file we can use on the da
 **The strongest case against us:** a CPA takes the headline apart (§5.1); too many refusals read as "these students
 just say no" (pair each with what we do instead, and its money); points of the odds feel abstract (always pair with
 HK$); the US$0 reveal backfires if the fund is on sale somewhere we didn't check (hence the record-only wording); "this
-is the planning process with green added" (§4.2's table).
+is the planning process with green added" (§4.2's table; §4.4 "What is ours").
 
 | Who asks | Question | Our answer, in short | Weak? |
 |---|---|---|---|
@@ -503,6 +546,8 @@ is the planning process with green added" (§4.2's table).
 | Practitioner, ESG strategist | Isn't your climate risk a market crash with a green title? | Each route names its cause, route and HK$; the climate-only routes (customers' carbon reporting, older buildings) drawn apart; most of the shock's loss is ordinary market and inflation risk, and we say so | Moderate |
 | ESG strategist | So is your plan climate-resilient? | No claim: nothing in it hedges climate (M8); its defences are the floors, the reserve and the flat's route | — |
 | ESG strategist | Isn't PRISM double materiality renamed? | Yes, on purpose: built on it, applied to a family's whole balance sheet with rules a planner can run | — |
+| Practitioner | Isn't this what every planner does: set goals, then plan? | The steps are, and we say so. What's ours is one measure for every decision (business, home, funds, giving) and a values budget sized by the limits; and what it found (the flat's route reverses in the downturn) | Moderate: the answer must point at slide 3 |
+| Practitioner | Your values budget is goals-based planning's aspirational bucket | Yes, built on it (Chhabra 2005; Das, Markowitz, Scheid and Statman 2010): we apply it to values and to the business's transition | — |
 | ESG strategist | Why only carbon? | Carbon first because rules price it; packaging waste (the plastics rules) and the scholarship's students counted too | — |
 | Practitioner | Doesn't your fee cost double-count the tracking lag? | No: the lag is after each fund's own fee, and EDMW and IWDA charge the same (`Decision_List.md` P1–P5) | — |
 | Practitioner | Is the 17% tax relief real for this family? | Yes in 2027–28 if Adrian gives: HK$40,800 per HK$240K gift, within the 35% cap; none after retirement | — |
@@ -533,6 +578,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 | HK Taxonomy Phase 2A final, 22 Jan 2026; Phase 2B a 39-activity prototype (7 Sep 2026); no packaging or wholesale activity | **Confirmed** |
 | HKMA: asking about sustainability preferences is "not a mandatory requirement" (FAQ, Nov 2023) | CHECK the wording before it goes on a slide |
 | NGFS Phase V (Nov 2024) is current; Phase VI due "end of 2026" | Check again Sun 15 |
+| Goals-based planning, for "isn't this standard?": Chhabra, "Beyond Markowitz: A Comprehensive Wealth Allocation Framework for Individual Investors", *Journal of Wealth Management* 7 (2005), pp. 8–34 (risk allocation before asset allocation; safety, market and aspirational buckets); Das, Markowitz, Scheid and Statman, "Portfolio Optimization with Mental Accounts", *JFQA* 45(2) (2010), pp. 311–334 (each mental account's risk is the chance of missing its threshold) | **Confirmed** 13 Nov, bibliographic only (Cambridge Core; EDHEC-Risk's citation; a Merrill Lynch reprint dates Chhabra 2007); full texts not read: quote the idea, not a page |
+| Why not "safety first": Roy, "Safety First and the Holding of Assets", *Econometrica* 20(3) (1952), pp. 431–449; Pfau, *Safety-First Retirement Planning* (2019) and the RISA styles (probability-based against safety-first) | **Confirmed** 13 Nov from secondary sources (Kitces, FPA *Journal*); ours is the probability-based school |
+| Anyone already pricing ESG preferences as surplus above a goal floor | Not found in one search (13 Nov); the goals-based literature found (Das, Ostrov, Radhakrishnan and Srivastav, *JOIM* 2018) has no ESG constraint. Not proof nobody has: never say "first" |
 | The number of funds on the SFC's ESG list | Re-count Sun 15 |
 
 ## 10. Untested assumptions (test, don't build on)
@@ -561,6 +609,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **13 Nov (Pete, Claude):** thesis "Limits first. A budget for values. One measure for every decision." (§4.1); the one
+  measure and the values budget as the spine (§4.4); slide 3 redrawn as one chart with every decision on it (`fin_dot_*`
+  exported); the four citations checked (§9); §5.6 decided.
 - **12 Nov (Claude):** plan cut to this version after the strategy review; Win's slide 9–10 specs moved to
   `deck/specs/`; M9 fair-comparison runs; the review's proposals in §5.
 - **12 Nov (Codex):** claims audit; slide 1 rebuilt around "What makes the whole plan sustainable?".
