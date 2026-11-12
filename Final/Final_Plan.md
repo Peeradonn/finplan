@@ -341,7 +341,11 @@ advantages above survive that, as long as the talk stands alone (§3).
 > **Climate is already in every client's plan. A label tells you what a product is called; our framework shows what each
 > decision does to the client's money and to the world, and when to decide again.**
 
-**The gap in Pete's words** (11 Nov), for the open (slide 1) and the speakers: *today, ESG in a plan means one question, "are we investing enough in ESG funds?" Nobody asks what climate does to the client's money, or what the money does to the climate.* Slide 2 answers with PRISM; slide 5 is the first proof (two of the three costs never touch a fund).
+**The opening question** (revised 12 Nov after the claims audit): *What makes the whole plan sustainable?* Choosing
+ESG funds is one decision; the Wongs' whole plan needs two checks: what climate does to their money, and what their
+decisions change in the world. ESG integration already considers investment risks; do not claim nobody asks these
+questions. Slide 1 illustrates the first check with one conditional scenario; slide 2 introduces PRISM; later slides
+must demonstrate the financial and sustainability outcomes.
 
 - **The name: PRISM** (Pete, 11 Nov): **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor. A green label shows one
   colour; a prism splits it into what's really there: the risk climate brings to the money, and the impact the money
@@ -522,28 +526,35 @@ dashboard.
 
 ### 4.3 The story: a pre-mortem and a replay
 
-**The open (slide 1), in plain words** (rewritten 11 Nov after Pete's two notes: the US$0 fund is a due-diligence slip any
-careful planner catches, not an ESG point, so it leaves the opening for the questions and slide 9's product check; and
-the first draft's "pre-mortem", "odds", "floor" and "two of the three losses" meant nothing to a judge who hasn't
-met the family). Four beats, both directions of the label's failure, then one line of our result:
-1. **Today's question:** "ESG in a family's plan usually comes down to one question: are we putting enough into ESG
-   funds?" (Pete's words.)
-2. **What the label oversells (inside out):** two funds carry the same ESG tick; one still owns oil and gas with no
-   carbon target (MSCI's Selection index, formerly ESG Leaders: conventional oil and gas not excluded, no carbon
-   target, energy 2.8% against 4.6%), the other must cut its carbon every year (an EU climate-transition index: at
-   least 30% below the market and 7% a year) (`area3_portfolio.md`, MSCI documents Oct 2026, Dec 2025; EU 2020/1818).
-   Never "greenwashing": both follow their published rules; the label is true, it answers a different question.
-3. **What the label never shows (outside in):** a Hong Kong family that followed the labels; 2031, a sudden crackdown
-   on carbon hits the markets; within two years they are about HK$3 million poorer than without it, and never catch
-   up; almost half of the loss lands on their home and their business, where no fund label looks (EXPLORATORY: the
-   label approach under the 2030–31 scenario, gap in net worth −HK$3.13M by 2032, −HK$4.55M by Carmen's 89; home
-   and business 47% of the loss, each run on its own; shocks as in `area4_property_scenario.md` §5.1).
-4. **The line and our result:** "A label tells you what a product is called, not what it does. With our framework,
-   the same family in the same crisis leaves [about HK$2 million] more to their children, and we'll show you how much
-   of it is really green" (M8: +HK$2.25M under stress, EXPLORATORY until the re-base; the honest split on slide 11).
-The word "pre-mortem", the odds and the family's limit come later (slides 4 and 11), each explained where it first
-appears. Draft script in slide 1's notes (about 140 words, so slide 1 gets 1:05). Never say that clients want labels
-or that planners only sell them: "a careful planner uses these tools; we did too", at most once.
+**Slide 1 revision, 12 Nov (Codex; supersedes the four opening beats below):** preserve the dark stage, chart and
+four reveal steps; replace the two-index comparison with two household questions. The opening asks “What makes the
+whole plan sustainable?” Choosing ESG funds is acknowledged as one decision. The two checks are what climate does
+to the family's money and what their decisions change in the world. Introduce the Wongs as a Hong Kong family with a
+home, a packaging business and retirement ahead. The existing chart illustrates the first check only: one specified
+baseline with and without the assumed 2030–31 shock. Its outputs remain linked to the exported keys, but the result
+is conditional on illustrative assumptions, not an observed loss, a forecast or evidence that labels caused it.
+Remove “almost half” (the channel shares are separate sensitivities), “never catches up”, the fake common ESG
+certification on two indices, and the bracketed HK$2M promise. Close with “Test the whole plan, then choose the
+products.” Transition: “What changes their money, what changes the world, and at what cost?” The live notes acknowledge
+that ESG analysis already considers investment risks; no assertion about usual adviser practice. The chart and
+normal/stress model data are unchanged; the purchasable-baseline re-run remains necessary before final submission.
+Slide 2's inherited contrasts and slide 11's callback still need a later consistency pass.
+
+**The open (slide 1), in plain words** (12 Nov; implemented in source and inspected in the full render and all four
+reveal frames):
+1. **Question:** “What makes the whole plan sustainable?” ESG funds are one decision; no generalisation about advisers.
+2. **Two checks:** “What does climate do to their money?” and “What do their decisions change in the world?” The
+   Wongs are introduced through their home, packaging business and retirement ahead.
+3. **Illustration of the first check:** assume sudden carbon rules in 2030–31. Compare one baseline with/without
+   the shock, using `fin_lab_gap32`, `fin_lab_gap89` and `fin-label-path`. Explicitly identify the hypothetical shock,
+   modelled medians, horizon and pending baseline re-run. No half-of-loss attribution or claim of permanent loss.
+4. **Principle and handoff:** “Test the whole plan, then choose the products.” Ask what changes their money, what
+   changes the world and at what cost. PRISM follows on slide 2; quantified package results wait for verification.
+The word “pre-mortem”, the odds and the family's limit come later (slides 4 and 11), explained where first used.
+The notes contain 143 spoken words, about 64 seconds at the build's assumed 135 words/minute; allocation 1:05.
+This is a calculated estimate, not a timed rehearsal. Earlier versions used two index comparisons and a provisional
+gain promise; these were removed to avoid implying identical certification, typical adviser practice or a verified
+superiority result. The index-methodology evidence remains available for the portfolio discussion.
 
 **The close (slide 11), the replay.** *"Same storm, same family, our plan."* The balance sheet, now complete; under the
 same 2030–31 scenario our plan keeps the odds at **91.0%**, above the floor, and the children's median at **HK$9.07M**
@@ -956,7 +967,7 @@ The title is the idea (any client); the Wongs' proof is in "Must prove".
 
 | # | Step | Who | Time | Title (draft) | Must prove | Evidence | Required item; areas |
 |---|---|---|---|---|---|---|---|
-| 1 | The open | Pete | 1:05 | [A label tells you what a product is called, not what it does] | In plain words (§4.3, rewritten 11 Nov): today's question ("are we putting enough into ESG funds?"); two funds with the same ESG tick, one still owning oil and gas with no carbon target, one cutting its carbon every year; a family that followed the labels in a 2031 carbon crackdown: about HK$3M poorer within two years, never catching up, almost half of it on the home and the business; one line of our result. No US$0 fund (questions and slide 9 only), no odds, floor or "pre-mortem" said here | MSCI Selection methodology and factsheets HAVE (`area3_portfolio.md`); EU 2020/1818 HAVE; MODEL (label approach under the scenario: `fin_lab_gap32` HK$3.1M, `fin_lab_gap89` HK$4.6M, `fin_lab_homebiz` 47%, series `fin-label-path`; built 11 Nov, a dark stage in four clicks); result line after the re-base | — ; 3, 5 |
+| 1 | The open | Pete | 1:05 | Test the whole plan, then choose the products | Revised 12 Nov (§4.3): ask what makes the whole plan sustainable; ESG funds acknowledged as one decision. Two household checks: climate → money, decisions → world. Introduce the Wongs' home, packaging business and retirement. The chart illustrates the first check only: the same baseline with/without an assumed shock. No profession-wide claim, fake certification, half-of-loss attribution, permanent-loss claim or provisional package gain | CASE; MODEL (`fin_lab_gap32`, `fin_lab_gap89`, `fin-label-path`, exported 11 Nov); shock ILLUSTRATIVE; baseline re-run pending. Full slide and all four reveal frames inspected 12 Nov; 143 spoken words, estimated 64 s | Scenario introduction; 1, 5 |
 | 2 | How we think | Pete | 1:00 | PRISM: look both ways | For any client: five letters, five twists (each letter with the usual way and ours, §4.2); the two directions in R and I; built on double materiality, applied to a family's whole balance sheet; climate treated like inflation, not a product; the five kinds of finance sorted by direction (small) | Definitions HAVE (`area1_6_framework.md`) | The framework; 1 |
 | 3 | The answer | Pete | 0:25 | [Seven changes: about HK$2.4M more for their children, and 134 tonnes of carbon a year less] | Split from the old slide 3 (Pete, 11 Nov: it mixed the Profile rule with the answer, so it had no focal point). The answer first, one point: the family in one line; the seven changes grouped by where they act (the business: vans, carbon data, recycled plastic at parity; the savings: a climate index fund at the plain fee, plain bonds for Adrian; the flat: the reverse mortgage with a price trigger; their giving: the scholarship funded); the capital (HK$0.48M the family's, HK$1.91M the business's); what was refused; sowhat: all the carbon cut comes from the business. The honest split is the replay's reveal | CASE; Decision_List.md §1–2; MODEL (EXPLORATORY, before the re-base); tonnes ESTIMATED | **Recommendation, capital, outcomes**; 1 |
 | 4 | P | Pete | 0:30 | Settle the family's disagreements once, before any option is priced | One focal point: Adrian ("capital preservation, retirement adequacy"; his funds within 0.5% a year of the market) and Carmen (ESG for "her personal values"; up to 3% a year) meet in one values budget, ≈HK$1.4M agreed once (≈HK$1.7M at worst); their limit, the money lasts in 95 futures out of 100 and 85 in a crisis; also set first: Ryan decides for his own money, Chloe's HK$2.57M set aside, both parents for anything irreversible | CASE (their words); limits ours (§4.2); budget MODEL (EXPLORATORY) | — ; 1, 6 (biases) |

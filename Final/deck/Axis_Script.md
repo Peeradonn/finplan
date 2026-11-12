@@ -1,17 +1,17 @@
 # PRISM: the script (Team Axis)
 
-Generated 2026-11-11 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
+Generated 2026-11-12 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-176 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:55. Speech: 1:12 at 145 words a minute (1:32 with names and handovers); 1:18 at 135 words a minute (1:38 with names and handovers); 1:24 at 125 words a minute (1:44 with names and handovers). Over 10:30 disqualifies the team.
+173 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:55. Speech: 1:11 at 145 words a minute (1:31 with names and handovers); 1:16 at 135 words a minute (1:36 with names and handovers); 1:23 at 125 words a minute (1:43 with names and handovers). Over 10:30 disqualifies the team.
 
-Speaking time at 135 words a minute: Pete 1:10, Lookbua 0:02, Fahtai 0:02, Win 0:02.
+Speaking time at 135 words a minute: Pete 1:08, Lookbua 0:02, Fahtai 0:02, Win 0:02.
 
-## 1 · A label tells you what a product is called, not what it does.
-*Pete · 1:05 · 146 spoken words (≈65 s at 135)*
+## 1 · Test the whole plan, then choose the products.
+*Pete · 1:05 · 143 spoken words (≈64 s at 135)*
 
-**Pete:** Good morning, we're Team Axis. I'm Pete. Today, ESG in a family's plan usually comes down to one question: are we putting enough into ESG funds? Yet one fund with the ESG tick still owns oil and gas; another must cut its carbon every year. And the tick says nothing about what climate can do to the family. Take a Hong Kong family that followed the labels. It's 2031, and a sudden crackdown on carbon hits the markets. Within two years they're three million dollars poorer, and they never catch up. Almost half of it lands on their home and their business, where no fund label looks. A label tells you what a product is called, not what it does. Our framework leaves the same family, in the same crisis, [two million dollars] more, and we'll show you how much of that is really green.
+**Pete:** Good morning, we're Team Axis. I'm Pete. What makes a family's whole plan sustainable? Choosing ESG funds is one decision. ESG analysis already considers investment risks. For the Wongs, a Hong Kong family with a home, a packaging business and retirement ahead, we ask two questions: what does climate do to their money, and what do their decisions change in the world? Start with the first. Suppose carbon rules arrive suddenly in 2030 and 2031, hitting markets, their business and their home. In our model, their net worth is about three million Hong Kong dollars lower by 2032 than the same plan without that shock. This is a scenario, not a forecast. It shows why we test the whole plan before choosing products. Then we ask what their decisions actually change, and at what cost. That's the job of PRISM.
 
-> Notes: DRAFT (Claude, 11 Nov, in plain words after Pete's note on jargon; Pete to make it his own). Sources and status: Final_Plan.md §4.3 "The open". The fund contrast: MSCI Selection (formerly ESG Leaders) does not exclude conventional oil and gas and has no carbon target; an EU climate-transition index must be at least 30% below the market and cut 7% a year. Never "greenwashing": the label is true, it answers a different question. The HK$3M and "almost half" are exploratory runs on the label approach until they are number keys.
+> Notes: DRAFT, Codex 12 Nov; Pete to make it his own. Reveal order: question and fund decision; two household checks; scenario chart; closing principle. Sources: organiser's case (family), Final/final_model.py label_storm_path() through exported fin_lab_ keys and fin-label-path series (11 Nov). Spoken money is rounded from fin_lab_gap32; see chart for exported value. Same baseline with/without shock, not two competing plans. Paths are year-by-year median portfolio balances plus home and business accounting, not a single realised future. Shock magnitudes are illustrative; channel assumptions in model_runs.md M7/M8 and area4_property_scenario.md §5.1. No quantified inside-out result is claimed here: later business slides must evidence it. The existing baseline's fee still awaits the purchasable-fund re-base; rerun the chart before final submission. No additional climate protection is attributed to ESG funds. The package gain formerly promised here is removed pending that re-run.
 
 ## 2 · PRISM
 *Pete · 1:00 · 3 spoken words (≈1 s at 135)*

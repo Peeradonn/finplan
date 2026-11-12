@@ -2,25 +2,23 @@
      (what it must prove) and §4.3 (the story). The title is the idea, true for any client; the Wongs are the
      proof underneath. Brackets wait for numbers in export_numbers(). -->
 
-<!-- 1 · Pete, 1:05. The open, in plain words (Pete, 11 Nov; Final_Plan.md §4.3): a dark stage like slide 2, four clicks in
-     the script's order: today's question; two funds with the same tick; the family that followed the labels, its net worth
-     in a 2031 carbon crackdown (from figures/figure-data.md "fin-label-path" through series.py; numbers are "fin_lab_" keys
-     in double braces); the line and one result. No US$0 fund, odds, floor or "pre-mortem" here. -->
+<!-- 1 · Pete, 1:05. Argument revised 12 Nov (Final_Plan.md §4.3; claims audit): a question, two household checks,
+     one baseline with/without an assumed shock, then the decision principle. No claim about typical adviser practice
+     or causal cost of labels. Existing chart series and fin_lab_ keys unchanged; re-base still due. -->
 <section class="slide reveal s1-stage" id="s1" data-time="1:05" data-speaker="Pete">
   <p class="s1-kick">Today's question</p>
-  <p class="s1-q">Are we putting enough into ESG funds?</p>
-  <span class="s1-chip">ESG ✓</span>
+  <p class="s1-q">What makes the whole plan sustainable?</p>
+  <span class="s1-chip">ESG funds: one decision</span>
   <div class="s1-funds" data-b="2">
-    <p class="s1-cap">The same tick on two funds</p>
-    <div class="s1-card"><span class="s1-mini">ESG ✓</span><p>Still owns oil and gas, with no target to cut carbon</p></div>
-    <div class="s1-card"><span class="s1-mini">ESG ✓</span><p>Has to cut its carbon every year</p></div>
-    <p class="s1-src">MSCI World Selection Index (formerly ESG Leaders), methodology Dec 2025 · an EU climate-transition
-      index, Regulation (EU) 2020/1818 · SOURCED</p>
+    <p class="s1-cap">Two questions for the Wongs</p>
+    <div class="s1-card"><span class="s1-mini">RISK</span><p>What does climate do to their money?</p></div>
+    <div class="s1-card"><span class="s1-mini">EFFECT</span><p>What do their decisions change in the world?</p></div>
+    <p class="s1-src">Their home · their packaging business · their savings · their retirement</p>
   </div>
   <div class="s1-chart" data-b="3">
       <svg class="s1-svg" viewBox="0 0 712 520" width="712" height="520">
-        <text x="0" y="16" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">A FAMILY THAT FOLLOWED THE LABELS</text>
-        <text x="0" y="38" font-size="14" fill="#B9ACAF">its net worth, HK$ million in today's money</text>
+        <text x="0" y="16" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">THE WONGS: ONE PLAN, TWO SCENARIOS</text>
+        <text x="0" y="38" font-size="14" fill="#B9ACAF">modelled net worth, HK$ million in today's money</text>
         <g stroke="#2E2527" stroke-width="1">
           <line x1="[[lp_x:2026]]" x2="[[lp_x:2066]]" y1="[[lp_y:10]]" y2="[[lp_y:10]]"/>
           <line x1="[[lp_x:2026]]" x2="[[lp_x:2066]]" y1="[[lp_y:20]]" y2="[[lp_y:20]]"/>
@@ -32,48 +30,50 @@
           <text x="[[lp_x:2026-10]]" y="[[lp_y:20+4]]">20</text><text x="[[lp_x:2026-10]]" y="[[lp_y:30+4]]">30</text>
         </g>
         <polygon points="[[lp_x:2030]],[[lp_y:32]] [[lp_x:2032]],[[lp_y:32]] [[lp_x:2032]],[[lp_y:0]] [[lp_x:2030]],[[lp_y:0]]" fill="#FF4A57" fill-opacity=".16"/>
-        <text x="[[lp_x:2030]]" y="[[lp_y:32-10]]" font-size="15" font-weight="700" fill="#FF6B75">2030–31: a crackdown on carbon</text>
+        <text x="[[lp_x:2030]]" y="[[lp_y:32-10]]" font-size="15" font-weight="700" fill="#FF6B75">Assume sudden carbon rules in 2030–31</text>
         <polygon points="[[lp_gap]]" fill="#FF4A57" fill-opacity=".22"/>
         <polyline points="[[lp_normal]]" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="3" stroke-linejoin="round"/>
         <polyline points="[[lp_storm]]" fill="none" stroke="#FF4A57" stroke-width="4" stroke-linejoin="round"/>
-        <rect x="[[lp_x:2027-8]]" y="[[lp_yn:2027-46]]" width="78" height="30" rx="15" fill="#3F9A55"/>
-        <text x="[[lp_x:2027+31]]" y="[[lp_yn:2027-26]]" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">ESG ✓</text>
-        <text x="[[lp_x:2044]]" y="[[lp_yn:2044-14]]" font-size="15" font-weight="700" fill="#D8CFD1">if it never came</text>
-        <text x="[[lp_x:2060]]" y="[[lp_ys:2060+26]]" font-size="15" font-weight="700" fill="#FF4A57" text-anchor="end">with the crackdown</text>
+        <text x="[[lp_x:2044]]" y="[[lp_yn:2044-14]]" font-size="15" font-weight="700" fill="#D8CFD1">without this shock</text>
+        <text x="[[lp_x:2060]]" y="[[lp_ys:2060+26]]" font-size="15" font-weight="700" fill="#FF4A57" text-anchor="end">with this shock</text>
         <line x1="[[lp_x:2032+3]]" x2="[[lp_x:2032+3]]" y1="[[lp_yn:2032]]" y2="[[lp_ys:2032]]" stroke="#FFFFFF" stroke-width="3"/>
         <line x1="[[lp_x:2032+3]]" x2="[[lp_x:2032+3]]" y1="[[lp_ys:2032+4]]" y2="[[lp_ys:2032+30]]" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <text x="[[lp_x:2032+12]]" y="[[lp_ys:2032+52]]" font-size="28" font-weight="800" fill="#FFFFFF">{{fin_lab_gap32}} poorer</text>
-        <text x="[[lp_x:2032+12]]" y="[[lp_ys:2032+74]]" font-size="15" fill="#B9ACAF">within two years; almost half of it</text>
-        <text x="[[lp_x:2032+12]]" y="[[lp_ys:2032+93]]" font-size="15" fill="#B9ACAF">on their home and their business</text>
-        <text x="[[lp_x:2066]]" y="[[lp_ys:2066+30]]" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="end">and it never closes:</text>
-        <text x="[[lp_x:2066]]" y="[[lp_ys:2066+51]]" font-size="15" fill="#B9ACAF" text-anchor="end">{{fin_lab_gap89}} less for their children</text>
+        <text x="[[lp_x:2032+12]]" y="[[lp_ys:2032+52]]" font-size="28" font-weight="800" fill="#FFFFFF">{{fin_lab_gap32}} less</text>
+        <text x="[[lp_x:2032+12]]" y="[[lp_ys:2032+74]]" font-size="15" fill="#B9ACAF">by 2032, against the same plan</text>
+        <text x="[[lp_x:2032+12]]" y="[[lp_ys:2032+93]]" font-size="15" fill="#B9ACAF">without this shock · MODEL OUTPUT</text>
+        <text x="[[lp_x:2066]]" y="[[lp_ys:2066+30]]" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="end">At the model's end:</text>
+        <text x="[[lp_x:2066]]" y="[[lp_ys:2066+51]]" font-size="15" fill="#B9ACAF" text-anchor="end">{{fin_lab_gap89}} less net worth</text>
         <g font-size="13" font-weight="600" fill="#8C8083">
           <text x="[[lp_x:2026]]" y="[[lp_y:0+22]]">2026</text>
           <text x="[[lp_x:2037]]" y="[[lp_y:0+22]]" text-anchor="middle">2037, they retire</text>
           <text x="[[lp_x:2066]]" y="[[lp_y:0+22]]" text-anchor="end">2066</text>
         </g>
       </svg>
-    <p class="s1-src">Our model: the middle of 10,000 futures (MEASURED) · the crackdown's size ILLUSTRATIVE, set within
-      NGFS, HKMA, BoE and ECB bounds</p>
+    <p class="s1-src">Model outputs (MEASURED): year-by-year medians, 10,000 futures · shock assumptions ILLUSTRATIVE,
+      not a forecast · Final model, 11 Nov 2026 · draft baseline: re-base pending</p>
   </div>
   <div class="s1-end" data-b="4">
-    <h2 class="s1-line">A label tells you what a product is called, not what it does.</h2>
-    <p class="s1-result">Our framework: [about HK$2M more] for the same family in the same crisis, and we'll show how much of that is really green.</p>
+    <h2 class="s1-line">Test the whole plan, then choose the products.</h2>
+    <p class="s1-result">What changes their money, what changes the world, and at what cost?</p>
   </div>
   <span class="s1-pg">1</span>
-  <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. Today, ESG in a family's plan usually comes down
-    to one question: are we putting enough into ESG funds? Yet one fund with the ESG tick still owns oil and gas; another
-    must cut its carbon every year. And the tick says nothing about what
-    climate can do to the family. Take a Hong Kong family that followed the labels. It's 2031, and a sudden crackdown on
-    carbon hits the markets. Within two years they're three million dollars poorer, and they
-    never catch up. Almost half of it lands on their home and their business, where no fund label looks. A
-    label tells you what a product is called, not what it does. Our framework leaves the same family, in the same crisis,
-    [two million dollars] more, and we'll show you how much of that is really green.
-    [Notes: DRAFT (Claude, 11 Nov, in plain words after Pete's note on jargon; Pete to make it his own). Sources and
-    status: Final_Plan.md §4.3 "The open". The fund contrast: MSCI Selection (formerly ESG Leaders) does not exclude
-    conventional oil and gas and has no carbon target; an EU climate-transition index must be at least 30% below the
-    market and cut 7% a year. Never "greenwashing": the label is true, it answers a different question. The HK$3M and
-    "almost half" are exploratory runs on the label approach until they are number keys.]</aside>
+  <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a family's whole plan sustainable?
+    Choosing ESG funds is one decision. ESG analysis already considers investment risks. For the Wongs, a Hong Kong
+    family with a home, a packaging business and retirement ahead, we ask two questions: what does climate do to their
+    money, and what do their decisions change in the world? Start with the first. Suppose carbon rules arrive suddenly
+    in 2030 and 2031, hitting markets, their business and their home. In our model, their net worth is about three million
+    Hong Kong dollars lower by 2032 than the same plan without that shock. This is a scenario, not a forecast. It shows
+    why we test the whole plan before choosing products. Then we ask what their decisions actually change, and at what
+    cost. That's the job of PRISM.
+    [Notes: DRAFT, Codex 12 Nov; Pete to make it his own. Reveal order: question and fund decision; two household
+    checks; scenario chart; closing principle. Sources: organiser's case (family), Final/final_model.py
+    label_storm_path() through exported fin_lab_ keys and fin-label-path series (11 Nov). Spoken money is rounded
+    from fin_lab_gap32; see chart for exported value. Same baseline with/without shock, not two competing plans.
+    Paths are year-by-year median portfolio balances plus home and business accounting, not a single realised future.
+    Shock magnitudes are illustrative; channel assumptions in model_runs.md M7/M8 and area4_property_scenario.md §5.1.
+    No quantified inside-out result is claimed here: later business slides must evidence it. The existing baseline's
+    fee still awaits the purchasable-fund re-base; rerun the chart before final submission. No additional climate
+    protection is attributed to ESG funds. The package gain formerly promised here is removed pending that re-run.]</aside>
 </section>
 
 <!-- 2 · Pete, 1:00. The framework's introduction page (Pete, 11 Nov): a dark stage, unlike any other slide; the

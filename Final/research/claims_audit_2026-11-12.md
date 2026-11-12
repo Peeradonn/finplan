@@ -102,3 +102,8 @@ headline, while activity data and supplier quotes would strengthen the carbon es
 baseline fund and fee; Pete reruns the fully specified package; Fahtai confirms working capital, supplier terms and
 the emissions counterfactual. Then revise slide 3 and render both slides and their builds. Layouts and source HTML
 were left intact during this intake.
+
+**Slide 1 follow-through, 12 Nov:** after Pete authorised the argument revision, the source and notes were updated;
+see `Final_Plan.md` §4.3 for the current four beats and the render check. The two-index comparison and provisional
+gain promise were removed. The chart is explicitly one baseline with/without an illustrative shock, not evidence of
+loss caused by labels. Model outputs were unchanged; the baseline re-run and slide 3 work remain open.
