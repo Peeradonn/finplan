@@ -98,19 +98,25 @@ def signed(key):
 
 # slide 3: every decision on one measure (Pete, 13 Nov), as bars from zero in its SVG (units = px). Each decision's
 # change in the children's median inheritance in a normal future (numbers.json fin_dot_*_n), against its ordinary choice.
-BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 825.0, 116.0, 345.0, 1000.0
+BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 660.0, 260.0, 365.0, 800.0
 BARS = ("vans", "data", "values", "gift", "flat")
+BROKEN = "flat"     # the one bar drawn broken (its value is printed on it): the rest keep a readable scale
 
 
 def bars3():
-    """[[b3_zero]]; for each decision [[b3_vans_l]] (left x), [[b3_vans_w]] (width), [[b3_vans_e]] (the outer end)."""
+    """[[b3_zero]]; for each decision [[b3_vans_l]] (left x), [[b3_vans_w]] (width), [[b3_vans_e]] (the outer end).
+    The flat's bar is longer than the chart and is drawn from BAR_MIN with a break; any other bar must fit."""
     tok = {"b3_zero": f"{BAR_ZERO:.1f}"}
     for d in BARS:
         v = signed(f"fin_dot_{d}_n")
         end = BAR_ZERO + v * BAR_SCALE
-        if not BAR_MIN <= end <= BAR_MAX:
+        if d == BROKEN:
+            if end >= BAR_MIN:
+                raise ValueError(f"slide 3: {d} at {v:+.2f} now fits; draw it unbroken (drop the break mark)")
+            end = BAR_MIN
+        elif not BAR_MIN <= end <= BAR_MAX:
             raise ValueError(f"slide 3: {d} at {v:+.2f} runs off the chart; change BAR_ZERO or BAR_SCALE")
-        tok[f"b3_{d}_l"], tok[f"b3_{d}_w"] = f"{min(BAR_ZERO, end):.1f}", f"{abs(v) * BAR_SCALE:.1f}"
+        tok[f"b3_{d}_l"], tok[f"b3_{d}_w"] = f"{min(BAR_ZERO, end):.1f}", f"{abs(end - BAR_ZERO):.1f}"
         tok[f"b3_{d}_e"] = f"{end:.1f}"
     return tok
 

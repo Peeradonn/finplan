@@ -117,45 +117,56 @@
     <h2>Put every decision on one measure, green or not</h2>
   </header>
   <div class="body a3-body">
-    <svg viewBox="0 0 1184 420" width="1184" height="420" role="img" aria-label="Each decision's effect on what the children inherit, and on the world">
-      <!-- column heads -->
-      <text x="345" y="17" font-size="17" font-weight="700" fill="#1B1716">What it does to what the children inherit</text>
-      <text x="345" y="38" font-size="16" font-style="italic" fill="#5E4A50">HK$M, median, each against its ordinary choice</text>
-      <text x="1015" y="17" font-size="17" font-weight="700" fill="#0E7490">What it changes</text>
-      <text x="1015" y="38" font-size="16" font-style="italic" fill="#5E4A50">in the world</text>
-      <text x="[[b3_zero-10]]" y="62" font-size="16" font-style="italic" text-anchor="end" fill="#5E4A50">costs</text>
-      <text x="[[b3_zero+10]]" y="62" font-size="16" font-style="italic" fill="#5E4A50">adds</text>
-      <line x1="[[b3_zero]]" y1="70" x2="[[b3_zero]]" y2="392" stroke="#1B1716" stroke-width="1.5"/>
-      <!-- the business -->
-      <text x="0" y="90" font-size="16" font-weight="800" letter-spacing="1" fill="#5E4A50">THE BUSINESS</text>
-      <text x="0" y="118" font-size="18" font-weight="600" fill="#1B1716">Electric vans, LED, air-con</text>
-      <rect x="[[b3_vans_l]]" y="99" width="[[b3_vans_w]]" height="26" fill="#5E4A50"/>
-      <text x="[[b3_vans_e+8]]" y="118" font-size="17" font-weight="700" fill="#1B1716">{{fin_dot_vans_n}}</text>
-      <text x="1015" y="118" font-size="18" font-weight="800" fill="#0E7490">26 t a year</text>
-      <text x="0" y="158" font-size="18" font-weight="600" fill="#1B1716">Recycled plastic, at today's price</text>
-      <text x="[[b3_zero+10]]" y="158" font-size="16" font-style="italic" fill="#5E4A50">no extra cost</text>
-      <text x="1015" y="158" font-size="18" font-weight="800" fill="#0E7490">108 t a year</text>
-      <text x="0" y="198" font-size="18" font-weight="600" fill="#1B1716">Carbon data, to protect the sale</text>
-      <rect x="[[b3_data_l]]" y="179" width="[[b3_data_w]]" height="26" fill="#5E4A50"/>
-      <text x="[[b3_data_l-8]]" y="198" font-size="17" font-weight="700" text-anchor="end" fill="#1B1716">{{fin_dot_data_n}}</text>
-      <text x="1015" y="198" font-size="16" font-style="italic" fill="#5E4A50">none shown</text>
-      <!-- the values budget -->
-      <text x="0" y="242" font-size="16" font-weight="800" letter-spacing="1" fill="#5E4A50">THE VALUES BUDGET</text>
-      <text x="0" y="270" font-size="18" font-weight="600" fill="#1B1716">ESG funds, Carmen's choice</text>
-      <rect x="[[b3_values_l]]" y="251" width="[[b3_values_w]]" height="26" fill="#5E4A50"/>
-      <text x="[[b3_values_l-8]]" y="270" font-size="17" font-weight="700" text-anchor="end" fill="#1B1716">{{fin_dot_values_n}}</text>
-      <text x="1015" y="270" font-size="16" font-style="italic" fill="#5E4A50">none shown</text>
-      <text x="0" y="310" font-size="18" font-weight="600" fill="#1B1716">Fund the scholarship now</text>
-      <rect x="[[b3_gift_l]]" y="291" width="[[b3_gift_w]]" height="26" fill="#5E4A50"/>
-      <text x="[[b3_gift_l-8]]" y="310" font-size="17" font-weight="700" text-anchor="end" fill="#1B1716">{{fin_dot_gift_n}}</text>
-      <text x="1015" y="310" font-size="18" font-weight="800" fill="#0E7490">20 years of awards</text>
-      <!-- the home -->
-      <text x="0" y="354" font-size="16" font-weight="800" letter-spacing="1" fill="#5E4A50">THE HOME</text>
-      <text x="0" y="382" font-size="18" font-weight="600" fill="#1B1716">Keep the flat (reverse mortgage)</text>
-      <rect x="[[b3_flat_l]]" y="363" width="[[b3_flat_w]]" height="26" fill="#C80E1E"/>
-      <text x="[[b3_flat_l+12]]" y="382" font-size="17" font-weight="800" fill="#FFFFFF">{{fin_dot_flat_n}}</text>
-      <text x="1015" y="382" font-size="16" font-style="italic" fill="#5E4A50">none shown</text>
-      <text x="0" y="414" font-size="16" font-style="italic" fill="#1B1716">Chosen by the limit: downsizing would leave more, but lasts in only {{fin_dot_down_sodds}} of futures in the 2030–31 downturn (limit 85%).</text>
+    <svg viewBox="0 0 1184 426" width="1184" height="426" role="img" aria-label="Each decision's two price tags: what it does to what the children inherit, and what it changes in the world">
+      <!-- column heads: the two sides of every decision's price tag -->
+      <text x="330" y="17" font-size="17" font-weight="700" fill="#1B1716">For the children</text>
+      <text x="330" y="38" font-size="16" font-style="italic" fill="#5E4A50">what they inherit, HK$M, median, against the ordinary choice</text>
+      <text x="860" y="17" font-size="17" font-weight="700" fill="#0E7490">For the world</text>
+      <text x="860" y="38" font-size="16" font-style="italic" fill="#5E4A50">what it changes (CO2e in tonnes)</text>
+      <text x="[[b3_zero-10]]" y="64" font-size="16" font-style="italic" text-anchor="end" fill="#5E4A50">costs</text>
+      <text x="[[b3_zero+10]]" y="64" font-size="16" font-style="italic" fill="#5E4A50">adds</text>
+      <line x1="[[b3_zero]]" y1="76" x2="[[b3_zero]]" y2="402" stroke="#1B1716" stroke-width="1.5"/>
+      <line x1="860" y1="76" x2="860" y2="402" stroke="#0E7490" stroke-width="1.5"/>
+      <!-- one row per decision; the icon says where it acts (the business, the savings, the giving, the home) -->
+      <svg x="0" y="92" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5E4A50" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><use href="#i-briefcase-business"/></svg>
+      <text x="36" y="110" font-size="18" font-weight="600" fill="#1B1716">Electric vans, LED, air-con</text>
+      <rect x="[[b3_vans_l]]" y="90" width="[[b3_vans_w]]" height="28" fill="#5E4A50"/>
+      <text x="[[b3_vans_l+8]]" y="110" font-size="17" font-weight="700" fill="#FFFFFF">{{fin_dot_vans_n}}</text>
+      <rect x="860" y="90" width="47" height="28" fill="#0E7490"/>
+      <text x="917" y="110" font-size="18" font-weight="800" fill="#0E7490">26 t a year</text>
+
+      <svg x="0" y="148" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5E4A50" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><use href="#i-briefcase-business"/></svg>
+      <text x="36" y="166" font-size="18" font-weight="600" fill="#1B1716">Recycled plastic, at today's price</text>
+      <text x="[[b3_zero+10]]" y="166" font-size="16" font-style="italic" fill="#5E4A50">no extra cost</text>
+      <rect x="860" y="146" width="194" height="28" fill="#0E7490"/>
+      <text x="1064" y="166" font-size="18" font-weight="800" fill="#0E7490">108 t a year</text>
+
+      <svg x="0" y="204" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5E4A50" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><use href="#i-briefcase-business"/></svg>
+      <text x="36" y="222" font-size="18" font-weight="600" fill="#1B1716">Carbon data, to protect the sale</text>
+      <rect x="[[b3_data_l]]" y="202" width="[[b3_data_w]]" height="28" fill="#5E4A50"/>
+      <text x="[[b3_data_l-8]]" y="222" font-size="17" font-weight="700" text-anchor="end" fill="#1B1716">{{fin_dot_data_n}}</text>
+      <text x="872" y="222" font-size="16" font-style="italic" fill="#8A747A">none shown</text>
+
+      <svg x="0" y="260" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5E4A50" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><use href="#i-chart-line"/></svg>
+      <text x="36" y="278" font-size="18" font-weight="600" fill="#1B1716">ESG funds, Carmen's choice</text>
+      <rect x="[[b3_values_l]]" y="258" width="[[b3_values_w]]" height="28" fill="#5E4A50"/>
+      <text x="[[b3_values_l-8]]" y="278" font-size="17" font-weight="700" text-anchor="end" fill="#1B1716">{{fin_dot_values_n}}</text>
+      <text x="872" y="278" font-size="16" font-style="italic" fill="#8A747A">none shown</text>
+
+      <svg x="0" y="316" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5E4A50" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><use href="#i-gift"/></svg>
+      <text x="36" y="334" font-size="18" font-weight="600" fill="#1B1716">Fund the scholarship now</text>
+      <rect x="[[b3_gift_l]]" y="314" width="[[b3_gift_w]]" height="28" fill="#5E4A50"/>
+      <text x="[[b3_gift_l-8]]" y="334" font-size="17" font-weight="700" text-anchor="end" fill="#1B1716">{{fin_dot_gift_n}}</text>
+      <text x="872" y="334" font-size="17" font-weight="700" fill="#0E7490">20 years of awards</text>
+
+      <!-- the home: the bar is longer than the chart, so it is broken and its value printed on it -->
+      <svg x="0" y="372" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5E4A50" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><use href="#i-house"/></svg>
+      <text x="36" y="390" font-size="18" font-weight="600" fill="#1B1716">Keep the flat (reverse mortgage)</text>
+      <rect x="[[b3_flat_l]]" y="370" width="[[b3_flat_w]]" height="28" fill="#C80E1E"/>
+      <polygon points="[[b3_flat_l+40]],367 [[b3_flat_l+48]],367 [[b3_flat_l+40]],401 [[b3_flat_l+32]],401" fill="#FFFFFF"/>
+      <text x="[[b3_flat_l+60]]" y="390" font-size="17" font-weight="800" fill="#FFFFFF">{{fin_dot_flat_n}}</text>
+      <text x="872" y="390" font-size="16" font-style="italic" fill="#8A747A">none shown</text>
+      <text x="36" y="422" font-size="16" font-style="italic" fill="#1B1716">Chosen by the limit: downsizing would leave more, but lasts in only {{fin_dot_down_sodds}} of futures in the 2030–31 downturn (limit 85%).</text>
     </svg>
     <p class="a3-cap"><b>Capital:</b> HK$0.48M from the family; from the business, HK$1.91M of equipment and ≈HK$0.27M of working capital</p>
   </div>
