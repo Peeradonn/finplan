@@ -221,12 +221,16 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s1-q{position:absolute;left:48px;top:68px;width:430px;font:800 38px/1.12 var(--head);color:#fff}
 .s1-chip{position:absolute;left:48px;top:192px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:11px 16px;
   border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}
-.s1-funds{position:absolute;left:48px;top:262px;width:430px}
+.s1-funds{position:absolute;left:48px;top:206px;width:430px}
 .s1-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#B9ACAF;margin-bottom:12px}
 .s1-card{display:flex;align-items:center;gap:14px;background:#1E1719;border:1px solid #3A2F31;border-radius:10px;
   padding:14px 16px;margin-bottom:10px}
 .s1-card p{font:700 18px/1.3 var(--text);color:#fff}
 .s1-mini{flex:none;background:var(--leaf);color:#fff;font:800 14px/1 var(--text);padding:8px 11px;border-radius:16px;white-space:nowrap}
+.s1-who{flex:none;background:#3A2F31;color:#fff;font:800 14px/1 var(--text);letter-spacing:.6px;padding:8px 11px;border-radius:16px}
+.s1-ask{position:absolute;left:48px;top:420px;width:430px}
+.s1-ask .s1-chip{position:static;display:inline-block}
+.s1-plan{font:600 16px/1.4 var(--text);color:#D8CFD1;margin-top:14px}
 .s1-src{font:500 12.5px/1.4 var(--text);color:#8C8083;margin-top:8px}
 .s1-chart{position:absolute;left:520px;top:36px;width:712px}
 .s1-svg{display:block;font-family:var(--text)}
@@ -274,20 +278,25 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
      (what it must prove) and §4.3 (the story). The title is the idea, true for any client; the Wongs are the
      proof underneath. Brackets wait for numbers in export_numbers(). -->
 
-<!-- 1 · Pete, 1:05. Argument revised 12 Nov (Final_Plan.md §4.3; claims audit): a question, two household checks,
-     one baseline with/without an assumed shock, then the decision principle. No claim about typical adviser practice
-     or causal cost of labels. Existing chart series and fin_lab_ keys unchanged; re-base still due. -->
+<!-- 1 · Pete, 1:05. Revised 13 Nov (Pete, after the thesis review): the question; the parents' two wants in the
+     case's words (the tension the thesis settles: Adrian's limit, Carmen's values budget); their own 20-25% ESG ask as
+     one decision in a whole plan; one baseline with/without an assumed shock, its focal point the share of the loss on
+     the home and business (fin_lab_homebiz), where no fund choice reaches; the thesis. The two topic questions (risk,
+     effect) and "Test the whole plan, then choose the products" were dropped: they restated the topic's subtitle and
+     competed with the thesis. No claim about typical adviser practice or a loss caused by labels. -->
 <section class="slide reveal s1-stage" id="s1" data-time="1:05" data-speaker="Pete">
   <p class="s1-kick">Today's question</p>
   <p class="s1-q">What makes the whole plan sustainable?</p>
-  <span class="s1-chip">ESG funds: one decision</span>
   <div class="s1-funds" data-b="2">
-    <p class="s1-cap">Two questions for the Wongs</p>
-    <div class="s1-card"><span class="s1-mini">RISK</span><p>What does climate do to their money?</p></div>
-    <div class="s1-card"><span class="s1-mini">EFFECT</span><p>What do their decisions change in the world?</p></div>
-    <p class="s1-src">Their home · their packaging business · their savings · their retirement</p>
+    <p class="s1-cap">What each parent wants, in the case's words</p>
+    <div class="s1-card"><span class="s1-who">ADRIAN</span><p>“capital preservation, retirement adequacy”</p></div>
+    <div class="s1-card"><span class="s1-who">CARMEN</span><p>ESG investments, “reflecting … her personal values”</p></div>
   </div>
-  <div class="s1-chart" data-b="3">
+  <div class="s1-ask" data-b="3">
+    <span class="s1-chip">They ask for 20–25% in ESG: one decision</span>
+    <p class="s1-plan">The whole plan: their home · Carmen's packaging business · their savings · their retirement</p>
+  </div>
+  <div class="s1-chart" data-b="4">
       <svg class="s1-svg" viewBox="0 0 712 520" width="712" height="520">
         <text x="0" y="16" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">THE WONGS: ONE PLAN, TWO SCENARIOS</text>
         <text x="0" y="38" font-size="14" fill="#B9ACAF">modelled net worth, HK$ million in today's money</text>
@@ -307,45 +316,44 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
         <polyline points="56.0,215.4 71.6,206.2 87.2,197.2 102.8,187.9 118.4,178.4 134.0,168.6 149.6,158.6 165.2,148.4 180.8,137.7 196.4,126.7 212.0,115.4 227.6,104.3 243.2,126.0 258.8,124.5 274.4,145.3 290.0,150.9 305.6,156.0 321.2,162.6 336.8,168.5 352.4,175.3 368.0,182.4 383.6,190.4 399.2,196.4 414.8,202.1 430.4,208.2 446.0,215.1 461.6,221.8 477.2,229.2 492.8,236.2 508.4,244.2 524.0,252.5 539.6,260.0 555.2,265.7 570.8,271.0 586.4,276.7 602.0,282.3 617.6,289.4 633.2,295.8 648.8,302.1 664.4,309.6 680.0,316.9" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="3" stroke-linejoin="round"/>
         <polyline points="56.0,215.4 71.6,206.2 87.2,197.4 102.8,188.3 118.4,179.0 134.0,195.0 149.6,195.8 165.2,185.3 180.8,174.4 196.4,163.1 212.0,151.4 227.6,139.9 243.2,161.8 258.8,160.7 274.4,181.9 290.0,188.1 305.6,193.8 321.2,200.9 336.8,207.4 352.4,214.9 368.0,222.6 383.6,231.0 399.2,237.6 414.8,244.4 430.4,250.9 446.0,258.4 461.6,265.8 477.2,273.6 492.8,281.5 508.4,290.3 524.0,298.8 539.6,307.6 555.2,313.8 570.8,320.0 586.4,326.7 602.0,332.8 617.6,340.2 633.2,348.1 648.8,355.1 664.4,363.3 680.0,370.9" fill="none" stroke="#FF4A57" stroke-width="4" stroke-linejoin="round"/>
         <text x="336.8" y="154.5" font-size="15" font-weight="700" fill="#D8CFD1">without this shock</text>
-        <text x="586.4" y="352.7" font-size="15" font-weight="700" fill="#FF4A57" text-anchor="end">with this shock</text>
-        <line x1="152.6" x2="152.6" y1="158.6" y2="195.8" stroke="#FFFFFF" stroke-width="3"/>
-        <line x1="152.6" x2="152.6" y1="199.8" y2="225.8" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <text x="161.6" y="247.8" font-size="28" font-weight="800" fill="#FFFFFF">HK$3.1M less</text>
-        <text x="161.6" y="269.8" font-size="15" fill="#B9ACAF">by 2032, against the same plan</text>
-        <text x="161.6" y="288.8" font-size="15" fill="#B9ACAF">without this shock · MODEL OUTPUT</text>
+        <text x="155.6" y="221.8" font-size="15" font-weight="700" fill="#FF4A57">with this shock</text>
         <text x="680.0" y="400.9" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="end">At the model's end:</text>
         <text x="680.0" y="421.9" font-size="15" fill="#B9ACAF" text-anchor="end">HK$4.6M less net worth</text>
+        <!-- the focal point: where the loss lands -->
+        <text x="180.8" y="380.8" font-size="30" font-weight="800" fill="#FFFFFF">47% of the loss</text>
+        <text x="180.8" y="404.5" font-size="17" font-weight="600" fill="#D8CFD1">lands on their home and business,</text>
+        <text x="180.8" y="425.9" font-size="17" font-weight="600" fill="#D8CFD1">where no fund choice reaches</text>
         <g font-size="13" font-weight="600" fill="#8C8083">
           <text x="56.0" y="474.0">2026</text>
           <text x="227.6" y="474.0" text-anchor="middle">2037, they retire</text>
           <text x="680.0" y="474.0" text-anchor="end">2066</text>
         </g>
       </svg>
-    <p class="s1-src">Model outputs (MEASURED): year-by-year medians, 10,000 futures · shock assumptions ILLUSTRATIVE,
-      not a forecast · Final model, 11 Nov 2026 · draft baseline: re-base pending</p>
+    <p class="s1-src">Model outputs (MEASURED): year-by-year medians, 10,000 futures · shock ILLUSTRATIVE, not a forecast ·
+      the share: each channel's loss at the model's end, run alone · draft baseline: re-base pending</p>
   </div>
-  <div class="s1-end" data-b="4">
-    <h2 class="s1-line">Test the whole plan, then choose the products.</h2>
-    <p class="s1-result">What changes their money, what changes the world, and at what cost?</p>
+  <div class="s1-end" data-b="5">
+    <h2 class="s1-line">Limits first. A budget for values. One measure for every decision.</h2>
   </div>
   <span class="s1-pg">1</span>
   <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a family's whole plan sustainable?
-    Choosing ESG funds is one decision. ESG analysis already considers investment risks. For the Wongs, a Hong Kong
-    family with a home, a packaging business and retirement ahead, we ask two questions: what does climate do to their
-    money, and what do their decisions change in the world? Start with the first. Suppose carbon rules arrive suddenly
-    in 2030 and 2031, hitting markets, their business and their home. In our model, their net worth is about three million
-    Hong Kong dollars lower by 2032 than the same plan without that shock. This is a scenario, not a forecast. It shows
-    why we test the whole plan before choosing products. Then we ask what their decisions actually change, and at what
-    cost. That's the job of PRISM.
-    [Notes: DRAFT, Codex 12 Nov; Pete to make it his own. Reveal order: question and fund decision; two household
-    checks; scenario chart; closing principle. Sources: organiser's case (family), Final/final_model.py
-    label_storm_path() through exported fin_lab_ keys and fin-label-path series (11 Nov). Spoken money is rounded
-    from fin_lab_gap32; see chart for exported value. Same baseline with/without shock, not two competing plans.
-    Paths are year-by-year median portfolio balances plus home and business accounting, not a single realised future.
-    Shock magnitudes are illustrative; channel assumptions in model_runs.md M7/M8 and area4_property_scenario.md §5.1.
-    No quantified inside-out result is claimed here: later business slides must evidence it. The existing baseline's
-    fee still awaits the purchasable-fund re-base; rerun the chart before final submission. No additional climate
-    protection is attributed to ESG funds. The package gain formerly promised here is removed pending that re-run.]</aside>
+    Meet the Wongs. Adrian wants capital preservation and a safe retirement. Carmen wants their money to reflect her
+    values, and together they've asked for twenty to twenty-five per cent in ESG. Choosing those funds is one decision.
+    Their plan is far bigger: a home, Carmen's packaging business, their savings and their retirement. Suppose sudden
+    carbon rules arrive in 2030. In our model, nearly half of what they lose lands on their home and business, where no
+    fund choice reaches. So we don't start with products. We start with three rules: limits first, a budget for values,
+    and one measure for every decision.
+    [Notes: DRAFT, 13 Nov; Pete to make it his own. Reveal order: the question; the parents' wants; the 20-25% ask and
+    the whole plan; the scenario chart; the thesis. Sources: the case, p.2 (Adrian's "capital preservation, retirement
+    adequacy and healthcare protection"; Carmen's ESG "reflecting both her personal values and her belief in the
+    long-term economic opportunities"; objective 5, "at least 20% to 25% of investable assets"). Chart: Final/final_model.py
+    label_storm_path() through fin-label-path; fin_lab_gap32 (by 2032), fin_lab_gap89 (at the model's end), and
+    fin_lab_homebiz, the home's and the business's share of the loss in the children's median inheritance, each channel
+    (portfolio, flat, business) run alone. Same baseline with and without the shock, not two competing plans; shock sizes
+    ILLUSTRATIVE (model_runs.md M7, M8; area4_property_scenario.md §5.1). Don't promise to recover the loss: our plan
+    loses about the same in this shock (M8). The payoff is the limit: in the downturn the plan stays above 85%, and the
+    limit, not the price, picks the flat's route (slides 3 and 6). No climate protection is attributed to ESG funds.
+    The baseline's fee still awaits the purchasable-fund re-base; rerun the chart before submission.]</aside>
 </section>
 
 <!-- 2 · Pete, 1:00. The framework's introduction page (Pete, 11 Nov): a dark stage, unlike any other slide; the
