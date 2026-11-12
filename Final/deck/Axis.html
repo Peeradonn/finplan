@@ -221,16 +221,17 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s1-q{position:absolute;left:48px;top:68px;width:430px;font:800 38px/1.12 var(--head);color:#fff}
 .s1-chip{position:absolute;left:48px;top:192px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:11px 16px;
   border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}
-.s1-funds{position:absolute;left:48px;top:206px;width:430px}
+.s1-funds{position:absolute;left:48px;top:334px;width:430px}
 .s1-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#B9ACAF;margin-bottom:12px}
 .s1-card{display:flex;align-items:center;gap:14px;background:#1E1719;border:1px solid #3A2F31;border-radius:10px;
   padding:14px 16px;margin-bottom:10px}
-.s1-card p{font:700 18px/1.3 var(--text);color:#fff}
+.s1-card p{font:700 18px/1.3 var(--text);color:#fff;text-wrap:balance}
 .s1-mini{flex:none;background:var(--leaf);color:#fff;font:800 14px/1 var(--text);padding:8px 11px;border-radius:16px;white-space:nowrap}
-.s1-who{flex:none;background:#3A2F31;color:#fff;font:800 14px/1 var(--text);letter-spacing:.6px;padding:8px 11px;border-radius:16px}
-.s1-ask{position:absolute;left:48px;top:420px;width:430px}
+.s1-tag{flex:none;color:#fff;font:800 14px/1 var(--text);letter-spacing:.6px;padding:8px 11px;border-radius:16px;white-space:nowrap}
+.s1-tag.s1-out{background:#C80E1E} .s1-tag.s1-in{background:#0E7490}
+.s1-ask{position:absolute;left:48px;top:184px;width:430px}
 .s1-ask .s1-chip{position:static;display:inline-block}
-.s1-plan{font:600 16px/1.4 var(--text);color:#D8CFD1;margin-top:14px}
+.s1-plan{font:italic 500 16px/1.4 var(--text);color:#D8CFD1;margin-top:12px}
 .s1-src{font:500 12.5px/1.4 var(--text);color:#8C8083;margin-top:8px}
 .s1-chart{position:absolute;left:520px;top:36px;width:712px}
 .s1-svg{display:block;font-family:var(--text)}
@@ -278,28 +279,29 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
      (what it must prove) and §4.3 (the story). The title is the idea, true for any client; the Wongs are the
      proof underneath. Brackets wait for numbers in export_numbers(). -->
 
-<!-- 1 · Pete, 1:05. Revised 13 Nov (Pete, after the thesis review): the question; the parents' two wants in the
-     case's words (the tension the thesis settles: Adrian's limit, Carmen's values budget); their own 20-25% ESG ask as
-     one decision in a whole plan; one baseline with/without an assumed shock, its focal point the share of the loss on
-     the home and business (fin_lab_homebiz), where no fund choice reaches; the thesis. The two topic questions (risk,
-     effect) and "Test the whole plan, then choose the products" were dropped: they restated the topic's subtitle and
-     competed with the thesis. No claim about typical adviser practice or a loss caused by labels. -->
+<!-- 1 · Pete, 1:05. Revised 13 Nov (Pete): framework first, the Wongs once, as proof. The question ("What makes a
+     plan sustainable?"); how it is asked for (a share of ESG products: the case's own objective, so no claim about
+     other advisers); the two tests for the whole plan (outside in: does it last when climate hits? inside out: what
+     does the money change?); the first test run on the Wongs (47% of the shock's loss lands on the home and business,
+     fin_lab_homebiz); the claim: "Sustainable is a test the whole plan passes, not a label its products carry."
+     Slide 2 then shows PRISM running the two tests with its three rules. Final_Plan.md §4.1, §4.3. -->
 <section class="slide reveal s1-stage" id="s1" data-time="1:05" data-speaker="Pete">
   <p class="s1-kick">Today's question</p>
-  <p class="s1-q">What makes the whole plan sustainable?</p>
-  <div class="s1-funds" data-b="2">
-    <p class="s1-cap">What each parent wants, in the case's words</p>
-    <div class="s1-card"><span class="s1-who">ADRIAN</span><p>“capital preservation, retirement adequacy”</p></div>
-    <div class="s1-card"><span class="s1-who">CARMEN</span><p>ESG investments, “reflecting … her personal values”</p></div>
+  <p class="s1-q">What makes a plan sustainable?</p>
+  <div class="s1-ask" data-b="2">
+    <p class="s1-cap">How our case asks for it</p>
+    <span class="s1-chip">A share of ESG products</span>
+    <p class="s1-plan">“20% to 25% of investable assets … through appropriate product selection”</p>
   </div>
-  <div class="s1-ask" data-b="3">
-    <span class="s1-chip">They ask for 20–25% in ESG: one decision</span>
-    <p class="s1-plan">The whole plan: their home · Carmen's packaging business · their savings · their retirement</p>
+  <div class="s1-funds" data-b="3">
+    <p class="s1-cap">Two tests for the whole plan</p>
+    <div class="s1-card"><span class="s1-tag s1-out">OUTSIDE IN</span><p>Does the plan last when climate hits?</p></div>
+    <div class="s1-card"><span class="s1-tag s1-in">INSIDE OUT</span><p>What does the money change in the world?</p></div>
   </div>
   <div class="s1-chart" data-b="4">
       <svg class="s1-svg" viewBox="0 0 712 520" width="712" height="520">
-        <text x="0" y="16" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">THE WONGS: ONE PLAN, TWO SCENARIOS</text>
-        <text x="0" y="38" font-size="14" fill="#B9ACAF">modelled net worth, HK$ million in today's money</text>
+        <text x="0" y="16" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">THE FIRST TEST, ON OUR CLIENT: THE WONGS</text>
+        <text x="0" y="38" font-size="14" fill="#B9ACAF">one plan, with and without a shock · net worth, HK$ million, today's money</text>
         <g stroke="#2E2527" stroke-width="1">
           <line x1="56.0" x2="680.0" y1="333.2" y2="333.2"/>
           <line x1="56.0" x2="680.0" y1="214.5" y2="214.5"/>
@@ -322,7 +324,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
         <!-- the focal point: where the loss lands -->
         <text x="180.8" y="380.8" font-size="30" font-weight="800" fill="#FFFFFF">47% of the loss</text>
         <text x="180.8" y="404.5" font-size="17" font-weight="600" fill="#D8CFD1">lands on their home and business,</text>
-        <text x="180.8" y="425.9" font-size="17" font-weight="600" fill="#D8CFD1">where no fund choice reaches</text>
+        <text x="180.8" y="425.9" font-size="17" font-weight="600" fill="#D8CFD1">where no fund share reaches</text>
         <g font-size="13" font-weight="600" fill="#8C8083">
           <text x="56.0" y="474.0">2026</text>
           <text x="227.6" y="474.0" text-anchor="middle">2037, they retire</text>
@@ -333,27 +335,28 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
       the share: each channel's loss at the model's end, run alone · draft baseline: re-base pending</p>
   </div>
   <div class="s1-end" data-b="5">
-    <h2 class="s1-line">Limits first. A budget for values. One measure for every decision.</h2>
+    <h2 class="s1-line">Sustainable is a test the whole plan passes, not a label its products carry.</h2>
   </div>
   <span class="s1-pg">1</span>
-  <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a family's whole plan sustainable?
-    Meet the Wongs. Adrian wants capital preservation and a safe retirement. Carmen wants their money to reflect her
-    values, and together they've asked for twenty to twenty-five per cent in ESG. Choosing those funds is one decision.
-    Their plan is far bigger: a home, Carmen's packaging business, their savings and their retirement. Suppose sudden
-    carbon rules arrive in 2030. In our model, nearly half of what they lose lands on their home and business, where no
-    fund choice reaches. So we don't start with products. We start with three rules: limits first, a budget for values,
-    and one measure for every decision.
-    [Notes: DRAFT, 13 Nov; Pete to make it his own. Reveal order: the question; the parents' wants; the 20-25% ask and
-    the whole plan; the scenario chart; the thesis. Sources: the case, p.2 (Adrian's "capital preservation, retirement
-    adequacy and healthcare protection"; Carmen's ESG "reflecting both her personal values and her belief in the
-    long-term economic opportunities"; objective 5, "at least 20% to 25% of investable assets"). Chart: Final/final_model.py
-    label_storm_path() through fin-label-path; fin_lab_gap32 (by 2032), fin_lab_gap89 (at the model's end), and
+  <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a family's plan sustainable? Our case
+    family asks for it as a share: twenty to twenty-five per cent of their savings in ESG products. But a label
+    describes a product, not a plan. So we test the whole plan, twice. Outside in: does the plan last when climate
+    hits? Inside out: what does the family's money change in the world? Take our client, the Wongs. Suppose sudden
+    carbon rules arrive in 2030. Nearly half of what they'd lose lands on their home and their business, where no fund
+    share reaches. And the carbon cuts we can measure are in Carmen's business, not in their funds. So our answer:
+    sustainable is a test the whole plan passes, not a label its products carry.
+    [Notes: DRAFT, 13 Nov; Pete to make it his own. Reveal order: the question; how the case asks for it; the two
+    tests; the first test on the Wongs; the claim. Sources: the case, objective 5 ("To align at least 20% to 25% of
+    investable assets with ESG principles through appropriate product selection and due diligence"). Chart:
+    Final/final_model.py label_storm_path() through fin-label-path; fin_lab_gap89 (at the model's end) and
     fin_lab_homebiz, the home's and the business's share of the loss in the children's median inheritance, each channel
     (portfolio, flat, business) run alone. Same baseline with and without the shock, not two competing plans; shock sizes
-    ILLUSTRATIVE (model_runs.md M7, M8; area4_property_scenario.md §5.1). Don't promise to recover the loss: our plan
-    loses about the same in this shock (M8). The payoff is the limit: in the downturn the plan stays above 85%, and the
-    limit, not the price, picks the flat's route (slides 3 and 6). No climate protection is attributed to ESG funds.
-    The baseline's fee still awaits the purchasable-fund re-base; rerun the chart before submission.]</aside>
+    ILLUSTRATIVE (model_runs.md M7, M8; area4_property_scenario.md §5.1). The second test's proof is said, not drawn:
+    ≈134 t a year of quantified cuts, all in the business (Decision_List.md, ESTIMATED); for listed shares, "no
+    additional impact quantified" (never "shares change nothing"). Don't promise to recover the loss: our plan loses
+    about the same in this shock (M8); the payoff is the limit (slides 3, 6). Never say advisers usually work this way:
+    the share is our case's own ask. The baseline's fee awaits the purchasable-fund re-base; rerun the chart before
+    submission.]</aside>
 </section>
 
 <!-- 2 · Pete, 1:00. The framework's introduction page (Pete, 11 Nov): a dark stage, unlike any other slide; the
