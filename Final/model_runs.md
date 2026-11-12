@@ -259,6 +259,62 @@ Notes on M8:
 - Not run: the median share of net worth in the flat and the business in 2033 and 2039. The model has no business value before the 2039 sale and no mortgage balance before 2037, and `sim_x()` keeps only the end pot, so it would need new ILLUSTRATIVE paths; in 2039 the business is sold in the year, so its share is nil by construction. In 2026 (the case's balance sheet; no decision acts before 2027, so the same for both plans) the flat and the business are HK$16.50M of HK$27.19M of assets (61%); net of the mortgage and the business loan, HK$13.80M of HK$24.41M net worth (57%).
 
 
+## M9. Fair comparisons (review, 12 Nov; the Final's base, `switch_89`)
+
+The headline (+3.4 points, +HK$2.44M against the label approach) mixes three things: the vans, a fee saving measured against a fund whose 0.775% fee was never verified (HK$1.49M in it), and a lifelong pledge (39 years) replaced by a 20-year fund. These rows separate them. EXPLORATORY.
+
+### M9a. The scholarship: the same awards, paid two ways
+
+Fund sizes at 2.5% real (area1_6 §7's formula; ESTIMATED): 20 years HK$468K (the plan uses HK$480K); 39 years HK$742K, given in two halves in 2027-28 with 17% relief (each half under Adrian's ≈HK$420K cap, ESTIMATED).
+
+| Run | Odds to 89 | Change (pts) | Inheritance, median | Change | Inheritance, worst 10% | Change |
+|---|---|---|---|---|---|---|
+| Lifelong pledge, from cash flow (the label approach) | 94.0% | -2.8 | 11.38 | -1.63 | 2.72 | -1.25 |
+| The same awards funded now: a 39-year fund | 95.5% | -1.3 | 11.76 | -1.25 | 3.22 | -0.75 |
+| 20 years of awards, from cash flow | 95.6% | -1.2 | 12.06 | -0.95 | 3.31 | -0.65 |
+| 20 years of awards, funded now (the plan's fund, HK$480K) | 96.0% | -0.7 | 12.20 | -0.80 | 3.48 | -0.49 |
+
+- Of the funded fund's gain over the lifelong pledge (+2.1 points, HK$+0.83M): giving 20 years instead of 39 is +1.6 points, HK$+0.68M; funding the same 20 years now is +0.5 points, HK$+0.14M.
+- Like for like (39 years of awards): funding now instead of pledging is +1.5 points, HK$+0.38M. That is what the framework's funding rule is worth; the rest is a smaller gift.
+
+### M9b. The headline against a fair comparator
+
+The label approach's ESG core at three fees (0.20% = a labelled index fund as cheap as ours; 0.775% = Round One's unverified figure, as now; 1.50% = a sensitivity point, not a checked fee), and the scholarship compared as now or like for like. Our plan: vans (HK$31/L) + candidate A's fees + the scholarship. Normal future and the 2030-31 scenario. Change is our plan minus the label approach.
+
+| Label approach's ESG core fee | Scholarship compared | Label approach, odds (normal / stress) | Our plan, odds (normal / stress) | Gain: points (normal / stress) | Gain: median HK$M (normal / stress) |
+|---|---|---|---|---|---|
+| 0.200% | as now (20-year fund vs lifelong pledge) | 95.1% / 86.2% | 97.4% / 91.0% | +2.3 / +4.8 | +1.50 / +1.44 |
+| 0.200% | like for like (39-year fund vs lifelong pledge) | 95.1% / 86.2% | 97.0% / 90.0% | +2.0 / +3.9 | +1.05 / +1.03 |
+| 0.775% | as now (20-year fund vs lifelong pledge) | 94.0% / 84.1% | 97.4% / 91.0% | +3.4 / +6.9 | +2.44 / +2.25 |
+| 0.775% | like for like (39-year fund vs lifelong pledge) | 94.0% / 84.1% | 97.0% / 90.0% | +3.1 / +5.9 | +1.98 / +1.84 |
+| 1.500% | as now (20-year fund vs lifelong pledge) | 92.1% / 80.7% | 97.4% / 91.0% | +5.3 / +10.3 | +3.57 / +3.23 |
+| 1.500% | like for like (39-year fund vs lifelong pledge) | 92.1% / 80.7% | 97.0% / 90.0% | +4.9 / +9.3 | +3.11 / +2.82 |
+
+- **The fairest row** (a labelled fund as cheap as ours, the same awards both ways): the label approach is at 95.1% normally and 86.2% under the scenario; our plan 97.0% and 90.0%. Whether the label approach is below the 85% floor under stress: no; below the 95% floor normally: no.
+- Each 0.10% of fee on the label approach's HK$1.49M ESG core is HK$1,490 a year. Win's purchasable fund sets where the headline lands between the 0.20% and 1.50% rows.
+
+### M9c. The values budget, if the floors set it
+
+Start from the plan with plain funds (candidate A with EDMW → IWDA, Allianz → AGGU, the MPF fund → the cheapest MPF global equity fund: HK$14,754 a year less than the base's funds), no giving and no vans. The room above the floors (95% normal, 85% under the scenario) is the most the family could spend on values without breaking a limit. Then add the values choices.
+
+| Run | Odds to 89 | Change (pts) | Inheritance, median | Change | Inheritance, worst 10% | Change |
+|---|---|---|---|---|---|---|
+| Plain funds, no giving, no vans (the starting point), normal future | 97.7% | +0.0 | 14.75 | +0.00 | 4.93 | +0.00 |
+| + the ESG tilt (price of values in fees), normal future | 97.5% | -0.2 | 14.14 | -0.62 | 4.60 | -0.34 |
+| + the ESG tilt + the 20-year fund (HK$480K), normal future | 96.8% | -0.9 | 13.28 | -1.47 | 4.09 | -0.84 |
+| + the ESG tilt + the 20-year fund + a bad five years of tracking (2027-31), normal future | 96.5% | -1.2 | 12.92 | -1.84 | 3.85 | -1.09 |
+| + the ESG tilt + the same awards for 39 years, funded (HK$742K), normal future | 96.5% | -1.3 | 12.82 | -1.94 | 3.78 | -1.15 |
+| + the ESG tilt + the lifelong pledge from cash flow, normal future | 95.2% | -2.5 | 12.44 | -2.32 | 3.28 | -1.65 |
+| Plain funds, no giving, no vans (the starting point), under the scenario | 92.2% | +0.0 | 9.90 | +0.00 | 1.26 | +0.00 |
+| + the ESG tilt (price of values in fees), under the scenario | 91.4% | -0.8 | 9.38 | -0.53 | 0.97 | -0.29 |
+| + the ESG tilt + the 20-year fund (HK$480K), under the scenario | 89.6% | -2.6 | 8.60 | -1.31 | 0.56 | -0.70 |
+| + the ESG tilt + the same awards for 39 years, funded (HK$742K), under the scenario | 88.7% | -3.5 | 8.17 | -1.73 | 0.56 | -0.70 |
+| + the ESG tilt + the lifelong pledge from cash flow, under the scenario | 86.4% | -5.8 | 7.74 | -2.16 | 0.56 | -0.70 |
+
+- Room above the floors on the starting point: 2.7 points normally (97.7% against 95%), 7.2 points under the scenario (92.2% against 85%). The binding limit is the smaller one.
+- The floors are ours (ILLUSTRATIVE, Pete 10 Nov). A verdict that depends on one is shown with the floor at which it flips.
+
+
 ## What is not in these runs
 
 - Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, air-con 2.8, recycled PET 108.1; ESTIMATED on an ILLUSTRATIVE business), from `Final/Decision_List.md`.

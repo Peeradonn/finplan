@@ -435,3 +435,20 @@ Render: 15 pages, all fit, two runs agree (p6 1.7, p15 1.3 mm free). Manuscript 
   end), `fin_lab_homebiz` 47% (the home's and the business's share of the loss, each run on its own).
 - `make_charts.py` rerun in full. Diff: every existing value of `numbers.json` unchanged, none removed, 3 added;
   `figure-data.md` gains the new table, and the "fin-storm-path" heading now says backup 12 (slide 5 was cut).
+
+### Final (12 Nov): M9, fair comparisons (`Final/final_model.py`, EXPLORATORY; Claude, from the strategy review)
+- New section M9 in `Final/model_runs.md`, on the Final's base only. It separates the headline (+3.4 points, +HK$2.44M
+  against the label approach) into what the framework does and what the comparator does.
+- **M9a, the scholarship.** The lifelong pledge runs 39 years (2027–65); the plan's fund pays 20. Of the funded fund's
+  +HK$0.83M: +HK$0.68M is giving 20 years instead of 39, +HK$0.14M is funding. Like for like (39 years both ways, a
+  HK$742K fund at 2.5% real, area1_6 §7's formula), funding now is worth +1.5 points, +HK$0.38M.
+- **M9b, the comparator.** The label approach's ESG core (HK$1.49M) at 0.20%, the unverified 0.775%, and 1.50% (a
+  sensitivity point, not a checked fee), with the scholarship as now or like for like. Fairest row (0.20%, like for
+  like): +2.0 points, +HK$1.05M normal; +3.9 points, +HK$1.03M under the scenario. The label approach is then at 95.1%
+  and 86.2%, above both floors. A scratch run puts the crossings near 0.25% (normal floor) and 0.55% (stress floor).
+- **M9c, the values budget from the floors.** Plain funds, no giving, no vans: 97.7% normal, 92.2% under the scenario,
+  so 2.7 points of room above 95% (binding) and 7.2 above 85%. The ESG tilt and the 20-year fund use 0.9 points
+  (HK$1.47M median), 1.2 (HK$1.84M) with a bad five years of tracking; the tilt with the lifelong pledge uses 2.5.
+- New helpers only (`label_core_at`, `pledge_for`, `fund_size`, `funded_for`, `m9`); `export_final()` unchanged.
+  No existing line of `model_runs.md` changed (diff: 56 additions, no removals). `run_model.py` and `numbers.json`
+  untouched.

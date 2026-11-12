@@ -211,6 +211,43 @@ def scholarship_funded():
     return {2027: -240_000, 2028: -240_000 + RELIEF * 240_000, 2029: RELIEF * 240_000}
 
 
+# ---------- M9 (review, 12 Nov): fair comparisons for the headline and the values budget ----------
+# The label approach's ESG equity core: the BOC-Prudential fund, 35% of Adrian's and 37% of Carmen's HK$2.07M
+# (area3_portfolio.md §3), at Round One's 0.775%, which was never verified for this fund (area3 line 92).
+BOC_SLEEVE = (0.35 + 0.37) * 2_070_000
+BOC_FEE = 0.00775
+REAL_R = 0.025                   # the scholarship's real return (area1_6_framework.md §7: the 2.5% row, 20 years ≈ HK$468K)
+GIFT = 30_000                    # a year, today's money, CPI-linked
+
+
+def label_core_at(fee):
+    """The label approach's portfolio with its ESG core at `fee` instead of the unverified 0.775%: HK$ a year the
+    base's return gains (negative if dearer). The base already carries the 0.775%."""
+    return BOC_SLEEVE * (BOC_FEE - fee)
+
+
+def pledge_for(years):
+    """HK$30K a year, CPI-linked, from cash flow, from 2027 for `years` years; relief while earning, as written."""
+    f = {}
+    for y in range(2027, min(2027 + years, END)):
+        gift = GIFT * (1 + m.CPI) ** (y - m.BY)
+        f[y] = f.get(y, 0) - gift
+        if y < m.RETC:
+            f[y + 1] = f.get(y + 1, 0) + RELIEF * gift
+    return f
+
+
+def fund_size(years):
+    """Capital that pays HK$30K a year in today's money for `years` years at REAL_R (area1_6 §7's formula)."""
+    return GIFT * (1 - (1 + REAL_R) ** -years) / REAL_R
+
+
+def funded_for(total):
+    """A named fund given in two halves, 2027 and 2028, relief credited the following year (as scholarship_funded())."""
+    h = total / 2
+    return {2027: -h, 2028: -h + RELIEF * h, 2029: RELIEF * h}
+
+
 def scenario():
     """'Late and sudden' (area4_property_scenario.md §5.1): shocks in 2030-31."""
     ret = {2030: (-0.10, -0.05), 2031: (-0.05, -0.01)}
@@ -374,6 +411,107 @@ def export_final():
     out["fin_lab_gap32"] = f"HK${a[2032] - s[2032]:.1f}M"             # poorer within two years
     out["fin_lab_gap89"] = f"HK${a[END] - s[END]:.1f}M"               # what the children inherit, at the end
     return out
+
+
+def m9(w, row, head, base):
+    """M9 (review, 12 Nov): is the headline earned against a fair comparator, and how big is the values budget if
+    the floors set it? On the Final's base only."""
+    b = run(base)
+    sc, mult = scenario()
+    st0 = stressed(base, sc, mult)
+    n_life = END - 2027
+    life, f20 = fund_size(n_life), fund_size(20)
+    pct = lambda r, c: f"{(r['odds'] - c['odds']) * 100:+.1f}"
+    hk = lambda r, c: f"{r['leg_med'] - c['leg_med']:+.2f}"
+
+    w("\n## M9. Fair comparisons (review, 12 Nov; the Final's base, `switch_89`)\n")
+    w("The headline (+3.4 points, +HK$2.44M against the label approach) mixes three things: the vans, a fee saving "
+      f"measured against a fund whose 0.775% fee was never verified (HK${BOC_SLEEVE/1e6:.2f}M in it), and a lifelong "
+      f"pledge ({n_life} years) replaced by a 20-year fund. These rows separate them. EXPLORATORY.\n")
+
+    w("### M9a. The scholarship: the same awards, paid two ways\n")
+    w(f"Fund sizes at {REAL_R:.1%} real (area1_6 §7's formula; ESTIMATED): 20 years HK${f20/1e3:.0f}K "
+      f"(the plan uses HK$480K); {n_life} years HK${life/1e3:.0f}K, given in two halves in 2027-28 with 17% relief "
+      f"(each half under Adrian's ≈HK$420K cap, ESTIMATED).\n")
+    w(head)
+    rows = [("Lifelong pledge, from cash flow (the label approach)", scholarship_as_written()),
+            ("The same awards funded now: a 39-year fund", funded_for(life)),
+            ("20 years of awards, from cash flow", pledge_for(20)),
+            ("20 years of awards, funded now (the plan's fund, HK$480K)", scholarship_funded())]
+    res = {lbl: run(base, inflows=f) for lbl, f in rows}
+    for lbl, _ in rows:
+        w(row(lbl, res[lbl], b))
+    l39, f39, p20, f20r = (res[k] for k, _ in rows)
+    w(f"\n- Of the funded fund's gain over the lifelong pledge ({pct(f20r, l39)} points, HK${hk(f20r, l39)}M): "
+      f"giving 20 years instead of {n_life} is {pct(p20, l39)} points, HK${hk(p20, l39)}M; funding the same 20 years "
+      f"now is {pct(f20r, p20)} points, HK${hk(f20r, p20)}M.")
+    w(f"- Like for like ({n_life} years of awards): funding now instead of pledging is {pct(f39, l39)} points, "
+      f"HK${hk(f39, l39)}M. That is what the framework's funding rule is worth; the rest is a smaller gift.\n")
+
+    w("### M9b. The headline against a fair comparator\n")
+    w("The label approach's ESG core at three fees (0.20% = a labelled index fund as cheap as ours; 0.775% = Round One's "
+      "unverified figure, as now; 1.50% = a sensitivity point, not a checked fee), and the scholarship compared as now "
+      "or like for like. Our plan: vans (HK$31/L) + candidate A's fees + the scholarship. Normal future and the 2030-31 "
+      "scenario. Change is our plan minus the label approach.\n")
+    w("| Label approach's ESG core fee | Scholarship compared | Label approach, odds (normal / stress) | Our plan, odds (normal / stress) | Gain: points (normal / stress) | Gain: median HK$M (normal / stress) |\n"
+      "|---|---|---|---|---|---|")
+    fair = {}
+    for fee in (0.0020, BOC_FEE, 0.0150):
+        lab_kw = dict(r_eq=r_eq_for(label_core_at(fee)))
+        for mode, ours_gift in (("as now (20-year fund vs lifelong pledge)", scholarship_funded()),
+                                (f"like for like ({n_life}-year fund vs lifelong pledge)", funded_for(life))):
+            lab_n = run(base, inflows=scholarship_as_written(), **lab_kw)
+            lab_s = stressed(base, sc, mult, flows=scholarship_as_written(), **lab_kw)
+            ours = dict(r_eq=r_eq_for(FEE_SAVED))
+            our_n = run(base, biz=m.BIZ + sale_uplift(SAVE), inflows=ours_gift, **ours)
+            our_s = stressed(base, sc, mult, biz_add=sale_uplift(SAVE), flows=ours_gift, **ours)
+            fair[(fee, mode[:2])] = (lab_n, lab_s, our_n, our_s)
+            w(f"| {fee:.3%} | {mode} | {lab_n['odds']:.1%} / {lab_s['odds']:.1%} | {our_n['odds']:.1%} / "
+              f"{our_s['odds']:.1%} | {pct(our_n, lab_n)} / {pct(our_s, lab_s)} | {hk(our_n, lab_n)} / {hk(our_s, lab_s)} |")
+    lab_n, lab_s, our_n, our_s = fair[(0.0020, "li")]
+    w(f"\n- **The fairest row** (a labelled fund as cheap as ours, the same awards both ways): the label approach is at "
+      f"{lab_n['odds']:.1%} normally and {lab_s['odds']:.1%} under the scenario; our plan {our_n['odds']:.1%} and "
+      f"{our_s['odds']:.1%}. Whether the label approach is below the 85% floor under stress: "
+      f"{'yes' if lab_s['odds'] < 0.85 else 'no'}; below the 95% floor normally: {'yes' if lab_n['odds'] < 0.95 else 'no'}.")
+    w(f"- Each 0.10% of fee on the label approach's HK${BOC_SLEEVE/1e6:.2f}M ESG core is HK${BOC_SLEEVE*0.001:,.0f} a "
+      f"year. Win's purchasable fund sets where the headline lands between the 0.20% and 1.50% rows.\n")
+
+    w("### M9c. The values budget, if the floors set it\n")
+    w("Start from the plan with plain funds (candidate A with EDMW → IWDA, Allianz → AGGU, the MPF fund → the cheapest "
+      f"MPF global equity fund: HK${FEE_SAVED + FEE_VALUES:,} a year less than the base's funds), no giving and no "
+      "vans. The room above the floors (95% normal, 85% under the scenario) is the most the family could spend on values "
+      "without breaking a limit. Then add the values choices.\n")
+    w(head)
+    plain = dict(r_eq=r_eq_for(FEE_SAVED + FEE_VALUES))
+    tilt = dict(r_eq=r_eq_for(FEE_SAVED))
+    track5 = {y: (-(TRACK_BAD / m.POOL) / W_EQ, 0.0) for y in range(2027, 2032)}
+    choices = [
+        ("Plain funds, no giving, no vans (the starting point)", plain, None),
+        ("+ the ESG tilt (price of values in fees)", tilt, None),
+        ("+ the ESG tilt + the 20-year fund (HK$480K)", dict(tilt, inflows=scholarship_funded()), None),
+        ("+ the ESG tilt + the 20-year fund + a bad five years of tracking (2027-31)",
+         dict(tilt, inflows=scholarship_funded(), ret_add=track5), "normal only"),
+        (f"+ the ESG tilt + the same awards for {n_life} years, funded (HK${life/1e3:.0f}K)",
+         dict(tilt, inflows=funded_for(life)), None),
+        ("+ the ESG tilt + the lifelong pledge from cash flow", dict(tilt, inflows=scholarship_as_written()), None),
+    ]
+    p_n = run(base, **plain)
+    w(row(choices[0][0] + ", normal future", p_n, p_n))
+    for lbl, kw, note in choices[1:]:
+        w(row(lbl + ", normal future", run(base, **kw), p_n))
+    p_s = stressed(base, sc, mult, **plain)
+    w(row(choices[0][0] + ", under the scenario", p_s, p_s))
+    for lbl, kw, note in choices[1:]:
+        if note:
+            continue
+        kw2 = dict(kw)
+        fl = kw2.pop("inflows", None)
+        w(row(lbl + ", under the scenario", stressed(base, sc, mult, flows=fl, **kw2), p_s))
+    w(f"\n- Room above the floors on the starting point: {(p_n['odds'] - 0.95) * 100:.1f} points normally "
+      f"({p_n['odds']:.1%} against 95%), {(p_s['odds'] - 0.85) * 100:.1f} points under the scenario "
+      f"({p_s['odds']:.1%} against 85%). The binding limit is the smaller one.")
+    w("- The floors are ours (ILLUSTRATIVE, Pete 10 Nov). A verdict that depends on one is shown with the floor at "
+      "which it flips.\n")
 
 
 # ---------- the runs ----------
@@ -590,6 +728,8 @@ def main():
           f"same for both plans) the flat and the business are HK${fixed/1e6:.2f}M of HK${nw['TOTAL ASSETS']/1e6:.2f}M "
           f"of assets ({fixed/nw['TOTAL ASSETS']:.0%}); net of the mortgage and the business loan, "
           f"HK${fixed_net/1e6:.2f}M of HK${nw['NET WORTH']/1e6:.2f}M net worth ({fixed_net/nw['NET WORTH']:.0%}).\n")
+
+    m9(w, row, head, bases[1][1])
 
     w("\n## What is not in these runs\n")
     w("- Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, "
