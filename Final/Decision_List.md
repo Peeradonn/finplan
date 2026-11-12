@@ -1,8 +1,8 @@
 # The decision list: what the framework changes
 
 **Status:** draft, 5 Nov 2026, compiled from the five research briefs in `Final/research/` and the Round One plan
-(`document/manuscript.md`). For Pete (and the owner of each area). It is the source for slides 2, 5 and 12
-(`Final_Plan.md` §4.5) and the list of price tags the model runs (`Final/model_runs.md`).
+(`document/manuscript.md`). For Pete (and the owner of each area). It is the source for slides 3 and 6–10
+(`Final_Plan.md` §4.5; slide numbers are storyline v4's, updated 12 Nov) and the list of price tags the model runs (`Final/model_runs.md`).
 
 **The baseline is the label approach** (`Final_Plan.md` §2): what a careful planner does by default, which is what our
 Round One did, so its advice fills the "before" column. On slides, say "the label approach", never "October".
@@ -23,28 +23,28 @@ advance) · REFUSE (costs money or credibility, no real effect shown).
 
 | # | Decision | Label approach → framework | Corner | Capital, whose | When | Slide |
 |---|---|---|---|---|---|---|
-| B1 | Electric vans, LED, office air-con | Nothing → do it | DO | HK$1.91M, the business | Order the vans by 31 Mar 2028 | 6 |
-| B2 | Sustainability-linked loan; paying for a green label | Nothing → refuse | REFUSE | — | — | 6 |
-| B3 | Emissions data: baseline, supplier footprints, one rating | Nothing → do it | FINANCE (protects the sale) | ≈HK$54–73K, the business | Baseline 2027 | 6 |
-| B4 | Recycled content in the PET range (outside the tableware rules) | Nothing → do it at parity; customers pay any premium | DO | ≈HK$0.27M working capital, the business | 2027 | 6 |
-| B5 | "Compostable" PLA claims | Business called "sustainable" unquestioned → stop the claim; short tableware stock | REFUSE (the label) | — | Now | 1, 6 |
-| B6 | Green lease at the warehouse renewal | Nothing → do it | FINANCE | — | 2027 | 9 |
-| B7 | The sale, 2035–39 | HK$3.0M counted → same, with data and fleet as sale assets | FINANCE | — | 2035–39 | 6 |
-| B8 | Dividend policy for the van saving | Nothing → pay Carmen's half out once the van loan is repaid, agreed with the co-founder | FINANCE (moves money out of a concentrated business) | — | 2033–38 | 6 (one line) |
-| P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee | PAY (Carmen) / within budget (Adrian) | Reallocation | Months 1–3 | 8 |
-| P2 | What counts as sustainable | "On the SFC list" → a binding, measured outcome rule | — (governance) | — | Months 1–3 | 8, 11 |
-| P3 | Adrian's green bond fund | Allianz 5% → plain global bonds (AGGU) | REFUSE (for prudent money) | Reallocation | Months 1–3 | 8 |
-| P4 | Carmen's green bond fund | Allianz 10% → keep only with an impact report and no entry charge | PAY | — | Months 1–3 | 8 |
-| P5 | MPF low-carbon fund | Unchanged | PAY | — | — | 8 |
-| P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (27.7% or 24.8%) | — (governance) | — | Months 1–3 | 7 |
-| P7 | Refusals: clean-energy funds, sustainability-linked bonds, green deposits, risk-changing green bond ETFs, impact claims for listed shares | Thematic funds already refused → the rest added, each with its number | REFUSE | — | — | 7–8 |
-| H1 | Releasing the flat | 2037, reverse mortgage or downsize, decided then → same, plus a yearly price trigger and a deadline (the building's 50th year: 2045 for a 1996 building) | FINANCE (risk management) | — | Trigger yearly; release by 2045 | 9 |
-| H2 | Green mortgage or green refinancing | Not considered → refuse | REFUSE | — | — | 1, 9 |
+| B1 | Electric vans, LED, office air-con | Nothing → do it | DO | HK$1.91M, the business | Order the vans by 31 Mar 2028 | 7, 8 |
+| B2 | Sustainability-linked loan; paying for a green label | Nothing → refuse | REFUSE | — | — | 8 |
+| B3 | Emissions data: baseline, supplier footprints, one rating | Nothing → do it | FINANCE (protects the sale) | ≈HK$54–73K, the business | Baseline 2027 | 5, 8 |
+| B4 | Recycled content in the PET range (outside the tableware rules) | Nothing → do it at parity; customers pay any premium | DO | ≈HK$0.27M working capital, the business | 2027 | 7 |
+| B5 | "Compostable" PLA claims | Business called "sustainable" unquestioned → stop the claim; short tableware stock | REFUSE (the label) | — | Now | 7 |
+| B6 | Green lease at the warehouse renewal | Nothing → do it | FINANCE | — | 2027 | 8 |
+| B7 | The sale, 2035–39 | HK$3.0M counted → same, with data and fleet as sale assets | FINANCE | — | 2035–39 | 8 |
+| B8 | Dividend policy for the van saving | Nothing → pay Carmen's half out once the van loan is repaid, agreed with the co-founder | FINANCE (moves money out of a concentrated business) | — | 2033–38 | 8 (one line) |
+| P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee | PAY (Carmen) / within budget (Adrian) | Reallocation | Months 1–3 | 9 |
+| P2 | What counts as sustainable | "On the SFC list" → a binding, measured outcome rule | — (governance) | — | Months 1–3 | 9, 10 |
+| P3 | Adrian's green bond fund | Allianz 5% → plain global bonds (AGGU) | REFUSE (for prudent money) | Reallocation | Months 1–3 | 9 |
+| P4 | Carmen's green bond fund | Allianz 10% → keep only with an impact report and no entry charge | PAY | — | Months 1–3 | 9 |
+| P5 | MPF low-carbon fund | Unchanged | PAY | — | — | 9 |
+| P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (27.7% or 24.8%) | — (governance) | — | Months 1–3 | 4, 9 |
+| P7 | Refusals: clean-energy funds, sustainability-linked bonds, green deposits, risk-changing green bond ETFs, impact claims for listed shares | Thematic funds already refused → the rest added, each with its number | REFUSE | — | — | 9 |
+| H1 | Releasing the flat | 2037, reverse mortgage or downsize, decided then → same, plus a yearly price trigger and a deadline (the building's 50th year: 2046 for a 1996 building) | FINANCE (risk management) | — | Trigger yearly; release by 2046 | 6 |
+| H2 | Green mortgage or green refinancing | Not considered → refuse | REFUSE | — | — | 6 |
 | H3 | Retrofitting the flat | Not considered → replace air-con with Grade 1 inverter when it fails; LED | DO (small) | Small, the family | As things fail | backup |
 | H4 | Buying the smaller flat | ≈HK$7M flat → prefer a newer building for its age and exit; don't pay a green-label premium | REFUSE (the premium) | — | At downsizing | backup |
-| G1 | The scholarship | "About HK$30K a year" (unfunded; not in the model) → a 20-year named fund at an s.88 charity, ≈HK$0.48M in 2027–28; perpetual only from sale proceeds above HK$3.0M | PAY | ≈HK$0.48M gross, ≈HK$0.40M after tax relief, the family | 2027–28 | 2, 11 |
+| G1 | The scholarship | "About HK$30K a year" (unfunded; not in the model) → a 20-year named fund at an s.88 charity, ≈HK$0.48M in 2027–28; perpetual only from sale proceeds above HK$3.0M | PAY | ≈HK$0.48M gross, ≈HK$0.40M after tax relief, the family | 2027–28 | 3, 10 |
 
-**Counting what the framework changes against the label approach** (for slide 12): changed: P1, P3, P4, P6, H1, G1 (6); new: B1–B7,
+**Counting what the framework changes against the label approach** (for slide 3): changed: P1, P3, P4, P6, H1, G1 (6); new: B1–B7,
 P2, H2–H4 (12, of which B7 restates the planned sale with new assets); unchanged: P5, and the thematic-fund part of P7.
 The talk should count only decisions that change money or tonnes: **B1, B3, B4, P1, P3, G1, H1** at least (7), plus the
 refusals as one group. Pete settles the number after the model runs.
@@ -138,8 +138,8 @@ established and point to the run.
   The ±HK$26.5K typical year uses a proxy index's tracking error (MSCI Selection), not EDMW's own; the −HK$26.6K is
   the last five years (to 31 Oct 2026), not the worst five-year window, which nobody has measured.
 - **World:** alignment, not impact (shares bought on the market give companies no new money; no effect on them
-  shown). The climate fund's carbon intensity is **measured: 30% below the plain world index** (EDMW 63.67 vs ≈90.8 t
-  CO2e per US$M of sales, 99.6% covered; BlackRock factsheet, MSCI data Aug 2026; Win, 8 Nov). A footprint, not an
+  shown). The climate fund's carbon intensity is **measured: 30% below the plain world index** (EDMW 63.39 vs ≈90.8 t
+  CO2e per US$M of sales, 99.82% covered; BlackRock/MSCI, Oct 2026; Win, 12 Nov). A footprint, not an
   impact.
 - **P3:** Adrian's 1.04-point fee gap against a 0–8bp greenium: saves ≈HK$1,076 a year.
 - **P4:** Carmen's HK$2,153 a year buys bond-by-bond checks; the fund trails its benchmark by ≈1 point a year since 2017;
