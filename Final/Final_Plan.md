@@ -21,7 +21,7 @@ an argument; where it disagrees with those files, they win.
 | **Client** | The Wongs, the competition's case family, introduced from scratch |
 | **Comparison** | "The label approach": our specified fund-and-label-led plan (§2), not a claim about how advisers usually work |
 | **Framework** | PRISM: **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor (§4.2) |
-| **Thesis** | **Sustainable is a test the whole plan passes, not a label its products carry.** Two tests (outside in: does the plan last when climate hits? inside out: what does the money change?), three rules (limits first, a budget for values, one measure for every decision) (Pete, 13 Nov; §4.1) |
+| **Thesis** | **A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and claims only what it changes.** Three conditions a plan passes or fails: the first is outside in, the third inside out, the second the values budget; one measure for every decision is how each is checked (Pete, 13 Nov, night; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.48M the family's; HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline is open (§5.1):** +HK$2.44M as drafted, ≈+HK$1.05M against a fair comparison |
 | **Now** | Pete decides §5 today. Slides 6–11 built with their words by Fri 13; first timed run Sat 14. Only slide 1 has its spoken words so far |
@@ -193,47 +193,64 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 
 ### 4.1 The thesis
 
-> **Sustainable is a test the whole plan passes, not a label its products carry.** (Pete, 13 Nov)
+> **A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and
+> claims only what it changes.** (Pete, 13 Nov, night)
 
-The argument has three layers. Every slide should sit in one of them, and say which.
+It answers the open's question, *What makes a plan sustainable?*, with three conditions a plan passes or fails. Our case
+asks for a share of ESG products ("20% to 25% of investable assets … through appropriate product selection", objective
+5); a share can't tell you whether any of the three holds. Every slide proves one condition, or shows how they're
+checked, and says which.
 
-1. **The claim** (above), the answer to the open's question, *What makes a plan sustainable?* The usual ask is a share
-   of ESG products: our own case asks for "20% to 25% of investable assets … through appropriate product selection"
-   (objective 5). A label describes a product; it can't say whether the plan works.
-2. **The two tests** (the framework's two directions, built on double materiality, made into tests a plan passes or
-   fails):
-   - **Outside in: does the plan last when climate hits?** What climate and the transition do to the client's money,
-     across everything they own (the home, the business, the savings), in a normal future and the stress scenario.
-   - **Inside out: what does the money change in the world?** What the client's decisions change, measured and against a
-     counterfactual, never assumed from a label; a footprint is not an effect.
-   - **Where the two meet, act first** (the loop): the business's carbon is its listed customers' reported Scope 3, so
-     the family's impact comes back as a risk to the sale.
-3. **The three rules** (how PRISM decides once both tests are run):
-   - **Limits first:** the first test sets them; nothing may break them.
-   - **A budget for values:** choices that cost money for the second test are paid from a budget the parents agree once,
-     sized by the room above the limits.
-   - **One measure for every decision:** each decision, green or not, gets both price tags (what the children inherit,
-     and what it changes in the world) against its ordinary choice. Slide 3 sorts every decision by its two prices
-     (the four corners); the close (slide 11) draws them on one measure.
+| Condition | Direction | What a planner checks, for any client | The Wongs' proof |
+|---|---|---|---|
+| **1. Holds its limits when climate hits** | Outside in; limits first | Everything the family owns and earns (the home, the business, the savings, the income) in a normal future and the stress scenario; no choice may break the limits (95 in 100 normally, 85 in the 2030–31 scenario), however green | 47% of the shock's loss lands on the home and the business, where no fund share reaches; downsizing breaks the 85 limit once older flats fall ≈11% behind newer ones (`fin_flip_cross`; the normal limit may bind earlier, below) |
+| **2. Pays for values only from the room above them** | The values budget | The room between the plan with ordinary choices and the limit; each values choice priced in the same units; the parents agree once, in the mandate, how much of the room to spend | Room 2.7 points; they use 0.9, ≈HK$1.47M of what the children inherit (M9c) |
+| **3. Claims only what it changes** | Inside out | Each decision's effect on the world against a stated counterfactual, measured or estimated; a footprint, a rating or a label is not a change | ≈134 t a year of cuts we can show, all in the business (108 t of it recycled PET at today's parity); the funds: a footprint, no additional impact quantified |
 
-**The Wongs prove each layer, once:** the first test on the open's proof (47% of the shock's loss lands on the home and
-business, where no fund share reaches); the second in the close's world column (every quantified cut is in the
-business; listed shares, no additional impact quantified); the rules on slide 3 (the limit rules out downsizing past an
-≈11% gap; three green products refused) and in the close's bars. Where it
-lands depends on the client: a salaried family who rents would land on their MPF and savings (our reasoning, not a run).
+- **How the three are checked: one measure for every decision.** Each decision, green or not, gets both price tags (what
+  the children inherit, and what it changes in the world) against its ordinary choice; its corner says what to do and
+  what may be claimed (§4.2, test 9). It is the instrument, not a fourth condition.
+- **Where the directions meet, act first** (the loop): the business's carbon is its listed customers' reported Scope 3,
+  so an effect under the third condition comes back as a risk under the first, to the sale price.
+- **PRISM runs the test:** P sets the limits and measures the room (conditions 1 and 2); R checks the first; I measures
+  what the third may claim; S prices each option on the one measure and keeps those that pass all three; M re-checks
+  them and restates claims when the data improves.
+- **Where it lands depends on the client:** a salaried family who rents may have little room above the limit, so the
+  second condition allows only choices that cost nothing, and the first lands on their income and MPF (our reasoning,
+  not a run). The same rules giving a different verdict is what makes it a framework.
 
-- **Spoken:** the claim closes slide 1; slide 2 says the two tests and the three rules ("Look both ways, then decide:
-  limits first, a budget for values, one measure for every decision"); slide 11 returns to the claim. The cold-read test:
-  after slides 1–4, can people who've never seen the case say the claim and the two tests?
-- **The risk:** "not a label" echoes the topic's title, "Beyond Green Labels". The weight must sit on the half that's
-  ours: what the test is (two tests, three rules, one measure). If it still sounds like the brief, close slide 1 on
-  "Sustainable is a test the whole plan passes" and let the green chip carry the contrast.
-- **Why it changed** (13 Nov, two passes): the first line ("A label tells you what a product is called; our framework
-  shows what each decision does to the client's money and to the world, and when to decide again") restated the topic
-  clause by clause, and so did the audit's "A label alone does not tell us whether the whole plan works". The second,
-  "Limits first. A budget for values. One measure for every decision.", was ours but dropped the two directions, the
-  framework's structure; it is now layer 3. Cutting the two directions as "the brief's subtitle" was a mistake: as a
-  thesis they paraphrase the brief; as tests that set the rules, they are the framework.
+**Open before the claim is safe** (Claude, 13 Nov, night):
+- **The first condition isn't yet whole.** Adrian's job isn't in the risk register: Regional Operations Director of a
+  logistics technology company across Hong Kong, the Greater Bay Area and Southeast Asia (case); HK$1.05M a year plus a
+  HK$150–300K bonus to 65, ≈HK$13–15M before tax, undiscounted (Claude's arithmetic on case figures), comparable to the
+  flat's HK$11.5M. Neither parent has disability income cover (case). Add it as a route; price it or drop it with a
+  reason. Owner: Lookbua.
+- **The second condition never binds on the Wongs.** Even the label approach's lifelong pledge fits both limits (95.2%
+  normally, 86.4% under the scenario; M9c). To show the rule deciding something, run a case where it binds: Carmen's
+  fuller wish list, or the second client in backup. Owner: Pete.
+- **About half of the first condition's shock is an ordinary market stress:** of the scenario's −7.3 points, the
+  portfolio's returns and inflation are −3.8 (M7), the stress any cash-flow planner runs. Put the weight on the routes
+  only climate opens (the flat, the business) and on how they compound.
+- **The flat's flip point:** the ≈11% crossing is the 85 limit under the scenario. In a normal future downsizing is at
+  93.6% with a 10% gap (M6, base plan), below the 95 limit; by interpolation (not a run) the normal limit binds near a
+  5% gap. Run the normal-future flip before slide 6 says 11%. Owner: Pete or Lookbua.
+
+- **Spoken:** the claim closes slide 1; slide 2 shows where PRISM checks each condition; slide 11 returns to the claim.
+  The cold-read test: after slides 1–4, can people who've never seen the case say the three conditions?
+- **Why it changed** (13 Nov, night, the third pass; Pete: "isn't this just a simple thing all good financial planners
+  would do?"). "Sustainable is a test the whole plan passes, not a label its products carry" restated the brief's own
+  premise (p.2: "not to sell green products but to make sustainability legible in financial terms … a planning
+  discipline before it is an investment theme"; area 1's heading, "… Not a Product Category"; the title, "Beyond Green
+  Labels"), and each of its three rules had a precedent: limits first is ESMA's order (suitability first, sustainability
+  preferences "in a second step": ESMA35-43-3172 para 81, `research/industry_practice.md` §6, not re-checked); the
+  values budget is goals-based planning's aspirational bucket (§9); one measure is the brief's "by how much". A claim no
+  competent judge would dispute can't carry the 40 innovation marks, and the panel would hear its own premise read
+  back. The new line keeps "a test" and says what the test is. The second condition is the one a competent person could
+  argue with ("my values aren't discretionary"); the answer: the family may lower its limit, explicitly, both parents
+  signing. "Not a label" is dropped: the title says it, and the open's green chip shows it. Earlier passes the same day:
+  "A label tells you what a product is called; our framework shows what each decision does …" (restated the topic
+  clause by clause); "Limits first. A budget for values. One measure for every decision." (ours, but it dropped the two
+  directions, which now sit inside the first and third conditions).
 - **Words not to use:** "safety first" (an existing school of retirement planning, Pfau's, which locks in a guaranteed
   floor; our limits are odds, the other school); "plain option" (team jargon: say "the ordinary choice"); "usually" about
   advisers (the share is our case's ask, not a claim about practice).
@@ -244,8 +261,8 @@ lands depends on the client: a salaried family who rents would land on their MPF
   mandate.
 
 **What judges should leave with:**
-1. Sustainable is a test the whole plan passes, not a label its products carry: two tests (outside in, inside out), three
-   rules (limits first, a budget for values, one measure for every decision), true for any client.
+1. A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and
+   claims only what it changes: three conditions, true for any client, each checked on one measure.
 2. For this family the lever isn't the fund: all ≈134 t a year of the cuts we quantified come from the business (108 t of
    them recycled PET at today's price parity).
 3. ~~In the same storm the labelled plan falls below the family's floor and ours doesn't~~: holds only if the labelled
@@ -354,7 +371,8 @@ checked; ≈170 spoken words):**
    each aligned to its card: `fin_lab_homebiz` (47% of a climate shock's loss lands on the home and business, where no
    fund share reaches; MEASURED on an illustrative shock, each part run alone) and 134 t a year of carbon cuts we can
    measure, all in the business, none measured in the funds (ESTIMATED, `Decision_List.md`).
-5. **The claim:** "Sustainable is a test the whole plan passes, not a label its products carry."
+5. **The claim:** "A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and claims only what it changes." The two cards prove the first and third conditions; the second is proved on
+   slide 4 (to revisit with the new claim: a third card, or one spoken line).
 
 The net-worth chart left the open (third pass, Pete): it was the slide's biggest element yet one family's model
 output, it proved only the first test, and it showed a loss our plan doesn't recover. The same shock is on backup 12.
@@ -753,10 +771,11 @@ judge who notices it loses trust.
 goals and limits, modelling the whole household and comparing options is ordinary good planning, and PRISM's five steps
 are the planning process with the brief's six areas inside. A practitioner will see that, so we say it. What is ours:
 
-- **The two directions as tests that set rules.** Double materiality is known; what's ours is what each direction
-  decides: outside in (does the plan last?) sets the limits; inside out (what does the money change?) is priced on the
-  same measure, and what it costs comes from a values budget sized by those limits; where they meet (the loop), act
-  first.
+- **The definition: three conditions a plan passes or fails** (§4.1). Each borrows something known (a stress floor,
+  goals-based planning's surplus, a counterfactual for impact). What we didn't find published (one search each, §9;
+  never say "first"): the three together as the test of a sustainable plan, and values paid only from the room above
+  the limit, which also settles Adrian against Carmen. The second condition is the one a competent person could argue
+  with, which is why it carries the thesis.
 - **One measure for every decision.** The vans in Carmen's business, the ESG funds, the loan label, the scholarship and
   the flat are all priced the same way: what the children inherit (median, today's HK$) and the odds the money lasts,
   in a normal future and in the same downturn (`Decision_List.md` §4). The brief gives each area its own measure (a cost
@@ -767,6 +786,18 @@ are the planning process with the brief's six areas inside. A practitioner will 
   It also settles Adrian against Carmen, which the brief asks for.
 - **Findings ordinary planning wouldn't produce:** the downturn reverses the flat's route (not a green decision); paying
   out Carmen's share (B8) is the only decision worth more in odds under stress; the vans reach the family through the sale.
+  Two push back on the brief: for a business this size its financing instruments mostly don't fit, and the biggest
+  cuts are purchasing that needs no loan (slides 7–8); and the green products don't protect the family when climate
+  hits (M8).
+- **Against a good planner, not only the label approach** (Claude, 13 Nov, night). The brief asks how the framework
+  changes "the advice you would otherwise give", which a judge may read as a competent planner's advice. Of our seven
+  changes, a good planner who ignores sustainability makes three anyway: plain bonds for Adrian (cheaper), the
+  scholarship funded while the 17% relief applies (tax planning) and, if they review the business's costs, probably
+  the vans (they save money). Against that planner the framework's money effect is about zero or slightly negative
+  (the price of values ≈−HK$0.57M; the carbon data ≈−HK$0.10M). What only the framework adds: the cuts that cost
+  nothing (recycled plastic at parity, the climate index fund at the plain fund's fee), the climate routes to the flat
+  and the business with their dates, and the rule on what may be claimed. Say this when asked; don't let the headline
+  against the label approach stand in for it.
 - **The defence when asked "isn't this goals-based planning?":** yes, built on it. Goals-based wealth management funds
   "aspirational" goals from the surplus above essential ones (Chhabra 2005; Das, Markowitz, Scheid and Statman 2010;
   §9). What's new is applying it to values and to the business's transition. Cite it; don't hide it.
@@ -869,8 +900,9 @@ exporting to the EU (not built; its verdicts need checking before anyone says th
 **Decided:** the client is the Wongs (4–5 Nov); Carmen owns 50% (9 Nov); the base is `switch_89`, price tags lead with
 the inheritance in HK$ (9 Nov); the US$0 fund on stage in the record-only wording, the manager not named aloud (9 and 11
 Nov); look A, the prism stage and badge (11 Nov); storyline v4 (11 Nov) with slide 1 revised (12 Nov); **13 Nov:** the
-thesis "Sustainable is a test the whole plan passes, not a label its products carry": two tests (outside in, inside
-out) and three rules (limits first, a budget for values, one measure for every decision) (§4.1); the one measure and
+thesis "A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them,
+and claims only what it changes" (night; it replaced "Sustainable is a test the whole plan passes, not a label its
+products carry", which restated the brief; §4.1); the one measure and
 the values budget as the spine, the five letters as the route (§4.4); slide 1 rebuilt around the claim; slide 3 as one chart with every decision on it (§4.5). The spine
 includes §5.4's mechanism (the floors size the budget): Pete to confirm the numbers on slide 4. **Recommended,
 Pete to confirm:** B8, a dividend policy for Carmen's half of the van saving from 2033, outside the headline.
@@ -923,9 +955,10 @@ build, or slide 3 before PRISM. Owner: Pete.
 **5.6 One thesis line, safe under the audit.** Slide 1 closes "Test the whole plan, then choose the products"; slide 2
 says "Look both ways" with "instead of …" contrasts; the close says "A label says what it's called. We showed what it
 does." The audit found the "instead of" lines and the absolute label line unsupported as claims about other advisers.
-**Decided 13 Nov:** the thesis is "Sustainable is a test the whole plan passes, not a label its products carry", with
-the two tests and the three rules under it (§4.1); the audit's line was withdrawn because it restates the topic's title.
-Slide 1 closes on the claim. Still to do: slide 2 says the two tests and the three rules; slide 11 returns to the claim; slide 2 shows the rules (limits first, the four corners, the ordinary-choice comparison, a
+**Decided 13 Nov (night):** the thesis is "A plan is sustainable if it holds its limits when climate hits, pays for
+values only from the room above them, and claims only what it changes" (§4.1); the audit's line, then "Sustainable is
+a test the whole plan passes, not a label its products carry", were withdrawn because they restate the brief.
+Slide 1 closes on the claim. Still to do: slide 2 shows where PRISM checks each condition; slide 11 returns to the claim; slide 2 shows the rules (limits first, the four corners, the ordinary-choice comparison, a
 missing price as a trigger), not only the five letters; its grey halves name what the label approach (our comparison)
 does, not what advisers do. Owner: Pete.
 
@@ -1015,7 +1048,7 @@ is the planning process with green added" (§4.2's table; §4.4 "What is ours").
 | Practitioner, ESG strategist | Isn't your climate risk a market crash with a green title? | Each route names its cause, route and HK$; the climate-only routes (customers' carbon reporting, older buildings) drawn apart; most of the shock's loss is ordinary market and inflation risk, and we say so | Moderate |
 | ESG strategist | So is your plan climate-resilient? | No claim: nothing in it hedges climate (M8); its defences are the floors, the reserve and the flat's route | — |
 | ESG strategist | Isn't PRISM double materiality renamed? | Yes, on purpose: built on it, applied to a family's whole balance sheet with rules a planner can run | — |
-| Practitioner | Isn't this what every planner does: set goals, then plan? | The steps are, and we say so. What's ours is one measure for every decision (business, home, funds, giving) and a values budget sized by the limits; and what it found (the flat's route reverses in the downturn) | Moderate: the answer must point at slide 3 |
+| Practitioner | Isn't this what every planner does: set goals, then plan? | The steps are, and we say so; the brief itself calls sustainability a planning discipline. What's ours is the definition (§4.1), above all values paid only from the room above the limit, priced on one measure across the business, the home, the funds and the giving; and what it found (the flat's route reverses in the downturn; the brief's instruments don't fit her size). Against a good planner, three of our seven changes happen anyway (§4.4) | Moderate: the answer must point at slides 3–4 |
 | Practitioner | Your values budget is goals-based planning's aspirational bucket | Yes, built on it (Chhabra 2005; Das, Markowitz, Scheid and Statman 2010): we apply it to values and to the business's transition | — |
 | ESG strategist | Why only carbon? | Carbon first because rules price it; packaging waste (the plastics rules) and the scholarship's students counted too | — |
 | Practitioner | Doesn't your fee cost double-count the tracking lag? | No: the lag is after each fund's own fee, and EDMW and IWDA charge the same (`Decision_List.md` P1–P5) | — |
@@ -1077,6 +1110,13 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, night (Pete, Claude): the thesis restated as three conditions** (§4.1). Pete asked whether "Sustainable
+  is a test the whole plan passes, not a label its products carry" is just what any good planner does. It is the
+  brief's own premise, and each of its rules has a precedent, so it can't carry the innovation marks. Options weighed:
+  the three conditions (chosen); "the sustainable share is an output of the limits" (narrows to the portfolio, and
+  26.6% sits next to the case's 25%); keeping the line as a premise shared with the brief. Also recorded: what a good
+  planner would do anyway (§4.4) and four open items under the claim (§4.1). Slides 1 and 11 follow (the deck session).
 
 - **13 Nov, night (Pete, Claude): slide 3 becomes the decision rule; its bar chart becomes the close.** Pete: slide 3
   showed six of the Wongs' decisions as "the answer" before anything had produced them, so they read as made up, and the

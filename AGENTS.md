@@ -64,10 +64,12 @@ The Final is judged on a framework; the Wongs demonstrate it. Drafts have drifte
 - **The task** (topic brief, p.2, word for word): "present a decision-ready sustainable finance framework ... Demonstrate
   the framework on one representative Hong Kong client." Innovation and independent thinking is 40 of the 100 marks:
   judges should leave with our rules, each with a number behind it, not with one family's case.
-- **The argument** (`Final_Plan.md` §4.1–4.2): "Sustainable is a test the whole plan passes, not a label its products
-  carry." Two tests (outside in: does the plan last when climate hits? inside out: what does the money change?), three
-  rules (limits first, a budget for values, one measure for every decision), run through PRISM: Profile, Risk, Impact,
-  Select, Monitor.
+- **The argument** (`Final_Plan.md` §4.1–4.2): "A plan is sustainable if it holds its limits when climate hits, pays
+  for values only from the room above them, and claims only what it changes." Three conditions: the first is outside
+  in (what climate does to everything the family owns and earns), the third inside out (what the money changes,
+  against a counterfactual), the second the values budget; one measure for every decision checks all three, run
+  through PRISM: Profile, Risk, Impact, Select, Monitor. Don't present the brief's own premise ("beyond labels", "a
+  planning discipline") as our idea: the panel wrote it (Pete, 13 Nov, night).
 - **On every slide the rule frames and the Wongs prove:** the title, kicker and closing line are the framework's; the
   body shows the step as any planner would run it, then the Wongs running it. The tests are in `Final_Plan.md` §3.
 - **The framework comes before the numbers** (1 the question, 2 PRISM, 3 the answer; Pete, 13 Nov, `Final_Plan.md`
