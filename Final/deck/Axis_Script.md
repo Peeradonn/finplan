@@ -1,10 +1,10 @@
 # PRISM: the script (Team Axis)
 
-Generated 2026-11-13 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
+Generated 2026-11-13 by build_final.py from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-162 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:55. Speech: 1:07 at 145 words a minute (1:27 with names and handovers); 1:12 at 135 words a minute (1:32 with names and handovers); 1:17 at 125 words a minute (1:37 with names and handovers). Over 10:30 disqualifies the team.
+579 spoken words (the budget is about 1,200 for 9:20). Slides allotted 8:55. Speech: 3:59 at 145 words a minute (4:19 with names and handovers); 4:17 at 135 words a minute (4:37 with names and handovers); 4:37 at 125 words a minute (4:57 with names and handovers). Over 10:30 disqualifies the team.
 
-Speaking time at 135 words a minute: Pete 1:04, Lookbua 0:02, Fahtai 0:02, Win 0:02.
+Speaking time at 135 words a minute: Win 3:08, Pete 1:04, Lookbua 0:02, Fahtai 0:02.
 
 ## 1 · Sustainable is a test the whole plan passes, not a label its products carry.
 *Pete · 1:05 · 132 spoken words (≈59 s at 135)*
@@ -63,18 +63,18 @@ Speaking time at 135 words a minute: Pete 1:04, Lookbua 0:02, Fahtai 0:02, Win 0
 > Notes: Fahtai says their simple name before their part. Evidence status per claim in §4.5.
 
 ## 9 · The sustainable share is an output of the budgets, not a target
-*Win · 1:00 · 3 spoken words (≈1 s at 135)*
+*Win · 1:00 · 219 spoken words (≈97 s at 135) · over its time*
 
-**Win:** [script to write]
+**Win:** I'm Win. The S in PRISM is Select: every product runs through three gates. A binding, published rule. Measured and reported every year. And within the owner's risk budget. The fund from our earlier plan — BOC-Prudential — has zero assets at every filing. It fails at gate one. The fund that passes all three is EDMW, an iShares CTB ETF: it must stay thirty percent below its parent's carbon intensity and decline seven percent a year. That's a rule, not a label. Each parent's tracking-error budget sets how much ESG they can hold: Adrian's half-percent gives him thirty percent; Carmen's three percent gives her sixty. Weighted by their savings, the family share is twenty-seven point seven percent. It came out of the budgets — we didn't set it. The carbon numbers are sourced: WACI sixty-three, coverage ninety-nine point eight percent, ITR one band lower. But the portfolio avoids zero emissions. Secondary-market purchases finance nothing new. We say so. The price: about HK$0.57 million against plain twins over the plan's horizon — well within the values budget we set on slide four. And what we refused: a clean-energy fund, a green deposit, a sustainability-linked bond, and a green bond ETF. Each failed at least one gate. Every refusal is paired with what we do instead.
 
-> Notes: Win says their simple name before their part. Evidence status per claim in §4.5.
+> Notes: Win says their simple name at the start. Evidence: product gate is ours (innovation marks). EDMW data SOURCED from BlackRock/MSCI factsheets Oct 2026. BOC-Prudential US$0 is CASE from SFC filings (checked). 27.7% is the settled ESG share (cost basis: TER 0.20% = 0bp gap). TE concern: Adrian's 30% × 2.09% = 0.63% > his 0.5% budget; may need to cap at ~24%. Flagging to Pete. Price of values −HK$0.57M is ESTIMATED from area3_portfolio.md §1. Avoided emissions zero is SOURCED (PCAF supplement). No NGFS scenario here (review fix #3: keep slide 5's disorderly scenario only).
 
 ## 10 · Every missing price is a decision, and the plan knows when it's wrong
-*Win · 0:45 · 3 spoken words (≈1 s at 135)*
+*Win · 0:45 · 204 spoken words (≈91 s at 135) · over its time*
 
-**Win:** [script to write]
+**Win:** The M in PRISM is Monitor. Our Climate Facts dashboard asks seven questions every year. Not a score — a set of answers, each with a trigger that says when the plan is wrong. Financial protection: ninety-seven percent odds to eighty-nine, checked against material life changes. Values price: the HK$0.57 million gap we just showed, reconciled whenever fees or mandates change. Operations: Carmen's baseline in 2027 — we can't claim a reduction until we've measured the starting point. Alignment: the portfolio's WACI and coverage, checked whenever the fund's method changes. Outcome: no causal result yet, and we say so. When evidence is missing, we qualify the claim — we don't drop it. And every missing price becomes one of three decisions: buy the answer now, accept a range, or set a trigger. The fund call is a buy: we check EDMW quarterly. ESG under stress is a range: the CTB index should lose less in a carbon-price shock, but nobody's measured it, so we give it no credit. Recycled PET is a trigger: at parity we switch; at a ten percent premium we pay; above that, we refuse. Pete will show you what happens when the plan meets reality.
 
-> Notes: Win says their simple name before their part. Evidence status per claim in §4.5.
+> Notes: Win hands off to Pete after this. Dashboard structure from area6_measurement_update.md §2. All dashboard figures carry evidence tags: MODEL (the retirement odds), ESTIMATED (values price), SOURCED (alignment WACI). Buy/Range/Trigger is our framework (innovation marks). Each row links to Decision_List.md. Building's 50th year is 2046 (1996 building), consistent with slide 6. Biases, attribution waterfall, risk register, and "can't measure yet" all moved to backup slides (review fix #4: 45 seconds = dashboard + one figure only).
 
 ## 11 · [Same storm, our plan: above the floor, because the framework took out what didn't work]
 *The replay · 2031, the same storm · Pete · 0:40 · 3 spoken words (≈1 s at 135)*
