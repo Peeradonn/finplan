@@ -317,18 +317,21 @@ dashboard, Climate Facts.
 
 ### 4.3 The open and the close
 
-**The open (slide 1, revised 13 Nov with Pete, second pass: framework first, the Wongs once as proof; five builds
-checked; ≈160 spoken words):**
+**The open (slide 1, revised 13 Nov with Pete, third pass: framework first, the Wongs once as proof; five builds
+checked; ≈170 spoken words):**
 1. **Question:** "What makes a plan sustainable?"
 2. **How our case asks for it:** a share of ESG products (green chip), with the case's words: "20% to 25% of investable
    assets … through appropriate product selection". Our case's ask, not a claim about advisers.
 3. **Two tests for the whole plan:** OUTSIDE IN, "Does the plan last when climate hits?"; INSIDE OUT, "What does the
    money change in the world?" (crimson and teal tags, the colours slide 3 uses for money and the world).
-4. **The first test, on our client:** one plan with and without an assumed sudden carbon policy in 2030–31
-   (`fin-label-path`); focal point `fin_lab_homebiz` (47% of the loss lands on the home and business, where no fund share
-   reaches; each channel run alone), with `fin_lab_gap89` (HK$4.6M less at the model's end). The second test's proof is
-   spoken: the measurable cuts are in Carmen's business, not the funds.
+4. **One proof per test, on our client** (one line: a Hong Kong family, a home, a packaging business, HK$10.5M saved),
+   each aligned to its card: `fin_lab_homebiz` (47% of a climate shock's loss lands on the home and business, where no
+   fund share reaches; MEASURED on an illustrative shock, each part run alone) and 134 t a year of carbon cuts we can
+   measure, all in the business, none measured in the funds (ESTIMATED, `Decision_List.md`).
 5. **The claim:** "Sustainable is a test the whole plan passes, not a label its products carry."
+
+The net-worth chart left the open (third pass, Pete): it was the slide's biggest element yet one family's model
+output, it proved only the first test, and it showed a loss our plan doesn't recover. The same shock is on backup 12.
 
 **Why it changed (13 Nov):** the 12 Nov version's two cards were right in substance but framed as the topic's two
 questions, and its close ("Test the whole plan, then choose the products") was a second rule. A first 13 Nov pass
@@ -403,7 +406,7 @@ in "Must prove". Build forms are drafts, not orders.
 
 | # | Step, who, time | Title (draft) | Must prove | Evidence | Required item; areas |
 |---|---|---|---|---|---|
-| 1 | Open · Pete · 1:05 | What makes a plan sustainable? (closes on the claim) | §4.3: the question; how our case asks for it (a share of ESG products); the two tests for the whole plan (outside in, inside out); the first test on the Wongs (47% of the loss on the home and business); the claim | CASE; MODEL (`fin_lab_homebiz`, `fin_lab_gap89`, exported); shock ILLUSTRATIVE; re-base pending | Scenario introduced; 1, 5 |
+| 1 | Open · Pete · 1:05 | What makes a plan sustainable? (closes on the claim) | §4.3: the question; how our case asks for it (a share of ESG products); the two tests for the whole plan (outside in, inside out), each with one proof number on the Wongs (47% of a shock's loss on the home and business; 134 t a year of measurable cuts, all in the business); the claim | CASE; MODEL (`fin_lab_homebiz`, exported); tonnes ESTIMATED; shock ILLUSTRATIVE | Scenario introduced; 1, 5 |
 | 2 | PRISM · Pete · 1:00 | PRISM: look both ways | Five letters, each with its question, our rule and the label approach's way (§4.2); the two directions in R and I; built on double materiality, applied to a family's whole balance sheet | Definitions HAVE (`area1_6_framework.md`) | The framework; 1 |
 | 3 | Answer · Pete · 0:25 (a chart needs ≈0:40: retime) | Put every decision on one measure, green or not | **Rebuilt 13 Nov (second version)** after Pete's verdict on the first (a dot chart with a side panel, a values-budget box, downturn rings, a legend and a three-column footer: "so messy … looks like an uncompleted slide"). Now one job: each decision as a bar from zero on what the children inherit (median, against its ordinary choice), one row per decision with an icon for where it acts (the business, the savings, the giving, the home: Pete, 13 Nov, group labels dropped because "the values budget" is how a choice is paid, not where it acts); the flat's bar the one crimson mark, drawn broken so the other five keep a readable scale, with one line on why the limit chose it; the world side drawn too (tonnes as teal bars, "none shown" in grey), so each row is a two-sided price tag; a header row of three columns (What we recommend · For the children · For the world), each under a thick rule in its colour, with an icon (Pete, 13 Nov: the top was bland); one line of capital; the bar: "For the Wongs, the biggest price is the flat, set by the limit; all the carbon we cut is in the business." Moved off: the flat's limit in full (slide 6), the values budget's size (slide 4), refusals (6, 8, 9), the downturn (notes; backup), the headline against the label approach (joins once §5.1 is settled, as a number, never a bracket) | MODEL (`fin_dot_*_n`, exported 13 Nov); `Decision_List.md` §1–2; tonnes ESTIMATED; recycled plastic at parity SOURCED | **Recommendation, capital, outcomes; trade-off**; 1 |
 | 4 | P · Pete · 0:30 | Settle the family's disagreements once, before any option is priced | Adrian ("capital preservation, retirement adequacy"; his funds within 0.5% a year of the market) and Carmen (ESG for "her personal values"; up to 3%) meet in one values budget agreed once; their limit (95 in 100; 85 in a crisis); Ryan decides his own money; Chloe's HK$2.57M set aside; both parents for anything irreversible | CASE (their words); limits ILLUSTRATIVE; budget MODEL (§5.4) | — ; 1, 6 |
@@ -648,7 +651,8 @@ Each brief has its own full list (its last section). The ones the storyline lean
   measure and the values budget as the spine (§4.4); slide 3 redrawn as one chart with every decision on it (`fin_dot_*`
   exported); the four citations checked (§9); §5.6 decided. Later the same day (Pete): the thesis became the claim
   "Sustainable is a test the whole plan passes, not a label its products carry", with the two directions as its two tests
-  and the three rules under them; slide 1 rebuilt around it after a pass that drifted into a Wong case. Slide 3 rebuilt the same day as one bar chart after Pete rejected the dot chart as messy; slide 1 revised to set up the thesis (the parents' wants, their 20–25% ask as one decision, where the loss lands).
+  and the three rules under them; slide 1 rebuilt around it after a pass that drifted into a Wong case. Then the open's chart gave way to one proof number per test (the
+  chart is backup 12). Slide 3 rebuilt the same day as one bar chart after Pete rejected the dot chart as messy; slide 1 revised to set up the thesis (the parents' wants, their 20–25% ask as one decision, where the loss lands).
 - **12 Nov (Claude):** plan cut to this version after the strategy review; Win's slide 9–10 specs moved to
   `deck/specs/`; M9 fair-comparison runs; the review's proposals in §5.
 - **12 Nov (Codex):** claims audit; slide 1 rebuilt around "What makes the whole plan sustainable?".
