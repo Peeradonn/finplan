@@ -387,13 +387,26 @@
         </div>
       </div>
 
-      <!-- 9-D: Price of values -->
+      <!-- 9-D: Price of values — visual bar -->
       <div class="s9-price" data-b="3">
-        <p class="sub" style="align-self:flex-start;width:100%">Price of values <span class="tag" style="margin-left:6px">ESTIMATED</span></p>
-        <div class="s9-price-num">−HK$0.57M</div>
-        <div class="s9-price-label">against plain twins over the plan's horizon</div>
-        <div class="s9-price-detail">Fee price ≈HK$5.1K/yr · return price up to ≈HK$26.6K/yr<br>Well within the ≈HK$1.4M values budget (slide 4)</div>
-        <p style="font:italic 500 11.5px/1.4 var(--text);color:var(--mute);margin-top:8px;text-align:center">"Our ETF carries a label; it finances nothing new. We say so."</p>
+        <p class="sub">Price of values <span class="tag" style="margin-left:6px">ESTIMATED</span></p>
+        <div class="s9-bar-wrap">
+          <div class="s9-bar-label"><span>Cost</span><span>Values budget (slide 4)</span></div>
+          <!-- 0.57 / 1.4 ≈ 40.7% of the bar -->
+          <div class="s9-bar-track">
+            <div class="s9-bar-budget"></div>
+            <div class="s9-bar-fill" style="width:40.7%">
+              <span class="s9-bar-fill-label">HK$0.57M</span>
+            </div>
+            <span class="s9-bar-remain" style="left:44%">HK$0.83M room</span>
+          </div>
+        </div>
+        <div class="s9-bar-nums">
+          <div class="s9-bar-cost">−HK$0.57M</div>
+          <div class="s9-bar-of">of ≈HK$1.4M budget</div>
+        </div>
+        <div class="s9-bar-detail">Fee price ≈HK$5.1K/yr · return price up to ≈HK$26.6K/yr</div>
+        <p class="s9-bar-honest">"Our ETF carries a label; it finances nothing new. We say so."</p>
       </div>
 
       <!-- 9-F: Refusals strip -->
