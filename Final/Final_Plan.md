@@ -1039,6 +1039,12 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **13 Nov (Fahtai, Codex): business R/I candidate** in `deck/business-ri/` (`Axis.html`, preview `Axis.png`, editable
+  `slide.html` and `slide.css`). The reusable risk scan and value-chain activity trace lead; Carmen's packaging is the
+  demonstration; each direction supplies evidence for Select. Customer loss stays conditional and the footprint
+  stays ESTIMATED on ILLUSTRATIVE operations. Separate candidate: the live deck, Lookbua's whole-household slide and
+  their timings are unchanged. Placement will be considered with the business Select slides. No model values changed.
+
 - **13 Nov, late (Pete, Claude): slide 4 rebuilt.** Pete: the main point wasn't clear, and the Profile step itself
   should come before the Wongs. Now titled with the thesis's first two rules ("Set the limit first; values spend only the
   room above it"): left, the step for any client in four parts (each decision-maker alone on the brief's seven
