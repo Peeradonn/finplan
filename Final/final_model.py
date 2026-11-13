@@ -443,6 +443,21 @@ def export_final():
     out["fin_room_use_hk"] = f"HK${p_n['leg_med'] - u_n['leg_med']:.1f}M"  # the same, in the children's median
     out["fin_room_plain_s"] = f"{p_s['odds']:.1%}"                         # notes: plain choices under the scenario
     out["fin_room_use_s"] = f"{(p_s['odds'] - u_s['odds']) * 100:.1f}"     # notes: what the choices use under it
+    # storyline v5 (13 Nov, night). Slide 3: what the room buys, in giving funded now with the ESG tilt, and Carmen's
+    # fuller wish against it (M11). Slide 4: Adrian's bonus lost in the downturn, against the plan in the scenario (M10a).
+    tilt = dict(r_eq=r_eq_for(FEE_SAVED))
+    gift = most_gift(base, tilt, sc, mult)
+    out["fin_room_gift"], out["fin_room_gift_x"] = f"HK${gift / 1e6:.1f}M", f"{gift / 1e6:.2f}"
+    both39 = gift_now(2 * fund_size(END - 2027))
+    out["fin_room_both39_hk"] = f"HK${2 * fund_size(END - 2027) / 1e6:.2f}M"
+    out["fin_room_both39_odds"] = f"{run(base, **dict(tilt, inflows=both39))['odds']:.1%}"
+    two = plus(pledge_for(END - 2027), pledge_for(END - 2027))
+    out["fin_room_pledge2_odds"] = f"{run(base, **dict(tilt, inflows=two))['odds']:.1%}"
+    out["fin_room_pledge2_sodds"] = f"{stressed(base, sc, mult, flows=two, **tilt)['odds']:.1%}"
+    bon = stressed(base, dict(sc, inflows=plus(sc["inflows"], bonus_lost())), mult)
+    out["fin_bonus_leg"] = ("−" if bon["leg_med"] < allr["leg_med"] else "+") + f"HK${abs(bon['leg_med'] - allr['leg_med']):.2f}M"
+    out["fin_bonus_pts"] = f"{(bon['odds'] - allr['odds']) * 100:+.1f}".replace("-", "−")
+    out["fin_bonus_sodds"] = f"{bon['odds']:.1%}"                         # the plan in the downturn, bonus lost
     # slide 6 (S, the flat; 13 Nov): where the limit flips the route. The scenario has the old flat fall 15% behind
     # newer flats from 2031 (10% in 2030), on top of its 0.15% a year drag; here that fall runs from 0 to 15%, the
     # rest of the scenario unchanged. The reverse mortgage barely moves (HKMC counts half the value above HK$8M);
@@ -642,6 +657,17 @@ def gift_now(total, start=2027):
     return f
 
 
+def most_gift(base, kw, sc, mult, iters=24):
+    """The most giving funded now (gift_now) before either limit breaks (95 normally, 85 in the scenario): bisection."""
+    lo, hi = 0.0, 6e6
+    for _ in range(iters):
+        mid = (lo + hi) / 2
+        f = gift_now(mid)
+        ok = run(base, **dict(kw, inflows=f))["odds"] >= 0.95 and stressed(base, sc, mult, flows=f, **kw)["odds"] >= 0.85
+        lo, hi = (mid, hi) if ok else (lo, mid)
+    return lo
+
+
 def down_cross(base, sc, limit=0.85):
     """Where downsizing crosses `limit` in the downturn as the old flat's fall behind newer flats runs from 0 to 15%
     (export_final()'s slide 6 shape, on a 1% grid, interpolated)."""
@@ -729,12 +755,7 @@ def m11(w, row, head, base):
         return run(base, **dict(kw, inflows=f)), stressed(base, sc, mult, flows=f, **kw)
 
     def most(kw):
-        lo, hi = 0.0, 6e6
-        for _ in range(24):
-            mid = (lo + hi) / 2
-            n_r, s_r = both(kw, gift_now(mid))
-            lo, hi = (mid, hi) if (n_r["odds"] >= 0.95 and s_r["odds"] >= 0.85) else (lo, mid)
-        return lo
+        return most_gift(base, kw, sc, mult)
 
     w("\n## M11. What the values budget pays for, and where it binds (Claude, 13 Nov, night; the Final's base)\n")
     w("M9c's starting point (plain funds, no giving, no vans): the room above the limits is what values may cost. Gifts "

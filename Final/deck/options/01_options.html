@@ -1,0 +1,249 @@
+<!-- Storyline v5 options (Claude, 13 Nov, night; Final_Plan.md §4.5): two forms each for the new slide 4 (the household
+     as one picture) and slide 9 (the plan's label), rendered beside v4's slides 5 and 10 for Pete to choose. Built by
+     Final/deck/options/make_options.py with the deck's own head (tokens) and tail; numbers are placeholder keys as in the deck.
+     Class names here start o4a-, o4b- or o9- (classes are global in the deck's CSS). -->
+<style>
+/* 9: the plan's label, a nutrition-facts card (one object, real rules of the genre: heavy title, thick bars, rows) */
+.o9-body{display:flex;gap:34px;align-items:flex-start}
+.o9-card{flex:none;width:610px;border:2.5px solid var(--ink);padding:9px 18px 8px;background:#fff}
+.o9-t{font:800 36px/1 var(--head);letter-spacing:-.6px}
+.o9-st{font:500 14px/1.3 var(--text);color:var(--slate);margin-top:4px}
+.o9-bar{height:9px;background:var(--ink);margin:7px 0 0}
+.o9-sec{padding:5px 0 5px;border-bottom:1.5px solid var(--ink)}
+.o9-sec:last-of-type{border-bottom:none}
+.o9-h{display:flex;align-items:center;gap:9px;font:800 17px/1.2 var(--head)}
+.o9-h i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
+  border-radius:50%;background:var(--ink);color:#fff;font:800 13px/1 var(--head)}
+.o9-row{display:flex;align-items:baseline;gap:10px;font:500 15px/1.3 var(--text);padding:3px 0 2px 31px;
+  border-bottom:1px solid var(--rule)}
+.o9-row span{flex:1}
+.o9-row b{font:800 19px/1 var(--num)}
+.o9-row em{font-style:normal;color:var(--slate);font-size:13px;min-width:62px;text-align:right}
+.o9-trig{font:italic 500 13.5px/1.3 var(--text);color:var(--slate);padding:4px 0 0 31px}
+.o9-trig b{font-style:normal;font-weight:700;color:var(--ink)}
+.o9-end{border-top:9px solid var(--ink);margin-top:2px;padding-top:6px;font:500 13px/1.35 var(--text);color:var(--slate)}
+.o9-end b{color:var(--ink);font-weight:700}
+.o9-side{flex:1;min-width:0;display:flex;flex-direction:column;gap:18px;padding-top:4px}
+.o9-k{font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--slate);margin-bottom:8px}
+.o9-prod{display:flex;align-items:center;gap:14px;font:500 16px/1.35 var(--text)}
+.o9-miss p:not(.o9-k){display:flex;gap:10px;align-items:baseline;font:500 15.5px/1.35 var(--text);padding:5px 0;border-bottom:1px solid var(--rule)}
+.o9-miss p b{flex:none;width:112px;font:800 14px/1.3 var(--text);color:var(--ink)}
+.o9-dates{font:500 15px/1.45 var(--text)}
+.o9-dates b{font-weight:800}
+/* 9B: the product's label beside the plan's */
+.o9b-body{display:flex;align-items:flex-start;gap:22px;margin-top:16px}
+.o9b-prod{flex:none;width:330px;border:2px solid var(--grey);border-radius:6px;padding:16px 18px;background:var(--mist)}
+.o9b-prod .o9b-n{font:700 18px/1.25 var(--head);color:var(--slate);margin:12px 0 6px}
+.o9b-prod p{font:500 15px/1.4 var(--text);color:var(--slate)}
+.o9b-cap{font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--slate);margin-bottom:8px}
+.o9b-arrow{flex:none;width:44px;height:44px;color:var(--ink);margin-top:190px}
+.o9b-card{width:640px}
+</style>
+
+<!-- ============ 4A · the household as one strip, to scale ============ -->
+<section class="slide sec-R" id="o4a">
+  <header class="head"><p class="kick kt"><b class="kt-L">R</b><b class="kt-L kt-I">I</b><b class="kt-n">Risk and <span class="kt-i">Impact</span></b><span class="kt-do">The limit: does the plan hold when climate hits?</span></p>
+    <h2>Check everything they own and earn, not just what a label covers</h2></header>
+  <div class="body stack"><svg viewBox="0 0 1184 462" width="1184" height="462" style="font-family:var(--text);overflow:visible">
+    <text x="0" y="13" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT THEY OWN</text>
+    <text x="128" y="13" font-size="13.5" fill="#566173">HK$27.2M on the case's balance sheet, drawn to scale</text>
+    <text x="955.75" y="20" font-size="14" font-weight="800" fill="#3F9A55" text-anchor="middle">ESG ✓  the label looks only here</text>
+    <rect x="727.5" y="28" width="456.5" height="5" rx="2" fill="#3F9A55"/>
+    <rect x="0" y="40" width="501.5" height="96" fill="#E4E8EE"/>
+    <rect x="505.5" y="40" width="218" height="96" fill="#E4E8EE"/>
+    <rect x="727.5" y="40" width="456.5" height="96" fill="#E3F1E6"/>
+    <text x="16" y="80" font-size="18" font-weight="800" fill="#0F1E3D">The flat</text>
+    <text x="16" y="105" font-size="14.5" fill="#566173">HK$11.5M · 42%</text>
+    <text x="521.5" y="80" font-size="18" font-weight="800" fill="#0F1E3D">Carmen's business</text>
+    <text x="521.5" y="105" font-size="14.5" fill="#566173">her half, HK$5.0M · 18%</text>
+    <text x="743.5" y="80" font-size="18" font-weight="800" fill="#0F1E3D">Savings, deposits and MPF</text>
+    <text x="743.5" y="105" font-size="14.5" fill="#566173">HK$10.5M · 39%</text>
+    <line x1="250.75" y1="136" x2="250.75" y2="160" stroke="#C80E1E" stroke-width="2.5"/><circle cx="250.75" cy="164" r="7" fill="#C80E1E"/>
+    <line x1="614.5" y1="136" x2="614.5" y2="160" stroke="#C80E1E" stroke-width="2.5"/><circle cx="614.5" cy="164" r="7" fill="#C80E1E"/>
+    <line x1="955.75" y1="136" x2="955.75" y2="160" stroke="#C80E1E" stroke-width="2.5"/><circle cx="955.75" cy="164" r="7" fill="#C80E1E"/>
+    <text x="250.75" y="198" font-size="23" font-weight="800" fill="#C80E1E" text-anchor="middle">{{fin_flat10_leg}}</text>
+    <text x="250.75" y="219" font-size="14" fill="#0F1E3D" text-anchor="middle">if older flats fall 10% behind</text>
+    <text x="250.75" y="236" font-size="14" fill="#0F1E3D" text-anchor="middle">newer ones by 2037</text>
+    <text x="614.5" y="198" font-size="23" font-weight="800" fill="#C80E1E" text-anchor="middle">{{fin_cust10_leg}}</text>
+    <text x="614.5" y="219" font-size="14" fill="#0F1E3D" text-anchor="middle">at the sale, if a customer worth 10%</text>
+    <text x="614.5" y="236" font-size="14" fill="#0F1E3D" text-anchor="middle">of sales leaves for carbon data</text>
+    <text x="955.75" y="198" font-size="23" font-weight="800" fill="#C80E1E" text-anchor="middle">{{fin_shockport_leg}}</text>
+    <text x="955.75" y="219" font-size="14" fill="#0F1E3D" text-anchor="middle">in a sudden carbon policy, 2030–31;</text>
+    <text x="955.75" y="236" font-size="14" fill="#0F1E3D" text-anchor="middle">an ESG fund takes the same shock</text>
+    <line x1="0" y1="282" x2="1184" y2="282" stroke="#DCE1E8" stroke-width="1.5"/>
+    <text x="0" y="311" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT THEY EARN</text>
+    <text x="134" y="311" font-size="13.5" fill="#566173">a year, until each retires (case)</text>
+    <rect x="0" y="322" width="460" height="50" fill="#E4E8EE"/>
+        <text x="16" y="353" font-size="16" font-weight="800" fill="#0F1E3D">Adrian's pay <tspan font-weight="500" fill="#566173">· HK$1.2–1.35M, to 2036</tspan></text>
+    <text x="476" y="353" font-size="14" fill="#566173">Carmen's draw comes from the business, above</text>
+    <line x1="230" y1="372" x2="230" y2="390" stroke="#8892A2" stroke-width="2.5"/><circle cx="230" cy="394" r="6" fill="#B3BAC6"/>
+    <text x="246" y="400" font-size="19" font-weight="800" fill="#0F1E3D">{{fin_bonus_leg}}</text>
+    <text x="246" y="420" font-size="14" fill="#566173">if his bonus goes in the downturn: inside the limit</text>
+    <text x="826" y="334" font-size="14.5" font-weight="800" fill="#0F1E3D">Every odds figure assumes Adrian works to 65.</text>
+    <text x="826" y="354" font-size="14" fill="#566173">Losing the job is the plan's largest risk; it isn't</text>
+    <text x="826" y="372" font-size="14" fill="#566173">a climate route, so its answer is in the backup.</text>
+    <circle cx="8" cy="444" r="6" fill="#C80E1E"/><text x="22" y="449" font-size="13.5" fill="#0F1E3D">priced: what it could cost the children, each on its own</text>
+    <circle cx="420" cy="444" r="5" fill="#B3BAC6"/><text x="433" y="449" font-size="13.5" fill="#0F1E3D">checked: inside the limit</text>
+    <text x="616" y="449" font-size="13.5" fill="#566173">22 routes checked in all · the EU's border carbon tax doesn't reach them</text>
+  </svg></div>
+  <p class="sowhat">Of the 22 routes we checked, three matter, and two of those three never touch a fund.</p>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#0E7490"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#0E7490">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>RISK · IMPACT<span>Areas 4, 5</span></p></div>
+    <p class="src">Case balance sheet · priced: our model (MEASURED, each on its own; illustrative 2030–31 shock) · register: area 4 brief §6</p><span class="pg">4A</span>
+  </footer>
+</section>
+
+<!-- ============ 4B · the household as four objects, the loss hanging from each ============ -->
+<section class="slide sec-R" id="o4b">
+  <header class="head"><p class="kick kt"><b class="kt-L">R</b><b class="kt-L kt-I">I</b><b class="kt-n">Risk and <span class="kt-i">Impact</span></b><span class="kt-do">The limit: does the plan hold when climate hits?</span></p>
+    <h2>Check everything they own and earn, not just what a label covers</h2></header>
+  <div class="body stack"><svg viewBox="0 0 1184 425" width="1184" height="425" style="font-family:var(--text);overflow:visible">
+    <rect x="602" y="0" width="276" height="128" rx="6" fill="#E3F1E6"/>
+    <text x="740" y="20" font-size="14" font-weight="800" fill="#3F9A55" text-anchor="middle">ESG ✓  the label looks only here</text>
+    <svg x="126" y="28" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#i-house"/></svg>
+    <svg x="422" y="28" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#i-warehouse"/></svg>
+    <svg x="718" y="28" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#i-piggy-bank"/></svg>
+    <svg x="1014" y="28" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#i-briefcase"/></svg>
+    <text x="148" y="98" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="middle">The flat</text>
+    <text x="148" y="118" font-size="14" fill="#566173" text-anchor="middle">HK$11.5M · 42% of what they own</text>
+    <text x="444" y="98" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="middle">Carmen's business</text>
+    <text x="444" y="118" font-size="14" fill="#566173" text-anchor="middle">her half, HK$5.0M · 18%</text>
+    <text x="740" y="98" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="middle">Savings and MPF</text>
+    <text x="740" y="118" font-size="14" fill="#566173" text-anchor="middle">HK$10.5M · 39%</text>
+    <text x="1036" y="98" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="middle">Adrian's pay</text>
+    <text x="1036" y="118" font-size="14" fill="#566173" text-anchor="middle">HK$1.2–1.35M a year, to 2036</text>
+    <line x1="0" y1="140" x2="1184" y2="140" stroke="#0F1E3D" stroke-width="1.5"/>
+        <rect x="103" y="140" width="90" height="49" fill="#C80E1E"/>
+    <rect x="399" y="140" width="90" height="106" fill="#C80E1E"/>
+    <rect x="695" y="140" width="90" height="170" fill="#C80E1E"/>
+    <rect x="991" y="140" width="90" height="34" fill="#B3BAC6"/>
+    <text x="148" y="215" font-size="22" font-weight="800" fill="#C80E1E" text-anchor="middle">{{fin_flat10_leg}}</text>
+    <text x="148" y="236" font-size="14" fill="#0F1E3D" text-anchor="middle">if older flats fall 10% behind</text>
+    <text x="148" y="253" font-size="14" fill="#0F1E3D" text-anchor="middle">newer ones by 2037</text>
+    <text x="444" y="272" font-size="22" font-weight="800" fill="#C80E1E" text-anchor="middle">{{fin_cust10_leg}}</text>
+    <text x="444" y="293" font-size="14" fill="#0F1E3D" text-anchor="middle">at the sale, if a customer worth</text>
+    <text x="444" y="310" font-size="14" fill="#0F1E3D" text-anchor="middle">10% of sales leaves for carbon data</text>
+    <text x="740" y="336" font-size="22" font-weight="800" fill="#C80E1E" text-anchor="middle">{{fin_shockport_leg}}</text>
+    <text x="740" y="357" font-size="14" fill="#0F1E3D" text-anchor="middle">a sudden carbon policy, 2030–31;</text>
+    <text x="740" y="374" font-size="14" fill="#0F1E3D" text-anchor="middle">an ESG fund takes the same shock</text>
+    <text x="1036" y="200" font-size="20" font-weight="800" fill="#0F1E3D" text-anchor="middle">{{fin_bonus_leg}}</text>
+    <text x="1036" y="221" font-size="14" fill="#0F1E3D" text-anchor="middle">if his bonus goes in the</text>
+    <text x="1036" y="238" font-size="14" fill="#0F1E3D" text-anchor="middle">downturn: inside the limit</text>
+    <text x="1036" y="272" font-size="13.5" font-weight="800" fill="#0F1E3D" text-anchor="middle">Every odds figure assumes</text>
+    <text x="1036" y="290" font-size="13.5" font-weight="800" fill="#0F1E3D" text-anchor="middle">he works to 65</text>
+    <text x="1036" y="308" font-size="13" fill="#566173" text-anchor="middle">a lost job: not a climate route;</text>
+    <text x="1036" y="325" font-size="13" fill="#566173" text-anchor="middle">its answer is in the backup</text>
+    <circle cx="8" cy="414" r="6" fill="#C80E1E"/><text x="22" y="419" font-size="13.5" fill="#0F1E3D">priced, each on its own: median, today's HK$</text>
+    <circle cx="350" cy="414" r="5" fill="#B3BAC6"/><text x="363" y="419" font-size="13.5" fill="#0F1E3D">checked: inside the limit</text>
+    <text x="560" y="419" font-size="13.5" fill="#566173">22 routes checked in all · the EU's border carbon tax doesn't reach them</text>
+  </svg></div>
+  <p class="sowhat">Of the 22 routes we checked, three matter, and two of those three never touch a fund.</p>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#0E7490"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#0E7490">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>RISK · IMPACT<span>Areas 4, 5</span></p></div>
+    <p class="src">Case balance sheet · priced: our model (MEASURED, each on its own; illustrative 2030–31 shock) · register: area 4 brief §6</p><span class="pg">4B</span>
+  </footer>
+</section>
+
+<!-- ============ 9A · the plan's label, read with notes beside it ============ -->
+<section class="slide sec-M" id="o9a">
+  <header class="head"><p class="kick kt"><b class="kt-L">M</b><b class="kt-n">Monitor</b><span class="kt-do">All three conditions, checked every year</span></p>
+    <h2>Label the plan, not the product</h2></header>
+  <div class="body o9-body">
+    <div class="o9-card">
+      <p class="o9-t">Climate Facts</p>
+      <p class="o9-st">The Wong family's plan · read every year · first review 2027</p>
+      <div class="o9-bar"></div>
+      <div class="o9-sec">
+        <p class="o9-h"><i>1</i>Holds its limits when climate hits</p>
+        <p class="o9-row"><span>The money lasts, in a normal future</span><b>{{fin_base_odds100}} in 100</b><em>limit 95</em></p>
+        <p class="o9-row"><span>In the 2030–31 downturn</span><b>{{fin_storm_odds100}} in 100</b><em>limit 85</em></p>
+        <p class="o9-trig"><b>Trigger:</b> income, health or markets change → run it again</p>
+      </div>
+      <div class="o9-sec">
+        <p class="o9-h"><i>2</i>Claims only what it changes</p>
+        <p class="o9-row"><span>Carbon cut in the business, measured from 2027</span><b>≈134 t</b><em>a year</em></p>
+        <p class="o9-row"><span>Shares: 30% less carbon than the market, a footprint</span><b>none</b><em>claimed</em></p>
+        <p class="o9-trig"><b>Trigger:</b> the evidence is missing → claim less, and say so</p>
+      </div>
+      <div class="o9-sec">
+        <p class="o9-h"><i>3</i>Pays for values only from the room above its limits</p>
+        <p class="o9-row"><span>Room used, in futures in 100 above the limit</span><b>{{fin_room_use}} of {{fin_room_pts}}</b><em></em></p>
+        <p class="o9-row"><span>The same, in what the children inherit</span><b>{{fin_room_use_hk}}</b><em>median</em></p>
+        <p class="o9-trig"><b>Trigger:</b> a price passes the room → both parents re-sign</p>
+      </div>
+      <p class="o9-end"><b>Assumes Adrian works to 65.</b> Odds and HK$: our model (MEASURED) · tonnes ESTIMATED · 30% SOURCED · restated, never quietly</p>
+    </div>
+    <div class="o9-side">
+      <div>
+        <p class="o9-k">THE PRODUCT'S LABEL</p>
+        <p class="o9-prod"><span class="chip">ESG ✓</span><span>Says what a fund holds, not whether the family's plan works</span></p>
+      </div>
+      <div class="o9-miss">
+        <p class="o9-k">A MISSING PRICE BECOMES A DECISION</p>
+        <p><b>Buy it</b><span>The business's carbon data, ≈HK$54–73K a year</span></p>
+        <p><b>Use a range</b><span>ESG funds in a downturn: unmeasured, so no credit</span></p>
+        <p><b>Set a trigger</b><span>Recycled plastic: do it at today's price; above it, customers pay</span></p>
+      </div>
+      <div>
+        <p class="o9-k">WHAT HAPPENS WHEN</p>
+        <p class="o9-dates"><b>2027</b> carbon baseline, lease, scholarship · <b>31 Mar 2028</b> vans ordered · <b>each year</b> the flat's price gap · <b>2046</b> the building's 50th year</p>
+      </div>
+    </div>
+  </div>
+  <p class="sowhat">One page a year says whether the plan still passes all three, what it may claim, and when to decide again.</p>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
+    <p class="src">Our model (MEASURED) · BlackRock/MSCI, Oct 2026 · tonnes ESTIMATED, ILLUSTRATIVE business · limits ILLUSTRATIVE</p><span class="pg">9A</span>
+  </footer>
+</section>
+
+<!-- ============ 9B · the product's label beside the plan's ============ -->
+<section class="slide sec-M" id="o9b">
+  <header class="head"><p class="kick kt"><b class="kt-L">M</b><b class="kt-n">Monitor</b><span class="kt-do">All three conditions, checked every year</span></p>
+    <h2>Label the plan, not the product</h2></header>
+  <div class="body o9b-body">
+    <div>
+      <p class="o9b-cap">THE PRODUCT'S LABEL</p>
+      <div class="o9b-prod" style="margin-top:110px">
+        <span class="chip">ESG ✓</span>
+        <p class="o9b-n">A global equity fund</p>
+        <p>On the SFC's list of ESG funds.</p>
+        <p>The case asks for 20–25% of savings in products like this.</p>
+        <p style="margin-top:10px;color:var(--ink);font-weight:600">It says what the fund holds. It can't say whether the plan works.</p>
+      </div>
+    </div>
+    <svg class="o9b-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    <div>
+      <p class="o9b-cap">THE PLAN'S LABEL</p>
+      <div class="o9-card o9b-card">
+        <p class="o9-t">Climate Facts</p>
+        <p class="o9-st">The Wong family's plan · read every year · first review 2027</p>
+        <div class="o9-bar"></div>
+        <div class="o9-sec">
+          <p class="o9-h"><i>1</i>Holds its limits when climate hits</p>
+          <p class="o9-row"><span>The money lasts, in a normal future</span><b>{{fin_base_odds100}} in 100</b><em>limit 95</em></p>
+          <p class="o9-row"><span>In the 2030–31 downturn</span><b>{{fin_storm_odds100}} in 100</b><em>limit 85</em></p>
+          <p class="o9-trig"><b>Trigger:</b> income, health or markets change → run it again</p>
+        </div>
+        <div class="o9-sec">
+          <p class="o9-h"><i>2</i>Claims only what it changes</p>
+          <p class="o9-row"><span>Carbon cut in the business, measured from 2027</span><b>≈134 t</b><em>a year</em></p>
+          <p class="o9-row"><span>Shares: 30% less carbon than the market, a footprint</span><b>none</b><em>claimed</em></p>
+          <p class="o9-trig"><b>Trigger:</b> the evidence is missing → claim less, and say so</p>
+        </div>
+        <div class="o9-sec">
+          <p class="o9-h"><i>3</i>Pays for values only from the room above its limits</p>
+          <p class="o9-row"><span>Room used, in futures in 100 above the limit</span><b>{{fin_room_use}} of {{fin_room_pts}}</b><em></em></p>
+          <p class="o9-row"><span>The same, in what the children inherit</span><b>{{fin_room_use_hk}}</b><em>median</em></p>
+          <p class="o9-trig"><b>Trigger:</b> a price passes the room → both parents re-sign</p>
+        </div>
+        <p class="o9-end"><b>Next:</b> 2027 baseline · Mar 2028 vans · each year the flat's gap · 2046 · <b>assumes Adrian works to 65</b></p>
+      </div>
+    </div>
+  </div>
+  <p class="sowhat">One page a year says whether the plan still passes all three, what it may claim, and when to decide again.</p>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
+    <p class="src">Our model (MEASURED) · BlackRock/MSCI, Oct 2026 · tonnes ESTIMATED, ILLUSTRATIVE business · limits ILLUSTRATIVE</p><span class="pg">9B</span>
+  </footer>
+</section>

@@ -510,3 +510,17 @@ Keys added:
 - `fin_flipn_rmp100` 96, `fin_flipn_down100` 92: the ends in whole futures in 100, slide 6's labels.
 - Checked: `numbers.json` before and after differ only by these 36 additions (one rerun of `make_charts.py`; the seed
   is fixed); `figure-data.md` and every PNG unchanged.
+
+### Final (13 Nov, night): storyline v5's new numbers (`Final/final_model.py` `export_final()`, M10–M11)
+
+For storyline v5 (`Final/Final_Plan.md` §4.5): slide 3 says what the room above the limit buys, and slide 4 puts
+Adrian's pay in the household picture. Runs as in `Final/model_runs.md` M10a and M11 (the base, `switch_89`; gifts
+funded now in yearly pieces within both parents' 35% caps, 17% relief; the bisection is `most_gift()`, shared with M11).
+Keys added:
+- `fin_room_gift` HK$1.5M (`fin_room_gift_x` 1.46): the most giving funded now, with the ESG tilt, before a limit breaks.
+- `fin_room_both39_hk` HK$1.48M, `fin_room_both39_odds` 94.9%: both causes for 39 years each, funded now.
+- `fin_room_pledge2_odds` 91.6%, `fin_room_pledge2_sodds` 79.8%: the same awards pledged from cash flow.
+- `fin_bonus_leg` −HK$0.49M, `fin_bonus_pts` −1.3, `fin_bonus_sodds` 88.2%: Adrian's bonus after tax lost in 2030–31,
+  the plan as it stands in the scenario, against the same plan in today's scenario.
+- Checked: `numbers.json` before and after differ only by these 9 additions (one rerun of `make_charts.py`; the seed
+  is fixed); `figure-data.md` and every PNG unchanged.

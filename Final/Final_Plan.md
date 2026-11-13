@@ -33,12 +33,12 @@ an argument; where it disagrees with those files, they win.
 | 1 | Open | Pete | 1:00 | What makes a plan sustainable? (closes on the claim) | v4 1, to rework: the chip beside the three questions |
 | 2 | Framework | Pete | 0:50 | PRISM runs the test in five steps | v4 2, to trim |
 | 3 | The limit, the room | Pete | 0:50 | Set the limit first; values spend only the room above it | v4 4, plus what the room buys (M11) |
-| 4 | The limit | Lookbua | 0:55 | Check everything the family owns and earns; price only what can break the limit | New: options rendered 13 Nov, night |
+| 4 | The limit | Lookbua | 0:55 | Check everything they own and earn, not just what a label covers | New: options 4A and 4B rendered 13 Nov, night (4A recommended) |
 | 5 | The limit | Lookbua | 0:45 | The limit decides before preferences do | v4 6, kept |
 | 6 | The change | Fahtai | 0:55 | Rank every cut by its cost per tonne, cheapest first | v4 7, to trim |
 | 7 | The change | Fahtai | 0:55 | Judge green finance as finance, at the client's size | New form (v4 8's numbers) |
 | 8 | The room | Win | 1:00 | The sustainable share is an output of the limits, paid from the room | New form (v4 9's numbers) |
-| 9 | All three | Win | 0:45 | Label the plan, not the product | New: options rendered 13 Nov, night |
+| 9 | All three | Win | 0:45 | Label the plan, not the product | New: options 9A and 9B rendered 13 Nov, night (9A recommended) |
 | 10 | Close | Pete | 0:40 | The claim | v4 3, moved: the four corners, filled |
 
 ## 1. What the judges score
@@ -841,7 +841,7 @@ keeps the evidence, the look (navy, Plus Jakarta Sans, the prism) and the speake
 | 1 | Open · Pete · 1:00 | What makes a plan sustainable? (closes on the claim) | The case's ESG chip beside the three questions a share can't answer; one proof each; the claim | Objective 5's words; 47% (`fin_lab_homebiz`); 134 t; the spoken line with the capital and outcomes (Key Areas §7; §5.5); the room said once ("Carmen's values come from the room above Adrian's limit") | "How do you test a plan for that?" |
 | 2 | Framework · Pete · 0:50 | PRISM runs the test in five steps | The prism (kept): five steps, each marked with the condition it checks | v4 slide 2's prism; drop the "instead of" lines | "Every test needs a bar first: Profile." |
 | 3 | Limit, room · Pete · 0:50 | Set the limit first; values spend only the room above it | v4 slide 4's scale, plus what the room buys: ≈HK$1.5M of giving funded now; both causes for life would use all of it (M11) | v4 slide 4; §5.10; new export keys | "So what could push them below 95?" |
-| 4 | Limit · Lookbua · 0:55 | Check everything the family owns and earns; price only what can break the limit | The household as one picture: what they own and earn, the shock's priced routes where they land, "the label looks only here" | v4 slide 5's three priced routes; 22 checked; CBAM out; Adrian's bonus (M10a); "assumes Adrian works to 65" (§5.10) | "Three matter; two never touch a fund. First, the home." |
+| 4 | Limit · Lookbua · 0:55 | Check everything they own and earn, not just what a label covers | The household as one picture: what they own and earn, the shock's priced routes where they land, "the label looks only here" | v4 slide 5's three priced routes; 22 checked; CBAM out; Adrian's bonus (M10a); "assumes Adrian works to 65" (§5.10) | "Three matter; two never touch a fund. First, the home." |
 | 5 | Limit · Lookbua · 0:45 | The limit decides before preferences do | v4 slide 6's flip chart (kept) | The yearly price check: ≈5% against 95, ≈11% against 85 in the downturn; the green mortgage refused | "The next route is the business, also where their money can change something." |
 | 6 | Change · Fahtai · 0:55 | Rank every cut by its cost per tonne, cheapest first | v4 slide 7's footprint and cost curve (trimmed) | 108 t recycled PET at parity; the vans 19 t, the only cut that needs a loan; "compostable" stopped | "Only one cut needs a loan. Should it be a green one?" |
 | 7 | Change · Fahtai · 0:55 | Judge green finance as finance, at the client's size | A size scale: each instrument's threshold against her HK$1.5M loan; the van loan that works; the route to the family at the sale | v4 slide 8's numbers (B1–B3); carbon data guards −HK$1.55M (`fin_cust10_leg`); the vans +HK$0.51M at the sale | "The change is in the business. What's left for the funds, where the case asked for 25%?" |
@@ -860,6 +860,25 @@ names and handovers. **Speakers** unchanged: Pete 1–3 and 10, Lookbua 4–5, F
 forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken lines last; then the timed run.
 PowerPoint deferred (Pete, 13 Nov, night). Each new slide replaces its v4 slide only when it is better, so the deck
 works at every step.
+
+**Options for slides 4 and 9** (Claude, 13 Nov, night; `Final/deck/options/`, built by `make_options.py` with the deck's
+own head; side by side with v4 in `Final/deck/build/options/compare-4.png` and `compare-9.png`). Pete chooses.
+- **4A, recommended: the household as one strip, to scale.** What they own (the flat 42%, her half of the business 18%,
+  savings 39%; the case's balance sheet), the green label over the savings only, the three priced routes hanging from
+  where they land; what they earn below (Adrian's pay, his bonus in the downturn `fin_bonus_leg`, inside the limit) and
+  "every odds figure assumes Adrian works to 65". **4B: four objects with the loss as bars.** More pictorial, but its
+  biggest red bar (the market shock) hangs under "the label looks only here", so the picture says the label covers the
+  biggest loss while the bar says two of three routes never touch a fund.
+- **Title changed:** "price only what can break the limit" overclaimed: each priced route on its own mostly doesn't
+  break a limit (the customer's 10% does, at 94.4%). Now "Check everything they own and earn, not just what a label
+  covers"; the bar keeps v4's tested line.
+- **9A, recommended: the Climate Facts card with notes beside it.** A nutrition-facts card, a section per condition
+  (each with its numbers, limit and trigger); beside it the product's label for contrast, the missing prices as
+  decisions, and the dates (the brief's implementation milestones). **9B: the product's label beside the plan's.** Makes
+  the arc explicit, but the dates shrink into the card's footer and the missing prices leave the slide.
+- **Fixed on both before showing:** "0 t claimed" for shares read as "shares do nothing" (§3: never), now "none
+  claimed" beside "a footprint"; "1 futures" now "1 of 3". The card's money lines use the base plan's keys, as v4's
+  slide 10 did; whether they should show the recommended plan instead is open (the close uses the recommendation).
 
 #### Storyline v4 (superseded by v5, 13 Nov, night; kept for each slide's evidence and build history)
 
