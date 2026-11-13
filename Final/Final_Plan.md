@@ -856,8 +856,10 @@ keeps the evidence, the look (navy, Plus Jakarta Sans, the prism) and the speake
 9 → 8 (new form) · 10 → 9 (new form) · 11 (the bars) → backup. The v4 table below keeps each slide's evidence and
 build history.
 
-**Budget:** about 1,150 spoken words (v4: 1,334, ≈10:12 with names at 135 a minute); 8:55 of slides plus about 0:20 of
-names and handovers. **Speakers** unchanged: Pete 1–3 and 10, Lookbua 4–5, Fahtai 6–7, Win 8–9.
+**Budget: 10:00 (Pete, 14 Nov: "our script should be 10 minutes and not 9")**, names and handovers included: about
+1,300 spoken words at 135 a minute (9:40 of speech + ≈0:20 of names). The rule disqualifies past 10:30, so the only margin
+is the rule's 30 seconds: each speaker keeps a marked sentence to drop if the 1-minute warning comes early, and the timed
+run sets the real cap. The extra ≈120 words go to the brief's bullets the talk still misses (the coverage check, 14 Nov). **Speakers** unchanged: Pete 1–3 and 10, Lookbua 4–5, Fahtai 6–7, Win 8–9.
 
 **Build order:** slides 4 and 9 first, as options beside v4's (13 Nov, night, for Pete to choose); then the other new
 forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken lines last; then the timed run.
