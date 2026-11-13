@@ -481,3 +481,17 @@ what it paid for. Seven keys added, all from runs already in `model_runs.md` M9c
   uses slide 4's words.
 - Checked: `numbers.json` before and after differ only by these 7 additions (two reruns of `make_charts.py`);
   `figure-data.md` and every PNG unchanged.
+
+### Final (13 Nov): slide 6's flip test (`Final/final_model.py` `export_final()`; `Final/deck/series.py` `flip6()`)
+
+The plan (§5.7) asked whether the flat's verdict holds at a smaller old-flat discount than the scenario's. It doesn't
+hold at every discount, so slide 6 shows where it flips. Keys added, from new runs of the 2030-31 scenario (M7, all
+together) with the old flat's fall behind newer flats run from 0 to 15% (the scenario's own 15% from 2031, two-thirds of
+it in 2030, the 0.15% a year drag kept; everything else unchanged):
+- `fin_flip_rmp_0..6` and `fin_flip_down_0..6`: the odds at 0, 2.5 ... 15%. The reverse mortgage 91.0% → 89.5%;
+  downsizing 90.1% → 82.7%. The 15% end reproduces M7 exactly (the export stops if it doesn't).
+- `fin_flip_cross` 11% (`fin_flip_cross_x` 11.41): where downsizing crosses the 85 limit (linear between grid points).
+- `fin_down_odds100` 96, `fin_base_odds100` 97, `fin_storm_odds100` 89, `fin_down_more_n` HK$4.07M: the normal-future
+  odds of each route and downsizing's extra inheritance, in slide 6's words (M6).
+- Checked: `numbers.json` before and after differ only by these additions (two reruns); `figure-data.md` and every PNG
+  unchanged.

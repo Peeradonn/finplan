@@ -31,12 +31,12 @@ advance) · REFUSE (costs money or credibility, no real effect shown).
 | B6 | Green lease at the warehouse renewal | Nothing → do it | FINANCE | — | 2027 | 8 |
 | B7 | The sale, 2035–39 | HK$3.0M counted → same, with data and fleet as sale assets | FINANCE | — | 2035–39 | 8 |
 | B8 | Dividend policy for the van saving | Nothing → pay Carmen's half out once the van loan is repaid, agreed with the co-founder | FINANCE (moves money out of a concentrated business) | — | 2033–38 | 8 (one line) |
-| P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee | PAY (Carmen) / within budget (Adrian) | Reallocation | Months 1–3 | 9 |
+| P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee; Adrian 24% (+16% IWDA), Carmen 60% (13 Nov) | PAY (Carmen) / within budget (Adrian) | Reallocation | Months 1–3 | 9 |
 | P2 | What counts as sustainable | "On the SFC list" → a binding, measured outcome rule | — (governance) | — | Months 1–3 | 9, 10 |
 | P3 | Adrian's green bond fund | Allianz 5% → plain global bonds (AGGU) | REFUSE (for prudent money) | Reallocation | Months 1–3 | 9 |
 | P4 | Carmen's green bond fund | Allianz 10% → keep only with an impact report and no entry charge | PAY | — | Months 1–3 | 9 |
 | P5 | MPF low-carbon fund | Unchanged | PAY | — | — | 9 |
-| P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (**27.7%**, settled Win 13 Nov) | — (governance) | — | Months 1–3 | 4, 9 |
+| P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (**26.6%**, 13 Nov: Adrian's EDMW capped at 24% by his 0.5% limit at the 2.09% tracking error slide 9 shows; 27.7% assumed 30%, sized at a 1.42% proxy) | — (governance) | — | Months 1–3 | 4, 9 |
 | P7 | Refusals: clean-energy funds, sustainability-linked bonds, green deposits, risk-changing green bond ETFs, impact claims for listed shares | Thematic funds already refused → the rest added, each with its number | REFUSE | — | — | 9 |
 | H1 | Releasing the flat | 2037, reverse mortgage or downsize, decided then → same, plus a yearly price trigger and a deadline (the building's 50th year: 2046 for a 1996 building) | FINANCE (risk management) | — | Trigger yearly; release by 2046 | 6 |
 | H2 | Green mortgage or green refinancing | Not considered → refuse | REFUSE | — | — | 6 |
@@ -81,6 +81,9 @@ established and point to the run.
   lapses after 31 Mar 2028.
 - **Money (family):** through the sale price (extra profit × the sale multiple × Carmen's share × the plan's 60% haircut)
   and, as a variant, through dividends. Run M2.
+- **Cost per tonne (slide 7's cost curve):** the vans ≈−HK$12,800 a tonne at HK$31/L (13 Nov: area2_business.md §3c's
+  own method, the premium plus a charger annualised at 6% over 8 years, rerun at HK$31/L; it gives −16,400 at the pump
+  list and −9,700 at HK$25/L, as the brief does). LED ≈−HK$2,000, air-con ≈−HK$1,200 (the brief). ESTIMATED.
 - **World:** 26.1 t a year (vans 19.3, LED 4.1, air-con 2.8), 54% of Scope 1+2, against
   replacing them with new diesel vans (the counterfactual we state; owning the project doesn't by itself prove the
   cut additional). Fuel and kWh are measured once running; the tonnes are estimated from them with published factors.
@@ -110,6 +113,8 @@ established and point to the run.
   2026*, p.27, a PDF a judge can open) it would be ≈HK$248K a year on 65.5 t, ≈2.3 HK cents a cup (ESTIMATED), passed
   to customers as an itemised line. Parity is a window, not a fact for good: resin isn't packaging (conversion and
   certified food-contact supply add cost, UNVERIFIED). Not the family's values budget.
+- **Cost per tonne (slide 7):** ≈HK$0 at parity; ≈+HK$2,300 a tonne at the 2025 peak premium (HK$248K ÷ 108 t,
+  13 Nov). ESTIMATED.
 - **World:** ≈108 t a year (Scope 3, purchased goods; ESTIMATED with DESNZ factors).
 - **Caveat:** Phase 2 of the plastics rules would ban plastic tableware regardless; aim recycled content at
   pre-packaged and retail packaging, fibre at tableware.
@@ -144,7 +149,9 @@ established and point to the run.
 - **P3:** Adrian's 1.04-point fee gap against a 0–8bp greenium: saves ≈HK$1,076 a year.
 - **P4:** Carmen's HK$2,153 a year buys bond-by-bond checks; the fund trails its benchmark by ≈1 point a year since 2017;
   keep only with an impact report and the entry charge waived.
-- **Family ESG share:** **27.7%** (candidate A; settled Win 13 Nov). Adrian passes the ≤5bp cost test because
+- **Family ESG share:** **26.6%** (13 Nov, Claude with Pete: candidate A with Adrian's EDMW at 24%, because 0.5% ÷ 2.09% = 24%; at
+  30% his tracking error was ≈0.63%, above his limit. Fees unchanged, as EDMW and IWDA both charge 0.20%. Earlier: 27.7%,
+  settled by Win on 13 Nov on the cost test with a 1.42% proxy). Adrian passes the ≤5bp cost test because
   EDMW = IWDA = 0.20% (0bp gap). Candidate B (24.8%) dropped: existed only to match the case's 25%, contradicting
   the thesis that the share is an output of each person's risk budget.
 

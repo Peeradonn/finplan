@@ -203,6 +203,97 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .pro-mid2 .pro-s{color:var(--ink);margin-top:8px}
 .pro-gauge{display:block}
 
+/* ---- slide 6: the flat, where the limit flips the route (s6- classes; 13 Nov) ---- */
+.s6-body{flex-direction:column;gap:12px;margin-top:14px}
+.s6-grid{display:flex;gap:24px;align-items:flex-start}
+.s6-grid svg{flex:none}
+.s6-rule{flex:1;padding-top:2px}
+.s6-h{font:800 16px/1.3 var(--head);padding-bottom:7px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
+.s6-step{display:flex;gap:12px;margin-bottom:14px}
+.s6-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--S);color:#fff;font:800 15px/28px var(--head);
+  text-align:center}
+.s6-step p{font:500 16px/1.4 var(--text)}
+.s6-step b{font-weight:800}
+.s6-strip{display:flex;gap:36px;border-top:1.5px solid #E2CFD3;padding-top:10px}
+.s6-strip p{font:500 15px/1.4 var(--text);color:var(--slate)}
+.s6-strip p:first-child{flex:none}
+.s6-strip b{color:var(--ink);font-weight:800}
+.s6-strip b.s6-no{color:var(--accent)}
+
+/* ---- slide 7: the business's cost curve (s7- classes; 13 Nov) ---- */
+.s7-body{flex-direction:column;gap:14px;margin-top:14px}
+.s7-grid{display:flex;gap:28px;align-items:flex-start}
+.s7-grid svg{flex:none}
+.s7-side{flex:1;padding-top:22px}
+.s7-item{border-top:1.5px solid var(--ink);padding-top:7px;margin-bottom:16px}
+.s7-item p{font:500 15px/1.4 var(--text);color:var(--ink)}
+.s7-item p.s7-h{font:800 16px/1.3 var(--head);margin-bottom:4px}
+.s7-item p.s7-no{color:var(--accent)}
+
+/* ---- slide 8: the van loan priced as a loan; each kind of finance at her size (s8- classes; 13 Nov) ---- */
+.s8-body{flex-direction:column;gap:14px;margin-top:14px}
+.s8-grid{display:flex;gap:30px;align-items:flex-start}
+.s8-left{flex:none;width:540px}
+.s8-right{flex:1}
+.s8-h{font:800 16px/1.3 var(--head);padding-bottom:7px;border-bottom:1.5px solid var(--ink);margin-bottom:10px}
+.s8-tab{width:100%;border-collapse:collapse}
+.s8-tab td{font:500 14px/1.32 var(--text);padding:5px 6px 5px 0;border-bottom:1px solid #E2CFD3;vertical-align:top}
+.s8-tab td:first-child{font-weight:800;width:132px}
+.s8-tab td:last-child{font-weight:800;width:108px;padding-right:0}
+.s8-tab td.s8-ok{color:var(--I)} .s8-tab td.s8-no{color:var(--accent)}
+.s8-loop{display:flex;gap:22px;align-items:baseline;border-top:1.5px solid var(--ink);padding-top:9px}
+.s8-loop p{font:500 14.5px/1.35 var(--text);flex:1}
+.s8-loop p.s8-lh{flex:none;width:170px;font:800 15px/1.3 var(--head)}
+.s8-loop b{display:block;font:800 22px/1.15 var(--num);color:var(--ink)}
+
+/* ---- slide 9, rebuilt 13 Nov: check, size, price (p9- classes; the older s9- rules above are unused) ---- */
+.p9-body{flex-direction:column;gap:12px;margin-top:14px}
+.p9-grid{display:flex;gap:28px;align-items:flex-start}
+.p9-left{flex:none;width:560px} .p9-right{flex:1}
+.p9-h,.p9-h3{font:800 16px/1.3 var(--head);padding-bottom:6px;border-bottom:1.5px solid var(--ink);margin-bottom:6px}
+.p9-h span,.p9-h3 span{display:inline-block;width:24px;height:24px;border-radius:12px;background:var(--S);color:#fff;
+  font:800 14px/24px var(--head);text-align:center;margin-right:9px}
+.p9-gate,.p9-port{width:100%;border-collapse:collapse}
+.p9-gate th,.p9-port th{font:700 12.5px/1.25 var(--head);color:var(--slate);text-align:left;padding:2px 6px 4px 0;
+  border-bottom:1px solid #E2CFD3;vertical-align:bottom}
+.p9-gate td,.p9-port td{font:500 14px/1.3 var(--text);padding:5px 6px 5px 0;border-bottom:1px solid #EFE6E8;vertical-align:top}
+.p9-gate td:first-child{font-weight:800;width:142px}
+.p9-gate td:last-child{font-weight:800;width:62px}
+.p9-gate td.p9-ok{color:var(--I)} .p9-gate td.p9-no{color:var(--accent)}
+.p9-port th:not(:first-child),.p9-port td:not(:first-child){text-align:right;width:64px}
+.p9-port tr.p9-esg td{font-weight:800;color:var(--I)}
+.p9-port tr.p9-tot td{font-weight:800;border-top:1.5px solid var(--ink);border-bottom:0}
+.p9-note,.p9-why{font:500 13.5px/1.35 var(--text);color:var(--slate);margin-top:6px}
+.p9-why b{color:var(--ink)}
+.p9-out{display:flex;gap:28px;align-items:flex-start;border-top:1.5px solid var(--ink);padding-top:9px}
+.p9-share{flex:none;width:560px;display:flex;gap:16px;align-items:center}
+.p9-share .p9-big{font:800 46px/1 var(--num);color:var(--S)}
+.p9-share p{font:600 15px/1.35 var(--text)}
+.p9-price{flex:1}
+.p9-price .p9-h3{border-bottom:0;padding-bottom:2px;margin-bottom:2px}
+.p9-price p{font:500 14px/1.35 var(--text);margin-top:3px}
+.p9-price b{font-weight:800}
+.p9-price p.p9-h3{font:800 16px/1.3 var(--head);margin-top:0}
+.nw{white-space:nowrap}
+
+/* ---- slide 10, rebuilt 13 Nov: Climate Facts as the brief's four outcomes (p10- classes; the older s10- rules are unused) ---- */
+.p10-body{flex-direction:column;gap:10px;margin-top:12px}
+.p10-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--M)}
+.p10-dash{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+.p10-tile{border:1.5px solid var(--ink);border-top-width:5px;border-radius:4px;padding:10px 16px 11px}
+.p10-th{font:800 17px/1.25 var(--head);margin-bottom:4px} .p10-th span{font-weight:500;color:var(--slate)}
+.p10-v{font:500 16px/1.45 var(--text)} .p10-v b{font-weight:800}
+.p10-v i{font-style:normal;color:var(--slate);font-size:13.5px} .p10-v em{font:700 11px/1 var(--text);letter-spacing:.5px;
+  color:var(--slate);border:1px solid #CBB9BE;border-radius:3px;padding:2px 4px;margin-left:4px;font-style:normal;vertical-align:1px}
+.p10-tr{font:600 14.5px/1.35 var(--text);color:var(--M);margin-top:6px}
+.p10-miss{display:flex;gap:18px;align-items:baseline;border-top:1.5px solid var(--ink);padding-top:8px}
+.p10-miss p{font:500 15px/1.4 var(--text);flex:1}
+.p10-miss p.p10-mh{flex:none;width:165px;font:800 15px/1.3 var(--head)}
+.p10-miss b{display:inline-block;color:#fff;font:800 12px/1 var(--text);letter-spacing:.4px;padding:4px 7px;border-radius:3px;
+  margin-right:6px;text-transform:uppercase}
+.p10-buy{background:var(--I)} .p10-rng{background:var(--P)} .p10-trg{background:var(--S)}
+.p10-foot{font:500 14px/1.4 var(--text);color:var(--slate)} .p10-foot b{color:var(--ink)}
+
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
 .slide.s2-stage{padding:0;display:block;background:#120E0F;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}

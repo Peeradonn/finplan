@@ -35,11 +35,11 @@ an argument; where it disagrees with those files, they win.
 | 3 | Answer | Pete | 0:40 | Put every decision on one measure, green or not | Built (13 Nov): slide 2's tag, filled in; headline joins once §5.1 is settled |
 | 4 | P | Pete | 0:40 | Settle the family's disagreements once, before any option is priced | Built with notes (13 Nov): the room above the limit (§5.4) |
 | 5 | R + I | Lookbua | 0:55 | Check every way risk can reach the family; price only the few that matter | Layout (the scan) |
-| 6 | S: the flat | Lookbua | 0:45 | The guardrails decide before preferences | Placeholder |
-| 7 | S: the business | Fahtai | 0:55 | Most effect per HK$ first | Placeholder |
-| 8 | S: the business | Fahtai | 0:55 | The kind of finance sets the test: judge a green loan as a loan | Placeholder |
-| 9 | S: the portfolio | Win | 1:00 | The sustainable share is an output of the budgets, not a target | Placeholder |
-| 10 | M | Win | 0:45 | Every missing price is a decision, and the plan knows when it's wrong | Placeholder |
+| 6 | S: the flat | Lookbua | 0:45 | The limit decides before preferences do | Built with notes (13 Nov): where the limit flips the route |
+| 7 | S: the business | Fahtai | 0:55 | Rank every cut by its cost per tonne, cheapest first | Built with notes (13 Nov): footprint and cost curve |
+| 8 | S: the business | Fahtai | 0:55 | The kind of finance sets the test: judge a green loan as a loan | Built with notes (13 Nov): the loan, six kinds of finance, the sale |
+| 9 | S: the portfolio | Win | 1:00 | The sustainable share is an output of the limits, not a target | Rebuilt with notes (13 Nov): check, size, price; 26.6% |
+| 10 | M | Win | 0:45 | Every missing price is a decision, and the plan knows when it's wrong | Rebuilt with notes (13 Nov): Climate Facts as the brief's four outcomes |
 | 11 | Close | Pete | 0:40 | [Same storm, our plan: claim under review, §5.2] | Placeholder |
 
 ## 1. What the judges score
@@ -906,7 +906,10 @@ does, not what advisers do. Owner: Pete.
   because it moves money out of the concentrated business. **Proposed:** name it as a recommendation conditional on the
   co-founder, with its stress value; still outside the headline. Owners: Pete, Fahtai.
 
-**5.8 Win's slides 9–10:** three fixes before building, listed at the top of `deck/specs/slides_09_10.md`: the
+**5.8 Win's slides 9–10. Done 13 Nov (Claude, with Pete):** slide 9 rebuilt (EDMW not SFC-authorised, said on the
+slide; Adrian capped at 24%, so the family share is 26.6%; the whole portfolio with weights and fees; the price of values
+as a key); slide 10 rebuilt as the four outcomes with triggers, the limit no longer shown as the result. Win to check
+both and make the notes their own. The review's text, kept for the record: three fixes before building, listed at the top of `deck/specs/slides_09_10.md`: the
 attribution waterfall has the split backwards; Adrian's 30% breaks his 0.5% budget at 2.09% tracking error (cap ≈24%,
 so the family share changes); one portfolio scenario, not two. And slide 10 has 45 seconds: two of the seven figures.
 Owner: Win.
@@ -1035,6 +1038,14 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, night (Pete, Claude): slides 6–10 built.** 6: the test the plan asked for (§5.7) found downsizing breaks
+  the 85 limit only if older flats fall more than ≈11% behind newer ones (the scenario assumes 15%), so the slide shows
+  where the verdict flips, with the yearly price check that measures it (`fin_flip_*`, `series.py` flip6). 7: the
+  footprint and the cost curve (vans at ≈−HK$12,800 a tonne at HK$31/L, recorded in `Decision_List.md` B1; lighter
+  board drawn, not counted). 8: the van loan priced as a loan, six kinds of finance at her size, the route to the
+  family at the sale. 9: rebuilt from Win's (§5.8; the share 26.6%). 10: Climate Facts as the brief's four outcomes.
+  Draft notes on every slide; script ≈1,100 words before the close.
 
 - **13 Nov, evening (Pete, Claude):** framework before the numbers (§5.5 decided). Slide 2 ends on the price tag (one
   per decision: what we recommend, for the children in HK$, for the world in tonnes; then the limit decides), drawn like

@@ -443,6 +443,28 @@ def export_final():
     out["fin_room_use_hk"] = f"HK${p_n['leg_med'] - u_n['leg_med']:.1f}M"  # the same, in the children's median
     out["fin_room_plain_s"] = f"{p_s['odds']:.1%}"                         # notes: plain choices under the scenario
     out["fin_room_use_s"] = f"{(p_s['odds'] - u_s['odds']) * 100:.1f}"     # notes: what the choices use under it
+    # slide 6 (S, the flat; 13 Nov): where the limit flips the route. The scenario has the old flat fall 15% behind
+    # newer flats from 2031 (10% in 2030), on top of its 0.15% a year drag; here that fall runs from 0 to 15%, the
+    # rest of the scenario unchanged. The reverse mortgage barely moves (HKMC counts half the value above HK$8M);
+    # downsizing sells the old flat and buys a newer one, so the gap hits it in full.
+    out["fin_down_odds100"], out["fin_base_odds100"] = f"{round(down['odds'] * 100)}", f"{round(b['odds'] * 100)}"
+    out["fin_storm_odds100"] = f"{round(allr['odds'] * 100)}"            # the reverse mortgage in the downturn
+    out["fin_down_more_n"] = f"HK${down['leg_med'] - b['leg_med']:.2f}M"   # downsizing's extra, normally
+    grid, rm_o, dn_o = (0.0, 0.025, 0.05, 0.075, 0.10, 0.125, 0.15), [], []
+    for i, d in enumerate(grid):
+        def mult_d(y, d=d):
+            return (1 - 0.0015) ** max(y - m.BY, 0) * (1.0 if y < 2030 else (1 - d * 2 / 3 if y == 2030 else 1 - d))
+        rm, dn = run(base, "rmp", mult_d, **sc), run(base, "down", mult_d, **sc)
+        rm_o.append(rm["odds"])
+        dn_o.append(dn["odds"])
+        out[f"fin_flip_rmp_{i}"], out[f"fin_flip_down_{i}"] = f"{rm['odds']:.1%}", f"{dn['odds']:.1%}"
+    if abs(dn_o[-1] - down_s["odds"]) > 1e-12 or abs(rm_o[-1] - allr["odds"]) > 1e-12:
+        sys.exit("slide 6: the 15% end of the flip grid must reproduce the scenario's runs")
+    cross = next((grid[i - 1] + (grid[i] - grid[i - 1]) * (dn_o[i - 1] - 0.85) / (dn_o[i - 1] - dn_o[i])
+                  for i in range(1, len(grid)) if dn_o[i - 1] >= 0.85 > dn_o[i]), None)
+    if cross is None or min(rm_o) < 0.85:
+        sys.exit("slide 6: downsizing no longer crosses the 85 limit inside the grid (or the reverse mortgage does)")
+    out["fin_flip_cross"], out["fin_flip_cross_x"] = f"{cross:.0%}", f"{cross * 100:.2f}"
     return out
 
 
