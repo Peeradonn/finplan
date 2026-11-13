@@ -1112,6 +1112,14 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **14 Nov (Fahtai, Codex): business R/I, option 1 (method first)** in `deck/business-ri/`. After feedback that the
+  first version was empty and insufficiently illustrative, user chose to try the general-method approach first.
+  One shared sequence (scan, measure, carry forward) runs across R and I; each stage says where to look, which
+  measures to obtain and what goes to Select. Carmen is a compact example below. Current navy tokens inherited;
+  source and render of the previous candidate preserved in `original/`. No new model figures or achieved-impact
+  claims. Standalone candidate, not inserted into the timed deck; 115 spoken words. Render and bounds/font checks
+  completed. The packaging-chain alternative remains unbuilt for comparison.
+
 - **13 Nov (Fahtai, Codex): business R/I candidate** in `deck/business-ri/` (`Axis.html`, preview `Axis.png`, editable
   `slide.html` and `slide.css`). The reusable risk scan and value-chain activity trace lead; Carmen's packaging is the
   demonstration; each direction supplies evidence for Select. Customer loss stays conditional and the footprint
