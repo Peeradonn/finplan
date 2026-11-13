@@ -465,6 +465,27 @@ def export_final():
     if cross is None or min(rm_o) < 0.85:
         sys.exit("slide 6: downsizing no longer crosses the 85 limit inside the grid (or the reverse mortgage does)")
     out["fin_flip_cross"], out["fin_flip_cross_x"] = f"{cross:.0%}", f"{cross * 100:.2f}"
+    # slide 6, a normal future (13 Nov, night): the same fall behind newer flats without the downturn, against the
+    # normal limit of 95, on M6's shape (the old flat d lower from 2037, the year of the sale). The normal limit binds
+    # first: downsizing crosses 95 at a smaller gap than it crosses 85 in the downturn. A 1% grid, so the crossing
+    # doesn't move with the grid's spacing; the 0% end must reproduce the base and M6's downsizing.
+    gridn, rmn_o, dnn_o = [i / 100 for i in range(16)], [], []
+    for i, d in enumerate(gridn):
+        mult_n = (lambda d: (lambda y: 1 - d if y >= m.RMP_Y else 1.0))(d)
+        rm, dn = run(base, "rmp", mult_n), run(base, "down", mult_n)
+        rmn_o.append(rm["odds"])
+        dnn_o.append(dn["odds"])
+        out[f"fin_flipn_rmp_{i}"], out[f"fin_flipn_down_{i}"] = f"{rm['odds']:.1%}", f"{dn['odds']:.1%}"
+    if abs(dnn_o[0] - down["odds"]) > 1e-12 or abs(rmn_o[0] - b["odds"]) > 1e-12:
+        sys.exit("slide 6: the 0% end of the normal-future grid must reproduce the base and M6's downsizing")
+    crossn = next((gridn[i - 1] + (gridn[i] - gridn[i - 1]) * (dnn_o[i - 1] - 0.95) / (dnn_o[i - 1] - dnn_o[i])
+                   for i in range(1, len(gridn)) if dnn_o[i - 1] >= 0.95 > dnn_o[i]), None)
+    if crossn is None or min(rmn_o) < 0.95:
+        sys.exit("slide 6: downsizing no longer crosses the 95 limit inside the normal grid (or the reverse mortgage does)")
+    if crossn >= cross:
+        sys.exit("slide 6: the normal limit no longer binds first; the slide's words assume it does")
+    out["fin_flipn_cross"], out["fin_flipn_cross_x"] = f"{crossn:.0%}", f"{crossn * 100:.2f}"
+    out["fin_flipn_rmp100"], out["fin_flipn_down100"] = f"{round(rmn_o[-1] * 100)}", f"{round(dnn_o[-1] * 100)}"
     return out
 
 

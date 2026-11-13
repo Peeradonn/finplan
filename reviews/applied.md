@@ -495,3 +495,18 @@ it in 2030, the 0.15% a year drag kept; everything else unchanged):
   odds of each route and downsizing's extra inheritance, in slide 6's words (M6).
 - Checked: `numbers.json` before and after differ only by these additions (two reruns); `figure-data.md` and every PNG
   unchanged.
+
+### Final (13 Nov, night): slide 6's flip in a normal future (`Final/final_model.py` `export_final()`; `Final/deck/series.py` `flip6()`)
+
+The exported flip (`fin_flip_cross`, 11%) was the downturn against the 85 limit only. The other session (13 Nov) noted
+that M6 already has downsizing at 93.6% in a normal future with a 10% gap, below the normal limit of 95. Run: the base
+(`switch_89`), the old flat d lower than newer flats from 2037 (M6's shape), d from 0 to 15% in 1% steps, both routes.
+Keys added:
+- `fin_flipn_rmp_0..15` and `fin_flipn_down_0..15`: the odds. The reverse mortgage 96.8% → 96.1%; downsizing
+  96.2% → 91.9%. The 0% end reproduces the base and M6's downsizing exactly (the export stops if it doesn't).
+- `fin_flipn_cross` 5% (`fin_flipn_cross_x` 5.49): where downsizing crosses 95. The export stops if the normal crossing
+  is no longer below the downturn's (slide 6's words assume the normal limit binds first). A scratch run with the
+  scenario's gap shape and drag but no shocks crosses at 4.0%.
+- `fin_flipn_rmp100` 96, `fin_flipn_down100` 92: the ends in whole futures in 100, slide 6's labels.
+- Checked: `numbers.json` before and after differ only by these 36 additions (one rerun of `make_charts.py`; the seed
+  is fixed); `figure-data.md` and every PNG unchanged.

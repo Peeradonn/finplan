@@ -124,30 +124,34 @@ def bars3():
 # slide 6: where the limit flips the flat's route (Pete, 13 Nov). In the 2030-31 downturn, the odds of each route as older
 # flats fall 0-15% behind newer ones (numbers.json fin_flip_rmp_i, fin_flip_down_i at 0, 2.5 ... 15%), the limit of 85
 # and the crossing (fin_flip_cross_x). Units = px in slide 6's SVG.
-F6_X0, F6_X1, F6_Y0, F6_Y1, F6_LO, F6_HI = 70.0, 600.0, 330.0, 40.0, 80.0, 92.0
+F6_X0, F6_X1, F6_Y0, F6_Y1, F6_LO, F6_HI = 70.0, 600.0, 330.0, 40.0, 80.0, 98.0
 
 
 def flip6():
-    """[[f6_rmp]] [[f6_down]] polyline points; [[f6_rmp_ey]] [[f6_down_ey]] their ends' y; [[f6_cross]] the crossing's
-    x; [[f6_lim]] the y of 85; [[f6_shade_w]] the width from the crossing to the chart's end; [[f6_x0]] ... [[f6_x15]]
-    and [[f6_y80]] [[f6_y85]] [[f6_y90]] for the axes."""
+    """The downturn against 85 (fin_flip_*, a 2.5% grid) and, from 13 Nov night, a normal future against 95
+    (fin_flipn_*, a 1% grid), where the normal limit binds first.
+    [[f6_rmp]] [[f6_down]] (downturn) and [[f6n_rmp]] [[f6n_down]] (normal) polyline points; [[f6_rmp_ey]] etc. their
+    ends' y; [[f6_cross]] [[f6n_cross]] each crossing's x, [[f6_cross_y]] the downturn crossing's y (on 85);
+    [[f6n_shade_w]] the width from the normal crossing to the chart's end; [[f6_x0]] ... [[f6_x15]] and
+    [[f6_y80]] [[f6_y85]] [[f6_y90]] [[f6_y95]] for the axes; [[f6_lim]] the y of 85, [[f6_limn]] of 95."""
     nums = json.load(open(NUMBERS, encoding="utf-8"))
     x = lambda d: F6_X0 + d / 15.0 * (F6_X1 - F6_X0)
     y = lambda v: F6_Y0 - (v - F6_LO) / (F6_HI - F6_LO) * (F6_Y0 - F6_Y1)
     tok = {}
-    for line in ("rmp", "down"):
-        vals = [float(nums[f"fin_flip_{line}_{i}"].rstrip("%")) for i in range(7)]
-        if not all(F6_LO <= v <= F6_HI for v in vals):
-            raise ValueError(f"slide 6: the {line} line runs off the chart; change F6_LO or F6_HI")
-        tok[f"f6_{line}"] = " ".join(f"{x(2.5 * i):.1f},{y(v):.1f}" for i, v in enumerate(vals))
-        tok[f"f6_{line}_ey"] = f"{y(vals[-1]):.1f}"
-    c = float(nums["fin_flip_cross_x"])
-    tok["f6_cross"], tok["f6_shade_w"] = f"{x(c):.1f}", f"{F6_X1 - x(c):.1f}"
+    for pre, key, n, step in (("f6", "fin_flip", 7, 2.5), ("f6n", "fin_flipn", 16, 1.0)):
+        for line in ("rmp", "down"):
+            vals = [float(nums[f"{key}_{line}_{i}"].rstrip("%")) for i in range(n)]
+            if not all(F6_LO <= v <= F6_HI for v in vals):
+                raise ValueError(f"slide 6: the {pre} {line} line runs off the chart; change F6_LO or F6_HI")
+            tok[f"{pre}_{line}"] = " ".join(f"{x(step * i):.1f},{y(v):.1f}" for i, v in enumerate(vals))
+            tok[f"{pre}_{line}_ey"] = f"{y(vals[-1]):.1f}"
+    c, cn = float(nums["fin_flip_cross_x"]), float(nums["fin_flipn_cross_x"])
+    tok["f6_cross"], tok["f6n_cross"], tok["f6n_shade_w"] = f"{x(c):.1f}", f"{x(cn):.1f}", f"{F6_X1 - x(cn):.1f}"
     for d in (0, 5, 10, 15):
         tok[f"f6_x{d}"] = f"{x(d):.1f}"
-    for v in (80, 85, 90):
+    for v in (80, 85, 90, 95):
         tok[f"f6_y{v}"] = f"{y(v):.1f}"
-    tok["f6_lim"] = tok["f6_y85"]
+    tok["f6_lim"], tok["f6_limn"], tok["f6_cross_y"] = tok["f6_y85"], tok["f6_y95"], tok["f6_y85"]
     return tok
 
 
