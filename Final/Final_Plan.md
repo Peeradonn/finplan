@@ -864,6 +864,19 @@ forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken 
 PowerPoint deferred (Pete, 13 Nov, night). Each new slide replaces its v4 slide only when it is better, so the deck
 works at every step.
 
+**14 Nov, later: all ten v5 slides built** in `Final/deck/options/` (the whole talk on one sheet:
+`build/options/v5-contact.png`; each beside the v4 slide it replaces: `compare-1.png` to `compare-10.png`). Pete approved
+1–4 and chose the card to show our recommended plan (`fin_new_*`: 97 in 100, 91 in the downturn). New forms: **7** each
+green instrument at the size it's built for against her HK$1.5M loan (log scale), the plain loan that works, the route to
+the family at the sale; **8** the two parents' savings as bars sized by their limits (26.6% falls out), the product check
+with pass and fail marks, the price from the room. Kept and edited: **5** (the flat), **6** (the method for any business
+replaces the fibre trap), **10** (v4's corners as the close, the claim as its title, slide references renumbered).
+Closing bars now have the rule as subject, not "For the Wongs". Spoken words cut to the slots: **1,179** (≈8:44 at 135 a
+minute, ≈9:05 with names; Pete 466, Lookbua 231, Fahtai 245, Win 237); each speaker still makes the words their own.
+**Open:** slide 5's flip runs on the family's current plan (keep the flat: 89 in 100 in the downturn) while the card
+shows our plan (91): rerun the flip on our plan, or say on slide 5 which plan it is. **Next:** move v5 into the deck
+(`src/01_talk.html`), v4's slide 11 bars to backup, then the timed run.
+
 **14 Nov: Pete chose 4A and 9A, then flagged 4A as a Wong case again** (the sixth drift): cover the Wongs' figures and
 nothing showed what the Risk step does. Rebuilt in `Final/deck/options/` with the step for any client first (list what
 they own and earn; trace each route to HK$; drop what can't reach them and test the ordinary risks anyway; price the

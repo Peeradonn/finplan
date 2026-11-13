@@ -524,3 +524,13 @@ Keys added:
   the plan as it stands in the scenario, against the same plan in today's scenario.
 - Checked: `numbers.json` before and after differ only by these 9 additions (one rerun of `make_charts.py`; the seed
   is fixed); `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov): the recommended plan's odds for the Climate Facts card (`Final/final_model.py` `export_final()`)
+
+Pete chose that slide 9's card shows our recommended plan, as the close does. Run: the new plan (the vans at HK$31/L
+through the sale, candidate A's fees, the 20-year scholarship fund; the reverse-mortgage route), normally and in the
+2030–31 scenario, on the base (`switch_89`), as in `model_runs.md`'s recommendation and M8. Keys added:
+- `fin_new_odds` 97.4%, `fin_new_storm_odds` 91.0%; `fin_new_odds100` 97, `fin_new_storm_odds100` 91 (whole futures
+  in 100, the card's words); `fin_new_leg89` HK$13.8M.
+- Checked: `numbers.json` before and after differ only by these 5 additions (one rerun of `make_charts.py`; the seed is
+  fixed); `figure-data.md` and every PNG unchanged.

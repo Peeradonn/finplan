@@ -458,6 +458,13 @@ def export_final():
     out["fin_bonus_leg"] = ("−" if bon["leg_med"] < allr["leg_med"] else "+") + f"HK${abs(bon['leg_med'] - allr['leg_med']):.2f}M"
     out["fin_bonus_pts"] = f"{(bon['odds'] - allr['odds']) * 100:+.1f}".replace("-", "−")
     out["fin_bonus_sodds"] = f"{bon['odds']:.1%}"                         # the plan in the downturn, bonus lost
+    # slide 9 (Climate Facts, Pete 14 Nov: the card shows our recommended plan, as the close does): the new plan (vans at
+    # HK$31/L through the sale, candidate A's fees, the 20-year scholarship fund), normally and in the 2030-31 downturn.
+    nw = run(base, biz=m.BIZ + sale_uplift(SAVE), r_eq=r_eq_for(FEE_SAVED), inflows=scholarship_funded())
+    ns = stressed(base, sc, mult, biz_add=sale_uplift(SAVE), flows=scholarship_funded(), r_eq=r_eq_for(FEE_SAVED))
+    out["fin_new_odds"], out["fin_new_storm_odds"] = f"{nw['odds']:.1%}", f"{ns['odds']:.1%}"
+    out["fin_new_odds100"], out["fin_new_storm_odds100"] = f"{round(nw['odds'] * 100)}", f"{round(ns['odds'] * 100)}"
+    out["fin_new_leg89"] = f"HK${nw['leg_med']:.1f}M"
     # slide 6 (S, the flat; 13 Nov): where the limit flips the route. The scenario has the old flat fall 15% behind
     # newer flats from 2031 (10% in 2030), on top of its 0.15% a year drag; here that fall runs from 0 to 15%, the
     # rest of the scenario unchanged. The reverse mortgage barely moves (HKMC counts half the value above HK$8M);
