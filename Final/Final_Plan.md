@@ -21,26 +21,25 @@ an argument; where it disagrees with those files, they win.
 | **Client** | The Wongs, the competition's case family, introduced from scratch |
 | **Comparison** | "The label approach": our specified fund-and-label-led plan (§2), not a claim about how advisers usually work |
 | **Framework** | PRISM: **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor (§4.2) |
-| **Thesis** | **A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and claims only what it changes.** Three conditions a plan passes or fails: the first is outside in, the third inside out, the second the values budget; one measure for every decision is how each is checked (Pete, 13 Nov, night; §4.1) |
+| **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.48M the family's; HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline is open (§5.1):** +HK$2.44M as drafted, ≈+HK$1.05M against a fair comparison |
 | **Now** | Pete decides §5 today. Slides 6–11 built with their words by Fri 13; first timed run Sat 14. Only slide 1 has its spoken words so far |
 
-**The talk** (storyline v4, 11 Nov; slide 1 revised 12 Nov; rows in §4.5):
+**The talk** (storyline v5, Pete, 13 Nov, night; rows in §4.5; v4's slide numbers in brackets):
 
-| # | Step | Who | Time | Title (draft) | Built? |
+| # | Act | Who | Time | Title (draft) | Built? |
 |---|---|---|---|---|---|
-| 1 | Open | Pete | 1:05 | What makes a plan sustainable? (closes on the claim) | Yes, with notes (13 Nov); one spoken sentence previews the answer (§5.5) |
-| 2 | PRISM | Pete | 1:00 | PRISM: look both ways | Built with notes (13 Nov): ends on the price tag that slide 3 fills in |
-| 3 | The rule | Pete | 0:45 | Price every decision both ways; its corner says what to do | Rebuilt (13 Nov, night; option A): the limit, then the four corners, the Wongs' decisions as entries pointing to their slides |
-| 4 | P | Pete | 0:45 | Set the limit first; values spend only the room above it | Rebuilt with notes (13 Nov, late): the Profile step for any client, then the Wongs |
-| 5 | R + I | Lookbua | 0:55 | Check every way risk can reach the family; price only the few that matter | Layout (the scan) |
-| 6 | S: the flat | Lookbua | 0:45 | The limit decides before preferences do | Built with notes (13 Nov); redrawn 13 Nov, night: the normal limit binds first, at ≈5% (≈11% for 85 in the downturn) |
-| 7 | S: the business | Fahtai | 0:55 | Rank every cut by its cost per tonne, cheapest first | Built with notes (13 Nov): footprint and cost curve |
-| 8 | S: the business | Fahtai | 0:55 | The kind of finance sets the test: judge a green loan as a loan | Built with notes (13 Nov): the loan, six kinds of finance, the sale |
-| 9 | S: the portfolio | Win | 1:00 | The sustainable share is an output of the limits, not a target | Rebuilt with notes (13 Nov): check, size, price; 26.6% |
-| 10 | M | Win | 0:45 | Every missing price is a decision, and the plan knows when it's wrong | Rebuilt with notes (13 Nov): Climate Facts as the brief's four outcomes |
-| 11 | Close | Pete | 0:40 | A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and claims only what it changes (the thesis, Pete, 13 Nov, night) | Built with notes (13 Nov, night): slide 3's former bar chart, every decision on one measure; the headline joins once §5.1 is settled |
+| 1 | Open | Pete | 1:00 | What makes a plan sustainable? (closes on the claim) | v4 1, to rework: the chip beside the three questions |
+| 2 | Framework | Pete | 0:50 | PRISM runs the test in five steps | v4 2, to trim |
+| 3 | The limit, the room | Pete | 0:50 | Set the limit first; values spend only the room above it | v4 4, plus what the room buys (M11) |
+| 4 | The limit | Lookbua | 0:55 | Check everything the family owns and earns; price only what can break the limit | New: options rendered 13 Nov, night |
+| 5 | The limit | Lookbua | 0:45 | The limit decides before preferences do | v4 6, kept |
+| 6 | The change | Fahtai | 0:55 | Rank every cut by its cost per tonne, cheapest first | v4 7, to trim |
+| 7 | The change | Fahtai | 0:55 | Judge green finance as finance, at the client's size | New form (v4 8's numbers) |
+| 8 | The room | Win | 1:00 | The sustainable share is an output of the limits, paid from the room | New form (v4 9's numbers) |
+| 9 | All three | Win | 0:45 | Label the plan, not the product | New: options rendered 13 Nov, night |
+| 10 | Close | Pete | 0:40 | The claim | v4 3, moved: the four corners, filled |
 
 ## 1. What the judges score
 
@@ -193,8 +192,8 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 
 ### 4.1 The thesis
 
-> **A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and
-> claims only what it changes.** (Pete, 13 Nov, night)
+> **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values
+> only from the room above its limits.** (Pete, 13 Nov, night; reordered with storyline v5)
 
 It answers the open's question, *What makes a plan sustainable?*, with three conditions a plan passes or fails. Our case
 asks for a share of ESG products ("20% to 25% of investable assets … through appropriate product selection", objective
@@ -204,19 +203,19 @@ checked, and says which.
 | Condition | Direction | What a planner checks, for any client | The Wongs' proof |
 |---|---|---|---|
 | **1. Holds its limits when climate hits** | Outside in; limits first | Everything the family owns and earns (the home, the business, the savings, the income) in a normal future and the stress scenario; no choice may break the limits (95 in 100 normally, 85 in the 2030–31 scenario), however green | 47% of the shock's loss lands on the home and the business, where no fund share reaches; downsizing breaks their limit once older flats fall ≈5% behind newer ones (≈11% for the 85 limit in the downturn; slide 6) |
-| **2. Pays for values only from the room above them** | The values budget | The room between the plan with ordinary choices and the limit; each values choice priced in the same units; the parents agree once, in the mandate, how much of the room to spend | Room 2.7 points; they use 0.9, ≈HK$1.47M of what the children inherit (M9c) |
-| **3. Claims only what it changes** | Inside out | Each decision's effect on the world against a stated counterfactual, measured or estimated; a footprint, a rating or a label is not a change | ≈134 t a year of cuts we can show, all in the business (108 t of it recycled PET at today's parity); the funds: a footprint, no additional impact quantified |
+| **2. Claims only what it changes** | Inside out | Each decision's effect on the world against a stated counterfactual, measured or estimated; a footprint, a rating or a label is not a change | ≈134 t a year of cuts we can show, all in the business (108 t of it recycled PET at today's parity); the funds: a footprint, no additional impact quantified |
+| **3. Pays for values only from the room above its limits** | The values budget | The room between the plan with ordinary choices and the limit; each values choice priced in the same units; the parents agree once, in the mandate, how much of the room to spend | Room 2.7 points; they use 0.9, ≈HK$1.47M of what the children inherit (M9c) |
 
 - **How the three are checked: one measure for every decision.** Each decision, green or not, gets both price tags (what
   the children inherit, and what it changes in the world) against its ordinary choice; its corner says what to do and
   what may be claimed (§4.2, test 9). It is the instrument, not a fourth condition.
 - **Where the directions meet, act first** (the loop): the business's carbon is its listed customers' reported Scope 3,
-  so an effect under the third condition comes back as a risk under the first, to the sale price.
-- **PRISM runs the test:** P sets the limits and measures the room (conditions 1 and 2); R checks the first; I measures
-  what the third may claim; S prices each option on the one measure and keeps those that pass all three; M re-checks
+  so an effect under the change comes back as a risk under the limit, to the sale price.
+- **PRISM runs the test:** P sets the limits and measures the room (the first and third conditions); R checks the
+  first; I measures what the second may claim; S prices each option on the one measure and keeps those that pass all three; M re-checks
   them and restates claims when the data improves.
 - **Where it lands depends on the client:** a salaried family who rents may have little room above the limit, so the
-  second condition allows only choices that cost nothing, and the first lands on their income and MPF (our reasoning,
+  room allows only choices that cost nothing, and the limit lands on their income and MPF (our reasoning,
   not a run). The same rules giving a different verdict is what makes it a framework.
 
 **Open before the claim is safe** (Claude, 13 Nov, night):
@@ -226,7 +225,7 @@ checked, and says which.
   limit; his employer's own climate exposure is a missing price (ask Adrian). His job itself isn't a climate route (any
   planner draws it) but it is the plan's largest risk: lost at the end of 2030 with no work again, the plan falls to
   45.4% normally and 22.5% in the downturn. Every odds figure on the slides assumes he works to 65. Decisions: §5.10.
-- ~~The second condition never binds on the Wongs~~ **Shown (Claude, 13 Nov, night; M11).** The room above the limit
+- ~~The room never binds on the Wongs~~ **Shown (Claude, 13 Nov, night; M11).** The room above the limit
   pays for about HK$1.46M of giving funded now, with Carmen's ESG funds (HK$1.74M with plain funds). Carmen's fuller
   wish, both causes the case names (education and environment) for 39 years each, funded now (HK$1.48M), uses all of
   it (94.9%, at the limit within sampling error); 20 years each fits (96.1%); the same awards pledged from cash flow
@@ -239,7 +238,7 @@ checked, and says which.
   shocks); in the downturn it crosses 85 at 11.4%. The reverse mortgage passes both at every gap (≥96.1% normally,
   ≥89.5% in the downturn). Slide 6 shows both limits; the normal-future keys (`fin_flipn_*`) are being exported.
 
-- **Spoken:** the claim closes slide 1; slide 2 shows where PRISM checks each condition; slide 11 returns to the claim.
+- **Spoken:** the claim closes slide 1; slide 2 shows where PRISM checks each condition; slide 10 returns to the claim.
   The cold-read test: after slides 1–4, can people who've never seen the case say the three conditions?
 - **Why it changed** (13 Nov, night, the third pass; Pete: "isn't this just a simple thing all good financial planners
   would do?"). "Sustainable is a test the whole plan passes, not a label its products carry" restated the brief's own
@@ -249,12 +248,14 @@ checked, and says which.
   preferences "in a second step": ESMA35-43-3172 para 81, `research/industry_practice.md` §6, not re-checked); the
   values budget is goals-based planning's aspirational bucket (§9); one measure is the brief's "by how much". A claim no
   competent judge would dispute can't carry the 40 innovation marks, and the panel would hear its own premise read
-  back. The new line keeps "a test" and says what the test is. The second condition is the one a competent person could
+  back. The new line keeps "a test" and says what the test is. The room is the condition a competent person could
   argue with ("my values aren't discretionary"); the answer: the family may lower its limit, explicitly, both parents
   signing. "Not a label" is dropped: the title says it, and the open's green chip shows it. Earlier passes the same day:
   "A label tells you what a product is called; our framework shows what each decision does …" (restated the topic
   clause by clause); "Limits first. A budget for values. One measure for every decision." (ours, but it dropped the two
-  directions, which now sit inside the first and third conditions).
+  directions, which now sit inside the limit and the change). **Reordered the same night** with storyline v5
+  (Pete): the limit, the change, the room, the order a planner decides in (protect first, take the real changes,
+  then pay for values from what's left) and the order the speakers present.
 - **Words not to use:** "safety first" (an existing school of retirement planning, Pfau's, which locks in a guaranteed
   floor; our limits are odds, the other school); "plain option" (team jargon: say "the ordinary choice"); "usually" about
   advisers (the share is our case's ask, not a claim about practice).
@@ -265,8 +266,8 @@ checked, and says which.
   mandate.
 
 **What judges should leave with:**
-1. A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and
-   claims only what it changes: three conditions, true for any client, each checked on one measure.
+1. A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values
+   only from the room above its limits: three conditions, true for any client, each checked on one measure.
 2. For this family the lever isn't the fund: all ≈134 t a year of the cuts we quantified come from the business (108 t of
    them recycled PET at today's price parity).
 3. ~~In the same storm the labelled plan falls below the family's floor and ours doesn't~~: holds only if the labelled
@@ -375,8 +376,8 @@ checked; ≈170 spoken words):**
    each aligned to its card: `fin_lab_homebiz` (47% of a climate shock's loss lands on the home and business, where no
    fund share reaches; MEASURED on an illustrative shock, each part run alone) and 134 t a year of carbon cuts we can
    measure, all in the business, none measured in the funds (ESTIMATED, `Decision_List.md`).
-5. **The claim:** "A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them, and claims only what it changes." The two cards prove the first and third conditions; the second is proved on
-   slide 4 (to revisit with the new claim: a third card, or one spoken line).
+5. **The claim:** "A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits." The two cards prove the limit and the change; the room is said in one spoken line
+   (Pete, 13 Nov, night) and proved on slide 3.
 
 The net-worth chart left the open (third pass, Pete): it was the slide's biggest element yet one family's model
 output, it proved only the first test, and it showed a loss our plan doesn't recover. The same shock is on backup 12.
@@ -778,7 +779,7 @@ are the planning process with the brief's six areas inside. A practitioner will 
 - **The definition: three conditions a plan passes or fails** (§4.1). Each borrows something known (a stress floor,
   goals-based planning's surplus, a counterfactual for impact). What we didn't find published (one search each, §9;
   never say "first"): the three together as the test of a sustainable plan, and values paid only from the room above
-  the limit, which also settles Adrian against Carmen. The second condition is the one a competent person could argue
+  the limit, which also settles Adrian against Carmen. The room is the condition a competent person could argue
   with, which is why it carries the thesis.
 - **One measure for every decision.** The vans in Carmen's business, the ESG funds, the loan label, the scholarship and
   the flat are all priced the same way: what the children inherit (median, today's HK$) and the odds the money lasts,
@@ -816,7 +817,51 @@ what to do"; (2) the loop; (3) the framework catching a fund on the SFC's ESG li
 (4) we don't label our own result; (5) the client's own "compostable" label as a risk; (6) dates, not just weights (the
 waiver 2028, the lease 2027, the feed-in tariff 2033, the building's 50th year 2046, the sale 2035–39).
 
-### 4.5 Storyline v4 (about 8:55 spoken; about 9:15 with names and handovers)
+### 4.5 Storyline v5 (Pete, 13 Nov, night: "revamp ... push for the best"; about 9:15 with names and handovers)
+
+**Why v5.** v4's slides held the right evidence but didn't build. Its titles were parallel rules. Each slide opened "For
+any client" and closed "For the Wongs", so the story reset eight times. Slide 3 showed every answer before the work,
+and slide 11 showed it again. Five slides were documents, not talk slides (3, 5, 8, 9, 10: a grid, tables, tiles). v5
+keeps the evidence, the look (navy, Plus Jakarta Sans, the prism) and the speakers' order, and changes the structure:
+1. **An arc from the product's label to the plan's label.** Slide 1 opens on the case's ask, a green ESG chip on a share
+   of products, which can't answer any of the three questions. Slide 9 closes the arc with Climate Facts as one card,
+   the plan's own label: a line per condition, each earned, tagged and triggered. "Beyond Green Labels", answered with
+   an object.
+2. **Three acts in the thesis's order:** the limit (slides 3–5), the change (6–7), the room (8). It is the order a
+   planner decides in (protect first, take the real changes, then pay for values from what's left), and the speakers'.
+3. **A chain of questions.** Each slide's last spoken line asks what the next slide answers. The next speaker's first
+   line answers it, instead of "For any client". The title stays the rule; the bar stays the slide's point.
+4. **One picture per slide.** Tables go to backup; the brief's required items stay on screen as pictures with their
+   numbers on them.
+5. **The answer comes once, after the work.** v4's slide 3 (the four corners, filled) becomes the close, so the
+   refusals read as one rule and every decision shows its HK$ and tonnes. v4's slide 11 bars go to backup.
+
+| # | Act · who · time | Title (a rule for any client) | The one picture | Must keep (v4, the plan) | Hands off with |
+|---|---|---|---|---|---|
+| 1 | Open · Pete · 1:00 | What makes a plan sustainable? (closes on the claim) | The case's ESG chip beside the three questions a share can't answer; one proof each; the claim | Objective 5's words; 47% (`fin_lab_homebiz`); 134 t; the spoken line with the capital and outcomes (Key Areas §7; §5.5); the room said once ("Carmen's values come from the room above Adrian's limit") | "How do you test a plan for that?" |
+| 2 | Framework · Pete · 0:50 | PRISM runs the test in five steps | The prism (kept): five steps, each marked with the condition it checks | v4 slide 2's prism; drop the "instead of" lines | "Every test needs a bar first: Profile." |
+| 3 | Limit, room · Pete · 0:50 | Set the limit first; values spend only the room above it | v4 slide 4's scale, plus what the room buys: ≈HK$1.5M of giving funded now; both causes for life would use all of it (M11) | v4 slide 4; §5.10; new export keys | "So what could push them below 95?" |
+| 4 | Limit · Lookbua · 0:55 | Check everything the family owns and earns; price only what can break the limit | The household as one picture: what they own and earn, the shock's priced routes where they land, "the label looks only here" | v4 slide 5's three priced routes; 22 checked; CBAM out; Adrian's bonus (M10a); "assumes Adrian works to 65" (§5.10) | "Three matter; two never touch a fund. First, the home." |
+| 5 | Limit · Lookbua · 0:45 | The limit decides before preferences do | v4 slide 6's flip chart (kept) | The yearly price check: ≈5% against 95, ≈11% against 85 in the downturn; the green mortgage refused | "The next route is the business, also where their money can change something." |
+| 6 | Change · Fahtai · 0:55 | Rank every cut by its cost per tonne, cheapest first | v4 slide 7's footprint and cost curve (trimmed) | 108 t recycled PET at parity; the vans 19 t, the only cut that needs a loan; "compostable" stopped | "Only one cut needs a loan. Should it be a green one?" |
+| 7 | Change · Fahtai · 0:55 | Judge green finance as finance, at the client's size | A size scale: each instrument's threshold against her HK$1.5M loan; the van loan that works; the route to the family at the sale | v4 slide 8's numbers (B1–B3); carbon data guards −HK$1.55M (`fin_cust10_leg`); the vans +HK$0.51M at the sale | "The change is in the business. What's left for the funds, where the case asked for 25%?" |
+| 8 | Room · Win · 1:00 | The sustainable share is an output of the limits, paid from the room | Each parent's savings sized by their limit; 26.6% falls out; the US$0 fund struck through; the price of values drops into slide 3's room | Weights and fees on the picture (Key Areas §7); Carmen's ESG funds as alignment from the budget, never impact; no credit for ESG in a downturn | "Every one of these verdicts rests on prices that will move." |
+| 9 | All three · Win · 0:45 | Label the plan, not the product | Climate Facts as one card: a line per condition with its number, tag and trigger; missing prices as decisions | v4 slide 10's content, regrouped by condition (the brief's dashboard); "assumes Adrian works to 65" | "So, what makes a plan sustainable?" |
+| 10 | Close · Pete · 0:40 | The claim | v4 slide 3's four corners, filled: every decision once, with its HK$ and tonnes; the refusals as one rule; the capital | v4 slide 3's fixes: the flat's yearly check at ≈5%; carbon data's guard; ESG funds in the label corner; the headline joins once §5.1 is settled | — |
+
+**Old to new:** v4 1 → 1 · 2 → 2 · 3 → 10 (the close) · 4 → 3 · 5 → 4 (new form) · 6 → 5 · 7 → 6 · 8 → 7 (new form) ·
+9 → 8 (new form) · 10 → 9 (new form) · 11 (the bars) → backup. The v4 table below keeps each slide's evidence and
+build history.
+
+**Budget:** about 1,150 spoken words (v4: 1,334, ≈10:12 with names at 135 a minute); 8:55 of slides plus about 0:20 of
+names and handovers. **Speakers** unchanged: Pete 1–3 and 10, Lookbua 4–5, Fahtai 6–7, Win 8–9.
+
+**Build order:** slides 4 and 9 first, as options beside v4's (13 Nov, night, for Pete to choose); then the other new
+forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken lines last; then the timed run.
+PowerPoint deferred (Pete, 13 Nov, night). Each new slide replaces its v4 slide only when it is better, so the deck
+works at every step.
+
+#### Storyline v4 (superseded by v5, 13 Nov, night; kept for each slide's evidence and build history)
 
 Evidence: **HAVE** (in a brief, checked) · **CHECK** (confirm at a primary source) · **MODEL** (`model_runs.md`; on a
 slide only once in `export_numbers()`) · **CASE** · **OPEN**. The title is the idea for any client; "The step" is what any
@@ -904,8 +949,8 @@ exporting to the EU (not built; its verdicts need checking before anyone says th
 **Decided:** the client is the Wongs (4–5 Nov); Carmen owns 50% (9 Nov); the base is `switch_89`, price tags lead with
 the inheritance in HK$ (9 Nov); the US$0 fund on stage in the record-only wording, the manager not named aloud (9 and 11
 Nov); look A, the prism stage and badge (11 Nov); storyline v4 (11 Nov) with slide 1 revised (12 Nov); **13 Nov:** the
-thesis "A plan is sustainable if it holds its limits when climate hits, pays for values only from the room above them,
-and claims only what it changes" (night; it replaced "Sustainable is a test the whole plan passes, not a label its
+thesis "A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for
+values only from the room above its limits" (night, reordered with storyline v5; it replaced "Sustainable is a test the whole plan passes, not a label its
 products carry", which restated the brief; §4.1); the one measure and
 the values budget as the spine, the five letters as the route (§4.4); slide 1 rebuilt around the claim; slide 3 as one chart with every decision on it (§4.5). The spine
 includes §5.4's mechanism (the floors size the budget): Pete to confirm the numbers on slide 4. **Recommended,
@@ -959,8 +1004,8 @@ build, or slide 3 before PRISM. Owner: Pete.
 **5.6 One thesis line, safe under the audit.** Slide 1 closes "Test the whole plan, then choose the products"; slide 2
 says "Look both ways" with "instead of …" contrasts; the close says "A label says what it's called. We showed what it
 does." The audit found the "instead of" lines and the absolute label line unsupported as claims about other advisers.
-**Decided 13 Nov (night):** the thesis is "A plan is sustainable if it holds its limits when climate hits, pays for
-values only from the room above them, and claims only what it changes" (§4.1); the audit's line, then "Sustainable is
+**Decided 13 Nov (night):** the thesis is "A plan is sustainable if it holds its limits when climate hits, claims only
+what it changes, and pays for values only from the room above its limits" (§4.1); the audit's line, then "Sustainable is
 a test the whole plan passes, not a label its products carry", were withdrawn because they restate the brief.
 Slide 1 closes on the claim. Still to do: slide 2 shows where PRISM checks each condition; slide 11 returns to the claim; slide 2 shows the rules (limits first, the four corners, the ordinary-choice comparison, a
 missing price as a trigger), not only the five letters; its grey halves name what the label approach (our comparison)
@@ -1132,6 +1177,12 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, night (Pete, Claude): storyline v5** (§4.5). Pete: the deck didn't build from slide to slide; revamp,
+  "push for the best". An arc from the product's label (slide 1) to the plan's label (slide 9), three acts in the
+  thesis's order, a chain of questions, one picture per slide, the corners as the close. The thesis reordered: the
+  limit, the change, the room. The deck session's four points kept (capital up front, the 13 Nov fixes, the
+  corners as one rule, ≈1,200 words). Slides 4 and 9 rendered as options first.
 
 - **13 Nov, night (Pete, Claude): Adrian's pay priced; the values budget shown binding** (`model_runs.md` M10–M11, new
   in `Final/final_model.py`; no existing row changed). His bonus in the downturn: −1.3 points, inside the limit; his
