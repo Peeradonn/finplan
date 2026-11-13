@@ -33,7 +33,7 @@ an argument; where it disagrees with those files, they win.
 | 1 | Open | Pete | 1:05 | What makes a plan sustainable? (closes on the claim) | Yes, with notes (13 Nov); one spoken sentence previews the answer (§5.5) |
 | 2 | PRISM | Pete | 1:00 | PRISM: look both ways | Built with notes (13 Nov): ends on the price tag that slide 3 fills in |
 | 3 | Answer | Pete | 0:40 | Put every decision on one measure, green or not | Built (13 Nov): slide 2's tag, filled in; headline joins once §5.1 is settled |
-| 4 | P | Pete | 0:40 | Settle the family's disagreements once, before any option is priced | Built with notes (13 Nov): the room above the limit (§5.4) |
+| 4 | P | Pete | 0:45 | Set the limit first; values spend only the room above it | Rebuilt with notes (13 Nov, late): the Profile step for any client, then the Wongs |
 | 5 | R + I | Lookbua | 0:55 | Check every way risk can reach the family; price only the few that matter | Layout (the scan) |
 | 6 | S: the flat | Lookbua | 0:45 | The limit decides before preferences do | Built with notes (13 Nov): where the limit flips the route |
 | 7 | S: the business | Fahtai | 0:55 | Rank every cut by its cost per tonne, cheapest first | Built with notes (13 Nov): footprint and cost curve |
@@ -1038,6 +1038,13 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, late (Pete, Claude): slide 4 rebuilt.** Pete: the main point wasn't clear, and the Profile step itself
+  should come before the Wongs. Now titled with the thesis's first two rules ("Set the limit first; values spend only the
+  room above it"): left, the step for any client in four parts (each decision-maker alone on the brief's seven
+  dimensions; the limit; the room above it as the values budget; who decides what, in the investment policy); right,
+  the Wongs' scale with Adrian pinned to the limit and Carmen to the room. Options weighed: a mandate template, two
+  slides (one framework page, one Wong page: +20 s, and P the only step with its own page).
 
 - **13 Nov, night (Pete, Claude): slides 6–10 built.** 6: the test the plan asked for (§5.7) found downsizing breaks
   the 85 limit only if older flats fall more than ≈11% behind newer ones (the scenario assumes 15%), so the slide shows
