@@ -36,7 +36,7 @@ advance) · REFUSE (costs money or credibility, no real effect shown).
 | P3 | Adrian's green bond fund | Allianz 5% → plain global bonds (AGGU) | REFUSE (for prudent money) | Reallocation | Months 1–3 | 9 |
 | P4 | Carmen's green bond fund | Allianz 10% → keep only with an impact report and no entry charge | PAY | — | Months 1–3 | 9 |
 | P5 | MPF low-carbon fund | Unchanged | PAY | — | — | 9 |
-| P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (27.7% or 24.8%) | — (governance) | — | Months 1–3 | 4, 9 |
+| P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (**27.7%**, settled Win 13 Nov) | — (governance) | — | Months 1–3 | 4, 9 |
 | P7 | Refusals: clean-energy funds, sustainability-linked bonds, green deposits, risk-changing green bond ETFs, impact claims for listed shares | Thematic funds already refused → the rest added, each with its number | REFUSE | — | — | 9 |
 | H1 | Releasing the flat | 2037, reverse mortgage or downsize, decided then → same, plus a yearly price trigger and a deadline (the building's 50th year: 2046 for a 1996 building) | FINANCE (risk management) | — | Trigger yearly; release by 2046 | 6 |
 | H2 | Green mortgage or green refinancing | Not considered → refuse | REFUSE | — | — | 6 |
@@ -144,7 +144,9 @@ established and point to the run.
 - **P3:** Adrian's 1.04-point fee gap against a 0–8bp greenium: saves ≈HK$1,076 a year.
 - **P4:** Carmen's HK$2,153 a year buys bond-by-bond checks; the fund trails its benchmark by ≈1 point a year since 2017;
   keep only with an impact report and the entry charge waived.
-- **Family ESG share:** 27.7% (candidate A) or 24.8% (B).
+- **Family ESG share:** **27.7%** (candidate A; settled Win 13 Nov). Adrian passes the ≤5bp cost test because
+  EDMW = IWDA = 0.20% (0bp gap). Candidate B (24.8%) dropped: existed only to match the case's 25%, contradicting
+  the thesis that the share is an output of each person's risk budget.
 
 ### P6. The mandate (`area1_6_framework.md` §3c)
 - Separate portions; shared money follows the more prudent profile; a 5bp cost test for shared money; Carmen's values
