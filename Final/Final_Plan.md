@@ -157,6 +157,11 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 
 **Look A** (Pete, 11 Nov; chosen from four options rendered side by side, `Final/looks/looks.html`; every token is in
 `deck/src/00_head.html`):
+- **Colour: navy (Pete, 13 Nov).** Navy for structure (text, bars, the closing line), cool greys; crimson (the limit,
+  money at risk: outside in) and teal (the world: inside out) are the only signal colours. The PRISM letter colours
+  stay in the prism, the footer badge and the kicker chip, never in slide bodies. Slides 1–2's stage is deep navy.
+  Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
+  crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
   green only for the label, always with its word on it.
 - Slide 2 is the one dark stage, a glass prism splitting the label's beam into five labelled rays, one colour per
@@ -1038,6 +1043,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, late (Pete, Claude): navy colours** (§3). Tokens and every slide's hard-coded colours remapped in one
+  pass; the prism art regenerated on a navy stage; no layout or number changed.
 
 - **13 Nov, late (Pete, Claude): slide 4 rebuilt.** Pete: the main point wasn't clear, and the Profile step itself
   should come before the Wongs. Now titled with the thesis's first two rules ("Set the limit first; values spend only the

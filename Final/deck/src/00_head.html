@@ -21,13 +21,16 @@
 @font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}
 @font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-ExtraBold.ttf");font-weight:800}
 :root{
-  /* Look A (Pete, 11 Nov; Final_Plan.md §3 "Look"): Plus Jakarta Sans, the crimson accent, the crimson bar beside
+  /* Navy (Pete, 13 Nov): navy for structure, cool greys; crimson (the limit, money at risk) and teal (the world)
+     are the only signal colours; the PRISM letter colours stay in the prism, the footer badge and the kicker chip.
+     Chosen from three schemes rendered side by side (the rose greys and a colour per letter read as odd).
+     Before: Look A (Pete, 11 Nov; Final_Plan.md §3 "Look"): Plus Jakarta Sans, the crimson accent, the crimson bar beside
      each title, and the ledger's two new columns. A′'s thick rule under the title was tried and dropped the same day.
      Chosen from options rendered side by side (Final/looks/looks.html). Still to do: the 20-second projector test.
      Change values here; every slide follows. */
-  --paper:#FFFFFF; --mist:#FBF3F4; --block:#F4E6E9; --rule:#E2CFD3; --grey:#8A747A;   /* tints wash out on a projector:
+  --paper:#FFFFFF; --mist:#F4F6F9; --block:#EAEDF2; --rule:#DCE1E8; --grey:#8892A2;   /* tints wash out on a projector:
                                                                     use them for fills behind ink, never for text */
-  --ink:#1B1716; --slate:#5E4A50;                                    /* slate 8.2:1 on white: the lightest text colour */
+  --ink:#0F1E3D; --slate:#566173; --navy2:#2B4A7A;                                    /* slate 8.2:1 on white: the lightest text colour */
   --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* money at risk; the point a slide makes (5.9:1) */
   --out:#0E7490;                                                     /* what the money does to the world: Impact teal */
   /* section colours, one per PRISM letter (slide 2's rays; deeper shades here so text on white passes contrast) */
@@ -164,12 +167,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s3-ans{width:410px;flex:none;background:var(--ink);color:#fff;border-radius:8px;padding:20px 22px;display:flex;flex-direction:column}
 .s3-acap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#F4B740}
 .s3-big{font:800 40px/1.1 var(--head);margin-top:10px}
-.s3-cap2{font:500 15px/1.4 var(--text);color:#D8CFD1;margin-top:6px;padding-bottom:14px;border-bottom:1px solid #3A2F31}
+.s3-cap2{font:500 15px/1.4 var(--text);color:#D2D9E4;margin-top:6px;padding-bottom:14px;border-bottom:1px solid #2A3858}
 .s3-cap2 b{color:#fff}
 .s3-out{margin-top:14px}
 .s3-out b{display:block;font:800 34px/1.1 var(--num);color:#fff}
-.s3-out span{display:block;font:500 15px/1.3 var(--text);color:#D8CFD1}
-.s3-split{margin-top:auto;font:500 13.5px/1.4 var(--text);color:#B9ACAF;font-style:italic;padding-top:12px}
+.s3-out span{display:block;font:500 15px/1.3 var(--text);color:#D2D9E4}
+.s3-split{margin-top:auto;font:500 13.5px/1.4 var(--text);color:#AEB8C8;font-style:italic;padding-top:12px}
 
 /* ---- slide 3: our answer on one measure (a3- classes; rebuilt 13 Nov after Pete's verdict on the dot chart).
    One SVG of bars from zero, drawn 1:1 in px; the bars' x and widths come from numbers.json through series.py
@@ -205,10 +208,10 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 /* slide 4, rebuilt 13 Nov (Pete: the Profile step first, then the Wongs): p4- classes; the pro- rules above are unused */
 .p4-body{flex-direction:row;gap:40px;margin-top:16px}
 .p4-left{flex:none;width:440px} .p4-right{flex:1}
-.p4-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--P);padding-bottom:8px;
+.p4-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--ink);padding-bottom:8px;
   border-bottom:1.5px solid var(--ink);margin-bottom:14px}
 .p4-step{display:flex;gap:12px;margin-bottom:16px}
-.p4-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--P);color:#fff;font:800 15px/28px var(--head);
+.p4-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--ink);color:#fff;font:800 15px/28px var(--head);
   text-align:center}
 .p4-step p{font:500 16.5px/1.42 var(--text)} .p4-step b{font-weight:800}
 .p4-right svg{display:block}
@@ -221,11 +224,11 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s6-rule{flex:1;padding-top:2px}
 .s6-h{font:800 16px/1.3 var(--head);padding-bottom:7px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
 .s6-step{display:flex;gap:12px;margin-bottom:14px}
-.s6-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--S);color:#fff;font:800 15px/28px var(--head);
+.s6-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--ink);color:#fff;font:800 15px/28px var(--head);
   text-align:center}
 .s6-step p{font:500 16px/1.4 var(--text)}
 .s6-step b{font-weight:800}
-.s6-strip{display:flex;gap:36px;border-top:1.5px solid #E2CFD3;padding-top:10px}
+.s6-strip{display:flex;gap:36px;border-top:1.5px solid #DCE1E8;padding-top:10px}
 .s6-strip p{font:500 15px/1.4 var(--text);color:var(--slate)}
 .s6-strip p:first-child{flex:none}
 .s6-strip b{color:var(--ink);font-weight:800}
@@ -248,10 +251,10 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s8-right{flex:1}
 .s8-h{font:800 16px/1.3 var(--head);padding-bottom:7px;border-bottom:1.5px solid var(--ink);margin-bottom:10px}
 .s8-tab{width:100%;border-collapse:collapse}
-.s8-tab td{font:500 14px/1.32 var(--text);padding:5px 6px 5px 0;border-bottom:1px solid #E2CFD3;vertical-align:top}
+.s8-tab td{font:500 14px/1.32 var(--text);padding:5px 6px 5px 0;border-bottom:1px solid #DCE1E8;vertical-align:top}
 .s8-tab td:first-child{font-weight:800;width:132px}
 .s8-tab td:last-child{font-weight:800;width:108px;padding-right:0}
-.s8-tab td.s8-ok{color:var(--I)} .s8-tab td.s8-no{color:var(--accent)}
+.s8-tab td.s8-ok{color:var(--navy2)} .s8-tab td.s8-no{color:var(--accent)}
 .s8-loop{display:flex;gap:22px;align-items:baseline;border-top:1.5px solid var(--ink);padding-top:9px}
 .s8-loop p{font:500 14.5px/1.35 var(--text);flex:1}
 .s8-loop p.s8-lh{flex:none;width:170px;font:800 15px/1.3 var(--head)}
@@ -262,23 +265,23 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .p9-grid{display:flex;gap:28px;align-items:flex-start}
 .p9-left{flex:none;width:560px} .p9-right{flex:1}
 .p9-h,.p9-h3{font:800 16px/1.3 var(--head);padding-bottom:6px;border-bottom:1.5px solid var(--ink);margin-bottom:6px}
-.p9-h span,.p9-h3 span{display:inline-block;width:24px;height:24px;border-radius:12px;background:var(--S);color:#fff;
+.p9-h span,.p9-h3 span{display:inline-block;width:24px;height:24px;border-radius:12px;background:var(--ink);color:#fff;
   font:800 14px/24px var(--head);text-align:center;margin-right:9px}
 .p9-gate,.p9-port{width:100%;border-collapse:collapse}
 .p9-gate th,.p9-port th{font:700 12.5px/1.25 var(--head);color:var(--slate);text-align:left;padding:2px 6px 4px 0;
-  border-bottom:1px solid #E2CFD3;vertical-align:bottom}
-.p9-gate td,.p9-port td{font:500 14px/1.3 var(--text);padding:5px 6px 5px 0;border-bottom:1px solid #EFE6E8;vertical-align:top}
+  border-bottom:1px solid #DCE1E8;vertical-align:bottom}
+.p9-gate td,.p9-port td{font:500 14px/1.3 var(--text);padding:5px 6px 5px 0;border-bottom:1px solid #EAEDF2;vertical-align:top}
 .p9-gate td:first-child{font-weight:800;width:142px}
 .p9-gate td:last-child{font-weight:800;width:62px}
-.p9-gate td.p9-ok{color:var(--I)} .p9-gate td.p9-no{color:var(--accent)}
+.p9-gate td.p9-ok{color:var(--navy2)} .p9-gate td.p9-no{color:var(--accent)}
 .p9-port th:not(:first-child),.p9-port td:not(:first-child){text-align:right;width:64px}
-.p9-port tr.p9-esg td{font-weight:800;color:var(--I)}
+.p9-port tr.p9-esg td{font-weight:800;color:var(--navy2)}
 .p9-port tr.p9-tot td{font-weight:800;border-top:1.5px solid var(--ink);border-bottom:0}
 .p9-note,.p9-why{font:500 13.5px/1.35 var(--text);color:var(--slate);margin-top:6px}
 .p9-why b{color:var(--ink)}
 .p9-out{display:flex;gap:28px;align-items:flex-start;border-top:1.5px solid var(--ink);padding-top:9px}
 .p9-share{flex:none;width:560px;display:flex;gap:16px;align-items:center}
-.p9-share .p9-big{font:800 46px/1 var(--num);color:var(--S)}
+.p9-share .p9-big{font:800 46px/1 var(--num);color:var(--ink)}
 .p9-share p{font:600 15px/1.35 var(--text)}
 .p9-price{flex:1}
 .p9-price .p9-h3{border-bottom:0;padding-bottom:2px;margin-bottom:2px}
@@ -289,32 +292,32 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 
 /* ---- slide 10, rebuilt 13 Nov: Climate Facts as the brief's four outcomes (p10- classes; the older s10- rules are unused) ---- */
 .p10-body{flex-direction:column;gap:10px;margin-top:12px}
-.p10-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--M)}
+.p10-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--slate)}
 .p10-dash{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
 .p10-tile{border:1.5px solid var(--ink);border-top-width:5px;border-radius:4px;padding:10px 16px 11px}
 .p10-th{font:800 17px/1.25 var(--head);margin-bottom:4px} .p10-th span{font-weight:500;color:var(--slate)}
 .p10-v{font:500 16px/1.45 var(--text)} .p10-v b{font-weight:800}
 .p10-v i{font-style:normal;color:var(--slate);font-size:13.5px} .p10-v em{font:700 11px/1 var(--text);letter-spacing:.5px;
-  color:var(--slate);border:1px solid #CBB9BE;border-radius:3px;padding:2px 4px;margin-left:4px;font-style:normal;vertical-align:1px}
-.p10-tr{font:600 14.5px/1.35 var(--text);color:var(--M);margin-top:6px}
+  color:var(--slate);border:1px solid #C3CAD5;border-radius:3px;padding:2px 4px;margin-left:4px;font-style:normal;vertical-align:1px}
+.p10-tr{font:600 14.5px/1.35 var(--text);color:var(--navy2);margin-top:6px}
 .p10-miss{display:flex;gap:18px;align-items:baseline;border-top:1.5px solid var(--ink);padding-top:8px}
 .p10-miss p{font:500 15px/1.4 var(--text);flex:1}
 .p10-miss p.p10-mh{flex:none;width:165px;font:800 15px/1.3 var(--head)}
 .p10-miss b{display:inline-block;color:#fff;font:800 12px/1 var(--text);letter-spacing:.4px;padding:4px 7px;border-radius:3px;
   margin-right:6px;text-transform:uppercase}
-.p10-buy{background:var(--I)} .p10-rng{background:var(--P)} .p10-trg{background:var(--S)}
+.p10-buy{background:var(--ink)} .p10-rng{background:var(--slate)} .p10-trg{background:var(--navy2)}
 .p10-foot{font:500 14px/1.4 var(--text);color:var(--slate)} .p10-foot b{color:var(--ink)}
 
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
-.slide.s2-stage{padding:0;display:block;background:#120E0F;color:#fff}
+.slide.s2-stage{padding:0;display:block;background:#0B1426;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}
 .s2-kick{position:absolute;left:48px;top:40px;font:700 15px/1 var(--head);color:#FF6B75;letter-spacing:.4px}
 .s2-stage h2.s2-word{position:absolute;left:44px;top:60px;margin:0;font:800 92px/1 var(--head);letter-spacing:10px;color:#fff}
 .s2-sub{position:absolute;left:48px;top:162px;width:360px;font:600 24px/1.25 var(--head);color:#fff}
-.s2-sub2{position:absolute;left:48px;top:226px;width:300px;font:500 16px/1.4 var(--text);color:#B9ACAF}
+.s2-sub2{position:absolute;left:48px;top:226px;width:300px;font:500 16px/1.4 var(--text);color:#AEB8C8}
 .s2-chip{position:absolute;left:48px;top:345px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:12px 16px;
   border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}
-.s2-under{position:absolute;left:48px;top:400px;font:600 15px/1.3 var(--text);color:#B9ACAF}
+.s2-under{position:absolute;left:48px;top:400px;font:600 15px/1.3 var(--text);color:#AEB8C8}
 /* slide 1's two tests, repeated small on the R and I rows (13 Nov) */
 .s2-t{display:inline-block;color:#fff;font:800 12.5px/1 var(--text);letter-spacing:.5px;padding:4px 8px;border-radius:11px;
   margin-right:8px;vertical-align:1px}
@@ -324,20 +327,20 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s2-L{position:absolute;left:738px;width:44px;margin:0;font:800 46px/1 var(--num);text-align:center;text-shadow:0 0 18px currentColor}
 .s2-row{position:absolute;left:796px;right:34px}
 .s2-name{font:700 19px/1.25 var(--head);color:#fff;white-space:nowrap}
-.s2-name span{font-weight:500;color:#C4B8BB}
+.s2-name span{font-weight:500;color:#BAC3D1}
 .s2-do{font:600 16px/1.35 var(--text);color:#fff;margin-top:4px;white-space:nowrap}
-.s2-not{font:500 15px/1.35 var(--text);color:#A99EA1;margin-top:2px;white-space:nowrap}
-.s2-std{position:absolute;left:48px;bottom:22px;width:440px;font:500 13.5px/1.4 var(--text);color:#9C9093}
-.s2-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#9C9093}
+.s2-not{font:500 15px/1.35 var(--text);color:#97A1B3;margin-top:2px;white-space:nowrap}
+.s2-std{position:absolute;left:48px;bottom:22px;width:440px;font:500 13.5px/1.4 var(--text);color:#8C97AA}
+.s2-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#8C97AA}
 
 /* ---- slide 1: the open (dark stage like slide 2; s1- classes are used on this slide only; Pete, 11 Nov) ---- */
-.slide.s1-stage{padding:0;display:block;background:#120E0F;color:#fff}
+.slide.s1-stage{padding:0;display:block;background:#0B1426;color:#fff}
 .s1-kick{position:absolute;left:48px;top:44px;font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#FF6B75}
 .s1-q{position:absolute;left:48px;top:70px;width:1100px;font:800 48px/1.1 var(--head);color:#fff;letter-spacing:-.4px}
 .s1-chip{position:absolute;left:48px;top:192px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:11px 16px;
   border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}
-.s1-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#B9ACAF;margin-bottom:12px}
-.s1-card{display:flex;align-items:center;gap:14px;background:#1E1719;border:1px solid #3A2F31;border-radius:10px;
+.s1-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#AEB8C8;margin-bottom:12px}
+.s1-card{display:flex;align-items:center;gap:14px;background:#15213A;border:1px solid #2A3858;border-radius:10px;
   padding:14px 16px;margin-bottom:10px}
 .s1-card p{font:700 18px/1.3 var(--text);color:#fff;text-wrap:balance}
 .s1-mini{flex:none;background:var(--leaf);color:#fff;font:800 14px/1 var(--text);padding:8px 11px;border-radius:16px;white-space:nowrap}
@@ -346,24 +349,24 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s1-ask{position:absolute;left:48px;right:48px;top:158px}
 .s1-askrow{display:flex;align-items:center;gap:22px}
 .s1-ask .s1-chip{position:static;display:inline-block;flex:none}
-.s1-plan{font:italic 500 18px/1.4 var(--text);color:#D8CFD1}
+.s1-plan{font:italic 500 18px/1.4 var(--text);color:#D2D9E4}
 /* the two tests (left) and their proof on the client (right), row by row */
 .s1-grid{position:absolute;left:48px;right:48px;top:282px;display:grid;grid-template-columns:500px 1fr;column-gap:56px;row-gap:18px;align-items:center}
 .s1-grid > .s1-cap{align-self:end;margin-bottom:0}
 .s1-client{align-self:end}
 .s1-client .s1-cap{margin-bottom:6px}
-.s1-fam{font:500 16px/1.3 var(--text);color:#B9ACAF}
+.s1-fam{font:500 16px/1.3 var(--text);color:#AEB8C8}
 .s1-grid .s1-card{margin:0}
 .s1-proof{display:flex;align-items:center;gap:22px}
 .s1-num{flex:none;min-width:136px;font:800 46px/1 var(--num);letter-spacing:-.5px}
 .s1-numout{color:#FF4A57} .s1-numin{color:#38B6CF}
-.s1-proof p{font:600 18px/1.35 var(--text);color:#E8E0E2;text-wrap:balance}
+.s1-proof p{font:600 18px/1.35 var(--text);color:#E3E8F0;text-wrap:balance}
 .s1-grid .s1-proofsrc{grid-column:2;margin-top:2px}
-.s1-src{font:500 12.5px/1.4 var(--text);color:#8C8083;margin-top:8px}
-.s1-end{position:absolute;left:48px;right:48px;top:596px;border-top:1px solid #3A2F31;padding-top:16px}
+.s1-src{font:500 12.5px/1.4 var(--text);color:#808BA0;margin-top:8px}
+.s1-end{position:absolute;left:48px;right:48px;top:596px;border-top:1px solid #2A3858;padding-top:16px}
 .s1-stage h2.s1-line{margin:0;font:800 30px/1.15 var(--head);color:#fff;letter-spacing:-.2px}
-.s1-result{font:500 17px/1.35 var(--text);color:#B9ACAF;margin-top:8px}
-.s1-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#9C9093}
+.s1-result{font:500 17px/1.35 var(--text);color:#AEB8C8;margin-top:8px}
+.s1-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#8C97AA}
 
 /* ── slide 9: S — the portfolio ── */
 .s9-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
