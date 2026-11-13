@@ -3,13 +3,14 @@ import sys
 
 out = sys.argv[1]
 FONT = "../deck/fonts/"   # relative to Final/looks/
-A, B, C = (420, 240), (285, 620), (555, 620)
+DY = -64                # 13 Nov (Pete): the stage moves up to leave room for the price tag, bottom right
+A, B, C = (420, 240 + DY), (285, 620 + DY), (555, 620 + DY)
 D = (72, -42)
 A2, B2, C2 = [(x + D[0], y + D[1]) for x, y in (A, B, C)]
-E = (352, 430)          # the beam enters the front face
-X = (536, 444)          # the middle of the exit, on the right face
-EXITS = [(522, 405), (529, 425), (536, 445), (543, 465), (550, 485)]   # where each colour leaves the glass
-FLOOR = 620
+E = (352, 430 + DY)     # the beam enters the front face
+X = (536, 444 + DY)     # the middle of the exit, on the right face
+EXITS = [(x, y + DY) for x, y in ((522, 405), (529, 425), (536, 445), (543, 465), (550, 485))]   # where each colour leaves the glass
+FLOOR = 620 + DY
 RX = 724                # where the rays reach the letters
 ROWS = [  # letter, colour, name, question, the usual way, ours
     ("P", "#F4B740", "Profile", "who decides, within what limits?", "ask an ESG preference",
@@ -23,7 +24,7 @@ ROWS = [  # letter, colour, name, question, the usual way, ours
     ("M", "#E6E9EE", "Monitor", "how do we know it's still true?", "review once a year",
      "decisions with expiry dates and triggers"),
 ]
-YS = [150, 270, 390, 510, 630]
+YS = [100, 192, 284, 376, 468]   # 13 Nov: rows 92px apart (were 120 from 150), ending above the tag
 pt = lambda *ps: " ".join(f"{x:.1f},{y:.1f}" for x, y in ps)
 
 defs = [
@@ -33,7 +34,7 @@ defs = [
     '<stop offset=".5" stop-color="#FFFFFF" stop-opacity=".09"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/></linearGradient>',
     '<linearGradient id="side" x1="0" y1="0" x2="1" y2="0.3"><stop offset="0" stop-color="#C9D6FF" stop-opacity=".16"/>'
     '<stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/></linearGradient>',
-    '<linearGradient id="glint" gradientUnits="userSpaceOnUse" x1="417" y1="265" x2="294" y2="607">'
+    f'<linearGradient id="glint" gradientUnits="userSpaceOnUse" x1="417" y1="{265 + DY}" x2="294" y2="{607 + DY}">'
     '<stop offset="0" stop-color="#FFFFFF" stop-opacity=".8"/><stop offset=".3" stop-color="#FFFFFF" stop-opacity=".22"/>'
     '<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>',
     '<radialGradient id="floorglow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".16"/>'
@@ -67,7 +68,7 @@ def prism(alpha=1.0):
             f'<line x1="{B[0]}" y1="{B[1]}" x2="{B2[0]}" y2="{B2[1]}"/></g>'
             f'<polygon points="{pt(A, C, C2, A2)}" fill="url(#side)"/>'
             f'<polygon points="{pt(A, B, C)}" fill="url(#front)"/>'
-            f'<polygon points="{pt((414, 268), (418, 265), (296, 606), (292, 607))}" fill="url(#glint)"/>'
+            f'<polygon points="{pt((414, 268 + DY), (418, 265 + DY), (296, 606 + DY), (292, 607 + DY))}" fill="url(#glint)"/>'
             f'<g fill="none" stroke="#FFFFFF" stroke-linejoin="round"><polygon points="{pt(A, B, C)}" stroke-width="2.6" stroke-opacity=".9"/>'
             f'<polyline points="{pt(A, A2, C2, C)}" stroke-width="2" stroke-opacity=".55"/></g></g>')
 
@@ -78,7 +79,7 @@ g.append(f'<rect x="0" y="{FLOOR}" width="1280" height="{720 - FLOOR}" fill="#00
 g.append(f'<line x1="0" y1="{FLOOR}" x2="1280" y2="{FLOOR}" stroke="#FFFFFF" stroke-opacity=".10"/>')
 for k in range(-6, 9):
     g.append(f'<line x1="{420 + k * 40}" y1="{FLOOR}" x2="{420 + k * 150}" y2="720" stroke="#FFFFFF" stroke-opacity=".035"/>')
-for yy in (632, 650, 676, 712):
+for yy in (FLOOR + 12, FLOOR + 30, FLOOR + 56, FLOOR + 92):
     g.append(f'<line x1="0" y1="{yy}" x2="1280" y2="{yy}" stroke="#FFFFFF" stroke-opacity=".03"/>')
 g.append(f'<ellipse cx="430" cy="{FLOOR + 4}" rx="300" ry="30" fill="url(#floorglow)"/>')
 # the fan of light behind the rays
@@ -149,4 +150,8 @@ body{{margin:0;background:#E2E2DF}} p{{margin:0}}
 <p class="pg">2</p>
 </section></main></body></html>'''
 open(out, "w", encoding="utf-8").write(html)
+# the art alone (no words), for the deck: render at 2x to Final/deck/img/prism-stage.png (13 Nov)
+art = ('<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#120E0F}'
+       'svg{display:block}</style></head><body>' + svg.replace('style="position:absolute;left:0;top:0"', "") + "</body></html>")
+open(out.replace(".html", "-art.html"), "w", encoding="utf-8").write(art)
 print("ok")

@@ -427,6 +427,22 @@ def export_final():
     out["fin_dot_flat_n"] = sg(b["leg_med"] - down["leg_med"])
     out["fin_dot_flat_s"] = sg(allr["leg_med"] - down_s["leg_med"])
     out["fin_dot_down_sodds"] = f"{down_s['odds']:.1%}"              # downsizing under the scenario: below the 85 floor
+    out["fin_dot_down_s100"] = f"{round(down_s['odds'] * 100)}"      # the same in whole futures in 100 (slide 3's words)
+    # slide 4 (P, Pete 13 Nov: the room above the limit; Final_Plan.md §5.4, M9c): the limit sizes the values budget
+    # before anything is priced. From the plan with plain choices (plain funds, no giving, no vans), the room above the
+    # 95-in-100 limit is the most values may cost; the ESG funds and the 20-year scholarship fund are what the parents
+    # choose to use. Whole futures in 100 on the slide, so its arithmetic reads (98 - 95 = 3).
+    plain = dict(r_eq=r_eq_for(FEE_SAVED + FEE_VALUES))
+    p_n, p_s = run(base, **plain), stressed(base, sc, mult, **plain)
+    u_n = run(base, r_eq=r_eq_for(FEE_SAVED), inflows=scholarship_funded())
+    u_s = stressed(base, sc, mult, r_eq=r_eq_for(FEE_SAVED), flows=scholarship_funded())
+    plain_in100 = round(p_n["odds"] * 100)
+    out["fin_room_plain"] = f"{plain_in100}"                               # futures in 100, plain choices
+    out["fin_room_pts"] = f"{plain_in100 - 95}"                            # room above the limit of 95
+    out["fin_room_use"] = f"{(p_n['odds'] - u_n['odds']) * 100:.0f}"       # what the values choices use
+    out["fin_room_use_hk"] = f"HK${p_n['leg_med'] - u_n['leg_med']:.1f}M"  # the same, in the children's median
+    out["fin_room_plain_s"] = f"{p_s['odds']:.1%}"                         # notes: plain choices under the scenario
+    out["fin_room_use_s"] = f"{(p_s['odds'] - u_s['odds']) * 100:.1f}"     # notes: what the choices use under it
     return out
 
 

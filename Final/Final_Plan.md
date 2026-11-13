@@ -30,10 +30,10 @@ an argument; where it disagrees with those files, they win.
 
 | # | Step | Who | Time | Title (draft) | Built? |
 |---|---|---|---|---|---|
-| 1 | Open | Pete | 1:05 | What makes a plan sustainable? (closes on the claim) | Yes, with notes (13 Nov, second pass) |
-| 2 | PRISM | Pete | 1:00 | PRISM: look both ways | Layout; contrasts to reword (§5.6) |
-| 3 | Answer | Pete | 0:25 (needs ≈0:40) | Put every decision on one measure, green or not | Built (13 Nov, second version); headline joins once §5.1 is settled |
-| 4 | P | Pete | 0:30 | Settle the family's disagreements once, before any option is priced | Layout |
+| 1 | Open | Pete | 1:05 | What makes a plan sustainable? (closes on the claim) | Yes, with notes (13 Nov); one spoken sentence previews the answer (§5.5) |
+| 2 | PRISM | Pete | 1:00 | PRISM: look both ways | Built with notes (13 Nov): ends on the price tag that slide 3 fills in |
+| 3 | Answer | Pete | 0:40 | Put every decision on one measure, green or not | Built (13 Nov): slide 2's tag, filled in; headline joins once §5.1 is settled |
+| 4 | P | Pete | 0:40 | Settle the family's disagreements once, before any option is priced | Built with notes (13 Nov): the room above the limit (§5.4) |
 | 5 | R + I | Lookbua | 0:55 | Check every way risk can reach the family; price only the few that matter | Layout (the scan) |
 | 6 | S: the flat | Lookbua | 0:45 | The guardrails decide before preferences | Placeholder |
 | 7 | S: the business | Fahtai | 0:55 | Most effect per HK$ first | Placeholder |
@@ -359,6 +359,11 @@ or a green sticker peeled off a printed factsheet.
   PRISM order runs underneath, with the badge on every slide.
 - **Each title is an idea true for any client; the Wongs are the evidence** (Pete, 11 Nov: "we're focusing on the
   Wongs too much"). Each speaker opens with the rule ("For any client, …"), then "For the Wongs, …".
+- **The balance, framework against the Wongs** (Pete, 13 Nov: the framework is shown before the numbers). The framework
+  owns every title, kicker and closing line; the Wongs own the body. Four tests: (1) the titles alone give the framework;
+  (2) each title still makes sense for a salaried family who rent and hold only an MPF; (3) each Wong number shows a rule
+  changing the advice ("the limit picked the reverse mortgage"), or it goes to backup; (4) the framework opens (slides
+  1–2) and closes the talk. Dense Wong tables (slides 9, 10) are where the balance tips: keep the rule the biggest thing.
 - **The ideas follow the family's assets** (flat → business → portfolio), so each speaker presents the area they own
   (rule 9). The portfolio comes last because that's where the label approach lives, so slide 9 calls back to the open.
 - **Every Select slide is a before-and-after** against the label approach, with the tag and the verdict. Each gets its
@@ -859,7 +864,9 @@ the funds are fixed, the lifelong pledge passes both floors (95.2%; 86.4%; M9c),
 bias and delivery, not the floor. **Proposed:** either fund the same 39 years (≈HK$742K, each half under Adrian's
 ≈HK$420K cap), or keep 20 years and say plainly it's a smaller gift, chosen. Not silently. Owner: Pete; Win (slide 10).
 
-**5.4 The values budget (slides 4, 9).** As drafted, ≈HK$1.4M is the sum of what it pays for (ESG fees ≈HK$0.57M +
+**5.4 The values budget (slides 4, 9). Decided 13 Nov (Pete): the limit sets it; slide 4 rebuilt as the room above the
+limit (98 with plain choices, limit 95, room 3, used about 1 ≈ HK$1.5M; `fin_room_*`). Slide 9's bar still shows the
+old ≈HK$1.4M and leaves out the scholarship: redraw it on the same keys.** As drafted, ≈HK$1.4M is the sum of what it pays for (ESG fees ≈HK$0.57M +
 the scholarship ≈HK$0.80M), so it wasn't "set before any option is priced". **Proposed:** let the floors set its
 ceiling. From the plan with plain funds, no giving and no vans (97.7% normally; 92.2% under the shock), the room above
 the binding 95% floor is 2.7 points. The ESG tilt and the 20-year fund use 0.9 points (HK$1.47M of the median
@@ -867,7 +874,10 @@ inheritance); 1.2 (HK$1.84M) after a bad five years of tracking; the same awards
 (M9c). On slide 4: "Their limit leaves room for about 2.7 points; they choose to use about a third of it." Each number
 needs an export key. Owner: Pete.
 
-**5.5 Lead with the answer.** Key Areas §7: "Lead with a recommendation, the capital required and the expected
+**5.5 Lead with the answer. Decided 13 Nov (Pete): the framework comes first** (1 open → 2 PRISM → 3 the answer): slide
+3's bars use ideas slide 2 introduces (the limit, the ordinary choice, one measure). Key Areas §7 is met by one spoken
+sentence closing slide 1 (six decisions, the capital, the tonnes; the money outcome once §5.1 is settled), and slide 2
+now ends on the price tag slide 3 fills in. Earlier proposal, kept for the record: Key Areas §7: "Lead with a recommendation, the capital required and the expected
 financial and sustainability outcomes." Today the answer arrives at 2:05, after the open and PRISM. **Proposed:** the
 answer's one line (what we recommend, the capital, the money and the tonnes) inside the first minute: slide 1's last
 build, or slide 3 before PRISM. Owner: Pete.
@@ -1025,6 +1035,14 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, evening (Pete, Claude):** framework before the numbers (§5.5 decided). Slide 2 ends on the price tag (one
+  per decision: what we recommend, for the children in HK$, for the world in tonnes; then the limit decides), drawn like
+  slide 3's header row; R and I carry slide 1's two tests; S says slide 3's title; the prism art moved up
+  (`looks/prism_stage_art.py`, DY and YS). Slide 3's kicker: the tag filled in; its flat line in futures in 100
+  (`fin_dot_down_s100`). Slide 4 rebuilt as the room above the limit (§5.4 decided; `fin_room_*`). Draft notes for
+  slides 2 and 4. The balance tests added to §4.4. Review of the whole plan against the three PDFs: in the conversation
+  (headline, slide 9's errors, the main proof, gaps); not yet written here.
 
 - **13 Nov (Pete, Claude):** thesis "Limits first. A budget for values. One measure for every decision." (§4.1); the one
   measure and the values budget as the spine (§4.4); slide 3 redrawn as one chart with every decision on it (`fin_dot_*`

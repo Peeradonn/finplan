@@ -466,3 +466,18 @@ decision on it. Thirteen keys added to `export_final()`, all from runs already i
   together, downsizing instead). `fin_dot_down_sodds` 82.7%: downsizing under the scenario, below the 85% floor.
 - Checked: `numbers.json` before and after differ only by these 13 additions; `figure-data.md` and every PNG unchanged.
   `Final/deck/series.py` turns them into the dots' positions (the `dx_` tokens) and refuses a value off the axis.
+
+### Final (13 Nov): slide 4's values budget from the limit, and slide 3's flat line (`Final/final_model.py` `export_final()`)
+
+Pete (13 Nov) chose "the room above the limit" for slide 4 (`Final_Plan.md` §5.4): the ≈HK$1.4M budget was the sum of
+what it paid for. Seven keys added, all from runs already in `model_runs.md` M9c and M7:
+- `fin_room_plain` 98: the plan with plain choices (plain funds, no giving, no vans) lasts in 97.7% of futures, shown
+  as whole futures in 100. `fin_room_pts` 3: the room above the limit of 95, from the rounded figure so the slide's
+  arithmetic reads (2.7 before rounding). `fin_room_use` 1 and `fin_room_use_hk` HK$1.5M: what the ESG funds' fees and
+  the 20-year scholarship fund use (0.9 points, HK$1.47M of the children's median inheritance).
+- `fin_room_plain_s` 92.2% and `fin_room_use_s` 2.6: the same under the 2030-31 scenario, for the notes (the normal
+  limit is the one that binds).
+- `fin_dot_down_s100` 83: downsizing under the scenario in whole futures in 100 (`fin_dot_down_sodds` 82.7%), so slide 3
+  uses slide 4's words.
+- Checked: `numbers.json` before and after differ only by these 7 additions (two reruns of `make_charts.py`);
+  `figure-data.md` and every PNG unchanged.
