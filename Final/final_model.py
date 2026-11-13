@@ -590,6 +590,186 @@ def m9(w, row, head, base):
       "which it flips.\n")
 
 
+# ---------- M10-M11 (Claude, 13 Nov, night): Adrian's pay, and what the values budget pays for ----------
+A_GROSS = m.WB["Tax"]["B7"].value     # Adrian's HK$1.2M in the model: HK$1.05M salary + the case's low bonus (Tax tab)
+A_TAX = m.WB["Tax"]["B13"].value      # his progressive salaries tax, 2026/27 (Tax tab)
+A_NET = A_GROSS - A_TAX - m.MPF_CAP   # take-home after tax and his MPF
+BONUS = 150_000                       # the case's range is HK$150-300K; the model's income counts the low end
+MARGINAL = 0.17                       # his top band (net chargeable HK$755,500, Tax tab)
+SEVERANCE = 390_000                   # Employment Ordinance cap on severance pay (not taxable); his years of service unknown
+
+
+def grown(y):
+    return (1 + m.WAGE) ** (y - m.BY)
+
+
+def bonus_lost(years=(2030, 2031)):
+    """Adrian's bonus after tax, lost in the downturn's years, as the scenario already cuts Carmen's draw."""
+    return {y: -BONUS * (1 - MARGINAL) * grown(y) for y in years}
+
+
+def job_lost(from_y=2031, rehire_from=None, rehire_share=0.0):
+    """Adrian's take-home and both MPF sides lost from `from_y` until he would have retired; the severance cap paid
+    in `from_y`; optionally re-hired at a share of his pay. Spending is unchanged unless a cut is added."""
+    f = {}
+    for y in range(from_y, m.RETA):
+        kept = rehire_share if rehire_from and y >= rehire_from else 0.0
+        f[y] = -(1 - kept) * (A_NET * grown(y) + 2 * m.MPF_CAP)
+    f[from_y] = f.get(from_y, 0) + SEVERANCE
+    return f
+
+
+def spend_less(per_year, start=2031, end=m.RETA):
+    """A spending cut, today's money, CPI-linked, from `start` until Adrian would have retired."""
+    return {y: per_year * (1 + m.CPI) ** (y - m.BY) for y in range(start, end)}
+
+
+def carmen_works_to(age):
+    """Carmen works past 62: her take-home and both MPF sides for the extra years; the sale year unchanged."""
+    return {y: m.CARMEN_NET * grown(y) + 2 * m.MPF_CAP for y in range(m.RETC, m.RETC + age - 62)}
+
+
+def gift_now(total, start=2027):
+    """Give `total` now, in yearly pieces within both parents' 35% caps (2026 incomes, grown), relief the next year."""
+    cap = 0.35 * (A_GROSS + m.C_SAL)
+    f, y, left = {}, start, total
+    while left > 1:
+        piece = min(left, cap * grown(y))
+        f[y] = f.get(y, 0) - piece
+        f[y + 1] = f.get(y + 1, 0) + RELIEF * piece
+        left -= piece
+        y += 1
+    return f
+
+
+def down_cross(base, sc, limit=0.85):
+    """Where downsizing crosses `limit` in the downturn as the old flat's fall behind newer flats runs from 0 to 15%
+    (export_final()'s slide 6 shape, on a 1% grid, interpolated)."""
+    grid, odds = [i / 100 for i in range(16)], []
+    for d in grid:
+        def mult_d(y, d=d):
+            return (1 - 0.0015) ** max(y - m.BY, 0) * (1.0 if y < 2030 else (1 - d * 2 / 3 if y == 2030 else 1 - d))
+        odds.append(run(base, "down", mult_d, **sc)["odds"])
+    return next((grid[i - 1] + (grid[i] - grid[i - 1]) * (odds[i - 1] - limit) / (odds[i - 1] - odds[i])
+                 for i in range(1, len(grid)) if odds[i - 1] >= limit > odds[i]), None)
+
+
+def m10(w, row, head, base):
+    """M10: Adrian's pay, which the risk register left out. The bonus in the downturn, and his job as a sensitivity."""
+    sc, mult = scenario()
+    sc_b = dict(sc, inflows=plus(sc["inflows"], bonus_lost()))
+    b, st0 = run(base), stressed(base, sc, mult)
+    new_s = dict(biz_add=sale_uplift(SAVE), flows=scholarship_funded(), r_eq=r_eq_for(FEE_SAVED))
+
+    w("\n## M10. Adrian's pay: the route the register left out (Claude, 13 Nov, night; the Final's base, `switch_89`)\n")
+    w(f"The model counts Adrian's pay inside one household surplus until he retires in {m.RETA}: HK${A_GROSS/1e6:.2f}M a "
+      f"year (HK$1.05M salary + the case's low bonus, HK${BONUS/1e3:.0f}K; the case's range is HK$150-300K), top band "
+      f"{MARGINAL:.0%}, take-home HK${A_NET:,.0f} after tax and his MPF. **Every odds figure in these runs assumes he "
+      f"keeps his job to 65.** The scenario cuts Carmen's draw in 2030-31 but not his bonus. EXPLORATORY.\n")
+    w("### M10a. His bonus in the downturn (the scenario made consistent)\n")
+    w("Each pair: a plan in today's scenario, then the same with Adrian's bonus after tax lost in 2030-31. Change is "
+      "against the first row of its pair.\n")
+    w(head)
+    pairs = [("The plan as it stands", {}, "rmp"),
+             ("New plan: vans + portfolio fees + funded scholarship", new_s, "rmp"),
+             ("Label approach (list funds, unfunded lifelong pledge)", dict(flows=scholarship_as_written()), "rmp")]
+    for lbl, kw, _ in pairs:
+        a, c = stressed(base, sc, mult, **kw), stressed(base, sc_b, mult, **kw)
+        w(row(f"{lbl}, today's scenario", a, a))
+        w(row(f"{lbl}, with the bonus lost", c, a))
+    dn_a, dn_c = run(base, "down", mult, **sc), run(base, "down", mult, **sc_b)
+    w(row("Downsizing instead (only the old flat falls), today's scenario", dn_a, dn_a))
+    w(row("Downsizing instead, with the bonus lost", dn_c, dn_a))
+    x_a, x_c = down_cross(base, sc), down_cross(base, sc_b)
+    w(f"\n- Downsizing crosses the 85 limit in the downturn at a {x_a:.1%} gap behind newer flats in today's scenario "
+      f"and at {x_c:.1%} with the bonus lost (slide 6's shape, 1% grid). The normal-future crossing (≈5%, "
+      f"`fin_flipn_cross`) doesn't move: the bonus is lost only in the downturn, so the normal limit still binds first.")
+    w("- No verdict against a limit changes: the plan as it stands and the new plan stay above 85; the label approach "
+      "was already below it at the unverified fee (§5.2).\n")
+
+    w("### M10b. If his job goes (a sensitivity, not a forecast)\n")
+    w(f"Lost at the end of 2030, at 58: his bonus that year, then his take-home and both MPF sides until {m.RETA}, with "
+      f"the severance cap (HK${SEVERANCE/1e3:.0f}K) paid in 2031. Spending unchanged unless a row says otherwise. "
+      f"Any planner draws this route, so it isn't a climate finding; it is priced because it is the largest risk to "
+      f"the limits. The plan as it stands; change against the base (normal) or today's scenario (under it).\n")
+    w(head)
+    job = plus(bonus_lost((2030,)), job_lost())
+    half = plus(bonus_lost((2030,)), job_lost(rehire_from=2032, rehire_share=0.5))
+    cases = [("No work again before 65", job),
+             ("Re-hired from 2032 at half pay", half),
+             ("Re-hired from 2032 at three-quarter pay",
+              plus(bonus_lost((2030,)), job_lost(rehire_from=2032, rehire_share=0.75))),
+             ("Lost at the end of 2033 instead (at 61), no work again", job_lost(from_y=2034)),
+             ("Half pay from 2032, and HK$200K a year less spending to 2036", plus(half, spend_less(200_000))),
+             ("Half pay from 2032, HK$200K a year less, and Carmen works to 65",
+              plus(half, spend_less(200_000), carmen_works_to(65)))]
+    res = []
+    for lbl, f in cases:
+        n_r, s_r = run(base, inflows=f), stressed(base, sc, mult, flows=f)
+        w(row(f"{lbl}, normal future", n_r, b))
+        w(row(f"{lbl}, under the scenario", s_r, st0))
+        res.append((lbl, n_r, s_r))
+    w(f"\n- Without a response, losing the job breaks both limits in either future; the climate scenario makes it "
+      f"worse, it doesn't cause it. The last row ({res[-1][1]['odds']:.1%} normally, {res[-1][2]['odds']:.1%} under the "
+      f"scenario) is a contingency that restores both: half his pay again, HK$200K a year less spending, Carmen "
+      f"working three more years (her draw continues; the sale year unchanged, an assumption).")
+    w("- The case: \"Neither Adrian nor Carmen has standalone long-term disability income protection.\" Disability is "
+      "the insurable form of this risk; redundancy is not. Severance years of service: unknown (ILLUSTRATIVE cap).\n")
+
+
+def m11(w, row, head, base):
+    """M11: what the values budget pays for, and where it binds. M9c's starting point; gifts funded now."""
+    sc, mult = scenario()
+    plain = dict(r_eq=r_eq_for(FEE_SAVED + FEE_VALUES))
+    tilt = dict(r_eq=r_eq_for(FEE_SAVED))
+    p_n, p_s = run(base, **plain), stressed(base, sc, mult, **plain)
+    life, f20 = fund_size(END - 2027), fund_size(20)
+
+    def both(kw, f):
+        return run(base, **dict(kw, inflows=f)), stressed(base, sc, mult, flows=f, **kw)
+
+    def most(kw):
+        lo, hi = 0.0, 6e6
+        for _ in range(24):
+            mid = (lo + hi) / 2
+            n_r, s_r = both(kw, gift_now(mid))
+            lo, hi = (mid, hi) if (n_r["odds"] >= 0.95 and s_r["odds"] >= 0.85) else (lo, mid)
+        return lo
+
+    w("\n## M11. What the values budget pays for, and where it binds (Claude, 13 Nov, night; the Final's base)\n")
+    w("M9c's starting point (plain funds, no giving, no vans): the room above the limits is what values may cost. Gifts "
+      "are funded now, in yearly pieces within both parents' 35% caps, with 17% relief. The case's wish: \"a possible "
+      "philanthropic plan related to education or environmental causes\"; Carmen's fuller wish is both, the "
+      "environmental gift sized like the scholarship (ILLUSTRATIVE). EXPLORATORY.\n")
+    mx0, mx1 = most(plain), most(tilt)
+    w(f"- **The room, in giving:** about HK${mx0/1e6:.2f}M funded now with plain funds, HK${mx1/1e6:.2f}M with the ESG "
+      f"tilt (the most before a limit breaks; the normal limit of 95 binds first). A fund paying HK$30K a year in "
+      f"today's money costs HK${f20/1e3:.0f}K for 20 years, HK${life/1e3:.0f}K for {END - 2027}.\n")
+    w(head)
+    w(row("Plain funds, no giving, no vans, normal future", p_n, p_n))
+    w(row("Plain funds, no giving, no vans, under the scenario", p_s, p_s))
+    wish = [(f"ESG tilt + the scholarship for {END - 2027} years, funded", gift_now(life)),
+            ("ESG tilt + education and environment, 20 years each, funded", gift_now(2 * f20)),
+            (f"ESG tilt + education and environment, {END - 2027} years each, funded", gift_now(2 * life)),
+            ("ESG tilt + both as lifelong pledges from cash flow", plus(pledge_for(END - 2027), pledge_for(END - 2027)))]
+    out = []
+    for lbl, f in wish:
+        n_r, s_r = both(tilt, f)
+        w(row(f"{lbl}, normal future", n_r, p_n))
+        w(row(f"{lbl}, under the scenario", s_r, p_s))
+        out.append((n_r, s_r))
+    z_n = run(base, **dict(plain, biz=0))
+    z_s = run(base, "rmp", mult, ret_add=sc["ret_add"], level=sc["level"], inflows=sc["inflows"], biz=0, **plain)
+    w(f"\n- Carmen's fuller wish, both causes for life, funded now (HK${2 * life / 1e6:.2f}M), uses all of the room: "
+      f"{out[2][0]['odds']:.1%} normally, at the limit of 95 within the model's sampling error. 20 years each fits with "
+      f"room to spare ({out[1][0]['odds']:.1%}); the same awards pledged from cash flow break both limits "
+      f"({out[3][0]['odds']:.1%} normally, {out[3][1]['odds']:.1%} under the scenario). The budget decides the size and "
+      f"the form.")
+    w(f"- A proxy for a family with less room (not a second client): the same plan if the business sold for nothing "
+      f"is at {z_n['odds']:.1%} normally and {z_s['odds']:.1%} under the scenario with plain funds, below both limits, "
+      f"so it has no room: only choices that cost nothing pass.\n")
+
+
 # ---------- the runs ----------
 def main():
     if hasattr(sys.stdout, "reconfigure"):
@@ -806,6 +986,8 @@ def main():
           f"HK${fixed_net/1e6:.2f}M of HK${nw['NET WORTH']/1e6:.2f}M net worth ({fixed_net/nw['NET WORTH']:.0%}).\n")
 
     m9(w, row, head, bases[1][1])
+    m10(w, row, head, bases[1][1])
+    m11(w, row, head, bases[1][1])
 
     w("\n## What is not in these runs\n")
     w("- Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, "

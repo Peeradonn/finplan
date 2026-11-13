@@ -315,6 +315,74 @@ Start from the plan with plain funds (candidate A with EDMW → IWDA, Allianz �
 - The floors are ours (ILLUSTRATIVE, Pete 10 Nov). A verdict that depends on one is shown with the floor at which it flips.
 
 
+## M10. Adrian's pay: the route the register left out (Claude, 13 Nov, night; the Final's base, `switch_89`)
+
+The model counts Adrian's pay inside one household surplus until he retires in 2037: HK$1.20M a year (HK$1.05M salary + the case's low bonus, HK$150K; the case's range is HK$150-300K), top band 17%, take-home HK$1,071,565 after tax and his MPF. **Every odds figure in these runs assumes he keeps his job to 65.** The scenario cuts Carmen's draw in 2030-31 but not his bonus. EXPLORATORY.
+
+### M10a. His bonus in the downturn (the scenario made consistent)
+
+Each pair: a plan in today's scenario, then the same with Adrian's bonus after tax lost in 2030-31. Change is against the first row of its pair.
+
+| Run | Odds to 89 | Change (pts) | Inheritance, median | Change | Inheritance, worst 10% | Change |
+|---|---|---|---|---|---|---|
+| The plan as it stands, today's scenario | 89.5% | +0.0 | 8.40 | +0.00 | 0.56 | +0.00 |
+| The plan as it stands, with the bonus lost | 88.2% | -1.3 | 7.91 | -0.49 | 0.56 | +0.00 |
+| New plan: vans + portfolio fees + funded scholarship, today's scenario | 91.0% | +0.0 | 9.07 | +0.00 | 0.84 | +0.00 |
+| New plan: vans + portfolio fees + funded scholarship, with the bonus lost | 89.8% | -1.3 | 8.55 | -0.52 | 0.56 | -0.28 |
+| Label approach (list funds, unfunded lifelong pledge), today's scenario | 84.1% | +0.0 | 6.83 | +0.00 | 0.56 | +0.00 |
+| Label approach (list funds, unfunded lifelong pledge), with the bonus lost | 82.2% | -2.0 | 6.31 | -0.51 | 0.56 | +0.00 |
+| Downsizing instead (only the old flat falls), today's scenario | 82.7% | +0.0 | 11.08 | +0.00 | 4.73 | +0.00 |
+| Downsizing instead, with the bonus lost | 80.6% | -2.0 | 10.56 | -0.52 | 4.73 | +0.00 |
+
+- Downsizing crosses the 85 limit in the downturn at a 11.4% gap behind newer flats in today's scenario and at 8.8% with the bonus lost (slide 6's shape, 1% grid). The normal-future crossing (≈5%, `fin_flipn_cross`) doesn't move: the bonus is lost only in the downturn, so the normal limit still binds first.
+- No verdict against a limit changes: the plan as it stands and the new plan stay above 85; the label approach was already below it at the unverified fee (§5.2).
+
+### M10b. If his job goes (a sensitivity, not a forecast)
+
+Lost at the end of 2030, at 58: his bonus that year, then his take-home and both MPF sides until 2037, with the severance cap (HK$390K) paid in 2031. Spending unchanged unless a row says otherwise. Any planner draws this route, so it isn't a climate finding; it is priced because it is the largest risk to the limits. The plan as it stands; change against the base (normal) or today's scenario (under it).
+
+| Run | Odds to 89 | Change (pts) | Inheritance, median | Change | Inheritance, worst 10% | Change |
+|---|---|---|---|---|---|---|
+| No work again before 65, normal future | 45.4% | -51.4 | 1.46 | -11.54 | 1.46 | -2.51 |
+| No work again before 65, under the scenario | 22.5% | -67.0 | 0.56 | -7.84 | 0.56 | +0.00 |
+| Re-hired from 2032 at half pay, normal future | 78.5% | -18.3 | 5.97 | -7.04 | 1.46 | -2.51 |
+| Re-hired from 2032 at half pay, under the scenario | 55.6% | -33.8 | 1.38 | -7.02 | 0.56 | +0.00 |
+| Re-hired from 2032 at three-quarter pay, normal future | 88.5% | -8.3 | 8.60 | -4.41 | 1.46 | -2.51 |
+| Re-hired from 2032 at three-quarter pay, under the scenario | 71.9% | -17.6 | 4.01 | -4.40 | 0.56 | +0.00 |
+| Lost at the end of 2033 instead (at 61), no work again, normal future | 83.7% | -13.0 | 7.37 | -5.64 | 1.46 | -2.51 |
+| Lost at the end of 2033 instead (at 61), no work again, under the scenario | 64.4% | -25.1 | 2.79 | -5.62 | 0.56 | +0.00 |
+| Half pay from 2032, and HK$200K a year less spending to 2036, normal future | 87.1% | -9.7 | 8.19 | -4.81 | 1.46 | -2.51 |
+| Half pay from 2032, and HK$200K a year less spending to 2036, under the scenario | 69.5% | -20.0 | 3.60 | -4.81 | 0.56 | +0.00 |
+| Half pay from 2032, HK$200K a year less, and Carmen works to 65, normal future | 95.9% | -0.8 | 11.67 | -1.33 | 3.40 | -0.57 |
+| Half pay from 2032, HK$200K a year less, and Carmen works to 65, under the scenario | 86.7% | -2.8 | 7.04 | -1.36 | 0.56 | +0.00 |
+
+- Without a response, losing the job breaks both limits in either future; the climate scenario makes it worse, it doesn't cause it. The last row (95.9% normally, 86.7% under the scenario) is a contingency that restores both: half his pay again, HK$200K a year less spending, Carmen working three more years (her draw continues; the sale year unchanged, an assumption).
+- The case: "Neither Adrian nor Carmen has standalone long-term disability income protection." Disability is the insurable form of this risk; redundancy is not. Severance years of service: unknown (ILLUSTRATIVE cap).
+
+
+## M11. What the values budget pays for, and where it binds (Claude, 13 Nov, night; the Final's base)
+
+M9c's starting point (plain funds, no giving, no vans): the room above the limits is what values may cost. Gifts are funded now, in yearly pieces within both parents' 35% caps, with 17% relief. The case's wish: "a possible philanthropic plan related to education or environmental causes"; Carmen's fuller wish is both, the environmental gift sized like the scholarship (ILLUSTRATIVE). EXPLORATORY.
+
+- **The room, in giving:** about HK$1.74M funded now with plain funds, HK$1.46M with the ESG tilt (the most before a limit breaks; the normal limit of 95 binds first). A fund paying HK$30K a year in today's money costs HK$468K for 20 years, HK$742K for 39.
+
+| Run | Odds to 89 | Change (pts) | Inheritance, median | Change | Inheritance, worst 10% | Change |
+|---|---|---|---|---|---|---|
+| Plain funds, no giving, no vans, normal future | 97.7% | +0.0 | 14.75 | +0.00 | 4.93 | +0.00 |
+| Plain funds, no giving, no vans, under the scenario | 92.2% | +0.0 | 9.90 | +0.00 | 1.26 | +0.00 |
+| ESG tilt + the scholarship for 39 years, funded, normal future | 96.5% | -1.3 | 12.80 | -1.96 | 3.79 | -1.14 |
+| ESG tilt + the scholarship for 39 years, funded, under the scenario | 88.6% | -3.6 | 8.14 | -1.76 | 0.56 | -0.70 |
+| ESG tilt + education and environment, 20 years each, funded, normal future | 96.1% | -1.6 | 12.46 | -2.30 | 3.57 | -1.36 |
+| ESG tilt + education and environment, 20 years each, funded, under the scenario | 87.8% | -4.4 | 7.85 | -2.06 | 0.56 | -0.70 |
+| ESG tilt + education and environment, 39 years each, funded, normal future | 94.9% | -2.8 | 11.53 | -3.22 | 3.01 | -1.92 |
+| ESG tilt + education and environment, 39 years each, funded, under the scenario | 85.7% | -6.5 | 6.98 | -2.92 | 0.56 | -0.70 |
+| ESG tilt + both as lifelong pledges from cash flow, normal future | 91.6% | -6.2 | 10.77 | -3.99 | 1.96 | -2.97 |
+| ESG tilt + both as lifelong pledges from cash flow, under the scenario | 79.8% | -12.4 | 6.12 | -3.79 | 0.56 | -0.70 |
+
+- Carmen's fuller wish, both causes for life, funded now (HK$1.48M), uses all of the room: 94.9% normally, at the limit of 95 within the model's sampling error. 20 years each fits with room to spare (96.1%); the same awards pledged from cash flow break both limits (91.6% normally, 79.8% under the scenario). The budget decides the size and the form.
+- A proxy for a family with less room (not a second client): the same plan if the business sold for nothing is at 91.9% normally and 81.6% under the scenario with plain funds, below both limits, so it has no room: only choices that cost nothing pass.
+
+
 ## What is not in these runs
 
 - Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, air-con 2.8, recycled PET 108.1; ESTIMATED on an ILLUSTRATIVE business), from `Final/Decision_List.md`.

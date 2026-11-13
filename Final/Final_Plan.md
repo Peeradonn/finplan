@@ -220,14 +220,17 @@ checked, and says which.
   not a run). The same rules giving a different verdict is what makes it a framework.
 
 **Open before the claim is safe** (Claude, 13 Nov, night):
-- **The first condition isn't yet whole.** Adrian's job isn't in the risk register: Regional Operations Director of a
-  logistics technology company across Hong Kong, the Greater Bay Area and Southeast Asia (case); HK$1.05M a year plus a
-  HK$150–300K bonus to 65, ≈HK$13–15M before tax, undiscounted (Claude's arithmetic on case figures), comparable to the
-  flat's HK$11.5M. Neither parent has disability income cover (case). Add it as a route; price it or drop it with a
-  reason. Owner: Lookbua.
-- **The second condition never binds on the Wongs.** Even the label approach's lifelong pledge fits both limits (95.2%
-  normally, 86.4% under the scenario; M9c). To show the rule deciding something, run a case where it binds: Carmen's
-  fuller wish list, or the second client in backup. Owner: Pete.
+- ~~The first condition isn't yet whole~~ **Priced (Claude, 13 Nov, night; `model_runs.md` M10; the register's I1,
+  I2 and the note under it, `research/area4_property_scenario.md` §6).** Adrian's pay (HK$1.2M a year in the model to
+  2036): his bonus lost in the downturn costs the new plan 1.3 points under the scenario (91.0% → 89.8%), inside the
+  limit; his employer's own climate exposure is a missing price (ask Adrian). His job itself isn't a climate route (any
+  planner draws it) but it is the plan's largest risk: lost at the end of 2030 with no work again, the plan falls to
+  45.4% normally and 22.5% in the downturn. Every odds figure on the slides assumes he works to 65. Decisions: §5.10.
+- ~~The second condition never binds on the Wongs~~ **Shown (Claude, 13 Nov, night; M11).** The room above the limit
+  pays for about HK$1.46M of giving funded now, with Carmen's ESG funds (HK$1.74M with plain funds). Carmen's fuller
+  wish, both causes the case names (education and environment) for 39 years each, funded now (HK$1.48M), uses all of
+  it (94.9%, at the limit within sampling error); 20 years each fits (96.1%); the same awards pledged from cash flow
+  break both limits (91.6%; 79.8%). The budget decides the size and the form. For slide 4: §5.10.
 - **About half of the first condition's shock is an ordinary market stress:** of the scenario's −7.3 points, the
   portfolio's returns and inflation are −3.8 (M7), the stress any cash-flow planner runs. Put the weight on the routes
   only climate opens (the flat, the business) and on how they compound.
@@ -993,6 +996,23 @@ idea each and the four corners; the rest said once or kept for backup. **The fou
 night (slide 3);** before that they were on no slide. The test: can the cold read name three rules?
 Owner: everyone, at the first timed run.
 
+**5.10 Adrian's pay, and what the values budget buys** (Claude, 13 Nov, night; Pete decides; `model_runs.md` M10–M11).
+- **Make the scenario consistent.** It cuts Carmen's draw by HK$100K in 2030–31 but leaves Adrian's bonus untouched.
+  **Proposed:** cut his bonus too. Every downturn figure falls 1.3–2.0 points (the new plan 91.0% → 89.8%; the plan as
+  it stands 89.5% → 88.2%; downsizing 82.7% → 80.6%), slide 6's downturn crossing moves from ≈11% to ≈9%, and no
+  verdict against a limit changes (the normal limit still binds first, at ≈5%). It means re-exporting the downturn keys
+  (slide 1's 47%, the storm odds, `fin_flip_*`, M8) and redrawing slide 6's dashed line. Owner: Pete.
+- **Say what the odds assume.** Every odds figure assumes Adrian works to 65. If his job goes at the end of 2030 and he
+  doesn't work again, the plan falls to 45.4% normally and 22.5% in the downturn (M10b). **Proposed:** a footnote
+  wherever odds appear ("assumes Adrian works to 65"); a backup slide with the contingency that restores both limits
+  (half his pay again from 2032, HK$200K a year less spending, Carmen working to 65: 95.9%; 86.7%); and the case's own
+  protection gap (no long-term disability income cover) in the answer. Not a climate finding: the question a
+  practitioner asks first. Owners: Pete (backup), Lookbua (register).
+- **Slide 4 can show the budget deciding.** The room pays for about HK$1.46M of giving funded now, with Carmen's ESG
+  funds (M11). **Proposed:** slide 4's Wong side says what the room buys and where it stops ("their room pays for about
+  HK$1.5M of giving today; both causes for life would use all of it; pledged from cash flow instead, they'd break the
+  limit"), from new export keys. Owner: Pete.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -1056,6 +1076,7 @@ is the planning process with green added" (§4.2's table; §4.4 "What is ours").
 | Practitioner | Is the 17% tax relief real for this family? | Yes in 2027–28 if Adrian gives: HK$40,800 per HK$240K gift, within the 35% cap; none after retirement | — |
 | Judge who read Round One | Your proposal said waiting to 2045 for the reverse mortgage costs ≈9 points | That run kept the 2037 payout; at the 2045 value and Carmen's age 68 it costs ≈0.4 points on today's base (M6) | — |
 | Anyone | Adrian wants carbon credits to offset the family's flights. Which corner? | It costs money and is real only if verified and additional. Cheap avoidance credits mostly fail: don't pay for the label. High-quality removals could be "pay knowingly" from the values budget. The family's own cuts give measured activity and pay | The team's calibration test |
+| Practitioner | What if Adrian loses his job at 58? | Every odds figure assumes he works to 65, and we say so. With no response the plan breaks both limits (45.4% normally if he doesn't work again); a contingency restores them: half his pay again, HK$200K a year less spending, Carmen working to 65 (95.9%; 86.7%; `model_runs.md` M10b). Disability, the insurable form, is the case's own protection gap | **Yes**, until the footnote and backup exist (§5.10) |
 | Anyone | What would you not do? | Refusals with numbers: the green mortgage, a paid green-loan label, the clean-energy fund, a sustainability-linked loan at her size, impact claims for listed shares | — |
 | Anyone | Do clients really ask for labels? | We don't say they do: when a sustainable plan is asked for, the tools a planner is handed are labels (the SFC's ESG fund list) | Re-count the list Sun 15 |
 
@@ -1111,6 +1132,13 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **13 Nov, night (Pete, Claude): Adrian's pay priced; the values budget shown binding** (`model_runs.md` M10–M11, new
+  in `Final/final_model.py`; no existing row changed). His bonus in the downturn: −1.3 points, inside the limit; his
+  employer's exposure: a missing price; his job: not a climate route but the plan's largest risk, with a contingency
+  that restores both limits. The room pays for about HK$1.46M of giving funded now; Carmen's both-causes-for-life wish
+  uses all of it. The register gains I1, I2 and a note (`research/area4_property_scenario.md` §6); proposals in §5.10;
+  a hard question in §8. No export keys yet: nothing on a slide changed.
 
 - **13 Nov, night (Claude; the thesis Pete's): slides 1 and 11 carry the new thesis; slide 6's flip is ≈5%, not 11%.**
   Slide 1's closing line and notes, and slide 11's title and spoken close, now say "A plan is sustainable if it holds its
