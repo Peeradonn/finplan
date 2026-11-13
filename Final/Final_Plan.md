@@ -203,7 +203,7 @@ checked, and says which.
 
 | Condition | Direction | What a planner checks, for any client | The Wongs' proof |
 |---|---|---|---|
-| **1. Holds its limits when climate hits** | Outside in; limits first | Everything the family owns and earns (the home, the business, the savings, the income) in a normal future and the stress scenario; no choice may break the limits (95 in 100 normally, 85 in the 2030–31 scenario), however green | 47% of the shock's loss lands on the home and the business, where no fund share reaches; downsizing breaks the 85 limit once older flats fall ≈11% behind newer ones (`fin_flip_cross`; the normal limit may bind earlier, below) |
+| **1. Holds its limits when climate hits** | Outside in; limits first | Everything the family owns and earns (the home, the business, the savings, the income) in a normal future and the stress scenario; no choice may break the limits (95 in 100 normally, 85 in the 2030–31 scenario), however green | 47% of the shock's loss lands on the home and the business, where no fund share reaches; downsizing breaks their limit once older flats fall ≈5% behind newer ones (≈11% for the 85 limit in the downturn; slide 6) |
 | **2. Pays for values only from the room above them** | The values budget | The room between the plan with ordinary choices and the limit; each values choice priced in the same units; the parents agree once, in the mandate, how much of the room to spend | Room 2.7 points; they use 0.9, ≈HK$1.47M of what the children inherit (M9c) |
 | **3. Claims only what it changes** | Inside out | Each decision's effect on the world against a stated counterfactual, measured or estimated; a footprint, a rating or a label is not a change | ≈134 t a year of cuts we can show, all in the business (108 t of it recycled PET at today's parity); the funds: a footprint, no additional impact quantified |
 
@@ -231,9 +231,10 @@ checked, and says which.
 - **About half of the first condition's shock is an ordinary market stress:** of the scenario's −7.3 points, the
   portfolio's returns and inflation are −3.8 (M7), the stress any cash-flow planner runs. Put the weight on the routes
   only climate opens (the flat, the business) and on how they compound.
-- **The flat's flip point:** the ≈11% crossing is the 85 limit under the scenario. In a normal future downsizing is at
-  93.6% with a 10% gap (M6, base plan), below the 95 limit; by interpolation (not a run) the normal limit binds near a
-  5% gap. Run the normal-future flip before slide 6 says 11%. Owner: Pete or Lookbua.
+- ~~The flat's flip point~~ **Checked (the deck session, 13 Nov, night):** the normal limit binds first. On the base
+  plan, same seed, downsizing crosses 95 at a 5.5% gap (M6's shape; 4.0% with the scenario's gap shape and drag but no
+  shocks); in the downturn it crosses 85 at 11.4%. The reverse mortgage passes both at every gap (≥96.1% normally,
+  ≥89.5% in the downturn). Slide 6 shows both limits; the normal-future keys (`fin_flipn_*`) are being exported.
 
 - **Spoken:** the claim closes slide 1; slide 2 shows where PRISM checks each condition; slide 11 returns to the claim.
   The cold-read test: after slides 1–4, can people who've never seen the case say the three conditions?
