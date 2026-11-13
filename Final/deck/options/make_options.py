@@ -24,6 +24,7 @@ for name in ("00_head.html", "99_tail.html"):
     shutil.copy(os.path.join(DECK, "src", name), src)
 shutil.copy(os.path.join(HERE, "01_options.html"), src)
 shutil.copytree(os.path.join(DECK, "src", "lucide"), os.path.join(src, "lucide"))
+shutil.copytree(os.path.join(DECK, "img"), os.path.join(tmp, "img"))               # the prism stage (slide 2)
 
 raw = os.path.join(DECK, "_v5_options_raw.html")
 subprocess.run([PY, os.path.join(SKILL, "build.py"), tmp, "--out", raw], check=True)
@@ -44,16 +45,20 @@ shutil.rmtree(tmp, ignore_errors=True)
 od = os.path.join(DECK, "build", "options")
 subprocess.run([PY, os.path.join(SKILL, "render.py"), out, "--out", od], check=True)
 
-# comparison sheets: v4's slide, then each option, side by side, captioned
+# comparison sheets: what each new slide replaces, then the new one (v5 slides 1-4; 9A is already chosen)
 font = ImageFont.truetype(os.path.join(DECK, "fonts", "PlusJakartaSans-Bold.ttf"), 30)
-for v4, opts, name in (("slide-05.png", ("slide-01.png", "slide-02.png"), "compare-4.png"),
-                       ("slide-10.png", ("slide-03.png", "slide-04.png"), "compare-9.png")):
-    caps = ["v4 now (slide %s)" % v4[6:8].lstrip("0")] + ["Option %s" % c for c in ("A", "B")]
-    ims = [Image.open(os.path.join(DECK, "build", v4))] + [Image.open(os.path.join(od, o)) for o in opts]
+pairs = (("v4 slide 1", os.path.join(DECK, "build", "slide-01.png"), "v5 slide 1", "slide-01.png", "compare-1.png"),
+         ("v4 slide 2", os.path.join(DECK, "build", "slide-02.png"), "v5 slide 2", "slide-02.png", "compare-2.png"),
+         ("v4 slide 4 (Profile)", os.path.join(DECK, "build", "slide-04.png"), "v5 slide 3", "slide-03.png", "compare-3.png"),
+         ("Option 4A, as chosen", os.path.join(od, "prev-4A.png"), "v5 slide 4, the step first", "slide-04.png", "compare-4.png"))
+for cap0, p0, cap1, p1, name in pairs:
+    if not os.path.exists(p0):
+        continue
+    ims = [Image.open(p0), Image.open(os.path.join(od, p1))]
     w, h = 1280, 720
-    sheet = Image.new("RGB", (len(ims) * (w + 30) + 30, h + 90), "#E2E2DF")
+    sheet = Image.new("RGB", (2 * (w + 30) + 30, h + 90), "#E2E2DF")
     d = ImageDraw.Draw(sheet)
-    for i, (im, cap) in enumerate(zip(ims, caps)):
+    for i, (im, cap) in enumerate(zip(ims, (cap0, cap1))):
         x = 30 + i * (w + 30)
         sheet.paste(im.convert("RGB").resize((w, h)), (x, 70))
         d.text((x, 20), cap, fill="#0F1E3D", font=font)

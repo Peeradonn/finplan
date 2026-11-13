@@ -84,7 +84,10 @@ dashboard → 10; trade-off → 6; refusal → 3, 6, 8, 9.
 co-founded a "sustainable packaging distribution business" (HK$5.0M); the Tai Kok Tsui flat (HK$11.5M, HK$1.8M
 mortgage); three decision-makers who disagree (Adrian prudent, Carmen values, Ryan tech); a 20–25% ESG wish on HK$10.47M
 of investable assets. The flat and the business are 61% of their assets (HK$16.50M of HK$27.19M). The talk introduces
-them in one picture and says in the first minute which figures are the case's and which are ours.
+them in one picture. **They are our client, defined by us** (Pete, 14 Nov): the organisers gave the Final only what's in
+`Final/` (the topic, its key areas, the guidelines), and the topic says "define the client's circumstances and every
+figure yourself". The family's facts came from Round One's case, but on a slide they are our client's, never "the
+case says" or "(case)"; the parents' wishes are our characterisation, not quotes.
 
 **Facts we defined** (ILLUSTRATIVE on screen): Carmen owns 50% of the business, the company worth HK$10.0M (decided,
 Pete, 9 Nov); an illustrative HK$35M-revenue distributor (`research/area2_business.md`). In use, to confirm at the
@@ -106,8 +109,8 @@ model it is Round One as written.
 - **Its two weak points** (§5.1): its ESG core fund holds US$0 and its 0.775% fee was never verified; its pledge runs 39
   years against our fund's 20. Both inflate our gain until fixed.
 
-**Why the Wongs** (for "you reused the case"): a "before" that isn't a strawman; the core figures are the organiser's
-own, so we can tag "case figure" against "our assumption"; Hong Kong has about 12 import/export and wholesale SMEs for
+**Why the Wongs** (for "you reused the case"): a "before" that isn't a strawman; a family the team knows in depth, so
+every figure is defined and consistent (a judge who never saw Round One meets them as our client); Hong Kong has about 12 import/export and wholesale SMEs for
 every manufacturing one (84,395 against 7,208; TID, as at June 2025), so a distributor is representative. The cost:
 CBAM and a sustainability-linked loan don't fit her, so "Financing the Transition" is won by showing why the brief's
 products don't fit and what does (slides 7–8; §5.7).
@@ -860,6 +863,18 @@ names and handovers. **Speakers** unchanged: Pete 1–3 and 10, Lookbua 4–5, F
 forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken lines last; then the timed run.
 PowerPoint deferred (Pete, 13 Nov, night). Each new slide replaces its v4 slide only when it is better, so the deck
 works at every step.
+
+**14 Nov: Pete chose 4A and 9A, then flagged 4A as a Wong case again** (the sixth drift): cover the Wongs' figures and
+nothing showed what the Risk step does. Rebuilt in `Final/deck/options/` with the step for any client first (list what
+they own and earn; trace each route to HK$; drop what can't reach them and test the ordinary risks anyway; price the
+rest against the limit), then the Wongs running it, each step's number marked on the strip. In the same pass, at
+Pete's question "are 1–3 good already?": **slide 1** rebuilt as the gap (a share says what funds hold) and three
+questions in the three conditions' colours, one proof each, the claim; the family's ask as our client's, not the
+case's. **Slide 2** keeps the prism; each step now names the condition it checks; the "instead of" lines are gone.
+**Slide 3** (Profile) says what the room buys (≈HK$1.5M of giving funded now) and where it stops (both causes for
+life use it all; pledged from cash flow, they break the limit); the parents' quotes and "Award 2026 case (their
+words)" removed; the two different HK$1.5M figures (room used, in inheritance; room total, in giving) no longer share
+the slide. Comparisons: `build/options/compare-1.png` to `compare-4.png`.
 
 **Options for slides 4 and 9** (Claude, 13 Nov, night; `Final/deck/options/`, built by `make_options.py` with the deck's
 own head; side by side with v4 in `Final/deck/build/options/compare-4.png` and `compare-9.png`). Pete chooses.

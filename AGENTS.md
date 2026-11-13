@@ -43,9 +43,11 @@ Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Ass
 **Start here:** `Final/Final_Plan.md` (what the judges score, the client and thesis, rules for every slide, the framework
 and storyline, who does what, the schedule, hard questions, facts to check, untested assumptions); then
 `Final/Decision_List.md` (each decision against the label approach, with its price tag and capital),
-`Final/model_runs.md` (the model's price tags) and the research briefs in `Final/research/`. Primary sources: the three
-PDFs in `Final/` (the topic, its key areas, the finalist guidelines); the case, the rules and the workshop deck in
-`Primary Info/`.
+`Final/model_runs.md` (the model's price tags) and the research briefs in `Final/research/`. **The organisers gave the Final only
+what's in `Final/`** (Pete, 13 Nov): the topic, its key areas and the finalists' guidelines. Everything in other
+folders (`Primary Info/`, `round2/`, `document/`) is from earlier rounds, not a Final requirement. The Wongs' facts we
+took from Round One's case are now our client definition ("define the client's circumstances and every figure
+yourself", topic p.2): on a slide they are our client's, never "the case says".
 
 **How the Final differs from Rounds One and Two** (Pete, 5 Nov; details in `Final_Plan.md` §2–3):
 - **No judge is assumed to have read Rounds One or Two.** The talk introduces the family from scratch; every slide stands
@@ -82,8 +84,8 @@ The Final is judged on a framework; the Wongs demonstrate it. Drafts have drifte
 ## Your stance: independent reviewer, not cheerleader
 Everything written here (the plans, the briefs, the decision list, the proposal, the review logs, this file) is **our
 team's current thinking**, written by people and AI who wanted it to work. Treat it as claims to test.
-- **Form your own view first,** from primary sources: the Final's three PDFs, the case PDF, `Primary Info/2026-rules.md`,
-  official sources (HKMA, SFC, HKEX, EPD, HKMC, IRD, IA). Then read our documents and say where you disagree.
+- **Form your own view first,** from primary sources: the Final's three PDFs and official sources (HKMA, SFC,
+  HKEX, EPD, HKMC, IRD, IA); the Round One case only for the client facts we chose to keep. Then read our documents and say where you disagree.
 - **Look for the strongest case against.** What would a practitioner or an ESG strategist question? What did we leave
   out? Who would say "we already do this better"?
 - **Don't flatter.** If a slide, a number or a decision is weak, say so plainly and why. Hold your position when the
@@ -108,13 +110,9 @@ team's current thinking**, written by people and AI who wanted it to work. Treat
   strong answer has "a clear recommendation with a number attached to it", "an honest treatment of trade-offs, data
   limits and what you would not do", and "evidence that the sustainable finance element changes the client's financial
   outcome, not just the vocabulary".
-- **The panel:** not named (the guidelines name no judges). The joint organisers include the Hong Kong Institute of ESG
-  Strategists and the Hong Kong Association of Financial Advisors (workshop deck p.2): expect greenwashing questions and
-  suitability questions.
-- **The case asks to see** (notes, p.9): "strategic thinking, client suitability awareness, innovation, implementation
-  practicality, professionalism in presentation". The family wants a plan that is "innovative yet prudent,
-  forward-looking yet practical, and aligned with both financial goals and family values".
-- Earlier rounds: Round One's criteria are in `Primary Info/2026-rules.md`; Round Two's in `round2/Round2_Deck_Plan.md` §1.
+- **The panel:** not named (the guidelines name no judges or organiser bodies). The topic's author signs as a CPA and
+  FCESGS (topic p.1): expect greenwashing and suitability questions.
+- Earlier rounds (background only, not the Final's criteria): Round One's criteria are in `Primary Info/2026-rules.md`; Round Two's in `round2/Round2_Deck_Plan.md` §1.
 
 ## Review lenses
 Pick the lenses that fit the question and say which you used. Think like the actual person.
