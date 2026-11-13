@@ -28,8 +28,8 @@ YS = [100, 192, 284, 376, 468]   # 13 Nov: rows 92px apart (were 120 from 150), 
 pt = lambda *ps: " ".join(f"{x:.1f},{y:.1f}" for x, y in ps)
 
 defs = [
-    '<radialGradient id="bg" cx="0.33" cy="0.6" r="0.85"><stop offset="0" stop-color="#2E2326"/>'
-    '<stop offset=".55" stop-color="#191415"/><stop offset="1" stop-color="#0D0A0B"/></radialGradient>',
+    '<radialGradient id="bg" cx="0.33" cy="0.6" r="0.85"><stop offset="0" stop-color="#1C2846"/>'
+    '<stop offset=".55" stop-color="#0E1730"/><stop offset="1" stop-color="#060B17"/></radialGradient>',  # navy, 13 Nov
     '<linearGradient id="front" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".26"/>'
     '<stop offset=".5" stop-color="#FFFFFF" stop-opacity=".09"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/></linearGradient>',
     '<linearGradient id="side" x1="0" y1="0" x2="1" y2="0.3"><stop offset="0" stop-color="#C9D6FF" stop-opacity=".16"/>'
@@ -120,7 +120,7 @@ html = f'''<!DOCTYPE html>
 *{{box-sizing:border-box}} html{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 body{{margin:0;background:#E2E2DF}} p{{margin:0}}
 .deck{{display:flex;flex-direction:column;align-items:center;padding:28px 0}}
-.slide{{position:relative;width:1280px;height:720px;overflow:hidden;color:#fff;font:400 17px/1.4 "PJS",Arial,sans-serif;background:#120E0F}}
+.slide{{position:relative;width:1280px;height:720px;overflow:hidden;color:#fff;font:400 17px/1.4 "PJS",Arial,sans-serif;background:#0B1426}}
 @page{{size:1280px 720px;margin:0}} @media print{{body{{background:#fff}}.deck{{padding:0;display:block}}}}
 .kick{{position:absolute;left:48px;top:40px;font:700 15px/1 "PJS";color:#FF6B75;letter-spacing:.4px}}
 .word{{position:absolute;left:44px;top:60px;font:800 92px/1 "PJS";letter-spacing:10px;color:#fff}}
@@ -151,7 +151,7 @@ body{{margin:0;background:#E2E2DF}} p{{margin:0}}
 </section></main></body></html>'''
 open(out, "w", encoding="utf-8").write(html)
 # the art alone (no words), for the deck: render at 2x to Final/deck/img/prism-stage.png (13 Nov)
-art = ('<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#120E0F}'
+art = ('<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#0B1426}'
        'svg{display:block}</style></head><body>' + svg.replace('style="position:absolute;left:0;top:0"', "") + "</body></html>")
 open(out.replace(".html", "-art.html"), "w", encoding="utf-8").write(art)
 print("ok")

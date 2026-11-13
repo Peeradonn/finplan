@@ -132,7 +132,7 @@ page = f"""<!DOCTYPE html>
 @font-face{{font-family:"PJS";src:url("fonts/PlusJakartaSans-Regular.ttf");font-weight:400}}
 @font-face{{font-family:"PJS";src:url("fonts/PlusJakartaSans-SemiBold.ttf");font-weight:600}}
 @font-face{{font-family:"PJS";src:url("fonts/PlusJakartaSans-Bold.ttf");font-weight:700}}
-:root{{--ink:#1B1716;--slate:#7A5C65;--rule:#ECDADD;--accent:#C80E1E}}
+:root{{--ink:#0F1E3D;--slate:#566173;--rule:#DCE1E8;--accent:#C80E1E}}
 body{{margin:0;background:#fff;color:var(--ink);font:400 16px/1.55 "PJS",Arial,sans-serif}}
 main{{max-width:860px;margin:0 auto;padding:40px 24px 64px}}
 h1{{font:700 36px/1.1 "PJS",Arial,sans-serif;margin:0 0 12px}}

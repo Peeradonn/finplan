@@ -58,6 +58,27 @@ PDFs in `Final/` (the topic, its key areas, the finalist guidelines); the case, 
 - **Round One's choices are open.** Where the framework disagrees, the new advice wins without apology. Round Two's look
   (the house, "Built to Last") isn't the default either.
 
+## The Final's argument: the framework first, the Wongs as its worked example
+The Final is judged on a framework; the Wongs demonstrate it. Drafts have drifted into a Wong case study five times
+(Pete, 10–13 Nov). Read this before touching any Final slide.
+- **The task** (topic brief, p.2, word for word): "present a decision-ready sustainable finance framework ... Demonstrate
+  the framework on one representative Hong Kong client." Innovation and independent thinking is 40 of the 100 marks:
+  judges should leave with our rules, each with a number behind it, not with one family's case.
+- **The argument** (`Final_Plan.md` §4.1–4.2): "A plan is sustainable if it holds its limits when climate hits, pays
+  for values only from the room above them, and claims only what it changes." Three conditions: the first is outside
+  in (what climate does to everything the family owns and earns), the third inside out (what the money changes,
+  against a counterfactual), the second the values budget; one measure for every decision checks all three, run
+  through PRISM: Profile, Risk, Impact, Select, Monitor. Don't present the brief's own premise ("beyond labels", "a
+  planning discipline") as our idea: the panel wrote it (Pete, 13 Nov, night).
+- **On every slide the rule frames and the Wongs prove:** the title, kicker and closing line are the framework's; the
+  body shows the step as any planner would run it, then the Wongs running it. The tests are in `Final_Plan.md` §3.
+- **The framework comes before the numbers** (1 the question, 2 PRISM, 3 the answer; Pete, 13 Nov, `Final_Plan.md`
+  §5.5), although Key Areas §7 says "lead with a recommendation": one spoken sentence closing slide 1 meets it.
+- **Why it drifts:** every number we have is the Wongs', and the rules on numbers, tags and evidence put a number
+  forward, so the family becomes the biggest thing on a slide by default. The `slide-design` skill adds "Lead with the
+  threat and the outcome, not the mechanism", learned on a product pitch; here the mechanism is what's scored, so it leads. When the
+  rule and a Wong number compete for space, the number shrinks or goes to backup.
+
 ## Your stance: independent reviewer, not cheerleader
 Everything written here (the plans, the briefs, the decision list, the proposal, the review logs, this file) is **our
 team's current thinking**, written by people and AI who wanted it to work. Treat it as claims to test.
@@ -81,7 +102,7 @@ team's current thinking**, written by people and AI who wanted it to work. Treat
 - **What the ten minutes must contain** (Key Areas §7, word for word): "Lead with a recommendation, the capital required
   and the expected financial and sustainability outcomes." "Include a quantified structure, a portfolio with weights and
   costs, a scenario, a dashboard, a trade-off and a refusal." "Show your assumptions and sources, and defend them under
-  questioning."
+  questioning." The order is ours: the framework comes first ("The Final's argument", above).
 - **How evidence is judged** (Key Areas): "Cite authoritative sources and distinguish measured, estimated and
   illustrative data." "Use Hong Kong dollars, state all assumptions, and avoid fabricated or unverifiable statistics." A
   strong answer has "a clear recommendation with a number attached to it", "an honest treatment of trade-offs, data
@@ -108,14 +129,16 @@ Pick the lenses that fit the question and say which you used. Think like the act
 | **A judge at the back of the room** | Can I read it on a projector? What's the one point? Does it stand alone if I never saw Rounds One and Two? |
 
 ## Making the deck: judgment, not a template
-The plan says what each slide must **prove** (`Final_Plan.md` §4.5, "Must prove"). How a slide shows it is a design
+The plan says, for each slide, the step any planner runs and what the Wongs must **prove** (`Final_Plan.md` §4.5, "The
+step" and "Must prove"). How a slide shows it is a design
 decision, made for that slide's point, not copied from the slide before. In Round Two, a list of required parts for
 every slide locked the results into one way and below standard (Pete, 23 Oct).
 - **Start from the slide's job.** What must this slide make a judge believe, and what shows it fastest: one chart, one
   number, a picture of the real thing, a flow, two or three panels? Two slides in a row with the same layout need a
   reason.
 - **Judge it by these tests,** on each slide and then on a contact sheet of the whole deck. Pete's comes first: would a
-  world-class financial planner, pitching to this family, put this on screen? The rest: one point in about five
+  world-class financial planner, presenting their framework to the judges with this family as the worked example, put
+  this on screen? The rest: one point in about five
   seconds; the claim shown, not argued; it reads without the voice; it stands alone for a judge who never saw Rounds One
   and Two; it moves the story; as simple as it can be.
 - **The plan records drafts, not orders.** When a different form or title would serve the point better, say so, show two

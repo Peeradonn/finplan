@@ -13,9 +13,12 @@ the family level (the odds the money lasts, the inheritance) comes from the mode
 `Final/model_runs.md`; everything else comes from the briefs, with their tags (SOURCED, ESTIMATED, ILLUSTRATIVE). The
 business is our illustrative HK$35M-revenue distributor, Carmen owning 50% (decided, Pete, 9 Nov).
 
-**Corners:** DO (good for their money, real effect shown) · FINANCE (good for their money, no real effect shown:
-do it, don't call it green) · PAY (costs money, real effect shown or reflects their values: within a budget set in
-advance) · REFUSE (costs money or credibility, no real effect shown).
+**Corners** (`Final_Plan.md` §4.2; slide 3): DO (good for their money, real effect shown) · FINANCE (good for their
+money, no real effect shown: do it, don't call it green) · PAY (costs money, real effect shown: pay knowingly, from the
+values budget) · REFUSE (costs money or credibility, no real effect shown: don't pay for the label). In REFUSE, a
+person's values may still buy a product from the values budget, named as alignment, never as impact ("We don't refuse
+Carmen's values. We refuse the label."). Aligned 13 Nov: PAY used to read "real effect shown or reflects their values",
+which put Carmen's ESG funds in two corners at once.
 
 ---
 
@@ -31,11 +34,11 @@ advance) · REFUSE (costs money or credibility, no real effect shown).
 | B6 | Green lease at the warehouse renewal | Nothing → do it | FINANCE | — | 2027 | 8 |
 | B7 | The sale, 2035–39 | HK$3.0M counted → same, with data and fleet as sale assets | FINANCE | — | 2035–39 | 8 |
 | B8 | Dividend policy for the van saving | Nothing → pay Carmen's half out once the van loan is repaid, agreed with the co-founder | FINANCE (moves money out of a concentrated business) | — | 2033–38 | 8 (one line) |
-| P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee; Adrian 24% (+16% IWDA), Carmen 60% (13 Nov) | PAY (Carmen) / within budget (Adrian) | Reallocation | Months 1–3 | 9 |
+| P1 | ESG equity core | BOC-Prudential fund (US$0 in assets) → climate-benchmark ETF (EDMW) at the plain fund's fee; Adrian 24% (+16% IWDA), Carmen 60% (13 Nov) | REFUSE as impact; kept as Carmen's values, from the budget (≈HK$0 in fees for Adrian at the plain fund's fee) | Reallocation | Months 1–3 | 3, 9 |
 | P2 | What counts as sustainable | "On the SFC list" → a binding, measured outcome rule | — (governance) | — | Months 1–3 | 9, 10 |
 | P3 | Adrian's green bond fund | Allianz 5% → plain global bonds (AGGU) | REFUSE (for prudent money) | Reallocation | Months 1–3 | 9 |
 | P4 | Carmen's green bond fund | Allianz 10% → keep only with an impact report and no entry charge | PAY | — | Months 1–3 | 9 |
-| P5 | MPF low-carbon fund | Unchanged | PAY | — | — | 9 |
+| P5 | MPF low-carbon fund | Unchanged | REFUSE as impact; kept as Carmen's values, from the budget | — | — | 9 |
 | P6 | The mandate | One policy, ESG 25% as a target → separate portions, a cost test, Carmen's values budget; ESG share an output (**26.6%**, 13 Nov: Adrian's EDMW capped at 24% by his 0.5% limit at the 2.09% tracking error slide 9 shows; 27.7% assumed 30%, sized at a 1.42% proxy) | — (governance) | — | Months 1–3 | 4, 9 |
 | P7 | Refusals: clean-energy funds, sustainability-linked bonds, green deposits, risk-changing green bond ETFs, impact claims for listed shares | Thematic funds already refused → the rest added, each with its number | REFUSE | — | — | 9 |
 | H1 | Releasing the flat | 2037, reverse mortgage or downsize, decided then → same, plus a yearly price trigger and a deadline (the building's 50th year: 2046 for a 1996 building) | FINANCE (risk management) | — | Trigger yearly; release by 2046 | 6 |
@@ -47,7 +50,10 @@ advance) · REFUSE (costs money or credibility, no real effect shown).
 **Counting what the framework changes against the label approach** (for slide 3): changed: P1, P3, P4, P6, H1, G1 (6); new: B1–B7,
 P2, H2–H4 (12, of which B7 restates the planned sale with new assets); unchanged: P5, and the thematic-fund part of P7.
 The talk should count only decisions that change money or tonnes: **B1, B3, B4, P1, P3, G1, H1** at least (7), plus the
-refusals as one group. Pete settles the number after the model runs.
+refusals as one group. Pete settles the number after the model runs. **On slide 3 (13 Nov, night):** B1, B4, B3, H1,
+G1, P1 in their corners, plus three refusals (H2, B2, P7's green deposit), each naming the slide that proves it
+(`Final_Plan.md` §4.5, "Which slide owns each decision"); H1 there is the yearly price check, since the route itself
+was the label approach's too.
 
 ---
 
