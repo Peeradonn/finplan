@@ -344,16 +344,71 @@
     <h2>The sustainable share is an output of the budgets, not a target</h2>
   </header>
   <div class="body">
-    <div class="todo">
-      <p><b>To build (Win).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 9.</p>
-      <p>Form (a draft, not an order): The product gate; weights and costs per parent; the family values budget; refusals; ESG under stress (no credit until measured).</p>
-      
+    <div class="s9-grid">
+      <!-- 9-A: Product gate -->
+      <div class="s9-gate" data-b="1">
+        <p class="sub">Three-gate test</p>
+        <table>
+          <tr><th>Product</th><th>Gate 1<br>Binding rule</th><th>Gate 2<br>Measured yearly</th><th>Gate 3<br>Within budget</th><th></th></tr>
+          <tr><td>EDMW (CTB ETF)</td><td class="s9-pass">✓ EU CTB: ≥30% below,<br>−7%/yr</td><td class="s9-pass">✓ WACI 63.39,<br>coverage 99.82%</td><td class="s9-pass">✓ TE 2.09% &lt;<br>Carmen's 3%</td><td><span class="s9-verdict pass">PASS</span></td></tr>
+          <tr><td>BOC-Prudential<br>(Round One)</td><td class="s9-fail">✗ US$0.00 assets;<br>no holdings</td><td class="s9-skip">—</td><td class="s9-skip">—</td><td><span class="s9-verdict fail">FAIL</span></td></tr>
+          <tr><td>Clean-energy fund</td><td class="s9-pass">✓</td><td class="s9-pass">✓</td><td class="s9-fail">✗ Concentration &gt;<br>Adrian's 0.5% TE</td><td><span class="s9-verdict refuse">REFUSED</span></td></tr>
+          <tr><td>Green deposit</td><td class="s9-fail">✗ No binding rule;<br>no published outcome</td><td class="s9-skip">—</td><td class="s9-skip">—</td><td><span class="s9-verdict refuse">REFUSED</span></td></tr>
+        </table>
+      </div>
+
+      <!-- 9-B: Mandate output -->
+      <div class="s9-mandate" data-b="2">
+        <p class="sub">The mandate: each parent's budget → the family share</p>
+        <table>
+          <tr><th></th><th>Adrian</th><th>Carmen</th><th>Blended</th></tr>
+          <tr><td>TE budget (from P)</td><td>≤0.5%/yr</td><td>≤3%/yr</td><td>—</td></tr>
+          <tr><td>ESG share that fits</td><td>30%</td><td>60%</td><td style="font-weight:700;color:var(--S)">27.7%</td></tr>
+          <tr><td>Instrument</td><td colspan="2" style="text-align:center">EDMW (iShares MSCI World CTB Enhanced ESG)</td><td>—</td></tr>
+          <tr><td>TER</td><td>0.20%</td><td>0.20%</td><td>≈HK$2.1K/yr</td></tr>
+          <tr><td>Fee above index</td><td colspan="2" style="text-align:center">≈2 bps</td><td>—</td></tr>
+          <tr><td>SFC-authorised</td><td colspan="2" style="text-align:center">✓ EU CTB-regulated index</td><td>—</td></tr>
+          <tr><td>Currency / liquidity</td><td colspan="2" style="text-align:center">USD (HKD-pegged) / daily</td><td>—</td></tr>
+        </table>
+        <p style="text-align:center;margin-top:10px"><span class="s9-big">27.7%</span></p>
+        <p style="text-align:center;font:600 13px/1.3 var(--head);color:var(--mute);margin-top:2px">output of the budgets, not a target</p>
+      </div>
+
+      <!-- 9-C: Carbon metrics -->
+      <div class="s9-carbon" data-b="3">
+        <p class="sub">Carbon evidence <span class="tag" style="margin-left:6px">SOURCED</span></p>
+        <div class="s9-carbon-grid">
+          <div class="s9-ccard"><div class="s9-cv">63.39</div><div class="s9-cl">WACI (−30.2% vs parent)</div></div>
+          <div class="s9-ccard"><div class="s9-cv">&gt;2.0–2.5°C</div><div class="s9-cl">ITR (one band lower)</div></div>
+          <div class="s9-ccard"><div class="s9-cv">−7%/yr</div><div class="s9-cl">CTB pathway (EU 2020/1818)</div></div>
+          <div class="s9-ccard"><div class="s9-cv">99.82%</div><div class="s9-cl">Coverage (MSCI/BlackRock)</div></div>
+          <div class="s9-ccard"><div class="s9-cv">Reported</div><div class="s9-cl">Engagement (stewardship)</div></div>
+          <div class="s9-ccard s9-zero"><div class="s9-cv">Zero</div><div class="s9-cl">Avoided emissions (secondary mkt)</div></div>
+        </div>
+      </div>
+
+      <!-- 9-D: Price of values -->
+      <div class="s9-price" data-b="3">
+        <p class="sub" style="align-self:flex-start;width:100%">Price of values <span class="tag" style="margin-left:6px">ESTIMATED</span></p>
+        <div class="s9-price-num">−HK$0.57M</div>
+        <div class="s9-price-label">against plain twins over the plan's horizon</div>
+        <div class="s9-price-detail">Fee price ≈HK$5.1K/yr · return price up to ≈HK$26.6K/yr<br>Well within the ≈HK$1.4M values budget (slide 4)</div>
+        <p style="font:italic 500 11.5px/1.4 var(--text);color:var(--mute);margin-top:8px;text-align:center">"Our ETF carries a label; it finances nothing new. We say so."</p>
+      </div>
+
+      <!-- 9-F: Refusals strip -->
+      <div class="s9-refusals" data-b="3">
+        <div class="s9-ref"><b>Clean-energy fund</b>Concentration risk &gt; Adrian's TE budget<br><span>→ Broad CTB index with sector tilts</span></div>
+        <div class="s9-ref"><b>Green deposit</b>No binding carbon rule<br><span>→ Cash in the liquidity reserve</span></div>
+        <div class="s9-ref"><b>SL bond (portfolio)</b>Ratchet worth HK$450–2,250/yr: immaterial<br><span>→ Plain bonds for Adrian</span></div>
+        <div class="s9-ref"><b>Green bond ETF (BGRN)</b>WACI 708.64, ITR &gt;3.0°C<br><span>→ Global bonds AGGU</span></div>
+      </div>
     </div>
   </div>
-  <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <aside class="notes">WIN: I'm Win. The S in PRISM is Select: every product runs through three gates. A binding, published rule. Measured and reported every year. And within the owner's risk budget. The fund from our earlier plan — BOC-Prudential — has zero assets at every filing. It fails at gate one. The fund that passes all three is EDMW, an iShares CTB ETF: it must stay thirty percent below its parent's carbon intensity and decline seven percent a year. That's a rule, not a label. Each parent's tracking-error budget sets how much ESG they can hold: Adrian's half-percent gives him thirty percent; Carmen's three percent gives her sixty. Weighted by their savings, the family share is twenty-seven point seven percent. It came out of the budgets — we didn't set it. The carbon numbers are sourced: WACI sixty-three, coverage ninety-nine point eight percent, ITR one band lower. But the portfolio avoids zero emissions. Secondary-market purchases finance nothing new. We say so. The price: about HK$0.57 million against plain twins over the plan's horizon — well within the values budget we set on slide four. And what we refused: a clean-energy fund, a green deposit, a sustainability-linked bond, and a green bond ETF. Each failed at least one gate. Every refusal is paired with what we do instead. [Notes: Win says their simple name at the start. Evidence: product gate is ours (innovation marks). EDMW data SOURCED from BlackRock/MSCI factsheets Oct 2026. BOC-Prudential US$0 is CASE from SFC filings (checked). 27.7% is the settled ESG share (cost basis: TER 0.20% = 0bp gap). TE concern: Adrian's 30% × 2.09% = 0.63% > his 0.5% budget; may need to cap at ~24%. Flagging to Pete. Price of values −HK$0.57M is ESTIMATED from area3_portfolio.md §1. Avoided emissions zero is SOURCED (PCAF supplement). No NGFS scenario here (review fix #3: keep slide 5's disorderly scenario only).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D9CDD0"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">9</span>
+    <p class="src">Sources: BlackRock/MSCI factsheets Oct 2026; EU 2020/1818; SFC filings; PCAF supplement</p><span class="pg">9</span>
   </footer>
 </section>
 
@@ -364,16 +419,40 @@
     <h2>Every missing price is a decision, and the plan knows when it's wrong</h2>
   </header>
   <div class="body">
-    <div class="todo">
-      <p><b>To build (Win).</b> What it must prove: <code>Final/Final_Plan.md</code> §4.5, slide 10.</p>
-      <p>Form (a draft, not an order): Climate Facts: outcomes, triggers, what the family may claim, restating, attribution; buy, range or trigger.</p>
-      <p>Mockup: <code>Final/looks/climate-facts.png</code></p>
+    <div class="s10-grid">
+      <!-- 10-A: Climate Facts dashboard -->
+      <div class="s10-dash" data-b="1">
+        <p class="sub">Climate Facts: seven questions, answered every year</p>
+        <table>
+          <tr><th>Question</th><th>What we show</th><th>Status today</th><th>Trigger → action</th></tr>
+          <tr><td>1. Financial</td><td>Are retirement, healthcare and education protected?</td><td>97% / 85% crisis <span class="s10-tag">MODEL</span></td><td>Material income or health change → reforecast</td></tr>
+          <tr><td>2. Values price</td><td>What did our values cost?</td><td>−HK$0.57M <span class="s10-tag">EST</span></td><td>Fee or budget breach → reconcile and renew consent</td></tr>
+          <tr><td>3. Operations</td><td>Did the project work? (kWh, fuel, emissions)</td><td>Baseline not yet taken <span class="s10-tag">2027</span></td><td>KPI failure → inspect records, revisit economics</td></tr>
+          <tr><td>4. Alignment</td><td>Does the portfolio still match the preference?</td><td>WACI 63.39 / 99.82% <span class="s10-tag">SRC</span></td><td>Holdings or method change → investigate suitability</td></tr>
+          <tr><td>5. Outcome</td><td>What outcome can we evidence?</td><td>No causal result <span class="s10-tag">—</span></td><td>Missing evidence → qualify or correct the claim</td></tr>
+          <tr><td>6. Giving</td><td>Is the giving promise paid for?</td><td>To be funded 2027–28 <span class="s10-tag">EST</span></td><td>Loss threatens promise → protect funded obligations</td></tr>
+          <tr><td>7. Next steps</td><td>What must happen next?</td><td>See triggers below <span class="s10-tag">—</span></td><td>Missed deadline → identify owner, remedy, new date</td></tr>
+        </table>
+      </div>
+
+      <!-- 10-B: Buy / Range / Trigger -->
+      <div class="s10-buy" data-b="2">
+        <p class="sub">Every missing price is a decision: buy, range, or trigger</p>
+        <table>
+          <tr><th>Decision</th><th>Type</th><th>Rule</th><th>Wong case</th><th>When</th></tr>
+          <tr><td>The fund call</td><td><span class="s10-type buy">BUY</span></td><td>WACI drops below 30% of parent; or TE &gt; Carmen's 3% for 2 quarters</td><td>EDMW data refreshed quarterly</td><td>Quarterly</td></tr>
+          <tr><td>Carbon data for business</td><td><span class="s10-type buy">BUY</span></td><td>Baseline taken; supplier footprints started</td><td>Carmen orders baseline 2027</td><td>2027; annual</td></tr>
+          <tr><td>ESG under stress</td><td><span class="s10-type range">RANGE</span></td><td>"Not measured; no credit given" until published source</td><td>CTB should lose less (30% lower carbon); no number</td><td>Annual lit check</td></tr>
+          <tr><td>Recycled PET premium</td><td><span class="s10-type trigger">TRIGGER</span></td><td>At parity: DO. At 10% premium: PAY (≈HK$0.27M). Above: REFUSE</td><td>Monitor PET-vs-rPET quarterly</td><td>Quarterly; 2027</td></tr>
+          <tr><td>Building insurance</td><td><span class="s10-type range">RANGE</span></td><td>"Not priced yet" until physical-risk data available</td><td>Building's 50th year 2046</td><td>Annual</td></tr>
+        </table>
+      </div>
     </div>
   </div>
-  <aside class="notes">WIN: [script to write] [Notes: Win says their simple name before their part. Evidence status per claim in §4.5.]</aside>
+  <aside class="notes">WIN: The M in PRISM is Monitor. Our Climate Facts dashboard asks seven questions every year. Not a score — a set of answers, each with a trigger that says when the plan is wrong. Financial protection: ninety-seven percent odds to eighty-nine, checked against material life changes. Values price: the HK$0.57 million gap we just showed, reconciled whenever fees or mandates change. Operations: Carmen's baseline in 2027 — we can't claim a reduction until we've measured the starting point. Alignment: the portfolio's WACI and coverage, checked whenever the fund's method changes. Outcome: no causal result yet, and we say so. When evidence is missing, we qualify the claim — we don't drop it. And every missing price becomes one of three decisions: buy the answer now, accept a range, or set a trigger. The fund call is a buy: we check EDMW quarterly. ESG under stress is a range: the CTB index should lose less in a carbon-price shock, but nobody's measured it, so we give it no credit. Recycled PET is a trigger: at parity we switch; at a ten percent premium we pay; above that, we refuse. Pete will show you what happens when the plan meets reality. [Notes: Win hands off to Pete after this. Dashboard structure from area6_measurement_update.md §2. All dashboard figures carry evidence tags: MODEL (the retirement odds), ESTIMATED (values price), SOURCED (alignment WACI). Buy/Range/Trigger is our framework (innovation marks). Each row links to Decision_List.md. Building's 50th year is 2046 (1996 building), consistent with slide 6. Biases, attribution waterfall, risk register, and "can't measure yet" all moved to backup slides (review fix #4: 45 seconds = dashboard + one figure only).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#1B1716" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#1B1716" fill-opacity=".04" stroke="#1B1716" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D9CDD0"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B5A6AA">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
-    <p class="src">Sources: to add</p><span class="pg">10</span>
+    <p class="src">Sources: model runs; BlackRock/MSCI; Decision_List.md; area6_measurement_update.md §2</p><span class="pg">10</span>
   </footer>
 </section>
 

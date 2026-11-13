@@ -241,6 +241,55 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s1-result{font:500 17px/1.35 var(--text);color:#B9ACAF;margin-top:8px}
 .s1-pg{position:absolute;right:40px;bottom:22px;font:700 13px var(--text);color:#9C9093}
 
+/* ── slide 9: S — the portfolio ── */
+.s9-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+.s9-gate{grid-column:1/2;grid-row:1/2}
+.s9-gate table{width:100%;border-collapse:collapse;font:500 12px/1.3 var(--text)}
+.s9-gate th{font:700 9px/1 var(--head);letter-spacing:.7px;text-transform:uppercase;color:var(--mute);text-align:left;padding:0 5px 5px;border-bottom:2px solid var(--ink)}
+.s9-gate td{padding:4px 5px;border-bottom:1px solid var(--rule);vertical-align:top}
+.s9-gate td:first-child{font-weight:600;white-space:nowrap}
+.s9-pass{color:#16a34a;font-weight:700} .s9-fail{color:#C80E1E;font-weight:700} .s9-skip{color:var(--mute)}
+.s9-verdict{font:800 11px/1 var(--head);letter-spacing:.5px;text-transform:uppercase;padding:3px 7px 2px;border-radius:3px;white-space:nowrap}
+.s9-verdict.pass{background:#dcfce7;color:#166534} .s9-verdict.fail{background:#fee2e2;color:#991b1b} .s9-verdict.refuse{background:#fef3c7;color:#92400e}
+.s9-mandate{grid-column:2/3;grid-row:1/2}
+.s9-mandate table{width:100%;border-collapse:collapse;font:500 13.5px/1.35 var(--text)}
+.s9-mandate th{font:700 10px/1 var(--head);letter-spacing:.7px;text-transform:uppercase;color:var(--mute);text-align:center;padding:0 4px 6px;border-bottom:2px solid var(--ink)}
+.s9-mandate th:first-child{text-align:left}
+.s9-mandate td{padding:4px;text-align:center;border-bottom:1px solid var(--rule)}
+.s9-mandate td:first-child{text-align:left;font-weight:600;font-size:12.5px;color:var(--mute)}
+.s9-big{font:800 36px/1 var(--head);color:var(--S)}
+.s9-carbon{grid-column:1/2;grid-row:2/2}
+.s9-carbon-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.s9-ccard{background:#f8f7f6;border:1px solid var(--rule);border-radius:5px;padding:6px 8px}
+.s9-ccard .s9-cv{font:800 16px/1.2 var(--head);color:var(--I);margin-bottom:1px}
+.s9-ccard .s9-cl{font:600 9px/1 var(--head);letter-spacing:.5px;text-transform:uppercase;color:var(--mute)}
+.s9-ccard.s9-zero .s9-cv{color:#C80E1E}
+.s9-price{grid-column:2/3;grid-row:2/2;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.s9-price-num{font:800 36px/1 var(--head);color:var(--accent)}
+.s9-price-label{font:600 13px/1.35 var(--head);color:var(--mute);text-align:center;margin-top:4px}
+.s9-price-detail{font:500 11px/1.4 var(--text);color:var(--mute);text-align:center;margin-top:4px}
+.s9-refusals{grid-column:1/-1;display:flex;gap:8px;align-items:flex-start;margin-top:-6px}
+.s9-ref{flex:1;background:#fefce8;border:1px solid #fde68a;border-radius:5px;padding:5px 8px;font:500 11px/1.3 var(--text)}
+.s9-ref b{display:block;font:700 11px/1.2 var(--head);color:#92400e;margin-bottom:1px}
+.s9-ref span{color:var(--mute);font-size:10px}
+
+/* ── slide 10: M — Climate Facts ── */
+.s10-grid{display:flex;flex-direction:column;gap:14px}
+.s10-dash{flex:0 0 auto}
+.s10-dash table{width:100%;border-collapse:collapse;font:500 12.5px/1.35 var(--text)}
+.s10-dash th{font:700 9.5px/1 var(--head);letter-spacing:.7px;text-transform:uppercase;color:var(--mute);text-align:left;padding:0 5px 5px;border-bottom:2px solid var(--ink)}
+.s10-dash td{padding:4px 5px;border-bottom:1px solid var(--rule);vertical-align:top;font-size:12px}
+.s10-dash td:first-child{font-weight:700;color:var(--ink);white-space:nowrap;width:90px}
+.s10-dash td:nth-child(3){font-weight:600}
+.s10-dash .s10-tag{display:inline-block;font:700 8.5px/1 var(--head);letter-spacing:.5px;text-transform:uppercase;border:1px solid var(--grey);border-radius:2px;padding:2px 4px 1px;vertical-align:1px;margin-left:3px}
+.s10-buy{flex:0 0 auto}
+.s10-buy table{width:100%;border-collapse:collapse;font:500 12px/1.35 var(--text)}
+.s10-buy th{font:700 9.5px/1 var(--head);letter-spacing:.7px;text-transform:uppercase;color:var(--mute);text-align:left;padding:0 5px 5px;border-bottom:2px solid var(--M)}
+.s10-buy td{padding:3px 5px;border-bottom:1px solid var(--rule);vertical-align:top;font-size:11.5px}
+.s10-buy td:first-child{font-weight:600;white-space:nowrap}
+.s10-type{display:inline-block;font:800 9px/1 var(--head);letter-spacing:.4px;text-transform:uppercase;padding:2px 5px 1px;border-radius:2px;color:#fff}
+.s10-type.buy{background:#16a34a} .s10-type.range{background:#d97706} .s10-type.trigger{background:#7c3aed}
+
 /* builds (from Round Two): data-b="n" is the step an element is spoken in. make.py --builds repeats a slide once per
    step with class upto-k; later steps stay in grey, or are hidden on a slide with class "reveal" (space kept, so the
    layout never moves). The HTML preview only: make_pptx.py writes PowerPoint's own click animations. */
