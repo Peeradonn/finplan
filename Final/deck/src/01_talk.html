@@ -76,15 +76,15 @@
 /* v5 slide 3 in HK$ (Pete 14 Nov): an icon per step, the disagreement rules in the left column's white space, and
    the room as a values budget in today's money that ends at the limit (v3- classes only here) */
 #v3 .p4-left{width:466px} #v3 .p4-right{display:flex;flex-direction:column}
-.v3-step{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px}
-.v3-ic{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
-.v3-ic .ic{width:19px;height:19px}
+.v3-step{display:flex;gap:16px;align-items:center;margin-bottom:17px}
+.v3-ic{flex:none;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.v3-ic .ic{width:22px;height:22px}
 .v3-ic.v3-lim{background:var(--accent)} .v3-ic.v3-room{background:#3E5F93}
-.v3-step p{font:500 16.5px/1.42 var(--text)} .v3-step b{font-weight:800}
-.v3-rules{margin-top:4px;border-top:1.5px solid var(--ink);padding-top:10px}
+.v3-step p{font:500 17.5px/1.4 var(--text);text-wrap:pretty} .v3-step b{font-weight:800}
+.v3-rules{margin-top:8px;border-top:1.5px solid var(--ink);padding-top:12px}
 .v3-rules p.v3-rh{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;padding:0}
-.v3-rules p{font:500 16px/1.35 var(--text);padding:3px 0 3px 18px;position:relative}
-.v3-rules p:not(.v3-rh)::before{content:"";position:absolute;left:1px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.v3-rules p{font:500 17px/1.35 var(--text);padding:4px 0 4px 18px;position:relative}
+.v3-rules p:not(.v3-rh)::before{content:"";position:absolute;left:1px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--ink)}
 .v3-rules b{font-weight:800}
 .v3-bt{font:500 19px/1.3 var(--text);margin-top:12px} .v3-bt b{font:800 28px/1 var(--num);color:#2B4A7A}
 .v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 28px}
@@ -100,7 +100,7 @@
 .v3-lab p.v3-llim{flex:none;width:44px;padding:0;margin-right:-22px;text-align:center;font:800 13px/1.15 var(--text);color:var(--accent)}
 .v3-warn{font:500 15.5px/1.35 var(--text);margin-top:18px;color:var(--ink)} .v3-warn b{color:var(--accent);font-weight:800}
 .v3-who2{display:flex;gap:28px;margin-top:24px;border-top:1px solid var(--rule);padding-top:10px}
-.v3-who2 p{flex:1;font:500 14.5px/1.4 var(--text);color:var(--slate)}
+.v3-who2 p{flex:1;font:500 15px/1.4 var(--text);color:var(--slate);text-wrap:pretty}
 .v3-who2 b{font:800 17px/1.3 var(--head);color:#2B4A7A} .v3-who2 i{font-weight:500;color:var(--slate)}
 .v3-who2 .v3-ad b{color:var(--accent)}
 /* v5 slide 3: who the Wongs are, beside the panel's caption (Pete 14 Nov: slide 1 no longer introduces them) */
@@ -256,20 +256,20 @@
     <div class="p4-left">
       <p class="p4-cap">For any client, before any product</p>
       <div class="v3-step"><span class="v3-ic"><svg class="ic"><use href="#i-users"/></svg></span><p><b>Ask each decision-maker alone,</b> on the brief's seven: values, return, liquidity, horizon, tracking error, lock-up, complexity.</p></div>
-      <div class="v3-step"><span class="v3-ic v3-lim"><svg class="ic"><use href="#i-shield"/></svg></span><p><b>Set the limit:</b> how sure the money must be, normally and in a downturn. No option may break it.</p></div>
-      <div class="v3-step"><span class="v3-ic v3-room"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><p><b>The room above the limit is the values budget.</b> Whatever costs money for values comes out of it, agreed once.</p></div>
-      <div class="v3-step"><span class="v3-ic"><svg class="ic"><use href="#i-scroll-text"/></svg></span><p><b>Write it into the investment policy:</b> who decides what, and what they will and won't accept.</p></div>
+      <div class="v3-step"><span class="v3-ic v3-lim"><svg class="ic"><use href="#i-shield"/></svg></span><p><b>Set the limit:</b> how sure the money must be.</p></div>
+      <div class="v3-step"><span class="v3-ic v3-room"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><p><b>The room above it is the values budget,</b> agreed once.</p></div>
+      <div class="v3-step"><span class="v3-ic"><svg class="ic"><use href="#i-scroll-text"/></svg></span><p><b>Write it into the investment policy:</b> who decides what.</p></div>
       <div class="v3-rules">
         <p class="v3-rh">When decision-makers disagree</p>
-        <p>Each person's own money follows <b>their own limits</b></p>
-        <p>Shared money follows <b>the more prudent</b></p>
-        <p>Until they agree, <b>the plain choice stays</b></p>
+        <p>Own money: <b>own limits</b></p>
+        <p>Shared money: <b>the more prudent</b></p>
+        <p>Until they agree: <b>the plain choice stays</b></p>
       </div>
     </div>
     <div class="p4-right">
       <p class="p4-cap">The Wongs <span class="v3-who">· two parents decide, two children inherit; Adrian retires in 2037, Carmen in 2039</span></p>
       <p class="v3-bt">Their values budget: <b>{{fin_room_gift_plain}}</b> of giving, in today's money</p>
-      <p class="v3-bs">The most they could give now before their limit breaks: the money must last in 95 futures in 100, and 85 in a downturn.</p>
+      <p class="v3-bs">The most they could give now and still keep their limit: 95 in 100, 85 in a downturn.</p>
       <div class="v3-brk"><span style="flex:{{fin_room_esg_x}}"></span><p style="flex:calc({{fin_room_life_x}} + {{fin_room_free_x}})">Both causes for life ({{fin_room_both39_hk}}) would use all of it<i></i></p></div>
       <div class="v3-bar"><div class="v3-esg" style="flex:{{fin_room_esg_x}}"></div><div class="v3-life" style="flex:{{fin_room_life_x}}"></div><div class="v3-free" style="flex:{{fin_room_free_x}}"></div></div>
       <div class="v3-lab">
@@ -280,8 +280,8 @@
       </div>
       <p class="v3-warn"><b>Paid from yearly cash flow instead,</b> the same two causes break the limit ({{fin_room_pledge2_odds}}).</p>
       <div class="v3-who2">
-        <p><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her own funds may stray up to 3% a year from the market</p>
-        <p class="v3-ad"><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit: nothing may break it; his own funds stay within 0.5% a year</p>
+        <p><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</p>
+        <p class="v3-ad"><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</p>
       </div>
     </div>
   </div>

@@ -923,6 +923,8 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   follow (the budget and what's free); Win's spoken odds now match the card (97 and 90, `fin_plan_*`; they said
   `fin_new`'s 91). Watch: slide 10 prices the scholarship at −HK$1.25M for the children, slide 3 at HK$0.74M of
   giving today: the same decision in two units (the fund against its effect on the inheritance); say so if asked.
+  Then trimmed (Pete: "kind of packed with text"): 263 words to 214, each step a headline (step 1 keeps the brief's
+  seven), the rules as three short lines, one line each for Carmen and Adrian; step text 17.5px, icons 42px.
 - **One name for the scenario:** "a disorderly downturn: a sudden carbon policy, 2030–31", defined on slide 4; "the
   downturn" everywhere else ("85 in a crisis" on slides 3 and 5 renamed).
 - **Slide 2's output** (Pete: "for the price tag, I don't quite get what we're communicating"): its empty bars didn't
