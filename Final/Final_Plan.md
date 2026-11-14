@@ -272,6 +272,16 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   part, cut or carried under each loss, and the limit check as a band. Positions from `series.py` `strip4()`
   (`[[s4_*]]`), so the strip moves with the model. Not chosen: B (loss bars hanging from today's strip; the 47%
   still to add up), C (one loss bar; loses "everything they own"). Render: `build/options/slide4-flow.png`.
+  **Then its point made explicit** (Pete: "what exactly is that downturn, and what is the main point of slide 4?").
+  The point: the limit is checked on everything they own and earn; it holds (90 in 100 against 85), and the routes
+  a label can't see are where the plan acts. The slide had put its weight on the losses, which invited "the
+  framework saves them HK$4.7M" (it doesn't: our plan loses about as much as a reasonable planner's, M8). Now:
+  the downturn defined in one line (§5.1 of the area 4 brief); the savings loss labelled an ordinary market fall
+  that any planner already tests and an ESG label doesn't protect; the flat and business, 47%, "found only by a
+  climate check", each pointing to where the plan acts (slides 5, 7); the flat's cause no longer calls the whole
+  15% a climate effect (it's a general correction sized from the HKMA stress test; older buildings' drift is the
+  climate part); the loss row says it measures what the children inherit by 2066; the bar is the verdict and the
+  direction. Lookbua's words rewritten to match.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
