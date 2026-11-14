@@ -90,14 +90,16 @@
 /* the profile slide (Pete 14 Nov: one point per slide): each decision-maker as a card (v3a- classes only here) */
 .v3a{display:flex;flex-direction:column;gap:18px;margin-top:16px}
 .v3a-people{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.v3a-p{position:relative;border:1.5px solid #DCE1E8;border-top:6px solid #B3BAC6;border-radius:6px;padding:16px 18px 16px;background:#fff;min-height:292px;box-sizing:border-box}
+.v3a-p{position:relative;border:1.5px solid #DCE1E8;border-top:6px solid #B3BAC6;border-radius:6px;padding:16px 18px 14px;background:#fff;min-height:292px;box-sizing:border-box;
+  display:grid;grid-template-rows:auto 42px 1fr 1fr 1fr}
 .v3a-p.v3a-ad{border-top-color:var(--accent)} .v3a-p.v3a-ca{border-top-color:var(--brand)}
 .v3a-av{position:absolute;right:14px;top:12px;width:48px;height:48px;border-radius:50%;background:#B3BAC6;color:#fff;
   font:800 21px/48px var(--head);text-align:center}
 .v3a-ad .v3a-av{background:var(--accent)} .v3a-ca .v3a-av{background:var(--brand)}
-.v3a-nm{font:800 23px/1.2 var(--head);color:var(--ink)} .v3a-tg{font:italic 500 15px/1.3 var(--text);color:var(--slate);margin:3px 60px 12px 0}
-.v3a-r{display:flex;flex-direction:column;font:500 13px/1.25 var(--text);color:var(--slate);padding:6px 0;border-bottom:1px solid #EAEDF2}
-.v3a-r b{color:var(--ink);font:800 17px/1.25 var(--text);margin-top:1px}
+.v3a-nm{font:800 23px/1.2 var(--head);color:var(--ink)} .v3a-tg{font:italic 500 15px/1.3 var(--text);color:var(--slate);margin:3px 60px 0 0;align-self:start}
+.v3a-r{display:flex;flex-direction:column;justify-content:flex-start;font:500 13px/1.25 var(--text);color:var(--slate);padding:8px 0 6px;border-top:1px solid #EAEDF2}
+.v3a-r b{color:var(--ink);font:800 16px/1.3 var(--text);margin-top:2px}
+.v3a-r.v3a-dec b{font-weight:600}
 .v3a-d{font:500 15px/1.38 var(--text);color:var(--ink);margin-top:12px} .v3a-d b{font-weight:800}
 .v3a-rules{display:flex;align-items:center;gap:30px;background:#EFEDFB;border-left:4px solid var(--brand);border-radius:0 6px 6px 0;padding:15px 20px}
 .v3a-rules p{font:500 17.5px/1.3 var(--text);color:var(--ink)} .v3a-rules b{font-weight:800}
@@ -423,17 +425,13 @@
     <p class="v6c-steps"><span class="v6c-cap">For any client</span><span><i>1</i>Ask each decision-maker alone, on the brief's seven dimensions</span><span><i>4</i>Write who decides into the investment policy</span></p>
     <div class="v3a-people">
       <div class="v3a-p v3a-ad"><p class="v3a-av">A</p><p class="v3a-nm">Adrian, 54</p><p class="v3a-tg">capital first</p>
-        <p class="v3a-r"><span>Values</span><b>low</b></p><p class="v3a-r"><span>May stray from the market</span><b>≤0.5% a year</b></p><p class="v3a-r"><span>Lock-ups</span><b>none</b></p>
-        <p class="v3a-d"><b>Decides:</b> his own money; shared money with Carmen</p></div>
+        <p class="v3a-r"><span>Values</span><b>low</b></p><p class="v3a-r"><span>Accepts</span><b>within 0.5% a year of the market; no lock-ups</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money; shared money with Carmen</b></p></div>
       <div class="v3a-p v3a-ca"><p class="v3a-av">C</p><p class="v3a-nm">Carmen, 49</p><p class="v3a-tg">values high · runs the business</p>
-        <p class="v3a-r"><span>Values</span><b>high</b></p><p class="v3a-r"><span>May stray from the market</span><b>≤3% a year</b></p><p class="v3a-r"><span>Complexity</span><b>moderate</b></p>
-        <p class="v3a-d"><b>Decides:</b> her own money; the business, with her co-founder</p></div>
+        <p class="v3a-r"><span>Values</span><b>high</b></p><p class="v3a-r"><span>Accepts</span><b>up to 3% a year from the market</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>her own money; the business, with her co-founder</b></p></div>
       <div class="v3a-p"><p class="v3a-av">R</p><p class="v3a-nm">Ryan, 24</p><p class="v3a-tg">growth</p>
-        <p class="v3a-r"><span>Values</span><b>to ask, not assume</b></p><p class="v3a-r"><span>Risk</span><b>high</b></p>
-        <p class="v3a-d"><b>Decides:</b> his own money only</p></div>
-      <div class="v3a-p"><p class="v3a-av">C</p><p class="v3a-nm">Chloe, 16</p><p class="v3a-tg">at school · university 2028–32</p>
-        <p class="v3a-r"><span>Her education fund</span><b>kept safe</b></p>
-        <p class="v3a-d"><b>Decides:</b> nothing yet; a voice in the scholarship</p></div>
+        <p class="v3a-r"><span>Values</span><b>to ask, not assume</b></p><p class="v3a-r"><span>Accepts</span><b>high risk</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money only</b></p></div>
+      <div class="v3a-p"><p class="v3a-av">C</p><p class="v3a-nm">Chloe, 16</p><p class="v3a-tg">university 2028–32</p>
+        <p class="v3a-r"><span>Values</span><b>a voice in the scholarship</b></p><p class="v3a-r"><span>Accepts</span><b>her education fund kept safe</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>nothing yet</b></p></div>
     </div>
     <div class="v3a-rules"><p class="v3a-rh">When they disagree</p><p><i>1</i>Own money: <b>own limits</b></p><p><i>2</i>Shared money: <b>the more prudent</b></p><p><i>3</i>Until they agree: <b>the plain choice stays</b></p></div>
   </div>
