@@ -76,19 +76,21 @@
 /* v5 slide 3: who the Wongs are, beside the panel's caption (Pete 14 Nov: slide 1 no longer introduces them) */
 .v3-who{font-weight:600;letter-spacing:0;text-transform:none;color:var(--slate)}
 /* v5 slide 2: each step marked with the condition it checks (v2- classes only here) */
-/* v5 slide 2's output (Pete 14 Nov): the four corners, empty; slide 10 fills them (v2c- classes only here) */
-.v2c{height:auto;top:524px;left:600px;width:642px}
-.v2c-gate{font:500 16px/1.3 var(--text);color:#fff;border-left:4px solid #FF4A57;padding-left:10px;margin-bottom:9px}
-.v2c-gate b{color:#FF6B75;font-weight:800}
-.v2c-grid{display:grid;grid-template-columns:134px 1fr 1fr;gap:5px 6px}
-.v2c-col{font:500 14px/1.2 var(--text);color:#AEB8C8;white-space:nowrap;padding:0 0 1px 2px}
-.v2c-col b{color:#fff;font-weight:700}
-.v2c-col.v2c-in b{color:#38B6CF}
-.v2c-row{font:500 14px/1.2 var(--text);color:#AEB8C8;align-self:center}
-.v2c-row b{display:block;color:#fff;font-weight:700}
-.v2c-col .ic,.v2c-row .ic{width:15px;height:15px;vertical-align:-3px;margin-right:4px}
-.v2c-cell{background:#15213A;border:1px solid #2A3858;border-radius:7px;padding:8px 9px;font:800 15px/1.2 var(--head);color:#fff;white-space:nowrap}
-.v2c-cell.v2c-no{color:#FF6B75;border-color:#5A2533;background:#24152A}
+/* v5 slide 2's output (Pete 14 Nov): the four corners on the white price tag (its shape and hole kept from the
+   earlier tag, because white on the dark stage reads from the back of the room); slide 10 fills them (v2c- only here) */
+.v2c{height:auto;top:516px;left:572px;width:680px;background:#fff;color:var(--ink);padding:12px 16px 13px 46px;
+  clip-path:polygon(0 50%,30px 0,100% 0,100% 100%,30px 100%)}
+.v2c::before{content:"";position:absolute;left:17px;top:50%;width:11px;height:11px;margin-top:-5.5px;border-radius:50%;background:#0B1426}
+.v2c-gate{font:500 16px/1.3 var(--text);color:var(--ink);border-left:4px solid #C80E1E;padding-left:9px;margin-bottom:8px}
+.v2c-gate b{color:#C80E1E;font-weight:800}
+.v2c-grid{display:grid;grid-template-columns:124px 1fr 1fr;gap:5px 6px;align-items:center}
+.v2c-col{font:500 14px/1.2 var(--text);color:var(--slate);white-space:nowrap;padding:0 0 1px 2px}
+.v2c-col b{color:var(--ink);font-weight:800}
+.v2c-col.v2c-in,.v2c-col.v2c-in b{color:#0E7490}
+.v2c-row{font:700 14.5px/1.2 var(--text);color:var(--ink)}
+.v2c-col .ic{width:16px;height:16px;vertical-align:-3px;margin-right:4px}
+.v2c-cell{background:#EEF1F5;border-radius:6px;padding:8px 9px;font:800 15px/1.2 var(--head);color:var(--ink);white-space:nowrap}
+.v2c-cell.v2c-no{color:#C80E1E;background:#F9E5E8}
 .v2-tags{display:inline-flex;gap:6px;margin-left:10px;vertical-align:2px}
 .v2-t{display:inline-block;color:#fff;font:800 11.5px/1 var(--text);letter-spacing:.5px;padding:4px 8px;border-radius:10px}
 .v2-limit{background:#C80E1E} .v2-change{background:#0E7490} .v2-room{background:#3E5F93}
@@ -214,13 +216,13 @@
   <div class="s2-price v2c" data-b="2">
     <p class="v2c-gate"><b>The limit first.</b> Then two prices place every decision:</p>
     <div class="v2c-grid">
-      <span></span>
-      <p class="v2c-col v2c-in"><svg class="ic"><use href="#i-earth"/></svg>For the world: <b>a real change</b></p>
+      <p class="v2c-col"><b>For the children</b></p>
+      <p class="v2c-col v2c-in">For the world: <b>a real change</b></p>
       <p class="v2c-col">For the world: <b>no real change</b></p>
-      <p class="v2c-row"><svg class="ic"><use href="#i-users"/></svg>For the children: <b>adds, or ≈0</b></p>
+      <p class="v2c-row">adds, or ≈0</p>
       <p class="v2c-cell">Do it</p>
       <p class="v2c-cell">Do it, but don't call it green</p>
-      <p class="v2c-row">For the children: <b>costs</b></p>
+      <p class="v2c-row">costs</p>
       <p class="v2c-cell">Pay knowingly, from the room</p>
       <p class="v2c-cell v2c-no">Don't pay for the label</p>
     </div>

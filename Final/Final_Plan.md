@@ -914,6 +914,8 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   first, then the two prices place every decision in one of four corners, empty here and filled on slide 10 with
   the same words. Chosen from three: the empty corners; one filled example (a Wong number on the framework slide,
   still no verdict); cutting the tag (the rule would arrive only at the close).
+  Then put on the white tag (Pete: the corners on dark cards were "so hard to read"): ink on white, the old tag's
+  shape and hole, one axis title each; it appears on the slide's second click, after the five steps.
 - **The comparison** is now the reasonable planner's plan (§2), on slides 1 and 10 and backup 12; the corners'
   comparison is "the plain alternative" (slide 6, backup 19). Spoken words 1,320 (≈10:06 at 135 a minute with names):
   the cut is deferred to after submission (Pete: the script can change until the 21st; the slides can't).
