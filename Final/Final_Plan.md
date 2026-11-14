@@ -19,7 +19,7 @@ an argument; where it disagrees with those files, they win.
 | **The event** | A 10-minute live talk in English, then 10 minutes of questions. Sat 21 Nov, FellowSPACE, 28/F Tower A, Southmark, Wong Chuk Hang; arrive by 09:30. Over 10:30 disqualifies; aim for 9:20 |
 | **Slides due** | Before **17:00 Mon 16 Nov** to `info@srfpns.org`; wait for the acknowledgement. No slide can change after |
 | **Client** | The Wongs, the competition's case family, introduced from scratch |
-| **Comparison** | "The label approach": our specified fund-and-label-led plan (§2), not a claim about how advisers usually work |
+| **Comparison** | The reasonable planner's plan: the advice we'd give without the test, defined by what it does (§2; Pete, 14 Nov), not a claim about how advisers usually work |
 | **Framework** | PRISM: **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor (§4.2) |
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
@@ -75,7 +75,7 @@ hold about 24 bullets: the required items go on screen, every area gets at least
 | Presentation (20) | Four speakers, on time; the questions | §6, §8, §11 |
 
 **Required items → slides:** recommendation, capital and outcomes → 3 (each decision's HK$ and tonnes, the capital)
-and 11 (on one measure; §5.5); quantified structure → 8; portfolio with weights and costs → 9; scenario → 1, 5, 11;
+and 11 (on one measure; §5.5); quantified structure → 8; portfolio with weights and costs → 9; scenario → 4 (one disorderly downturn, asset by asset; Option A, 14 Nov) and 5;
 dashboard → 10; trade-off → 6; refusal → 3, 6, 8, 9.
 
 ## 2. The client and the comparison
@@ -98,16 +98,36 @@ completed 1996, so 50 in 2046. About 900 sq ft and not certified: unverified.
 Carmen's 89 in 96.8% of futures; the children's median inheritance is HK$13.01M (today's money, including the flat).
 Near 97% the odds barely move, so each price tag leads with the inheritance in HK$.
 
-**The comparison: the label approach.** Our specified fund-and-label-led plan: funds from the SFC's ESG list to hit the
-20–25% target, the labelled bank products considered, a charitable pledge, nothing on the business or the flat. In the
-model it is Round One as written.
-- **It is our comparison, not verified industry practice** (claims audit, 12 Nov). ESG integration and client climate
-  advice exist elsewhere (J.P. Morgan, Morgan Stanley: `research/industry_practice.md`). Never say advisers "usually"
-  or "never" do anything; say what the named source describes.
-- Round One appears at most once, as one example ("we did this ourselves"). Never "October" or "our Round One plan" on
-  a slide.
-- **Its two weak points** (§5.1): its ESG core fund holds US$0 and its 0.775% fee was never verified; its pledge runs 39
-  years against our fund's 20. Both inflate our gain until fixed.
+**The comparison: the reasonable planner's plan** (Pete, 14 Nov). The brief asks how the framework "changes the advice
+you would otherwise give": our own advice, as a careful planner, without the test. On stage, "the plan a reasonable
+planner would give without the test"; on screen, "without the test". It is defined by what it does, so it is our
+specified comparison, not a claim about how other advisers work:
+- it plans the household well: cash flow, retirement, insurance, the flat's route decided on ordinary grounds;
+- it meets the family's ESG wish with labelled funds, chosen with normal care and as cheap as ours (0.20%), so a
+  careful planner's due diligence would also reject the fund that holds US$0 (slide 8 says the label lets it through,
+  never that a careful planner would buy it);
+- it keeps the giving as the family stated it: a pledge of about HK$30K a year from cash flow, for life;
+- it runs no climate test on the home or the business, and doesn't advise on the business.
+
+In the model it is the headline's first step (`final_model.py` `export_final()`, M9b's fairest row): Round One's
+choices with a labelled ESG core at 0.20% and the lifelong pledge. The headline `fin_fair_gain` (+HK$1.05M) is against
+it. **Its parts are not equally the framework's:** the vans (`fin_fair_vans`) only a test of the business finds;
+funding the gift instead of pledging it (`fin_fair_gift`) is ordinary good planning a tax-aware planner might also do;
+the fees (`fin_fair_fees`) are ordinary planning. Say so when asked; against a planner who also buys the vans and
+funds the gift, the money effect is about zero (§4.4), and the case rests on what the test adds: the tonnes at no cost,
+the flat's route set by the limit, the customer route guarded, and what may be claimed.
+
+**Three comparisons, three jobs; never two on one chart unnamed:**
+| Comparison | The question it answers | Where |
+|---|---|---|
+| Plain choices (plain funds, no giving, no vans) | How much may values cost: the room above the limit | Slide 3 |
+| Each decision's plain alternative (the plain twin fund, new diesel vans, no data, the reverse mortgage against downsizing) | Which corner a decision lands in | Slide 2's price tag; the close's corners; backup 19 |
+| The reasonable planner's plan | What the framework changed: the headline | Slides 1 and 10; backup 12 |
+
+**"The label approach"** survives only as the name of the model runs of Round One as written (`fin_lab_*`; the US$0
+fund at an unverified 0.775%, `Decision_List.md`'s "before" column). It is no longer the talk's comparison. Round One
+appears at most once, as one example ("we did this ourselves"); never "October" or "our Round One plan" on a slide.
+Never say advisers "usually" or "never" do anything (claims audit, 12 Nov; `research/industry_practice.md`).
 
 **Why the Wongs** (for "you reused the case"): a "before" that isn't a strawman; a family the team knows in depth, so
 every figure is defined and consistent (a judge who never saw Round One meets them as our client); Hong Kong has about 12 import/export and wholesale SMEs for
@@ -161,7 +181,7 @@ Where the odds and the inheritance move in opposite directions (the flat), the f
 been explained, and numbers the way a person says them:
 - *odds, 96.8%* → "the money lasts their whole life in 97 futures out of 100"
 - *floor, guardrail* → "their limit", explained on slide 4 ("at least 95 in 100; 85 in a crisis")
-- *the label approach* → "following the labels"; *median inheritance at 89* → "what the children inherit"
+- *the comparison* → "the plan a reasonable planner would give without the test"; *median inheritance at 89* → "what the children inherit"
 - *outside in / inside out* → "what climate does to their money / what their money does to the climate"
 - *Scope 3* → "the carbon in what a company buys"; *CTB* → "an index that must cut its carbon every year, by rule"
 - *footprint, not a change* → "owning a cleaner company doesn't make any company cleaner"
@@ -207,10 +227,10 @@ checked, and says which.
 |---|---|---|---|
 | **1. Holds its limits when climate hits** | Outside in; limits first | Everything the family owns and earns (the home, the business, the savings, the income) in a normal future and the stress scenario; no choice may break the limits (95 in 100 normally, 85 in the 2030–31 scenario), however green | 47% of the shock's loss lands on the home and the business, where no fund share reaches; downsizing breaks their limit once older flats fall ≈5% behind newer ones (≈11% for the 85 limit in the downturn; slide 6) |
 | **2. Claims only what it changes** | Inside out | Each decision's effect on the world against a stated counterfactual, measured or estimated; a footprint, a rating or a label is not a change | ≈134 t a year of cuts we can show, all in the business (108 t of it recycled PET at today's parity); the funds: a footprint, no additional impact quantified |
-| **3. Pays for values only from the room above its limits** | The values budget | The room between the plan with ordinary choices and the limit; each values choice priced in the same units; the parents agree once, in the mandate, how much of the room to spend | Room 2.7 points; they use 0.9, ≈HK$1.47M of what the children inherit (M9c) |
+| **3. Pays for values only from the room above its limits** | The values budget | The room between the plan with plain choices and the limit; each values choice priced in the same units; the parents agree once, in the mandate, how much of the room to spend | Room 2.7 points; they use 0.9, ≈HK$1.47M of what the children inherit (M9c) |
 
 - **How the three are checked: one measure for every decision.** Each decision, green or not, gets both price tags (what
-  the children inherit, and what it changes in the world) against its ordinary choice; its corner says what to do and
+  the children inherit, and what it changes in the world) against its plain alternative; its corner says what to do and
   what may be claimed (§4.2, test 9). It is the instrument, not a fourth condition.
 - **Where the directions meet, act first** (the loop): the business's carbon is its listed customers' reported Scope 3,
   so an effect under the change comes back as a risk under the limit, to the sale price.
@@ -260,7 +280,8 @@ checked, and says which.
   (Pete): the limit, the change, the room, the order a planner decides in (protect first, take the real changes,
   then pay for values from what's left) and the order the speakers present.
 - **Words not to use:** "safety first" (an existing school of retirement planning, Pfau's, which locks in a guaranteed
-  floor; our limits are odds, the other school); "plain option" (team jargon: say "the ordinary choice"); "usually" about
+  floor; our limits are odds, the other school); "plain option" (team jargon: say "the plain alternative"; "the ordinary choice" was renamed 14 Nov so it isn't
+  heard as the reasonable planner's plan); "usually" about
   advisers (the share is our case's ask, not a claim about practice).
 - **"Limits" means risk only:** the floors (95 in 100 normally, 85 in the 2030–31 scenario; essentials never cut; no
   year short of cash; nothing that adds to the concentration in the flat and the business) and each person's tolerances
@@ -865,6 +886,29 @@ run sets the real cap. The extra ≈120 words go to the brief's bullets the talk
 forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken lines last; then the timed run.
 PowerPoint deferred (Pete, 13 Nov, night). Each new slide replaces its v4 slide only when it is better, so the deck
 works at every step.
+
+**14 Nov, later: the open, slide 4 and the comparison** (Pete, in review with Claude). Built in `src/01_talk.html`;
+the renders are in `build/`, and the open's two layouts are `build/options/open-B.png` (chosen) and `open-A.png`.
+- **Slide 1, general first** (Pete: "ask about the general question first, and just talk a bit about the Wongs"): the
+  answer without a test (a share of labelled funds), the three tests across the slide (the limit, outside in; the
+  change, inside out; the room), the claim, then one line: we ran it on the Wongs; six decisions; `fin_fair_gain`
+  against the reasonable planner's plan; ≈134 t; the capital. Key Areas §7 is now met on screen as well as aloud.
+  Moved off the open: the 47% (now slide 4's closing bar, on the slide that shows its parts) and the giving the room
+  buys (slide 3). Layout A (today's grid, outcomes on the right) made the Wongs as large as the tests: not chosen.
+- **Slide 3** now says who the Wongs are, since the open no longer does: two parents decide, two children inherit,
+  Adrian retires in 2037, Carmen in 2039.
+- **Slide 4, Option A** (Pete: "A is ok"): the strip shows one disorderly downturn asset by asset on the recommended
+  plan (`fin_pstorm_*`: the savings −HK$2.52M, the flat −HK$1.44M, the business −HK$0.81M, Adrian's bonus −HK$0.54M
+  on top; all at once −HK$4.70M, 97 → 90 in 100, above 85; 47% on the home and business), so the brief's "show the
+  financial consequence for the business, the property and the portfolio" is on screen. Before, its three red
+  numbers came from three different tests (older flats 10% behind, a customer leaving, the scenario). The customer
+  route moved to the steps line (cut by carbon data, slide 7). Cut or carried: only the flat's worse route is cut (the
+  yearly check); the rest is carried within the limit, and the slide says so.
+- **One name for the scenario:** "a disorderly downturn: a sudden carbon policy, 2030–31", defined on slide 4; "the
+  downturn" everywhere else ("85 in a crisis" on slides 3 and 5 renamed).
+- **The comparison** is now the reasonable planner's plan (§2), on slides 1 and 10 and backup 12; the corners'
+  comparison is "the plain alternative" (slide 6, backup 19). Spoken words 1,320 (≈10:06 at 135 a minute with names):
+  the cut is deferred to after submission (Pete: the script can change until the 21st; the slides can't).
 
 **14 Nov, evening: the brief's bullets covered, the headline set** (Pete: "are we missing some of the bullets ... our
 script should be 10 minutes"; then "a", §5.1). A check of every bullet in the topic (pp.2–4) and Key Areas against v5

@@ -19,8 +19,9 @@ this file, not `CLAUDE.md`. Team Axis: Pete (lead), Win, Fahtai, Lookbua.
 - **Claims about other advisers:** ESG integration, screening, alignment and additional impact are different.
   Do not imply ESG is absent from ordinary investment analysis, or that practitioners ignore homes and businesses.
   A public report's silence is not evidence that a service is absent. Say what the named source actually describes;
-  label any broader inference. The label approach is our specified comparison, not verified typical industry practice.
-  Our earlier proposal shows we used it; it does not establish how other advisers work.
+  label any broader inference. Our comparison, the reasonable planner's plan, is defined by what it does
+  (`Final_Plan.md` §2), not verified typical industry practice. Our earlier proposal (the label approach) shows we
+  used labels; it does not establish how other advisers work.
 - **Claims about our results:** distinguish scenario losses from losses caused by choosing labels, model outputs
   from observed outcomes, and a modelled benefit from the sustainable part from ordinary planning savings. A number
   exported successfully can still rely on an unsuitable comparator. Clear the baseline and full-cost questions in the
@@ -42,7 +43,7 @@ Family Legacy: Balancing Retirement, Education, ESG Integration, and Digital Ass
 
 **Start here:** `Final/Final_Plan.md` (what the judges score, the client and thesis, rules for every slide, the framework
 and storyline, who does what, the schedule, hard questions, facts to check, untested assumptions); then
-`Final/Decision_List.md` (each decision against the label approach, with its price tag and capital),
+`Final/Decision_List.md` (each decision against its "before", with its price tag and capital),
 `Final/model_runs.md` (the model's price tags) and the research briefs in `Final/research/`. **The organisers gave the Final only
 what's in `Final/`** (Pete, 13 Nov): the topic, its key areas and the finalists' guidelines. Everything in other
 folders (`Primary Info/`, `round2/`, `document/`) is from earlier rounds, not a Final requirement. The Wongs' facts we
@@ -52,9 +53,13 @@ yourself", topic p.2): on a slide they are our client's, never "the case says".
 **How the Final differs from Rounds One and Two** (Pete, 5 Nov; details in `Final_Plan.md` §2–3):
 - **No judge is assumed to have read Rounds One or Two.** The talk introduces the family from scratch; every slide stands
   alone.
-- **The "before" is the label approach:** our specified fund-and-label-led comparison (funds from the SFC's ESG list
-  to hit the target, labelled bank products considered, a charitable pledge, no business transition or property-climate
-  intervention). Establish what the actual model includes; do not assume every example is in it. Our Round One is a
+- **The "before" is the reasonable planner's plan** (Pete, 14 Nov; `Final_Plan.md` §2): the advice we'd give without
+  the test, as the brief asks ("the advice you would otherwise give"). It plans the household well, meets the family's
+  ESG wish with labelled funds as cheap as ours, keeps the giving as their lifelong pledge, and runs no climate test on
+  the home or the business. The headline (`fin_fair_gain`) is against it; say which part is the framework's (the vans)
+  and which is ordinary good planning (funding the gift, the fees). Each decision's corner is against its *plain
+  alternative*, and the room is measured from *plain choices*: three comparisons, never two on one chart unnamed.
+  "The label approach" now names only the model runs of Round One as written (`fin_lab_*`). Our Round One is a
   concrete precedent, not evidence of typical adviser practice (12 Nov claims audit). Mention it at most once, never
   as the spine. Never "October" or "our Round One plan" on a slide.
 - **Round One's choices are open.** Where the framework disagrees, the new advice wins without apology. Round Two's look
@@ -119,7 +124,7 @@ Pick the lenses that fit the question and say which you used. Think like the act
 
 | Lens | Questions they'd ask |
 |---|---|
-| **Practitioner judge** (financial adviser) | Is this suitable for this family? Would I recommend it to a client? Does the sustainable part change the advice, or only the words? What's missing (liquidity, tax, insurance, estate, monitoring)? Is the label approach a fair "before", or a strawman? |
+| **Practitioner judge** (financial adviser) | Is this suitable for this family? Would I recommend it to a client? Does the sustainable part change the advice, or only the words? What's missing (liquidity, tax, insurance, estate, monitoring)? Is the reasonable planner's plan a fair "before", or a strawman? |
 | **ESG strategist** | Alignment or impact? Would it happen anyway (additionality)? Is each figure measured, estimated or modelled? Where is our own greenwashing, Carmen's "compostable" products included? |
 | **Banker** | Would a bank lend for this? Cover, collateral, covenants; the cost of verification against the discount? |
 | **Compliance, regulator** (SFC, HKMA, HKEX) | Suitability per person; SFC ESG fund rules and product due diligence; are we licensed to advise on the loan or the funds; fair disclosure of risks and fees |
@@ -178,8 +183,8 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
   that no existing number changed (diff `numbers.json`) and log the change in `reviews/applied.md`.
 - **The Final's runs** (`Final/final_model.py`, which imports `model/run_model.py` and never changes it) write
   `Final/model_runs.md`. They are EXPLORATORY: no slide quotes them until the chosen ones are in `export_numbers()`.
-- **The Final's base** (Pete, 9 Nov): the family's plan with the medical review at 75 (`{{switch_89}}`), compared with
-  the label approach (Round One as written, in the model). Near 97% the odds barely move, so lead each price tag with the
+- **The Final's base** (Pete, 9 Nov): the family's plan with the medical review at 75 (`{{switch_89}}`); the headline
+  compares our recommended plan with the reasonable planner's plan (`Final_Plan.md` §2, 14 Nov). Near 97% the odds barely move, so lead each price tag with the
   inheritance in HK$ (today's money, including the flat). Round Two's baseline, "their own way", belongs to that deck
   only.
 - **Every number on a Final slide carries its tag** and is in HK$: MEASURED (our model), SOURCED (a named source,
@@ -192,7 +197,7 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
 
 ## Decisions
 - **The Final's:** `Final/Final_Plan.md` (thesis, framework, storyline; the team's decisions in §5) and
-  `Final/Decision_List.md` (each decision: the label approach's advice, ours, its corner, price tag and capital). Reopen
+  `Final/Decision_List.md` (each decision: the "before", ours, its corner, price tag and capital). Reopen
   one only with new evidence. Where they differ from Round One, they win.
 - **Round One's** (reasons in `document/manuscript.md`): what the written proposal recommended, and the label approach
   in the Final's model. The Final changes several (`Decision_List.md` P1, P3, P4, P6, G1, H1).

@@ -564,3 +564,15 @@ the card (slide 9) and the close (slide 10) move to that plan, and slide 5's fli
   plan (M10b ran on the plan as it stands): no work again 44.4% / 21.3%; re-hired at half pay 78.7% / 55.2%; the agreed
   response (half pay, HK$200K a year less to 2036, Carmen works to 65) 96.3% / 87.2%. Backup 16 (`series.py` `job()`).
 - Checked: `numbers.json` before and after differ only by these 14 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, later still): slide 4's downturn, asset by asset, on the recommended plan (`Final/final_model.py` `export_final()`)
+
+Pete chose Option A for slide 4 (`Final/Final_Plan.md` §4.5): the strip shows one scenario's consequence for the
+property, the business and the portfolio (the brief, area 5), on the plan the card and slide 5 use. Keys added, each on
+its own against the recommended plan in a normal future, as M7's channels (`fin_shockport_leg`, `fin_stormflat_leg`,
+`fin_stormbiz_leg`) are on the base:
+- `fin_pstorm_port_leg` −HK$2.52M, `fin_pstorm_flat_leg` −HK$1.44M, `fin_pstorm_biz_leg` −HK$0.81M;
+  `fin_pstorm_leg` −HK$4.70M (all at once, the plan in the scenario: `fin_plan_sodds` 90.0%);
+  `fin_pstorm_bonus_leg` −HK$0.54M (Adrian's bonus lost in 2030–31, against the plan in the scenario, as
+  `fin_bonus_leg`); `fin_pstorm_homebiz` 47% (the flat's and the business's share of the three).
+- Checked: `numbers.json` before and after differ only by these 6 additions; `figure-data.md` and every PNG unchanged.

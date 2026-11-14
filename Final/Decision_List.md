@@ -4,8 +4,12 @@
 (`document/manuscript.md`). For Pete (and the owner of each area). It is the source for slides 3 and 6–10
 (`Final_Plan.md` §4.5; slide numbers are storyline v4's, updated 12 Nov) and the list of price tags the model runs (`Final/model_runs.md`).
 
-**The baseline is the label approach** (`Final_Plan.md` §2): what a careful planner does by default, which is what our
-Round One did, so its advice fills the "before" column. On slides, say "the label approach", never "October".
+**The "before" column is the label approach: Round One as written** (our earlier proposal), kept as the record of
+what each decision changes. It is **not** the talk's comparison and not a claim about what careful planners do. Since
+14 Nov (Pete) the talk compares against **the reasonable planner's plan** (`Final_Plan.md` §2): the same household plan
+with the family's ESG wish met by labelled funds as cheap as ours (not the US$0 fund) and the giving kept as their
+lifelong pledge; the headline `fin_fair_gain` is against it. Each decision's corner is against its plain alternative.
+On slides, say "without the test" or "a reasonable planner's plan"; never "October" or "the label approach".
 
 **How to read it.** Each decision shows the label approach ("before"), the framework's advice, its corner (`Final_Plan.md` §4.2),
 its two-sided price tag (money side, world side), the capital and who pays, when, and the evidence status. Money at

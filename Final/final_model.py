@@ -582,6 +582,22 @@ def export_final():
         sys.exit("slide 5 (plan): the normal limit no longer binds first; the slide's words assume it does")
     out["fin_pflipn_cross"], out["fin_pflipn_cross_x"] = f"{pcn:.0%}", f"{pcn * 100:.2f}"
     out["fin_pflipn_rmp100"], out["fin_pflipn_down100"] = f"{round(prn[-1] * 100)}", f"{round(pdnn[-1] * 100)}"
+    # slide 4 on the recommended plan (Option A, Pete 14 Nov): the 2030-31 disorderly scenario asset by asset, each on
+    # its own, as M7's channels (fin_shockport_leg, fin_stormflat_leg, fin_stormbiz_leg) are on the base. One plan for
+    # the strip, the card (fin_plan_*) and slide 5 (fin_pflip*). Each against the plan in a normal future; Adrian's
+    # bonus against the plan in the scenario, as fin_bonus_leg is. fin_pstorm_homebiz is the share of the three that
+    # lands on the home and the business, on the slide that shows its parts (fin_lab_homebiz is the label approach's).
+    dPl = lambda r, ref: ("−" if r["leg_med"] < ref["leg_med"] else "+") + f"HK${abs(r['leg_med'] - ref['leg_med']):.2f}M"
+    pport = run(base, biz=m.BIZ + up, inflows=fund, ret_add=sc["ret_add"], level=sc["level"], **pkw)
+    pflat = run(base, "rmp", mult, biz=m.BIZ + up, inflows=fund, **pkw)
+    pbiz = run(base, biz=sc["biz"] + up * sc["biz"] / m.BIZ, inflows=plus(sc["inflows"], fund), **pkw)
+    pbon = stressed(base, sc, mult, biz_add=up, flows=plus(fund, bonus_lost()), **pkw)
+    for k, r in (("port", pport), ("flat", pflat), ("biz", pbiz)):
+        out[f"fin_pstorm_{k}_leg"] = dPl(r, pl_n)
+    out["fin_pstorm_bonus_leg"] = dPl(pbon, pl_s)
+    out["fin_pstorm_leg"] = dPl(pl_s, pl_n)                                # all three at once
+    p3 = [r["leg_med"] - pl_n["leg_med"] for r in (pport, pflat, pbiz)]
+    out["fin_pstorm_homebiz"] = f"{(p3[1] + p3[2]) / sum(p3):.0%}"
     # backup slides (14 Nov, evening): the headline's two ends in HK$ (the waterfall), and M10b's job loss on the
     # recommended plan (M10b ran on the plan as it stands): lost at the end of 2030 with no work again; re-hired at
     # half pay from 2032; and the contingency (half pay, HK$200K a year less spending to 2036, Carmen works to 65).
