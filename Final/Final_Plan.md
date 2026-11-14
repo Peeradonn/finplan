@@ -327,6 +327,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   vans), the lighter board dashed as not yet counted, the green premium as a note on the plastic row, and a total:
   ≈134 t a year, 4–5% of her footprint. Same figures as before (ESTIMATED, ILLUSTRATIVE business). Chosen over a
   footprint → cuts layout. Render: `build/options/slide6-list.png`.
+  Then (Pete: "for clients whose goal isn't sustainability, would ranking by cost per tonne conflict with what they
+  want?"): the ranking stays, because the brief asks to "rank abatement projects on a marginal abatement cost
+  curve"; but the ranking only orders the options and the four corners decide them: a cut that pays is a good
+  business decision any client takes; a cut that costs is paid only from the room, if the client wants it. Now on
+  the slide: step 3 "Rank, cheapest first: take what pays; what costs comes only from the room", and under the
+  total "All four pay or cost nothing: none needs the values budget". Colours: the rank circles and the list
+  heading were indigo beside teal data, two strong cool hues competing; they are navy now, so teal is the
+  tonnes, indigo only the header and the framework's steps, crimson the loan and the refusals.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
