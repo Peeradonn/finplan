@@ -241,6 +241,9 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   each (the data's yearly cost is on slides 9 and 10). The size scale and the loan picture unchanged.
 - **Slide 9:** the card's footnote cut from three lines to two, so the card no longer touches the conclusion bar; the
   attribution and bias lines halved (the third bias, the gift funded now, is in the notes).
+- **Slide 10:** the brief's outcome and capital (Key Areas §7) were small grey text jammed under the grid, the outcome
+  wrapping; now two labelled lines (OUTCOME, CAPITAL), one line each, set off by a rule, the +HK$1.05M in indigo
+  as the close's point, the tonnes in teal.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
