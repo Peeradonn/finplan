@@ -298,6 +298,9 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   footnote. To the notes: each loss's cause, ordinary vs climate-only, where the plan acts (slides 5, 7), the 22
   routes and CBAM, the inheritance in the downturn. Chosen over a no-HK$ version (the household strip with each
   asset's shock in plain %), which would have lost the 47% and the losses to scale.
+  The result line now gives the normal future as context (Pete: "should we also say from x in 100 before?"): "in
+  the downturn the money still lasts to Carmen's 89 in 90 futures in 100 (97 without it), above their downturn
+  limit of 85". Only the downturn limit is named, so 90 isn't read against the normal limit of 95.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
