@@ -233,6 +233,9 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - **Slide 6:** the rule for any business is three numbered indigo steps (it was a run-on paragraph, the hardest text
   on the slide, though it is the scored part); the dashed box over recycled plastic is named "Green premium" (the
   brief's term; slide 7 defines it against the greenium).
+- **Slide 4 trimmed** (Pete: "a bit too packed"; 319 words on screen, the most in the first half): one grey line per
+  step, one line per loss, three short lines under the strip (the customer route left to slide 7), "All at once"
+  emphasised as the slide's result, a shorter footnote; 265 words, the rest being the strip's labels.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
