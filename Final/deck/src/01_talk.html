@@ -39,6 +39,12 @@
 .o9-miss p b{flex:none;width:112px;font:800 14px/1.3 var(--text);color:var(--ink)}
 .o9-dates{font:500 15px/1.45 var(--text)}
 .o9-dates b{font-weight:800}
+/* slide 12's right column after the trim: the product's label against the plan's (Pete 14 Nov) */
+.v9-side{gap:12px;padding-top:40px}
+.v9-side .o9-prod{font-size:17px} .v9-to{color:#8892A2;padding-left:30px} .v9-to .ic{width:26px;height:26px;stroke-width:2.4}
+.v9-pl{font:600 18px/1.4 var(--text);color:var(--ink)}
+.v9-miss{margin-top:18px;font:500 16px/1.45 var(--text);color:var(--ink);border-left:4px solid var(--brand);padding-left:12px}
+.v9-miss b{font-weight:800;color:var(--brand)}
 /* 9B: the product's label beside the plan's */
 .o9b-body{display:flex;align-items:flex-start;gap:22px;margin-top:16px}
 .o9b-prod{flex:none;width:330px;border:2px solid var(--grey);border-radius:6px;padding:16px 18px;background:var(--mist)}
@@ -66,6 +72,8 @@
 .v1-nl{color:#FF4A57} .v1-nc{color:#38B6CF} .v1-nr{color:#9DB6E0}
 .v1-proof p{font:600 17px/1.35 var(--text);color:#E3E8F0;text-wrap:balance}
 .v1-src{grid-column:2;font:500 12.5px/1.4 var(--text);color:#808BA0}
+/* slide 1: real Hong Kong flats behind the question, faded into the stage (Pete 14 Nov: PRISM + real Hong Kong); img/stage-flats.jpg */
+.v1-bg{position:absolute;left:0;top:0;width:1280px;height:720px}   /* full bleed; the dimming is baked into the image */
 /* v5 slide 1, general first (Pete 14 Nov): the three tests across the slide; the Wongs as one line of outcomes */
 .v1-tests{position:absolute;left:48px;right:48px;top:254px}
 .v1-row3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -81,6 +89,40 @@
 .v1-wn{display:block;font:800 26px/1.1 var(--num);color:var(--brand-light);margin-bottom:3px}
 .v1-wn.v1-nc{color:#38B6CF}
 .v1-wsrc{font:500 12.5px/1.4 var(--text);color:#808BA0;margin-top:6px}
+/* slide 1 easier to read over the photo (Pete 15 Nov): every small line brighter */
+#v1 .s1-cap{color:#D2D9E4} #v1 .v1-sub{color:#D2D9E4} #v1 .v1-wcap{color:#D2D9E4;font-size:17px} #v1 .v1-wsrc{color:#AEB8C8;font-size:13px}
+#v1 .v1-wrow p{color:#E3E8F0} #v1 .v1-test{background:#13203A;border-color:#33456A}
+/* the profile slide (Pete 14 Nov: one point per slide): each decision-maker as a card (v3a- classes only here) */
+/* 15 Nov, after OASIS: each card opens on a portrait (AI-generated, fictional) and what the person wants (our client
+   definition), the setup the close pays off */
+#v3a .v3a-p{display:grid;grid-template-rows:150px auto 44px 1fr 1fr;min-height:0;height:378px;padding:0 16px 8px;overflow:hidden}
+#v3a .v3a-ph{display:block;width:calc(100% + 32px);height:150px;margin:0 -16px;object-fit:cover}   /* pre-cropped: every head the same size and height */
+#v3a .v3a-nm{font-size:20px;margin-top:10px} #v3a .v3a-nm span{font:500 13.5px/1 var(--text);color:var(--slate)}
+#v3a .v3a-w{font:500 16px/1.3 var(--text);color:var(--ink);margin-top:3px}   /* upright: the deck has no italic font file, so italics are a browser-made slant */
+#v3a .v3a-ad .v3a-w{color:var(--accent)} #v3a .v3a-ca .v3a-w{color:var(--brand)}
+#v3a .v3a-r b,#v3a .v3a-r.v3a-dec b{font-size:16px;font-weight:700} #v3a .v3a{gap:12px;margin-top:10px} #v3a .v3a-r{padding:6px 0 4px}
+.v3a{display:flex;flex-direction:column;gap:18px;margin-top:16px}
+.v3a-people{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.v3a-p{position:relative;border:1.5px solid #DCE1E8;border-top:6px solid #B3BAC6;border-radius:6px;padding:16px 18px 14px;background:#fff;min-height:292px;box-sizing:border-box;
+  display:grid;grid-template-rows:auto 42px 1fr 1fr 1fr}
+.v3a-p.v3a-ad{border-top-color:var(--accent)} .v3a-p.v3a-ca{border-top-color:var(--brand)}
+.v3a-av{position:absolute;right:14px;top:12px;width:48px;height:48px;border-radius:50%;background:#B3BAC6;color:#fff;
+  font:800 21px/48px var(--head);text-align:center}
+.v3a-ad .v3a-av{background:var(--accent)} .v3a-ca .v3a-av{background:var(--brand)}
+.v3a-nm{font:800 23px/1.2 var(--head);color:var(--ink)} .v3a-tg{font:italic 500 15px/1.3 var(--text);color:var(--slate);margin:3px 60px 0 0;align-self:start}
+.v3a-r{display:flex;flex-direction:column;justify-content:flex-start;font:500 13px/1.25 var(--text);color:var(--slate);padding:8px 0 6px;border-top:1px solid #EAEDF2}
+.v3a-r b{color:var(--ink);font:800 16px/1.3 var(--text);margin-top:2px}
+.v3a-r.v3a-dec b{font-weight:600}
+.v3a-d{font:500 15px/1.38 var(--text);color:var(--ink);margin-top:12px} .v3a-d b{font-weight:800}
+.v3a-rules{display:flex;align-items:center;gap:30px;background:#EFEDFB;border-left:4px solid var(--brand);border-radius:0 6px 6px 0;padding:15px 20px}
+.v3a-rules p{font:500 17.5px/1.3 var(--text);color:var(--ink)} .v3a-rules b{font-weight:800}
+.v3a-rules p.v3a-rh{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--brand)}
+.v3a-rules i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;
+  background:var(--brand);color:#fff;font:800 11.5px/1 var(--text);margin-right:7px;vertical-align:1px}
+/* the limit slide after the split: the Wongs' panel full width under the two steps */
+#v3 .p4-body{flex-direction:column;gap:6px} #v3 .p4-right{width:100%} #v3 .v3-steps{margin-top:2px}
+#v3 .v3-bar{height:78px} #v3 .v3-bt{font-size:21px;margin-top:16px} #v3 .v3-bt b{font-size:32px} #v3 .v3-bs{font-size:15.5px;margin-bottom:30px}
+#v3 .v3-lab b{font-size:21px} #v3 .v3-lab p{font-size:15px} #v3 .v3-warn{font-size:16.5px;margin-top:20px} #v3 .v3-who2{margin-top:22px}
 /* v5 slide 3 in HK$ (Pete 14 Nov): an icon per step, the disagreement rules in the left column's white space, and
    the room as a values budget in today's money that ends at the limit (v3- classes only here) */
 #v3 .p4-left{width:466px} #v3 .p4-right{display:flex;flex-direction:column}
@@ -89,7 +131,7 @@
 .v3-step:not(.v3-last)::after{content:"";position:absolute;left:20px;top:44px;bottom:-13px;width:2px;background:var(--brand-tint)}
 .v3-ic{flex:none;width:42px;height:42px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center}
 .v3-ic .ic{width:22px;height:22px}
-/* the four steps in one colour, like slide 4's (Pete 14 Nov); the limit's crimson stays in the data */
+/* the four steps in one colour, like slide 5's (Pete 14 Nov); the limit's crimson stays in the data */
 .v3-step p{font:500 17.5px/1.4 var(--text);text-wrap:pretty;padding-top:8px} .v3-step b{font-weight:800}
 .v3-rules{margin-top:6px;background:#EFEDFB;border-left:4px solid var(--brand);border-radius:0 8px 8px 0;padding:12px 16px 10px}   /* a clause in their policy */
 .v3-rules p.v3-rh{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;padding:0;color:var(--brand)}
@@ -113,13 +155,15 @@
 .v3-who2 p{flex:1;font:500 15px/1.4 var(--text);color:var(--slate);text-wrap:pretty}
 .v3-who2 b{font:800 17px/1.3 var(--head);color:var(--brand)} .v3-who2 i{font-weight:500;color:var(--slate)}
 .v3-who2 .v3-ad b{color:var(--accent)}
+.v3-face{display:flex;align-items:center;gap:12px} .v3-face img{flex:none;width:52px;height:52px;border-radius:50%;object-fit:cover}
+.v3-face.v3-ad img{box-shadow:0 0 0 3px var(--accent)} .v3-face:not(.v3-ad) img{box-shadow:0 0 0 3px var(--brand)}
 /* v5 slide 6: the rule for any business as three numbered steps, like the other step slides (Pete 14 Nov) */
 .s7-item p.v6-st{display:flex;gap:10px;align-items:flex-start;font:500 15px/1.32 var(--text);margin-bottom:4px}
 #v6 .s7-item{margin-bottom:10px}
 .v6-st span{flex:none;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font:800 12.5px/22px var(--head);
   text-align:center;margin-top:1px}
-/* v5 slide 8 as a sieve, not a target (Pete 14 Nov): products fall through the product check and each person's
-   limit; 26.6% comes out (v8f- only here; the stamps reuse slide 7's .v7s-stamp) */
+/* v5 slide 9 as a sieve, not a target (Pete 14 Nov): products fall through the product check and each person's
+   limit; 26.6% comes out (v8f- only here; the stamps reuse slide 8's .v7s-stamp) */
 .v8f{display:flex;flex-direction:column;gap:10px;margin-top:10px}
 .v8f-in{display:flex;align-items:center;gap:12px;font:500 15px/1.3 var(--text);color:var(--ink)}
 .v8f-tag{flex:none;font:800 12px/1 var(--text);letter-spacing:1.2px;text-transform:uppercase;color:#fff;background:var(--ink);padding:5px 8px;border-radius:3px}
@@ -145,9 +189,38 @@
 .v8f-what{flex:none;width:300px;font:500 15px/1.35 var(--text);color:var(--ink)}
 .v8f-price{margin-left:auto;border-left:3px solid #DCE1E8;padding-left:14px}
 .v8f-price p{font:500 15px/1.4 var(--text);color:var(--ink)} .v8f-price b{font-weight:800}
+/* slide 8: the HKMA guideline's own words beside the scale (Pete 14 Nov: OASIS-style evidence; v7e- only here) */
+#v7 .v7k{margin-bottom:6px} #v7 .v7k-c b i{display:block;font-style:normal;font-weight:500;font-size:14px;line-height:1.3;color:var(--slate);margin:2px 0 0}
+.v7e-row{display:flex;align-items:flex-start;gap:28px;margin-top:2px}
+.v7e-reach{flex:1;font:500 17px/1.45 var(--text);color:var(--ink);background:#EFEDFB;border-radius:6px;padding:14px 18px;margin-top:16px}
+.v7e-reach b{color:var(--brand);font-weight:800}
+/* the product check after the split (Pete 14 Nov): the four products larger, one at a time */
+.v8c{gap:14px} .v8c-prods{gap:16px} .v8c .v8f-p{padding:14px 16px 16px;min-height:150px}
+.v8c .v8f-pn{font-size:17px;padding-right:0;margin-top:30px} .v8c .v8f-pd{font-size:14.5px;padding-right:0;margin-top:6px;line-height:1.4}
+.v8c .v8f-p .v7s-stamp{top:12px;left:14px;right:auto;font-size:14px}
+.v8c .v8f-p.v8c-star{border-color:var(--accent);box-shadow:0 2px 10px rgba(200,14,30,.14);opacity:1}
+.v8c-next{display:flex;align-items:center;gap:8px;font:600 16px/1.3 var(--text);color:var(--brand)} .v8c-next .ic{width:20px;height:20px}
+.v8c .v8f-p.v8f-pass::after{display:none}
+#v8 .v8f{gap:24px;margin-top:18px} #v8 .v8c-prods{gap:18px} #v8 .v8f-p{min-height:272px;padding:18px 20px 20px}
+#v8 .v8f-pn{font-size:19px;margin-top:40px} #v8 .v8f-pd{font-size:16px;line-height:1.45;margin-top:8px}
+#v8 .v8f-p .v7s-stamp{font-size:16px;top:14px;left:16px} #v8 .v8f-in{font-size:16.5px} #v8 .v6c-steps{font-size:16.5px}
+#v8 .v8c-next{font-size:17.5px}
+.v10-flat{display:block;width:100%;height:auto;margin-top:4px;font-family:var(--text)}
+.v10-src{font:500 12.5px/1.3 var(--text);color:var(--slate);margin-top:6px}
+#v8 .v8f-pd b{color:var(--accent);font-weight:800}
+.v8s{gap:10px}
+#v8b .v8f{gap:22px;margin-top:18px} #v8b .v8f-in{font-size:16.5px} #v8b svg{margin:4px 0}
+#v8b .v8f-out{padding-top:24px;gap:20px} #v8b .v8f-big{font-size:72px} #v8b .v8f-what{font-size:17px;width:330px}
+#v8b .v8f-price p{font-size:17px;line-height:1.5}
 /* v5 slide 7 as two term sheets (Pete 14 Nov: "be more creative"): a green loan judged as a loan (v7s- only here) */
 #v7 .body.stack{gap:8px}
 .v7s{display:grid;grid-template-columns:400px 44px 400px 1fr;align-items:center;gap:0;margin-top:4px}
+#v7b .v7s{grid-template-columns:1fr 64px 1fr;margin-top:26px} #v7b .v7s-doc{padding:18px 26px 18px}
+#v7b .v7s-tt{font-size:25px} #v7b .v7s-sub{font-size:15.5px;margin-bottom:10px} #v7b .v7s-row{font-size:17px;padding:11px 0} #v7b .v7s-top{font-size:12px}
+#v7b .v7s-row b{font-size:18.5px} #v7b .v7s-plain .v7s-net b{font-size:22px} #v7b .v7s-stamp{font-size:16px;top:22px;right:24px}
+.v7s-line{margin-top:30px;font:500 16.5px/1.4 var(--text);color:var(--ink);border-left:4px solid #DCE1E8;padding-left:12px}
+.v7s-line b{font-weight:800}
+#v7 .v7k{margin:44px 0 0}
 .v7s-doc{position:relative;background:#fff;border:1.5px solid #C9D1DC;border-top:5px solid #8892A2;border-radius:4px;padding:10px 16px 10px;
   box-shadow:0 3px 10px rgba(15,30,61,.10)}
 .v7s-plain{border-top-color:var(--brand)}
@@ -169,7 +242,7 @@
 .v7s-side b{font-weight:800}
 /* v5 slide 6 as her business's chain (Pete 14 Nov: "put some creative thinking into designing the slide"): what she
    buys -> her warehouse and vans -> its landfill here, each cut pinned where it acts (v6c- classes only here) */
-.v6c{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.v6c{display:flex;flex-direction:column;gap:10px;margin-top:12px}
 .v6c-steps{display:flex;align-items:center;gap:24px;font:500 15.5px/1.3 var(--text);color:var(--ink);white-space:nowrap}
 .v6c-steps .v6c-cap{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--brand)}
 .v6c-steps i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:50%;
@@ -182,8 +255,8 @@
 .v6c-nm{font:800 16.5px/1.2 var(--head);color:var(--ink)} .v6c-sb{font:500 13px/1.3 var(--text);color:var(--slate);margin-top:2px}
 .v6c-t{margin-left:auto;font:800 21px/1 var(--num);color:#0E7490;white-space:nowrap;padding-left:8px}
 .v6c-sh{height:7px;background:#E3EBEE;border-radius:4px;margin:8px 2px 12px} .v6c-sh b{display:block;height:100%;min-width:4px;background:#0E7490;border-radius:4px}
-.v6c-cut{display:flex;align-items:center;gap:11px;border:1.5px solid #DCE1E8;border-left:5px solid #0E7490;border-radius:6px;padding:13px 13px;
-  margin-bottom:10px;background:#fff}
+.v6c-cut{display:flex;align-items:center;gap:11px;border:1.5px solid #DCE1E8;border-left:5px solid #0E7490;border-radius:6px;padding:10px 13px;
+  margin-bottom:8px;background:#fff}
 .v6c-cut.v6c-big{background:#E6F2F4;border-color:#B9D9E0;border-left-color:#0E7490}
 .v6c-cut.v6c-dash{border-style:dashed;border-left:5px solid #7FB5C2}
 .v6c-r{flex:none;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font:800 13px/24px var(--head);text-align:center}
@@ -192,11 +265,23 @@
 .v6c-loan.v6c-nc{background:#B3BAC6}
 .v6c-loan{display:inline-block;background:var(--accent);color:#fff;font:800 11px/1 var(--text);letter-spacing:.3px;padding:3px 7px;
   border-radius:9px;margin-left:6px;vertical-align:2px;text-transform:uppercase}
-.v6c-no{display:flex;gap:9px;align-items:flex-start;background:#F9E9EC;border-radius:6px;padding:12px 13px;margin-bottom:10px}
+.v6c-no{display:flex;gap:9px;align-items:flex-start;background:#F9E9EC;border-radius:6px;padding:10px 13px;margin-bottom:8px}
 .v6c-no .ic{width:20px;height:20px;color:var(--accent);flex:none;margin-top:1px}
 .v6c-no p{font:500 14px/1.38 var(--text);color:var(--ink)} .v6c-no b{color:var(--accent);font-weight:800}
 .v6c-tot{border-top:1.5px solid var(--ink);padding-top:9px;font:500 16.5px/1.35 var(--text);color:var(--ink)}
-.v6c-tot b{color:#0E7490;font-weight:800} .v6c-tot span{display:block;font-size:14px;color:var(--slate);margin-top:2px}
+.v6c-tot b{color:#0E7490;font-weight:800}
+#v6 .v6c{gap:16px;margin-top:16px}
+/* each station's header is a photo of the real thing, its name and tonnes over a dark wash (Pete 14 Nov) */
+#v6 .v6c-hd{position:relative;overflow:hidden;min-height:96px;padding:12px 16px;background:#0B1426;border-radius:8px}
+.v6c-ph{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+#v6 .v6c-hd::before{content:"";position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;
+  background:linear-gradient(90deg,rgba(11,20,38,.86) 0%,rgba(11,20,38,.55) 50%,rgba(11,20,38,.12) 100%)}
+#v6 .v6c-hd > div,#v6 .v6c-hd > .v6c-t{position:relative;z-index:2}
+#v6 .v6c-nm{color:#fff;font-size:18px} #v6 .v6c-sb{color:#D2D9E4;font-size:13.5px} #v6 .v6c-t{color:#fff;font-size:24px;text-shadow:0 1px 6px rgba(0,0,0,.7)} #v6 .v6c-cut{padding:15px 14px;margin-bottom:12px}
+#v6 .v6c-cn{font-size:17px} #v6 .v6c-cd{font-size:14.5px} #v6 .v6c-ct{font-size:26px} #v6 .v6c-no{padding:14px}
+#v6 .v6c-no p{font-size:15px} #v6 .v6c-tot{font-size:17.5px} #v6 .v6c-bridge{font-size:16.5px;padding:11px 16px}
+.v6c-bridge{font:500 15.5px/1.35 var(--text);color:var(--ink);background:#EFEDFB;border-radius:4px;padding:8px 14px}
+.v6c-bridge b{color:var(--brand);font-weight:800} .v6c-tot span{display:block;font-size:14px;color:var(--slate);margin-top:2px}
 /* v5 slide 3: who the Wongs are, beside the panel's caption (Pete 14 Nov: slide 1 no longer introduces them) */
 .v3-who{font-weight:600;letter-spacing:0;text-transform:none;color:var(--slate)}
 /* v5 slide 2: each step marked with the condition it checks (v2- classes only here) */
@@ -228,7 +313,7 @@
 .v7-h{font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--ink);margin-bottom:8px}
 .v7-fam p{font:500 15.5px/1.35 var(--text);margin-bottom:9px}
 .v7-fam b{font:800 22px/1 var(--num);margin-right:6px}
-/* v5 slide 8: the savings sized by each parent's limit (v8- classes only here) */
+/* v5 slide 9: the savings sized by each parent's limit (v8- classes only here) */
 .v8-body{display:flex;flex-direction:column;gap:10px}
 .v8-top{display:flex;gap:34px}
 .v8-h{font:800 15px/1.2 var(--head);margin-bottom:8px;display:flex;align-items:center;gap:8px}
@@ -247,12 +332,12 @@
 .v8-share{display:flex;align-items:center;gap:16px;flex:none;width:470px}
 .v8-share p{font:500 16px/1.35 var(--text)}
 .v8-share p.v8-big{font:800 64px/1 var(--num);letter-spacing:-1px;color:var(--brand)}
-/* v5 slide 10: the claim as the close's title, on two lines (an id: classes are global) */
+/* v5 slide 11: the claim as the close's title, on two lines (an id: classes are global) */
 #v10 .head h2{font-size:28px;max-width:1184px}
-/* slide 10: an icon for each corner's verdict (Pete 14 Nov) */
+/* slide 13: an icon for each corner's verdict (Pete 14 Nov) */
 #v10 .q3-act{display:flex;align-items:center;gap:9px}
 .v10-ic{width:24px;height:24px;stroke-width:2.2;color:var(--ink)} .v10-ic.v10-do{color:#0E7490} .v10-ic.v10-pay{color:var(--brand)} .v10-ic.v10-no{color:var(--accent)}
-/* slide 10: the brief's outcome and capital as two labelled lines, set off from the grid (Pete 14 Nov) */
+/* slide 13: the brief's outcome and capital as two labelled lines, set off from the grid (Pete 14 Nov) */
 #v10 .q3-cell{padding:9px 18px 7px} #v10 .q3-e{margin-top:7px}
 .v10-out{border-top:1.5px solid var(--ink);padding-top:8px;margin-top:2px}
 .v10-out p{font:500 15.5px/1.35 var(--text);color:var(--ink);white-space:nowrap}
@@ -262,23 +347,30 @@
 .v10-out i{font-style:normal;color:var(--slate)}
 /* v5 slides 5 and 6 (ids: classes are global): the strip as two full-width lines; the footprint bar at full size */
 #v5 .s6-strip{flex-direction:column;gap:3px}
-#v5 .s6-step em{font-style:italic;font-weight:700;color:var(--brand)} #v5 .s6-step p{font-size:17px}
+#v5 .s6-grid svg{width:780px;height:403px} #v5 .s6-rule{padding-top:0}
+/* the gap made visible: an older block with a newer tower behind (Pete 14 Nov: real Hong Kong photos) */
+.v5-ph{position:relative;height:112px;border-radius:8px;overflow:hidden;margin-bottom:12px}
+.v5-ph img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.v5-ph p{position:absolute;left:0;right:0;bottom:0;padding:16px 12px 8px;font:500 13.5px/1.3 var(--text);color:#fff;
+  background:linear-gradient(transparent,rgba(11,20,38,.88))} .v5-ph b{font-weight:800}
+#v5 .s6-step{margin-bottom:9px}   /* the strip moved to backup 21: the chart takes its room */
+#v5 .s6-step em{font-style:italic;font-weight:700;color:var(--brand)} #v5 .s6-step p{font-size:15px;line-height:1.38}
 #v6 .s7-body > svg{flex:none}
 /* v5 slide 7: the brief's five kinds of finance, each placed in the plan (v7k- classes only here) */
 .v7k{display:grid;grid-template-columns:repeat(5,1fr);column-gap:14px;margin:4px 0 6px}
 .v7k-cap{grid-column:1/-1;font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--ink);margin-bottom:6px}
 .v7k-c{border-top:3px solid var(--ink);padding-top:5px}
 .v7k-c.v7k-on{border-top-color:var(--ink)}
-.v7k-c b{display:block;font:800 15px/1.2 var(--head)}
+.v7k-c b{display:block;font:800 16.5px/1.2 var(--head)}
 .v7k-c i{display:block;font:italic 500 12.5px/1.25 var(--text);color:var(--slate);margin:1px 0 3px}
-.v7k-c span{display:block;font:600 13.5px/1.3 var(--text);color:var(--ink)}
+.v7k-c span{display:block;font:600 15.5px/1.3 var(--text);color:var(--ink);margin-top:3px}
 .v7-row3{display:grid;grid-template-columns:380px 1fr 1fr;column-gap:34px;margin-top:6px}
 .v7-row3 .v7-h{display:flex;align-items:center;gap:0}
 .v7-t{font:500 14px/1.35 var(--text);color:var(--ink);margin-bottom:6px}
 .v7-t b{font-weight:800}
 .v7-row3 .v7-fam p:not(.v7-h){font:500 14.5px/1.35 var(--text);margin-bottom:8px}
 .v7-row3 .v7-col p.v7-h{font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--ink);margin-bottom:8px}
-/* v5 slide 9: attribution and bias, read honestly (o9-) */
+/* v5 slide 10: attribution and bias, read honestly (o9-) */
 .o9-read p:not(.o9-k){font:500 14.5px/1.35 var(--text);padding:3px 0}
 .o9-read p b{font-weight:800}
 .v7-row{margin-top:16px}
@@ -286,7 +378,8 @@
 .v8-price b{font-weight:800}
 </style>
 
-<section class="slide reveal s1-stage" id="v1" data-time="1:30" data-speaker="Pete">
+<section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
+  <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
   <p class="s1-kick">Today's question</p>
   <p class="s1-q">What makes a plan sustainable?</p>
   <div class="v1-ask" data-b="2">
@@ -302,7 +395,7 @@
     </div>
   </div>
   <div class="v1-wong" data-b="5">
-    <p class="v1-wcap"><b>We ran the test on one Hong Kong family, the Wongs.</b> It changed six decisions:</p>
+    <p class="v1-wcap"><b>We ran the test on one Hong Kong family, the Wongs:</b> electric vans on a plain loan, a scholarship funded for life, three green products refused.</p>
     <div class="v1-wrow">
       <p><b class="v1-wn">{{fin_fair_gain}}</b>for their children, against a reasonable planner's plan</p>
       <p><b class="v1-wn v1-nc">≈134 t</b>of CO2e a year less</p>
@@ -316,7 +409,7 @@
   <span class="s1-pg">1</span>
   <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a plan sustainable? Without a test, the answer is a share: meet the client's ESG wish with part of the savings in labelled funds. But a share only says what the funds hold, not whether the plan works. A plan must pass three tests. Outside in: does it last when climate hits? Inside out: what does the money actually change? And what can its values afford? So our answer: a plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. We ran the test on one Hong Kong family, the Wongs. It changed six decisions: {{fin_fair_gain}} more for their children than the plan a reasonable planner would give without it, about 134 tonnes of carbon a year less, with {{fin_plan_gift_hk}} of their money and HK$1.91M of their business's. How do we run the test?
     [Notes: DRAFT, 14 Nov (Pete: the general question first, the Wongs only as the worked example's outcome; the
-    family's own 20–25% ask is paid off on slide 8). The comparison is the reasonable planner's plan (Final_Plan.md §2):
+    family's own 20–25% ask is paid off on slide 11). The comparison is the reasonable planner's plan (Final_Plan.md §2):
     a careful plan without the test, the family's ESG wish met with labelled funds as cheap as ours and the giving kept
     as their lifelong pledge; never say how other advisers usually work. Headline: fin_fair_gain (Pete, 14 Nov, option
     (a); M9b's fairest row). Its parts, if asked: the vans {{fin_fair_vans}} (only a test of the business finds them),
@@ -324,8 +417,8 @@
     too), fees {{fin_fair_fees}}; {{fin_fair_gain_s}} in the 2030–31 downturn. 134 t: Decision_List.md (vans 19.3 + LED
     4.1 + air-con 2.8 + recycled PET 108.1), ESTIMATED on an ILLUSTRATIVE business. Capital: Decision_List.md §2 (the
     family's is the scholarship fund for life, fin_plan_gift_hk; the business's HK$1.91M of equipment, ESTIMATED). The
-    six decisions are the close's (slide 10). Moved off the open: nearly half the shock's loss on the home and business
-    (slide 4, fin_pstorm_homebiz) and the giving the room buys (slide 3, fin_room_gift).]</aside>
+    six decisions are the close's (slide 13). Moved off the open: nearly half the shock's loss on the home and business
+    (slide 5, fin_pstorm_homebiz) and the giving the room buys (slide 4, fin_room_gift).]</aside>
 </section>
 
 
@@ -354,33 +447,59 @@
     counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure,
     green or not: what it does for the children in Hong Kong dollars, and for the world in tonnes. Monitor gives the
     plan its own label, read every year. The steps are any planner's; what's ours is three rules inside them: one
-    test for the whole plan, values only from the room above the limit, and one measure for every decision. So first: how sure must their money be?
+    test for the whole plan, values only from the room above the limit, and one measure for every decision. So first: who decides, and within what limits?
     [Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's
-    colours. No click: the price tag left slide 2 (Pete 14 Nov): one message per slide; slide 10 teaches the
+    colours. No click: the price tag left slide 2 (Pete 14 Nov): one message per slide; slide 13 teaches the
     four corners with the Wongs' decisions in them.]</aside>
 </section>
 
-<section class="slide sec-P" id="v3" data-time="0:50" data-speaker="Pete">
+<section class="slide sec-P" id="v3a" data-time="0:35" data-speaker="Pete">
+  <header class="head">
+    <p class="kick kt"><b class="kt-L">P</b><b class="kt-n">Profile</b><span class="kt-do">Who decides, and each person's limits</span></p>
+    <h2>Own money, own limits; shared money follows the more prudent</h2>
+  </header>
+  <div class="body v3a">
+    <p class="v6c-steps"><span class="v6c-cap">For any client</span><span><i>1</i>Ask each decision-maker alone, on the brief's seven dimensions</span><span><i>4</i>Write who decides into the investment policy</span></p>
+    <div class="v3a-people">
+      <div class="v3a-p v3a-ad"><img class="v3a-ph" src="inline:img/portrait-adrian.jpg" alt=""><p class="v3a-nm">Adrian, 54 <span>· values low</span></p><p class="v3a-w">wants to retire safely, whatever markets do</p>
+        <p class="v3a-r"><span>Accepts</span><b>within 0.5% a year of the market; no lock-ups</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money; shared money, with Carmen</b></p></div>
+      <div class="v3a-p v3a-ca"><img class="v3a-ph" src="inline:img/portrait-carmen.jpg" alt=""><p class="v3a-nm">Carmen, 49 <span>· values high</span></p><p class="v3a-w">wants their money to do good, and never to be greenwashed</p>
+        <p class="v3a-r"><span>Accepts</span><b>up to 3% a year from the market</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>her own money; the business, with her partner</b></p></div>
+      <div class="v3a-p"><img class="v3a-ph" src="inline:img/portrait-ryan.jpg" alt=""><p class="v3a-nm">Ryan, 24 <span>· values to ask</span></p><p class="v3a-w">wants to run his own money his own way</p>
+        <p class="v3a-r"><span>Accepts</span><b>high risk</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money only</b></p></div>
+      <div class="v3a-p"><img class="v3a-ph" src="inline:img/portrait-chloe.jpg" alt=""><p class="v3a-nm">Chloe, 16 <span>· values to ask</span></p><p class="v3a-w">wants a scholarship that reaches students who need it</p>
+        <p class="v3a-r"><span>Accepts</span><b>her education fund kept safe</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>nothing yet</b></p></div>
+    </div>
+    <div class="v3a-rules"><p class="v3a-rh">When they disagree</p><p><i>1</i>Own money: <b>own limits</b></p><p><i>2</i>Shared money: <b>the more prudent</b></p><p><i>3</i>Until they agree: <b>the plain choice stays</b></p></div>
+  </div>
+  <p class="sowhat">Four people, four limits, profiled alone: a disagreement meets a rule, not an argument.</p>
+  <aside class="notes">PETE: Profile comes first, before any product: ask each decision-maker alone. Meet the Wongs. Adrian,
+    fifty-four, wants to retire safely, whatever markets do. Carmen, forty-nine, runs a packaging business and wants their money to do good, without greenwashing.
+    Ryan, twenty-four, runs his own money; Chloe, sixteen, starts university in 2028. The investment policy says who
+    decides, and what happens when they disagree: own money, own limits; shared money follows the more prudent; until
+    they agree, the plain choice stays. So how sure must their money be?
+    [Notes: split from the old slide 4, 16 Nov (Pete: one point per slide). Profiles: research/area1_6_framework.md
+    §3a, our client definition (ILLUSTRATIVE), not quotes; taken following ESMA35-43-3172 ¶81 (the financial profile
+    first, then sustainability preferences, each person alone). The seven dimensions: the topic, area 1 (values
+    intensity, return requirement, liquidity, time horizon, tolerance for tracking error, illiquidity and complexity).
+    Disagreement: area1_6 §3c (shared money follows the more prudent: ESMA35-43-3172 ¶65–70; the plain twin stays until
+    the next annual meeting). Chloe is never a beneficiary of the scholarship (IRD: beneficiaries can't be defined by
+    family relationship).]</aside>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
+    <p class="src">Portraits AI-generated, fictional · wishes and profiles: our client definition (ILLUSTRATIVE) · ESMA35-43-3172 ¶65–70, ¶81 · the brief, area 1</p><span class="pg">3</span>
+  </footer>
+</section>
+
+<section class="slide sec-P" id="v3" data-time="0:40" data-speaker="Pete">
   <header class="head">
     <p class="kick kt"><b class="kt-L">P</b><b class="kt-n">Profile</b><span class="kt-do">The limit and the room, set before any product</span></p>
     <h2>Set the limit first; values spend only the room above it</h2>
   </header>
   <div class="body p4-body">
-    <div class="p4-left">
-      <p class="p4-cap">For any client, before any product</p>
-      <div class="v3-step"><span class="v3-ic"><svg class="ic"><use href="#i-users"/></svg></span><p><b>Ask each decision-maker alone,</b> on the brief's seven: values, return, liquidity, horizon, tracking error, lock-up, complexity.</p></div>
-      <div class="v3-step"><span class="v3-ic v3-lim"><svg class="ic"><use href="#i-shield"/></svg></span><p><b>Set the limit:</b> how sure the money must be.</p></div>
-      <div class="v3-step"><span class="v3-ic v3-room"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><p><b>The room above it is the values budget,</b> agreed once.</p></div>
-      <div class="v3-step v3-last"><span class="v3-ic"><svg class="ic"><use href="#i-scroll-text"/></svg></span><p><b>Write it into the investment policy:</b> who decides what.</p></div>
-      <div class="v3-rules">
-        <p class="v3-rh">When decision-makers disagree</p>
-        <p>Own money: <b>own limits</b></p>
-        <p>Shared money: <b>the more prudent</b></p>
-        <p>Until they agree: <b>the plain choice stays</b></p>
-      </div>
-    </div>
+    <p class="v6c-steps v3-steps"><span class="v6c-cap">For any client</span><span><i>2</i>Set the limit: how sure the money must be</span><span><i>3</i>The room above it is the values budget, agreed once</span></p>
     <div class="p4-right">
-      <p class="p4-cap">The Wongs <span class="v3-who">· two parents decide, two children inherit; Adrian retires in 2037, Carmen in 2039</span></p>
+      <p class="p4-cap">The Wongs <span class="v3-who">· Adrian retires in 2037, Carmen in 2039; their two children inherit</span></p>
       <p class="v3-bt">Room above their limit: <b>{{fin_room_gift_plain}}</b> they could give today</p>
       <p class="v3-bs"><b>Their limit:</b> the money lasts to Carmen's 89 in 95 futures in 100 (85 in a downturn). Giving more would break it.</p>
       <div class="v3-brk"><span style="flex:{{fin_room_esg_x}}"></span><p style="flex:calc({{fin_room_life_x}} + {{fin_room_free_x}})">Both causes for life ({{fin_room_both39_hk}}) would use all of it<i></i></p></div>
@@ -393,21 +512,17 @@
       </div>
       <p class="v3-warn"><b>Paid from yearly cash flow instead,</b> the same two causes break the limit ({{fin_room_pledge2_odds}}).</p>
       <div class="v3-who2">
-        <p><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</p>
-        <p class="v3-ad"><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</p>
+        <p class="v3-face"><img src="inline:img/portrait-carmen-face.jpg" alt=""><span><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</span></p>
+        <p class="v3-ad v3-face"><img src="inline:img/portrait-adrian-face.jpg" alt=""><span><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</span></p>
       </div>
     </div>
   </div>
-  <p class="sowhat">The limit sizes the room, so the parents agree once, not product by product.</p>
-  <aside class="notes">PETE: So Profile comes first, before any product. Ask each decision-maker alone. Set the limit: how
-    sure the money must be. The room above it is the values budget, agreed once and written into the investment policy;
-    if they disagree, shared money follows the more prudent. The Wongs: Adrian and Carmen decide, their two children
-    inherit; Adrian retires in 2037, Carmen in 2039. Their limit: the money lasts to Carmen's 89 in 95 futures out of 100, 85 in a
-    downturn. That's a limit on the odds, not on money. Above it is room: about {{fin_room_gift_plain}} they could give today
-    before the odds fall to 95. Carmen's ESG
-    funds use {{fin_room_esg_hk}}; the scholarship, for life, {{fin_plan_gift_hk}}; about {{fin_room_free_hk}} is
-    still free. A second cause for life would use all of it; paid from yearly cash flow instead, it would break the
-    limit. Adrian gets his limit; Carmen spends the room. So what could push them below 95?
+  <p class="sowhat">The limit sets what values may cost, before anyone picks a product.</p>
+  <aside class="notes">PETE: Set the limit: how sure the money must be. For the Wongs, it must last to Carmen's 89 in 95
+    futures out of 100, and 85 in a downturn. That's a limit on the odds, not on money. Above it is room: about
+    {{fin_room_gift_plain}} they could give today. Carmen's ESG funds use {{fin_room_esg_hk}}; the scholarship, for life,
+    {{fin_plan_gift_hk}}; about {{fin_room_free_hk}} is still free. Paid from yearly cash flow instead, the same causes
+    would break the limit. Adrian gets his limit; Carmen spends the room. So what could push them below 95?
     [Notes: DRAFT, 14 Nov (Pete: the room in HK$, not futures in 100; icons; the white space). The budget: the most
     giving funded now (gift_now, within both parents' 35% caps) before either limit breaks (95 normally, 85 in the
     2030–31 downturn; most_gift in final_model.py): {{fin_room_gift_plain}} with plain funds (fin_room_gift_plain);
@@ -423,7 +538,7 @@
     meeting). Profiles: §3a, our client definition, not quotes. The limits (95, 85): ours, ILLUSTRATIVE.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
-    <p class="src">Our client profile · limits ours (ILLUSTRATIVE) · the budget: our model (MEASURED) · disagreement: ESMA35-43-3172 ¶65–70</p><span class="pg">3</span>
+    <p class="src">Our client profile · limits ours (ILLUSTRATIVE) · the budget: our model (MEASURED) · disagreement: ESMA35-43-3172 ¶65–70</p><span class="pg">4</span>
   </footer>
 </section>
 
@@ -491,10 +606,11 @@
     <rect x="0" y="372" width="1184" height="44" rx="4" fill="#EFEDFB"/>
     <text x="18" y="400" font-size="17" fill="#0F1E3D"><tspan font-weight="800" fill="#4A3FBF">Checked whole:</tspan> in the downturn the money still lasts to Carmen's 89 in <tspan font-weight="800">{{fin_plan_sodds100}} futures in 100</tspan> ({{fin_plan_odds100}} without it), above their downturn limit of 85</text>
     <text x="0" y="452" font-size="13" fill="#566173">Each loss on its own, as the fall in what the children inherit (median, today's HK$). The downturn is ILLUSTRATIVE: a test, not a forecast. Odds assume Adrian works to 65.</text>
+    <text x="0" y="470" font-size="13" fill="#566173"><tspan font-weight="800" fill="#0F1E3D">Also traced:</tspan> her listed customers must report the carbon in what they buy from FY2026 (the HKEX rule: backup 24); the EU's carbon border tax doesn't reach her.</text>
   </svg></div>
-  <p class="sowhat">A label checks only the savings; a climate check finds the home and business too, and the plan holds.</p>
+  <p class="sowhat">The label checks the savings. A climate check finds the other {{fin_pstorm_homebiz}}.</p>
   <aside class="notes">LOOKBUA: I'm Lookbua, on risk. For any client: list what they own and earn, trace each climate route to Hong Kong dollars, drop what can't reach them, and price the rest against the limit. For the Wongs, we traced 22 routes and priced one disorderly downturn: carbon policy arrives late and hard in 2030. Their savings take the biggest hit, {{fin_pstorm_port_leg}}, but that's an ordinary market fall any planner tests, and an ESG label doesn't protect it. What only a climate check finds is the rest: {{fin_pstorm_flat_leg}} from the flat and {{fin_pstorm_biz_leg}} from the business, nearly half, where no fund label looks. All at once, the money still lasts in {{fin_plan_sodds100}} futures in 100, above their limit. So the plan holds, and it acts where the label can't see. First, the home.
-    [Notes: Simplified 14 Nov, evening (Pete: "too packed ... from 'what it costs the children' down I don't understand"): one point on screen; say the rest. Causes, if asked: the flat 15% lower (a general correction sized from the HKMA stress test) and older buildings drifting lower; the sale 10% lower; shares about 14% down over two years, prices 3% up. The savings are an ordinary market fall any planner tests; the flat and business are found only by a climate check; the plan acts on them on slides 5 and 7. Also traced: 22 routes; her customers' climate reporting (slide 7); the EU's carbon border tax doesn't reach her; a lost job (backup). Sized between NGFS, HKMA, BoE, ECB and CISL scenarios. Children inherit {{fin_plan_sleg89}} in the downturn ({{fin_pstorm_leg}}). Earlier (Pete: "what exactly is that downturn, and what is the main point?"). The point: the limit is checked on everything they own and earn; it holds, and the routes a label can't see are where the plan acts. Don't imply the plan avoids the loss: it loses about as much as a reasonable planner's plan in this downturn (M8). About half the loss is the ordinary market stress any planner runs (the savings); the flat and the business are what only a climate check finds. The flat's 15% is a general property correction sized from the HKMA's second stress test ("substantial correction", no % published); the climate part is the slow drift for older buildings (RM 05/2023's low end); say so if asked. Earlier (Option A, Pete): the strip shows one scenario, asset by asset, so the brief's "show the
+    [Notes: Simplified 14 Nov, evening (Pete: "too packed ... from 'what it costs the children' down I don't understand"): one point on screen; say the rest. Causes, if asked: the flat 15% lower (a general correction sized from the HKMA stress test) and older buildings drifting lower; the sale 10% lower; shares about 14% down over two years, prices 3% up. The savings are an ordinary market fall any planner tests; the flat and business are found only by a climate check; the plan acts on them on slides 6 and 7. Also traced: 22 routes; her customers' climate reporting (slide 8); the EU's carbon border tax doesn't reach her; a lost job (backup). Sized between NGFS, HKMA, BoE, ECB and CISL scenarios. Children inherit {{fin_plan_sleg89}} in the downturn ({{fin_pstorm_leg}}). Earlier (Pete: "what exactly is that downturn, and what is the main point?"). The point: the limit is checked on everything they own and earn; it holds, and the routes a label can't see are where the plan acts. Don't imply the plan avoids the loss: it loses about as much as a reasonable planner's plan in this downturn (M8). About half the loss is the ordinary market stress any planner runs (the savings); the flat and the business are what only a climate check finds. The flat's 15% is a general property correction sized from the HKMA's second stress test ("substantial correction", no % published); the climate part is the slow drift for older buildings (RM 05/2023's low end); say so if asked. Earlier (Option A, Pete): the strip shows one scenario, asset by asset, so the brief's "show the
     financial consequence for the business, the property and the portfolio" is on screen. Keys on the recommended plan
     (final_model.py export_final, fin_pstorm_*): each channel on its own against the plan in a normal future, as M7's
     channels are on the base; the bonus against the plan in the downturn, as fin_bonus_leg; all at once
@@ -503,9 +619,9 @@
     behind newer ones in 2030 and 15% from 2031, on a 0.15% a year drift; the sale 10% lower; HK$100K a year less drawn
     from the business in 2030–31. ILLUSTRATIVE, sized within NGFS, HKMA, BoE and ECB bounds; a scenario, not a
     forecast. Cut or carried: the yearly price check keeps them off downsizing once older flats lag ≈{{fin_pflipn_cross}}
-    (slide 5), so it cuts the worse route, not the flat's own fall; nothing hedges the rest, and the plan stays above 85
-    (slide 9). The customer route is on slide 7 only (trimmed off slide 4, Pete 14 Nov): a customer worth 10% of sales leaving over carbon data,
-    {{fin_cust10_leg}} (base plan, as on slides 7 and 10), cut by carbon data. Rules: HKEX App. C2 makes Scope 3
+    (slide 6), so it cuts the worse route, not the flat's own fall; nothing hedges the rest, and the plan stays above 85
+    (slide 12). The customer route is on slide 8 only (trimmed off slide 5, Pete 14 Nov): a customer worth 10% of sales leaving over carbon data,
+    {{fin_cust10_leg}} (base plan, as on slides 8 and 10), cut by carbon data. Rules: HKEX App. C2 makes Scope 3
     mandatory for LargeCap issuers from FY2026; CBAM covers steel, aluminium, cement, fertilisers, electricity and
     hydrogen, not paper or plastic packaging (research/new_Risk_Regulation_Greenwashing.md §7). A lost job: M10b, backup.
     The eight-risk register is a backup. Older flats, if asked "isn't that just ageing?": HKMA Research Memorandum
@@ -513,11 +629,11 @@
     not the HKMA's number.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>RISK<span>Areas 4, 5</span></p></div>
-    <p class="src">Our client's balance sheet · our model, the recommended plan (MEASURED) · the downturn ILLUSTRATIVE · HKEX App. C2</p><span class="pg">4</span>
+    <p class="src">Our client's balance sheet · our model, the recommended plan (MEASURED) · the downturn ILLUSTRATIVE · HKEX App. C2</p><span class="pg">5</span>
   </footer>
 </section>
 
-<section class="slide sec-S" id="v5" data-time="0:50" data-speaker="Lookbua">
+<section class="slide sec-S" id="v5" data-time="0:45" data-speaker="Lookbua">
   <header class="head">
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The limit: each route priced, normally and in a downturn</span></p>
     <h2>The limit decides before preferences do</h2>
@@ -563,20 +679,18 @@
         <text x="0" y="374" font-size="14.5" fill="#0F1E3D"><tspan font-weight="800">In a downturn:</tspan> downsizing breaks their limit of 85 past ≈{{fin_pflip_cross}}; keeping the flat holds ({{fin_plan_sodds100}} in 100).</text>
       </svg>
       <div class="s6-rule">
+        <div class="v5-ph"><img src="inline:img/photo-tkt-old-new.jpg" alt="an older Tai Kok Tsui block with a newer tower behind it"><p><b>The gap:</b> an older block like theirs, a newer tower behind</p></div>
         <p class="s6-h">The rule, run on the Wongs' flat</p>
         <div class="s6-step"><span>1</span><p><b>With no gap, both pass.</b> Keep the flat, with a reverse mortgage: {{fin_plan_odds100}} in 100. Or downsize in 2037 to a HK$7M newer flat: {{fin_pdown_odds100}} in 100, and the children inherit <em>{{fin_pdown_more_n}} more</em>.</p></div>
         <div class="s6-step"><span>2</span><p><b>As the gap grows, the limit decides.</b> Their old flat sells for less against the newer one, so downsizing frees less; past <em>a ≈{{fin_pflipn_cross}} gap</em> it breaks their limit.</p></div>
         <div class="s6-step"><span>3</span><p><b>Then their preference.</b> Below that, the family chooses. <em>Each year</em> we check the gap against a 10-year-old flat nearby; <em>decide by 2046</em>, the building's 50th year.</p></div>
       </div>
     </div>
-    <div class="s6-strip">
-      <p><b class="s6-no">Refused:</b> a green mortgage, worth at most HK$1,000 once (no BEAM Plus rating). <b>Weather</b> reaches them through insurance and repair levies, read at each renewal.</p>
-    </div>
   </div>
-  <p class="sowhat">The limit picks the route, not the money: downsizing pays more, but only within a ≈{{fin_pflipn_cross}} gap.</p>
+  <p class="sowhat">Downsizing pays more, until older flats fall ≈{{fin_pflipn_cross}} behind. Then the limit says no.</p>
   <aside class="notes">LOOKBUA: When two routes pull apart, the limit decides first. Take their flat. With no gap, both routes pass, and downsizing leaves the children {{fin_pdown_more_n}} more. But older flats can fall behind newer ones. Past about {{fin_pflipn_cross}}, downsizing breaks their limit of 95; in a downturn, it breaks 85 past about {{fin_pflip_cross}}. Below that, the family chooses. So every year we compare their flat with a ten-year-old one nearby, and decide by the building's fiftieth year, 2046. The green mortgage? Worth a thousand dollars, once: refused. The next route is Carmen's business, which is also where their money can change something. Fahtai.
-    [Notes: DRAFT, 13 Nov; Lookbua to make it their own. On the recommended plan from 14 Nov (fin_pflipn_*, fin_pflip_*:
-    the vans, our fees, the scholarship for life funded now), so slides 5, 9 and 10 show one plan; on the family's plan as it
+    [Notes: The refused green mortgage, weather, insurance and BEAM Plus moved to backup 23 (Pete 14 Nov: one point per slide); say "refused: worth at most HK$1,000, once" if asked. DRAFT, 13 Nov; Lookbua to make it their own. On the recommended plan from 14 Nov (fin_pflipn_*, fin_pflip_*:
+    the vans, our fees, the scholarship for life funded now), so slides 6, 12 and 10 show one plan; on the family's plan as it
     stands the crossings were 5% and 11% (fin_flipn_*, fin_flip_*). Model (MEASURED; M6, M7). Solid, a
     normal future: the old flat d lower than newer flats from 2037, the year of the sale (M6's shape), d from 0 to 15%
     in 1% steps; downsizing crosses the normal limit of 95 at {{fin_pflipn_cross}} ({{fin_pflipn_cross_x}}%; with the
@@ -588,7 +702,7 @@
     reverse mortgage barely moves: HKMC counts only half the value above HK$8M, and the family keeps the home; downsizing
     sells the old flat and buys a newer one, so the gap hits it in full (area4_property_scenario.md §1.4). The 15%:
     ILLUSTRATIVE; the HKMA (Research Memorandum 05/2023) finds prices 4–21% lower by about 2050 in a hotter Hong Kong,
-    more for older property (slide 5's notes). Trigger and deadline: Decision_List.md H1 (gap widens 10% or more:
+    more for older property (slide 6's notes). Trigger and deadline: Decision_List.md H1 (gap widens 10% or more:
     decide that year; HKMC is case by case above age 50; 1996 + 50 = 2046). Green mortgage: Decision_List.md H2 (no lower
     rate in published terms; a transfer earns at most HK$1,000 once; the building isn't rated). Weather:
     area4_property_scenario.md §1.3 (CEDD's 26 coastal areas, DSD blackspots, HKO's Mangkhut and Hato lists; very hot
@@ -599,44 +713,44 @@
     fails (≈HK$1,900 a year with LED and film: housekeeping, H3).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 4</span></p></div>
-    <p class="src">Our model (MEASURED), illustrative 2030–31 scenario · limit ILLUSTRATIVE · HKMA RM 05/2023 · bank terms 2026 · CEDD, DSD, HKO</p><span class="pg">5</span>
+    <p class="src">Our model (MEASURED), illustrative 2030–31 scenario · limit ILLUSTRATIVE · HKMA RM 05/2023 · photo: Fouimtae, CC BY-SA</p><span class="pg">6</span>
   </footer>
 </section>
 
-<section class="slide sec-S" id="v6" data-time="0:55" data-speaker="Fahtai">
+<section class="slide sec-S" id="v6" data-time="0:45" data-speaker="Fahtai">
   <header class="head">
     <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">The change: measure the footprint, then rank the cuts</span></p>
-    <h2>Rank every cut by its cost per tonne, cheapest first</h2>
+    <h2>Rank cuts across the whole footprint, not just what a loan can buy</h2>
   </header>
   <div class="body v6c">
     <p class="v6c-steps"><span class="v6c-cap">For any business</span><span><i>1</i>Measure Scope 1, 2 and 3</span><span><i>2</i>Price each cut a tonne</span><span><i>3</i>Rank cheapest first: take what pays; what costs comes only from the room</span></p>
     <div class="v6c-chain">
       <div class="v6c-st">
-        <div class="v6c-hd"><span class="v6c-ic"><svg class="ic"><use href="#i-package"/></svg></span><div><p class="v6c-nm">What she buys</p><p class="v6c-sb">packaging from suppliers · Scope 3</p></div><p class="v6c-t">1,610–2,100 t</p></div>
+        <div class="v6c-hd"><img class="v6c-ph" src="inline:img/photo-pet-box.jpg" alt="a clear PET food box"><div><p class="v6c-nm">What she buys</p><p class="v6c-sb">packaging from suppliers · Scope 3</p></div><p class="v6c-t">1,610–2,100 t</p></div>
         <div class="v6c-sh"><b style="width:62%"></b></div>
         <div class="v6c-cut v6c-big"><span class="v6c-r">4</span><div><p class="v6c-cn">Recycled plastic, PET range</p><p class="v6c-cd">≈HK$0 a tonne today · no loan</p></div><p class="v6c-ct">108 t</p></div>
         <div class="v6c-cut v6c-dash"><span class="v6c-r">2</span><div><p class="v6c-cn">Lighter board, 5% <span class="v6c-loan v6c-nc">not counted yet</span></p><p class="v6c-cd">saves HK$5,800 a tonne</p></div><p class="v6c-ct v6c-ctd">42 t</p></div>
       </div>
       <div class="v6c-ar"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
       <div class="v6c-st">
-        <div class="v6c-hd"><span class="v6c-ic"><svg class="ic"><use href="#i-truck"/></svg></span><div><p class="v6c-nm">Her warehouse and vans</p><p class="v6c-sb">her own · Scope 1 and 2</p></div><p class="v6c-t">48 t</p></div>
+        <div class="v6c-hd"><img class="v6c-ph" src="inline:img/photo-van.jpg" alt="a delivery van in Hong Kong"><div><p class="v6c-nm">Her warehouse and vans</p><p class="v6c-sb">4 diesel vans, a leased warehouse</p></div><p class="v6c-t">48 t</p></div>
         <div class="v6c-sh"><b style="width:2%"></b></div>
-        <div class="v6c-cut"><span class="v6c-r">1</span><div><p class="v6c-cn">Electric vans ×4 <span class="v6c-loan">the only loan</span></p><p class="v6c-cd">saves HK$12,800 a tonne</p></div><p class="v6c-ct">19 t</p></div>
+        <div class="v6c-cut"><span class="v6c-r">1</span><div><p class="v6c-cn">4 diesel vans → electric <span class="v6c-loan">the only loan</span></p><p class="v6c-cd">saves HK$12,800 a tonne</p></div><p class="v6c-ct">19 t</p></div>
         <div class="v6c-cut"><span class="v6c-r">3</span><div><p class="v6c-cn">LED and office air-con</p><p class="v6c-cd">saves HK$1,200–2,000 a tonne</p></div><p class="v6c-ct">7 t</p></div>
-        <div class="v6c-no"><svg class="ic"><use href="#i-circle-x"/></svg><p><b>Refused: solar on a leased roof.</b> She could claim 0&nbsp;t: the power company sells the certificates.</p></div>
       </div>
       <div class="v6c-ar"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
       <div class="v6c-st">
-        <div class="v6c-hd"><span class="v6c-ic"><svg class="ic"><use href="#i-trash-2"/></svg></span><div><p class="v6c-nm">Its landfill here</p><p class="v6c-sb">after her customers · Scope 3</p></div><p class="v6c-t">≈1,070 t</p></div>
+        <div class="v6c-hd"><img class="v6c-ph" src="inline:img/photo-landfill.jpg" alt="a Hong Kong landfill"><div><p class="v6c-nm">Its landfill here</p><p class="v6c-sb">after her customers · Scope 3</p></div><p class="v6c-t">≈1,070 t</p></div>
         <div class="v6c-sh"><b style="width:36%"></b></div>
         <div class="v6c-no"><svg class="ic"><use href="#i-circle-x"/></svg><p><b>Stopped: "compostable" claims.</b> PLA counts as plastic in Hong Kong, and no composting route here takes packaging.</p></div>
       </div>
     </div>
-    <p class="v6c-tot"><b>Counted: ≈134 t a year,</b> 4–5% of her footprint, and 108 t of it in what she buys. <span>① to ④: ranked by cost a tonne, cheapest first. All four pay or cost nothing, so none needs the values budget; a cut that costs comes only from the room.</span></p>
+    <p class="v6c-tot"><b>Counted: ≈134 t a year,</b> 4–5% of her footprint, and 108 t of it in what she buys. </p>
+    <p class="v6c-bridge"><b>How a cut reaches the family:</b> Carmen sells her half in 2035–39 at ≈5.6× profit, so what the business saves raises the price.</p>
   </div>
-  <p class="sowhat">Her biggest cuts need no loan; the one that does, the vans, adds {{fin_dot_vans_n}} for the children through the sale.</p>
-  <aside class="notes">FAHTAI: I'm Fahtai, on Carmen's business. For any business: measure the whole footprint, then rank every cut by its cost per tonne, cheapest first. Her own vans and power are under two per cent of her footprint; the rest is the packaging she buys. So her biggest cut is a purchasing decision: recycled plastic, 108 tonnes a year, at no extra cost while recycled and new plastic cost the same. The electric vans save money, but they're 19 tonnes, and the only cut that needs a loan. And we stop her compostable claims: in Hong Kong, PLA is plastic with nowhere to compost. So should that one loan be a green one?
-    [Notes: DRAFT v5, 14 Nov; Fahtai to make it their own. The fibre trap moved off the slide (the method for any business took its place); if asked: fibre beats plastic only if the item weighs under 1.3× the plastic one, since in landfill fibre makes methane. All ESTIMATED on an ILLUSTRATIVE HK$35M distributor
+  <p class="sowhat">The biggest cut is a purchasing contract. The only loan buys the smallest cut.</p>
+  <aside class="notes">FAHTAI: I'm Fahtai, on Carmen's business. For any business: measure the whole footprint, then rank every cut by its cost per tonne, cheapest first. She runs four diesel delivery vans from a leased warehouse, but those are under two per cent of her footprint; the rest is the packaging she buys. So her biggest cut is a purchasing decision: recycled plastic, 108 tonnes a year, at no extra cost while recycled and new plastic cost the same. Swapping her four diesel vans for electric ones saves money, but it's 19 tonnes, and the only cut that needs a loan. And every saving reaches the family: Carmen sells her half of the business in 2035 to 2039, at about five and a half times profit, so what the business saves raises the price. And we stop her compostable claims: in Hong Kong, PLA is plastic with nowhere to compost. So should that one loan be a green one?
+    [Notes: Solar on her leased roof is refused, if asked: she could claim 0 t (under the Feed-in Tariff the power company sells the certificates); 20-year NPV −HK$0.12M to −HK$0.86M (area2_business.md §1.6, §3c). DRAFT v5, 14 Nov; Fahtai to make it their own. The fibre trap moved off the slide (the method for any business took its place); if asked: fibre beats plastic only if the item weighs under 1.3× the plastic one, since in landfill fibre makes methane. All ESTIMATED on an ILLUSTRATIVE HK$35M distributor
     (area2_business.md §3a-3c; DESNZ 2026 and US EPA factors). Footprint: own 48 t (vans 27.8, power 20.4); purchased
     goods 1,610-2,100 t (spend- and mass-based); landfill ≈1,070 t; freight 27 t (the grey sliver). Vans at HK$31/L,
     the government's after-discount average (Decision_List.md B1; −16,400 at the pump list, −9,700 at HK$25/L).
@@ -651,37 +765,70 @@
     purchasing contracts (area2_business.md §5, question 11).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
-    <p class="src">ESTIMATED on an ILLUSTRATIVE business (DESNZ 2026, US EPA) · diesel HK$31/L (LCQ11, Oct 2026) · S&amp;P Platts, 7 Oct 2026 · Cap. 603</p><span class="pg">6</span>
+    <p class="src">ESTIMATED, ILLUSTRATIVE business (DESNZ, US EPA) · diesel HK$31/L (LCQ11) · S&amp;P Platts, 7 Oct 2026 · Cap. 603 · photos: Wikimedia CC BY-SA</p><span class="pg">7</span>
   </footer>
 </section>
 
-<section class="slide sec-S" id="v7" data-time="1:05" data-speaker="Fahtai">
+<section class="slide sec-S" id="v7" data-time="0:35" data-speaker="Fahtai">
   <header class="head">
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: the kind of finance sets the test</span></p>
-    <h2>Judge green finance as finance, at the client's size</h2>
+    <h2>A green label pays only above a size; below it, finance the cut plainly</h2>
   </header>
-  <div class="body stack">
-    <p class="v7-steps"><span class="v7-cap">THE STEP, FOR ANY CLIENT</span><span><span class="v7-n">1</span><b>Name the kind of finance</b></span><span><span class="v7-n">2</span><b>Check it at the client's size</b></span><span><span class="v7-n">3</span><b>Judge it by its own test,</b> against the cheapest plain loan</span></p>
-    <div class="v7k">
-      <p class="v7k-cap">THE BRIEF'S FIVE KINDS, AND WHERE EACH SITS IN THEIR PLAN</p>
-      <div class="v7k-c v7k-on"><b>Green</b><i>use of proceeds</i><span>her vans; Carmen's green bonds</span></div>
-      <div class="v7k-c"><b>Sustainability-linked</b><i>price tied to targets</i><span>refused: too small to pay</span></div>
-      <div class="v7k-c"><b>Transition</b><i>cleaning up existing assets</i><span>none: the vans already count as green</span></div>
-      <div class="v7k-c"><b>Impact investing</b><i>a change the investor causes</i><span>none in their savings</span></div>
-      <div class="v7k-c v7k-on"><b>ESG integration</b><i>climate in the analysis</i><span>the whole plan (slide 4)</span></div>
-    </div>
-    <svg viewBox="0 0 1184 96" width="1184" height="96" style="font-family:var(--text);overflow:visible" class="v7s-scale">
-      <text x="0" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#C80E1E">AND THE GREEN INSTRUMENTS BUILT FOR BORROWERS FAR BIGGER THAN HER</text>
-      <line x1="40" y1="62" x2="1150" y2="62" stroke="#0F1E3D" stroke-width="2"/>
-      <line x1="40" y1="56" x2="40" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="40" y="84" font-size="13" fill="#566173" text-anchor="middle">HK$1M</text>
-      <line x1="410" y1="56" x2="410" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="410" y="84" font-size="13" fill="#566173" text-anchor="middle">HK$10M</text>
-      <line x1="780" y1="56" x2="780" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="780" y="84" font-size="13" fill="#566173" text-anchor="middle">HK$100M</text>
-      <line x1="1150" y1="56" x2="1150" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="1150" y="84" font-size="13" fill="#566173" text-anchor="end">HK$1,000M</text>
-      <path d="M105,70 l-8,14 h16 z" fill="#4A3FBF"/><text x="120" y="84" font-size="14" font-weight="800" fill="#4A3FBF">her loan, HK$1.5M</text>
-      <circle cx="292" cy="62" r="5" fill="#C80E1E"/><text x="300" y="40" font-size="14" font-weight="800" fill="#0F1E3D">Sustainability-linked loan</text><text x="300" y="55" font-size="13" fill="#566173">pays above ≈HK$4.8M of debt</text>
-      <circle cx="780" cy="62" r="5" fill="#C80E1E"/><text x="772" y="40" font-size="14" font-weight="800" fill="#0F1E3D" text-anchor="end">Grant Scheme</text><text x="772" y="55" font-size="13" fill="#566173" text-anchor="end">loans of HK$100M or more</text>
-      <circle cx="1110" cy="62" r="5" fill="#C80E1E"/><text x="1102" y="40" font-size="14" font-weight="800" fill="#0F1E3D" text-anchor="end">Supply-chain finance</text><text x="1102" y="55" font-size="13" fill="#566173" text-anchor="end">≈US$100M of a buyer's trade</text>
+  <div class="body stack v7-check">
+    <p class="v7-steps"><span class="v7-cap">THE STEP, FOR ANY CLIENT</span><span><span class="v7-n">1</span><b>What does the cut need?</b></span><span><span class="v7-n">2</span><b>Which kind of finance fits it?</b></span><span><span class="v7-n">3</span><b>Does its label pay at this size?</b></span></p>
+    <svg viewBox="0 0 1184 248" width="1184" height="248" style="font-family:var(--text);overflow:visible">
+      <text x="0" y="14" font-size="14" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT HER CUTS NEED, AGAINST WHERE EACH LABELLED INSTRUMENT STARTS TO PAY</text>
+      <rect x="507" y="30" width="643" height="120" rx="4" fill="#F7E7EA"/>
+      <line x1="40" y1="150" x2="1150" y2="150" stroke="#0F1E3D" stroke-width="2.5"/>
+      <line x1="40" y1="143" x2="40" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="40" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$0.1M</text>
+      <line x1="317.5" y1="143" x2="317.5" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="317.5" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$1M</text>
+      <line x1="595" y1="143" x2="595" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="595" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$10M</text>
+      <line x1="872.5" y1="143" x2="872.5" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="872.5" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$100M</text>
+      <line x1="1150" y1="143" x2="1150" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="1150" y="178" font-size="15" fill="#566173" text-anchor="end">HK$1,000M</text>
+      <!-- labelled instruments, above the line: x = 40 + 277.5 * log10(HK$M / 0.1) -->
+      <line x1="507" y1="90" x2="507" y2="150" stroke="#C80E1E" stroke-width="2.5"/><circle cx="507" cy="150" r="7" fill="#C80E1E"/>
+      <text x="519" y="58" font-size="18" font-weight="800" fill="#0F1E3D">Sustainability-linked loan</text>
+      <text x="519" y="80" font-size="15" fill="#566173">pays only above ≈HK$4.8M of debt</text>
+      <circle cx="872.5" cy="150" r="7" fill="#C80E1E"/>
+      <text x="872.5" y="112" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="middle">Grant Scheme</text>
+      <text x="872.5" y="133" font-size="15" fill="#566173" text-anchor="middle">loans of HK$100M or more</text>
+      <line x1="1120" y1="90" x2="1120" y2="150" stroke="#C80E1E" stroke-width="2.5"/><circle cx="1120" cy="150" r="7" fill="#C80E1E"/>
+      <text x="1108" y="58" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="end">Supply-chain finance</text>
+      <text x="1108" y="80" font-size="15" fill="#566173" text-anchor="end">≈US$100M of a buyer's trade</text>
+      <!-- what her two cuts need, below the line -->
+      <path d="M160,158 l-11,20 h22 z" fill="#4A3FBF"/>
+      <text x="140" y="206" font-size="18" font-weight="800" fill="#4A3FBF">her stock, recycled</text>
+      <text x="140" y="226" font-size="15" fill="#0F1E3D">≈HK$0.27M · 108 t</text>
+      <text x="140" y="244" font-size="15" fill="#566173">by supplier contract</text>
+      <path d="M366,158 l-11,20 h22 z" fill="#4A3FBF"/>
+      <text x="366" y="206" font-size="18" font-weight="800" fill="#4A3FBF">her vans, electric</text>
+      <text x="366" y="226" font-size="15" fill="#0F1E3D">HK$1.5M loan · 19 t</text>
+      <text x="366" y="244" font-size="15" fill="#566173">her one loan</text>
     </svg>
+    <div class="v7k">
+      <p class="v7k-cap">THE BRIEF'S FIVE KINDS, FOR HER</p>
+      <div class="v7k-c"><b>Green</b><span>the vans, if the label is free (next)</span></div>
+      <div class="v7k-c"><b>Sustainability-linked</b><span>refused: below its size</span></div>
+      <div class="v7k-c"><b>Transition</b><span>her stock, by supplier contract, not a loan</span></div>
+      <div class="v7k-c"><b>Impact investing</b><span>not claimed for listed funds</span></div>
+      <div class="v7k-c"><b>ESG integration</b><span>the whole plan (slide 5)</span></div>
+    </div>
+  </div>
+  <p class="sowhat">Her biggest cut needs no loan; every labelled instrument here starts at three times her size.</p>
+  <aside class="notes">FAHTAI: For any client, a green label has a fixed cost, so it pays only above a size. Start from what each cut needs. Her biggest cut, recycled plastic, is her real transition, and it runs on a supplier contract, not a loan. Her vans need one and a half million. A sustainability-linked loan pays only above about five million; the grant scheme starts at a hundred million. So is a green label worth it on her one loan?
+    [Notes: rebuilt 15 Nov (Pete: "I don't get what exactly we are trying to communicate"; "can't we transition her stock?"): one rule, the label's break-even size, with both of her cuts placed against it. Her stock: recycled PET at parity, 108 t; ≈HK$0.27M of working capital is the early payment to her PET supplier for data, from company cash (Decision_List.md B4, ILLUSTRATIVE). Why no "transition" label: her transition is in her suppliers' factories, bought through purchasing contracts; a transition loan would add an entity-level plan and a review fee for no pricing benefit, and the HK Taxonomy has no packaging activity, still none in the Phase 2B prototype (area2_business.md §6, q11, the Taxonomy table; not re-checked 15 Nov). The vans are Taxonomy "green", not "transition". Impact: listed funds get "no additional impact quantified", never "no impact". Sustainability-linked break-even ≈HK$4.8M, Grant Scheme HK$100M (HKMA guideline, 24 Apr 2026, p.3; quoted on backup 24), supply-chain programmes ≈US$100M of trade (≈HK$780M): sources in the next slide's notes and backup 20. Positions: x = 40 + 277.5 × log10(HK$M ÷ 0.1). The tax waiver (if asked, or on backup 20): first registration tax on an e-van waived to 31 Mar 2028 (Budget 2026-27, para 207; ≈HK$71K a van at the government-average price, area2_business.md §5 q8).]</aside>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
+    <p class="src">ESTIMATED on an ILLUSTRATIVE business; working capital ILLUSTRATIVE · HKMA Grant Scheme guideline, 24 Apr 2026, p.3 (backup 24) · scale: log</p><span class="pg">8</span>
+  </footer>
+</section>
+
+<section class="slide sec-S" id="v7b" data-time="0:35" data-speaker="Fahtai">
+  <header class="head">
+    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: judge it by its own test</span></p>
+    <h2>Judge a green loan as a loan, against the cheapest plain one</h2>
+  </header>
+  <div class="body stack v7-judge">
     <div class="v7s">
       <div class="v7s-doc v7s-green">
         <p class="v7s-top">TERM SHEET · indicative</p>
@@ -703,15 +850,11 @@
         <p class="v7s-row v7s-net"><span>For the children, through the sale</span><b>{{fin_dot_vans_n}}</b></p>
         <span class="v7s-stamp v7s-st-go">This one works</span>
       </div>
-      <div class="v7s-side">
-        <p><b>Green premium:</b> an e-van costs ≈HK$12K more (3%), while the tax waiver lasts, to Mar 2028</p>
-        <p><b>Carbon data,</b> ≈HK$54–73K a year, keeps a customer worth 10% of sales ({{fin_cust10_leg}})</p>
-        <p><b>Green lease,</b> 2027: the landlord allows chargers and LED</p>
-      </div>
     </div>
+    <p class="v7s-line"><b>Greenium:</b> the label's rate cut, worth about its review fee. <b>Green premium:</b> the cleaner option's extra cost; an e-van ≈HK$12K more (3%), while the tax waiver lasts.</p>
   </div>
-  <p class="sowhat">At her size, green instruments add almost nothing; a plain loan works, and the gain reaches the family at the sale.</p>
-  <aside class="notes">FAHTAI: Judge it as finance. Name the kind first. Of the brief's five, green finance fits her vans; she has no transition asset; their funds can't show impact; and ESG integration runs through the whole plan. Then judge it by its own test, against the cheapest plain loan, at her size. A green label on her one and a half million loan saves about what its review costs: take it only if free. A sustainability-linked loan pays only above about five million of debt; the grant scheme starts at a hundred million. What works is a plain loan secured on the vans: the fuel saving covers about 87 per cent of the payments. And it reaches the family at the sale: the vans add {{fin_dot_vans_n}}, and carbon data guards against losing {{fin_cust10_leg}}. So what's left for the funds? Win.
+  <p class="sowhat">The green label saves ≈HK$12K and costs ≈HK$12K. Take it only if it's free.</p>
+  <aside class="notes">FAHTAI: Judge it by its own test, against the cheapest plain loan. A green label on her one and a half million loan saves about what its review costs: take it only if free. What works is a plain loan secured on the vans: the fuel saving covers about 87 per cent of the payments. And it reaches the family at the sale: the vans add {{fin_dot_vans_n}}. So what's left for the funds? Win.
     [Notes: DRAFT v5, 14 Nov, from v4 slide 8's numbers; Fahtai to make it their own. Scale: log, HK$1M to HK$1,000M.
     Green loan: no HK bank publishes an SME discount (25 bp ILLUSTRATIVE); HKQAA's assessment "as low as" HK$12K (B2).
     Sustainability-linked: 5–25 bp; pays for itself above ≈HK$4.8M of debt at 25 bp if verification costs ≈HK$12K a year
@@ -728,27 +871,62 @@
     measured savings): the split incentive, aligned. Sale 2035–39, Carmen 58–62: area2_business.md §3e. Waiver: Budget 2026–27 para 207,
     ≈HK$71K a van. Green lease: B6. Family (MEASURED; M2, M3): the vans through the sale price; a lost customer is a
     sensitivity, not a forecast; carbon data pays for itself if it keeps 0.6% of sales (B3). Dividends from 2033 (B8,
-    needs the co-founder): {{fin_dot_div_n}}, if asked.]</aside>
+    needs the co-founder): {{fin_dot_div_n}}, if asked.] Also, if asked: carbon data, ≈HK$54–73K a year, keeps a customer worth 10% of sales ({{fin_cust10_leg}}); the green lease at the 2027 renewal lets her fit chargers and LED.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
-    <p class="src">ESTIMATED on an ILLUSTRATIVE business · family: our model (MEASURED) · HKMA, 24 Apr 2026 · Budget 2026–27 · scale: log</p><span class="pg">7</span>
+    <p class="src">ESTIMATED on an ILLUSTRATIVE business · family: our model (MEASURED) · HKMA, 24 Apr 2026 · Budget 2026–27 · scale: log</p><span class="pg">9</span>
   </footer>
 </section>
 
-<section class="slide sec-S" id="v8" data-time="1:10" data-speaker="Win">
+<section class="slide sec-S" id="v8" data-time="0:35" data-speaker="Win">
   <header class="head">
-    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The room: products checked, sized by each person's limit, priced</span></p>
+    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The room: each product checked before it's sized</span></p>
+    <h2>Pass a product only if its rule binds and it fits its owner's limit</h2>
+  </header>
+  <div class="body v8f v8c">
+    <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">What they asked for: <s>20–25% of their savings in ESG products</s></span></div>
+    <p class="v6c-steps"><span class="v6c-cap">Every product passes three checks</span><span><i>1</i>A binding rule</span><span><i>2</i>Measured every year</span><span><i>3</i>Within the owner's limit</span></p>
+    <div class="v8f-prods v8c-prods">
+      <div class="v8f-p v8f-pass"><p class="v8f-pn">Climate index fund (EDMW)</p><p class="v8f-pd">Its carbon must stay 30% below the world index and fall 7% a year, by rule; measured every year; at the plain fund's fee</p><span class="v7s-stamp v7s-st-go">Pass</span></div>
+      <div class="v8f-p v8c-star"><p class="v8f-pn">A global ESG fund on the SFC's list</p><p class="v8f-pd"><b>US$0.00 at all 23 filings,</b> Sep 2024 to Sep 2026</p><svg class="v10-flat" viewBox="0 0 252 66" role="img" aria-label="fund size at each of 23 filings: zero"><line x1="16" y1="8" x2="252" y2="8" stroke="#DCE1E8" stroke-dasharray="3 3"/><line x1="16" y1="40" x2="252" y2="40" stroke="#0F1E3D" stroke-width="1.5"/><circle cx="22.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="31.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="41.4" cy="40" r="3.6" fill="#C80E1E"/><circle cx="51.1" cy="40" r="3.6" fill="#C80E1E"/><circle cx="60.8" cy="40" r="3.6" fill="#C80E1E"/><circle cx="70.5" cy="40" r="3.6" fill="#C80E1E"/><circle cx="80.2" cy="40" r="3.6" fill="#C80E1E"/><circle cx="89.9" cy="40" r="3.6" fill="#C80E1E"/><circle cx="99.6" cy="40" r="3.6" fill="#C80E1E"/><circle cx="109.3" cy="40" r="3.6" fill="#C80E1E"/><circle cx="119.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="128.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="138.4" cy="40" r="3.6" fill="#C80E1E"/><circle cx="148.1" cy="40" r="3.6" fill="#C80E1E"/><circle cx="157.8" cy="40" r="3.6" fill="#C80E1E"/><circle cx="167.5" cy="40" r="3.6" fill="#C80E1E"/><circle cx="177.2" cy="40" r="3.6" fill="#C80E1E"/><circle cx="186.9" cy="40" r="3.6" fill="#C80E1E"/><circle cx="196.6" cy="40" r="3.6" fill="#C80E1E"/><circle cx="206.3" cy="40" r="3.6" fill="#C80E1E"/><circle cx="216.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="225.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="235.4" cy="40" r="3.6" fill="#C80E1E"/><text x="0" y="45" font-size="14" font-weight="800" fill="#C80E1E">0</text><text x="16" y="62" font-size="13" fill="#566173">Sep 2024</text><text x="252" y="62" font-size="13" fill="#566173" text-anchor="end">Sep 2026</text></svg><p class="v10-src">BOC-Prudential MSCI World ESG Index Fund (BUM645) · HKEX fund platform, read 14 Nov 2026</p><span class="v7s-stamp v8f-st-no">Fail</span></div>
+      <div class="v8f-p"><p class="v8f-pn">Clean-energy fund</p><p class="v8f-pd">One sector: it strays too far from the market for Adrian's limit</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
+      <div class="v8f-p"><p class="v8f-pn">Green deposit</p><p class="v8f-pd">No rule on what the bank finances with it</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
+    </div>
+    <p class="v8c-next">Only the climate index fund goes on, to be sized by each person's limit <svg class="ic"><use href="#i-arrow-right"/></svg></p>
+  </div>
+  <p class="sowhat">On the SFC's ESG list. Empty for two years. The label let it through; the check didn't.</p>
+  <aside class="notes">WIN: I'm Win, on the savings. For any client, every product passes three checks first: a binding rule,
+    measured every year, within the owner's limit. A global ESG fund on the SFC's own list has held nothing for two
+    years: its label let it through; the check stops it. A climate index fund whose carbon must stay thirty per cent
+    below the market passes, at the plain fund's fee. So how much of it should each of them hold?
+    [Notes: DRAFT v5, 14 Nov, from v4 slide 9 (Win's 12 Nov script); Win to make it their own. EDMW (iShares MSCI World
+    CTB Enhanced ESG UCITS ETF): WACI 63.39 against ≈90.8 (−30.2%), coverage 99.82%, TER 0.20% (BlackRock/MSCI, Oct
+    2026); EU climate benchmark rule ≥30% below the parent, −7% a year (Reg. (EU) 2020/1818); an Irish UCITS fund, not
+    SFC-authorised: bought through a licensed broker, suitability checked for each parent. Tracking: 2.09% is the MSCI
+    World CTB index against MSCI World, a proxy (EDMW's own: OPEN). The share: (EDMW 0.24 + 0.60 of HK$2.07M each +
+    the green bond fund 0.10 × 2.07M + half of each MPF in the Sun Life low-carbon fund, HK$0.835M) ÷ HK$10.47M = 26.6%;
+    the MPF fund isn't on the bars (it sits in the MPF). The 25%: the family's own ask (our client definition). Fees:
+    area3_portfolio.md §3 (Adrian HK$2,639, Carmen HK$5,889 a year). A reasonable planner's due diligence would catch it too: never say a careful planner would buy it; the point is
+    that the label lets it through and the check stops it. The US$0 fund: record-only wording, the manager not
+    named aloud (Final_Plan.md §9). Price of values: the fee gap against plain twins (HK$5.1K a year, M4); ESG in a
+    downturn: unmeasured, so no credit. Shares: "no additional impact quantified", never "shares change nothing". Measured: coverage 99.82% (BlackRock/MSCI,
+    Oct 2026); ITR only in bands (MSCI, NGFS pathways), reported, never a target; no HK retail fund reports HK Taxonomy
+    alignment, which is voluntary (area3_portfolio.md, Q9, Q11). Currency and liquidity: every listed holding deals
+    daily; EDMW and IWDA in US$ (area3 §3 table). Greenium ≈2bp (Zerbib 2019) against the green bond fund's ≈104bp fee
+    gap (area1_6_framework.md, line "the label's price is the fee, not the greenium").]</aside>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
+    <p class="src">BlackRock/MSCI factsheets, Oct 2026 · EU 2020/1818 · HKEX filings · fees: our area 3 brief · price: our model (MEASURED)</p><span class="pg">10</span>
+  </footer>
+</section>
+
+<section class="slide sec-S" id="v8b" data-time="0:40" data-speaker="Win">
+  <header class="head">
+    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The room: sized by each person's limit, then priced</span></p>
     <h2>The sustainable share is an output of the limits, paid from the room</h2>
   </header>
-  <div class="body v8f">
-    <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">What they asked for: <s>20–25% of their savings in ESG products</s></span><span class="v8f-say">Instead, every product goes through two filters</span></div>
-    <div class="v8f-prods">
-      <div class="v8f-p v8f-pass"><p class="v8f-pn">Climate index fund (EDMW)</p><p class="v8f-pd">carbon 30% below the world index, −7% a year, by rule</p><span class="v7s-stamp v7s-st-go">Pass</span><svg class="ic v8f-down"><use href="#i-arrow-down"/></svg></div>
-      <div class="v8f-p"><p class="v8f-pn">A global ESG fund on the SFC's list</p><p class="v8f-pd">US$0 in assets at every filing for two years</p><span class="v7s-stamp v8f-st-no">Fail</span></div>
-      <div class="v8f-p"><p class="v8f-pn">Clean-energy fund</p><p class="v8f-pd">one sector: it breaks Adrian's limit</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
-      <div class="v8f-p"><p class="v8f-pn">Green deposit</p><p class="v8f-pd">no rule on what it finances</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
-    </div>
-    <p class="v8f-mesh"><span>1</span><em>The product check: a binding rule, measured every year, within the owner's limit</em></p>
+  <div class="body v8f v8s">
+    <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">The one product that passed: <b>the climate index fund</b></span></div>
     <p class="v8f-mesh"><span>2</span><em>Each person's limit sizes it</em></p>
     <svg viewBox="0 0 1184 150" width="1184" height="150" style="font-family:var(--text)">
       <text x="0" y="17" font-size="16" font-weight="800" fill="#0F1E3D">Adrian <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.13% a year in fees</tspan></text>
@@ -780,30 +958,19 @@
     <div class="v8f-out"><span class="v8f-tag v8f-tag-out">Out</span><p class="v8f-big">26.6%</p><p class="v8f-what">of the family's HK$10.47M: what comes out of the two limits, not the 25% they asked for</p>
       <div class="v8f-price"><p><b>{{fin_val_esg_n}}</b> for the children: the fee gap against plain twins, paid from the room</p><p><b>30% less carbon</b> than the market: a footprint, not a change</p></div></div>
   </div>
-  <p class="sowhat">The limits, not a target, set the share: 26.6%, at the plain fund's fee, paid from the room.</p>
-  <aside class="notes">WIN: I'm Win, on the savings. For any client, the sustainable share should come out of the limits, not go in as a target. First, each product must pass: a binding rule, measured every year, within the owner's limit. A global ESG fund on the SFC's own list has held nothing for two years: it fails. A climate index fund whose carbon must stay thirty per cent below the market passes, at the plain fund's fee. Then each parent's limit sizes it: Adrian's caps him at twenty-four per cent; Carmen's covers all her shares. The share comes out at twenty-six point six. Its price, {{fin_val_esg_n}}, comes from the room. The greenium on green bonds is about two basis points; the fee is the real cost. And lower carbon is a footprint, not a change. But every one of these verdicts rests on prices that will move.
-    [Notes: DRAFT v5, 14 Nov, from v4 slide 9 (Win's 12 Nov script); Win to make it their own. EDMW (iShares MSCI World
-    CTB Enhanced ESG UCITS ETF): WACI 63.39 against ≈90.8 (−30.2%), coverage 99.82%, TER 0.20% (BlackRock/MSCI, Oct
-    2026); EU climate benchmark rule ≥30% below the parent, −7% a year (Reg. (EU) 2020/1818); an Irish UCITS fund, not
-    SFC-authorised: bought through a licensed broker, suitability checked for each parent. Tracking: 2.09% is the MSCI
-    World CTB index against MSCI World, a proxy (EDMW's own: OPEN). The share: (EDMW 0.24 + 0.60 of HK$2.07M each +
-    the green bond fund 0.10 × 2.07M + half of each MPF in the Sun Life low-carbon fund, HK$0.835M) ÷ HK$10.47M = 26.6%;
-    the MPF fund isn't on the bars (it sits in the MPF). The 25%: the family's own ask (our client definition). Fees:
-    area3_portfolio.md §3 (Adrian HK$2,639, Carmen HK$5,889 a year). A reasonable planner's due diligence would catch it too: never say a careful planner would buy it; the point is
-    that the label lets it through and the check stops it. The US$0 fund: record-only wording, the manager not
-    named aloud (Final_Plan.md §9). Price of values: the fee gap against plain twins (HK$5.1K a year, M4); ESG in a
-    downturn: unmeasured, so no credit. Shares: "no additional impact quantified", never "shares change nothing". Measured: coverage 99.82% (BlackRock/MSCI,
-    Oct 2026); ITR only in bands (MSCI, NGFS pathways), reported, never a target; no HK retail fund reports HK Taxonomy
-    alignment, which is voluntary (area3_portfolio.md, Q9, Q11). Currency and liquidity: every listed holding deals
-    daily; EDMW and IWDA in US$ (area3 §3 table). Greenium ≈2bp (Zerbib 2019) against the green bond fund's ≈104bp fee
-    gap (area1_6_framework.md, line "the label's price is the fee, not the greenium").]</aside>
+  <p class="sowhat">Nobody targeted 26.6%. The limits produced it, at the plain fund's fee.</p>
+  <aside class="notes">WIN: Then each parent's limit sizes it. Adrian may stray half a per cent a year from the market, so he
+    holds twenty-four per cent; Carmen's three per cent covers all her shares. The share comes out at twenty-six point
+    six: an output, not a target. Its price, {{fin_val_esg_n}}, comes from the room; and lower carbon is a footprint,
+    not a change. But every one of these verdicts rests on prices that will move.
+    [Notes: split from the old slide 11, 16 Nov (Pete: one point per slide). Sources in the previous slide's notes.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
-    <p class="src">BlackRock/MSCI factsheets, Oct 2026 · EU 2020/1818 · HKEX filings · fees: our area 3 brief · price: our model (MEASURED)</p><span class="pg">8</span>
+    <p class="src">BlackRock/MSCI factsheets, Oct 2026 · EU 2020/1818 · HKEX filings · fees: our area 3 brief · price: our model (MEASURED)</p><span class="pg">11</span>
   </footer>
 </section>
 
-<section class="slide sec-M" id="v9" data-time="0:55" data-speaker="Win">
+<section class="slide sec-M" id="v9" data-time="0:45" data-speaker="Win">
   <header class="head"><p class="kick kt"><b class="kt-L">M</b><b class="kt-n">Monitor</b><span class="kt-do">All three conditions, checked every year</span></p>
     <h2>Label the plan, not the product</h2></header>
   <div class="body o9-body">
@@ -831,44 +998,33 @@
       </div>
       <p class="o9-end"><b>Assumes Adrian works to 65.</b> Claims checked outside; any restatement shows the old figure · odds MEASURED · tonnes ESTIMATED</p>
     </div>
-    <div class="o9-side">
-      <div>
-        <p class="o9-k">THE PRODUCT'S LABEL</p>
-        <p class="o9-prod"><span class="chip">ESG ✓</span><span>Says what a fund holds, not whether the family's plan works</span></p>
-      </div>
-      <div class="o9-miss">
-        <p class="o9-k">A MISSING PRICE BECOMES A DECISION</p>
-        <p><b>Buy it</b><span>The business's carbon data, ≈HK$54–73K a year</span></p>
-        <p><b>Use a range</b><span>ESG funds in a downturn: unmeasured, so no credit</span></p>
-        <p><b>Set a trigger</b><span>Recycled plastic: do it at today's price; above it, customers pay the gap</span></p>
-      </div>
-      <div class="o9-read">
-        <p class="o9-k">READ HONESTLY</p>
-        <p><b>Attribution:</b> against a plain twin fixed at signing</p>
-        <p><b>Biases:</b> every option shown with the same range</p>
-      </div>
+    <div class="o9-side v9-side">
+      <div><p class="o9-k">A PRODUCT'S LABEL</p><p class="o9-prod"><span class="chip">ESG ✓</span><span>says what a fund holds</span></p></div>
+      <p class="v9-to"><svg class="ic"><use href="#i-arrow-down"/></svg></p>
+      <div><p class="o9-k">THE PLAN'S LABEL</p><p class="v9-pl">says whether the whole plan still passes all three tests, every year, with a trigger on every line</p></div>
+      <p class="v9-miss"><b>A missing price becomes a decision:</b> buy the data, use a range, or set a trigger.</p>
     </div>
   </div>
-  <p class="sowhat">One page a year says whether the plan still passes all three, what it may claim, and when to decide again.</p>
+  <p class="sowhat">A product's label never changes. The plan's label is earned again every year.</p>
   <aside class="notes">WIN: That's why the plan gets its own label, read every year: one line per test. Does it hold its
     limits? In {{fin_plan_odds100}} futures out of 100, and {{fin_plan_sodds100}} in a downturn: above both. What does it
     change? About 134 tonnes a year in the business, measured from 2027; for the shares, a footprint, nothing claimed.
-    Does it stay inside the room? Of a {{fin_room_gift_plain}} budget, about {{fin_room_free_hk}} is still free. Every line has a trigger. And each year we read it against a plain twin fixed at signing: what the plan changed, what the market did, what we can't measure yet. A missing price becomes a decision: buy it, use a range, or set a trigger. So, what makes a plan sustainable? Pete.
-    [Notes: DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov):
+    Does it stay inside the room? Of a {{fin_room_gift_plain}} budget, about {{fin_room_free_hk}} is still free. Every line has a trigger, and a missing price becomes a decision: buy it, use a range, or set a trigger. So, what makes a plan sustainable? Pete.
+    [Notes: Moved off the slide (Pete 14 Nov: one point per slide): attribution, read against a plain twin fixed at signing (what the plan changed, what markets did, what we can't measure yet); the biases; the three missing prices (buy: the business's carbon data, ≈HK$54–73K a year; range: ESG funds in a downturn, no credit; trigger: recycled plastic at today's price). DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov):
     fin_plan_odds ({{fin_plan_odds}}) and fin_plan_sodds ({{fin_plan_sodds}}): the vans, candidate A's fees and the
     scholarship for life funded now (Pete 14 Nov, §5.3 option 1), the reverse-mortgage route; the label approach at
     the same fee and giving: {{fin_fair_lab100}} and {{fin_fair_lab_s100}}. Room used: fin_plan_room_use, from plain
     choices (M9c). Attribution: the pre-registered twin (research/area1_6_framework.md §6b). Biases (the brief's five):
     ambiguity aversion, the same range for every option; loss aversion, one review a year; present bias, the gift
     funded now; social desirability and mental accounting, each parent profiled alone and one household balance sheet
-    (slide 4) (area1_6 §5). Controls: research/new_Risk_Regulation_Greenwashing.md §8 (baseline, third-party
+    (slide 5) (area1_6 §5). Controls: research/new_Risk_Regulation_Greenwashing.md §8 (baseline, third-party
     verification, conservative claims, restatement).
     134 t: Decision_List.md, ESTIMATED. 30% less carbon: BlackRock/MSCI, Oct 2026 (SOURCED), a footprint. Missing
-    prices: B3 (buy), slide 8's notes (range), B4 (trigger). Restatement and the brief's biases: area6_measurement_update.md
+    prices: B3 (buy), slide 11's notes (range), B4 (trigger). Restatement and the brief's biases: area6_measurement_update.md
     §2. Every odds figure assumes Adrian works to 65 (M10b, backup).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#4A3FBF"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
-    <p class="src">Our model (MEASURED) · BlackRock/MSCI, Oct 2026 · tonnes ESTIMATED, ILLUSTRATIVE business · limits ILLUSTRATIVE</p><span class="pg">9</span>
+    <p class="src">Our model (MEASURED) · BlackRock/MSCI, Oct 2026 · tonnes ESTIMATED, ILLUSTRATIVE business · limits ILLUSTRATIVE</p><span class="pg">12</span>
   </footer>
 </section>
 
@@ -881,7 +1037,7 @@
     <div class="q3-gate">
       <span class="q3-n">1</span>
       <p class="q3-gl"><b>First, the limit.</b> A choice that breaks it is out, however green.</p>
-      <p class="q3-gw" data-b="2"><span><b>The Wongs:</b> downsizing, once older flats fall ≈{{fin_pflipn_cross}} behind</span><i class="q3-to">slide 5</i></p>
+      <p class="q3-gw" data-b="2"><span><b>The Wongs:</b> downsizing, once older flats fall ≈{{fin_pflipn_cross}} behind</span><i class="q3-to">slide 6</i></p>
     </div>
     <div class="q3-grid">
       <p class="q3-cap"><span class="q3-n">2</span>Then its two prices place it</p>
@@ -890,29 +1046,29 @@
       <p class="q3-rh"><svg class="ic"><use href="#i-users"/></svg>For the children:<b>adds, or costs about nothing</b></p>
       <div class="q3-cell">
         <p class="q3-act"><svg class="ic v10-ic v10-do"><use href="#i-circle-check"/></svg>Do it</p>
-        <div class="q3-e" data-b="2"><p class="q3-name">Electric vans, LED, air-con<i class="q3-to">slides 6–7</i></p><p>{{fin_dot_vans_n}} · <span class="q3-t">26 t a year</span></p></div>
-        <div class="q3-e" data-b="2"><p class="q3-name">Recycled plastic<i class="q3-to">slide 6</i></p><p>≈HK$0 at today's price · <span class="q3-t">108 t a year</span></p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Electric vans, LED, air-con<i class="q3-to">slides 7, 9</i></p><p>{{fin_dot_vans_n}} · <span class="q3-t">26 t a year</span></p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Recycled plastic<i class="q3-to">slide 7</i></p><p>≈HK$0 at today's price · <span class="q3-t">108 t a year</span></p></div>
       </div>
       <div class="q3-cell">
         <p class="q3-act"><svg class="ic v10-ic"><use href="#i-tag"/></svg>Do it, but don't call it green</p>
-        <div class="q3-e" data-b="2"><p class="q3-name">Carbon data for her customers<i class="q3-to">slides 4, 7</i></p><p>{{fin_dot_data_n}}, against {{fin_cust10_leg}} if a big customer leaves</p></div>
-        <div class="q3-e" data-b="2"><p class="q3-name">The flat's route, checked yearly<i class="q3-to">slide 5</i></p><p>{{fin_pdown_more_n}} between the routes; the limit picks first</p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Carbon data for her customers<i class="q3-to"></i></p><p>{{fin_dot_data_n}}, against {{fin_cust10_leg}} if a big customer leaves</p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">The flat's route, checked yearly<i class="q3-to">slide 6</i></p><p>{{fin_pdown_more_n}} between the routes; the limit picks first</p></div>
       </div>
       <p class="q3-rh">For the children:<b>costs money</b></p>
       <div class="q3-cell">
         <p class="q3-act"><svg class="ic v10-ic v10-pay"><use href="#i-wallet"/></svg>Pay knowingly, from the room</p>
-        <div class="q3-e" data-b="2"><p class="q3-name">Fund the scholarship now<i class="q3-to">slides 3, 9</i></p><p>{{fin_val_gift_n}} · <span class="q3-t">the awards for life</span></p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Fund the scholarship now<i class="q3-to">slides 4, 12</i></p><p>{{fin_val_gift_n}} · <span class="q3-t">the awards for life</span></p></div>
       </div>
       <div class="q3-cell q3-label">
         <p class="q3-act"><svg class="ic v10-ic v10-no"><use href="#i-ban"/></svg>Don't pay for the label</p>
-        <div class="q3-e" data-b="2"><p class="q3-name">Refused: three green products<i class="q3-to">slides 5, 7, 8</i></p><p>green mortgage · green deposit · sustainability-linked loan</p></div>
-        <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 3, 8</i></p><p>{{fin_val_esg_n}} from the room; not called impact</p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Refused: three green products<i class="q3-to">slides 8, 10</i></p><p>green mortgage · green deposit · sustainability-linked loan</p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 4, 11</i></p><p>{{fin_val_esg_n}} from the room; not called impact</p></div>
       </div>
     </div>
-    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan <i>({{fin_fair_gain_s}} in a downturn)</i> · <b class="v10-t">≈134 t</b> CO2e a year less</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
+    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan · <b class="v10-t">≈134 t</b> CO2e a year less · <b>26.6%</b> in ESG funds, the share they asked for</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
   </div>
-  <p class="sowhat" data-b="2">On one measure, the label never decides: the limit, the change and the room do.</p>
-  <aside class="notes">PETE: So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. For the Wongs, the limit decided the flat; the vans and recycled plastic pay and cut real tonnes; carbon data protects their money, but isn't called green; the scholarship is paid knowingly, from the room; and where a label had nothing behind it, we said no. Against the plan a reasonable planner would give without the test, the children get {{fin_fair_gain}}, and the business cuts about 134 tonnes a year. The label never decides. Thank you.
+  <p class="sowhat" data-b="2">The label never decides. The limit, the change and the room do.</p>
+  <aside class="notes">PETE: So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. By their own standards: Adrian wanted to retire safely, and his limit holds, {{fin_plan_odds100}} futures in 100, {{fin_plan_sodds100}} in a downturn. Carmen wanted money that does good: about 134 tonnes a year cut, a scholarship for life, and nothing claimed we can't show. And the share of ESG funds they asked for? It comes out at twenty-six point six per cent, as a by-product. Against the plan a reasonable planner would give without the test, the children get {{fin_fair_gain}}. The label never decides. Thank you.
     [Notes: DRAFT v5, 14 Nov; Pete to make it his own. v4's slide 3, moved to the close (storyline v5): every decision
     once, after the slides that prove it (the small numbers). The corners: Final_Plan.md §4.2, test 9; "for the
     children" is each decision against its best plain alternative (fin_dot_*_n). Fixes kept (13 Nov): the flat is the
@@ -927,6 +1083,6 @@
     decision's plain alternative.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#B45309"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#0E7490"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#6D28D9"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#475569"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B45309">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#0E7490">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#6D28D9">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#475569">M</text></svg><p>ALL FIVE STEPS<span>Area 1</span></p></div>
-    <p class="src">Our client · money: our model (MEASURED) · tonnes ESTIMATED · plastic: S&amp;P Platts, 7 Oct 2026 · limit ILLUSTRATIVE</p><span class="pg">10</span>
+    <p class="src">Our client · money: our model (MEASURED) · tonnes ESTIMATED · plastic: S&amp;P Platts, 7 Oct 2026 · limit ILLUSTRATIVE</p><span class="pg">13</span>
   </footer>
 </section>

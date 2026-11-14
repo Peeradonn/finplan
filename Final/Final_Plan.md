@@ -363,6 +363,148 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   and fees, full width: the brief's "portfolio with weights and costs"); one arrow carries the passing fund through
   both; 26.6% comes out, priced (−HK$0.62M from the room; 30% less carbon, a footprint). Slide 4's strip icons and
   slide 10's corner icons stay as light touches. Render: `build/options/slide8-sieve.png`.
+- **Slide 7 split in two** (Pete: "too many points in one slide ... we can separate it into multiple pages; we don't
+  have to spend a whole minute on every slide"). 7, "Check green finance at the client's size" (0:35): steps 1 and 2,
+  the brief's five kinds and the size scale, enlarged, with what does reach her (the e-van tax waiver to 31 Mar 2028,
+  a green label on a plain loan). 8, "Judge a green loan as a loan, against the cheapest plain one" (0:35): step 3,
+  the two term sheets alone, larger, and one line on greenium against green premium; carbon data and the green
+  lease to Fahtai's notes. **Eleven talk slides now**: the old 8–10 are 9–11 (the portfolio sieve, Climate Facts,
+  the close), backups 12–21; page numbers, the backup index, cross-references (slide 10's corners point to
+  slides 6, 8 for the vans; 5, 7, 9 for the refusals) and `make_pptx.py`'s sections follow. Slide references in
+  this plan's earlier entries use the numbering of their day.
+- **The vans and the sale introduced on slide 6** (Pete: "when is the first time we mention the vans ... I'm quite
+  confused"). Slides 6 to 8 used "the vans" and "through the sale" without saying she runs four diesel delivery
+  vans, what replaces them, or that Carmen sells her half of the business. Slide 6 now says it: her station reads
+  "4 diesel vans, a leased warehouse"; the cut "4 diesel vans → electric"; and a line above the bar, "How a cut
+  reaches the family: Carmen sells her half in 2035–39 at ≈5.6× profit, so what the business saves raises the
+  price" (Decision_List.md B1, B7). Fahtai's words set up the vans and the sale before the cuts.
+- **One point per slide: thirteen talk slides** (Pete, 14 Nov, evening: "after PRISM we've been trying to make too
+  many points ... separate some of the stuff into multiple pages"). Measured: OneTable, the live-pitch reference,
+  runs a median of 133 words a page over 42 pages; e-Sentry, a judged PDF read alone, 289. Our slides 3–11 ran
+  203–265: built to be read, but presented live. Changes:
+  - **Slide 3 split.** 3, "Profile each decision-maker alone; write who decides into the policy": the family
+    introduced properly (Adrian, Carmen, Ryan, Chloe as cards: values, tolerances, who decides) and the three
+    disagreement rules. 4, "Set the limit first; values spend only the room above it": the budget bar full width.
+    Profile comes first because a judge meets the family before their budget (ESMA ¶81's order); slide 2 now
+    hands off "So first: who decides, and within what limits?"
+  - **Slide 9 split.** 10, "Check each product against a rule, not its label": four products, stamped; the fund
+    with US$0 is the moment. 11, "The sustainable share is an output of the limits": the two portfolios, 26.6%
+    out, its price.
+  - **Trimmed:** the flat's refused green mortgage and weather line to backup 23 (the home), which covers them;
+    the solar refusal and the ranking helper line off the business slide (7), whose bar returns to its own point;
+    the Climate Facts slide (12) keeps the card, the product's label against the plan's, and one line "a missing
+    price becomes a decision" (attribution and the biases to Win's notes).
+  - Renumbered once: talk 1–13, backups 14–23 (page numbers, the backup index, cross-references,
+    `make_pptx.py`'s sections, AGENTS.md). Words on screen now 145–264 (most under 210; the close, 264, is the
+    summary). Spoken words 1,468: the split didn't add any, but the cut to ≈1,300 is still due.
+- **The theme: PRISM + real Hong Kong** (Pete, 14 Nov, late, after Logan's pitch photos and OASIS's activist decks in
+  `research/`: "think of the overall theme ... do we need to have one?"). Yes, one idea: the framework's light and
+  prism, which stay on slides 1, 2, the close and every footer badge, and real Hong Kong wherever a slide is about a
+  real thing. Chosen over a dark editorial restyle (all 13 slides re-done two days out; dense data reads worse dark)
+  and over no photos. What changed:
+  - **Photos** (Wikimedia Commons, CC BY-SA; files and pages in `deck/img/photo-credits.json`, credits on backup 24):
+    slide 1, dense flats faded into the stage (`img/stage-flats.jpg`, the fade baked in, no CSS mask); slide 6, an
+    older Tai Kok Tsui block with a newer tower behind, captioned "the gap"; slide 7, each station's header a photo
+    (a clear PET box, a delivery van, a landfill) under a dark wash.
+  - **Sources in their own words, OASIS-style** (the line boxed in red): slide 8, the HKMA Grant Scheme guideline's
+    "at least HK$100 million" (loans, Track II, p.3); slide 10, the fund holding US$0 drawn as its 23 filings, all
+    zero, Sep 2024 to Sep 2026 (HKEX fund platform, read 14 Nov 2026); backup 24, the HKEX rule (App. C2 paras 17(2)
+    and 28(c): Scope 3 mandatory for LargeCap from FY2026, from HKEX's Apr 2024 conclusions) and the HKMA line.
+    **Flag for Pete:** slide 10's source line names the fund (BOC-Prudential MSCI World ESG Index Fund, BUM645);
+    the team had decided on record-only wording with the manager not named aloud (§5). The line states only the
+    record; say it the same way.
+  - **Slide 3's cards aligned:** every person has the same three rows (values, accepts, decides) at one height.
+  - **Still to come:** AI portraits of the four Wongs for slide 3 (fictional, labelled so), from the prompts Claude
+    gave Pete on 14 Nov. **Done 15 Nov** (below).
+- **OASIS's storytelling, taken where it fits** (Pete, 15 Nov: "take the good parts ... don't force it"). Read from
+  its titles in sequence (KADOKAWA AGM 2026, 133 pages; Fujitec 2022). What it does: the ask early (p.11) and the
+  same ask closing each section (pp.33, 122); people with faces and their own words, shown again later; the other
+  side's own words as the strongest evidence ("Natsuno admits", "its own MTP validates the criticism", the source
+  boxed in red); a claim set against the facts ("Board wants shareholders to trust Natsuno but results show
+  otherwise"); a rebuttal section; and a close on the other side's own standard ("By his own standard ... needs to be
+  replaced"). **Taken:**
+  - **Faces and wishes, then the payoff.** Slide 3's four cards open on a portrait (AI-generated, labelled fictional)
+    and what each wants (our client definition, not quotes: Adrian to retire safely, whatever markets do; Carmen
+    their money to do good and never be greenwashed; Ryan to run his own money; Chloe a scholarship that reaches
+    students who need it). Adrian's and Carmen's faces return on slide 4 beside their part of the room.
+  - **The close by their own standards:** Pete answers each wish (Adrian's limit holds, 97 and 90 in 100; Carmen's
+    money cuts ≈134 t, funds a scholarship for life, claims nothing it can't show) and the share they asked for
+    comes out at 26.6% as a by-product; the outcome line says so on screen, paying off slide 1's green chip.
+  - **Sources in their own words** (14 Nov, above) and **claim against facts** (slide 10: on the SFC's ESG list, US$0
+    at all 23 filings) were already in.
+  **Not taken:** findings as titles (ours stay rules for any client: framework first, §3); a recurring contents slide
+  (the PRISM footer badge already shows where we are, in a 10-minute talk); a rebuttal section in the talk (the
+  hard questions are the backups' job); the adversarial tone (we propose a framework, not a campaign).
+- **Slide 1 easier to read:** the photo dimmed to 11% and its colour cut; every small line brighter.
+- **OASIS's tone, without the hostility** (Pete, 15 Nov: "even though we're presenting a framework doesn't mean we'd
+  need a bad presentation"; he was right to push back on "not taken"). Taken: a clear antagonist, the label (never
+  advisers or a profession); conviction, verdict first; contrast. Applied to the conclusion bars, the talk's spine,
+  each now a short verdict whose number is on its slide (e.g. 5: "The label checks the savings. A climate check
+  finds the other 47%."; 10: "On the SFC's ESG list. Empty for two years. The label let it through; the check
+  didn't."; 13: "The label never decides. The limit, the change and the room do."). "At least three times her
+  size" (slide 8) is the sustainability-linked loan's ≈HK$4.8M break-even against her HK$1.5M loan. The spoken
+  words get the same verdict-first edit during the script cut (after submission), so it cuts words rather than
+  adding them.
+- **Slide 3's portraits aligned:** each portrait cropped from its measured crown, chin and face centre so every head
+  is the same size at the same height (`img/portrait-*.jpg`; square `*-face.jpg` for slide 4's round faces).
+- **Titles carry our rules, not the brief's bullets; slide 1 names the advice** (Pete, 15 Nov, after Claude checked the
+  deck against the three Final PDFs rather than against Logan's and OASIS's decks). Why: innovation and independent
+  thinking are 40 of the 100 marks, and a title that repeats the brief's own words reads to its author as coverage
+  (knowledge), not as a rule of ours. Three titles did; the rule that was ours sat in the body. Changed:
+  - **3:** "Profile each decision-maker alone; write who decides into the policy" (the brief, area 1: "other
+    decision-makers … how disagreement … is resolved") → **"Own money, own limits; shared money follows the more
+    prudent"**: the rule slides 4 and 11 use again (each parent's limit sizes their own share). Rejected: "Profile each
+    person alone; until they agree, the plain choice stays" (sharper, but can read as anti-green to the topic's author).
+  - **7:** "Rank every cut by its cost per tonne, cheapest first" (the brief, area 2: "rank abatement projects on a
+    marginal abatement cost curve") → **"Rank cuts across the whole footprint, not just what a loan can buy"**: pushes
+    back on the brief's "from abatement projects to bankable structures"; the conclusion bar ("The only loan buys the
+    smallest cut") is now its proof, not a second point. Rejected: "… only the room pays for cuts that cost" (a
+    second message beside the bar's).
+  - **10:** "Check each product against a rule, not its label" (the brief, area 3: "the difference between a label and a
+    financed outcome"; the topic's own title) → **"Pass a product only if its rule binds and it fits its owner's
+    limit"**: the owner's limit is ours and hands off to slide 11.
+  - **1:** "It changed six decisions:" → **"We ran the test on one Hong Kong family, the Wongs: electric vans on a plain
+    loan, a scholarship funded for life, three green products refused."** Key Areas §7 opens "Lead with a
+    recommendation"; the capital and outcomes were on screen, the recommendation wasn't. One of each kind of action
+    (do it, pay knowingly, refuse), in the caption's small type, so the claim stays the biggest idea. No count on
+    screen: the script says six, this plan's summary seven, and slide 13 lists seven entries. **Open (Pete):** the
+    count in the spoken line.
+  - **Considered and withdrawn** (Claude, same day; don't reopen without new evidence): backup 18's storm chart in slide
+    5's body (it shows a loss, not a rule changing the advice, and would push out slide 5's 47% point); backup 15's
+    bridge on slide 13 (two comparisons on one slide: the vans at +HK$0.51M against diesel in the corners and +HK$0.54M
+    against the reasonable planner's plan in the bridge). The bridge stays the answer to "how much is just good
+    planning?". Kickers as questions: kept as an idea for the script, in the framework's words, never the Wongs'.
+- **Slide 8 decluttered** (Pete, 15 Nov: "too packed … does the grant scheme really need a primary information"). The
+  point "built for bigger borrowers" was said four times (step 2, the chart label, the pink band's label, the bar), and
+  the HKMA crop repeated the HK$100M the line already shows, with a label cut mid-phrase ("Minimum issuance size for
+  eligible") that reads as bonds. Now three blocks and the bar: the five kinds (each with its name, what it is, where it
+  sits), the size line (labels 18px and 15px, was 16.5 and 14.5), and "what does reach her" full width. The crop
+  stays on backup 24, cited in the footer. The footer's "family: our model (MEASURED)" went: no model number is on this
+  slide. **Rule of thumb, from this slide:** a source in its own words earns slide space only when the slide's claim
+  rests on that one fact and a judge might doubt it (slide 10's US$0 fund); otherwise the footer and backup 24.
+- **Slide 3's type** (Pete, 15 Nov: "the font in slide 3 is weird"). Two causes: the wishes were set in italic, and
+  `fonts/` has no italic Plus Jakarta Sans, so the browser (and PowerPoint) slants the upright letters; and each card
+  mixed six text styles, with "Accepts" and "Decides" values in different weights. Now the wishes are upright, 16px,
+  weight 500, in each person's colour (Adrian crimson, Carmen indigo); both rows' values are 16px at 700; the portrait
+  strip is 150px (was 160) so the 16px rows fit the fixed 378px card. **Open (Pete):** synthetic italics remain on
+  talk slides 4, 6, 9, 12 and backups 15, 19, 22 ("values high", "the family chooses", "(0.25%, assumed)", the
+  "Trigger:" lines). Either set them upright deck-wide (a few CSS lines; check that each still reads as secondary), or
+  add the OFL Plus Jakarta Sans Italic files and confirm `make_pptx.py` embeds them.
+- **Slide 8 rebuilt around one rule** (Pete, 15 Nov, later: "I don't get what exactly we are trying to communicate";
+  "can't we transition her stock?"; "shouldn't we add our own thinking?"). Why: it mixed two lists from two parts of
+  the brief (area 1's five kinds, area 2's instruments), its title was an instruction, and "Transition: none" missed
+  that her real transition is her stock (what she buys), which runs on supplier contracts, not a loan
+  (`research/area2_business.md` §6, q11). Now: **"A green label pays only above a size; below it, finance the cut
+  plainly"**; steps (1) what does the cut need? (2) which kind of finance fits it? (3) does its label pay at this
+  size?; one log line from HK$0.1M with her two cuts below it (her stock, recycled, ≈HK$0.27M working capital, 108 t,
+  by supplier contract; her vans, HK$1.5M loan, 19 t) and the three labelled instruments above it (sustainability-
+  linked ≈HK$4.8M break-even, Grant Scheme HK$100M, supply-chain ≈US$100M of trade); then the brief's five kinds as
+  our verdicts (green: the vans if the label is free; sustainability-linked: below its size; transition: her stock, by
+  contract; impact: not claimed for listed funds; ESG integration: the whole plan). Bar: "Her biggest cut needs no
+  loan; every labelled instrument here starts at three times her size." The rule holds for any client (a green
+  mortgage's one-off HK$0–3K rebate fails it too). Backup 20's transition row now says the same. Fahtai's words
+  rewritten to match (shorter; "she has no transition asset" is gone); the e-van tax waiver stays on slide 9 and
+  backup 20.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
