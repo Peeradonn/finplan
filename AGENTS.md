@@ -216,8 +216,8 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
     assumed separate assessment.
 
 ## Building the deck
-**The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/01_talk.html` holds storyline v5's ten
-slides (`Final_Plan.md` §4.5; moved from `options/` 14 Nov) and `src/02_backup.html` the backups, numbered 11–20. The look is A (`Final_Plan.md` §3): its tokens are in
+**The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/01_talk.html` holds storyline v5's eleven
+slides (slide 7 split in two, 14 Nov) (`Final_Plan.md` §4.5; moved from `options/` 14 Nov) and `src/02_backup.html` the backups, numbered 12–21. The look is A (`Final_Plan.md` §3): its tokens are in
 `Final/deck/src/00_head.html`.
 ```
 .venv/Scripts/python.exe Final/deck/make.py [--pages 3,4] [--builds]   # Axis.html, the script (Axis_Script.md), PNGs in build/

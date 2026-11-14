@@ -13,7 +13,7 @@ What changes from Round Two (a live talk on the venue's notebook and projector):
   is still in the file, so it reads complete in edit view and in print.
 - **No Morph, no transitions:** the venue's PowerPoint version is unknown (AGENTS.md). Steps still to come show grey
   until spoken unless the slide has class "reveal", which makes them appear from nothing.
-- Sections follow storyline v5 (13-14 Nov: ten talk slides); slides after 10 go into "Backup for the questions".
+- Sections follow storyline v5 (13-14 Nov; slide 7 split, so eleven talk slides); slides after 11 go into "Backup for the questions".
 
 How (unchanged from Round Two):
 1. pptx_extract.js runs inside headless Chrome on a copy of Axis.html and reads every slide's layout: boxes, fills,
@@ -58,8 +58,8 @@ WORK = os.path.join(HERE, "build", "pptx")
 CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
           r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
 TALK_SECTIONS = [("The open", [1]), ("PRISM", [2]), ("Profile", [3]), ("Risk", [4]), ("The flat", [5]),
-                 ("The business", [6, 7]), ("The savings", [8]), ("Monitor", [9]), ("The close", [10])]
-TALK_N = 10                     # storyline v5: slides after 10 are the backup
+                 ("The business", [6, 7, 8]), ("The savings", [9]), ("Monitor", [10]), ("The close", [11])]
+TALK_N = 11                     # storyline v5 with slide 7 split (14 Nov): slides after 11 are the backup
 SECTIONS = TALK_SECTIONS        # set from the slide count in main()
 E = 9525                                   # EMU per CSS px (a 1280 px slide is 13.333 in)
 A = "http://schemas.openxmlformats.org/drawingml/2006/main"
@@ -851,7 +851,7 @@ def main():
     print("extracted:", len(data["slides"]), "slides,", len(data["assets"]), "pictures and drawings;",
           data["check"]["pseudos"], "pseudo-elements made real,", data["check"]["moved"], "elements moved by it")
     info = slide_info(deck)
-    # sections: storyline v5 (ten talk slides), then everything after slide 10 as the backup
+    # sections: storyline v5 (eleven talk slides), then everything after them as the backup
     global SECTIONS
     n = len(info)
     SECTIONS = [(name, [i for i in nums if i <= n]) for name, nums in TALK_SECTIONS]

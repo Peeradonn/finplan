@@ -363,6 +363,15 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   and fees, full width: the brief's "portfolio with weights and costs"); one arrow carries the passing fund through
   both; 26.6% comes out, priced (−HK$0.62M from the room; 30% less carbon, a footprint). Slide 4's strip icons and
   slide 10's corner icons stay as light touches. Render: `build/options/slide8-sieve.png`.
+- **Slide 7 split in two** (Pete: "too many points in one slide ... we can separate it into multiple pages; we don't
+  have to spend a whole minute on every slide"). 7, "Check green finance at the client's size" (0:35): steps 1 and 2,
+  the brief's five kinds and the size scale, enlarged, with what does reach her (the e-van tax waiver to 31 Mar 2028,
+  a green label on a plain loan). 8, "Judge a green loan as a loan, against the cheapest plain one" (0:35): step 3,
+  the two term sheets alone, larger, and one line on greenium against green premium; carbon data and the green
+  lease to Fahtai's notes. **Eleven talk slides now**: the old 8–10 are 9–11 (the portfolio sieve, Climate Facts,
+  the close), backups 12–21; page numbers, the backup index, cross-references (slide 10's corners point to
+  slides 6, 8 for the vans; 5, 7, 9 for the refusals) and `make_pptx.py`'s sections follow. Slide references in
+  this plan's earlier entries use the numbering of their day.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
