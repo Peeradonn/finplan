@@ -378,6 +378,35 @@
 .v8-price b{font-weight:800}
 </style>
 
+<style>
+/* Fahtai, 15 Nov: slide 7 separates footprint, comparison and decision conditions. */
+#v6 .b7r-body{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.b7r-method{display:flex;align-items:center;gap:20px;border-bottom:1px solid var(--rule);padding-bottom:12px;font:600 17px/1.3 var(--text)}
+.b7r-method b{font-weight:800;color:var(--brand)}
+.b7r-method span{flex:1}.b7r-method i{font-style:normal;color:var(--slate);font-weight:500}
+.b7r-main{display:grid;grid-template-columns:280px 1fr;gap:28px}
+.b7r-cap{font:800 13px/1.3 var(--text);letter-spacing:.7px;color:var(--slate);text-transform:uppercase;margin-bottom:10px}
+.b7r-footprint{padding-right:20px;border-right:1px solid var(--rule)}
+.b7r-fp{margin-bottom:14px}
+.b7r-fp p{display:flex;justify-content:space-between;gap:8px;font:600 16px/1.3 var(--text)}
+.b7r-fp p b{font:800 17px/1.3 var(--num);white-space:nowrap}
+.b7r-track{height:9px;background:#EDF0F4;margin-top:6px}.b7r-track b{display:block;height:9px;background:#738298}
+.b7r-fp:first-of-type .b7r-track b{background:var(--teal,#0E7490)}
+.b7r-note{font:500 14px/1.4 var(--text);color:var(--slate)}
+.b7r-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.b7r-table th{text-align:left;font:700 12px/1.25 var(--text);text-transform:uppercase;letter-spacing:.4px;color:var(--slate);padding:0 8px 8px 0;border-bottom:2px solid var(--ink)}
+.b7r-table td{font:600 16px/1.25 var(--text);vertical-align:top;padding:12px 8px 12px 0;border-bottom:1px solid var(--rule)}
+.b7r-table th:nth-child(1){width:28%}.b7r-table th:nth-child(2){width:12%}.b7r-table th:nth-child(3){width:25%}.b7r-table th:nth-child(4){width:35%}
+.b7r-table td small{display:block;font:500 13px/1.3 var(--text);color:var(--slate);margin-top:3px}
+.b7r-table td b{font-weight:800}.b7r-table .b7r-tonnes{font:800 23px/1.1 var(--num);color:var(--teal,#0E7490)}
+.b7r-table .b7r-pet{background:#F0F7F8}.b7r-pet td:first-child{padding-left:8px}
+.b7r-table .b7r-test td{color:var(--slate);font-size:14px;padding-top:9px;padding-bottom:9px}
+.b7r-check{color:var(--brand);font-weight:800}.b7r-table .b7r-test .b7r-tonnes{font-size:19px;color:var(--slate)}
+.b7r-output{display:flex;gap:22px;align-items:center;border-top:2px solid var(--ink);padding-top:11px;margin-top:auto}
+.b7r-output > p:first-child{flex:none;font:800 25px/1.15 var(--num);color:var(--teal,#0E7490)}
+.b7r-output > p:last-child{font:500 15px/1.35 var(--text);color:var(--slate)}
+.b7r-output b{font-weight:800;color:var(--ink)}
+</style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
   <p class="s1-kick">Today's question</p>
@@ -719,53 +748,45 @@
 
 <section class="slide sec-S" id="v6" data-time="0:45" data-speaker="Fahtai">
   <header class="head">
-    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">The change: measure the footprint, then rank the cuts</span></p>
-    <h2>Rank cuts across the whole footprint, not just what a loan can buy</h2>
+    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">The change: choose the action before its finance</span></p>
+    <h2>Compare cuts across the footprint before choosing finance</h2>
   </header>
-  <div class="body v6c">
-    <p class="v6c-steps"><span class="v6c-cap">For any business</span><span><i>1</i>Measure Scope 1, 2 and 3</span><span><i>2</i>Price each cut a tonne</span><span><i>3</i>Rank cheapest first: take what pays; what costs comes only from the room</span></p>
-    <div class="v6c-chain">
-      <div class="v6c-st">
-        <div class="v6c-hd"><img class="v6c-ph" src="inline:img/photo-pet-box.jpg" alt="a clear PET food box"><div><p class="v6c-nm">What she buys</p><p class="v6c-sb">packaging from suppliers · Scope 3</p></div><p class="v6c-t">1,610–2,100 t</p></div>
-        <div class="v6c-sh"><b style="width:62%"></b></div>
-        <div class="v6c-cut v6c-big"><span class="v6c-r">4</span><div><p class="v6c-cn">Recycled plastic, PET range</p><p class="v6c-cd">≈HK$0 a tonne today · no loan</p></div><p class="v6c-ct">108 t</p></div>
-        <div class="v6c-cut v6c-dash"><span class="v6c-r">2</span><div><p class="v6c-cn">Lighter board, 5% <span class="v6c-loan v6c-nc">not counted yet</span></p><p class="v6c-cd">saves HK$5,800 a tonne</p></div><p class="v6c-ct v6c-ctd">42 t</p></div>
+  <div class="body b7r-body">
+    <div class="b7r-method">
+      <span><b>1 Locate</b> <i>the whole footprint</i></span>
+      <span><b>2 Compare</b> <i>cost and tonnes against alternatives</i></span>
+      <span><b>3 Check</b> <i>evidence, service and business cash</i></span>
+    </div>
+    <div class="b7r-main">
+      <div class="b7r-footprint">
+        <p class="b7r-cap">Carmen's business · annual CO₂e</p>
+        <div class="b7r-fp"><p><span>Packaging bought</span><b>1,610–2,100 t</b></p><div class="b7r-track"><b style="width:62%"></b></div></div>
+        <div class="b7r-fp"><p><span>Disposal after use</span><b>≈1,070 t</b></p><div class="b7r-track"><b style="width:36%"></b></div></div>
+        <div class="b7r-fp"><p><span>Vans and power</span><b>48 t</b></p><div class="b7r-track"><b style="width:2%"></b></div></div>
+        <p class="b7r-note">Scopes 1, 2 and 3.<br>Bars show approximate shares; freight omitted from this view.</p>
+        <p class="b7r-note" style="margin-top:14px"><b>Claims check:</b> no compostability claim without a verified disposal route.</p>
       </div>
-      <div class="v6c-ar"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-      <div class="v6c-st">
-        <div class="v6c-hd"><img class="v6c-ph" src="inline:img/photo-van.jpg" alt="a delivery van in Hong Kong"><div><p class="v6c-nm">Her warehouse and vans</p><p class="v6c-sb">4 diesel vans, a leased warehouse</p></div><p class="v6c-t">48 t</p></div>
-        <div class="v6c-sh"><b style="width:2%"></b></div>
-        <div class="v6c-cut"><span class="v6c-r">1</span><div><p class="v6c-cn">4 diesel vans → electric <span class="v6c-loan">the only loan</span></p><p class="v6c-cd">saves HK$12,800 a tonne</p></div><p class="v6c-ct">19 t</p></div>
-        <div class="v6c-cut"><span class="v6c-r">3</span><div><p class="v6c-cn">LED and office air-con</p><p class="v6c-cd">saves HK$1,200–2,000 a tonne</p></div><p class="v6c-ct">7 t</p></div>
-      </div>
-      <div class="v6c-ar"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-      <div class="v6c-st">
-        <div class="v6c-hd"><img class="v6c-ph" src="inline:img/photo-landfill.jpg" alt="a Hong Kong landfill"><div><p class="v6c-nm">Its landfill here</p><p class="v6c-sb">after her customers · Scope 3</p></div><p class="v6c-t">≈1,070 t</p></div>
-        <div class="v6c-sh"><b style="width:36%"></b></div>
-        <div class="v6c-no"><svg class="ic"><use href="#i-circle-x"/></svg><p><b>Stopped: "compostable" claims.</b> PLA counts as plastic in Hong Kong, and no composting route here takes packaging.</p></div>
+      <div>
+        <p class="b7r-cap">Candidate cuts · annual estimates, pending checks</p>
+        <table class="b7r-table">
+          <thead><tr><th>Change / alternative</th><th>t CO₂e</th><th>Net cost / t CO₂e</th><th>Decision condition</th></tr></thead>
+          <tbody>
+            <tr><td><b>Electric vans</b><small>vs new diesel vans</small></td><td class="b7r-tonnes">19</td><td>Saves HK$12,800</td><td><span class="b7r-check">Finance next →</span><small>Check charging and loan cash flow</small></td></tr>
+            <tr><td><b>LED + air-con</b><small>vs existing equipment</small></td><td class="b7r-tonnes">7</td><td>Saves HK$1,200–2,000</td><td><span class="b7r-check">Proceed if feasible</span><small>Verify installation and savings</small></td></tr>
+            <tr class="b7r-pet"><td><b>Recycled PET</b><small>vs virgin PET packaging</small></td><td class="b7r-tonnes">108</td><td>≈HK$0 at resin parity<small>Full packaging price unverified</small></td><td><span class="b7r-check">Conditional switch</span><small>Supplier quote, food-contact spec,<br>≈HK$0.27M working capital</small></td></tr>
+            <tr class="b7r-test"><td><b>Lighter board</b><small>vs current board</small></td><td class="b7r-tonnes">42</td><td>Saves HK$5,800</td><td><b>Test first · excluded from total</b><small>Must preserve product protection</small></td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <p class="v6c-tot"><b>Counted: ≈134 t a year,</b> 4–5% of her footprint, and 108 t of it in what she buys. </p>
-    <p class="v6c-bridge"><b>How a cut reaches the family:</b> Carmen sells her half in 2035–39 at ≈5.6× profit, so what the business saves raises the price.</p>
+    <div class="b7r-output"><p>≈134 t / year potential</p><p>About 4–5% of the footprint if verified and delivered.<br><b>Carry forward:</b> supplier agreement + working capital; equipment finance.</p></div>
   </div>
-  <p class="sowhat">The biggest cut is a purchasing contract. The only loan buys the smallest cut.</p>
-  <aside class="notes">FAHTAI: I'm Fahtai, on Carmen's business. For any business: measure the whole footprint, then rank every cut by its cost per tonne, cheapest first. She runs four diesel delivery vans from a leased warehouse, but those are under two per cent of her footprint; the rest is the packaging she buys. So her biggest cut is a purchasing decision: recycled plastic, 108 tonnes a year, at no extra cost while recycled and new plastic cost the same. Swapping her four diesel vans for electric ones saves money, but it's 19 tonnes, and the only cut that needs a loan. And every saving reaches the family: Carmen sells her half of the business in 2035 to 2039, at about five and a half times profit, so what the business saves raises the price. And we stop her compostable claims: in Hong Kong, PLA is plastic with nowhere to compost. So should that one loan be a green one?
-    [Notes: Solar on her leased roof is refused, if asked: she could claim 0 t (under the Feed-in Tariff the power company sells the certificates); 20-year NPV −HK$0.12M to −HK$0.86M (area2_business.md §1.6, §3c). DRAFT v5, 14 Nov; Fahtai to make it their own. The fibre trap moved off the slide (the method for any business took its place); if asked: fibre beats plastic only if the item weighs under 1.3× the plastic one, since in landfill fibre makes methane. All ESTIMATED on an ILLUSTRATIVE HK$35M distributor
-    (area2_business.md §3a-3c; DESNZ 2026 and US EPA factors). Footprint: own 48 t (vans 27.8, power 20.4); purchased
-    goods 1,610-2,100 t (spend- and mass-based); landfill ≈1,070 t; freight 27 t (the grey sliver). Vans at HK$31/L,
-    the government's after-discount average (Decision_List.md B1; −16,400 at the pump list, −9,700 at HK$25/L).
-    Recycled plastic: food-grade rPET and virgin PET both US$1,240/t FOB Southeast Asia, 7 Oct 2026 (S&P Platts, medium
-    confidence); parity is a window, and resin isn't packaging: get a supplier quote (B4). At 2025's peak premium:
-    ≈HK$248K a year, ≈+HK$2,300 a tonne, passed to customers as a line on the invoice. Lighter board: ILLUSTRATIVE,
-    not in Decision_List.md's 134 t until a supplier test (Final_Plan.md §5.7). Fibre trap: cradle to HK landfill,
-    fibre 2.45 t CO2e a tonne, plastic 3.18 t (DESNZ, UK landfill-gas capture assumed). PLA: plastic under Cap. 603
-    s.3A (EPD to LegCo, 30 May 2023); say "the food-waste bins turn away packaging", not "O·PARK rejects PLA". Solar:
-    area2_business.md §1.6 and §3c (Feed-in Tariff ends 2033; under it CLP sells the certificates, our reading of EMSD's
-    terms). If asked "why not more vans and power?": they're under 2% of the footprint; her transition runs through
-    purchasing contracts (area2_business.md §5, question 11).]</aside>
+  <p class="sowhat">Choose the cut first. The largest candidate needs a supplier agreement; the vans need a loan.</p>
+  <aside class="notes">FAHTAI: I'm Fahtai. For any business, map the whole footprint, compare cuts against their alternatives, then check evidence, service and cash. Most of Carmen's footprint sits in packaging. Recycled PET could cut 108 tonnes, but resin parity is not a finished-product quote: verify the price and food-contact specification first. Electric vans cut 19 tonnes against new diesel vans and save money, but need charging and affordable finance. Lighter board stays outside the total until tested. The next question is how to fund the eligible changes.
+    [Notes: Fahtai working revision, 15 Nov. This slide chooses candidate actions; slide 8 matches funding and slide 9 compares green/plain loans. Figures unchanged from Decision_List.md B1, B4 and the previous slide 7; the 42 t lighter-board estimate remains illustrative and excluded. The ≈134 t total is estimated potential, not measured delivery. Cost per tonne ranks economic attractiveness only after comparable service and boundary checks; negative cost does not prove feasibility or affordability. Vans: incremental premium + charger annualised at 6% over 8 years vs new diesel replacements; HK$31/L diesel, ESTIMATED. LED/air-con: research/area2_business.md §3c; supplier and installation checks pending. Recycled PET: ≈108 t with DESNZ factors; 7 Oct 2026 resin parity is a dated, medium-confidence assumption, not an executable packaging quote. Supplier data, food-contact suitability, finished-product prices and the footprint difference must be verified. B4 company working capital ≈HK$0.27M is separate from recurring purchase cost. If a premium returns, reprice and obtain customer agreement; do not automatically charge the family's values budget. Business-level affordability and co-owner consent are required. Scope 3 baseline includes proxy factors; not an audited inventory. No blanket claim about all Hong Kong composting routes is made; a verified disposal route is required for any compostability claim. The sale-price transmission is already on slide 9, so it is not repeated here. No new model outputs or project commitments.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
-    <p class="src">ESTIMATED, ILLUSTRATIVE business (DESNZ, US EPA) · diesel HK$31/L (LCQ11) · S&amp;P Platts, 7 Oct 2026 · Cap. 603 · photos: Wikimedia CC BY-SA</p><span class="pg">7</span>
+    <p class="src">ESTIMATED on an ILLUSTRATIVE business · Decision_List B1, B4 · DESNZ / US EPA · diesel HK$31/L (LCQ11, 7 Oct 2026); resin parity: Platts, 7 Oct 2026</p><span class="pg">7</span>
   </footer>
 </section>
 
