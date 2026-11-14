@@ -916,6 +916,8 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   still no verdict); cutting the tag (the rule would arrive only at the close).
   Then put on the white tag (Pete: the corners on dark cards were "so hard to read"): ink on white, the old tag's
   shape and hole, one axis title each; it appears on the slide's second click, after the five steps.
+  The condition chips went from 11.5px to 13px (the smallest text on the slide); to fit, two step lines were
+  shortened: "The limit and room, before any product" and "Only changes we can show, not a footprint".
 - **The comparison** is now the reasonable planner's plan (§2), on slides 1 and 10 and backup 12; the corners'
   comparison is "the plain alternative" (slide 6, backup 19). Spoken words 1,320 (≈10:06 at 135 a minute with names):
   the cut is deferred to after submission (Pete: the script can change until the 21st; the slides can't).
