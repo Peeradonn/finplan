@@ -587,3 +587,16 @@ giving funded today (`gift_now`, within both parents' 35% caps) before either li
 - `fin_room_free_hk` HK$0.72M (`_x` 0.723): the room with ESG funds less that fund (ESTIMATED: giving isn't exactly
   additive; both causes for life, `fin_room_both39_hk` HK$1.48M, sit at the limit, which agrees).
 - Checked: `numbers.json` before and after differ only by these 7 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, evening): the price of values on slide 3 (`Final/final_model.py` `export_final()`)
+
+Pete questioned showing the room as a pot of giving (`Final/Final_Plan.md` §4.5); slide 3 now shows the brief's "price
+of values". Keys added, from plain choices (plain twin funds, no giving, no vans), the parts added in order so they sum
+(the export stops if the rounded parts don't add to the rounded total):
+- `fin_val_esg_n` −HK$0.62M (`_x` 0.616): Carmen's ESG funds' fee gap, on the recommended plan's fees;
+- `fin_val_gift_n` −HK$1.32M (`_x` 1.320): then the scholarship for life funded now;
+- `fin_val_total_hk` HK$1.94M; odds `fin_val_plain_pt` 97.7 (plain choices), `fin_val_pt` 96.5 (with their values),
+  `fin_val_spt` 88.7 (with their values, the 2030–31 downturn).
+- Slides 8, 10 and backups 18, 19 switched from `fin_dot_values_n` (−0.57) and `fin_plan_gift_n` (−1.25), measured at
+  Round One's fees, to these two; backup 19's bar scale 230 → 220 px per HK$M so the −1.32 bar fits.
+- Checked: `numbers.json` before and after differ only by these 8 additions; `figure-data.md` and every PNG unchanged.

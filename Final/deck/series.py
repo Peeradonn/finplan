@@ -98,9 +98,10 @@ def signed(key):
 
 # slide 3: every decision on one measure (Pete, 13 Nov), as bars from zero in its SVG (units = px). Each decision's
 # change in the children's median inheritance in a normal future (numbers.json fin_dot_*_n), against its ordinary choice.
-BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 660.0, 230.0, 365.0, 800.0
+BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 660.0, 220.0, 365.0, 800.0
 # the gift: the recommended plan's scholarship for life, funded now (14 Nov, Final_Plan.md §5.3), when exported
-BAR_KEY = {"gift": "fin_plan_gift_n"}
+# the ESG funds and the gift: the price of values on the recommended plan's fees, as slide 3 (fin_val_*, 14 Nov)
+BAR_KEY = {"values": "fin_val_esg_n", "gift": "fin_val_gift_n"}
 BARS = ("vans", "data", "values", "gift", "flat")
 BROKEN = "flat"     # the one bar drawn broken (its value is printed on it): the rest keep a readable scale
 

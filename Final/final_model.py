@@ -504,6 +504,20 @@ def export_final():
     u39 = run(base, r_eq=r_eq_for(FEE_SAVED), inflows=fund)
     out["fin_plan_room_use"] = f"{(p_n['odds'] - u39['odds']) * 100:.0f}"
     out["fin_plan_room_use_hk"] = f"HK${p_n['leg_med'] - u39['leg_med']:.1f}M"
+    # slide 3 (Pete 14 Nov: the price of values, the brief's area 1, not a pot of giving): from plain choices, add
+    # Carmen's ESG funds (their fee gap), then the scholarship for life, so the two parts add up to the whole price;
+    # the same two prices on slides 8 and 10 and backup 19 (each decision against its plain alternative, on the
+    # recommended plan's fees). The odds show the room: plain choices, then with their values, against the limit.
+    t_n = run(base, **tilt)
+    u39_s = stressed(base, sc, mult, flows=fund, **tilt)
+    esg, gft, tot = p_n["leg_med"] - t_n["leg_med"], t_n["leg_med"] - u39["leg_med"], p_n["leg_med"] - u39["leg_med"]
+    if f"{round(esg, 2) + round(gft, 2):.2f}" != f"{tot:.2f}":
+        sys.exit("slide 3: the two rounded parts of the price of values no longer add up to the rounded total")
+    out["fin_val_esg_n"], out["fin_val_esg_x"] = sg(-esg), f"{esg:.3f}"
+    out["fin_val_gift_n"], out["fin_val_gift_x"] = sg(-gft), f"{gft:.3f}"
+    out["fin_val_total_hk"] = f"HK${tot:.2f}M"
+    out["fin_val_plain_pt"], out["fin_val_pt"] = f"{p_n['odds'] * 100:.1f}", f"{u39['odds'] * 100:.1f}"
+    out["fin_val_spt"] = f"{u39_s['odds'] * 100:.1f}"
     # slide 6 (S, the flat; 13 Nov): where the limit flips the route. The scenario has the old flat fall 15% behind
     # newer flats from 2031 (10% in 2030), on top of its 0.15% a year drag; here that fall runs from 0 to 15%, the
     # rest of the scenario unchanged. The reverse mortgage barely moves (HKMC counts half the value above HK$8M);

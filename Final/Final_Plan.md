@@ -244,6 +244,18 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - **Slide 10:** the brief's outcome and capital (Key Areas §7) were small grey text jammed under the grid, the outcome
   wrapping; now two labelled lines (OUTCOME, CAPITAL), one line each, set off by a rule, the +HK$1.05M in indigo
   as the close's point, the tonnes in teal.
+- **Slide 3: the price of values, not a pot of giving** (Pete: "is asking our client to set a limit in giving truly
+  something we'd want to do, potentially making them lose money?"). The rule stays; the unit was wrong. "HK$1.7M of
+  giving" read as advice to give it away, "still free" as money to spend, it mixed fees with gifts, and it priced
+  the scholarship differently from slide 10. The brief asks to "quantify the price of values: the return,
+  diversification or liquidity the client is prepared to give up, and the evidence that it need not give up
+  much". Now: what their values cost the children, `fin_val_total_hk` (HK$1.94M), in two parts added in order
+  from plain choices (her ESG funds' fee gap `fin_val_esg_n`, the scholarship for life `fin_val_gift_n`); an
+  odds scale where the room is the space between the limit (95) and plain choices (97.7) and their values land
+  at 96.5 (88.7 in the downturn, limit 85); where it stops (a second cause reaches the limit; paid from cash flow,
+  they break it). The same two prices now on slides 8 and 10 and backups 18 and 19 (they were −HK$0.57M and
+  −HK$1.25M, measured at Round One's fees), so one decision has one price across the deck. Unused room isn't
+  lost: it stays as safety and inheritance. Slide 9's card shows the price and the odds with their values.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
