@@ -210,11 +210,9 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   the label itself; the five PRISM colours only where the beam splits (slide 2, the all-five badges on 10 and 19).
   The step stays legible from the chip's letter and the footer badge. Renders: `build/options/colour-now.png`,
   `colour-one-accent.png`.
-  **Then the conclusion bar went crimson** (Pete: the accent looked "bland"; "can we use the same accent colour as
-  our Round Two deck?"). It was already the same red (#C80E1E); Round Two felt vivid because its conclusion bars were
-  a crimson gradient, while the Final's were navy, leaving crimson only in thin rules and small text. Now every
-  conclusion bar is Round Two's gradient (#D40F1F to #971320), white text. A brighter red alone (#E0182D) barely
-  changed the look; brighter red bars read as an alarm. Render: `build/options/accent-compare.png`. Slides 1–2's stage is deep navy.
+  Crimson conclusion bars (Round Two's gradient) were tried the same day and reverted (Pete: "just the conclusion bar
+  is red while other accents are still blue"): with navy on every large area, a red bar reads as a separate block.
+  Round Two's red bar worked inside a warm palette (rose greys, a wine stage). The bars stay navy. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
