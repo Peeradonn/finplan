@@ -490,6 +490,21 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   talk slides 4, 6, 9, 12 and backups 15, 19, 22 ("values high", "the family chooses", "(0.25%, assumed)", the
   "Trigger:" lines). Either set them upright deck-wide (a few CSS lines; check that each still reads as secondary), or
   add the OFL Plus Jakarta Sans Italic files and confirm `make_pptx.py` embeds them.
+- **Slide 8 rebuilt around one rule** (Pete, 15 Nov, later: "I don't get what exactly we are trying to communicate";
+  "can't we transition her stock?"; "shouldn't we add our own thinking?"). Why: it mixed two lists from two parts of
+  the brief (area 1's five kinds, area 2's instruments), its title was an instruction, and "Transition: none" missed
+  that her real transition is her stock (what she buys), which runs on supplier contracts, not a loan
+  (`research/area2_business.md` §6, q11). Now: **"A green label pays only above a size; below it, finance the cut
+  plainly"**; steps (1) what does the cut need? (2) which kind of finance fits it? (3) does its label pay at this
+  size?; one log line from HK$0.1M with her two cuts below it (her stock, recycled, ≈HK$0.27M working capital, 108 t,
+  by supplier contract; her vans, HK$1.5M loan, 19 t) and the three labelled instruments above it (sustainability-
+  linked ≈HK$4.8M break-even, Grant Scheme HK$100M, supply-chain ≈US$100M of trade); then the brief's five kinds as
+  our verdicts (green: the vans if the label is free; sustainability-linked: below its size; transition: her stock, by
+  contract; impact: not claimed for listed funds; ESG integration: the whole plan). Bar: "Her biggest cut needs no
+  loan; every labelled instrument here starts at three times her size." The rule holds for any client (a green
+  mortgage's one-off HK$0–3K rebate fails it too). Backup 20's transition row now says the same. Fahtai's words
+  rewritten to match (shorter; "she has no transition asset" is gone); the e-van tax waiver stays on slide 9 and
+  backup 20.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
