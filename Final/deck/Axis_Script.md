@@ -2,9 +2,9 @@
 
 Generated 2026-11-14 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-1323 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:07 at 145 words a minute (9:27 with names and handovers); 9:48 at 135 words a minute (10:08 with names and handovers); 10:35 at 125 words a minute (10:55 with names and handovers). Over 10:30 disqualifies the team.
+1353 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:19 at 145 words a minute (9:39 with names and handovers); 10:01 at 135 words a minute (10:21 with names and handovers); 10:49 at 125 words a minute (11:09 with names and handovers). Over 10:30 disqualifies the team.
 
-Speaking time at 135 words a minute: Pete 3:50, Win 2:01, Lookbua 1:59, Fahtai 1:56.
+Speaking time at 135 words a minute: Pete 4:03, Win 2:01, Lookbua 1:59, Fahtai 1:56.
 
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · 1:30 · 176 spoken words (≈78 s at 135)*
@@ -14,11 +14,11 @@ Speaking time at 135 words a minute: Pete 3:50, Win 2:01, Lookbua 1:59, Fahtai 1
 > Notes: DRAFT, 14 Nov (Pete: the general question first, the Wongs only as the worked example's outcome; the family's own 20–25% ask is paid off on slide 8). The comparison is the reasonable planner's plan (Final_Plan.md §2): a careful plan without the test, the family's ESG wish met with labelled funds as cheap as ours and the giving kept as their lifelong pledge; never say how other advisers usually work. Headline: fin_fair_gain (Pete, 14 Nov, option (a); M9b's fairest row). Its parts, if asked: the vans +HK$0.54M (only a test of the business finds them), funding the gift instead of pledging it +HK$0.39M (ordinary good planning: a tax-aware planner might do it too), fees +HK$0.12M; +HK$1.03M in the 2030–31 downturn. 134 t: Decision_List.md (vans 19.3 + LED 4.1 + air-con 2.8 + recycled PET 108.1), ESTIMATED on an ILLUSTRATIVE business. Capital: Decision_List.md §2 (the family's is the scholarship fund for life, fin_plan_gift_hk; the business's HK$1.91M of equipment, ESTIMATED). The six decisions are the close's (slide 10). Moved off the open: nearly half the shock's loss on the home and business (slide 4, fin_pstorm_homebiz) and the giving the room buys (slide 3, fin_room_gift).
 
 ## 2 · PRISM
-*Pete · 0:45 · 96 spoken words (≈43 s at 135)*
+*Pete · 0:45 · 126 spoken words (≈56 s at 135) · over its time*
 
-**Pete:** With PRISM: five steps that run the three tests. Profile sets the limit and the room before we look at any product. Risk takes everything the family owns and earns through one climate shock: the limit. Impact counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure, green or not: what it does for the children in Hong Kong dollars, and for the world in tonnes. Monitor gives the plan its own label, read every year. And the limit comes first: so how sure must their money be?
+**Pete:** With PRISM: five steps that run the three tests. Profile sets the limit and the room before we look at any product. Risk takes everything the family owns and earns through one climate shock: the limit. Impact counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure, green or not: what it does for the children in Hong Kong dollars, and for the world in tonnes. Monitor gives the plan its own label, read every year. What comes out: the limit first; then those two prices put every decision in one of four corners, from "do it" to "don't pay for the label". We'll fill them in at the end. So first: how sure must their money be?
 
-> Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's colours. One click: the price tag.
+> Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's colours. One click: the four corners, empty; slide 10 fills them with the same words (Pete 14 Nov: the price tag's empty bars didn't say what the two prices are for). Read the four corners in full only on slide 10.
 
 ## 3 · Set the limit first; values spend only the room above it
 *Pete · 0:50 · 135 spoken words (≈60 s at 135) · over its time*

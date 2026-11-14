@@ -200,7 +200,10 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 `deck/src/00_head.html`):
 - **Colour: navy (Pete, 13 Nov).** Navy for structure (text, bars, the closing line), cool greys; crimson (the limit,
   money at risk: outside in) and teal (the world: inside out) are the only signal colours. The PRISM letter colours
-  stay in the prism, the footer badge and the kicker chip, never in slide bodies. Slides 1–2's stage is deep navy.
+  stay in the prism, the footer badge and the kicker chip, never in slide bodies. **Reaffirmed 14 Nov** (Pete asked:
+  band colours or navy for each step?): keep the band colours there, as wayfinding (a judge sees which step without
+  reading); R's red and I's cyan already match the limit's crimson and the change's teal; all-navy would make every
+  step slide look alike and leave the prism as decoration. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
@@ -906,6 +909,11 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   yearly check); the rest is carried within the limit, and the slide says so.
 - **One name for the scenario:** "a disorderly downturn: a sudden carbon policy, 2030–31", defined on slide 4; "the
   downturn" everywhere else ("85 in a crisis" on slides 3 and 5 renamed).
+- **Slide 2's output** (Pete: "for the price tag, I don't quite get what we're communicating"): its empty bars didn't
+  say what the two prices are for, and "one measure" sat over two units. Replaced by the rule they feed: the limit
+  first, then the two prices place every decision in one of four corners, empty here and filled on slide 10 with
+  the same words. Chosen from three: the empty corners; one filled example (a Wong number on the framework slide,
+  still no verdict); cutting the tag (the rule would arrive only at the close).
 - **The comparison** is now the reasonable planner's plan (§2), on slides 1 and 10 and backup 12; the corners'
   comparison is "the plain alternative" (slide 6, backup 19). Spoken words 1,320 (≈10:06 at 135 a minute with names):
   the cut is deferred to after submission (Pete: the script can change until the 21st; the slides can't).

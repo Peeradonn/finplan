@@ -575,6 +575,19 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 /* v5 slide 3: who the Wongs are, beside the panel's caption (Pete 14 Nov: slide 1 no longer introduces them) */
 .v3-who{font-weight:600;letter-spacing:0;text-transform:none;color:var(--slate)}
 /* v5 slide 2: each step marked with the condition it checks (v2- classes only here) */
+/* v5 slide 2's output (Pete 14 Nov): the four corners, empty; slide 10 fills them (v2c- classes only here) */
+.v2c{height:auto;top:524px;left:600px;width:642px}
+.v2c-gate{font:500 16px/1.3 var(--text);color:#fff;border-left:4px solid #FF4A57;padding-left:10px;margin-bottom:9px}
+.v2c-gate b{color:#FF6B75;font-weight:800}
+.v2c-grid{display:grid;grid-template-columns:134px 1fr 1fr;gap:5px 6px}
+.v2c-col{font:500 14px/1.2 var(--text);color:#AEB8C8;white-space:nowrap;padding:0 0 1px 2px}
+.v2c-col b{color:#fff;font-weight:700}
+.v2c-col.v2c-in b{color:#38B6CF}
+.v2c-row{font:500 14px/1.2 var(--text);color:#AEB8C8;align-self:center}
+.v2c-row b{display:block;color:#fff;font-weight:700}
+.v2c-col .ic,.v2c-row .ic{width:15px;height:15px;vertical-align:-3px;margin-right:4px}
+.v2c-cell{background:#15213A;border:1px solid #2A3858;border-radius:7px;padding:8px 9px;font:800 15px/1.2 var(--head);color:#fff;white-space:nowrap}
+.v2c-cell.v2c-no{color:#FF6B75;border-color:#5A2533;background:#24152A}
 .v2-tags{display:inline-flex;gap:6px;margin-left:10px;vertical-align:2px}
 .v2-t{display:inline-block;color:#fff;font:800 11.5px/1 var(--text);letter-spacing:.5px;padding:4px 8px;border-radius:10px}
 .v2-limit{background:#C80E1E} .v2-change{background:#0E7490} .v2-room{background:#3E5F93}
@@ -697,30 +710,19 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   <div class="s2-row" style="top:346px"><p class="s2-name">Select <span>· which options pass?</span></p><p class="s2-do">Every decision on one measure, green or not<span class="v2-tags"><span class="v2-t v2-all">ALL THREE</span></span></p></div>
   <p class="s2-L" style="top:445px;color:#E6E9EE">M</p>
   <div class="s2-row" style="top:438px"><p class="s2-name">Monitor <span>· when do we decide again?</span></p><p class="s2-do">The plan's own label, read every year<span class="v2-tags"><span class="v2-t v2-all">ALL THREE</span></span></p></div>
-  <div class="s2-price" data-b="2">
-    <svg viewBox="0 0 640 172" width="640" height="172" role="img" aria-label="What PRISM produces: one price tag for every decision">
-      <text x="0" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#FF6B75">ONE MEASURE: A PRICE TAG FOR EVERY DECISION</text>
-      <polygon points="0,78 26,28 640,28 640,128 26,128" fill="#FFFFFF"/>
-      <circle cx="24" cy="78" r="6" fill="#0B1426"/>
-      <rect x="48" y="42" width="170" height="4" fill="#0F1E3D"/>
-      <text x="48" y="70" font-size="16" font-weight="800" fill="#0F1E3D">What we recommend</text>
-      <text x="48" y="91" font-size="14" font-style="italic" fill="#566173">each decision</text>
-      <rect x="48" y="106" width="120" height="8" rx="4" fill="#E3E7ED"/>
-      <rect x="240" y="42" width="206" height="4" fill="#0F1E3D"/>
-      <svg x="240" y="54" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg>
-      <text x="266" y="70" font-size="16" font-weight="800" fill="#0F1E3D">For the children</text>
-      <text x="240" y="91" font-size="14" font-style="italic" fill="#566173">what they inherit, in HK$</text>
-      <line x1="343" y1="101" x2="343" y2="121" stroke="#0F1E3D" stroke-width="1.5"/>
-      <rect x="343" y="104" width="56" height="14" fill="#566173"/>
-      <rect x="468" y="42" width="156" height="4" fill="#0E7490"/>
-      <svg x="468" y="54" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E7490" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-earth"/></svg>
-      <text x="494" y="70" font-size="16" font-weight="800" fill="#0E7490">For the world</text>
-      <text x="468" y="91" font-size="14" font-style="italic" fill="#566173">CO2e cut, in tonnes</text>
-      <line x1="468" y1="101" x2="468" y2="121" stroke="#0E7490" stroke-width="1.5"/>
-      <rect x="468" y="104" width="44" height="14" fill="#0E7490"/>
-      <rect x="0" y="146" width="4" height="20" fill="#FF4A57"/>
-      <text x="14" y="162" font-size="16" fill="#FFFFFF"><tspan font-weight="800" fill="#FF6B75">The limit comes first:</tspan><tspan font-weight="500"> no choice may push the plan below it</tspan></text>
-    </svg>
+  <div class="s2-price v2c" data-b="2">
+    <p class="v2c-gate"><b>The limit first.</b> Then two prices place every decision:</p>
+    <div class="v2c-grid">
+      <span></span>
+      <p class="v2c-col v2c-in"><svg class="ic"><use href="#i-earth"/></svg>For the world: <b>a real change</b></p>
+      <p class="v2c-col">For the world: <b>no real change</b></p>
+      <p class="v2c-row"><svg class="ic"><use href="#i-users"/></svg>For the children: <b>adds, or ≈0</b></p>
+      <p class="v2c-cell">Do it</p>
+      <p class="v2c-cell">Do it, but don't call it green</p>
+      <p class="v2c-row">For the children: <b>costs</b></p>
+      <p class="v2c-cell">Pay knowingly, from the room</p>
+      <p class="v2c-cell v2c-no">Don't pay for the label</p>
+    </div>
   </div>
   <p class="s2-std">Built on double materiality (the EU requires it of companies), applied to a family's whole balance sheet</p>
   <p class="s2-pg">2</p>
@@ -728,9 +730,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     look at any product. Risk takes everything the family owns and earns through one climate shock: the limit. Impact
     counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure,
     green or not: what it does for the children in Hong Kong dollars, and for the world in tonnes. Monitor gives the
-    plan its own label, read every year. And the limit comes first: so how sure must their money be?
+    plan its own label, read every year. What comes out: the limit first; then those two prices put every
+    decision in one of four corners, from "do it" to "don't pay for the label". We'll fill them in at the end.
+    So first: how sure must their money be?
     [Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's
-    colours. One click: the price tag.]</aside>
+    colours. One click: the four corners, empty; slide 10 fills them with the same words (Pete 14 Nov: the
+    price tag's empty bars didn't say what the two prices are for). Read the four corners in full only on slide 10.]</aside>
 </section>
 
 <section class="slide sec-P" id="v3" data-time="0:50" data-speaker="Pete">
