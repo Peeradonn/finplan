@@ -397,6 +397,25 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   - Renumbered once: talk 1–13, backups 14–23 (page numbers, the backup index, cross-references,
     `make_pptx.py`'s sections, AGENTS.md). Words on screen now 145–264 (most under 210; the close, 264, is the
     summary). Spoken words 1,468: the split didn't add any, but the cut to ≈1,300 is still due.
+- **The theme: PRISM + real Hong Kong** (Pete, 14 Nov, late, after Logan's pitch photos and OASIS's activist decks in
+  `research/`: "think of the overall theme ... do we need to have one?"). Yes, one idea: the framework's light and
+  prism, which stay on slides 1, 2, the close and every footer badge, and real Hong Kong wherever a slide is about a
+  real thing. Chosen over a dark editorial restyle (all 13 slides re-done two days out; dense data reads worse dark)
+  and over no photos. What changed:
+  - **Photos** (Wikimedia Commons, CC BY-SA; files and pages in `deck/img/photo-credits.json`, credits on backup 24):
+    slide 1, dense flats faded into the stage (`img/stage-flats.jpg`, the fade baked in, no CSS mask); slide 6, an
+    older Tai Kok Tsui block with a newer tower behind, captioned "the gap"; slide 7, each station's header a photo
+    (a clear PET box, a delivery van, a landfill) under a dark wash.
+  - **Sources in their own words, OASIS-style** (the line boxed in red): slide 8, the HKMA Grant Scheme guideline's
+    "at least HK$100 million" (loans, Track II, p.3); slide 10, the fund holding US$0 drawn as its 23 filings, all
+    zero, Sep 2024 to Sep 2026 (HKEX fund platform, read 14 Nov 2026); backup 24, the HKEX rule (App. C2 paras 17(2)
+    and 28(c): Scope 3 mandatory for LargeCap from FY2026, from HKEX's Apr 2024 conclusions) and the HKMA line.
+    **Flag for Pete:** slide 10's source line names the fund (BOC-Prudential MSCI World ESG Index Fund, BUM645);
+    the team had decided on record-only wording with the manager not named aloud (§5). The line states only the
+    record; say it the same way.
+  - **Slide 3's cards aligned:** every person has the same three rows (values, accepts, decides) at one height.
+  - **Still to come:** AI portraits of the four Wongs for slide 3 (fictional, labelled so), from the prompts Claude
+    gave Pete on 14 Nov; until then, initials.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

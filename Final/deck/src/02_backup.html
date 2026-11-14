@@ -3,6 +3,12 @@
 
 <style>
 /* backup slides (14 Nov, evening): bk- classes only here (classes are global) */
+.bk-ev{display:grid;grid-template-columns:1.35fr 1fr;gap:28px;align-items:start;margin-top:20px}
+.bk-ev figcaption{font-size:16px}
+.bk-ev figure{margin:0;border:1.5px solid #DCE1E8;border-radius:6px;padding:10px;background:#fff;box-shadow:0 3px 10px rgba(15,30,61,.08)}
+.bk-ev img{display:block;width:100%}
+.bk-ev figcaption{font:500 15px/1.45 var(--text);color:var(--ink);margin-top:10px} .bk-ev figcaption b{font-weight:800}
+.bk-credit{font:500 13px/1.4 var(--text);color:var(--slate);margin-top:16px} .bk-credit b{color:var(--ink)}
 .bk-idx{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;row-gap:0;align-content:start}
 .bk-idx p{display:flex;gap:14px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--rule);font:500 16px/1.35 var(--text)}
 .bk-idx p b{flex:none;width:34px;font:800 20px/1 var(--num);color:var(--ink)}
@@ -37,6 +43,7 @@
     <p><b>18</b><span>The whole household in one storm <i>· every asset at once, year by year</i></span></p>
     <p><b>23</b><span>The home <i>· insurance, retrofit, BEAM Plus, the next flat</i></span></p>
     <p><b>19</b><span>If Adrian's job goes <i>· an ordinary risk, tested anyway</i></span></p>
+      <p><b>24</b><span>The sources, in their own words <i>· the HKEX and HKMA rules quoted; photo credits</i></span></p>
   </div>
   <footer class="foot">
     <p class="src">Team Axis · backup slides are not part of the ten minutes</p><span class="pg">14</span>
@@ -573,3 +580,21 @@
     <p class="src">Decision list H1–H4 · HKO, CEDD, DSD · bank terms 2026 · our model (MEASURED) · ESTIMATED where marked ≈</p><span class="pg">23</span>
   </footer>
 </section>
+
+<!-- Backup 24 · the sources in their own words, and the photo credits (14 Nov) -->
+<section class="slide" id="b24" data-backup>
+  <header class="head"><p class="kick">The sources, in their own words</p>
+    <h2>Two rules that decide our verdicts, quoted from the source</h2></header>
+  <div class="body bk-ev">
+    <figure><img src="inline:img/src-hkex-c2.png" alt="HKEX Appendix C2 paragraphs 17(2) and 28(c)"><figcaption><b>Why her customers will ask for her carbon data:</b> large listed companies must report the carbon in what they buy (Scope 3) from FY2026. HKEX Listing Rules, Appendix C2, Part D, paras 17(2) and 28; rule text in HKEX's consultation conclusions, Apr 2024.</figcaption></figure>
+    <figure><img src="inline:img/src-hkma-grant.png" alt="HKMA Grant Scheme guideline: minimum issuance size at least HK$100 million"><figcaption><b>Why the Grant Scheme can't reach her HK$1.5M loan:</b> loans must be at least HK$100 million. HKMA, Green and Sustainable Finance Grant Scheme guideline, applications from 24 Apr 2026, p.3, loans (Track II).</figcaption></figure>
+  </div>
+  <p class="bk-credit"><b>Photos</b> (Wikimedia Commons): slide 6: Fouimtae, CC BY-SA 3.0; slide 1: Romain Pontida, CC BY-SA 2.0; slide 7: Pamoa2553, CC BY-SA 3.0; slide 7: Minghong, CC BY-SA 4.0; slide 7: BrokenSphere, CC BY-SA 3.0.</p>
+  <aside class="notes">[Notes: BACKUP. Sources downloaded 14 Nov 2026: the HKMA guideline PDF (GSFGS_Guideline_(Effective_from_20260424).pdf, p.3);
+    HKEX's April 2024 consultation conclusions (cp202304cc.pdf, pp.80 and 88), whose rule text matches the live rulebook's
+    Appendix C2 (research/hook_fact_checks.md §2). Photo files and their pages: Final/deck/img/photo-credits.json.]</aside>
+  <footer class="foot">
+    <p class="src">HKEX, Apr 2024 · HKMA, Apr 2026 · photos: Wikimedia Commons, CC BY-SA</p><span class="pg">24</span>
+  </footer>
+</section>
+
