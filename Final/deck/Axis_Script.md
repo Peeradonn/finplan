@@ -1,8 +1,8 @@
 # PRISM: the script (Team Axis)
 
-Generated 2026-11-14 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
+Generated 2026-11-14 by build_final.py from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-1361 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:23 at 145 words a minute (9:43 with names and handovers); 10:04 at 135 words a minute (10:24 with names and handovers); 10:53 at 125 words a minute (11:13 with names and handovers). Over 10:30 disqualifies the team.
+1361 spoken words. Slides allotted 10:00. Speech: 9:23 at 145 words a minute (9:43 with names and handovers); 10:04 at 135 words a minute (10:24 with names and handovers); 10:53 at 125 words a minute (11:13 with names and handovers). Over 10:30 disqualifies the team.
 
 Speaking time at 135 words a minute: Pete 4:03, Win 2:08, Lookbua 1:57, Fahtai 1:56.
 
