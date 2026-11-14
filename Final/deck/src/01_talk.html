@@ -97,35 +97,22 @@
 .v3-rules p:not(.v3-rh)::before{content:"";position:absolute;left:1px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--brand)}
 .v3-rules b{font-weight:800}
 .v3-bt{font:500 19px/1.3 var(--text);margin-top:12px} .v3-bt b{font:800 28px/1 var(--num);color:var(--brand)}
-.v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:5px 0 12px}
-.v3-bar{display:flex;height:38px;gap:3px}
-.v3-esg{background:var(--brand-tint)} .v3-life{background:var(--brand)}
-.v3-lab{display:flex;margin-top:6px;gap:3px}
+.v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 28px}
+.v3-brk{display:flex;margin-right:5px}
+.v3-brk p{font:600 14px/1.2 var(--text);color:var(--ink);text-align:center}
+.v3-brk p i{display:block;height:8px;margin-top:4px;border:1.5px solid var(--ink);border-bottom:none}
+.v3-bar{display:flex;height:62px;border-right:5px solid var(--accent)}
+.v3-esg{background:var(--brand-tint)} .v3-life{background:var(--brand)} .v3-free{background:#EAEDF2;box-shadow:inset 0 0 0 1.5px #B3BAC6}
+.v3-lab{display:flex;margin-top:7px}
 .v3-lab p{min-width:0;font:500 14px/1.3 var(--text);color:var(--slate);padding-right:10px}
 .v3-lab b{display:block;font:800 18px/1.15 var(--num);color:var(--ink)}
-/* the odds scale, 94 to 99: the room is the space between their limit and plain choices; their values use part of it */
-.v3-oh{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--ink);margin:16px 0 2px}
-.v3-odds{position:relative;height:84px;margin:0 34px}
-.v3-oln{position:absolute;left:0;right:0;top:49px;height:2px;background:#B3BAC6}
-.v3-orm{position:absolute;top:40px;height:20px;background:#EFEDFB;border-top:2px solid var(--brand-tint);border-bottom:2px solid var(--brand-tint)}
-.v3-orm span{position:absolute;left:50%;top:-36px;transform:translateX(-50%);font:italic 700 14px/1 var(--text);color:var(--brand);white-space:nowrap}
-.v3-olim,.v3-opl,.v3-ous{position:absolute;top:0;width:0;height:84px}
-.v3-olim::before,.v3-opl::before{content:"";position:absolute;left:-1.5px;top:36px;width:3px;height:28px;background:var(--accent)}
-.v3-opl::before{background:var(--ink)}
-.v3-olim span,.v3-opl span{position:absolute;bottom:50px;left:0;transform:translateX(-50%);text-align:center;white-space:nowrap;
-  font:600 13px/1.15 var(--text);color:var(--slate)}
-.v3-olim span{color:var(--accent)}
-.v3-olim b,.v3-opl b{display:block;font:800 17px/1.1 var(--num);color:inherit}
-.v3-opl b{color:var(--ink)}
-.v3-ous::before{content:"";position:absolute;left:-8px;top:42px;width:16px;height:16px;border-radius:50%;background:var(--brand)}
-.v3-ous span{position:absolute;top:64px;left:0;transform:translateX(-50%);white-space:nowrap;font:600 13px/1.15 var(--text);color:var(--brand)}
-.v3-ous b{font:800 17px/1 var(--num);margin-right:5px}
-.v3-ocap{font:500 13.5px/1.3 var(--text);color:var(--slate);margin-top:4px}
-.v3-warn{font:500 15px/1.35 var(--text);margin-top:12px;color:var(--ink)} .v3-warn b{color:var(--accent);font-weight:800}
-.v3-who2{display:flex;gap:28px;margin-top:10px;border-top:1px solid var(--rule);padding-top:10px}
+.v3-lab .v3-lfree b{color:var(--slate)}
+.v3-lab p.v3-llim{flex:none;width:44px;padding:0;margin-right:-22px;text-align:center;font:800 13px/1.15 var(--text);color:var(--accent)}
+.v3-warn{font:500 15.5px/1.35 var(--text);margin-top:18px;color:var(--ink)} .v3-warn b{color:var(--accent);font-weight:800}
+.v3-who2{display:flex;gap:28px;margin-top:24px;border-top:1px solid var(--rule);padding-top:10px}
 .v3-who2 p{flex:1;font:500 15px/1.4 var(--text);color:var(--slate);text-wrap:pretty}
 .v3-who2 b{font:800 17px/1.3 var(--head);color:var(--brand)} .v3-who2 i{font-weight:500;color:var(--slate)}
-.v3-who2 .v3-ad b{color:var(--accent)} #v3 .v3-who2{flex-direction:column;gap:2px} #v3 .v3-who2 p{white-space:nowrap}
+.v3-who2 .v3-ad b{color:var(--accent)}
 /* v5 slide 6: the rule for any business as three numbered steps, like the other step slides (Pete 14 Nov) */
 .s7-item p.v6-st{display:flex;gap:10px;align-items:flex-start;font:500 15px/1.32 var(--text);margin-bottom:4px}
 #v6 .s7-item{margin-bottom:10px}
@@ -293,7 +280,7 @@
       <p class="p4-cap">For any client, before any product</p>
       <div class="v3-step"><span class="v3-ic"><svg class="ic"><use href="#i-users"/></svg></span><p><b>Ask each decision-maker alone,</b> on the brief's seven: values, return, liquidity, horizon, tracking error, lock-up, complexity.</p></div>
       <div class="v3-step"><span class="v3-ic v3-lim"><svg class="ic"><use href="#i-shield"/></svg></span><p><b>Set the limit:</b> how sure the money must be.</p></div>
-      <div class="v3-step"><span class="v3-ic v3-room"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><p><b>The room above it is what values may cost,</b> agreed once.</p></div>
+      <div class="v3-step"><span class="v3-ic v3-room"><svg class="ic"><use href="#i-piggy-bank"/></svg></span><p><b>The room above it is the values budget,</b> agreed once.</p></div>
       <div class="v3-step v3-last"><span class="v3-ic"><svg class="ic"><use href="#i-scroll-text"/></svg></span><p><b>Write it into the investment policy:</b> who decides what.</p></div>
       <div class="v3-rules">
         <p class="v3-rh">When decision-makers disagree</p>
@@ -304,52 +291,45 @@
     </div>
     <div class="p4-right">
       <p class="p4-cap">The Wongs <span class="v3-who">· two parents decide, two children inherit; Adrian retires in 2037, Carmen in 2039</span></p>
-      <p class="v3-bt">The price of their values: <b>{{fin_val_total_hk}}</b> less for the children</p>
-      <p class="v3-bs">In what the children inherit (median, today's HK$), against plain choices</p>
-      <div class="v3-bar"><div class="v3-esg" style="flex:{{fin_val_esg_x}}"></div><div class="v3-life" style="flex:{{fin_val_gift_x}}"></div></div>
+      <p class="v3-bt">Their values budget: <b>{{fin_room_gift_plain}}</b> of giving, in today's money</p>
+      <p class="v3-bs">The most they could give now and still keep their limit: 95 in 100, 85 in a downturn.</p>
+      <div class="v3-brk"><span style="flex:{{fin_room_esg_x}}"></span><p style="flex:calc({{fin_room_life_x}} + {{fin_room_free_x}})">Both causes for life ({{fin_room_both39_hk}}) would use all of it<i></i></p></div>
+      <div class="v3-bar"><div class="v3-esg" style="flex:{{fin_room_esg_x}}"></div><div class="v3-life" style="flex:{{fin_room_life_x}}"></div><div class="v3-free" style="flex:{{fin_room_free_x}}"></div></div>
       <div class="v3-lab">
-        <p style="flex:{{fin_val_esg_x}}"><b>{{fin_val_esg_n}}</b>her ESG funds' extra fees</p>
-        <p style="flex:{{fin_val_gift_x}}"><b>{{fin_val_gift_n}}</b>the scholarship, funded now, for life</p>
+        <p style="flex:{{fin_room_esg_x}}"><b>{{fin_room_esg_hk}}</b>Carmen's ESG funds</p>
+        <p style="flex:{{fin_room_life_x}}"><b>{{fin_plan_gift_hk}}</b>the scholarship, funded for life</p>
+        <p style="flex:{{fin_room_free_x}}" class="v3-lfree"><b>≈{{fin_room_free_hk}}</b>still free</p>
+        <p class="v3-llim">their<br>limit</p>
       </div>
-      <p class="v3-oh">Paid only from the room above their limit</p>
-      <div class="v3-odds">
-        <div class="v3-orm" style="left:20%;width:calc(({{fin_val_plain_pt}} - 95) * 20%)"><span>the room</span></div>
-        <div class="v3-oln"></div>
-        <div class="v3-olim" style="left:20%"><span>their limit<b>95</b></span></div>
-        <div class="v3-opl" style="left:calc(({{fin_val_plain_pt}} - 94) * 20%)"><span>plain choices<b>{{fin_val_plain_pt}}</b></span></div>
-        <div class="v3-ous" style="left:calc(({{fin_val_pt}} - 94) * 20%)"><span><b>{{fin_val_pt}}</b>with their values</span></div>
-      </div>
-      <p class="v3-ocap">futures in 100 the money lasts · in a downturn {{fin_val_spt}}, against a limit of 85</p>
-      <p class="v3-warn"><b>Where it stops:</b> a second cause for life reaches the limit ({{fin_room_both39_odds}}); paid from yearly cash flow instead of funded now, the two break it ({{fin_room_pledge2_odds}}).</p>
+      <p class="v3-warn"><b>Paid from yearly cash flow instead,</b> the same two causes break the limit ({{fin_room_pledge2_odds}}).</p>
       <div class="v3-who2">
-        <p><b>Carmen, 49</b> <i>· values high</i> · pays for her values from the room</p>
-        <p class="v3-ad"><b>Adrian, 54</b> <i>· capital first</i> · gets his limit</p>
+        <p><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</p>
+        <p class="v3-ad"><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</p>
       </div>
     </div>
   </div>
   <p class="sowhat">The limit sizes the room, so the parents agree once, not product by product.</p>
   <aside class="notes">PETE: So Profile comes first, before any product. Ask each decision-maker alone. Set the limit: how
-    sure the money must be. The room above it is what their values may cost, agreed once and written into the
-    investment policy; if they disagree, shared money follows the more prudent. The Wongs: Adrian and Carmen decide,
-    their two children inherit. Their limit: the money lasts in 95 futures out of 100, 85 in a downturn. With plain
-    choices it lasts in about 98: that's the room. Carmen's values have a price: her ESG funds and the scholarship,
-    funded for life, cost the children {{fin_val_total_hk}}, and the money still lasts in about 96 of 100. Inside the
-    limit, so they can pay it knowingly. A second cause for life would reach the limit; paid from yearly cash flow,
-    the two would break it. Adrian gets his limit; Carmen pays for her values from the room. So what could push them
-    below 95?
-    [Notes: DRAFT, 14 Nov (Pete: "is asking our client to set a limit in giving truly something we'd want to do?"). The
-    brief, area 1: "Quantify the price of values: the return, diversification or liquidity the client is prepared to
-    give up, and the evidence that it need not give up much." So the slide shows a price, not a pot of giving: from
-    plain choices (plain twin funds, no giving, no vans), Carmen's ESG funds' fee gap {{fin_val_esg_n}}, then the
-    scholarship for life funded now ({{fin_plan_gift_hk}}, §5.3) {{fin_val_gift_n}}, added in order so they sum to
-    {{fin_val_total_hk}} (fin_val_*, final_model.py). Odds: plain {{fin_val_plain_pt}}, with their values
-    {{fin_val_pt}}; in the 2030–31 downturn {{fin_val_spt}} against 85; the normal limit binds. "It need not give up
-    much": the climate index costs the same as the plain fund; the fee gap is two specialist funds, and the rest is
-    giving Carmen chose. Choices that pay (the vans) or cost nothing (recycled plastic at parity) never touch the room.
-    Where it stops: both causes for life funded now {{fin_room_both39_odds}} (at the limit within sampling error);
-    pledged from cash flow {{fin_room_pledge2_odds}} ({{fin_room_pledge2_sodds}} in the downturn). Unused room isn't
-    lost: it stays as safety and inheritance. Disagreement: research/area1_6_framework.md §3c (ESMA35-43-3172
-    ¶65–70). Profiles: §3a, our client definition, not quotes. Limits ILLUSTRATIVE.]</aside>
+    sure the money must be. The room above it is the values budget, agreed once and written into the investment policy;
+    if they disagree, shared money follows the more prudent. The Wongs: Adrian and Carmen decide, their two children
+    inherit; Adrian retires in 2037, Carmen in 2039. Their limit: the money lasts in 95 futures out of 100, 85 in a
+    downturn. Above it sits a values budget of about {{fin_room_gift_plain}} of giving, in today's money. Carmen's ESG
+    funds use {{fin_room_esg_hk}}; the scholarship, for life, {{fin_plan_gift_hk}}; about {{fin_room_free_hk}} is
+    still free. A second cause for life would use all of it; paid from yearly cash flow instead, it would break the
+    limit. Adrian gets his limit; Carmen spends the room. So what could push them below 95?
+    [Notes: DRAFT, 14 Nov (Pete: the room in HK$, not futures in 100; icons; the white space). The budget: the most
+    giving funded now (gift_now, within both parents' 35% caps) before either limit breaks (95 normally, 85 in the
+    2030–31 downturn; most_gift in final_model.py): {{fin_room_gift_plain}} with plain funds (fin_room_gift_plain);
+    {{fin_room_gift}} with Carmen's ESG funds, so they use {{fin_room_esg_hk}} (fin_room_esg_hk); the scholarship for
+    life is its fund, {{fin_plan_gift_hk}} (§5.3); what's free is the room less the fund (fin_room_free_hk, ESTIMATED:
+    giving isn't exactly additive). Both causes for life funded now: {{fin_room_both39_hk}}, odds
+    {{fin_room_both39_odds}}, at the limit within sampling error; pledged from cash flow: {{fin_room_pledge2_odds}}
+    ({{fin_room_pledge2_sodds}} in the downturn). The normal limit binds (plain choices last in {{fin_room_plain_s}} of
+    futures in the downturn, above 85). Why HK$ and not futures in 100: near 97 the odds barely move, so the room in
+    points (≈{{fin_room_pts}}, about {{fin_plan_room_use}} used) is blunt; the limit stays a probability, the
+    goals-based planners' floor (Das, Markowitz, Scheid and Statman 2010). Disagreement: research/area1_6_framework.md
+    §3c (shared money follows the more prudent: ESMA35-43-3172 ¶65–70; the plain twin stays until the next annual
+    meeting). Profiles: §3a, our client definition, not quotes. The limits (95, 85): ours, ILLUSTRATIVE.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
     <p class="src">Our client profile · limits ours (ILLUSTRATIVE) · the budget: our model (MEASURED) · disagreement: ESMA35-43-3172 ¶65–70</p><span class="pg">3</span>
@@ -792,8 +772,8 @@
       </div>
       <div class="o9-sec">
         <p class="o9-h"><i>3</i>Pays for values only from the room above its limits</p>
-        <p class="o9-row"><span>What their values cost the children</span><b>{{fin_val_total_hk}}</b><em>median</em></p>
-        <p class="o9-row"><span>The money lasts, with their values</span><b>{{fin_val_pt}} in 100</b><em>limit 95</em></p>
+        <p class="o9-row"><span>The values budget, in giving funded today</span><b>{{fin_room_gift_plain}}</b><em></em></p>
+        <p class="o9-row"><span>Still free after Carmen's choices</span><b>≈{{fin_room_free_hk}}</b><em></em></p>
         <p class="o9-trig"><b>Trigger:</b> a price passes the room → both parents re-sign</p>
       </div>
       <p class="o9-end"><b>Assumes Adrian works to 65.</b> Claims checked outside; any restatement shows the old figure · odds MEASURED · tonnes ESTIMATED</p>
@@ -824,7 +804,7 @@
   <aside class="notes">WIN: That's why the plan gets its own label, read every year: one line per test. Does it hold its
     limits? In {{fin_plan_odds100}} futures out of 100, and {{fin_plan_sodds100}} in a downturn: above both. What does it
     change? About 134 tonnes a year in the business, measured from 2027; for the shares, a footprint, nothing claimed.
-    Does it stay inside the room? Their values cost the children {{fin_val_total_hk}}, inside the limit. Every line has a trigger. And each year we read it against a plain twin fixed at signing: what the plan changed, what the market did, what we can't measure yet. A missing price becomes a decision: buy it, use a range, or set a trigger. So, what makes a plan sustainable? Pete.
+    Does it stay inside the room? Of a {{fin_room_gift_plain}} budget, about {{fin_room_free_hk}} is still free. Every line has a trigger. And each year we read it against a plain twin fixed at signing: what the plan changed, what the market did, what we can't measure yet. A missing price becomes a decision: buy it, use a range, or set a trigger. So, what makes a plan sustainable? Pete.
     [Notes: DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov):
     fin_plan_odds ({{fin_plan_odds}}) and fin_plan_sodds ({{fin_plan_sodds}}): the vans, candidate A's fees and the
     scholarship for life funded now (Pete 14 Nov, §5.3 option 1), the reverse-mortgage route; the label approach at

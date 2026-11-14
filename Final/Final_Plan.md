@@ -256,6 +256,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   they break it). The same two prices now on slides 8 and 10 and backups 18 and 19 (they were −HK$0.57M and
   −HK$1.25M, measured at Round One's fees), so one decision has one price across the deck. Unused room isn't
   lost: it stays as safety and inheritance. Slide 9's card shows the price and the odds with their values.
+  **Reverted the same evening (Pete):** the price version relabelled the same content and didn't answer the root
+  question, whether to talk about giving at all. We must: the topic and Key Areas both ask for "a philanthropic or
+  legacy allocation that is funded rather than aspirational", and the giving is Carmen's wish, not our advice. The
+  framework's part is to size it (the most they can give and keep their limit, HK$1.7M) and fund it (pledged from
+  cash flow, it breaks the limit, 91.6%); the giving version shows that directly. Slide 3 and slide 9's card are
+  back to it. Kept: the one price per decision on slides 8 and 10 and backups 18, 19 (`fin_val_esg_n`,
+  `fin_val_gift_n`). If asked why slide 3 says HK$0.74M and slide 10 −HK$1.32M for the scholarship: the first is the
+  gift, the second its cost to what the children inherit by Carmen's 89.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
