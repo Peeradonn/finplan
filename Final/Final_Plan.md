@@ -447,6 +447,33 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   adding them.
 - **Slide 3's portraits aligned:** each portrait cropped from its measured crown, chin and face centre so every head
   is the same size at the same height (`img/portrait-*.jpg`; square `*-face.jpg` for slide 4's round faces).
+- **Titles carry our rules, not the brief's bullets; slide 1 names the advice** (Pete, 15 Nov, after Claude checked the
+  deck against the three Final PDFs rather than against Logan's and OASIS's decks). Why: innovation and independent
+  thinking are 40 of the 100 marks, and a title that repeats the brief's own words reads to its author as coverage
+  (knowledge), not as a rule of ours. Three titles did; the rule that was ours sat in the body. Changed:
+  - **3:** "Profile each decision-maker alone; write who decides into the policy" (the brief, area 1: "other
+    decision-makers … how disagreement … is resolved") → **"Own money, own limits; shared money follows the more
+    prudent"**: the rule slides 4 and 11 use again (each parent's limit sizes their own share). Rejected: "Profile each
+    person alone; until they agree, the plain choice stays" (sharper, but can read as anti-green to the topic's author).
+  - **7:** "Rank every cut by its cost per tonne, cheapest first" (the brief, area 2: "rank abatement projects on a
+    marginal abatement cost curve") → **"Rank cuts across the whole footprint, not just what a loan can buy"**: pushes
+    back on the brief's "from abatement projects to bankable structures"; the conclusion bar ("The only loan buys the
+    smallest cut") is now its proof, not a second point. Rejected: "… only the room pays for cuts that cost" (a
+    second message beside the bar's).
+  - **10:** "Check each product against a rule, not its label" (the brief, area 3: "the difference between a label and a
+    financed outcome"; the topic's own title) → **"Pass a product only if its rule binds and it fits its owner's
+    limit"**: the owner's limit is ours and hands off to slide 11.
+  - **1:** "It changed six decisions:" → **"We ran the test on one Hong Kong family, the Wongs: electric vans on a plain
+    loan, a scholarship funded for life, three green products refused."** Key Areas §7 opens "Lead with a
+    recommendation"; the capital and outcomes were on screen, the recommendation wasn't. One of each kind of action
+    (do it, pay knowingly, refuse), in the caption's small type, so the claim stays the biggest idea. No count on
+    screen: the script says six, this plan's summary seven, and slide 13 lists seven entries. **Open (Pete):** the
+    count in the spoken line.
+  - **Considered and withdrawn** (Claude, same day; don't reopen without new evidence): backup 18's storm chart in slide
+    5's body (it shows a loss, not a rule changing the advice, and would push out slide 5's 47% point); backup 15's
+    bridge on slide 13 (two comparisons on one slide: the vans at +HK$0.51M against diesel in the corners and +HK$0.54M
+    against the reasonable planner's plan in the bridge). The bridge stays the answer to "how much is just good
+    planning?". Kickers as questions: kept as an idea for the script, in the framework's words, never the Wongs'.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
