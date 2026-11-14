@@ -576,3 +576,14 @@ its own against the recommended plan in a normal future, as M7's channels (`fin_
   `fin_pstorm_bonus_leg` −HK$0.54M (Adrian's bonus lost in 2030–31, against the plan in the scenario, as
   `fin_bonus_leg`); `fin_pstorm_homebiz` 47% (the flat's and the business's share of the three).
 - Checked: `numbers.json` before and after differ only by these 6 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, later still): slide 3's room in HK$ (`Final/final_model.py` `export_final()`)
+
+Pete chose to show the room above the limit as money, not futures in 100 (`Final/Final_Plan.md` §4.5). Keys added, in
+giving funded today (`gift_now`, within both parents' 35% caps) before either limit breaks (`most_gift`):
+- `fin_room_gift_plain` HK$1.7M (`_x` 1.74): the room with plain funds, the whole values budget;
+- `fin_room_esg_hk` HK$0.28M (`_x` 0.279): what Carmen's ESG funds use (the plain-fund room less `fin_room_gift`);
+- `fin_room_life_x` 0.742: the scholarship fund for life (as `fin_plan_gift_hk`);
+- `fin_room_free_hk` HK$0.72M (`_x` 0.723): the room with ESG funds less that fund (ESTIMATED: giving isn't exactly
+  additive; both causes for life, `fin_room_both39_hk` HK$1.48M, sit at the limit, which agrees).
+- Checked: `numbers.json` before and after differ only by these 7 additions; `figure-data.md` and every PNG unchanged.

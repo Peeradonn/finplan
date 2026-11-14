@@ -448,6 +448,14 @@ def export_final():
     tilt = dict(r_eq=r_eq_for(FEE_SAVED))
     gift = most_gift(base, tilt, sc, mult)
     out["fin_room_gift"], out["fin_room_gift_x"] = f"HK${gift / 1e6:.1f}M", f"{gift / 1e6:.2f}"
+    # slide 3 in HK$ (Pete 14 Nov: the room as money, not futures in 100): the room with plain funds is the whole values
+    # budget, in giving funded today; Carmen's ESG funds use the difference; the scholarship for life uses its fund; the
+    # rest is free (ESTIMATED: the room less the fund, so the three parts sum to the budget exactly).
+    gift_p, life_f = most_gift(base, plain, sc, mult), fund_size(END - 2027)
+    out["fin_room_gift_plain"], out["fin_room_gift_plain_x"] = f"HK${gift_p / 1e6:.1f}M", f"{gift_p / 1e6:.2f}"
+    out["fin_room_esg_hk"], out["fin_room_esg_x"] = f"HK${(gift_p - gift) / 1e6:.2f}M", f"{(gift_p - gift) / 1e6:.3f}"
+    out["fin_room_life_x"] = f"{life_f / 1e6:.3f}"
+    out["fin_room_free_hk"], out["fin_room_free_x"] = f"HK${(gift - life_f) / 1e6:.2f}M", f"{(gift - life_f) / 1e6:.3f}"
     both39 = gift_now(2 * fund_size(END - 2027))
     out["fin_room_both39_hk"] = f"HK${2 * fund_size(END - 2027) / 1e6:.2f}M"
     out["fin_room_both39_odds"] = f"{run(base, **dict(tilt, inflows=both39))['odds']:.1%}"

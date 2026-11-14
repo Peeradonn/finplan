@@ -911,6 +911,18 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   numbers came from three different tests (older flats 10% behind, a customer leaving, the scenario). The customer
   route moved to the steps line (cut by carbon data, slide 7). Cut or carried: only the flat's worse route is cut (the
   yearly check); the rest is carried within the limit, and the slide says so.
+- **Slide 3 in HK$** (Pete: would a world-class planner demonstrate the limit as the chance the money lasts?). The
+  limit stays a probability (how sure the money must be: the goals-based planners' floor, and one rule that also
+  holds in a downturn), but the picture is the room as money: a values budget of `fin_room_gift_plain` (HK$1.7M) of
+  giving in today's money, the most they could give now before the limit breaks; Carmen's ESG funds use
+  `fin_room_esg_hk`, the scholarship for life `fin_plan_gift_hk`, ≈`fin_room_free_hk` is free; both causes for life
+  use all of it; paid from yearly cash flow, they break the limit. Why: a family can't feel "3 futures in 100", near
+  97 the odds barely move (so "about 1 used" hid most of the information), and the deck leads every price with HK$.
+  Left: an icon per step, and the disagreement rules (`research/area1_6_framework.md` §3c) in the white space, so
+  the brief's "how disagreement between decision-makers is resolved" is on screen. Slide 9's card and Win's words
+  follow (the budget and what's free); Win's spoken odds now match the card (97 and 90, `fin_plan_*`; they said
+  `fin_new`'s 91). Watch: slide 10 prices the scholarship at −HK$1.25M for the children, slide 3 at HK$0.74M of
+  giving today: the same decision in two units (the fund against its effect on the inheritance); say so if asked.
 - **One name for the scenario:** "a disorderly downturn: a sudden carbon policy, 2030–31", defined on slide 4; "the
   downturn" everywhere else ("85 in a crisis" on slides 3 and 5 renamed).
 - **Slide 2's output** (Pete: "for the price tag, I don't quite get what we're communicating"): its empty bars didn't
