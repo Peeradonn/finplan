@@ -923,6 +923,10 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   about 25 spoken words, it couldn't be learned, and nothing on slides 3–9 used it before slide 10, which teaches the
   corners in full with the Wongs' decisions in them. Slide 2 now ends on the five steps; the step names went from
   19 to 21px; spoken words back to 1,319. Would change back only if each Select slide named its decision's corner.
+  Then rebalanced (Pete: the bottom was empty): the whole stage moved down 50px, so the steps sit in the middle
+  and the floor is a strip; the step names went to 22px. The shift is baked into `img/prism-stage-low.png` (the
+  art moved down, its top band filled with its own top row) so the slide stays one full-bleed image in PowerPoint.
+  Filling the space with content (a key to the chips) was not done: it would be a second message again.
 - **The comparison** is now the reasonable planner's plan (§2), on slides 1 and 10 and backup 12; the corners'
   comparison is "the plain alternative" (slide 6, backup 19). Spoken words 1,320 (≈10:06 at 135 a minute with names):
   the cut is deferred to after submission (Pete: the script can change until the 21st; the slides can't).
