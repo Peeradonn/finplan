@@ -290,6 +290,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   100 against 85) and then the inheritance (HK$8.7M, −HK$4.70M); slide 9's row is "Room above the limit". If a
   judge asks why the limit protects the parents' spending and not the inheritance: goals-based, retirement is the
   essential goal and the legacy what's left, the trade priced in HK$ on every slide.
+- **Slide 4 cut to one point** (Pete: "too packed ... it's still illustrative ... from 'what it costs the children'
+  down I don't understand"). It was making about six points, with three measures (inheritance by 2066, odds, a
+  share) in one area, and two-decimal HK$ on an illustrative shock. The point: a label checks only the savings; a
+  climate check finds the home and business too, and the plan holds. Kept: the step row, the own → loss picture,
+  one bracket (47% where no fund label looks), one result line (90 in 100, above the downturn limit of 85), one
+  footnote. To the notes: each loss's cause, ordinary vs climate-only, where the plan acts (slides 5, 7), the 22
+  routes and CBAM, the inheritance in the downturn. Chosen over a no-HK$ version (the household strip with each
+  asset's shock in plain %), which would have lost the 47% and the losses to scale.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
