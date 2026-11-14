@@ -335,6 +335,11 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   total "All four pay or cost nothing: none needs the values budget". Colours: the rank circles and the list
   heading were indigo beside teal data, two strong cool hues competing; they are navy now, so teal is the
   tonnes, indigo only the header and the framework's steps, crimson the loan and the refusals.
+- **The innovation named** (Pete: "where exactly is the innovation part of our framework?"): slide 2 lists the
+  three ideas as ours (its "a green label answers one question" paragraph cut, the chip says it); slide 6's bar
+  carries the business-to-family link (the vans add HK$0.51M for the children through the sale); slide 10's kicker
+  and bar close on one measure ("On one measure, the label never decides: the limit, the change and the room
+  do"). Pete's slide 2 words add one sentence naming the three.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
@@ -963,6 +968,18 @@ are the planning process with the brief's six areas inside. A practitioner will 
   nothing (recycled plastic at parity, the climate index fund at the plain fund's fee), the climate routes to the flat
   and the business with their dates, and the rule on what may be claimed. Say this when asked; don't let the headline
   against the label approach stand in for it.
+- **Kept: PRISM as the route, the three ideas as the framework** (Pete, 14 Nov, evening: "if PRISM is the basic
+  planning process, should we change it? are there better frameworks?"). A framework that follows the planning
+  process is what makes it adoptable and decision-ready; the innovation is the rules inside the steps. The known
+  alternatives each do a narrower job (TCFD and ISSB S2: company disclosure; double materiality: company reporting;
+  the Impact Management Project's five dimensions: impact only; goals-based wealth management: planning only):
+  cite them as foundations, don't adopt one. Renaming two days before the deadline would touch slide 2's art,
+  every chip and badge and four scripts. Slide 2 now says it: "The steps are any planner's. What's ours: one test
+  for the whole plan · values only from the room above the limit · one measure for every decision."
+- **A small money effect is by design, not a shortfall** (same evening). The brief asks for "the evidence that it
+  need not give up much"; the framework's money value is mostly protection (the flat's route ruled out past a ≈7%
+  gap, the customer route guarded, the empty fund stopped), which a median gain hides. Say what it protects as well
+  as what it adds; never inflate the headline.
 - **The defence when asked "isn't this goals-based planning?":** yes, built on it. Goals-based wealth management funds
   "aspirational" goals from the surplus above essential ones (Chhabra 2005; Das, Markowitz, Scheid and Statman 2010;
   §9). What's new is applying it to values and to the business's transition. Cite it; don't hide it.

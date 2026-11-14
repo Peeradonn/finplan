@@ -2,9 +2,9 @@
 
 Generated 2026-11-14 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-1377 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:29 at 145 words a minute (9:49 with names and handovers); 10:12 at 135 words a minute (10:32 with names and handovers); 11:00 at 125 words a minute (11:20 with names and handovers). Over 10:30 disqualifies the team.
+1409 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:43 at 145 words a minute (10:03 with names and handovers); 10:26 at 135 words a minute (10:46 with names and handovers); 11:16 at 125 words a minute (11:36 with names and handovers). Over 10:30 disqualifies the team.
 
-Speaking time at 135 words a minute: Pete 4:10, Win 2:08, Lookbua 1:57, Fahtai 1:56.
+Speaking time at 135 words a minute: Pete 4:24, Win 2:08, Lookbua 1:57, Fahtai 1:56.
 
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · 1:30 · 176 spoken words (≈78 s at 135)*
@@ -14,9 +14,9 @@ Speaking time at 135 words a minute: Pete 4:10, Win 2:08, Lookbua 1:57, Fahtai 1
 > Notes: DRAFT, 14 Nov (Pete: the general question first, the Wongs only as the worked example's outcome; the family's own 20–25% ask is paid off on slide 8). The comparison is the reasonable planner's plan (Final_Plan.md §2): a careful plan without the test, the family's ESG wish met with labelled funds as cheap as ours and the giving kept as their lifelong pledge; never say how other advisers usually work. Headline: fin_fair_gain (Pete, 14 Nov, option (a); M9b's fairest row). Its parts, if asked: the vans +HK$0.54M (only a test of the business finds them), funding the gift instead of pledging it +HK$0.39M (ordinary good planning: a tax-aware planner might do it too), fees +HK$0.12M; +HK$1.03M in the 2030–31 downturn. 134 t: Decision_List.md (vans 19.3 + LED 4.1 + air-con 2.8 + recycled PET 108.1), ESTIMATED on an ILLUSTRATIVE business. Capital: Decision_List.md §2 (the family's is the scholarship fund for life, fin_plan_gift_hk; the business's HK$1.91M of equipment, ESTIMATED). The six decisions are the close's (slide 10). Moved off the open: nearly half the shock's loss on the home and business (slide 4, fin_pstorm_homebiz) and the giving the room buys (slide 3, fin_room_gift).
 
 ## 2 · PRISM
-*Pete · 0:45 · 92 spoken words (≈41 s at 135)*
+*Pete · 0:45 · 124 spoken words (≈55 s at 135) · over its time*
 
-**Pete:** With PRISM: five steps that run the three tests. Profile sets the limit and the room before we look at any product. Risk takes everything the family owns and earns through one climate shock: the limit. Impact counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure, green or not: what it does for the children in Hong Kong dollars, and for the world in tonnes. Monitor gives the plan its own label, read every year. So first: how sure must their money be?
+**Pete:** With PRISM: five steps that run the three tests. Profile sets the limit and the room before we look at any product. Risk takes everything the family owns and earns through one climate shock: the limit. Impact counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure, green or not: what it does for the children in Hong Kong dollars, and for the world in tonnes. Monitor gives the plan its own label, read every year. The steps are any planner's; what's ours is three rules inside them: one test for the whole plan, values only from the room above the limit, and one measure for every decision. So first: how sure must their money be?
 
 > Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's colours. No click: the price tag left slide 2 (Pete 14 Nov): one message per slide; slide 10 teaches the four corners with the Wongs' decisions in them.
 
@@ -70,7 +70,7 @@ Speaking time at 135 words a minute: Pete 4:10, Win 2:08, Lookbua 1:57, Fahtai 1
 > Notes: DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov): fin_plan_odds (97.0%) and fin_plan_sodds (90.0%): the vans, candidate A's fees and the scholarship for life funded now (Pete 14 Nov, §5.3 option 1), the reverse-mortgage route; the label approach at the same fee and giving: 95 and 86. Room used: fin_plan_room_use, from plain choices (M9c). Attribution: the pre-registered twin (research/area1_6_framework.md §6b). Biases (the brief's five): ambiguity aversion, the same range for every option; loss aversion, one review a year; present bias, the gift funded now; social desirability and mental accounting, each parent profiled alone and one household balance sheet (slide 4) (area1_6 §5). Controls: research/new_Risk_Regulation_Greenwashing.md §8 (baseline, third-party verification, conservative claims, restatement). 134 t: Decision_List.md, ESTIMATED. 30% less carbon: BlackRock/MSCI, Oct 2026 (SOURCED), a footprint. Missing prices: B3 (buy), slide 8's notes (range), B4 (trigger). Restatement and the brief's biases: area6_measurement_update.md §2. Every odds figure assumes Adrian works to 65 (M10b, backup).
 
 ## 10 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits
-*What the test changed · every decision, once · Pete · 0:50 · 111 spoken words (≈49 s at 135)*
+*One measure for every decision · what the test changed · Pete · 0:50 · 111 spoken words (≈49 s at 135)*
 
 **Pete:** So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. For the Wongs, the limit decided the flat; the vans and recycled plastic pay and cut real tonnes; carbon data protects their money, but isn't called green; the scholarship is paid knowingly, from the room; and where a label had nothing behind it, we said no. Against the plan a reasonable planner would give without the test, the children get +HK$1.05M, and the business cuts about 134 tonnes a year. The label never decides. Thank you.
 
