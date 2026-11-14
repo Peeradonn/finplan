@@ -314,6 +314,11 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   anyone downsize. Step 1 now: keep the flat with a reverse mortgage, or downsize in 2037 to a HK$7M newer flat (the
   model's input, today's money), and the children inherit HK$4.17M more; the bar: "The limit picks the route, not
   the money: downsizing pays more, but only within a ≈7% gap" (it said "not the median").
+  And tied to the gap (Pete: "it says downsizing drops below the limit, so how can it be this way?"): the 97 and
+  the HK$4.17M hold only with no gap, at the chart's left edge; as older flats fall behind, the old flat sells for
+  less against the newer one, downsizing frees less, and past ≈7% it breaks the limit. Step 1 now opens "With no
+  gap", step 2 "As the gap grows" with the reason; the chart marks both routes at no gap, the 0% tick reads "no
+  gap", and the axis is named "the gap".
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
