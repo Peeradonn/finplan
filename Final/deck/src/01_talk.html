@@ -379,30 +379,43 @@
 </style>
 
 <style>
-/* Slide 7, Fahtai: equal method/example columns, with aligned investigation steps. */
-#v6 .b7h-body{display:block;margin-top:20px}
-.b7h-caps,.b7h-row{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
-.b7h-caps{font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--brand);padding-bottom:10px;border-bottom:2px solid var(--ink)}
-.b7h-caps p:last-child{color:var(--slate)}
-.b7h-row{padding:15px 0;border-bottom:1px solid var(--rule)}
-.b7h-row > div{min-width:0;position:relative}
-.b7h-row > div:last-child{border-left:1px solid var(--rule);padding-left:24px}
-.b7h-step{display:flex;gap:12px;align-items:center;margin-bottom:8px;font:800 21px/1.15 var(--text)}
-.b7h-step span{display:inline-flex;justify-content:center;align-items:center;width:26px;height:26px;flex:none;border-radius:50%;background:var(--brand);color:#fff;font:800 14px/1 var(--text)}
-.b7h-copy{font:500 17px/1.4 var(--text);color:var(--ink)}
-.b7h-detail{font:500 14px/1.4 var(--text);color:var(--slate);margin-top:6px}
-.b7h-copy b,.b7h-detail b{font-weight:800}
-.b7h-example{font:700 21px/1.25 var(--text);color:var(--ink)}
-.b7h-example b{color:var(--teal,#0E7490);font-weight:800}
-.b7h-options{font:700 19px/1.3 var(--text);color:var(--brand);margin-top:10px}
-.b7h-metrics{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.b7h-metric{font:800 18px/1.2 var(--text);color:var(--teal,#0E7490)}
-.b7h-metric span{display:block;font:500 15px/1.35 var(--text);color:var(--ink);margin-top:6px}
-.b7h-result{font:800 32px/1.1 var(--num);color:var(--teal,#0E7490)}
-.b7h-price{font:800 23px/1.25 var(--text);color:var(--slate)}
-.b7h-outcome{display:flex;align-items:center;gap:12px;padding-top:12px}
-.b7h-outcome b{font:800 16px/1.1 var(--text);color:var(--brand);border:1.5px solid var(--brand);padding:6px 8px;white-space:nowrap}
-.b7h-outcome p{font:500 15px/1.3 var(--text);color:var(--ink)}
+/* Slide 7: one-third method; two-thirds photo-led investigation and findings. */
+#v6 .b7k-body{display:grid;grid-template-columns:340px 1fr;gap:28px;margin-top:18px}
+.b7k-method{border-right:1px solid var(--rule);padding-right:24px}
+.b7k-cap{font:800 13px/1.2 var(--text);letter-spacing:.8px;color:var(--slate);text-transform:uppercase;margin-bottom:16px}
+.b7k-step{margin-bottom:21px}
+.b7k-step h3{display:flex;align-items:center;gap:10px;font:800 22px/1.2 var(--text);margin-bottom:12px}
+.b7k-step h3 span{display:inline-flex;justify-content:center;align-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font:800 14px/1 var(--text)}
+.b7k-key{display:flex;align-items:center;justify-content:space-between;font:600 17px/1.3 var(--text);padding:4px 0}
+.b7k-scope{font:800 12px/1 var(--text);padding:5px 7px;border-radius:3px;white-space:nowrap}
+.b7k-s1{color:#475569;background:#E7EBF0}.b7k-s2{color:#4A3FBF;background:#EFEDFB}.b7k-s3{color:#0E7490;background:#E7F3F5}
+.b7k-guides{font:500 16px/1.5 var(--text);color:var(--slate)}
+.b7k-choice{font:700 18px/1.3 var(--text);color:var(--brand);margin-bottom:7px}
+.b7k-measure{font:700 18px/1.35 var(--text);color:var(--out);padding:4px 0}
+.b7k-case{min-width:0}
+.b7k-casehead{display:grid;grid-template-columns:170px 1fr;gap:18px}
+.b7k-findings{display:grid;grid-template-columns:170px 1fr;gap:18px;margin-bottom:8px}
+.b7k-photo{position:relative;border-radius:5px;overflow:hidden;background:#0F1E3D;min-height:100px}
+.b7k-photo img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}
+.b7k-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,20,38,.94),rgba(11,20,38,.12))}
+.b7k-photo div{position:absolute;bottom:11px;left:12px;right:10px;z-index:1}
+.b7k-photo b{display:block;color:white;font:800 19px/1.15 var(--text)}
+.b7k-photo p{color:#E0E6EF;font:500 13px/1.35 var(--text);margin-top:4px}
+.b7k-table{border-collapse:collapse;width:100%;table-layout:fixed}
+.b7k-table th{text-align:left;font:700 12px/1.25 var(--text);color:var(--slate);padding:0 3px 7px;border-bottom:1.5px solid var(--ink)}
+.b7k-table th:nth-child(1){width:28%}.b7k-table th:nth-child(2){width:23%}.b7k-table th:nth-child(3){width:16%}.b7k-table th:nth-child(4){width:33%}
+.b7k-table td{font:700 16px/1.2 var(--text);vertical-align:top;padding:6px 3px;border-bottom:1px solid var(--rule)}
+.b7k-table td:nth-child(3){color:var(--out);font:800 24px/1 var(--num)}
+.b7k-table td small{display:block;font:500 12px/1.3 var(--text);color:var(--slate);margin-top:4px}
+.b7k-table .b7k-test td{color:var(--slate)}
+.b7k-table .b7k-test td:nth-child(3){font-size:21px}
+.b7k-table .b7k-em td{background:#EDF6F7}
+.b7k-refusal{border-top:1.5px solid var(--ink);padding:12px 3px}
+.b7k-refusal b{display:block;font:800 18px/1.2 var(--text);color:var(--brand);margin-bottom:8px}
+.b7k-refusal p{font:600 16px/1.4 var(--text);color:var(--ink)}
+.b7k-summary{border-top:2px solid var(--ink);padding-top:10px;font:500 15px/1.4 var(--text);color:var(--slate)}
+.b7k-summary strong{font:800 22px/1.2 var(--num);color:var(--out);margin-right:8px}
+.b7k-summary b{font-weight:800;color:var(--ink)}
 </style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
@@ -745,59 +758,65 @@
 
 <section class="slide sec-S" id="v6" data-time="0:45" data-speaker="Fahtai">
   <header class="head">
-    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">The change: investigate, compare, then choose</span></p>
-    <h2>Find the footprint, test alternatives, compare the change</h2>
+    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">From what climate does to the plan, to what the business changes</span></p>
+    <h2>From climate risk to the changes a business can make</h2>
   </header>
-  <div class="body b7h-body">
-    <div class="b7h-caps"><p>The method · for any business</p><p>Worked example · Carmen's packaging business</p></div>
-    <div class="b7h-row">
-      <div>
-        <p class="b7h-step"><span>1</span>What should we investigate?</p>
-        <p class="b7h-copy">Scan fuel, bought energy and the value chain.</p>
-        <p class="b7h-detail">Scopes 1 / 2 / 3: a completeness check.<br>Prioritise emissions size, ability to influence, and obligations.</p>
+  <div class="body b7k-body">
+    <div class="b7k-method">
+      <p class="b7k-cap">The method · any business</p>
+      <div class="b7k-step">
+        <h3><span>1</span>Investigate</h3>
+        <p class="b7k-key">Materials &amp; suppliers <span class="b7k-scope b7k-s3">Scope 3</span></p>
+        <p class="b7k-key">Fuel <span class="b7k-scope b7k-s1">Scope 1</span></p>
+        <p class="b7k-key">Electricity <span class="b7k-scope b7k-s2">Scope 2</span></p>
+        <p class="b7k-key">Disposal &amp; claims <span class="b7k-scope b7k-s3">Scope 3</span></p>
       </div>
-      <div>
-        <p class="b7h-example">Look beyond the vans: <b>what she buys.</b></p>
-        <p class="b7h-copy" style="margin-top:7px">Purchased packaging is a major emissions source.</p>
-        <p class="b7h-detail">Ask for purchase weights and supplier footprints.</p>
+      <div class="b7k-step">
+        <h3><span>2</span>Find alternatives</h3>
+        <p class="b7k-guides">Guides: reduce · reuse · substitute<br>· improve efficiency</p>
       </div>
-    </div>
-    <div class="b7h-row">
-      <div>
-        <p class="b7h-step"><span>2</span>What could change?</p>
-        <p class="b7h-options">Reduce · Reuse · Substitute · Improve efficiency</p>
-        <p class="b7h-detail">Find supplier options; preserve function and legal compliance.</p>
-      </div>
-      <div>
-        <p class="b7h-example">Test <b>recycled PET</b> against virgin PET.</p>
-        <p class="b7h-copy" style="margin-top:7px">Same packaging function; lower-impact input?</p>
-        <p class="b7h-detail">Check recycled content and food-contact suitability.</p>
+      <div class="b7k-step" style="margin-bottom:0">
+        <h3><span>3</span>Measure</h3>
+        <p class="b7k-measure">Initial capital · HK$</p>
+        <p class="b7k-measure">CO₂e avoided · t / year</p>
+        <p class="b7k-measure">Net cost · HK$ / t CO₂e</p>
       </div>
     </div>
-    <div class="b7h-row" style="border-bottom:none;padding-bottom:0">
-      <div>
-        <p class="b7h-step"><span>3</span>Is the change worth pursuing?</p>
-        <div class="b7h-metrics">
-          <p class="b7h-metric">t CO₂e avoided<span>Baseline emissions<br>minus option emissions</span></p>
-          <p class="b7h-metric">HK$ / t CO₂e avoided<span>Net extra lifetime cost ÷<br>lifetime tonnes avoided</span></p>
-        </div>
-        <p class="b7h-detail">Use comparable boundaries. Negative cost = a saving.<br><b>Missing evidence → test first. Feasible → check funding.</b></p>
+    <div class="b7k-case">
+      <div class="b7k-casehead"><p class="b7k-cap">Investigate</p><p class="b7k-cap">Carmen's findings · candidates, not delivered cuts</p></div>
+      <div class="b7k-findings">
+        <div class="b7k-photo"><img src="inline:img/photo-pet-box.jpg" alt="PET packaging"><div><b>What she buys</b><p>1,610–2,100 t / year</p></div></div>
+        <table class="b7k-table">
+          <thead><tr><th>Alternative</th><th>Capital · HK$</th><th>t / year</th><th>HK$ / t CO₂e</th></tr></thead>
+          <tbody>
+            <tr class="b7k-em"><td>Recycled PET</td><td>≈0.27M<small>working capital</small></td><td>108</td><td>Quote needed<small>Supplier / spec check</small></td></tr>
+            <tr class="b7k-test"><td>Lighter board</td><td>0</td><td>42<small>not counted</small></td><td>−5,800<small>Test protection first</small></td></tr>
+          </tbody>
+        </table>
       </div>
-      <div>
-        <div class="b7h-metrics">
-          <div><p class="b7h-result">≈108 t / year</p><p class="b7h-detail">Potential cut · ESTIMATED</p></div>
-          <div><p class="b7h-price">Cost still unverified</p><p class="b7h-detail">Resin parity ≠ packaging quote</p></div>
-        </div>
-        <div class="b7h-outcome"><b>VERIFY FIRST</b><p>Get a supplier quote and specification;<br>then check ≈HK$0.27M working capital.</p></div>
+      <div class="b7k-findings">
+        <div class="b7k-photo"><img src="inline:img/photo-van.jpg" alt="Hong Kong delivery van"><div><b>Vans &amp; power</b><p>48 t / year</p></div></div>
+        <table class="b7k-table">
+          <thead><tr><th>Alternative</th><th>Capital · HK$</th><th>t / year</th><th>HK$ / t CO₂e</th></tr></thead>
+          <tbody>
+            <tr><td>Electric vans</td><td>≈1.78M<small>capex</small></td><td>19</td><td>−12,800<small>Charging / cash check</small></td></tr>
+            <tr><td>LED + air-con</td><td>≈124K<small>capex</small></td><td>7</td><td>−1,200 to −2,000</td></tr>
+          </tbody>
+        </table>
       </div>
+      <div class="b7k-findings" style="margin-bottom:10px">
+        <div class="b7k-photo" style="min-height:70px"><img src="inline:img/photo-landfill.jpg" alt="Hong Kong landfill"><div><b>After use</b><p>≈1,070 t / year</p></div></div>
+        <div class="b7k-refusal"><b>Verify disposal routes</b><p>Withhold unsupported “compostable” claims.<br>No tonnes counted for changing a claim.</p></div>
+      </div>
+      <p class="b7k-summary"><strong>≈134 t / year potential</strong> if verified and delivered<br><b>≈HK$1.91M</b> equipment + <b>≈HK$0.27M</b> working capital</p>
     </div>
   </div>
-  <p class="sowhat">Scan broadly, investigate what matters, and verify the change before committing money.</p>
-  <aside class="notes">FAHTAI: I'm Fahtai. Scan the whole business: fuel, bought energy and the value chain. The three scopes help us avoid missing a source; they do not need equal investigation. Focus on emissions, influence and obligations. Then look for ways to reduce, reuse, substitute or improve efficiency. Carmen's packaging points us to recycled PET. Compare the tonnes avoided and the full extra cost per tonne, while preserving its function. Our estimate is 108 tonnes a year, but the finished-packaging price is unverified. So verify the quote and specification first, then check the working capital. How should eligible changes be funded?
-    [Notes: Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
+  <p class="sowhat">The largest candidate is a purchasing change. The vans need a loan. Next: how to fund each.</p>
+  <aside class="notes">FAHTAI: I'm Fahtai. We've tested what climate can do to the plan. Now, what can the business change? Investigate materials, fuel, electricity and disposal. Find alternatives, then compare initial capital, tonnes avoided and net cost per tonne. Carmen's biggest candidate is recycled PET: 108 tonnes, but its finished-product price needs checking. The vans cut 19 tonnes and save money, but require upfront capital, charging and affordable finance. Lighter board needs testing; changing a compostability claim earns no tonnes. Together, the counted candidates could cut about 134 tonnes a year. So how should each be funded?
+    [Notes: Keyword/photo revision: user requested one-third method and two-thirds worked example, compressed main's three photos and candidate cuts, and initial capital as a third metric. Capital includes capex or working capital (labelled), not all an expense. Vans ≈HK$1.78M; LED + air-con HK$124K = HK$64K + HK$60K from area2_business §3c, ILLUSTRATIVE; full B1 package remains ≈HK$1.91M, existing rounded estimate. Recycled PET working capital ≈HK$0.27M is separate from any purchase premium. No investment verdict is based on carbon or negative cost alone. Lower board cost/tonne and zero capex are ILLUSTRATIVE and excluded from ≈134 t pending product testing. Recycled PET full cost/tonne remains quote needed, not assumed free. Photos reused from Pete's main slide with existing licences. Cost/tonne signs: minus means a saving; annual carbon totals require verification. The method prioritises feasible change and trade-offs, not an automatic preference for greener products.  Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
-    <p class="src">ESTIMATED on an ILLUSTRATIVE business · Decision_List B4; DESNZ factors · method: GHG Protocol Scope 3 screening; EPD packaging guide (Sep 2025)</p><span class="pg">7</span>
+    <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1, B4; DESNZ / EPA factors · photos: Wikimedia CC BY-SA · details in notes</p><span class="pg">7</span>
   </footer>
 </section>
 
