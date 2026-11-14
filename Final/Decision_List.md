@@ -45,7 +45,7 @@ which put Carmen's ESG funds in two corners at once.
 | H2 | Green mortgage or green refinancing | Not considered → refuse | REFUSE | — | — | 6 |
 | H3 | Retrofitting the flat | Not considered → replace air-con with Grade 1 inverter when it fails; LED | DO (small) | Small, the family | As things fail | backup |
 | H4 | Buying the smaller flat | ≈HK$7M flat → prefer a newer building for its age and exit; don't pay a green-label premium | REFUSE (the premium) | — | At downsizing | backup |
-| G1 | The scholarship | "About HK$30K a year" (unfunded; not in the model) → a 20-year named fund at an s.88 charity, ≈HK$0.48M in 2027–28; perpetual only from sale proceeds above HK$3.0M | PAY | ≈HK$0.48M gross, ≈HK$0.40M after tax relief, the family | 2027–28 | 3, 10 |
+| G1 | The scholarship | "About HK$30K a year" (unfunded; not in the model) → the same awards for life, funded now: a named fund at an s.88 charity, ≈HK$0.74M in 2027–28 (Pete, 14 Nov; was a 20-year fund, ≈HK$0.48M); perpetual only from sale proceeds above HK$3.0M | PAY | ≈HK$0.74M gross, ≈HK$0.62M after tax relief, the family | 2027–28 | 3, 10 |
 
 **Counting what the framework changes against the label approach** (for slide 3): changed: P1, P3, P4, P6, H1, G1 (6); new: B1–B7,
 P2, H2–H4 (12, of which B7 restates the planned sale with new assets); unchanged: P5, and the thematic-fund part of P7.
@@ -65,10 +65,10 @@ was the label approach's too.
 | Emissions baseline and supplier footprints (B3) | ≈50,000 a year | The business | Cash flow | 2027 on | ILLUSTRATIVE |
 | One ESG rating (B3) | 3,900–23,236 a year (HKGOC free first) | The business | Cash flow | 2027 | ESTIMATED |
 | Early payment to the PET supplier for data (B4) | ≈269,000 of working capital | The business | Company cash (under a fifth of a year's retained profit) | 2027 | ILLUSTRATIVE |
-| Scholarship fund (G1) | 480,000 (≈398,000 after ≈HK$82K relief) | The family | Savings, 2 × HK$240K | 2027–28 | ESTIMATED |
+| Scholarship fund (G1), the awards for life | 742,000 (≈616,000 after ≈HK$126K relief) | The family | Savings, 2 × HK$371K | 2027–28 | ESTIMATED |
 | Portfolio changes (P1, P3) | ≈0 new money; avoids up to HK$74.5K of entry charges | The family | Reallocation | Months 1–3 | ESTIMATED |
 | Flat retrofit (H3) | Small (air-con when it fails) | The family | Cash flow | As needed | ESTIMATED |
-| **Total** | **Family ≈HK$0.48M; business ≈HK$1.91M plus ≈HK$0.27M working capital** | | | | |
+| **Total** | **Family ≈HK$0.74M; business ≈HK$1.91M plus ≈HK$0.27M working capital** | | | | |
 
 ---
 
@@ -184,6 +184,11 @@ established and point to the run.
 - H4: the one Hong Kong study's 4.4% premium is ≈HK$0.3M on HK$7M, for ≈HK$2K a year of energy savings.
 
 ### G1. The scholarship (`area1_6_framework.md` §7)
+- **Decided 14 Nov (Pete, with the headline; `Final_Plan.md` §5.1, §5.3):** fund the same awards the label approach
+  pledges, for life (39 years), now: ≈HK$742K at 2.5% real (M9a's formula, ESTIMATED), two halves of ≈HK$371K in
+  2027–28. Each half is under Adrian's ≈HK$420K cap (35% of income) and leaves him in the 17% band (net chargeable
+  ≈HK$755K before the gift; ESTIMATED). Like for like, funding beats pledging by +1.5 points, +HK$0.38M (M9a). The
+  20-year text below is the earlier version.
 - **Money:** the label approach's "about HK$30K a year" from cash flow, for life, costs ≈6.9 points (82.6% base) and was never in the
   model. A funded 20-year fund (2 × HK$240K in 2027–28) costs ≈2.6 points. The 17% relief is checked on each parent's own
   2027/28 salaries tax (9 Nov): after a HK$240K gift either parent is still in the 17% band, the gift is within the
@@ -221,7 +226,8 @@ futures: it can't show anything.)
 | P1–P5 tracking, if that lag repeated every year to 89 (a stress the budget review is there to stop) | −3.1 | −2.78 | −1.49 | — |
 | P1–P5 fees, the label approach's funds → the new ones (HK$9.6K a year saved; see caveat) | +0.7 | +1.13 | +0.63 | — |
 | G1 scholarship, label approach (lifelong pledge, from cash flow) | −2.8 | −1.63 | −1.25 | — |
-| G1 scholarship funded (20-year fund, ≈HK$0.48M in 2027–28) | −0.7 | −0.80 | −0.49 | PAY |
+| G1 scholarship funded (20-year fund, ≈HK$0.48M in 2027–28; superseded 14 Nov) | −0.7 | −0.80 | −0.49 | — |
+| G1 the same awards for life, funded now (39-year fund, ≈HK$0.74M in 2027–28; `fin_plan_gift_n`, M9a) | −1.3 | −1.25 | −0.75 | PAY |
 | H1 old flat 10% lower: reverse mortgage / downsize | −0.5 / −3.2 | −0.71 / +2.32 | −0.65 / +1.98 | FINANCE |
 | H1 old flat 20% lower: reverse mortgage / downsize | −1.0 / −6.9 | −1.42 / +0.56 | −1.30 / +0.76 | FINANCE |
 | Scenario, late and sudden (all channels; downsizing instead) | −7.3 (−14.1) | −4.60 (−1.93) | −3.41 (+0.76) | — |

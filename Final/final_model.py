@@ -465,6 +465,37 @@ def export_final():
     out["fin_new_odds"], out["fin_new_storm_odds"] = f"{nw['odds']:.1%}", f"{ns['odds']:.1%}"
     out["fin_new_odds100"], out["fin_new_storm_odds100"] = f"{round(nw['odds'] * 100)}", f"{round(ns['odds'] * 100)}"
     out["fin_new_leg89"] = f"HK${nw['leg_med']:.1f}M"
+    # the headline (Pete, 14 Nov: option (a), Final_Plan.md §5.1; M9b's fairest row). Our plan, now funding the same
+    # awards for life (§5.3, option 1: a 39-year fund given in 2027-28), against the label approach with a labelled ESG
+    # core as cheap as ours (0.20%) and its lifelong pledge: the same awards both ways. Split in order, so the parts add
+    # up exactly: the vans, then funding the awards instead of pledging them, then the rest of the fee difference.
+    life = fund_size(END - 2027)
+    lab = dict(r_eq=r_eq_for(label_core_at(0.0020)))
+    ours = dict(r_eq=r_eq_for(FEE_SAVED))
+    pledge, fund = scholarship_as_written(), funded_for(life)
+    steps_n = [run(base, inflows=pledge, **lab),
+               run(base, biz=m.BIZ + up, inflows=pledge, **lab),
+               run(base, biz=m.BIZ + up, inflows=fund, **lab),
+               run(base, biz=m.BIZ + up, inflows=fund, **ours)]
+    steps_s = [stressed(base, sc, mult, flows=pledge, **lab),
+               stressed(base, sc, mult, biz_add=up, flows=pledge, **lab),
+               stressed(base, sc, mult, biz_add=up, flows=fund, **lab),
+               stressed(base, sc, mult, biz_add=up, flows=fund, **ours)]
+    (lab_n, *_, pl_n), (lab_s, *_, pl_s) = steps_n, steps_s
+    out["fin_fair_gain"] = sg(pl_n["leg_med"] - lab_n["leg_med"])          # the headline, a normal future
+    out["fin_fair_gain_s"] = sg(pl_s["leg_med"] - lab_s["leg_med"])        # the same in the 2030-31 downturn
+    for i, k in enumerate(("vans", "gift", "fees")):
+        out[f"fin_fair_{k}"] = sg(steps_n[i + 1]["leg_med"] - steps_n[i]["leg_med"])
+    out["fin_fair_lab100"], out["fin_fair_lab_s100"] = f"{round(lab_n['odds'] * 100)}", f"{round(lab_s['odds'] * 100)}"
+    out["fin_plan_odds"], out["fin_plan_sodds"] = f"{pl_n['odds']:.1%}", f"{pl_s['odds']:.1%}"
+    out["fin_plan_odds100"], out["fin_plan_sodds100"] = f"{round(pl_n['odds'] * 100)}", f"{round(pl_s['odds'] * 100)}"
+    out["fin_plan_leg89"] = f"HK${pl_n['leg_med']:.1f}M"
+    out["fin_plan_gift_hk"] = f"HK${life / 1e6:.2f}M"                    # the fund: the family's capital for the gift
+    out["fin_plan_gift_n"] = sg(run(base, inflows=fund)["leg_med"] - b["leg_med"])
+    out["fin_plan_gift_s"] = sg(stressed(base, sc, mult, flows=fund)["leg_med"] - st0["leg_med"])
+    u39 = run(base, r_eq=r_eq_for(FEE_SAVED), inflows=fund)
+    out["fin_plan_room_use"] = f"{(p_n['odds'] - u39['odds']) * 100:.0f}"
+    out["fin_plan_room_use_hk"] = f"HK${p_n['leg_med'] - u39['leg_med']:.1f}M"
     # slide 6 (S, the flat; 13 Nov): where the limit flips the route. The scenario has the old flat fall 15% behind
     # newer flats from 2031 (10% in 2030), on top of its 0.15% a year drag; here that fall runs from 0 to 15%, the
     # rest of the scenario unchanged. The reverse mortgage barely moves (HKMC counts half the value above HK$8M);
@@ -508,6 +539,49 @@ def export_final():
         sys.exit("slide 6: the normal limit no longer binds first; the slide's words assume it does")
     out["fin_flipn_cross"], out["fin_flipn_cross_x"] = f"{crossn:.0%}", f"{crossn * 100:.2f}"
     out["fin_flipn_rmp100"], out["fin_flipn_down100"] = f"{round(rmn_o[-1] * 100)}", f"{round(dnn_o[-1] * 100)}"
+    # slide 5 on the recommended plan (14 Nov: the card and the close show that plan, so the flip must too): the same two
+    # grids with the vans, our fees and the scholarship for life funded now; keys fin_p*. The ends must reproduce the
+    # plan's own runs (fin_plan_*), as the base's do above.
+    pkw = dict(r_eq=r_eq_for(FEE_SAVED))
+    pdown = run(base, "down", biz=m.BIZ + up, inflows=fund, **pkw)
+    out["fin_pdown_odds100"] = f"{round(pdown['odds'] * 100)}"
+    out["fin_pdown_more_n"] = f"HK${pdown['leg_med'] - pl_n['leg_med']:.2f}M"
+    prm, pdn = [], []
+    for i, d in enumerate(grid):
+        def mult_d(y, d=d):
+            return (1 - 0.0015) ** max(y - m.BY, 0) * (1.0 if y < 2030 else (1 - d * 2 / 3 if y == 2030 else 1 - d))
+        sbiz = sc["biz"] + up * sc["biz"] / m.BIZ
+        skw = dict(ret_add=sc["ret_add"], level=sc["level"], inflows=plus(sc["inflows"], fund), biz=sbiz, **pkw)
+        rm, dn = run(base, "rmp", mult_d, **skw), run(base, "down", mult_d, **skw)
+        prm.append(rm["odds"])
+        pdn.append(dn["odds"])
+        out[f"fin_pflip_rmp_{i}"], out[f"fin_pflip_down_{i}"] = f"{rm['odds']:.1%}", f"{dn['odds']:.1%}"
+    if abs(prm[-1] - pl_s["odds"]) > 1e-12:
+        sys.exit("slide 5 (plan): the 15% end of the downturn grid must reproduce the plan in the scenario")
+    out["fin_pdown_s100"] = f"{round(pdn[-1] * 100)}"
+    pc = next((grid[i - 1] + (grid[i] - grid[i - 1]) * (pdn[i - 1] - 0.85) / (pdn[i - 1] - pdn[i])
+               for i in range(1, len(grid)) if pdn[i - 1] >= 0.85 > pdn[i]), None)
+    if pc is None or min(prm) < 0.85:
+        sys.exit("slide 5 (plan): downsizing no longer crosses 85 inside the grid (or the reverse mortgage does)")
+    out["fin_pflip_cross"], out["fin_pflip_cross_x"] = f"{pc:.0%}", f"{pc * 100:.2f}"
+    prn, pdnn = [], []
+    for i, d in enumerate(gridn):
+        mult_n = (lambda d: (lambda y: 1 - d if y >= m.RMP_Y else 1.0))(d)
+        rm = run(base, "rmp", mult_n, biz=m.BIZ + up, inflows=fund, **pkw)
+        dn = run(base, "down", mult_n, biz=m.BIZ + up, inflows=fund, **pkw)
+        prn.append(rm["odds"])
+        pdnn.append(dn["odds"])
+        out[f"fin_pflipn_rmp_{i}"], out[f"fin_pflipn_down_{i}"] = f"{rm['odds']:.1%}", f"{dn['odds']:.1%}"
+    if abs(prn[0] - pl_n["odds"]) > 1e-12 or abs(pdnn[0] - pdown["odds"]) > 1e-12:
+        sys.exit("slide 5 (plan): the 0% end of the normal grid must reproduce the plan and its downsizing")
+    pcn = next((gridn[i - 1] + (gridn[i] - gridn[i - 1]) * (pdnn[i - 1] - 0.95) / (pdnn[i - 1] - pdnn[i])
+                for i in range(1, len(gridn)) if pdnn[i - 1] >= 0.95 > pdnn[i]), None)
+    if pcn is None or min(prn) < 0.95:
+        sys.exit("slide 5 (plan): downsizing no longer crosses 95 inside the normal grid (or the reverse mortgage does)")
+    if pcn >= pc:
+        sys.exit("slide 5 (plan): the normal limit no longer binds first; the slide's words assume it does")
+    out["fin_pflipn_cross"], out["fin_pflipn_cross_x"] = f"{pcn:.0%}", f"{pcn * 100:.2f}"
+    out["fin_pflipn_rmp100"], out["fin_pflipn_down100"] = f"{round(prn[-1] * 100)}", f"{round(pdnn[-1] * 100)}"
     return out
 
 

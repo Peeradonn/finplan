@@ -138,15 +138,23 @@ def flip6():
     x = lambda d: F6_X0 + d / 15.0 * (F6_X1 - F6_X0)
     y = lambda v: F6_Y0 - (v - F6_LO) / (F6_HI - F6_LO) * (F6_Y0 - F6_Y1)
     tok = {}
-    for pre, key, n, step in (("f6", "fin_flip", 7, 2.5), ("f6n", "fin_flipn", 16, 1.0)):
-        for line in ("rmp", "down"):
-            vals = [float(nums[f"{key}_{line}_{i}"].rstrip("%")) for i in range(n)]
-            if not all(F6_LO <= v <= F6_HI for v in vals):
-                raise ValueError(f"slide 6: the {pre} {line} line runs off the chart; change F6_LO or F6_HI")
-            tok[f"{pre}_{line}"] = " ".join(f"{x(step * i):.1f},{y(v):.1f}" for i, v in enumerate(vals))
-            tok[f"{pre}_{line}_ey"] = f"{y(vals[-1]):.1f}"
-    c, cn = float(nums["fin_flip_cross_x"]), float(nums["fin_flipn_cross_x"])
-    tok["f6_cross"], tok["f6n_cross"], tok["f6n_shade_w"] = f"{x(c):.1f}", f"{x(cn):.1f}", f"{F6_X1 - x(cn):.1f}"
+    # f6/f6n: the family's plan as it stands (fin_flip*); p6/p6n: the recommended plan (fin_pflip*, 14 Nov), drawn on
+    # the same axes. Each set only if its keys exist, so an older numbers.json still builds the v4 deck.
+    sets = (("f6", "fin_flip"), ("p6", "fin_pflip"))
+    for pre, key in sets:
+        if f"{key}_cross_x" not in nums:
+            continue
+        for p2, k2, n, step in ((pre, key, 7, 2.5), (pre + "n", key + "n", 16, 1.0)):
+            for line in ("rmp", "down"):
+                vals = [float(nums[f"{k2}_{line}_{i}"].rstrip("%")) for i in range(n)]
+                if not all(F6_LO <= v <= F6_HI for v in vals):
+                    raise ValueError(f"slide 6: the {p2} {line} line runs off the chart; change F6_LO or F6_HI")
+                tok[f"{p2}_{line}"] = " ".join(f"{x(step * i):.1f},{y(v):.1f}" for i, v in enumerate(vals))
+                tok[f"{p2}_{line}_ey"] = f"{y(vals[-1]):.1f}"
+        c, cn = float(nums[f"{key}_cross_x"]), float(nums[f"{key}n_cross_x"])
+        tok[f"{pre}_cross"], tok[f"{pre}n_cross"] = f"{x(c):.1f}", f"{x(cn):.1f}"
+        tok[f"{pre}n_shade_w"] = f"{F6_X1 - x(cn):.1f}"
+        tok[f"{pre}_cross_y"] = f"{y(85):.1f}"
     for d in (0, 5, 10, 15):
         tok[f"f6_x{d}"] = f"{x(d):.1f}"
     for v in (80, 85, 90, 95):

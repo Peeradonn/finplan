@@ -820,7 +820,7 @@ what to do"; (2) the loop; (3) the framework catching a fund on the SFC's ESG li
 (4) we don't label our own result; (5) the client's own "compostable" label as a risk; (6) dates, not just weights (the
 waiver 2028, the lease 2027, the feed-in tariff 2033, the building's 50th year 2046, the sale 2035–39).
 
-### 4.5 Storyline v5 (Pete, 13 Nov, night: "revamp ... push for the best"; about 9:15 with names and handovers)
+### 4.5 Storyline v5 (Pete, 13 Nov, night: "revamp ... push for the best"; 10:00 with names and handovers, 14 Nov)
 
 **Why v5.** v4's slides held the right evidence but didn't build. Its titles were parallel rules. Each slide opened "For
 any client" and closed "For the Wongs", so the story reset eight times. Slide 3 showed every answer before the work,
@@ -841,16 +841,16 @@ keeps the evidence, the look (navy, Plus Jakarta Sans, the prism) and the speake
 
 | # | Act · who · time | Title (a rule for any client) | The one picture | Must keep (v4, the plan) | Hands off with |
 |---|---|---|---|---|---|
-| 1 | Open · Pete · 1:00 | What makes a plan sustainable? (closes on the claim) | The case's ESG chip beside the three questions a share can't answer; one proof each; the claim | Objective 5's words; 47% (`fin_lab_homebiz`); 134 t; the spoken line with the capital and outcomes (Key Areas §7; §5.5); the room said once ("Carmen's values come from the room above Adrian's limit") | "How do you test a plan for that?" |
+| 1 | Open · Pete · 1:30 | What makes a plan sustainable? (closes on the claim) | The case's ESG chip beside the three questions a share can't answer; one proof each; the claim | Objective 5's words; 47% (`fin_lab_homebiz`); 134 t; the spoken line with the capital and outcomes (Key Areas §7; §5.5); the room said once ("Carmen's values come from the room above Adrian's limit") | "How do you test a plan for that?" |
 | 2 | Framework · Pete · 0:50 | PRISM runs the test in five steps | The prism (kept): five steps, each marked with the condition it checks | v4 slide 2's prism; drop the "instead of" lines | "Every test needs a bar first: Profile." |
 | 3 | Limit, room · Pete · 0:50 | Set the limit first; values spend only the room above it | v4 slide 4's scale, plus what the room buys: ≈HK$1.5M of giving funded now; both causes for life would use all of it (M11) | v4 slide 4; §5.10; new export keys | "So what could push them below 95?" |
-| 4 | Limit · Lookbua · 0:55 | Check everything they own and earn, not just what a label covers | The household as one picture: what they own and earn, the shock's priced routes where they land, "the label looks only here" | v4 slide 5's three priced routes; 22 checked; CBAM out; Adrian's bonus (M10a); "assumes Adrian works to 65" (§5.10) | "Three matter; two never touch a fund. First, the home." |
-| 5 | Limit · Lookbua · 0:45 | The limit decides before preferences do | v4 slide 6's flip chart (kept) | The yearly price check: ≈5% against 95, ≈11% against 85 in the downturn; the green mortgage refused | "The next route is the business, also where their money can change something." |
+| 4 | Limit · Lookbua · 1:10 | Check everything they own and earn, not just what a label covers | The household as one picture: what they own and earn, the shock's priced routes where they land, "the label looks only here" | v4 slide 5's three priced routes; 22 checked; CBAM out; Adrian's bonus (M10a); "assumes Adrian works to 65" (§5.10) | "Three matter; two never touch a fund. First, the home." |
+| 5 | Limit · Lookbua · 0:50 | The limit decides before preferences do | v4 slide 6's flip chart (kept), on the recommended plan from 14 Nov | The yearly price check: ≈7% against 95, ≈13% against 85 in the downturn (`fin_pflip*`; 5% and 11% on the family's plan as it stands); the green mortgage refused | "The next route is the business, also where their money can change something." |
 | 6 | Change · Fahtai · 0:55 | Rank every cut by its cost per tonne, cheapest first | v4 slide 7's footprint and cost curve (trimmed) | 108 t recycled PET at parity; the vans 19 t, the only cut that needs a loan; "compostable" stopped | "Only one cut needs a loan. Should it be a green one?" |
-| 7 | Change · Fahtai · 0:55 | Judge green finance as finance, at the client's size | A size scale: each instrument's threshold against her HK$1.5M loan; the van loan that works; the route to the family at the sale | v4 slide 8's numbers (B1–B3); carbon data guards −HK$1.55M (`fin_cust10_leg`); the vans +HK$0.51M at the sale | "The change is in the business. What's left for the funds, where the case asked for 25%?" |
-| 8 | Room · Win · 1:00 | The sustainable share is an output of the limits, paid from the room | Each parent's savings sized by their limit; 26.6% falls out; the US$0 fund struck through; the price of values drops into slide 3's room | Weights and fees on the picture (Key Areas §7); Carmen's ESG funds as alignment from the budget, never impact; no credit for ESG in a downturn | "Every one of these verdicts rests on prices that will move." |
-| 9 | All three · Win · 0:45 | Label the plan, not the product | Climate Facts as one card: a line per condition with its number, tag and trigger; missing prices as decisions | v4 slide 10's content, regrouped by condition (the brief's dashboard); "assumes Adrian works to 65" | "So, what makes a plan sustainable?" |
-| 10 | Close · Pete · 0:40 | The claim | v4 slide 3's four corners, filled: every decision once, with its HK$ and tonnes; the refusals as one rule; the capital | v4 slide 3's fixes: the flat's yearly check at ≈5%; carbon data's guard; ESG funds in the label corner; the headline joins once §5.1 is settled | — |
+| 7 | Change · Fahtai · 1:05 | Judge green finance as finance, at the client's size | A size scale: each instrument's threshold against her HK$1.5M loan; the van loan that works; the route to the family at the sale | v4 slide 8's numbers (B1–B3); carbon data guards −HK$1.55M (`fin_cust10_leg`); the vans +HK$0.51M at the sale | "The change is in the business. What's left for the funds, where the case asked for 25%?" |
+| 8 | Room · Win · 1:10 | The sustainable share is an output of the limits, paid from the room | Each parent's savings sized by their limit; 26.6% falls out; the US$0 fund struck through; the price of values drops into slide 3's room | Weights and fees on the picture (Key Areas §7); Carmen's ESG funds as alignment from the budget, never impact; no credit for ESG in a downturn | "Every one of these verdicts rests on prices that will move." |
+| 9 | All three · Win · 0:55 | Label the plan, not the product | Climate Facts as one card: a line per condition with its number, tag and trigger; missing prices as decisions | v4 slide 10's content, regrouped by condition (the brief's dashboard); "assumes Adrian works to 65" | "So, what makes a plan sustainable?" |
+| 10 | Close · Pete · 0:50 | The claim | v4 slide 3's four corners, filled: every decision once, with its HK$ and tonnes; the refusals as one rule; the outcome and the capital | v4 slide 3's fixes: the flat's yearly check (≈7%); carbon data's guard; ESG funds in the label corner; the headline (`fin_fair_gain`, §5.1) | — |
 
 **Old to new:** v4 1 → 1 · 2 → 2 · 3 → 10 (the close) · 4 → 3 · 5 → 4 (new form) · 6 → 5 · 7 → 6 · 8 → 7 (new form) ·
 9 → 8 (new form) · 10 → 9 (new form) · 11 (the bars) → backup. The v4 table below keeps each slide's evidence and
@@ -866,6 +866,29 @@ forms (7, 8); then the moves and trims (10, 3, 1, 2, 5, 6); the chain of spoken 
 PowerPoint deferred (Pete, 13 Nov, night). Each new slide replaces its v4 slide only when it is better, so the deck
 works at every step.
 
+**14 Nov, evening: the brief's bullets covered, the headline set** (Pete: "are we missing some of the bullets ... our
+script should be 10 minutes"; then "a", §5.1). A check of every bullet in the topic (pp.2–4) and Key Areas against v5
+found the money outcome missing and eleven bullets thin. Added on screen, each where its slide's step already is:
+- **1** (spoken): the capital and both outcomes (`fin_plan_gift_hk`, HK$1.91M, ≈134 t, `fin_fair_gain`).
+- **3**: the scholarship for life, funded now (`fin_plan_gift_hk`; §5.3).
+- **4**: the scenario named a disorderly transition; under each priced route, whether the plan **cuts** it (the flat's
+  yearly check, carbon data) or **carries** it within the limit (the savings, Adrian's bonus): the brief's "which risks
+  the plan actually mitigates"; the rules traced (HKEX climate reporting reaches her customers, CBAM doesn't); the
+  eight-risk register to backup.
+- **5**: on the recommended plan (the open item below, closed); the building has no BEAM Plus rating; weather reaches
+  the money through insurance and repair levies, read at each renewal.
+- **6**: the baseline labelled Scope 1–2 and Scope 3; an energy audit in step 1.
+- **7**: the brief's five kinds of finance, each placed in the plan; the steps in the order drawn (kind, size, test);
+  debt cover 5.7× → 3.3×; greenium against green premium; the green lease (the split incentive).
+- **8**: what is measured each year (carbon intensity with 99.8% coverage, temperature rise as a band, no fund reports
+  HK Taxonomy alignment), currency and liquidity; the greenium (≈2bp) spoken.
+- **9**: the card on the recommended plan (`fin_plan_*`: 97 and 90 in 100); attribution against a plain twin; three of
+  the five biases; the four claims controls (baseline, outside check, cautious words, restatement).
+- **10**: the outcome on screen (`fin_fair_gain`, `fin_fair_gain_s`, ≈134 t) and the capital (`fin_plan_gift_hk`).
+Still only in backup or the notes: the regulatory perimeter in full, the eight-risk register, retrofit economics, the
+other two biases. Spoken words **1,313** (≈9:44 at 135 a minute; Pete 515, Lookbua 262, Fahtai 262, Win 274), slots
+summing to 10:00. Slide 6's footprint bar had been shrinking to two-thirds size in the flex column (fixed).
+
 **14 Nov, later: all ten v5 slides built** in `Final/deck/options/` (the whole talk on one sheet:
 `build/options/v5-contact.png`; each beside the v4 slide it replaces: `compare-1.png` to `compare-10.png`). Pete approved
 1–4 and chose the card to show our recommended plan (`fin_new_*`: 97 in 100, 91 in the downturn). New forms: **7** each
@@ -875,8 +898,7 @@ with pass and fail marks, the price from the room. Kept and edited: **5** (the f
 replaces the fibre trap), **10** (v4's corners as the close, the claim as its title, slide references renumbered).
 Closing bars now have the rule as subject, not "For the Wongs". Spoken words cut to the slots: **1,179** (≈8:44 at 135 a
 minute, ≈9:05 with names; Pete 466, Lookbua 231, Fahtai 245, Win 237); each speaker still makes the words their own.
-**Open:** slide 5's flip runs on the family's current plan (keep the flat: 89 in 100 in the downturn) while the card
-shows our plan (91): rerun the flip on our plan, or say on slide 5 which plan it is. **Next:** move v5 into the deck
+**Closed (14 Nov, evening):** slide 5's flip now runs on our recommended plan (`fin_pflip*`), as the card and the close do. **Next:** move v5 into the deck
 (`src/01_talk.html`), v4's slide 11 bars to backup, then the timed run.
 
 **14 Nov: Pete chose 4A and 9A, then flagged 4A as a Wong case again** (the sixth drift): cover the Wongs' figures and
@@ -1007,7 +1029,15 @@ Pete to confirm:** B8, a dividend policy for Carmen's half of the van saving fro
 
 ### Proposed by the 12 Nov review (Pete decides; evidence in `model_runs.md` M8–M9)
 
-**5.1 The headline (slides 3, 11).** As drafted: +3.4 points, +HK$2.44M against the label approach. Its parts: the
+**5.1 The headline. Decided 14 Nov (Pete, option (a)): against a fair comparison, +HK$1.05M** for the children
+(`fin_fair_gain`; +HK$1.03M in the downturn): the label approach with a labelled ESG core as cheap as ours
+(0.20%) and the same awards both ways, i.e. M9b's fairest row. Its parts, added in order so they sum: the vans
++HK$0.54M (the sustainable part), funding the awards instead of pledging them +HK$0.39M (the
+funded-giving rule), the rest of the fee gap +HK$0.12M (ordinary planning).
+On slide 1 (spoken) and slide 10 (on screen). The odds: our plan 97 and 90 in 100;
+the label approach 95 and 86, above both its floors, so "it falls below the floor"
+is never said (§5.2). Win's purchasable fund (2.45%, `area3_portfolio.md`) stays a backup sensitivity, labelled a fee
+saving. The review's text follows. As drafted: +3.4 points, +HK$2.44M against the label approach. Its parts: the
 vans ≈+HK$0.51M; cheaper fund fees ≈+HK$1.13M, measured against the US$0 fund's unverified 0.775%; the scholarship
 ≈+HK$0.83M, of which +HK$0.68M is giving for 20 years instead of 39 (M9a). Against a labelled fund as cheap as ours,
 with the same awards both ways: +2.0 points, ≈+HK$1.05M (M9b). Each 0.10% of fee on the label approach's HK$1.49M
@@ -1024,7 +1054,10 @@ normal floor) and 0.55% (the stress floor); 95.1% is within the model's sampling
 the decision the shock actually changes, the flat's route (§5.7), and the honest split. Keep "below the floor" only if
 Win's real fund costs more than ≈0.55%, with its fee sourced. Owner: Pete.
 
-**5.3 The scholarship (slides 3, 10).** The label approach pledges HK$30K a year, rising with prices, for 39 years; our
+**5.3 The scholarship. Decided 14 Nov with §5.1 (option 1): fund the same awards for life now**, ≈HK$0.74M
+in two halves, 2027–28 (each under Adrian's ≈HK$420K relief cap; `fin_plan_gift_hk`), so the comparison is like for like
+and the gift isn't cut to improve the money. It uses about half the room in giving (≈HK$1.5M); the room-used bar still
+reads "about 1" of 3 (`fin_plan_room_use`). Decision_List.md G1 and §2 updated. The review's text follows. The label approach pledges HK$30K a year, rising with prices, for 39 years; our
 fund pays for 20. An ESG judge will say we cut the family's real-impact giving to improve the money. Like for like (39
 years both ways, a ≈HK$742K fund over 2027–28), funding now is worth +1.5 points, +HK$0.38M (M9a): that is the
 framework's real point, a promise paid for while the 17% relief exists, not one that stops in the first tight year. Once

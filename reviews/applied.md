@@ -534,3 +534,24 @@ through the sale, candidate A's fees, the 20-year scholarship fund; the reverse-
   in 100, the card's words); `fin_new_leg89` HK$13.8M.
 - Checked: `numbers.json` before and after differ only by these 5 additions (one rerun of `make_charts.py`; the seed is
   fixed); `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, evening): the headline and the recommended plan's flip (`Final/final_model.py` `export_final()`)
+
+Pete chose option (a) for the headline (`Final/Final_Plan.md` §5.1): our plan against the label approach with a
+labelled ESG core as cheap as ours (0.20%) and the same awards both ways, i.e. `model_runs.md` M9b's fairest row. That
+makes our plan fund the same awards for life now (§5.3 option 1: a 39-year fund, given in two halves in 2027-28), so
+the card (slide 9) and the close (slide 10) move to that plan, and slide 5's flip is rerun on it. Keys added:
+- `fin_fair_gain` +HK$1.05M, `fin_fair_gain_s` +HK$1.03M: the headline, normally and in the 2030-31 scenario
+  (reproduces M9b's row). Its parts, added in order so they sum: `fin_fair_vans` +HK$0.54M, `fin_fair_gift` +HK$0.39M,
+  `fin_fair_fees` +HK$0.12M. `fin_fair_lab100` 95, `fin_fair_lab_s100` 86: the label approach's odds, in 100.
+- `fin_plan_odds` 97.0%, `fin_plan_sodds` 90.0% (`..100` 97, 90), `fin_plan_leg89` HK$13.4M: the recommended plan.
+- `fin_plan_gift_hk` HK$0.74M (the fund), `fin_plan_gift_n` −HK$1.25M, `fin_plan_gift_s` −HK$1.14M (its price, as
+  M9a's row), `fin_plan_room_use` 1, `fin_plan_room_use_hk` HK$1.9M (as M9c's row).
+- Slide 5 on the recommended plan: `fin_pflip_*` (the downturn grid, 0-15% in 2.5% steps) and `fin_pflipn_*` (a normal
+  future, 1% steps), as the base's `fin_flip*`; crossings `fin_pflipn_cross` 7% (7.39) and `fin_pflip_cross` 13%
+  (12.67); `fin_pdown_odds100` 97, `fin_pdown_more_n` HK$4.17M, `fin_pdown_s100` 83, `fin_pflipn_rmp100` 96,
+  `fin_pflipn_down100` 93. The export stops unless the grids' ends reproduce the plan's own runs and the normal limit
+  still binds first. `Final/deck/series.py` draws either set (tokens `f6*` for the base, `p6*` for the plan).
+- Checked: `numbers.json` before and after differ only by these 72 additions (two reruns of `make_charts.py`; the seed
+  is fixed); `figure-data.md` and every PNG unchanged. The `fin_new_*` keys (the 20-year fund) are kept, now unused by
+  v5.
