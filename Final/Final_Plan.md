@@ -340,6 +340,15 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   carries the business-to-family link (the vans add HK$0.51M for the children through the sale); slide 10's kicker
   and bar close on one measure ("On one measure, the label never decides: the limit, the change and the room
   do"). Pete's slide 2 words add one sentence naming the three.
+- **Slide 6 as her business's chain** (Pete: "text heavy ... generic; put some creative thinking into designing
+  the slide"). The ranked table became the real thing: what she buys → her warehouse and vans → its landfill here,
+  each station with its footprint (tonnes and a share bar) and the cuts pinned where they act (recycled plastic and
+  lighter board under what she buys; the vans, the only loan, LED and air-con, and the refused solar under her own;
+  "compostable" stopped under landfill). The brief's cost ranking stays as badges ① to ④, cheapest first; the step
+  for any business is one line on top. The point shows instead of needing to be read: the big cut sits where the
+  big footprint is. Same figures (ESTIMATED, ILLUSTRATIVE business). Render: `build/options/slide6-chain.png`.
+  **Lesson for the deck (§3):** where a slide's content is a real object or process (her supply chain, a loan's
+  terms, a label), draw that object rather than a table; not forced where it doesn't fit.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
