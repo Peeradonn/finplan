@@ -510,8 +510,18 @@ L = likelihood to 2045, I = impact on the plan (low / medium / high). Points are
 | D2 | Data | 2037 and 2045 reverse mortgage payouts depend on future rates | High | Medium | Today's table as the basis; sensitivity shown | Medium |
 | C1 | Conduct | Suitability for two people who disagree (Adrian stays, Carmen moves?); capacity at 65+ | Medium | High | Enduring powers of attorney first (Round One §9); joint decision at the 2037 review | Low |
 | C2 | Conduct | Advising on mortgages and insurance without a licence; product bias | Low | High | Refer to licensed banks and HKMC; no commission; fees disclosed | Low |
+| I1 | Transition (the scenario) | Adrian's bonus (case: HK$150–300K; the model counts HK$150K) lost in the 2030–31 downturn, as the scenario already cuts Carmen's draw | Medium | Low (−1.3 pts on the new plan under the scenario, 91.0% → 89.8%; downsizing's downturn crossing ≈11% → ≈9%; `model_runs.md` M10a) | Nothing new: inside both limits. Proposed: add it to the scenario (`Final_Plan.md` §5.10) | Low |
+| I2 | Transition, physical | Adrian's employer: a logistics technology company across Hong Kong, the GBA and Southeast Asia (case). Carriers face carbon costs and the region's ports face typhoons and floods; logistics software may gain from customers' emissions reporting | Not known | Not known; the sign is unclear | A missing price: buy the information (ask Adrian about the company's customers, markets and his contract) before pricing it | Not known |
 
 Measured or estimated in this brief: T1, T2, V1, Q1 (the age rule), D2. The rest are managed, not measured.
+
+**Adrian's job itself (Claude, 13 Nov, night): outside the climate register, inside the plan.** Any planner draws
+"income lost before retirement" (the case's protection list names "disability / income interruption risk"), so by test
+2 it isn't a climate route. It is priced (`model_runs.md` M10b) because it is the largest risk to the limits: every odds
+figure assumes Adrian works to 65. Lost at the end of 2030 with no work again, the plan as it stands falls to 45.4%
+normally and 22.5% under the scenario; at half pay from 2032, 78.5% and 55.6%. A contingency restores both limits:
+half pay from 2032, HK$200K a year less spending to 2036 and Carmen working to 65 (95.9%; 86.7%). Neither parent has
+long-term disability income cover (case); disability is the insurable form of this risk.
 
 ---
 

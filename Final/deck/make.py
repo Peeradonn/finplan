@@ -1,4 +1,4 @@
-"""Build the Final deck (storyline v4, Final/Final_Plan.md §4.5): the slides as HTML, and the script.
+"""Build the Final deck (storyline v5, Final/Final_Plan.md §4.5): the slides as HTML, and the script.
 
   .venv/Scripts/python.exe Final/deck/make.py                 # the deck and the script
   .venv/Scripts/python.exe Final/deck/make.py --pages 2,3     # ... and full-size PNGs of those pages
@@ -13,7 +13,7 @@ Then the PowerPoint: .venv/Scripts/python.exe Final/deck/make_pptx.py (one file,
 3. The script: each slide's <aside class="notes"> (the spoken words, each turn opened by PETE:, FAHTAI:, WIN: or
    LOOKBUA:, then "[Notes: ...]" for background) -> Axis_Script.html and Axis_Script.md, each slide's spoken words
    counted (a figure counts as it is said, so "84.1%" is several words) against its data-time, and the total
-   timed at 125, 135 and 145 words a minute. The budget is about 1,200 words for 9:20 until a timed run sets it.
+   timed at 125, 135 and 145 words a minute. The budget is about 1,300 words for 10:00 (Pete, 14 Nov) until a timed run sets it.
 4. slide-design render.py: PDF, PNGs and contact sheets in Final/deck/build/
 Adapted from round2/make.py (10 Nov). Files carry the team name only (AGENTS.md).
 """
@@ -100,7 +100,7 @@ total = sum(s["words"] for s in slides)
 allotted = sum(secs(s["time"]) for s in slides)
 paces = [(w, total / w * 60) for w in (145, 135, 125)]
 today = datetime.date.today().isoformat()
-summary = (f"{total} spoken words (the budget is about 1,200 for 9:20). Slides allotted {mmss(allotted)}. Speech: "
+summary = (f"{total} spoken words (the budget is about 1,300 for 10:00). Slides allotted {mmss(allotted)}. Speech: "
            + "; ".join(f"{mmss(t)} at {w} words a minute ({mmss(t + 20)} with names and handovers)" for w, t in paces)
            + ". Over 10:30 disqualifies the team.")
 who_line = "Speaking time at 135 words a minute: " + ", ".join(

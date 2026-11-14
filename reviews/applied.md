@@ -495,3 +495,115 @@ it in 2030, the 0.15% a year drag kept; everything else unchanged):
   odds of each route and downsizing's extra inheritance, in slide 6's words (M6).
 - Checked: `numbers.json` before and after differ only by these additions (two reruns); `figure-data.md` and every PNG
   unchanged.
+
+### Final (13 Nov, night): slide 6's flip in a normal future (`Final/final_model.py` `export_final()`; `Final/deck/series.py` `flip6()`)
+
+The exported flip (`fin_flip_cross`, 11%) was the downturn against the 85 limit only. The other session (13 Nov) noted
+that M6 already has downsizing at 93.6% in a normal future with a 10% gap, below the normal limit of 95. Run: the base
+(`switch_89`), the old flat d lower than newer flats from 2037 (M6's shape), d from 0 to 15% in 1% steps, both routes.
+Keys added:
+- `fin_flipn_rmp_0..15` and `fin_flipn_down_0..15`: the odds. The reverse mortgage 96.8% → 96.1%; downsizing
+  96.2% → 91.9%. The 0% end reproduces the base and M6's downsizing exactly (the export stops if it doesn't).
+- `fin_flipn_cross` 5% (`fin_flipn_cross_x` 5.49): where downsizing crosses 95. The export stops if the normal crossing
+  is no longer below the downturn's (slide 6's words assume the normal limit binds first). A scratch run with the
+  scenario's gap shape and drag but no shocks crosses at 4.0%.
+- `fin_flipn_rmp100` 96, `fin_flipn_down100` 92: the ends in whole futures in 100, slide 6's labels.
+- Checked: `numbers.json` before and after differ only by these 36 additions (one rerun of `make_charts.py`; the seed
+  is fixed); `figure-data.md` and every PNG unchanged.
+
+### Final (13 Nov, night): storyline v5's new numbers (`Final/final_model.py` `export_final()`, M10–M11)
+
+For storyline v5 (`Final/Final_Plan.md` §4.5): slide 3 says what the room above the limit buys, and slide 4 puts
+Adrian's pay in the household picture. Runs as in `Final/model_runs.md` M10a and M11 (the base, `switch_89`; gifts
+funded now in yearly pieces within both parents' 35% caps, 17% relief; the bisection is `most_gift()`, shared with M11).
+Keys added:
+- `fin_room_gift` HK$1.5M (`fin_room_gift_x` 1.46): the most giving funded now, with the ESG tilt, before a limit breaks.
+- `fin_room_both39_hk` HK$1.48M, `fin_room_both39_odds` 94.9%: both causes for 39 years each, funded now.
+- `fin_room_pledge2_odds` 91.6%, `fin_room_pledge2_sodds` 79.8%: the same awards pledged from cash flow.
+- `fin_bonus_leg` −HK$0.49M, `fin_bonus_pts` −1.3, `fin_bonus_sodds` 88.2%: Adrian's bonus after tax lost in 2030–31,
+  the plan as it stands in the scenario, against the same plan in today's scenario.
+- Checked: `numbers.json` before and after differ only by these 9 additions (one rerun of `make_charts.py`; the seed
+  is fixed); `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov): the recommended plan's odds for the Climate Facts card (`Final/final_model.py` `export_final()`)
+
+Pete chose that slide 9's card shows our recommended plan, as the close does. Run: the new plan (the vans at HK$31/L
+through the sale, candidate A's fees, the 20-year scholarship fund; the reverse-mortgage route), normally and in the
+2030–31 scenario, on the base (`switch_89`), as in `model_runs.md`'s recommendation and M8. Keys added:
+- `fin_new_odds` 97.4%, `fin_new_storm_odds` 91.0%; `fin_new_odds100` 97, `fin_new_storm_odds100` 91 (whole futures
+  in 100, the card's words); `fin_new_leg89` HK$13.8M.
+- Checked: `numbers.json` before and after differ only by these 5 additions (one rerun of `make_charts.py`; the seed is
+  fixed); `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, evening): the headline and the recommended plan's flip (`Final/final_model.py` `export_final()`)
+
+Pete chose option (a) for the headline (`Final/Final_Plan.md` §5.1): our plan against the label approach with a
+labelled ESG core as cheap as ours (0.20%) and the same awards both ways, i.e. `model_runs.md` M9b's fairest row. That
+makes our plan fund the same awards for life now (§5.3 option 1: a 39-year fund, given in two halves in 2027-28), so
+the card (slide 9) and the close (slide 10) move to that plan, and slide 5's flip is rerun on it. Keys added:
+- `fin_fair_gain` +HK$1.05M, `fin_fair_gain_s` +HK$1.03M: the headline, normally and in the 2030-31 scenario
+  (reproduces M9b's row). Its parts, added in order so they sum: `fin_fair_vans` +HK$0.54M, `fin_fair_gift` +HK$0.39M,
+  `fin_fair_fees` +HK$0.12M. `fin_fair_lab100` 95, `fin_fair_lab_s100` 86: the label approach's odds, in 100.
+- `fin_plan_odds` 97.0%, `fin_plan_sodds` 90.0% (`..100` 97, 90), `fin_plan_leg89` HK$13.4M: the recommended plan.
+- `fin_plan_gift_hk` HK$0.74M (the fund), `fin_plan_gift_n` −HK$1.25M, `fin_plan_gift_s` −HK$1.14M (its price, as
+  M9a's row), `fin_plan_room_use` 1, `fin_plan_room_use_hk` HK$1.9M (as M9c's row).
+- Slide 5 on the recommended plan: `fin_pflip_*` (the downturn grid, 0-15% in 2.5% steps) and `fin_pflipn_*` (a normal
+  future, 1% steps), as the base's `fin_flip*`; crossings `fin_pflipn_cross` 7% (7.39) and `fin_pflip_cross` 13%
+  (12.67); `fin_pdown_odds100` 97, `fin_pdown_more_n` HK$4.17M, `fin_pdown_s100` 83, `fin_pflipn_rmp100` 96,
+  `fin_pflipn_down100` 93. The export stops unless the grids' ends reproduce the plan's own runs and the normal limit
+  still binds first. `Final/deck/series.py` draws either set (tokens `f6*` for the base, `p6*` for the plan).
+- Checked: `numbers.json` before and after differ only by these 72 additions (two reruns of `make_charts.py`; the seed
+  is fixed); `figure-data.md` and every PNG unchanged. The `fin_new_*` keys (the 20-year fund) are kept, now unused by
+  v5.
+
+### Final (14 Nov, evening, later): numbers for two backup slides (`Final/final_model.py` `export_final()`)
+
+- `fin_fair_lab_leg89` HK$12.32M, `fin_plan_leg89x` HK$13.36M: the headline's two ends (the label approach at the same
+  fee and giving; our plan), two decimals, for backup 12's waterfall (`Final/deck/series.py` `fair()`).
+- `fin_job_{none,half,fix}_odds` / `_sodds` (and `..100`): `model_runs.md` M10b's three rows rerun on the recommended
+  plan (M10b ran on the plan as it stands): no work again 44.4% / 21.3%; re-hired at half pay 78.7% / 55.2%; the agreed
+  response (half pay, HK$200K a year less to 2036, Carmen works to 65) 96.3% / 87.2%. Backup 16 (`series.py` `job()`).
+- Checked: `numbers.json` before and after differ only by these 14 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, later still): slide 4's downturn, asset by asset, on the recommended plan (`Final/final_model.py` `export_final()`)
+
+Pete chose Option A for slide 4 (`Final/Final_Plan.md` §4.5): the strip shows one scenario's consequence for the
+property, the business and the portfolio (the brief, area 5), on the plan the card and slide 5 use. Keys added, each on
+its own against the recommended plan in a normal future, as M7's channels (`fin_shockport_leg`, `fin_stormflat_leg`,
+`fin_stormbiz_leg`) are on the base:
+- `fin_pstorm_port_leg` −HK$2.52M, `fin_pstorm_flat_leg` −HK$1.44M, `fin_pstorm_biz_leg` −HK$0.81M;
+  `fin_pstorm_leg` −HK$4.70M (all at once, the plan in the scenario: `fin_plan_sodds` 90.0%);
+  `fin_pstorm_bonus_leg` −HK$0.54M (Adrian's bonus lost in 2030–31, against the plan in the scenario, as
+  `fin_bonus_leg`); `fin_pstorm_homebiz` 47% (the flat's and the business's share of the three).
+- Checked: `numbers.json` before and after differ only by these 6 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, later still): slide 3's room in HK$ (`Final/final_model.py` `export_final()`)
+
+Pete chose to show the room above the limit as money, not futures in 100 (`Final/Final_Plan.md` §4.5). Keys added, in
+giving funded today (`gift_now`, within both parents' 35% caps) before either limit breaks (`most_gift`):
+- `fin_room_gift_plain` HK$1.7M (`_x` 1.74): the room with plain funds, the whole values budget;
+- `fin_room_esg_hk` HK$0.28M (`_x` 0.279): what Carmen's ESG funds use (the plain-fund room less `fin_room_gift`);
+- `fin_room_life_x` 0.742: the scholarship fund for life (as `fin_plan_gift_hk`);
+- `fin_room_free_hk` HK$0.72M (`_x` 0.723): the room with ESG funds less that fund (ESTIMATED: giving isn't exactly
+  additive; both causes for life, `fin_room_both39_hk` HK$1.48M, sit at the limit, which agrees).
+- Checked: `numbers.json` before and after differ only by these 7 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, evening): the price of values on slide 3 (`Final/final_model.py` `export_final()`)
+
+Pete questioned showing the room as a pot of giving (`Final/Final_Plan.md` §4.5); slide 3 now shows the brief's "price
+of values". Keys added, from plain choices (plain twin funds, no giving, no vans), the parts added in order so they sum
+(the export stops if the rounded parts don't add to the rounded total):
+- `fin_val_esg_n` −HK$0.62M (`_x` 0.616): Carmen's ESG funds' fee gap, on the recommended plan's fees;
+- `fin_val_gift_n` −HK$1.32M (`_x` 1.320): then the scholarship for life funded now;
+- `fin_val_total_hk` HK$1.94M; odds `fin_val_plain_pt` 97.7 (plain choices), `fin_val_pt` 96.5 (with their values),
+  `fin_val_spt` 88.7 (with their values, the 2030–31 downturn).
+- Slides 8, 10 and backups 18, 19 switched from `fin_dot_values_n` (−0.57) and `fin_plan_gift_n` (−1.25), measured at
+  Round One's fees, to these two; backup 19's bar scale 230 → 220 px per HK$M so the −1.32 bar fits.
+- Checked: `numbers.json` before and after differ only by these 8 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, evening): the inheritance in the downturn (`Final/final_model.py` `export_final()`)
+
+- `fin_plan_sleg89` HK$8.7M: the recommended plan's median inheritance at Carmen's 89 in the 2030–31 downturn
+  (`fin_plan_leg89` HK$13.4M normally; the difference is `fin_pstorm_leg`). Slide 4's result band, so the odds (the
+  limit) and the inheritance are read as two measures (Pete: "how does the plan hold its limit when the limit was 1.7?").
+- Checked: `numbers.json` before and after differ only by this 1 addition; `figure-data.md` and every PNG unchanged.
