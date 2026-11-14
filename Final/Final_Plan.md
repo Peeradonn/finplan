@@ -224,7 +224,9 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   The conclusion bar went deep indigo (`--brand-deep` #231C5E; Pete: "shouldn't we make the conclusion bar the same
   colour?"), the accent's own family, as OneTable's near-black indigo bar is. The vivid indigo itself on the bar
   made it the loudest thing on every slide and competed with the point (slide 8's 26.6%, slide 3's budget); navy
-  looked grey-blue beside the indigo. Render: `build/options/bar-compare.png`. Slides 1–2's stage is deep navy.
+  looked grey-blue beside the indigo. Render: `build/options/bar-compare.png`.
+  Slide 3's four step icons are now all indigo (Pete: "too many colours" on the left: navy, crimson, indigo, navy):
+  they are one sequence, like slide 4's steps; the limit's crimson stays in the data on the right. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
