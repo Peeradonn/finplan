@@ -210,6 +210,40 @@ def job():
     return tok
 
 
+# slide 4 (Pete 14 Nov, option A): what they own and what one downturn takes, both to scale, a band joining each asset to
+# its loss. Owned values are our client's balance sheet (HK$M); losses each on its own (fin_pstorm_*, MEASURED).
+S4_X0, S4_X1, S4_GAP = 176.0, 930.0, 4.0          # the owned assets' and losses' strip
+S4_P0, S4_P1 = 952.0, 1184.0                      # Adrian's pay: earned, not owned
+S4_VY1, S4_LY0 = 206.0, 262.0                     # bottom of the owned strip, top of the loss strip
+S4_OWN = (("f", 11.5), ("b", 5.0), ("s", 10.5))   # the flat, her half of the business, savings with deposits and MPF
+S4_LOSS = (("f", "fin_pstorm_flat_leg"), ("b", "fin_pstorm_biz_leg"), ("s", "fin_pstorm_port_leg"))
+
+
+def strip4():
+    """[[s4_vf_x]] [[s4_vf_w]] [[s4_vf_c]] the owned strip; [[s4_lf_x]] [[s4_lf_w]] [[s4_lf_c]] [[s4_lf_e]] the losses
+    (f flat, b business, s savings; p Adrian's bonus); [[s4_band_f]] the band's polygon points; [[s4_hb_c]] the middle of
+    the flat's and business's losses together, [[s4_hb_e]] where they end."""
+    if "fin_pstorm_flat_leg" not in json.load(open(NUMBERS, encoding="utf-8")):
+        return {}
+    room = S4_X1 - S4_X0 - S4_GAP * (len(S4_OWN) - 1)
+    loss = {k: -signed(key) for k, key in S4_LOSS}
+    bonus = -signed("fin_pstorm_bonus_leg")
+    vs, ls = room / sum(v for _, v in S4_OWN), room / sum(loss.values())
+    tok, vx, lx = {}, S4_X0, S4_X0
+    for k, v in S4_OWN:
+        vw, lw = v * vs, loss[k] * ls
+        tok.update({f"s4_v{k}_x": f"{vx:.1f}", f"s4_v{k}_w": f"{vw:.1f}", f"s4_v{k}_c": f"{vx + vw / 2:.1f}",
+                    f"s4_l{k}_x": f"{lx:.1f}", f"s4_l{k}_w": f"{lw:.1f}", f"s4_l{k}_c": f"{lx + lw / 2:.1f}",
+                    f"s4_l{k}_e": f"{lx + lw:.1f}",
+                    f"s4_band_{k}": f"{vx:.1f},{S4_VY1:.0f} {vx + vw:.1f},{S4_VY1:.0f} {lx + lw:.1f},{S4_LY0:.0f} {lx:.1f},{S4_LY0:.0f}"})
+        vx, lx = vx + vw + S4_GAP, lx + lw + S4_GAP
+    pc, pw = (S4_P0 + S4_P1) / 2, bonus * ls
+    tok.update({"s4_lp_x": f"{pc - pw / 2:.1f}", "s4_lp_w": f"{pw:.1f}", "s4_lp_c": f"{pc:.1f}",
+                "s4_band_p": f"{S4_P0:.1f},{S4_VY1:.0f} {S4_P1:.1f},{S4_VY1:.0f} {pc + pw / 2:.1f},{S4_LY0:.0f} {pc - pw / 2:.1f},{S4_LY0:.0f}",
+                "s4_hb_c": f"{(S4_X0 + float(tok['s4_lb_e'])) / 2:.1f}", "s4_hb_e": tok["s4_lb_e"]})
+    return tok
+
+
 def fill(text):
     charts = {p: Chart(p) for p in BOX}
     tok = {}
@@ -220,6 +254,7 @@ def fill(text):
     tok.update(flip6())
     tok.update(fair())
     tok.update(job())
+    tok.update(strip4())
 
     def sub(m):
         name, arg, off = m.group(1), m.group(2), float(m.group(3) or 0)

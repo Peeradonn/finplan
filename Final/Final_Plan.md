@@ -264,6 +264,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   back to it. Kept: the one price per decision on slides 8 and 10 and backups 18, 19 (`fin_val_esg_n`,
   `fin_val_gift_n`). If asked why slide 3 says HK$0.74M and slide 10 −HK$1.32M for the scholarship: the first is the
   gift, the second its cost to what the children inherit by Carmen's 89.
+- **Slide 4 redrawn: own → lose** (Pete: "is the red line linking to the number best?"; option A of three). The
+  pins were all one length, so the losses couldn't be compared by eye; the boxes were sized by value, so the flat
+  looked biggest though savings lose most; the 47% was only in the bar. Now two strips to scale (what they own
+  and earn; what one downturn takes, each on its own), a band joining each asset to its loss (grey, or green for
+  the savings the label covers), a crimson bracket for the 47% outside the label and a green one for the label's
+  part, cut or carried under each loss, and the limit check as a band. Positions from `series.py` `strip4()`
+  (`[[s4_*]]`), so the strip moves with the model. Not chosen: B (loss bars hanging from today's strip; the 47%
+  still to add up), C (one loss bar; loses "everything they own"). Render: `build/options/slide4-flow.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
