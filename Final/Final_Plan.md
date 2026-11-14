@@ -236,6 +236,9 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - **Slide 4 trimmed** (Pete: "a bit too packed"; 319 words on screen, the most in the first half): one grey line per
   step, one line per loss, three short lines under the strip (the customer route left to slide 7), "All at once"
   emphasised as the slide's result, a shorter footnote; 265 words, the rest being the strip's labels.
+- **Slide 7 trimmed** (354 words, the densest in the talk, to ≈315): each of the five kinds says only where it sits
+  in their plan; the greenium, green premium and green lease lines halved; the family's two outcomes one line
+  each (the data's yearly cost is on slides 9 and 10). The size scale and the loan picture unchanged.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
