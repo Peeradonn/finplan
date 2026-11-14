@@ -474,6 +474,22 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     bridge on slide 13 (two comparisons on one slide: the vans at +HK$0.51M against diesel in the corners and +HK$0.54M
     against the reasonable planner's plan in the bridge). The bridge stays the answer to "how much is just good
     planning?". Kickers as questions: kept as an idea for the script, in the framework's words, never the Wongs'.
+- **Slide 8 decluttered** (Pete, 15 Nov: "too packed … does the grant scheme really need a primary information"). The
+  point "built for bigger borrowers" was said four times (step 2, the chart label, the pink band's label, the bar), and
+  the HKMA crop repeated the HK$100M the line already shows, with a label cut mid-phrase ("Minimum issuance size for
+  eligible") that reads as bonds. Now three blocks and the bar: the five kinds (each with its name, what it is, where it
+  sits), the size line (labels 18px and 15px, was 16.5 and 14.5), and "what does reach her" full width. The crop
+  stays on backup 24, cited in the footer. The footer's "family: our model (MEASURED)" went: no model number is on this
+  slide. **Rule of thumb, from this slide:** a source in its own words earns slide space only when the slide's claim
+  rests on that one fact and a judge might doubt it (slide 10's US$0 fund); otherwise the footer and backup 24.
+- **Slide 3's type** (Pete, 15 Nov: "the font in slide 3 is weird"). Two causes: the wishes were set in italic, and
+  `fonts/` has no italic Plus Jakarta Sans, so the browser (and PowerPoint) slants the upright letters; and each card
+  mixed six text styles, with "Accepts" and "Decides" values in different weights. Now the wishes are upright, 16px,
+  weight 500, in each person's colour (Adrian crimson, Carmen indigo); both rows' values are 16px at 700; the portrait
+  strip is 150px (was 160) so the 16px rows fit the fixed 378px card. **Open (Pete):** synthetic italics remain on
+  talk slides 4, 6, 9, 12 and backups 15, 19, 22 ("values high", "the family chooses", "(0.25%, assumed)", the
+  "Trigger:" lines). Either set them upright deck-wide (a few CSS lines; check that each still reads as secondary), or
+  add the OFL Plus Jakarta Sans Italic files and confirm `make_pptx.py` embeds them.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
