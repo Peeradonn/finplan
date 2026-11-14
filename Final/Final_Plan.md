@@ -319,6 +319,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   less against the newer one, downsizing frees less, and past ≈7% it breaks the limit. Step 1 now opens "With no
   gap", step 2 "As the gap grows" with the reason; the chart marks both routes at no gap, the 0% tick reads "no
   gap", and the axis is named "the gap".
+- **Slide 6: the cost curve became a ranked list** (Pete: "really unclear and looks kind of incomplete"). In the
+  curve, height was HK$ a tonne and width tonnes, so the tallest shape was the vans (19 t, the smallest cut) and
+  the biggest, recycled plastic (108 t), was a hairline at zero: the eye saw the opposite of the bar's point; and
+  ≈134 t of a ≈3,000 t footprint floated unconnected. Now every cut is a row, cheapest first, with a bar as long
+  as its tonnes, its cost a tonne in words ("saves HK$12,800", "≈HK$0 today"), whether it needs a loan (only the
+  vans), the lighter board dashed as not yet counted, the green premium as a note on the plastic row, and a total:
+  ≈134 t a year, 4–5% of her footprint. Same figures as before (ESTIMATED, ILLUSTRATIVE business). Chosen over a
+  footprint → cuts layout. Render: `build/options/slide6-list.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

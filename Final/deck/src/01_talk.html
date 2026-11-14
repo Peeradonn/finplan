@@ -531,34 +531,42 @@
       <text x="961" y="59" font-size="14" text-anchor="middle" fill="#0F1E3D">Scope 3, its landfill here: ≈1,070 t</text>
     </svg>
     <div class="s7-grid">
-      <svg viewBox="0 0 850 360" width="850" height="360" role="img" aria-label="Cost curve: each cut's tonnes a year (width) and HK$ a tonne (height)">
-        <text x="0" y="14" font-size="14" font-weight="800" fill="#0F1E3D">HK$ a tonne cut <tspan font-weight="500" fill="#566173">(below zero, it saves money)</tspan></text>
-        <line x1="70" y1="170" x2="840" y2="170" stroke="#EAEDF2" stroke-width="1"/>
-        <line x1="70" y1="270" x2="840" y2="270" stroke="#EAEDF2" stroke-width="1"/>
-        <text x="62" y="75" font-size="13" text-anchor="end" fill="#566173">0</text>
-        <text x="62" y="175" font-size="13" text-anchor="end" fill="#566173">−5,000</text>
-        <text x="62" y="275" font-size="13" text-anchor="end" fill="#566173">−10,000</text>
-        <rect x="366.7" y="24" width="470.2" height="46" fill="none" stroke="#8892A2" stroke-width="1.5" stroke-dasharray="5 4"/>
-        <text x="601.8" y="52" font-size="14" text-anchor="middle" fill="#566173"><tspan font-weight="800" fill="#0F1E3D">Green premium</tspan>, if 2025's returns: ≈+HK$2,300 a tonne</text>
-        <rect x="70" y="70" width="84" height="256" fill="#0E7490"/>
-        <rect x="154" y="70" width="182.7" height="116" fill="#D5E8ED" stroke="#0E7490" stroke-width="1.5" stroke-dasharray="5 4"/>
-        <rect x="336.7" y="70" width="17.8" height="40" fill="#0E7490"/>
-        <rect x="354.5" y="70" width="12.2" height="24" fill="#0E7490"/>
-        <rect x="366.7" y="66" width="470.2" height="8" fill="#0E7490"/>
-        <line x1="70" y1="70" x2="840" y2="70" stroke="#0F1E3D" stroke-width="1.5"/>
-        <text x="245.3" y="100" font-size="15" font-weight="800" text-anchor="middle" fill="#0F1E3D">Lighter board, 5%</text>
-        <text x="245.3" y="119" font-size="14" text-anchor="middle" fill="#0F1E3D">42 t · −HK$5,800 a tonne</text>
-        <text x="245.3" y="138" font-size="14" font-style="italic" text-anchor="middle" fill="#566173">no loan · not yet counted</text>
-        <path d="M346,112 L346,150 L372,150" fill="none" stroke="#8892A2" stroke-width="1.2"/>
-        <text x="378" y="148" font-size="15" font-weight="800" fill="#0F1E3D">LED and office air-con: 7 t</text>
-        <text x="378" y="166" font-size="14" fill="#0F1E3D">−HK$2,000 and −1,200 a tonne</text>
-        <text x="836" y="100" font-size="15" font-weight="800" text-anchor="end" fill="#0E7490">Recycled plastic in the PET range: 108 t</text>
-        <text x="836" y="119" font-size="14" text-anchor="end" fill="#0F1E3D">≈HK$0 a tonne at today's price · no loan</text>
-        <text x="162" y="290" font-size="15" font-weight="800" fill="#0F1E3D">Electric vans ×4: 19 t</text>
-        <text x="162" y="308" font-size="14" fill="#0F1E3D">−HK$12,800 a tonne</text>
-        <text x="162" y="326" font-size="14" font-weight="800" fill="#C80E1E">the only cut that needs a loan</text>
-        <text x="70" y="352" font-size="14" font-style="italic" fill="#566173">width: tonnes of CO2e cut a year →</text>
-        <text x="836" y="352" font-size="14" text-anchor="end" fill="#566173">counted: ≈134 t a year (lighter board would add 42)</text>
+    <svg viewBox="0 0 850 360" width="850" height="360" role="img" aria-label="Every cut, cheapest first: tonnes a year, cost a tonne, and whether it needs a loan">
+        <text x="0" y="16" font-size="14" font-weight="800" letter-spacing="1" fill="#4A3FBF">EVERY CUT, CHEAPEST FIRST</text>
+        <text x="306" y="16" font-size="13.5" font-style="italic" fill="#566173">CO2e cut, tonnes a year</text>
+        <text x="728" y="16" font-size="13.5" font-style="italic" text-anchor="end" fill="#566173">cost a tonne</text>
+        <text x="848" y="16" font-size="13.5" font-style="italic" text-anchor="end" fill="#566173">needs a loan?</text>
+        <line x1="0" y1="28" x2="850" y2="28" stroke="#0F1E3D" stroke-width="1.5"/>
+        <circle cx="13" cy="57" r="13" fill="#4A3FBF"/><text x="13" y="62" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">1</text>
+        <text x="36" y="56" font-size="16" font-weight="800" fill="#0F1E3D">Electric vans ×4</text>
+        <text x="36" y="75" font-size="13.5" font-style="italic" fill="#566173">against new diesel vans</text>
+        <rect x="306" y="44" width="41.8" height="22" fill="#0E7490"/><text x="355.8" y="61" font-size="15" font-weight="800" fill="#0E7490">19 t</text>
+        <text x="728" y="61" font-size="15" font-weight="700" text-anchor="end" fill="#0F1E3D">saves HK$12,800</text>
+        <text x="848" y="61" font-size="15" font-weight="800" text-anchor="end" fill="#C80E1E">Yes</text>
+        <line x1="0" y1="100" x2="850" y2="100" stroke="#DCE1E8" stroke-width="1"/>
+        <circle cx="13" cy="123" r="13" fill="#4A3FBF"/><text x="13" y="128" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">2</text>
+        <text x="36" y="122" font-size="16" font-weight="800" fill="#0F1E3D">Lighter board, 5%</text>
+        <text x="36" y="141" font-size="13.5" font-style="italic" fill="#566173">not yet counted</text>
+        <rect x="306" y="110" width="92.4" height="22" fill="#D5E8ED" stroke="#0E7490" stroke-width="1.5" stroke-dasharray="5 4"/><text x="406.4" y="127" font-size="15" font-weight="800" fill="#566173">42 t</text>
+        <text x="728" y="127" font-size="15" font-weight="700" text-anchor="end" fill="#0F1E3D">saves HK$5,800</text>
+        <text x="848" y="127" font-size="15" font-weight="800" text-anchor="end" fill="#8892A2">No</text>
+        <line x1="0" y1="166" x2="850" y2="166" stroke="#DCE1E8" stroke-width="1"/>
+        <circle cx="13" cy="189" r="13" fill="#4A3FBF"/><text x="13" y="194" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">3</text>
+        <text x="36" y="188" font-size="16" font-weight="800" fill="#0F1E3D">LED and office air-con</text>
+        <text x="36" y="207" font-size="13.5" font-style="italic" fill="#566173">when the old ones fail</text>
+        <rect x="306" y="176" width="15.4" height="22" fill="#0E7490"/><text x="329.4" y="193" font-size="15" font-weight="800" fill="#0E7490">7 t</text>
+        <text x="728" y="193" font-size="15" font-weight="700" text-anchor="end" fill="#0F1E3D">saves HK$1,200–2,000</text>
+        <text x="848" y="193" font-size="15" font-weight="800" text-anchor="end" fill="#8892A2">No</text>
+        <line x1="0" y1="232" x2="850" y2="232" stroke="#DCE1E8" stroke-width="1"/>
+        <circle cx="13" cy="255" r="13" fill="#4A3FBF"/><text x="13" y="260" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">4</text>
+        <text x="36" y="254" font-size="16" font-weight="800" fill="#0F1E3D">Recycled plastic, PET range</text>
+        <text x="36" y="273" font-size="13.5" font-style="italic" fill="#566173">same price as new, today</text>
+        <rect x="306" y="242" width="237.6" height="22" fill="#0E7490"/><text x="551.6" y="259" font-size="15" font-weight="800" fill="#0E7490">108 t</text>
+        <text x="728" y="259" font-size="15" font-weight="700" text-anchor="end" fill="#566173">≈HK$0 today</text>
+        <text x="848" y="259" font-size="15" font-weight="800" text-anchor="end" fill="#8892A2">No</text>
+        <text x="306" y="286" font-size="13.5" font-style="italic" fill="#566173">green premium if 2025's returns: costs ≈HK$2,300 a tonne</text>
+        <line x1="0" y1="312" x2="850" y2="312" stroke="#DCE1E8" stroke-width="1"/>
+        <text x="0" y="342" font-size="17" fill="#0F1E3D"><tspan font-weight="800" fill="#0E7490">Counted: ≈134 t a year,</tspan> 4–5% of her footprint <tspan fill="#566173" font-size="14.5">(the lighter board would add 42 t)</tspan></text>
       </svg>
       <div class="s7-side">
         <div class="s7-item"><p class="s7-h">For any business</p><p class="v6-st"><span>1</span>Baseline: Scope 1–2 from an energy audit, Scope 3 from what it buys</p><p class="v6-st"><span>2</span>Price each cut per tonne against the plain alternative</p><p class="v6-st"><span>3</span>Rank, cheapest first; claim only what you can measure</p></div>
