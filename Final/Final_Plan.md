@@ -226,7 +226,10 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   made it the loudest thing on every slide and competed with the point (slide 8's 26.6%, slide 3's budget); navy
   looked grey-blue beside the indigo. Render: `build/options/bar-compare.png`.
   Slide 3's four step icons are now all indigo (Pete: "too many colours" on the left: navy, crimson, indigo, navy):
-  they are one sequence, like slide 4's steps; the limit's crimson stays in the data on the right. Slides 1–2's stage is deep navy.
+  they are one sequence, like slide 4's steps; the limit's crimson stays in the data on the right.
+  Then given shape (Pete: "a bit bland"): a thin indigo line joins the four steps (a sequence, so the line means
+  something), and the disagreement rules sit on a light indigo card (a clause in the family's investment policy).
+  No new colour. Render: `build/options/slide3-shape.png`. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
