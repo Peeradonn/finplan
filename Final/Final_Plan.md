@@ -918,6 +918,11 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   shape and hole, one axis title each; it appears on the slide's second click, after the five steps.
   The condition chips went from 11.5px to 13px (the smallest text on the slide); to fit, two step lines were
   shortened: "The limit and room, before any product" and "Only changes we can show, not a footprint".
+  **Then removed, the same day** (Pete: "do you truly think it belongs here?"; Claude had recommended it): a second
+  message on a one-message slide; the brightest object on the stage, pulling the eye from PRISM; shown empty with
+  about 25 spoken words, it couldn't be learned, and nothing on slides 3–9 used it before slide 10, which teaches the
+  corners in full with the Wongs' decisions in them. Slide 2 now ends on the five steps; the step names went from
+  19 to 21px; spoken words back to 1,319. Would change back only if each Select slide named its decision's corner.
 - **The comparison** is now the reasonable planner's plan (§2), on slides 1 and 10 and backup 12; the corners'
   comparison is "the plain alternative" (slide 6, backup 19). Spoken words 1,320 (≈10:06 at 135 a minute with names):
   the cut is deferred to after submission (Pete: the script can change until the 21st; the slides can't).
