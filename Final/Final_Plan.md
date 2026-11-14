@@ -282,6 +282,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   15% a climate effect (it's a general correction sized from the HKMA stress test; older buildings' drift is the
   climate part); the loss row says it measures what the children inherit by 2066; the bar is the verdict and the
   direction. Lookbua's words rewritten to match.
+- **The limit and the room told apart** (Pete: "how does the plan hold its limit when the limit was 1.7 and this is
+  clearly more?"). The limit is on the odds (the money lasts to Carmen's 89 in 95 futures in 100, 85 in a
+  downturn), not on money; HK$1.7M is the room above it, in giving; slide 4's −HK$4.70M is the children's
+  inheritance, a third measure. Slide 3 now reads "Room above their limit: HK$1.7M they could give today" over
+  "Their limit: the money lasts to Carmen's 89 in 95 futures in 100"; slide 4's result leads with the odds (90 in
+  100 against 85) and then the inheritance (HK$8.7M, −HK$4.70M); slide 9's row is "Room above the limit". If a
+  judge asks why the limit protects the parents' spending and not the inheritance: goals-based, retirement is the
+  essential goal and the legacy what's left, the trade priced in HK$ on every slide.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

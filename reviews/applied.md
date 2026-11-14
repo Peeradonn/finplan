@@ -600,3 +600,10 @@ of values". Keys added, from plain choices (plain twin funds, no giving, no vans
 - Slides 8, 10 and backups 18, 19 switched from `fin_dot_values_n` (−0.57) and `fin_plan_gift_n` (−1.25), measured at
   Round One's fees, to these two; backup 19's bar scale 230 → 220 px per HK$M so the −1.32 bar fits.
 - Checked: `numbers.json` before and after differ only by these 8 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (14 Nov, evening): the inheritance in the downturn (`Final/final_model.py` `export_final()`)
+
+- `fin_plan_sleg89` HK$8.7M: the recommended plan's median inheritance at Carmen's 89 in the 2030–31 downturn
+  (`fin_plan_leg89` HK$13.4M normally; the difference is `fin_pstorm_leg`). Slide 4's result band, so the odds (the
+  limit) and the inheritance are read as two measures (Pete: "how does the plan hold its limit when the limit was 1.7?").
+- Checked: `numbers.json` before and after differ only by this 1 addition; `figure-data.md` and every PNG unchanged.

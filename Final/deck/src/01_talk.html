@@ -97,7 +97,7 @@
 .v3-rules p:not(.v3-rh)::before{content:"";position:absolute;left:1px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--brand)}
 .v3-rules b{font-weight:800}
 .v3-bt{font:500 19px/1.3 var(--text);margin-top:12px} .v3-bt b{font:800 28px/1 var(--num);color:var(--brand)}
-.v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 28px}
+.v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 28px} .v3-bs b{color:var(--accent);font-weight:800}
 .v3-brk{display:flex;margin-right:5px}
 .v3-brk p{font:600 14px/1.2 var(--text);color:var(--ink);text-align:center}
 .v3-brk p i{display:block;height:8px;margin-top:4px;border:1.5px solid var(--ink);border-bottom:none}
@@ -291,8 +291,8 @@
     </div>
     <div class="p4-right">
       <p class="p4-cap">The Wongs <span class="v3-who">· two parents decide, two children inherit; Adrian retires in 2037, Carmen in 2039</span></p>
-      <p class="v3-bt">Their values budget: <b>{{fin_room_gift_plain}}</b> of giving, in today's money</p>
-      <p class="v3-bs">The most they could give now and still keep their limit: 95 in 100, 85 in a downturn.</p>
+      <p class="v3-bt">Room above their limit: <b>{{fin_room_gift_plain}}</b> they could give today</p>
+      <p class="v3-bs"><b>Their limit:</b> the money lasts to Carmen's 89 in 95 futures in 100 (85 in a downturn). Giving more would break it.</p>
       <div class="v3-brk"><span style="flex:{{fin_room_esg_x}}"></span><p style="flex:calc({{fin_room_life_x}} + {{fin_room_free_x}})">Both causes for life ({{fin_room_both39_hk}}) would use all of it<i></i></p></div>
       <div class="v3-bar"><div class="v3-esg" style="flex:{{fin_room_esg_x}}"></div><div class="v3-life" style="flex:{{fin_room_life_x}}"></div><div class="v3-free" style="flex:{{fin_room_free_x}}"></div></div>
       <div class="v3-lab">
@@ -312,8 +312,9 @@
   <aside class="notes">PETE: So Profile comes first, before any product. Ask each decision-maker alone. Set the limit: how
     sure the money must be. The room above it is the values budget, agreed once and written into the investment policy;
     if they disagree, shared money follows the more prudent. The Wongs: Adrian and Carmen decide, their two children
-    inherit; Adrian retires in 2037, Carmen in 2039. Their limit: the money lasts in 95 futures out of 100, 85 in a
-    downturn. Above it sits a values budget of about {{fin_room_gift_plain}} of giving, in today's money. Carmen's ESG
+    inherit; Adrian retires in 2037, Carmen in 2039. Their limit: the money lasts to Carmen's 89 in 95 futures out of 100, 85 in a
+    downturn. That's a limit on the odds, not on money. Above it is room: about {{fin_room_gift_plain}} they could give today
+    before the odds fall to 95. Carmen's ESG
     funds use {{fin_room_esg_hk}}; the scholarship, for life, {{fin_plan_gift_hk}}; about {{fin_room_free_hk}} is
     still free. A second cause for life would use all of it; paid from yearly cash flow instead, it would break the
     limit. Adrian gets his limit; Carmen spends the room. So what could push them below 95?
@@ -409,7 +410,7 @@
     <text x="[[s4_lp_c]]" y="361" font-size="13.5" fill="#566173" text-anchor="middle"><tspan font-weight="800">Carried</tspan></text>
     <!-- the result: the limit check -->
     <rect x="0" y="394" width="1184" height="38" rx="4" fill="#EFEDFB"/>
-    <text x="16" y="419" font-size="16" fill="#0F1E3D"><tspan font-weight="800" fill="#4A3FBF">Priced against the limit, all at once:</tspan> {{fin_pstorm_leg}} for the children; the money lasts in <tspan font-weight="800">{{fin_plan_sodds100}} futures in 100</tspan>, not {{fin_plan_odds100}}: above their limit of 85</text>
+    <text x="16" y="419" font-size="16" fill="#0F1E3D"><tspan font-weight="800" fill="#4A3FBF">Against their limit, all at once:</tspan> the money still lasts to Carmen's 89 in <tspan font-weight="800">{{fin_plan_sodds100}} futures in 100</tspan> (downturn limit 85); the children inherit {{fin_plan_sleg89}} <tspan fill="#566173">({{fin_pstorm_leg}})</tspan></text>
     <text x="0" y="452" font-size="13" fill="#566173">ILLUSTRATIVE, sized between NGFS, HKMA, BoE, ECB and CISL scenarios: a test, not a forecast. Losses: children's median inheritance, today's HK$. Odds assume Adrian works to 65.</text>
     <text x="0" y="469" font-size="13" fill="#566173">22 routes traced: her customers' climate reporting reaches her (slide 7); the EU's carbon border tax doesn't; a lost job is tested in the backup.</text>
   </svg></div>
@@ -789,7 +790,7 @@
       </div>
       <div class="o9-sec">
         <p class="o9-h"><i>3</i>Pays for values only from the room above its limits</p>
-        <p class="o9-row"><span>The values budget, in giving funded today</span><b>{{fin_room_gift_plain}}</b><em></em></p>
+        <p class="o9-row"><span>Room above the limit, as giving today</span><b>{{fin_room_gift_plain}}</b><em></em></p>
         <p class="o9-row"><span>Still free after Carmen's choices</span><b>≈{{fin_room_free_hk}}</b><em></em></p>
         <p class="o9-trig"><b>Trigger:</b> a price passes the room → both parents re-sign</p>
       </div>

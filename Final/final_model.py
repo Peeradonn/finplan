@@ -618,6 +618,7 @@ def export_final():
         out[f"fin_pstorm_{k}_leg"] = dPl(r, pl_n)
     out["fin_pstorm_bonus_leg"] = dPl(pbon, pl_s)
     out["fin_pstorm_leg"] = dPl(pl_s, pl_n)                                # all three at once
+    out["fin_plan_sleg89"] = f"HK${pl_s['leg_med']:.1f}M"                  # what the children still inherit then
     p3 = [r["leg_med"] - pl_n["leg_med"] for r in (pport, pflat, pbiz)]
     out["fin_pstorm_homebiz"] = f"{(p3[1] + p3[2]) / sum(p3):.0%}"
     # backup slides (14 Nov, evening): the headline's two ends in HK$ (the waterfall), and M10b's job loss on the

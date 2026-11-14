@@ -2,9 +2,9 @@
 
 Generated 2026-11-14 by `Final/deck/make.py` from the slides' speaker notes. Edit the words in `Final/deck/src/*.html`, not here.
 
-1361 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:23 at 145 words a minute (9:43 with names and handovers); 10:04 at 135 words a minute (10:24 with names and handovers); 10:53 at 125 words a minute (11:13 with names and handovers). Over 10:30 disqualifies the team.
+1377 spoken words (the budget is about 1,300 for 10:00). Slides allotted 10:00. Speech: 9:29 at 145 words a minute (9:49 with names and handovers); 10:12 at 135 words a minute (10:32 with names and handovers); 11:00 at 125 words a minute (11:20 with names and handovers). Over 10:30 disqualifies the team.
 
-Speaking time at 135 words a minute: Pete 4:03, Win 2:08, Lookbua 1:57, Fahtai 1:56.
+Speaking time at 135 words a minute: Pete 4:10, Win 2:08, Lookbua 1:57, Fahtai 1:56.
 
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · 1:30 · 176 spoken words (≈78 s at 135)*
@@ -21,9 +21,9 @@ Speaking time at 135 words a minute: Pete 4:03, Win 2:08, Lookbua 1:57, Fahtai 1
 > Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's colours. No click: the price tag left slide 2 (Pete 14 Nov): one message per slide; slide 10 teaches the four corners with the Wongs' decisions in them.
 
 ## 3 · Set the limit first; values spend only the room above it
-*Pete · 0:50 · 168 spoken words (≈75 s at 135) · over its time*
+*Pete · 0:50 · 184 spoken words (≈82 s at 135) · over its time*
 
-**Pete:** So Profile comes first, before any product. Ask each decision-maker alone. Set the limit: how sure the money must be. The room above it is the values budget, agreed once and written into the investment policy; if they disagree, shared money follows the more prudent. The Wongs: Adrian and Carmen decide, their two children inherit; Adrian retires in 2037, Carmen in 2039. Their limit: the money lasts in 95 futures out of 100, 85 in a downturn. Above it sits a values budget of about HK$1.7M of giving, in today's money. Carmen's ESG funds use HK$0.28M; the scholarship, for life, HK$0.74M; about HK$0.72M is still free. A second cause for life would use all of it; paid from yearly cash flow instead, it would break the limit. Adrian gets his limit; Carmen spends the room. So what could push them below 95?
+**Pete:** So Profile comes first, before any product. Ask each decision-maker alone. Set the limit: how sure the money must be. The room above it is the values budget, agreed once and written into the investment policy; if they disagree, shared money follows the more prudent. The Wongs: Adrian and Carmen decide, their two children inherit; Adrian retires in 2037, Carmen in 2039. Their limit: the money lasts to Carmen's 89 in 95 futures out of 100, 85 in a downturn. That's a limit on the odds, not on money. Above it is room: about HK$1.7M they could give today before the odds fall to 95. Carmen's ESG funds use HK$0.28M; the scholarship, for life, HK$0.74M; about HK$0.72M is still free. A second cause for life would use all of it; paid from yearly cash flow instead, it would break the limit. Adrian gets his limit; Carmen spends the room. So what could push them below 95?
 
 > Notes: DRAFT, 14 Nov (Pete: the room in HK$, not futures in 100; icons; the white space). The budget: the most giving funded now (gift_now, within both parents' 35% caps) before either limit breaks (95 normally, 85 in the 2030–31 downturn; most_gift in final_model.py): HK$1.7M with plain funds (fin_room_gift_plain); HK$1.5M with Carmen's ESG funds, so they use HK$0.28M (fin_room_esg_hk); the scholarship for life is its fund, HK$0.74M (§5.3); what's free is the room less the fund (fin_room_free_hk, ESTIMATED: giving isn't exactly additive). Both causes for life funded now: HK$1.48M, odds 94.9%, at the limit within sampling error; pledged from cash flow: 91.6% (79.8% in the downturn). The normal limit binds (plain choices last in 92.2% of futures in the downturn, above 85). Why HK$ and not futures in 100: near 97 the odds barely move, so the room in points (≈3, about 1 used) is blunt; the limit stays a probability, the goals-based planners' floor (Das, Markowitz, Scheid and Statman 2010). Disagreement: research/area1_6_framework.md §3c (shared money follows the more prudent: ESMA35-43-3172 ¶65–70; the plain twin stays until the next annual meeting). Profiles: §3a, our client definition, not quotes. The limits (95, 85): ours, ILLUSTRATIVE.
 
