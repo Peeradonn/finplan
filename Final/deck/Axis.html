@@ -32,7 +32,8 @@
                                                                     use them for fills behind ink, never for text */
   --ink:#0F1E3D; --slate:#566173; --navy2:#2B4A7A;                                    /* slate 8.2:1 on white: the lightest text colour */
   --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* the limit and money at risk only (5.9:1) */
-  --brand:#4A3FBF; --brand-light:#9C95F0; --brand-tint:#A9A3E8;   /* the deck's one vivid colour: headers and each slide's point (7.6:1;
+  --brand:#4A3FBF; --brand-light:#9C95F0; --brand-tint:#A9A3E8; --brand-deep:#231C5E;   /* deep: the conclusion bar */
+    /* the deck's one vivid colour: headers and each slide's point (7.6:1;
      after OneTable, Pete 14 Nov); --brand-light on the dark stages (6.4:1) */
   --out:#0E7490;                                                     /* what the money does to the world: Impact teal */
   /* section colours, one per PRISM letter (slide 2's rays; deeper shades here so text on white passes contrast) */
@@ -89,7 +90,7 @@ b,strong{font-weight:600}
 .todo b{color:var(--ink)}
 
 /* the one-sentence conclusion */
-.sowhat{margin-top:14px;background:var(--ink);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px;border-radius:3px}
+.sowhat{margin-top:14px;background:var(--brand-deep);color:#fff;font:600 20px/1.28 var(--head);padding:12px 22px;border-radius:3px}
 
 /* footer: the framework tracker (Profile · Risk · Impact · Select · Monitor), the brief's areas, the source, the page */
 .foot{position:absolute;left:48px;right:48px;bottom:15px;height:26px;display:flex;align-items:center;gap:18px;font-size:12px;color:var(--slate)}

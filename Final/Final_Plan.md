@@ -220,7 +220,11 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   1's room tag and outcomes, slide 3's budget bar, slide 4's steps, slide 5's chosen route, slide 7's loan and steps,
   slide 8's 26.6%, slide 10's outcome. Crimson (`--accent`) now means only the limit and money at risk (and the
   refusals); teal the world; navy text and bars; the Climate Facts card stays ink, as a real label is. Renders:
-  `build/options/indigo-deep-compare.png`, `indigo-sheet.png`. Slides 1–2's stage is deep navy.
+  `build/options/indigo-deep-compare.png`, `indigo-sheet.png`.
+  The conclusion bar went deep indigo (`--brand-deep` #231C5E; Pete: "shouldn't we make the conclusion bar the same
+  colour?"), the accent's own family, as OneTable's near-black indigo bar is. The vivid indigo itself on the bar
+  made it the loudest thing on every slide and competed with the point (slide 8's 26.6%, slide 3's budget); navy
+  looked grey-blue beside the indigo. Render: `build/options/bar-compare.png`. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
