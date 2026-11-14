@@ -349,6 +349,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   big footprint is. Same figures (ESTIMATED, ILLUSTRATIVE business). Render: `build/options/slide6-chain.png`.
   **Lesson for the deck (§3):** where a slide's content is a real object or process (her supply chain, a loan's
   terms, a label), draw that object rather than a table; not forced where it doesn't fit.
+  (Pete, the same evening: "I didn't mean to just put icons on everything but for you to be more creative on the
+  slide": icons are decoration; creative means the slide's main picture is an idea from the subject.)
+- **Slide 7 as two term sheets** (option chosen): the rule drawn literally. A green loan for the vans (label's rate
+  cut, 0.25% assumed, saves ≈HK$12K; the review to earn it costs ≈HK$12K; net, the greenium, ≈HK$0; stamped "only
+  if free") beside the plain equipment loan (≈HK$349K a year against ≈HK$303K saved, 87%; debt cover 5.7× → 3.3×;
+  +HK$0.51M for the children through the sale; stamped "this one works"). The slide now runs in its three steps'
+  order: the five kinds (name it), the size scale (check it at her size), the sheets (judge it by its own test).
+  The green premium, carbon data and the green lease in a side column. Render: `build/options/slide7-sheets.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

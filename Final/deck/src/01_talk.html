@@ -118,6 +118,28 @@
 #v6 .s7-item{margin-bottom:10px}
 .v6-st span{flex:none;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font:800 12.5px/22px var(--head);
   text-align:center;margin-top:1px}
+/* v5 slide 7 as two term sheets (Pete 14 Nov: "be more creative"): a green loan judged as a loan (v7s- only here) */
+#v7 .body.stack{gap:8px}
+.v7s{display:grid;grid-template-columns:400px 44px 400px 1fr;align-items:center;gap:0;margin-top:4px}
+.v7s-doc{position:relative;background:#fff;border:1.5px solid #C9D1DC;border-top:5px solid #8892A2;border-radius:4px;padding:10px 16px 10px;
+  box-shadow:0 3px 10px rgba(15,30,61,.10)}
+.v7s-plain{border-top-color:var(--brand)}
+.v7s-top{font:800 11px/1 var(--text);letter-spacing:1.2px;color:var(--slate)}
+.v7s-tt{font:800 18px/1.2 var(--head);color:var(--ink);margin-top:4px}
+.v7s-sub{font:500 13px/1.3 var(--text);color:var(--slate);margin:1px 0 4px}
+.v7s-row{display:flex;align-items:baseline;gap:8px;font:500 14px/1.3 var(--text);color:var(--ink);padding:4px 0;border-bottom:1px dotted #B3BAC6}
+.v7s-row span{flex:1} .v7s-row i{font-style:italic;color:var(--slate);font-weight:500}
+.v7s-row b{font:800 15px/1.2 var(--num);white-space:nowrap}
+.v7s-row.v7s-net{border-bottom:none;border-top:1.5px solid var(--ink);margin-top:3px;padding-top:7px}
+.v7s-row.v7s-net span{font-weight:800}
+.v7s-plain .v7s-net b{color:var(--brand);font-size:17px}
+.v7s-stamp{position:absolute;right:14px;top:14px;transform:rotate(-7deg);border:2.5px solid;border-radius:4px;padding:3px 8px;
+  font:800 13px/1 var(--text);letter-spacing:1.2px;text-transform:uppercase;opacity:.92}
+.v7s-st-grey{color:#8892A2} .v7s-st-go{color:var(--brand)}
+.v7s-vs{text-align:center;font:italic 800 18px/1 var(--head);color:var(--slate)}
+.v7s-side{padding-left:22px;display:flex;flex-direction:column;gap:9px}
+.v7s-side p{font:500 13.5px/1.35 var(--text);color:var(--ink);padding-left:10px;border-left:3px solid #DCE1E8}
+.v7s-side b{font-weight:800}
 /* v5 slide 6 as her business's chain (Pete 14 Nov: "put some creative thinking into designing the slide"): what she
    buys -> her warehouse and vans -> its landfill here, each cut pinned where it acts (v6c- classes only here) */
 .v6c{display:flex;flex-direction:column;gap:14px;margin-top:14px}
@@ -614,62 +636,50 @@
   <div class="body stack">
     <p class="v7-steps"><span class="v7-cap">THE STEP, FOR ANY CLIENT</span><span><span class="v7-n">1</span><b>Name the kind of finance</b></span><span><span class="v7-n">2</span><b>Check it at the client's size</b></span><span><span class="v7-n">3</span><b>Judge it by its own test,</b> against the cheapest plain loan</span></p>
     <div class="v7k">
-      <p class="v7k-cap"><span class="v7-n">1</span>THE BRIEF'S FIVE KINDS, AND WHERE EACH SITS IN THEIR PLAN</p>
+      <p class="v7k-cap">THE BRIEF'S FIVE KINDS, AND WHERE EACH SITS IN THEIR PLAN</p>
       <div class="v7k-c v7k-on"><b>Green</b><i>use of proceeds</i><span>her vans; Carmen's green bonds</span></div>
       <div class="v7k-c"><b>Sustainability-linked</b><i>price tied to targets</i><span>refused: too small to pay</span></div>
       <div class="v7k-c"><b>Transition</b><i>cleaning up existing assets</i><span>none: the vans already count as green</span></div>
       <div class="v7k-c"><b>Impact investing</b><i>a change the investor causes</i><span>none in their savings</span></div>
       <div class="v7k-c v7k-on"><b>ESG integration</b><i>climate in the analysis</i><span>the whole plan (slide 4)</span></div>
     </div>
-    <svg viewBox="0 0 1184 152" width="1184" height="152" style="font-family:var(--text);overflow:visible">
-      <circle cx="10" cy="9" r="10" fill="#4A3FBF"/><text x="10" y="13.5" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text><text x="27" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT EACH GREEN INSTRUMENT IS BUILT FOR, AND HER SIZE</text>
-      <rect x="292" y="26" width="858" height="82" fill="#F4F6F9"/>
-      <line x1="40" y1="108" x2="1150" y2="108" stroke="#0F1E3D" stroke-width="2"/>
-      <line x1="40" y1="102" x2="40" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="40" y="130" font-size="13.5" fill="#566173" text-anchor="middle">HK$1M</text>
-      <line x1="410" y1="102" x2="410" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="410" y="130" font-size="13.5" fill="#566173" text-anchor="middle">HK$10M</text>
-      <line x1="780" y1="102" x2="780" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="780" y="130" font-size="13.5" fill="#566173" text-anchor="middle">HK$100M</text>
-      <line x1="1150" y1="102" x2="1150" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="1150" y="130" font-size="13.5" fill="#566173" text-anchor="end">HK$1,000M</text>
-      <path d="M105,116 l-9,16 h18 z" fill="#4A3FBF"/>
-      <text x="124" y="146" font-size="15" font-weight="800" fill="#4A3FBF">her van loan, HK$1.5M <tspan font-size="13.5" font-weight="500" fill="#566173">· she buys ≈US$3.4M a year</tspan></text>
-      <line x1="105" y1="78" x2="105" y2="108" stroke="#8892A2" stroke-width="1.5"/><circle cx="105" cy="108" r="5" fill="#8892A2"/>
-      <text x="113" y="40" font-size="14" font-weight="800" fill="#0F1E3D">Green loan label</text>
-      <text x="113" y="57" font-size="13.5" fill="#566173">discount ≈ the review fee,</text>
-      <text x="113" y="73" font-size="13.5" fill="#566173">≈HK$12K: <tspan font-weight="800" fill="#0F1E3D">only if free</tspan></text>
-      <line x1="292" y1="80" x2="292" y2="108" stroke="#C80E1E" stroke-width="2"/><circle cx="292" cy="108" r="5" fill="#C80E1E"/>
-      <text x="300" y="78" font-size="14" font-weight="800" fill="#0F1E3D">Sustainability-linked loan</text>
-      <text x="300" y="95" font-size="13.5" fill="#566173">pays above ≈HK$4.8M of debt</text>
-      <line x1="780" y1="72" x2="780" y2="108" stroke="#C80E1E" stroke-width="2"/><circle cx="780" cy="108" r="5" fill="#C80E1E"/>
-      <text x="772" y="62" font-size="14" font-weight="800" fill="#0F1E3D" text-anchor="end">Grant Scheme</text>
-      <text x="772" y="79" font-size="13.5" fill="#566173" text-anchor="end">loans of HK$100M or more</text>
-      <line x1="1110" y1="80" x2="1110" y2="108" stroke="#C80E1E" stroke-width="2"/><circle cx="1110" cy="108" r="5" fill="#C80E1E"/>
-      <text x="1102" y="78" font-size="14" font-weight="800" fill="#0F1E3D" text-anchor="end">Supply-chain finance</text>
-      <text x="1102" y="95" font-size="13.5" fill="#566173" text-anchor="end">≈US$100M of a buyer's trade</text>
-      <text x="306" y="44" font-size="13" font-weight="800" letter-spacing=".5" fill="#C80E1E">BUILT FOR BORROWERS FAR BIGGER THAN HER</text>
+    <svg viewBox="0 0 1184 96" width="1184" height="96" style="font-family:var(--text);overflow:visible" class="v7s-scale">
+      <text x="0" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#C80E1E">AND THE GREEN INSTRUMENTS BUILT FOR BORROWERS FAR BIGGER THAN HER</text>
+      <line x1="40" y1="62" x2="1150" y2="62" stroke="#0F1E3D" stroke-width="2"/>
+      <line x1="40" y1="56" x2="40" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="40" y="84" font-size="13" fill="#566173" text-anchor="middle">HK$1M</text>
+      <line x1="410" y1="56" x2="410" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="410" y="84" font-size="13" fill="#566173" text-anchor="middle">HK$10M</text>
+      <line x1="780" y1="56" x2="780" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="780" y="84" font-size="13" fill="#566173" text-anchor="middle">HK$100M</text>
+      <line x1="1150" y1="56" x2="1150" y2="68" stroke="#0F1E3D" stroke-width="1.5"/><text x="1150" y="84" font-size="13" fill="#566173" text-anchor="end">HK$1,000M</text>
+      <path d="M105,70 l-8,14 h16 z" fill="#4A3FBF"/><text x="120" y="84" font-size="14" font-weight="800" fill="#4A3FBF">her loan, HK$1.5M</text>
+      <circle cx="292" cy="62" r="5" fill="#C80E1E"/><text x="300" y="40" font-size="14" font-weight="800" fill="#0F1E3D">Sustainability-linked loan</text><text x="300" y="55" font-size="13" fill="#566173">pays above ≈HK$4.8M of debt</text>
+      <circle cx="780" cy="62" r="5" fill="#C80E1E"/><text x="772" y="40" font-size="14" font-weight="800" fill="#0F1E3D" text-anchor="end">Grant Scheme</text><text x="772" y="55" font-size="13" fill="#566173" text-anchor="end">loans of HK$100M or more</text>
+      <circle cx="1110" cy="62" r="5" fill="#C80E1E"/><text x="1102" y="40" font-size="14" font-weight="800" fill="#0F1E3D" text-anchor="end">Supply-chain finance</text><text x="1102" y="55" font-size="13" fill="#566173" text-anchor="end">≈US$100M of a buyer's trade</text>
     </svg>
-    <div class="v7-row3">
-      <div class="v7-col">
-        <p class="v7-h"><span class="v7-n">3</span>WHAT FITS HER: A PLAIN LOAN</p>
-        <svg viewBox="0 0 380 112" width="380" height="112" style="font-family:var(--text)">
-          <text x="0" y="14" font-size="14.5" font-weight="800" fill="#0F1E3D">HK$1.5M, 5 years, secured on the vans</text>
-          <text x="0" y="32" font-size="13" fill="#566173">of HK$1.91M of equipment; each year to 2032:</text>
-          <rect x="0" y="40" width="380" height="23" fill="#566173"/>
-          <text x="8" y="56" font-size="13.5" font-weight="700" fill="#FFFFFF">loan payment ≈HK$349K</text>
-          <rect x="0" y="67" width="330" height="23" fill="#0E7490"/>
-          <text x="8" y="83" font-size="13.5" font-weight="700" fill="#FFFFFF">fuel and power saved ≈HK$303K: ≈87%</text>
-          <rect x="330" y="67" width="50" height="23" fill="#FFFFFF" stroke="#566173" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <text x="0" y="108" font-size="13.5" fill="#0F1E3D"><tspan font-weight="800">Debt cover 5.7× → 3.3×</tspan> · repaid before the sale</text>
-        </svg>
+    <div class="v7s">
+      <div class="v7s-doc v7s-green">
+        <p class="v7s-top">TERM SHEET · indicative</p>
+        <p class="v7s-tt">Green loan for the vans</p>
+        <p class="v7s-sub">HK$1.5M · 5 years · secured on the vans</p>
+        <p class="v7s-row"><span>Label's rate cut <i>(0.25%, assumed)</i></span><b>saves ≈HK$12K</b></p>
+        <p class="v7s-row"><span>External review to earn the label</span><b>costs ≈HK$12K</b></p>
+        <p class="v7s-row v7s-net"><span>Net to her: the greenium</span><b>≈HK$0</b></p>
+        <span class="v7s-stamp v7s-st-grey">Only if free</span>
       </div>
-      <div class="v7-col">
-        <p class="v7-h">GREENIUM ≠ GREEN PREMIUM</p>
-        <p class="v7-t"><b>Greenium</b>, the label's discount: ≈ its review fee, net ≈HK$0</p>
-        <p class="v7-t"><b>Green premium</b>, the cleaner option's extra cost: ≈HK$12K an e-van (3%), with the tax waiver to Mar 2028</p>
-        <p class="v7-t"><b>Green lease</b>, 2027: the landlord allows chargers and LED; she shares the saving</p>
+      <p class="v7s-vs">vs</p>
+      <div class="v7s-doc v7s-plain">
+        <p class="v7s-top">TERM SHEET · indicative</p>
+        <p class="v7s-tt">Plain equipment loan</p>
+        <p class="v7s-sub">HK$1.5M · 5 years · secured on the vans</p>
+        <p class="v7s-row"><span>Payment each year, to 2032</span><b>≈HK$349K</b></p>
+        <p class="v7s-row"><span>Fuel and power saved each year</span><b>≈HK$303K <i>(87%)</i></b></p>
+        <p class="v7s-row"><span>Debt cover; repaid before the sale</span><b>5.7× → 3.3×</b></p>
+        <p class="v7s-row v7s-net"><span>For the children, through the sale</span><b>{{fin_dot_vans_n}}</b></p>
+        <span class="v7s-stamp v7s-st-go">This one works</span>
       </div>
-      <div class="v7-col v7-fam">
-        <p class="v7-h">WHERE IT REACHES THE FAMILY: THE SALE</p>
-        <p><b>{{fin_dot_vans_n}}</b> to the children: the vans' saving, through the sale</p>
-        <p><b>{{fin_cust10_leg}}</b> guarded: carbon data keeps a customer worth 10% of sales</p>
+      <div class="v7s-side">
+        <p><b>Green premium:</b> an e-van costs ≈HK$12K more (3%), while the tax waiver lasts, to Mar 2028</p>
+        <p><b>Carbon data,</b> ≈HK$54–73K a year, keeps a customer worth 10% of sales ({{fin_cust10_leg}})</p>
+        <p><b>Green lease,</b> 2027: the landlord allows chargers and LED</p>
       </div>
     </div>
   </div>
