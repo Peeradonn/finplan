@@ -372,6 +372,12 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   the close), backups 12–21; page numbers, the backup index, cross-references (slide 10's corners point to
   slides 6, 8 for the vans; 5, 7, 9 for the refusals) and `make_pptx.py`'s sections follow. Slide references in
   this plan's earlier entries use the numbering of their day.
+- **The vans and the sale introduced on slide 6** (Pete: "when is the first time we mention the vans ... I'm quite
+  confused"). Slides 6 to 8 used "the vans" and "through the sale" without saying she runs four diesel delivery
+  vans, what replaces them, or that Carmen sells her half of the business. Slide 6 now says it: her station reads
+  "4 diesel vans, a leased warehouse"; the cut "4 diesel vans → electric"; and a line above the bar, "How a cut
+  reaches the family: Carmen sells her half in 2035–39 at ≈5.6× profit, so what the business saves raises the
+  price" (Decision_List.md B1, B7). Fahtai's words set up the vans and the sale before the cuts.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
