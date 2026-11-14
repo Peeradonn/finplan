@@ -436,6 +436,17 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   (the PRISM footer badge already shows where we are, in a 10-minute talk); a rebuttal section in the talk (the
   hard questions are the backups' job); the adversarial tone (we propose a framework, not a campaign).
 - **Slide 1 easier to read:** the photo dimmed to 11% and its colour cut; every small line brighter.
+- **OASIS's tone, without the hostility** (Pete, 15 Nov: "even though we're presenting a framework doesn't mean we'd
+  need a bad presentation"; he was right to push back on "not taken"). Taken: a clear antagonist, the label (never
+  advisers or a profession); conviction, verdict first; contrast. Applied to the conclusion bars, the talk's spine,
+  each now a short verdict whose number is on its slide (e.g. 5: "The label checks the savings. A climate check
+  finds the other 47%."; 10: "On the SFC's ESG list. Empty for two years. The label let it through; the check
+  didn't."; 13: "The label never decides. The limit, the change and the room do."). "At least three times her
+  size" (slide 8) is the sustainability-linked loan's ≈HK$4.8M break-even against her HK$1.5M loan. The spoken
+  words get the same verdict-first edit during the script cut (after submission), so it cuts words rather than
+  adding them.
+- **Slide 3's portraits aligned:** each portrait cropped from its measured crown, chin and face centre so every head
+  is the same size at the same height (`img/portrait-*.jpg`; square `*-face.jpg` for slide 4's round faces).
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
