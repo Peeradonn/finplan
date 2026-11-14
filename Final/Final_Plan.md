@@ -378,6 +378,25 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   "4 diesel vans, a leased warehouse"; the cut "4 diesel vans → electric"; and a line above the bar, "How a cut
   reaches the family: Carmen sells her half in 2035–39 at ≈5.6× profit, so what the business saves raises the
   price" (Decision_List.md B1, B7). Fahtai's words set up the vans and the sale before the cuts.
+- **One point per slide: thirteen talk slides** (Pete, 14 Nov, evening: "after PRISM we've been trying to make too
+  many points ... separate some of the stuff into multiple pages"). Measured: OneTable, the live-pitch reference,
+  runs a median of 133 words a page over 42 pages; e-Sentry, a judged PDF read alone, 289. Our slides 3–11 ran
+  203–265: built to be read, but presented live. Changes:
+  - **Slide 3 split.** 3, "Profile each decision-maker alone; write who decides into the policy": the family
+    introduced properly (Adrian, Carmen, Ryan, Chloe as cards: values, tolerances, who decides) and the three
+    disagreement rules. 4, "Set the limit first; values spend only the room above it": the budget bar full width.
+    Profile comes first because a judge meets the family before their budget (ESMA ¶81's order); slide 2 now
+    hands off "So first: who decides, and within what limits?"
+  - **Slide 9 split.** 10, "Check each product against a rule, not its label": four products, stamped; the fund
+    with US$0 is the moment. 11, "The sustainable share is an output of the limits": the two portfolios, 26.6%
+    out, its price.
+  - **Trimmed:** the flat's refused green mortgage and weather line to backup 23 (the home), which covers them;
+    the solar refusal and the ranking helper line off the business slide (7), whose bar returns to its own point;
+    the Climate Facts slide (12) keeps the card, the product's label against the plan's, and one line "a missing
+    price becomes a decision" (attribution and the biases to Win's notes).
+  - Renumbered once: talk 1–13, backups 14–23 (page numbers, the backup index, cross-references,
+    `make_pptx.py`'s sections, AGENTS.md). Words on screen now 145–264 (most under 210; the close, 264, is the
+    summary). Spoken words 1,468: the split didn't add any, but the cut to ≈1,300 is still due.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
