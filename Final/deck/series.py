@@ -98,7 +98,9 @@ def signed(key):
 
 # slide 3: every decision on one measure (Pete, 13 Nov), as bars from zero in its SVG (units = px). Each decision's
 # change in the children's median inheritance in a normal future (numbers.json fin_dot_*_n), against its ordinary choice.
-BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 660.0, 260.0, 365.0, 800.0
+BAR_ZERO, BAR_SCALE, BAR_MIN, BAR_MAX = 660.0, 230.0, 365.0, 800.0
+# the gift: the recommended plan's scholarship for life, funded now (14 Nov, Final_Plan.md §5.3), when exported
+BAR_KEY = {"gift": "fin_plan_gift_n"}
 BARS = ("vans", "data", "values", "gift", "flat")
 BROKEN = "flat"     # the one bar drawn broken (its value is printed on it): the rest keep a readable scale
 
@@ -108,7 +110,8 @@ def bars3():
     The flat's bar is longer than the chart and is drawn from BAR_MIN with a break; any other bar must fit."""
     tok = {"b3_zero": f"{BAR_ZERO:.1f}"}
     for d in BARS:
-        v = signed(f"fin_dot_{d}_n")
+        nums = json.load(open(NUMBERS, encoding="utf-8"))
+        v = signed(BAR_KEY[d] if BAR_KEY.get(d) in nums else f"fin_dot_{d}_n")
         end = BAR_ZERO + v * BAR_SCALE
         if d == BROKEN:
             if end >= BAR_MIN:
@@ -163,6 +166,49 @@ def flip6():
     return tok
 
 
+# backup: the headline taken apart (14 Nov, evening). The label approach's median inheritance, then each part in order,
+# then our plan, on an axis from FW_LO to FW_HI HK$M (broken at the left: the bars start at FW_LO, not zero).
+FW_X0, FW_X1, FW_LO, FW_HI = 470.0, 1130.0, 12.0, 13.5
+
+
+def fair():
+    """[[fw_x12]] ... [[fw_x135]] the ticks; [[fw_lab_w]] the label approach's bar from FW_X0; [[fw_vans_l]] [[fw_vans_w]],
+    [[fw_gift_l]] [[fw_gift_w]], [[fw_fees_l]] [[fw_fees_w]] each part from where the last ended; [[fw_plan_w]] our plan."""
+    nums = json.load(open(NUMBERS, encoding="utf-8"))
+    if "fin_fair_lab_leg89" not in nums:
+        return {}
+    x = lambda v: FW_X0 + (v - FW_LO) / (FW_HI - FW_LO) * (FW_X1 - FW_X0)
+    lab, plan = signed("fin_fair_lab_leg89"), signed("fin_plan_leg89x")
+    if not FW_LO < lab < plan < FW_HI:
+        raise ValueError("headline backup: the ends left the axis; change FW_LO or FW_HI")
+    tok = {"fw_lab_w": f"{x(lab) - FW_X0:.1f}", "fw_plan_w": f"{x(plan) - FW_X0:.1f}", "fw_plan_e": f"{x(plan):.1f}"}
+    at = lab
+    for k in ("vans", "gift", "fees"):
+        v = signed(f"fin_fair_{k}")
+        tok[f"fw_{k}_l"], tok[f"fw_{k}_w"], tok[f"fw_{k}_e"] = f"{x(at):.1f}", f"{x(at + v) - x(at):.1f}", f"{x(at + v):.1f}"
+        at += v
+    for v, name in ((12.0, "12"), (12.5, "125"), (13.0, "13"), (13.5, "135")):
+        tok[f"fw_x{name}"] = f"{x(v):.1f}"
+    return tok
+
+
+# backup: if Adrian's job goes (14 Nov, evening), each run's odds in 100 as a bar from JB_X0, JB_PX px per point.
+JB_X0, JB_PX = 360.0, 6.4
+
+
+def job():
+    """[[jb_none_n]] [[jb_none_s]] ... each bar's width (normal, downturn); [[jb_l95]] [[jb_l85]] [[jb_l0]] [[jb_l50]] x."""
+    nums = json.load(open(NUMBERS, encoding="utf-8"))
+    if "fin_job_none_odds" not in nums:
+        return {}
+    tok = {f"jb_l{v}": f"{JB_X0 + v * JB_PX:.1f}" for v in (0, 50, 85, 95, 100)}
+    for k in ("none", "half", "fix"):
+        for s, key in (("n", f"fin_job_{k}_odds"), ("s", f"fin_job_{k}_sodds")):
+            tok[f"jb_{k}_{s}"] = f"{float(nums[key].rstrip('%')) * JB_PX:.1f}"
+            tok[f"jb_{k}_{s}_e"] = f"{JB_X0 + float(nums[key].rstrip('%')) * JB_PX:.1f}"
+    return tok
+
+
 def fill(text):
     charts = {p: Chart(p) for p in BOX}
     tok = {}
@@ -171,6 +217,8 @@ def fill(text):
     tok.update(bars(charts["sp"]))
     tok.update(bars3())
     tok.update(flip6())
+    tok.update(fair())
+    tok.update(job())
 
     def sub(m):
         name, arg, off = m.group(1), m.group(2), float(m.group(3) or 0)

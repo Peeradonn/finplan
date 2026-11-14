@@ -898,7 +898,17 @@ with pass and fail marks, the price from the room. Kept and edited: **5** (the f
 replaces the fibre trap), **10** (v4's corners as the close, the claim as its title, slide references renumbered).
 Closing bars now have the rule as subject, not "For the Wongs". Spoken words cut to the slots: **1,179** (≈8:44 at 135 a
 minute, ≈9:05 with names; Pete 466, Lookbua 231, Fahtai 245, Win 237); each speaker still makes the words their own.
-**Closed (14 Nov, evening):** slide 5's flip now runs on our recommended plan (`fin_pflip*`), as the card and the close do. **Next:** move v5 into the deck
+**Closed (14 Nov, evening):** slide 5's flip now runs on our recommended plan (`fin_pflip*`), as the card and the close do. **Done (14 Nov, evening): v5 moved into the deck**
+(`src/01_talk.html`; v4's talk is in git history, up to commit 261a688) with ten backups in
+`src/02_backup.html`, numbered 11–20 so a speaker can type the number: 11 the index; 12 the headline taken apart (a
+waterfall from the label approach's HK$12.32M to our plan's HK$13.36M, `fin_fair_*`); 13 the risk register (v4's slide
+5); 14 the rules that reach the client (`research/new_Risk_Regulation_Greenwashing.md` §7); 15 the household in one
+storm (on the family's plan before our changes, labelled); 16 if Adrian's job goes (M10b rerun on the recommended plan,
+`fin_job_*`: 44 and 21 in 100 with no response, 96 and 87 with the agreed one); 17 each kind of finance (v4's slide 8,
+debt cover 3.3×); 18 the portfolio's weights and fees (v4's slide 9); 19 every decision on one measure (v4's slide 11,
+the gift as the awards for life); 20 the home (H1–H4, weather, insurance, BEAM Plus, the split incentive). v4's slide 10
+is dropped: the card carries it. **Next:** the timed run (at 125 words a minute the script runs 10:50 with names: over
+the limit, so each speaker marks a sentence to drop), then the PowerPoint. **Next:** move v5 into the deck
 (`src/01_talk.html`), v4's slide 11 bars to backup, then the timed run.
 
 **14 Nov: Pete chose 4A and 9A, then flagged 4A as a Wong case again** (the sixth drift): cover the Wongs' figures and

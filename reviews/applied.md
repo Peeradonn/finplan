@@ -555,3 +555,12 @@ the card (slide 9) and the close (slide 10) move to that plan, and slide 5's fli
 - Checked: `numbers.json` before and after differ only by these 72 additions (two reruns of `make_charts.py`; the seed
   is fixed); `figure-data.md` and every PNG unchanged. The `fin_new_*` keys (the 20-year fund) are kept, now unused by
   v5.
+
+### Final (14 Nov, evening, later): numbers for two backup slides (`Final/final_model.py` `export_final()`)
+
+- `fin_fair_lab_leg89` HK$12.32M, `fin_plan_leg89x` HK$13.36M: the headline's two ends (the label approach at the same
+  fee and giving; our plan), two decimals, for backup 12's waterfall (`Final/deck/series.py` `fair()`).
+- `fin_job_{none,half,fix}_odds` / `_sodds` (and `..100`): `model_runs.md` M10b's three rows rerun on the recommended
+  plan (M10b ran on the plan as it stands): no work again 44.4% / 21.3%; re-hired at half pay 78.7% / 55.2%; the agreed
+  response (half pay, HK$200K a year less to 2036, Carmen works to 65) 96.3% / 87.2%. Backup 16 (`series.py` `job()`).
+- Checked: `numbers.json` before and after differ only by these 14 additions; `figure-data.md` and every PNG unchanged.

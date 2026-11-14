@@ -163,8 +163,8 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
   - The PowerPoint goes **before 17:00 Mon 16 Nov 2026** by email to `info@srfpns.org`; a later file isn't accepted.
     SRFP&S acknowledges receipt: wait for it.
   - No slide can change after submission.
-  - Over 10 minutes by more than 30 seconds disqualifies the team. Warnings come at 3 minutes and 1 minute left; aim for
-    9:20.
+  - Over 10 minutes by more than 30 seconds disqualifies the team. Warnings come at 3 minutes and 1 minute left; the
+    script targets 10:00 with names (Pete, 14 Nov), so the only margin is the rule's 30 seconds.
   - Every member presents their own part of the slides. Say "Team Axis" before the first speaker; each speaker says their
     simple name before their part (there is a best presenter award).
 - **Round One:** 15 pages maximum including the cover and appendix; 12pt Times New Roman body text; the Chrome-built PDF
@@ -211,8 +211,8 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
     assumed separate assessment.
 
 ## Building the deck
-**The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/` holds one placeholder slide per
-row of storyline v4 (`Final_Plan.md` §4.5), each pointing at what it must prove. The look is A (`Final_Plan.md` §3): its tokens are in
+**The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/01_talk.html` holds storyline v5's ten
+slides (`Final_Plan.md` §4.5; moved from `options/` 14 Nov) and `src/02_backup.html` the backups, numbered 11–20. The look is A (`Final_Plan.md` §3): its tokens are in
 `Final/deck/src/00_head.html`.
 ```
 .venv/Scripts/python.exe Final/deck/make.py [--pages 3,4] [--builds]   # Axis.html, the script (Axis_Script.md), PNGs in build/
@@ -232,7 +232,8 @@ What changes for a live talk on the venue's notebook and projector (`Final_Plan.
 - **Nothing that needs a recent PowerPoint:** the notebook's version is unknown, so don't depend on Morph; embed the
   font; check contrast on a projector. Before sending, open the file on a PC without our font and with an older
   PowerPoint.
-- **The script:** about 1,200 spoken words for 9:20, four speakers, until a timed run sets the real cap.
+- **The script:** about 1,300 spoken words for 10:00 with names (Pete, 14 Nov), four speakers, until a timed run sets
+  the real cap; each speaker marks one sentence to drop at the 1-minute warning.
 
 **Round Two's tools.** `.venv/Scripts/python.exe round2/make.py [--pages 3,4] [--builds]` fills the numbers into
 `round2/src/`, writes the slides (`round2/Axis.html`) and the script (`round2/Axis_Script.md`) from each slide's speaker

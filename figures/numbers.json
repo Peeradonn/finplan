@@ -447,5 +447,19 @@
  "fin_pflipn_cross": "7%",
  "fin_pflipn_cross_x": "7.39",
  "fin_pflipn_rmp100": "96",
- "fin_pflipn_down100": "93"
+ "fin_pflipn_down100": "93",
+ "fin_fair_lab_leg89": "HK$12.32M",
+ "fin_plan_leg89x": "HK$13.36M",
+ "fin_job_none_odds100": "44",
+ "fin_job_none_sodds100": "21",
+ "fin_job_none_odds": "44.4%",
+ "fin_job_none_sodds": "21.3%",
+ "fin_job_half_odds100": "79",
+ "fin_job_half_sodds100": "55",
+ "fin_job_half_odds": "78.7%",
+ "fin_job_half_sodds": "55.2%",
+ "fin_job_fix_odds100": "96",
+ "fin_job_fix_sodds100": "87",
+ "fin_job_fix_odds": "96.3%",
+ "fin_job_fix_sodds": "87.2%"
 }

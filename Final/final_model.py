@@ -582,6 +582,18 @@ def export_final():
         sys.exit("slide 5 (plan): the normal limit no longer binds first; the slide's words assume it does")
     out["fin_pflipn_cross"], out["fin_pflipn_cross_x"] = f"{pcn:.0%}", f"{pcn * 100:.2f}"
     out["fin_pflipn_rmp100"], out["fin_pflipn_down100"] = f"{round(prn[-1] * 100)}", f"{round(pdnn[-1] * 100)}"
+    # backup slides (14 Nov, evening): the headline's two ends in HK$ (the waterfall), and M10b's job loss on the
+    # recommended plan (M10b ran on the plan as it stands): lost at the end of 2030 with no work again; re-hired at
+    # half pay from 2032; and the contingency (half pay, HK$200K a year less spending to 2036, Carmen works to 65).
+    out["fin_fair_lab_leg89"] = f"HK${lab_n['leg_med']:.2f}M"
+    out["fin_plan_leg89x"] = f"HK${pl_n['leg_med']:.2f}M"
+    half = plus(bonus_lost((2030,)), job_lost(rehire_from=2032, rehire_share=0.5))
+    for k, f in (("none", plus(bonus_lost((2030,)), job_lost())), ("half", half),
+                 ("fix", plus(half, spend_less(200_000), carmen_works_to(65)))):
+        jn = run(base, biz=m.BIZ + up, inflows=plus(fund, f), **pkw)
+        js = stressed(base, sc, mult, biz_add=up, flows=plus(fund, f), **pkw)
+        out[f"fin_job_{k}_odds100"], out[f"fin_job_{k}_sodds100"] = f"{round(jn['odds'] * 100)}", f"{round(js['odds'] * 100)}"
+        out[f"fin_job_{k}_odds"], out[f"fin_job_{k}_sodds"] = f"{jn['odds']:.1%}", f"{js['odds']:.1%}"
     return out
 
 

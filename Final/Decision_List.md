@@ -172,7 +172,7 @@ established and point to the run.
   inheritance: reverse mortgage `{{legacy_rmp}}`, downsizing `{{legacy_down}}`. Run M6 recomputes both measures on the
   plan with the medical review.
 - **Trigger:** each year, compare the flat's price per sq ft with a ≈10-year-old flat in the target district; if the gap
-  widens past ≈5%, decide the route that year: that is where downsizing falls below the normal limit of 95 (`fin_flipn_cross`, slide 6; 13 Nov, night: was 10%, set before the flip was measured). Release by the building's 50th year.
+  widens past ≈7%, decide the route that year: that is where downsizing falls below the normal limit of 95 on the recommended plan (`fin_pflipn_cross`, slide 5; 14 Nov: ≈5% on the plan as it stands, `fin_flipn_cross`; 13 Nov, night: was 10%, set before the flip was measured). Release by the building's 50th year.
 
 ### H2–H4. Green mortgage, retrofit, the next flat (`area4_property_scenario.md` §3.1–3.2, 3.4)
 - H2: no lower rate in any published terms; moving their HK$1.8M loan earns at most HK$1,000 once (Hang Seng takes a
