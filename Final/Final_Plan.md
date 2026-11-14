@@ -309,6 +309,11 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   three short steps with the key phrases in indigo italic; the refusal and weather in one line. Geometry from
   `series.py` `flip5()` (`[[p5_*]]`, the recommended plan's `fin_pflipn_*`). Chosen over two small panels (normal,
   downturn). Render: `build/options/slide5-one-chart.png`.
+  Then the money side made plain (Pete: "the children get HK$4.17M more is not communicated clearly?"): it said
+  neither more than what nor why, though it is the half of the trade-off (the brief's required item) that makes
+  anyone downsize. Step 1 now: keep the flat with a reverse mortgage, or downsize in 2037 to a HK$7M newer flat (the
+  model's input, today's money), and the children inherit HK$4.17M more; the bar: "The limit picks the route, not
+  the money: downsizing pays more, but only within a ≈7% gap" (it said "not the median").
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
