@@ -301,6 +301,14 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   The result line now gives the normal future as context (Pete: "should we also say from x in 100 before?"): "in
   the downturn the money still lasts to Carmen's 89 in 90 futures in 100 (97 without it), above their downturn
   limit of 85". Only the downturn limit is named, so 90 isn't read against the normal limit of 95.
+- **Slide 5: one chart** (Pete: the chart "so messy", too text heavy; annotate with arrows, bold, italic). It had four
+  lines (two routes, normal and downturn), two limits, a zone and two crossings, though the rule is set by the
+  normal future (downsizing breaks 95 at ≈7%, long before 85 at ≈13%). Now the normal future only, on a tight
+  92–98 scale: zones labelled "Both pass: the family chooses" and "The limit rules downsizing out", an arrow to the
+  crossing ("≈7%: downsizing drops below their limit"); the downturn as one line under the chart; the right side
+  three short steps with the key phrases in indigo italic; the refusal and weather in one line. Geometry from
+  `series.py` `flip5()` (`[[p5_*]]`, the recommended plan's `fin_pflipn_*`). Chosen over two small panels (normal,
+  downturn). Render: `build/options/slide5-one-chart.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

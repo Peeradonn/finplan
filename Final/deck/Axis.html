@@ -679,6 +679,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .v10-out i{font-style:normal;color:var(--slate)}
 /* v5 slides 5 and 6 (ids: classes are global): the strip as two full-width lines; the footprint bar at full size */
 #v5 .s6-strip{flex-direction:column;gap:3px}
+#v5 .s6-step em{font-style:italic;font-weight:700;color:var(--brand)} #v5 .s6-step p{font-size:17px}
 #v6 .s7-body > svg{flex:none}
 /* v5 slide 7: the brief's five kinds of finance, each placed in the plan (v7k- classes only here) */
 .v7k{display:grid;grid-template-columns:repeat(5,1fr);column-gap:14px;margin:4px 0 6px}
@@ -939,52 +940,51 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </header>
   <div class="body s6-body">
     <div class="s6-grid">
-      <svg viewBox="0 0 740 382" width="740" height="382" role="img" aria-label="As older flats fall behind newer ones, how long the money lasts under each route, in a normal future and in the downturn">
-        <text x="0" y="15" font-size="16" font-weight="800" fill="#0F1E3D">Futures in 100 the money lasts</text>
-        <rect x="331.1" y="40" width="268.9" height="290" fill="#F4E6E9"/>
-        <line x1="70" y1="168.9" x2="600" y2="168.9" stroke="#DCE1E8" stroke-width="1"/>
-        <text x="60" y="173.9" font-size="14" text-anchor="end" fill="#566173">90</text>
-        <text x="60" y="335.0" font-size="14" text-anchor="end" fill="#566173">80</text>
-        <line x1="70" y1="88.3" x2="600" y2="88.3" stroke="#C80E1E" stroke-width="2.5"/>
-        <text x="60" y="93.3" font-size="14" font-weight="800" text-anchor="end" fill="#C80E1E">95</text>
-        <text x="78" y="107.3" font-size="14" font-weight="800" fill="#C80E1E">their limit</text>
-        <line x1="70" y1="249.4" x2="600" y2="249.4" stroke="#C80E1E" stroke-width="2.5"/>
-        <text x="60" y="254.4" font-size="14" font-weight="800" text-anchor="end" fill="#C80E1E">85</text>
-        <text x="78" y="268.4" font-size="14" font-weight="800" fill="#C80E1E">their limit in a downturn</text>
-        <line x1="331.1" y1="40" x2="331.1" y2="330" stroke="#C80E1E" stroke-width="1.5" stroke-dasharray="5 4"/>
-        <text x="331.1" y="33" font-size="16" font-weight="800" text-anchor="middle" fill="#C80E1E">≈7%</text>
-        <circle cx="517.7" cy="249.4" r="5" fill="#C80E1E"/>
-        <text x="526.7" y="240.4" font-size="14" font-weight="800" fill="#C80E1E">≈13%</text>
-        <text x="343.1" y="318" font-size="14" font-weight="800" fill="#C80E1E">downsizing breaks the limit</text>
-        <polyline points="70.0,157.6 158.3,172.1 246.7,188.2 335.0,209.2 423.3,228.5 511.7,247.8 600.0,273.6" fill="none" stroke="#8892A2" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>
-        <polyline points="70.0,143.1 158.3,147.9 246.7,152.8 335.0,156.0 423.3,159.2 511.7,162.4 600.0,168.9" fill="none" stroke="#4A3FBF" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>
-        <polyline points="70.0,60.9 105.3,65.8 140.7,67.4 176.0,72.2 211.3,75.4 246.7,78.7 282.0,81.9 317.3,86.7 352.7,91.6 388.0,96.4 423.3,101.2 458.7,106.1 494.0,112.5 529.3,117.3 564.7,122.2 600.0,127.0" fill="none" stroke="#8892A2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        <polyline points="70.0,56.1 105.3,56.1 140.7,57.7 176.0,57.7 211.3,57.7 246.7,59.3 282.0,59.3 317.3,60.9 352.7,60.9 388.0,60.9 423.3,62.6 458.7,62.6 494.0,64.2 529.3,64.2 564.7,64.2 600.0,65.8" fill="none" stroke="#4A3FBF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        <text x="614" y="67.8" font-size="15" font-weight="800" fill="#4A3FBF">Keep the flat</text>
-        <text x="614" y="85.8" font-size="14" fill="#566173">96 in 100</text>
-        <text x="614" y="129.0" font-size="15" font-weight="800" fill="#566173">Downsize</text>
-        <text x="614" y="147.0" font-size="14" fill="#566173">93 in 100</text>
-        <text x="614" y="170.9" font-size="15" font-weight="800" fill="#4A3FBF">Keep the flat</text>
-        <text x="614" y="188.9" font-size="14" fill="#566173">90 in 100</text>
-        <text x="614" y="275.6" font-size="15" font-weight="800" fill="#566173">Downsize</text>
-        <text x="614" y="293.6" font-size="14" fill="#566173">83 in 100</text>
-        <line x1="70" y1="330" x2="600" y2="330" stroke="#0F1E3D" stroke-width="1.5"/>
-        <text x="70.0" y="350" font-size="14" text-anchor="middle" fill="#566173">0%</text>
-        <text x="246.7" y="350" font-size="14" text-anchor="middle" fill="#566173">5%</text>
-        <text x="423.3" y="350" font-size="14" text-anchor="middle" fill="#566173">10%</text>
-        <text x="600.0" y="350" font-size="14" text-anchor="middle" fill="#566173">15%: our scenario</text>
-        <text x="335" y="375" font-size="14" font-style="italic" text-anchor="middle" fill="#566173">how far older flats fall behind newer ones · solid: a normal future · dashed: the 2030–31 downturn</text>
+      <svg viewBox="0 0 740 382" width="740" height="382" role="img" aria-label="In a normal future, as older flats fall behind newer ones, how long the money lasts if they keep the flat or downsize, against their limit of 95">
+        <defs><marker id="v5-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C80E1E"/></marker></defs>
+        <text x="0" y="16" font-size="16" font-weight="800" fill="#0F1E3D">Futures in 100 the money lasts <tspan font-weight="500" fill="#566173">· a normal future</tspan></text>
+        <!-- the two zones -->
+        <rect x="70.0" y="40" width="261.1" height="260" fill="#EFEDFB"/>
+        <rect x="331.1" y="40" width="268.9" height="260" fill="#F7E7EA"/>
+        <text x="82.0" y="62" font-size="14.5" font-weight="800" fill="#4A3FBF">Both pass:</text>
+        <text x="82.0" y="80" font-size="14.5" font-style="italic" fill="#4A3FBF">the family chooses</text>
+        <text x="343.1" y="62" font-size="14.5" font-weight="800" fill="#C80E1E">The limit rules</text>
+        <text x="343.1" y="80" font-size="14.5" font-style="italic" fill="#C80E1E">downsizing out</text>
+        <!-- axes -->
+        <line x1="70" y1="260.0" x2="600" y2="260.0" stroke="#DCE1E8" stroke-width="1"/>
+        <line x1="70" y1="100.0" x2="600" y2="100.0" stroke="#DCE1E8" stroke-width="1"/>
+        <text x="60" y="265.0" font-size="14" text-anchor="end" fill="#566173">93</text>
+        <text x="60" y="105.0" font-size="14" text-anchor="end" fill="#566173">97</text>
+        <line x1="70" y1="180.0" x2="600" y2="180.0" stroke="#C80E1E" stroke-width="2.5"/>
+        <text x="60" y="185.0" font-size="14" font-weight="800" text-anchor="end" fill="#C80E1E">95</text>
+        <text x="596" y="199.0" font-size="14" font-weight="800" text-anchor="end" fill="#C80E1E">their limit</text>
+        <!-- the two routes -->
+        <polyline points="70.0,112.0 105.3,124.0 140.7,128.0 176.0,140.0 211.3,148.0 246.7,156.0 282.0,164.0 317.3,176.0 352.7,188.0 388.0,200.0 423.3,212.0 458.7,224.0 494.0,240.0 529.3,252.0 564.7,264.0 600.0,276.0" fill="none" stroke="#8892A2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <polyline points="70.0,100.0 105.3,100.0 140.7,104.0 176.0,104.0 211.3,104.0 246.7,108.0 282.0,108.0 317.3,112.0 352.7,112.0 388.0,112.0 423.3,116.0 458.7,116.0 494.0,120.0 529.3,120.0 564.7,120.0 600.0,124.0" fill="none" stroke="#4A3FBF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <text x="612" y="129.0" font-size="15" font-weight="800" fill="#4A3FBF">Keep the flat</text>
+        <text x="612" y="281.0" font-size="15" font-weight="800" fill="#566173">Downsize</text>
+        <!-- the crossing -->
+        <circle cx="331.1" cy="180.0" r="7" fill="#C80E1E"/>
+        <line x1="269.1" y1="226" x2="323.1" y2="188.0" stroke="#C80E1E" stroke-width="2" marker-end="url(#v5-ah)"/>
+        <text x="265.1" y="238" font-size="15" font-weight="800" text-anchor="end" fill="#C80E1E">≈7%: downsizing drops</text>
+        <text x="265.1" y="256" font-size="15" font-weight="800" text-anchor="end" fill="#C80E1E">below their limit</text>
+        <line x1="70" y1="300" x2="600" y2="300" stroke="#0F1E3D" stroke-width="1.5"/>
+        <text x="70.0" y="320" font-size="14" text-anchor="middle" fill="#566173">0%</text>
+        <text x="246.7" y="320" font-size="14" text-anchor="middle" fill="#566173">5%</text>
+        <text x="423.3" y="320" font-size="14" text-anchor="middle" fill="#566173">10%</text>
+        <text x="600.0" y="320" font-size="14" text-anchor="middle" fill="#566173">15%</text>
+        <text x="335" y="343" font-size="14" font-style="italic" text-anchor="middle" fill="#566173">how far older flats fall behind newer ones →</text>
+        <text x="0" y="374" font-size="14.5" fill="#0F1E3D"><tspan font-weight="800">In a downturn:</tspan> downsizing breaks their limit of 85 past ≈13%; keeping the flat holds (90 in 100).</text>
       </svg>
       <div class="s6-rule">
         <p class="s6-h">The rule, run on the Wongs' flat</p>
-        <div class="s6-step"><span>1</span><p><b>With no gap, both pass.</b> Keep the flat: 97 in 100. Downsize in 2037: 97 in 100, and the children inherit HK$4.17M more.</p></div>
-        <div class="s6-step"><span>2</span><p><b>The limit decides first.</b> Downsizing breaks their limit of 95 once older flats fall ≈7% behind newer ones; in the downturn, 85 past ≈13%.</p></div>
-        <div class="s6-step"><span>3</span><p><b>Then their preference.</b> Below ≈7%, both pass and the family chooses. Each year we compare the flat's price with a 10-year-old flat nearby; decide by the building's 50th year, 2046.</p></div>
+        <div class="s6-step"><span>1</span><p><b>Both pass today.</b> Keep the flat: 97 in 100. Downsize: 97 in 100, and the children get <em>HK$4.17M more</em>.</p></div>
+        <div class="s6-step"><span>2</span><p><b>The limit decides first.</b> Once older flats fall <em>≈7% behind</em> newer ones, downsizing breaks their limit.</p></div>
+        <div class="s6-step"><span>3</span><p><b>Then their preference.</b> Below that, the family chooses. <em>Each year</em> we check the gap against a 10-year-old flat nearby; <em>decide by 2046</em>, the building's 50th year.</p></div>
       </div>
     </div>
     <div class="s6-strip">
-      <p><b class="s6-no">Refused:</b> a green mortgage, worth at most HK$1,000, once; the building has no BEAM Plus rating.</p>
-      <p><b>Weather:</b> Tai Kok Tsui is on no official flood or storm-surge list (not a site survey); very hot days rose from 14 a year (1995–2014) to 53 in 2025. It reaches their money through the building's insurance and repair levies, read at each renewal.</p>
+      <p><b class="s6-no">Refused:</b> a green mortgage, worth at most HK$1,000 once (no BEAM Plus rating). <b>Weather</b> reaches them through insurance and repair levies, read at each renewal.</p>
     </div>
   </div>
   <p class="sowhat">The limit picks the route, not the median: downsizing works only while older flats stay within ≈7% of newer ones.</p>

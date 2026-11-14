@@ -210,6 +210,36 @@ def job():
     return tok
 
 
+# slide 5 (Pete 14 Nov: one chart, a normal future, where the limit of 95 binds first): the recommended plan's two routes
+# as older flats fall 0-15% behind newer ones (fin_pflipn_*, a 1% grid), on a tight scale so the lines separate.
+P5_X0, P5_X1, P5_Y0, P5_Y1, P5_LO, P5_HI = 70.0, 600.0, 300.0, 60.0, 92.0, 98.0
+
+
+def flip5():
+    """[[p5_rmp]] [[p5_down]] polyline points; [[p5_rmp_ey]] [[p5_down_ey]] their ends' y, [[p5_down_sy]] the start's;
+    [[p5_cross]] the crossing's x, [[p5_left_w]] [[p5_shade_w]] the zones' widths; [[p5_y93]] ... [[p5_y97]] and
+    [[p5_x0]] ... [[p5_x15]] the axes; [[p5_lim]] the y of 95."""
+    nums = json.load(open(NUMBERS, encoding="utf-8"))
+    if "fin_pflipn_cross_x" not in nums:
+        return {}
+    x = lambda d: P5_X0 + d / 15.0 * (P5_X1 - P5_X0)
+    y = lambda v: P5_Y0 - (v - P5_LO) / (P5_HI - P5_LO) * (P5_Y0 - P5_Y1)
+    tok = {}
+    for line in ("rmp", "down"):
+        vals = [float(nums[f"fin_pflipn_{line}_{i}"].rstrip("%")) for i in range(16)]
+        if not all(P5_LO <= v <= P5_HI for v in vals):
+            raise ValueError(f"slide 5: the {line} line runs off the chart; change P5_LO or P5_HI")
+        tok[f"p5_{line}"] = " ".join(f"{x(i):.1f},{y(v):.1f}" for i, v in enumerate(vals))
+        tok[f"p5_{line}_ey"], tok[f"p5_{line}_sy"] = f"{y(vals[-1]):.1f}", f"{y(vals[0]):.1f}"
+    c = x(float(nums["fin_pflipn_cross_x"]))
+    tok.update({"p5_cross": f"{c:.1f}", "p5_left_w": f"{c - P5_X0:.1f}", "p5_shade_w": f"{P5_X1 - c:.1f}", "p5_lim": f"{y(95):.1f}"})
+    for v in (93, 94, 95, 96, 97):
+        tok[f"p5_y{v}"] = f"{y(v):.1f}"
+    for d in (0, 5, 10, 15):
+        tok[f"p5_x{d}"] = f"{x(d):.1f}"
+    return tok
+
+
 # slide 4 (Pete 14 Nov, option A): what they own and what one downturn takes, both to scale, a band joining each asset to
 # its loss. Owned values are our client's balance sheet (HK$M); losses each on its own (fin_pstorm_*, MEASURED).
 S4_X0, S4_X1, S4_GAP = 176.0, 930.0, 4.0          # the owned assets' and losses' strip
@@ -255,6 +285,7 @@ def fill(text):
     tok.update(fair())
     tok.update(job())
     tok.update(strip4())
+    tok.update(flip5())
 
     def sub(m):
         name, arg, off = m.group(1), m.group(2), float(m.group(3) or 0)
