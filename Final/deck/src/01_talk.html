@@ -4,13 +4,13 @@
      series.py. Class names start v1-, v2-, v7-, v7k-, v8-, o9- or reuse the head's (s1-, s2-, p4-, s6-, s7-, q3-):
      classes are global. v4's talk is in git history (commit 261a688 and before). -->
 <style>
-/* one accent (Pete 14 Nov, after e-Sentry and OneTable): crimson on every slide's header, chip and footer
+/* one accent (Pete 14 Nov, after e-Sentry and OneTable): indigo (--brand) on every slide's header, chip and footer
    badge, as slides 1, 2 and 10 already had; navy for structure; teal only for the world; the five PRISM colours
    only where the beam splits (slide 2, and the all-five badges) */
-.sec-P .head,.sec-R .head,.sec-S .head,.sec-M .head{border-left-color:var(--accent)}
-.sec-P .kick,.sec-R .kick,.sec-S .kick,.sec-M .kick{color:var(--accent)}
-.sec-P .kt-L,.sec-R .kt-L,.sec-S .kt-L,.sec-M .kt-L,.kt-L.kt-I{background:var(--accent)}
-.kt-n .kt-i{color:var(--accent)}
+.sec-P .head,.sec-R .head,.sec-S .head,.sec-M .head{border-left-color:var(--brand)}
+.sec-P .kick,.sec-R .kick,.sec-S .kick,.sec-M .kick{color:var(--brand)}
+.sec-P .kt-L,.sec-R .kt-L,.sec-S .kt-L,.sec-M .kt-L,.kt-L.kt-I{background:var(--brand)}
+.kt-n .kt-i{color:var(--brand)}
 
 /* 9: the plan's label, a nutrition-facts card (one object, real rules of the genre: heavy title, thick bars, rows) */
 .o9-body{display:flex;gap:34px;align-items:flex-start}
@@ -60,7 +60,7 @@
 .v1-card{display:flex;align-items:center;gap:14px;background:#15213A;border:1px solid #2A3858;border-radius:10px;padding:12px 16px}
 .v1-card p{font:700 19px/1.25 var(--text);color:#fff}
 .v1-tag{flex:none;width:108px;text-align:center;color:#fff;font:800 13px/1 var(--text);letter-spacing:.6px;padding:8px 0;border-radius:16px}
-.v1-limit{background:#C80E1E} .v1-change{background:#0E7490} .v1-room{background:#3E5F93}
+.v1-limit{background:#C80E1E} .v1-change{background:#0E7490} .v1-room{background:var(--brand)}
 .v1-proof{display:flex;align-items:center;gap:20px}
 .v1-num{flex:none;min-width:150px;font:800 40px/1 var(--num);letter-spacing:-.5px}
 .v1-nl{color:#FF4A57} .v1-nc{color:#38B6CF} .v1-nr{color:#9DB6E0}
@@ -78,7 +78,7 @@
 .v1-wcap b{color:#fff;font-weight:700}
 .v1-wrow{display:grid;grid-template-columns:1.3fr .8fr 1fr;column-gap:36px}
 .v1-wrow p{font:500 15px/1.35 var(--text);color:#D2D9E4;text-wrap:pretty}
-.v1-wn{display:block;font:800 26px/1.1 var(--num);color:#fff;margin-bottom:3px}
+.v1-wn{display:block;font:800 26px/1.1 var(--num);color:var(--brand-light);margin-bottom:3px}
 .v1-wn.v1-nc{color:#38B6CF}
 .v1-wsrc{font:500 12.5px/1.4 var(--text);color:#808BA0;margin-top:6px}
 /* v5 slide 3 in HK$ (Pete 14 Nov): an icon per step, the disagreement rules in the left column's white space, and
@@ -87,20 +87,20 @@
 .v3-step{display:flex;gap:16px;align-items:center;margin-bottom:17px}
 .v3-ic{flex:none;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
 .v3-ic .ic{width:22px;height:22px}
-.v3-ic.v3-lim{background:var(--accent)} .v3-ic.v3-room{background:#3E5F93}
+.v3-ic.v3-lim{background:var(--accent)} .v3-ic.v3-room{background:var(--brand)}
 .v3-step p{font:500 17.5px/1.4 var(--text);text-wrap:pretty} .v3-step b{font-weight:800}
 .v3-rules{margin-top:8px;border-top:1.5px solid var(--ink);padding-top:12px}
 .v3-rules p.v3-rh{font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;padding:0}
 .v3-rules p{font:500 17px/1.35 var(--text);padding:4px 0 4px 18px;position:relative}
 .v3-rules p:not(.v3-rh)::before{content:"";position:absolute;left:1px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--ink)}
 .v3-rules b{font-weight:800}
-.v3-bt{font:500 19px/1.3 var(--text);margin-top:12px} .v3-bt b{font:800 28px/1 var(--num);color:#2B4A7A}
+.v3-bt{font:500 19px/1.3 var(--text);margin-top:12px} .v3-bt b{font:800 28px/1 var(--num);color:var(--brand)}
 .v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 28px}
 .v3-brk{display:flex;margin-right:5px}
 .v3-brk p{font:600 14px/1.2 var(--text);color:var(--ink);text-align:center}
 .v3-brk p i{display:block;height:8px;margin-top:4px;border:1.5px solid var(--ink);border-bottom:none}
 .v3-bar{display:flex;height:62px;border-right:5px solid var(--accent)}
-.v3-esg{background:#7C97C7} .v3-life{background:#2B4A7A} .v3-free{background:#EAEDF2;box-shadow:inset 0 0 0 1.5px #B3BAC6}
+.v3-esg{background:var(--brand-tint)} .v3-life{background:var(--brand)} .v3-free{background:#EAEDF2;box-shadow:inset 0 0 0 1.5px #B3BAC6}
 .v3-lab{display:flex;margin-top:7px}
 .v3-lab p{min-width:0;font:500 14px/1.3 var(--text);color:var(--slate);padding-right:10px}
 .v3-lab b{display:block;font:800 18px/1.15 var(--num);color:var(--ink)}
@@ -109,7 +109,7 @@
 .v3-warn{font:500 15.5px/1.35 var(--text);margin-top:18px;color:var(--ink)} .v3-warn b{color:var(--accent);font-weight:800}
 .v3-who2{display:flex;gap:28px;margin-top:24px;border-top:1px solid var(--rule);padding-top:10px}
 .v3-who2 p{flex:1;font:500 15px/1.4 var(--text);color:var(--slate);text-wrap:pretty}
-.v3-who2 b{font:800 17px/1.3 var(--head);color:#2B4A7A} .v3-who2 i{font-weight:500;color:var(--slate)}
+.v3-who2 b{font:800 17px/1.3 var(--head);color:var(--brand)} .v3-who2 i{font-weight:500;color:var(--slate)}
 .v3-who2 .v3-ad b{color:var(--accent)}
 /* v5 slide 3: who the Wongs are, beside the panel's caption (Pete 14 Nov: slide 1 no longer introduces them) */
 .v3-who{font-weight:600;letter-spacing:0;text-transform:none;color:var(--slate)}
@@ -122,15 +122,15 @@
 #v2 .s2-under{top:450px}
 .v2-tags{display:inline-flex;gap:6px;margin-left:10px;vertical-align:1px}
 .v2-t{display:inline-block;color:#fff;font:800 13px/1 var(--text);letter-spacing:.5px;padding:5px 9px;border-radius:12px}
-.v2-limit{background:#C80E1E} .v2-change{background:#0E7490} .v2-room{background:#3E5F93}
+.v2-limit{background:#C80E1E} .v2-change{background:#0E7490} .v2-room{background:var(--brand)}
 .v2-all{background:transparent;border:1.5px solid #D2D9E4;padding:3.5px 8px}
 /* v5 slide 4: the step for any client, then the Wongs running it */
 </style><style>
 /* v5 slide 7: each green instrument at the size it's built for (v7- classes only here) */
 .v7-steps{display:flex;align-items:baseline;gap:22px;font:500 15px/1.3 var(--text);color:var(--slate);margin-bottom:6px}
-.v7-steps .v7-cap{font:800 13px/1 var(--text);letter-spacing:1px;color:var(--ink);white-space:nowrap}
+.v7-steps .v7-cap{font:800 13px/1 var(--text);letter-spacing:1px;color:var(--brand);white-space:nowrap}
 .v7-steps b{color:var(--ink);font-weight:700}
-.v7-n{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--ink);
+.v7-n{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--brand);
   color:#fff;font:800 12px/1 var(--text);margin-right:6px;vertical-align:1px}
 .v7-row{display:flex;gap:40px;margin-top:4px}
 .v7-h{font:800 13px/1.2 var(--text);letter-spacing:1px;color:var(--ink);margin-bottom:8px}
@@ -140,7 +140,7 @@
 .v8-body{display:flex;flex-direction:column;gap:10px}
 .v8-top{display:flex;gap:34px}
 .v8-h{font:800 15px/1.2 var(--head);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.v8-h span{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--ink);
+.v8-h span{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--brand);
   color:#fff;font:800 13px/1 var(--text)}
 .v8-check{flex:none;width:420px}
 .v8-c{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--rule);font:500 14.5px/1.3 var(--text)}
@@ -154,9 +154,10 @@
 .v8-big{font:800 64px/1 var(--num);letter-spacing:-1px;color:var(--ink)}
 .v8-share{display:flex;align-items:center;gap:16px;flex:none;width:470px}
 .v8-share p{font:500 16px/1.35 var(--text)}
-.v8-share p.v8-big{font:800 64px/1 var(--num);letter-spacing:-1px;color:var(--ink)}
+.v8-share p.v8-big{font:800 64px/1 var(--num);letter-spacing:-1px;color:var(--brand)}
 /* v5 slide 10: the claim as the close's title, on two lines (an id: classes are global) */
 #v10 .head h2{font-size:28px;max-width:1184px}
+#v10 .a3-cap > b:first-child{color:var(--brand)}   /* the outcome, the close's point */
 /* v5 slides 5 and 6 (ids: classes are global): the strip as two full-width lines; the footprint bar at full size */
 #v5 .s6-strip{flex-direction:column;gap:3px}
 #v6 .s7-body > svg{flex:none}
@@ -316,7 +317,7 @@
     §3c (shared money follows the more prudent: ESMA35-43-3172 ¶65–70; the plain twin stays until the next annual
     meeting). Profiles: §3a, our client definition, not quotes. The limits (95, 85): ours, ILLUSTRATIVE.]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
     <p class="src">Our client profile · limits ours (ILLUSTRATIVE) · the budget: our model (MEASURED) · disagreement: ESMA35-43-3172 ¶65–70</p><span class="pg">3</span>
   </footer>
 </section>
@@ -325,25 +326,25 @@
   <header class="head"><p class="kick kt"><b class="kt-L">R</b><b class="kt-n">Risk</b><span class="kt-do">The limit: does the plan hold when climate hits?</span></p>
     <h2>Check everything they own and earn, not just what a label covers</h2></header>
   <div class="body stack"><svg viewBox="0 0 1184 470" width="1184" height="470" style="font-family:var(--text);overflow:visible">
-    <text x="0" y="13" font-size="13" font-weight="800" letter-spacing="1" fill="#C80E1E">THE STEP, FOR ANY CLIENT</text>
-    <circle cx="15" cy="45" r="15" fill="#C80E1E"/><text x="15" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="0" y="13" font-size="13" font-weight="800" letter-spacing="1" fill="#4A3FBF">THE STEP, FOR ANY CLIENT</text>
+    <circle cx="15" cy="45" r="15" fill="#4A3FBF"/><text x="15" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
     <text x="40" y="43" font-size="16.5" font-weight="800" fill="#0F1E3D">List what they own and earn</text>
     <text x="40" y="64" font-size="14" fill="#566173">the home, a business, savings, the job</text>
-    <circle cx="315" cy="45" r="15" fill="#C80E1E"/><text x="315" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <circle cx="315" cy="45" r="15" fill="#4A3FBF"/><text x="315" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
     <text x="340" y="43" font-size="16.5" font-weight="800" fill="#0F1E3D">Trace each climate route to HK$</text>
     <text x="340" y="64" font-size="14" fill="#566173">rules, buyers, lenders, heat, floods:</text>
     <text x="340" y="82" font-size="14" fill="#566173">the brief's eight kinds of risk</text>
-    <circle cx="615" cy="45" r="15" fill="#C80E1E"/><text x="615" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <circle cx="615" cy="45" r="15" fill="#4A3FBF"/><text x="615" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
     <text x="640" y="43" font-size="16.5" font-weight="800" fill="#0F1E3D">Drop what can't reach them</text>
     <text x="640" y="64" font-size="14" fill="#566173">and test the ordinary risks anyway,</text>
     <text x="640" y="82" font-size="14" fill="#566173">outside the climate check</text>
-    <circle cx="915" cy="45" r="15" fill="#C80E1E"/><text x="915" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <circle cx="915" cy="45" r="15" fill="#4A3FBF"/><text x="915" y="51" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
     <text x="940" y="43" font-size="16.5" font-weight="800" fill="#0F1E3D">Price the rest against the limit</text>
     <text x="940" y="64" font-size="14" fill="#566173">then cut what the plan can,</text>
     <text x="940" y="82" font-size="14" fill="#566173">and carry the rest within the limit</text>
     <line x1="0" y1="102" x2="1184" y2="102" stroke="#DCE1E8" stroke-width="1.5"/>
     <text x="0" y="128" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">THE WONGS</text>
-    <circle cx="112" cy="123" r="10" fill="#C80E1E"/><text x="112" y="128" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <circle cx="112" cy="123" r="10" fill="#4A3FBF"/><text x="112" y="128" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
     <text x="130" y="127" font-size="14" fill="#566173">what they own (HK$27.2M, to scale) and earn, through one disorderly downturn: a sudden carbon policy, 2030–31</text>
     <text x="726.85" y="144" font-size="13.5" font-weight="800" fill="#3F9A55" text-anchor="middle">ESG ✓  the label looks only here</text>
     <rect x="553.7" y="150" width="346.3" height="5" rx="2" fill="#3F9A55"/>
@@ -380,11 +381,11 @@
     <text x="726.85" y="341" font-size="14" fill="#566173" text-anchor="middle"><tspan font-weight="800">Carried:</tspan> an ESG fund falls too</text>
     <text x="1054" y="341" font-size="14" fill="#566173" text-anchor="middle"><tspan font-weight="800">Carried:</tspan> inside the limit</text>
     <line x1="0" y1="358" x2="1184" y2="358" stroke="#DCE1E8" stroke-width="1"/>
-    <circle cx="10" cy="380" r="10" fill="#C80E1E"/><text x="10" y="385" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <circle cx="10" cy="380" r="10" fill="#4A3FBF"/><text x="10" y="385" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
     <text x="28" y="385" font-size="14" fill="#0F1E3D"><tspan font-weight="800">22 routes traced, rules included:</tspan> her customers' HKEX climate reporting reaches her (one lost: {{fin_cust10_leg}}; carbon data cuts it, slide 7); CBAM doesn't</text>
-    <circle cx="10" cy="406" r="10" fill="#C80E1E"/><text x="10" y="411" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <circle cx="10" cy="406" r="10" fill="#4A3FBF"/><text x="10" y="411" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
     <text x="28" y="411" font-size="14" fill="#0F1E3D"><tspan font-weight="800">Ordinary risks tested anyway:</tspan> if Adrian lost his job, the plan would need a response (backup)</text>
-    <circle cx="10" cy="432" r="10" fill="#C80E1E"/><text x="10" y="437" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <circle cx="10" cy="432" r="10" fill="#4A3FBF"/><text x="10" y="437" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
     <text x="28" y="437" font-size="14" fill="#0F1E3D"><tspan font-weight="800">Priced against the limit:</tspan> all at once, {{fin_pstorm_leg}} for the children; the money lasts in {{fin_plan_sodds100}} futures in 100, not {{fin_plan_odds100}}: above their 85</text>
     <text x="0" y="465" font-size="13" fill="#566173">Each price on its own, against the plan in a normal future: the children's median inheritance, today's HK$. Every odds figure assumes Adrian works to 65.</text>
   </svg></div>
@@ -408,7 +409,7 @@
     05/2023 finds prices 4–21% lower by about 2050 in a hotter Hong Kong, more for older property; our 15% is a test,
     not the HKMA's number.]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>RISK<span>Areas 4, 5</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>RISK<span>Areas 4, 5</span></p></div>
     <p class="src">Our client's balance sheet · our model, the recommended plan (MEASURED) · the downturn ILLUSTRATIVE · HKEX App. C2</p><span class="pg">4</span>
   </footer>
 </section>
@@ -438,14 +439,14 @@
         <text x="[[p6_cross+9]]" y="[[p6_cross_y-9]]" font-size="14" font-weight="800" fill="#C80E1E">≈{{fin_pflip_cross}}</text>
         <text x="[[p6n_cross+12]]" y="318" font-size="14" font-weight="800" fill="#C80E1E">downsizing breaks the limit</text>
         <polyline points="[[p6_down]]" fill="none" stroke="#8892A2" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>
-        <polyline points="[[p6_rmp]]" fill="none" stroke="#0F1E3D" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>
+        <polyline points="[[p6_rmp]]" fill="none" stroke="#4A3FBF" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>
         <polyline points="[[p6n_down]]" fill="none" stroke="#8892A2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        <polyline points="[[p6n_rmp]]" fill="none" stroke="#0F1E3D" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        <text x="614" y="[[p6n_rmp_ey+2]]" font-size="15" font-weight="800" fill="#0F1E3D">Keep the flat</text>
+        <polyline points="[[p6n_rmp]]" fill="none" stroke="#4A3FBF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <text x="614" y="[[p6n_rmp_ey+2]]" font-size="15" font-weight="800" fill="#4A3FBF">Keep the flat</text>
         <text x="614" y="[[p6n_rmp_ey+20]]" font-size="14" fill="#566173">{{fin_pflipn_rmp100}} in 100</text>
         <text x="614" y="[[p6n_down_ey+2]]" font-size="15" font-weight="800" fill="#566173">Downsize</text>
         <text x="614" y="[[p6n_down_ey+20]]" font-size="14" fill="#566173">{{fin_pflipn_down100}} in 100</text>
-        <text x="614" y="[[p6_rmp_ey+2]]" font-size="15" font-weight="800" fill="#0F1E3D">Keep the flat</text>
+        <text x="614" y="[[p6_rmp_ey+2]]" font-size="15" font-weight="800" fill="#4A3FBF">Keep the flat</text>
         <text x="614" y="[[p6_rmp_ey+20]]" font-size="14" fill="#566173">{{fin_plan_sodds100}} in 100</text>
         <text x="614" y="[[p6_down_ey+2]]" font-size="15" font-weight="800" fill="#566173">Downsize</text>
         <text x="614" y="[[p6_down_ey+20]]" font-size="14" fill="#566173">{{fin_pdown_s100}} in 100</text>
@@ -493,7 +494,7 @@
     for a 1996 high-rise that has used its plot ratio. Retrofit, if asked: a Grade 1 inverter air-con when the old one
     fails (≈HK$1,900 a year with LED and film: housekeeping, H3).]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 4</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 4</span></p></div>
     <p class="src">Our model (MEASURED), illustrative 2030–31 scenario · limit ILLUSTRATIVE · HKMA RM 05/2023 · bank terms 2026 · CEDD, DSD, HKO</p><span class="pg">5</span>
   </footer>
 </section>
@@ -567,7 +568,7 @@
     terms). If asked "why not more vans and power?": they're under 2% of the footprint; her transition runs through
     purchasing contracts (area2_business.md §5, question 11).]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
     <p class="src">ESTIMATED on an ILLUSTRATIVE business (DESNZ 2026, US EPA) · diesel HK$31/L (LCQ11, Oct 2026) · S&amp;P Platts, 7 Oct 2026 · Cap. 603</p><span class="pg">6</span>
   </footer>
 </section>
@@ -588,15 +589,15 @@
       <div class="v7k-c v7k-on"><b>ESG integration</b><i>climate in the analysis</i><span>the whole plan: every route on slide 4</span></div>
     </div>
     <svg viewBox="0 0 1184 152" width="1184" height="152" style="font-family:var(--text);overflow:visible">
-      <circle cx="10" cy="9" r="10" fill="#6D28D9"/><text x="10" y="13.5" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text><text x="27" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT EACH GREEN INSTRUMENT IS BUILT FOR, AND HER SIZE</text>
+      <circle cx="10" cy="9" r="10" fill="#4A3FBF"/><text x="10" y="13.5" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text><text x="27" y="14" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT EACH GREEN INSTRUMENT IS BUILT FOR, AND HER SIZE</text>
       <rect x="292" y="26" width="858" height="82" fill="#F4F6F9"/>
       <line x1="40" y1="108" x2="1150" y2="108" stroke="#0F1E3D" stroke-width="2"/>
       <line x1="40" y1="102" x2="40" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="40" y="130" font-size="13.5" fill="#566173" text-anchor="middle">HK$1M</text>
       <line x1="410" y1="102" x2="410" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="410" y="130" font-size="13.5" fill="#566173" text-anchor="middle">HK$10M</text>
       <line x1="780" y1="102" x2="780" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="780" y="130" font-size="13.5" fill="#566173" text-anchor="middle">HK$100M</text>
       <line x1="1150" y1="102" x2="1150" y2="114" stroke="#0F1E3D" stroke-width="1.5"/><text x="1150" y="130" font-size="13.5" fill="#566173" text-anchor="end">HK$1,000M</text>
-      <path d="M105,116 l-9,16 h18 z" fill="#0F1E3D"/>
-      <text x="124" y="146" font-size="15" font-weight="800" fill="#0F1E3D">her van loan, HK$1.5M <tspan font-size="13.5" font-weight="500" fill="#566173">· she buys ≈US$3.4M a year</tspan></text>
+      <path d="M105,116 l-9,16 h18 z" fill="#4A3FBF"/>
+      <text x="124" y="146" font-size="15" font-weight="800" fill="#4A3FBF">her van loan, HK$1.5M <tspan font-size="13.5" font-weight="500" fill="#566173">· she buys ≈US$3.4M a year</tspan></text>
       <line x1="105" y1="78" x2="105" y2="108" stroke="#8892A2" stroke-width="1.5"/><circle cx="105" cy="108" r="5" fill="#8892A2"/>
       <text x="113" y="40" font-size="14" font-weight="800" fill="#0F1E3D">Green loan label</text>
       <text x="113" y="57" font-size="13.5" fill="#566173">discount ≈ the review fee,</text>
@@ -659,7 +660,7 @@
     sensitivity, not a forecast; carbon data pays for itself if it keeps 0.6% of sales (B3). Dividends from 2033 (B8,
     needs the co-founder): {{fin_dot_div_n}}, if asked.]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
     <p class="src">ESTIMATED on an ILLUSTRATIVE business · family: our model (MEASURED) · HKMA, 24 Apr 2026 · Budget 2026–27 · scale: log</p><span class="pg">7</span>
   </footer>
 </section>
@@ -737,7 +738,7 @@
     daily; EDMW and IWDA in US$ (area3 §3 table). Greenium ≈2bp (Zerbib 2019) against the green bond fund's ≈104bp fee
     gap (area1_6_framework.md, line "the label's price is the fee, not the greenium").]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#C80E1E"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 1, 3</span></p></div>
     <p class="src">BlackRock/MSCI factsheets, Oct 2026 · EU 2020/1818 · HKEX filings · fees: our area 3 brief · price: our model (MEASURED)</p><span class="pg">8</span>
   </footer>
 </section>
@@ -810,7 +811,7 @@
     prices: B3 (buy), slide 8's notes (range), B4 (trigger). Restatement and the brief's biases: area6_measurement_update.md
     §2. Every odds figure assumes Adrian works to 65 (M10b, backup).]</aside>
   <footer class="foot">
-    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#C80E1E"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#C80E1E">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#4A3FBF"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">M</text></svg><p>MONITOR<span>Area 6</span></p></div>
     <p class="src">Our model (MEASURED) · BlackRock/MSCI, Oct 2026 · tonnes ESTIMATED, ILLUSTRATIVE business · limits ILLUSTRATIVE</p><span class="pg">9</span>
   </footer>
 </section>

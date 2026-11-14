@@ -31,7 +31,9 @@
   --paper:#FFFFFF; --mist:#F4F6F9; --block:#EAEDF2; --rule:#DCE1E8; --grey:#8892A2;   /* tints wash out on a projector:
                                                                     use them for fills behind ink, never for text */
   --ink:#0F1E3D; --slate:#566173; --navy2:#2B4A7A;                                    /* slate 8.2:1 on white: the lightest text colour */
-  --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* money at risk; the point a slide makes (5.9:1) */
+  --accent:#C80E1E; --accent-deep:#8E0A16; --accent-tint:#F4E6E9;   /* the limit and money at risk only (5.9:1) */
+  --brand:#4A3FBF; --brand-light:#9C95F0; --brand-tint:#A9A3E8;   /* the deck's one vivid colour: headers and each slide's point (7.6:1;
+     after OneTable, Pete 14 Nov); --brand-light on the dark stages (6.4:1) */
   --out:#0E7490;                                                     /* what the money does to the world: Impact teal */
   /* section colours, one per PRISM letter (slide 2's rays; deeper shades here so text on white passes contrast) */
   --P:#B45309; --R:#C80E1E; --I:#0E7490; --S:#6D28D9; --M:#475569;
@@ -64,8 +66,8 @@ b,strong{font-weight:600}
 .ic.sm{width:16px;height:16px}
 
 /* header: the kicker names the step and its rule; the title is the idea (any client); the crimson bar marks the point */
-.head{border-left:6px solid var(--accent);padding:1px 0 2px 16px}
-.kick{font:700 15px/1.3 var(--head);color:var(--accent);letter-spacing:.2px}
+.head{border-left:6px solid var(--brand);padding:1px 0 2px 16px}
+.kick{font:700 15px/1.3 var(--head);color:var(--brand);letter-spacing:.2px}
 .head h2{font:700 34px/1.12 var(--head);letter-spacing:-.4px;margin-top:5px;max-width:1120px;text-wrap:balance}
 
 /* the green label: a sticker with its word on it (the one job green has) */
@@ -259,7 +261,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .s6-rule{flex:1;padding-top:2px}
 .s6-h{font:800 16px/1.3 var(--head);padding-bottom:7px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
 .s6-step{display:flex;gap:12px;margin-bottom:14px}
-.s6-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--ink);color:#fff;font:800 15px/28px var(--head);
+.s6-step span{flex:none;width:28px;height:28px;border-radius:14px;background:var(--brand);color:#fff;font:800 15px/28px var(--head);
   text-align:center}
 .s6-step p{font:500 16px/1.4 var(--text)}
 .s6-step b{font-weight:800}
@@ -346,7 +348,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 /* ---- slide 2: the PRISM introduction page (dark stage; s2- classes are used on this slide only) ---- */
 .slide.s2-stage{padding:0;display:block;background:#0B1426;color:#fff}
 .s2-art{position:absolute;left:0;top:0;width:1280px;height:720px}
-.s2-kick{position:absolute;left:48px;top:40px;font:700 15px/1 var(--head);color:#FF6B75;letter-spacing:.4px}
+.s2-kick{position:absolute;left:48px;top:40px;font:700 15px/1 var(--head);color:var(--brand-light);letter-spacing:.4px}
 .s2-stage h2.s2-word{position:absolute;left:44px;top:60px;margin:0;font:800 92px/1 var(--head);letter-spacing:10px;color:#fff}
 .s2-sub{position:absolute;left:48px;top:162px;width:360px;font:600 24px/1.25 var(--head);color:#fff}
 .s2-sub2{position:absolute;left:48px;top:226px;width:300px;font:500 16px/1.4 var(--text);color:#AEB8C8}
@@ -370,7 +372,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 
 /* ---- slide 1: the open (dark stage like slide 2; s1- classes are used on this slide only; Pete, 11 Nov) ---- */
 .slide.s1-stage{padding:0;display:block;background:#0B1426;color:#fff}
-.s1-kick{position:absolute;left:48px;top:44px;font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:#FF6B75}
+.s1-kick{position:absolute;left:48px;top:44px;font:800 13px/1 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--brand-light)}
 .s1-q{position:absolute;left:48px;top:70px;width:1100px;font:800 48px/1.1 var(--head);color:#fff;letter-spacing:-.4px}
 .s1-chip{position:absolute;left:48px;top:192px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:11px 16px;
   border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}

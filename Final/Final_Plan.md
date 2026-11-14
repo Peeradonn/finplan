@@ -212,7 +212,15 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   `colour-one-accent.png`.
   Crimson conclusion bars (Round Two's gradient) were tried the same day and reverted (Pete: "just the conclusion bar
   is red while other accents are still blue"): with navy on every large area, a red bar reads as a separate block.
-  Round Two's red bar worked inside a warm palette (rose greys, a wine stage). The bars stay navy. Slides 1–2's stage is deep navy.
+  Round Two's red bar worked inside a warm palette (rose greys, a wine stage). The bars stay navy.
+  **Then indigo, after OneTable** (Pete: "can we make it more vibrant, something like OneTable"). OneTable is vivid
+  because one saturated indigo (#4A3FBF) marks each slide's point, not only its chrome; a colour on thin rules alone
+  barely shows (rendered twice: a brighter red, then indigo chrome only). Now `--brand` #4A3FBF (7.6:1 on white;
+  `--brand-light` #9C95F0 on the dark stages) marks the headers, chips, footer badges and each slide's point: slide
+  1's room tag and outcomes, slide 3's budget bar, slide 4's steps, slide 5's chosen route, slide 7's loan and steps,
+  slide 8's 26.6%, slide 10's outcome. Crimson (`--accent`) now means only the limit and money at risk (and the
+  refusals); teal the world; navy text and bars; the Climate Facts card stays ink, as a real label is. Renders:
+  `build/options/indigo-deep-compare.png`, `indigo-sheet.png`. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
