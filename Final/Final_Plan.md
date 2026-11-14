@@ -898,6 +898,10 @@ the renders are in `build/`, and the open's two layouts are `build/options/open-
   against the reasonable planner's plan; ≈134 t; the capital. Key Areas §7 is now met on screen as well as aloud.
   Moved off the open: the 47% (now slide 4's closing bar, on the slide that shows its parts) and the giving the room
   buys (slide 3). Layout A (today's grid, outcomes on the right) made the Wongs as large as the tests: not chosen.
+  Then trimmed (Pete: "is slide 1 too full?"): 187 words, the deck's median, on the slide that should be lightest.
+  It said the three tests three times and the label answer twice. Now 148: the chip's one bold sentence; each test
+  card's grey line is its direction alone (outside in, inside out, above the limit), since the claim says the rest;
+  the outcome in one line ("against a reasonable planner's plan").
 - **Slide 3** now says who the Wongs are, since the open no longer does: two parents decide, two children inherit,
   Adrian retires in 2037, Carmen in 2039.
 - **Slide 4, Option A** (Pete: "A is ok"): the strip shows one disorderly downturn asset by asset on the recommended
