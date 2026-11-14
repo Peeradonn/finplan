@@ -491,6 +491,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol>
+<symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="m4.9 4.9 14.2 14.2" /></symbol>
 <symbol id="i-briefcase-business" viewBox="0 0 24 24"><path d="M12 12h.01" /> <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /> <path d="M22 13a18.15 18.15 0 0 1-20 0" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
 <symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol>
 <symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="m9 12 2 2 4-4" /></symbol>
@@ -502,9 +503,11 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 <symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /> <path d="M2 9v1c0 1.1.9 2 2 2h1" /> <path d="M16 11h.01" /></symbol>
 <symbol id="i-scroll-text" viewBox="0 0 24 24"><path d="M15 12h-5" /> <path d="M15 8h-5" /> <path d="M19 17V5a2 2 0 0 0-2-2H4" /> <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></symbol>
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /> <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></symbol>
 <symbol id="i-trash-2" viewBox="0 0 24 24"><path d="M3 6h18" /> <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" /> <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" /> <line x1="10" x2="10" y1="11" y2="17" /> <line x1="14" x2="14" y1="11" y2="17" /></symbol>
 <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /></symbol>
 <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
 </svg>
 <main class="deck">
 <!-- Storyline v5 (Final/Final_Plan.md §4.5; Pete 13-14 Nov), moved here from Final/deck/options/ on 14 Nov:
@@ -709,6 +712,9 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 .v8-share p.v8-big{font:800 64px/1 var(--num);letter-spacing:-1px;color:var(--brand)}
 /* v5 slide 10: the claim as the close's title, on two lines (an id: classes are global) */
 #v10 .head h2{font-size:28px;max-width:1184px}
+/* slide 10: an icon for each corner's verdict (Pete 14 Nov) */
+#v10 .q3-act{display:flex;align-items:center;gap:9px}
+.v10-ic{width:24px;height:24px;stroke-width:2.2;color:var(--ink)} .v10-ic.v10-do{color:#0E7490} .v10-ic.v10-pay{color:var(--brand)} .v10-ic.v10-no{color:var(--accent)}
 /* slide 10: the brief's outcome and capital as two labelled lines, set off from the grid (Pete 14 Nov) */
 #v10 .q3-cell{padding:9px 18px 7px} #v10 .q3-e{margin-top:7px}
 .v10-out{border-top:1.5px solid var(--ink);padding-top:8px;margin-top:2px}
@@ -923,13 +929,13 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     <rect x="497.7" y="160" width="138.1" height="46" fill="#E4E8EE"/>
     <rect x="639.9" y="160" width="290.1" height="46" fill="#E3F1E6"/>
     <rect x="952" y="160" width="232" height="46" fill="#FFFFFF" stroke="#B3BAC6" stroke-width="1.5" stroke-dasharray="5 4"/>
-    <text x="188.0" y="179" font-size="16" font-weight="800" fill="#0F1E3D">The flat</text>
+    <svg x="187.0" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#0F1E3D"><use href="#i-house"/></svg><text x="214.0" y="181" font-size="16" font-weight="800" fill="#0F1E3D">The flat</text>
     <text x="188.0" y="198" font-size="13.5" fill="#566173">HK$11.5M · 42%</text>
-    <text x="507.7" y="179" font-size="16" font-weight="800" fill="#0F1E3D">Her business</text>
+    <svg x="506.7" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#0F1E3D"><use href="#i-briefcase-business"/></svg><text x="532.7" y="181" font-size="16" font-weight="800" fill="#0F1E3D">Her business</text>
     <text x="507.7" y="198" font-size="13.5" fill="#566173">her half, HK$5.0M</text>
-    <text x="651.9" y="179" font-size="16" font-weight="800" fill="#0F1E3D">Savings, deposits, MPF</text>
+    <svg x="650.9" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2E7D45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#2E7D45"><use href="#i-piggy-bank"/></svg><text x="677.9" y="181" font-size="16" font-weight="800" fill="#0F1E3D">Savings, deposits, MPF</text>
     <text x="651.9" y="198" font-size="13.5" fill="#566173">HK$10.5M · 39%</text>
-    <text x="964" y="179" font-size="16" font-weight="800" fill="#0F1E3D">Adrian's pay</text>
+    <svg x="963" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#566173" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#566173"><use href="#i-wallet"/></svg><text x="990" y="181" font-size="16" font-weight="800" fill="#0F1E3D">Adrian's pay</text>
     <text x="964" y="198" font-size="13.5" fill="#566173">HK$1.2–1.35M a year, to 2036</text>
     <!-- what one downturn takes, to scale -->
     <rect x="176.0" y="262" width="225.2" height="40" fill="#C80E1E"/>
@@ -1367,22 +1373,22 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
       <p class="q3-ch q3-none">For the world: <b>no real change shown</b></p>
       <p class="q3-rh"><svg class="ic"><use href="#i-users"/></svg>For the children:<b>adds, or costs about nothing</b></p>
       <div class="q3-cell">
-        <p class="q3-act">Do it</p>
+        <p class="q3-act"><svg class="ic v10-ic v10-do"><use href="#i-circle-check"/></svg>Do it</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Electric vans, LED, air-con<i class="q3-to">slides 6–7</i></p><p>+HK$0.51M · <span class="q3-t">26 t a year</span></p></div>
         <div class="q3-e" data-b="2"><p class="q3-name">Recycled plastic<i class="q3-to">slide 6</i></p><p>≈HK$0 at today's price · <span class="q3-t">108 t a year</span></p></div>
       </div>
       <div class="q3-cell">
-        <p class="q3-act">Do it, but don't call it green</p>
+        <p class="q3-act"><svg class="ic v10-ic"><use href="#i-tag"/></svg>Do it, but don't call it green</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Carbon data for her customers<i class="q3-to">slides 4, 7</i></p><p>−HK$0.09M, against −HK$1.55M if a big customer leaves</p></div>
         <div class="q3-e" data-b="2"><p class="q3-name">The flat's route, checked yearly<i class="q3-to">slide 5</i></p><p>HK$4.17M between the routes; the limit picks first</p></div>
       </div>
       <p class="q3-rh">For the children:<b>costs money</b></p>
       <div class="q3-cell">
-        <p class="q3-act">Pay knowingly, from the room</p>
+        <p class="q3-act"><svg class="ic v10-ic v10-pay"><use href="#i-wallet"/></svg>Pay knowingly, from the room</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Fund the scholarship now<i class="q3-to">slides 3, 9</i></p><p>−HK$1.32M · <span class="q3-t">the awards for life</span></p></div>
       </div>
       <div class="q3-cell q3-label">
-        <p class="q3-act">Don't pay for the label</p>
+        <p class="q3-act"><svg class="ic v10-ic v10-no"><use href="#i-ban"/></svg>Don't pay for the label</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Refused: three green products<i class="q3-to">slides 5, 7, 8</i></p><p>green mortgage · green deposit · sustainability-linked loan</p></div>
         <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 3, 8</i></p><p>−HK$0.62M from the room; not called impact</p></div>
       </div>

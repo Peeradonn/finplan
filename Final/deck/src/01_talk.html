@@ -200,6 +200,9 @@
 .v8-share p.v8-big{font:800 64px/1 var(--num);letter-spacing:-1px;color:var(--brand)}
 /* v5 slide 10: the claim as the close's title, on two lines (an id: classes are global) */
 #v10 .head h2{font-size:28px;max-width:1184px}
+/* slide 10: an icon for each corner's verdict (Pete 14 Nov) */
+#v10 .q3-act{display:flex;align-items:center;gap:9px}
+.v10-ic{width:24px;height:24px;stroke-width:2.2;color:var(--ink)} .v10-ic.v10-do{color:#0E7490} .v10-ic.v10-pay{color:var(--brand)} .v10-ic.v10-no{color:var(--accent)}
 /* slide 10: the brief's outcome and capital as two labelled lines, set off from the grid (Pete 14 Nov) */
 #v10 .q3-cell{padding:9px 18px 7px} #v10 .q3-e{margin-top:7px}
 .v10-out{border-top:1.5px solid var(--ink);padding-top:8px;margin-top:2px}
@@ -414,13 +417,13 @@
     <rect x="[[s4_vb_x]]" y="160" width="[[s4_vb_w]]" height="46" fill="#E4E8EE"/>
     <rect x="[[s4_vs_x]]" y="160" width="[[s4_vs_w]]" height="46" fill="#E3F1E6"/>
     <rect x="952" y="160" width="232" height="46" fill="#FFFFFF" stroke="#B3BAC6" stroke-width="1.5" stroke-dasharray="5 4"/>
-    <text x="[[s4_vf_x+12]]" y="179" font-size="16" font-weight="800" fill="#0F1E3D">The flat</text>
+    <svg x="[[s4_vf_x+11]]" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#0F1E3D"><use href="#i-house"/></svg><text x="[[s4_vf_x+38]]" y="181" font-size="16" font-weight="800" fill="#0F1E3D">The flat</text>
     <text x="[[s4_vf_x+12]]" y="198" font-size="13.5" fill="#566173">HK$11.5M · 42%</text>
-    <text x="[[s4_vb_x+10]]" y="179" font-size="16" font-weight="800" fill="#0F1E3D">Her business</text>
+    <svg x="[[s4_vb_x+9]]" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#0F1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#0F1E3D"><use href="#i-briefcase-business"/></svg><text x="[[s4_vb_x+35]]" y="181" font-size="16" font-weight="800" fill="#0F1E3D">Her business</text>
     <text x="[[s4_vb_x+10]]" y="198" font-size="13.5" fill="#566173">her half, HK$5.0M</text>
-    <text x="[[s4_vs_x+12]]" y="179" font-size="16" font-weight="800" fill="#0F1E3D">Savings, deposits, MPF</text>
+    <svg x="[[s4_vs_x+11]]" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2E7D45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#2E7D45"><use href="#i-piggy-bank"/></svg><text x="[[s4_vs_x+38]]" y="181" font-size="16" font-weight="800" fill="#0F1E3D">Savings, deposits, MPF</text>
     <text x="[[s4_vs_x+12]]" y="198" font-size="13.5" fill="#566173">HK$10.5M · 39%</text>
-    <text x="964" y="179" font-size="16" font-weight="800" fill="#0F1E3D">Adrian's pay</text>
+    <svg x="963" y="164" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#566173" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#566173"><use href="#i-wallet"/></svg><text x="990" y="181" font-size="16" font-weight="800" fill="#0F1E3D">Adrian's pay</text>
     <text x="964" y="198" font-size="13.5" fill="#566173">HK$1.2–1.35M a year, to 2036</text>
     <!-- what one downturn takes, to scale -->
     <rect x="[[s4_lf_x]]" y="262" width="[[s4_lf_w]]" height="40" fill="#C80E1E"/>
@@ -858,22 +861,22 @@
       <p class="q3-ch q3-none">For the world: <b>no real change shown</b></p>
       <p class="q3-rh"><svg class="ic"><use href="#i-users"/></svg>For the children:<b>adds, or costs about nothing</b></p>
       <div class="q3-cell">
-        <p class="q3-act">Do it</p>
+        <p class="q3-act"><svg class="ic v10-ic v10-do"><use href="#i-circle-check"/></svg>Do it</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Electric vans, LED, air-con<i class="q3-to">slides 6–7</i></p><p>{{fin_dot_vans_n}} · <span class="q3-t">26 t a year</span></p></div>
         <div class="q3-e" data-b="2"><p class="q3-name">Recycled plastic<i class="q3-to">slide 6</i></p><p>≈HK$0 at today's price · <span class="q3-t">108 t a year</span></p></div>
       </div>
       <div class="q3-cell">
-        <p class="q3-act">Do it, but don't call it green</p>
+        <p class="q3-act"><svg class="ic v10-ic"><use href="#i-tag"/></svg>Do it, but don't call it green</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Carbon data for her customers<i class="q3-to">slides 4, 7</i></p><p>{{fin_dot_data_n}}, against {{fin_cust10_leg}} if a big customer leaves</p></div>
         <div class="q3-e" data-b="2"><p class="q3-name">The flat's route, checked yearly<i class="q3-to">slide 5</i></p><p>{{fin_pdown_more_n}} between the routes; the limit picks first</p></div>
       </div>
       <p class="q3-rh">For the children:<b>costs money</b></p>
       <div class="q3-cell">
-        <p class="q3-act">Pay knowingly, from the room</p>
+        <p class="q3-act"><svg class="ic v10-ic v10-pay"><use href="#i-wallet"/></svg>Pay knowingly, from the room</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Fund the scholarship now<i class="q3-to">slides 3, 9</i></p><p>{{fin_val_gift_n}} · <span class="q3-t">the awards for life</span></p></div>
       </div>
       <div class="q3-cell q3-label">
-        <p class="q3-act">Don't pay for the label</p>
+        <p class="q3-act"><svg class="ic v10-ic v10-no"><use href="#i-ban"/></svg>Don't pay for the label</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Refused: three green products<i class="q3-to">slides 5, 7, 8</i></p><p>green mortgage · green deposit · sustainability-linked loan</p></div>
         <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 3, 8</i></p><p>{{fin_val_esg_n}} from the room; not called impact</p></div>
       </div>
