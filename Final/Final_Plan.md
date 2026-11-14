@@ -203,7 +203,13 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   stay in the prism, the footer badge and the kicker chip, never in slide bodies. **Reaffirmed 14 Nov** (Pete asked:
   band colours or navy for each step?): keep the band colours there, as wayfinding (a judge sees which step without
   reading); R's red and I's cyan already match the limit's crimson and the change's teal; all-navy would make every
-  step slide look alike and leave the prism as decoration. Slides 1–2's stage is deep navy.
+  step slide look alike and leave the prism as decoration.
+  **Superseded 14 Nov, later** (Pete, after e-Sentry and OneTable: "set one clear colour for our whole deck"): one
+  accent. Crimson on every slide's title rule, kicker, step chip and footer badge (as slides 1, 2 and 10 already
+  had); navy for structure (slides 7 and 8's numbered circles were purple); teal only for the world; green only on
+  the label itself; the five PRISM colours only where the beam splits (slide 2, the all-five badges on 10 and 19).
+  The step stays legible from the chip's letter and the footer badge. Renders: `build/options/colour-now.png`,
+  `colour-one-accent.png`. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
