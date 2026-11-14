@@ -357,6 +357,12 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   +HK$0.51M for the children through the sale; stamped "this one works"). The slide now runs in its three steps'
   order: the five kinds (name it), the size scale (check it at her size), the sheets (judge it by its own test).
   The green premium, carbon data and the green lease in a side column. Render: `build/options/slide7-sheets.png`.
+- **Slide 8 as a sieve, not a target** (option chosen): "what they asked for, 20–25% in ESG products" struck through
+  at the top; four products fall through two perforated filters, the product check (stamped pass, fail, refused, in
+  slide 7's stamp style; the fund with US$0 stamped FAIL) and each person's limit (the two portfolios with weights
+  and fees, full width: the brief's "portfolio with weights and costs"); one arrow carries the passing fund through
+  both; 26.6% comes out, priced (−HK$0.62M from the room; 30% less carbon, a footprint). Slide 4's strip icons and
+  slide 10's corner icons stay as light touches. Render: `build/options/slide8-sieve.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

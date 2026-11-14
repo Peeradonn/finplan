@@ -118,6 +118,33 @@
 #v6 .s7-item{margin-bottom:10px}
 .v6-st span{flex:none;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font:800 12.5px/22px var(--head);
   text-align:center;margin-top:1px}
+/* v5 slide 8 as a sieve, not a target (Pete 14 Nov): products fall through the product check and each person's
+   limit; 26.6% comes out (v8f- only here; the stamps reuse slide 7's .v7s-stamp) */
+.v8f{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.v8f-in{display:flex;align-items:center;gap:12px;font:500 15px/1.3 var(--text);color:var(--ink)}
+.v8f-tag{flex:none;font:800 12px/1 var(--text);letter-spacing:1.2px;text-transform:uppercase;color:#fff;background:var(--ink);padding:5px 8px;border-radius:3px}
+.v8f-ask s{color:var(--accent);text-decoration-thickness:2px} .v8f-say{margin-left:auto;font-style:italic;color:var(--slate)}
+.v8f-prods{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.v8f-p{position:relative;background:#fff;border:1.5px solid #DCE1E8;border-radius:6px;padding:9px 12px 9px;opacity:.78}
+.v8f-p.v8f-pass{opacity:1;border-color:var(--brand);box-shadow:0 2px 8px rgba(74,63,191,.15)}
+.v8f-pn{font:800 15px/1.25 var(--text);color:var(--ink);padding-right:74px} .v8f-pd{font:500 13px/1.3 var(--text);color:var(--slate);margin-top:3px;padding-right:74px}
+.v8f-p .v7s-stamp{top:10px;right:10px;font-size:12px}
+.v8f-st-no{color:var(--accent)}
+.v8f-p.v8f-pass{z-index:3} .v8f-mesh{z-index:1}
+.v8f-p.v8f-pass::after{content:"";position:absolute;left:50%;top:100%;width:3px;height:66px;margin-left:-1.5px;background:var(--brand)}
+.v8f-down{position:absolute;left:50%;bottom:-86px;margin-left:-13px;width:26px;height:26px;color:var(--brand);stroke-width:2.8}
+.v8f-mesh{display:flex;align-items:center;gap:9px;height:30px;padding:0 10px;border-radius:3px;font:800 13px/1 var(--text);letter-spacing:.6px;
+  text-transform:uppercase;color:var(--brand);
+  justify-content:flex-end;background:radial-gradient(circle,rgba(74,63,191,.30) 1.6px,transparent 2.2px) 0 0/11px 11px,#F4F3FC}   /* a perforated sieve */
+.v8f-mesh{position:relative} .v8f-mesh em{font-style:normal;background:#F4F3FC;box-shadow:0 0 0 6px #F4F3FC}
+.v8f-mesh span{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:var(--brand);
+  color:#fff;font-size:11.5px;letter-spacing:0}
+.v8f-out{display:flex;align-items:center;gap:16px;border-top:1.5px solid var(--ink);padding-top:8px}
+.v8f-tag-out{background:var(--brand)}
+.v8f-big{font:800 52px/1 var(--num);letter-spacing:-1px;color:var(--brand)}
+.v8f-what{flex:none;width:300px;font:500 15px/1.35 var(--text);color:var(--ink)}
+.v8f-price{margin-left:auto;border-left:3px solid #DCE1E8;padding-left:14px}
+.v8f-price p{font:500 15px/1.4 var(--text);color:var(--ink)} .v8f-price b{font-weight:800}
 /* v5 slide 7 as two term sheets (Pete 14 Nov: "be more creative"): a green loan judged as a loan (v7s- only here) */
 #v7 .body.stack{gap:8px}
 .v7s{display:grid;grid-template-columns:400px 44px 400px 1fr;align-items:center;gap:0;margin-top:4px}
@@ -713,54 +740,45 @@
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The room: products checked, sized by each person's limit, priced</span></p>
     <h2>The sustainable share is an output of the limits, paid from the room</h2>
   </header>
-  <div class="body v8-body">
-    <div class="v8-top">
-      <div class="v8-check">
-        <p class="v8-h"><span>1</span>Check each product</p>
-        <p class="v8-c v8-pass"><svg class="ic"><use href="#i-circle-check"/></svg><span><b>Climate index fund (EDMW)</b>: its carbon must stay 30% below the world index and fall 7% a year</span><em>Pass</em></p>
-        <p class="v8-c v8-fail"><svg class="ic"><use href="#i-circle-x"/></svg><span><b>A global ESG fund on the SFC's list</b>: US$0 in assets at every filing for two years</span><em>Fail</em></p>
-        <p class="v8-c v8-fail"><svg class="ic"><use href="#i-circle-x"/></svg><span><b>Clean-energy fund</b>: one sector, so it breaks Adrian's limit</span><em>Refused</em></p>
-        <p class="v8-c v8-fail"><svg class="ic"><use href="#i-circle-x"/></svg><span><b>Green deposit</b>: no rule on what it finances</span><em>Refused</em></p>
-      </div>
-      <div class="v8-size">
-        <p class="v8-h"><span>2</span>Size it by each person's limit</p>
-        <svg viewBox="0 0 700 230" width="700" height="230" style="font-family:var(--text)">
-          <text x="0" y="16" font-size="16" font-weight="800" fill="#0F1E3D">Adrian <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.13% a year in fees</tspan></text>
-          <rect x="0" y="26" width="168" height="40" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
-          <rect x="168" y="26" width="112" height="40" fill="#DCE1E8"/>
-          <rect x="280" y="26" width="210" height="40" fill="#C9D1DC"/>
-          <rect x="490" y="26" width="175" height="40" fill="#DCE1E8"/>
-          <rect x="665" y="26" width="35" height="40" fill="#C9D1DC"/>
-          <text x="10" y="51" font-size="14" font-weight="800" fill="#0F1E3D">Climate index 24%</text>
-          <text x="178" y="51" font-size="13.5" fill="#0F1E3D">World 16%</text>
-          <text x="290" y="51" font-size="13.5" fill="#0F1E3D">Treasury ladder 30%</text>
-          <text x="500" y="51" font-size="13.5" fill="#0F1E3D">Global bonds 25%</text>
-          <text x="682" y="51" font-size="12" fill="#0F1E3D" text-anchor="middle">5%</text>
-          <text x="0" y="86" font-size="13.5" fill="#566173"><tspan font-weight="800" fill="#0F1E3D">His limit sizes it:</tspan> 0.5% a year from the market ÷ the fund's 2.09% = 24%</text>
-          <text x="0" y="128" font-size="16" font-weight="800" fill="#0F1E3D">Carmen <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.29% a year in fees</tspan></text>
-          <rect x="0" y="138" width="420" height="40" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
-          <rect x="420" y="138" width="35" height="40" fill="#C9D1DC"/>
-          <rect x="455" y="138" width="140" height="40" fill="#DCE1E8"/>
-          <rect x="595" y="138" width="70" height="40" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
-          <rect x="665" y="138" width="35" height="40" fill="#C9D1DC"/>
-          <text x="10" y="163" font-size="14" font-weight="800" fill="#0F1E3D">Climate index 60%</text>
-          <text x="437" y="163" font-size="12" fill="#0F1E3D" text-anchor="middle">5%</text>
-          <text x="465" y="163" font-size="13.5" fill="#0F1E3D">Global bonds 20%</text>
-          <text x="630" y="163" font-size="12.5" font-weight="800" fill="#0F1E3D" text-anchor="middle">Green 10%</text>
-          <text x="682" y="163" font-size="12" fill="#0F1E3D" text-anchor="middle">5%</text>
-          <text x="0" y="198" font-size="13.5" fill="#566173"><tspan font-weight="800" fill="#0F1E3D">Her limit sizes it:</tspan> 3% a year from the market covers all her shares</text>
-          <rect x="0" y="212" width="14" height="12" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/><text x="20" y="223" font-size="12.5" fill="#566173">passed the check · grey: plain funds, Treasuries, cash · fees: our area 3 brief</text>
-        </svg>
-      </div>
+  <div class="body v8f">
+    <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">What they asked for: <s>20–25% of their savings in ESG products</s></span><span class="v8f-say">Instead, every product goes through two filters</span></div>
+    <div class="v8f-prods">
+      <div class="v8f-p v8f-pass"><p class="v8f-pn">Climate index fund (EDMW)</p><p class="v8f-pd">carbon 30% below the world index, −7% a year, by rule</p><span class="v7s-stamp v7s-st-go">Pass</span><svg class="ic v8f-down"><use href="#i-arrow-down"/></svg></div>
+      <div class="v8f-p"><p class="v8f-pn">A global ESG fund on the SFC's list</p><p class="v8f-pd">US$0 in assets at every filing for two years</p><span class="v7s-stamp v8f-st-no">Fail</span></div>
+      <div class="v8f-p"><p class="v8f-pn">Clean-energy fund</p><p class="v8f-pd">one sector: it breaks Adrian's limit</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
+      <div class="v8f-p"><p class="v8f-pn">Green deposit</p><p class="v8f-pd">no rule on what it finances</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
     </div>
-    <div class="v8-out">
-      <div class="v8-share"><p class="v8-big">26.6%</p><p>of the family's HK$10.47M comes out of the two limits: an output, not a 25% target</p></div>
-      <div class="v8-price">
-        <p class="v8-h"><span>3</span>Price it, and say what it is</p>
-        <p><b>{{fin_val_esg_n}}</b> for the children — the fees against plain twins, paid from the room</p>
-        <p><b>30% less carbon</b> — a footprint, not a change</p>
-      </div>
-    </div>
+    <p class="v8f-mesh"><span>1</span><em>The product check: a binding rule, measured every year, within the owner's limit</em></p>
+    <p class="v8f-mesh"><span>2</span><em>Each person's limit sizes it</em></p>
+    <svg viewBox="0 0 1184 150" width="1184" height="150" style="font-family:var(--text)">
+      <text x="0" y="17" font-size="16" font-weight="800" fill="#0F1E3D">Adrian <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.13% a year in fees</tspan></text>
+      <text x="1184" y="17" font-size="14" fill="#566173" text-anchor="end"><tspan font-weight="800" fill="#0F1E3D">His limit:</tspan> 0.5% a year from the market ÷ the fund's 2.09% = 24%</text>
+          <rect x="0.0" y="26" width="284.2" height="34" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
+          <text x="10.0" y="48" font-size="14" font-weight="800" fill="#0F1E3D">Climate index 24%</text>
+          <rect x="284.2" y="26" width="189.4" height="34" fill="#DCE1E8"/>
+          <text x="294.2" y="48" font-size="14" fill="#0F1E3D">World 16%</text>
+          <rect x="473.6" y="26" width="355.2" height="34" fill="#C9D1DC"/>
+          <text x="483.6" y="48" font-size="14" fill="#0F1E3D">Treasury ladder 30%</text>
+          <rect x="828.8" y="26" width="296.0" height="34" fill="#DCE1E8"/>
+          <text x="838.8" y="48" font-size="14" fill="#0F1E3D">Global bonds 25%</text>
+          <rect x="1124.8" y="26" width="59.2" height="34" fill="#C9D1DC"/>
+          <text x="1154.4" y="48" font-size="14" text-anchor="middle" fill="#0F1E3D">5%</text>
+      <text x="0" y="87" font-size="16" font-weight="800" fill="#0F1E3D">Carmen <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.29% a year in fees</tspan></text>
+      <text x="1184" y="87" font-size="14" fill="#566173" text-anchor="end"><tspan font-weight="800" fill="#0F1E3D">Her limit:</tspan> 3% a year from the market covers all her shares</text>
+          <rect x="0.0" y="96" width="710.4" height="34" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
+          <text x="10.0" y="118" font-size="14" font-weight="800" fill="#0F1E3D">Climate index 60%</text>
+          <rect x="710.4" y="96" width="59.2" height="34" fill="#C9D1DC"/>
+          <text x="740.0" y="118" font-size="14" text-anchor="middle" fill="#0F1E3D">5%</text>
+          <rect x="769.6" y="96" width="236.8" height="34" fill="#DCE1E8"/>
+          <text x="779.6" y="118" font-size="14" fill="#0F1E3D">Global bonds 20%</text>
+          <rect x="1006.4" y="96" width="118.4" height="34" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
+          <text x="1016.4" y="118" font-size="14" font-weight="800" fill="#0F1E3D">Green 10%</text>
+          <rect x="1124.8" y="96" width="59.2" height="34" fill="#C9D1DC"/>
+          <text x="1154.4" y="118" font-size="14" text-anchor="middle" fill="#0F1E3D">5%</text>
+      <rect x="0" y="139" width="14" height="10" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/><text x="20" y="148" font-size="12.5" fill="#566173">passed the check · grey: plain funds, Treasuries, cash · fees: our area 3 brief</text>
+    </svg>
+    <div class="v8f-out"><span class="v8f-tag v8f-tag-out">Out</span><p class="v8f-big">26.6%</p><p class="v8f-what">of the family's HK$10.47M: what comes out of the two limits, not the 25% they asked for</p>
+      <div class="v8f-price"><p><b>{{fin_val_esg_n}}</b> for the children: the fee gap against plain twins, paid from the room</p><p><b>30% less carbon</b> than the market: a footprint, not a change</p></div></div>
   </div>
   <p class="sowhat">The limits, not a target, set the share: 26.6%, at the plain fund's fee, paid from the room.</p>
   <aside class="notes">WIN: I'm Win, on the savings. For any client, the sustainable share should come out of the limits, not go in as a target. First, each product must pass: a binding rule, measured every year, within the owner's limit. A global ESG fund on the SFC's own list has held nothing for two years: it fails. A climate index fund whose carbon must stay thirty per cent below the market passes, at the plain fund's fee. Then each parent's limit sizes it: Adrian's caps him at twenty-four per cent; Carmen's covers all her shares. The share comes out at twenty-six point six. Its price, {{fin_val_esg_n}}, comes from the room. The greenium on green bonds is about two basis points; the fee is the real cost. And lower carbon is a footprint, not a change. But every one of these verdicts rests on prices that will move.
