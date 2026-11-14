@@ -229,7 +229,12 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   they are one sequence, like slide 4's steps; the limit's crimson stays in the data on the right.
   Then given shape (Pete: "a bit bland"): a thin indigo line joins the four steps (a sequence, so the line means
   something), and the disagreement rules sit on a light indigo card (a clause in the family's investment policy).
-  No new colour. Render: `build/options/slide3-shape.png`. Slides 1–2's stage is deep navy.
+  No new colour. Render: `build/options/slide3-shape.png`.
+- **Slide 6:** the rule for any business is three numbered indigo steps (it was a run-on paragraph, the hardest text
+  on the slide, though it is the scored part); the dashed box over recycled plastic is named "Green premium" (the
+  brief's term; slide 7 defines it against the greenium).
+- **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
+  20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
