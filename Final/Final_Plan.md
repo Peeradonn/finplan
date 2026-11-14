@@ -415,7 +415,27 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     record; say it the same way.
   - **Slide 3's cards aligned:** every person has the same three rows (values, accepts, decides) at one height.
   - **Still to come:** AI portraits of the four Wongs for slide 3 (fictional, labelled so), from the prompts Claude
-    gave Pete on 14 Nov; until then, initials.
+    gave Pete on 14 Nov. **Done 15 Nov** (below).
+- **OASIS's storytelling, taken where it fits** (Pete, 15 Nov: "take the good parts ... don't force it"). Read from
+  its titles in sequence (KADOKAWA AGM 2026, 133 pages; Fujitec 2022). What it does: the ask early (p.11) and the
+  same ask closing each section (pp.33, 122); people with faces and their own words, shown again later; the other
+  side's own words as the strongest evidence ("Natsuno admits", "its own MTP validates the criticism", the source
+  boxed in red); a claim set against the facts ("Board wants shareholders to trust Natsuno but results show
+  otherwise"); a rebuttal section; and a close on the other side's own standard ("By his own standard ... needs to be
+  replaced"). **Taken:**
+  - **Faces and wishes, then the payoff.** Slide 3's four cards open on a portrait (AI-generated, labelled fictional)
+    and what each wants (our client definition, not quotes: Adrian to retire safely, whatever markets do; Carmen
+    their money to do good and never be greenwashed; Ryan to run his own money; Chloe a scholarship that reaches
+    students who need it). Adrian's and Carmen's faces return on slide 4 beside their part of the room.
+  - **The close by their own standards:** Pete answers each wish (Adrian's limit holds, 97 and 90 in 100; Carmen's
+    money cuts ≈134 t, funds a scholarship for life, claims nothing it can't show) and the share they asked for
+    comes out at 26.6% as a by-product; the outcome line says so on screen, paying off slide 1's green chip.
+  - **Sources in their own words** (14 Nov, above) and **claim against facts** (slide 10: on the SFC's ESG list, US$0
+    at all 23 filings) were already in.
+  **Not taken:** findings as titles (ours stay rules for any client: framework first, §3); a recurring contents slide
+  (the PRISM footer badge already shows where we are, in a 10-minute talk); a rebuttal section in the talk (the
+  hard questions are the backups' job); the adversarial tone (we propose a framework, not a campaign).
+- **Slide 1 easier to read:** the photo dimmed to 11% and its colour cut; every small line brighter.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made

@@ -89,7 +89,18 @@
 .v1-wn{display:block;font:800 26px/1.1 var(--num);color:var(--brand-light);margin-bottom:3px}
 .v1-wn.v1-nc{color:#38B6CF}
 .v1-wsrc{font:500 12.5px/1.4 var(--text);color:#808BA0;margin-top:6px}
+/* slide 1 easier to read over the photo (Pete 15 Nov): every small line brighter */
+#v1 .s1-cap{color:#D2D9E4} #v1 .v1-sub{color:#D2D9E4} #v1 .v1-wcap{color:#D2D9E4;font-size:17px} #v1 .v1-wsrc{color:#AEB8C8;font-size:13px}
+#v1 .v1-wrow p{color:#E3E8F0} #v1 .v1-test{background:#13203A;border-color:#33456A}
 /* the profile slide (Pete 14 Nov: one point per slide): each decision-maker as a card (v3a- classes only here) */
+/* 15 Nov, after OASIS: each card opens on a portrait (AI-generated, fictional) and what the person wants (our client
+   definition), the setup the close pays off */
+#v3a .v3a-p{display:grid;grid-template-rows:118px auto 44px 1fr 1fr;min-height:0;height:352px;padding:0 16px 10px;overflow:hidden}
+#v3a .v3a-ph{display:block;width:calc(100% + 32px);height:118px;margin:0 -16px;object-fit:cover;object-position:50% 22%}
+#v3a .v3a-nm{font-size:20px;margin-top:10px} #v3a .v3a-nm span{font:500 13.5px/1 var(--text);color:var(--slate)}
+#v3a .v3a-w{font:italic 600 14.5px/1.3 var(--text);color:var(--ink);margin-top:3px}
+#v3a .v3a-ad .v3a-w{color:var(--accent)} #v3a .v3a-ca .v3a-w{color:var(--brand)}
+#v3a .v3a-r b{font-size:15px} #v3a .v3a-ad .v3a-ph{object-position:50% 34%} #v3a .v3a{gap:14px;margin-top:12px}
 .v3a{display:flex;flex-direction:column;gap:18px;margin-top:16px}
 .v3a-people{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .v3a-p{position:relative;border:1.5px solid #DCE1E8;border-top:6px solid #B3BAC6;border-radius:6px;padding:16px 18px 14px;background:#fff;min-height:292px;box-sizing:border-box;
@@ -144,6 +155,8 @@
 .v3-who2 p{flex:1;font:500 15px/1.4 var(--text);color:var(--slate);text-wrap:pretty}
 .v3-who2 b{font:800 17px/1.3 var(--head);color:var(--brand)} .v3-who2 i{font-weight:500;color:var(--slate)}
 .v3-who2 .v3-ad b{color:var(--accent)}
+.v3-face{display:flex;align-items:center;gap:12px} .v3-face img{flex:none;width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.v3-face.v3-ad img{box-shadow:0 0 0 3px var(--accent)} .v3-face:not(.v3-ad) img{box-shadow:0 0 0 3px var(--brand)}
 /* v5 slide 6: the rule for any business as three numbered steps, like the other step slides (Pete 14 Nov) */
 .s7-item p.v6-st{display:flex;gap:10px;align-items:flex-start;font:500 15px/1.32 var(--text);margin-bottom:4px}
 #v6 .s7-item{margin-bottom:10px}
@@ -451,20 +464,20 @@
   <div class="body v3a">
     <p class="v6c-steps"><span class="v6c-cap">For any client</span><span><i>1</i>Ask each decision-maker alone, on the brief's seven dimensions</span><span><i>4</i>Write who decides into the investment policy</span></p>
     <div class="v3a-people">
-      <div class="v3a-p v3a-ad"><p class="v3a-av">A</p><p class="v3a-nm">Adrian, 54</p><p class="v3a-tg">capital first</p>
-        <p class="v3a-r"><span>Values</span><b>low</b></p><p class="v3a-r"><span>Accepts</span><b>within 0.5% a year of the market; no lock-ups</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money; shared money with Carmen</b></p></div>
-      <div class="v3a-p v3a-ca"><p class="v3a-av">C</p><p class="v3a-nm">Carmen, 49</p><p class="v3a-tg">values high · runs the business</p>
-        <p class="v3a-r"><span>Values</span><b>high</b></p><p class="v3a-r"><span>Accepts</span><b>up to 3% a year from the market</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>her own money; the business, with her co-founder</b></p></div>
-      <div class="v3a-p"><p class="v3a-av">R</p><p class="v3a-nm">Ryan, 24</p><p class="v3a-tg">growth</p>
-        <p class="v3a-r"><span>Values</span><b>to ask, not assume</b></p><p class="v3a-r"><span>Accepts</span><b>high risk</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money only</b></p></div>
-      <div class="v3a-p"><p class="v3a-av">C</p><p class="v3a-nm">Chloe, 16</p><p class="v3a-tg">university 2028–32</p>
-        <p class="v3a-r"><span>Values</span><b>a voice in the scholarship</b></p><p class="v3a-r"><span>Accepts</span><b>her education fund kept safe</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>nothing yet</b></p></div>
+      <div class="v3a-p v3a-ad"><img class="v3a-ph" src="inline:img/portrait-adrian.jpg" alt=""><p class="v3a-nm">Adrian, 54 <span>· values low</span></p><p class="v3a-w">wants to retire safely, whatever markets do</p>
+        <p class="v3a-r"><span>Accepts</span><b>within 0.5% a year of the market; no lock-ups</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money; shared money with Carmen</b></p></div>
+      <div class="v3a-p v3a-ca"><img class="v3a-ph" src="inline:img/portrait-carmen.jpg" alt=""><p class="v3a-nm">Carmen, 49 <span>· values high</span></p><p class="v3a-w">wants their money to do good, and never to be greenwashed</p>
+        <p class="v3a-r"><span>Accepts</span><b>up to 3% a year from the market</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>her own money; the business, with her co-founder</b></p></div>
+      <div class="v3a-p"><img class="v3a-ph" src="inline:img/portrait-ryan.jpg" alt=""><p class="v3a-nm">Ryan, 24 <span>· values to ask</span></p><p class="v3a-w">wants to run his own money his own way</p>
+        <p class="v3a-r"><span>Accepts</span><b>high risk</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>his own money only</b></p></div>
+      <div class="v3a-p"><img class="v3a-ph" src="inline:img/portrait-chloe.jpg" alt=""><p class="v3a-nm">Chloe, 16 <span>· values to ask</span></p><p class="v3a-w">wants a scholarship that reaches students who need it</p>
+        <p class="v3a-r"><span>Accepts</span><b>her education fund kept safe</b></p><p class="v3a-r v3a-dec"><span>Decides</span><b>nothing yet</b></p></div>
     </div>
     <div class="v3a-rules"><p class="v3a-rh">When they disagree</p><p><i>1</i>Own money: <b>own limits</b></p><p><i>2</i>Shared money: <b>the more prudent</b></p><p><i>3</i>Until they agree: <b>the plain choice stays</b></p></div>
   </div>
   <p class="sowhat">Each person is profiled alone, and the policy says who decides: a disagreement has a rule, not an argument.</p>
   <aside class="notes">PETE: Profile comes first, before any product: ask each decision-maker alone. Meet the Wongs. Adrian,
-    fifty-four, wants his capital safe. Carmen, forty-nine, wants their money to do good, and runs a packaging business.
+    fifty-four, wants to retire safely, whatever markets do. Carmen, forty-nine, runs a packaging business and wants their money to do good, without greenwashing.
     Ryan, twenty-four, runs his own money; Chloe, sixteen, starts university in 2028. The investment policy says who
     decides, and what happens when they disagree: own money, own limits; shared money follows the more prudent; until
     they agree, the plain choice stays. So how sure must their money be?
@@ -477,7 +490,7 @@
     family relationship).]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>PROFILE<span>Area 1</span></p></div>
-    <p class="src">Our client definition (ILLUSTRATIVE) · ESMA35-43-3172 ¶65–70, ¶81 · the brief, area 1</p><span class="pg">3</span>
+    <p class="src">Portraits AI-generated, fictional · wishes and profiles: our client definition (ILLUSTRATIVE) · ESMA35-43-3172 ¶65–70, ¶81 · the brief, area 1</p><span class="pg">3</span>
   </footer>
 </section>
 
@@ -502,8 +515,8 @@
       </div>
       <p class="v3-warn"><b>Paid from yearly cash flow instead,</b> the same two causes break the limit ({{fin_room_pledge2_odds}}).</p>
       <div class="v3-who2">
-        <p><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</p>
-        <p class="v3-ad"><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</p>
+        <p class="v3-face"><img src="inline:img/portrait-carmen.jpg" alt=""><span><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</span></p>
+        <p class="v3-ad v3-face"><img src="inline:img/portrait-adrian.jpg" alt=""><span><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</span></p>
       </div>
     </div>
   </div>
@@ -1051,10 +1064,10 @@
         <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 4, 11</i></p><p>{{fin_val_esg_n}} from the room; not called impact</p></div>
       </div>
     </div>
-    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan <i>({{fin_fair_gain_s}} in a downturn)</i> · <b class="v10-t">≈134 t</b> CO2e a year less</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
+    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan · <b class="v10-t">≈134 t</b> CO2e a year less · <b>26.6%</b> in ESG funds, the share they asked for</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
   </div>
   <p class="sowhat" data-b="2">On one measure, the label never decides: the limit, the change and the room do.</p>
-  <aside class="notes">PETE: So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. For the Wongs, the limit decided the flat; the vans and recycled plastic pay and cut real tonnes; carbon data protects their money, but isn't called green; the scholarship is paid knowingly, from the room; and where a label had nothing behind it, we said no. Against the plan a reasonable planner would give without the test, the children get {{fin_fair_gain}}, and the business cuts about 134 tonnes a year. The label never decides. Thank you.
+  <aside class="notes">PETE: So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. By their own standards: Adrian wanted to retire safely, and his limit holds, {{fin_plan_odds100}} futures in 100, {{fin_plan_sodds100}} in a downturn. Carmen wanted money that does good: about 134 tonnes a year cut, a scholarship for life, and nothing claimed we can't show. And the share of ESG funds they asked for? It comes out at twenty-six point six per cent, as a by-product. Against the plan a reasonable planner would give without the test, the children get {{fin_fair_gain}}. The label never decides. Thank you.
     [Notes: DRAFT v5, 14 Nov; Pete to make it his own. v4's slide 3, moved to the close (storyline v5): every decision
     once, after the slides that prove it (the small numbers). The corners: Final_Plan.md §4.2, test 9; "for the
     children" is each decision against its best plain alternative (fin_dot_*_n). Fixes kept (13 Nov): the flat is the
