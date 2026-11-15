@@ -732,6 +732,77 @@
 #v7 .f8l-case img{width:64px;height:76px}
 #v7 .f8l-case h3{font-size:19px;margin-bottom:4px}
 </style>
+<style>
+/* Slide 9: general rule first, equal comparison cards underneath. */
+#v7b .l9-sub{font:500 17px/1.3 var(--text);color:var(--slate);margin-top:7px}
+#v7b .l9-body{display:flex;flex-direction:column;gap:11px;margin-top:15px}
+.l9-steps{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr;gap:8px;align-items:start}
+.l9-step{border-top:3px solid var(--brand);padding:9px 8px 0}
+.l9-step h3{font:800 19px/1.2 var(--text);margin-bottom:5px}
+.l9-step h3 b{color:var(--brand);font-weight:800;margin-right:8px}
+.l9-step p{font:500 14px/1.35 var(--text);color:var(--slate)}
+.l9-arrow{font:500 26px/1 var(--text);color:var(--brand);padding-top:18px}
+.l9-decisions{font:600 13px/1.3 var(--text);color:var(--slate);text-align:center;padding:5px 0 6px;border-bottom:1px solid var(--rule)}
+.l9-decisions b{color:var(--brand);font-weight:800}
+.l9-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.l9-card{border:1.5px solid #CFD5DE;border-radius:5px;padding:12px 16px 9px;background:#F7F8FA}
+.l9-card.l9-green{background:#EDF6EF;border-color:#82AB8E}
+.l9-card h3{font:800 22px/1.2 var(--text);margin-bottom:3px}
+.l9-label{font:700 11px/1.25 var(--text);letter-spacing:.5px;color:var(--slate);text-transform:uppercase;margin-bottom:7px}
+.l9-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;border-top:1px solid #CCD5CE;padding:7px 0;min-height:34px}
+.l9-row p{font:500 14px/1.25 var(--text);color:var(--slate)}
+.l9-row strong{font:700 17px/1.2 var(--text);text-align:right;color:var(--ink)}
+.l9-row .l9-save{color:#16723F}.l9-row .l9-cost{color:#B42318}
+.l9-row strong small{font:500 12px/1.2 var(--text);color:var(--slate)}
+.l9-case{display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-top:2px solid var(--ink);padding-top:9px}
+.l9-case p{font:700 17px/1.3 var(--text)}
+.l9-case b{font-weight:800;color:var(--brand)}
+.l9-case span{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family b{color:var(--ink);font-weight:800}
+.l9-shared{font:600 14px/1.3 var(--text);color:var(--slate);text-align:center}
+.l9-case p{font-size:22px}
+</style>
+<style>
+/* Slide 9: general rule first, equal comparison cards underneath. */
+#v7b .l9-sub{font:500 17px/1.3 var(--text);color:var(--slate);margin-top:7px}
+#v7b .l9-body{display:flex;flex-direction:column;gap:11px;margin-top:15px}
+.l9-steps{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr;gap:8px;align-items:start}
+.l9-step{border-top:3px solid var(--brand);padding:9px 8px 0}
+.l9-step h3{font:800 19px/1.2 var(--text);margin-bottom:5px}
+.l9-step h3 b{color:var(--brand);font-weight:800;margin-right:8px}
+.l9-step p{font:500 14px/1.35 var(--text);color:var(--slate)}
+.l9-arrow{font:500 26px/1 var(--text);color:var(--brand);padding-top:18px}
+.l9-decisions{font:600 13px/1.3 var(--text);color:var(--slate);text-align:center;padding:5px 0 6px;border-bottom:1px solid var(--rule)}
+.l9-decisions b{color:var(--brand);font-weight:800}
+.l9-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.l9-card{border:1.5px solid #CFD5DE;border-radius:5px;padding:12px 16px 9px;background:#F7F8FA}
+.l9-card.l9-green{background:#EDF6EF;border-color:#82AB8E}
+.l9-card h3{font:800 22px/1.2 var(--text);margin-bottom:3px}
+.l9-label{font:700 11px/1.25 var(--text);letter-spacing:.5px;color:var(--slate);text-transform:uppercase;margin-bottom:7px}
+.l9-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;border-top:1px solid #CCD5CE;padding:7px 0;min-height:34px}
+.l9-row p{font:500 14px/1.25 var(--text);color:var(--slate)}
+.l9-row strong{font:700 17px/1.2 var(--text);text-align:right;color:var(--ink)}
+.l9-row .l9-save{color:#16723F}.l9-row .l9-cost{color:#B42318}
+.l9-row strong small{font:500 12px/1.2 var(--text);color:var(--slate)}
+.l9-case{display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-top:2px solid var(--ink);padding-top:9px}
+.l9-case p{font:700 17px/1.3 var(--text)}
+.l9-case b{font-weight:800;color:var(--brand)}
+.l9-case span{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family b{color:var(--ink);font-weight:800}
+</style>
+<style>
+/* Slide 9: neutral blue comparator, green for the labelled loan. */
+#v7b .l9-card:not(.l9-green){background:#EDF3FB;border-color:#A9BFDC}
+#v7b .l9-case p{font-size:23px}
+#v7b .l9-card{position:relative}
+.l9-choice-stamp{position:absolute;right:16px;top:12px;border:2px solid #4A3FBF;color:#4A3FBF;border-radius:3px;padding:5px 8px;transform:rotate(-5deg);font:800 12px/1 var(--text);letter-spacing:.6px;background:#EDF3FB}
+#v7b .l9-case .l9-saving{font:inherit;color:#16723F}
+#v7b .l9-case .l9-review-cost{font:inherit;color:#B42318}
+#v7b .l9-case .l9-verdict{text-align:center;font:800 22px/1.25 var(--text);color:var(--brand);white-space:nowrap;background:#EDF3FB;border:1.5px solid #A9BFDC;border-radius:4px;padding:6px 10px}
+.l9-verdict small{display:block;font:500 12px/1.3 var(--text);color:var(--slate);margin-top:3px}
+</style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
   <p class="s1-kick">Today's question</p>
@@ -1310,37 +1381,42 @@
 
 <section class="slide sec-S" id="v7b" data-time="0:35" data-speaker="Fahtai">
   <header class="head">
-    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: judge it by its own test</span></p>
-    <h2>Judge a green loan as a loan, against the cheapest plain one</h2>
+    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">Test the label after choosing the funding route</span></p>
+    <h2>A green label must justify its full cost and obligations.</h2>
+    <p class="l9-sub">With borrowing proposed, does green improve the terms?</p>
   </header>
-  <div class="body stack v7-judge">
-    <div class="v7s">
-      <div class="v7s-doc v7s-green">
-        <p class="v7s-top">TERM SHEET · indicative</p>
-        <p class="v7s-tt">Green loan for the vans</p>
-        <p class="v7s-sub">HK$1.5M · 5 years · secured on the vans</p>
-        <p class="v7s-row"><span>Label's rate cut <i>(0.25%, assumed)</i></span><b>saves ≈HK$12K</b></p>
-        <p class="v7s-row"><span>External review to earn the label</span><b>costs ≈HK$12K</b></p>
-        <p class="v7s-row v7s-net"><span>Net to her: the greenium</span><b>≈HK$0</b></p>
-        <span class="v7s-stamp v7s-st-grey">Only if free</span>
+  <div class="body l9-body">
+    <div class="l9-steps">
+      <div class="l9-step"><h3><b>1</b>Compare like for like</h3><p>Same project, amount, term,<br>repayment schedule and security</p></div>
+      <div class="l9-arrow">→</div>
+      <div class="l9-step"><h3><b>2</b>Price the net benefit</h3><p>Interest savings − extra fees<br>− verification and reporting costs</p></div>
+      <div class="l9-arrow">→</div>
+      <div class="l9-step"><h3><b>3</b>Check the obligations</h3><p>Affordable repayments?<br>Conditions and reporting feasible?</p></div>
+    </div>
+    <p class="l9-decisions"><b>Green:</b> justified advantage + suitable terms &nbsp; · &nbsp; <b>Plain:</b> no justified label benefit &nbsp; · &nbsp; <b>Missing terms:</b> get quotes</p>
+    <div class="l9-cards">
+      <div class="l9-card l9-green">
+        <p class="l9-label">Carmen · indicative comparison</p><h3>Green equipment loan</h3>
+        <div class="l9-row"><p>Amount / term / security</p><strong>HK$1.5M · 5 years · vans</strong></div>
+        <div class="l9-row"><p>Interest advantage vs plain</p><strong class="l9-save">≈HK$12K <small>over 5 years</small></strong></div>
+        <div class="l9-row"><p>Extra green-label review</p><strong class="l9-cost">≈HK$12K</strong></div>
+        <div class="l9-row"><p>Other fees / obligations</p><strong>Quote and assess</strong></div>
       </div>
-      <p class="v7s-vs">vs</p>
-      <div class="v7s-doc v7s-plain">
-        <p class="v7s-top">TERM SHEET · indicative</p>
-        <p class="v7s-tt">Plain equipment loan</p>
-        <p class="v7s-sub">HK$1.5M · 5 years · secured on the vans</p>
-        <p class="v7s-row"><span>Payment each year, to 2032</span><b>≈HK$349K</b></p>
-        <p class="v7s-row"><span>Fuel and power saved each year</span><b>≈HK$303K <i>(87%)</i></b></p>
-        <p class="v7s-row"><span>Debt cover; repaid before the sale</span><b>5.7× → 3.3×</b></p>
-        <p class="v7s-row v7s-net"><span>For the children, through the sale</span><b>{{fin_dot_vans_n}}</b></p>
-        <span class="v7s-stamp v7s-st-go">This one works</span>
+      <div class="l9-card">
+        <span class="l9-choice-stamp">PROPOSE PLAIN</span>
+        <p class="l9-label">Carmen · indicative comparison</p><h3>Plain equipment loan</h3>
+        <div class="l9-row"><p>Amount / term / security</p><strong>HK$1.5M · 5 years · vans</strong></div>
+        <div class="l9-row"><p>Interest advantage vs plain</p><strong>Reference loan</strong></div>
+        <div class="l9-row"><p>Extra green-label review</p><strong>HK$0 <small>label-specific</small></strong></div>
+        <div class="l9-row"><p>Other fees / obligations</p><strong>Quote and assess</strong></div>
       </div>
     </div>
-    <p class="v7s-line"><b>Greenium:</b> the label's rate cut, worth about its review fee. <b>Green premium:</b> the cleaner option's extra cost; an e-van ≈HK$12K more (3%), while the tax waiver lasts.</p>
+    <div class="l9-case"><p><b>Known items:</b> <span class="l9-saving">≈HK$12K saved</span> − <span class="l9-review-cost">≈HK$12K review</span> ≈ no advantage.</p><span class="l9-verdict">GREEN LOAN UNNECESSARY<small>On assumed terms · pending quotes</small></span></div>
+    <p class="l9-family"><b>Equipment benefit to the family: {{fin_dot_vans_n}}</b> modelled through the sale · attributable to the equipment change, not the green label.</p>
   </div>
-  <p class="sowhat">The green label saves ≈HK$12K and costs ≈HK$12K. Take it only if it's free.</p>
-  <aside class="notes">FAHTAI: Judge it by its own test, against the cheapest plain loan. A green label on her one and a half million loan saves about what its review costs: take it only if free. What works is a plain loan secured on the vans: the fuel saving covers about 87 per cent of the payments. And it reaches the family at the sale: the vans add {{fin_dot_vans_n}}. So what's left for the funds? Win.
-    [Notes: DRAFT v5, 14 Nov, from v4 slide 8's numbers; Fahtai to make it their own. Scale: log, HK$1M to HK$1,000M.
+  <p class="sowhat">Compare full terms. Pay extra only for an explicit, agreed benefit.</p>
+  <aside class="notes">FAHTAI: A green label must justify its full cost and obligations. Compare the same amount, term and security; subtract fees, verification and reporting from the interest saving; then check repayment and conditions. For Carmen, our assumptions give about twelve thousand saved and twelve thousand spent on review: no clear advantage before other costs. Get comparable quotes before choosing. The equipment benefit belongs to the change, not its green label. Now, the funds. Win.
+    [Notes: New top-rule/equal-card draft. All comparisons are indicative, not lender offers. Same HK$1.5M amount, 5-year term and van security assumed on both sides; actual availability/security/fees unverified. The green interest advantage of ≈HK$12K is an ESTIMATED consequence of an ILLUSTRATIVE 25bp discount over the loan term, not a quoted bank concession. ≈HK$12K review fee is a published cheapest assessment figure, not an offer. Plain review cost HK$0 means zero incremental GREEN-LABEL review cost by definition, not zero ordinary fees. Other fees, reporting/use-of-proceeds obligations and covenants must be priced; the displayed known items break even but full net benefit remains unverified. Do not claim free verification is universally required, or that plain borrowing is approved/always cheaper. Positive green advantage requires suitability; a premium requires a specific client-agreed benefit and funding within limits. Extra reporting and loss of flexibility can matter even where money is equal. Common amount/term/security aligns comparison. Family inheritance benefit is shown separately: it belongs to the equipment decision, not the financing label. Green/plain figures have identical rows, with the plain loan as baseline; no new absolute interest totals invented.  New top-rule/equal-card draft. All comparisons are indicative, not lender offers. Same HK$1.5M amount, 5-year term and van security assumed on both sides; actual availability/security/fees unverified. The green interest advantage of ≈HK$12K is an ESTIMATED consequence of an ILLUSTRATIVE 25bp discount over the loan term, not a quoted bank concession. ≈HK$12K review fee is a published cheapest assessment figure, not an offer. Plain review cost HK$0 means zero incremental GREEN-LABEL review cost by definition, not zero ordinary fees. Other fees, reporting/use-of-proceeds obligations and covenants must be priced; the displayed known items break even but full net benefit remains unverified. Do not claim free verification is universally required, or that plain borrowing is approved/always cheaper. Positive green advantage requires suitability; a premium requires a specific client-agreed benefit and funding within limits. Extra reporting and loss of flexibility can matter even where money is equal. Common amount/term/security aligns comparison. Family inheritance benefit is shown separately: it belongs to the equipment decision, not the financing label. Green/plain figures have identical rows, with the plain loan as baseline; no new absolute interest totals invented.  DRAFT v5, 14 Nov, from v4 slide 8's numbers; Fahtai to make it their own. Scale: log, HK$1M to HK$1,000M.
     Green loan: no HK bank publishes an SME discount (25 bp ILLUSTRATIVE); HKQAA's assessment "as low as" HK$12K (B2).
     Sustainability-linked: 5–25 bp; pays for itself above ≈HK$4.8M of debt at 25 bp if verification costs ≈HK$12K a year
     (area2_business.md §3d). Grant Scheme: HKMA guideline, 24 Apr 2026, loans of at least HK$100M. Supply-chain finance:
@@ -1359,7 +1435,7 @@
     needs the co-founder): {{fin_dot_div_n}}, if asked.] Also, if asked: carbon data, ≈HK$54–73K a year, keeps a customer worth 10% of sales ({{fin_cust10_leg}}); the green lease at the 2027 renewal lets her fit chargers and LED.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
-    <p class="src">ESTIMATED on an ILLUSTRATIVE business · family: our model (MEASURED) · HKMA, 24 Apr 2026 · Budget 2026–27 · scale: log</p><span class="pg">9</span>
+    <p class="src">ESTIMATED / ILLUSTRATIVE terms, not offers · Decision_List B1–B2; HKQAA assessment floor · family benefit: our model (MEASURED) · other fees/terms unverified</p><span class="pg">9</span>
   </footer>
 </section>
 
