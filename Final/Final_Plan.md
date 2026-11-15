@@ -24,7 +24,7 @@ an argument; where it disagrees with those files, they win.
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
-| **Now** (15 Nov) | The 13 talk slides and backups 14–24 are built, and the PowerPoint builds through PowerPoint. Left: send before the deadline; then the script cut (1,475 spoken words against ≈1,300), the timed run, the cold read and the question drills |
+| **Now** (15 Nov) | The 13 talk slides and backups 14–24 are built, and the PowerPoint builds through PowerPoint. The script is 1,310 spoken words: 10:02 at 135 a minute with names. Left: send before the deadline; then the timed run, the cold read and the question drills |
 
 **The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
 the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
@@ -37,7 +37,7 @@ the deck; the rows' history is in §4.5 and §3, whose entries use the numbering
 | 4 | Profile | Pete | 0:40 | Set the limit first; values spend only the room above it |
 | 5 | Risk | Lookbua | 1:10 | Check everything they own and earn, not just what a label covers |
 | 6 | Select | Lookbua | 0:45 | The limit decides before preferences do |
-| 7 | Impact, Select | Fahtai | 0:45 | Rank cuts across the whole footprint, not just what a loan can buy |
+| 7 | Impact, Select | Fahtai | 0:45 | From climate risk to the changes a business can make (Fahtai, 15 Nov) |
 | 8 | Select | Fahtai | 0:35 | A green label pays only above a size; below it, finance the cut plainly |
 | 9 | Select | Fahtai | 0:35 | Judge a green loan as a loan, against the cheapest plain one |
 | 10 | Select | Win | 0:35 | Pass a product only if its rule binds and it fits its owner's limit |
@@ -512,6 +512,15 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   mortgage's one-off HK$0–3K rebate fails it too). Backup 20's transition row now says the same. Fahtai's words
   rewritten to match (shorter; "she has no transition asset" is gone); the e-van tax waiver stays on slide 9 and
   backup 20.
+- **Slide 7 working revision (Fahtai, 15 Nov):** replaces only `id="v6"` in the talk source. To connect the updated business sequence, slide 7 now chooses candidate actions, slide 8 matches funding, and slide 9 tests green versus plain loan terms. The reusable rule is locate the full footprint → compare each cut against its stated alternative → check evidence, equivalent service and business cash before proceeding. The footprint is a small left-hand view; a comparison table shows costs, tonnes and explicit conditions. Recycled PET is a conditional switch pending finished-packaging quote/specification and working capital; ≈134 t is potential if verified and delivered. Lighter board remains outside the total. Removed the categorical Hong Kong composting claim and the incorrect "loan buys the smallest cut" line. Kept existing estimates and model outputs; business affordability is separate from the household values budget. This is a starting version for Fahtai to tweak, not a change to `Decision_List.md` or a rebuilt submission PowerPoint.
+- **Slide 7 equal method/example split (Fahtai, 15 Nov, next revision):** user requested a 50–50 split because the prior comparison table was busy and did not explain how to investigate or find alternatives. Left: (1) scan fuel, bought energy and the value chain, prioritising emissions size, influence and obligations; Scopes 1/2/3 stay as a small completeness check, not equal investigation requirements; (2) search reduce/reuse/substitute/efficiency options preserving function and legal compliance; (3) compare emissions avoided and net extra lifetime cost per lifetime tonne, then test missing evidence or send feasible actions to funding. Right: one matched worked example, recycled PET versus virgin PET, ≈108 t annual potential but no verified packaging quote, so verify first and check working capital. Kept existing figures; no new approval. This is a carbon comparison, with other material environmental harms checked separately. `deck/business-ri/slide7-comparison/` stays as the fixed earlier snapshots.
+- **Slide 7 keyword method + main photos (Fahtai, 15 Nov):** user requested one-third method and two-thirds worked example, returning main's full purchases/operations/disposal example instead of a single PET example. Investigation uses keywords with small scope-labelled colours; alternatives is the main instruction, with reduce/reuse/substitute/efficiency secondary guides. Three metrics only: initial capital, annual tonnes avoided, net cost per tonne. Right: existing photos alongside compact tables of candidate capital/tonnes/cost, conditional recycled PET, uncounted lighter board, vans, LED/air-con and the disposal claims control. Summary retains ≈134 t annual potential, ≈HK$1.91M equipment and ≈HK$0.27M working capital. Trade-offs remain visible through capital needs, unknown supplier price and testing conditions. No cost is invented to make a decision look difficult. Scope colours are labelled and limited to this slide; no deck-wide change.
+- **Slide 7 horizontal method and compact findings (Fahtai, 15 Nov):** user requested more room for the method, three horizontal numbered blocks, investigation keywords grouped in Scope 1/2/3 order with colours but no scope labels, and narrower photos/tables. Red identifies initial cash required; green identifies avoided emissions or net savings; unknown/zero/uncounted values remain neutral. This is directional information, not an automatic suitability verdict. The total potential cut and initial capital move into the final disposal row at bottom right. All project figures and conditions retained; no numerical or model changes.
+- **Slide 7 uncommitted layout try (Fahtai, 15 Nov):** user explicitly requested no commit. Method returns to vertical steps 1 Investigate / 2 Find alternatives / 3 Measure, with three horizontal source groups under a subheading and three horizontal metrics. Right-hand contribution tally shows purchases 108, operations 26 and after-use claims control not counted, leading to ≈134 t/year potential if verified; untested lighter board remains excluded. Same project estimates and capital; no decision changes.
+- **Slide 7 uncommitted corner-total try (Fahtai, 15 Nov):** user requested scope numerals at source-box bottom right, similar-function alternatives with explicit trade-offs, and metrics beyond carbon. General metric now allows impact reduced (carbon, waste, water) and HK$/unit reduced, while the actual worked example remains CO2e. Different impact units are never combined. Removed the contribution tally and cut the final findings row into disposal text plus a lower-right ≈134 t CO2e/year potential summary. Follow-up: scope markers now read Scope 1/2/3, investigation names GHG Protocol and EPD guidance, alternatives is shorter, metrics has more room and explicit impact units, and disposal is explained as checking the actual landfill/recycling/composting route before claiming it. No new calculations; remains uncommitted as requested.
+- **Slide 7 uncommitted four-layer try (Fahtai, 15 Nov):** right side now stacks purchases, operations, after use and a separate full-width ≈134 t CO2e/year potential total. End-of-life is an investigation into collection/reuse/recycling options and enabling routes/facilities/customer participation, with no reduction quantified; claims verification remains a separate control in notes. Existing numbers and conditions retained; no claim that a viable system has been found. Left method unchanged. No commit or push.
+- **Slide 7 research and environmental-impact focus (Fahtai, 15 Nov, main draft):** user requested this refinement on main. Investigation is framed as research starting points, with GHG Protocol identifying emission sources and EPD providing reduction options; it is a starting search, not proof every source is material for every business. Alternatives now meet the same need, replacing vague similarity. Environmental impact gets a larger highlighted metric cell; capital and cost remain alongside it. Add a compact financial/operational/evidence risk check, keeping environmental impact central. No invented risk score or new numbers. Remains uncommitted under the user's standing instruction.
+- **Slide 7 final-row readability and trade-off line (Fahtai, main draft):** environmental metric lists categories (CO2e, waste, water) and their units (t, kg, m3) on two lines. Increased the green potential total and red capital figures. Closing line now states that greener choices can require upfront cash or higher ongoing costs, so the trade-off must be explicit. This is conditional, not a claim that all options cost more or that negative lifetime cost guarantees affordability. Still uncommitted.
 - **The brief's missing words, on screen** (Pete, 15 Nov: "yes do it", after Claude read Logan's HYBE pitch and
   three of OASIS's decks against the three Final PDFs). Both references are built on a different view stated in
   numbers, the data that would confirm or break it, and when. The brief asks for the same in its own words
@@ -521,12 +530,11 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     implementation milestones, and two of its triggers were generic ("income, health or markets change → run it
     again"). Now the limit's trigger is the flat's (`fin_pflipn_cross`: older flats ≈7% behind newer ones, decide
     the route that year; `Decision_List.md` H1) and the change's is recycled plastic's price (it costs more than
-    new again: its 108 t are priced again; B4). The right column gains "Next dates": 2027 the first review and the
-    scholarship (funded 2027–28, G1); by 31 Mar 2028 the electric vans, before the tax waiver ends (B1); every year
-    the flat's price gap; 2035–39 the sale (B7); by 2046 the flat's route (H1). The dates were on option 9A and
-    went in the 14 Nov trim; they return because this slide is the brief's dashboard. **Check (Fahtai):** the list
-    says the vans are "ordered" by 31 Mar 2028; the tax is charged at first registration, so they must be
-    registered by then. The slide uses neither verb.
+    new again: its 108 t are priced again; B4). The dates, the brief's implementation milestones, came back the
+    same morning in Win's calendar, "When we decide again" (commit d67a1f3: 2027, Mar 2028, every year, 2046); a
+    "Next dates" list built here for the same reason was dropped as a duplicate when the two were merged. **Check
+    (Fahtai, Win):** the calendar and `Decision_List.md` say the vans are "ordered" by 31 Mar 2028; the tax is
+    charged at first registration, so they must be registered by then.
   - **13:** a line under the outcome, "Of which": about half is the vans, the sustainable part; the rest is
     ordinary planning (the gift funded now, cheaper funds). §4.1 lists this split as something judges should leave
     with, and it was only on backup 15 and "say if asked". In words, not HK$: the bridge was withdrawn from slide 13
@@ -536,9 +544,12 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     hot-house"); it was only spoken.
   **Not taken:** four-quadrant pages (OASIS's ≈140 words a page are read alone, over 130–150 pages); maps and
   icons; a three-scenario probability table (the brief asks for "at least one", and no run stands behind more).
-  **For the script, after submission:** cut to ≈1,300 words first (it is 1,475: 11:15 with names at 135 a minute);
-  an opening with something at stake; Win naming what would change the advice (the gap, the plastic price,
-  Adrian's job); the count of decisions (six spoken, seven entries on slide 13).
+  **The script:** it was cut the same morning from 1,413 to 1,310 spoken words (10:02 at 135 a minute with names;
+  commit ba98341), but only in the generated `Axis_Script.md`, so the next build would have undone it. The cut
+  words are now in the slides' notes, where the script is built from, and the rebuilt script matches that commit
+  word for word. Still to consider after submission: an opening with something at stake; Win naming what would
+  change the advice (the gap, the plastic price, Adrian's job); the count of decisions (six spoken, seven entries
+  on slide 13).
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
   font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
@@ -1706,9 +1717,24 @@ Each brief has its own full list (its last section). The ones the storyline lean
 ## Changes (newest first; the detail is in git)
 
 - **15 Nov (Pete, Claude): the reference decks read against the brief** (§3, "The brief's missing words, on
-  screen"). Slide 12 gains numeric triggers and the next dates; slide 13 says which part of the headline is the
-  sustainable part; slide 5 names the scenario disorderly. §0 refreshed from the deck (thirteen slides, 10:00, the
-  headline decided); the change test added to §3.
+  screen"). Slide 12's triggers carry numbers (its dates are Win's calendar, merged the same day); slide 13 says
+  which part of the headline is the sustainable part; slide 5 names the scenario disorderly. §0 refreshed from the
+  deck (thirteen slides, 10:00, the headline decided); the change test added to §3. The morning's script cut
+  (1,310 spoken words) moved from the generated script into the slides' notes.
+
+- **14 Nov (Fahtai, Codex): business R/I, option 1 (method first)** in `deck/business-ri/`. After feedback that the
+  first version was empty and insufficiently illustrative, user chose to try the general-method approach first.
+  One shared sequence (scan, measure, carry forward) runs across R and I; each stage says where to look, which
+  measures to obtain and what goes to Select. Carmen is a compact example below. Current navy tokens inherited;
+  source and render of the previous candidate preserved in `original/`. No new model figures or achieved-impact
+  claims. Standalone candidate, not inserted into the timed deck; 115 spoken words. Render and bounds/font checks
+  completed. The packaging-chain alternative remains unbuilt for comparison.
+
+- **13 Nov (Fahtai, Codex): business R/I candidate** in `deck/business-ri/` (`Axis.html`, preview `Axis.png`, editable
+  `slide.html` and `slide.css`). The reusable risk scan and value-chain activity trace lead; Carmen's packaging is the
+  demonstration; each direction supplies evidence for Select. Customer loss stays conditional and the footprint
+  stays ESTIMATED on ILLUSTRATIVE operations. Separate candidate: the live deck, Lookbua's whole-household slide and
+  their timings are unchanged. Placement will be considered with the business Select slides. No model values changed.
 
 - **13 Nov, night (Pete, Claude): storyline v5** (§4.5). Pete: the deck didn't build from slide to slide; revamp,
   "push for the best". An arc from the product's label (slide 1) to the plan's label (slide 9), three acts in the
