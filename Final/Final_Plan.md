@@ -521,6 +521,22 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - **Slide 7 uncommitted four-layer try (Fahtai, 15 Nov):** right side now stacks purchases, operations, after use and a separate full-width ≈134 t CO2e/year potential total. End-of-life is an investigation into collection/reuse/recycling options and enabling routes/facilities/customer participation, with no reduction quantified; claims verification remains a separate control in notes. Existing numbers and conditions retained; no claim that a viable system has been found. Left method unchanged. No commit or push.
 - **Slide 7 research and environmental-impact focus (Fahtai, 15 Nov, main draft):** user requested this refinement on main. Investigation is framed as research starting points, with GHG Protocol identifying emission sources and EPD providing reduction options; it is a starting search, not proof every source is material for every business. Alternatives now meet the same need, replacing vague similarity. Environmental impact gets a larger highlighted metric cell; capital and cost remain alongside it. Add a compact financial/operational/evidence risk check, keeping environmental impact central. No invented risk score or new numbers. Remains uncommitted under the user's standing instruction.
 - **Slide 7 final-row readability and trade-off line (Fahtai, main draft):** environmental metric lists categories (CO2e, waste, water) and their units (t, kg, m3) on two lines. Increased the green potential total and red capital figures. Closing line now states that greener choices can require upfront cash or higher ongoing costs, so the trade-off must be explicit. This is conditional, not a claim that all options cost more or that negative lifetime cost guarantees affordability. Still uncommitted.
+- **Slide 7: one version kept** (Pete, 15 Nov: "drop page 7"). Fahtai's merge had both drafts in the talk for comparison
+  (`v6previous`, then `v6`), so pages 7 and 8 repeated the same table and the same 96 spoken words, and the talk ran 14
+  slides, 1,403 words, 10:45 allotted. Kept `v6`: its title is a rule for any business ("Price every cut in the
+  footprint against what it replaces") and its verdict matches the table ("Most of her cuts pay for themselves");
+  the earlier draft's verdict said greener choices can cost more, while its table shows the vans, LED and lighter
+  board saving money. Removed the draft and its own style block (every rule scoped to `#v6previous`). Now 13 talk
+  slides, 1,305 spoken words, 10:00 allotted. Fahtai: the earlier draft's arrow-ribbon method panel is in git
+  (before this commit) if you'd rather have that styling on the kept slide.
+- **Slide 5: the flat and the business as real buildings** (Pete, 15 Nov: "slide 5 go", after Claude suggested one
+  illustration and mocked it). The flat's and business's boxes now show licensed photos under a dark shade: the
+  older Tai Kok Tsui block from slide 6, and an industrial building in Kwai Hing standing for her business (its
+  building is ILLUSTRATIVE; the source line says "photos representative"). Savings stays a green box under the label,
+  so the row shows real things where no label looks and a label where it does. Boxes 46 → 72 px, taken from the bands
+  (`series.py` S4_VY1 206 → 232); the losses and everything below unchanged. Not the delivery van: it carries a real
+  company's logo, which would make a real firm look like our client's business. Credits on backup 24 updated.
+  Lookbua's slide: she should see it. Render: `build/options/slide5-photos.png`.
 - **The brief's missing words, on screen** (Pete, 15 Nov: "yes do it", after Claude read Logan's HYBE pitch and
   three of OASIS's decks against the three Final PDFs). Both references are built on a different view stated in
   numbers, the data that would confirm or break it, and when. The brief asks for the same in its own words
@@ -1810,6 +1826,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov (Pete, Claude): slide 7's earlier draft removed; slide 5 shows the flat and the business** (§3). The talk
+  is 13 slides again (1,305 spoken words, 10:00 allotted). Backup 24's photo credits updated. The PowerPoint rebuilt.
 
 - **15 Nov (Pete, Claude): the stage on every slide** (§3, "Then the stage on every slide"). Talk and backups: the
   title on the dark stage, the content on a white sheet, the prism strip at the foot; the backups' bars and badges

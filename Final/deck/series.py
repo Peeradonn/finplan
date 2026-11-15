@@ -267,7 +267,7 @@ def flip5():
 # its loss. Owned values are our client's balance sheet (HK$M); losses each on its own (fin_pstorm_*, MEASURED).
 S4_X0, S4_X1, S4_GAP = 176.0, 930.0, 4.0          # the owned assets' and losses' strip
 S4_P0, S4_P1 = 952.0, 1184.0                      # Adrian's pay: earned, not owned
-S4_VY1, S4_LY0 = 206.0, 262.0                     # bottom of the owned strip, top of the loss strip
+S4_VY1, S4_LY0 = 232.0, 262.0                     # bottom of the owned strip (206 -> 232 for the photos, 15 Nov), top of the loss strip
 S4_OWN = (("f", 11.5), ("b", 5.0), ("s", 10.5))   # the flat, her half of the business, savings with deposits and MPF
 S4_LOSS = (("f", "fin_pstorm_flat_leg"), ("b", "fin_pstorm_biz_leg"), ("s", "fin_pstorm_port_leg"))
 
