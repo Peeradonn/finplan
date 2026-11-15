@@ -210,6 +210,29 @@ def job():
     return tok
 
 
+# backup 26 (15 Nov): the switch points on the equity return. x of a return on a ruler from the model's return (left)
+# down to RT_LO (right); the room's columns RT_PY px per HK$M up from RT_BASE.
+RT_L, RT_R, RT_LO, RT_BASE, RT_PY = 250.0, 1150.0, 4.5, 176.0, 78.0
+
+
+def ret():
+    """[[rt_x60]] [[rt_x55]] [[rt_x50]] [[rt_x45]] ticks; [[rt_xpl]] [[rt_xhn]] [[rt_xhs]] [[rt_xng]] [[rt_xz]] the switch
+    points; [[rt_h60]] [[rt_y60]] (and 55, 50) the room's column heights and tops."""
+    nums = json.load(open(NUMBERS, encoding="utf-8"))
+    if "fin_ret_hold_n_x" not in nums:
+        return {}
+    eq = float(nums["fin_ret_eq"].rstrip("%"))
+    x = lambda r: RT_L + (eq - r) / (eq - RT_LO) * (RT_R - RT_L)
+    tok = {"rt_x60": x(eq), "rt_x55": x(eq - 0.5), "rt_x50": x(eq - 1.0), "rt_x45": x(RT_LO),
+           "rt_xpl": x(float(nums["fin_ret_hold_pledge_n_x"])), "rt_xhn": x(float(nums["fin_ret_hold_n_x"])),
+           "rt_xhs": x(float(nums["fin_ret_hold_s_x"])), "rt_xng": x(float(nums["fin_ret_hold_nogift_n_x"])),
+           "rt_xz": x(float(nums["fin_room_zero_ret_x"]))}
+    for k, key in (("60", "fin_room_gift_plain_x"), ("55", "fin_room_ret55_x"), ("50", "fin_room_ret50_x")):
+        h = float(nums[key]) * RT_PY
+        tok[f"rt_h{k}"], tok[f"rt_y{k}"] = h, RT_BASE - h
+    return {k: f"{v:.1f}" for k, v in tok.items()}
+
+
 # slide 5 (Pete 14 Nov: one chart, a normal future, where the limit of 95 binds first): the recommended plan's two routes
 # as older flats fall 0-15% behind newer ones (fin_pflipn_*, a 1% grid), on a tight scale so the lines separate.
 P5_X0, P5_X1, P5_Y0, P5_Y1, P5_LO, P5_HI = 70.0, 600.0, 300.0, 60.0, 92.0, 98.0
@@ -284,6 +307,7 @@ def fill(text):
     tok.update(flip6())
     tok.update(fair())
     tok.update(job())
+    tok.update(ret())
     tok.update(strip4())
     tok.update(flip5())
 
