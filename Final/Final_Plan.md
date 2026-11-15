@@ -595,6 +595,20 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - **Slide 8 proposal visibility (Fahtai draft):** right-hand cash and loan routes have prominent PROPOSE CASH / PROPOSE LOAN labels. Other routes are boxed with text and colour: red for not proposed on assumed paid terms or grant ineligibility, amber for conditional supply-chain programme access. Each box states its reason; amber is not a refusal. Recommendations remain conditional on the existing liquidity, supplier and lender checks. Uncommitted.
 - **Slide 8 explicit alternatives draft (Fahtai):** after saving the prior version as `7c2d401`, user approved a further draft showing more decision-making on the right and a framework conclusion. Packaging compares cash/supplier terms with borrowing for a remaining gap; the cash route is proposed subject to its operating-buffer test. Equipment compares all-cash spending with the proposed HK$1.5M loan + HK$0.41M cash, exposing lower upfront cash versus interest/repayments. Neither route is asserted optimal without a forecast. Closing line now states the general rule: match funding to cash timing without straining liquidity or repayment capacity. Spoken handoff question to slide 9 remains. No new numbers or final approvals; uncommitted.
 - **Slide 9 top-rule draft (Fahtai):** user requested general rule above, not beside, the client example. Three checks: like-for-like comparison, net label benefit and feasible obligations. Equal-height/row green and plain loan cards share amount/term/security, interest advantage, incremental label review and other fees/conditions. Green has a light-green fill without an approval stamp. Known assumed savings/review break even; other terms remain unverified, so the verdict is seek quotes, not an unconditional preference for plain or a literal zero-review-fee requirement. The existing equipment inheritance benefit is separate from the label comparison. No new numerical outputs. Uncommitted.
+- **The close back on the stage: the beam recombines** (Pete, 15 Nov: "should we put in something ... that sort of
+  wraps everything together like a design or a theme"; he chose option B). Claude's read of the whole deck: the theme
+  chosen on 14 Nov (the prism) lived on slides 1–2, then shrank to a footer badge too small to read from the back; the
+  close was white, so the talk never returned to where it opened; and slide 2's idea was half told (the label's one
+  beam split into five checks, never brought back together). Now slide 13 is the dark stage again. The decisions sit on
+  a white sheet (dense data reads worse dark, 14 Nov), and the five rays recombine through an apex-down prism into one
+  white beam under the verdict, arriving with it on the second click: the reverse of slide 2, and what slides 12–13
+  say (the plan's own label, earned by all five checks). Art: `img/close-beam.png` from `Final/looks/close_beam_art.py`
+  (a PNG, because PowerPoint drops SVG glow). No new colour: the five ray colours were already on 13's all-five badge.
+  Changed in place rather than added as a slide: an extra talk slide would renumber ≈30 typed backup numbers the day
+  before submission. Options rendered side by side (`build/options/close-bookend.png`: now; A, the conclusion bar as
+  the beam; B). **Not done, on purpose:** a device on every slide (Pete dislikes it); the middle slides dark; the five
+  colours back in slide bodies. **Suggested, not built** (Fahtai's and Win's slides, theirs to decide): the same green
+  "ESG ✓" chip on the labelled products of slides 9–10, so the label we argue against has one form throughout.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
   font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
@@ -605,7 +619,8 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
   green only for the label, always with its word on it.
 - Slide 2 is the one dark stage, a glass prism splitting the label's beam into five labelled rays, one colour per
-  letter; slides 1 and 11 are dark too. A prism badge in the footer of slides 3–10 lights the current section.
+  letter; slides 1 and 13 (the close, 15 Nov) are dark too. A prism badge in the footer of slides 3–12 lights the
+  current section.
 - The kicker on step slides 4–10: the letter, our rule in ink, the label approach's way in grey.
 - Morph only for 1 → 2, 2 → 3 and 10 → 11, with the fade fallback: nothing may depend on it. Embed the font.
 - Still to test: 20 seconds on a projector from across a room (the green, the slate text, pale fills).
@@ -1762,6 +1777,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **15 Nov (Pete, Claude): the close returns to the stage** (§3, "The close back on the stage"). Slide 13 on the dark
+  stage, the decisions on a white sheet, the five rays recombining into the verdict's beam; no words or numbers
+  changed. The PowerPoint rebuilt from the current HTML.
 - **15 Nov (Pete, Claude): the reference decks read against the brief** (§3, "The brief's missing words, on
   screen"). Slide 12's triggers carry numbers (its dates are Win's calendar, merged the same day); slide 13 says
   which part of the headline is the sustainable part; slide 5 names the scenario disorderly. §0 refreshed from the
