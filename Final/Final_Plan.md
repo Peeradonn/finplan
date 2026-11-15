@@ -609,6 +609,20 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   the beam; B). **Not done, on purpose:** a device on every slide (Pete dislikes it); the middle slides dark; the five
   colours back in slide bodies. **Suggested, not built** (Fahtai's and Win's slides, theirs to decide): the same green
   "ESG ✓" chip on the labelled products of slides 9–10, so the label we argue against has one form throughout.
+  - **Then the prism on every step slide** (Pete, 15 Nov, later: "make the prism like in slide 13 work in other pages
+    ... highlight one beam"; then "why can't you bring down the conclusion bar to the part below?" and "the other beam
+    just ends weirdly"). Each talk step slide now stands on a strip of the stage: slide 13's prism, the same size and
+    glow, the label's white beam in, five rays out, only the slide's own step lit (Profile amber, Risk red, Select
+    violet, Monitor white) and carried across the slide; the unlit rays fade out. The verdict left its indigo bar and
+    sits on the stage above its ray, as on slide 13; the step name, areas and sources moved to one row above the strip.
+    So the light tells the talk: slide 2 splits the label's beam, each step slide follows its own ray, the close
+    recombines them. Art: `img/strip-<P|R|I|S|M>.png` from `Final/looks/step_strip_art.py` (opaque PNGs, so PowerPoint
+    keeps the glow). The footer badge's drawing is gone from those slides (the strip is the badge now); backups keep
+    the bar and badge. Every slide gained ≈12px; all eleven checked at full size, no overlap, every verdict on one line.
+    Tried and dropped the same day: the five colours as a line inside each conclusion bar (Pete: not in the
+    conclusion); a small flat prism badge on white (not slide 13's prism); the strip at two-thirds size (unneeded once
+    the bar moved into the strip). Slide 7's badge lights Select only although its kicker says Impact and Select:
+    Fahtai to decide whether its strip should light both. Renders: `build/options/prism-strip-*.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
   font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
@@ -619,8 +633,8 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
   green only for the label, always with its word on it.
 - Slide 2 is the one dark stage, a glass prism splitting the label's beam into five labelled rays, one colour per
-  letter; slides 1 and 13 (the close, 15 Nov) are dark too. A prism badge in the footer of slides 3–12 lights the
-  current section.
+  letter; slides 1 and 13 (the close, 15 Nov) are dark too. Every step slide stands on a strip of that stage: the
+  prism with the slide's own ray lit and the verdict above it (15 Nov; the backups keep the footer badge).
 - The kicker on step slides 4–10: the letter, our rule in ink, the label approach's way in grey.
 - Morph only for 1 → 2, 2 → 3 and 10 → 11, with the fade fallback: nothing may depend on it. Embed the font.
 - Still to test: 20 seconds on a projector from across a room (the green, the slate text, pale fills).
@@ -1776,6 +1790,10 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov (Pete, Claude): the prism on every step slide** (§3, "Then the prism on every step slide"). Each talk step
+  slide's verdict moves onto a strip of the stage with slide 13's prism, only its own step's ray lit; no words or
+  numbers changed. The PowerPoint rebuilt.
 
 - **15 Nov (Pete, Claude): the close returns to the stage** (§3, "The close back on the stage"). Slide 13 on the dark
   stage, the decisions on a white sheet, the five rays recombining into the verdict's beam; no words or numbers
