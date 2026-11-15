@@ -439,7 +439,7 @@
 #v6 .b7k-photo b{font-size:16px}
 #v6 .b7k-photo p{font-size:12px}
 #v6 .b7k-table th{font-size:11px}
-#v6 .b7k-table td{font-size:15px;padding:8px 3px}
+#v6 .b7k-table td{font-size:15px;padding:6px 3px}
 #v6 .b7k-table td:nth-child(3){font-size:22px;color:#16723F}
 #v6 .b7k-table td:nth-child(2){color:#B42318}
 #v6 .b7k-table td:nth-child(4):not(.b7p-unknown){color:#16723F}
@@ -455,6 +455,67 @@
 .b7p-total strong{font:800 23px/1.2 var(--num);color:#16723F}
 .b7p-total small{font:500 12px/1.25 var(--text);color:var(--slate)}
 .b7p-total p{font:700 14px/1.3 var(--text);color:#B42318;margin-top:5px}
+
+/* Uncommitted layout try: vertical method with horizontal source and metric groups. */
+.b7v-step{padding:16px 0 20px;border-bottom:1px solid var(--rule)}
+.b7v-step:first-of-type{padding-top:12px}.b7v-step:last-child{border-bottom:none}
+.b7v-title{display:flex;align-items:center;gap:12px;font:800 22px/1.2 var(--text);margin-bottom:10px}
+.b7v-title span{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;flex:none;background:var(--brand);color:#fff;border-radius:50%;font:800 15px/1 var(--text)}
+.b7v-sub{font:500 16px/1.4 var(--text);color:var(--slate);margin-bottom:12px}
+.b7v-three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.b7v-three .b7p-scope{margin:0;padding:12px 8px;font-size:16px;min-height:84px}
+.b7v-alt{font:600 18px/1.45 var(--text);color:var(--ink)}
+.b7v-guide{font:500 15px/1.4 var(--text);color:var(--slate);margin-top:7px}
+.b7v-three .b7p-metric{font-size:17px;border-top:3px solid var(--brand);border-bottom:none;margin:0;padding:11px 0 0;min-height:74px}
+.b7v-three .b7p-metric span{font-size:14px}
+#v6 .b7k-method > .b7k-cap{margin-bottom:8px}
+.b7v-tally{display:grid;grid-template-columns:1fr 140px;gap:12px;align-items:center;margin-top:8px;border-top:1px solid var(--rule);padding-top:8px}
+.b7v-parts{display:flex;flex-direction:column;gap:6px}
+.b7v-parts p{display:flex;align-items:center;gap:7px;font:600 13px/1.2 var(--text);white-space:nowrap}
+.b7v-parts i{height:1px;background:#A8B9AC;flex:1;min-width:10px}
+.b7v-parts b{font:800 15px/1 var(--num);color:#16723F}
+.b7v-parts .b7v-uncounted{color:var(--slate);font:500 11px/1 var(--text)}
+.b7v-total{border-left:2px solid #16723F;padding-left:12px}
+.b7v-total strong{font:800 30px/1 var(--num);color:#16723F}
+.b7v-total span{display:block;font:500 12px/1.25 var(--text);color:var(--slate);margin-top:4px}
+.b7v-capital{font:600 12px/1.3 var(--text);color:#B42318;margin-top:7px}
+#v6 .b7k-refusal > p{font-size:12px}
+
+/* Uncommitted try: scope corner marks, general impact units, total in table corner. */
+.b7v-three .b7p-scope{position:relative;padding-bottom:22px}
+.b7q-scope-num{position:absolute;right:8px;bottom:6px;font:800 13px/1 var(--num);opacity:.8}
+.b7v-three .b7p-scope{font-size:15px;line-height:1.2;padding-top:8px}
+.b7v-step{padding-top:12px;padding-bottom:16px}
+.b7v-alt{font-size:17px;line-height:1.4}
+.b7q-bottom{display:grid;grid-template-columns:1fr 164px;gap:14px;border-top:1.5px solid var(--ink);padding-top:10px;min-height:150px}
+.b7q-disposal{padding:0 3px}
+.b7q-disposal b{display:block;font:800 17px/1.25 var(--text);color:var(--brand);margin-bottom:8px}
+.b7q-disposal p{font:500 14px/1.4 var(--text);color:var(--ink)}
+.b7q-total{padding:10px 10px 8px;background:#EDF6EF;border-top:4px solid #16723F;align-self:start}
+.b7q-total strong{display:block;font:800 40px/1 var(--num);color:#16723F;letter-spacing:-1px}
+.b7q-total span{display:block;font:600 13px/1.3 var(--text);color:#16723F;margin-top:5px}
+.b7q-total small{display:block;font:500 11px/1.3 var(--text);color:var(--slate);margin-top:3px}
+.b7q-total p{font:600 11px/1.35 var(--text);color:#B42318;margin-top:9px}
+#v6 .b7v-three .b7q-environment{font-size:16px}
+.b7q-source{font:500 13px/1.3 var(--text);color:var(--slate);margin:-5px 0 12px}
+.b7v-step.b7q-compact{padding-top:10px;padding-bottom:8px}
+.b7q-compact .b7v-title{margin-bottom:7px}
+.b7q-compact .b7v-guide{margin-top:3px}
+.b7v-step.b7q-expanded{padding-top:16px}
+.b7q-expanded .b7p-metric{padding-top:14px;min-height:104px}
+.b7q-expanded .b7p-metric span{font-size:15px;line-height:1.4;margin-top:9px}
+
+/* Uncommitted try: purchases / operations / after use / standalone total. */
+#v6 .b7f-four .b7k-table td{padding-top:5px;padding-bottom:5px}
+#v6 .b7f-four .b7k-table th{padding-bottom:5px}
+.b7f-after{border-top:1.5px solid var(--ink);padding:10px 3px 6px}
+.b7f-after b{display:block;font:800 18px/1.25 var(--text);color:var(--brand);margin-bottom:5px}
+.b7f-after p{font:500 13px/1.4 var(--text);color:var(--slate)}
+.b7f-total{display:flex;align-items:center;gap:15px;border-top:3px solid #16723F;background:#EDF6EF;padding:10px 12px;min-height:77px}
+.b7f-total strong{font:800 42px/1 var(--num);color:#16723F;letter-spacing:-1px;white-space:nowrap}
+.b7f-unit{font:700 14px/1.25 var(--text);color:#16723F}
+.b7f-unit small{display:block;font:500 11px/1.25 var(--text);color:var(--slate);margin-top:4px}
+.b7f-capital{margin-left:auto;font:600 12px/1.4 var(--text);color:#B42318}
 </style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
@@ -803,29 +864,31 @@
   <div class="body b7k-body">
     <div class="b7k-method">
       <p class="b7k-cap">The method · common business checks</p>
-      <div class="b7p-steps">
-        <div class="b7p-step">
-          <span class="b7p-number">1</span><h3>Investigate</h3>
-          <p class="b7p-scope b7p-scope1">Fuel &amp;<br>processes</p>
-          <p class="b7p-scope b7p-scope2">Electricity</p>
-          <p class="b7p-scope b7p-scope3">Materials<br>Suppliers<br>Disposal</p>
+      <div class="b7v-step">
+        <h3 class="b7v-title"><span>1</span>Investigate</h3>
+        <p class="b7v-sub">Common sources to look at</p>
+        <p class="b7q-source">From GHG Protocol &amp; EPD sector guidance</p>
+        <div class="b7v-three">
+          <p class="b7p-scope b7p-scope1">Fuel &amp;<br>processes<span class="b7q-scope-num">Scope 1</span></p>
+          <p class="b7p-scope b7p-scope2">Electricity<span class="b7q-scope-num">Scope 2</span></p>
+          <p class="b7p-scope b7p-scope3">Materials<br>Suppliers<br>Disposal<span class="b7q-scope-num">Scope 3</span></p>
         </div>
-        <div class="b7p-step">
-          <span class="b7p-number">2</span><h3>Find<br>alternatives</h3>
-          <p class="b7p-current">Current<br>practice</p>
-          <p class="b7p-down">↓</p>
-          <p class="b7p-option">Alternative</p>
-          <p class="b7p-guides">Reduce<br>Reuse<br>Substitute<br>Efficiency</p>
-        </div>
-        <div class="b7p-step">
-          <span class="b7p-number">3</span><h3>Measure</h3>
-          <p class="b7p-metric">Initial capital<span>HK$</span></p>
-          <p class="b7p-metric">CO₂e avoided<span>t / year</span></p>
-          <p class="b7p-metric">Net cost<span>HK$ / t CO₂e</span></p>
+      </div>
+      <div class="b7v-step b7q-compact">
+        <h3 class="b7v-title"><span>2</span>Find alternatives</h3>
+        <p class="b7v-alt">Compare similar solutions and their trade-offs.</p>
+        <p class="b7v-guide">Guides: reduce · reuse · substitute · improve efficiency</p>
+      </div>
+      <div class="b7v-step b7q-expanded">
+        <h3 class="b7v-title"><span>3</span>Measure</h3>
+        <div class="b7v-three">
+          <p class="b7p-metric">Initial capital<span>HK$ upfront</span></p>
+          <p class="b7p-metric b7q-environment">Impact reduced<span>t CO₂e · kg waste<br>m³ water</span></p>
+          <p class="b7p-metric">Net cost<span>HK$ / unit reduced</span></p>
         </div>
       </div>
     </div>
-    <div class="b7k-case">
+    <div class="b7k-case b7f-four">
       <div class="b7k-casehead"><p class="b7k-cap">Investigate</p><p class="b7k-cap">Carmen's findings · potential cuts</p></div>
       <p class="b7p-legend"><span>Red: cash required</span><span>Green: reductions / savings</span></p>
       <div class="b7k-findings">
@@ -848,17 +911,20 @@
           </tbody>
         </table>
       </div>
-      <div class="b7k-findings" style="margin-bottom:10px">
-        <div class="b7k-photo" style="min-height:70px"><img src="inline:img/photo-landfill.jpg" alt="Hong Kong landfill"><div><b>After use</b><p>≈1,070 t/yr</p></div></div>
-        <div class="b7k-refusal"><b>Verify disposal routes</b><p>Unsupported claims withheld · no tonnes counted</p>
-          <div class="b7p-total"><strong>≈134 t/year potential</strong> <small>if verified</small><p>≈HK$1.91M equipment<br>+ ≈HK$0.27M working capital</p></div>
-        </div>
+      <div class="b7k-findings">
+        <div class="b7k-photo" style="min-height:78px"><img src="inline:img/photo-landfill.jpg" alt="Hong Kong landfill"><div><b>After use</b><p>≈1,070 t/yr</p></div></div>
+        <div class="b7f-after"><b>Collection · reuse · recycling</b><p>Check routes, facilities and customer participation.<br>No reduction quantified yet.</p></div>
+      </div>
+      <div class="b7f-total">
+        <strong>≈134</strong>
+        <p class="b7f-unit">t CO₂e / year potential<small>if verified and delivered</small></p>
+        <p class="b7f-capital">≈HK$1.91M equipment<br>+ ≈HK$0.27M working capital</p>
       </div>
     </div>
   </div>
   <p class="sowhat">The largest candidate is a purchasing change. The vans need a loan. Next: how to fund each.</p>
-  <aside class="notes">FAHTAI: I'm Fahtai. We've tested what climate can do to the plan. Now, what can the business change? Investigate materials, fuel, electricity and disposal. Find alternatives, then compare initial capital, tonnes avoided and net cost per tonne. Carmen's biggest candidate is recycled PET: 108 tonnes, but its finished-product price needs checking. The vans cut 19 tonnes and save money, but require upfront capital, charging and affordable finance. Lighter board needs testing; changing a compostability claim earns no tonnes. Together, the counted candidates could cut about 134 tonnes a year. So how should each be funded?
-    [Notes: Layout refinement: user requested a wider left method with three horizontal numbered blocks, common investigation keywords in scope order (direct sources, bought energy, value chain), colour grouping without scope labels, narrower photos/tables, directional colour for numbers and totals in the final row. Investigation colours identify groups, not importance; actual priority still depends on size, influence and obligations. Number colours: red = initial cash required, green = estimated avoided emissions or net cost savings; zero and unknown stay neutral, uncounted potential tonnes stay neutral. These colours do not make capital-intensive options inherently unsuitable. All previous estimates and conditions retained.  Keyword/photo revision: user requested one-third method and two-thirds worked example, compressed main's three photos and candidate cuts, and initial capital as a third metric. Capital includes capex or working capital (labelled), not all an expense. Vans ≈HK$1.78M; LED + air-con HK$124K = HK$64K + HK$60K from area2_business §3c, ILLUSTRATIVE; full B1 package remains ≈HK$1.91M, existing rounded estimate. Recycled PET working capital ≈HK$0.27M is separate from any purchase premium. No investment verdict is based on carbon or negative cost alone. Lower board cost/tonne and zero capex are ILLUSTRATIVE and excluded from ≈134 t pending product testing. Recycled PET full cost/tonne remains quote needed, not assumed free. Photos reused from Pete's main slide with existing licences. Cost/tonne signs: minus means a saving; annual carbon totals require verification. The method prioritises feasible change and trade-offs, not an automatic preference for greener products.  Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
+  <aside class="notes">FAHTAI: I'm Fahtai. We've tested climate risk; now ask what the business can change. Investigate sources, compare similar solutions and their trade-offs, then measure capital, impact and cost per unit. Impact could mean carbon, waste or water; here we measure carbon. Recycled PET could cut 108 tonnes, but needs a packaging quote. Vans cut 19 tonnes and save money, but need capital and charging. Lighter board needs testing; end-of-life options need investigation, with no reduction quantified yet. Together, the counted candidates could cut about 134 tonnes a year. How should each be funded?
+    [Notes: Latest uncommitted layout uses four stacked layers on the right: purchases, operations, after use, then the standalone ≈134 total. End-of-life findings now parallel the other two investigation areas by listing collection/reuse/recycling as candidate searches; no feasible system, project approval or new impact is asserted. Need route, facility, customer participation, costs and baseline before counting. Claims control remains a separate safeguard in these notes. Total still contains only the existing recycled PET, vans and LED/air-con estimates.  Uncommitted next try: small 1/2/3 scope numerals at source-box bottom right; alternatives compare similar ways of delivering a service and explicitly consider trade-offs. General metrics allow carbon reduction (t CO2e), waste prevention (kg), water saving (m3), or other locally material environmental outcomes, each with a suitable baseline and own unit. Cost per unit must use the same defined impact, with no addition of unlike units or presumption that carbon, water and waste improve together. The worked example and ≈134 total remain CO2e only. Right-side contribution tally removed; the table's final row is split so a separate ≈134 summary fills its lower-right corner. Same estimates, no new impact calculated.  UNCOMMITTED layout draft requested by Fahtai: method stacked vertically, with three horizontal source groups and three horizontal metric groups. Bottom right shows the contribution tally: purchases 108 + operations 26 (19 + 7) ≈134 t/year potential; no tonnes assigned to the claims control, lighter board excluded. No numbers changed.  Layout refinement: user requested a wider left method with three horizontal numbered blocks, common investigation keywords in scope order (direct sources, bought energy, value chain), colour grouping without scope labels, narrower photos/tables, directional colour for numbers and totals in the final row. Investigation colours identify groups, not importance; actual priority still depends on size, influence and obligations. Number colours: red = initial cash required, green = estimated avoided emissions or net cost savings; zero and unknown stay neutral, uncounted potential tonnes stay neutral. These colours do not make capital-intensive options inherently unsuitable. All previous estimates and conditions retained.  Keyword/photo revision: user requested one-third method and two-thirds worked example, compressed main's three photos and candidate cuts, and initial capital as a third metric. Capital includes capex or working capital (labelled), not all an expense. Vans ≈HK$1.78M; LED + air-con HK$124K = HK$64K + HK$60K from area2_business §3c, ILLUSTRATIVE; full B1 package remains ≈HK$1.91M, existing rounded estimate. Recycled PET working capital ≈HK$0.27M is separate from any purchase premium. No investment verdict is based on carbon or negative cost alone. Lower board cost/tonne and zero capex are ILLUSTRATIVE and excluded from ≈134 t pending product testing. Recycled PET full cost/tonne remains quote needed, not assumed free. Photos reused from Pete's main slide with existing licences. Cost/tonne signs: minus means a saving; annual carbon totals require verification. The method prioritises feasible change and trade-offs, not an automatic preference for greener products.  Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
     <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1, B4; DESNZ / EPA factors · photos: Wikimedia CC BY-SA · details in notes</p><span class="pg">7</span>
