@@ -612,17 +612,23 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   - **Then the prism on every step slide** (Pete, 15 Nov, later: "make the prism like in slide 13 work in other pages
     ... highlight one beam"; then "why can't you bring down the conclusion bar to the part below?" and "the other beam
     just ends weirdly"; then "the prism like slide 13 ... instead of slide 3 showing every color, just show the first
-    band"). Each talk step slide now stands on a dark strip with slide 13's picture: the same apex-down prism, glow
-    and white beam out to the right, with only the slide's own step band coming in from the left (Profile amber, Risk
-    red, Select violet, Monitor white). The close brings in all five, so it reads as the steps adding up. The verdict
-    left its indigo bar and sits on the strip above the beam, as on slide 13; the step name, areas and sources moved to
-    one row above the strip. Art: `close-beam.png` and `strip-<P|R|I|S|M>.png`, all from `Final/looks/close_beam_art.py`
-    (one script, so the prism matches; the strips are opaque PNGs, so PowerPoint keeps the glow). The footer badge's
-    drawing is gone from those slides; backups keep the bar and badge. Every slide gained ≈12px; all eleven checked at
-    full size, no overlap, every verdict on one line. Tried and dropped the same day: the five colours as a line inside
+    band"; then "still show [the others], just highlight different parts", "the bottom part still feels disconnected"
+    and "the text is too high up"). Each talk step slide now ends on a strip with slide 13's picture: the same
+    apex-down prism, glow and white beam out to the right, all five bands coming in from the left with the slide's own
+    step lit and the other four dimmed (Profile amber, Risk red, Select violet, Monitor white). The close lights all
+    five, so it reads as the steps adding up. Top to bottom in the 104px strip, balanced: the verdict (14px down), the
+    beam, then the step, areas and sources, so the verdict follows the slide's content directly, as the bar did (the
+    source row between them had cut the strip off). The strip is the deck's deep indigo, the conclusion bar's colour
+    (Pete, 14 Nov), so it belongs to the white slide; navy read as a separate slab beside it (rendered side by side,
+    `build/options/navy-vs-indigo.png`). Every text colour on it passes 6:1. Art: `close-beam.png` and
+    `strip-<P|R|I|S|M>.png`, all from `Final/looks/close_beam_art.py` (one script, so the prism matches; the strips are
+    opaque PNGs, so PowerPoint keeps the glow). The footer badge's drawing is gone from those slides; backups keep the
+    bar and badge. The content area is unchanged from the bar's; all eleven checked at full size, no overlap, every
+    verdict on one line, every source line whole. Tried and dropped the same day: the five colours as a line inside
     each conclusion bar (Pete: not in the conclusion); a small flat prism badge on white (not slide 13's prism); slide
     2's split with one ray carried across (a thin line on a dark band looked odd); the strip at two-thirds size; slide
-    13's stage frame on every step slide (rendered; Pete kept the slides white); an inset rounded strip. Slide 7's
+    13's stage frame on every step slide (rendered; Pete kept the slides white); an inset rounded strip; only the
+    step's own band coming in, the others removed (Pete: show them, highlight one). Slide 7's
     badge lit Select only although its kicker says Impact and Select: Fahtai to decide whether its strip should bring
     in both bands. Renders: `build/options/prism-strip-*.png`, `art13-white-vs-frame.png`, `strip-frame-options.png`.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
@@ -1795,8 +1801,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 ## Changes (newest first; the detail is in git)
 
 - **15 Nov (Pete, Claude): the prism on every step slide** (§3, "Then the prism on every step slide"). Each talk step
-  slide's verdict moves onto a strip with slide 13's prism, only its own step's band coming in (the first version
-  lit one ray out of slide 2's split; redrawn the same day); no words or numbers changed. The PowerPoint rebuilt.
+  slide's verdict moves onto an indigo strip with slide 13's prism, all five bands in and its own step's lit, the
+  sources under the beam (redrawn three times the same day, each on Pete's comments); no words or numbers changed.
+  The PowerPoint rebuilt.
 
 - **15 Nov (Pete, Claude): the close returns to the stage** (§3, "The close back on the stage"). Slide 13 on the dark
   stage, the decisions on a white sheet, the five rays recombining into the verdict's beam; no words or numbers

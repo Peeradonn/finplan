@@ -113,17 +113,20 @@ b,strong{font-weight:600}
 .badge-prism svg text{font-family:var(--text)}
 .badge-prism p{font:700 14px/1.2 var(--text);letter-spacing:.4px;color:var(--slate)}
 .badge-prism p span{display:block;font:500 12px/1.3 var(--text);letter-spacing:0;color:var(--grey);margin-top:1px}
-/* the step strip (Pete, 15 Nov): slide 13's prism at the foot of every talk step slide, the verdict on the stage above
-   the slide's own ray (img/strip-X.png from Final/looks/step_strip_art.py). Slide 2 splits the label's beam into five;
-   each step slide lights its own ray; the close recombines them. It replaces the badge's drawing and the conclusion
-   bar's box there (the step name and areas stay, on the source row above the strip); the backups keep the bar. */
-.st-strip{position:absolute;left:0;bottom:0;width:1280px;height:84px}
+/* the step strip (Pete, 15 Nov): slide 13's prism at the foot of every talk step slide, all five bands coming in and
+   the slide's own step lit (img/strip-X.png from Final/looks/close_beam_art.py). It replaces the conclusion bar's box
+   and the badge's drawing there; the backups keep the bar. Top to bottom, balanced in the strip (Pete: "the text is
+   too high up"): the verdict (14-42 px), the beam (53), then the step, areas and sources (70-84), so the verdict
+   follows the slide's content directly, as the bar did. */
+.st-strip{position:absolute;left:0;bottom:0;width:1280px;height:104px}
 .slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]){padding-bottom:116px}
-.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .sowhat{position:absolute;left:214px;right:40px;top:640px;
+.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .sowhat{position:absolute;left:214px;right:40px;top:630px;
   margin:0;padding:0;background:none;border-radius:0;font:800 22px/1.25 var(--head);color:#fff;white-space:nowrap}
-.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .foot{bottom:88px;height:22px}
-.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .badge-prism p{display:flex;align-items:baseline;gap:8px}
-.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .badge-prism p span{margin-top:0}
+.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .foot{left:214px;right:32px;bottom:20px;height:16px;gap:14px;color:#A9B1CC}
+.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .foot .src{font-size:11.5px}
+.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .foot .pg{color:#A9B1CC}
+.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .badge-prism p{display:flex;align-items:baseline;gap:8px;color:#D6DBEA}
+.slide:is(.sec-P,.sec-R,.sec-I,.sec-S,.sec-M):not([data-backup]) .badge-prism p span{margin-top:0;color:#A9B1CC}
 .kick b.k-impact{color:var(--I)}
 /* the twist kicker (Pete, 11 Nov): a step slide names its PRISM letter and the twist slide 2 gives it, so the framework
    is the spine of every slide, not only of slide 2. kt- classes only here. */
