@@ -537,6 +537,32 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   (`series.py` S4_VY1 206 → 232); the losses and everything below unchanged. Not the delivery van: it carries a real
   company's logo, which would make a real firm look like our client's business. Credits on backup 24 updated.
   Lookbua's slide: she should see it. Render: `build/options/slide5-photos.png`.
+- **Slides 3 and 4: Profile's steps in order, step 1 in our words** (Pete, 15 Nov: "1, 4 then 2 and 3 ... quite
+  confusing"; "the brief's seven dimensions ... will make our framework not actually ours"). Slide 3 showed steps 1
+  and 4, slide 4 steps 2 and 3. Now slide 3: ① ask each decision-maker alone, ② write who decides into the investment
+  policy; slide 4: ③ set the limit, ④ the room above it (people first, then their numbers, as the slides run). Step 1
+  was "on the brief's seven dimensions": a framework defined by the organiser's list isn't ours. Now "what they need,
+  what they'd risk, what they value", which covers the brief's seven (need: return, liquidity, horizon; risk: tracking
+  error, illiquidity, complexity; value: values intensity); the mapping is in slide 3's notes, and its source line
+  still cites the brief's area 1. Backup 28 and §4.2's Profile row use the same words.
+- **Slide 11: the limit drawn as a wall** (Pete, 15 Nov: "quite packed ... invent better format"; chose "the limit as
+  a wall" from three sketches). Before: two portfolio bars, then three panels at equal weight (26.6%, how it adds
+  up, paid from the room). Now each parent's portfolio keeps its weights and fees (the brief's "portfolio with weights
+  and costs"; this is the only talk slide with one), with a red wall on Adrian's bar where his 0.5% limit stops the
+  climate fund at 24%, and "no wall" for Carmen; below, the family's HK$10.47M fills with the four parts that passed
+  to 26.6% ("nobody set it: the limits did"); then two prices in the close's language, for the children and for the
+  world. **A contradiction fixed:** the verdict said "at the plain fund's fee" while the body charged −HK$0.62M. Both
+  were partly true (the index fund charges what the plain one does, `Decision_List.md` P1–P5; the −HK$0.62M is the
+  fee gap in the bond and MPF funds), so the price tag now says so and the verdict reads "the limits produced it; the
+  room pays for it". **Dropped:** the second price for the same thing (HK$0.28M of the room, still on slide 4).
+  Words on screen 232 → 239 (it now explains the price); one picture instead of three panels. Win's slide: his notes
+  are unchanged and still match.
+- **Slide 13, the close: a quadrant map** (Pete, same request; chose "the quadrant map"). The 2x2 is now a chart with
+  its axes (for the world across, for the children down), a big verdict in each corner, each decision on one line
+  with one or two numbers (no slide references), the three refused green products as crossed-out "ESG ✓" labels (the
+  label we argue against all talk, refused at the end), and the outcome as three numbers (+HK$1.05M, up to 134 t,
+  26.6%) with capital on one line. Words on screen 314 → 260. The first click still shows the rule alone; the second
+  fills the corners, the outcome, the beam and the verdict.
 - **The brief's missing words, on screen** (Pete, 15 Nov: "yes do it", after Claude read Logan's HYBE pitch and
   three of OASIS's decks against the three Final PDFs). Both references are built on a different view stated in
   numbers, the data that would confirm or break it, and when. The brief asks for the same in its own words
@@ -782,7 +808,7 @@ verdict; on screen the five letters and one rule per step slide, the twelve test
 
 | Step and its question | Its rule (test number) | The label approach's way | The Wongs' proof |
 |---|---|---|---|
-| **P · Profile:** who decides, and within what limits? | Profile each decision-maker on the brief's seven dimensions (values intensity, return requirement, liquidity, time horizon, tolerance for tracking error, illiquidity and complexity); set the floors, the values budget and decision rights **before any option is priced** (1) | Ask whether the client likes ESG | Floors of 95% and 85% in the 2030–31 scenario; tracking-error budgets Adrian ≤0.5% a year, Carmen ≤3%; one family values budget (§5.4); Ryan decides for his own money; both parents for anything irreversible |
+| **P · Profile:** who decides, and within what limits? | Profile each decision-maker alone: what they need, what they'd risk, what they value (covering the brief's seven: values intensity, return requirement, liquidity, time horizon, tolerance for tracking error, illiquidity and complexity); set the floors, the values budget and decision rights **before any option is priced** (1) | Ask whether the client likes ESG | Floors of 95% and 85% in the 2030–31 scenario; tracking-error budgets Adrian ≤0.5% a year, Carmen ≤3%; one family values budget (§5.4); Ryan decides for his own money; both parents for anything irreversible |
 | **R · Risk:** what does climate do to their money? | Each force traced by cause, then route, then HK$, with when and on what evidence; checked against the brief's eight risk types (the register) and the rules that reach the client; an arrow a planner who ignores climate would draw anyway is dropped (2). The whole household in one shock (3) | Rate each product's ESG risk | 22 routes checked, three priced: the sale −HK$1.55M if a customer worth 10% of sales leaves; the flat −HK$0.71M if old flats lose 10%; the portfolio −HK$2.48M in the 2030–31 shock. CBAM doesn't reach them. Most of the shock's loss is ordinary market and inflation risk, which no label hedges |
 | **I · Impact:** what does their money do to the world? | Measured activity first (meters, fuel, an energy audit), then the footprint from published factors, then what the family controls. A footprint is not an effect (4) | Report a lower footprint as impact | The business ≈2,760–3,250 t a year, 98% the packaging it sells; shares bought on the market: a footprint, no additional impact quantified; the home: not estimated |
 | **S · Select:** what does each option do, both ways, and what do we do? | Options (reduce, hedge, accept) plus every green product on offer, through the product check: does it exist and hold assets, are its documents there, is its rule binding and published, what is its engagement policy, is the label a financed outcome (5). Priced against the best plain alternative, in a normal future and under stress, on the whole household, with who pays and who benefits (6). The world side against a stated counterfactual (7). A missing price: buy the information, use a range, or set a trigger (8). The floors, then the corner (9). Most effect per HK$ first; the kind of finance sets the test; bankability (10). The whole plan inside the floors; the sustainable share is an output, not a target (11) | Fill the 20–25% with labelled products | Vans ordered before the tax waiver ends (31 Mar 2028); the US$0 fund fails the check, the climate index fund passes; the green mortgage, a paid green-loan label and the clean-energy fund refused; the flat's route set by the stress floor |
@@ -1826,6 +1852,10 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov (Pete, Claude): slides 3, 4, 11 and 13** (§3). Profile's steps in order across slides 3–4, step 1 in our
+  words, not the brief's list; slide 11 draws each limit as a wall and fixes its price contradiction; the close is a
+  quadrant map with three outcome numbers. No numbers changed. The PowerPoint rebuilt.
 
 - **15 Nov (Pete, Claude): slide 7's earlier draft removed; slide 5 shows the flat and the business** (§3). The talk
   is 13 slides again (1,305 spoken words, 10:00 allotted). Backup 24's photo credits updated. The PowerPoint rebuilt.
