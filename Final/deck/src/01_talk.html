@@ -583,6 +583,235 @@
 #v6 .b7q-environment .b7u-grid > span{font:500 14px/1.25 var(--text);text-align:center;margin:0;color:var(--ink)}
 #v6 .b7u-grid small{display:block;font:500 14px/1.25 var(--text);color:var(--slate);margin-top:5px}
 </style>
+<style>
+/* Fahtai experiment: connected gradient chevrons show the method left to right. */
+#v6 .b7k-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 8px;align-content:start}
+#v6 .b7k-method > .b7k-cap{grid-column:1/-1;margin-bottom:20px}
+#v6 .b7v-step{padding:0!important;border:0;min-width:0}
+#v6 .b7v-title{height:82px;padding:12px 17px 12px 14px;margin:0 0 18px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;color:#fff;font-size:17px;clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%,10% 50%);background:linear-gradient(110deg,#6477B8,#4A3FBF)}
+#v6 .b7v-step:first-of-type .b7v-title{clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%);background:linear-gradient(110deg,#547EAA,#5362B4)}
+#v6 .b7v-step:last-child .b7v-title{background:linear-gradient(110deg,#4A3FBF,#241B66)}
+#v6 .b7v-step:not(:first-of-type) .b7v-title{padding-left:25px}
+#v6 .b7v-title > span{background:transparent;width:auto;height:auto;font-size:21px;color:white;padding-left:10px}
+#v6 .b7v-title .b7r-risk-inline{display:none}
+#v6 .b7v-step > p,#v6 .b7v-step > .b7v-three{margin-left:6px;margin-right:5px}
+#v6 .b7v-sub{font-size:14px;line-height:1.35;margin-bottom:8px}
+#v6 .b7q-source{font-size:11px;line-height:1.4;margin:0 5px 12px 6px}
+#v6 .b7v-three{grid-template-columns:1fr!important;gap:10px}
+#v6 .b7v-three .b7p-scope{font-size:14px;min-height:64px;padding:8px 8px 22px}
+#v6 .b7v-alt{font-size:16px;line-height:1.45}
+#v6 .b7v-guide{font-size:13px;line-height:1.65;margin-top:18px}
+#v6 .b7q-expanded .b7p-metric{font-size:16px;min-height:65px;padding-top:10px}
+#v6 .b7q-expanded .b7q-environment{font-size:16px;padding:9px 8px}
+#v6 .b7q-expanded .b7p-metric > span{font-size:13px;margin-top:6px}
+#v6 .b7q-environment .b7u-grid{grid-template-columns:1fr;gap:7px}
+#v6 .b7q-environment .b7u-grid > span{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;text-align:left}
+#v6 .b7u-grid small{font-size:11px;margin:0}
+</style>
+<style>
+/* Keep the established vertical structure; gradient arrows mark the three steps. */
+#v6 .b7k-method{display:block}
+#v6 .b7k-method > .b7k-cap{margin-bottom:8px}
+#v6 .b7v-step{padding:10px 0 12px!important;border-bottom:1px solid var(--rule)}
+#v6 .b7v-step:last-child{border-bottom:0}
+#v6 .b7v-title,#v6 .b7v-step:not(:first-of-type) .b7v-title{height:36px;width:100%;padding:5px 25px 5px 12px;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;margin:0 0 9px;clip-path:polygon(0 0,96% 0,100% 50%,96% 100%,0 100%);font-size:20px}
+#v6 .b7v-step:first-of-type .b7v-title{clip-path:polygon(0 0,96% 0,100% 50%,96% 100%,0 100%)}
+#v6 .b7v-title > span{padding-left:0;font-size:18px}
+#v6 .b7v-step > p,#v6 .b7v-step > .b7v-three{margin-left:0;margin-right:0}
+#v6 .b7v-three{grid-template-columns:repeat(3,1fr)!important;gap:12px}
+#v6 .b7v-sub{font-size:15px;margin-bottom:5px}
+#v6 .b7q-source{font-size:12px;margin:0 0 8px}
+#v6 .b7v-three .b7p-scope{min-height:72px;font-size:14px}
+#v6 .b7v-alt{font-size:16.5px;line-height:1.35}
+#v6 .b7v-guide{font-size:14px;margin-top:6px;line-height:1.4}
+#v6 .b7q-expanded .b7v-three{grid-template-columns:1fr 1.8fr 1fr!important}
+#v6 .b7q-expanded .b7p-metric{font-size:16px;min-height:78px}
+#v6 .b7q-expanded .b7q-environment{font-size:18px}
+#v6 .b7q-environment .b7u-grid{grid-template-columns:repeat(3,1fr);gap:4px}
+#v6 .b7q-environment .b7u-grid > span{display:block;text-align:center;font-size:13px}
+#v6 .b7u-grid small{font-size:12px;margin-top:5px}
+#v6 .b7v-title .b7r-risk-inline{display:block;color:#fff;margin-left:auto;font-size:11px}
+</style>
+<style>
+/* New uncommitted experiment: each complete step sits inside a horizontal arrow. */
+#v6 .b7k-method .b7v-step{clip-path:polygon(0 0,94% 0,100% 50%,94% 100%,0 100%);padding:10px 34px 10px 12px!important;margin-bottom:8px;border:0;background:linear-gradient(100deg,#EDF2F9,#D6E2F3)}
+#v6 .b7k-method .b7v-step:nth-of-type(2){background:linear-gradient(100deg,#F0EDF9,#DAD4F0)}
+#v6 .b7k-method .b7v-step:last-child{background:linear-gradient(100deg,#EAE6F7,#C9C0E9);margin-bottom:0}
+#v6 .b7k-method .b7v-title,#v6 .b7k-method .b7v-step:first-of-type .b7v-title,#v6 .b7k-method .b7v-step:not(:first-of-type) .b7v-title{clip-path:none;background:none;height:auto;width:100%;padding:0;margin-bottom:6px;color:var(--ink);font-size:19px;line-height:1.2}
+#v6 .b7k-method .b7v-title > span{color:var(--brand);font-size:19px}
+#v6 .b7k-method .b7v-title .b7r-risk-inline{color:var(--slate);font-size:10px}
+#v6 .b7v-sub{font-size:13px;line-height:1.25;margin-bottom:4px}
+#v6 .b7q-source{font-size:10.5px;line-height:1.25;margin-bottom:6px}
+#v6 .b7v-three .b7p-scope{font-size:13px;line-height:1.15;min-height:65px;padding:6px 6px 20px}
+#v6 .b7q-scope-num{font-size:11px;right:6px;bottom:5px}
+#v6 .b7v-alt{font-size:15px;line-height:1.35}
+#v6 .b7v-guide{font-size:12px;line-height:1.3;margin-top:5px}
+#v6 .b7q-expanded .b7p-metric{min-height:73px;font-size:14px;padding-top:7px}
+#v6 .b7q-expanded .b7q-environment{font-size:16px;padding:7px}
+#v6 .b7q-expanded .b7p-metric > span{font-size:12px;line-height:1.25;margin-top:6px}
+#v6 .b7q-environment .b7u-grid > span{font-size:12px}
+#v6 .b7u-grid small{font-size:11px;margin-top:3px}
+</style>
+<style>
+/* Whole-step down arrows: solid fills progress from light to dark between steps. */
+#v6 .b7k-method .b7v-step{clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),50% 100%,0 calc(100% - 14px));padding:10px 12px 24px!important;margin-bottom:5px;background:#E5ECF7}
+#v6 .b7k-method .b7v-step:nth-of-type(2){background:#DCDCF3}
+#v6 .b7k-method .b7v-step:last-child{background:#CAC5E9}
+#v6 .b7k-method .b7v-step:not(:first-of-type){clip-path:polygon(0 0,50% 14px,100% 0,100% calc(100% - 14px),50% 100%,0 calc(100% - 14px));padding-top:24px!important;margin-top:-14px}
+</style>
+<style>#v6previous .b7k-body{display:grid;grid-template-columns:340px 1fr;gap:28px;margin-top:18px}#v6previous .b7k-method{border-right:1px solid var(--rule);padding-right:24px}#v6previous .b7k-cap{font:800 13px/1.2 var(--text);letter-spacing:.8px;color:var(--slate);text-transform:uppercase;margin-bottom:16px}#v6previous .b7k-step{margin-bottom:21px}#v6previous .b7k-step h3{display:flex;align-items:center;gap:10px;font:800 22px/1.2 var(--text);margin-bottom:12px}#v6previous .b7k-step h3 span{display:inline-flex;justify-content:center;align-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font:800 14px/1 var(--text)}#v6previous .b7k-key{display:flex;align-items:center;justify-content:space-between;font:600 17px/1.3 var(--text);padding:4px 0}#v6previous .b7k-scope{font:800 12px/1 var(--text);padding:5px 7px;border-radius:3px;white-space:nowrap}#v6previous .b7k-s1{color:#475569;background:#E7EBF0}#v6previous .b7k-s2{color:#4A3FBF;background:#EFEDFB}#v6previous .b7k-s3{color:#0E7490;background:#E7F3F5}#v6previous .b7k-guides{font:500 16px/1.5 var(--text);color:var(--slate)}#v6previous .b7k-choice{font:700 18px/1.3 var(--text);color:var(--brand);margin-bottom:7px}#v6previous .b7k-measure{font:700 18px/1.35 var(--text);color:var(--out);padding:4px 0}#v6previous .b7k-case{min-width:0}#v6previous .b7k-casehead{display:grid;grid-template-columns:170px 1fr;gap:18px}#v6previous .b7k-findings{display:grid;grid-template-columns:170px 1fr;gap:18px;margin-bottom:8px}#v6previous .b7k-photo{position:relative;border-radius:5px;overflow:hidden;background:#0F1E3D;min-height:100px}#v6previous .b7k-photo img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}#v6previous .b7k-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,20,38,.94),rgba(11,20,38,.12))}#v6previous .b7k-photo div{position:absolute;bottom:11px;left:12px;right:10px;z-index:1}#v6previous .b7k-photo b{display:block;color:white;font:800 19px/1.15 var(--text)}#v6previous .b7k-photo p{color:#E0E6EF;font:500 13px/1.35 var(--text);margin-top:4px}#v6previous .b7k-table{border-collapse:collapse;width:100%;table-layout:fixed}#v6previous .b7k-table th{text-align:left;font:700 12px/1.25 var(--text);color:var(--slate);padding:0 3px 7px;border-bottom:1.5px solid var(--ink)}#v6previous .b7k-table th:nth-child(1){width:28%}#v6previous .b7k-table th:nth-child(2){width:23%}#v6previous .b7k-table th:nth-child(3){width:16%}#v6previous .b7k-table th:nth-child(4){width:33%}#v6previous .b7k-table td{font:700 16px/1.2 var(--text);vertical-align:top;padding:6px 3px;border-bottom:1px solid var(--rule)}#v6previous .b7k-table td:nth-child(3){color:var(--out);font:800 24px/1 var(--num)}#v6previous .b7k-table td small{display:block;font:500 12px/1.3 var(--text);color:var(--slate);margin-top:4px}#v6previous .b7k-table .b7k-test td{color:var(--slate)}#v6previous .b7k-table .b7k-test td:nth-child(3){font-size:21px}#v6previous .b7k-table .b7k-em td{background:#EDF6F7}#v6previous .b7k-refusal{border-top:1.5px solid var(--ink);padding:12px 3px}#v6previous .b7k-refusal b{display:block;font:800 18px/1.2 var(--text);color:var(--brand);margin-bottom:8px}#v6previous .b7k-refusal p{font:600 16px/1.4 var(--text);color:var(--ink)}#v6previous .b7k-summary{border-top:2px solid var(--ink);padding-top:10px;font:500 15px/1.4 var(--text);color:var(--slate)}#v6previous .b7k-summary strong{font:800 22px/1.2 var(--num);color:var(--out);margin-right:8px}#v6previous .b7k-summary b{font-weight:800;color:var(--ink)}#v6previous .b7k-body{grid-template-columns:520px 1fr;gap:24px}#v6previous .b7k-method{padding-right:20px}#v6previous .b7p-steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:28px}#v6previous .b7p-step{min-width:0;border-top:3px solid var(--brand);padding-top:14px}#v6previous .b7p-number{display:inline-flex;width:34px;height:34px;justify-content:center;align-items:center;border-radius:50%;background:var(--brand);color:white;font:800 18px/1 var(--text)}#v6previous .b7p-step h3{font:800 20px/1.2 var(--text);margin:12px 0 20px;height:48px}#v6previous .b7p-scope{border-left:4px solid;padding:10px 8px;margin-bottom:12px;font:700 17px/1.3 var(--text)}#v6previous .b7p-scope1{border-color:#475569;background:#EDF0F4;color:#334155}#v6previous .b7p-scope2{border-color:#4A3FBF;background:#EFEDFB;color:#4A3FBF}#v6previous .b7p-scope3{border-color:#0E7490;background:#E8F4F5;color:#0E7490}#v6previous .b7p-current{font:600 17px/1.3 var(--text);color:var(--slate)}#v6previous .b7p-down{font:500 28px/1.3 var(--text);color:var(--brand);margin:4px 0}#v6previous .b7p-option{font:800 18px/1.3 var(--text);color:var(--brand)}#v6previous .b7p-guides{font:500 15px/1.7 var(--text);color:var(--slate);margin-top:20px}#v6previous .b7p-metric{padding:0 0 15px;margin-bottom:16px;border-bottom:1px solid var(--rule);font:700 18px/1.3 var(--text);color:var(--ink)}#v6previous .b7p-metric span{display:block;font:600 15px/1.2 var(--text);color:var(--slate);margin-top:6px}#v6previous .b7k-casehead,#v6previous .b7k-findings{grid-template-columns:106px 1fr;gap:12px}#v6previous .b7k-photo div{left:9px;right:7px;bottom:10px}#v6previous .b7k-photo b{font-size:16px}#v6previous .b7k-photo p{font-size:12px}#v6previous .b7k-table th{font-size:11px}#v6previous .b7k-table td{font-size:15px;padding:6px 3px}#v6previous .b7k-table td:nth-child(3){font-size:22px;color:#16723F}#v6previous .b7k-table td:nth-child(2){color:#B42318}#v6previous .b7k-table td:nth-child(4):not(.b7p-unknown){color:#16723F}#v6previous .b7k-table .b7k-test td:nth-child(3){color:var(--slate)}#v6previous .b7k-table td small{font-size:11px;color:var(--slate)}#v6previous .b7p-legend{display:flex;gap:16px;font:600 12px/1.3 var(--text);margin-bottom:9px}#v6previous .b7p-legend span:first-child{color:#B42318}#v6previous .b7p-legend span:last-child{color:#16723F}#v6previous .b7k-casehead .b7k-cap{font-size:12px;margin-bottom:10px}#v6previous .b7k-refusal{padding:8px 3px 0}#v6previous .b7k-refusal b{font-size:16px;margin-bottom:6px}#v6previous .b7k-refusal > p{font-size:13px}#v6previous .b7p-total{border-top:1px solid var(--rule);margin-top:8px;padding-top:8px}#v6previous .b7p-total strong{font:800 23px/1.2 var(--num);color:#16723F}#v6previous .b7p-total small{font:500 12px/1.25 var(--text);color:var(--slate)}#v6previous .b7p-total p{font:700 14px/1.3 var(--text);color:#B42318;margin-top:5px}#v6previous .b7v-step{padding:16px 0 20px;border-bottom:1px solid var(--rule)}#v6previous .b7v-step:first-of-type{padding-top:12px}#v6previous .b7v-step:last-child{border-bottom:none}#v6previous .b7v-title{display:flex;align-items:center;gap:12px;font:800 22px/1.2 var(--text);margin-bottom:10px}#v6previous .b7v-title span{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;flex:none;background:var(--brand);color:#fff;border-radius:50%;font:800 15px/1 var(--text)}#v6previous .b7v-sub{font:500 16px/1.4 var(--text);color:var(--slate);margin-bottom:12px}#v6previous .b7v-three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}#v6previous .b7v-three .b7p-scope{margin:0;padding:12px 8px;font-size:16px;min-height:84px}#v6previous .b7v-alt{font:600 18px/1.45 var(--text);color:var(--ink)}#v6previous .b7v-guide{font:500 15px/1.4 var(--text);color:var(--slate);margin-top:7px}#v6previous .b7v-three .b7p-metric{font-size:17px;border-top:3px solid var(--brand);border-bottom:none;margin:0;padding:11px 0 0;min-height:74px}#v6previous .b7v-three .b7p-metric span{font-size:14px}#v6previous .b7k-method > .b7k-cap{margin-bottom:8px}#v6previous .b7v-tally{display:grid;grid-template-columns:1fr 140px;gap:12px;align-items:center;margin-top:8px;border-top:1px solid var(--rule);padding-top:8px}#v6previous .b7v-parts{display:flex;flex-direction:column;gap:6px}#v6previous .b7v-parts p{display:flex;align-items:center;gap:7px;font:600 13px/1.2 var(--text);white-space:nowrap}#v6previous .b7v-parts i{height:1px;background:#A8B9AC;flex:1;min-width:10px}#v6previous .b7v-parts b{font:800 15px/1 var(--num);color:#16723F}#v6previous .b7v-parts .b7v-uncounted{color:var(--slate);font:500 11px/1 var(--text)}#v6previous .b7v-total{border-left:2px solid #16723F;padding-left:12px}#v6previous .b7v-total strong{font:800 30px/1 var(--num);color:#16723F}#v6previous .b7v-total span{display:block;font:500 12px/1.25 var(--text);color:var(--slate);margin-top:4px}#v6previous .b7v-capital{font:600 12px/1.3 var(--text);color:#B42318;margin-top:7px}#v6previous .b7k-refusal > p{font-size:12px}#v6previous .b7v-three .b7p-scope{position:relative;padding-bottom:22px}#v6previous .b7q-scope-num{position:absolute;right:8px;bottom:6px;font:800 13px/1 var(--num);opacity:.8}#v6previous .b7v-three .b7p-scope{font-size:15px;line-height:1.2;padding-top:8px}#v6previous .b7v-step{padding-top:12px;padding-bottom:16px}#v6previous .b7v-alt{font-size:17px;line-height:1.4}#v6previous .b7q-bottom{display:grid;grid-template-columns:1fr 164px;gap:14px;border-top:1.5px solid var(--ink);padding-top:10px;min-height:150px}#v6previous .b7q-disposal{padding:0 3px}#v6previous .b7q-disposal b{display:block;font:800 17px/1.25 var(--text);color:var(--brand);margin-bottom:8px}#v6previous .b7q-disposal p{font:500 14px/1.4 var(--text);color:var(--ink)}#v6previous .b7q-total{padding:10px 10px 8px;background:#EDF6EF;border-top:4px solid #16723F;align-self:start}#v6previous .b7q-total strong{display:block;font:800 40px/1 var(--num);color:#16723F;letter-spacing:-1px}#v6previous .b7q-total span{display:block;font:600 13px/1.3 var(--text);color:#16723F;margin-top:5px}#v6previous .b7q-total small{display:block;font:500 11px/1.3 var(--text);color:var(--slate);margin-top:3px}#v6previous .b7q-total p{font:600 11px/1.35 var(--text);color:#B42318;margin-top:9px}#v6previous .b7v-three .b7q-environment{font-size:16px}#v6previous .b7q-source{font:500 13px/1.3 var(--text);color:var(--slate);margin:-5px 0 12px}#v6previous .b7v-step.b7q-compact{padding-top:10px;padding-bottom:8px}#v6previous .b7q-compact .b7v-title{margin-bottom:7px}#v6previous .b7q-compact .b7v-guide{margin-top:3px}#v6previous .b7v-step.b7q-expanded{padding-top:16px}#v6previous .b7q-expanded .b7p-metric{padding-top:14px;min-height:104px}#v6previous .b7q-expanded .b7p-metric span{font-size:15px;line-height:1.4;margin-top:9px}#v6previous .b7f-four .b7k-table td{padding-top:5px;padding-bottom:5px}#v6previous .b7f-four .b7k-table th{padding-bottom:5px}#v6previous .b7f-after{border-top:1.5px solid var(--ink);padding:10px 3px 6px}#v6previous .b7f-after b{display:block;font:800 18px/1.25 var(--text);color:var(--brand);margin-bottom:5px}#v6previous .b7f-after p{font:500 13px/1.4 var(--text);color:var(--slate)}#v6previous .b7f-total{display:flex;align-items:center;gap:15px;border-top:3px solid #16723F;background:#EDF6EF;padding:10px 12px;min-height:77px}#v6previous .b7f-total strong{font:800 40px/1 var(--num);color:#16723F;letter-spacing:-1px;white-space:nowrap}#v6previous .b7f-unit{font:700 16px/1.25 var(--text);color:#16723F}#v6previous .b7f-unit small{display:block;font:500 11px/1.25 var(--text);color:var(--slate);margin-top:4px}#v6previous .b7f-capital{margin-left:auto;font:700 14px/1.4 var(--text);color:#B42318}#v6previous .b7f-capital .b7f-spending{display:block;color:#B42318}#v6previous .b7f-capital .b7f-working{display:block;color:#946200}#v6previous .b7v-step:first-of-type{padding-bottom:12px}#v6previous .b7v-sub{margin-bottom:8px}#v6previous .b7q-source{margin-bottom:8px}#v6previous .b7v-alt{font-size:16.5px}#v6previous .b7q-expanded .b7v-three{grid-template-columns:1fr 1.8fr 1fr}#v6previous .b7q-expanded .b7p-metric{min-height:92px;padding-top:10px}#v6previous .b7q-expanded .b7q-environment{font-size:18.5px;background:#E8F4F5;color:#0E7490;border-top:4px solid #0E7490;padding:10px 10px 8px}#v6previous .b7q-environment span{font-size:14px;margin-top:7px}#v6previous .b7r-risk-check{font:500 13px/1.35 var(--text);color:var(--slate);margin-top:8px}#v6previous .b7r-risk-check b{font-weight:800;color:var(--ink)}#v6previous .b7r-risk-inline{font:500 12px/1.3 var(--text);color:var(--slate);margin-left:auto}#v6previous .b7q-environment .b7u-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:8px}#v6previous .b7q-environment .b7u-grid > span{font:500 14px/1.25 var(--text);text-align:center;margin:0;color:var(--ink)}#v6previous .b7u-grid small{display:block;font:500 14px/1.25 var(--text);color:var(--slate);margin-top:5px}
+#v6previous .b7k-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 8px;align-content:start}#v6previous .b7k-method > .b7k-cap{grid-column:1/-1;margin-bottom:20px}#v6previous .b7v-step{padding:0!important;border:0;min-width:0}#v6previous .b7v-title{height:82px;padding:12px 17px 12px 14px;margin:0 0 18px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;color:#fff;font-size:17px;clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%,10% 50%);background:linear-gradient(110deg,#6477B8,#4A3FBF)}#v6previous .b7v-step:first-of-type .b7v-title{clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%);background:linear-gradient(110deg,#547EAA,#5362B4)}#v6previous .b7v-step:last-child .b7v-title{background:linear-gradient(110deg,#4A3FBF,#241B66)}#v6previous .b7v-step:not(:first-of-type) .b7v-title{padding-left:25px}#v6previous .b7v-title > span{background:transparent;width:auto;height:auto;font-size:21px;color:white;padding-left:10px}#v6previous .b7v-title .b7r-risk-inline{display:none}#v6previous .b7v-step > p,#v6previous .b7v-step > .b7v-three{margin-left:6px;margin-right:5px}#v6previous .b7v-sub{font-size:14px;line-height:1.35;margin-bottom:8px}#v6previous .b7q-source{font-size:11px;line-height:1.4;margin:0 5px 12px 6px}#v6previous .b7v-three{grid-template-columns:1fr!important;gap:10px}#v6previous .b7v-three .b7p-scope{font-size:14px;min-height:64px;padding:8px 8px 22px}#v6previous .b7v-alt{font-size:16px;line-height:1.45}#v6previous .b7v-guide{font-size:13px;line-height:1.65;margin-top:18px}#v6previous .b7q-expanded .b7p-metric{font-size:16px;min-height:65px;padding-top:10px}#v6previous .b7q-expanded .b7q-environment{font-size:16px;padding:9px 8px}#v6previous .b7q-expanded .b7p-metric > span{font-size:13px;margin-top:6px}#v6previous .b7q-environment .b7u-grid{grid-template-columns:1fr;gap:7px}#v6previous .b7q-environment .b7u-grid > span{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;text-align:left}#v6previous .b7u-grid small{font-size:11px;margin:0}
+#v6previous .b7k-method{display:block}#v6previous .b7k-method > .b7k-cap{margin-bottom:8px}#v6previous .b7v-step{padding:10px 0 12px!important;border-bottom:1px solid var(--rule)}#v6previous .b7v-step:last-child{border-bottom:0}#v6previous .b7v-title,#v6previous .b7v-step:not(:first-of-type) .b7v-title{height:36px;width:100%;padding:5px 25px 5px 12px;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;margin:0 0 9px;clip-path:polygon(0 0,96% 0,100% 50%,96% 100%,0 100%);font-size:20px}#v6previous .b7v-step:first-of-type .b7v-title{clip-path:polygon(0 0,96% 0,100% 50%,96% 100%,0 100%)}#v6previous .b7v-title > span{padding-left:0;font-size:18px}#v6previous .b7v-step > p,#v6previous .b7v-step > .b7v-three{margin-left:0;margin-right:0}#v6previous .b7v-three{grid-template-columns:repeat(3,1fr)!important;gap:12px}#v6previous .b7v-sub{font-size:15px;margin-bottom:5px}#v6previous .b7q-source{font-size:12px;margin:0 0 8px}#v6previous .b7v-three .b7p-scope{min-height:72px;font-size:14px}#v6previous .b7v-alt{font-size:16.5px;line-height:1.35}#v6previous .b7v-guide{font-size:14px;margin-top:6px;line-height:1.4}#v6previous .b7q-expanded .b7v-three{grid-template-columns:1fr 1.8fr 1fr!important}#v6previous .b7q-expanded .b7p-metric{font-size:16px;min-height:78px}#v6previous .b7q-expanded .b7q-environment{font-size:18px}#v6previous .b7q-environment .b7u-grid{grid-template-columns:repeat(3,1fr);gap:4px}#v6previous .b7q-environment .b7u-grid > span{display:block;text-align:center;font-size:13px}#v6previous .b7u-grid small{font-size:12px;margin-top:5px}#v6previous .b7v-title .b7r-risk-inline{display:block;color:#fff;margin-left:auto;font-size:11px}
+</style>
+<style>
+/* Slide 8: cash need first, then funding route and instrument screen. */
+#v7 .f8-body{display:flex;flex-direction:column;gap:15px;margin-top:18px}
+.f8-flow{display:grid;grid-template-columns:1fr 24px 1fr 24px 1fr;gap:8px;align-items:stretch}
+.f8-node{padding:12px 14px 10px;border:1.5px solid #CCC8E7;border-top:4px solid var(--brand);background:#F6F5FC}
+.f8-node h3{font:800 19px/1.25 var(--text);color:var(--ink);margin-bottom:7px}
+.f8-node h3 b{color:var(--brand);margin-right:7px;font-weight:800}
+.f8-node p{font:500 14px/1.35 var(--text);color:var(--slate)}
+.f8-node .f8-branch{font:700 13px/1.3 var(--text);color:var(--brand);margin-top:7px}
+.f8-arrow{display:flex;align-items:center;justify-content:center;font:500 27px/1 var(--text);color:var(--brand)}
+.f8-cap{font:800 12px/1.3 var(--text);color:var(--slate);letter-spacing:.7px;text-transform:uppercase;margin-bottom:8px}
+.f8-work{border-top:2px solid var(--ink)}
+.f8-row{display:grid;grid-template-columns:200px 250px 1fr 250px;gap:15px;align-items:center;padding:13px 8px;border-bottom:1px solid var(--rule)}
+.f8-row h3{font:800 19px/1.25 var(--text)}
+.f8-row p{font:600 16px/1.3 var(--text);color:var(--ink)}
+.f8-row small{display:block;font:500 13px/1.3 var(--text);color:var(--slate);margin-top:4px}
+.f8-row .f8-route{font:800 19px/1.25 var(--text);color:var(--brand)}
+.f8-equipment{background:#F4F3FB}
+.f8-row .f8-cash{color:#946200;font-weight:800}
+.f8-row .f8-money{color:#B42318;font-weight:800}
+.f8-screens{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.f8-screen{border-top:3px solid var(--rule);padding-top:8px}
+.f8-screen h3{font:800 18px/1.2 var(--text);margin-bottom:5px}
+.f8-screen p{font:500 14px/1.3 var(--text);color:var(--slate)}
+.f8-screen .f8-verdict{font:700 14px/1.25 var(--text);margin-top:6px;color:var(--brand)}
+.f8-screen.f8-fit{border-top-color:var(--brand)}
+.f8-screen .f8-no{color:#B42318}.f8-screen .f8-if{color:#946200}
+.f8-condition{font:500 12px/1.25 var(--text);color:var(--slate);margin-top:8px}
+</style>
+<style>
+/* Slide 8: visual funding tree on the left, worked decisions on the right. */
+#v7 .f8-body{display:grid;grid-template-columns:540px 1fr;gap:30px;margin-top:18px}
+.f8l-left{border-right:1px solid var(--rule);padding-right:22px;min-width:0}
+.f8l-cap{font:800 12px/1.3 var(--text);letter-spacing:.8px;text-transform:uppercase;color:var(--slate);margin-bottom:10px}
+.f8l-tree{width:100%;height:435px;display:block;font-family:var(--text)}
+.f8l-right{min-width:0}
+.f8l-case{display:flex;gap:15px;align-items:center;padding:13px 0;border-top:1.5px solid var(--rule)}
+.f8l-case:first-of-type{border-top:2px solid var(--ink)}
+.f8l-case img{width:80px;height:88px;flex:none;object-fit:cover;border-radius:5px}
+.f8l-case h3{font:800 21px/1.2 var(--text);margin-bottom:8px}
+.f8l-case p{font:700 19px/1.3 var(--text);color:var(--brand)}
+.f8l-case p.f8l-wc{font:800 25px/1.15 var(--num);color:#946200;margin-bottom:4px}
+.f8l-case small{display:block;font:500 13px/1.3 var(--text);color:var(--slate);margin-top:5px}
+.f8l-case p.f8l-loan{font:800 24px/1.15 var(--num);color:var(--brand)}
+.f8l-case p.f8l-loan span{font:600 16px/1.3 var(--text);color:var(--ink)}
+.f8l-check{font:500 12px/1.3 var(--text);color:var(--slate);margin:5px 0 20px}
+.f8l-routes{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.f8l-route{border-top:3px solid var(--rule);padding-top:8px}
+.f8l-route h3{font:800 16px/1.25 var(--text);margin-bottom:7px}
+.f8l-route p{font:500 14px/1.3 var(--text);color:var(--slate)}
+.f8l-route strong{display:block;font:700 14px/1.3 var(--text);color:#946200;margin-top:6px}
+.f8l-route strong.f8l-no{color:#B42318}
+.f8l-route small{font-size:12px}
+.f8l-case{padding-top:10px;padding-bottom:10px}
+.f8l-case h3{font-size:20px;margin-bottom:6px}
+.f8l-case small{font-size:12px;margin-top:4px}
+.f8l-choice,#v7 .f8l-case p.f8l-loan{display:flex;gap:8px;align-items:center;background:#F0EDFB;border:1.5px solid #4A3FBF;border-radius:4px;padding:7px 8px}
+#v7 .f8l-case p.f8l-choice{font-size:17px}
+#v7 .f8l-case p.f8l-loan{font-size:21px;white-space:nowrap}
+#v7 .f8l-case p.f8l-loan span{font-size:14px}
+.f8l-decision-label{font:800 11px/1.15 var(--text);letter-spacing:.4px;color:#fff;background:#4A3FBF;padding:5px 6px;border-radius:3px;white-space:nowrap;flex:none}
+.f8l-route{padding:10px;border:1.5px solid #E5B7B2;border-top:4px solid #B42318;border-radius:4px;background:#FBF0EE}
+.f8l-route.f8l-access{border-color:#D5BF86;border-top-color:#946200;background:#FBF6E9}
+.f8l-route h3{font-size:15px;margin-bottom:8px}
+.f8l-route .f8l-route-verdict{display:block;font:800 12px/1.2 var(--text);letter-spacing:.3px;color:#B42318;margin-bottom:6px}
+.f8l-route.f8l-access .f8l-route-verdict{color:#946200}
+.f8l-route p{font-size:13px;line-height:1.35}
+.f8d-options{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:7px}
+.f8d-option{border:1px solid #DCE1E8;background:#F7F8FA;border-radius:4px;padding:7px 8px;min-width:0}
+.f8d-option.f8d-proposed{border:1.5px solid #4A3FBF;background:#F0EDFB}
+#v7 .f8l-case .f8d-option p{display:flex;gap:5px;align-items:center;font:700 15px/1.2 var(--text);color:var(--ink)}
+.f8d-option p b{margin-left:auto;font:800 9px/1.2 var(--text);padding:3px 4px;border-radius:2px;color:white;background:#4A3FBF;white-space:nowrap}
+#v7 .f8l-case .f8d-option small{font-size:12px;line-height:1.25;margin-top:5px}
+#v7 .f8l-case p.f8d-test{font:500 13px/1.35 var(--text);color:var(--slate);margin-top:7px}
+.f8l-case > div{flex:1;min-width:0}
+#v7 .f8l-case img{width:64px;height:76px}
+#v7 .f8l-case h3{font-size:19px;margin-bottom:4px}
+</style>
+<style>
+/* Slide 9: general rule first, equal comparison cards underneath. */
+#v7b .l9-sub{font:500 17px/1.3 var(--text);color:var(--slate);margin-top:7px}
+#v7b .l9-body{display:flex;flex-direction:column;gap:11px;margin-top:15px}
+.l9-steps{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr;gap:8px;align-items:start}
+.l9-step{border-top:3px solid var(--brand);padding:9px 8px 0}
+.l9-step h3{font:800 19px/1.2 var(--text);margin-bottom:5px}
+.l9-step h3 b{color:var(--brand);font-weight:800;margin-right:8px}
+.l9-step p{font:500 14px/1.35 var(--text);color:var(--slate)}
+.l9-arrow{font:500 26px/1 var(--text);color:var(--brand);padding-top:18px}
+.l9-decisions{font:600 13px/1.3 var(--text);color:var(--slate);text-align:center;padding:5px 0 6px;border-bottom:1px solid var(--rule)}
+.l9-decisions b{color:var(--brand);font-weight:800}
+.l9-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.l9-card{border:1.5px solid #CFD5DE;border-radius:5px;padding:12px 16px 9px;background:#F7F8FA}
+.l9-card.l9-green{background:#EDF6EF;border-color:#82AB8E}
+.l9-card h3{font:800 22px/1.2 var(--text);margin-bottom:3px}
+.l9-label{font:700 11px/1.25 var(--text);letter-spacing:.5px;color:var(--slate);text-transform:uppercase;margin-bottom:7px}
+.l9-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;border-top:1px solid #CCD5CE;padding:7px 0;min-height:34px}
+.l9-row p{font:500 14px/1.25 var(--text);color:var(--slate)}
+.l9-row strong{font:700 17px/1.2 var(--text);text-align:right;color:var(--ink)}
+.l9-row .l9-save{color:#16723F}.l9-row .l9-cost{color:#B42318}
+.l9-row strong small{font:500 12px/1.2 var(--text);color:var(--slate)}
+.l9-case{display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-top:2px solid var(--ink);padding-top:9px}
+.l9-case p{font:700 17px/1.3 var(--text)}
+.l9-case b{font-weight:800;color:var(--brand)}
+.l9-case span{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family b{color:var(--ink);font-weight:800}
+.l9-shared{font:600 14px/1.3 var(--text);color:var(--slate);text-align:center}
+.l9-case p{font-size:22px}
+</style>
+<style>
+/* Slide 9: general rule first, equal comparison cards underneath. */
+#v7b .l9-sub{font:500 17px/1.3 var(--text);color:var(--slate);margin-top:7px}
+#v7b .l9-body{display:flex;flex-direction:column;gap:11px;margin-top:15px}
+.l9-steps{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr;gap:8px;align-items:start}
+.l9-step{border-top:3px solid var(--brand);padding:9px 8px 0}
+.l9-step h3{font:800 19px/1.2 var(--text);margin-bottom:5px}
+.l9-step h3 b{color:var(--brand);font-weight:800;margin-right:8px}
+.l9-step p{font:500 14px/1.35 var(--text);color:var(--slate)}
+.l9-arrow{font:500 26px/1 var(--text);color:var(--brand);padding-top:18px}
+.l9-decisions{font:600 13px/1.3 var(--text);color:var(--slate);text-align:center;padding:5px 0 6px;border-bottom:1px solid var(--rule)}
+.l9-decisions b{color:var(--brand);font-weight:800}
+.l9-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.l9-card{border:1.5px solid #CFD5DE;border-radius:5px;padding:12px 16px 9px;background:#F7F8FA}
+.l9-card.l9-green{background:#EDF6EF;border-color:#82AB8E}
+.l9-card h3{font:800 22px/1.2 var(--text);margin-bottom:3px}
+.l9-label{font:700 11px/1.25 var(--text);letter-spacing:.5px;color:var(--slate);text-transform:uppercase;margin-bottom:7px}
+.l9-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;border-top:1px solid #CCD5CE;padding:7px 0;min-height:34px}
+.l9-row p{font:500 14px/1.25 var(--text);color:var(--slate)}
+.l9-row strong{font:700 17px/1.2 var(--text);text-align:right;color:var(--ink)}
+.l9-row .l9-save{color:#16723F}.l9-row .l9-cost{color:#B42318}
+.l9-row strong small{font:500 12px/1.2 var(--text);color:var(--slate)}
+.l9-case{display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-top:2px solid var(--ink);padding-top:9px}
+.l9-case p{font:700 17px/1.3 var(--text)}
+.l9-case b{font-weight:800;color:var(--brand)}
+.l9-case span{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family{font:500 13px/1.3 var(--text);color:var(--slate)}
+.l9-family b{color:var(--ink);font-weight:800}
+</style>
+<style>
+/* Slide 9: neutral blue comparator, green for the labelled loan. */
+#v7b .l9-card:not(.l9-green){background:#EDF3FB;border-color:#A9BFDC}
+#v7b .l9-case p{font-size:23px}
+#v7b .l9-card{position:relative}
+.l9-choice-stamp{position:absolute;right:16px;top:12px;border:2px solid #4A3FBF;color:#4A3FBF;border-radius:3px;padding:5px 8px;transform:rotate(-5deg);font:800 12px/1 var(--text);letter-spacing:.6px;background:#EDF3FB}
+#v7b .l9-case .l9-saving{font:inherit;color:#16723F}
+#v7b .l9-case .l9-review-cost{font:inherit;color:#B42318}
+#v7b .l9-case .l9-verdict{text-align:center;font:800 22px/1.25 var(--text);color:var(--brand);white-space:nowrap;background:#EDF3FB;border:1.5px solid #A9BFDC;border-radius:4px;padding:6px 10px}
+.l9-verdict small{display:block;font:500 12px/1.3 var(--text);color:var(--slate);margin-top:3px}
+</style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
   <p class="s1-kick">Today's question</p>
@@ -922,6 +1151,83 @@
   </footer>
 </section>
 
+<!-- Slide 7 comparison: last committed version, then current experiment. Delete either section after choosing. -->
+
+<section class="slide sec-S" id="v6previous" data-time="0:45" data-speaker="Fahtai">
+  <header class="head">
+    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">From what climate does to the plan, to what the business changes</span></p>
+    <h2>From climate risk to the changes a business can make</h2>
+  </header>
+  <div class="body b7k-body">
+    <div class="b7k-method">
+      <p class="b7k-cap">The method · common business checks</p>
+      <div class="b7v-step">
+        <h3 class="b7v-title"><span>1</span>Investigate</h3>
+        <p class="b7v-sub">Research-led starting points</p>
+        <p class="b7q-source">GHG Protocol: emission sources · EPD: reduction options</p>
+        <div class="b7v-three">
+          <p class="b7p-scope b7p-scope1">Fuel &amp;<br>processes<span class="b7q-scope-num">Scope 1</span></p>
+          <p class="b7p-scope b7p-scope2">Electricity<span class="b7q-scope-num">Scope 2</span></p>
+          <p class="b7p-scope b7p-scope3">Materials<br>Suppliers<br>Disposal<span class="b7q-scope-num">Scope 3</span></p>
+        </div>
+      </div>
+      <div class="b7v-step b7q-compact">
+        <h3 class="b7v-title"><span>2</span>Find alternatives</h3>
+        <p class="b7v-alt">Compare alternatives for the same need and their trade-offs.</p>
+        <p class="b7v-guide">Guides: reduce · reuse · substitute · improve efficiency</p>
+      </div>
+      <div class="b7v-step b7q-expanded">
+        <h3 class="b7v-title"><span>3</span>Measure<small class="b7r-risk-inline">Risk: cash flow · execution · evidence</small></h3>
+        <div class="b7v-three">
+          <p class="b7p-metric">Initial capital<span>HK$ upfront</span></p>
+          <p class="b7p-metric b7q-environment">Environmental impact<span class="b7u-grid"><span>CO₂e<small>t/year</small></span><span>Waste<small>kg/year</small></span><span>Water<small>m³/year</small></span></span></p>
+          <p class="b7p-metric">Net cost<span>HK$ / unit reduced</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="b7k-case b7f-four">
+      <div class="b7k-casehead"><p class="b7k-cap">Investigate</p><p class="b7k-cap">Carmen's findings · potential cuts</p></div>
+      <p class="b7p-legend"><span>Red: cash required</span><span>Green: reductions / savings</span></p>
+      <div class="b7k-findings">
+        <div class="b7k-photo"><img src="inline:img/photo-pet-box.jpg" alt="PET packaging"><div><b>Purchases</b><p>1,610–2,100 t/yr</p></div></div>
+        <table class="b7k-table">
+          <thead><tr><th>Alternative</th><th>Capital · HK$</th><th>t / year</th><th>HK$ / t CO₂e</th></tr></thead>
+          <tbody>
+            <tr class="b7k-em"><td>Recycled PET</td><td>≈0.27M<small>working capital</small></td><td>108</td><td class="b7p-unknown">Quote needed<small>Supplier / spec check</small></td></tr>
+            <tr class="b7k-test"><td>Lighter board</td><td style="color:var(--slate)">0</td><td>42<small>not counted</small></td><td>−5,800<small>Test protection first</small></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="b7k-findings">
+        <div class="b7k-photo"><img src="inline:img/photo-van.jpg" alt="Hong Kong delivery van"><div><b>Operations</b><p>48 t/yr</p></div></div>
+        <table class="b7k-table">
+          <thead><tr><th>Alternative</th><th>Capital · HK$</th><th>t / year</th><th>HK$ / t CO₂e</th></tr></thead>
+          <tbody>
+            <tr><td>Electric vans</td><td>≈1.78M<small>capex</small></td><td>19</td><td>−12,800<small>Charging / cash check</small></td></tr>
+            <tr><td>LED + air-con</td><td>≈124K<small>capex</small></td><td>7</td><td>−1.2K to −2K</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="b7k-findings">
+        <div class="b7k-photo" style="min-height:78px"><img src="inline:img/photo-landfill.jpg" alt="Hong Kong landfill"><div><b>After use</b><p>≈1,070 t/yr</p></div></div>
+        <div class="b7f-after"><b>Collection · reuse · recycling</b><p>Check routes, facilities and customer participation.<br>No reduction quantified yet.</p></div>
+      </div>
+      <div class="b7f-total">
+        <strong>↓ ≈134</strong>
+        <p class="b7f-unit">t CO₂e / year<small>Potential reduction<br>if verified and delivered</small></p>
+        <p class="b7f-capital"><span class="b7f-spending">↑ ≈HK$1.91M equipment spending</span><span class="b7f-working">+ ≈HK$0.27M working capital tied up</span></p>
+      </div>
+    </div>
+  </div>
+  <p class="sowhat">Greener choices can require cash upfront or cost more over time. Make the trade-off explicit.</p>
+  <aside class="notes">FAHTAI: I'm Fahtai. We've tested climate risk; now ask what the business can change. Research guides the source search. Compare alternatives meeting the same need, then measure capital, environmental impact and cost per unit, checking financial and operational risk. Impact could mean carbon, waste or water; here we measure carbon. Recycled PET could cut 108 tonnes, but needs a packaging quote. Vans cut 19 tonnes and save money, but need capital and charging. Lighter board needs testing; end-of-life reductions remain unquantified. The counted candidates could cut about 134 tonnes a year. How should each be funded?
+    [Notes: Latest uncommitted layout uses four stacked layers on the right: purchases, operations, after use, then the standalone ≈134 total. End-of-life findings now parallel the other two investigation areas by listing collection/reuse/recycling as candidate searches; no feasible system, project approval or new impact is asserted. Need route, facility, customer participation, costs and baseline before counting. Claims control remains a separate safeguard in these notes. Total still contains only the existing recycled PET, vans and LED/air-con estimates.  Uncommitted next try: small 1/2/3 scope numerals at source-box bottom right; alternatives compare similar ways of delivering a service and explicitly consider trade-offs. General metrics allow carbon reduction (t CO2e), waste prevention (kg), water saving (m3), or other locally material environmental outcomes, each with a suitable baseline and own unit. Cost per unit must use the same defined impact, with no addition of unlike units or presumption that carbon, water and waste improve together. The worked example and ≈134 total remain CO2e only. Right-side contribution tally removed; the table's final row is split so a separate ≈134 summary fills its lower-right corner. Same estimates, no new impact calculated.  UNCOMMITTED layout draft requested by Fahtai: method stacked vertically, with three horizontal source groups and three horizontal metric groups. Bottom right shows the contribution tally: purchases 108 + operations 26 (19 + 7) ≈134 t/year potential; no tonnes assigned to the claims control, lighter board excluded. No numbers changed.  Layout refinement: user requested a wider left method with three horizontal numbered blocks, common investigation keywords in scope order (direct sources, bought energy, value chain), colour grouping without scope labels, narrower photos/tables, directional colour for numbers and totals in the final row. Investigation colours identify groups, not importance; actual priority still depends on size, influence and obligations. Number colours: red = initial cash required, green = estimated avoided emissions or net cost savings; zero and unknown stay neutral, uncounted potential tonnes stay neutral. These colours do not make capital-intensive options inherently unsuitable. All previous estimates and conditions retained.  Keyword/photo revision: user requested one-third method and two-thirds worked example, compressed main's three photos and candidate cuts, and initial capital as a third metric. Capital includes capex or working capital (labelled), not all an expense. Vans ≈HK$1.78M; LED + air-con HK$124K = HK$64K + HK$60K from area2_business §3c, ILLUSTRATIVE; full B1 package remains ≈HK$1.91M, existing rounded estimate. Recycled PET working capital ≈HK$0.27M is separate from any purchase premium. No investment verdict is based on carbon or negative cost alone. Lower board cost/tonne and zero capex are ILLUSTRATIVE and excluded from ≈134 t pending product testing. Recycled PET full cost/tonne remains quote needed, not assumed free. Photos reused from Pete's main slide with existing licences. Cost/tonne signs: minus means a saving; annual carbon totals require verification. The method prioritises feasible change and trade-offs, not an automatic preference for greener products.  Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
+  <footer class="foot">
+    <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
+    <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1, B4; DESNZ / EPA factors · photos: Wikimedia CC BY-SA · details in notes</p><span class="pg">7</span>
+  </footer>
+</section>
+
 <section class="slide sec-S" id="v6" data-time="0:45" data-speaker="Fahtai">
   <header class="head">
     <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">The change: every cut against what it replaces</span></p>
@@ -932,7 +1238,7 @@
       <p class="b7k-cap">The method · common business checks</p>
       <div class="b7v-step">
         <h3 class="b7v-title"><span>1</span>Investigate</h3>
-        <p class="b7v-sub">Research starting points for greener business</p>
+        <p class="b7v-sub">Research-led starting points</p>
         <p class="b7q-source">GHG Protocol: emission sources · EPD: reduction options</p>
         <div class="b7v-three">
           <p class="b7p-scope b7p-scope1">Fuel &amp;<br>processes<span class="b7q-scope-num">Scope 1</span></p>
@@ -1002,91 +1308,127 @@
 
 <section class="slide sec-S" id="v7" data-time="0:35" data-speaker="Fahtai">
   <header class="head">
-    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: the kind of finance sets the test</span></p>
-    <h2>A green label pays only above a size; below it, finance the cut plainly</h2>
+    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">From shortlisted changes to a funding proposal</span></p>
+    <h2>Match the funding to what the change needs.</h2>
   </header>
-  <div class="body stack v7-check">
-    <p class="v7-steps"><span class="v7-cap">THE STEP, FOR ANY CLIENT</span><span><span class="v7-n">1</span><b>What does the cut need?</b></span><span><span class="v7-n">2</span><b>Which kind of finance fits it?</b></span><span><span class="v7-n">3</span><b>Does its label pay at this size?</b></span></p>
-    <svg viewBox="0 0 1184 248" width="1184" height="248" style="font-family:var(--text);overflow:visible">
-      <text x="0" y="14" font-size="14" font-weight="800" letter-spacing="1" fill="#0F1E3D">WHAT HER CUTS NEED, AGAINST WHERE EACH LABELLED INSTRUMENT STARTS TO PAY</text>
-      <rect x="507" y="30" width="643" height="120" rx="4" fill="#F7E7EA"/>
-      <line x1="40" y1="150" x2="1150" y2="150" stroke="#0F1E3D" stroke-width="2.5"/>
-      <line x1="40" y1="143" x2="40" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="40" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$0.1M</text>
-      <line x1="317.5" y1="143" x2="317.5" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="317.5" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$1M</text>
-      <line x1="595" y1="143" x2="595" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="595" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$10M</text>
-      <line x1="872.5" y1="143" x2="872.5" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="872.5" y="178" font-size="15" fill="#566173" text-anchor="middle">HK$100M</text>
-      <line x1="1150" y1="143" x2="1150" y2="157" stroke="#0F1E3D" stroke-width="2"/><text x="1150" y="178" font-size="15" fill="#566173" text-anchor="end">HK$1,000M</text>
-      <!-- labelled instruments, above the line: x = 40 + 277.5 * log10(HK$M / 0.1) -->
-      <line x1="507" y1="90" x2="507" y2="150" stroke="#C80E1E" stroke-width="2.5"/><circle cx="507" cy="150" r="7" fill="#C80E1E"/>
-      <text x="519" y="58" font-size="18" font-weight="800" fill="#0F1E3D">Sustainability-linked loan</text>
-      <text x="519" y="80" font-size="15" fill="#566173">pays only above ≈HK$4.8M of debt</text>
-      <circle cx="872.5" cy="150" r="7" fill="#C80E1E"/>
-      <text x="872.5" y="112" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="middle">Grant Scheme</text>
-      <text x="872.5" y="133" font-size="15" fill="#566173" text-anchor="middle">loans of HK$100M or more</text>
-      <line x1="1120" y1="90" x2="1120" y2="150" stroke="#C80E1E" stroke-width="2.5"/><circle cx="1120" cy="150" r="7" fill="#C80E1E"/>
-      <text x="1108" y="58" font-size="18" font-weight="800" fill="#0F1E3D" text-anchor="end">Supply-chain finance</text>
-      <text x="1108" y="80" font-size="15" fill="#566173" text-anchor="end">≈US$100M of a buyer's trade</text>
-      <!-- what her two cuts need, below the line -->
-      <path d="M160,158 l-11,20 h22 z" fill="#4A3FBF"/>
-      <text x="140" y="206" font-size="18" font-weight="800" fill="#4A3FBF">her stock, recycled</text>
-      <text x="140" y="226" font-size="15" fill="#0F1E3D">≈HK$0.27M · 108 t</text>
-      <text x="140" y="244" font-size="15" fill="#566173">by supplier contract</text>
-      <path d="M366,158 l-11,20 h22 z" fill="#4A3FBF"/>
-      <text x="366" y="206" font-size="18" font-weight="800" fill="#4A3FBF">her vans, electric</text>
-      <text x="366" y="226" font-size="15" fill="#0F1E3D">HK$1.5M loan · 19 t</text>
-      <text x="366" y="244" font-size="15" fill="#566173">her one loan</text>
-    </svg>
-    <div class="v7k">
-      <p class="v7k-cap">THE BRIEF'S FIVE KINDS, FOR HER</p>
-      <div class="v7k-c"><b>Green</b><span>the vans, if the label is free (next)</span></div>
-      <div class="v7k-c"><b>Sustainability-linked</b><span>refused: below its size</span></div>
-      <div class="v7k-c"><b>Transition</b><span>her stock, by supplier contract, not a loan</span></div>
-      <div class="v7k-c"><b>Impact investing</b><span>not claimed for listed funds</span></div>
-      <div class="v7k-c"><b>ESG integration</b><span>the whole plan (slide 5)</span></div>
+  <div class="body f8-body">
+    <div class="f8l-left">
+      <p class="f8l-cap">The framework · how much cash, and when?</p>
+      <svg class="f8l-tree" viewBox="0 0 518 435" role="img" aria-label="Funding decision tree: cash flow or supplier terms first, then compare cash and borrowing, then screen instruments. If neither cash nor borrowing works, resize or defer.">
+        <defs><marker id="f8l-tip" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#4A3FBF" stroke-width="1.5"/></marker></defs>
+        <rect x="5" y="12" width="310" height="76" rx="6" fill="#F0EEFA" stroke="#4A3FBF" stroke-width="1.5"/>
+        <circle cx="26" cy="35" r="11" fill="#4A3FBF"/><text x="26" y="39" text-anchor="middle" font-size="12" font-weight="800" fill="white">1</text>
+        <text x="47" y="40" font-size="18" font-weight="800" fill="#0F1E3D">Cash flow / terms enough?</text>
+        <text x="22" y="67" font-size="15" fill="#566173">Liquidity and cost fit?</text>
+        <path d="M315 50 H365" fill="none" stroke="#4A3FBF" stroke-width="2" marker-end="url(#f8l-tip)"/>
+        <text x="338" y="39" text-anchor="middle" font-size="13" fill="#4A3FBF">Yes</text>
+        <rect x="375" y="22" width="140" height="60" rx="5" fill="#E8F3ED"/>
+        <text x="445" y="47" text-anchor="middle" font-size="17" font-weight="800" fill="#16723F">Use current</text>
+        <text x="445" y="68" text-anchor="middle" font-size="16" fill="#16723F">arrangements</text>
+        <path d="M160 88 V137" fill="none" stroke="#4A3FBF" stroke-width="2" marker-end="url(#f8l-tip)"/>
+        <text x="174" y="116" font-size="13" fill="#566173">Gap remains</text>
+        <rect x="5" y="148" width="310" height="76" rx="6" fill="#F0EEFA" stroke="#4A3FBF" stroke-width="1.5"/>
+        <circle cx="26" cy="171" r="11" fill="#4A3FBF"/><text x="26" y="175" text-anchor="middle" font-size="12" font-weight="800" fill="white">2</text>
+        <text x="47" y="176" font-size="20" font-weight="800" fill="#0F1E3D">Cash or borrowing?</text>
+        <text x="22" y="203" font-size="15" fill="#566173">Buffer left · cost · repayments</text>
+        <path d="M315 186 H365" fill="none" stroke="#4A3FBF" stroke-width="2" marker-end="url(#f8l-tip)"/>
+        <text x="340" y="174" text-anchor="middle" font-size="12" fill="#4A3FBF">Cash fits</text>
+        <rect x="375" y="158" width="140" height="60" rx="5" fill="#E8F3ED"/>
+        <text x="445" y="185" text-anchor="middle" font-size="17" font-weight="800" fill="#16723F">Use company</text>
+        <text x="445" y="206" text-anchor="middle" font-size="17" fill="#16723F">cash</text>
+        <path d="M160 224 V273" fill="none" stroke="#4A3FBF" stroke-width="2" marker-end="url(#f8l-tip)"/>
+        <text x="174" y="252" font-size="13" fill="#566173">Borrowing fits</text>
+        <rect x="5" y="284" width="310" height="76" rx="6" fill="#F0EEFA" stroke="#4A3FBF" stroke-width="1.5"/>
+        <circle cx="26" cy="307" r="11" fill="#4A3FBF"/><text x="26" y="311" text-anchor="middle" font-size="12" font-weight="800" fill="white">3</text>
+        <text x="47" y="312" font-size="19" font-weight="800" fill="#0F1E3D">Screen the instrument</text>
+        <text x="22" y="339" font-size="15" fill="#566173">Purpose · term · eligibility · fees</text>
+        <path d="M315 322 H365" fill="none" stroke="#4A3FBF" stroke-width="2" marker-end="url(#f8l-tip)"/>
+        <text x="340" y="310" text-anchor="middle" font-size="12" fill="#4A3FBF">Fits</text>
+        <rect x="375" y="294" width="140" height="60" rx="5" fill="#4A3FBF"/>
+        <text x="445" y="320" text-anchor="middle" font-size="17" font-weight="800" fill="white">Propose loan</text>
+        <text x="445" y="342" text-anchor="middle" font-size="14" fill="white">Compare terms → 9</text>
+        <path d="M15 393 H503" stroke="#DCE1E8" stroke-width="1.5"/>
+        <text x="259" y="419" text-anchor="middle" font-size="16" font-weight="700" fill="#566173">No viable route → resize or defer</text>
+      </svg>
+    </div>
+    <div class="f8l-right">
+      <p class="f8l-cap">Carmen · apply the funding test</p>
+      <div class="f8l-case">
+        <img src="inline:img/photo-pet-box.jpg" alt="PET packaging">
+        <div><h3>Packaging · ≈HK$0.27M in the cash cycle</h3>
+          <div class="f8d-options">
+            <div class="f8d-option f8d-proposed"><p>Cash + supplier terms <b>PROPOSE</b></p><small>Can the operating buffer hold?</small></div>
+            <div class="f8d-option"><p>Borrow for the gap</p><small>If cash / terms do not fit</small></div>
+          </div>
+          <p class="f8d-test">Short-cycle need → test supplier terms and available cash first.</p>
+        </div>
+      </div>
+      <div class="f8l-case">
+        <img src="inline:img/photo-van.jpg" alt="Hong Kong delivery van">
+        <div><h3>Vans + equipment · ≈HK$1.91M upfront</h3>
+          <div class="f8d-options">
+            <div class="f8d-option"><p>All company cash</p><small>≈HK$1.91M paid upfront</small></div>
+            <div class="f8d-option f8d-proposed"><p>HK$1.5M loan <b>PROPOSE</b></p><small>+ HK$0.41M company cash</small></div>
+          </div>
+          <p class="f8d-test">Less cash upfront ↔ interest and repayments. Test both.</p>
+        </div>
+      </div>
+      <p class="f8l-check">Proposals subject to cash-flow, supplier and lender checks.</p>
+      <p class="f8l-cap">Other routes · reason and verdict</p>
+      <div class="f8l-routes">
+        <div class="f8l-route"><h3>Sustainability-linked</h3><b class="f8l-route-verdict">NOT PROPOSED</b><p>Verification fees &gt; benefit<br><small>on assumed paid terms</small></p></div>
+        <div class="f8l-route f8l-access"><h3>Supply-chain finance</h3><b class="f8l-route-verdict">CONDITIONAL</b><p>Buyer access and better terms not confirmed</p></div>
+        <div class="f8l-route"><h3>Grant Scheme</h3><b class="f8l-route-verdict">INELIGIBLE</b><p>Below HK$100M minimum<br><small>Subsidy, not a loan</small></p></div>
+      </div>
     </div>
   </div>
-  <p class="sowhat">Her biggest cut needs no loan; every labelled instrument here starts at three times her size.</p>
-  <aside class="notes">FAHTAI: For any client, a green label has a fixed cost, so it pays only above a size. Start from what each cut needs. Her biggest cut, recycled plastic, is her real transition, and it runs on a supplier contract, not a loan. Her vans need one and a half million. A sustainability-linked loan pays only above about five million; the grant scheme starts at a hundred million. So is a green label worth it on her one loan?
-    [Notes: rebuilt 15 Nov (Pete: "I don't get what exactly we are trying to communicate"; "can't we transition her stock?"): one rule, the label's break-even size, with both of her cuts placed against it. Her stock: recycled PET at parity, 108 t; ≈HK$0.27M of working capital is the early payment to her PET supplier for data, from company cash (Decision_List.md B4, ILLUSTRATIVE). Why no "transition" label: her transition is in her suppliers' factories, bought through purchasing contracts; a transition loan would add an entity-level plan and a review fee for no pricing benefit, and the HK Taxonomy has no packaging activity, still none in the Phase 2B prototype (area2_business.md §6, q11, the Taxonomy table; not re-checked 15 Nov). The vans are Taxonomy "green", not "transition". Impact: listed funds get "no additional impact quantified", never "no impact". Sustainability-linked break-even ≈HK$4.8M, Grant Scheme HK$100M (HKMA guideline, 24 Apr 2026, p.3; quoted on backup 24), supply-chain programmes ≈US$100M of trade (≈HK$780M): sources in the next slide's notes and backup 20. Positions: x = 40 + 277.5 × log10(HK$M ÷ 0.1). The tax waiver (if asked, or on backup 20): first registration tax on an e-van waived to 31 Mar 2028 (Budget 2026-27, para 207; ≈HK$71K a van at the government-average price, area2_business.md §5 q8).]</aside>
+  <p class="sowhat">Match funding to cash timing without straining liquidity or repayment capacity.</p>
+  <aside class="notes">FAHTAI: Match funding to the cash need. First, can cash flow or supplier terms cover it without straining liquidity? If not, compare company cash with borrowing, then screen instruments for fit and cost. Packaging needs price, payment and working-capital checks. For the equipment, assess a one-and-a-half-million loan alongside company cash. Supply-chain finance needs access; a paid sustainability-linked structure must justify its costs. The grant is a subsidy and fails eligibility. For the vans, we propose borrowing. Should that loan be green?
+    [Notes: Draft funding page, no lender offer or liquidity approval claimed. Framework: establish cash amount and timing; examine routine cash flow and supplier terms, then compare cash reserves with borrowing on liquidity left, total costs and downside repayment capacity; if neither works resize/defer. Cash is a valid comparator. Supplier terms can have a price and early payment consumes cash. ≈HK$0.27M working capital is ILLUSTRATIVE: B4's conditional supplier early-payment arrangement for data/terms, not the price of recycled content, not a grant and not proof that the change needs no finance. Quote, specification, supplier acceptance, customer willingness to pay any premium and actual cash conversion cycle remain unverified. HK$1.91M equipment, HK$1.5M secured loan plus HK$0.41M company cash are existing estimates on the ILLUSTRATIVE distributor (Decision_List section 2/B1); includes vans/chargers/LED/air-con, not vans alone. Profit/retained profit does not establish cash available. Need cash forecast and agreed operating buffer; no new reserve threshold invented. Existing estimates show equipment savings do not fully cover the proposed five-year payments; company must cover gap, slide 9 tests it. Check tenor, fees, collateral, guarantees and co-owner consent with lender. Green/plain equipment loan comparison and net label benefit belong on slide 9. Sustainability-linked: screen material KPIs, target ambition, verification and net ratchet benefit; not proposed on existing paid-verification assumptions, not a universal SME exclusion. Free/cheap verification exceptions remain possible; see research/area2_business.md and area2_supply_chain.md. Supply-chain finance: access through a buyer/customer programme is conditional; no universal minimum transaction size claimed. Grant Scheme is a cost subsidy, not credit. Official HKMA guideline effective 24 Apr 2026, p.3: Track II eligible bonds/loans require at least HK$100M; verified against primary source when compiling this draft: https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/bond-market-development/GSFGS_Guideline_%28Effective_from_20260424%29.pdf . Our HK$1.5M proposal is below that threshold; does not imply every grant or SME incentive is unavailable. Old log-size chart/five-kind catalogue removed from this page; existing backup remains. No new model figures.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
-    <p class="src">ESTIMATED on an ILLUSTRATIVE business; working capital ILLUSTRATIVE · HKMA Grant Scheme guideline, 24 Apr 2026, p.3 (backup 24) · scale: log</p><span class="pg">8</span>
+    <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1–B4 · HKMA GSF Grant Scheme guideline, effective 24 Apr 2026, p.3 · bank/supplier terms unverified</p><span class="pg">8</span>
   </footer>
 </section>
 
 <section class="slide sec-S" id="v7b" data-time="0:35" data-speaker="Fahtai">
   <header class="head">
-    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: judge it by its own test</span></p>
-    <h2>Judge a green loan as a loan, against the cheapest plain one</h2>
+    <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">Test the label after choosing the funding route</span></p>
+    <h2>A green label must justify its full cost and obligations.</h2>
+    <p class="l9-sub">With borrowing proposed, does green improve the terms?</p>
   </header>
-  <div class="body stack v7-judge">
-    <div class="v7s">
-      <div class="v7s-doc v7s-green">
-        <p class="v7s-top">TERM SHEET · indicative</p>
-        <p class="v7s-tt">Green loan for the vans</p>
-        <p class="v7s-sub">HK$1.5M · 5 years · secured on the vans</p>
-        <p class="v7s-row"><span>Label's rate cut <i>(0.25%, assumed)</i></span><b>saves ≈HK$12K</b></p>
-        <p class="v7s-row"><span>External review to earn the label</span><b>costs ≈HK$12K</b></p>
-        <p class="v7s-row v7s-net"><span>Net to her: the greenium</span><b>≈HK$0</b></p>
-        <span class="v7s-stamp v7s-st-grey">Only if free</span>
+  <div class="body l9-body">
+    <div class="l9-steps">
+      <div class="l9-step"><h3><b>1</b>Compare like for like</h3><p>Same project, amount, term,<br>repayment schedule and security</p></div>
+      <div class="l9-arrow">→</div>
+      <div class="l9-step"><h3><b>2</b>Price the net benefit</h3><p>Interest savings − extra fees<br>− verification and reporting costs</p></div>
+      <div class="l9-arrow">→</div>
+      <div class="l9-step"><h3><b>3</b>Check the obligations</h3><p>Affordable repayments?<br>Conditions and reporting feasible?</p></div>
+    </div>
+    <p class="l9-decisions"><b>Green:</b> justified advantage + suitable terms &nbsp; · &nbsp; <b>Plain:</b> no justified label benefit &nbsp; · &nbsp; <b>Missing terms:</b> get quotes</p>
+    <div class="l9-cards">
+      <div class="l9-card l9-green">
+        <p class="l9-label">Carmen · indicative comparison</p><h3>Green equipment loan</h3>
+        <div class="l9-row"><p>Amount / term / security</p><strong>HK$1.5M · 5 years · vans</strong></div>
+        <div class="l9-row"><p>Interest advantage vs plain</p><strong class="l9-save">≈HK$12K <small>over 5 years</small></strong></div>
+        <div class="l9-row"><p>Extra green-label review</p><strong class="l9-cost">≈HK$12K</strong></div>
+        <div class="l9-row"><p>Other fees / obligations</p><strong>Quote and assess</strong></div>
       </div>
-      <p class="v7s-vs">vs</p>
-      <div class="v7s-doc v7s-plain">
-        <p class="v7s-top">TERM SHEET · indicative</p>
-        <p class="v7s-tt">Plain equipment loan</p>
-        <p class="v7s-sub">HK$1.5M · 5 years · secured on the vans</p>
-        <p class="v7s-row"><span>Payment each year, to 2032</span><b>≈HK$349K</b></p>
-        <p class="v7s-row"><span>Fuel and power saved each year</span><b>≈HK$303K <i>(87%)</i></b></p>
-        <p class="v7s-row"><span>Debt cover; repaid before the sale</span><b>5.7× → 3.3×</b></p>
-        <p class="v7s-row v7s-net"><span>For the children, through the sale</span><b>{{fin_dot_vans_n}}</b></p>
-        <span class="v7s-stamp v7s-st-go">This one works</span>
+      <div class="l9-card">
+        <span class="l9-choice-stamp">PROPOSE PLAIN</span>
+        <p class="l9-label">Carmen · indicative comparison</p><h3>Plain equipment loan</h3>
+        <div class="l9-row"><p>Amount / term / security</p><strong>HK$1.5M · 5 years · vans</strong></div>
+        <div class="l9-row"><p>Interest advantage vs plain</p><strong>Reference loan</strong></div>
+        <div class="l9-row"><p>Extra green-label review</p><strong>HK$0 <small>label-specific</small></strong></div>
+        <div class="l9-row"><p>Other fees / obligations</p><strong>Quote and assess</strong></div>
       </div>
     </div>
-    <p class="v7s-line"><b>Greenium:</b> the label's rate cut, worth about its review fee. <b>Green premium:</b> the cleaner option's extra cost; an e-van ≈HK$12K more (3%), while the tax waiver lasts.</p>
+    <div class="l9-case"><p><b>Known items:</b> <span class="l9-saving">≈HK$12K saved</span> − <span class="l9-review-cost">≈HK$12K review</span> ≈ no advantage.</p><span class="l9-verdict">GREEN LOAN UNNECESSARY<small>On assumed terms · pending quotes</small></span></div>
+    <p class="l9-family"><b>Equipment benefit to the family: {{fin_dot_vans_n}}</b> modelled through the sale · attributable to the equipment change, not the green label.</p>
   </div>
-  <p class="sowhat">The green label saves ≈HK$12K and costs ≈HK$12K. Take it only if it's free.</p>
-  <aside class="notes">FAHTAI: Judge it by its own test, against the cheapest plain loan. A green label on her one and a half million loan saves about what its review costs: take it only if free. What works is a plain loan secured on the vans: the fuel saving covers about 87 per cent of the payments. And it reaches the family at the sale: the vans add {{fin_dot_vans_n}}. So what's left for the funds? Win.
-    [Notes: DRAFT v5, 14 Nov, from v4 slide 8's numbers; Fahtai to make it their own. Scale: log, HK$1M to HK$1,000M.
+  <p class="sowhat">Compare full terms. Pay extra only for an explicit, agreed benefit.</p>
+  <aside class="notes">FAHTAI: A green label must justify its full cost and obligations. Compare the same amount, term and security; subtract fees, verification and reporting from the interest saving; then check repayment and conditions. For Carmen, our assumptions give about twelve thousand saved and twelve thousand spent on review: no clear advantage before other costs. Get comparable quotes before choosing. The equipment benefit belongs to the change, not its green label. Now, the funds. Win.
+    [Notes: New top-rule/equal-card draft. All comparisons are indicative, not lender offers. Same HK$1.5M amount, 5-year term and van security assumed on both sides; actual availability/security/fees unverified. The green interest advantage of ≈HK$12K is an ESTIMATED consequence of an ILLUSTRATIVE 25bp discount over the loan term, not a quoted bank concession. ≈HK$12K review fee is a published cheapest assessment figure, not an offer. Plain review cost HK$0 means zero incremental GREEN-LABEL review cost by definition, not zero ordinary fees. Other fees, reporting/use-of-proceeds obligations and covenants must be priced; the displayed known items break even but full net benefit remains unverified. Do not claim free verification is universally required, or that plain borrowing is approved/always cheaper. Positive green advantage requires suitability; a premium requires a specific client-agreed benefit and funding within limits. Extra reporting and loss of flexibility can matter even where money is equal. Common amount/term/security aligns comparison. Family inheritance benefit is shown separately: it belongs to the equipment decision, not the financing label. Green/plain figures have identical rows, with the plain loan as baseline; no new absolute interest totals invented.  New top-rule/equal-card draft. All comparisons are indicative, not lender offers. Same HK$1.5M amount, 5-year term and van security assumed on both sides; actual availability/security/fees unverified. The green interest advantage of ≈HK$12K is an ESTIMATED consequence of an ILLUSTRATIVE 25bp discount over the loan term, not a quoted bank concession. ≈HK$12K review fee is a published cheapest assessment figure, not an offer. Plain review cost HK$0 means zero incremental GREEN-LABEL review cost by definition, not zero ordinary fees. Other fees, reporting/use-of-proceeds obligations and covenants must be priced; the displayed known items break even but full net benefit remains unverified. Do not claim free verification is universally required, or that plain borrowing is approved/always cheaper. Positive green advantage requires suitability; a premium requires a specific client-agreed benefit and funding within limits. Extra reporting and loss of flexibility can matter even where money is equal. Common amount/term/security aligns comparison. Family inheritance benefit is shown separately: it belongs to the equipment decision, not the financing label. Green/plain figures have identical rows, with the plain loan as baseline; no new absolute interest totals invented.  DRAFT v5, 14 Nov, from v4 slide 8's numbers; Fahtai to make it their own. Scale: log, HK$1M to HK$1,000M.
     Green loan: no HK bank publishes an SME discount (25 bp ILLUSTRATIVE); HKQAA's assessment "as low as" HK$12K (B2).
     Sustainability-linked: 5–25 bp; pays for itself above ≈HK$4.8M of debt at 25 bp if verification costs ≈HK$12K a year
     (area2_business.md §3d). Grant Scheme: HKMA guideline, 24 Apr 2026, loans of at least HK$100M. Supply-chain finance:
@@ -1105,7 +1447,7 @@
     needs the co-founder): {{fin_dot_div_n}}, if asked.] Also, if asked: carbon data, ≈HK$54–73K a year, keeps a customer worth 10% of sales ({{fin_cust10_leg}}); the green lease at the 2027 renewal lets her fit chargers and LED.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Area 2</span></p></div>
-    <p class="src">ESTIMATED on an ILLUSTRATIVE business · family: our model (MEASURED) · HKMA, 24 Apr 2026 · Budget 2026–27 · scale: log</p><span class="pg">9</span>
+    <p class="src">ESTIMATED / ILLUSTRATIVE terms, not offers · Decision_List B1–B2; HKQAA assessment floor · family benefit: our model (MEASURED) · other fees/terms unverified</p><span class="pg">9</span>
   </footer>
 </section>
 
