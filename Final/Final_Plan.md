@@ -564,12 +564,10 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     the more robust choice: it holds to `fin_ret_hold_n`, the lifelong pledge only to `fin_ret_hold_pledge_n` (a fund
     fixes the gift's cost today; a pledge's cost rises when returns fall). A second reason for §5.3, besides present
     bias.
-  - **On screen:** a small "Flips at" tag in the same place on each step slide (top right, on the kicker's line),
-    each from a key or a sourced figure: 4 the room (`fin_room_zero_ret`); 5 the downturn limit (`fin_ret_hold_s`); 6
-    the flat (`fin_pflipn_cross`); 7 recycled plastic dearer than new (B4); 8 a sustainability-linked loan above
-    ≈HK$4.8M of debt; 9 a rate cut worth more than the ≈HK$12K review; 10 a fee more than 5bp above the plain twin
-    (the mandate's cost test, P6, ILLUSTRATIVE); 11 the fund's own tracking error (2.09% is the index's). Slide 12's
-    limit trigger becomes the return (`fin_ret_hold_n`) and the flat; slide 3 has no number to flip, so no tag.
+  - **On screen:** a small "Flips at" tag top right on slides 4–11 was built and **removed the same day** (Pete: "i
+    don't think the flip at should be there"). The switch points stay where they already were in each slide's body
+    (slide 4's markets line, slide 6's ≈7%, slide 8's size line, slide 9's "only if free", slide 12's triggers) and
+    on backup 25; slide 12's limit trigger is the return (`fin_ret_hold_n`) and the flat.
   - **Slide 2's "what's ours"** was a second three (one test, values from the room, one measure) beside slide 1's
     three tests. Now the three tests as practices, plus the switch points: the limit checked on everything they own;
     changes claimed only where we can show them; values priced in HK$ from the room; every verdict with the number
