@@ -574,6 +574,55 @@
 #v6 .b7q-environment .b7u-grid > span{font:500 14px/1.25 var(--text);text-align:center;margin:0;color:var(--ink)}
 #v6 .b7u-grid small{display:block;font:500 14px/1.25 var(--text);color:var(--slate);margin-top:5px}
 </style>
+<style>
+/* Fahtai experiment: connected gradient chevrons show the method left to right. */
+#v6 .b7k-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 8px;align-content:start}
+#v6 .b7k-method > .b7k-cap{grid-column:1/-1;margin-bottom:20px}
+#v6 .b7v-step{padding:0!important;border:0;min-width:0}
+#v6 .b7v-title{height:82px;padding:12px 17px 12px 14px;margin:0 0 18px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;color:#fff;font-size:17px;clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%,10% 50%);background:linear-gradient(110deg,#6477B8,#4A3FBF)}
+#v6 .b7v-step:first-of-type .b7v-title{clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%);background:linear-gradient(110deg,#547EAA,#5362B4)}
+#v6 .b7v-step:last-child .b7v-title{background:linear-gradient(110deg,#4A3FBF,#241B66)}
+#v6 .b7v-step:not(:first-of-type) .b7v-title{padding-left:25px}
+#v6 .b7v-title > span{background:transparent;width:auto;height:auto;font-size:21px;color:white;padding-left:10px}
+#v6 .b7v-title .b7r-risk-inline{display:none}
+#v6 .b7v-step > p,#v6 .b7v-step > .b7v-three{margin-left:6px;margin-right:5px}
+#v6 .b7v-sub{font-size:14px;line-height:1.35;margin-bottom:8px}
+#v6 .b7q-source{font-size:11px;line-height:1.4;margin:0 5px 12px 6px}
+#v6 .b7v-three{grid-template-columns:1fr!important;gap:10px}
+#v6 .b7v-three .b7p-scope{font-size:14px;min-height:64px;padding:8px 8px 22px}
+#v6 .b7v-alt{font-size:16px;line-height:1.45}
+#v6 .b7v-guide{font-size:13px;line-height:1.65;margin-top:18px}
+#v6 .b7q-expanded .b7p-metric{font-size:16px;min-height:65px;padding-top:10px}
+#v6 .b7q-expanded .b7q-environment{font-size:16px;padding:9px 8px}
+#v6 .b7q-expanded .b7p-metric > span{font-size:13px;margin-top:6px}
+#v6 .b7q-environment .b7u-grid{grid-template-columns:1fr;gap:7px}
+#v6 .b7q-environment .b7u-grid > span{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;text-align:left}
+#v6 .b7u-grid small{font-size:11px;margin:0}
+</style>
+<style>
+/* Keep the established vertical structure; gradient arrows mark the three steps. */
+#v6 .b7k-method{display:block}
+#v6 .b7k-method > .b7k-cap{margin-bottom:8px}
+#v6 .b7v-step{padding:10px 0 12px!important;border-bottom:1px solid var(--rule)}
+#v6 .b7v-step:last-child{border-bottom:0}
+#v6 .b7v-title,#v6 .b7v-step:not(:first-of-type) .b7v-title{height:36px;width:100%;padding:5px 25px 5px 12px;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;margin:0 0 9px;clip-path:polygon(0 0,96% 0,100% 50%,96% 100%,0 100%);font-size:20px}
+#v6 .b7v-step:first-of-type .b7v-title{clip-path:polygon(0 0,96% 0,100% 50%,96% 100%,0 100%)}
+#v6 .b7v-title > span{padding-left:0;font-size:18px}
+#v6 .b7v-step > p,#v6 .b7v-step > .b7v-three{margin-left:0;margin-right:0}
+#v6 .b7v-three{grid-template-columns:repeat(3,1fr)!important;gap:12px}
+#v6 .b7v-sub{font-size:15px;margin-bottom:5px}
+#v6 .b7q-source{font-size:12px;margin:0 0 8px}
+#v6 .b7v-three .b7p-scope{min-height:72px;font-size:14px}
+#v6 .b7v-alt{font-size:16.5px;line-height:1.35}
+#v6 .b7v-guide{font-size:14px;margin-top:6px;line-height:1.4}
+#v6 .b7q-expanded .b7v-three{grid-template-columns:1fr 1.8fr 1fr!important}
+#v6 .b7q-expanded .b7p-metric{font-size:16px;min-height:78px}
+#v6 .b7q-expanded .b7q-environment{font-size:18px}
+#v6 .b7q-environment .b7u-grid{grid-template-columns:repeat(3,1fr);gap:4px}
+#v6 .b7q-environment .b7u-grid > span{display:block;text-align:center;font-size:13px}
+#v6 .b7u-grid small{font-size:12px;margin-top:5px}
+#v6 .b7v-title .b7r-risk-inline{display:block;color:#fff;margin-left:auto;font-size:11px}
+</style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
   <p class="s1-kick">Today's question</p>
@@ -923,7 +972,7 @@
       <p class="b7k-cap">The method · common business checks</p>
       <div class="b7v-step">
         <h3 class="b7v-title"><span>1</span>Investigate</h3>
-        <p class="b7v-sub">Research starting points for greener business</p>
+        <p class="b7v-sub">Research-led starting points</p>
         <p class="b7q-source">GHG Protocol: emission sources · EPD: reduction options</p>
         <div class="b7v-three">
           <p class="b7p-scope b7p-scope1">Fuel &amp;<br>processes<span class="b7q-scope-num">Scope 1</span></p>
