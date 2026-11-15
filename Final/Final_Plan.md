@@ -16,30 +16,34 @@ an argument; where it disagrees with those files, they win.
 
 | | |
 |---|---|
-| **The event** | A 10-minute live talk in English, then 10 minutes of questions. Sat 21 Nov, FellowSPACE, 28/F Tower A, Southmark, Wong Chuk Hang; arrive by 09:30. Over 10:30 disqualifies; aim for 9:20 |
+| **The event** | A 10-minute live talk in English, then 10 minutes of questions. Sat 21 Nov, FellowSPACE, 28/F Tower A, Southmark, Wong Chuk Hang; arrive by 09:30. Over 10:30 disqualifies; the script targets 10:00 with names (Pete, 14 Nov) |
 | **Slides due** | Before **17:00 Mon 16 Nov** to `info@srfpns.org`; wait for the acknowledgement. No slide can change after |
 | **Client** | The Wongs, the competition's case family, introduced from scratch |
 | **Comparison** | The reasonable planner's plan: the advice we'd give without the test, defined by what it does (§2; Pete, 14 Nov), not a claim about how advisers usually work |
 | **Framework** | PRISM: **P**rofile, **R**isk, **I**mpact, **S**elect, **M**onitor (§4.2) |
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
-| **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.48M the family's; HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline is open (§5.1):** +HK$2.44M as drafted, ≈+HK$1.05M against a fair comparison |
-| **Now** | Pete decides §5 today. Slides 6–11 built with their words by Fri 13; first timed run Sat 14. Only slide 1 has its spoken words so far |
+| **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
+| **Now** (15 Nov) | The 13 talk slides and backups 14–24 are built, and the PowerPoint builds through PowerPoint. Left: send before the deadline; then the script cut (1,475 spoken words against ≈1,300), the timed run, the cold read and the question drills |
 
-**The talk** (storyline v5, Pete, 13 Nov, night; rows in §4.5; v4's slide numbers in brackets):
+**The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
+the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
 
-| # | Act | Who | Time | Title (draft) | Built? |
-|---|---|---|---|---|---|
-| 1 | Open | Pete | 1:00 | What makes a plan sustainable? (closes on the claim) | v4 1, to rework: the chip beside the three questions |
-| 2 | Framework | Pete | 0:50 | PRISM runs the test in five steps | v4 2, to trim |
-| 3 | The limit, the room | Pete | 0:50 | Set the limit first; values spend only the room above it | v4 4, plus what the room buys (M11) |
-| 4 | The limit | Lookbua | 0:55 | Check everything they own and earn, not just what a label covers | New: options 4A and 4B rendered 13 Nov, night (4A recommended) |
-| 5 | The limit | Lookbua | 0:45 | The limit decides before preferences do | v4 6, kept |
-| 6 | The change | Fahtai | 0:55 | Rank every cut by its cost per tonne, cheapest first | v4 7, to trim |
-| 7 | The change | Fahtai | 0:55 | Judge green finance as finance, at the client's size | New form (v4 8's numbers) |
-| 8 | The room | Win | 1:00 | The sustainable share is an output of the limits, paid from the room | New form (v4 9's numbers) |
-| 9 | All three | Win | 0:45 | Label the plan, not the product | New: options 9A and 9B rendered 13 Nov, night (9A recommended) |
-| 10 | Close | Pete | 0:40 | The claim | v4 3, moved: the four corners, filled |
+| # | Step | Who | Time | Title |
+|---|---|---|---|---|
+| 1 | Open | Pete | 1:20 | What makes a plan sustainable? (closes on the claim) |
+| 2 | Framework | Pete | 0:45 | PRISM: five steps, three tests |
+| 3 | Profile | Pete | 0:35 | Own money, own limits; shared money follows the more prudent |
+| 4 | Profile | Pete | 0:40 | Set the limit first; values spend only the room above it |
+| 5 | Risk | Lookbua | 1:10 | Check everything they own and earn, not just what a label covers |
+| 6 | Select | Lookbua | 0:45 | The limit decides before preferences do |
+| 7 | Impact, Select | Fahtai | 0:45 | Rank cuts across the whole footprint, not just what a loan can buy |
+| 8 | Select | Fahtai | 0:35 | A green label pays only above a size; below it, finance the cut plainly |
+| 9 | Select | Fahtai | 0:35 | Judge a green loan as a loan, against the cheapest plain one |
+| 10 | Select | Win | 0:35 | Pass a product only if its rule binds and it fits its owner's limit |
+| 11 | Select | Win | 0:40 | The sustainable share is an output of the limits, paid from the room |
+| 12 | Monitor | Win | 0:45 | Label the plan, not the product |
+| 13 | Close | Pete | 0:50 | The claim: the four corners, filled; the outcome and the capital |
 
 ## 1. What the judges score
 
@@ -155,6 +159,9 @@ rules, each with a number behind it.
   sense for a salaried family who rent and hold only an MPF, or it's a Wong finding; (3) cover the Wongs' figures: a
   judge can still see what the step does (added 13 Nov, from slide 4); (4) on the contact sheet, the rule is the biggest
   idea on every slide, the dense ones (9, 10) included.
+- **The change test** (Pete, 15 Nov; from the reference decks, below): for each step slide, can a judge say what
+  the advice was without the step, by how much it changed, and what would change it back, and by when? A test, not
+  a required part: where an answer is missing, say it or put it in backup.
 
 **Numbers.** Every model number is a `{{key}}` (AGENTS.md "Numbers"). New Final numbers go through `export_numbers()`;
 then diff `numbers.json` (no existing value may change) and log in `reviews/applied.md`. HK$ only; sources on the
@@ -193,7 +200,7 @@ picture (four people, what they own, what each wants, who disagrees); the label 
 each change. **Cold read** before sending: two or three people who've never seen the case watch slides 1–4. If they
 can't say who the family is and what the framework does that the labels don't, fix the opening.
 
-**Live talk:** about 1,200 spoken words for 9:20 until a timed run sets the cap; one point and its number per slide;
+**Live talk:** about 1,300 spoken words for 10:00 with names (Pete, 14 Nov) until a timed run sets the cap; one point and its number per slide;
 the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `LOOKBUA:`.
 
 **Look A** (Pete, 11 Nov; chosen from four options rendered side by side, `Final/looks/looks.html`; every token is in
@@ -505,8 +512,38 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   mortgage's one-off HK$0–3K rebate fails it too). Backup 20's transition row now says the same. Fahtai's words
   rewritten to match (shorter; "she has no transition asset" is gone); the e-van tax waiver stays on slide 9 and
   backup 20.
+- **The brief's missing words, on screen** (Pete, 15 Nov: "yes do it", after Claude read Logan's HYBE pitch and
+  three of OASIS's decks against the three Final PDFs). Both references are built on a different view stated in
+  numbers, the data that would confirm or break it, and when. The brief asks for the same in its own words
+  ("separate attribution from narrative", "review triggers", "over what horizon", "implementation milestones"),
+  and three of them were on no talk slide. Text only, no new form:
+  - **12:** the dashboard showed three of the brief's four outcomes (financial, sustainability, impact) and no
+    implementation milestones, and two of its triggers were generic ("income, health or markets change → run it
+    again"). Now the limit's trigger is the flat's (`fin_pflipn_cross`: older flats ≈7% behind newer ones, decide
+    the route that year; `Decision_List.md` H1) and the change's is recycled plastic's price (it costs more than
+    new again: its 108 t are priced again; B4). The right column gains "Next dates": 2027 the first review and the
+    scholarship (funded 2027–28, G1); by 31 Mar 2028 the electric vans, before the tax waiver ends (B1); every year
+    the flat's price gap; 2035–39 the sale (B7); by 2046 the flat's route (H1). The dates were on option 9A and
+    went in the 14 Nov trim; they return because this slide is the brief's dashboard. **Check (Fahtai):** the list
+    says the vans are "ordered" by 31 Mar 2028; the tax is charged at first registration, so they must be
+    registered by then. The slide uses neither verb.
+  - **13:** a line under the outcome, "Of which": about half is the vans, the sustainable part; the rest is
+    ordinary planning (the gift funded now, cheaper funds). §4.1 lists this split as something judges should leave
+    with, and it was only on backup 15 and "say if asked". In words, not HK$: the bridge was withdrawn from slide 13
+    because the vans would show two figures (+HK$0.51M against diesel, +HK$0.54M against the reasonable planner's
+    plan); "about half" (`fin_fair_vans` of `fin_fair_gain`) avoids that.
+  - **5:** the scenario is named "disorderly" on screen, the brief's word (area 5: "orderly, disorderly or
+    hot-house"); it was only spoken.
+  **Not taken:** four-quadrant pages (OASIS's ≈140 words a page are read alone, over 130–150 pages); maps and
+  icons; a three-scenario probability table (the brief asks for "at least one", and no run stands behind more).
+  **For the script, after submission:** cut to ≈1,300 words first (it is 1,475: 11:15 with names at 135 a minute);
+  an opening with something at stake; Win naming what would change the advice (the gap, the plastic price,
+  Adrian's job); the count of decisions (six spoken, seven entries on slide 13).
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
-  20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. Slides 1–2's stage is deep navy.
+  20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
+  font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
+  the first run PowerPoint saved the file without the font and still reported success; `make_pptx.py` now saves
+  again and stops if the font is missing. Slides 1–2's stage is deep navy.
   Why: the rose-tinted greys and a colour per letter (brown on slide 4, purple on slide 9) read as odd and made
   crimson and teal compete. Chosen from three schemes rendered side by side (now, calm greys, navy).
 - Plus Jakarta Sans for every role; nothing under 16px. Crimson is the one accent (money at risk, the slide's point);
@@ -1662,11 +1699,16 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 - Dress formally; name tags visible. Say "Team Axis" before the first speaker; each speaker says their simple name
   before their part (there is a best presenter award). Never say the university's name.
-- Warnings at 3 minutes and 1 minute left. **Over 10:30 disqualifies the team.** Aim for 9:20.
+- Warnings at 3 minutes and 1 minute left. **Over 10:30 disqualifies the team.** The script targets 10:00 with names.
 - Teams that haven't presented wait outside, so we won't see the others before our turn.
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov (Pete, Claude): the reference decks read against the brief** (§3, "The brief's missing words, on
+  screen"). Slide 12 gains numeric triggers and the next dates; slide 13 says which part of the headline is the
+  sustainable part; slide 5 names the scenario disorderly. §0 refreshed from the deck (thirteen slides, 10:00, the
+  headline decided); the change test added to §3.
 
 - **13 Nov, night (Pete, Claude): storyline v5** (§4.5). Pete: the deck didn't build from slide to slide; revamp,
   "push for the best". An arc from the product's label (slide 1) to the plan's label (slide 9), three acts in the

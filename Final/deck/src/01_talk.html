@@ -40,11 +40,15 @@
 .o9-dates{font:500 15px/1.45 var(--text)}
 .o9-dates b{font-weight:800}
 /* slide 12's right column after the trim: the product's label against the plan's (Pete 14 Nov) */
-.v9-side{gap:12px;padding-top:40px}
+.v9-side{gap:12px;padding-top:6px}
 .v9-side .o9-prod{font-size:17px} .v9-to{color:#8892A2;padding-left:30px} .v9-to .ic{width:26px;height:26px;stroke-width:2.4}
 .v9-pl{font:600 18px/1.4 var(--text);color:var(--ink)}
-.v9-miss{margin-top:18px;font:500 16px/1.45 var(--text);color:var(--ink);border-left:4px solid var(--brand);padding-left:12px}
+.v9-miss{margin-top:8px;font:500 16px/1.45 var(--text);color:var(--ink);border-left:4px solid var(--brand);padding-left:12px}
 .v9-miss b{font-weight:800;color:var(--brand)}
+/* slide 12's next dates: the brief's implementation milestones (15 Nov) */
+.v9-dates{margin-top:10px}
+.v9-dates p:not(.o9-k){display:flex;gap:12px;align-items:baseline;font:500 15.5px/1.3 var(--text);color:var(--ink);padding:4px 0;border-top:1px solid var(--rule)}
+.v9-dates p b{flex:none;width:124px;font:800 15px/1.3 var(--num)}
 /* 9B: the product's label beside the plan's */
 .o9b-body{display:flex;align-items:flex-start;gap:22px;margin-top:16px}
 .o9b-prod{flex:none;width:330px;border:2px solid var(--grey);border-radius:6px;padding:16px 18px;background:var(--mist)}
@@ -345,6 +349,13 @@
 .v10-out span{display:inline-block;width:76px;font:800 12.5px/1 var(--text);letter-spacing:.8px;text-transform:uppercase;color:var(--slate)}
 .v10-out b{font-weight:800} .v10-out b.v10-g{font-size:18px;color:var(--brand)} .v10-out b.v10-t{color:#0E7490}
 .v10-out i{font-style:normal;color:var(--slate)}
+/* the close holds a third outcome line (the split, 15 Nov): its grid gives up 30px, here only */
+#v10 .q3-body{gap:8px;margin-top:12px}
+#v10 .q3-gate{padding:7px 18px 7px 12px}
+#v10 .q3-cell{padding:8px 18px 6px}
+#v10 .q3-e{margin-top:6px}
+#v10 .v10-out{padding-top:6px}
+#v10 .sowhat{margin-top:10px}
 /* v5 slides 5 and 6 (ids: classes are global): the strip as two full-width lines; the footprint bar at full size */
 #v5 .s6-strip{flex-direction:column;gap:3px}
 #v5 .s6-grid svg{width:780px;height:403px} #v5 .s6-rule{padding-top:0}
@@ -562,7 +573,7 @@
     <line x1="0" y1="86" x2="1184" y2="86" stroke="#DCE1E8" stroke-width="1.5"/>
     <text x="0" y="118" font-size="13" font-weight="800" letter-spacing="1" fill="#0F1E3D">THE WONGS</text>
     <circle cx="112" cy="113" r="10" fill="#4A3FBF"/><text x="112" y="118" font-size="12.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
-    <text x="130" y="118" font-size="14" fill="#566173"><tspan font-weight="800" fill="#0F1E3D">One illustrative downturn, 2030–31:</tspan> carbon policy arrives late and hard</text>
+    <text x="130" y="118" font-size="14" fill="#566173"><tspan font-weight="800" fill="#0F1E3D">One disorderly downturn (illustrative), 2030–31:</tspan> carbon policy arrives late and hard</text>
     <!-- row labels -->
     <text x="0" y="176" font-size="13" font-weight="800" letter-spacing=".8" fill="#0F1E3D">WHAT THEY</text>
     <text x="0" y="192" font-size="13" font-weight="800" letter-spacing=".8" fill="#0F1E3D">OWN AND EARN</text>
@@ -982,13 +993,13 @@
         <p class="o9-h"><i>1</i>Holds its limits when climate hits</p>
         <p class="o9-row"><span>The money lasts, in a normal future</span><b>{{fin_plan_odds100}} in 100</b><em>limit 95</em></p>
         <p class="o9-row"><span>In the 2030–31 downturn</span><b>{{fin_plan_sodds100}} in 100</b><em>limit 85</em></p>
-        <p class="o9-trig"><b>Trigger:</b> income, health or markets change → run it again</p>
+        <p class="o9-trig"><b>Trigger:</b> older flats fall ≈{{fin_pflipn_cross}} behind newer ones → decide the flat's route that year</p>
       </div>
       <div class="o9-sec">
         <p class="o9-h"><i>2</i>Claims only what it changes</p>
         <p class="o9-row"><span>Carbon cut in the business, measured from 2027</span><b>≈134 t</b><em>a year</em></p>
         <p class="o9-row"><span>Shares: 30% less carbon than the market, a footprint</span><b>none</b><em>claimed</em></p>
-        <p class="o9-trig"><b>Trigger:</b> the evidence is missing → claim less, and say so</p>
+        <p class="o9-trig"><b>Trigger:</b> recycled plastic costs more than new again → its 108 t are priced again</p>
       </div>
       <div class="o9-sec">
         <p class="o9-h"><i>3</i>Pays for values only from the room above its limits</p>
@@ -996,13 +1007,20 @@
         <p class="o9-row"><span>Still free after Carmen's choices</span><b>≈{{fin_room_free_hk}}</b><em></em></p>
         <p class="o9-trig"><b>Trigger:</b> a price passes the room → both parents re-sign</p>
       </div>
-      <p class="o9-end"><b>Assumes Adrian works to 65.</b> Claims checked outside; any restatement shows the old figure · odds MEASURED · tonnes ESTIMATED</p>
+      <p class="o9-end"><b>Assumes Adrian works to 65;</b> if his job or health changes, run it again. Claims checked outside; any restatement shows the old figure · odds MEASURED · tonnes ESTIMATED</p>
     </div>
     <div class="o9-side v9-side">
       <div><p class="o9-k">A PRODUCT'S LABEL</p><p class="o9-prod"><span class="chip">ESG ✓</span><span>says what a fund holds</span></p></div>
       <p class="v9-to"><svg class="ic"><use href="#i-arrow-down"/></svg></p>
       <div><p class="o9-k">THE PLAN'S LABEL</p><p class="v9-pl">says whether the whole plan still passes all three tests, every year, with a trigger on every line</p></div>
       <p class="v9-miss"><b>A missing price becomes a decision:</b> buy the data, use a range, or set a trigger.</p>
+      <div class="v9-dates"><p class="o9-k">NEXT DATES</p>
+        <p><b>2027</b><span>the first review; the scholarship funded, 2027–28</span></p>
+        <p><b>by 31 Mar 2028</b><span>the electric vans, before the tax waiver ends</span></p>
+        <p><b>every year</b><span>the flat's price gap, checked</span></p>
+        <p><b>2035–39</b><span>Carmen sells her half of the business</span></p>
+        <p><b>by 2046</b><span>the flat's route decided</span></p>
+      </div>
     </div>
   </div>
   <p class="sowhat">A product's label never changes. The plan's label is earned again every year.</p>
@@ -1010,7 +1028,7 @@
     limits? In {{fin_plan_odds100}} futures out of 100, and {{fin_plan_sodds100}} in a downturn: above both. What does it
     change? About 134 tonnes a year in the business, measured from 2027; for the shares, a footprint, nothing claimed.
     Does it stay inside the room? Of a {{fin_room_gift_plain}} budget, about {{fin_room_free_hk}} is still free. Every line has a trigger, and a missing price becomes a decision: buy it, use a range, or set a trigger. So, what makes a plan sustainable? Pete.
-    [Notes: Moved off the slide (Pete 14 Nov: one point per slide): attribution, read against a plain twin fixed at signing (what the plan changed, what markets did, what we can't measure yet); the biases; the three missing prices (buy: the business's carbon data, ≈HK$54–73K a year; range: ESG funds in a downturn, no credit; trigger: recycled plastic at today's price). DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov):
+    [Notes: 15 Nov (Final_Plan.md §3, "The brief's missing words, on screen"): two triggers made numeric (the flat's gap, fin_pflipn_cross, Decision_List.md H1; recycled plastic's price, B4) and the next dates added, the brief's implementation milestones (G1 2027–28; B1 the tax waiver to 31 Mar 2028; H1 yearly and 2046; B7 2035–39). Moved off the slide (Pete 14 Nov: one point per slide): attribution, read against a plain twin fixed at signing (what the plan changed, what markets did, what we can't measure yet); the biases; the three missing prices (buy: the business's carbon data, ≈HK$54–73K a year; range: ESG funds in a downturn, no credit; trigger: recycled plastic at today's price). DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov):
     fin_plan_odds ({{fin_plan_odds}}) and fin_plan_sodds ({{fin_plan_sodds}}): the vans, candidate A's fees and the
     scholarship for life funded now (Pete 14 Nov, §5.3 option 1), the reverse-mortgage route; the label approach at
     the same fee and giving: {{fin_fair_lab100}} and {{fin_fair_lab_s100}}. Room used: fin_plan_room_use, from plain
@@ -1065,7 +1083,7 @@
         <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 4, 11</i></p><p>{{fin_val_esg_n}} from the room; not called impact</p></div>
       </div>
     </div>
-    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan · <b class="v10-t">≈134 t</b> CO2e a year less · <b>26.6%</b> in ESG funds, the share they asked for</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
+    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan · <b class="v10-t">≈134 t</b> CO2e a year less · <b>26.6%</b> in ESG funds, the share they asked for</p><p><span>Of which</span>about half is the vans, the sustainable part; the rest is ordinary planning: the gift funded now, cheaper funds</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
   </div>
   <p class="sowhat" data-b="2">The label never decides. The limit, the change and the room do.</p>
   <aside class="notes">PETE: So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. By their own standards: Adrian wanted to retire safely, and his limit holds, {{fin_plan_odds100}} futures in 100, {{fin_plan_sodds100}} in a downturn. Carmen wanted money that does good: about 134 tonnes a year cut, a scholarship for life, and nothing claimed we can't show. And the share of ESG funds they asked for? It comes out at twenty-six point six per cent, as a by-product. Against the plan a reasonable planner would give without the test, the children get {{fin_fair_gain}}. The label never decides. Thank you.
@@ -1077,7 +1095,8 @@
     alignment, never impact: "We don't refuse Carmen's values. We refuse the label." Capital: Decision_List.md §2
     (ESTIMATED). Headline (Pete 14 Nov, §5.1 option (a)): fin_fair_gain, M9b's fairest row; its parts in order: the vans
     {{fin_fair_vans}} (the sustainable part), funding the awards instead of pledging them {{fin_fair_gift}} (the funded-
-    giving rule), the rest of the fee gap {{fin_fair_fees}} (ordinary planning). Say the split if asked; never
+    giving rule), the rest of the fee gap {{fin_fair_fees}} (ordinary planning). On screen since 15 Nov in words
+    ("Of which: about half is the vans"), so the vans show one figure on this slide; say the HK$ split if asked; never
     "HK$2.4M". The comparison (Final_Plan.md §2): the reasonable planner's plan, the family's ESG wish met with
     labelled funds as cheap as ours and the giving kept as their lifelong pledge; the corners stay against each
     decision's plain alternative.]</aside>
