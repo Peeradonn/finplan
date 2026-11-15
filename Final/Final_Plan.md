@@ -24,7 +24,7 @@ an argument; where it disagrees with those files, they win.
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
-| **Now** (15 Nov) | The 13 talk slides and backups 14–28 are built in HTML; the PowerPoint is behind them (rebuild it after the last edit, Pete 15 Nov: HTML first). Every step slide carries its switch point (§3). The script is 1,310 spoken words: 10:02 at 135 a minute with names. Left: send before the deadline; then the timed run, the cold read and the question drills |
+| **Now** (15 Nov) | The 13 talk slides and backups 14–28 are built in HTML; the PowerPoint is behind them (rebuild it after the last edit, Pete 15 Nov: HTML first). Every step slide carries its switch point (§3). The script is 1,256 spoken words (15 Nov review): 9:38 at 135 a minute with names, 10:22 at 125, so under 10:30 at either pace; slots total 9:45. Left: send before the deadline; then the timed run, the cold read and the question drills |
 
 **The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
 the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
@@ -32,18 +32,18 @@ the deck; the rows' history is in §4.5 and §3, whose entries use the numbering
 | # | Step | Who | Time | Title |
 |---|---|---|---|---|
 | 1 | Open | Pete | 1:20 | What makes a plan sustainable? (closes on the claim) |
-| 2 | Framework | Pete | 0:45 | PRISM: five steps, three tests |
+| 2 | Framework | Pete | 0:40 | PRISM: five steps, three tests |
 | 3 | Profile | Pete | 0:35 | Own money, own limits; shared money follows the more prudent |
 | 4 | Profile | Pete | 0:40 | Set the limit first; values spend only the room above it |
-| 5 | Risk | Lookbua | 1:10 | Check everything they own and earn, not just what a label covers |
+| 5 | Risk | Lookbua | 1:00 | Check everything they own and earn, not just what a label covers |
 | 6 | Select | Lookbua | 0:45 | The limit decides before preferences do |
-| 7 | Impact, Select | Fahtai | 0:45 | From climate risk to the changes a business can make (Fahtai, 15 Nov) |
-| 8 | Select | Fahtai | 0:35 | A green label pays only above a size; below it, finance the cut plainly |
-| 9 | Select | Fahtai | 0:35 | Judge a green loan as a loan, against the cheapest plain one |
-| 10 | Select | Win | 0:35 | Pass a product only if its rule binds and it fits its owner's limit |
-| 11 | Select | Win | 0:40 | The sustainable share is an output of the limits, paid from the room |
-| 12 | Monitor | Win | 0:45 | Label the plan, not the product |
-| 13 | Close | Pete | 0:50 | The claim: the four corners, filled; the outcome and the capital |
+| 7 | Impact, Select | Fahtai | 0:45 | Price every cut in the footprint against what it replaces |
+| 8 | Select | Fahtai | 0:40 | Match the funding to what the change needs |
+| 9 | Select | Fahtai | 0:40 | A green label must justify its full cost and obligations |
+| 10 | Select | Win | 0:40 | Pass a product only if its rule binds and it fits its owner's limit |
+| 11 | Select | Win | 0:35 | The sustainable share is an output of the limits, paid from the room |
+| 12 | Monitor | Win | 0:40 | Label the plan, not the product |
+| 13 | Close | Pete | 0:45 | The claim: the four corners, filled; the outcome and the capital |
 
 ## 1. What the judges score
 
@@ -140,6 +140,11 @@ CBAM and a sustainability-linked loan don't fit her, so "Financing the Transitio
 products don't fit and what does (slides 7–8; §5.7).
 
 ## 3. Rules for every slide
+
+**One verdict vocabulary** (15 Nov review, §4.5): a decision's verdict uses the close's own words and icon (Do it ·
+Do it, but don't call it green · Pay knowingly, from the room · Don't pay for the label), placed where that slide
+decides it. Why: a framework the judges can predict before the speaker says it; the close then collects verdicts
+already heard. Gates before the corners (the limit, the product check, a size threshold) keep their own words.
 
 **The framework frames, the Wongs prove** (Pete, 10–13 Nov, after five drifts into a Wong case study; moved here from
 §4.4 on 13 Nov). The brief asks for a framework demonstrated on one client (§1, "The task"); judges should leave with our
@@ -1524,6 +1529,64 @@ own head; side by side with v4 in `Final/deck/build/options/compare-4.png` and `
   claimed" beside "a footprint"; "1 futures" now "1 of 3". The card's money lines use the base plan's keys, as v4's
   slide 10 did; whether they should show the recommended plan instead is open (the close uses the recommendation).
 
+#### 15 Nov, the review (Pete: "what are the judges asking for ... what are we lacking ... fix it, don't let time be the constraint")
+
+**What the review found** (Claude, against the three Final PDFs; lenses: practitioner, the topic's author as ESG
+strategist, compliance, banker, the back of the room). The substance was strong; three things were missing.
+1. **The brief's own words were absent from the ten minutes.** Checked on every talk slide and in the script: greenium,
+   green premium, transition finance, impact investing, ESG integration, HK Taxonomy, CBAM, debt cover, the five
+   biases and attribution were neither on screen nor spoken; two of area 1's five kinds of finance were on screen.
+2. **Slides 7–9 had lost the brief's area 2 content:** no debt cover, no greenium against green premium, no kinds of
+   finance placed, and the loop (customers' Scope 3 → the sale price, §4.1) gone from the talk.
+3. **The framework's verdict appeared only at 9:10.** Each speaker used their own verdict words; the close's four
+   corners were new to the room.
+Also: the comparison behind the headline was named but never defined in the talk; the headline had no horizon; the
+same decision carried two prices in two units with no label (the scholarship HK$0.74M on slide 4, −HK$1.32M on
+slide 13; Carmen's ESG funds HK$0.28M of the room, −HK$0.62M "paid from the room"); slide 4's limit label touched the
+sheet's edge; the script ran 10:46 at 125 words a minute, past the 10:30 line.
+
+**What changed, slide by slide** (render-checked; numbers unchanged; every model figure still a key):
+- **1** the comparison named ("the same careful plan without the test") and the headline's horizon and unit (at Carmen's
+  89, median, today's HK$). **2** Select names "two prices, then one of four verdicts" in words, no graphic (Pete
+  removed the corners graphic on 14 Nov); spoken: "a label is one beam; PRISM splits it".
+- **One verdict vocabulary** (§3): each decision's verdict in the close's own icon and words where it is decided, so
+  slide 13 collects what the room has heard: slide 4 (the scholarship: pay knowingly), 6 (the yearly gap check: do it,
+  don't call it green; the green mortgage: don't pay for the label), 7 (do it), 9 (don't pay for the label, unless free),
+  11 (Carmen's costly funds: don't pay for the label). Pete dislikes "one device repeated on every slide": this is the
+  framework's output, placed where each decision sits, not a sticker in a fixed spot; veto it if it reads as decoration.
+- **4** the limit label inside the sheet. **5** CBAM by name; weather as a missing price (insurance and levies, read at
+  each renewal). **6** both verdicts under the chart.
+- **7–9 (Pete kept Fahtai's layout, 15 Nov):** the review first rebuilt them (a cost curve; each instrument on a log
+  size scale; a chain from the HKEX rule to the sale). Pete: the size-scale form was one he had already said he couldn't
+  read, and the rebuilt slides "drop a lot of fact without communicating"; Fahtai's layout can carry the points. Agreed:
+  his earlier comprehension test outranks the review's taste. Fahtai's slides are restored and carry the points: 7 the
+  energy audit, the cost curve named, Do it; 8 savings cover ≈87% of payments, debt cover 5.7× → ≈3×, the four kinds at
+  her size (sustainability-linked, supply-chain, the Grant Scheme, transition finance, each with its threshold); 9 the
+  greenium and green premium by name, "don't pay for the label, unless it's free", and the loop at the sale (the vans
+  `fin_dot_vans_n`; data guards `fin_cust10_leg`; HKEX, ISSB-aligned). The review's three slides are backups 29–31.
+- **10** the kind sets the test (ESG integration passes on cost and risk; impact investing needs its own effect, none
+  shown); the index named (an EU Climate Transition Benchmark); coverage 99.8%; who may hold it (§8). **11** one price,
+  one unit (`fin_val_esg_n` at Carmen's 89, `fin_room_esg_hk` of the room in today's giving); currency, duration and
+  liquidity, the brief's words; temperature rise as a band, no HK Taxonomy alignment reported. **12** attribution
+  against a plain twin fixed at signing, and the five biases each with its design choice. **13** the comparison defined
+  on screen; the unit beside the children's axis; **the climate index fund moved to "do it, but don't call it green"**:
+  it costs what its plain twin does, so the corner rule puts it there; the family's ESG price is Carmen's green bond and
+  MPF funds (`Decision_List.md` P1, P4 corrected).
+- **Script:** 1,256 spoken words (was 1,305): what is on screen left the speech, not the claims. Speakers make it theirs.
+
+**Earlier calls the review challenges (Pete to decide; Pete asked for this, 15 Nov):**
+1. *Slides that read without the voice* came from Round Two, where the file was scored apart from the video. The Final's
+   guidelines score the live talk; whether judges read the file is unverified. It is why talk slides carry ≈150–320
+   words for 35–45 s (slides 12 and 13 are densest after this review added the brief's missing items). Proposed: design
+   the talk slides for the room (the picture, its numbers, the rule) and let backups carry the reading detail.
+2. *"10 minutes, not 9."* At 125 words a minute the old script disqualified; the 30 s is the rule's buffer for surprises.
+   Proposed: about 9:30 at the pace the timed run measures (done in the script; the run decides).
+3. *Plain English everywhere* hid the brief's terms. Kept: plain claim first, the term once, with its number.
+4. *The four corners off slide 2* left the verdict unseen until the close. Kept off as a graphic; named in words.
+5. *"A reasonable planner's plan"* doesn't advise on the business by definition, so the vans fall on our side by
+   construction; defined on screen now, and the split ("about half is the vans") stays.
+6. *EDMW named after checking its assets and documents*, but not whether these clients can be offered it (§8, §9).
+
 #### Storyline v4 (superseded by v5, 13 Nov, night; kept for each slide's evidence and build history)
 
 Evidence: **HAVE** (in a brief, checked) · **CHECK** (confirm at a primary source) · **MODEL** (`model_runs.md`; on a
@@ -1799,6 +1862,11 @@ is the planning process with green added" (§4.2's table; §4.4 "What is ours").
 | Practitioner | What if Adrian loses his job at 58? | Every odds figure assumes he works to 65, and we say so. With no response the plan breaks both limits (45.4% normally if he doesn't work again); a contingency restores them: half his pay again, HK$200K a year less spending, Carmen working to 65 (95.9%; 86.7%; `model_runs.md` M10b). Disability, the insurable form, is the case's own protection gap | **Yes**, until the footnote and backup exist (§5.10) |
 | Anyone | What would you not do? | Refusals with numbers: the green mortgage, a paid green-loan label, the clean-energy fund, a sustainability-linked loan at her size, impact claims for listed shares | — |
 | Anyone | Do clients really ask for labels? | We don't say they do: when a sustainable plan is asked for, the tools a planner is handed are labels (the SFC's ESG fund list) | Re-count the list Sun 15 |
+| Compliance (the brief names SFC suitability and product due diligence) | Can you even recommend EDMW to them? | EDMW and its plain twin IWDA are Irish UCITS ETFs, not SFC-authorised (`area3_portfolio.md`, SFC product list, 4 Nov). A recommendation must pass suitability for each parent (Code of Conduct 5.2); offering an unauthorised fund to the public is restricted (SFO s.103), with an exemption for professional investors (a portfolio of at least HK$8M, Cap. 571D), which each parent, at ≈HK$2.07M plus deposits, probably doesn't meet alone. Say "a compliance check before we implement", never "cleared". If they can't be offered it, the SFC-authorised index route costs 2.45% (Sun Life, KFS Apr 2026), both sides move to authorised funds and are re-priced, and for Adrian the climate fund stops being free: its corner moves and his 24% returns to the plain fund. The verdict flips; the rule doesn't | **Yes**: the one-to-one point is UNVERIFIED (§9) |
+| CPA | The scholarship is HK$0.74M on slide 4 and −HK$1.32M on slide 13. Which? | Both: HK$0.74M is the fund given now; −HK$1.32M is what the children inherit at Carmen's 89 without it, in today's money, because the money given away no longer grows. Slide 13 labels its axis | — |
+| CPA | The vans are +HK$0.51M on slide 9 but +HK$0.54M in backup 15 | +HK$0.51M is the vans alone against new diesel vans (`fin_dot_vans_n`); +HK$0.54M is their step in the headline's sequence (`fin_fair_vans`) | — |
+| Banker | Your debt cover: at what diesel price? | ≈3× after the loan at HK$31/L, the government's after-discount average; 3.3× at the pump-list price (`area2_business.md` §3d); 5.7× before. Bank thresholds UNVERIFIED | — |
+| Practitioner | Your "reasonable planner" doesn't touch the business. Isn't that a strawman? | It is our specified comparison (§2), not a claim about advisers. Against a planner who also buys the vans and funds the gift, the money effect is about zero; the case rests on what the test adds: the tonnes at no cost, the flat's switch point, the customers' data guarding the sale, and what may be claimed (backup 15) | Moderate: say it first, in 20 s |
 
 ## 9. Facts to check before they go on a slide
 
@@ -1826,6 +1894,10 @@ Each brief has its own full list (its last section). The ones the storyline lean
 | Why not "safety first": Roy, "Safety First and the Holding of Assets", *Econometrica* 20(3) (1952), pp. 431–449; Pfau, *Safety-First Retirement Planning* (2019) and the RISA styles (probability-based against safety-first) | **Confirmed** 13 Nov from secondary sources (Kitces, FPA *Journal*); ours is the probability-based school |
 | Anyone already pricing ESG preferences as surplus above a goal floor | Not found in one search (13 Nov); the goals-based literature found (Das, Ostrov, Radhakrishnan and Srivastav, *JOIM* 2018) has no ESG constraint. Not proof nobody has: never say "first" |
 | The number of funds on the SFC's ESG list | Re-count Sun 15 |
+| Professional investor: an individual's portfolio of at least HK$8M, alone or on a joint account with a spouse or child (Cap. 571D); whether MPF counts; how a joint account is shared since the 2018 amendment | Research 15 Nov from secondary sources only (the e-Legislation text didn't load): read Cap. 571D's definition of "portfolio" (Win) |
+| Whether a licensed adviser's one-to-one recommendation of a non-authorised fund is an offer "to the public" (SFO s.103) | UNVERIFIED: ask a licensed adviser or compliance officer before saying more than "a compliance check before we implement" |
+| Whether Ireland and the London listing are on the SFC's list of specified jurisdictions (complex-product test) | Check sfc.hk's list (Win) |
+| EDMW is not SFC-authorised | SOURCED 4 Nov (`area3_portfolio.md`); re-check the SFC register before the 21st |
 
 ## 10. Untested assumptions (test, don't build on)
 
@@ -1852,6 +1924,11 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov, later (Claude, Pete's review request): the brief's missing words and verdicts** (§4.5, "15 Nov, the
+  review"). Slides 1, 2, 4–6 and 10–13 edited; Fahtai's 7–9 kept (Pete) with the review's points inside them; the
+  review's three rebuilt slides are backups 29–31; the climate index fund's corner corrected (`Decision_List.md` P1,
+  P4); script 1,256 words; §8 and §9 gain the who-may-hold-it question. No model number changed.
 
 - **15 Nov (Pete, Claude): slides 3, 4, 11 and 13** (§3). Profile's steps in order across slides 3–4, step 1 in our
   words, not the brief's list; slide 11 draws each limit as a wall and fixes its price contradiction; the close is a

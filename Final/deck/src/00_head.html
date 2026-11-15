@@ -127,10 +127,10 @@ b,strong{font-weight:600}
 .slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .head .kt-do,
 .slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .head .kt-not{color:#C9D1DE}
 .slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .body{background:#fff;border-radius:10px;padding:12px 18px 10px;margin-top:12px}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .foot,
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .foot .pg{color:#A9B1CC}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .badge-prism p{color:#D6DBEA}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .badge-prism p span{color:#A9B1CC}
+.slide:not(.s1-stage):not(.s2-stage) .foot,
+.slide:not(.s1-stage):not(.s2-stage) .foot .pg{color:#A9B1CC}
+.slide:not(.s1-stage):not(.s2-stage) .badge-prism p{color:#D6DBEA}
+.slide:not(.s1-stage):not(.s2-stage) .badge-prism p span{color:#A9B1CC}
 .slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .bk-credit{color:#A9B1CC}   /* backup 24's photo credits, on the stage */
 .slide:not(.s1-stage):not(.s2-stage):not(.v10-stage) .bk-credit b{color:#D6DBEA}
 /* the prism strip (Pete, 15 Nov): slide 13's prism at the foot of every slide with a verdict, all five bands coming
@@ -138,15 +138,15 @@ b,strong{font-weight:600}
    no single step). It replaces the conclusion bar's box and the badge's drawing. Top to bottom, balanced (Pete: "the
    text is too high up"): the verdict (14-42 px), the beam (53), then the step, areas and sources (70-84). */
 .st-strip{position:absolute;left:0;bottom:0;width:1280px;height:104px}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage):has(> .st-strip){padding-bottom:116px}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage):has(> .st-strip) .sowhat{position:absolute;left:214px;right:40px;bottom:62px;
+.slide:not(.s1-stage):not(.s2-stage):has(> .st-strip){padding-bottom:116px}
+.slide:not(.s1-stage):not(.s2-stage):has(> .st-strip) .sowhat{position:absolute;left:214px;right:40px;bottom:62px;
   margin:0;padding:0;background:none;border-radius:0;font:800 22px/1.25 var(--head);color:#fff;text-wrap:balance}
 /* the backups' verdicts run longer (up to ~120 characters): two balanced lines, rising from the beam */
 .slide[data-backup]:has(> .st-strip) .sowhat{font-size:20px;line-height:1.2}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage):has(> .st-strip) .foot{left:214px;right:32px;bottom:20px;height:16px;gap:14px}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage):has(> .st-strip) .foot .src{font-size:11.5px}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage):has(> .st-strip) .badge-prism p{display:flex;align-items:baseline;gap:8px}
-.slide:not(.s1-stage):not(.s2-stage):not(.v10-stage):has(> .st-strip) .badge-prism p span{margin-top:0}
+.slide:not(.s1-stage):not(.s2-stage):has(> .st-strip) .foot{left:214px;right:32px;bottom:20px;height:16px;gap:14px}
+.slide:not(.s1-stage):not(.s2-stage):has(> .st-strip) .foot .src{font-size:11.5px}
+.slide:not(.s1-stage):not(.s2-stage):has(> .st-strip) .badge-prism p{display:flex;align-items:baseline;gap:8px}
+.slide:not(.s1-stage):not(.s2-stage):has(> .st-strip) .badge-prism p span{margin-top:0}
 .kick b.k-impact{color:var(--I)}
 /* the twist kicker (Pete, 11 Nov): a step slide names its PRISM letter and the twist slide 2 gives it, so the framework
    is the spine of every slide, not only of slide 2. kt- classes only here. */

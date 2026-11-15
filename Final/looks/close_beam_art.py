@@ -103,7 +103,9 @@ if __name__ == "__main__":
     svg, y = draw(range(5), opaque=False)
     shoot(svg, os.path.join(IMG, "close-beam.png"), opaque=False, H=84)
     print(f"close: beam at y={y:.1f}")
-    for name, lit in [(L, [i]) for i, L in enumerate("PRISM")] + [("all", range(5))]:
+    # one step lit; "IS" for slide 7 (Impact and Select, its kicker; Pete 15 Nov: "we're still missing the blue band");
+    # "all" for backups that cover no single step
+    for name, lit in [(L, [i]) for i, L in enumerate("PRISM")] + [("IS", [2, 3]), ("all", range(5))]:
         svg, y = draw(lit, opaque=False, H=104, dy=10)
         shoot(svg, os.path.join(IMG, f"strip-{name}.png"), opaque=False, H=104)
     print(f"steps: beam at y={y:.1f}")
