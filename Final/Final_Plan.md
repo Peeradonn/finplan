@@ -141,6 +141,16 @@ products don't fit and what does (slides 7–8; §5.7).
 
 ## 3. Rules for every slide
 
+**Designed for the room** (Pete, 15 Nov: "design the slides for the room", reversing Round Two's "reads without the
+voice"; the Final scores the live talk). Per talk slide: the picture first; about six type sizes, one per role (label
+13, body 15, heading 18, numbers 20 to 24, one focal number, the title); nothing read in the room under 13px (source lines
+and chart axes excepted); what the voice says or a backup holds leaves the screen. Budget from the live reference
+(OneTable, presenting version, measured 15 Nov: median 135 words a page, 6 to 10 sizes, nothing under 12px). Measured after
+the pass (PDF spans, body only): the smallest text 13px on every talk slide but 10 (chart axes, 12.3); slide 7 from 12
+sizes to 5 and 252 words to 191; slide 12 from 9 sizes to 7 and 330 words to 295. Still above budget: 12 (295 words, the
+dashboard) and 13 (277, the close), both summaries by design; 5, 8, 11 and 13 still use 10 sizes, mostly inside their
+drawings. Before images: the session's scratchpad; the layouts are unchanged, so any slide reverts from git.
+
 **One verdict vocabulary** (15 Nov review, §4.5): a decision's verdict uses the close's own words and icon (Do it ·
 Do it, but don't call it green · Pay knowingly, from the room · Don't pay for the label), placed where that slide
 decides it. Why: a framework the judges can predict before the speaker says it; the close then collects verdicts
@@ -1924,6 +1934,14 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov, evening (Claude, Pete: "design the slides for the room"; "for EDMW you can think about that"):** the room
+  pass on slides 5 to 13 (§3, "Designed for the room"): sub-labels to the notes, every label read in the room at 13px or
+  more, slide 7's tonnes as inline bars, slide 9's green premium and the sale as two blocks with their numbers, slide
+  12's biases as a grid, slide 8's parallel boxes at one size, slide 6's steps in three short lines. EDMW: the question
+  is the whole portfolio's (the plain twins are Irish UCITS too), so backup 32 answers who may hold the funds, with the
+  fallback's fee (≈HK$16 to 39K a year more, ESTIMATED) and the verdict that flips; slide 10 points to it in one line.
+  No model number changed. Axis.pptx rebuilt through PowerPoint; --check clean.
 
 - **15 Nov, later (Claude, Pete's review request): the brief's missing words and verdicts** (§4.5, "15 Nov, the
   review"). Slides 1, 2, 4–6 and 10–13 edited; Fahtai's 7–9 kept (Pete) with the review's points inside them; the
