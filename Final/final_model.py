@@ -633,6 +633,46 @@ def export_final():
         js = stressed(base, sc, mult, biz_add=up, flows=plus(fund, f), **pkw)
         out[f"fin_job_{k}_odds100"], out[f"fin_job_{k}_sodds100"] = f"{round(jn['odds'] * 100)}", f"{round(js['odds'] * 100)}"
         out[f"fin_job_{k}_odds"], out[f"fin_job_{k}_sodds"] = f"{jn['odds']:.1%}", f"{js['odds']:.1%}"
+    # switch points (Pete, 15 Nov: every verdict carries the number that flips it; Final_Plan.md §3). The model's equity
+    # return (m.R_EQ) moves the limit and the room more than any other input. The equity return a year at which a plan
+    # stops holding a limit (bisection between the model's return and 3 points below it), for the recommended plan
+    # (the scholarship funded now), the same with the lifelong pledge, and with no gift; and the room with plain
+    # choices at half a point and a point below the model's return. Each a sensitivity, not a forecast.
+    def holds_to(ok):
+        lo, hi = -0.03, 0.0
+        if not ok(hi) or ok(lo):
+            sys.exit("switch points: a limit must hold at the model's return and fail 3 points below it")
+        for _ in range(20):
+            mid = (lo + hi) / 2
+            lo, hi = (lo, mid) if ok(mid) else (mid, hi)
+        return m.R_EQ + hi
+
+    def plan_ok(flows, stress, limit):
+        def ok(shift):
+            kw = dict(r_eq=r_eq_for(FEE_SAVED) + shift)
+            r = (stressed(base, sc, mult, biz_add=up, flows=flows, **kw) if stress
+                 else run(base, biz=m.BIZ + up, inflows=flows, **kw))
+            return r["odds"] >= limit
+        return ok
+
+    pct = lambda r: f"{r:.1%}"
+    out["fin_ret_eq"] = f"{m.R_EQ:.0%}"
+    for k, flows in (("", fund), ("_pledge", pledge), ("_nogift", {})):
+        rn, rs = holds_to(plan_ok(flows, False, 0.95)), holds_to(plan_ok(flows, True, 0.85))
+        out[f"fin_ret_hold{k}_n"], out[f"fin_ret_hold{k}_s"] = pct(rn), pct(rs)
+        out[f"fin_ret_hold{k}_n_x"], out[f"fin_ret_hold{k}_s_x"] = f"{rn * 100:.2f}", f"{rs * 100:.2f}"
+    if not (float(out["fin_ret_hold_pledge_n_x"]) > float(out["fin_ret_hold_n_x"]) > float(out["fin_ret_hold_nogift_n_x"])):
+        sys.exit("switch points: the notes say funding holds to a lower return than the pledge, and no gift lower still")
+
+    def room_ok(shift):
+        kw = dict(r_eq=r_eq_for(FEE_SAVED + FEE_VALUES) + shift)
+        return run(base, **kw)["odds"] >= 0.95 and stressed(base, sc, mult, **kw)["odds"] >= 0.85
+    rz = holds_to(room_ok)
+    out["fin_room_zero_ret"], out["fin_room_zero_ret_x"] = pct(rz), f"{rz * 100:.2f}"
+    for k, shift in (("55", -0.005), ("50", -0.01)):
+        g = most_gift(base, dict(r_eq=r_eq_for(FEE_SAVED + FEE_VALUES) + shift), sc, mult)
+        out[f"fin_room_ret{k}"], out[f"fin_room_ret{k}_x"] = f"HK${g / 1e6:.2f}M", f"{g / 1e6:.3f}"
+        out[f"fin_ret_lo{k}"] = f"{m.R_EQ + shift:.1%}".replace(".0%", "%")
     return out
 
 

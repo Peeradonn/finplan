@@ -550,6 +550,47 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
   word for word. Still to consider after submission: an opening with something at stake; Win naming what would
   change the advice (the gap, the plastic price, Adrian's job); the count of decisions (six spoken, seven entries
   on slide 13).
+- **Every verdict with its switch point** (Pete, 15 Nov: "go"; HTML first, the PowerPoint later). Aimed at the 40
+  innovation marks, after a review against the stock-pitch notes (`research/Logan Slides/`): a pitch states what most
+  people expect, where it differs, what would prove it wrong and when we'd know. Our version, true for any client:
+  each verdict comes with the number that would flip it, and the numbers are what the plan's label watches. It turns
+  the framework from a description into decisions a planner can check, and it answers the practitioner's first
+  question ("what if your assumption is wrong?") before it is asked.
+  - **Why now: the room hangs on the return assumption** (`model_runs.md` has no market sensitivity; new keys,
+    `reviews/applied.md`, 15 Nov). With plain choices the room is HK$1.7M if equities return 6% a year (the model's),
+    `fin_room_ret55` at 5.5%, `fin_room_ret50` at 5%, and nothing below `fin_room_zero_ret`. The recommended plan holds
+    95 down to `fin_ret_hold_n` and 85 in the downturn down to `fin_ret_hold_s`. So the room is a margin that moves
+    with markets, which is why it is re-measured every year, and slide 4 now says so. Funding the scholarship now is
+    the more robust choice: it holds to `fin_ret_hold_n`, the lifelong pledge only to `fin_ret_hold_pledge_n` (a fund
+    fixes the gift's cost today; a pledge's cost rises when returns fall). A second reason for §5.3, besides present
+    bias.
+  - **On screen:** a small "Flips at" tag in the same place on each step slide (top right, on the kicker's line),
+    each from a key or a sourced figure: 4 the room (`fin_room_zero_ret`); 5 the downturn limit (`fin_ret_hold_s`); 6
+    the flat (`fin_pflipn_cross`); 7 recycled plastic dearer than new (B4); 8 a sustainability-linked loan above
+    ≈HK$4.8M of debt; 9 a rate cut worth more than the ≈HK$12K review; 10 a fee more than 5bp above the plain twin
+    (the mandate's cost test, P6, ILLUSTRATIVE); 11 the fund's own tracking error (2.09% is the index's). Slide 12's
+    limit trigger becomes the return (`fin_ret_hold_n`) and the flat; slide 3 has no number to flip, so no tag.
+  - **Slide 2's "what's ours"** was a second three (one test, values from the room, one measure) beside slide 1's
+    three tests. Now the three tests as practices, plus the switch points: the limit checked on everything they own;
+    changes claimed only where we can show them; values priced in HK$ from the room; every verdict with the number
+    that flips it.
+  - **Slide 1:** "Without a test, the share is the target. With one, it is an output" (slide 11 and the close pay it
+    off); spoken, the fund on the SFC's ESG list that has held nothing for two years (record-only wording, the manager
+    not named; slide 10 is now its payoff). "Up to ≈134 t" on slides 1, 12, 13, as slide 7 says "potential if
+    verified and delivered".
+  - **Slide 7** (Fahtai's, to confirm): its title was the deck's only topic; now a rule for any business. Its bar said
+    greener choices "can require cash upfront or cost more", while its table shows the vans, LED and lighter board
+    saving money; now it says what the table shows, keeping Fahtai's trade-off (cash up front, a quote still needed).
+  - **Withdrawn, the same day:** opening on "for a family with a home and a business, the ESG share is the decision
+    that changes least" (Claude). Pete: "isn't this just specific to the Wongs?" It is: a renter with only an MPF has
+    no home or business lever (§3's test 2). Its general form was already in the deck: the share is an output (slide
+    11), and one measure ranks every decision, the share included. For the Wongs the share ranked last: say it at the
+    close, as their result.
+  - **Open (Pete):** a gate on the scholarship's second half (2028), paid only if the 2027 review still shows room. Not
+    in `Decision_List.md` G1 until decided.
+  - **Backups added (25–28):** every verdict and its switch point; the return sensitivity; the sustainability annex
+    to the investment policy (research/area1_6_framework.md §4, corrected: its "target 22–25%" contradicted slide 11);
+    what PRISM adds to an ordinary engagement.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
   font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
@@ -1635,6 +1676,7 @@ is the planning process with green added" (§4.2's table; §4.4 "What is ours").
 | CPA, practitioner | Where does the HK$2.4M come from? | The split (§5.1); against a fair comparison ≈HK$1.0M | **Yes**, until the re-base |
 | ESG strategist | The pledge was lifelong; your fund pays 20 years. Did you cut their impact to improve the money? | §5.3: like for like, funding is worth +HK$0.38M | **Yes**, until decided |
 | Practitioner | Why 95% and 85%? | The family's limits as we set them (ILLUSTRATIVE); each verdict shown with the floor where it flips | Moderate |
+| Practitioner, CPA | What if markets return less than your 6%? | The plan holds 95 down to equities at ≈5.3% a year and 85 in the downturn to ≈5.2%; the room is HK$1.7M at 6%, ≈HK$0.9M at 5.5%, gone below ≈4.9%. That is why the room is re-measured every year and values spend only what's there (backup 26; `fin_ret_*`, `fin_room_ret*`) | Moderate: the margin is thin, and we say so |
 | Logic | Your values budget equals what you spent | §5.4 | **Yes**, until fixed |
 | ESG strategist | Isn't "sustainable packaging" itself a green label? | PLA is regulated plastic (Cap. 603 s.3A); the EPD calls compostables "premature"; the claim stopped (slide 7) | Ordinance text to read |
 | Practitioner | Why not a sustainability-linked loan, the Grant Scheme, supply-chain finance? | Grant: a loan of at least HK$100M (HKMA guideline, 24 Apr 2026); the ratchet HK$450–2,250 a year against ≈HK$12K of verification; supply-chain finance anchors at ≈US$100M of trade spend, her purchases ≈US$3.4M | — |

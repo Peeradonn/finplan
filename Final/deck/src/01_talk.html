@@ -161,8 +161,9 @@
   background:var(--brand);color:#fff;font:800 11.5px/1 var(--text);margin-right:7px;vertical-align:1px}
 /* the limit slide after the split: the Wongs' panel full width under the two steps */
 #v3 .p4-body{flex-direction:column;gap:6px} #v3 .p4-right{width:100%} #v3 .v3-steps{margin-top:2px}
-#v3 .v3-bar{height:78px} #v3 .v3-bt{font-size:21px;margin-top:16px} #v3 .v3-bt b{font-size:32px} #v3 .v3-bs{font-size:15.5px;margin-bottom:30px}
-#v3 .v3-lab b{font-size:21px} #v3 .v3-lab p{font-size:15px} #v3 .v3-warn{font-size:16.5px;margin-top:20px} #v3 .v3-who2{margin-top:22px}
+#v3 .v3-bar{height:70px} #v3 .v3-bt{font-size:21px;margin-top:12px} #v3 .v3-bt b{font-size:32px} #v3 .v3-bs{font-size:15.5px;margin-bottom:18px}
+#v3 .v3-lab b{font-size:21px} #v3 .v3-lab p{font-size:15px} #v3 .v3-warn{font-size:16.5px;margin-top:14px} #v3 .v3-who2{margin-top:14px}
+#v3 .v3-mkt{font-size:16.5px}   /* the room's switch point (15 Nov): the rows above gave up 30px for it */
 /* v5 slide 3 in HK$ (Pete 14 Nov): an icon per step, the disagreement rules in the left column's white space, and
    the room as a values budget in today's money that ends at the limit (v3- classes only here) */
 #v3 .p4-left{width:466px} #v3 .p4-right{display:flex;flex-direction:column}
@@ -179,7 +180,7 @@
 .v3-rules p:not(.v3-rh)::before{content:"";position:absolute;left:1px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--brand)}
 .v3-rules b{font-weight:800}
 .v3-bt{font:500 19px/1.3 var(--text);margin-top:12px} .v3-bt b{font:800 28px/1 var(--num);color:var(--brand)}
-.v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 28px} .v3-bs b{color:var(--accent);font-weight:800}
+.v3-bs{font:500 14.5px/1.35 var(--text);color:var(--slate);margin:6px 0 14px} .v3-bs b{color:var(--accent);font-weight:800}
 .v3-brk{display:flex;margin-right:5px}
 .v3-brk p{font:600 14px/1.2 var(--text);color:var(--ink);text-align:center}
 .v3-brk p i{display:block;height:8px;margin-top:4px;border:1.5px solid var(--ink);border-bottom:none}
@@ -190,8 +191,9 @@
 .v3-lab b{display:block;font:800 18px/1.15 var(--num);color:var(--ink)}
 .v3-lab .v3-lfree b{color:var(--slate)}
 .v3-lab p.v3-llim{flex:none;width:44px;padding:0;margin-right:-22px;text-align:center;font:800 13px/1.15 var(--text);color:var(--accent)}
-.v3-warn{font:500 15.5px/1.35 var(--text);margin-top:18px;color:var(--ink)} .v3-warn b{color:var(--accent);font-weight:800}
-.v3-who2{display:flex;gap:28px;margin-top:24px;border-top:1px solid var(--rule);padding-top:10px}
+.v3-warn{font:500 15.5px/1.35 var(--text);margin-top:12px;color:var(--ink)} .v3-warn b{color:var(--accent);font-weight:800}
+.v3-mkt{font:500 15.5px/1.35 var(--text);margin-top:5px;color:var(--ink)} .v3-mkt b{color:var(--brand);font-weight:800}
+.v3-who2{display:flex;gap:28px;margin-top:14px;border-top:1px solid var(--rule);padding-top:10px}
 .v3-who2 p{flex:1;font:500 15px/1.4 var(--text);color:var(--slate);text-wrap:pretty}
 .v3-who2 b{font:800 17px/1.3 var(--head);color:var(--brand)} .v3-who2 i{font-weight:500;color:var(--slate)}
 .v3-who2 .v3-ad b{color:var(--accent)}
@@ -587,7 +589,7 @@
   <p class="s1-q">What makes a plan sustainable?</p>
   <div class="v1-ask" data-b="2">
     <p class="s1-cap">The answer without a test</p>
-    <div class="v1-askrow"><span class="s1-chip">A share of ESG products</span><p class="v1-says"><b>A share says what the funds hold, not whether the plan works.</b></p></div>
+    <div class="v1-askrow"><span class="s1-chip">A share of ESG products</span><p class="v1-says"><b>The share becomes the target. With a test, it is an output.</b></p></div>
   </div>
   <div class="v1-tests" data-b="3">
     <p class="s1-cap">Three tests a plan must pass</p>
@@ -601,7 +603,7 @@
     <p class="v1-wcap"><b>We ran the test on one Hong Kong family, the Wongs:</b> electric vans on a plain loan, a scholarship funded for life, three green products refused.</p>
     <div class="v1-wrow">
       <p><b class="v1-wn">{{fin_fair_gain}}</b>for their children, against a reasonable planner's plan</p>
-      <p><b class="v1-wn v1-nc">≈134 t</b>of CO2e a year less</p>
+      <p><b class="v1-wn v1-nc">up to 134 t</b>of CO2e a year less, if delivered</p>
       <p><b class="v1-wn">{{fin_plan_gift_hk}} + HK$1.91M</b>of capital: the family's, then the business's</p>
     </div>
     <p class="v1-wsrc">Our model, 10,000 futures (MEASURED) · tonnes and the business's capital ESTIMATED on an illustrative business</p>
@@ -610,8 +612,11 @@
     <h2 class="s1-line">A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.</h2>
   </div>
   <span class="s1-pg">1</span>
-  <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a plan sustainable? Without a test, the answer is a share: part of the savings in labelled funds. But a share says what the funds hold, not whether the plan works. A plan must pass three tests. Outside in: does it last when climate hits? Inside out: what does the money change? And what can its values afford? Our answer: a plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. We ran the test on one Hong Kong family, the Wongs. It changed six decisions: {{fin_fair_gain}} more for their children than a reasonable planner's plan, about 134 tonnes of carbon a year less, with {{fin_plan_gift_hk}} of their money and HK$1.91M of their business's. How do we run the test?
-    [Notes: DRAFT, 14 Nov (Pete: the general question first, the Wongs only as the worked example's outcome; the
+  <aside class="notes">PETE: Good morning, we're Team Axis. I'm Pete. What makes a plan sustainable? Without a test, the answer is a share of labelled funds, and the share becomes the target. Yet one global ESG fund on the SFC's own list has held nothing for two years. So a plan must pass three tests: does it last when climate hits, what does the money change, and what can its values afford? Our answer: a plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. We ran the test on one Hong Kong family, the Wongs: {{fin_fair_gain}} more for their children than a reasonable planner's plan, up to 134 tonnes of carbon a year less, with {{fin_plan_gift_hk}} of their money and HK$1.91M of their business's. How do we run the test?
+    [Notes: 15 Nov (Final_Plan.md §3, "Every verdict with its switch point"): the contrast is now target against output,
+    true for any client and paid off on slide 11 and the close; the empty fund is planted here and paid off on slide 10
+    (record-only wording: on the SFC's ESG list, US$0.00 at every filing Sep 2024 to Sep 2026; never name the manager
+    aloud). "Up to 134 t": slide 7's "potential, if verified and delivered". DRAFT, 14 Nov (Pete: the general question first, the Wongs only as the worked example's outcome; the
     family's own 20–25% ask is paid off on slide 11). The comparison is the reasonable planner's plan (Final_Plan.md §2):
     a careful plan without the test, the family's ESG wish met with labelled funds as cheap as ours and the giving kept
     as their lifelong pledge; never say how other advisers usually work. Headline: fin_fair_gain (Pete, 14 Nov, option
@@ -630,7 +635,7 @@
   <p class="s2-kick">How we test it</p>
   <h2 class="s2-word">PRISM</h2>
   <p class="s2-sub">Five steps, three tests.</p>
-  <div class="v2-ours"><p class="v2-ok">The steps are any planner's. What's ours:</p><p><b>One test</b> for the whole plan</p><p><b>Values only</b> from the room above the limit</p><p><b>One measure</b> for every decision</p></div>
+  <div class="v2-ours"><p class="v2-ok">The steps are any planner's. What's ours:</p><p><b>The limit,</b> on everything they own</p><p><b>The change,</b> only where we can show it</p><p><b>The room,</b> values priced in HK$</p><p><b>Every verdict,</b> with what flips it</p></div>
   <span class="s2-chip">ESG ✓</span><p class="s2-under">a yes or no</p>
   <p class="s2-L" style="top:127px;color:#F4B740">P</p>
   <div class="s2-row" style="top:120px"><p class="s2-name">Profile <span>· who decides, within what limits?</span></p><p class="s2-do">The limit and room, before any product<span class="v2-tags"><span class="v2-t v2-limit">LIMIT</span><span class="v2-t v2-room">ROOM</span></span></p></div>
@@ -645,8 +650,10 @@
   </div>
   <p class="s2-std">Built on double materiality (the EU requires it of companies), applied to a family's whole balance sheet</p>
   <p class="s2-pg">2</p>
-  <aside class="notes">PETE: With PRISM: five steps that run the three tests. Profile sets the limit and the room before any product. Risk puts everything the family owns and earns through one climate shock. Impact counts only changes we can show: a cleaner-looking footprint isn't one. Select puts every decision on one measure: Hong Kong dollars for the children, tonnes for the world. Monitor gives the plan its own label, read every year. The steps are any planner's; ours are three rules inside them: one test for the whole plan, values only from the room, one measure for every decision. So first: who decides, and within what limits?
-    [Notes: DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's
+  <aside class="notes">PETE: With PRISM: five steps that run the three tests. Profile sets the limit and the room before any product; Risk tests everything they own in one shock; Impact counts only changes we can show; Select puts every decision on one measure; Monitor reads the plan's own label every year. The steps are any planner's. What's ours: the limit on everything they own, values priced in Hong Kong dollars, and every verdict with the number that would flip it. So first: who decides, and within what limits?
+    [Notes: 15 Nov: "what's ours" was a second three (one test, values from the room, one measure) beside slide 1's
+    three tests; now it is the three tests as practices, plus the switch points (Final_Plan.md §3). One measure is still
+    how Select ranks every decision; it is said there. DRAFT v5, 14 Nov. The "instead of" lines are gone (v5); each step names the condition it checks, in slide 1's
     colours. No click: the price tag left slide 2 (Pete 14 Nov): one message per slide; slide 13 teaches the
     four corners with the Wongs' decisions in them.]</aside>
 </section>
@@ -690,6 +697,7 @@
     <p class="kick kt"><b class="kt-L">P</b><b class="kt-n">Profile</b><span class="kt-do">The limit and the room, set before any product</span></p>
     <h2>Set the limit first; values spend only the room above it</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>equities under ≈{{fin_room_zero_ret}} a year → no room left</span></p>
   <div class="body p4-body">
     <p class="v6c-steps v3-steps"><span class="v6c-cap">For any client</span><span><i>2</i>Set the limit: how sure the money must be</span><span><i>3</i>The room above it is the values budget, agreed once</span></p>
     <div class="p4-right">
@@ -705,6 +713,7 @@
         <p class="v3-llim">their<br>limit</p>
       </div>
       <p class="v3-warn"><b>Paid from yearly cash flow instead,</b> the same two causes break the limit ({{fin_room_pledge2_odds}}).</p>
+      <p class="v3-mkt"><b>It moves with markets:</b> {{fin_room_ret55}} if equities return {{fin_ret_lo55}} a year, not {{fin_ret_eq}}; {{fin_room_ret50}} at {{fin_ret_lo50}}. So it is measured again every year.</p>
       <div class="v3-who2">
         <p class="v3-face"><img src="inline:img/portrait-carmen-face.jpg" alt=""><span><b>Carmen, 49</b> <i>· values high</i><br>spends the room; her funds may stray 3% a year</span></p>
         <p class="v3-ad v3-face"><img src="inline:img/portrait-adrian-face.jpg" alt=""><span><b>Adrian, 54</b> <i>· capital first</i><br>gets his limit; his funds stay within 0.5% a year</span></p>
@@ -712,8 +721,15 @@
     </div>
   </div>
   <p class="sowhat">The limit sets what values may cost, before anyone picks a product.</p>
-  <aside class="notes">PETE: For the Wongs, the money must last to Carmen's 89 in 95 futures out of 100, and 85 in a downturn: a limit on the odds, not on money. Above it is room: about {{fin_room_gift_plain}} they could give today. Carmen's ESG funds use {{fin_room_esg_hk}}; the scholarship, for life, {{fin_plan_gift_hk}}; about {{fin_room_free_hk}} is still free. Paid from yearly cash flow instead, the same causes would break the limit. So what could push them below 95?
-    [Notes: DRAFT, 14 Nov (Pete: the room in HK$, not futures in 100; icons; the white space). The budget: the most
+  <aside class="notes">PETE: For the Wongs, the money must last to Carmen's 89 in 95 futures out of 100, and 85 in a downturn. Above that limit is room: about {{fin_room_gift_plain}} they could give today; the scholarship for life uses {{fin_plan_gift_hk}}. Pledged from cash flow, both causes would break it. But the room moves with markets: if equities return {{fin_ret_lo55}} a year instead of {{fin_ret_eq}}, it's {{fin_room_ret55}}; at {{fin_ret_lo50}}, {{fin_room_ret50}}. So we measure it again every year. What could push them below 95?
+    [Notes: 15 Nov: the room's switch point (reviews/applied.md; Final_Plan.md §3): with plain choices the room is
+    {{fin_room_gift_plain}} at the model's {{fin_ret_eq}} equity return, {{fin_room_ret55}} at {{fin_ret_lo55}},
+    {{fin_room_ret50}} at {{fin_ret_lo50}}, none below {{fin_room_zero_ret}}. The recommended plan holds 95 down to
+    {{fin_ret_hold_n}} and 85 in the downturn down to {{fin_ret_hold_s}}; with the lifelong pledge instead of the fund,
+    only to {{fin_ret_hold_pledge_n}}; with no gift, to {{fin_ret_hold_nogift_n}}. If asked "so is the scholarship too
+    much?": funding it is the more robust form (a fund fixes the gift's cost today; a pledge's cost rises when returns
+    fall); a gate on its second half (2028) is open with Pete. A sensitivity, not a forecast. "Still free"
+    ({{fin_room_free_hk}}) is on slide 12. DRAFT, 14 Nov (Pete: the room in HK$, not futures in 100; icons; the white space). The budget: the most
     giving funded now (gift_now, within both parents' 35% caps) before either limit breaks (95 normally, 85 in the
     2030–31 downturn; most_gift in final_model.py): {{fin_room_gift_plain}} with plain funds (fin_room_gift_plain);
     {{fin_room_gift}} with Carmen's ESG funds, so they use {{fin_room_esg_hk}} (fin_room_esg_hk); the scholarship for
@@ -735,6 +751,7 @@
 <section class="slide sec-R" id="v4" data-time="1:10" data-speaker="Lookbua">
   <header class="head"><p class="kick kt"><b class="kt-L">R</b><b class="kt-n">Risk</b><span class="kt-do">The limit: does the plan hold when climate hits?</span></p>
     <h2>Check everything they own and earn, not just what a label covers</h2></header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>equities under ≈{{fin_ret_hold_s}} a year → below the limit of 85</span></p>
   <div class="body stack"><svg viewBox="0 0 1184 470" width="1184" height="470" style="font-family:var(--text);overflow:visible">
     <text x="0" y="13" font-size="13" font-weight="800" letter-spacing="1" fill="#4A3FBF">THE STEP, FOR ANY CLIENT</text>
     <circle cx="15" cy="48" r="15" fill="#4A3FBF"/><text x="15" y="54" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
@@ -828,6 +845,7 @@
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The limit: each route priced, normally and in a downturn</span></p>
     <h2>The limit decides before preferences do</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>older flats ≈{{fin_pflipn_cross}} behind newer ones → downsizing ruled out</span></p>
   <div class="body s6-body">
     <div class="s6-grid">
       <svg viewBox="0 0 740 382" width="740" height="382" role="img" aria-label="In a normal future, as older flats fall behind newer ones, how long the money lasts if they keep the flat or downsize, against their limit of 95">
@@ -909,9 +927,10 @@
 
 <section class="slide sec-S" id="v6" data-time="0:45" data-speaker="Fahtai">
   <header class="head">
-    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">From what climate does to the plan, to what the business changes</span></p>
-    <h2>From climate risk to the changes a business can make</h2>
+    <p class="kick kt"><b class="kt-L kt-I" style="margin-left:0">I</b><b class="kt-L">S</b><b class="kt-n"><span class="kt-i">Impact</span> and Select</b><span class="kt-do">The change: every cut against what it replaces</span></p>
+    <h2>Price every cut in the footprint against what it replaces</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>a quote above new plastic → its 108 t cost money</span></p>
   <div class="body b7k-body">
     <div class="b7k-method">
       <p class="b7k-cap">The method · common business checks</p>
@@ -973,9 +992,13 @@
       </div>
     </div>
   </div>
-  <p class="sowhat">Greener choices can require cash upfront or cost more over time. Make the trade-off explicit.</p>
+  <p class="sowhat">Most of her cuts pay for themselves. The trade-off: cash up front, and a quote for the biggest.</p>
   <aside class="notes">FAHTAI: I'm Fahtai. We've tested climate risk; now ask what the business can change. Research guides the source search. Compare alternatives meeting the same need, then measure capital, environmental impact and cost per unit, checking financial and operational risk. Impact could mean carbon, waste or water; here we measure carbon. Recycled PET could cut 108 tonnes, but needs a packaging quote. Vans cut 19 tonnes and save money, but need capital and charging. Lighter board needs testing; end-of-life reductions remain unquantified. The counted candidates could cut about 134 tonnes a year. How should each be funded?
-    [Notes: Latest uncommitted layout uses four stacked layers on the right: purchases, operations, after use, then the standalone ≈134 total. End-of-life findings now parallel the other two investigation areas by listing collection/reuse/recycling as candidate searches; no feasible system, project approval or new impact is asserted. Need route, facility, customer participation, costs and baseline before counting. Claims control remains a separate safeguard in these notes. Total still contains only the existing recycled PET, vans and LED/air-con estimates.  Uncommitted next try: small 1/2/3 scope numerals at source-box bottom right; alternatives compare similar ways of delivering a service and explicitly consider trade-offs. General metrics allow carbon reduction (t CO2e), waste prevention (kg), water saving (m3), or other locally material environmental outcomes, each with a suitable baseline and own unit. Cost per unit must use the same defined impact, with no addition of unlike units or presumption that carbon, water and waste improve together. The worked example and ≈134 total remain CO2e only. Right-side contribution tally removed; the table's final row is split so a separate ≈134 summary fills its lower-right corner. Same estimates, no new impact calculated.  UNCOMMITTED layout draft requested by Fahtai: method stacked vertically, with three horizontal source groups and three horizontal metric groups. Bottom right shows the contribution tally: purchases 108 + operations 26 (19 + 7) ≈134 t/year potential; no tonnes assigned to the claims control, lighter board excluded. No numbers changed.  Layout refinement: user requested a wider left method with three horizontal numbered blocks, common investigation keywords in scope order (direct sources, bought energy, value chain), colour grouping without scope labels, narrower photos/tables, directional colour for numbers and totals in the final row. Investigation colours identify groups, not importance; actual priority still depends on size, influence and obligations. Number colours: red = initial cash required, green = estimated avoided emissions or net cost savings; zero and unknown stay neutral, uncounted potential tonnes stay neutral. These colours do not make capital-intensive options inherently unsuitable. All previous estimates and conditions retained.  Keyword/photo revision: user requested one-third method and two-thirds worked example, compressed main's three photos and candidate cuts, and initial capital as a third metric. Capital includes capex or working capital (labelled), not all an expense. Vans ≈HK$1.78M; LED + air-con HK$124K = HK$64K + HK$60K from area2_business §3c, ILLUSTRATIVE; full B1 package remains ≈HK$1.91M, existing rounded estimate. Recycled PET working capital ≈HK$0.27M is separate from any purchase premium. No investment verdict is based on carbon or negative cost alone. Lower board cost/tonne and zero capex are ILLUSTRATIVE and excluded from ≈134 t pending product testing. Recycled PET full cost/tonne remains quote needed, not assumed free. Photos reused from Pete's main slide with existing licences. Cost/tonne signs: minus means a saving; annual carbon totals require verification. The method prioritises feasible change and trade-offs, not an automatic preference for greener products.  Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
+    [Notes: 15 Nov (Claude, Pete's "go"; Fahtai to confirm): the title was the deck's only topic, now a rule for any
+    business; the bar said greener choices "can require cash upfront or cost more over time", while the table shows the
+    vans, LED and lighter board saving money and recycled PET awaiting a quote; it now says what the table shows and
+    keeps the trade-off (Final_Plan.md §3, "Every verdict with its switch point"). The tag: recycled PET flips if the
+    finished-packaging quote comes in above new plastic (Decision_List.md B4). Latest uncommitted layout uses four stacked layers on the right: purchases, operations, after use, then the standalone ≈134 total. End-of-life findings now parallel the other two investigation areas by listing collection/reuse/recycling as candidate searches; no feasible system, project approval or new impact is asserted. Need route, facility, customer participation, costs and baseline before counting. Claims control remains a separate safeguard in these notes. Total still contains only the existing recycled PET, vans and LED/air-con estimates.  Uncommitted next try: small 1/2/3 scope numerals at source-box bottom right; alternatives compare similar ways of delivering a service and explicitly consider trade-offs. General metrics allow carbon reduction (t CO2e), waste prevention (kg), water saving (m3), or other locally material environmental outcomes, each with a suitable baseline and own unit. Cost per unit must use the same defined impact, with no addition of unlike units or presumption that carbon, water and waste improve together. The worked example and ≈134 total remain CO2e only. Right-side contribution tally removed; the table's final row is split so a separate ≈134 summary fills its lower-right corner. Same estimates, no new impact calculated.  UNCOMMITTED layout draft requested by Fahtai: method stacked vertically, with three horizontal source groups and three horizontal metric groups. Bottom right shows the contribution tally: purchases 108 + operations 26 (19 + 7) ≈134 t/year potential; no tonnes assigned to the claims control, lighter board excluded. No numbers changed.  Layout refinement: user requested a wider left method with three horizontal numbered blocks, common investigation keywords in scope order (direct sources, bought energy, value chain), colour grouping without scope labels, narrower photos/tables, directional colour for numbers and totals in the final row. Investigation colours identify groups, not importance; actual priority still depends on size, influence and obligations. Number colours: red = initial cash required, green = estimated avoided emissions or net cost savings; zero and unknown stay neutral, uncounted potential tonnes stay neutral. These colours do not make capital-intensive options inherently unsuitable. All previous estimates and conditions retained.  Keyword/photo revision: user requested one-third method and two-thirds worked example, compressed main's three photos and candidate cuts, and initial capital as a third metric. Capital includes capex or working capital (labelled), not all an expense. Vans ≈HK$1.78M; LED + air-con HK$124K = HK$64K + HK$60K from area2_business §3c, ILLUSTRATIVE; full B1 package remains ≈HK$1.91M, existing rounded estimate. Recycled PET working capital ≈HK$0.27M is separate from any purchase premium. No investment verdict is based on carbon or negative cost alone. Lower board cost/tonne and zero capex are ILLUSTRATIVE and excluded from ≈134 t pending product testing. Recycled PET full cost/tonne remains quote needed, not assumed free. Photos reused from Pete's main slide with existing licences. Cost/tonne signs: minus means a saving; annual carbon totals require verification. The method prioritises feasible change and trade-offs, not an automatic preference for greener products.  Fahtai 50–50 revision. Scopes are a carbon completeness check, not three equal workstreams or a complete environmental assessment. Scan all relevant categories with rough estimates and record exclusions; prioritise detailed work by expected emissions, influence/reduction opportunities and business/legal relevance. Official GHG Protocol screening guidance: https://ghgprotocol.org/sites/default/files/ghgp/standards/Scope3_Calculation_Guidance_0.pdf , Introduction, screening to prioritise data collection; checked 15 Nov. EPD Practical Guides on Packaging Reduction and Management, Food Manufacturing Sector, Sep 2025: reduction, reuse and recycled content are candidate searches, not automatic recommendations. Official URL: https://www.wastereduction.gov.hk/sites/default/files/resources_centre/Practical_Guides_on_Packaging_Reduction_And_Management-Food_Manufacturing_Sector_ENG.pdf . Metric: avoidable emissions against a stated realistic alternative, consistent functional unit, period and boundary, including material upstream/downstream changes. Financial metric is net additional lifetime cost (purchase, installation, operation, verification and disposal, less savings) divided by lifetime emissions avoided; use consistent cost/discount assumptions and show sensitivities. Negative cost is a saving, not proof of affordability. Also check material waste/water/pollution effects; carbon is not overall environmental benefit. Case estimates unchanged: Decision_List B4, 50% recycled content in illustrative PET range, ≈108 t annual potential with DESNZ factors; supplier-specific data and food-contact compliance pending. Resin parity quoted for 7 Oct 2026 is dated and medium confidence, not a current finished-product quote. ≈HK$0.27M of working capital is ILLUSTRATIVE and separate from purchase premium. Test option only, no unconditional approval or measured delivery claimed. Any premium requires repricing and customer agreement; co-owner consent and business cash constraints apply. Next slides cover funding and green/plain terms. The vans and other candidate estimates remain in Decision_List B1 and the preserved comparison snapshots; no project or number changes.]</aside>
   <footer class="foot">
     <div class="badge-prism"><svg viewBox="0 0 236 44" width="236" height="44"><line x1="6" y1="23" x2="52" y2="23" stroke="#0F1E3D" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/><polygon points="60,6 46,38 74,38" fill="#0F1E3D" fill-opacity=".04" stroke="#0F1E3D" stroke-width="1.5"/><polygon points="68,22.4 128,4.8 128,9.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,12.8 128,17.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,20.8 128,25.2 68,23.6" fill="#D4D9E1"/><polygon points="68,22.4 128,28.8 128,33.2 68,23.6" fill="#4A3FBF"/><polygon points="68,22.4 128,36.8 128,41.2 68,23.6" fill="#D4D9E1"/><text x="140" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">P</text><text x="160" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">R</text><text x="180" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">I</text><text x="200" y="28.5" font-size="15" font-weight="800" fill="#4A3FBF">S</text><text x="220" y="28.5" font-size="15" font-weight="800" fill="#B3BAC6">M</text></svg><p>SELECT<span>Areas 2, 5</span></p></div>
     <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1, B4; DESNZ / EPA factors · photos: Wikimedia CC BY-SA · details in notes</p><span class="pg">7</span>
@@ -987,6 +1010,7 @@
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: the kind of finance sets the test</span></p>
     <h2>A green label pays only above a size; below it, finance the cut plainly</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>debt above ≈HK$4.8M → a sustainability-linked loan pays</span></p>
   <div class="body stack v7-check">
     <p class="v7-steps"><span class="v7-cap">THE STEP, FOR ANY CLIENT</span><span><span class="v7-n">1</span><b>What does the cut need?</b></span><span><span class="v7-n">2</span><b>Which kind of finance fits it?</b></span><span><span class="v7-n">3</span><b>Does its label pay at this size?</b></span></p>
     <svg viewBox="0 0 1184 248" width="1184" height="248" style="font-family:var(--text);overflow:visible">
@@ -1041,6 +1065,7 @@
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The change: judge it by its own test</span></p>
     <h2>Judge a green loan as a loan, against the cheapest plain one</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>a rate cut worth more than the ≈HK$12K review → take the label</span></p>
   <div class="body stack v7-judge">
     <div class="v7s">
       <div class="v7s-doc v7s-green">
@@ -1096,6 +1121,7 @@
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The room: each product checked before it's sized</span></p>
     <h2>Pass a product only if its rule binds and it fits its owner's limit</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>a fee 0.05% above its plain twin → it fails Adrian's cost test</span></p>
   <div class="body v8f v8c">
     <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">What they asked for: <s>20–25% of their savings in ESG products</s></span></div>
     <p class="v6c-steps"><span class="v6c-cap">Every product passes three checks</span><span><i>1</i>A binding rule</span><span><i>2</i>Measured every year</span><span><i>3</i>Within the owner's limit</span></p>
@@ -1108,7 +1134,7 @@
     <p class="v8c-next wn-next"><b>Three out, each on a different check.</b> Only the climate index fund goes on, to be sized by each person's limit <svg class="ic"><use href="#i-arrow-right"/></svg></p>
   </div>
   <p class="sowhat">On the SFC's ESG list. Empty for two years. The label let it through; the check didn't.</p>
-  <aside class="notes">WIN: I'm Win, on the savings. For any client, every product passes three checks first: a binding rule, measured every year, within the owner's limit. A global ESG fund on the SFC's own list has held nothing for two years: its label let it through; the check stops it. A climate index fund whose carbon must stay thirty per cent below the market passes, at the plain fund's fee. So how much of it should each of them hold?
+  <aside class="notes">WIN: I'm Win, on the savings. For any client, every product passes three checks first: a binding rule, measured every year, within the owner's limit. Remember the fund on the SFC's own list that has held nothing for two years? Its label let it through; the check stops it. A climate index fund whose carbon must stay thirty per cent below the market passes, at the plain fund's fee. So how much of it should each of them hold?
     [Notes: DRAFT v5, 14 Nov, from v4 slide 9 (Win's 12 Nov script); Win to make it their own. EDMW (iShares MSCI World
     CTB Enhanced ESG UCITS ETF): WACI 63.39 against ≈90.8 (−30.2%), coverage 99.82%, TER 0.20% (BlackRock/MSCI, Oct
     2026); EU climate benchmark rule ≥30% below the parent, −7% a year (Reg. (EU) 2020/1818); an Irish UCITS fund, not
@@ -1135,6 +1161,7 @@
     <p class="kick kt"><b class="kt-L">S</b><b class="kt-n">Select</b><span class="kt-do">The room: sized by each person's limit, then priced</span></p>
     <h2>The sustainable share is an output of the limits, paid from the room</h2>
   </header>
+  <p class="swp"><svg viewBox="0 0 24 14" aria-hidden="true"><rect x="1" y="1" width="22" height="12" rx="6" fill="none" stroke="#4A3FBF" stroke-width="1.8"/><circle cx="16.5" cy="7" r="3.4" fill="#4A3FBF"/></svg><b>Flips at</b><span>the fund's own tracking error under 2.09% → Adrian's 24% rises</span></p>
   <div class="body v8f v8s">
     <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">The one product that passed: <b>the climate index fund</b></span></div>
         <svg viewBox="0 0 1184 150" width="1184" height="150" style="font-family:var(--text)">
@@ -1199,19 +1226,19 @@
         <p class="o9-h"><i>1</i>Holds its limits when climate hits</p>
         <p class="o9-row"><span>The money lasts, in a normal future</span><b>{{fin_plan_odds100}} in 100</b><em>limit 95</em></p>
         <p class="o9-row"><span>In the 2030–31 downturn</span><b>{{fin_plan_sodds100}} in 100</b><em>limit 85</em></p>
-        <p class="o9-trig"><b>Trigger:</b> older flats fall ≈{{fin_pflipn_cross}} behind newer ones → decide the flat's route that year</p>
+        <p class="o9-trig"><b>Trigger:</b> equities under ≈{{fin_ret_hold_n}} a year, or older flats ≈{{fin_pflipn_cross}} behind → act that year</p>
       </div>
       <div class="o9-sec">
         <p class="o9-h"><i>2</i>Claims only what it changes</p>
-        <p class="o9-row"><span>Carbon cut in the business, measured from 2027</span><b>≈134 t</b><em>a year</em></p>
+        <p class="o9-row"><span>Carbon the business could cut, measured from 2027</span><b>≈134 t</b><em>a year</em></p>
         <p class="o9-row"><span>Shares: 30% less carbon than the market, a footprint</span><b>none</b><em>claimed</em></p>
-        <p class="o9-trig"><b>Trigger:</b> recycled plastic costs more than new again → its 108 t are priced again</p>
+        <p class="o9-trig"><b>Trigger:</b> recycled plastic quoted above new → its 108 t are priced again</p>
       </div>
       <div class="o9-sec">
         <p class="o9-h"><i>3</i>Pays for values only from the room above its limits</p>
         <p class="o9-row"><span>Room above the limit, as giving today</span><b>{{fin_room_gift_plain}}</b><em></em></p>
         <p class="o9-row"><span>Still free after Carmen's choices</span><b>≈{{fin_room_free_hk}}</b><em></em></p>
-        <p class="o9-trig"><b>Trigger:</b> a price passes the room → both parents re-sign</p>
+        <p class="o9-trig"><b>Trigger:</b> measured again each year, the room falls short → both parents re-sign</p>
       </div>
       <p class="o9-end"><b>Assumes Adrian works to 65;</b> if his job or health changes, run it again. Claims checked outside; any restatement shows the old figure · odds MEASURED · tonnes ESTIMATED</p>
     </div>
@@ -1228,7 +1255,7 @@
     </div>
   </div>
   <p class="sowhat">A product's label never changes. The plan's label is earned again every year.</p>
-  <aside class="notes">WIN: So the plan gets its own label, read every year: one line per test. Does it hold its limits? In {{fin_plan_odds100}} futures out of 100, and {{fin_plan_sodds100}} in a downturn: above both. What does it change? About 134 tonnes a year in the business, measured from 2027; for the shares, nothing claimed. Does it stay inside the room? Of {{fin_room_gift_plain}}, about {{fin_room_free_hk}} is still free. Every line has a trigger, and a date to decide again. So, what makes a plan sustainable? Pete.
+  <aside class="notes">WIN: So the plan gets its own label, one line per test. Does it hold its limits? In {{fin_plan_odds100}} futures out of 100, and {{fin_plan_sodds100}} in a downturn: above both. What does it change? Up to 134 tonnes a year in the business, measured from 2027; for the shares, nothing claimed. Does it stay inside the room? Of {{fin_room_gift_plain}}, about {{fin_room_free_hk}} is still free. Every line carries the number that would flip it, and a date to decide again. So, what makes a plan sustainable? Pete.
     [Notes: 15 Nov (Final_Plan.md §3, "The brief's missing words, on screen"): two triggers made numeric (the flat's gap, fin_pflipn_cross, Decision_List.md H1; recycled plastic's price, B4); the dates, the brief's implementation milestones, are the calendar added the same day ("When we decide again"). Moved off the slide (Pete 14 Nov: one point per slide): attribution, read against a plain twin fixed at signing (what the plan changed, what markets did, what we can't measure yet); the biases; the three missing prices (buy: the business's carbon data, ≈HK$54–73K a year; range: ESG funds in a downturn, no credit; trigger: recycled plastic at today's price). DRAFT v5, 14 Nov; Win to make it their own. The card shows our recommended plan (Pete, 14 Nov):
     fin_plan_odds ({{fin_plan_odds}}) and fin_plan_sodds ({{fin_plan_sodds}}): the vans, candidate A's fees and the
     scholarship for life funded now (Pete 14 Nov, §5.3 option 1), the reverse-mortgage route; the label approach at
@@ -1266,7 +1293,7 @@
       <div class="q3-cell">
         <p class="q3-act"><svg class="ic v10-ic v10-do"><use href="#i-circle-check"/></svg>Do it</p>
         <div class="q3-e" data-b="2"><p class="q3-name">Electric vans, LED, air-con<i class="q3-to">slides 7, 9</i></p><p>{{fin_dot_vans_n}} · <span class="q3-t">26 t a year</span></p></div>
-        <div class="q3-e" data-b="2"><p class="q3-name">Recycled plastic<i class="q3-to">slide 7</i></p><p>≈HK$0 at today's price · <span class="q3-t">108 t a year</span></p></div>
+        <div class="q3-e" data-b="2"><p class="q3-name">Recycled plastic<i class="q3-to">slide 7</i></p><p>≈HK$0 if quoted at today's resin price · <span class="q3-t">108 t a year</span></p></div>
       </div>
       <div class="q3-cell">
         <p class="q3-act"><svg class="ic v10-ic"><use href="#i-tag"/></svg>Do it, but don't call it green</p>
@@ -1284,10 +1311,10 @@
         <div class="q3-e" data-b="2"><p class="q3-name">Carmen's ESG funds, as her values<i class="q3-to">slides 4, 11</i></p><p>{{fin_val_esg_n}} from the room; not called impact</p></div>
       </div>
     </div>
-    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan · <b class="v10-t">≈134 t</b> CO2e a year less · <b>26.6%</b> in ESG funds, the share they asked for</p><p><span>Of which</span>about half is the vans, the sustainable part; the rest is ordinary planning: the gift funded now, cheaper funds</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
+    <div class="v10-out" data-b="2"><p><span>Outcome</span><b class="v10-g">{{fin_fair_gain}}</b> for the children against a reasonable planner's plan · <b class="v10-t">up to 134 t</b> CO2e a year less · <b>26.6%</b> in ESG funds, the share they asked for</p><p><span>Of which</span>about half is the vans, the sustainable part; the rest is ordinary planning: the gift funded now, cheaper funds</p><p><span>Capital</span><b>{{fin_plan_gift_hk}}</b> the family's · <b>HK$1.91M</b> of equipment and <b>≈HK$0.27M</b> of working capital, the business's</p></div>
   </div>
   <p class="sowhat" data-b="2">The label never decides. The limit, the change and the room do.</p>
-  <aside class="notes">PETE: So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. Adrian wanted to retire safely: his limit holds, {{fin_plan_odds100}} futures in 100, {{fin_plan_sodds100}} in a downturn. Carmen wanted money that does good: about 134 tonnes a year cut, a scholarship for life, and nothing claimed we can't show. The ESG share they asked for comes out at twenty-six point six per cent, as a by-product. Against a reasonable planner's plan, the children get {{fin_fair_gain}}. The label never decides. Thank you.
+  <aside class="notes">PETE: It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. Adrian wanted to retire safely: his limit holds, {{fin_plan_odds100}} futures in 100, {{fin_plan_sodds100}} in a downturn. Carmen wanted money that does good: up to 134 tonnes a year cut, a scholarship for life, and nothing claimed we can't show. The ESG share comes out at twenty-six point six per cent: an output, not a target. Against a reasonable planner's plan, the children get {{fin_fair_gain}}, and every verdict carries the number that would change it. The label never decides. Thank you.
     [Notes: DRAFT v5, 14 Nov; Pete to make it his own. v4's slide 3, moved to the close (storyline v5): every decision
     once, after the slides that prove it (the small numbers). The corners: Final_Plan.md §4.2, test 9; "for the
     children" is each decision against its best plain alternative (fin_dot_*_n). Fixes kept (13 Nov): the flat is the

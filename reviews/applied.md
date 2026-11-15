@@ -607,3 +607,18 @@ of values". Keys added, from plain choices (plain twin funds, no giving, no vans
   (`fin_plan_leg89` HK$13.4M normally; the difference is `fin_pstorm_leg`). Slide 4's result band, so the odds (the
   limit) and the inheritance are read as two measures (Pete: "how does the plan hold its limit when the limit was 1.7?").
 - Checked: `numbers.json` before and after differ only by this 1 addition; `figure-data.md` and every PNG unchanged.
+
+### Final (15 Nov): switch points on the equity return (`Final/final_model.py` `export_final()`)
+
+Pete chose to give every verdict the number that flips it (`Final/Final_Plan.md` §3, "Every verdict with its switch
+point"). The model's equity return (`fin_ret_eq` 6%) moves the limit and the room more than any other input, so its
+switch points are exported. Each is a sensitivity, not a forecast: the equity return a year (bisection between the
+model's return and 3 points below it) at which a plan stops holding a limit, 95 in 100 normally (`_n`) and 85 in the
+2030–31 downturn (`_s`):
+- `fin_ret_hold_n` 5.3% (5.27), `fin_ret_hold_s` 5.2% (5.18): the recommended plan, the scholarship funded now;
+- `fin_ret_hold_pledge_n` 5.7% (5.68), `_s` 5.6% (5.55): the same plan with the lifelong pledge instead;
+- `fin_ret_hold_nogift_n` 4.8% (4.83), `_s` 4.7% (4.71): the same plan with no gift;
+- the room with plain choices: `fin_room_ret55` HK$0.94M at `fin_ret_lo55` 5.5%, `fin_room_ret50` HK$0.15M at
+  `fin_ret_lo50` 5%; gone below `fin_room_zero_ret` 4.9% (HK$1.7M at 6%, `fin_room_gift_plain`).
+- The export stops if the order funded < pledge and no gift < funded no longer holds, since the notes rely on it.
+- Checked: `numbers.json` before and after differ only by these 21 additions; `figure-data.md` and every PNG unchanged.
