@@ -829,6 +829,11 @@ def scrub(path, n_slides):
     return dropped, hits
 
 
+def fonts_in(path):
+    with zipfile.ZipFile(path) as z:
+        return [n for n in z.namelist() if n.startswith("ppt/fonts/")]
+
+
 def check(path):
     with zipfile.ZipFile(path) as z:
         for name in ("docProps/core.xml", "docProps/app.xml"):
@@ -873,6 +878,17 @@ def main():
     if os.path.exists(tmp_out):
         os.remove(tmp_out)
     print(office(raw, tmp_out, WORK))
+    # PowerPoint can save without the font and still report success (seen 15 Nov, on a cold start; the next run
+    # embedded it). The venue's notebook won't have Plus Jakarta Sans, so a file without it must never go out.
+    for _ in range(2):
+        if fonts_in(tmp_out):
+            break
+        print("font not embedded: saving through PowerPoint again")
+        os.remove(tmp_out)
+        print(office(raw, tmp_out, ""))
+    if not fonts_in(tmp_out):
+        sys.exit("STOP: PowerPoint saved the file three times without Plus Jakarta Sans embedded. Check the font is "
+                 "installed for this user, then run again. Never send this file.")
     dropped, hits = scrub(tmp_out, len(info))
     if hits:
         sys.exit(f"STOP: identifying text in the file: {hits[:5]}")
