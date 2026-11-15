@@ -5,10 +5,11 @@ reverse of slide 2. A step slide: the same prism and beam, all five bands coming
 others dimmed.
 
   .venv/Scripts/python.exe Final/looks/close_beam_art.py
-  # writes Final/deck/img/close-beam.png (all five lit, transparent: it sits on slide 13's stage; 1280 x 84 CSS px,
-  #        the beam at y = 43) and Final/deck/img/strip-<P|R|I|S|M>.png (one band lit, opaque: the stage colour baked
-  #        in for the white slides; 1280 x 104 CSS px, the prism 10 px lower so the verdict above the beam and the
-  #        sources below it are balanced: verdict 14-42, beam 53, sources 70-84)
+  # writes Final/deck/img/close-beam.png (all five lit; slide 13; 1280 x 84 CSS px, the beam at y = 43) and
+  #        Final/deck/img/strip-<P|R|I|S|M|all>.png (one band lit, or all five for a backup that covers no single
+  #        step; 1280 x 104 CSS px, the prism 10 px lower so the verdict above the beam and the sources below it are
+  #        balanced: verdict 14-42, beam 53, sources 70-84). All transparent: every content slide stands on the stage
+  #        since 15 Nov (Pete: "stage on every slide"), so the prism sits on it as on slide 13.
 
 PNGs, not inline SVG, because PowerPoint drops SVG filters (the glow). The colours are slide 2's rays
 (prism_stage_art.py ROWS). The beam ends at x = 1190, short of the page number.
@@ -28,9 +29,8 @@ COL = ["#F4B740", "#FF4A57", "#3CC8E6", "#9B7BFF", "#E6E9EE"]     # P R I S M, a
 W, SCALE = 1280, 3
 BEAM_TO = 1190
 DIM = .26                                                        # the other bands on a step slide: present, not lit
-STAGE = ("#2C2378", "#1A1550")   # the step strip, top to bottom: the deck's deep indigo (--brand-deep #231C5E, the
-                                 # conclusion bar's colour, Pete 14 Nov), so it belongs to the white slide; the navy
-                                 # ("#101B36", "#080E1E") read as a separate slab (15 Nov, rendered side by side)
+STAGE = ("#2C2378", "#1A1550")   # only for an opaque strip on a white slide (the deck's deep indigo); unused since
+                                 # every content slide stands on the stage (15 Nov)
 pt = lambda *ps: " ".join(f"{x:.1f},{y:.1f}" for x, y in ps)
 along = lambda p, q, t: (p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t)
 chrome = next(c for c in CHROME if os.path.exists(c))
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     svg, y = draw(range(5), opaque=False)
     shoot(svg, os.path.join(IMG, "close-beam.png"), opaque=False, H=84)
     print(f"close: beam at y={y:.1f}")
-    for i, L in enumerate("PRISM"):
-        svg, y = draw([i], opaque=True, H=104, dy=10)
-        shoot(svg, os.path.join(IMG, f"strip-{L}.png"), opaque=True, H=104)
+    for name, lit in [(L, [i]) for i, L in enumerate("PRISM")] + [("all", range(5))]:
+        svg, y = draw(lit, opaque=False, H=104, dy=10)
+        shoot(svg, os.path.join(IMG, f"strip-{name}.png"), opaque=False, H=104)
     print(f"steps: beam at y={y:.1f}")

@@ -631,6 +631,17 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     step's own band coming in, the others removed (Pete: show them, highlight one). Slide 7's
     badge lit Select only although its kicker says Impact and Select: Fahtai to decide whether its strip should bring
     in both bands. Renders: `build/options/prism-strip-*.png`, `art13-white-vs-frame.png`, `strip-frame-options.png`.
+  - **Then the stage on every slide** (Pete, 15 Nov, after three versions of the whole talk rendered side by side:
+    white slides with an indigo strip, the stage on every slide, an all-dark theme; `build/options/theme-*.png`).
+    Every content slide, talk and backups, now has slide 13's layout: the title on the dark stage, the content on a
+    white sheet, the prism strip as the floor (transparent strips, so the prism sits on the stage). It removes the
+    cause of "the bottom feels disconnected" (a dark band under a white page) and makes the talk one stage from slide
+    1 to the close; the content stays dark on white, so the dense slides read as before. All-dark was rejected: a
+    colour-token swap already left white boxes with white text on slides 3, 11 and 13 (≈128 chart colours and 70
+    backgrounds are written into the slides), and small grey figures on navy wash out on a lit projector (the 14 Nov
+    reason for keeping data on white). The backups got the strip too (their own step lit, or all five where they
+    cover no single step), and their longer verdicts wrap onto two lines rising from the beam. Claude's earlier
+    advice to keep only slides 1, 2 and 13 dark no longer held once every slide carried the strip.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
   font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
@@ -1799,6 +1810,10 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **15 Nov (Pete, Claude): the stage on every slide** (§3, "Then the stage on every slide"). Talk and backups: the
+  title on the dark stage, the content on a white sheet, the prism strip at the foot; the backups' bars and badges
+  replaced the same way. No words or numbers changed. The PowerPoint rebuilt.
 
 - **15 Nov (Pete, Claude): the prism on every step slide** (§3, "Then the prism on every step slide"). Each talk step
   slide's verdict moves onto an indigo strip with slide 13's prism, all five bands in and its own step's lit, the
