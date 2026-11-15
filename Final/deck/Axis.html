@@ -505,12 +505,53 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
 </svg>
 <main class="deck">
+
 <!-- Storyline v5 (Final/Final_Plan.md §4.5; Pete 13-14 Nov), moved here from Final/deck/options/ on 14 Nov:
      ten slides, 10:00 with names and handovers. Each title is the rule for any client; the Wongs are the proof
      underneath. Every model number is a key placeholder from figures/numbers.json; chart series are double-bracket tokens from
      series.py. Class names start v1-, v2-, v7-, v7k-, v8-, o9- or reuse the head's (s1-, s2-, p4-, s6-, s7-, q3-):
      classes are global. v4's talk is in git history (commit 261a688 and before). -->
 <style>
+
+/* Win's slides 10-12 (15 Nov): check pips, the carbon proof, how 26.6% adds up, the room callback, the calendar */
+.wn-card{padding-bottom:62px!important}
+#v8 .v8c{gap:10px} #v8 .v8f-pass.wn-card{padding-bottom:74px!important} #v8 .v8c .v8f-pn{margin-top:29px} #v8 .v8c .v8f-pd{line-height:1.33}
+#v8 .v8c-next{font-size:15.5px;margin-top:-2px}
+.wn-pips{position:absolute;left:16px;right:16px;bottom:12px;border-top:1px solid var(--rule);padding-top:9px}
+.wn-pr{display:flex;gap:7px}
+.wn-pip{display:inline-flex;align-items:center;gap:4px;font:800 13px/1 var(--text);color:#B3BAC6;border:1.5px solid #DCE1E8;border-radius:12px;padding:3px 8px 3px 4px}
+.wn-pip i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border-radius:50%;background:#DCE1E8;color:#fff;font-size:11px}
+.wn-pip.ok{color:var(--leaf);border-color:var(--leaf)} .wn-pip.ok i{background:var(--leaf)}
+.wn-pip.no{color:var(--accent);border-color:var(--accent);background:var(--accent-tint)} .wn-pip.no i{background:var(--accent)}
+.wn-why{font:700 12.5px/1.2 var(--text);color:var(--accent);margin-top:6px} .wn-why.ok{color:var(--leaf)}
+.wn-co2{display:block;width:100%;height:auto;margin-top:8px;font-family:var(--text)}
+.wn-next b{color:var(--ink);font-weight:800}
+.wn-out{display:grid;grid-template-columns:250px 1fr 1fr;gap:26px;align-items:start;border-top:1.5px solid var(--ink);padding-top:12px;margin-top:2px}
+.wn-k{font:800 13px/1.2 var(--text);letter-spacing:1px;text-transform:uppercase;color:var(--slate);margin-bottom:8px}
+.wn-big{display:flex;align-items:center;gap:10px}
+.wn-big b{font:800 58px/1 var(--num);letter-spacing:-1.5px;color:var(--brand)}
+.wn-bw{font:500 14.5px/1.35 var(--text);color:var(--ink);margin-top:6px}
+.wn-stack{display:flex;height:38px;border:1.5px solid var(--ink);border-radius:3px;overflow:hidden}
+.wn-stack span{display:flex;align-items:center;justify-content:center;font:800 13px/1 var(--num);color:#fff;border-right:1.5px solid #fff}
+.wn-stack span:last-child{border-right:none}
+.wn-s1{background:var(--leaf)} .wn-s2{background:#2F7A44} .wn-s3{background:#5DB273} .wn-s4{background:#9ACBA6} .wn-stack .wn-s4{color:#0F1E3D}
+.wn-lg{display:grid;grid-template-columns:1fr 1fr;gap:3px 12px;margin-top:7px;font:500 13.5px/1.3 var(--text);color:var(--slate)}
+.wn-lg p{display:flex;gap:6px;align-items:center} .wn-lg em{flex:none;width:10px;height:10px;border-radius:2px}
+.wn-sum{font:500 14.5px/1.35 var(--text);color:var(--ink);margin-top:7px} .wn-sum b{font-weight:800}
+.wn-room{display:flex;height:22px;border-radius:2px;overflow:hidden;gap:2px}
+.wn-room span{display:block} .wn-r1{background:var(--brand)} .wn-r2{background:#DCDAF3} .wn-r3{background:#EEF0F4}
+.wn-rl{display:flex;justify-content:space-between;font:500 13.5px/1.3 var(--text);color:var(--slate);margin-top:4px}
+.wn-rl b{color:var(--brand);font-weight:800}
+.wn-pz{font:500 15.5px/1.4 var(--text);color:var(--ink);margin-top:8px} .wn-pz b{font-weight:800}
+.wn-side{padding-top:6px!important;gap:10px!important}
+.wn-cal{margin-top:6px;border-top:1.5px solid var(--ink);padding-top:10px}
+.wn-tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.wn-tl::before{content:"";position:absolute;left:7px;right:7px;top:7px;height:2px;background:var(--brand-tint)}
+.wn-st{position:relative;padding-top:22px}
+.wn-st::before{content:"";position:absolute;left:0;top:0;width:12px;height:12px;border-radius:50%;background:#fff;border:2.5px solid var(--brand)}
+.wn-st.yr::before{background:var(--brand)}
+.wn-st b{display:block;font:800 16px/1.15 var(--num);color:var(--ink)}
+.wn-st span{display:block;font:500 13.5px/1.3 var(--text);color:var(--slate);margin-top:3px}
 /* one accent (Pete 14 Nov, after e-Sentry and OneTable): indigo (--brand) on every slide's header, chip and footer
    badge, as slides 1, 2 and 10 already had; navy for structure; teal only for the world; the five PRISM colours
    only where the beam splits (slide 2, and the all-five badges) */
@@ -1573,12 +1614,12 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">What they asked for: <s>20–25% of their savings in ESG products</s></span></div>
     <p class="v6c-steps"><span class="v6c-cap">Every product passes three checks</span><span><i>1</i>A binding rule</span><span><i>2</i>Measured every year</span><span><i>3</i>Within the owner's limit</span></p>
     <div class="v8f-prods v8c-prods">
-      <div class="v8f-p v8f-pass"><p class="v8f-pn">Climate index fund (EDMW)</p><p class="v8f-pd">Its carbon must stay 30% below the world index and fall 7% a year, by rule; measured every year; at the plain fund's fee</p><span class="v7s-stamp v7s-st-go">Pass</span></div>
-      <div class="v8f-p v8c-star"><p class="v8f-pn">A global ESG fund on the SFC's list</p><p class="v8f-pd"><b>US$0.00 at all 23 filings,</b> Sep 2024 to Sep 2026</p><svg class="v10-flat" viewBox="0 0 252 66" role="img" aria-label="fund size at each of 23 filings: zero"><line x1="16" y1="8" x2="252" y2="8" stroke="#DCE1E8" stroke-dasharray="3 3"/><line x1="16" y1="40" x2="252" y2="40" stroke="#0F1E3D" stroke-width="1.5"/><circle cx="22.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="31.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="41.4" cy="40" r="3.6" fill="#C80E1E"/><circle cx="51.1" cy="40" r="3.6" fill="#C80E1E"/><circle cx="60.8" cy="40" r="3.6" fill="#C80E1E"/><circle cx="70.5" cy="40" r="3.6" fill="#C80E1E"/><circle cx="80.2" cy="40" r="3.6" fill="#C80E1E"/><circle cx="89.9" cy="40" r="3.6" fill="#C80E1E"/><circle cx="99.6" cy="40" r="3.6" fill="#C80E1E"/><circle cx="109.3" cy="40" r="3.6" fill="#C80E1E"/><circle cx="119.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="128.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="138.4" cy="40" r="3.6" fill="#C80E1E"/><circle cx="148.1" cy="40" r="3.6" fill="#C80E1E"/><circle cx="157.8" cy="40" r="3.6" fill="#C80E1E"/><circle cx="167.5" cy="40" r="3.6" fill="#C80E1E"/><circle cx="177.2" cy="40" r="3.6" fill="#C80E1E"/><circle cx="186.9" cy="40" r="3.6" fill="#C80E1E"/><circle cx="196.6" cy="40" r="3.6" fill="#C80E1E"/><circle cx="206.3" cy="40" r="3.6" fill="#C80E1E"/><circle cx="216.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="225.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="235.4" cy="40" r="3.6" fill="#C80E1E"/><text x="0" y="45" font-size="14" font-weight="800" fill="#C80E1E">0</text><text x="16" y="62" font-size="13" fill="#566173">Sep 2024</text><text x="252" y="62" font-size="13" fill="#566173" text-anchor="end">Sep 2026</text></svg><p class="v10-src">BOC-Prudential MSCI World ESG Index Fund (BUM645) · HKEX fund platform, read 14 Nov 2026</p><span class="v7s-stamp v8f-st-no">Fail</span></div>
-      <div class="v8f-p"><p class="v8f-pn">Clean-energy fund</p><p class="v8f-pd">One sector: it strays too far from the market for Adrian's limit</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
-      <div class="v8f-p"><p class="v8f-pn">Green deposit</p><p class="v8f-pd">No rule on what the bank finances with it</p><span class="v7s-stamp v8f-st-no">Refused</span></div>
+      <div class="v8f-p v8f-pass wn-card"><p class="v8f-pn">Climate index fund (EDMW)</p><p class="v8f-pd">By rule, its carbon stays 30% below the world index and falls 7% a year · 0.20% a year, the plain fund's fee</p><svg class="wn-co2" viewBox="0 0 250 62" role="img" aria-label="carbon per US$ million of sales: world index 90.8, this fund 63.4"><text x="0" y="11" font-size="11.5" fill="#566173">t CO2e per US$1M of sales</text><rect x="0" y="18" width="190" height="14" fill="#C9D1DC"/><text x="196" y="29.5" font-size="12.5" font-weight="800" fill="#0F1E3D">90.8</text><text x="4" y="29" font-size="11" fill="#0F1E3D">World index</text><rect x="0" y="38" width="132.7" height="14" fill="#4A3FBF"/><text x="138" y="49.5" font-size="12.5" font-weight="800" fill="#4A3FBF">63.4 (−30%)</text><text x="4" y="49" font-size="11" fill="#fff">This fund</text><text x="250" y="61" font-size="10" fill="#566173" text-anchor="end">MSCI, 23 Oct 2026 · SOURCED</text></svg><span class="v7s-stamp v7s-st-go">Pass</span><div class="wn-pips"><p class="wn-pr"><span class="wn-pip ok"><i>1</i>✓</span><span class="wn-pip ok"><i>2</i>✓</span><span class="wn-pip ok"><i>3</i>✓</span></p><p class="wn-why ok">Passes all three</p></div></div>
+      <div class="v8f-p v8c-star wn-card"><p class="v8f-pn">A global ESG fund on the SFC's list</p><p class="v8f-pd"><b>US$0.00 at all 23 filings,</b> Sep 2024 to Sep 2026</p><svg class="v10-flat" viewBox="0 0 252 66" role="img" aria-label="fund size at each of 23 filings: zero"><line x1="16" y1="8" x2="252" y2="8" stroke="#DCE1E8" stroke-dasharray="3 3"/><line x1="16" y1="40" x2="252" y2="40" stroke="#0F1E3D" stroke-width="1.5"/><circle cx="22.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="31.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="41.4" cy="40" r="3.6" fill="#C80E1E"/><circle cx="51.1" cy="40" r="3.6" fill="#C80E1E"/><circle cx="60.8" cy="40" r="3.6" fill="#C80E1E"/><circle cx="70.5" cy="40" r="3.6" fill="#C80E1E"/><circle cx="80.2" cy="40" r="3.6" fill="#C80E1E"/><circle cx="89.9" cy="40" r="3.6" fill="#C80E1E"/><circle cx="99.6" cy="40" r="3.6" fill="#C80E1E"/><circle cx="109.3" cy="40" r="3.6" fill="#C80E1E"/><circle cx="119.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="128.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="138.4" cy="40" r="3.6" fill="#C80E1E"/><circle cx="148.1" cy="40" r="3.6" fill="#C80E1E"/><circle cx="157.8" cy="40" r="3.6" fill="#C80E1E"/><circle cx="167.5" cy="40" r="3.6" fill="#C80E1E"/><circle cx="177.2" cy="40" r="3.6" fill="#C80E1E"/><circle cx="186.9" cy="40" r="3.6" fill="#C80E1E"/><circle cx="196.6" cy="40" r="3.6" fill="#C80E1E"/><circle cx="206.3" cy="40" r="3.6" fill="#C80E1E"/><circle cx="216.0" cy="40" r="3.6" fill="#C80E1E"/><circle cx="225.7" cy="40" r="3.6" fill="#C80E1E"/><circle cx="235.4" cy="40" r="3.6" fill="#C80E1E"/><text x="0" y="45" font-size="14" font-weight="800" fill="#C80E1E">0</text><text x="16" y="62" font-size="13" fill="#566173">Sep 2024</text><text x="252" y="62" font-size="13" fill="#566173" text-anchor="end">Sep 2026</text></svg><p class="v10-src">BOC-Prudential MSCI World ESG Index Fund · HKEX, read 14 Nov 2026</p><span class="v7s-stamp v8f-st-no">Fail</span><div class="wn-pips"><p class="wn-pr"><span class="wn-pip"><i>1</i>–</span><span class="wn-pip no"><i>2</i>✗</span><span class="wn-pip"><i>3</i>–</span></p><p class="wn-why">Fails check 2: nothing to measure</p></div></div>
+      <div class="v8f-p wn-card"><p class="v8f-pn">Clean-energy fund</p><p class="v8f-pd">One sector: it strays too far from the market for Adrian's limit</p><span class="v7s-stamp v8f-st-no">Refused</span><div class="wn-pips"><p class="wn-pr"><span class="wn-pip"><i>1</i>–</span><span class="wn-pip"><i>2</i>–</span><span class="wn-pip no"><i>3</i>✗</span></p><p class="wn-why">Fails check 3: the owner's limit</p></div></div>
+      <div class="v8f-p wn-card"><p class="v8f-pn">Green deposit</p><p class="v8f-pd">No rule on what the bank finances with it</p><span class="v7s-stamp v8f-st-no">Refused</span><div class="wn-pips"><p class="wn-pr"><span class="wn-pip no"><i>1</i>✗</span><span class="wn-pip"><i>2</i>–</span><span class="wn-pip"><i>3</i>–</span></p><p class="wn-why">Fails check 1: no binding rule</p></div></div>
     </div>
-    <p class="v8c-next">Only the climate index fund goes on, to be sized by each person's limit <svg class="ic"><use href="#i-arrow-right"/></svg></p>
+    <p class="v8c-next wn-next"><b>Three out, each on a different check.</b> Only the climate index fund goes on, to be sized by each person's limit <svg class="ic"><use href="#i-arrow-right"/></svg></p>
   </div>
   <p class="sowhat">On the SFC's ESG list. Empty for two years. The label let it through; the check didn't.</p>
   <aside class="notes">WIN: I'm Win, on the savings. For any client, every product passes three checks first: a binding rule,
@@ -1613,9 +1654,8 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </header>
   <div class="body v8f v8s">
     <div class="v8f-in"><span class="v8f-tag">In</span><span class="v8f-ask">The one product that passed: <b>the climate index fund</b></span></div>
-    <p class="v8f-mesh"><span>2</span><em>Each person's limit sizes it</em></p>
-    <svg viewBox="0 0 1184 150" width="1184" height="150" style="font-family:var(--text)">
-      <text x="0" y="17" font-size="16" font-weight="800" fill="#0F1E3D">Adrian <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.13% a year in fees</tspan></text>
+        <svg viewBox="0 0 1184 150" width="1184" height="150" style="font-family:var(--text)">
+      <text x="0" y="17" font-size="16" font-weight="800" fill="#0F1E3D">Adrian <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.13% a year in fees, ≈HK$2.6K</tspan></text>
       <text x="1184" y="17" font-size="14" fill="#566173" text-anchor="end"><tspan font-weight="800" fill="#0F1E3D">His limit:</tspan> 0.5% a year from the market ÷ the fund's 2.09% = 24%</text>
           <rect x="0.0" y="26" width="284.2" height="34" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
           <text x="10.0" y="48" font-size="14" font-weight="800" fill="#0F1E3D">Climate index 24%</text>
@@ -1627,7 +1667,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
           <text x="838.8" y="48" font-size="14" fill="#0F1E3D">Global bonds 25%</text>
           <rect x="1124.8" y="26" width="59.2" height="34" fill="#C9D1DC"/>
           <text x="1154.4" y="48" font-size="14" text-anchor="middle" fill="#0F1E3D">5%</text>
-      <text x="0" y="87" font-size="16" font-weight="800" fill="#0F1E3D">Carmen <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.29% a year in fees</tspan></text>
+      <text x="0" y="87" font-size="16" font-weight="800" fill="#0F1E3D">Carmen <tspan font-size="14" font-weight="500" fill="#566173">· HK$2.07M · 0.29% a year in fees, ≈HK$5.9K</tspan></text>
       <text x="1184" y="87" font-size="14" fill="#566173" text-anchor="end"><tspan font-weight="800" fill="#0F1E3D">Her limit:</tspan> 3% a year from the market covers all her shares</text>
           <rect x="0.0" y="96" width="710.4" height="34" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/>
           <text x="10.0" y="118" font-size="14" font-weight="800" fill="#0F1E3D">Climate index 60%</text>
@@ -1641,8 +1681,19 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
           <text x="1154.4" y="118" font-size="14" text-anchor="middle" fill="#0F1E3D">5%</text>
       <rect x="0" y="139" width="14" height="10" fill="#E3F1E6" stroke="#3F9A55" stroke-width="2"/><text x="20" y="148" font-size="12.5" fill="#566173">passed the check · grey: plain funds, Treasuries, cash · fees: our area 3 brief</text>
     </svg>
-    <div class="v8f-out"><span class="v8f-tag v8f-tag-out">Out</span><p class="v8f-big">26.6%</p><p class="v8f-what">of the family's HK$10.47M: what comes out of the two limits, not the 25% they asked for</p>
-      <div class="v8f-price"><p><b>−HK$0.62M</b> for the children: the fee gap against plain twins, paid from the room</p><p><b>30% less carbon</b> than the market: a footprint, not a change</p></div></div>
+    <div class="wn-out">
+      <div><p class="wn-k">Out of the two limits</p><p class="wn-big"><span class="v8f-tag v8f-tag-out">Out</span><b>26.6%</b></p>
+        <p class="wn-bw">of the family's HK$10.47M: not the 25% they asked for</p></div>
+      <div><p class="wn-k">How it adds up · HK$M</p>
+        <p class="wn-stack"><span class="wn-s1" style="flex:0.50">0.50</span><span class="wn-s2" style="flex:1.24">1.24</span><span class="wn-s3" style="flex:0.21">.21</span><span class="wn-s4" style="flex:0.84">0.84</span></p>
+        <div class="wn-lg"><p><em class="wn-s1"></em>Adrian's climate fund</p><p><em class="wn-s2"></em>Carmen's climate fund</p><p><em class="wn-s3"></em>Carmen's green bonds</p><p><em class="wn-s4"></em>MPF low-carbon fund</p></div>
+        <p class="wn-sum"><b>HK$2.78M ÷ HK$10.47M = 26.6%</b> · ESTIMATED</p></div>
+      <div><p class="wn-k">Paid from the room (slide 4)</p>
+        <p class="wn-room"><span class="wn-r1" style="flex:0.279"></span><span class="wn-r2" style="flex:0.742"></span><span class="wn-r3" style="flex:0.723"></span></p>
+        <p class="wn-rl"><span><b>HK$0.28M</b> these funds</span><span>of the HK$1.7M room</span></p>
+        <p class="wn-pz"><b>−HK$0.62M</b> for the children: the fee gap against plain twins</p>
+        <p class="wn-pz"><b>30% less carbon:</b> a footprint, not a change</p></div>
+    </div>
   </div>
   <p class="sowhat">Nobody targeted 26.6%. The limits produced it, at the plain fund's fee.</p>
   <aside class="notes">WIN: Then each parent's limit sizes it. Adrian may stray half a per cent a year from the market, so he
@@ -1684,11 +1735,16 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
       </div>
       <p class="o9-end"><b>Assumes Adrian works to 65.</b> Claims checked outside; any restatement shows the old figure · odds MEASURED · tonnes ESTIMATED</p>
     </div>
-    <div class="o9-side v9-side">
+    <div class="o9-side v9-side wn-side">
       <div><p class="o9-k">A PRODUCT'S LABEL</p><p class="o9-prod"><span class="chip">ESG ✓</span><span>says what a fund holds</span></p></div>
       <p class="v9-to"><svg class="ic"><use href="#i-arrow-down"/></svg></p>
       <div><p class="o9-k">THE PLAN'S LABEL</p><p class="v9-pl">says whether the whole plan still passes all three tests, every year, with a trigger on every line</p></div>
       <p class="v9-miss"><b>A missing price becomes a decision:</b> buy the data, use a range, or set a trigger.</p>
+      <div class="wn-cal"><p class="o9-k">WHEN WE DECIDE AGAIN</p>
+        <div class="wn-tl"><p class="wn-st"><b>2027</b><span>Carbon baseline, the lease, the scholarship fund</span></p>
+          <p class="wn-st"><b>Mar 2028</b><span>Vans ordered, before the tax waiver ends</span></p>
+          <p class="wn-st yr"><b>Every year</b><span>This label, and the flat's price gap</span></p>
+          <p class="wn-st"><b>2046</b><span>The building turns 50: the flat decided</span></p></div></div>
     </div>
   </div>
   <p class="sowhat">A product's label never changes. The plan's label is earned again every year.</p>
@@ -1772,6 +1828,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
     <p class="src">Our client · money: our model (MEASURED) · tonnes ESTIMATED · plastic: S&amp;P Platts, 7 Oct 2026 · limit ILLUSTRATIVE</p><span class="pg">13</span>
   </footer>
 </section>
+
 <!-- Backup slides for the questions (Final_Plan.md §4.5): numbered 11-20 after the close, so a speaker can type
      the number and press Enter. data-backup: not spoken, not timed. Built 14 Nov, evening. -->
 
@@ -2372,6 +2429,7 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
   </footer>
 </section>
 
+
 </main>
 <script>
 /* On screen, shrink the deck to fit narrow windows. Print ignores this. */
@@ -2386,3 +2444,4 @@ tr.total td{border-top:2.5px solid var(--ink);font-weight:700}
 </script>
 </body>
 </html>
+
