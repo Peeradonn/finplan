@@ -1978,6 +1978,13 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **16 Nov, 15:00 (Claude): pre-submission check.** Axis.pptx: 34 slides (talk 1–13, the end card 14, backups 15–33,
+  the index 34); the end card moved into "The close" section. Scanned the file: no university name, email or account
+  (one hit is "starts university" in slide 3's spoken notes), no placeholders, no team notes in the speaker notes,
+  every cross-reference and all 19 index entries point at the right slide; metadata Team Axis; fonts embedded.
+  Slide 5's line on the customer route softened to match Fahtai's slide 9 (the benefit of carbon data is not
+  quantified). Not done here: opening the file on a PC without our font and an older PowerPoint.
+
 - **16 Nov, 14:45 (Claude, Pete: "instead of just making the things appear, grey out the parts we have not animated in
   yet").** Slides 2–12 now arrive complete, with the steps still to come in grey (30% opacity, the deck's convention)
   and colour lighting each part as it's spoken; no slide opens on an empty sheet. Slides 1 and 13 keep their earlier

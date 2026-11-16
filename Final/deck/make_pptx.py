@@ -61,7 +61,7 @@ WORK = os.path.join(HERE, "build", "pptx")
 CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
           r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"]
 TALK_SECTIONS = [("The open", [1]), ("PRISM", [2]), ("Profile", [3, 4]), ("Risk", [5]), ("The flat", [6]),
-                 ("The business", [7, 8, 9]), ("The savings", [10, 11]), ("Monitor", [12]), ("The close", [13])]
+                 ("The business", [7, 8, 9]), ("The savings", [10, 11]), ("Monitor", [12]), ("The close", [13, 14])]   # 14: the end card, on screen for the questions (16 Nov)
 TALK_N = 13                     # storyline v5 with slides 3, 7 and 9 split (14 Nov): slides after 13 are the backup
 SECTIONS = TALK_SECTIONS        # set from the slide count in main()
 E = 9525                                   # EMU per CSS px (a 1280 px slide is 13.333 in)
@@ -873,7 +873,7 @@ def main():
     SECTIONS = [(name, [i for i in nums if i <= n]) for name, nums in TALK_SECTIONS]
     SECTIONS = [(name, nums) for name, nums in SECTIONS if nums]
     if n > TALK_N:
-        SECTIONS.append(("Backup for the questions", list(range(TALK_N + 1, n + 1))))
+        SECTIONS.append(("Backup for the questions", list(range(TALK_N + 2, n + 1))))
     # one file: the submitted one is the one used on the day, so it carries the click builds
     raw = os.path.join(WORK, "Axis_raw.pptx")
     counts = build(data, info, raw, cal, present=True)
