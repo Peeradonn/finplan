@@ -11,8 +11,11 @@ What changes from Round Two (a live talk on the venue's notebook and projector):
 - **One file.** The PowerPoint we submit is the only one we can use on the day, so it carries the click builds (each
   slide's data-b steps, in the script's order) and, after the replay, the backup slides for the questions. Every shape
   is still in the file, so it reads complete in edit view and in print.
-- **No Morph, no transitions:** the venue's PowerPoint version is unknown (AGENTS.md). Steps still to come show grey
-  until spoken unless the slide has class "reveal", which makes them appear from nothing.
+- **Motion (16 Nov, Pete):** a 0.7 s Morph into each talk slide and the close, by object, so the shared frame (the
+  sheet, the prism strip, the closing bar, the title, the footer) stays still and slide 2's P glides into slide 3's
+  badge. The venue's PowerPoint version is unknown (AGENTS.md), so nothing depends on it: a PowerPoint without Morph
+  reads the built-in fallback, a fast fade. Backups have no transition. Steps still to come show grey until spoken
+  unless the slide has class "reveal" (every talk step slide since 16 Nov), which makes them appear from nothing.
 - Sections follow storyline v5 (13-14 Nov; slides 3, 7 and 9 split, so thirteen talk slides); slides after 13 go into "Backup for the questions".
 
 How (unchanged from Round Two):
@@ -557,15 +560,16 @@ def greyed(it):
 
 
 def transition_el(kind):
-    """Morph into the slides that keep the same frame and house (5 to 9); no transition elsewhere (Pete, 25 Oct:
-    no fade between slides). Returns None for no transition."""
+    """Morph into each talk slide (16 Nov, Pete: "a smooth transition where possible, especially the bottom part, but
+    not too much"): 0.7 s, by object, so the shared frame stays still; a PowerPoint without Morph (before 2019 / 365)
+    reads the fallback, a fast fade. No transition on the backups (jumped to by number). None for no transition."""
     if kind != "morph":
         return None
     if kind == "morph":
         xml = ('<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">'
                '<mc:Choice xmlns:p159="http://schemas.microsoft.com/office/powerpoint/2015/09/main" Requires="p159">'
                f'<p:transition xmlns:p="{P_NS}" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" '
-               'spd="slow" p14:dur="900"><p159:morph option="byObject"/></p:transition></mc:Choice>'
+               'spd="med" p14:dur="700"><p159:morph option="byObject"/></p:transition></mc:Choice>'
                f'<mc:Fallback><p:transition xmlns:p="{P_NS}" spd="fast"><p:fade/></p:transition></mc:Fallback>'
                '</mc:AlternateContent>')
     else:
@@ -685,6 +689,9 @@ def build(data, info, path, cal, present=False):
             n0 = len(s.shapes)
             draw(s, it)
             new = list(s.shapes)[n0:]
+            if it.get("fr"):                                 # the shared frame: one name on every slide (16 Nov)
+                for sh in new:
+                    sh.name = f"!!frame {it['fr']} {it['k']}"
             if step > 1:
                 steps.setdefault(step, []).extend(sh.shape_id for sh in new)
             if it.get("role") and it.get("layer"):
@@ -700,7 +707,7 @@ def build(data, info, path, cal, present=False):
         import hashlib
         seen = {}
         for sh in s.shapes:
-            if sh.name == "!!house":
+            if sh.name == "!!house" or sh.name.startswith("!!frame "):
                 continue
             if sh.has_text_frame and sh.text_frame.text.strip():
                 sig = "T " + re.sub(r"\s+", " ", sh.text_frame.text.strip())[:40]
@@ -709,10 +716,14 @@ def build(data, info, path, cal, present=False):
                                                                  else sh._element)).hexdigest()[:8]
             seen[sig] = seen.get(sig, 0) + 1
             # "!!" tells Morph to pair a shape only with the same name on the next slide; without it, Morph also
-            # pairs unrelated shapes of one kind (slide 4's result box flew into slide 5's rules, 25 Oct)
-            sh.name = "!!" + (sig if seen[sig] == 1 else f"{sig} #{seen[sig]}")
+            # pairs unrelated shapes of one kind (slide 4's result box flew into slide 5's rules, 25 Oct). 16 Nov: only
+            # the frame and PRISM's letters pair across slides (slide 2's P glides into slide 3's P badge); anything
+            # else gets this slide's own name, so a step number never flies across the page
+            shared = re.fullmatch(r"T [PRISM]", sig)
+            base = sig if shared else f"s{i} {sig}"
+            sh.name = "!!" + (base if seen[sig] == 1 else f"{base} #{seen[sig]}")
         # transition into this slide
-        kind = "morph" if i > 1 and has_house[i - 1] and has_house[i - 2] else "fade"
+        kind = "morph" if 1 < i <= TALK_N + 1 else "none"    # the talk and the close; not the backups
         root = s._element
         tr = transition_el(kind)
         if tr is not None:

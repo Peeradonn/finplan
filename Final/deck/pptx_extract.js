@@ -272,11 +272,26 @@
       const box = {x: ob.left - sr.left + num(cs.borderLeftWidth) + num(cs.paddingLeft),
                    y: ob.top - sr.top + num(cs.borderTopWidth) + num(cs.paddingTop),
                    w: ob.width - num(cs.borderLeftWidth) - num(cs.borderRightWidth) - num(cs.paddingLeft) - num(cs.paddingRight)};
-      return {k: 'text', lines: live, align: cs.textAlign, box, tag: owner.tagName.toLowerCase(), cls: owner.className && owner.className.baseVal === undefined ? owner.className : ''};
+      return {k: 'text', lines: live, align: cs.textAlign, box, tag: owner.tagName.toLowerCase(), cls: owner.className && owner.className.baseVal === undefined ? owner.className : '', fr: frameOf(owner)};
+    }
+
+    // the frame every talk slide shares (16 Nov): named alike on every slide so Morph keeps it still and changes
+    // only what's inside it (the white sheet, the prism strip, the closing bar, the title, the footer)
+    function frameOf(el) {
+      if (!el || !el.classList) return '';
+      const c = el.classList;
+      if (c.contains('st-strip')) return 'strip';
+      if (c.contains('sowhat')) return 'sowhat';
+      if (c.contains('body') && el.parentElement && el.parentElement.classList.contains('slide')) return 'sheet';
+      if (el.tagName === 'H2' && el.parentElement && el.parentElement.classList.contains('head')) return 'title';
+      if (c.contains('kt-do')) return 'ktdo';
+      if (c.contains('src') && el.closest('.foot')) return 'src';
+      if (c.contains('pg') && el.closest('.foot')) return 'pg';
+      return '';
     }
 
     function boxItem(el, cs, b, op) {
-      const it = {k: 'box', ...b, op, tag: el.tagName.toLowerCase()};
+      const it = {k: 'box', ...b, op, tag: el.tagName.toLowerCase(), fr: frameOf(el)};
       const bg = rgba(cs.backgroundColor);
       if (bg && bg[3] > 0) it.fill = bg;
       if (cs.backgroundImage && cs.backgroundImage !== 'none' && !cs.backgroundImage.startsWith('url(')) it.grad = cs.backgroundImage;
@@ -375,7 +390,7 @@
           pending.push(fetch(src).then(r => r.text()).then(t => { assets[ix].svg = t; return rasterize(t, b.w, b.h, 3); }).then(p => { assets[ix].png = p; }));
         }
         const own = boxItem(el, cs, b, o);
-        items.push({k: 'img', ...b, op: o, a: ix, fit: cs.objectFit, pos: cs.objectPosition, clip: clipOf(el),
+        items.push({k: 'img', ...b, op: o, a: ix, fit: cs.objectFit, pos: cs.objectPosition, clip: clipOf(el), fr: frameOf(el),
                     round: own && own.rad[0] >= Math.min(b.w, b.h) / 2 - 1, border: own && own.border, shadow: own && own.shadow});
         return;
       }

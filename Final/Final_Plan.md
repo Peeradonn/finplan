@@ -1978,6 +1978,18 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **16 Nov, 15:00 (Claude, Pete: "more animation ... we wouldn't want to reveal every single thing ... a morph from
+  slide 2 to 3 ... a smooth transition where possible, especially the bottom part, but not too much").**
+  - **Clicks:** slides 2–12 now reveal in the order spoken (class `reveal`, `data-b`): on arrival the method, for any
+    client; then the Wongs' evidence; then the verdict. 2–3 clicks a slide, 29 in the talk (slide 1's four and slide
+    13's one unchanged). The closing bar stays visible from arrival, so the bottom never blinks. Each speaker's click
+    cues are in the PowerPoint notes ("[Clicks on this slide]").
+  - **Transitions:** a 0.7 s Morph into slides 2–14 with a fade fallback for older PowerPoint; the shared frame is named
+    alike on every slide so it holds still; slide 2's P glides into slide 3's P badge. Only the frame and PRISM's
+    letters pair across slides. No transition on the backups.
+  - **To do before the 21st:** click through once in Slide Show on the venue-like laptop; every speaker rehearses
+    their clicks (the timed run). AGENTS.md's "don't depend on Morph" holds: without it the deck fades.
+
 - **16 Nov, 14:30 (Claude, Pete).**
   - **Slide 8 selects from Impact** (Pete: "shouldn't we focus more on selecting from the impact ... right now it seems
     like we're selecting by our feeling ... each section building up to the next"; chose "carry slide 7's rows in"). The
