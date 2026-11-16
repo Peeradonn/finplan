@@ -1978,6 +1978,18 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **16 Nov, 14:30 (Claude, Pete).**
+  - **Slide 8 selects from Impact** (Pete: "shouldn't we focus more on selecting from the impact ... right now it seems
+    like we're selecting by our feeling ... each section building up to the next"; chose "carry slide 7's rows in"). The
+    right side is slide 7's four cuts with slide 7's own numbers, each tagged with the tree step where it leaves the
+    test: recycled PET and the lighter board at step 1, LED and air-con at step 2 (company cash, as slide 7 says), the
+    vans at step 3 (the only loan, as slide 7 says). Fahtai's top-up (≈HK$46K a year to 2032) and pending checks kept;
+    the four kinds of finance one "screened out at her size" line (detail: backup 20); his green-lease box kept. The
+    closing line states the result: only the vans need a loan. Then thinned (Pete: "too packed"). **Fahtai: please
+    check his spoken words still match.**
+  - **Slide 14:** the prism on the right, the beam angled in from the top left (straight, never curved), the colours
+    bent toward the prism's base; PRISM, the rule and the team bottom left, under the beam.
+
 - **16 Nov, 13:45 (Claude, Pete: "more like ending ... remove the ESG label ... the beam looks weird, like curving ...
   the prism closer ... more depth ... premium, like a big full stop").** Slide 14 is an end card: the prism redrawn
   centred and close (stronger perspective), the beam level and straight on the page (it had risen in 3D and read as

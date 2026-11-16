@@ -21,7 +21,7 @@ out = sys.argv[1]
 YAW = math.radians(float(sys.argv[2]) if len(sys.argv) > 2 else 26.0)
 PITCH = math.radians(float(sys.argv[3]) if len(sys.argv) > 3 else 12.0)
 
-CX, CY = 640, 436          # the prism's centre on the page: centred, below the title
+CX, CY = 815, 420          # the prism on the right; the text on the left (Pete, 16 Nov)
 D, F = 820.0, 1000.0       # camera close: strong perspective
 S = 290.0                  # the triangle's side
 TH = S * math.sqrt(3) / 2
@@ -152,7 +152,8 @@ def sheens(front):
 # ---- the light
 ENTRY = lerp((A2[0], A2[1], 0.0), (B2[0], B2[1], 0.0), 0.58)
 EXITS = [lerp((A2[0], A2[1], 0.0), (C2[0], C2[1], 0.0), t) for t in (0.40, 0.46, 0.52, 0.58, 0.64)]
-ANGLES = [math.radians(a) for a in (21, 11, 1, -9, -19)]
+ANGLES = [math.radians(a) for a in (17, 7, -3, -13, -23)]   # bent toward the base, as a prism bends light
+BEAM_DEG = 15.0                 # the beam in, angled down from the top left (on the page)
 DZ = 0.18                       # the rays recede a little: they taper into the distance
 
 
@@ -170,9 +171,9 @@ def ray_poly(q, a, length=900.0, w0=2.2, w1=13.0, n=16):
     return pts(top + bot[::-1]), proj(q), proj(end)
 
 
-defs = ['<radialGradient id="bg" cx="0.5" cy="0.56" r="0.75"><stop offset="0" stop-color="#26346A"/>'
+defs = ['<radialGradient id="bg" cx="0.64" cy="0.54" r="0.78"><stop offset="0" stop-color="#26346A"/>'
         '<stop offset=".42" stop-color="#111C3C"/><stop offset="1" stop-color="#04070F"/></radialGradient>',
-        '<radialGradient id="vig" cx="0.5" cy="0.52" r="0.78"><stop offset=".55" stop-color="#000" stop-opacity="0"/>'
+        '<radialGradient id="vig" cx="0.55" cy="0.5" r="0.8"><stop offset=".55" stop-color="#000" stop-opacity="0"/>'
         '<stop offset="1" stop-color="#000" stop-opacity=".62"/></radialGradient>',
         '<filter id="glow" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1680" height="1120">'
         '<feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
@@ -238,17 +239,30 @@ defs.append('<mask id="reflmask" maskUnits="userSpaceOnUse" x="0" y="0" width="1
 rb, rf, _ = prism_svg(mirror, 0.85)
 g.append(f'<g mask="url(#reflmask)">{rb}{rf}</g>')
 
-# the beam in: level and straight on the page, from the left edge to the glass
+# the beam in: straight on the page, angled down from the top left into the glass (Pete, 16 Nov: "bending towards
+# the top left a bit"); straight, never curved, so it reads as light
 ex, ey = proj(ENTRY)
-defs.append(f'<linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="{ex:.0f}" y2="0">'
-            '<stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".25" stop-color="#FFFFFF" stop-opacity=".85"/>'
+BX, BY = -20.0, ey - (ex + 20.0) * math.tan(math.radians(BEAM_DEG))     # where it enters the page, on the left edge
+ux, uy = (ex - BX), (ey - BY)
+ul = math.hypot(ux, uy)
+ux, uy = ux / ul, uy / ul
+nx, ny = -uy, ux
+
+
+def along(t, w):
+    return (BX + ux * ul * t + nx * w, BY + uy * ul * t + ny * w)
+
+
+defs.append(f'<linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="{BX:.0f}" y1="{BY:.0f}" x2="{ex:.0f}" y2="{ey:.0f}">'
+            '<stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".22" stop-color="#FFFFFF" stop-opacity=".85"/>'
             '<stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/></linearGradient>')
-g.append(f'<rect x="0" y="{ey - 9:.1f}" width="{ex:.1f}" height="18" fill="#C9D6FF" fill-opacity=".18" filter="url(#bloom)"/>')
-g.append(f'<polygon points="{spts([(0, ey - 2.5), (ex, ey - 5.5), (ex, ey + 5.5), (0, ey + 2.5)])}" fill="url(#beam)" filter="url(#glow)"/>')
+g.append(f'<polygon points="{spts([along(0, -10), along(1, -12), along(1, 12), along(0, 10)])}" fill="#C9D6FF" '
+         'fill-opacity=".18" filter="url(#bloom)"/>')
+g.append(f'<polygon points="{spts([along(0, -2.5), along(1, -5.5), along(1, 5.5), along(0, 2.5)])}" fill="url(#beam)" filter="url(#glow)"/>')
 rnd = random.Random(11)
 for k in range(10):
-    x = 70 + k * (ex - 110) / 10 + rnd.uniform(-10, 10)
-    g.append(f'<circle cx="{x:.0f}" cy="{ey + rnd.choice((-12, 10, -8, 13)):.0f}" r="{rnd.choice((1.2, 1.6, 2.0))}" '
+    p = along(0.12 + 0.08 * k + rnd.uniform(-0.015, 0.015), rnd.choice((-12, 10, -8, 13)))
+    g.append(f'<circle cx="{p[0]:.0f}" cy="{p[1]:.0f}" r="{rnd.choice((1.2, 1.6, 2.0))}" '
              f'fill="#FFFFFF" fill-opacity="{rnd.uniform(.3, .6):.2f}"/>')
 
 pb, pf, front = prism_svg()
@@ -278,8 +292,8 @@ for i, (q, a, c) in enumerate(zip(EXITS, ANGLES, COLOURS)):
 x, y = proj(EXITS[2])
 g.append(f'<ellipse cx="{x:.0f}" cy="{y:.0f}" rx="16" ry="62" fill="url(#spot)" opacity=".8" transform="rotate(-16 {x:.0f} {y:.0f})"/>')
 g.append(f'<circle cx="{ex:.0f}" cy="{ey:.0f}" r="30" fill="url(#spot)" opacity=".75"/>')
-g.append(f'<line x1="{ex - 60:.0f}" y1="{ey:.0f}" x2="{ex + 60:.0f}" y2="{ey:.0f}" stroke="#FFFFFF" stroke-opacity=".5" '
-         'stroke-width="1.5" filter="url(#soft)"/>')
+g.append(f'<line x1="{ex - 60 * ux:.0f}" y1="{ey - 60 * uy:.0f}" x2="{ex + 60 * ux:.0f}" y2="{ey + 60 * uy:.0f}" '
+         'stroke="#FFFFFF" stroke-opacity=".5" stroke-width="1.5" filter="url(#soft)"/>')
 for k in range(40):
     px, py, r = rnd.uniform(0, 1280), rnd.uniform(0, 600), rnd.choice((0.8, 1.0, 1.3, 1.8, 2.8))
     g.append(f'<circle cx="{px:.0f}" cy="{py:.0f}" r="{r}" fill="#C9D6FF" fill-opacity="{rnd.uniform(.06, .24):.2f}"'
@@ -292,4 +306,4 @@ open(out, "w", encoding="utf-8").write('<!DOCTYPE html><html><head><meta charset
                                        'background:#04070F;overflow:hidden}svg{display:block}</style></head><body>' + svg + '</body></html>')
 xs = [proj(p)[0] for p in (fa, fb, fc, ba, bb, bc)]
 ys = [proj(p)[1] for p in (fa, fb, fc, ba, bb, bc)]
-print("ok", out, "prism box", round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys)), "beam y", round(ey))
+print("ok", out, "prism box", round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys)), "beam y", round(ey), "beam enters at", round(BX), round(BY))

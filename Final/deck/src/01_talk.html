@@ -186,12 +186,12 @@
 .prf .prf-sh{grid-column:span 2;background:#EFEDFB;font-weight:700}   /* shared money: one cell across both parents */
 .prf b{font-weight:800}
 .prf .prf-q{color:var(--slate)}
-/* the close (14, 16 Nov) as an end card over the 3D prism (Final/looks/prism_cover_art.py): centred, the rule, the
-   team; nothing else (Pete: "like a big full stop"). cl- classes only here. */
-.s2-stage h2.cl-word{position:absolute;left:0;right:0;top:40px;margin:0;text-align:center;font:800 84px/1 var(--head);
-  letter-spacing:24px;padding-left:24px;color:#fff;text-shadow:0 0 36px rgba(156,149,240,.4)}
-.cl-rule{position:absolute;left:170px;right:170px;top:140px;text-align:center;font:600 19px/1.45 var(--head);color:#D2D9E4;text-wrap:balance}
-.cl-names{position:absolute;left:0;right:0;bottom:30px;text-align:center;font:600 15px/1 var(--text);letter-spacing:1.6px;color:#AEB8C8}
+/* the close (14, 16 Nov) as an end card over the 3D prism (Final/looks/prism_cover_art.py): the prism on the right,
+   the text bottom left, under the beam that comes in from the top left (Pete); the rule and the team, nothing else ("like a big full stop"). cl- classes only here. */
+.s2-stage h2.cl-word{position:absolute;left:44px;top:398px;margin:0;font:800 108px/1 var(--head);letter-spacing:14px;color:#fff;
+  text-shadow:0 0 36px rgba(156,149,240,.4)}
+.cl-rule{position:absolute;left:50px;top:528px;width:470px;font:600 19px/1.45 var(--head);color:#D2D9E4;text-wrap:balance}
+.cl-names{position:absolute;left:50px;bottom:36px;font:600 15px/1 var(--text);letter-spacing:1.6px;color:#AEB8C8}
 .cl-names span{color:var(--brand-light);margin:0 6px}
 /* the limit slide after the split: the Wongs' panel full width under the two steps */
 #v3 .p4-body{flex-direction:column;gap:6px} #v3 .p4-right{width:100%} #v3 .v3-steps{margin-top:2px}
@@ -1105,6 +1105,24 @@
 #v7 .f8l-lease h3{display:flex;align-items:center;justify-content:space-between;gap:8px;font:800 15px/1.25 var(--head);margin:0}
 #v7 .f8l-lease h3 .vd{font-size:12.5px}
 #v7 .f8l-lease p{font:500 13.5px/1.3 var(--text);color:var(--slate);margin-top:3px}
+/* 16 Nov (Pete: "shouldn't we focus more on selecting from the impact ... each section building up to the next"):
+   slide 7's four cuts carried in as rows, with slide 7's own numbers, each tagged with the tree step where it leaves
+   the test (left), then its route. The four kinds of finance shrink to one "also screened" line (detail: backup 20).
+   f8s- classes only here. */
+#v7 .f8s-head{display:grid;grid-template-columns:118px 1fr;gap:10px;font:800 11.5px/1.2 var(--text);letter-spacing:.6px;
+  text-transform:uppercase;color:var(--slate);padding:0 0 5px;border-bottom:1.5px solid var(--ink);margin-top:2px}
+#v7 .f8s-head span:last-child{text-align:right}
+#v7 .f8s-row{display:grid;grid-template-columns:130px 1fr;column-gap:10px;padding:11px 0 11px;border-bottom:1px solid var(--rule)}
+#v7 .f8s-cut{font:800 16.5px/1.25 var(--head);color:var(--ink)}
+#v7 .f8s-imp{font:600 15px/1.3 var(--num);color:#0E7490;align-self:center}
+#v7 .f8s-out{grid-column:2;font:500 15px/1.35 var(--text);color:#3F4A5C;margin-top:4px}
+#v7 .f8s-out b{color:var(--brand);font-weight:800;white-space:nowrap}
+#v7 .f8s-out i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;
+  background:var(--brand);color:#fff;font:800 11px/1 var(--text);margin-right:7px;vertical-align:1px}
+#v7 .f8s-loan{background:#F4F2FD;margin:0 -8px;padding:11px 8px;border-radius:4px}
+#v7 .f8s-note{grid-column:2;font:500 12.5px/1.3 var(--text);color:var(--slate);margin-top:3px}
+#v7 .f8s-also{font:500 13.5px/1.4 var(--text);color:var(--slate);margin-top:12px}
+#v7 .f8s-also b{color:var(--ink);font-weight:800}
 </style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
@@ -1611,41 +1629,38 @@
       </svg>
     </div>
     <div class="f8l-right">
-      <p class="f8l-cap">Carmen · apply the funding test</p>
-      <div class="f8l-case">
-        <img src="inline:img/photo-pet-box.jpg" alt="PET packaging">
-        <div><h3>Packaging · ≈HK$0.27M in the cash cycle</h3>
-          <div class="f8d-options">
-            <div class="f8d-option f8d-proposed"><p>Cash + supplier terms <b>PROPOSE</b></p></div>
-            <div class="f8d-option"><p>Borrow for the gap</p></div>
-          </div>
-          
-        </div>
+      <p class="f8l-cap">Carmen · slide 7's cuts, through the test</p>
+      <div class="f8s-row">
+        <p class="f8s-cut">Recycled PET</p><p class="f8s-imp">≈0.27M · 108 t · ≈0 a tonne</p>
+        <p class="f8s-out"><i>1</i>Pays its way <b>→ Supplier terms + cash</b></p>
       </div>
-      <div class="f8l-case">
-        <img src="inline:img/photo-van.jpg" alt="Hong Kong delivery van">
-        <div><h3>Vans + equipment · ≈HK$1.91M upfront</h3>
-          <div class="f8d-options">
-            <div class="f8d-option"><p>All company cash</p></div>
-            <div class="f8d-option f8d-proposed"><p>HK$1.5M loan <b>PROPOSE</b></p><small>+ HK$0.41M company cash</small></div>
-          </div>
-          <p class="f8d-test"><b>Savings ≈HK$303K / HK$349K repayments (87%)</b> · debt cover ≈3×<br><b>Top-up ≈HK$46K/year to 2032</b> · cash/lender checks pending</p>
-        </div>
+      <div class="f8s-row">
+        <p class="f8s-cut">Lighter board</p><p class="f8s-imp">no capital · 42 t, not counted</p>
+        <p class="f8s-out"><i>1</i>Nothing to fund <b>→ Test first</b></p>
       </div>
-            <p class="f8l-cap">Each kind of finance, at her size</p>
-      <div class="f8l-routes">
-        <div class="f8l-route"><h3>Sustainability-linked<b class="f8l-route-verdict">NOT PROPOSED</b></h3><p>Assumed costs exceed saving</p></div>
-        <div class="f8l-route f8l-access"><h3>Supply-chain finance<b class="f8l-route-verdict">CONDITIONAL</b></h3><p>Buyer programme not confirmed</p></div>
-        <div class="f8l-route"><h3>Grant Scheme<b class="f8l-route-verdict">INELIGIBLE</b></h3><p>Loan below this scheme's HK$100M minimum</p></div>
-        <div class="f8l-route"><h3>Transition finance<b class="f8l-route-verdict">NOT PROPOSED</b></h3><p>No separate instrument proposed</p></div>
+      <div class="f8s-row">
+        <p class="f8s-cut">LED + air-con</p><p class="f8s-imp">≈124K · 7 t · saves money</p>
+        <p class="f8s-out"><i>2</i>Small, and it saves <b>→ Company cash</b></p>
       </div>
+      <div class="f8s-row f8s-loan">
+        <p class="f8s-cut">Electric vans</p><p class="f8s-imp">≈1.78M · 19 t · saves money</p>
+        <p class="f8s-out"><i>3</i>Too big for cash; savings repay ≈87% <b>→ HK$1.5M loan</b></p>
+        <p class="f8s-note">Company tops up ≈HK$46K a year to 2032 · checks pending</p>
+      </div>
+      <p class="f8s-also"><b>Screened out at her size:</b> sustainability-linked · supply-chain · Grant Scheme · transition finance</p>
       <div class="f8l-lease"><h3>Green lease at the 2027 renewal · the split incentive <span class="vd vd-fin"><svg class="ic"><use href="#i-tag"/></svg>Do it, but don't call it green</span></h3><p>She pays the bills, the landlord owns the walls: chargers and LED go in, repaid from savings.</p></div>
     </div>
   </div>
   <img class="st-strip" src="inline:img/strip-S.png" alt="">
-  <p class="sowhat">Match funding to cash timing without straining liquidity or repayment capacity.</p>
+  <p class="sowhat">Each cut leaves the test where its numbers send it: only the vans need a loan.</p>
   <aside class="notes">FAHTAI: Match funding to the cash need. First, can cash flow or supplier terms cover it? If not, compare company cash with borrowing, then screen the instrument. We propose a one-and-a-half-million loan: savings cover 87% of payments; the company tops up about forty-six thousand a year until 2032, subject to cash-buffer and lender checks. Sustainability-linked: not worth the assumed costs. Supply-chain: access unconfirmed. Grant: ineligible. No separate transition instrument proposed. Should the van loan be green?
-    [Notes: 15 Nov (Pete kept this layout; the review's points put into it): bankability on the vans (cover of payments ≈87%, debt cover 5.7× → ≈3× at HK$31/L, the vans as collateral: Decision_List.md B1, area2_business.md §3d; bank thresholds UNVERIFIED); the routes row is now the brief's kinds of finance at her size, each with its threshold (SLL ≈HK$4.8M of debt; supply-chain finance one bank's guide at ≈US$100M of trade; Grant Scheme loans ≥HK$100M, HKMA guideline 24 Apr 2026; transition finance: HK Taxonomy Phase 2A lists vans and LED as green). The same with charts: backup 30. On screen until 15 Nov: 'Proposals subject to cash-flow, supplier and lender checks' (now said here). Draft funding page, no lender offer or liquidity approval claimed. Framework: establish cash amount and timing; examine routine cash flow and supplier terms, then compare cash reserves with borrowing on liquidity left, total costs and downside repayment capacity; if neither works resize/defer. Cash is a valid comparator. Supplier terms can have a price and early payment consumes cash. ≈HK$0.27M working capital is ILLUSTRATIVE: B4's conditional supplier early-payment arrangement for data/terms, not the price of recycled content, not a grant and not proof that the change needs no finance. Quote, specification, supplier acceptance, customer willingness to pay any premium and actual cash conversion cycle remain unverified. HK$1.91M equipment, HK$1.5M secured loan plus HK$0.41M company cash are existing estimates on the ILLUSTRATIVE distributor (Decision_List section 2/B1); includes vans/chargers/LED/air-con, not vans alone. Profit/retained profit does not establish cash available. Need cash forecast and agreed operating buffer; no new reserve threshold invented. Existing estimates show equipment savings do not fully cover the proposed five-year payments; company must cover gap, slide 9 tests it. Check tenor, fees, collateral, guarantees and co-owner consent with lender. Green/plain equipment loan comparison and net label benefit belong on slide 9. Sustainability-linked: screen material KPIs, target ambition, verification and net ratchet benefit; not proposed on existing paid-verification assumptions, not a universal SME exclusion. Free/cheap verification exceptions remain possible; see research/area2_business.md and area2_supply_chain.md. Supply-chain finance: access through a buyer/customer programme is conditional; no universal minimum transaction size claimed. Grant Scheme is a cost subsidy, not credit. Official HKMA guideline effective 24 Apr 2026, p.3: Track II eligible bonds/loans require at least HK$100M; verified against primary source when compiling this draft: https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/bond-market-development/GSFGS_Guideline_%28Effective_from_20260424%29.pdf . Our HK$1.5M proposal is below that threshold; does not imply every grant or SME incentive is unavailable. Old log-size chart/five-kind catalogue removed from this page; existing backup remains. No new model figures.]</aside>
+    [Notes: 16 Nov (Pete chose "carry slide 7's rows in": the right side selects from Impact, not by preference):
+    slide 7's four cuts, with slide 7's own numbers, each tagged with the tree step where it leaves the test: PET and
+    the lighter board at step 1 (cash flow or supplier terms; nothing to fund), LED and air-con at step 2 (company
+    cash, as slide 7's capital column already says), the vans at step 3 (the only loan, as slide 7 says). Fahtai's
+    qualifications kept word for word in substance (top-up ≈HK$46K a year to 2032; cash-buffer and lender checks
+    pending); the four kinds of finance as one "also screened" line (detail: backup 20); his green-lease box kept.
+[Notes: 15 Nov (Pete kept this layout; the review's points put into it): bankability on the vans (cover of payments ≈87%, debt cover 5.7× → ≈3× at HK$31/L, the vans as collateral: Decision_List.md B1, area2_business.md §3d; bank thresholds UNVERIFIED); the routes row is now the brief's kinds of finance at her size, each with its threshold (SLL ≈HK$4.8M of debt; supply-chain finance one bank's guide at ≈US$100M of trade; Grant Scheme loans ≥HK$100M, HKMA guideline 24 Apr 2026; transition finance: HK Taxonomy Phase 2A lists vans and LED as green). The same with charts: backup 30. On screen until 15 Nov: 'Proposals subject to cash-flow, supplier and lender checks' (now said here). Draft funding page, no lender offer or liquidity approval claimed. Framework: establish cash amount and timing; examine routine cash flow and supplier terms, then compare cash reserves with borrowing on liquidity left, total costs and downside repayment capacity; if neither works resize/defer. Cash is a valid comparator. Supplier terms can have a price and early payment consumes cash. ≈HK$0.27M working capital is ILLUSTRATIVE: B4's conditional supplier early-payment arrangement for data/terms, not the price of recycled content, not a grant and not proof that the change needs no finance. Quote, specification, supplier acceptance, customer willingness to pay any premium and actual cash conversion cycle remain unverified. HK$1.91M equipment, HK$1.5M secured loan plus HK$0.41M company cash are existing estimates on the ILLUSTRATIVE distributor (Decision_List section 2/B1); includes vans/chargers/LED/air-con, not vans alone. Profit/retained profit does not establish cash available. Need cash forecast and agreed operating buffer; no new reserve threshold invented. Existing estimates show equipment savings do not fully cover the proposed five-year payments; company must cover gap, slide 9 tests it. Check tenor, fees, collateral, guarantees and co-owner consent with lender. Green/plain equipment loan comparison and net label benefit belong on slide 9. Sustainability-linked: screen material KPIs, target ambition, verification and net ratchet benefit; not proposed on existing paid-verification assumptions, not a universal SME exclusion. Free/cheap verification exceptions remain possible; see research/area2_business.md and area2_supply_chain.md. Supply-chain finance: access through a buyer/customer programme is conditional; no universal minimum transaction size claimed. Grant Scheme is a cost subsidy, not credit. Official HKMA guideline effective 24 Apr 2026, p.3: Track II eligible bonds/loans require at least HK$100M; verified against primary source when compiling this draft: https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/bond-market-development/GSFGS_Guideline_%28Effective_from_20260424%29.pdf . Our HK$1.5M proposal is below that threshold; does not imply every grant or SME incentive is unavailable. Old log-size chart/five-kind catalogue removed from this page; existing backup remains. No new model figures.]</aside>
   <footer class="foot">
     <div class="badge-prism"><p>SELECT<span>Area 2</span></p></div>
     <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1–B4, B6 · HKMA GSF Grant Scheme guideline, effective 24 Apr 2026, p.3 · bank/supplier terms unverified</p><span class="pg">8</span>
