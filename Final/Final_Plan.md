@@ -1957,6 +1957,13 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **16 Nov, 13:20 (Claude, Pete: "remove the thank you ... like a cover page ... the prism in 3D with depth").** Slide 14
+  is a cover page: a new 3D prism (`Final/looks/prism_cover_art.py`: a real triangular prism projected in perspective,
+  yaw 30°, pitch 14°, glass faces shaded by angle, back edges through the glass, a perspective floor with its
+  reflection, the five rays fading out by the edge), rendered at 2x to `img/prism-cover.jpg`. On it: Team Axis, PRISM,
+  the rule, the three tests, the "ESG ✓" label where the beam starts (as on slide 2), the five steps in their rays'
+  colours, the four names. No "Thank you", no numbers. Axis.pptx rebuilt; `--check` clean.
+
 - **16 Nov, afternoon (Claude, Pete's review of slides 6-8 and the close).**
   - **A closing slide, 14** (Pete: "before slide 14, we should have a closing slide"; then "a more artsy page
     showcasing our prism art"): slide 2's prism as a bookend, the label going in as one beam; the rule and its three

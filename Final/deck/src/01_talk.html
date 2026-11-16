@@ -186,15 +186,18 @@
 .prf .prf-sh{grid-column:span 2;background:#EFEDFB;font-weight:700}   /* shared money: one cell across both parents */
 .prf b{font-weight:800}
 .prf .prf-q{color:var(--slate)}
-/* the close (14, 16 Nov): slide 2's prism as a bookend; the right column where slide 2 lists the steps.
-   cl- classes only here */
-#v11 .s2-chip{top:395px} #v11 .s2-under{top:450px}
-.cl-r{position:absolute;left:800px;right:48px;top:118px}
-.cl-rule{font:600 21px/1.4 var(--head);color:#fff;text-wrap:balance}
-.cl-tags{display:flex;gap:8px;margin-top:18px}
-.cl-thanks{font:800 58px/1 var(--head);color:#fff;margin-top:62px;letter-spacing:-.5px}
-.cl-q{font:700 32px/1.1 var(--head);color:var(--brand-light);margin-top:8px}
-.cl-names{font:600 18px/1 var(--text);color:#D2D9E4;margin-top:30px;padding-top:18px;border-top:1px solid #33456A;letter-spacing:.3px}
+/* the close (14, 16 Nov) as a cover page over the 3D prism (Final/looks/prism_cover_art.py); cl- classes only here.
+   The chip sits where the art's beam starts (x 145, y 407). */
+.cl-kick{position:absolute;left:50px;top:46px;font:800 15px/1 var(--text);letter-spacing:1.8px;text-transform:uppercase;color:var(--brand-light)}
+.s2-stage h2.cl-word{position:absolute;left:44px;top:80px;margin:0;font:800 112px/1 var(--head);letter-spacing:12px;color:#fff;
+  text-shadow:0 0 40px rgba(156,149,240,.35)}
+.cl-rule{position:absolute;left:50px;top:208px;width:470px;font:600 19px/1.42 var(--head);color:#E3E8F0;text-wrap:balance}
+.cl-tags{position:absolute;left:50px;top:326px;display:flex;gap:8px}
+.cl-chip{position:absolute;left:48px;top:386px;background:var(--leaf);color:#fff;font:800 18px/1 var(--text);padding:12px 16px;
+  border-radius:22px;white-space:nowrap;box-shadow:0 0 22px rgba(63,154,85,.45)}
+.cl-under{position:absolute;left:50px;top:440px;font:600 14px/1.3 var(--text);color:#AEB8C8}
+.cl-steps{position:absolute;right:48px;top:46px;font:800 14.5px/1 var(--text);letter-spacing:1.2px;text-transform:uppercase;color:#5D6A86}
+.cl-names{position:absolute;left:50px;bottom:40px;font:600 19px/1 var(--text);color:#E3E8F0;letter-spacing:.3px}
 /* the limit slide after the split: the Wongs' panel full width under the two steps */
 #v3 .p4-body{flex-direction:column;gap:6px} #v3 .p4-right{width:100%} #v3 .v3-steps{margin-top:2px}
 #v3 .v3-bar{height:70px} #v3 .v3-bt{font-size:21px;margin-top:12px} #v3 .v3-bt b{font-size:32px} #v3 .v3-bs{font-size:15.5px;margin-bottom:18px}
@@ -1937,25 +1940,23 @@
   </footer>
 </section>
 
-<!-- 14 · The close, on screen for the questions (16 Nov, Pete: "a closing slide before slide 14", then "a more artsy
-     page showcasing our prism art"): slide 2's prism as a bookend; the rule and the three tests in words, no numbers
-     (slide 13 has just shown them). data-backup keeps it out of the script's clock. The backup index moved to the end
-     (34), so the backups keep their numbers 15-33. cl- classes only here. -->
+<!-- 14 · The close as a cover page, on screen for the questions (16 Nov, Pete: "a closing slide", then "more artsy,
+     showcasing our prism art", then "remove the thank you ... like a cover page ... the prism in 3D with depth"). The art
+     is drawn by Final/looks/prism_cover_art.py (a real 3D prism in perspective, yaw 30, pitch 14), rendered at 2x.
+     The beam starts at the label, as on slide 2. data-backup keeps it out of the script's clock. The backup index is 34,
+     so the backups keep their numbers 15-33. cl- classes only here. -->
 <section class="slide s2-stage" id="v11" data-backup>
-  <img class="s2-art" src="inline:img/prism-stage-low.png" alt="">
-  <p class="s2-kick">Team Axis</p>
-  <h2 class="s2-word">PRISM</h2>
-  <p class="s2-sub">Five steps, three tests.</p>
-  <span class="s2-chip">ESG ✓</span><p class="s2-under">a label: yes or no</p>
-  <div class="cl-r">
-    <p class="cl-rule">A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.</p>
-    <p class="cl-tags"><span class="v2-t v2-limit">THE LIMIT</span><span class="v2-t v2-change">THE CHANGE</span><span class="v2-t v2-room">THE ROOM</span></p>
-    <p class="cl-thanks">Thank you</p>
-    <p class="cl-q">Questions</p>
-    <p class="cl-names">Pete · Lookbua · Fahtai · Win</p>
-  </div>
+  <img class="s2-art" src="inline:img/prism-cover.jpg" alt="">
+  <p class="cl-kick">Team Axis</p>
+  <h2 class="cl-word">PRISM</h2>
+  <p class="cl-rule">A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.</p>
+  <p class="cl-tags"><span class="v2-t v2-limit">THE LIMIT</span><span class="v2-t v2-change">THE CHANGE</span><span class="v2-t v2-room">THE ROOM</span></p>
+  <span class="cl-chip">ESG ✓</span><p class="cl-under">a label: yes or no</p>
+  <p class="cl-steps"><span style="color:#F4B740">Profile</span> · <span style="color:#FF4A57">Risk</span> · <span style="color:#3CC8E6">Impact</span> · <span style="color:#9B7BFF">Select</span> · <span style="color:#E6E9EE">Monitor</span></p>
+  <p class="cl-names">Pete · Lookbua · Fahtai · Win</p>
   <p class="s2-pg">14</p>
-  <aside class="notes">[Notes: THE CLOSE, on screen for the ten minutes of questions; not timed (the talk ends on slide 13's
-    "Thank you"). Slide 2's prism again: the label goes in as one beam, PRISM's five steps come out; the rule and its three
-    tests in words; the four simple names in speaking order. Backups: type 15-33 and press Enter; the index is slide 34.]</aside>
+  <aside class="notes">[Notes: THE CLOSE, a cover page on screen for the ten minutes of questions; not timed (the talk ends
+    on slide 13). The art: one label goes in as a white beam, PRISM's five steps come out, in slide 2's colours (Profile,
+    Risk, Impact, Select, Monitor, top to bottom). The rule and its three tests in words; the four simple names in
+    speaking order. Backups: type 15-33 and press Enter; the index is slide 34.]</aside>
 </section>
