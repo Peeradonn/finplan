@@ -1,5 +1,21 @@
 # Final Round: plan
 
+**16 Nov, merge of 309514b:** keep the team's latest close and other clarity updates; retain Fahtai's approved slide 8 from a9cc7c9, without DEF formatting or a green-lease strip. HTML/script rebuilt after merge; native PowerPoint remains the team's earlier build and needs rebuilding.
+
+**16 Nov, Fahtai reverted the definition-formatting edit:** slide 8 is restored to its prior cards and spacing, including removal of the newly imported green-lease strip from this slide. Earlier business corrections and slide 9 contrast remain; lease detail remains in the backups.
+
+
+**16 Nov, Fahtai's business-claim corrections (Codex):** slide 7's spoken 134 t is potential, subject to supplier
+verification and implementation checks; slide 8 removes the lender-approval inference and shows the existing
+≈HK$46K annual company repayment top-up to 2032, with cash-buffer and lender checks pending. Slide 9 and the close
+remove the claim that carbon data protects a quantified amount of sale value; its benefit is unquantified, while
+its existing budget remains. Review item 4 is now a short instrument screen: sustainability-linked not proposed on
+assumed costs; supply-chain programme unconfirmed; this grant ineligible at the loan size; no separate transition
+instrument proposed for the green equipment. Indicative loan assumptions, model outputs and headline remain unchanged.
+Fahtai then approved short definitions on slides 8–9 only: target-linked pricing and existing-activity
+decarbonisation in slide 8's cards; eligible environmental-project funding in slide 9's speech. Slide 9's
+subheading is lightened for contrast against the navy stage. Slide 10 is untouched.
+
 **Status: 12 Nov 2026.** Cut from 22,600 words to this working version by Claude after the 12 Nov strategy review
 (Pete: the team couldn't find its way through it). Nothing decided was changed. What the review proposes is marked
 **proposed** in §5, for Pete to decide. Where things went:
@@ -699,6 +715,7 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     reason for keeping data on white). The backups got the strip too (their own step lit, or all five where they
     cover no single step), and their longer verdicts wrap onto two lines rising from the beam. Claude's earlier
     advice to keep only slides 1, 2 and 13 dark no longer held once every slide carried the strip.
+- **Slide 7 metrics (Fahtai, 16 Nov):** Capital and Cost have lighter blue-grey and warm-neutral boxes; Environmental impact retains its larger width and stronger teal fill/border. The general method restores CO₂e (t/year), waste (kg/year) and water (m³/year), selecting the relevant measures for each business, with cost in HK$ per unit reduced. Carmen's quantified example remains carbon-only; different environmental measures are not combined. HTML rendered and inspected; PowerPoint not rebuilt for this draft.
 - **The PowerPoint** (`make_pptx.py`, sections now storyline v5) was built through PowerPoint for the first time:
   20 slides, font embedded, metadata Team Axis, renders match the web slides. Rebuild it after the last edit. **Rebuilt 15 Nov** after the edits above: 24 slides,
   font embedded, metadata Team Axis, PowerPoint's renders of slides 5, 12 and 13 checked against the web slides. On
