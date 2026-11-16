@@ -24,7 +24,7 @@ an argument; where it disagrees with those files, they win.
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
-| **Now** (16 Nov) | The 13 talk slides and backups 14–33 are built; Axis.pptx rebuilt through PowerPoint after the 16 Nov review (Changes), `--check` clean. Script 1,256 spoken words: 9:38 at 135 a minute with names, 10:22 at 125, never timed live. Left: send before 17:00 and wait for the acknowledgement; then the script swaps (slides 3, 5, 6, 8), the timed run, the cold read and the question drills |
+| **Now** (16 Nov) | The 13 talk slides, the close (14), backups 15–33 and the index (34) are built; Axis.pptx rebuilt through PowerPoint after the 16 Nov review (Changes), `--check` clean. Script 1,256 spoken words: 9:38 at 135 a minute with names, 10:22 at 125, never timed live. Left: send before 17:00 and wait for the acknowledgement; then the script swaps (slides 3, 5, 6, 8), the timed run, the cold read and the question drills |
 
 **The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
 the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
@@ -1956,6 +1956,20 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **16 Nov, afternoon (Claude, Pete's review of slides 6-8 and the close).**
+  - **A closing slide, 14** (Pete: "before slide 14, we should have a closing slide"; then "a more artsy page
+    showcasing our prism art"): slide 2's prism as a bookend, the label going in as one beam; the rule and its three
+    tests in words; "Thank you · Questions" and the four simple names. No numbers: slide 13 has just shown them. It is
+    on screen for the ten minutes of questions; untimed (`data-backup`). **The backup index moved to the end (34)** so
+    every backup keeps its number 15-33; speakers type the number and press Enter.
+  - **Slide 6:** the dark bar under the chart (Pete: "what exactly is that?") is now a bracket labelled "where a hotter
+    Hong Kong could put the gap by 2037 (HKMA)"; the text says the switch point sits inside that range.
+  - **Slide 7:** "Measure each" readable (lighter panels, ink sub-labels); Impact a column like Capital and Cost, marked
+    by its teal rule only.
+  - **Slide 8:** the arrow labels centred between the boxes; the left column 40px narrower for the right; the lease
+    on one line with "the split incentive" in its heading; the tree sits under its caption.
+  - Axis.pptx rebuilt through PowerPoint (34 slides); `--check` clean.
 
 - **16 Nov, before the deadline (Claude, Pete: "is it complete ... are we lacking ... fix it"; redesigns and new model
   runs allowed; the script waits until after 17:00).** Review against the three Final PDFs: every Key Areas §7 item
