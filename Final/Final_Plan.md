@@ -1,5 +1,7 @@
 # Final Round: plan
 
+**16 Nov, Fahtai simplifies slide 8:** remove the remaining definition phrases from the sustainability-linked and transition cards. Each of the four cards now has one client-specific reason line; keep the team's green-lease box and existing spoken script.
+
 **16 Nov, Fahtai keeps the team's lease addition:** restore slide 8's green-lease box using 309514b's shorter wording, with spacing adjusted to fit. DEF badges and split definition formatting stay reverted. HTML/render updated; PowerPoint requires rebuilding.
 
 **16 Nov, merge of 309514b:** keep the team's latest close and other clarity updates; retain Fahtai's approved slide 8 from a9cc7c9, without DEF formatting or a green-lease strip. HTML/script rebuilt after merge; native PowerPoint remains the team's earlier build and needs rebuilding.
