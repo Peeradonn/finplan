@@ -826,7 +826,7 @@
 </style>
 <style>
 /* Slide 9: general rule first, equal comparison cards underneath. */
-#v7b .l9-sub{font:500 17px/1.3 var(--text);color:var(--slate);margin-top:7px}
+#v7b .l9-sub{font:600 17px/1.3 var(--text);color:#E6ECF8;margin-top:7px}
 #v7b .l9-body{display:flex;flex-direction:column;gap:11px;margin-top:15px}
 .l9-steps{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr;gap:8px;align-items:start}
 .l9-step{border-top:3px solid var(--brand);padding:9px 8px 0}
@@ -857,7 +857,7 @@
 </style>
 <style>
 /* Slide 9: general rule first, equal comparison cards underneath. */
-#v7b .l9-sub{font:500 17px/1.3 var(--text);color:var(--slate);margin-top:7px}
+#v7b .l9-sub{font:600 17px/1.3 var(--text);color:#E6ECF8;margin-top:7px}
 #v7b .l9-body{display:flex;flex-direction:column;gap:11px;margin-top:15px}
 .l9-steps{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr;gap:8px;align-items:start}
 .l9-step{border-top:3px solid var(--brand);padding:9px 8px 0}
@@ -1034,14 +1034,6 @@
 #v5 .s6-step p{font-size:16px;line-height:1.4} #v5 .s6-step{margin-bottom:12px}
 #v7 .f8l-case p.f8d-test{font-size:14px} #v7 .f8d-option p b{font-size:11.5px} #v7 .f8d-option small{font-size:13px}
 #v7 .f8l-route h3{font-size:15px} #v7 .f8l-route h3 .f8l-route-verdict{font-size:12px} #v7 .f8l-route p{font-size:14px}
-/* 16 Nov review: the green lease, the one kind that fits her (the brief's landlord-tenant split incentive, area 4;
-   Decision_List.md B6). f8l-lease only here. */
-#v7 .f8l-lease{margin-top:7px;background:#F3F5F8;border-top:3px solid var(--ink);padding:6px 10px 7px}
-#v7 .f8l-lease h3{display:flex;align-items:center;justify-content:space-between;gap:8px;font:800 15px/1.25 var(--head);margin:0}
-#v7 .f8l-lease h3 .vd{font-size:12.5px}
-#v7 .f8l-lease p{font:500 14px/1.3 var(--text);color:var(--slate);margin-top:3px}
-#v7 .f8l-case img{width:58px;height:66px}
-#v7 .f8l-route p,#v7 .f8l-case p.f8d-test{white-space:nowrap} #v7 .f8l-route p{font-size:13.5px} #v7 .f8l-lease p{font-size:13.5px}
 #v7b .l9-step p{font-size:15px} #v7b .l9-row p{font-size:15px}
 .l9-two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:4px}
 .l9-blk{border-top:2px solid var(--ink);padding-top:6px}
@@ -1075,6 +1067,16 @@
 #v6 .b7k-body .b7k-table th:nth-child(1){width:25%} #v6 .b7k-body .b7k-table th:nth-child(2){width:21%}
 #v6 .b7k-body .b7k-table th:nth-child(3){width:24%} #v6 .b7k-body .b7k-table th:nth-child(4){width:30%}
 #v6 .b7k-body .b7k-table td:nth-child(1){width:25%} #v6 .b7k-body .b7k-table td:nth-child(2){width:21%} #v6 .b7k-body .b7k-table td:nth-child(3){width:24%} #v6 .b7k-body .b7k-table td:nth-child(4){width:30%}
+</style>
+<style>
+/* Slide 7 metric separation: supporting cash boxes, dominant environmental impact. */
+#v6 .b7q-expanded .b7p-metric:first-child{background:#F8FAFD;border:1px solid #CCD5E2;border-top:3px solid #A2B0C6;padding:8px}
+#v6 .b7q-expanded .b7p-metric:last-child{background:#FCFAF5;border:1px solid #E5DDCA;border-top:3px solid #C3B18D;padding:8px}
+#v6 .b7q-expanded .b7p-metric.b7q-environment{background:#DCEFEA;border:2px solid #0E7490;border-top:4px solid #0E7490;padding:8px;color:#0E7490}
+#v6 .b7k-body .b7q-environment .b7u-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:5px}
+#v6 .b7k-body .b7u-grid > span{display:block;text-align:center;margin:0;font-size:13px}
+#v6 .b7k-body .b7u-grid small{display:block;font:500 13px/1.25 var(--text);margin-top:3px}
+
 </style>
 <section class="slide reveal s1-stage" id="v1" data-time="1:20" data-speaker="Pete">
   <img class="v1-bg" src="inline:img/stage-flats.jpg" alt="">
@@ -1483,8 +1485,8 @@
         <h3 class="b7v-title"><span>3</span>Measure each</h3>
         <div class="b7v-three">
           <p class="b7p-metric">Capital<span>HK$ up front</span></p>
-          <p class="b7p-metric b7q-environment">Impact<span>t CO₂e a year</span></p>
-          <p class="b7p-metric">Cost<span>HK$ a tonne</span></p>
+          <p class="b7p-metric b7q-environment">Environmental impact<span class="b7u-grid"><span>CO₂e<small>t/year</small></span><span>Waste<small>kg/year</small></span><span>Water<small>m³/year</small></span></span></p>
+          <p class="b7p-metric">Cost<span>HK$ per<br>unit reduced</span></p>
         </div>
       </div>
     </div>
@@ -1523,7 +1525,7 @@
   </div>
   <img class="st-strip" src="inline:img/strip-I.png" alt="">
   <p class="sowhat">Most of her cuts pay for themselves. The trade-off: cash up front, and a quote for the biggest.</p>
-  <aside class="notes">FAHTAI: I'm Fahtai. We've tested climate risk; now, what can the business change? For any business: start from meters, fuel and an energy audit across Scope 1, 2 and 3; compare alternatives that meet the same need; then rank them on a cost curve: capital, tonnes and cost per tonne. For Carmen, recycled PET could cut 108 tonnes at about zero cost, once a supplier quotes it. Vans cut 19 tonnes and save money, but need capital. Together, about 134 tonnes a year: do it. How should each be funded?
+  <aside class="notes">FAHTAI: I'm Fahtai. We've tested climate risk; now, what can the business change? For any business: start from meters, fuel and an energy audit across Scope 1, 2 and 3; compare alternatives that meet the same need; then rank them on a cost curve: capital, tonnes and cost per tonne. For Carmen, recycled PET could cut 108 tonnes at about zero cost, once a supplier quotes it. Vans cut 19 tonnes and save money, but need capital. Together, up to 134 tonnes a year, subject to supplier verification and implementation checks. How should each be funded?
     [Notes: 15 Nov (Pete kept this layout over the review's cost curve, now backup 29): the energy audit named in step 1 (the brief's baseline words), the total's verdict in the close's words (Do it), the spoken method shortened to findings. 15 Nov (Claude, Pete's "go"; Fahtai to confirm): the title was the deck's only topic, now a rule for any
     business; the bar said greener choices "can require cash upfront or cost more over time", while the table shows the
     vans, LED and lighter board saving money and recycled PET awaiting a quote; it now says what the table shows and
@@ -1533,6 +1535,7 @@
     <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1, B4; DESNZ / EPA factors · photos: Wikimedia CC BY-SA · the cost curve: backup 29</p><span class="pg">7</span>
   </footer>
 </section>
+
 
 <section class="slide sec-S" id="v7" data-time="0:40" data-speaker="Fahtai">
   <header class="head">
@@ -1598,26 +1601,25 @@
             <div class="f8d-option"><p>All company cash</p></div>
             <div class="f8d-option f8d-proposed"><p>HK$1.5M loan <b>PROPOSE</b></p><small>+ HK$0.41M company cash</small></div>
           </div>
-          <p class="f8d-test"><b>Savings cover ≈87%</b> of payments · <b>debt cover 5.7× → ≈3×</b> · secured on the vans</p>
+          <p class="f8d-test"><b>Savings ≈HK$303K / HK$349K repayments (87%)</b> · debt cover ≈3×<br><b>Top-up ≈HK$46K/year to 2032</b> · cash/lender checks pending</p>
         </div>
       </div>
             <p class="f8l-cap">Each kind of finance, at her size</p>
       <div class="f8l-routes">
-        <div class="f8l-route"><h3>Sustainability-linked<b class="f8l-route-verdict">NOT PROPOSED</b></h3><p>Pays only above ≈HK$4.8M of debt</p></div>
-        <div class="f8l-route f8l-access"><h3>Supply-chain finance<b class="f8l-route-verdict">CONDITIONAL</b></h3><p>Built for ≈US$100M of trade; hers ≈US$3.4M</p></div>
-        <div class="f8l-route"><h3>Grant Scheme<b class="f8l-route-verdict">INELIGIBLE</b></h3><p>Loans ≥HK$100M; the e-van tax waiver fits</p></div>
-        <div class="f8l-route"><h3>Transition finance<b class="f8l-route-verdict">DOESN'T APPLY</b></h3><p>Vans and LED already count as green</p></div>
+        <div class="f8l-route"><h3>Sustainability-linked<b class="f8l-route-verdict">NOT PROPOSED</b></h3><p>Pricing linked to targets; assumed costs exceed saving</p></div>
+        <div class="f8l-route f8l-access"><h3>Supply-chain finance<b class="f8l-route-verdict">CONDITIONAL</b></h3><p>Buyer programme not confirmed</p></div>
+        <div class="f8l-route"><h3>Grant Scheme<b class="f8l-route-verdict">INELIGIBLE</b></h3><p>Loan below this scheme's HK$100M minimum</p></div>
+        <div class="f8l-route"><h3>Transition finance<b class="f8l-route-verdict">NOT PROPOSED</b></h3><p>Decarbonising existing activities; no separate instrument proposed</p></div>
       </div>
-      <div class="f8l-lease"><h3>Green lease, at the 2027 renewal <span class="vd vd-fin"><svg class="ic"><use href="#i-tag"/></svg>Do it, but don't call it green</span></h3><p>The split incentive: she pays the bills, the landlord owns the walls. The lease allows chargers and LED, repays the landlord only from measured savings and runs to the sale.</p></div>
     </div>
   </div>
   <img class="st-strip" src="inline:img/strip-S.png" alt="">
   <p class="sowhat">Match funding to cash timing without straining liquidity or repayment capacity.</p>
-  <aside class="notes">FAHTAI: Match funding to the cash need. First, can cash flow or supplier terms cover it? If not, compare company cash with borrowing, then screen the instrument. The vans need a one-and-a-half-million loan: fuel savings cover 87% of the payments, and debt cover falls from 5.7 to about 3 times, so it's bankable. At her size, a sustainability-linked loan, supply-chain finance and the Grant Scheme don't fit, and transition finance doesn't apply. Should the van loan be green?
+  <aside class="notes">FAHTAI: Match funding to the cash need. First, can cash flow or supplier terms cover it? If not, compare company cash with borrowing, then screen the instrument. We propose a one-and-a-half-million loan: savings cover 87% of payments; the company tops up about forty-six thousand a year until 2032, subject to cash-buffer and lender checks. Sustainability-linked: not worth the assumed costs. Supply-chain: access unconfirmed. Grant: ineligible. No separate transition instrument proposed. Should the van loan be green?
     [Notes: 15 Nov (Pete kept this layout; the review's points put into it): bankability on the vans (cover of payments ≈87%, debt cover 5.7× → ≈3× at HK$31/L, the vans as collateral: Decision_List.md B1, area2_business.md §3d; bank thresholds UNVERIFIED); the routes row is now the brief's kinds of finance at her size, each with its threshold (SLL ≈HK$4.8M of debt; supply-chain finance one bank's guide at ≈US$100M of trade; Grant Scheme loans ≥HK$100M, HKMA guideline 24 Apr 2026; transition finance: HK Taxonomy Phase 2A lists vans and LED as green). The same with charts: backup 30. On screen until 15 Nov: 'Proposals subject to cash-flow, supplier and lender checks' (now said here). Draft funding page, no lender offer or liquidity approval claimed. Framework: establish cash amount and timing; examine routine cash flow and supplier terms, then compare cash reserves with borrowing on liquidity left, total costs and downside repayment capacity; if neither works resize/defer. Cash is a valid comparator. Supplier terms can have a price and early payment consumes cash. ≈HK$0.27M working capital is ILLUSTRATIVE: B4's conditional supplier early-payment arrangement for data/terms, not the price of recycled content, not a grant and not proof that the change needs no finance. Quote, specification, supplier acceptance, customer willingness to pay any premium and actual cash conversion cycle remain unverified. HK$1.91M equipment, HK$1.5M secured loan plus HK$0.41M company cash are existing estimates on the ILLUSTRATIVE distributor (Decision_List section 2/B1); includes vans/chargers/LED/air-con, not vans alone. Profit/retained profit does not establish cash available. Need cash forecast and agreed operating buffer; no new reserve threshold invented. Existing estimates show equipment savings do not fully cover the proposed five-year payments; company must cover gap, slide 9 tests it. Check tenor, fees, collateral, guarantees and co-owner consent with lender. Green/plain equipment loan comparison and net label benefit belong on slide 9. Sustainability-linked: screen material KPIs, target ambition, verification and net ratchet benefit; not proposed on existing paid-verification assumptions, not a universal SME exclusion. Free/cheap verification exceptions remain possible; see research/area2_business.md and area2_supply_chain.md. Supply-chain finance: access through a buyer/customer programme is conditional; no universal minimum transaction size claimed. Grant Scheme is a cost subsidy, not credit. Official HKMA guideline effective 24 Apr 2026, p.3: Track II eligible bonds/loans require at least HK$100M; verified against primary source when compiling this draft: https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/bond-market-development/GSFGS_Guideline_%28Effective_from_20260424%29.pdf . Our HK$1.5M proposal is below that threshold; does not imply every grant or SME incentive is unavailable. Old log-size chart/five-kind catalogue removed from this page; existing backup remains. No new model figures.]</aside>
   <footer class="foot">
     <div class="badge-prism"><p>SELECT<span>Area 2</span></p></div>
-    <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1–B4, B6 · HKMA GSF Grant Scheme guideline, effective 24 Apr 2026, p.3 · bank/supplier terms unverified</p><span class="pg">8</span>
+    <p class="src">ESTIMATED / ILLUSTRATIVE business · Decision_List B1–B4 · HKMA GSF Grant Scheme guideline, effective 24 Apr 2026, p.3 · bank/supplier terms unverified</p><span class="pg">8</span>
   </footer>
 </section>
 
@@ -1655,12 +1657,12 @@
     <div class="l9-case"><p><b>Known items:</b> <span class="l9-saving">≈HK$12K saved</span> − <span class="l9-review-cost">≈HK$12K review</span> ≈ no advantage.</p><span class="l9-verdict k9v"><svg class="ic"><use href="#i-ban"/></svg>Don't pay for the label<small>unless it's free · on assumed terms, pending quotes</small></span></div>
     <div class="l9-two">
       <div class="l9-blk"><p class="l9-bk">Green premium · the van, not the loan</p><p class="l9-bn"><b>+HK$12K</b> a van over diesel today<span class="l9-arrow2">→</span><b class="l9-bad">+HK$83K</b> after 31 Mar 2028</p><p class="l9-bs">The tax waiver ends: order the vans first</p></div>
-      <div class="l9-blk"><p class="l9-bk">At the sale · where the change reaches the family</p><p class="l9-bn"><b>{{fin_dot_vans_n}}</b> the vans<span class="l9-arrow2">·</span><b class="l9-bad">{{fin_cust10_leg}}</b> guarded by data</p><p class="l9-bs">Her listed customers report Scope 3 from FY2026 (HKEX, ISSB-aligned); the data costs ≈HK$54–73K a year</p></div>
+      <div class="l9-blk"><p class="l9-bk">At the sale · where the change reaches the family</p><p class="l9-bn"><b>{{fin_dot_vans_n}}</b> from the vans</p><p class="l9-bs">Carbon data supports customer due diligence; its benefit is not quantified. Budget ≈HK$54–73K a year.</p></div>
     </div>
   </div>
   <img class="st-strip" src="inline:img/strip-S.png" alt="">
   <p class="sowhat">Compare full terms. Pay extra only for an explicit, agreed benefit.</p>
-  <aside class="notes">FAHTAI: A green label must justify its full cost. For Carmen, the greenium is about twelve thousand dollars over five years, and the review costs about twelve thousand: no advantage, so don't pay for the label unless it's free. The green premium is the van itself: twelve thousand more than diesel with the tax waiver, eighty-three thousand after March 2028, so we order first. And her listed customers must report her carbon from 2026: her data guards {{fin_cust10_leg}} at the sale. Now, the funds. Win.
+  <aside class="notes">FAHTAI: Green loans fund eligible environmental projects. Their label must justify its full cost. For Carmen, the greenium is about twelve thousand dollars over five years, and the review costs about twelve thousand: no advantage, so don't pay for the label unless it's free. The green premium is the van itself: twelve thousand more than diesel with the tax waiver, eighty-three thousand after March 2028, so we order first. Carbon data supports customer due diligence; we have not quantified its benefit. Now, the funds. Win.
     [Notes: 15 Nov (Pete kept this layout; the review's points put into it): the brief's greenium and green premium by name (Decision_List.md B1–B2: 25 bp ILLUSTRATIVE ≈HK$12,023 over 5 years against HKQAA's 'as low as' HK$12,000; e-van +HK$12,421 with the FRT waiver, ≈HK$83K if it lapses after 31 Mar 2028, Budget 2026–27 para 207); the verdict in the close's words; the loop at the sale, where risk and impact meet (Final_Plan.md §4.1: HKEX App. C2, Scope 3 for LargeCap issuers from FY2026; B3 data ≈HK$54–73K a year; the lost customer a sensitivity, M3). The chain in full: backup 31. New top-rule/equal-card draft. All comparisons are indicative, not lender offers. Same HK$1.5M amount, 5-year term and van security assumed on both sides; actual availability/security/fees unverified. The green interest advantage of ≈HK$12K is an ESTIMATED consequence of an ILLUSTRATIVE 25bp discount over the loan term, not a quoted bank concession. ≈HK$12K review fee is a published cheapest assessment figure, not an offer. Plain review cost HK$0 means zero incremental GREEN-LABEL review cost by definition, not zero ordinary fees. Other fees, reporting/use-of-proceeds obligations and covenants must be priced; the displayed known items break even but full net benefit remains unverified. Do not claim free verification is universally required, or that plain borrowing is approved/always cheaper. Positive green advantage requires suitability; a premium requires a specific client-agreed benefit and funding within limits. Extra reporting and loss of flexibility can matter even where money is equal. Common amount/term/security aligns comparison. Family inheritance benefit is shown separately: it belongs to the equipment decision, not the financing label. Green/plain figures have identical rows, with the plain loan as baseline; no new absolute interest totals invented.  New top-rule/equal-card draft. All comparisons are indicative, not lender offers. Same HK$1.5M amount, 5-year term and van security assumed on both sides; actual availability/security/fees unverified. The green interest advantage of ≈HK$12K is an ESTIMATED consequence of an ILLUSTRATIVE 25bp discount over the loan term, not a quoted bank concession. ≈HK$12K review fee is a published cheapest assessment figure, not an offer. Plain review cost HK$0 means zero incremental GREEN-LABEL review cost by definition, not zero ordinary fees. Other fees, reporting/use-of-proceeds obligations and covenants must be priced; the displayed known items break even but full net benefit remains unverified. Do not claim free verification is universally required, or that plain borrowing is approved/always cheaper. Positive green advantage requires suitability; a premium requires a specific client-agreed benefit and funding within limits. Extra reporting and loss of flexibility can matter even where money is equal. Common amount/term/security aligns comparison. Family inheritance benefit is shown separately: it belongs to the equipment decision, not the financing label. Green/plain figures have identical rows, with the plain loan as baseline; no new absolute interest totals invented.  DRAFT v5, 14 Nov, from v4 slide 8's numbers; Fahtai to make it their own. Scale: log, HK$1M to HK$1,000M.
     Green loan: no HK bank publishes an SME discount (25 bp ILLUSTRATIVE); HKQAA's assessment "as low as" HK$12K (B2).
     Sustainability-linked: 5–25 bp; pays for itself above ≈HK$4.8M of debt at 25 bp if verification costs ≈HK$12K a year
@@ -1878,7 +1880,7 @@
         <div data-b="2"><p class="c13-c"><b>Electric vans, LED, air-con</b><span>{{fin_dot_vans_n}} · 26 t a year</span></p>
         <p class="c13-c"><b>Recycled plastic</b><span>≈HK$0 at today's resin price · 108 t</span></p></div></div>
       <div class="c13-q"><p class="c13-v"><svg class="ic"><use href="#i-tag"/></svg>Do it, but don't call it green</p>
-        <div data-b="2"><p class="c13-c"><b>Carbon data for her customers</b><span>{{fin_dot_data_n}}; guards {{fin_cust10_leg}}</span></p>
+        <div data-b="2"><p class="c13-c"><b>Customer carbon data</b><span>{{fin_dot_data_n}} cost; benefit unquantified</span></p>
         <p class="c13-c"><b>The flat's route, checked yearly</b><span>the limit picks</span></p>
         <p class="c13-c"><b>The climate index fund</b><span>its plain twin's fee; a footprint</span></p></div></div>
       <p class="c13-y c13-y2">For the children<b>costs money</b></p>
