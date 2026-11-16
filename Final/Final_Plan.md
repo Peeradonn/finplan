@@ -1964,6 +1964,8 @@ Each brief has its own full list (its last section). The ones the storyline lean
     would risk: tracking error, illiquidity, complexity; value: values intensity); the cards keep each person's limit
     and rights. A 7-row grid of the Wongs' answers was built first and dropped on Pete's call ("dropping various facts
     and numbers"): it is **backup 33**, for the questions.
+    Then (Pete: "the for any client part is a bit too cramped"): step 2 moved into the bottom strip, which is what gets
+    written into the policy ("Into the policy, when they disagree"); the top keeps step 1 and the seven, with room.
   - **Slide 4:** the two causes named (education, environment); the environment cause waits for the yearly review
     (Pete; `Decision_List.md` G2).
   - **Slide 5:** what the plan cuts (the wrong exit, a lost customer) and what it carries (the falls, inside the
