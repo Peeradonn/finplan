@@ -1974,6 +1974,12 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 ## Changes (newest first; the detail is in git)
 
+- **16 Nov, 13:45 (Claude, Pete: "more like ending ... remove the ESG label ... the beam looks weird, like curving ...
+  the prism closer ... more depth ... premium, like a big full stop").** Slide 14 is an end card: the prism redrawn
+  centred and close (stronger perspective), the beam level and straight on the page (it had risen in 3D and read as
+  bent), glass thickness, near edges brighter than far, a floor shadow, the rays' colour on the floor, a vignette.
+  Only PRISM, the rule and the team on it.
+
 - **16 Nov, 13:20 (Claude, Pete: "remove the thank you ... like a cover page ... the prism in 3D with depth").** Slide 14
   is a cover page: a new 3D prism (`Final/looks/prism_cover_art.py`: a real triangular prism projected in perspective,
   yaw 30°, pitch 14°, glass faces shaded by angle, back edges through the glass, a perspective floor with its
