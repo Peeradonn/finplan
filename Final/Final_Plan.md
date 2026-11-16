@@ -1,5 +1,7 @@
 # Final Round: plan
 
+**16 Nov, Fahtai keeps the team's lease addition:** restore slide 8's green-lease box using 309514b's shorter wording, with spacing adjusted to fit. DEF badges and split definition formatting stay reverted. HTML/render updated; PowerPoint requires rebuilding.
+
 **16 Nov, merge of 309514b:** keep the team's latest close and other clarity updates; retain Fahtai's approved slide 8 from a9cc7c9, without DEF formatting or a green-lease strip. HTML/script rebuilt after merge; native PowerPoint remains the team's earlier build and needs rebuilding.
 
 **16 Nov, Fahtai reverted the definition-formatting edit:** slide 8 is restored to its prior cards and spacing, including removal of the newly imported green-lease strip from this slide. Earlier business corrections and slide 9 contrast remain; lease detail remains in the backups.
