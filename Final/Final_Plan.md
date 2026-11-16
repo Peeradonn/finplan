@@ -36,8 +36,8 @@ the deck; the rows' history is in §4.5 and §3, whose entries use the numbering
 | 3 | Profile | Pete | 0:35 | Own money, own limits; shared money follows the more prudent |
 | 4 | Profile | Pete | 0:40 | Set the limit first; values spend only the room above it |
 | 5 | Risk | Lookbua | 1:00 | Check everything they own and earn, not just what a label covers |
-| 6 | Select | Lookbua | 0:45 | The limit decides before preferences do |
-| 7 | Impact, Select | Fahtai | 0:45 | Price every cut in the footprint against what it replaces |
+| 6 | Risk | Lookbua | 0:45 | The limit decides before preferences do |
+| 7 | Impact | Fahtai | 0:45 | Price every cut in the footprint against what it replaces |
 | 8 | Select | Fahtai | 0:40 | Match the funding to what the change needs |
 | 9 | Select | Fahtai | 0:40 | A green label must justify its full cost and obligations |
 | 10 | Select | Win | 0:40 | Pass a product only if its rule binds and it fits its owner's limit |
@@ -687,7 +687,7 @@ the reasoning is spoken. Speaker notes open with `PETE:`, `FAHTAI:`, `WIN:` or `
     13's stage frame on every step slide (rendered; Pete kept the slides white); an inset rounded strip; only the
     step's own band coming in, the others removed (Pete: show them, highlight one). Slide 7's
     badge lit Select only although its kicker says Impact and Select: Fahtai to decide whether its strip should bring
-    in both bands. Renders: `build/options/prism-strip-*.png`, `art13-white-vs-frame.png`, `strip-frame-options.png`.
+    in both bands. Settled 16 Nov: slide 7 is Impact alone (§4.5, "16 Nov, PRISM in order"). Renders: `build/options/prism-strip-*.png`, `art13-white-vs-frame.png`, `strip-frame-options.png`.
   - **Then the stage on every slide** (Pete, 15 Nov, after three versions of the whole talk rendered side by side:
     white slides with an indigo strip, the stage on every slide, an all-dark theme; `build/options/theme-*.png`).
     Every content slide, talk and backups, now has slide 13's layout: the title on the dark stage, the content on a
@@ -1597,6 +1597,26 @@ sheet's edge; the script ran 10:46 at 125 words a minute, past the 10:30 line.
    construction; defined on screen now, and the split ("about half is the vans") stays.
 6. *EDMW named after checking its assets and documents*, but not whether these clients can be offered it (§8, §9).
 
+#### 16 Nov, PRISM in order on screen (Pete: "quite weird when we go from R to S, then S and I")
+The stage tags read P P R **S I+S** S S S S M: Select before Impact, and Impact only as half a tag, on a talk named for
+the order of its steps. A judge scoring logic sees the framework skip a step and come back. Fixed by the content, not by
+moving slides: slide 6 is **Risk** (its kicker already says "The limit"; slide 2 tags only Profile and Risk with the
+limit; it prices what climate does to the flat, older flats falling behind newer ones, against the limit, Risk's
+own step 4 on slide 5), and slide 7 is **Impact** alone (its kicker says "The change"; Fahtai's line already opens
+"We've tested climate risk; now, what can the business change?"). Now P P R R I S S S S M. Moving the flat after the
+business was rejected: it splits the footprint from its financing (slides 7 to 9) and adds a handover. The verdict
+chips stay where each decision ends (slides 6 and 7): every decision runs all five steps; each slide shows one.
+Backup 29 (the cost curve) follows slide 7, so it is Impact too. If asked "where is Select for the flat?": the limit
+rules downsizing out (Risk), and both chips are Select's verdicts on the routes left.
+
+**Slide 5's row as one** (Pete, same day: the savings and Adrian's pay "should have a photo to match the others"). Agreed:
+two photos then two flat boxes read as unfinished, and the meaning didn't need the flat look. The savings are Exchange
+Square, Central, under a green shade (the label's colour, so "the label looks only here" still reads); Adrian's pay is
+an office tower in Wan Chai at night, standing for his job, not his employer, inside its dashed frame (pay is earned,
+not owned). Both from Wikimedia Commons (Borm Laimkoo, CC BY-SA 4.0; FWOSH katm 4502, CC0), cropped to their strips;
+credits on backup 24 and in `deck/img/photo-credits.json`. Adrian's own portrait (slide 3) was considered and dropped: a
+3:1 strip crops a face to a band across the eyes.
+
 #### Storyline v4 (superseded by v5, 13 Nov, night; kept for each slide's evidence and build history)
 
 Evidence: **HAVE** (in a brief, checked) · **CHECK** (confirm at a primary source) · **MODEL** (`model_runs.md`; on a
@@ -1934,6 +1954,10 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **16 Nov (Pete, Claude): PRISM in order; slide 5's row as one** (§4.5, "16 Nov, PRISM in order"). Slide 6 tagged
+  Risk, slide 7 (and backup 29) Impact: the stage tags now run P P R R I S S S S M. Slide 5's savings and Adrian's pay
+  get photos like the flat and the business. No words or numbers changed. The PowerPoint rebuilt.
 
 - **15 Nov, evening (Claude, Pete: "design the slides for the room"; "for EDMW you can think about that"):** the room
   pass on slides 5 to 13 (§3, "Designed for the room"): sub-labels to the notes, every label read in the room at 13px or
