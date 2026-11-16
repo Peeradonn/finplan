@@ -504,5 +504,22 @@
  "fin_ret_lo55": "5.5%",
  "fin_room_ret50": "HK$0.15M",
  "fin_room_ret50_x": "0.154",
- "fin_ret_lo50": "5%"
+ "fin_ret_lo50": "5%",
+ "fin_phys_bills_leg": "−HK$0.22M",
+ "fin_phys_bills_sleg": "−HK$0.22M",
+ "fin_phys_levy_leg": "−HK$0.11M",
+ "fin_phys_bills_odds": "96.8%",
+ "fin_phys_bills_sodds": "89.5%",
+ "fin_phys_gap_lo": "2%",
+ "fin_phys_gap_lo_x": "1.64",
+ "fin_phys_rmp_lo": "96.9%",
+ "fin_phys_down_lo": "96.3%",
+ "fin_phys_rmp_lo_leg89": "HK$13.2M",
+ "fin_phys_down_lo_leg89": "HK$17.2M",
+ "fin_phys_gap_hi": "9%",
+ "fin_phys_gap_hi_x": "9.47",
+ "fin_phys_rmp_hi": "96.6%",
+ "fin_phys_down_hi": "94.3%",
+ "fin_phys_rmp_hi_leg89": "HK$12.7M",
+ "fin_phys_down_hi_leg89": "HK$15.8M"
 }

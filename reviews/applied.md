@@ -622,3 +622,21 @@ model's return and 3 points below it) at which a plan stops holding a limit, 95 
   `fin_ret_lo50` 5%; gone below `fin_room_zero_ret` 4.9% (HK$1.7M at 6%, `fin_room_gift_plain`).
 - The export stops if the order funded < pledge and no gift < funded no longer holds, since the notes rely on it.
 - Checked: `numbers.json` before and after differ only by these 21 additions; `figure-data.md` and every PNG unchanged.
+
+### Final (16 Nov): physical risk, priced (`Final/final_model.py` `export_final()`; M12 in `Final/model_runs.md`)
+
+Pete asked for the brief's area 4 bullet "price physical climate risk into insurance, mortgage and exit decisions" on
+the talk slides. Two channels on the recommended plan (`fin_plan_*`), as `research/area4_property_scenario.md` §3.3
+finds them (the flat is on no official flood or surge list):
+- **Bills** (ILLUSTRATIVE sizes bracketed by the research): a HK$50K storm repair levy in 2033 (OBB 2.0's cap, §3.4;
+  §5.1's optional levy) plus HK$2,000 a year more for insurance and cooling from 2027, today's money grown with CPI.
+  `fin_phys_bills_leg` −HK$0.22M (normal, against `fin_plan_leg89`), `fin_phys_bills_sleg` −HK$0.22M (downturn,
+  against `fin_plan_sleg89`), `fin_phys_levy_leg` −HK$0.11M (the levy alone); odds `fin_phys_bills_odds` 96.8%,
+  `fin_phys_bills_sodds` 89.5% (from 97.0% and 90.0%): neither limit breaks.
+- **Exit** (ESTIMATED on a SOURCED range): HKMA RM 05/2023's "4% to 21% lower by around 2050", read as the old flat's
+  drag against newer flats, 0.15–0.9% a year, compounded 2026–37: `fin_phys_gap_lo` 2% (`_x` 1.64), `fin_phys_gap_hi`
+  9% (`_x` 9.47), either side of slide 6's switch point `fin_pflipn_cross` 7% (7.39). At the low end both routes pass
+  95 (`fin_phys_rmp_lo` 96.9%, `fin_phys_down_lo` 96.3%); at the high end downsizing breaks it (`fin_phys_down_hi`
+  94.3%) while keeping the flat holds (`fin_phys_rmp_hi` 96.6%). Medians: `fin_phys_{rmp,down}_{lo,hi}_leg89`.
+- The export stops if RM05's range no longer straddles `fin_pflipn_cross`, since the slide's words rely on it.
+- Checked: `numbers.json` before and after differ only by these 17 additions; `figure-data.md` and every PNG unchanged.

@@ -24,7 +24,7 @@ an argument; where it disagrees with those files, they win.
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
-| **Now** (15 Nov) | The 13 talk slides and backups 14–28 are built in HTML; the PowerPoint is behind them (rebuild it after the last edit, Pete 15 Nov: HTML first). Every step slide carries its switch point (§3). The script is 1,256 spoken words (15 Nov review): 9:38 at 135 a minute with names, 10:22 at 125, so under 10:30 at either pace; slots total 9:45. Left: send before the deadline; then the timed run, the cold read and the question drills |
+| **Now** (16 Nov) | The 13 talk slides and backups 14–33 are built; Axis.pptx rebuilt through PowerPoint after the 16 Nov review (Changes), `--check` clean. Script 1,256 spoken words: 9:38 at 135 a minute with names, 10:22 at 125, never timed live. Left: send before 17:00 and wait for the acknowledgement; then the script swaps (slides 3, 5, 6, 8), the timed run, the cold read and the question drills |
 
 **The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
 the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
@@ -1896,6 +1896,8 @@ is the planning process with green added" (§4.2's table; §4.4 "What is ours").
 | CPA | The scholarship is HK$0.74M on slide 4 and −HK$1.32M on slide 13. Which? | Both: HK$0.74M is the fund given now; −HK$1.32M is what the children inherit at Carmen's 89 without it, in today's money, because the money given away no longer grows. Slide 13 labels its axis | — |
 | CPA | The vans are +HK$0.51M on slide 9 but +HK$0.54M in backup 15 | +HK$0.51M is the vans alone against new diesel vans (`fin_dot_vans_n`); +HK$0.54M is their step in the headline's sequence (`fin_fair_vans`) | — |
 | Banker | Your debt cover: at what diesel price? | ≈3× after the loan at HK$31/L, the government's after-discount average; 3.3× at the pump-list price (`area2_business.md` §3d); 5.7× before. Bank thresholds UNVERIFIED | — |
+| ESG strategist, the family | You fund the scholarship but not the environment cause. Did the plan drop it? | No: both for life would sit at the limit (slide 4); it is funded at a yearly review once the room covers it with margin. Her business's cuts are not a substitute, and we don't say they are (`Decision_List.md` G2) | Moderate: say the rule, not the tonnes |
+| ESG strategist (the topic's title: "pricing climate risk") | You priced a carbon shock. What about typhoons, floods and heat on the flat? | Priced two ways (slides 5, 6; M12): the bills, a storm levy and dearer cover and cooling, cost the children ≈HK$0.22M and break no limit (sizes ILLUSTRATIVE); the exit is where it bites: HKMA RM 05/2023's range puts the old-flat gap at ≈2–9% by 2037, either side of the ≈7% switch point, so we check it yearly. The flat is on no official flood or surge list (not a site survey) | Moderate: the old-against-new reading of RM05 is ours |
 | Practitioner | Your "reasonable planner" doesn't touch the business. Isn't that a strawman? | It is our specified comparison (§2), not a claim about advisers. Against a planner who also buys the vans and funds the gift, the money effect is about zero; the case rests on what the test adds: the tonnes at no cost, the flat's switch point, the customers' data guarding the sale, and what may be claimed (backup 15) | Moderate: say it first, in 20 s |
 
 ## 9. Facts to check before they go on a slide
@@ -1954,6 +1956,28 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **16 Nov, before the deadline (Claude, Pete: "is it complete ... are we lacking ... fix it"; redesigns and new model
+  runs allowed; the script waits until after 17:00).** Review against the three Final PDFs: every Key Areas §7 item
+  was already on screen; the gaps were brief bullets only in backups, and stale or contradictory backups. Changed:
+  - **Slide 3:** the brief's seven profile dimensions named in step 1, the method (need: return, liquidity, horizon;
+    would risk: tracking error, illiquidity, complexity; value: values intensity); the cards keep each person's limit
+    and rights. A 7-row grid of the Wongs' answers was built first and dropped on Pete's call ("dropping various facts
+    and numbers"): it is **backup 33**, for the questions.
+  - **Slide 4:** the two causes named (education, environment); the environment cause waits for the yearly review
+    (Pete; `Decision_List.md` G2).
+  - **Slide 5:** what the plan cuts (the wrong exit, a lost customer) and what it carries (the falls, inside the
+    limit), the brief's "which risks the plan actually mitigates"; weather priced, no longer "unpriced".
+  - **Slide 6:** HKMA RM 05/2023's range read as the 2037 gap (2–9%, ESTIMATED) drawn on the axis: the switch point
+    (≈7%) sits inside it, so the yearly check is the physical-risk control on the exit.
+  - **Slide 8:** the green lease (the brief's landlord–tenant split incentive), the one kind of finance that fits her
+    (`Decision_List.md` B6), in the corner's words; slide 12's milestone says "a green lease".
+  - **Backups:** 17's slide column renumbered to the current deck (it pointed to the old numbering); 20's green lease
+    verdict matches 30's; 16's register off the sheet's edge; 23 prices weather.
+  - **Model (M12, `reviews/applied.md`):** physical risk on the recommended plan, `fin_phys_*`: bills
+    (`fin_phys_bills_leg`, no limit breaks) and the exit range; no existing number changed.
+  - Axis.pptx rebuilt through PowerPoint (33 slides); `--check` clean. Script unchanged (1,256 words): after 17:00,
+    swap in spoken lines for slides 3, 5, 6 and 8 without adding words.
 
 - **16 Nov (Pete, Claude): PRISM in order; slide 5's row as one** (§4.5, "16 Nov, PRISM in order"). Slide 6 tagged
   Risk, slide 7 (and backup 29) Impact: the stage tags now run P P R R I S S S S M. Slide 5's savings and Adrian's pay

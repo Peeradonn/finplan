@@ -49,7 +49,9 @@ which put Carmen's ESG funds in two corners at once.
 | H2 | Green mortgage or green refinancing | Not considered → refuse | REFUSE | — | — | 6 |
 | H3 | Retrofitting the flat | Not considered → replace air-con with Grade 1 inverter when it fails; LED | DO (small) | Small, the family | As things fail | backup |
 | H4 | Buying the smaller flat | ≈HK$7M flat → prefer a newer building for its age and exit; don't pay a green-label premium | REFUSE (the premium) | — | At downsizing | backup |
+| H5 | Physical risk on the home (16 Nov, M12) | Not priced → priced two ways: bills (a HK$50K storm levy in 2033 and HK$2K a year for cover and cooling, ILLUSTRATIVE: `fin_phys_bills_leg`, no limit breaks) and the exit (HKMA RM 05/2023's range read as the 2037 gap, `fin_phys_gap_lo`–`fin_phys_gap_hi`, either side of H1's switch point): no new product; it is why H1's check runs yearly | FINANCE (with H1) | — | Each renewal; each year | 5, 6 |
 | G1 | The scholarship | "About HK$30K a year" (unfunded; not in the model) → the same awards for life, funded now: a named fund at an s.88 charity, ≈HK$0.74M in 2027–28 (Pete, 14 Nov; was a 20-year fund, ≈HK$0.48M); perpetual only from sale proceeds above HK$3.0M | PAY | ≈HK$0.74M gross, ≈HK$0.62M after tax relief, the family | 2027–28 | 3, 10 |
+| G2 | The environment cause (the second of the family's two causes) | Pledged with the scholarship, from cash flow → waits for the yearly review: funded once the room above the limit covers it with margin; both causes for life now (`fin_room_both39_hk`) sit at the limit (`fin_room_both39_odds`) (Pete, 16 Nov) | PAY, when the room allows | — | Each yearly review | 4 |
 
 **Counting what the framework changes against the label approach** (for slide 3): changed: P1, P3, P4, P6, H1, G1 (6); new: B1–B7,
 P2, H2–H4 (12, of which B7 restates the planned sale with new assets); unchanged: P5, and the thematic-fund part of P7.

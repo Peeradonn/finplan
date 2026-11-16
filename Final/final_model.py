@@ -673,6 +673,37 @@ def export_final():
         g = most_gift(base, dict(r_eq=r_eq_for(FEE_SAVED + FEE_VALUES) + shift), sc, mult)
         out[f"fin_room_ret{k}"], out[f"fin_room_ret{k}_x"] = f"HK${g / 1e6:.2f}M", f"{g / 1e6:.3f}"
         out[f"fin_ret_lo{k}"] = f"{m.R_EQ + shift:.1%}".replace(".0%", "%")
+    # physical risk (16 Nov, Pete: price it; the brief's area 4, "price physical climate risk into insurance, mortgage
+    # and exit decisions"). Two channels on the recommended plan (pl_n, pl_s), as Final/research/
+    # area4_property_scenario.md §3.3 finds them: the flat is on no official flood or surge list, so weather reaches the
+    # family through the building's bills and through its value at exit. M12 in Final/model_runs.md.
+    # Bills (ILLUSTRATIVE sizes, bracketed by the research): a storm repair levy through the owners' corporation, HK$50K
+    # in 2033 (sized to OBB 2.0's HK$40K-a-unit subsidy cap, §3.4; the optional levy row of §5.1), and HK$2,000 a year
+    # more for insurance and cooling from 2027 (contents cover ≈HK$600-1,100 a year, cooling ≈+HK$700 a year, §3.3),
+    # both in today's money, grown with CPI. Normally against pl_n; in the 2030-31 downturn against pl_s.
+    levy = {2033: -50_000 * (1 + m.CPI) ** (2033 - m.BY)}
+    bills = plus(levy, {y: -2_000 * (1 + m.CPI) ** (y - m.BY) for y in range(2027, END)})
+    phn = run(base, biz=m.BIZ + up, inflows=plus(fund, bills), **pkw)
+    phs = stressed(base, sc, mult, biz_add=up, flows=plus(fund, bills), **pkw)
+    phl = run(base, biz=m.BIZ + up, inflows=plus(fund, levy), **pkw)
+    out["fin_phys_bills_leg"], out["fin_phys_bills_sleg"] = dPl(phn, pl_n), dPl(phs, pl_s)
+    out["fin_phys_levy_leg"] = dPl(phl, pl_n)                              # the levy alone, normally
+    out["fin_phys_bills_odds"], out["fin_phys_bills_sodds"] = f"{phn['odds']:.1%}", f"{phs['odds']:.1%}"
+    # Exit (ESTIMATED arithmetic on a SOURCED range): HKMA Research Memorandum 05/2023 finds prices "4% to 21% lower by
+    # around 2050" under HKO's high scenario, acting with building age; §3.4 and §5.1 read it as the old flat's drag
+    # against newer flats, 0.15% to 0.9% a year (ILLUSTRATIVE as a relative drag). Compounded from the base year to the
+    # release (2037), it is a range on slide 6's gap axis (fin_pflipn_cross); the plan's two routes at each end, in a
+    # normal future, on slide 6's normal-future grid (the old flat d lower from 2037).
+    for k, r_d in (("lo", 0.0015), ("hi", 0.009)):
+        g = 1 - (1 - r_d) ** (m.RMP_Y - m.BY)
+        out[f"fin_phys_gap_{k}"], out[f"fin_phys_gap_{k}_x"] = f"{g:.0%}", f"{g * 100:.2f}"
+        mult_g = (lambda d: (lambda y: 1 - d if y >= m.RMP_Y else 1.0))(g)
+        rm = run(base, "rmp", mult_g, biz=m.BIZ + up, inflows=fund, **pkw)
+        dn = run(base, "down", mult_g, biz=m.BIZ + up, inflows=fund, **pkw)
+        out[f"fin_phys_rmp_{k}"], out[f"fin_phys_down_{k}"] = f"{rm['odds']:.1%}", f"{dn['odds']:.1%}"
+        out[f"fin_phys_rmp_{k}_leg89"], out[f"fin_phys_down_{k}_leg89"] = f"HK${rm['leg_med']:.1f}M", f"HK${dn['leg_med']:.1f}M"
+    if not (float(out["fin_phys_gap_lo_x"]) < float(out["fin_pflipn_cross_x"]) < float(out["fin_phys_gap_hi_x"])):
+        sys.exit("physical risk: RM05's range no longer straddles slide 6's switch point; the slide's words assume it does")
     return out
 
 
@@ -963,6 +994,46 @@ def m11(w, row, head, base):
       f"so it has no room: only choices that cost nothing pass.\n")
 
 
+def m12(w, row, head, base):
+    """M12: physical risk on the recommended plan, through the building's bills and the flat's value at exit."""
+    sc, mult = scenario()
+    up, fund, pkw = sale_uplift(SAVE), funded_for(fund_size(END - 2027)), dict(r_eq=r_eq_for(FEE_SAVED))
+    pl_n = run(base, biz=m.BIZ + up, inflows=fund, **pkw)
+    pl_s = stressed(base, sc, mult, biz_add=up, flows=fund, **pkw)
+    levy = {2033: -50_000 * (1 + m.CPI) ** (2033 - m.BY)}
+    yearly = {y: -2_000 * (1 + m.CPI) ** (y - m.BY) for y in range(2027, END)}
+    w("\n## M12. Physical risk on the recommended plan (Claude, 16 Nov; the Final's base; keys `fin_phys_*`)\n")
+    w("The flat is on no official flood or storm-surge list (`research/area4_property_scenario.md` §3.3), so weather "
+      "reaches the family two ways. **Bills** (ILLUSTRATIVE sizes bracketed by the research): a storm repair levy through "
+      "the owners' corporation, HK$50K in 2033 (sized to OBB 2.0's HK$40K-a-unit subsidy cap, §3.4; §5.1's optional "
+      "levy), plus HK$2,000 a year more for insurance and cooling from 2027 (contents cover ≈HK$600-1,100 a year, "
+      "cooling ≈+HK$700, §3.3), today's money grown with CPI. **Exit** (ESTIMATED on a SOURCED range): HKMA RM 05/2023, "
+      "prices \"4% to 21% lower by around 2050\" under HKO's high scenario, read as the old flat's drag against newer "
+      "flats, 0.15-0.9% a year (§3.4, §5.1; ILLUSTRATIVE as a relative drag), compounded to the 2037 release: a range "
+      "on slide 6's gap axis. Against the recommended plan (vans, our fees, the scholarship funded for life).\n")
+    w(head)
+    w(row("The recommended plan, normal future", pl_n, pl_n))
+    w(row("+ the storm levy alone, normal future", run(base, biz=m.BIZ + up, inflows=plus(fund, levy), **pkw), pl_n))
+    w(row("+ levy and yearly insurance and cooling, normal future",
+          run(base, biz=m.BIZ + up, inflows=plus(fund, levy, yearly), **pkw), pl_n))
+    w(row("The recommended plan, under the scenario", pl_s, pl_s))
+    w(row("+ levy and yearly insurance and cooling, under the scenario",
+          stressed(base, sc, mult, biz_add=up, flows=plus(fund, levy, yearly), **pkw), pl_s))
+    for lbl, r_d in (("RM05's low end, 0.15% a year", 0.0015), ("RM05's high end, 0.9% a year", 0.009)):
+        g = 1 - (1 - r_d) ** (m.RMP_Y - m.BY)
+        mg = (lambda d: (lambda y: 1 - d if y >= m.RMP_Y else 1.0))(g)
+        w(row(f"{lbl} (old flat {g:.1%} behind by {m.RMP_Y}): keep the flat, reverse mortgage",
+              run(base, "rmp", mg, biz=m.BIZ + up, inflows=fund, **pkw), pl_n))
+        w(row(f"{lbl} (old flat {g:.1%} behind by {m.RMP_Y}): downsize",
+              run(base, "down", mg, biz=m.BIZ + up, inflows=fund, **pkw), pl_n))
+    w("\n- The bills cost the children about the same in both futures; about half is the levy. Neither breaks a limit.\n"
+      "- The exit is where weather can change a decision: RM05's range straddles slide 6's switch point "
+      "(`fin_pflipn_cross`). At the low end both routes pass the limit of 95; at the high end downsizing falls below "
+      "it while keeping the flat holds. So the yearly gap check, not a green product, is the physical-risk control.\n"
+      "- Not priced: the building's own repair bill (UNVERIFIED), the warehouse's flood risk (P3), heat on health "
+      "(through medical cover).\n")
+
+
 # ---------- the runs ----------
 def main():
     if hasattr(sys.stdout, "reconfigure"):
@@ -1181,6 +1252,7 @@ def main():
     m9(w, row, head, bases[1][1])
     m10(w, row, head, bases[1][1])
     m11(w, row, head, bases[1][1])
+    m12(w, row, head, bases[1][1])
 
     w("\n## What is not in these runs\n")
     w("- Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, "

@@ -383,6 +383,27 @@ M9c's starting point (plain funds, no giving, no vans): the room above the limit
 - A proxy for a family with less room (not a second client): the same plan if the business sold for nothing is at 91.9% normally and 81.6% under the scenario with plain funds, below both limits, so it has no room: only choices that cost nothing pass.
 
 
+## M12. Physical risk on the recommended plan (Claude, 16 Nov; the Final's base; keys `fin_phys_*`)
+
+The flat is on no official flood or storm-surge list (`research/area4_property_scenario.md` §3.3), so weather reaches the family two ways. **Bills** (ILLUSTRATIVE sizes bracketed by the research): a storm repair levy through the owners' corporation, HK$50K in 2033 (sized to OBB 2.0's HK$40K-a-unit subsidy cap, §3.4; §5.1's optional levy), plus HK$2,000 a year more for insurance and cooling from 2027 (contents cover ≈HK$600-1,100 a year, cooling ≈+HK$700, §3.3), today's money grown with CPI. **Exit** (ESTIMATED on a SOURCED range): HKMA RM 05/2023, prices "4% to 21% lower by around 2050" under HKO's high scenario, read as the old flat's drag against newer flats, 0.15-0.9% a year (§3.4, §5.1; ILLUSTRATIVE as a relative drag), compounded to the 2037 release: a range on slide 6's gap axis. Against the recommended plan (vans, our fees, the scholarship funded for life).
+
+| Run | Odds to 89 | Change (pts) | Inheritance, median | Change | Inheritance, worst 10% | Change |
+|---|---|---|---|---|---|---|
+| The recommended plan, normal future | 97.0% | +0.0 | 13.36 | +0.00 | 4.20 | +0.00 |
+| + the storm levy alone, normal future | 96.9% | -0.1 | 13.26 | -0.11 | 4.14 | -0.06 |
+| + levy and yearly insurance and cooling, normal future | 96.8% | -0.3 | 13.14 | -0.22 | 4.05 | -0.15 |
+| The recommended plan, under the scenario | 90.0% | +0.0 | 8.66 | +0.00 | 0.58 | +0.00 |
+| + levy and yearly insurance and cooling, under the scenario | 89.5% | -0.5 | 8.44 | -0.22 | 0.56 | -0.01 |
+| RM05's low end, 0.15% a year (old flat 1.6% behind by 2037): keep the flat, reverse mortgage | 96.9% | -0.1 | 13.24 | -0.12 | 4.09 | -0.11 |
+| RM05's low end, 0.15% a year (old flat 1.6% behind by 2037): downsize | 96.3% | -0.7 | 17.23 | +3.87 | 7.26 | +3.05 |
+| RM05's high end, 0.9% a year (old flat 9.5% behind by 2037): keep the flat, reverse mortgage | 96.6% | -0.4 | 12.69 | -0.68 | 3.58 | -0.62 |
+| RM05's high end, 0.9% a year (old flat 9.5% behind by 2037): downsize | 94.3% | -2.7 | 15.79 | +2.43 | 6.26 | +2.06 |
+
+- The bills cost the children about the same in both futures; about half is the levy. Neither breaks a limit.
+- The exit is where weather can change a decision: RM05's range straddles slide 6's switch point (`fin_pflipn_cross`). At the low end both routes pass the limit of 95; at the high end downsizing falls below it while keeping the flat holds. So the yearly gap check, not a green product, is the physical-risk control.
+- Not priced: the building's own repair bill (UNVERIFIED), the warehouse's flood risk (P3), heat on health (through medical cover).
+
+
 ## What is not in these runs
 
 - Tonnes (the world side) are not model outputs: ≈134 t a year from the business (vans 19.3, LED 4.1, air-con 2.8, recycled PET 108.1; ESTIMATED on an ILLUSTRATIVE business), from `Final/Decision_List.md`.

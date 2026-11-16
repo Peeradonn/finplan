@@ -260,6 +260,9 @@ def flip5():
         tok[f"p5_y{v}"] = f"{y(v):.1f}"
     for d in (0, 5, 10, 15):
         tok[f"p5_x{d}"] = f"{x(d):.1f}"
+    if "fin_phys_gap_lo_x" in nums:   # 16 Nov review: HKMA RM 05/2023's range read as the 2037 gap (M12, ESTIMATED)
+        lo, hi = x(float(nums["fin_phys_gap_lo_x"])), x(float(nums["fin_phys_gap_hi_x"]))
+        tok.update({"p5_ph_l": f"{lo:.1f}", "p5_ph_w": f"{hi - lo:.1f}", "p5_ph_c": f"{(lo + hi) / 2:.1f}"})
     return tok
 
 
