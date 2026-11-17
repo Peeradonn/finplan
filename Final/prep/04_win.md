@@ -11,9 +11,9 @@ specs in `Final_Plan.md` §4.5b are superseded (27.7%, Adrian at 30%, "EDMW SFC-
 
 | Slide | Title | What a judge must believe after it |
 |---|---|---|
-| 10 | Pass a product only if its rule binds and it fits its owner's limit | A label is a yes or no. Three checks decide. The fund on the SFC's list with US$0 shows the label let it through and the check stopped it. |
-| 11 | The sustainable share is an output of the limits, paid from the room | Nobody chose 26.6%. Two personal limits produced it. What it costs is priced in HK$ and paid from the room above the limit. |
-| 12 | Label the plan, not the product | The plan gets its own label: one line per test, each with a number and a trigger. It's read every year against a plain twin. |
+| 10 | Pass a product only if its rule binds and it fits its owner's limit | Integration, alignment and impact have different purposes. Due diligence checks rules, evidence, availability and suitability; a fund listing alone does not clear it. |
+| 11 | The sustainable share is an output of the limits, paid from the room | The share depends on chosen mandates, products and strategic allocations. Paid alignment has a price and no additional impact quantified. Adrian's MPF check remains open. |
+| 12 | Label the plan, not the product | The dashboard connects evidence to action and corrections. Product labels require monitoring too; this is not independent certification. |
 
 **The method, for any client** (explain it without the Wongs):
 
@@ -197,9 +197,10 @@ The backup slide to show is in brackets: type the number and press Enter.
 8. **"Wouldn't any careful planner catch that fund?"** Yes, careful due diligence would. Our point isn't that planners
    are careless. It's that a label passes it, so "on the list" can't be the test. The framework writes the check in as a
    rule. [24] *Strong.*
-9. **"You say 'don't pay for the label', yet Carmen pays HK$0.62M for green bond and MPF funds. Contradiction?"** No.
-    We refuse the label, not her values. She may buy them from the room, priced at HK$0.62M for the children, and we call
-    them alignment, never impact. [22] *Strong.*
+9. **"You say 'don't pay for the label', yet Carmen pays HK$0.62M for green bond and MPF funds. Contradiction?"**
+    The corner's wording needs qualification. She may knowingly pay for alignment within the room and mandate;
+    that preference does not establish additional impact. The script now states both the price and the claim limit.
+    [22] *Moderate: acknowledge the wording rather than denying the tension.*
 10. **"−HK$0.62M here, HK$0.28M of the room, HK$5.1K a year. Which is it?"** All three: one choice in three units. Fees a
     year; what the children inherit at Carmen's 89; and what it uses of today's giving room. [22] *Strong.*
 11. **"The greenium is about 2bp. Why pay 104bp for a green bond fund?"** We don't pay for the greenium. Carmen pays
@@ -213,9 +214,11 @@ The backup slide to show is in brackets: type the number and press Enter.
 14. **"Does the climate fund protect them in a downturn?"** Unmeasured, so no credit. The carbon underweight points the
     right way, but no published study sizes it for this index. The plan's defence is its limits, not the fund. [18]
     *Strong (honest).*
-15. **"Isn't 'Climate Facts' just another label?"** It's a label on the plan, not a product. It must be earned again
-    every year against stated limits, each line with a trigger, and a restatement shows the old figure. A product label
-    is passed once. [25] *Strong.*
+15. **"Isn't 'Climate Facts' just another label?"** It is an adviser-client dashboard, not independent certification.
+    Product labels require monitoring too: SFC's 29 June 2021 ESG funds circular, paragraphs 25–26. This dashboard
+    checks the whole plan against agreed goals and limits, links results to action, and preserves old figures when
+    restating. Do not claim that product labels are passed once or never change. [25] *Strong on scope; no delivered
+    client outcomes have yet been measured.*
 16. **"Who reads this, who signs, and what happens when a trigger fires?"** The adviser prepares it once a year and when
     a switch point is crossed. Adrian and Carmen sign the policy annex, with the adviser. A crossed trigger means they
     decide that year, and if the room falls short both re-sign. [27] *Strong.*
@@ -226,8 +229,9 @@ The backup slide to show is in brackets: type the number and press Enter.
     fees, and both charge 0.20%. The fee price is only the green bond and MPF funds. [21] *Strong.*
 19. **"Adrian is 'values low'. Why is half his MPF in a low-carbon fund?"** Fair point. Half of each parent's MPF sits
     in it; Adrian's half carries ≈HK$1.9K a year. It's cheaper than the average MPF fund but 0.35 points above the
-    cheapest, and it hasn't been tested against his 0.5% limit. It's on the first yearly review; if it fails, his half
-    goes plain. [27] *Weak until the team decides (§7).*
+    cheapest, and it hasn't been tested against his 0.5% limit. The allocation remains conditional: complete that
+    mandate check before presenting it as suitable. Pete and Win still decide whether to retain or change it; no
+    revised allocation is modelled here. [27] *Weak until the team decides (§7).*
 
 ---
 
@@ -243,9 +247,9 @@ The backup slide to show is in brackets: type the number and press Enter.
 | "ESG funds protect in a downturn" | "Unmeasured, so we give it no credit" |
 | "Our fund is green" / "impact" | "A footprint: 30% less carbon than the market" |
 | "Values cost nothing" | "The climate fund costs what its twin does; her green bond and MPF funds cost the children HK$0.62M" |
-| "The limit caps how much we can lose" | "The limit caps how far it can stray, either way" |
+| "The limit caps how much we can lose" | "The tracking-error budget constrains active-return variability; it is not a maximum shortfall" |
 | "The worst five years cost HK$27K a year" | "If the last five years repeat" (nobody has measured the worst window) |
-| "The 25% target" / "we aimed for 26.6%" | "Nobody set it: the limits did" |
+| "The 25% target" / "we aimed for 26.6%" | "The share depends on these mandates and allocations; confirm whether the initial range is a preference or a hard cap" |
 | "Planners usually / never…" | Say what we do; never claim what others do |
 
 ---

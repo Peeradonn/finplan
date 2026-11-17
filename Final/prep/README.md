@@ -14,6 +14,11 @@ The slides are submitted and can't change. What's left is how we say them and ho
 Each person's file has every number on their slides (with its tag and source), the detail a judge can push on, the
 questions they'll get with an honest strength rating, the traps, what we don't know, and a self-test.
 
+**Spoken revision, 17 Nov:** the current cards lead with explicit client objectives and decisions, explain the flat's
+climate-dependent exit, separate ordinary savings from the transition project, and state the remaining conditions.
+The rationale and limits are in `Final/Final_Plan.md` §5.12. Rehearse with a stopwatch and the frozen builds; the
+generated word-rate estimates do not include every pause.
+
 **Changing the words:** edit the notes in `Final/deck/src/01_talk.html`, then run
 `.venv/Scripts/python.exe Final/deck/make.py --no-render`. `Script_Cards.md` is generated: don't edit it by hand. Open
 decisions before Saturday: `Final/Final_Plan.md` §5.11.

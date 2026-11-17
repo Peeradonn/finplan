@@ -15,19 +15,23 @@ detail question to the right person without looking lost.
 
 **The question (slide 1):** What makes a plan sustainable?
 
-**The easy answer, and why it fails:** "Put 20–25% in ESG funds." Then the share becomes the target. A label says
-yes or no; it can't tell you what the money does. The proof of "beyond labels" is in the plan: the climate index fund
-(a footprint, not a change) and the 47% of the downturn's loss that no fund label looks at. The fund on the SFC's ESG
-list with US$0.00 at all 23 filings, Sep 2024 to Sep 2026 (re-checked live 17 Nov), comes up once, on slide 10, as
-check two at work before we advise. It's low stakes (an order would fail anyway: no offering document, no price), so
-never present it as greenwashing or as proof that labels mislead.
+**The current spoken argument (17 Nov):** ESG funds answer one part of the plan. The framework turns the client's
+financial, environmental and social objectives into decisions: when climate changes the flat's exit, which business
+cuts are feasible and how to fund them, and what investment preferences cost. PRISM orders established tools;
+the application and its evidence carry the argument. The zero-asset fund is ordinary due diligence, an optional
+line on slide 10, not the proof of originality or greenwashing.
 
-**Our answer (the thesis, word for word):**
+**The submitted slides' thesis (unchanged):**
 
 > **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values
 > only from the room above its limits.**
 
-Three tests, true for any client:
+These decision tests serve agreed client objectives. They check financial robustness, claims and affordability;
+they are not a sufficient definition of sustainability or independent certification. The room prices voluntary
+financial sacrifices. Financially material climate risks remain essential planning even without room for gifts.
+Use the current spoken wording in the cards; the literal thesis need not be repeated aloud.
+
+The three tests:
 
 | Test | In plain words | Which way it looks | The Wongs' proof |
 |---|---|---|---|
@@ -45,16 +49,20 @@ Three tests, true for any client:
 | **S**elect | Which options pass? | Each decision gets two prices, then one of four verdicts | All three | 8–11 |
 | **M**onitor | When do we decide again? | The plan's own label, read every year | All three | 12 |
 
-**What's ours** (slide 2, left): the limit on *everything* they own (home, business, savings, job), not just the funds;
-the change counted only where we can show it; values priced in HK$ from a room the limit sizes; every verdict comes with
-the number that would flip it (its switch point).
+**What we demonstrate** (slide 2): a climate-dependent decision on the flat, emissions estimates compared with
+realistic alternatives, project economics separated from cash availability, and green finance compared on full terms.
+Comprehensive planning, goals-based surplus budgets, impact counterfactuals and sensitivity analysis are established
+methods. Do not claim that we invented them or that other advisers cannot find the same opportunities.
 
-**The answer for the Wongs** (slides 1 and 13): electric vans on a plain loan; recycled plastic at today's price; a
-climate index fund at the plain fund's fee; the flat's route checked against a price gap every year; a scholarship
-funded for life now; three green products refused (green mortgage, green deposit, sustainability-linked loan).
+**The answer for the Wongs** (slides 1 and 13): electric vans with proposed plain finance, subject to cash and lender
+checks; recycled packaging conditional on a compliant supplier quote; a climate index candidate at its plain twin's
+fee, subject to suitability and compliance; the flat's route checked against a price gap annually; a scholarship
+funded for life now. Paid alignment is a disclosed preference, not evidence of additional impact. Adrian's MPF
+mandate check remains open, so the allocation is conditional.
 **Capital:** HK$0.74M the family's (the scholarship fund); HK$1.91M of equipment and ≈HK$0.27M of working capital, the
-business's. **Outcomes:** +HK$1.05M for the children against the same plan without the test; up to 134 t CO2e a year
-less, if verified and delivered.
+business's. **Outcomes:** +HK$1.05M for the children in the selected-change model comparison (equipment, scholarship
+funding and fees; recurring carbon-data costs excluded); up to 134 t CO2e a year less, if verified and delivered.
+This is not a fully costed financial gain attributable solely to sustainable finance.
 
 ---
 
@@ -68,11 +76,10 @@ change shown, or not). First, though, the limit: **a choice that breaks it is ou
 | **Adds, or costs about nothing** | **Do it.** Electric vans, LED, air-con (+HK$0.51M, 26 t a year); recycled plastic (≈HK$0 at today's resin price, 108 t) | **Do it, but don't call it green.** Customer carbon data (−HK$0.09M; benefit unquantified); the flat's route, checked yearly; the climate index fund (its plain twin's fee; a footprint) |
 | **Costs money** | **Pay knowingly, from the room.** Fund the scholarship now (−HK$1.32M for the children; HK$0.74M given now, for life) | **Don't pay for the label.** Green mortgage, green deposit, sustainability-linked loan; the green bond fund and the MPF low-carbon fund (−HK$0.62M; no impact claimed) |
 
-**The trap in the bottom-right corner.** A judge will ask: "You say don't pay for the label, yet the family pays
-HK$0.62M for the green bond and MPF funds?" The answer: the corner says what the rule recommends and what may be
-claimed. Those funds cost money and show no change we can measure, so we would never sell them as impact. They're
-bought for the family's values, from the room, knowing the price, and we claim nothing for them. "We don't refuse
-Carmen's values. We refuse the label."
+**The bottom-right corner needs qualification.** A judge can fairly challenge "don't pay for the label" beside
+the green bond and MPF funds. Paid alignment can be an informed preference within the room and mandate;
+it does not establish additional impact. The current script says this explicitly. Do not deny the apparent tension
+or claim zero real-world effect simply because no additional impact has been quantified.
 
 **Know this before a judge spots it:** slides 11 and 13 say "her green bond, MPF funds", but half of *each* parent's
 MPF is in the low-carbon fund, so about HK$1.9K a year of the cost is Adrian's, and it hasn't been tested against his
@@ -92,15 +99,15 @@ We compare against three different things, each for one job. Never mix them in o
 | **The reasonable planner's plan** | The same careful household plan, labelled ESG funds as cheap as ours (0.20%), the gift pledged yearly, no climate check on the home or business | What did the framework change? (the headline) | Slides 1, 13; backup 15 | +HK$1.05M |
 
 **The headline, +HK$1.05M, split honestly** (backup 15):
-- the vans **+HK$0.54M**: the framework's part (only a test of the business finds them);
+- the equipment **+HK$0.54M**: the transition project's modelled contribution; an ordinary cost review could also identify it;
 - funding the gift now instead of pledging it every year **+HK$0.39M**: ordinary good planning a tax-aware planner might also do;
 - fees **+HK$0.12M**: ordinary planning.
 - In the downturn: +HK$1.03M.
 
-Say this split **first** if anyone asks where the HK$1.05M comes from. Against a planner who also buys the vans and
-funds the gift, the money gain is about zero (our reading, not a separate model run). What the test then adds is what
-money doesn't show: the tonnes at no cost, the flat's switch point, the guard on the customers' carbon questions, and
-what may be claimed.
+The current close speaks this split. The comparison excludes recurring carbon-data costs and is not a fully costed
+gain from sustainability alone. The stronger-planner comparison (also buying the economical vans and funding the
+gift) has not been run; do not quote a measured gain against it. The climate-dependent flat decision and the
+conditional transition choices must stand on their own evidence.
 
 **The reasonable planner's plan is not a strawman.** It passes both limits: 95 in 100 normally, 86 in the downturn
 (ours: 97 and 90). It is defined by what it does, as our own advice without the test. It is **not** a claim about how
@@ -183,6 +190,7 @@ figure assumes Adrian works to 65** (slide 12 says so).
 | "The case says…", "our Round One plan", "in October" | "Our client…" | No judge is assumed to have read earlier rounds |
 | "Advisers usually / never…", "Most planners ignore…" | "A label can't see…", "Without the test, our own plan would…" | We have no evidence about typical practice (12 Nov claims audit) |
 | "The first framework to…" | "Built on goals-based planning and double materiality, applied to a family's whole balance sheet" | We can't prove "first" |
+| "A product label never changes" / "is passed once" | "Product labels need monitoring too; our dashboard checks the whole plan" | SFC ESG funds circular, 29 Jun 2021, paragraphs 25–26: monitoring and possible removal |
 | "The plan is climate-resilient" | "It carries the downturn inside the limit and cuts the routes it can" | Nothing in it hedges a market fall |
 | "Shares change nothing" | "No additional impact quantified for this allocation" | Unmeasured is not zero |
 | "The fund is empty / fake / a fraud"; naming its manager aloud | "On the SFC's ESG list; reported US$0.00 at every filing, Sep 2024 to Sep 2026" | Record only; it's on screen |
@@ -202,18 +210,17 @@ figure assumes Adrian works to 65** (slide 12 says so).
 
 Answer first, then the reason, then the source. Stop. If it goes deeper, hand over (§8).
 
-**"Your framework in one sentence?"** A plan is sustainable if it holds its limits when climate hits, claims only what
-it changes, and pays for values only from the room above its limits. PRISM is how we check it.
+**"Your framework in one sentence?"** Start with agreed objectives, test climate against financial limits,
+compare changes with realistic alternatives, and price voluntary preferences within the room. PRISM orders the work.
 
-**"Isn't this what every good planner does?"** The steps are, and slide 2 says so. We change three things inside them: the limit set on
-everything the family owns before any product, values paid only from the room above it and priced in HK$, and every
-verdict shown with the number that flips it. On the Wongs, that reversed advice that isn't about green products at
-all: the flat's route (slide 6). *(Deep version: Pete.)*
+**"Isn't this what every good planner does?"** The tools are established. Judge the application: the flat's exit
+changes at a modelled climate-related price gap, the business prioritises purchasing alongside equipment, and the
+funding verdict depends on full terms. We do not claim that other advisers cannot make those decisions. *(Pete.)*
 
 **"Your 'reasonable planner' is a strawman."** It passes both limits (95 and 86) and uses ESG funds as cheap as ours.
-Of our +HK$1.05M, about half is the vans; the rest is ordinary planning, and we say so. Against a planner who also
-bought the vans and funded the gift, the money gain is about zero; the test still adds the flat's switch point, the
-tonnes and what may be claimed. *(Backup 15.)*
+Of our +HK$1.05M, about half is the equipment; the rest is ordinary planning, and recurring carbon-data costs are
+excluded. The reference is defined by its choices, not evidence of typical adviser practice. We have not run the
+comparison against a planner who also buys the vans and funds the gift. *(Backup 15.)*
 
 **"Why 95 and 85?"** They're the family's limits as we set them: illustrative. Every verdict comes with the number that
 flips it (backup 25), and the family can lower a limit only explicitly, both parents signing.
@@ -228,17 +235,16 @@ the customers' carbon questions.
 
 **"What would you not do?"** Pay for a green mortgage (at most HK$1,000 once, and the building isn't rated); pay for a
 green-loan label (≈HK$12K saved, ≈HK$12K review); a sustainability-linked loan at her size; the fund that reported
-zero assets; a clean-energy fund that breaks Adrian's limit; a green deposit with no rule on what the bank finances;
-any impact claim for listed shares.
+zero assets; a clean-energy fund that breaks Adrian's limit; a green deposit with no binding rule established for
+the assessed product; unsupported impact claims for this listed-share allocation. Finance refusals depend on the
+assessed terms and verification costs, not a universal exclusion of smaller businesses.
 
 **"Isn't PRISM just double materiality?"** Yes, built on it on purpose (slide 2's footer). What we add is applying it to a
 family's whole balance sheet, with decision rules and prices in HK$.
 
-**"Isn't this just goals-based planning, or core and excess capital?"** Yes, built on both, on purpose. What's new is
-what we run through them: every green choice priced as a draw on the room, in HK$; climate tested on the home and the
-business, not just the funds; the ESG share left as an output of each parent's limit. On the Wongs, that changed the
-advice where a fund screen never reaches: the flat's route, the business's purchases, the labels refused. *(Deep
-version: Pete.)*
+**"Isn't this just goals-based planning, or core and excess capital?"** Yes, those are foundations. The room prices
+voluntary sacrifices; it does not make financially material climate risk optional. Our case is the climate-dependent
+exit decision and the evidenced transition choices, not a claim to have invented surplus budgeting. *(Pete.)*
 
 **"What if Adrian loses his job?"** It's the plan's biggest risk, and it isn't a climate risk. Every odds figure assumes
 he works to 65. With no response, the plan falls to 44 in 100. The response that restores both limits is on backup
@@ -248,8 +254,9 @@ he works to 65. With no response, the plan falls to 44 in 100. The response that
 ourselves. A distributor is representative: Hong Kong has about 12 import, export and wholesale firms for every
 manufacturer (TID, June 2025).
 
-**"26.6% is above their 20–25% ask: did you overshoot?"** Nobody targeted it. Adrian's limit stops his climate fund at
-24%; Carmen's limit covers all her shares. The share is what the limits produced. *(Deep version: Win.)*
+**"26.6% is above their 20–25% ask: did you overshoot?"** It is conditional on the chosen mandates, instruments and
+strategic allocations, not an inevitable optimum or an authorised departure from a hard client cap. Confirm whether
+their initial range is a preference or a binding limit. Adrian's MPF fit remains open. *(Win.)*
 
 **"What are the measured sustainability outcomes?"** None are measured yet, and we say so. The 134 t are estimated and
 measured from 2027 against a carbon baseline. The scholarship's students are counted. The funds: a footprint, with no
@@ -292,15 +299,17 @@ impact claimed.
 | Fri 20 | Final timed run. Re-check the live facts: the US$0 fund still on the SFC's ESG list; EDMW still not SFC-authorised; NGFS Phase VI published or not |
 | Sat 21 | 09:30 at FellowSPACE, Wong Chuk Hang. One person checks the laptop, the file and the clicker |
 
-**At every timed run:** the next speaker keeps time on a phone. At the 3-minute warning (7:00), slide 9 should already
-be on screen; if it isn't, every speaker from there drops their ✂ sentence. Over 10:30 disqualifies us.
+**At every timed run:** the next speaker keeps time on a phone. Follow the current warning checkpoints generated in
+`Script_Cards.md`; the earlier slide-9 checkpoint is obsolete. Include actual click and reading pauses. Over 10:30
+disqualifies us.
 
 ---
 
 ## 10. Self-test (everyone)
 
-<details><summary>1. Say the thesis word for word.</summary>A plan is sustainable if it holds its limits when climate
-hits, claims only what it changes, and pays for values only from the room above its limits.</details>
+<details><summary>1. Explain the tests and what gives them a purpose.</summary>The limit tests financial robustness,
+the change disciplines claims, and the room prices voluntary sacrifices. They serve agreed environmental, social
+and financial objectives; they are not independent sustainability certification.</details>
 
 <details><summary>2. Name PRISM's five steps and the test each checks.</summary>Profile (limit, room); Risk (limit);
 Impact (change); Select (all three); Monitor (all three).</details>
@@ -309,8 +318,8 @@ Impact (change); Select (all three); Monitor (all three).</details>
 room; don't pay for the label. And first: a choice that breaks the limit is out, however green.</details>
 
 <details><summary>4. Where does +HK$1.05M come from?</summary>Against the reasonable planner's plan: the vans +HK$0.54M,
-funding the gift instead of pledging it +HK$0.39M, fees +HK$0.12M. About half is the vans; the rest is ordinary
-planning.</details>
+funding the gift instead of pledging it +HK$0.39M, fees +HK$0.12M. Funding and fees are ordinary planning; a cost review
+could also find the vans. Recurring carbon-data costs are excluded, and the stronger-planner comparison is unrun.</details>
 
 <details><summary>5. Which comparison gives the room, which the corners, which the headline?</summary>Plain choices: the
 room. Each decision's plain alternative: the corners. The reasonable planner's plan: the headline.</details>

@@ -97,11 +97,10 @@ is Round One's choices with a labelled ESG core at 0.20% (as cheap as ours) and 
 our changes in order, so the parts sum: the vans **+HK$0.54M** (`fin_fair_vans`), funding the gift instead of pledging
 it **+HK$0.39M** (`fin_fair_gift`), the rest of the fee gap **+HK$0.12M** (`fin_fair_fees`, mostly Adrian's plain
 bonds instead of a green bond fund). Total **+HK$1.05M**; **+HK$1.03M** in the downturn (`fin_fair_gain_s`). Odds 97
-and 90 against 95 and 86. **Only the vans are the framework's**, and they rest on an ILLUSTRATIVE business reaching
-the family through the sale price. Against a planner who also buys the vans and funds the gift, the money effect is
-about zero (our reading of the parts, not a separate run; `Final_Plan.md` §4.4). Then the case rests on what only the
-test adds: the cuts at no cost (recycled plastic at parity, the climate index fund at its plain twin's fee), the
-flat's route set by the limit with its switch point, the customer route guarded, and what may be claimed.
+and 90 against 95 and 86. The equipment's contribution rests on an ILLUSTRATIVE business reaching the family through
+the sale price; an ordinary cost review could also identify it. Recurring carbon-data costs are excluded. The
+stronger-planner comparison has not been run. The climate-dependent exit decision, conditional transition choices
+and claim boundaries must stand on their own evidence (`Final_Plan.md` §5.12).
 
 **Profiles and decision rights** (slide 3; backup 33; `area1_6_framework.md` §3). The brief's seven dimensions,
 grouped as need, would risk, value. Taken following ESMA's suitability
@@ -131,24 +130,26 @@ through SFC-licensed or HKMA-registered intermediaries, insurance through IA lic
 
 Answer first, then the reason, then the source. Stop. "Show" is the backup to type.
 
-1. **"What's your recommendation, in one line?"** Seven changes, each priced; the main ones: the business buys electric
-   vans on a plain loan and switches to recycled plastic at today's price. The savings go into a climate index fund at the plain fund's
-   fee. The family keeps the flat with a yearly price check, and funds the scholarship now. Capital HK$0.74M the
-   family's, HK$1.91M the business's; +HK$1.05M for the children; up to 134 t a year. *Show 13.* **Strong.**
-2. **"Where's the innovation? Isn't this what every good planner does?"** The steps, yes: slide 2 says so, and the
-   tools are known (goals-based planning, core and excess capital, double materiality). We change three things inside
-   them: values spend only the room above the limit, priced in HK$; the limit covers the home and business; every
-   decision, vans to scholarship, on one measure with the number that flips it. And it found what a fund screen can't:
-   almost half the downturn's loss outside the funds, the biggest carbon cut in purchases at about zero cost, labels
-   that didn't earn their cost, the flat's route. *Show 25, 28.* **Moderate:** it needs slides 4 and 13 behind it.
-   Lead with the findings, not with PRISM: the acronym is how we order the steps, not the claim.
+1. **"What's your recommendation, in one line?"** Price climate into the flat's exit; prioritise feasible business
+   cuts, with recycled packaging conditional on a compliant quote and vans subject to cash and lender checks;
+   allocate under individual mandates and fund the scholarship. The capital is on slide 13, including business
+   working capital. The financial headline covers equipment, scholarship funding and fees, excluding recurring
+   carbon-data costs; it is not a fully costed sustainability-only gain. *Show 13, 15.* **Moderate: checks pending.**
+2. **"Where's the innovation? Isn't this what every good planner does?"** The tools are established. Judge the
+   application: a climate-related price gap reverses the flat's exit advice; the business's largest potential cut is
+   in purchasing and needs a supplier quote; and financing follows project cash needs and full terms. We make those
+   decisions and their conditions explicit. We do not claim that other advisers cannot reach the same answers.
+   *Show 6, 7, 9, 25.* **Moderate:** the model and sourcing assumptions still need defending.
 3. **"Your reasonable planner's plan is a strawman: it ignores the business."** It's our defined comparison, not a
    claim about advisers. Fair point on the business: against a planner who also buys the vans and funds the gift, the
-   money effect is about zero. What's left is what only the test adds: free tonnes, the flat's switch point, what may
-   be claimed. *Show 15.* **Moderate:** say it first, in 20 seconds.
-4. **"Take the HK$1.05M apart."** Vans +HK$0.54M: the framework's, on an illustrative business. Funding the gift
+   extra financial gain is unmeasured: that comparison has not been run. The flat's switch point, conditional tonnes
+   and claim boundaries must stand on their own evidence. *Show 15.* **Moderate:** do not present an unrun comparison
+   as measured or call a supplier-quote-dependent cut free.
+4. **"Take the HK$1.05M apart."** Equipment +HK$0.54M: the transition project's contribution, which a cost review
+   could also find. Funding the gift
    +HK$0.39M: good planning a tax-aware planner might do too. Fees +HK$0.12M: ordinary planning. In the downturn,
-   +HK$1.03M. We say which part is green. *Show 15.* **Strong**, because we split it ourselves.
+   +HK$1.03M. Recurring carbon-data costs are excluded. This is the stated comparison, not a fully costed gain from
+   sustainability alone. *Show 15.* **Moderate:** the stronger-planner comparison is unrun.
 5. **"Why 95 and 85?"** They're the family's limits as we set them, ILLUSTRATIVE, written into the annex. The rules
    don't depend on the level: each verdict that leans on a limit shows where it flips. A family can lower its limit,
    explicitly, both parents signing. *Show 25, 27.* **Moderate.**

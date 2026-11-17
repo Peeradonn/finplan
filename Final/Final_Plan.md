@@ -135,11 +135,13 @@ specified comparison, not a claim about how other advisers work:
 
 In the model it is the headline's first step (`final_model.py` `export_final()`, M9b's fairest row): Round One's
 choices with a labelled ESG core at 0.20% and the lifelong pledge. The headline `fin_fair_gain` (+HK$1.05M) is against
-it. **Its parts are not equally the framework's:** the vans (`fin_fair_vans`) only a test of the business finds;
+it. **Its parts are not equally the framework's:** the equipment (`fin_fair_vans`) is the transition project's modelled
+contribution, which an ordinary business cost review could also identify;
 funding the gift instead of pledging it (`fin_fair_gift`) is ordinary good planning a tax-aware planner might also do;
-the fees (`fin_fair_fees`) are ordinary planning. Say so when asked; against a planner who also buys the vans and
-funds the gift, the money effect is about zero (§4.4), and the case rests on what the test adds: the tonnes at no cost,
-the flat's route set by the limit, the customer route guarded, and what may be claimed.
+the fees (`fin_fair_fees`) are ordinary planning. The current close speaks this split and the exclusion of recurring
+carbon-data costs. The comparison against a planner who also buys the vans and funds the gift has not been run;
+no fully costed extra financial gain against that planner is established. The case rests on the flat's conditional
+exit decision, feasible transition choices and defensible claims (§5.12).
 
 **Three comparisons, three jobs; never two on one chart unnamed:**
 | Comparison | The question it answers | Where |
@@ -1902,6 +1904,41 @@ about what we *say*; detail in `prep/`).
   (a planner who also buys the vans and funds the gift; today "about zero" is our reading, not a run), and a second
   scenario on the recommended plan (`02_lookbua.md` Q9 is weak without it). Owner: Pete.
 
+### 5.12 Spoken revision after the standalone Final review (17 Nov, Codex; Pete authorised)
+
+The submitted slides and `Axis.pptx` remain frozen. Revise only the speaker notes and regenerate the script/cards
+with `make.py --no-render`. This is a change in the spoken argument, not a new model run or a change to the chosen
+recommendations. Earlier script directions in this plan and the notes are drafting history where they conflict.
+
+- **The argument:** client objectives give the limit/change/room tests a purpose. PRISM orders established tools;
+  demonstrate judgment through the flat's climate-dependent exit, feasible business cuts and full financing terms.
+  Do not sell comprehensive planning, surplus budgeting, sensitivity analysis or the acronym as inventions.
+- **The environmental and social objectives:** lower the business's emissions, align investments with the agreed
+  mandates and fund the scholarship, subject to retirement limits. The three tests are our decision standard, not
+  sufficient proof of sustainability or independent certification. The room prices voluntary sacrifices; financially
+  material climate risks belong in essential planning regardless of room for gifts.
+- **The flat leads the proof:** explain why an older/newer price gap reduces the cash released by downsizing and
+  can reverse the advice. The HKMA-based range is our extrapolation, not an official forecast for the family's flat.
+- **The business:** dated resin parity is not a finished-packaging quote; reductions are estimates against explicit
+  alternatives. Lifetime savings do not establish cash availability. Retain co-owner, supplier and lender checks.
+  Explain use-of-proceeds versus KPI-linked pricing; actual full terms may change the financing verdict.
+- **The headline is narrower than the whole plan:** retain the existing `fin_fair_gain` only as the selected-change
+  model comparison of equipment, scholarship funding and fees against our stated reference. Speak the three existing
+  attribution keys. Recurring carbon-data costs are excluded; it is not a fully costed sustainability-only gain.
+  An ordinary cost review could also identify the vans. The stronger-planner comparison remains unrun (§5.11).
+- **The portfolio:** tracking error is variability, not a maximum loss. The share is conditional on chosen mandates,
+  instruments and strategic allocations. Paid alignment can be a disclosed preference; no additional impact is
+  quantified for it. Adrian's MPF check remains unresolved (§5.11); no claim that the entire allocation is cleared.
+- **Monitoring:** remove the claim that product labels never change. They require monitoring too (SFC ESG fund
+  circular, 29 June 2021, ¶25–26). The dashboard connects evidence to action, conservative claims and restatements.
+  Close on decisions and conditions, rather than awarding our own plan a label. Definitions checked against
+  CFA Institute/GSIA/PRI, *Definitions for Responsible Investment Approaches*, November 2023. Primary-source links
+  are in the updated speaker notes for slides 10 and 12.
+- **Timing:** cut repeated thesis/acronym explanations to make room for the causal explanations and qualifications.
+  Keep the existing click counts and speaker order, the opening-question exception and optional drop sentences.
+  Recalculate timings from the generated cards, then rehearse aloud with the frozen builds; word rates do not include
+  every pause. The submitted presenter view still contains the submitted notes: use the updated cards.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -2042,6 +2079,12 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **17 Nov (Codex; Pete: "sure let's revise the spoken script").** Reframed the spoken argument after reading the
+  Final as a standalone task: decision tests serving explicit client objectives, the flat as the clearest changed
+  recommendation, conditional business cuts and finance, and honest financial attribution. Removed the absolute
+  product-label claim and the suggestion that established planning tools are inventions. Scope and remaining
+  limitations are in §5.12. Slides, model assumptions and exported numbers are unchanged.
 
 - **17 Nov (Pete): the opening question comes before the introduction.** Slide 1 now starts "What makes a plan
   sustainable? Good morning. We're Team Axis, and I'm Pete." Chosen over "intro, then the question" (rule-safe) after
