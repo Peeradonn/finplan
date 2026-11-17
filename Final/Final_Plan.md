@@ -1857,6 +1857,24 @@ about what we *say*; detail in `prep/`).
   companies are now in scope) or answer "built on double materiality" without the scope. Owner: Pete.
 - **Re-check on Fri 20:** the zero-asset fund still on the SFC's ESG list; EDMW still not SFC-authorised; NGFS Phase VI
   out or not; the HKMA's "not a mandatory requirement" wording. Owners: Win, Lookbua, Pete.
+- **The script rewritten for the ear (17 Nov, Claude, Pete's go-ahead).** Same content and clicks; written for
+  listening: short sentences, the number at the end, amounts the screen shows left to the screen. A "where we are" line
+  at each change of speaker (Lookbua: "Pete set the limit. My job is to try to break it"; Fahtai: "Now the other
+  direction"). The four verdicts said out loud before the close (slides 4, 6, 7, 9). "So…?" endings down from 8 to 3.
+  The advice in the family's words twice (slide 4: "you could give about HK$1.7M today and still keep your limit";
+  slide 9: "take the plain loan, and order the vans before then"). Slide 9 no longer says "twelve thousand" for both
+  the greenium and the green premium. Slide 4 states the rule for any client before the Wongs. **Not shorter:**
+  1,323 words (was 1,312): 10:08 at 135 words a minute, 10:55 at 125. Each speaker now reads their part aloud and
+  changes any wording that doesn't sound like them (keep the numbers, the rules, the verdict phrases and the clicks).
+- **Pete to decide: slide 10's new line,** "We picked it ourselves once, before we had this test" (the zero-asset fund
+  was our earlier proposal's ESG core; the judges hold that proposal). It's the talk's one mention of an earlier round
+  and names no round. Keep it, or delete the sentence.
+- **Cuts after today's timed reading** (aim: finish about 9:40 at the team's natural pace, with a pause at each click).
+  Cheapest first, at 125 words a minute: the five ✂ sentences, 63 words, ≈28 s (make them permanent if the run is
+  long); then the fund line (10 words, ≈5 s), slide 7's "then price each alternative…" detail (12, ≈6 s), slide 4's
+  pledge sentence (15, ≈7 s; it loses "funded, not aspirational"), slide 5's two routes, CBAM and HK reporting (17,
+  ≈8 s; it loses the rules map). All of these: ≈117 words, ≈56 s, to ≈1,206 words. Below that, a brief item goes
+  (Key Areas §7). Keep slide 6's HKMA range: it is the flat's climate link.
 - **Two runs that would turn moderate answers into strong ones**, only if time allows: the "good planner" comparison
   (a planner who also buys the vans and funds the gift; today "about zero" is our reading, not a run), and a second
   scenario on the recommended plan (`02_lookbua.md` Q9 is weak without it). Owner: Pete.
