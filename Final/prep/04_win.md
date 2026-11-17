@@ -116,6 +116,9 @@ Our earlier proposal held it as its ESG core: we trusted the list and didn't che
 (the Final is judged on its own, Pete, 17 Nov). Only if a judge raises it: "Yes, we named it then. We trusted the list
 and didn't check its assets. That's the mistake this test is built to stop." Never "the label misled us" or "the
 SFC's list got it wrong": the list never said it had assets, and checking a product is the adviser's job.
+If a judge says "you'd find out when you tried to buy it": "Yes, at purchase, after the advice was given and the plan
+built on it. We're expected to know a product before we recommend it, so check two finds it then." Re-checked live
+17 Nov: 23 records, Sep 2024 to Sep 2026, every one US$0.00.
 
 **4.4 The two refusals.**
 - **Clean-energy fund:** fails check 3 (the owner's limit). It's a one-sector bet: ICLN fell 61.5% from Jan 2021 to

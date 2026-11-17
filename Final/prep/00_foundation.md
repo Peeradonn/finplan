@@ -16,10 +16,11 @@ detail question to the right person without looking lost.
 **The question (slide 1):** What makes a plan sustainable?
 
 **The easy answer, and why it fails:** "Put 20–25% in ESG funds." Then the share becomes the target. A label says
-yes or no; it can't tell you what the money does. And a label is not a check: one global ESG fund on the SFC's own ESG
-list reported US$0.00 of assets at all 23 filings from Sep 2024 to Sep 2026 (slide 10). The list never said it had
-assets; checking a product is the adviser's job. That fund is the hook, not the proof of "beyond labels": the proof is
-the climate index fund (a footprint, not a change) and the 47% of the downturn's loss no fund label looks at.
+yes or no; it can't tell you what the money does. The proof of "beyond labels" is in the plan: the climate index fund
+(a footprint, not a change) and the 47% of the downturn's loss that no fund label looks at. The fund on the SFC's ESG
+list with US$0.00 at all 23 filings, Sep 2024 to Sep 2026 (re-checked live 17 Nov), comes up once, on slide 10, as
+check two at work before we advise. It's low stakes (an order would fail anyway: no offering document, no price), so
+never present it as greenwashing or as proof that labels mislead.
 
 **Our answer (the thesis, word for word):**
 
