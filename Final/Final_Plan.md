@@ -44,7 +44,7 @@ an argument; where it disagrees with those files, they win.
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
-| **Now** (16 Nov) | The 13 talk slides, the close (14), backups 15–33 and the index (34) are built; Axis.pptx rebuilt through PowerPoint after the 16 Nov review (Changes), `--check` clean. Script 1,256 spoken words: 9:38 at 135 a minute with names, 10:22 at 125, never timed live. Left: send before 17:00 and wait for the acknowledgement; then the script swaps (slides 3, 5, 6, 8), the timed run, the cold read and the question drills |
+| **Now** (17 Nov) | **Slides submitted and frozen** (git tag `final-submitted`; never rebuild or resend `Axis.pptx`). Script finalized for the first timed run: 1,300 spoken words, 9:57 at 135 a minute with names, 10:44 at 125 (≈10:05 with the ✂ sentences dropped), never timed live. Rehearse from [`prep/Script_Cards.md`](prep/Script_Cards.md); drill from [`prep/`](prep/) (the foundation, then each person's file). Left: the timed runs, the cold read, the question drills, the decisions in §5.11 |
 
 **The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
 the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
@@ -1846,6 +1846,21 @@ Owner: everyone, at the first timed run.
   HK$1.5M of giving today; both causes for life would use all of it; pledged from cash flow instead, they'd break the
   limit"), from new export keys. Owner: Pete.
 
+**5.11 Before Saturday: what the 17 Nov check left open** (Claude; the slides can't change, so each is a decision
+about what we *say*; detail in `prep/`).
+- **Adrian's MPF half.** Half of each parent's MPF is in the Sun Life low-carbon fund; Adrian's half carries ≈HK$1.9K
+  a year of the −HK$0.62M and was never tested against his 0.5% limit. Say it stays until the first yearly review
+  (`04_win.md` Q19), or that his half moves to a plain fund. Owners: Pete, Win.
+- **The scholarship's 2028 gate** (pay the second half only if the 2027 review still shows room): decide, or don't
+  mention it. Owner: Pete.
+- **Slide 2's footer, "the EU requires it of companies":** find the source (the ESRS under the CSRD, and which
+  companies are now in scope) or answer "built on double materiality" without the scope. Owner: Pete.
+- **Re-check on Fri 20:** the zero-asset fund still on the SFC's ESG list; EDMW still not SFC-authorised; NGFS Phase VI
+  out or not; the HKMA's "not a mandatory requirement" wording. Owners: Win, Lookbua, Pete.
+- **Two runs that would turn moderate answers into strong ones**, only if time allows: the "good planner" comparison
+  (a planner who also buys the vans and funds the gift; today "about zero" is our reading, not a run), and a second
+  scenario on the recommended plan (`02_lookbua.md` Q9 is weak without it). Owner: Pete.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -1874,6 +1889,12 @@ The full draft was due Wed 11; it slipped three days. The deadline doesn't move.
 In the submitted file, after the close (it is the only file we can use on the day). The list is in §4.5.
 
 ## 8. Hard questions
+
+**Since 17 Nov, drill from [`prep/`](prep/)**, not from this table: `00_foundation.md` §7 has the answers anyone may
+give, and each person's file §5 has their area's, refreshed against the submitted deck with an honest strength rating.
+This table is kept for its history. Closed since it was written: the HK$2.4M headline (now +HK$1.05M, §5.1), the
+lifelong pledge against a 20-year fund (decided 14 Nov, §5.3), "your values budget equals what you spent" (§5.4), and
+Adrian's job (backup 19 exists).
 
 **The strongest case against us:** a CPA takes the headline apart (§5.1); too many refusals read as "these students
 just say no" (pair each with what we do instead, and its money); points of the odds feel abstract (always pair with
@@ -1977,6 +1998,33 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **17 Nov (Claude, Pete: "finalize the script ... a document for preparation ... everyone understands the foundation
+  ... each of us drills down into the parts we're assigned to").**
+  - **Frozen:** the submitted commit is tagged `final-submitted`. Presenter view on the day shows the submitted notes;
+    the team rehearses from the cards. `make.py --no-render` regenerates the script and the cards without touching
+    the slides.
+  - **The script** (notes in `deck/src/01_talk.html`), checked line by line against the submitted slides. Fixed where
+    the words and the screen disagreed: slide 8 now walks its right side (each cut through the test; only the vans
+    need a loan); slide 6 says the climate link (the HKMA range, "on our reading") and names the two routes; slide 4
+    names the limit and the values budget and introduces the second cause before "both"; slide 7 says "measure each"
+    (the screen), not "a cost curve"; slide 11 says why Adrian holds 24% (0.5 ÷ about 2) and no longer calls the MPF
+    fund hers. Added for the rubric: the recommendation on slide 1 (Key Areas §7, as on screen) and the four verdicts
+    named on the close. Claims tightened: "reported zero assets", not "held nothing" (record-only, §9); "where no fund
+    label looks", not "only a climate check finds" (a property fall is any planner's stress test). Cut to fit: 22
+    routes, the downturn crossing on slide 6, the market sentence on slide 4, repeats on the close. Every click marked
+    (▸) in spoken order; one or two sentences a speaker marked ✂ (`<s>…</s>`), dropped if behind (≈36 s in all).
+  - **`prep/`:** `00_foundation.md` for everyone (the thesis, PRISM, the verdicts, the three comparisons, the
+    numbers, what not to say, cross-cutting answers, how we run the questions, the week, a self-test); one deep dive
+    each (`01_pete.md` … `04_win.md`: every number on their slides with tag and source, the detail underneath,
+    questions with honest strength ratings, traps, unknowns, a self-test); `Script_Cards.md`, generated. The deep
+    dives were drafted in parallel and checked against the deck and `numbers.json`. They replace §8 as the place to
+    drill, and Win's earlier summaries.
+  - **Found while checking** (slides frozen, so each has a prepared answer; decisions in §5.11): the −HK$0.62M includes
+    Adrian's MPF half; at 5.5% the van loan's payment is ≈HK$351K (savings ≈86%, top-up ≈HK$48K), the slides' figures
+    are at the green rate; backups 20 and 31 still say carbon data "protects/guards" −HK$1.55M; slide 1 says three
+    refusals, the deck shows four (the clean-energy fund on Adrian's limit); slide 2's "the EU requires it of
+    companies" has no source in our files; backup 29 says DESNZ 2025, the brief used 2026.
 
 - **16 Nov, 15:00 (Claude): pre-submission check.** Axis.pptx: 34 slides (talk 1–13, the end card 14, backups 15–33,
   the index 34); the end card moved into "The close" section. Scanned the file: no university name, email or account

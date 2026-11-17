@@ -1,5 +1,8 @@
 # Win's framework summary — how the Final round selects the portfolio
 
+> **Superseded 17 Nov:** the slide numbers, the 30% and 27.7% and "EDMW SFC-authorised" below are out of date. Drill
+> from [`Final/prep/04_win.md`](../prep/04_win.md). Kept for history.
+
 **For:** Win (area 3, slides 7–8). **Written:** 9 Nov 2026. Pulled from the committed source
 (`Final_Plan.md §4`, `area3_portfolio.md §3`, `area1_6_framework.md §3c`), not from memory. A one-page reference to
 present and to answer questions from.

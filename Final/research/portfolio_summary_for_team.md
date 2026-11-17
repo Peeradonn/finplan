@@ -1,5 +1,8 @@
 # Portfolio Integration: Summary & Workflow for the Team
 
+> **Superseded 17 Nov:** slide numbers, Adrian's weight and the family share below are out of date. Drill from
+> [`Final/prep/04_win.md`](../prep/04_win.md). Kept for its sources.
+
 **Owner:** Win · **Slides:** 7 (mandate + price of values) and 8 (portfolio weights, costs, carbon, refusals)
 **Status:** v2, fact-checked against primary sources 7 Nov 2026 · **Date:** 7 Nov 2026
 

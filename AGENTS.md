@@ -13,9 +13,9 @@ this file, not `CLAUDE.md`. Team Axis: Pete (lead), Win, Fahtai, Lookbua.
 - Translate Claude-specific tool names to available Codex tools: read files with the shell, inspect PNGs with
   `view_image`, and use the repo's `.venv/Scripts/python.exe` and existing Final build scripts. Keep the established
   deck and its tokens; do not copy a new starter over it. Render and inspect every changed slide and relevant builds.
-- **Current handoff (Pete, 12 Nov):** developing slides 1 and 3, first checking exactly what the argument claims.
-  Read `Final/research/claims_audit_2026-11-12.md` alongside the plan and `industry_practice.md`; inspect the PDFs in
-  `Final/Relative Research/`. This is working context, not an instruction to redesign both slides automatically.
+- **Current handoff (17 Nov):** the slides are submitted and frozen (git tag `final-submitted`). The work now is the
+  spoken script and the question drills: `Final/prep/` (start with `00_foundation.md`), the open decisions in
+  `Final_Plan.md` §5.11. Never rebuild, re-save or resend `Final/deck/Axis.pptx`.
 - **Claims about other advisers:** ESG integration, screening, alignment and additional impact are different.
   Do not imply ESG is absent from ordinary investment analysis, or that practitioners ignore homes and businesses.
   A public report's silence is not evidence that a service is absent. Say what the named source actually describes;
@@ -219,6 +219,9 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
 **The Final deck is in `Final/deck/`** (set up 11 Nov from Round Two's tools): `src/01_talk.html` holds storyline v5's thirteen
 slides (slides 3, 7 and 9 split, 14 Nov) (`Final_Plan.md` §4.5; moved from `options/` 14 Nov) and `src/02_backup.html` the backups, numbered 14–23. The look is A (`Final_Plan.md` §3): its tokens are in
 `Final/deck/src/00_head.html`.
+**Since 16 Nov the slides are frozen** (tag `final-submitted`): change only the spoken words in the notes (`▸` marks a
+click, `<s>…</s>` a sentence to drop if behind), then run `make.py --no-render`, which rewrites `Axis_Script.md` and the
+rehearsal cards `Final/prep/Script_Cards.md`. Don't run `make_pptx.py`.
 ```
 .venv/Scripts/python.exe Final/deck/make.py [--pages 3,4] [--builds]   # Axis.html, the script (Axis_Script.md), PNGs in build/
 .venv/Scripts/python.exe Final/deck/make_pptx.py                       # Axis.pptx: the one file, via PowerPoint (font, metadata)
