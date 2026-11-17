@@ -1896,7 +1896,7 @@ about what we *say*; detail in `prep/`).
   Cheapest first, at 125 words a minute: the five ✂ sentences, 63 words, ≈28 s (make them permanent if the run is
   long); then slide 7's "then price each alternative…" detail (12 words, ≈6 s), slide 4's pledge sentence (15, ≈7 s;
   it loses "funded, not aspirational"), slide 5's two routes, CBAM and HK reporting (17, ≈8 s; it loses the rules
-  map). All of these: ≈107 words, ≈51 s, to ≈1,192 words. Below that, a brief item goes (Key Areas §7). Keep slide
+  map). All of these: ≈107 words, ≈51 s, to ≈1,202 words. Below that, a brief item goes (Key Areas §7). Keep slide
   6's HKMA range: it is the flat's climate link.
 - **Two runs that would turn moderate answers into strong ones**, only if time allows: the "good planner" comparison
   (a planner who also buys the vans and funds the gift; today "about zero" is our reading, not a run), and a second
