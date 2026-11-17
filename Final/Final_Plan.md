@@ -1864,17 +1864,20 @@ about what we *say*; detail in `prep/`).
   The advice in the family's words twice (slide 4: "you could give about HK$1.7M today and still keep your limit";
   slide 9: "take the plain loan, and order the vans before then"). Slide 9 no longer says "twelve thousand" for both
   the greenium and the green premium. Slide 4 states the rule for any client before the Wongs. **Not shorter:**
-  1,323 words (was 1,312): 10:08 at 135 words a minute, 10:55 at 125. Each speaker now reads their part aloud and
+  1,319 words (was 1,312): 10:06 at 135 words a minute, 10:53 at 125. Each speaker now reads their part aloud and
   changes any wording that doesn't sound like them (keep the numbers, the rules, the verdict phrases and the clicks).
-- **Pete to decide: slide 10's new line,** "We picked it ourselves once, before we had this test" (the zero-asset fund
-  was our earlier proposal's ESG core; the judges hold that proposal). It's the talk's one mention of an earlier round
-  and names no round. Keep it, or delete the sentence.
+- **The zero-asset fund: our miss, framed honestly (17 Nov, Pete).** Our earlier proposal named it without checking
+  its assets. The list never said it had any, and checking a product is the adviser's job, so "a label can mislead"
+  blamed the label for our miss. Slide 1 now says "a label is not a check"; slide 10, "Its label let it through. Check
+  two stops it: there's nothing to measure." The talk doesn't mention the earlier proposal: the Final is judged on its
+  own (Pete), so owning it on stage would only raise a question about work the judges aren't scoring. If a judge
+  raises it, Win's answer is in `prep/04_win.md` 4.3. The fund is the hook, not the proof of "beyond labels".
 - **Cuts after today's timed reading** (aim: finish about 9:40 at the team's natural pace, with a pause at each click).
   Cheapest first, at 125 words a minute: the five ✂ sentences, 63 words, ≈28 s (make them permanent if the run is
-  long); then the fund line (10 words, ≈5 s), slide 7's "then price each alternative…" detail (12, ≈6 s), slide 4's
-  pledge sentence (15, ≈7 s; it loses "funded, not aspirational"), slide 5's two routes, CBAM and HK reporting (17,
-  ≈8 s; it loses the rules map). All of these: ≈117 words, ≈56 s, to ≈1,206 words. Below that, a brief item goes
-  (Key Areas §7). Keep slide 6's HKMA range: it is the flat's climate link.
+  long); then slide 7's "then price each alternative…" detail (12 words, ≈6 s), slide 4's pledge sentence (15, ≈7 s;
+  it loses "funded, not aspirational"), slide 5's two routes, CBAM and HK reporting (17, ≈8 s; it loses the rules
+  map). All of these: ≈107 words, ≈51 s, to ≈1,212 words. Below that, a brief item goes (Key Areas §7). Keep slide
+  6's HKMA range: it is the flat's climate link.
 - **Two runs that would turn moderate answers into strong ones**, only if time allows: the "good planner" comparison
   (a planner who also buys the vans and funds the gift; today "about zero" is our reading, not a run), and a second
   scenario on the recommended plan (`02_lookbua.md` Q9 is weak without it). Owner: Pete.

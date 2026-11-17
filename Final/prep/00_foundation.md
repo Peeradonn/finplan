@@ -16,8 +16,10 @@ detail question to the right person without looking lost.
 **The question (slide 1):** What makes a plan sustainable?
 
 **The easy answer, and why it fails:** "Put 20–25% in ESG funds." Then the share becomes the target. A label says
-yes or no; it can't tell you what the money does. The proof: one global ESG fund on the SFC's own ESG list reported
-US$0.00 of assets at all 23 filings from Sep 2024 to Sep 2026 (slide 10). Its label let it through.
+yes or no; it can't tell you what the money does. And a label is not a check: one global ESG fund on the SFC's own ESG
+list reported US$0.00 of assets at all 23 filings from Sep 2024 to Sep 2026 (slide 10). The list never said it had
+assets; checking a product is the adviser's job. That fund is the hook, not the proof of "beyond labels": the proof is
+the climate index fund (a footprint, not a change) and the 47% of the downturn's loss no fund label looks at.
 
 **Our answer (the thesis, word for word):**
 
@@ -183,6 +185,7 @@ figure assumes Adrian works to 65** (slide 12 says so).
 | "The plan is climate-resilient" | "It carries the downturn inside the limit and cuts the routes it can" | Nothing in it hedges a market fall |
 | "Shares change nothing" | "No additional impact quantified for this allocation" | Unmeasured is not zero |
 | "The fund is empty / fake / a fraud"; naming its manager aloud | "On the SFC's ESG list; reported US$0.00 at every filing, Sep 2024 to Sep 2026" | Record only; it's on screen |
+| "A label can mislead"; "the SFC's list got it wrong" | "A label is not a check" | The list never said the fund had assets; checking a product is our job. Our earlier proposal named it without checking (`04_win.md` 4.3, only if asked) |
 | "EDMW is approved / cleared for them" | "A compliance check before we implement" | It isn't SFC-authorised; the one-to-one point is unverified |
 | "The bank will lend" | "Subject to cash-buffer and lender checks" | Terms are illustrative |
 | "We cut 134 tonnes" | "Up to 134 tonnes a year, if verified and delivered" | ESTIMATED, not measured |

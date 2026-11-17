@@ -112,8 +112,10 @@ side is re-priced too (backup 32). We wouldn't pool their money to reach HK$8M: 
 **4.3 The fund on the SFC's list with US$0.** The record: on the SFC's ESG list (authorised 2 May 2024; still listed,
 9 Nov); US$0.00 at all 23 HKEX filings, Sep 2024 to Sep 2026 (its S&P 500 sibling holds US$67.27M); no offering
 document; its series' audited report (31 Mar 2026) counts seven sub-funds, not this one. The records don't say why.
-Our earlier proposal held it as its ESG core; if a judge raises that, one sentence: "We did this ourselves: the label
-let it through, and the check caught it."
+Our earlier proposal held it as its ESG core: we trusted the list and didn't check its assets. The talk doesn't say so
+(the Final is judged on its own, Pete, 17 Nov). Only if a judge raises it: "Yes, we named it then. We trusted the list
+and didn't check its assets. That's the mistake this test is built to stop." Never "the label misled us" or "the
+SFC's list got it wrong": the list never said it had assets, and checking a product is the adviser's job.
 
 **4.4 The two refusals.**
 - **Clean-energy fund:** fails check 3 (the owner's limit). It's a one-sector bet: ICLN fell 61.5% from Jan 2021 to
