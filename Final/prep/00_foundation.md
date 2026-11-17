@@ -204,7 +204,7 @@ Answer first, then the reason, then the source. Stop. If it goes deeper, hand ov
 **"Your framework in one sentence?"** A plan is sustainable if it holds its limits when climate hits, claims only what
 it changes, and pays for values only from the room above its limits. PRISM is how we check it.
 
-**"Isn't this what every good planner does?"** The steps are, and slide 2 says so. What's ours: the limit set on
+**"Isn't this what every good planner does?"** The steps are, and slide 2 says so. We change three things inside them: the limit set on
 everything the family owns before any product, values paid only from the room above it and priced in HK$, and every
 verdict shown with the number that flips it. On the Wongs, that reversed advice that isn't about green products at
 all: the flat's route (slide 6). *(Deep version: Pete.)*
