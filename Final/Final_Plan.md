@@ -44,7 +44,7 @@ an argument; where it disagrees with those files, they win.
 | **Thesis** | **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.** Three conditions a plan passes or fails: the limit (outside in), the change (inside out), the room (the values budget); one measure for every decision is how each is checked (Pete, 13 Nov, night; reordered with storyline v5; §4.1) |
 | **Our innovation** | The two directions made into tests that set decision rules: the first sets the limits, choices for the second are paid from a values budget sized by those limits, and one measure prices every decision both ways, across the business, the home, the portfolio and the giving. The five letters are the route, not the idea (§4.4) |
 | **The answer** | Seven changes. The business: electric vans, carbon data, recycled plastic at the same price. The savings: a climate index fund at the plain fund's fee, plain bonds for Adrian. The flat: a reverse mortgage with a yearly price trigger. Their giving: the scholarship funded now. Capital: HK$0.74M the family's (the scholarship for life, §5.3); HK$1.91M, ≈HK$0.27M of working capital and ≈HK$54–73K a year the business's. ≈134 t CO2e a year less (ESTIMATED). **The money headline (§5.1, decided 14 Nov):** +HK$1.05M for the children against the reasonable planner's plan, about half of it the vans |
-| **Now** (17 Nov) | **Slides submitted and frozen** (git tag `final-submitted`; never rebuild or resend `Axis.pptx`). Script finalized for the first timed run: 1,300 spoken words, 9:57 at 135 a minute with names, 10:44 at 125 (≈10:05 with the ✂ sentences dropped), never timed live. Rehearse from [`prep/Script_Cards.md`](prep/Script_Cards.md); drill from [`prep/`](prep/) (the foundation, then each person's file). Left: the timed runs, the cold read, the question drills, the decisions in §5.11 |
+| **Now** (17 Nov) | **Slides submitted and frozen** (git tag `final-submitted`; never rebuild or resend `Axis.pptx`). Script rewritten for the ear (17 Nov) for the first timed run: ≈1,310 spoken words, 10:03 at 135 a minute with names, 10:49 at 125 (≈10:26 with the ✂ sentences dropped), never timed live. Rehearse from [`prep/Script_Cards.md`](prep/Script_Cards.md); drill from [`prep/`](prep/) (the foundation, then each person's file). Left: the timed runs, the cold read, the question drills, the decisions in §5.11 |
 
 **The talk** (thirteen slides since 14 Nov, evening: storyline v5 with slides 3, 7 and 9 split; refreshed 15 Nov from
 the deck; the rows' history is in §4.5 and §3, whose entries use the numbering of their day):
@@ -1998,6 +1998,20 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **17 Nov, later (Claude, Pete: "it looks quite weird and doesn't sound like someone is actually speaking ... think
+  how a world-class presenter would pitch this ... a good pitch the judges can easily understand").** The spoken words
+  of all 13 slides rewritten for the ear, on the same frozen screens and clicks: whole sentences instead of colon
+  lists ("Three tests: does it last…" became three questions); each speaker's step said as a rule before the Wongs'
+  proof; the empty fund planted on slide 1 and called back by Win on slide 10 ("The fund with zero assets for two
+  years?"); the family's 20–25% ask said by Win and paid off on slide 11 ("Nobody chose it; their limits did"); Ryan
+  and Chloe introduced as the children who inherit, since every price tag is what they inherit; handovers that ask the
+  next speaker's question. The cards now print money as it is said ("1.44 million dollars", "Hong Kong dollars" the
+  first time; `make.py` `say()`), while the notes keep their `{{keys}}`. Cut to fit: lines the screen already carries
+  (the twin, carbon data, ESG integration, "carries these falls"); ✂ on the green mortgage, the two refused savings
+  products, the plan's yearly label, and the close's tonnes. Teammates: read your part aloud and change any word that
+  doesn't sound like you, keeping the numbers and the hedges ("on our reading", "if verified and delivered", "subject
+  to the lender's checks").
 
 - **17 Nov (Claude, Pete: "finalize the script ... a document for preparation ... everyone understands the foundation
   ... each of us drills down into the parts we're assigned to").**

@@ -13,7 +13,8 @@ Then the PowerPoint: .venv/Scripts/python.exe Final/deck/make_pptx.py (one file,
    are EXPLORATORY until Pete moves them into export_numbers()) -> Final/deck/Axis.html
 3. The script: each slide's <aside class="notes"> (the spoken words, each turn opened by PETE:, FAHTAI:, WIN: or
    LOOKBUA:, then "[Notes: ...]" for background) -> Axis_Script.html and Axis_Script.md, each slide's spoken words
-   counted (a figure counts as it is said, so "84.1%" is several words) against its data-time, and the total
+   counted (a figure counts as it is said, so "84.1%" is several words; since 17 Nov money is written as it is said,
+   "−HK$1.44M" -> "1.44 million dollars", by say()) against its data-time, and the total
    timed at 125, 135 and 145 words a minute. The budget is about 1,300 words for 10:00 (Pete, 14 Nov) until a timed run sets it.
 4. slide-design render.py: PDF, PNGs and contact sheets in Final/deck/build/
 Adapted from round2/make.py (10 Nov). Files carry the team name only (AGENTS.md).
@@ -57,6 +58,25 @@ def marks(t, md=True):
     return re.sub(r"⟪(.*?)⟫", r'<i class="d">✂ \1</i>', t).replace(CLICK, '<b class="k">▸</b>')
 
 
+FIRST_HKD = [True]
+
+
+def say(t):
+    """Money as it is spoken, for the script and the cards (17 Nov): "−HK$1.44M" -> "1.44 million dollars",
+    "HK$0.74M" -> "740 thousand dollars". The sentence carries the direction ("more", "cost"), so the sign goes; the
+    first amount in the talk says "Hong Kong dollars". The notes keep their {{keys}}: only the reading changes."""
+    def money(m):
+        v, unit = m.group(1), m.group(2)
+        if unit == "M":
+            words = f"{v} million" if float(v) >= 1 else f"{round(float(v) * 1000)} thousand"
+        else:
+            words = f"{v} thousand" if unit == "K" else v
+        cur = "Hong Kong dollars" if FIRST_HKD[0] else "dollars"
+        FIRST_HKD[0] = False
+        return f"{words} {cur}"
+    return re.sub(r"[+−-]?HK\$(\d+(?:\.\d+)?)([MK]?)", money, t.replace("≈", "about "))
+
+
 def said(tok):
     """Spoken words in one written token: a figure counts as it is said."""
     tok = tok.strip("⟪⟫")
@@ -95,6 +115,7 @@ for i, m in enumerate(SEC.finditer(deck), 1):
     note = re.search(r'<aside class="notes">(.*?)</aside>', body, re.S)
     note = plain(note.group(1).replace(DROP[0], "⟪").replace(DROP[1], "⟫")) if note else ""
     spoken, extra = (note.split("[Notes:", 1) + [""])[:2]
+    spoken = say(spoken)
     extra = extra.strip().rstrip("]").strip()
     turns, who = [], None
     for piece in WHO.split(spoken.strip()):
