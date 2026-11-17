@@ -1864,9 +1864,24 @@ about what we *say*; detail in `prep/`).
   The advice in the family's words twice (slide 4: "you could give about HK$1.7M today and still keep your limit";
   slide 9: "take the plain loan, and order the vans before then"). Slide 9 no longer says "twelve thousand" for both
   the greenium and the green premium. Slide 4 states the rule for any client before the Wongs. Fewer joining "and"s on
-  slide 1 (Pete). **About as long:** 1,299 words (was 1,312), after the fund left the opening (below): 9:57 at 135
-  words a minute, 10:43 at 125. Each speaker now reads their part aloud and
+  slide 1 (Pete). Slide 2 says "We change three things inside them", not "What's ours" (Pete: it read as forcing the
+  innovation). **About as long:** 1,309 words (was 1,312), after the fund left the opening and the close changed
+  (both below): 10:01 at 135 words a minute, 10:48 at 125. Each speaker now reads their part aloud and
   changes any wording that doesn't sound like them (keep the numbers, the rules, the verdict phrases and the clicks).
+- **Is it new, or good planning? (17 Nov, Claude's review; Pete: "do all 3").** Each part has a known ancestor a
+  panel will recognise: goals-based planning (the limit), core and excess capital (the room), tracking-error budgets
+  (the share as an output), double materiality (outside in, inside out), additionality (claim only what it changes),
+  break-even analysis (switch points); PRISM is packaging. What is likely fresh (an inference: we can't see the other
+  teams) is running all of it on one household's whole balance sheet with one measure, and what that finds: almost
+  half the downturn's loss outside the funds, the biggest carbon cut in purchases at about zero cost, labels that
+  didn't earn their cost, the share falling out of the limits, and a label on the plan, earned yearly. Weak spot: the
+  money case is "it makes you look where the money is" (against a planner who also buys the vans and funds the gift,
+  ≈zero). So: (1) **the close names the findings** instead of listing the four corners (on screen, and each heard as
+  it came up): "Run that test, and the answers aren't in the green products…", ending "Beyond green labels isn't no
+  labels. It's a label on the plan, earned every year." 112 words (was 103). (2) A ready answer to "isn't this just
+  goals-based planning, or core and excess capital?" (`prep/00_foundation.md` §7; Pete's Q2 in `prep/01_pete.md`).
+  (3) PRISM is the order we run the test in, never the claim (`prep/00_foundation.md` §6). To test: a practitioner in
+  Thursday's cold audience names the parts they've never seen; if they pick the steps, this review is wrong.
 - **The zero-asset fund: our miss, framed honestly (17 Nov, Pete).** Our earlier proposal named it without checking
   its assets. The list never said it had any, and checking a product is the adviser's job, so "a label can mislead"
   blamed the label for our miss. The talk doesn't mention the earlier proposal: the Final is judged on its own (Pete),

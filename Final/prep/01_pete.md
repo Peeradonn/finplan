@@ -135,10 +135,13 @@ Answer first, then the reason, then the source. Stop. "Show" is the backup to ty
    vans on a plain loan and switches to recycled plastic at today's price. The savings go into a climate index fund at the plain fund's
    fee. The family keeps the flat with a yearly price check, and funds the scholarship now. Capital HK$0.74M the
    family's, HK$1.91M the business's; +HK$1.05M for the children; up to 134 t a year. *Show 13.* **Strong.**
-2. **"Where's the innovation? Isn't this what every good planner does?"** The process, yes: slide 2 says so. What's
-   ours is the test inside it: values spend only the room above the limit, priced in HK$; the limit covers the home
-   and business; every decision, vans to scholarship, on one measure with the number that flips it. It changed advice
-   that isn't green: the flat's route. *Show 25, 28.* **Moderate:** it needs slides 4 and 13 behind it.
+2. **"Where's the innovation? Isn't this what every good planner does?"** The steps, yes: slide 2 says so, and the
+   tools are known (goals-based planning, core and excess capital, double materiality). We change three things inside
+   them: values spend only the room above the limit, priced in HK$; the limit covers the home and business; every
+   decision, vans to scholarship, on one measure with the number that flips it. And it found what a fund screen can't:
+   almost half the downturn's loss outside the funds, the biggest carbon cut in purchases at about zero cost, labels
+   that didn't earn their cost, the flat's route. *Show 25, 28.* **Moderate:** it needs slides 4 and 13 behind it.
+   Lead with the findings, not with PRISM: the acronym is how we order the steps, not the claim.
 3. **"Your reasonable planner's plan is a strawman: it ignores the business."** It's our defined comparison, not a
    claim about advisers. Fair point on the business: against a planner who also buys the vans and funds the gift, the
    money effect is about zero. What's left is what only the test adds: free tonnes, the flat's switch point, what may

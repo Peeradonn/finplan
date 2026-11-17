@@ -2,7 +2,7 @@
 
 Generated 2026-11-17 by `Final/deck/make.py` from the speaker notes in `Final/deck/src/01_talk.html`: edit the words there, never here. The slides are frozen (git tag `final-submitted`); presenter view on the day shows the submitted words, so rehearse from these cards and print them.
 
-**1300 spoken words.** At 135 words a minute the talk ends at **9:57**; at 125, at **10:44** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
+**1309 spoken words.** At 135 words a minute the talk ends at **10:01**; at 125, at **10:48** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
 
 **▸** click here · *✂ italic*: say it if on time; drop it if the timekeeper signals you're behind (all of them together save about 28 s).
 
@@ -23,7 +23,7 @@ Generated 2026-11-17 by `Final/deck/make.py` from the speaker notes in `Final/de
 | 11 | Win | 7:52 | 8:28 | 0:35 |
 | 12 | Win | 8:26 | 9:06 | 0:40 |
 | 13 | Pete | 9:12 | 9:54 | 0:45 |
-| end | | 9:57 | 10:44 | |
+| end | | 10:01 | 10:48 | |
 
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · starts 0:00 · 1:20 slot · 161 words*
@@ -86,6 +86,6 @@ Generated 2026-11-17 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Win:** Last step, Monitor. A product's label never changes, so we label the plan instead: one line per test, every year. **▸** Does it hold its limits? 97 futures in 100, 90 in a downturn. **▸** What does it change? Up to 134 tonnes a year, measured from 2027. For the shares, nothing claimed. **▸** Is it inside the room? About 720 thousand dollars is still free. *✂ Each line has a trigger, and the plan earns its label again every year.* So, what makes a plan sustainable? Pete.
 
 ## 13 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits
-*Pete · starts 9:12 · 0:45 slot · 103 words*
+*Pete · starts 9:12 · 0:45 slot · 112 words*
 
-**Pete:** A plan that holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. Every decision lands in one of four corners. Do it. Do it, but don't call it green. Pay knowingly, from the room. Or don't pay for the label. **▸** For the Wongs, that's 1.05 million dollars more for their children than the same plan without our test, about half of it from the vans. *✂ And up to 134 tonnes a year less.* The label never decides. The limit, the change and the room do. Thank you.
+**Pete:** A plan that holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. **▸** Run that test, and the answers aren't in the green products. In the downturn, almost half the loss sat outside the funds. The biggest carbon cut was in what Carmen buys, at about zero cost. And most green labels didn't pay. Their children inherit 1.05 million dollars more than without the test, about half of it from the vans. *✂ And up to 134 tonnes a year less.* Beyond green labels isn't no labels. It's a label on the plan, earned every year. Thank you.

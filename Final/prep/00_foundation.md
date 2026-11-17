@@ -186,6 +186,7 @@ figure assumes Adrian works to 65** (slide 12 says so).
 | "The plan is climate-resilient" | "It carries the downturn inside the limit and cuts the routes it can" | Nothing in it hedges a market fall |
 | "Shares change nothing" | "No additional impact quantified for this allocation" | Unmeasured is not zero |
 | "The fund is empty / fake / a fraud"; naming its manager aloud | "On the SFC's ESG list; reported US$0.00 at every filing, Sep 2024 to Sep 2026" | Record only; it's on screen |
+| "Our PRISM framework is the innovation"; leading an answer with the acronym | "The test: the limit, the change, the room. PRISM is the order we run it in" | The steps are any planner's. A panel scores what the test finds and decides, not the acronym |
 | "A label can mislead"; "the SFC's list got it wrong" | "A label is not a check" | The list never said the fund had assets; checking a product is our job. Our earlier proposal named it without checking (`04_win.md` 4.3, only if asked) |
 | "EDMW is approved / cleared for them" | "A compliance check before we implement" | It isn't SFC-authorised; the one-to-one point is unverified |
 | "The bank will lend" | "Subject to cash-buffer and lender checks" | Terms are illustrative |
@@ -232,6 +233,12 @@ any impact claim for listed shares.
 
 **"Isn't PRISM just double materiality?"** Yes, built on it on purpose (slide 2's footer). What we add is applying it to a
 family's whole balance sheet, with decision rules and prices in HK$.
+
+**"Isn't this just goals-based planning, or core and excess capital?"** Yes, built on both, on purpose. What's new is
+what we run through them: every green choice priced as a draw on the room, in HK$; climate tested on the home and the
+business, not just the funds; the ESG share left as an output of each parent's limit. On the Wongs, that changed the
+advice where a fund screen never reaches: the flat's route, the business's purchases, the labels refused. *(Deep
+version: Pete.)*
 
 **"What if Adrian loses his job?"** It's the plan's biggest risk, and it isn't a climate risk. Every odds figure assumes
 he works to 65. With no response, the plan falls to 44 in 100. The response that restores both limits is on backup
