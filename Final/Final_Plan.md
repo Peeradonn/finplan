@@ -1939,6 +1939,67 @@ recommendations. Earlier script directions in this plan and the notes are drafti
   Recalculate timings from the generated cards, then rehearse aloud with the frozen builds; word rates do not include
   every pause. The submitted presenter view still contains the submitted notes: use the updated cards.
 
+### 5.13 Spoken storyline: what each slide gives the audience (17 Nov, Codex; Pete agreed)
+
+The audience review found that §5.12 improved claim accuracy but left financial connections unsaid and made some
+slides sound like a sequence of checks. Pete agreed the proposed takeaway map ("sure this works"). This revision
+keeps the submitted slide order, visuals, speakers and builds. It changes the spoken emphasis, not the model or
+recommendations. This section supersedes conflicting spoken directions in §5.12 and earlier drafting history.
+
+**The chain:** agree what the client must protect → test what climate threatens → identify worthwhile changes →
+make funding and investments fit → revisit decisions when the evidence changes. The framework leads; the Wongs
+make each step concrete. Depth comes from explaining why advice follows, rather than mentioning every check.
+
+| Slide | Audience takeaway | Question leading forward |
+|---|---|---|
+| 1 | Sustainable finance must produce decisions serving the whole client's goals | How do we make those decisions consistently? |
+| 2 | One process connects goals, risk, potential changes, selection and review | Whose priorities govern the plan? |
+| 3 | Individual mandates and agreed shared limits govern choices; savings, the home and the business sale fund retirement | What may values cost? |
+| 4 | The retirement limit sets the budget for voluntary preferences | Does the limit survive climate stress? |
+| 5 | Several sources of retirement funding can be stressed together | Does that change how they release money from the flat? |
+| 6 | A price gap can make downsizing release too little retirement cash | What could the client's decisions change in the world? |
+| 7 | Compare credible alternatives; the biggest potential cut here is in purchasing | Can the business fund those cuts? |
+| 8 | Lifetime savings do not establish cash available for repayments | Would green borrowing improve the terms? |
+| 9 | Compare full financing costs and obligations; the vehicle's purchase premium is separate | What can the family's investments deliver? |
+| 10 | Choose for an evidenced mandate and suitability, with alignment distinguished from additional impact | How much fits each parent? |
+| 11 | Different mandates produce different weights, and paid preferences must fit the room | When must these choices be reconsidered? |
+| 12 | A trigger tells the appropriate decision-maker when to act | What did the complete process change? |
+| 13 | Conditional decisions, stated prices and defensible claims are the useful output | Leave the audience with the rules behind the choices |
+
+**The changes that make the chain understandable:**
+- Introduce the retirement funding structure on slide 3 before prices on the home and business. The operating
+  savings reach the family through the business sale in the model; retain this mechanism in the speaker background
+  and explain it when quoting the business's financial contribution, not as a guaranteed sale premium.
+- On slide 6 explain the cash difference between selling the older flat and buying its newer replacement. A gap
+  can rule out the downsizing route; it does not establish that the older property is physically safer. Eligibility,
+  condition and insurance checks remain necessary. The HKMA-based range is our extrapolation.
+- Keep the main spoken values budget in giving-today units on slides 4 and 11, using `fin_room_esg_hk` for the
+  investment preferences. The inheritance cost remains on the frozen slide and in the question prep. Do not ask
+  listeners to subtract a future inheritance cost from a present giving budget.
+- Guide the opening's numerical hierarchy: point to the capital split, distinguish family scholarship money from
+  business equipment and additional working cash, and speak the potential emissions and partial financial result.
+  The full capital amounts remain visible on slides 7 and 13 and recorded in Decision_List section 2. Do not present
+  equipment capex alone as the business's complete capital requirement.
+- Let slide 7's capital question lead directly into slide 8's funding. The repayment coverage is the existing
+  equipment package's savings relative to the proposed loan payments, not proof that the vans alone repay it.
+  Green-loan and sustainability-linked definitions clarify the loan comparison on slide 9. The tax concession is
+  on the vehicle, independent of the loan label. End with what the investments can deliver, rather than a name alone.
+- On slide 12 separate company and household authority: Carmen and her co-owner reprice a changed supplier offer;
+  the parents review further voluntary household choices if the room shrinks. Do not imply they can recover an
+  irrevocable gift or automatically fund a business purchasing premium from the family's values budget.
+- Start the close with the scoped partial model comparison: equipment versus ordinary funding/fee savings, no
+  recurring carbon-data costs included, and no claim that an ordinary cost review cannot find the equipment.
+  The exact three-key attribution is retained for questions; it need not be recited. End on the decisions and their
+  conditions, rather than exclusions or a claim to certify the plan as sustainable.
+- Retain qualifications that affect meaning: model/scenario status, supplier and lender conditions, suitability
+  and compliance, the open MPF check, unquantified additional impact and employment to 65. Remove repeated results
+  and defensive commentary where they displace explanation. Product labels require monitoring too.
+
+**Rehearsal check:** with the frozen builds, each speaker states their intended takeaway before rehearsing. A cold
+listener should explain the rule behind the property choice, business financing and portfolio allocation without
+needing the headline figures. Then check whether each handover makes the next speaker's question clear. This is a
+test to run, not evidence that the audience has already understood. Use the regenerated cards for current timings.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -2079,6 +2140,13 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **17 Nov (Codex; Pete agreed the audience-takeaway map).** Revised the spoken story around one job per slide and
+  questions connecting the steps. Restored the retirement funding structure, explained the downsizing cash mechanism,
+  kept the spoken values budget in giving-today units, and separated company from household review authority.
+  The opening points to the capital split and groups outcomes; the close qualifies the model comparison before
+  ending on reusable decisions. The approved map and remaining qualifications are in §5.13. Frozen visuals,
+  PowerPoint, model assumptions and exports are unchanged.
 
 - **17 Nov (Codex; Pete: "sure let's revise the spoken script").** Reframed the spoken argument after reading the
   Final as a standalone task: decision tests serving explicit client objectives, the flat as the clearest changed

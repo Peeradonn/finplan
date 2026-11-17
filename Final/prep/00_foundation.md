@@ -21,6 +21,17 @@ cuts are feasible and how to fund them, and what investment preferences cost. PR
 the application and its evidence carry the argument. The zero-asset fund is ordinary due diligence, an optional
 line on slide 10, not the proof of originality or greenwashing.
 
+**How to tell it:** the approved slide-by-slide takeaway map is in `Final/Final_Plan.md` §5.13. The spoken chain is
+goals and limits → household climate test → feasible business cuts → funding and investments → triggers for review.
+Tell the listener why each decision follows. Savings, the home and the eventual business sale support retirement;
+the model assumes operating savings can raise that sale value. Downsizing releases the difference between the
+older flat's sale proceeds and its newer replacement, which is why a relative price gap can change the route.
+
+Keep the main spoken values budget in giving-today units, including the investment fees' equivalent reduction in
+what could be given today. The future inheritance cost is still on the slide and in the questions; it is a different
+measure. A business purchasing change is reviewed by Carmen and her co-owner; a household room change is reviewed
+by both parents. The close scopes the financial result first, then ends on the decisions and their conditions.
+
 **The submitted slides' thesis (unchanged):**
 
 > **A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values
@@ -104,7 +115,8 @@ We compare against three different things, each for one job. Never mix them in o
 - fees **+HK$0.12M**: ordinary planning.
 - In the downturn: +HK$1.03M.
 
-The current close speaks this split. The comparison excludes recurring carbon-data costs and is not a fully costed
+The current close says about half is equipment and the rest is ordinary funding and fee savings; use the exact
+split above in questions. The comparison excludes recurring carbon-data costs and is not a fully costed
 gain from sustainability alone. The stronger-planner comparison (also buying the economical vans and funding the
 gift) has not been run; do not quote a measured gain against it. The climate-dependent flat decision and the
 conditional transition choices must stand on their own evidence.
