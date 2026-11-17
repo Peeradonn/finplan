@@ -1992,12 +1992,19 @@ Each brief has its own full list (its last section). The ones the storyline lean
 ## 11. On the day (guidelines, rules 4–14)
 
 - Dress formally; name tags visible. Say "Team Axis" before the first speaker; each speaker says their simple name
-  before their part (there is a best presenter award). Never say the university's name.
+  before their part (there is a best presenter award). Never say the university's name. **Pete opens on the question,
+  then the introduction** (decided 17 Nov): "What makes a plan sustainable? Good morning. We're Team Axis, and I'm
+  Pete." This bends rules 10–11 literally ("Before your team's first presenter starts … state your team's name"; "Before
+  presenting your part … tell the judges your 'simple name'"); no penalty is named, and Pete accepted the risk.
 - Warnings at 3 minutes and 1 minute left. **Over 10:30 disqualifies the team.** The script targets 10:00 with names.
 - Teams that haven't presented wait outside, so we won't see the others before our turn.
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **17 Nov (Pete): the opening question comes before the introduction.** Slide 1 now starts "What makes a plan
+  sustainable? Good morning. We're Team Axis, and I'm Pete." Chosen over "intro, then the question" (rule-safe) after
+  the conflict with guidelines rules 10–11 was put to him; recorded in §11 and `AGENTS.md`.
 
 - **17 Nov, later (Claude, Pete: "it looks quite weird and doesn't sound like someone is actually speaking ... think
   how a world-class presenter would pitch this ... a good pitch the judges can easily understand").** The spoken words

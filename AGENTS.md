@@ -171,7 +171,9 @@ every slide locked the results into one way and below standard (Pete, 23 Oct).
   - Over 10 minutes by more than 30 seconds disqualifies the team. Warnings come at 3 minutes and 1 minute left; the
     script targets 10:00 with names (Pete, 14 Nov), so the only margin is the rule's 30 seconds.
   - Every member presents their own part of the slides. Say "Team Axis" before the first speaker; each speaker says their
-    simple name before their part (there is a best presenter award).
+    simple name before their part (there is a best presenter award). **Exception decided by Pete (17 Nov):** the talk
+    opens on one question ("What makes a plan sustainable?"), then "Team Axis" and Pete's name. He accepted that this
+    bends rules 10–11 literally (no penalty is named); don't move the introduction back without asking him.
 - **Round One:** 15 pages maximum including the cover and appendix; 12pt Times New Roman body text; the Chrome-built PDF
   (`document/build/proposal.pdf`), never one exported from Word or PowerPoint.
 
