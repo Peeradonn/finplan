@@ -2016,6 +2016,42 @@ after "the whole plan must work" and allow the test to land before introducing t
 "PRISM is how we run that test"; its remaining words and slides 3–13 stay unchanged. This is an opening-specific
 revision, not a new rule for the rest of the talk. Regenerate with `make.py --no-render`; time the actual delivery.
 
+### 5.15 The spoken script: the 17 Nov spine, the 17–18 Nov accuracy (18 Nov, Claude; Pete agreed the review)
+
+Pete asked whether a world-class planner would pitch the 18 Nov script, whether the slides build, whether it says
+what the judges want and where a listener falls behind. The review (practitioner judge, back-of-the-room listener,
+the brief's own lists) found the script accurate and well chained by its forward questions, but auditing rather than
+pitching. Measured on the spoken words:
+- **The thesis was never said aloud** ("holds its limits": 0), so the opening question was never answered; slide 2's
+  "what's ours" (on screen, 40 marks of innovation) was never said; the brief's words "refuse", "trade-off",
+  "scenario", "greenium" and "pledge" were said 0 times, and "label" once, in a talk titled Beyond Green Labels.
+- **The voice worked against the frozen screen:** slide 12 said "product labels need monitoring too" under the
+  bottom line "A product's label never changes"; slide 13 read the 1.05M over the empty grid (a reveal slide);
+  slide 10 spoke the definitions two clicks before they appear and cut the empty fund, the slide's bottom line;
+  slide 3 said "ask each person separately" a click late.
+- **About 60 words of caveats sat on no claim** ("the financial comparison is partial" unexplained for seven minutes,
+  "implementation still needs compliance checks", "subject to Adrian's MPF mandate check", the tracking-risk
+  definition mid-slide), and the close ended on "a cost review could also find the equipment savings".
+- **Listeners lost the thread** where the family was never introduced (nobody said Carmen co-owns a packaging
+  distributor before slide 7's recycled plastic), where the three tests were never named before "the room" on slide
+  4, at slide 6's three numbers without their link, and at the unmarked turn from outside-in to inside-out (6→7).
+
+**What changed** (the words only; the slides, builds, speakers, PowerPoint and model exports are unchanged): the
+17 Nov spine (`5ceb79b`: the thesis, "what we add", the family, the pivot, the payoffs, a bookend close) with every
+accuracy fix of §5.12–5.14 kept (labels need monitoring, so slide 12 no longer says they never change; PET counted
+only once quoted; the 87% is the equipment package's; giving-today units; no impact claimed; the headline's split,
+now framed as "any planner who looks at the business could find them; the test makes sure we look"). The words now
+follow each slide's clicks. Caveats that sit on a claim stay with it; the rest became ready answers in the notes
+(slides 6, 8, 10, 11, 12, 13). Pete's §5.14 call stands: the opening reads no amounts (one outcome sentence was tried
+and taken out); it adds "three green products refused" and names the three tests. 1,201 spoken words (1,151
+before), four ✂ sentences (≈16 s): 9:13 at 135 words a minute, 9:56 at 125, within §5.11's ≈1,202 ceiling for
+≈9:40 at the team's pace. Each speaker's lines are a draft to make their own.
+
+**To test:** a timed run with the frozen builds; the cold-listener check of §5.13 (after one hearing: what makes a
+plan sustainable, what they recommend, one refusal, what is new). Not addressed for lack of words: the four verdict
+names ("do it, but don't call it green" is never said; "don't pay for the label" and "paid knowingly" are) and the
+capital, which stays on screen (slides 1, 13).
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -2156,6 +2192,11 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **18 Nov (Claude; Pete agreed the script review).** The spoken script rebuilt on the 17 Nov spine with the 17–18
+  Nov accuracy fixes kept: the thesis said at the close, slide 2's "what we add", the family introduced, the turn to
+  inside-out said, the brief's words used, the words matched to each click (slides 3, 10, 13), slide 12 no longer
+  contradicts its frozen bottom line, and caveats that sit on no claim moved to ready answers. 1,201 words. §5.15.
 
 - **18 Nov (Codex; Pete's opening feedback).** Replaced the spoken fact list with one connected thought: an ESG
   allocation is one choice, but the whole plan must work. The displayed recommendation, funding and outcomes stay;
