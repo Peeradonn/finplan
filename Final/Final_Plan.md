@@ -1976,10 +1976,11 @@ make each step concrete. Depth comes from explaining why advice follows, rather 
 - Keep the main spoken values budget in giving-today units on slides 4 and 11, using `fin_room_esg_hk` for the
   investment preferences. The inheritance cost remains on the frozen slide and in the question prep. Do not ask
   listeners to subtract a future inheritance cost from a present giving budget.
-- Guide the opening's numerical hierarchy: point to the capital split, distinguish family scholarship money from
-  business equipment and additional working cash, and speak the potential emissions and partial financial result.
-  The full capital amounts remain visible on slides 7 and 13 and recorded in Decision_List section 2. Do not present
-  equipment capex alone as the business's complete capital requirement.
+- Guide the opening's numerical hierarchy: after the 18 Nov revision (§5.14), do not read the figures aloud.
+  Establish the whole-plan test and give a brief concrete recommendation; equipment/scholarship funding and
+  estimated outcomes remain visible. State that the financial comparison is partial. The full capital amounts,
+  including additional business working cash, remain visible on slides 7 and 13 and in Decision_List section 2.
+  Do not present equipment capex alone as the business's complete capital requirement.
 - Let slide 7's capital question lead directly into slide 8's funding. The repayment coverage is the existing
   equipment package's savings relative to the proposed loan payments, not proof that the vans alone repay it.
   Green-loan and sustainability-linked definitions clarify the loan comparison on slide 9. The tax concession is
@@ -1999,6 +2000,21 @@ make each step concrete. Depth comes from explaining why advice follows, rather 
 listener should explain the rule behind the property choice, business financing and portfolio allocation without
 needing the headline figures. Then check whether each handover makes the next speaker's question clear. This is a
 test to run, not evidence that the audience has already understood. Use the regenerated cards for current timings.
+
+### 5.14 Opening: establish the thought before the facts (18 Nov, Codex; Pete's feedback)
+
+Pete found the opening still bombarded listeners with facts and suggested the connected sentence, "An ESG allocation
+is just one choice, but the whole plan must work." Use that sentence, then explain the three questions as one thought:
+climate risk to the family's future, what their money could change, and what they can afford to pay for values.
+Give only a brief Wong recommendation (vans on plain finance and the funded scholarship) and point to the displayed
+funding and estimated outcomes. Do not read amounts or the emissions total aloud. The financial comparison remains
+explicitly partial; its scope and ordinary-planning components are explained in the close. This keeps the brief's
+recommendation/capital/outcomes on the opening screen while the voice establishes the argument.
+
+Keep the opening question before the team introduction, the four existing clicks and all frozen visuals. Pause
+after "the whole plan must work" and allow the test to land before introducing the Wongs. Slide 2's opening becomes
+"PRISM is how we run that test"; its remaining words and slides 3–13 stay unchanged. This is an opening-specific
+revision, not a new rule for the rest of the talk. Regenerate with `make.py --no-render`; time the actual delivery.
 
 ### Owners
 
@@ -2140,6 +2156,11 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **18 Nov (Codex; Pete's opening feedback).** Replaced the spoken fact list with one connected thought: an ESG
+  allocation is one choice, but the whole plan must work. The displayed recommendation, funding and outcomes stay;
+  figures are no longer recited in the opening. Added a short bridge into PRISM. Scope and delivery are in §5.14;
+  the other speaking slides, frozen visuals, PowerPoint and model exports are unchanged.
 
 - **17 Nov (Codex; Pete agreed the audience-takeaway map).** Revised the spoken story around one job per slide and
   questions connecting the steps. Restored the retirement funding structure, explained the downsizing cash mechanism,
