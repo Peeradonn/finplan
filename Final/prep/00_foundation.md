@@ -131,7 +131,7 @@ other advisers work. Never say it "falls below the floor".
 |---|---|
 | Scholarship: HK$0.74M (slide 4) and −HK$1.32M (slide 13) | HK$0.74M is the fund given now. −HK$1.32M is what the children inherit at Carmen's 89 without it, in today's money: money given away no longer grows |
 | The ESG funds that cost money: HK$0.28M (slide 4) and −HK$0.62M (slide 11) | The same choice (the green bond fund and the MPF low-carbon fund, HK$5.1K a year in fees) in two units: today's giving vs the children's inheritance at 89 |
-| The vans: +HK$0.51M (slides 9, 13) and +HK$0.54M (backup 15) | +0.51 is the vans alone against new diesel vans. +0.54 is the vans' step inside the headline's sequence |
+| The vans: +HK$0.51M (slides 9, 13) and +HK$0.54M (backup 15) | The same equipment (vans, LED, air-con; the vans ≈nine-tenths of its saving) from two starting plans. +0.51 adds it to the family's base plan; +0.54 adds it as the first step after the reasonable planner's plan, so the headline's parts sum |
 
 ---
 

@@ -276,7 +276,8 @@ holds the money, so the promise survives a bad year.</details>
 The fund given now; what the children inherit less at 89 because it no longer grows.</details>
 
 <details><summary>7. +HK$0.51M or +HK$0.54M for the vans?</summary>
-Alone against diesel on the family's base; their step inside the headline's sequence.</details>
+The same equipment (vans, LED, air-con) both times: added to the family's base plan; then as the first step after the
+reasonable planner's plan, so the headline's parts sum.</details>
 
 <details><summary>8. What do ESMA ¶81 and ¶65–70 say?</summary>
 Financial profile first, sustainability preferences in a second step; a group client follows the most prudent

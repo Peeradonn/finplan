@@ -82,7 +82,7 @@ Abbreviations: **DL** = `Final/Decision_List.md`; **AB** = `Final/research/area2
 | Plain loan **HK$0** label-specific | No green-label review needed | By definition | — | Zero *extra* label cost, **not** zero ordinary bank fees |
 | **+HK$12K** a van over diesel today | The green premium: e-van vs diesel van, after tax | ESTIMATED from SOURCED prices | AB §3c | E-van HK$416,106 (HiAce diesel HK$345,030 × 1.206, the EV Roadmap's 20.6% e-van premium, Feb 2026; tax waived) vs diesel HK$403,685 incl. 17% first-registration tax: +HK$12,421 |
 | **+HK$83K** after 31 Mar 2028 | The same, if the tax waiver ends | ESTIMATED | DL B1; Budget 2026–27 para 207 | + 17% × HK$416,106 ≈ HK$70.7K |
-| **+HK$0.51M** from the vans | What the children inherit at Carmen's 89 from the vans' saving, through the sale price | MEASURED (our model) on an ILLUSTRATIVE business | `fin_dot_vans_n`; `model_runs.md` M2 | Extra profit × 5.6× multiple × Carmen's 50% × the plan's 60% haircut on the sale; median of 10,000 futures, today's HK$ |
+| **+HK$0.51M** from the vans | What the children inherit at Carmen's 89 from the equipment's saving (vans, LED, air-con; the vans ≈nine-tenths of it), through the sale price | MEASURED (our model) on an ILLUSTRATIVE business | `fin_dot_vans_n`; `model_runs.md` M2 | Extra profit × 5.6× multiple × Carmen's 50% × the plan's 60% haircut on the sale; median of 10,000 futures, today's HK$ |
 | Budget **≈HK$54–73K** a year (carbon data) | Baseline and supplier footprints ≈HK$50K, plus one ESG rating HK$3.9–23K | ILLUSTRATIVE / ESTIMATED | DL B3, §2 | Rating cost from secondary sources (EcoVadis); try the free HKGOC certificate first |
 
 ---
@@ -184,8 +184,9 @@ the children (`fin_dot_div_n`). It moves money out of a concentrated business, n
 illustrative numbers, so it is **outside the headline** (backups 20, 31 only).
 
 **4.14 Where the business reaches the family.** We keep counting HK$3.0M of her HK$5.0M stake, with no green uplift:
-by 2035 rivals' vans are electric too. **+HK$0.51M** = the vans alone vs new diesel (`fin_dot_vans_n`, slides 9, 13);
-**+HK$0.54M** = their step in the headline's +HK$1.05M (`fin_fair_vans`, backup 15); **−HK$0.09M** = the data's cost
+by 2035 rivals' vans are electric too. **+HK$0.51M** = the equipment (vans, LED, air-con; the vans ≈nine-tenths of
+the HK$303K yearly saving) vs new diesel, on the family's base plan (`fin_dot_vans_n`, slides 9, 13);
+**+HK$0.54M** = the same equipment as a step in the headline's +HK$1.05M (`fin_fair_vans`, backup 15); **−HK$0.09M** = the data's cost
 to the children (slide 13).
 
 **4.15 The rules map (backup 17).** Most rules bind banks and companies; they reach the Wongs through her customers
@@ -217,7 +218,7 @@ our answer holds up.
 | 12 | Practitioner | "E-vans carry less; charging is hard in an industrial building." | Both true (the EV Roadmap says so). Packaging fills vans by volume first (our judgement). Depot chargers need the landlord: the green lease at the 2027 renewal. Even on public chargers at three times the tariff, the vans still save. | 20 | Moderate |
 | 13 | CPA | "Does the carbon data protect HK$1.55M?" | No, and we don't claim it. −HK$1.55M is what the children lose if a customer worth 10% of sales leaves: a sensitivity. The data's benefit isn't quantified; it pays for itself if it keeps 0.6% of sales. | 31 | **Weak if unprepared:** backups 20 and 31 still say "protects" / "guards". Correct it out loud |
 | 14 | ESG | "Why only carbon? Why no Scope 3 target?" | The method measures carbon, waste and water, each in its own unit. For Carmen, carbon is quantified so far; collection and reuse were searched, but nothing is counted yet. No target until the 2027 baseline: a target without one is a label without a number (our reasoning). | 7, 12 | Moderate |
-| 15 | CPA | "Vans +HK$0.51M on slide 9, +HK$0.54M in backup 15?" | +HK$0.51M is the vans alone against new diesel vans; +HK$0.54M is their step in the headline's sequence, against the reasonable planner's plan. | 15, 22 | Strong |
+| 15 | CPA | "Vans +HK$0.51M on slide 9, +HK$0.54M in backup 15?" | Same change, two starting plans. Both count the whole equipment package, vans, LED and air-con, against new diesel vans and the current lights; the vans are about nine-tenths of its HK$303K yearly saving, hence "from the vans" on slide 9 (slide 13 names all three). +HK$0.51M adds it to the family's base plan; +HK$0.54M adds it as the first step after the reasonable planner's plan, so the headline's parts sum. | 15, 22 | Strong if said at once; don't say "the vans alone" |
 | 16 | Regulator, family | "Carmen owns half. Who decides?" | We advise Carmen as a shareholder and the family as a household. The company's decisions (vans, loan, data, dividends) need the co-founder too; the bank prices the loan. | 27 | Moderate (licensing: see the foundation) |
 
 ---
