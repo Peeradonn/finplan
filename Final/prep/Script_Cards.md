@@ -2,7 +2,7 @@
 
 Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/deck/src/01_talk.html`: edit the words there, never here. The slides are frozen (git tag `final-submitted`); presenter view on the day shows the submitted words, so rehearse from these cards and print them.
 
-**1202 spoken words.** At 135 words a minute the talk ends at **9:14**; at 125, at **9:56** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
+**1230 spoken words.** At 135 words a minute the talk ends at **9:26**; at 125, at **10:10** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
 
 **▸** click here · *✂ italic*: say it if on time; drop it if the timekeeper signals you're behind (all of them together save about 16 s).
 
@@ -17,13 +17,13 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 | 5 | Lookbua | 2:30 | 2:42 | 1:00 |
 | 6 | Lookbua | 3:07 | 3:22 | 0:45 |
 | 7 | Fahtai | 4:07 | 4:26 | 0:45 |
-| 8 | Fahtai | 4:50 | 5:12 | 0:40 |
-| 9 | Fahtai | 5:29 | 5:54 | 0:40 |
-| 10 | Win | 6:21 | 6:51 | 0:40 |
-| 11 | Win | 7:07 | 7:40 | 0:35 |
-| 12 | Win | 7:47 | 8:23 | 0:40 |
-| 13 | Pete | 8:30 | 9:09 | 0:45 |
-| end | | 9:14 | 9:56 | |
+| 8 | Fahtai | 4:50 | 5:13 | 0:40 |
+| 9 | Fahtai | 5:30 | 5:55 | 0:40 |
+| 10 | Win | 6:22 | 6:51 | 0:40 |
+| 11 | Win | 7:08 | 7:41 | 0:35 |
+| 12 | Win | 7:48 | 8:24 | 0:40 |
+| 13 | Pete | 8:32 | 9:12 | 0:45 |
+| end | | 9:26 | 10:10 | |
 
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · starts 0:00 · 1:20 slot · 99 words*
@@ -56,9 +56,9 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Lookbua:** A route that breaks the limit is out, however much it pays. **▸** Keep the flat with a reverse mortgage, or downsize? Both pass today, and downsizing leaves the children 4.17 million dollars more. But downsizing swaps an older flat for a newer one. If older flats fall behind, the swap frees less cash. Past a gap of about 7%, downsizing breaks their limit. Keeping the flat doesn't. Our reading of HKMA research puts the gap at 2% to 9% by 2037, in a hotter Hong Kong. The switch point sits inside that range. **▸** So we don't decide today: we check the gap every year. Now the other direction: what can their money change? Fahtai.
 
 ## 7 · Price every cut in the footprint against what it replaces
-*Fahtai · starts 4:07 · 0:45 slot · 96 words*
+*Fahtai · starts 4:07 · 0:45 slot · 98 words*
 
-**Fahtai:** I'm Fahtai, on Impact. For any business: start from an energy audit, compare each cut with what it replaces, and rank by cost per tonne. **▸** For Carmen, most emissions are in what she buys. Recycled plastic in place of new could cut 108 tonnes a year. It cost the same as new in October, but we count it only once a supplier quotes. Electric vans, lighting and air-con cut less, and save money. **▸** Together, up to 134 tonnes a year, if verified and delivered. The trade-off: cash up front. Can the business fund it?
+**Fahtai:** I'm Fahtai, on Impact. For any business: start from an energy audit, compare each cut with what it replaces, and rank by cost per tonne. **▸** For Carmen, most emissions are Scope 3: the packaging she buys. Recycled plastic in place of new could cut 108 tonnes a year. It cost the same as new in October, but we count it only once a supplier quotes. Electric vans, lighting and air-con cut less, and save money. **▸** Together, up to 134 tonnes a year, if verified and delivered. The trade-off: cash up front. Can the business fund it?
 
 ## 8 · Match the funding to what the change needs
 *Fahtai · starts 4:50 · 0:40 slot · 88 words*
@@ -66,26 +66,26 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Fahtai:** Funding follows an order: cash flow or supplier terms, then company cash or a loan, and only then an instrument. **▸** Recycled plastic runs on supplier terms, lighting and air-con on company cash. Only the vans need a loan: 1.5 million dollars, secured on the vans. The equipment's savings cover about 87% of the repayments. The company tops up the rest, if the lender and her co-owner agree. **▸** *✂ Even a cut that saves money must pass the cash test.* Should the loan be green?
 
 ## 9 · A green label must justify its full cost and obligations
-*Fahtai · starts 5:29 · 0:40 slot · 107 words*
+*Fahtai · starts 5:30 · 0:40 slot · 107 words*
 
 **Fahtai:** A green loan ties the money to green projects. A sustainability-linked loan ties the rate to targets. The vans fit the first. **▸** Like for like, the greenium saves about 12 thousand dollars over five years. The review costs the same. **▸** No advantage. Don't pay for the label, unless real quotes show a gain. **▸** The green premium is the van itself: 83 thousand dollars more than diesel once the tax waiver ends in March 2028. So: a plain loan, and order the vans before then. In our model, the savings raise what Carmen's share sells for: 510 thousand dollars more for the children. Win.
 
 ## 10 · Pass a product only if its rule binds and it fits its owner's limit
-*Win · starts 6:21 · 0:40 slot · 104 words*
+*Win · starts 6:22 · 0:40 slot · 104 words*
 
 **Win:** I'm Win, on the savings. They asked for 20 to 25 per cent in ESG. We don't start from a share: every product passes three checks, or it's out. **▸** The climate index fund passes, at its plain twin's fee. This ESG fund is on the SFC's own list, with zero assets for two years: nothing to measure. *✂ A clean-energy fund and a green deposit fail too: we refuse both.* **▸** ESG integration passes on cost and risk. Impact investing would need its own measured effect, so we claim none. And the index fund isn't SFC-authorised: suitability comes first. How much should each hold?
 
 ## 11 · The sustainable share is an output of the limits, paid from the room
-*Win · starts 7:07 · 0:35 slot · 89 words*
+*Win · starts 7:08 · 0:35 slot · 89 words*
 
 **Win:** Their limits set the weights. **▸** Adrian lets his money stray half a per cent a year from the market. This fund strays about two, so it gets 24 per cent of his money. Carmen allows three, so all her shares go in. The family lands at 26.6 per cent. Nobody targeted it. Their limits produced it. **▸** The green bond and MPF funds cost more than plain ones: 280 thousand dollars of the room. That's alignment, paid knowingly, with no impact claimed. Last step, Monitor.
 
 ## 12 · Label the plan, not the product
-*Win · starts 7:47 · 0:40 slot · 86 words*
+*Win · starts 7:48 · 0:40 slot · 89 words*
 
-**Win:** A fund's label says what the fund holds. This dashboard says whether the plan still passes. The plan earns it every year. **▸** The limit: if returns fall, or older flats fall 7% behind, we act that year. **▸** The change: we claim the tonnes only once measured. If recycled plastic costs more, Carmen and her co-owner reprice it. **▸** The room: if it falls short, both parents review their choices and re-sign. *✂ A correction always shows the old figure.* So, what makes a plan sustainable? Pete.
+**Win:** A fund's label says what the fund holds. This dashboard says whether the plan still passes. The plan earns it every year. **▸** The limit: if returns fall, or older flats fall 7% behind, we act that year. **▸** The change: we claim the tonnes only once measured. If recycled plastic costs more, Carmen and her co-owner reprice it. **▸** The room: if it falls short, both parents review their choices and re-sign their investment policy. *✂ A correction always shows the old figure.* So, what makes a plan sustainable? Pete.
 
 ## 13 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits
-*Pete · starts 8:30 · 0:45 slot · 98 words*
+*Pete · starts 8:32 · 0:45 slot · 121 words*
 
-**Pete:** So, what makes a plan sustainable? It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. Every decision: the limit first, then two prices. **▸** For the Wongs, against the same careful plan without the test, their children inherit 1.05 million dollars more. About half is the vans. Any planner who looks at the business could find them. The test makes sure we look. The rest is ordinary good planning. The label never decides. The limit, the change and the room do. Thank you.
+**Pete:** It holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits. Every decision: the limit first. Then two prices: what it does for the children, and for the world. Four verdicts: do it; do it, but don't call it green; pay knowingly; or don't pay for the label. **▸** For the Wongs, against the same careful plan without the test, their children inherit 1.05 million dollars more. About half is ordinary good planning. The rest is the vans: any planner who looks at the business could find them; the test makes sure we look. The label never decides. The limit, the change and the room do. Thank you.

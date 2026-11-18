@@ -2058,6 +2058,25 @@ planner knows: Profile, Risk, Impact, Select, Monitor" as the rows appear (+1 wo
 only: the questions are on screen, and explaining each step would cost ≈15 s and push the acronym, which §5.11 keeps
 as the route, not the claim.
 
+**18 Nov, later still: the close teaches the decision tool (Pete: "the best pitch, not just one that meets the
+requirements").** Measured on the 1,202 words (sentence labels Claude's judgement): 35% rules any planner can use, 59%
+the Wongs, 6% handovers; slides 3–12, 27% rules. Every worked-example slide opens on a rule, so the talk is not a case
+study, and the brief's "strong answer" list asks for the client's numbers. The gap was the framework's one reusable
+tool: slide 13's first build shows only the decision grid (the limit, then a price for the children and one for the
+world, four verdicts), and the voice gave it 8 words; "do it, but don't call it green" was never said. The two prices
+are the panel's own definition of the job ("which sustainability decisions change a client's … estate, by how much …
+and on what evidence", topic p.2). Changes, words only:
+- **Slide 13:** Pete answers Win's question instead of repeating it, then says the limit, the two prices and the four
+  verdicts (the grid's own names, collecting the verdicts heard on slides 4, 9, 10 and 11) over the empty grid; the
+  click fills it. The honest split is reordered so the money claim ends on "the test makes sure we look", not on
+  "ordinary good planning". No "never": Carmen's green bond sits in the bottom-right box and is kept, from the room.
+- **Slide 7:** "most emissions are Scope 3: the packaging she buys" (the screen shows the three scopes).
+- **Slide 12:** "re-sign their investment policy" (slide 3's screen says "Into the policy"; "investment" so nobody
+  hears insurance).
+- **Not done:** saying "framework" aloud (PRISM is named; a label adds nothing), "mandate" on slide 3 (its line
+  echoes the screen's "a disagreement meets a rule").
+To test: Thursday's cold listener, asked "how do they decide whether to do something?"; and the timed run (≈+27 words).
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
