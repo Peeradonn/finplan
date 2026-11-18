@@ -2077,6 +2077,34 @@ and on what evidence", topic p.2). Changes, words only:
   echoes the screen's "a disagreement meets a rule").
 To test: Thursday's cold listener, asked "how do they decide whether to do something?"; and the timed run (≈+27 words).
 
+### 5.16 One thread through the talk (18 Nov evening, Claude; Pete asked: "at times it can be quite unclear about the main thing")
+
+**Why.** Counted in the 18 Nov script: slides 7–10, about four minutes, never said the limit, the change or the room,
+and said "label" once; the thread was lost exactly where the business funding came in. The voice also carried five
+structures at once (three tests, five steps, four verdicts, two prices, and slide 10's "three checks", a second three
+with different members) and ≈35 spoken figures. Read in order, slides 3–12's titles are ten separate rules for any planner, none
+pointing back to the thesis. Slides are frozen, so the fix is in the voice.
+
+**The one thing to leave with:** *a label checks a product; a sustainable plan passes three tests: the limit, the
+change, the room.* It answers the title ("Beyond Green Labels") and was already on slides 1, 5, 10, 12 and 13.
+Rules for the voice: each slide says which test it serves; the label-against-test contrast returns wherever a label
+appears; one number per test (the limit: the share of the loss outside any label; the change: up to 134 t, in the business;
+the room: HK$1.7M).
+
+**Changes, words only** (each slide's notes record why): 1 ends "No label decided any of it"; 2 opens on the picture
+("A label gives one answer… PRISM splits it") and says three things, not four; 7 names its test and says the change
+is in the business, not the funds (the close's words); 8 opens "A change counts only if it can be paid for", 87% to
+questions; 9 "the label changes nothing"; 10 "our tests", not "three checks", and says its bottom line aloud
+(suitability left the voice: on screen and in Win's drill); 13 teaches the grid without reciting the verdicts' names,
+then collects the Wongs' result one test at a time. Lookbua's slides unchanged. 1,235 spoken words (was 1,233):
+10:12 at 125 words a minute with names.
+
+**Delivery, no words:** open each slide with its point, pause, point at one thing (5 the 47% bracket; 7 the ≈134 box;
+9 the "≈HK$12K saved − ≈HK$12K review" line; 10 the FAIL card; 11 the 26.6%; 13 the four boxes).
+
+**To test:** a cold listener, one hearing: "What makes a plan sustainable?" and "Name one thing they told the Wongs,
+and why." Both answered means the thread holds. Revert any line a speaker can't make their own by Friday.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
