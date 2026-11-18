@@ -2052,6 +2052,12 @@ plan sustainable, what they recommend, one refusal, what is new). Not addressed 
 names ("do it, but don't call it green" is never said; "don't pay for the label" and "paid knowingly" are) and the
 capital, which stays on screen (slides 1, 13).
 
+**18 Nov, later (Pete: "talk a bit about PRISM").** Slide 2 said "five steps any planner knows" without naming them,
+and Select was never said aloud in the talk, though its badge sits on slides 8–11. Slide 2 now says "Five steps any
+planner knows: Profile, Risk, Impact, Select, Monitor" as the rows appear (+1 word: 1,202, still 9:56 at 125). Names
+only: the questions are on screen, and explaining each step would cost ≈15 s and push the acronym, which §5.11 keeps
+as the route, not the claim.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |

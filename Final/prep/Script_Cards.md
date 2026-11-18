@@ -2,7 +2,7 @@
 
 Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/deck/src/01_talk.html`: edit the words there, never here. The slides are frozen (git tag `final-submitted`); presenter view on the day shows the submitted words, so rehearse from these cards and print them.
 
-**1201 spoken words.** At 135 words a minute the talk ends at **9:13**; at 125, at **9:56** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
+**1202 spoken words.** At 135 words a minute the talk ends at **9:14**; at 125, at **9:56** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
 
 **▸** click here · *✂ italic*: say it if on time; drop it if the timekeeper signals you're behind (all of them together save about 16 s).
 
@@ -12,18 +12,18 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 |---|---|---|---|---|
 | 1 | Pete | 0:00 | 0:00 | 1:20 |
 | 2 | Pete | 0:44 | 0:47 | 0:40 |
-| 3 | Pete | 1:10 | 1:15 | 0:35 |
-| 4 | Pete | 1:41 | 1:49 | 0:40 |
-| 5 | Lookbua | 2:30 | 2:41 | 1:00 |
-| 6 | Lookbua | 3:07 | 3:21 | 0:45 |
-| 7 | Fahtai | 4:06 | 4:25 | 0:45 |
-| 8 | Fahtai | 4:49 | 5:11 | 0:40 |
-| 9 | Fahtai | 5:28 | 5:54 | 0:40 |
-| 10 | Win | 6:21 | 6:50 | 0:40 |
+| 3 | Pete | 1:10 | 1:16 | 0:35 |
+| 4 | Pete | 1:42 | 1:50 | 0:40 |
+| 5 | Lookbua | 2:30 | 2:42 | 1:00 |
+| 6 | Lookbua | 3:07 | 3:22 | 0:45 |
+| 7 | Fahtai | 4:07 | 4:26 | 0:45 |
+| 8 | Fahtai | 4:50 | 5:12 | 0:40 |
+| 9 | Fahtai | 5:29 | 5:54 | 0:40 |
+| 10 | Win | 6:21 | 6:51 | 0:40 |
 | 11 | Win | 7:07 | 7:40 | 0:35 |
-| 12 | Win | 7:46 | 8:23 | 0:40 |
+| 12 | Win | 7:47 | 8:23 | 0:40 |
 | 13 | Pete | 8:30 | 9:09 | 0:45 |
-| end | | 9:13 | 9:56 | |
+| end | | 9:14 | 9:56 | |
 
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · starts 0:00 · 1:20 slot · 99 words*
@@ -31,9 +31,9 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Pete:** What makes a plan sustainable? Good morning. We're Team Axis, and I'm Pete. **▸** The usual answer is a share of ESG products. But that's just one choice, and the whole plan must work. **▸** So we use three tests. The limit: does the plan last when climate hits? The change: what does their money change? The room: what can their values afford? **▸** Pass all three, and the plan is sustainable. **▸** For one representative Hong Kong family, the Wongs, that means electric vans on a plain loan, a scholarship funded now, and three green products refused. Here's how we got there.
 
 ## 2 · PRISM
-*Pete · starts 0:44 · 0:40 slot · 59 words*
+*Pete · starts 0:44 · 0:40 slot · 60 words*
 
-**Pete:** PRISM is how we run that test. **▸** We split it into five steps any planner knows. **▸** What we add is how we run them. The limit covers everything they own. The change counts only what we can show. Values get a budget in Hong Kong dollars. And every verdict carries the number that would flip it. First: who decides?
+**Pete:** PRISM is how we run that test. **▸** Five steps any planner knows: Profile, Risk, Impact, Select, Monitor. **▸** What we add is how we run them. The limit covers everything they own. The change counts only what we can show. Values get a budget in Hong Kong dollars. And every verdict carries the number that would flip it. First: who decides?
 
 ## 3 · Own money, own limits; shared money follows the more prudent
 *Pete · starts 1:10 · 0:35 slot · 71 words*
@@ -41,7 +41,7 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Pete:** Profile starts with one rule: ask each person alone. **▸** Meet the Wongs. Adrian, 54, wants to retire safely. Carmen, 49, co-owns a packaging distributor, and wants their money to do good, never greenwashed. Their retirement rests on their savings, their flat and, one day, her business. **▸** When they disagree, a rule decides. Own money, own limits. Shared money follows the more prudent. *✂ Until they agree, the plain choice stays.*
 
 ## 4 · Set the limit first; values spend only the room above it
-*Pete · starts 1:41 · 0:40 slot · 98 words*
+*Pete · starts 1:42 · 0:40 slot · 98 words*
 
 **Pete:** First, the limit: how sure the money must be. Above it, the room: the values budget. **▸** For the Wongs, the money must last to Carmen's 89 in 95 futures out of 100, or 85 in a downturn. That leaves room to give about 1.7 million Hong Kong dollars today. The scholarship uses 740 thousand dollars, paid knowingly, from the room. **▸** Pledged from yearly cash flow, the scholarship and her environmental cause would break the limit. So the scholarship is funded now. The second cause waits. Can climate break that limit? Lookbua.
 
@@ -56,17 +56,17 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Lookbua:** A route that breaks the limit is out, however much it pays. **▸** Keep the flat with a reverse mortgage, or downsize? Both pass today, and downsizing leaves the children 4.17 million dollars more. But downsizing swaps an older flat for a newer one. If older flats fall behind, the swap frees less cash. Past a gap of about 7%, downsizing breaks their limit. Keeping the flat doesn't. Our reading of HKMA research puts the gap at 2% to 9% by 2037, in a hotter Hong Kong. The switch point sits inside that range. **▸** So we don't decide today: we check the gap every year. Now the other direction: what can their money change? Fahtai.
 
 ## 7 · Price every cut in the footprint against what it replaces
-*Fahtai · starts 4:06 · 0:45 slot · 96 words*
+*Fahtai · starts 4:07 · 0:45 slot · 96 words*
 
 **Fahtai:** I'm Fahtai, on Impact. For any business: start from an energy audit, compare each cut with what it replaces, and rank by cost per tonne. **▸** For Carmen, most emissions are in what she buys. Recycled plastic in place of new could cut 108 tonnes a year. It cost the same as new in October, but we count it only once a supplier quotes. Electric vans, lighting and air-con cut less, and save money. **▸** Together, up to 134 tonnes a year, if verified and delivered. The trade-off: cash up front. Can the business fund it?
 
 ## 8 · Match the funding to what the change needs
-*Fahtai · starts 4:49 · 0:40 slot · 88 words*
+*Fahtai · starts 4:50 · 0:40 slot · 88 words*
 
 **Fahtai:** Funding follows an order: cash flow or supplier terms, then company cash or a loan, and only then an instrument. **▸** Recycled plastic runs on supplier terms, lighting and air-con on company cash. Only the vans need a loan: 1.5 million dollars, secured on the vans. The equipment's savings cover about 87% of the repayments. The company tops up the rest, if the lender and her co-owner agree. **▸** *✂ Even a cut that saves money must pass the cash test.* Should the loan be green?
 
 ## 9 · A green label must justify its full cost and obligations
-*Fahtai · starts 5:28 · 0:40 slot · 107 words*
+*Fahtai · starts 5:29 · 0:40 slot · 107 words*
 
 **Fahtai:** A green loan ties the money to green projects. A sustainability-linked loan ties the rate to targets. The vans fit the first. **▸** Like for like, the greenium saves about 12 thousand dollars over five years. The review costs the same. **▸** No advantage. Don't pay for the label, unless real quotes show a gain. **▸** The green premium is the van itself: 83 thousand dollars more than diesel once the tax waiver ends in March 2028. So: a plain loan, and order the vans before then. In our model, the savings raise what Carmen's share sells for: 510 thousand dollars more for the children. Win.
 
@@ -81,7 +81,7 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 **Win:** Their limits set the weights. **▸** Adrian lets his money stray half a per cent a year from the market. This fund strays about two, so it gets 24 per cent of his money. Carmen allows three, so all her shares go in. The family lands at 26.6 per cent. Nobody targeted it. Their limits produced it. **▸** The green bond and MPF funds cost more than plain ones: 280 thousand dollars of the room. That's alignment, paid knowingly, with no impact claimed. Last step, Monitor.
 
 ## 12 · Label the plan, not the product
-*Win · starts 7:46 · 0:40 slot · 86 words*
+*Win · starts 7:47 · 0:40 slot · 86 words*
 
 **Win:** A fund's label says what the fund holds. This dashboard says whether the plan still passes. The plan earns it every year. **▸** The limit: if returns fall, or older flats fall 7% behind, we act that year. **▸** The change: we claim the tonnes only once measured. If recycled plastic costs more, Carmen and her co-owner reprice it. **▸** The room: if it falls short, both parents review their choices and re-sign. *✂ A correction always shows the old figure.* So, what makes a plan sustainable? Pete.
 
