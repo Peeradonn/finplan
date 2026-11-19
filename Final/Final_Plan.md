@@ -2105,6 +2105,12 @@ then collects the Wongs' result one test at a time. Lookbua's slides unchanged. 
 **To test:** a cold listener, one hearing: "What makes a plan sustainable?" and "Name one thing they told the Wongs,
 and why." Both answered means the thread holds. Revert any line a speaker can't make their own by Friday.
 
+**19 Nov, slide 1 (Pete chose):** "that's just one choice" became "that only covers the funds" (it names what the ESG
+share leaves out and sets up slide 5's "A fund label checks the savings" and "not their funds" on 7 and 13; "one asset"
+was rejected: an ESG share is usually several funds, and after "a share of" it can be heard as a company share). "So we
+use three tests" became "Our answer: three tests" ("use" sounded borrowed; it answers "the usual answer"; it claims the
+combination, not each part, matching Pete's "isn't this what every good planner does?" drill). Still 1,235 words.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -2245,6 +2251,9 @@ Each brief has its own full list (its last section). The ones the storyline lean
 - One member checks the machine and the slides at 09:30. No slide can change after 16 Nov.
 
 ## Changes (newest first; the detail is in git)
+
+- **19 Nov (Claude; Pete chose).** Slide 1's spoken opening: "that only covers the funds" and "Our answer: three
+  tests" (§5.16). Notes only; 1,235 words.
 
 - **18 Nov (Claude; Pete agreed the script review).** The spoken script rebuilt on the 17 Nov spine with the 17–18
   Nov accuracy fixes kept: the thesis said at the close, slide 2's "what we add", the family introduced, the turn to

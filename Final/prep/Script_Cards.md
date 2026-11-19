@@ -1,6 +1,6 @@
 # PRISM: rehearsal cards (Team Axis)
 
-Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/deck/src/01_talk.html`: edit the words there, never here. The slides are frozen (git tag `final-submitted`); presenter view on the day shows the submitted words, so rehearse from these cards and print them.
+Generated 2026-11-19 by `Final/deck/make.py` from the speaker notes in `Final/deck/src/01_talk.html`: edit the words there, never here. The slides are frozen (git tag `final-submitted`); presenter view on the day shows the submitted words, so rehearse from these cards and print them.
 
 **1235 spoken words.** At 135 words a minute the talk ends at **9:28**; at 125, at **10:12** (both with 5 s at each change of speaker). Over **10:30** disqualifies the team.
 
@@ -28,7 +28,7 @@ Generated 2026-11-18 by `Final/deck/make.py` from the speaker notes in `Final/de
 ## 1 · A plan is sustainable if it holds its limits when climate hits, claims only what it changes, and pays for values only from the room above its limits.
 *Pete · starts 0:00 · 1:20 slot · 103 words*
 
-**Pete:** What makes a plan sustainable? Good morning. We're Team Axis, and I'm Pete. **▸** The usual answer is a share of ESG products. But that's just one choice, and the whole plan must work. **▸** So we use three tests. The limit: does the plan last when climate hits? The change: what does the money do for the world? The room: what can their values afford? **▸** Pass all three, and the plan is sustainable. **▸** For one representative Hong Kong family, the Wongs, that means electric vans on a plain loan, a scholarship funded now, and three green products refused. No label decided any of it.
+**Pete:** What makes a plan sustainable? Good morning. We're Team Axis, and I'm Pete. **▸** The usual answer is a share of ESG products. But that only covers the funds, and the whole plan must work. **▸** Our answer: three tests. The limit: does the plan last when climate hits? The change: what does the money do for the world? The room: what can their values afford? **▸** Pass all three, and the plan is sustainable. **▸** For one representative Hong Kong family, the Wongs, that means electric vans on a plain loan, a scholarship funded now, and three green products refused. No label decided any of it.
 
 ## 2 · PRISM
 *Pete · starts 0:45 · 0:40 slot · 55 words*
