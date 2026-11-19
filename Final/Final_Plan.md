@@ -2158,6 +2158,13 @@ it"): the ESG share becomes an output, as slide 1's screen says. Paid for by cut
 that slide 3's "limits" are each person's (0.5%, 3%) and slide 4's "the limit" is the household's (95 in 100); the
 screens use both, so be ready to say which. 1,266 words: 9:42 at 135, 10:27 at 125.
 
+**19 Nov, slides 3–4 link (Pete: no connection or coherence):** slide 3 ended on who decides and slide 4 opened on
+an unprompted question. Slide 3 now ends "What they share follows the more cautious parent" (the drop sentence "Until
+they agree, nothing changes" is cut: a detail for questions, Decision_List P6), and slide 4 picks it up: "And the
+money they share has to last. That's the limit. Anything above that is the room: what their values can afford." It
+also says which limit (the household's, on shared money), easing the two-limits risk above. Pete has no ✂ sentence
+left. 1,257 words: 9:38 at 135 words a minute with names, 10:23 at 125.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
