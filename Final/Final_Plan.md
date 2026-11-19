@@ -2142,6 +2142,11 @@ the ✂ lines save about 16 s. The words on each slide are in the cards; the rea
 policy annex. "Or 85, in a downturn" is dropped from Pete: Lookbua introduces it where it is used on slide 5, and it
 stays on slide 4's screen. 1,262 words.
 
+**19 Nov, slides 2–3 link (Pete: "So, who are they?" was a weak connection):** it asked for an identity and slide 3
+answered with a method. Slide 2 now ends "Who's the client, when it's a family?" and slide 3 opens "Every one of
+them, asked alone": Profile's point (four people, four limits, each profiled alone) said as a question and its
+answer. 1,266 words: 9:42 at 135 words a minute with names, 10:27 at 125.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
