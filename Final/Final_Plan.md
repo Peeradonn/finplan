@@ -2145,7 +2145,9 @@ stays on slide 4's screen. 1,262 words.
 **19 Nov, slides 2–3 link (Pete: "So, who are they?" was a weak connection):** it asked for an identity and slide 3
 answered with a method. Slide 2 now ends "Who's the client, when it's a family?" and slide 3 opens "Every one of
 them, asked alone": Profile's point (four people, four limits, each profiled alone) said as a question and its
-answer. 1,266 words: 9:42 at 135 words a minute with names, 10:27 at 125.
+answer. Pete then found "when it's a family" unclear: it became "A family is several people. Which one is the
+client?", paid for by "We count only the change we can show" (slides 7 and 13's words). 1,267 words: 9:43 at 135
+words a minute with names, 10:28 at 125.
 
 ### Owners
 
