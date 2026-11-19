@@ -2117,7 +2117,14 @@ as the screen does ("Five steps, three tests"). The 18 Nov evening opening resta
 the prism picture is now left to the screen. 1,233 words.
 
 **19 Nov, slide 3 (Pete: "Meet the Wongs" is awkward once slide 1 has named them):** "Asked alone, the Wongs want
-different things" shows the rule just said at work and sets up "When they disagree, a rule decides". 1,237 words.
+different things" shows the rule just said at work. 1,237 words.
+
+**19 Nov, slides 3–4 (Pete: "what is 'the rule'?"; "own money, own limits sounds like a slogan"; "why 'first' again?"):**
+slide 3's second click now answers slide 2's "Who decides?" in plain words: "Each person, for their own money:
+Carmen's can follow her values. What they share follows the more cautious parent, close to the market." The drop
+sentence says the status-quo default plainly ("Until they agree, nothing changes"). The title keeps the slogan on
+screen; the voice explains it. Slide 4 opens "Within what limits?", Profile's second question (slide 2's row), not a
+second "first". The rule and its sources: Decision_List P6, research area1_6 §3c.
 
 ### Owners
 
@@ -2262,7 +2269,8 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 - **19 Nov (Claude; Pete chose).** Slide 1's spoken opening: "that only covers the funds" and "Our answer: three
   tests"; slide 2 opens "The three tests did, in five steps we call PRISM"; slide 3's "Meet the Wongs" becomes
-  "Asked alone, the Wongs want different things" (§5.16). Notes only.
+  "Asked alone, the Wongs want different things", and its disagreement rule is said in plain words; slide 4 opens
+  "Within what limits?" (§5.16). Notes only.
 
 - **18 Nov (Claude; Pete agreed the script review).** The spoken script rebuilt on the 17 Nov spine with the 17–18
   Nov accuracy fixes kept: the thesis said at the close, slide 2's "what we add", the family introduced, the turn to
