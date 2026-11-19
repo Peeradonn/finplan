@@ -2165,6 +2165,15 @@ money they share has to last. That's the limit. Anything above that is the room:
 also says which limit (the household's, on shared money), easing the two-limits risk above. Pete has no ✂ sentence
 left. 1,257 words: 9:38 at 135 words a minute with names, 10:23 at 125.
 
+**19 Nov, three more (Pete agreed):** (1) Slide 1's "No label decided any of it" is cut: a slogan that restated the
+brief's own title; the refrain stays for the close, after the evidence. Slide 2 opens "Here's how we got there. We
+run the three tests in five steps we call PRISM", and "We add three things" introduces the three. (2) Slide 4 says
+what the scholarship is and why it's paid now, not the arithmetic: "Chloe wants a scholarship for students who need
+it. We fund it now, while they still get tax relief, not every year for life. Adding Carmen's environmental cause
+would use all the room, so it waits." (Decision_List G1–G2: an s.88 charity fund, ≈HK$742K in 2027–28, ≈HK$126K
+relief.) (3) Slide 13's grid sentence is Pete's ✂ line (≈9 s), since the 1-minute warning falls in the close.
+1,265 words: 9:42 at 135 words a minute with names, 10:27 at 125; the ✂ lines together save about 23 s.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
