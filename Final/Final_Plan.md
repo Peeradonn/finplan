@@ -2187,6 +2187,12 @@ the talk proves most (slide 5's 47% on the flat and business, slide 7's change i
 and vans) and it is ours; the label point is the brief's title; target vs output is on slide 1's screen and is Win's
 slide 11 payoff. It describes what an ESG share covers, not how other advisers work. 1,260 words.
 
+**19 Nov, tests as rules (Pete: "pass" is weird when two of the questions are quantitative):** slide 1 now says the
+tests as the pass-or-fail rules of the thesis: "The limit: the money still lasts when climate hits. The change: we
+claim only what the money changes. The room: we pay for values only from what's spare." Then "Pass all three, and
+the plan is sustainable." The screen's questions show how each rule is checked; the thesis line at the next click and
+the close say the same rules. Three fewer self-asked questions. 1,265 words: 9:42 at 135, 10:27 at 125.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
