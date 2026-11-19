@@ -2137,6 +2137,11 @@ the close. Pete's part is 476 words (463 before today); the talk is 1,259: 9:39 
 10:24 at 125. Below Pete's 1,300-word budget, but at a slow pace only 6 s inside 10:30: a stopwatch run decides, and
 the ✂ lines save about 16 s. The words on each slide are in the cards; the reasons in each slide's notes.
 
+**19 Nov, slide 4 (Pete: "is this something they said they want or just something we set?"; don't repeat Lookbua):**
+"For the Wongs, we set the limit and both parents sign it." The 95 and 85 are ours (ILLUSTRATIVE), written into the
+policy annex. "Or 85, in a downturn" is dropped from Pete: Lookbua introduces it where it is used on slide 5, and it
+stays on slide 4's screen. 1,262 words.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
