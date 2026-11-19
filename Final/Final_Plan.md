@@ -2181,6 +2181,12 @@ they differ, each person decides their own money". Pete's only self-asked questi
 plan sustainable?", slide 1's three tests (they are the tests) and the handover to Lookbua. 1,261 words: 9:40 at 135
 words a minute with names, 10:25 at 125.
 
+**19 Nov, the usual answer's flaw (Pete: is "only the funds" the main thing, or the label, or target vs output?):**
+"only the funds" stays, said concretely: "But that only covers the funds, not the home or the business." It is what
+the talk proves most (slide 5's 47% on the flat and business, slide 7's change in the business, slide 13's home check
+and vans) and it is ours; the label point is the brief's title; target vs output is on slide 1's screen and is Win's
+slide 11 payoff. It describes what an ESG share covers, not how other advisers work. 1,260 words.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
