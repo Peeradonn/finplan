@@ -2111,6 +2111,11 @@ was rejected: an ESG share is usually several funds, and after "a share of" it c
 use three tests" became "Our answer: three tests" ("use" sounded borrowed; it answers "the usual answer"; it claims the
 combination, not each part, matching Pete's "isn't this what every good planner does?" drill). Still 1,235 words.
 
+**19 Nov, slide 2 (Pete: "disconnected from what we say in slide 1"; Pete chose):** it opens "The three tests did, in
+five steps we call PRISM", answering slide 1's "No label decided any of it" and linking the tests to the steps aloud,
+as the screen does ("Five steps, three tests"). The 18 Nov evening opening restarted on labels and dropped that link;
+the prism picture is now left to the screen. 1,233 words.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -2253,7 +2258,7 @@ Each brief has its own full list (its last section). The ones the storyline lean
 ## Changes (newest first; the detail is in git)
 
 - **19 Nov (Claude; Pete chose).** Slide 1's spoken opening: "that only covers the funds" and "Our answer: three
-  tests" (§5.16). Notes only; 1,235 words.
+  tests"; slide 2 opens "The three tests did, in five steps we call PRISM" (§5.16). Notes only.
 
 - **18 Nov (Claude; Pete agreed the script review).** The spoken script rebuilt on the 17 Nov spine with the 17–18
   Nov accuracy fixes kept: the thesis said at the close, slide 2's "what we add", the family introduced, the turn to
