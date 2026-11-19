@@ -2149,6 +2149,15 @@ answer. Pete then found "when it's a family" unclear: it became "A family is sev
 client?", paid for by "We count only the change we can show" (slides 7 and 13's words). 1,267 words: 9:43 at 135
 words a minute with names, 10:28 at 125.
 
+**19 Nov, Profile's point (Pete: "do you truly think this is the main thing?"; agreed it isn't):** "each person,
+asked alone" is method, not message, and nothing later depends on it. Profile now says **people, not products**, the
+screen's "before any product": slide 2 ends "Where do we start?"; slide 3 opens "With people, not products. We ask
+each one alone. What do you need? What would you risk? What do you value? The answers set their limits." This joins
+slide 1's usual answer (a share of ESG products) to Win's slide 11 ("Their limits set the weights … Nobody targeted
+it"): the ESG share becomes an output, as slide 1's screen says. Paid for by cutting "one day" and two "So"s. Note
+that slide 3's "limits" are each person's (0.5%, 3%) and slide 4's "the limit" is the household's (95 in 100); the
+screens use both, so be ready to say which. 1,266 words: 9:42 at 135, 10:27 at 125.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
