@@ -2126,6 +2126,17 @@ sentence says the status-quo default plainly ("Until they agree, nothing changes
 screen; the voice explains it. Slide 4 opens "Within what limits?", Profile's second question (slide 2's row), not a
 second "first". The rule and its sources: Decision_List P6, research area1_6 §3c.
 
+**19 Nov, Pete's part made speakable (Pete: "more like something to be read"; Profile is "getting to know the
+client"):** slides 1–4 and 13 rewritten for the ear: short sentences, questions asked as questions, no colon or
+semicolon lists, no participle openers ("Pledged from yearly cash flow, …"). Slide 2 now ends "So, who are they?";
+slide 3 opens with the profiling questions as the client hears them ("What do you need? What would you risk? What do
+you value?", the brief's seven area-1 dimensions, on screen but never said before), then "So who decides?"; slide 4
+opens "So what can their values afford?" (slide 1's third test) and defines the limit as "how sure they need to be
+that the money lasts". Paid for by no longer reading the scholarship's cost on slide 4 (it is on screen) and trimming
+the close. Pete's part is 476 words (463 before today); the talk is 1,259: 9:39 at 135 words a minute with names,
+10:24 at 125. Below Pete's 1,300-word budget, but at a slow pace only 6 s inside 10:30: a stopwatch run decides, and
+the ✂ lines save about 16 s. The words on each slide are in the cards; the reasons in each slide's notes.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
@@ -2269,8 +2280,8 @@ Each brief has its own full list (its last section). The ones the storyline lean
 
 - **19 Nov (Claude; Pete chose).** Slide 1's spoken opening: "that only covers the funds" and "Our answer: three
   tests"; slide 2 opens "The three tests did, in five steps we call PRISM"; slide 3's "Meet the Wongs" becomes
-  "Asked alone, the Wongs want different things", and its disagreement rule is said in plain words; slide 4 opens
-  "Within what limits?" (§5.16). Notes only.
+  "Asked alone, the Wongs want different things", and its disagreement rule is said in plain words. Later the same
+  day, Pete's whole part (slides 1–4, 13) rewritten to be said, not read (§5.16). Notes only; 1,259 words.
 
 - **18 Nov (Claude; Pete agreed the script review).** The spoken script rebuilt on the 17 Nov spine with the 17–18
   Nov accuracy fixes kept: the thesis said at the close, slide 2's "what we add", the family introduced, the turn to
