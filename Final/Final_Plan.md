@@ -2174,6 +2174,13 @@ would use all the room, so it waits." (Decision_List G1–G2: an s.88 charity fu
 relief.) (3) Slide 13's grid sentence is Pete's ✂ line (≈9 s), since the 1-minute warning falls in the close.
 1,265 words: 9:42 at 135 words a minute with names, 10:27 at 125; the ✂ lines together save about 23 s.
 
+**19 Nov, fewer questions (Pete: "too much of these questioning myself"):** "Where do we start?" and "So who decides?"
+are cut, and slide 3's profiling questions are said as what we ask ("We ask each one alone what they need, what
+they'd risk, and what they value"). Slide 3 opens "It starts with people, not products"; its last click opens "When
+they differ, each person decides their own money". Pete's only self-asked questions now: the opening "What makes a
+plan sustainable?", slide 1's three tests (they are the tests) and the handover to Lookbua. 1,261 words: 9:40 at 135
+words a minute with names, 10:25 at 125.
+
 ### Owners
 
 | Who | Owns: researches, presents and answers on | Now |
