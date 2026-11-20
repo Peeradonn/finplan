@@ -150,9 +150,10 @@ Answer first, then the reason, then the source. Stop. "Show" is the backup to ty
    +HK$0.39M: good planning a tax-aware planner might do too. Fees +HK$0.12M: ordinary planning. In the downturn,
    +HK$1.03M. Recurring carbon-data costs are excluded. This is the stated comparison, not a fully costed gain from
    sustainability alone. *Show 15.* **Moderate:** the stronger-planner comparison is unrun.
-5. **"Why 95 and 85?"** They're the family's limits as we set them, ILLUSTRATIVE, written into the annex. The rules
-   don't depend on the level: each verdict that leans on a limit shows where it flips. A family can lower its limit,
-   explicitly, both parents signing. *Show 25, 27.* **Moderate.**
+5. **"Why 95 and 85?"** In the story, the parents chose them with us and signed them into the annex. The levels are
+   our client definition, ILLUSTRATIVE (drill 14). The rules don't depend on the level: each verdict that leans on a
+   limit shows where it flips. A family can lower its limit, explicitly, both parents signing. *Show 25, 27.*
+   **Moderate.**
 6. **"97 against 95: is that even significant?"** Yes. At 10,000 futures one standard error is about 0.2 points, and
    every run uses the same seed. Where it isn't, we say so: both causes funded at 94.9% is at the limit within error,
    which is why the second cause waits. *Show 26.* **Strong.**
@@ -212,6 +213,11 @@ Answer first, then the reason, then the source. Stop. "Show" is the backup to ty
 23. **"What would you not do?"** Pay for a label that changes nothing: a green mortgage worth at most HK$1,000 once; a
     green-loan review that costs what the discount saves; a sustainability-linked loan at her size; claiming impact for
     listed shares. We don't refuse Carmen's values. We refuse the label. **Strong.**
+24. **"Why to 89?"** It's the age we plan to for Carmen, the younger parent: our client definition, and the horizon of
+    every odds figure in the talk. Living longer is a risk the plan covers in part: the MPF annuities, the last step of
+    their retirement, pay for life. To her 95 instead, the family's plan before our changes still lasts in about 9
+    futures in 10 (Round One's model, `switch_95`); we haven't rerun that on our recommended plan. **Moderate:** to
+    call 89 her life expectancy, check the C&SD life tables first.
 
 ## 6. Traps on your topic
 
